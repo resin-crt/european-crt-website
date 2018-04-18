@@ -1,0 +1,40 @@
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+  /*position: relative;*/
+  /*line-height: 1.5;*/
+  /*font-family: 'Raleway', sans-serif;*/
+}
+
+.container {
+  background-color: #3d8b40;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#wrap {
+  background-color: #852d12;
+  min-height: 100%;
+  height: 100%;
+  /* Negative indent footer by its height */
+  /*margin: 0 auto -50px 0;*/
+  margin: 0 auto 0 0;
+  /* Pad bottom by footer height */
+  /*padding: 0 0 50px 0;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
