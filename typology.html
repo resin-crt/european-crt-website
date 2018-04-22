@@ -33,16 +33,17 @@
   <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fontawesome-all.min.css">-->
 
   <!-- Leaflet -->
-  <link rel="stylesheet" href="libs/leaflet-1.3.1/leaflet.css">
+  <!--<link rel="stylesheet" href="libs/leaflet-1.3.1/leaflet.css">-->
 
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="styles/typology.css">
+  <link rel="stylesheet" href="styles/page.css">
   <!--<link rel="stylesheet" href="styles/loader.css">-->
 
   <!-- JQuery -->
   <!--<script type="text/javascript" src="libs/jquery-3.2.1/jquery.js"></script>-->
   <!--<script type="text/javascript" src="libs/jquery-3.2.1/jquery.min.js"></script>-->
   <script type="text/javascript" src="libs/jquery-3.2.1/jquery.slim.js"></script>
+  <script src="../../ESRC Secondary Data Analysis/commute-flow/master/js/msoa-qc-epsg-4326-500.js"></script>
   <!--<script type="text/javascript" src="libs/jquery-3.2.1/jquery.slim.min.js"></script>-->
 
   <!--<script type="text/javascript" src="js/shared.js"></script>-->
@@ -54,9 +55,9 @@
 
     <!--<div id="header">-->
       <div class="container">
-        <nav id="navBarHost" class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">
-            <img src="images/logo-small.png" height="24" class="d-inline-block" alt="European Climate Risk Typology logo">
+        <nav id="navBarHost" class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo-small.png" height="24" class="d-inline-block" alt="logo">
             European Climate Risk Typology
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationBar" aria-controls="navigationBar" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,23 +65,23 @@
           </button>
           <div id="navigationBar" class="collapse navbar-collapse">
             <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="map.html">Map</a>
+              </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#">Map <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Typology <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="typology.html">Typology</a>
+                <a class="nav-link" href="uses.html">Uses</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Uses</a>
+                <a class="nav-link" href="methodology.html">Methodology</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Methodology</a>
+                <a class="nav-link" href="indicators.html">Risk Indicators</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Risk Indicators</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
@@ -91,15 +92,14 @@
 
 
     <div class="center-container">
-
       <div class="center-row">
-        <div id="body" class="container">
+        <div id="contentBody" class="container">
 
-          <div id="mapContainer">
-            <div style="background-color: #ffa000; height: 100%;">
-              <p>Describing the typology.</p>
+          <div id="contentContainer">
 
-              <div class="card-deck">
+            <h3>Describing the typology.</h3>
+
+            <div class="card-deck">
                 <div class="card">
                   <img class="card-img-top" src="..." alt="Card image cap">
                   <div class="card-body">
@@ -112,7 +112,7 @@
                       This is a barrier to making progress with climate change adaptation and resilience planning and
                       resource allocation in Europe.
                     </p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <p class="card-text"><small class="text-muted"></small></p>
                   </div>
                 </div>
                 <div class="card">
@@ -132,7 +132,7 @@
                       As such, the Typology can be viewed as a decision-aid to support more efficient and
                       effective forms of adaptation to climate risks.
                     </p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <p class="card-text"><small class="text-muted"></small></p>
                   </div>
                 </div>
                 <div class="card">
@@ -142,11 +142,24 @@
                     <p class="card-text">
                       The final online portal will incorporate details of the typology outputs here. This will include:
                     </p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+                    <p>
+                      <ul>
+                        <li>
+                          Description of the final typology super-groups: this will be a paragraph that describes the
+                          climate risk characteristics of each super-group, and details of their spatial distribution.
+                        </li>
+                        <li>
+                          Description of the final typology groups: this will be a paragraph that describes the climate
+                          risk characteristics of each group, and details of their spatial distribution.
+                        </li>
+                      </ul>
+                    </p>
+
+                    <p class="card-text"><small class="text-muted"></small></p>
                   </div>
                 </div>
               </div>
-            </div>
 
           </div>
 
