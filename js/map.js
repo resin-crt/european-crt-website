@@ -856,6 +856,7 @@ var MapLayers = {
         // style: this.namedBasemapLayers[toggleBaseMapViewModel.currentBaseMap].style,
         // style: this.namedBasemapLayers['dark'].supergroupStyles,
 
+        // TODO: Please commit
         style: function(feature) {
           return supergroupStyles[feature.properties.SG];
         },
