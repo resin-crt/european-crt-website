@@ -850,9 +850,15 @@ var MapLayers = {
     createLayer: function() {
       this.geoJSON = AppData.nuts3PolygonsTypologyOnlyP4;
 
+      let supergroupStyles = this.namedBasemapLayers['dark'].supergroupStyles;
+
       this.mapLayer = L.geoJSON(this.geoJSON, {
         // style: this.namedBasemapLayers[toggleBaseMapViewModel.currentBaseMap].style,
-        style: this.namedBasemapLayers['dark'].supergroupStyles,
+        // style: this.namedBasemapLayers['dark'].supergroupStyles,
+
+        style: function(feature) {
+          return supergroupStyles[feature.properties.SG];
+        },
 
         /**
          * Define the behaviour of each feature.
