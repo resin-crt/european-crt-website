@@ -965,7 +965,7 @@ var MapLayers = {
       layer.defaultOptions.style = this.namedBasemapLayers[namedBaseMap].style;
       this.mapLayer.resetStyle(layer);
 
-      MapLayers.CommuteFlows.mapLayer.bringToFront();
+      //MapLayers.CommuteFlows.mapLayer.bringToFront();
 
       // Update the MSOA information on the page.
       // TODO: RESIN - Implement this functionality.
@@ -1038,10 +1038,10 @@ var Spatial = {
       maxZoom: Spatial.mapOptions.maxZoom
     });
 
-    // // Create the sidebar and add it on the map.
+    // Create the sidebar and add it on the map.
     // TODO: RESIN
-    //Spatial.sidebar = L.control.sidebar(Spatial.Members.sidebarName, {position: Spatial.Members.sidebarPosition});
-    //Spatial.sidebar.addTo(Spatial.map);
+    Spatial.sidebar = L.control.sidebar(Spatial.Members.sidebarName, {position: Spatial.Members.sidebarPosition});
+    Spatial.sidebar.addTo(Spatial.map);
 
     BaseMapLayers.setNamedBasemapLayers();
     BaseMapLayers.createBaseMapLayers();
