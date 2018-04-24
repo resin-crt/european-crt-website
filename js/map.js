@@ -848,9 +848,9 @@ var MapLayers = {
      * Creates the NUTS3 layer.
      */
     createLayer: function() {
-      this.geoJSON = AppData.nuts3PolygonsTypologyOnlyP4;
-
-      let supergroupStyles = this.namedBasemapLayers['dark'].supergroupStyles;
+      // TODO: RESIN - Decide which polygon features will be used in the last version.
+      // this.geoJSON = AppData.nuts3PolygonsTypologyOnlyP6;
+      this.geoJSON = AppData.nuts3PolygonsP6;
 
       this.mapLayer = L.geoJSON(this.geoJSON, {
         // style: this.namedBasemapLayers[toggleBaseMapViewModel.currentBaseMap].style,
@@ -858,7 +858,8 @@ var MapLayers = {
 
         // TODO: Please commit
         style: function(feature) {
-          return supergroupStyles[feature.properties.SG];
+          return MapLayers.NUTS3.namedBasemapLayers['dark'].supergroupStyles[feature.properties.SG];
+          // return MapLayers.NUTS3.namedBasemapLayers[toggleBaseMapViewModel.currentBaseMap].supergroupStyles[feature.properties.SG];
         },
 
         /**
@@ -874,14 +875,14 @@ var MapLayers = {
              * Raised when the mouse is over a feature.
              */
             mouseover: function() {
-              //MapLayers.NUTS3.highlightNuts3(feature, layer);
+              MapLayers.NUTS3.highlightNuts3(feature, layer);
             },
 
             /**
              * Raised when the mouse is going out of a feature.
              */
             mouseout: function() {
-              //MapLayers.NUTS3.resetNuts3Style(feature, layer);
+              MapLayers.NUTS3.resetNuts3Style(feature, layer);
             },
 
             /**
@@ -926,16 +927,19 @@ var MapLayers = {
     highlightNuts3: function(feature, layer) {
 
       // Get the named basemap layer.
-      let namedBaseMap = toggleBaseMapViewModel.currentBaseMap;
+      // let namedBaseMap = toggleBaseMapViewModel.currentBaseMap;
+      // TODO: RESIN
+      let namedBaseMap = 'dark';
 
-      // Highlight the current MSOA.
+      // Highlight the current NUTS3.
       layer.setStyle(this.namedBasemapLayers[namedBaseMap].highlightedStyle);
 
       if (!L.Browser.ie && !L.Browser.opera) {
         layer.bringToFront();
       }
 
-      MapLayers.NUTS3.mapLayer.bringToFront();
+      // TODO: RESIN - It seems this line is not needed anymore after using the new version of Leaflet.
+      //MapLayers.NUTS3.mapLayer.bringToFront();
 
       // Update the NUTS3 information on the page.
       // TODO: RESIN - Implement this functionality
@@ -953,7 +957,9 @@ var MapLayers = {
     resetNuts3Style: function(feature, layer) {
 
       // Get the named basemap layer.
-      let namedBaseMap = toggleBaseMapViewModel.currentBaseMap;
+      // let namedBaseMap = toggleBaseMapViewModel.currentBaseMap;
+      // TODO: RESIN
+      let namedBaseMap = 'dark';
 
       // Reset the style of the NUTS3 polygon.
       layer.defaultOptions.style = this.namedBasemapLayers[namedBaseMap].style;
