@@ -34,6 +34,8 @@
 
   <!-- Leaflet -->
   <link rel="stylesheet" href="libs/leaflet-1.3.1/leaflet.css">
+  <link rel="stylesheet" href="libs/leaflet-plugins/sidebar-v2-0.4.0/leaflet-sidebar.css">
+  <!--<link rel="stylesheet" href="libs/leaflet-plugins/sidebar-v2-0.4.0/leaflet-sidebar.min.css">-->
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="styles/map2.css">
@@ -50,90 +52,705 @@
 </head>
 <body>
 
-  <div id="wrap" class="container-fluid">
+<div id="wrap" class="container-fluid">
 
-    <!--<div id="header">-->
-      <div class="container">
-        <nav id="navBarHost" class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/logo-small.png" height="24" class="d-inline-block" alt="logo">
-            European Climate Risk Typology
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationBar" aria-controls="navigationBar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div id="navigationBar" class="collapse navbar-collapse">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Map <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="typology.html">Typology</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="uses.html">Uses</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="methodology.html">Methodology</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="indicators.html">Risk Indicators</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+  <div class="container">
+    <nav id="navBarHost" class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo-small.png" height="24" class="d-inline-block" alt="logo">
+        European Climate Risk Typology
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationBar" aria-controls="navigationBar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navigationBar" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Map <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="typology.html">Typology</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="uses.html">Uses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="methodology.html">Methodology</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="indicators.html">Risk Indicators</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
-    <!--</div>-->
+    </nav>
+  </div>
 
+  <div class="center-container">
+    <div class="center-row">
+      <div id="mapContainer" class="container">
+        <!--<div id="map"></div>-->
+        <div id="map" class="sidebar-map"></div>
+      </div>
 
+      <div id="sidebar" class="sidebar collapsed sidebar-right leaflet-touch">
+        <!--<div id="sidebar" class="sidebar">-->
+        <div class="sidebar-tabs">
+          <ul role="tablist">
+            <li id="infoButton" data-toggle="tooltip" data-placement="left" title="Information" aria-label="Information">
+              <a href="#info" role="tab"><i class="fa fa-bars"></i></a>
+            </li>
+          </ul>
+        </div>
 
-    <div class="center-container">
-      <!--<div style="height: 500px; background-color: #00bcd4;"></div>-->
+        <div class="sidebar-content">
 
-      <div class="center-row">
-        <div id="mapContainer" class="container">
-          <div id="map"></div>
-          <!--<div id="map" class="sidebar-map"></div>-->
+          <div class="sidebar-pane" id="info">
+
+            <div style="background-color: #1fcd5f">this is the container of all things sidebar</div>
+
+            <!--<div id="infoContainer">-->
+
+            <!--<div class="cf-row">-->
+            <!--<strong>Select map type:</strong>-->
+
+            <!--<div id="toggleBaseMapButtonsVM"-->
+            <!--class="btn-group btn-group-justified" role="group">-->
+            <!--<div class="btn-group" role="group">-->
+            <!--<button id="darkButton" type="button" class="btn btn-danger"-->
+            <!--v-bind:class="[currentBaseMap == 'dark' ? 'active' : '']" v-text="baseMapNames[0]"-->
+            <!--v-on:click="setCurrentBaseMap('dark')">-->
+            <!--</button>-->
+            <!--</div>-->
+            <!--<div class="btn-group" role="group">-->
+            <!--<button id="lightButton" type="button" class="btn btn-danger"-->
+            <!--v-bind:class="[currentBaseMap == 'light' ? 'active' : '']" v-text="baseMapNames[1]"-->
+            <!--v-on:click="setCurrentBaseMap('light')">-->
+            <!--</button>-->
+            <!--</div>-->
+            <!--<div class="btn-group" role="group">-->
+            <!--<button id="roadsButton" type="button" class="btn btn-danger"-->
+            <!--v-bind:class="[currentBaseMap == 'roads' ? 'active' : '']" v-text="baseMapNames[2]"-->
+            <!--v-on:click="setCurrentBaseMap('roads')">-->
+            <!--</button>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="cf-row">-->
+            <!--<strong>Show Commute Flows using:</strong>-->
+
+            <!--<div id="toggleCommuteFlowRenderingMethodButtonsVM" class="btn-group btn-group-justified" role="group">-->
+            <!--<div class="btn-group" role="group">-->
+            <!--<button id="commuteFlowPolygonsRenderingButton" type="button" class="btn btn-danger"-->
+            <!--v-bind:class="[method == ':cfPolygons' ? 'active' : '']"-->
+            <!--v-on:click="setCommuteFlowRenderingMethod(':cfPolygons')">-->
+            <!--Polygons-->
+            <!--</button>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;<div class="btn-group" role="group">&ndash;&gt;-->
+            <!--&lt;!&ndash;<button id="commuteFlowPolygonsWithLinesRenderingButton" type="button" class="btn btn-danger"&ndash;&gt;-->
+            <!--&lt;!&ndash;v-bind:class="[method == ':cfPolygonsWithLines' ? 'active' : '']"&ndash;&gt;-->
+            <!--&lt;!&ndash;v-on:click="setCommuteFlowRenderingMethod(':cfPolygonsWithLines')">&ndash;&gt;-->
+            <!--&lt;!&ndash;Polygons and Lines&ndash;&gt;-->
+            <!--&lt;!&ndash;</button>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--<div class="btn-group" role="group">-->
+            <!--<button id="commuteFlowLinesRenderingButton" type="button" class="btn btn-danger"-->
+            <!--v-bind:class="[method == ':cfLines' ? 'active' : '']"-->
+            <!--v-on:click="setCommuteFlowRenderingMethod(':cfLines')">-->
+            <!--Lines-->
+            <!--</button>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="cf-row">-->
+            <!--<strong>Traveling to work:</strong>-->
+
+            <!--<div id="toggleRW2WRCommuteFlowsButtonsVM"-->
+            <!--class="btn-group btn-group-justified" role="group">-->
+            <!--<div class="btn-group" role="group">-->
+            <!--<button id="rwButton" type="button" class="btn btn-danger"-->
+            <!--v-bind:class="[queryField == 'rc' ? 'active' : '']" v-on:click="setFilterArgument('rc')">-->
+            <!--Outwards-->
+            <!--</button>-->
+            <!--</div>-->
+            <!--<div class="btn-group" role="group">-->
+            <!--<button id="wrButton" type="button" class="btn btn-danger"-->
+            <!--v-bind:class="[queryField == 'wc' ? 'active' : '']" v-on:click="setFilterArgument('wc')">-->
+            <!--Inwards-->
+            <!--</button>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <!--<div id="groupSetContentVM" class="cf-row">-->
+
+            <!--<ul class="nav nav-tabs nav-justified" role="tablist">-->
+            <!--&lt;!&ndash;<ul id="groupSetVisualization" class="nav nav-tabs nav-justified" role="tablist">&ndash;&gt;-->
+            <!--<li role="presentation" class="active">-->
+            <!--<a id="superGroupsSet" href="#superGroupsTab" role="tab" data-toggle="tab" v-on:click="setGroupVisualization(true)">-->
+            <!--<strong>Super Groups</strong>-->
+            <!--</a>-->
+            <!--</li>-->
+            <!--<li role="presentation">-->
+            <!--<a id="groupsSet" href="#groupsTab" role="tab" data-toggle="tab" v-on:click="setGroupVisualization(false)">-->
+            <!--<strong>Groups</strong>-->
+            <!--</a>-->
+            <!--</li>-->
+            <!--</ul>-->
+
+            <!--<div id="groupSetVisualizationContent" class="tab-content">-->
+
+            <!--<div id="superGroupsTab" class="tab-pane fade active in" role="tabpanel">-->
+
+            <!--<div id="superGroupSetVisualizationTable" class="groups-table">-->
+            <!--<table class="table table-condensed table-striped">-->
+            <!--<tbody>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g1" value="1" checked v-model="checkedSuperGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<div class="legend-polygon-rect bc-g1"></div>-->
+            <!--</td>-->
+            <!--<td><label for="g1" v-text="superGroups['1'].name"></label></td>-->
+            <!--<td><a href="classification.html#g1" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g2" value="2" checked v-model="checkedSuperGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<div class="legend-polygon-rect bc-g2"></div>-->
+            <!--</td>-->
+            <!--<td><label for="g2" v-text="superGroups['2'].name"></label></td>-->
+            <!--<td><a href="classification.html#g2" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g3" value="3" checked v-model="checkedSuperGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<div class="legend-polygon-rect bc-g3"></div>-->
+            <!--</td>-->
+            <!--<td><label for="g3" v-text="superGroups['3'].name"></label></td>-->
+            <!--<td><a href="classification.html#g3" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g4" value="4" checked v-model="checkedSuperGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<div class="legend-polygon-rect bc-g4"></div>-->
+            <!--</td>-->
+            <!--<td><label for="g4" v-text="superGroups['4'].name"></label></td>-->
+            <!--<td><a href="classification.html#g4" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g5" value="5" checked v-model="checkedSuperGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<div class="legend-polygon-rect bc-g5"></div>-->
+            <!--</td>-->
+            <!--<td><label for="g5" v-text="superGroups['5'].name"></label></td>-->
+            <!--<td><a href="classification.html#g5" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g6" value="6" checked v-model="checkedSuperGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<div class="legend-polygon-rect bc-g6"></div>-->
+            <!--</td>-->
+            <!--<td><label for="g6" v-text="superGroups['6'].name"></label></td>-->
+            <!--<td><a href="classification.html#g6" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g7" value="7" checked v-model="checkedSuperGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<div class="legend-polygon-rect bc-g7"></div>-->
+            <!--</td>-->
+            <!--<td><label for="g7" v-text="superGroups['7'].name"></label></td>-->
+            <!--<td><a href="classification.html#g7" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g8" value="8" checked v-model="checkedSuperGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<div class="legend-polygon-rect bc-g8"></div>-->
+            <!--</td>-->
+            <!--<td><label for="g8" v-text="superGroups['8'].name"></label></td>-->
+            <!--<td><a href="classification.html#g8" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g9" value="9" checked v-model="checkedSuperGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<div class="legend-polygon-rect bc-g9"></div>-->
+            <!--</td>-->
+            <!--<td><label for="g9" v-text="superGroups['9'].name"></label></td>-->
+            <!--<td><a href="classification.html#g9" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--</tbody>-->
+            <!--</table>-->
+            <!--</div>-->
+
+            <!--</div>-->
+
+            <!--<div id="groupsTab" class="tab-pane fade" role="tabpanel">-->
+
+            <!--<div id="groupSetVisualizationTable" class="groups-table">-->
+            <!--<table class="table table-condensed table-striped">-->
+            <!--<tbody>-->
+
+            <!--<tr>-->
+            <!--<th class="legend-narrow-td">-->
+            <!--<div class="legend-polygon-rect bc-g1"></div>-->
+            <!--</th>-->
+            <!--<th><a href="#" v-on:click="toggleGroupSet(1)" v-text="superGroups['1'].name"></a></th>-->
+            <!--<th><a href="classification.html#g1" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></th>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g11" value="11" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g11" v-text="groups['11'].name"></label></td>-->
+            <!--<td><a href="classification.html#g11" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g12" value="12" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g12" v-text="groups['12'].name"></label></td>-->
+            <!--<td><a href="classification.html#g12" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g13" value="13" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g13" v-text="groups['13'].name"></label></td>-->
+            <!--<td><a href="classification.html#g13" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g14" value="14" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g14" v-text="groups['14'].name"></label></td>-->
+            <!--<td><a href="classification.html#g14" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g15" value="15" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g15" v-text="groups['15'].name"></label></td>-->
+            <!--<td><a href="classification.html#g15" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+
+            <!--<tr>-->
+            <!--<th class="legend-narrow-td">-->
+            <!--<div class="legend-polygon-rect bc-g2"></div>-->
+            <!--</th>-->
+            <!--<th><a href="#" v-on:click="toggleGroupSet(2)" v-text="superGroups['2'].name"></a></th>-->
+            <!--<th><a href="classification.html#g2" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></th>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g21" value="21" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g21" v-text="groups['21'].name"></label></td>-->
+            <!--<td><a href="classification.html#g21" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g22" value="22" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g22" v-text="groups['22'].name"></label></td>-->
+            <!--<td><a href="classification.html#g22" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g23" value="23" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g23" v-text="groups['23'].name"></label></td>-->
+            <!--<td><a href="classification.html#g23" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+
+            <!--<tr>-->
+            <!--<th class="legend-narrow-td">-->
+            <!--<div class="legend-polygon-rect bc-g3"></div>-->
+            <!--</th>-->
+            <!--<th><a href="#" v-on:click="toggleGroupSet(3)" v-text="superGroups['3'].name"></a></th>-->
+            <!--<th><a href="classification.html#g3" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></th>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g31" value="31" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g31" v-text="groups['31'].name"></label></td>-->
+            <!--<td><a href="classification.html#g31" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g32" value="32" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g32" v-text="groups['32'].name"></label></td>-->
+            <!--<td><a href="classification.html#g32" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g33" value="33" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g33" v-text="groups['33'].name"></label></td>-->
+            <!--<td><a href="classification.html#g33" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g34" value="34" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g34" v-text="groups['34'].name"></label></td>-->
+            <!--<td><a href="classification.html#g34" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g35" value="35" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g35" v-text="groups['35'].name"></label></td>-->
+            <!--<td><a href="classification.html#g35" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+
+            <!--<tr>-->
+            <!--<th class="legend-narrow-td">-->
+            <!--<div class="legend-polygon-rect bc-g4"></div>-->
+            <!--</th>-->
+            <!--<th><a href="#" v-on:click="toggleGroupSet(4)" v-text="superGroups['4'].name"></a></th>-->
+            <!--<th><a href="classification.html#g4" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></th>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g41" value="41" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g41" v-text="groups['41'].name"></label></td>-->
+            <!--<td><a href="classification.html#g41" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g42" value="42" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g42" v-text="groups['42'].name"></label></td>-->
+            <!--<td><a href="classification.html#g42" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g43" value="43" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g43" v-text="groups['43'].name"></label></td>-->
+            <!--<td><a href="classification.html#g43" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+
+            <!--<tr>-->
+            <!--<th class="legend-narrow-td">-->
+            <!--<div class="legend-polygon-rect bc-g5"></div>-->
+            <!--</th>-->
+            <!--<th><a href="#" v-on:click="toggleGroupSet(5)" v-text="superGroups['5'].name"></a></th>-->
+            <!--<th><a href="classification.html#g5" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></th>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g51" value="51" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g51" v-text="groups['51'].name"></label></td>-->
+            <!--<td><a href="classification.html#g51" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g52" value="52" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g52" v-text="groups['52'].name"></label></td>-->
+            <!--<td><a href="classification.html#g52" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g53" value="53" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g53" v-text="groups['53'].name"></label></td>-->
+            <!--<td><a href="classification.html#g53" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g54" value="54" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g54" v-text="groups['54'].name"></label></td>-->
+            <!--<td><a href="classification.html#g54" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g55" value="55" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g55" v-text="groups['55'].name"></label></td>-->
+            <!--<td><a href="classification.html#g55" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+
+            <!--<tr>-->
+            <!--<th class="legend-narrow-td">-->
+            <!--<div class="legend-polygon-rect bc-g6"></div>-->
+            <!--</th>-->
+            <!--<th><a href="#" v-on:click="toggleGroupSet(6)" v-text="superGroups['6'].name"></a></th>-->
+            <!--<th><a href="classification.html#g6" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></th>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g61" value="61" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g61" v-text="groups['61'].name"></label></td>-->
+            <!--<td><a href="classification.html#g61" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g62" value="62" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g62" v-text="groups['62'].name"></label></td>-->
+            <!--<td><a href="classification.html#g62" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g63" value="63" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g63" v-text="groups['63'].name"></label></td>-->
+            <!--<td><a href="classification.html#g63" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g64" value="64" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g64" v-text="groups['64'].name"></label></td>-->
+            <!--<td><a href="classification.html#g64" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g65" value="65" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g65" v-text="groups['65'].name"></label></td>-->
+            <!--<td><a href="classification.html#g65" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+
+            <!--<tr>-->
+            <!--<th class="legend-narrow-td">-->
+            <!--<div class="legend-polygon-rect bc-g7"></div>-->
+            <!--</th>-->
+            <!--<th><a href="#" v-on:click="toggleGroupSet(7)" v-text="superGroups['7'].name"></a></th>-->
+            <!--<th><a href="classification.html#g7" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></th>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g71" value="71" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g71" v-text="groups['71'].name"></label></td>-->
+            <!--<td><a href="classification.html#g71" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g72" value="72" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g72" v-text="groups['72'].name"></label></td>-->
+            <!--<td><a href="classification.html#g72" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g73" value="73" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g73" v-text="groups['73'].name"></label></td>-->
+            <!--<td><a href="classification.html#g73" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g74" value="74" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g74" v-text="groups['74'].name"></label></td>-->
+            <!--<td><a href="classification.html#g74" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g75" value="75" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g75" v-text="groups['75'].name"></label></td>-->
+            <!--<td><a href="classification.html#g75" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+
+            <!--<tr>-->
+            <!--<th class="legend-narrow-td">-->
+            <!--<div class="legend-polygon-rect bc-g8"></div>-->
+            <!--</th>-->
+            <!--<th><a href="#" v-on:click="toggleGroupSet(8)" v-text="superGroups['8'].name"></a></th>-->
+            <!--<th><a href="classification.html#g8" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></th>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g81" value="81" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g81" v-text="groups['81'].name"></label></td>-->
+            <!--<td><a href="classification.html#g81" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g82" value="82" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g82" v-text="groups['82'].name"></label></td>-->
+            <!--<td><a href="classification.html#g82" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g83" value="83" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g83" v-text="groups['83'].name"></label></td>-->
+            <!--<td><a href="classification.html#g83" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g84" value="84" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g84" v-text="groups['84'].name"></label></td>-->
+            <!--<td><a href="classification.html#g84" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g85" value="85" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g85" v-text="groups['85'].name"></label></td>-->
+            <!--<td><a href="classification.html#g85" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+
+            <!--<tr>-->
+            <!--<th class="legend-narrow-td">-->
+            <!--<div class="legend-polygon-rect bc-g9"></div>-->
+            <!--</th>-->
+            <!--<th><a href="#" v-on:click="toggleGroupSet(9)" v-text="superGroups['9'].name"></a></th>-->
+            <!--<th><a href="classification.html#g9" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></th>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g91" value="91" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g91" v-text="groups['91'].name"></label></td>-->
+            <!--<td><a href="classification.html#g91" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g92" value="92" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g92" v-text="groups['92'].name"></label></td>-->
+            <!--<td><a href="classification.html#g92" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g93" value="93" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g93" v-text="groups['93'].name"></label></td>-->
+            <!--<td><a href="classification.html#g93" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td class="legend-narrow-td">-->
+            <!--<input type="checkbox" id="g94" value="94" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+            <!--</td>-->
+            <!--<td><label for="g94" v-text="groups['94'].name"></label></td>-->
+            <!--<td><a href="classification.html#g94" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+            <!--</tr>-->
+
+            <!--</tbody>-->
+            <!--</table>-->
+            <!--</div>-->
+
+            <!--</div>-->
+
+            <!--</div>-->
+
+            <!--<div class="btn-group btn-group-justified" role="group">-->
+            <!--<div class="btn-group" role="group">-->
+            <!--<button type="button" class="btn btn-danger" v-on:click="selectAll">Select All</button>-->
+            <!--</div>-->
+            <!--<div class="btn-group" role="group">-->
+            <!--<button type="button" class="btn btn-danger" v-on:click="deselectAll">Deselect All</button>-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <!--</div>-->
+
+            <!--<div id="copyrightInfo" class="cf-row well well-sm">-->
+            <!--<p class="h6">Derived from 2011 UK Census data.</p>-->
+            <!--<p class="h6">&copy; SPA-lab, <a href="http://www.mui.manchester.ac.uk/" target="_cf">Manchester Urban Institute</a>, University of Manchester</p>-->
+            <!--<p class="h6">Contains National Statistics data &copy; Crown copyright and database right 2012.</p>-->
+            <!--<p class="h6">Contains Ordnance Survey data &copy; Crown copyright and database right 2012.</p>-->
+            <!--<a href="http://www.manchester.ac.uk" target="_cf">-->
+            <!--<img src="images/logo-university-of-manchester.png" alt="University of Manchester" height="44px">-->
+            <!--</a>-->
+            <!--<a href="http://www.esrc.ac.uk/" target="_cf">-->
+            <!--<img src="images/esrc.png" alt="ESRC" height="44px">-->
+            <!--</a>-->
+            <!--<a href="http://www.esrc.ac.uk/research/our-research/secondary-data-analysis-initiative/" target="_cf">-->
+            <!--<img src="images/sdai.png" alt="SDAI" height="44px">-->
+            <!--</a>-->
+            <!--</div>-->
+
+            <!--</div>-->
+
+          </div>
+
         </div>
       </div>
+
+
     </div>
+
 
   </div>
 
-  <script type="text/javascript" src="libs/vue-2.5.16/vue.js"></script>
-  <!--<script type="text/javascript" src="libs/vue-2.5.16/vue.min.js"></script>-->
-
-  <!--<script type="text/javascript" src="libs/popper.js-1.12.6/esm/popper.js"></script>-->
-  <!--<script type="text/javascript" src="libs/popper.js-1.12.6/esm/popper.min.js"></script>-->
-  <script type="text/javascript" src="libs/popper.js-1.12.6/umd/popper.js"></script>
-  <!--<script type="text/javascript" src="libs/popper.js-1.12.6/umd/popper.min.js"></script>-->
-  <!--<script type="text/javascript" src="libs/popper.js-1.12.6/popper.js"></script>-->
-  <!--<script type="text/javascript" src="libs/popper.js-1.12.6/popper.min.js"></script>-->
 
 
 
-  <!--<script type="text/javascript" src="libs/leaflet-1.3.1/leaflet.js"></script>-->
-  <script type="text/javascript" src="libs/leaflet-1.3.1/leaflet-src.js"></script>
-  <script type="text/javascript" src="libs/leaflet-plugins/leaflet-providers-1.1.17/leaflet-providers.js"></script>
 
-  <script type="text/javascript" src="libs/bootstrap-material-design-v4.1.1/js/bootstrap-material-design.js"></script>
-  <!--<script type="text/javascript" src="libs/bootstrap-material-design-v4.1.1/js/bootstrap-material-design.min.js"></script>-->
+</div>
 
-  <!--<script type="text/javascript" src="js/nuts-3-2013-polygons-v1-epsg-4326-p4.js"></script>-->
-  <script type="text/javascript" src="js/nuts-3-2013-polygons-v1-epsg-4326-p6.js"></script>
-  <!--<script type="text/javascript" src="js/nuts-3-2013-polygons-v1-epsg-4326-typology-p4.js"></script>-->
-  <!--<script type="text/javascript" src="js/nuts-3-2013-polygons-v1-epsg-4326-typology-p6.js"></script>-->
-  <script type="text/javascript" src="js/map.js"></script>
+<script type="text/javascript" src="libs/vue-2.5.16/vue.js"></script>
+<!--<script type="text/javascript" src="libs/vue-2.5.16/vue.min.js"></script>-->
+
+<!--<script type="text/javascript" src="libs/popper.js-1.12.6/esm/popper.js"></script>-->
+<!--<script type="text/javascript" src="libs/popper.js-1.12.6/esm/popper.min.js"></script>-->
+<script type="text/javascript" src="libs/popper.js-1.12.6/umd/popper.js"></script>
+<!--<script type="text/javascript" src="libs/popper.js-1.12.6/umd/popper.min.js"></script>-->
+<!--<script type="text/javascript" src="libs/popper.js-1.12.6/popper.js"></script>-->
+<!--<script type="text/javascript" src="libs/popper.js-1.12.6/popper.min.js"></script>-->
 
 
-  <script>
-    $(document).ready(function() {
-      $('body').bootstrapMaterialDesign();
-    });
-  </script>
+
+<!--<script type="text/javascript" src="libs/leaflet-1.3.1/leaflet.js"></script>-->
+<script type="text/javascript" src="libs/leaflet-1.3.1/leaflet-src.js"></script>
+<script type="text/javascript" src="libs/leaflet-plugins/leaflet-providers-1.1.17/leaflet-providers.js"></script>
+<script type="text/javascript" src="libs/leaflet-plugins/sidebar-v2-0.4.0/leaflet-sidebar.js"></script>
+<!--<script type="text/javascript" src="libs/leaflet-plugins/sidebar-v2-0.4.0/leaflet-sidebar.min.js"></script>-->
+
+<script type="text/javascript" src="libs/bootstrap-material-design-v4.1.1/js/bootstrap-material-design.js"></script>
+<!--<script type="text/javascript" src="libs/bootstrap-material-design-v4.1.1/js/bootstrap-material-design.min.js"></script>-->
+
+<!--<script type="text/javascript" src="js/nuts-3-2013-polygons-v1-epsg-4326-p4.js"></script>-->
+<script type="text/javascript" src="js/nuts-3-2013-polygons-v1-epsg-4326-p6.js"></script>
+<!--<script type="text/javascript" src="js/nuts-3-2013-polygons-v1-epsg-4326-typology-p4.js"></script>-->
+<!--<script type="text/javascript" src="js/nuts-3-2013-polygons-v1-epsg-4326-typology-p6.js"></script>-->
+<script type="text/javascript" src="js/map.js"></script>
+
+
+<script>
+  $(document).ready(function() {
+    $('body').bootstrapMaterialDesign();
+  });
+</script>
 
 </body>
 </html>
