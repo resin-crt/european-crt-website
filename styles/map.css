@@ -38,6 +38,10 @@ body {
   background-size: cover;
 }
 
+#navBarHost {
+  z-index: 5000;
+}
+
 #mapContainer {
   /*position: relative;*/
   padding-left: 0;
