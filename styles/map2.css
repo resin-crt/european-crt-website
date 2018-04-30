@@ -39,8 +39,49 @@ body {
 }
 
 #navBarHost {
-  z-index: 5000;
+  z-index: 3000;
 }
+
+
+
+.xsBrandHeading {
+  font-size: 0.75rem;
+}
+
+.smBrandHeading {
+  display: none;
+  font-size: 1.00rem;
+}
+
+.mdBrandHeading {
+  display: none;
+}
+
+
+@media only screen and (max-width: 320px) {
+  .websiteLogo {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .xsBrandHeading {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 459px) {
+  .smBrandHeading {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 460px) and (max-width: 575px) {
+  .mdBrandHeading {
+    display: inline-block;
+  }
+}
+
 
 #mapContainer {
   /*position: relative;*/
