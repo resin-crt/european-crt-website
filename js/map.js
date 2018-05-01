@@ -1,6 +1,6 @@
 
 
-var BaseMapLayers = {
+let BaseMapLayers = {
 
   /**
    * All the names of the basemap layers that are defined by the leaflet providers plugin.
@@ -254,7 +254,7 @@ var BaseMapLayers = {
 
 };
 
-var MapLayers = {
+let MapLayers = {
   // TODO: Update the documentation.
 
   /**
@@ -848,6 +848,9 @@ var MapLayers = {
      * Creates the NUTS3 layer.
      */
     createLayer: function() {
+
+      // loaderViewModel.isVisible = true;
+
       // TODO: RESIN - Decide which polygon features will be used in the last version.
       // this.geoJSON = AppData.nuts3PolygonsTypologyOnlyP6;
       this.geoJSON = AppData.nuts3PolygonsP6;
@@ -915,6 +918,8 @@ var MapLayers = {
       //     this.featureToLayerDictionary[this.mapLayer._layers[key].feature.properties.C] = key;
       //   }
       // }
+
+      // loaderViewModel.isVisible = false;
 
     },
 
@@ -986,7 +991,7 @@ var MapLayers = {
  *
  * @type {}
  */
-var Spatial = {
+let Spatial = {
   // TODO: Update the documentation here.
 
   /**
@@ -1031,6 +1036,8 @@ var Spatial = {
    */
   initializeMap: function() {
 
+    loaderViewModel.isVisible = true;
+
     Spatial.map = L.map('map', {
       center: Spatial.mapOptions.center,
       zoom: Spatial.mapOptions.zoom,
@@ -1059,6 +1066,8 @@ var Spatial = {
 
     Spatial.setInitialBaseMapLayer();
 
+    loaderViewModel.isVisible = false;
+
   },
 
   /**
@@ -1079,6 +1088,45 @@ var Spatial = {
 
 };
 
+
+
+
+// ================================================================================
+//  View Models.
+
+/**
+ * The loaderViewModel provides the data and logic to toggle the visibility of loader.
+ *
+ * @type {Vue} - A Vue object with the model and methods used in the view model.
+ */
+let loaderViewModel = new Vue({
+
+  /**
+   * The name of the view model.
+   */
+  el: '#spinnerVM',
+
+  /**
+   * The model of the view model.
+   */
+  data: {
+
+    /**
+     * Indicates whether the spinner is visible or not.
+     */
+    isVisible: false
+
+  }
+
+});
+
+
+
+
+
+
+//
+// ================================================================================
 
 
 // ================================================================================
