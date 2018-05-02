@@ -56,7 +56,7 @@ body {
 
 .map-container {
   /*background-color: #027fb8;*/
-  /*position: relative;*/
+  position: relative;
   padding-left: 0;
   padding-right: 0;
   height: 100%;
@@ -65,14 +65,13 @@ body {
   max-width: 100%;
 }
 
-#spinnerVM {
+.spinner {
   /*float: none;*/
   height: 100%;
   width: 100%;
   position: absolute;
   z-index: 1000;
 }
-
 
 #map {
   /*background-color: #ffa000;*/
@@ -83,8 +82,6 @@ body {
   width: 100%;
 }
 
-
-/* ================================================================================ */
 
 /*
  *  ================================================================================
@@ -500,4 +497,3 @@ body {
 .tooltip {
   z-index: 4070;
 }
-

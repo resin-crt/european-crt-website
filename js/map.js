@@ -1066,7 +1066,7 @@ let Spatial = {
 
     Spatial.setInitialBaseMapLayer();
 
-    // loaderViewModel.isVisible = false; // TODO: Change this Loader visibility
+    loaderViewModel.isVisible = false;
 
   },
 
