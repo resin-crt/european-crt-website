@@ -108,6 +108,7 @@
       <div class="sidebar-tabs">
         <ul role="tablist">
           <li id="infoButton" data-toggle="tooltip" data-placement="left" title="Information" aria-label="Information">
+            <!--<a href="#info" role="tab"><i class="fas fa-bars"></i></a>-->
             <a href="#info" role="tab"><i class="fas fa-bars"></i></a>
           </li>
         </ul>
@@ -123,27 +124,29 @@
             <div class="cf-row">
               <strong>Select map type:</strong>
 
-              <div id="toggleBaseMapButtonsVM"
-                   class="btn-group" role="group">
-                <div class="btn-group" role="group">
-                  <button id="darkButton" type="button" class="btn btn-danger"
-                          v-bind:class="[currentBaseMap == 'dark' ? 'active' : '']" v-text="baseMapNames[0]"
-                          v-on:click="setCurrentBaseMap('dark')">
-                  </button>
-                </div>
-                <div class="btn-group" role="group">
-                  <button id="lightButton" type="button" class="btn btn-danger"
-                          v-bind:class="[currentBaseMap == 'light' ? 'active' : '']" v-text="baseMapNames[1]"
-                          v-on:click="setCurrentBaseMap('light')">
-                  </button>
-                </div>
-                <div class="btn-group" role="group">
-                  <button id="roadsButton" type="button" class="btn btn-danger"
-                          v-bind:class="[currentBaseMap == 'roads' ? 'active' : '']" v-text="baseMapNames[2]"
-                          v-on:click="setCurrentBaseMap('roads')">
-                  </button>
-                </div>
-              </div>
+
+
+
+              <!--<div id="toggleBaseMapButtonsVM" class="btn-group" role="group">-->
+                <!--<div class="btn-group btn-group-justified" role="group">-->
+                  <!--<button id="darkButton" type="button" class="btn btn-danger"-->
+                          <!--v-bind:class="[currentBaseMap == 'dark' ? 'active' : '']" v-text="baseMapNames[0]"-->
+                          <!--v-on:click="setCurrentBaseMap('dark')">-->
+                  <!--</button>-->
+                <!--</div>-->
+                <!--<div class="btn-group" role="group">-->
+                  <!--<button id="lightButton" type="button" class="btn btn-danger"-->
+                          <!--v-bind:class="[currentBaseMap == 'light' ? 'active' : '']" v-text="baseMapNames[1]"-->
+                          <!--v-on:click="setCurrentBaseMap('light')">-->
+                  <!--</button>-->
+                <!--</div>-->
+                <!--<div class="btn-group" role="group">-->
+                  <!--<button id="roadsButton" type="button" class="btn btn-danger"-->
+                          <!--v-bind:class="[currentBaseMap == 'roads' ? 'active' : '']" v-text="baseMapNames[2]"-->
+                          <!--v-on:click="setCurrentBaseMap('roads')">-->
+                  <!--</button>-->
+                <!--</div>-->
+              <!--</div>-->
             </div>
 
             <!--<div class="cf-row">-->

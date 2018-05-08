@@ -1077,7 +1077,7 @@ let Spatial = {
 
     // Get the current basemap that has been selected by the user.
     //let namedBaseMap = toggleBaseMapViewModel.currentBaseMap;
-    let namedBaseMap = 'dark';
+    let namedBaseMap = 'dark'; // TODO: RESIN - Change this !!!
     let baseLayer = BaseMapLayers.namedBasemapLayers[namedBaseMap].mapLayer;
 
     // Add the basemap layer in to the map.

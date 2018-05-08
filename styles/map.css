@@ -82,6 +82,32 @@ body {
   width: 100%;
 }
 
+#infoContainer {
+  /*background: antiquewhite;*/
+  /*background: blanchedalmond;*/
+  /*background: cadetblue;*/
+  /*background: darkseagreen;*/
+  /*background: indianred;*/
+  /*background: lightblue;*/
+  /*background: lightsalmon;*/
+  /*background: skyblue;*/
+  /*background: sandybrown;*/
+  /*background: seagreen;*/
+  /*background: sienna;*/
+  /*background: slategray;*/
+  /*background: steelblue;*/
+  /*color: antiquewhite;*/
+  height: 100%;
+  /*width: 30%;*/
+  overflow-y: auto;
+  padding: 10px 10px 10px 10px;
+}
+
+.cf-row {
+  margin: 10px 0px 0px 0px;
+}
+
+
 
 /*
  *  ================================================================================
