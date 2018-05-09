@@ -11,7 +11,7 @@
   <meta name="author" content="Vasilis Vlastaras, University of Manchester">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!--<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">-->
+  <link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon">
 
   <!-- Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
@@ -118,65 +118,118 @@
 
         <div class="sidebar-pane" id="info">
 
-          <!--<div id="infoContainer" class="col-lg-3 col-md-4 col-sm-4 col-xs-4">-->
+
           <div id="infoContainer">
 
             <div class="cf-row">
 
               <!--<strong>Select map type:</strong>-->
 
-              <fieldset>
-                <strong>Just a fieldset:</strong>
+              <!--<fieldset>-->
+                <!--&lt;!&ndash;<strong>1. Just a fieldset:</strong>&ndash;&gt;-->
+                <!--1. Just a fieldset:-->
 
                 <!--<button type="button" class="btn btn-raised btn-sm btn-success">Dark</button>-->
                 <!--<button type="button" class="btn btn-raised btn-sm btn-success">Light</button>-->
                 <!--<button type="button" class="btn btn-raised btn-sm btn-success">Roads</button>-->
-                <button type="button" class="btn btn-raised btn-danger">Dark</button>
-                <button type="button" class="btn btn-raised btn-danger">Light</button>
-                <button type="button" class="btn btn-raised btn-danger">Roads</button>
-              </fieldset>
+                <!--<button type="button" class="btn btn-raised btn-danger">Dark</button>-->
+                <!--<button type="button" class="btn btn-raised btn-danger">Light</button>-->
+                <!--<button type="button" class="btn btn-raised btn-danger">Roads</button>-->
+              <!--</fieldset>-->
 
-              <fieldset>
-                <strong>Btn Group:</strong>
+              <!--<fieldset>-->
+                <!--2. Btn Group:-->
 
-                <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-raised btn-danger">Dark</button>
-                  <button type="button" class="btn btn-raised btn-danger">Light</button>
-                  <button type="button" class="btn btn-raised btn-danger">Roads</button>
-                </div>
-              </fieldset>
+                <!--<div class="btn-group" role="group" aria-label="Basic example">-->
+                  <!--<button type="button" class="btn btn-raised btn-danger">Dark</button>-->
+                  <!--<button type="button" class="btn btn-raised btn-danger">Light</button>-->
+                  <!--<button type="button" class="btn btn-raised btn-danger">Roads</button>-->
+                <!--</div>-->
+              <!--</fieldset>-->
 
-              <fieldset>
-                <strong>Btn Group Toggle:</strong>
+              <!--<fieldset>-->
+                <!--3. Btn Group Toggle:-->
 
-                <div class="btn-group-toggle" data-toggle="buttons">
-                  <button type="button" class="btn btn-raised btn-danger active" data-toggle="button" aria-pressed="true">
-                    Dark
-                  </button>
-                  <button type="button" class="btn btn-raised btn-danger" data-toggle="button" aria-pressed="false">
-                    Light
-                  </button>
-                  <button type="button" class="btn btn-raised btn-danger" data-toggle="button" aria-pressed="false">
-                    Roads
-                  </button>
-                </div>
-              </fieldset>
+                <!--<div class="btn-group-toggle" data-toggle="buttons">-->
+                  <!--<button type="button" class="btn btn-raised btn-danger active" data-toggle="button" aria-pressed="true">-->
+                    <!--Dark-->
+                  <!--</button>-->
+                  <!--<button type="button" class="btn btn-raised btn-danger" data-toggle="button" aria-pressed="false">-->
+                    <!--Light-->
+                  <!--</button>-->
+                  <!--<button type="button" class="btn btn-raised btn-danger" data-toggle="button" aria-pressed="false">-->
+                    <!--Roads-->
+                  <!--</button>-->
+                <!--</div>-->
+              <!--</fieldset>-->
 
-              <fieldset>
-                <strong>Btn Group Toggle (Labels):</strong>
+              <!--<fieldset>-->
+                <!--4. Btn Group Toggle (Labels):-->
 
-                <div class="btn-group-toggle" data-toggle="buttons">
-                  <label class="btn btn-raised btn-danger active">
-                    Dark
-                  </label>
-                  <label class="btn btn-raised btn-danger">
-                    Light
-                  </label>
-                  <label class="btn btn-raised btn-danger">
-                    Roads
-                  </label>
-                </div>
-              </fieldset>
+                <!--<div class="btn-group-toggle" data-toggle="buttons">-->
+                  <!--<label class="btn btn-raised btn-danger active">-->
+                    <!--Dark-->
+                  <!--</label>-->
+                  <!--<label class="btn btn-raised btn-danger">-->
+                    <!--Light-->
+                  <!--</label>-->
+                  <!--<label class="btn btn-raised btn-danger">-->
+                    <!--Roads-->
+                  <!--</label>-->
+                <!--</div>-->
+              <!--</fieldset>-->
+
+              <!---->
+
+              <!--<fieldset>-->
+                <!--5. Btn Group with Labels:-->
+
+                <!--<div class="btn-group" role="group" aria-label="Basic example 2" data-toggle="buttons">-->
+                  <!--<label class="btn btn-danger active">-->
+                    <!--Dark-->
+                  <!--</label>-->
+                  <!--<label class="btn btn-danger">-->
+                    <!--Light-->
+                  <!--</label>-->
+                  <!--<label class="btn btn-danger">-->
+                    <!--Roads-->
+                  <!--</label>-->
+
+                  <!--<button type="button" class="btn btn-raised btn-danger active" data-toggle="button" aria-pressed="true">-->
+                    <!--Dark 1-->
+                  <!--</button>-->
+                  <!--<button type="button" class="btn btn-raised btn-danger" data-toggle="button" aria-pressed="false">-->
+                    <!--Light 1-->
+                  <!--</button>-->
+                  <!--<button type="button" class="btn btn-raised btn-danger" data-toggle="button" aria-pressed="false">-->
+                    <!--Roads 1-->
+                  <!--</button>-->
+                <!--</div>-->
+              <!--</fieldset>-->
+
+
+
+              <div id="toggleBaseMapButtonsVM" class="btn-group-toggle" role="group" aria-label="Select basemap type" data-toggle="buttons">
+                <!--<label id="darkButton" class="btn btn-raised btn-danger active">-->
+                  <!--Dark-->
+                <!--</label>-->
+                <!--<label id="lightButton" class="btn btn-raised btn-danger">-->
+                  <!--Light-->
+                <!--</label>-->
+                <!--<label id="roadsButton" class="btn btn-raised btn-danger">-->
+                  <!--Roads-->
+                <!--</label>-->
+
+                <button id="darkButton" type="button" class="btn btn-raised btn-danger active" data-toggle="button" aria-pressed="true">
+                  Dark
+                </button>
+                <button id="lightButton" type="button" class="btn btn-raised btn-danger" data-toggle="button" aria-pressed="false">
+                  Light
+                </button>
+                <button id="roadsButton" type="button" class="btn btn-raised btn-danger" data-toggle="button" aria-pressed="false">
+                  Roads
+                </button>
+              </div>
 
 
               <!--<div id="toggleBaseMapButtonsVM" class="btn-group" role="group">-->
@@ -199,7 +252,10 @@
                   <!--</button>-->
                 <!--</div>-->
               <!--</div>-->
+
             </div>
+
+            <div class="cf-row">lala</div>
 
             <!--<div class="cf-row">-->
               <!--<strong>Show Commute Flows using:</strong>-->
