@@ -859,7 +859,7 @@ let MapLayers = {
         // style: this.namedBasemapLayers[toggleBaseMapViewModel.currentBaseMap].style,
         // style: this.namedBasemapLayers['dark'].supergroupStyles,
 
-        // TODO: Please commit
+        // TODO: RESIN - We need to find a way to render based on supergroups or groups
         style: function(feature) {
           return MapLayers.NUTS3.namedBasemapLayers['dark'].supergroupStyles[feature.properties.SG];
           // return MapLayers.NUTS3.namedBasemapLayers[toggleBaseMapViewModel.currentBaseMap].supergroupStyles[feature.properties.SG];
@@ -932,9 +932,9 @@ let MapLayers = {
     highlightNuts3: function(feature, layer) {
 
       // Get the named basemap layer.
-      // let namedBaseMap = toggleBaseMapViewModel.currentBaseMap;
+      let namedBaseMap = toggleBaseMapViewModel.currentBaseMap;
       // TODO: RESIN
-      let namedBaseMap = 'dark';
+      //let namedBaseMap = 'dark';
 
       // Highlight the current NUTS3.
       layer.setStyle(this.namedBasemapLayers[namedBaseMap].highlightedStyle);
@@ -962,9 +962,9 @@ let MapLayers = {
     resetNuts3Style: function(feature, layer) {
 
       // Get the named basemap layer.
-      // let namedBaseMap = toggleBaseMapViewModel.currentBaseMap;
+      let namedBaseMap = toggleBaseMapViewModel.currentBaseMap;
       // TODO: RESIN
-      let namedBaseMap = 'dark';
+      //let namedBaseMap = 'dark';
 
       // Reset the style of the NUTS3 polygon.
       layer.defaultOptions.style = this.namedBasemapLayers[namedBaseMap].style;
@@ -1076,8 +1076,8 @@ let Spatial = {
   setInitialBaseMapLayer: function() {
 
     // Get the current basemap that has been selected by the user.
-    //let namedBaseMap = toggleBaseMapViewModel.currentBaseMap;
-    let namedBaseMap = 'dark'; // TODO: RESIN - Change this !!!
+    let namedBaseMap = toggleBaseMapViewModel.currentBaseMap;
+    // let namedBaseMap = 'dark'; // TODO: RESIN - Change this !!!
     let baseLayer = BaseMapLayers.namedBasemapLayers[namedBaseMap].mapLayer;
 
     // Add the basemap layer in to the map.
@@ -1119,6 +1119,76 @@ let loaderViewModel = new Vue({
   }
 
 });
+
+
+
+
+/**
+ * The toggleBaseMapViewModel provides tha data and logic to toggle the BaseMap layer.
+ *
+ * @type {Vue} - A Vue object with the model and methods used in the view model.
+ */
+let toggleBaseMapViewModel = new Vue({
+
+  /**
+   * The name of the view model.
+   */
+  el: '#toggleBaseMapButtonsVM',
+
+  /**
+   * The model of the view model.
+   */
+  data: {
+
+    /**
+     * The current base map.
+     */
+    currentBaseMap: 'dark',
+
+    /**
+     * The basemap names.
+     */
+    baseMapNames: [ 'Dark', 'Light', 'Roads' ]
+
+  },
+
+  /**
+   * The model of the view model.
+   */
+  methods: {
+
+    /**
+     * Sets the current basemap.
+     *
+     * @param namedBaseMap - The named basemap.
+     */
+    setCurrentBaseMap(namedBaseMap) {
+
+      // Remove the current basemap layer.
+      Spatial.map.removeLayer(BaseMapLayers.namedBasemapLayers[this.currentBaseMap].mapLayer);
+
+      this.currentBaseMap = namedBaseMap;
+
+      // Add the new current basemap layer.
+      let baseLayer = BaseMapLayers.namedBasemapLayers[this.currentBaseMap].mapLayer;
+
+      baseLayer.addTo(Spatial.map);
+      baseLayer.bringToBack();
+
+      // Make sure the associated styles for MSOAs layer is applied.
+      //MapLayers.MSOAs.mapLayer.options.style = MapLayers.MSOAs.namedBasemapLayers[namedBaseMap].style;
+      //MapLayers.MSOAs.mapLayer.setStyle(MapLayers.MSOAs.namedBasemapLayers[namedBaseMap].style);
+
+      //MapLayers.MSOAs.renderCommuteFlowPolygons();
+      //Spatial.renderCommuteFlows();
+
+    }
+
+  }
+
+});
+
+
 
 
 

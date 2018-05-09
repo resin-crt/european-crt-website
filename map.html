@@ -118,141 +118,35 @@
 
         <div class="sidebar-pane" id="info">
 
-
           <div id="infoContainer">
 
             <div class="cf-row">
+              <div id="toggleBaseMapButtonsVM" class="btn-group-toggle" role="group"
+                   aria-label="Select base map" data-toggle="buttons">
+                Select base map:
 
-              <!--<strong>Select map type:</strong>-->
-
-              <!--<fieldset>-->
-                <!--&lt;!&ndash;<strong>1. Just a fieldset:</strong>&ndash;&gt;-->
-                <!--1. Just a fieldset:-->
-
-                <!--<button type="button" class="btn btn-raised btn-sm btn-success">Dark</button>-->
-                <!--<button type="button" class="btn btn-raised btn-sm btn-success">Light</button>-->
-                <!--<button type="button" class="btn btn-raised btn-sm btn-success">Roads</button>-->
-                <!--<button type="button" class="btn btn-raised btn-danger">Dark</button>-->
-                <!--<button type="button" class="btn btn-raised btn-danger">Light</button>-->
-                <!--<button type="button" class="btn btn-raised btn-danger">Roads</button>-->
-              <!--</fieldset>-->
-
-              <!--<fieldset>-->
-                <!--2. Btn Group:-->
-
-                <!--<div class="btn-group" role="group" aria-label="Basic example">-->
-                  <!--<button type="button" class="btn btn-raised btn-danger">Dark</button>-->
-                  <!--<button type="button" class="btn btn-raised btn-danger">Light</button>-->
-                  <!--<button type="button" class="btn btn-raised btn-danger">Roads</button>-->
-                <!--</div>-->
-              <!--</fieldset>-->
-
-              <!--<fieldset>-->
-                <!--3. Btn Group Toggle:-->
-
-                <!--<div class="btn-group-toggle" data-toggle="buttons">-->
-                  <!--<button type="button" class="btn btn-raised btn-danger active" data-toggle="button" aria-pressed="true">-->
-                    <!--Dark-->
-                  <!--</button>-->
-                  <!--<button type="button" class="btn btn-raised btn-danger" data-toggle="button" aria-pressed="false">-->
-                    <!--Light-->
-                  <!--</button>-->
-                  <!--<button type="button" class="btn btn-raised btn-danger" data-toggle="button" aria-pressed="false">-->
-                    <!--Roads-->
-                  <!--</button>-->
-                <!--</div>-->
-              <!--</fieldset>-->
-
-              <!--<fieldset>-->
-                <!--4. Btn Group Toggle (Labels):-->
-
-                <!--<div class="btn-group-toggle" data-toggle="buttons">-->
-                  <!--<label class="btn btn-raised btn-danger active">-->
-                    <!--Dark-->
-                  <!--</label>-->
-                  <!--<label class="btn btn-raised btn-danger">-->
-                    <!--Light-->
-                  <!--</label>-->
-                  <!--<label class="btn btn-raised btn-danger">-->
-                    <!--Roads-->
-                  <!--</label>-->
-                <!--</div>-->
-              <!--</fieldset>-->
-
-              <!---->
-
-              <!--<fieldset>-->
-                <!--5. Btn Group with Labels:-->
-
-                <!--<div class="btn-group" role="group" aria-label="Basic example 2" data-toggle="buttons">-->
-                  <!--<label class="btn btn-danger active">-->
-                    <!--Dark-->
-                  <!--</label>-->
-                  <!--<label class="btn btn-danger">-->
-                    <!--Light-->
-                  <!--</label>-->
-                  <!--<label class="btn btn-danger">-->
-                    <!--Roads-->
-                  <!--</label>-->
-
-                  <!--<button type="button" class="btn btn-raised btn-danger active" data-toggle="button" aria-pressed="true">-->
-                    <!--Dark 1-->
-                  <!--</button>-->
-                  <!--<button type="button" class="btn btn-raised btn-danger" data-toggle="button" aria-pressed="false">-->
-                    <!--Light 1-->
-                  <!--</button>-->
-                  <!--<button type="button" class="btn btn-raised btn-danger" data-toggle="button" aria-pressed="false">-->
-                    <!--Roads 1-->
-                  <!--</button>-->
-                <!--</div>-->
-              <!--</fieldset>-->
-
-
-
-              <div id="toggleBaseMapButtonsVM" class="btn-group-toggle" role="group" aria-label="Select basemap type" data-toggle="buttons">
-                <!--<label id="darkButton" class="btn btn-raised btn-danger active">-->
-                  <!--Dark-->
-                <!--</label>-->
-                <!--<label id="lightButton" class="btn btn-raised btn-danger">-->
-                  <!--Light-->
-                <!--</label>-->
-                <!--<label id="roadsButton" class="btn btn-raised btn-danger">-->
-                  <!--Roads-->
-                <!--</label>-->
-
-                <button id="darkButton" type="button" class="btn btn-raised btn-danger active" data-toggle="button" aria-pressed="true">
-                  Dark
+                <button id="darkButton" type="button" class="btn btn-danger"
+                        data-toggle="button"
+                        v-bind:aria-pressed="[currentBaseMap == 'dark' ? 'true' : 'false']"
+                        v-bind:class="[currentBaseMap == 'dark' ? 'btn-raised active' : '']"
+                        v-text="baseMapNames[0]"
+                        v-on:click="setCurrentBaseMap('dark')">
                 </button>
-                <button id="lightButton" type="button" class="btn btn-raised btn-danger" data-toggle="button" aria-pressed="false">
-                  Light
+                <button id="lightButton" type="button" class="btn btn-danger"
+                        data-toggle="button"
+                        v-bind:aria-pressed="[currentBaseMap == 'light' ? 'true' : 'false']"
+                        v-bind:class="[currentBaseMap == 'light' ? 'btn-raised active' : '']"
+                        v-text="baseMapNames[1]"
+                        v-on:click="setCurrentBaseMap('light')">
                 </button>
-                <button id="roadsButton" type="button" class="btn btn-raised btn-danger" data-toggle="button" aria-pressed="false">
-                  Roads
+                <button id="roadsButton" type="button" class="btn btn-danger"
+                        data-toggle="button"
+                        v-bind:aria-pressed="[currentBaseMap == 'roads' ? 'true' : 'false']"
+                        v-bind:class="[currentBaseMap == 'roads' ? 'btn-raised active' : '']"
+                        v-text="baseMapNames[2]"
+                        v-on:click="setCurrentBaseMap('roads')">
                 </button>
               </div>
-
-
-              <!--<div id="toggleBaseMapButtonsVM" class="btn-group" role="group">-->
-                <!--<div class="btn-group btn-group-justified" role="group">-->
-                  <!--<button id="darkButton" type="button" class="btn btn-danger"-->
-                          <!--v-bind:class="[currentBaseMap == 'dark' ? 'active' : '']" v-text="baseMapNames[0]"-->
-                          <!--v-on:click="setCurrentBaseMap('dark')">-->
-                  <!--</button>-->
-                <!--</div>-->
-                <!--<div class="btn-group" role="group">-->
-                  <!--<button id="lightButton" type="button" class="btn btn-danger"-->
-                          <!--v-bind:class="[currentBaseMap == 'light' ? 'active' : '']" v-text="baseMapNames[1]"-->
-                          <!--v-on:click="setCurrentBaseMap('light')">-->
-                  <!--</button>-->
-                <!--</div>-->
-                <!--<div class="btn-group" role="group">-->
-                  <!--<button id="roadsButton" type="button" class="btn btn-danger"-->
-                          <!--v-bind:class="[currentBaseMap == 'roads' ? 'active' : '']" v-text="baseMapNames[2]"-->
-                          <!--v-on:click="setCurrentBaseMap('roads')">-->
-                  <!--</button>-->
-                <!--</div>-->
-              <!--</div>-->
-
             </div>
 
             <div class="cf-row">lala</div>
@@ -859,7 +753,7 @@
 
   <!--<script type="text/javascript" src="js/nuts-3-2013-polygons-v1-epsg-4326-p4.js"></script>-->
   <!--here-->
-  <!--<script type="text/javascript" src="js/nuts-3-2013-polygons-v1-epsg-4326-p6.js"></script>-->
+  <script type="text/javascript" src="js/nuts-3-2013-polygons-v1-epsg-4326-p6.js"></script>
   <!--<script type="text/javascript" src="js/nuts-3-2013-polygons-v1-epsg-4326-typology-p4.js"></script>-->
   <!--<script type="text/javascript" src="js/nuts-3-2013-polygons-v1-epsg-4326-typology-p6.js"></script>-->
   <!--here-->
