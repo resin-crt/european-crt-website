@@ -166,13 +166,13 @@ body {
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991.99px) {
   .sidebar {
     width: 600px;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199.99px) {
   .sidebar {
     width: 600px;
   }
@@ -317,17 +317,17 @@ body {
   display: block;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991.99px) {
   .sidebar-pane {
     /*min-width: 265px;*/
     min-width: 560px;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199.99px) {
   .sidebar-pane {
     /*min-width: 350px;*/
-    min-width: 650px;
+    min-width: 540px;
   }
 }
 
@@ -425,7 +425,7 @@ body {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199.99px) {
   .sidebar-left ~ .sidebar-map .leaflet-left {
     /*left: 400px;*/
     left: 700px;
@@ -459,7 +459,7 @@ body {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199.99px) {
   .sidebar-right ~ .sidebar-map .leaflet-right {
     /*right: 400px;*/
     right: 700px;
