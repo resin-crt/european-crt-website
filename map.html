@@ -17,8 +17,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
 
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="libs/bootstrap-material-design-v4.1.1/css/bootstrap-material-design.css" >
+  <!--<link rel="stylesheet" href="libs/bootstrap-material-design-v4.1.1/css/bootstrap-material-design.css" >-->
   <!--<link rel="stylesheet" href="libs/bootstrap-material-design-v4.1.1/css/bootstrap-material-design.min.css" >-->
+  <link rel="stylesheet" href="styles/bootstrap-material-design-modified.css" >
 
   <!-- Font-Awesome -->
   <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fa-brands.css">-->
@@ -107,9 +108,10 @@
     <div id="sidebar" class="sidebar collapsed sidebar-right leaflet-touch">
       <div class="sidebar-tabs">
         <ul role="tablist">
-          <li id="infoButton" data-toggle="tooltip" data-placement="left" title="Information" aria-label="Information">
+          <li id="infoButton" data-toggle="tooltip" data-placement="left" title="Sidebar" aria-label="Sidebar">
             <!--<a href="#info" role="tab"><i class="fas fa-bars"></i></a>-->
-            <a href="#info" role="tab"><i class="fas fa-bars"></i></a>
+            <!--<a href="#info" role="tab"><i class="fas fa-bars"></i></a>-->
+            <a href="#info" role="tab"><i class="crt-material-icons">menu</i></a>
           </li>
         </ul>
       </div>
@@ -120,52 +122,85 @@
 
           <div id="infoContainer">
 
-            <div class="cf-row">
+            <!--<div class="crt-row">-->
+
+              <!--<div id="toggleBaseMapButtonsVM" class="btn-group-toggle" role="group"-->
+                   <!--aria-label="Select base map" data-toggle="buttons">-->
+                <!--Select base map:-->
+
+                <!--<button id="darkButton" type="button" class="btn btn-danger"-->
+                        <!--data-toggle="button"-->
+                        <!--v-bind:aria-pressed="[currentBaseMap == 'dark' ? 'true' : 'false']"-->
+                        <!--v-bind:class="[currentBaseMap == 'dark' ? 'btn-raised active' : '']"-->
+                        <!--v-text="baseMapNames[0]"-->
+                        <!--v-on:click="setCurrentBaseMap('dark')">-->
+                <!--</button>-->
+                <!--<button id="lightButton" type="button" class="btn btn-danger"-->
+                        <!--data-toggle="button"-->
+                        <!--v-bind:aria-pressed="[currentBaseMap == 'light' ? 'true' : 'false']"-->
+                        <!--v-bind:class="[currentBaseMap == 'light' ? 'btn-raised active' : '']"-->
+                        <!--v-text="baseMapNames[1]"-->
+                        <!--v-on:click="setCurrentBaseMap('light')">-->
+                <!--</button>-->
+                <!--<button id="roadsButton" type="button" class="btn btn-danger"-->
+                        <!--data-toggle="button"-->
+                        <!--v-bind:aria-pressed="[currentBaseMap == 'roads' ? 'true' : 'false']"-->
+                        <!--v-bind:class="[currentBaseMap == 'roads' ? 'btn-raised active' : '']"-->
+                        <!--v-text="baseMapNames[2]"-->
+                        <!--v-on:click="setCurrentBaseMap('roads')">-->
+                <!--</button>-->
+              <!--</div>-->
+
+            <!--</div>-->
+
+            <div class="crt-row">
 
               <div id="toggleBaseMapButtonsVM" class="btn-group-toggle" role="group"
-                   aria-label="Select base map" data-toggle="buttons">
-                Select base map:
+                   aria-label="Select basemap" data-toggle="buttons">
+                Basemap:
 
-                <button id="darkButton" type="button" class="btn btn-danger"
-                        data-toggle="button"
+                <button id="darkButton" type="button" class="btn btn-primary"
+                        data-toggle="tooltip"
+                        data-placement="bottom"
+                        title="Dark basemap"
+                        aria-label="Dark basemap"
                         v-bind:aria-pressed="[currentBaseMap == 'dark' ? 'true' : 'false']"
                         v-bind:class="[currentBaseMap == 'dark' ? 'btn-raised active' : '']"
-                        v-text="baseMapNames[0]"
                         v-on:click="setCurrentBaseMap('dark')">
+                  <i class="fas fa-map"></i>
                 </button>
-                <button id="lightButton" type="button" class="btn btn-danger"
-                        data-toggle="button"
+                <button id="lightButton" type="button" class="btn btn-primary"
+                        data-toggle="tooltip"
+                        data-placement="bottom"
+                        title="Light basemap"
+                        aria-label="Light basemap"
                         v-bind:aria-pressed="[currentBaseMap == 'light' ? 'true' : 'false']"
                         v-bind:class="[currentBaseMap == 'light' ? 'btn-raised active' : '']"
-                        v-text="baseMapNames[1]"
                         v-on:click="setCurrentBaseMap('light')">
+                  <i v-bind:class="baseMapIconNames[1]"></i>
                 </button>
-                <button id="roadsButton" type="button" class="btn btn-danger"
-                        data-toggle="button"
+                <button id="roadsButton" type="button" class="btn btn-primary"
+                        data-toggle="tooltip"
+                        data-placement="bottom"
+                        title="Road basemap"
+                        aria-label="Road basemap"
                         v-bind:aria-pressed="[currentBaseMap == 'roads' ? 'true' : 'false']"
                         v-bind:class="[currentBaseMap == 'roads' ? 'btn-raised active' : '']"
-                        v-text="baseMapNames[2]"
                         v-on:click="setCurrentBaseMap('roads')">
+                  <i v-bind:class="baseMapIconNames[2]"></i>
                 </button>
               </div>
 
-              <!--<div class="btn-group-toggle" data-toggle="buttons">-->
-                <!--<label class="btn btn-danger btn-raised active">-->
-                  <!--Dark1-->
-                <!--</label>-->
-                <!--<label class="btn btn-danger btn-raised">-->
-                  <!--Light1-->
-                <!--</label>-->
-                <!--<label class="btn btn-danger btn-raised">-->
-                  <!--Roads1-->
-                <!--</label>-->
-              <!--</div>-->
-
             </div>
 
-            <div class="cf-row">lala</div>
 
-            <!--<div class="cf-row">-->
+
+
+
+
+
+
+            <!--<div class="crt-row">-->
               <!--<strong>Show Commute Flows using:</strong>-->
 
               <!--<div id="toggleCommuteFlowRenderingMethodButtonsVM" class="btn-group btn-group-justified" role="group">-->
@@ -193,7 +228,7 @@
               <!--</div>-->
             <!--</div>-->
 
-            <!--<div class="cf-row">-->
+            <!--<div class="crt-row">-->
               <!--<strong>Traveling to work:</strong>-->
 
               <!--<div id="toggleRW2WRCommuteFlowsButtonsVM"-->
@@ -213,7 +248,7 @@
               <!--</div>-->
             <!--</div>-->
 
-            <!--<div id="groupSetContentVM" class="cf-row">-->
+            <!--<div id="groupSetContentVM" class="crt-row">-->
 
               <!--<ul class="nav nav-tabs nav-justified" role="tablist">-->
                 <!--&lt;!&ndash;<ul id="groupSetVisualization" class="nav nav-tabs nav-justified" role="tablist">&ndash;&gt;-->

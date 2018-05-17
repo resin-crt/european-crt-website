@@ -1,4 +1,19 @@
 
+// ================================================================================
+//  University of Manchester. UK.
+//  School of Environment, Education, and Development.
+//
+//  Name:            map.js
+//  Original coding: Vasilis Vlastaras (@gisvlasta), 17/05/2018.
+//
+//  Description:     The European Climate Risk Typology web mapping functionality.
+// ================================================================================
+
+let AppObj = {
+
+  bootstrapMaterialTooltipEnabled: false
+
+};
 
 let BaseMapLayers = {
 
@@ -1120,9 +1135,6 @@ let loaderViewModel = new Vue({
 
 });
 
-
-
-
 /**
  * The toggleBaseMapViewModel provides tha data and logic to toggle the BaseMap layer.
  *
@@ -1148,7 +1160,12 @@ let toggleBaseMapViewModel = new Vue({
     /**
      * The basemap names.
      */
-    baseMapNames: [ 'Dark', 'Light', 'Roads' ]
+    baseMapNames: [ 'Dark', 'Light', 'Roads' ],
+
+    /**
+     * The basemap icon names.
+     */
+    baseMapIconNames: [ 'fas fa-map', 'far fa-map', 'fas fa-road' ]
 
   },
 
@@ -1168,6 +1185,11 @@ let toggleBaseMapViewModel = new Vue({
       Spatial.map.removeLayer(BaseMapLayers.namedBasemapLayers[this.currentBaseMap].mapLayer);
 
       this.currentBaseMap = namedBaseMap;
+
+      if (AppObj.bootstrapMaterialTooltipEnabled) {
+        let element = '#' + namedBaseMap + 'Button';
+        $(element).tooltip('hide');
+      }
 
       // Add the new current basemap layer.
       let baseLayer = BaseMapLayers.namedBasemapLayers[this.currentBaseMap].mapLayer;
@@ -1202,10 +1224,10 @@ let toggleBaseMapViewModel = new Vue({
 // ================================================================================
 //  Main Body
 
-// TODO: Map
-// $(document).ready(function(){
-//   $('[dat a-toggle="tooltip"]').tooltip();
-// });
+$(document).ready(function(){
+  AppObj.bootstrapMaterialTooltipEnabled = true;
+  $('[data-toggle="tooltip"]').tooltip();
+});
 
 Spatial.initializeMap();
 
