@@ -241,7 +241,7 @@ var BaseMapLayers = {
   createBaseMapLayers: function() {
 
     // Loop through all the named basemap layers and instantiate them.
-    for (var namedLayer in this.namedBasemapLayers) {
+    for (let namedLayer in this.namedBasemapLayers) {
       if (this.namedBasemapLayers.hasOwnProperty(namedLayer)) {
 
         let baseLayer = this.namedBasemapLayers[namedLayer];
@@ -251,36 +251,6 @@ var BaseMapLayers = {
     }
 
   }
-
-  // applyGrayscaleFilter: function() {
-  //   var selectedCSSFilter = L.ImageFilters.Presets.CSS.None;
-  //   var selectedChannelFilter = L.ImageFilters.Presets.CanvasChannel.Grayscale1;
-  //   var selectedFilter = function () {
-  //     return new L.CombinedFilter(this, {
-  //       cssFilter: selectedCSSFilter,
-  //       canvasFilter: selectedChannelFilter
-  //     }).render();
-  //   };
-  //   // var $layers = $('#layers');
-  //   // var $template = $('#layer-template');
-  //   // var template = _.template($template.html());
-  //   //
-  //   // var baseLayer = layerChoices.MapQuest.OSM.getLayer(classFunc);
-  //
-  //   var getFilter = function () {
-  //
-  //     selectedFilter = function (image, ctx) {
-  //       return new L.CombinedFilter({
-  //         cssFilter: selectedCSSFilter,
-  //         canvasFilter: selectedChannelFilter
-  //       }).render(this, image, ctx);
-  //     };
-  //
-  //     BaseMapLayers.LeafletProvidersBaseMap.mapLayer.setFilter(selectedFilter);
-  //   };
-  //
-  //   getFilter();
-  // }
 
 };
 

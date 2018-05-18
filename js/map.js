@@ -9,9 +9,12 @@
 //  Description:     The European Climate Risk Typology web mapping functionality.
 // ================================================================================
 
-let AppObj = {
+let AppState = {
 
   bootstrapMaterialTooltipEnabled: false
+
+
+
 
 };
 
@@ -22,98 +25,100 @@ let BaseMapLayers = {
    */
   leafletProviderBaseLayers: {
     OpenStreetMap: {
-      Mapnik: 'OpenStreetMap.Mapnik',
-      BlackAndWhite: 'OpenStreetMap.BlackAndWhite',
-      DE: 'OpenStreetMap.DE',
-      France: 'OpenStreetMap.France',
-      HOT: 'OpenStreetMap.HOT'
+      Mapnik: ['OpenStreetMap.Mapnik', null],
+      BlackAndWhite: ['OpenStreetMap.BlackAndWhite', null],
+      DE: ['OpenStreetMap.DE', null],
+      CH: ['OpenStreetMap.CH', null],
+      France: ['OpenStreetMap.France', null],
+      HOT: ['OpenStreetMap.HOT', null],
+      BZH: ['OpenStreetMap.BZH', null]
     },
-    OpenTopoMap: 'OpenTopoMap',
+    OpenTopoMap: ['OpenTopoMap', null],
     Thunderforest: {
-      OpenCycleMap: 'Thunderforest.OpenCycleMap',
-      Transport: 'Thunderforest.Transport',
-      TransportDark: 'Thunderforest.TransportDark',
-      SpinalMap: 'Thunderforest.SpinalMap',
-      Landscape: 'Thunderforest.Landscape',
-      Outdoors: 'Thunderforest.Outdoors',
-      Pioneer: 'Thunderforest.Pioneer',
+      OpenCycleMap: ['Thunderforest.OpenCycleMap', { apikey: '' }],
+      Transport: ['Thunderforest.Transport', { apikey: '' }],
+      TransportDark: ['Thunderforest.TransportDark', { apikey: '' }],
+      SpinalMap: ['Thunderforest.SpinalMap', { apikey: '' }],
+      Landscape: ['Thunderforest.Landscape', { apikey: '' }],
+      Outdoors: ['Thunderforest.Outdoors', { apikey: '' }],
+      Pioneer: ['Thunderforest.Pioneer', { apikey: '' }],
     },
     OpenMapSurfer: {
-      Roads: 'OpenMapSurfer.Roads',
-      Grayscale: 'OpenMapSurfer.Grayscale',
-      AdminBounds: 'OpenMapSurfer.AdminBounds'
+      Roads: ['OpenMapSurfer.Roads', null],
+      Grayscale: ['OpenMapSurfer.Grayscale', null],
+      AdminBounds: ['OpenMapSurfer.AdminBounds', null]
     },
     Hydda: {
-      Full: 'Hydda.Full',
-      Base: 'Hydda.Base',
-      RoadsAndLabels: 'Hydda.RoadsAndLabels'
+      Full: ['Hydda.Full', null],
+      Base: ['Hydda.Base', null],
+      RoadsAndLabels: ['Hydda.RoadsAndLabels', null]
     },
-    MapBox: 'MapBox',
+    MapBox: ['MapBox', null],
     Stamen: {
-      Toner: 'Stamen.Toner',
-      TonerBackground: 'Stamen.TonerBackground',
-      TonerLite: 'Stamen.TonerLite',
-      Watercolor: 'Stamen.Watercolor',
-      Terrain: 'Stamen.Terrain',
-      TerrainBackground: 'Stamen.TerrainBackground',
-      TopOSMRelief: 'Stamen.TopOSMRelief',
-      TonerHybrid: 'Stamen.TonerHybrid',
-      TonerLines: 'Stamen.TonerLines',
-      TonerLabels: 'Stamen.TonerLabels',
-      TopOSMFeatures: 'Stamen.TopOSMFeatures'
+      Toner: ['Stamen.Toner', null],
+      TonerBackground: ['Stamen.TonerBackground', null],
+      TonerLite: ['Stamen.TonerLite', null],
+      Watercolor: ['Stamen.Watercolor', null],
+      Terrain: ['Stamen.Terrain', null],
+      TerrainBackground: ['Stamen.TerrainBackground', null],
+      TopOSMRelief: ['Stamen.TopOSMRelief', null],
+      TonerHybrid: ['Stamen.TonerHybrid', null],
+      TonerLines: ['Stamen.TonerLines', null],
+      TonerLabels: ['Stamen.TonerLabels', null],
+      TopOSMFeatures: ['Stamen.TopOSMFeatures', null]
     },
     Esri: {
-      WorldStreetMap: 'Esri.WorldStreetMap',
-      DeLome: 'Esri.DeLome',
-      WorldTopoMap: 'Esri.WorldTopoMap',
-      WorldImagery: 'Esri.WorldImagery',
-      WorldTerrain: 'Esri.Terrain',
-      WorldShadedRelief: 'Esri.WorldShadedRelief',
-      WorldPhysical: 'Esri.WorldPhysical',
-      OceanBaseMap: 'Esri.OceanBaseMap',
-      NatGeoWorldMap: 'Esri.NatGeoWorldMap',
-      WorldGrayCanvas: 'Esri.WorldGrayCanvas'
+      WorldStreetMap: ['Esri.WorldStreetMap', null],
+      DeLome: ['Esri.DeLome', null],
+      WorldTopoMap: ['Esri.WorldTopoMap', null],
+      WorldImagery: ['Esri.WorldImagery', null],
+      WorldTerrain: ['Esri.WorldTerrain', null],
+      WorldShadedRelief: ['Esri.WorldShadedRelief', null],
+      WorldPhysical: ['Esri.WorldPhysical', null],
+      OceanBaseMap: ['Esri.OceanBasemap', null],
+      NatGeoWorldMap: ['Esri.NatGeoWorldMap', null],
+      WorldGrayCanvas: ['Esri.WorldGrayCanvas', null]
     },
     HERE: {
-      normalDay: 'HERE.normalDay',
-      basicMap: 'HERE.basicMap',
-      hybridDay: 'HERE.hybridDay'
+      normalDay: ['HERE.normalDay', {app_id: '', app_code: ''}],
+      basicMap: ['HERE.basicMap', {app_id: '', app_code: ''}],
+      hybridDay: ['HERE.hybridDay', {app_id: '', app_code: ''}]
     },
-    MtbMap: 'MtbMap',
+    MtbMap: ['MtbMap', null],
     CartoDB: {
-      Positron: 'CartoDB.Positron',
-      PositronNoLabels: 'CartoDB.PositronNoLabels',
-      PositronOnlyLabels: 'CartoDB.PositronOnlyLabels',
-      DarkMatter: 'CartoDB.DarkMatter',
-      DarkMatterNoLabels: 'CartoDB.DarkMatterNoLabels',
-      DarkMatterOnlyLabels: 'CartoDB.DarkMatterOnlyLabels'
+      Positron: ['CartoDB.Positron', null],
+      PositronNoLabels: ['CartoDB.PositronNoLabels', null],
+      PositronOnlyLabels: ['CartoDB.PositronOnlyLabels', null],
+      DarkMatter: ['CartoDB.DarkMatter', null],
+      DarkMatterNoLabels: ['CartoDB.DarkMatterNoLabels', null],
+      DarkMatterOnlyLabels: ['CartoDB.DarkMatterOnlyLabels', null]
     },
     HikeBike: {
-      HikeBike: 'HikeBike.HikeBike',
-      HillShading: 'HikeBike.HillShading'
+      HikeBike: ['HikeBike.HikeBike', null],
+      HillShading: ['HikeBike.HillShading', null]
     },
     BasemapAT: {
-      basemap: 'BasemapAT.basemap',
-      grau: 'BasemapAT.grau',
-      overlay: 'BasemapAT.overlay',
-      highdpi: 'BasemapAT.highdpi',
-      orthophoto: 'BasemapAT.orthophoto'
+      basemap: ['BasemapAT.basemap', null],
+      grau: ['BasemapAT.grau', null],
+      overlay: ['BasemapAT.overlay', null],
+      highdpi: ['BasemapAT.highdpi', null],
+      orthophoto: ['BasemapAT.orthophoto', null]
     },
     NASAGIBS: {
-      ModisTerraTrueColorCR: 'NASAGIBS.ModisTerraTrueColorCR',
-      ModisTerraBands367CR: 'NASAGIBS.ModisTerraBands367CR',
-      ViirsEarthAtNight2012: 'NASAGIBS.ViirsEarthAtNight2012',
-      ModisTerraLSTDay: 'NASAGIBS.ModisTerraLSTDay',
-      ModisTerraSnowCover: 'NASAGIBS.ModisTerraSnowCover',
-      ModisTerraAOD: 'NASAGIBS.ModisTerraAOD',
-      ModisTerraChlorophyll: 'NASAGIBS.ModisTerraChlorophyll'
+      ModisTerraTrueColorCR: ['NASAGIBS.ModisTerraTrueColorCR', null],
+      ModisTerraBands367CR: ['NASAGIBS.ModisTerraBands367CR', null],
+      ViirsEarthAtNight2012: ['NASAGIBS.ViirsEarthAtNight2012', null],
+      ModisTerraLSTDay: ['NASAGIBS.ModisTerraLSTDay', null],
+      ModisTerraSnowCover: ['NASAGIBS.ModisTerraSnowCover', null],
+      ModisTerraAOD: ['NASAGIBS.ModisTerraAOD', null],
+      ModisTerraChlorophyll: ['NASAGIBS.ModisTerraChlorophyll', null]
     },
-    NLS: 'NLS',
-    OpenSeaMap: 'OpenSeaMap',
+    NLS: ['NLS', null],
+    OpenSeaMap: ['OpenSeaMap', null],
     OpenWeatherMap: {
-      Clouds: 'OpenWeatherMap.Clouds',
-      Pressure: 'OpenWeatherMap.Pressure',
-      Wind: 'OpenWeatherMap.Wind'
+      Clouds: ['OpenWeatherMap.Clouds', null],
+      Pressure: ['OpenWeatherMap.Pressure', null],
+      Wind: ['OpenWeatherMap.Wind', null]
     }
   },
 
@@ -127,7 +132,7 @@ let BaseMapLayers = {
      */
     dark: {
       name: 'Dark',
-      leafletProviderName: null,
+      leafletProvider: null,
       mapLayer: null
     },
 
@@ -136,7 +141,7 @@ let BaseMapLayers = {
      */
     light: {
       name: 'Light',
-      leafletProviderName: null,
+      leafletProvider: null,
       mapLayer: null
     },
 
@@ -145,7 +150,7 @@ let BaseMapLayers = {
      */
     roads: {
       name: 'Roads',
-      leafletProviderName: null,
+      leafletProvider: null,
       mapLayer: null
     }
 
@@ -156,97 +161,54 @@ let BaseMapLayers = {
    */
   setNamedBasemapLayers() {
 
-    this.namedBasemapLayers.dark.leafletProviderName = BaseMapLayers.leafletProviderBaseLayers.CartoDB.DarkMatter;
-    this.namedBasemapLayers.light.leafletProviderName = BaseMapLayers.leafletProviderBaseLayers.OpenMapSurfer.Grayscale;
-    //this.namedBasemapLayers.roads.leafletProviderName = BaseMapLayers.leafletProviderBaseLayers.Thunderforest.Transport;
-    this.namedBasemapLayers.roads.leafletProviderName = BaseMapLayers.leafletProviderBaseLayers.OpenStreetMap.HOT;
+    // Dark
+    this.namedBasemapLayers.dark.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.CartoDB.DarkMatter;
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.CartoDB.DarkMatterOnlyLabels;
 
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.BasemapAT.basemap);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.BasemapAT.grau);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.BasemapAT.highdpi);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.BasemapAT.orthophoto);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.BasemapAT.overlay);
-    //
-    // ----BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.CartoDB.DarkMatter);
-    // ----BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.CartoDB.DarkMatterNoLabels);
-    // ----BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.CartoDB.DarkMatterOnlyLabels);
-    // ----BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.CartoDB.Positron);
-    // ----BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.CartoDB.PositronNoLabels);
-    // ----BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.CartoDB.PositronOnlyLabels);
-    //
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Esri.DeLome);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Esri.NatGeoWorldMap);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Esri.OceanBaseMap);
-    // ----BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Esri.WorldGrayCanvas);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Esri.WorldImagery);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Esri.WorldPhysical);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Esri.WorldShadedRelief);
-    // ----BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Esri.WorldStreetMap);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Esri.WorldTerrain);
-    // ----BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Esri.WorldTopoMap);
-    //
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.HERE.basicMap);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.HERE.hybridDay);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.HERE.normalDay);
-    //
-    // --??BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.HikeBike.HikeBike);
-    // --??BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.HikeBike.HillShading);
-    //
-    // ----BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Hydda.Full);
-    // ----BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Hydda.Base);
-    // --------BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Hydda.RoadsAndLabels);
-    //
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.MapBox);
-    //
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.MtbMap);
-    //
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.NASAGIBS.ModisTerraTrueColorCR);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.NASAGIBS.ModisTerraAOD);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.NASAGIBS.ModisTerraBands367CR);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.NASAGIBS.ModisTerraChlorophyll);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.NASAGIBS.ModisTerraLSTDay);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.NASAGIBS.ModisTerraSnowCover);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.NASAGIBS.ViirsEarthAtNight2012);
-    //
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.NLS);
-    //
-    // ----BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.OpenMapSurfer.Roads);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.OpenMapSurfer.AdminBounds);
-    // --------BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.OpenMapSurfer.Grayscale);
-    //
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.OpenSeaMap);
-    //
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.OpenStreetMap.Mapnik);
-    // ----BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.OpenStreetMap.BlackAndWhite);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.OpenStreetMap.DE);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.OpenStreetMap.France);
-    // --??BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.OpenStreetMap.HOT);
-    //
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.OpenTopoMap);
-    //
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.OpenWeatherMap.Clouds);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.OpenWeatherMap.Pressure);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.OpenWeatherMap.Wind);
-    //
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Stamen.Toner);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Stamen.TonerBackground);
-    // ----BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Stamen.TonerLite);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Stamen.Watercolor);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Stamen.Terrain);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Stamen.TerrainBackground);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Stamen.TopOSMRelief);
-    // --------BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Stamen.TonerHybrid);
-    // ----BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Stamen.TonerLines);
-    // ----BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Stamen.TonerLabels);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Stamen.TopOSMFeatures);
-    //
-    // ----BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Thunderforest.OpenCycleMap);
-    // --------BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Thunderforest.Transport);
-    // --------BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Thunderforest.TransportDark);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Thunderforest.SpinalMap);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Thunderforest.Landscape);
-    // BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Thunderforest.Outdoors);
-    // ----BaseMapLayers.LeafletProvidersBaseMap.createBaseMapLayer(BaseMapLayers.leafletProviderBaseLayers.Thunderforest.Pioneer);
+    // Light
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.OpenStreetMap.BlackAndWhite;
+    this.namedBasemapLayers.light.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.OpenMapSurfer.Grayscale;
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Stamen.Toner;
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Stamen.TonerBackground;
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.CartoDB.Positron;
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.CartoDB.PositronNoLabels;
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.CartoDB.PositronOnlyLabels;
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Esri.WorldGrayCanvas;
+
+    // Roads
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.OpenStreetMap.Mapnik
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.OpenStreetMap.HOT;
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.OpenMapSurfer.Roads;
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Hydda.Full;
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Hydda.RoadsAndLabels;
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Stamen.TonerLite;
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Esri.WorldStreetMap;
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Esri.WorldGrayCanvas;
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.HikeBike.HikeBike;
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Hydda.RoadsAndLabels;
+
+    // Physical
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Hydda.Base;
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Esri.WorldPhysical;
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Esri.WorldTopoMap;
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Hydda.Base;
+
+    // Terrain
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Stamen.Terrain;
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Stamen.TerrainBackground;
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Esri.WorldTerrain;
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Esri.WorldShadedRelief;
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.HikeBike.HillShading;
+
+
+    // Satellite
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Esri.WorldImagery;
+
+
+
+    this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Esri.WorldGrayCanvas;
+
+
 
   },
 
@@ -260,7 +222,13 @@ let BaseMapLayers = {
       if (this.namedBasemapLayers.hasOwnProperty(namedLayer)) {
 
         let baseLayer = this.namedBasemapLayers[namedLayer];
-        baseLayer.mapLayer = L.tileLayer.provider(baseLayer.leafletProviderName);
+
+        if (baseLayer.leafletProvider[1] == null) {
+          baseLayer.mapLayer = L.tileLayer.provider(baseLayer.leafletProvider[0]);
+        }
+        else {
+          baseLayer.mapLayer = L.tileLayer.provider(baseLayer.leafletProvider[0], baseLayer.leafletProvider[1]);
+        }
 
       }
     }
@@ -1042,7 +1010,7 @@ let Spatial = {
   mapOptions: {
     center: [54.5, 10],
     zoom: 4,
-    minZoom: 1,
+    minZoom: 3,
     maxZoom: 18
   },
 
@@ -1092,7 +1060,6 @@ let Spatial = {
 
     // Get the current basemap that has been selected by the user.
     let namedBaseMap = toggleBaseMapViewModel.currentBaseMap;
-    // let namedBaseMap = 'dark'; // TODO: RESIN - Change this !!!
     let baseLayer = BaseMapLayers.namedBasemapLayers[namedBaseMap].mapLayer;
 
     // Add the basemap layer in to the map.
@@ -1186,13 +1153,14 @@ let toggleBaseMapViewModel = new Vue({
 
       this.currentBaseMap = namedBaseMap;
 
-      if (AppObj.bootstrapMaterialTooltipEnabled) {
+      if (AppState.bootstrapMaterialTooltipEnabled) {
         let element = '#' + namedBaseMap + 'Button';
         $(element).tooltip('hide');
       }
 
       // Add the new current basemap layer.
       let baseLayer = BaseMapLayers.namedBasemapLayers[this.currentBaseMap].mapLayer;
+
 
       baseLayer.addTo(Spatial.map);
       baseLayer.bringToBack();
@@ -1225,7 +1193,7 @@ let toggleBaseMapViewModel = new Vue({
 //  Main Body
 
 $(document).ready(function(){
-  AppObj.bootstrapMaterialTooltipEnabled = true;
+  AppState.bootstrapMaterialTooltipEnabled = true;
   $('[data-toggle="tooltip"]').tooltip();
 });
 
