@@ -9,6 +9,10 @@
 //  Description:     The European Climate Risk Typology web mapping functionality.
 // ================================================================================
 
+
+const leafletProviderLayerNameIndex = 0;
+const leafletProviderLayerOptionsIndex = 1;
+
 let AppState = {
 
   bootstrapMaterialTooltipEnabled: false
@@ -25,15 +29,15 @@ let BaseMapLayers = {
    */
   leafletProviderBaseLayers: {
     OpenStreetMap: {
-      Mapnik: ['OpenStreetMap.Mapnik', null],
-      BlackAndWhite: ['OpenStreetMap.BlackAndWhite', null],
-      DE: ['OpenStreetMap.DE', null],
-      CH: ['OpenStreetMap.CH', null],
-      France: ['OpenStreetMap.France', null],
-      HOT: ['OpenStreetMap.HOT', null],
-      BZH: ['OpenStreetMap.BZH', null]
+      Mapnik: ['OpenStreetMap.Mapnik', undefined],
+      BlackAndWhite: ['OpenStreetMap.BlackAndWhite', undefined],
+      DE: ['OpenStreetMap.DE', undefined],
+      CH: ['OpenStreetMap.CH', undefined],
+      France: ['OpenStreetMap.France', undefined],
+      HOT: ['OpenStreetMap.HOT', undefined],
+      BZH: ['OpenStreetMap.BZH', undefined]
     },
-    OpenTopoMap: ['OpenTopoMap', null],
+    OpenTopoMap: ['OpenTopoMap', undefined],
     Thunderforest: {
       OpenCycleMap: ['Thunderforest.OpenCycleMap', { apikey: '' }],
       Transport: ['Thunderforest.Transport', { apikey: '' }],
@@ -44,82 +48,100 @@ let BaseMapLayers = {
       Pioneer: ['Thunderforest.Pioneer', { apikey: '' }],
     },
     OpenMapSurfer: {
-      Roads: ['OpenMapSurfer.Roads', null],
-      Grayscale: ['OpenMapSurfer.Grayscale', null],
-      AdminBounds: ['OpenMapSurfer.AdminBounds', null]
+      Roads: ['OpenMapSurfer.Roads', undefined],
+      Grayscale: ['OpenMapSurfer.Grayscale', undefined],
+      AdminBounds: ['OpenMapSurfer.AdminBounds', undefined]
     },
     Hydda: {
-      Full: ['Hydda.Full', null],
-      Base: ['Hydda.Base', null],
-      RoadsAndLabels: ['Hydda.RoadsAndLabels', null]
+      Full: ['Hydda.Full', undefined],
+      Base: ['Hydda.Base', undefined],
+      RoadsAndLabels: ['Hydda.RoadsAndLabels', undefined]
     },
-    MapBox: ['MapBox', null],
+    MapBox: ['MapBox', undefined],
     Stamen: {
-      Toner: ['Stamen.Toner', null],
-      TonerBackground: ['Stamen.TonerBackground', null],
-      TonerLite: ['Stamen.TonerLite', null],
-      Watercolor: ['Stamen.Watercolor', null],
-      Terrain: ['Stamen.Terrain', null],
-      TerrainBackground: ['Stamen.TerrainBackground', null],
-      TopOSMRelief: ['Stamen.TopOSMRelief', null],
-      TonerHybrid: ['Stamen.TonerHybrid', null],
-      TonerLines: ['Stamen.TonerLines', null],
-      TonerLabels: ['Stamen.TonerLabels', null],
-      TopOSMFeatures: ['Stamen.TopOSMFeatures', null]
+      Toner: ['Stamen.Toner', undefined],
+      TonerBackground: ['Stamen.TonerBackground', undefined],
+      TonerLite: ['Stamen.TonerLite', undefined],
+      Watercolor: ['Stamen.Watercolor', undefined],
+      Terrain: ['Stamen.Terrain', undefined],
+      TerrainBackground: ['Stamen.TerrainBackground', undefined],
+      TopOSMRelief: ['Stamen.TopOSMRelief', undefined],
+      TonerHybrid: ['Stamen.TonerHybrid', undefined],
+      TonerLines: ['Stamen.TonerLines', undefined],
+      TonerLabels: ['Stamen.TonerLabels', undefined],
+      TopOSMFeatures: ['Stamen.TopOSMFeatures', undefined]
     },
     Esri: {
-      WorldStreetMap: ['Esri.WorldStreetMap', null],
-      DeLome: ['Esri.DeLome', null],
-      WorldTopoMap: ['Esri.WorldTopoMap', null],
-      WorldImagery: ['Esri.WorldImagery', null],
-      WorldTerrain: ['Esri.WorldTerrain', null],
-      WorldShadedRelief: ['Esri.WorldShadedRelief', null],
-      WorldPhysical: ['Esri.WorldPhysical', null],
-      OceanBaseMap: ['Esri.OceanBasemap', null],
-      NatGeoWorldMap: ['Esri.NatGeoWorldMap', null],
-      WorldGrayCanvas: ['Esri.WorldGrayCanvas', null]
+      WorldStreetMap: ['Esri.WorldStreetMap', undefined],
+      DeLome: ['Esri.DeLome', undefined],
+      WorldTopoMap: ['Esri.WorldTopoMap', undefined],
+      WorldImagery: ['Esri.WorldImagery', undefined],
+      WorldTerrain: ['Esri.WorldTerrain', undefined],
+      WorldShadedRelief: ['Esri.WorldShadedRelief', undefined],
+      WorldPhysical: ['Esri.WorldPhysical', undefined],
+      OceanBaseMap: ['Esri.OceanBasemap', undefined],
+      NatGeoWorldMap: ['Esri.NatGeoWorldMap', undefined],
+      WorldGrayCanvas: ['Esri.WorldGrayCanvas', undefined]
     },
     HERE: {
       normalDay: ['HERE.normalDay', {app_id: '', app_code: ''}],
       basicMap: ['HERE.basicMap', {app_id: '', app_code: ''}],
       hybridDay: ['HERE.hybridDay', {app_id: '', app_code: ''}]
     },
-    MtbMap: ['MtbMap', null],
+    FreeMapSK: 'FreeMapSK',
+    MtbMap: ['MtbMap', undefined],
     CartoDB: {
-      Positron: ['CartoDB.Positron', null],
-      PositronNoLabels: ['CartoDB.PositronNoLabels', null],
-      PositronOnlyLabels: ['CartoDB.PositronOnlyLabels', null],
-      DarkMatter: ['CartoDB.DarkMatter', null],
-      DarkMatterNoLabels: ['CartoDB.DarkMatterNoLabels', null],
-      DarkMatterOnlyLabels: ['CartoDB.DarkMatterOnlyLabels', null]
+      Positron: ['CartoDB.Positron', undefined],
+      PositronNoLabels: ['CartoDB.PositronNoLabels', undefined],
+      PositronOnlyLabels: ['CartoDB.PositronOnlyLabels', undefined],
+      DarkMatter: ['CartoDB.DarkMatter', undefined],
+      DarkMatterNoLabels: ['CartoDB.DarkMatterNoLabels', undefined],
+      DarkMatterOnlyLabels: ['CartoDB.DarkMatterOnlyLabels', undefined]
     },
     HikeBike: {
-      HikeBike: ['HikeBike.HikeBike', null],
-      HillShading: ['HikeBike.HillShading', null]
+      HikeBike: ['HikeBike.HikeBike', undefined],
+      HillShading: ['HikeBike.HillShading', undefined]
     },
     BasemapAT: {
-      basemap: ['BasemapAT.basemap', null],
-      grau: ['BasemapAT.grau', null],
-      overlay: ['BasemapAT.overlay', null],
-      highdpi: ['BasemapAT.highdpi', null],
-      orthophoto: ['BasemapAT.orthophoto', null]
+      basemap: ['BasemapAT.basemap', undefined],
+      grau: ['BasemapAT.grau', undefined],
+      overlay: ['BasemapAT.overlay', undefined],
+      highdpi: ['BasemapAT.highdpi', undefined],
+      orthophoto: ['BasemapAT.orthophoto', undefined]
+    },
+    nlmaps: {
+      standaard: ['nlmaps.standaard', undefined],
+      pastel: ['nlmaps.pastel', undefined],
+      grijs: ['nlmaps.grijs', undefined],
+      luchtfoto: ['nlmaps.luchtfoto', undefined]
     },
     NASAGIBS: {
-      ModisTerraTrueColorCR: ['NASAGIBS.ModisTerraTrueColorCR', null],
-      ModisTerraBands367CR: ['NASAGIBS.ModisTerraBands367CR', null],
-      ViirsEarthAtNight2012: ['NASAGIBS.ViirsEarthAtNight2012', null],
-      ModisTerraLSTDay: ['NASAGIBS.ModisTerraLSTDay', null],
-      ModisTerraSnowCover: ['NASAGIBS.ModisTerraSnowCover', null],
-      ModisTerraAOD: ['NASAGIBS.ModisTerraAOD', null],
-      ModisTerraChlorophyll: ['NASAGIBS.ModisTerraChlorophyll', null]
+      ModisTerraTrueColorCR: ['NASAGIBS.ModisTerraTrueColorCR', undefined],
+      ModisTerraBands367CR: ['NASAGIBS.ModisTerraBands367CR', undefined],
+      ViirsEarthAtNight2012: ['NASAGIBS.ViirsEarthAtNight2012', undefined],
+      ModisTerraLSTDay: ['NASAGIBS.ModisTerraLSTDay', undefined],
+      ModisTerraSnowCover: ['NASAGIBS.ModisTerraSnowCover', undefined],
+      ModisTerraAOD: ['NASAGIBS.ModisTerraAOD', undefined],
+      ModisTerraChlorophyll: ['NASAGIBS.ModisTerraChlorophyll', undefined]
     },
-    NLS: ['NLS', null],
+    NLS: ['NLS', undefined],
+    Wikimedia: ['Wikimedia', undefined],
+
+
     OpenSeaMap: ['OpenSeaMap', null],
     OpenWeatherMap: {
       Clouds: ['OpenWeatherMap.Clouds', null],
       Pressure: ['OpenWeatherMap.Pressure', null],
       Wind: ['OpenWeatherMap.Wind', null]
     }
+  },
+
+  leafletProviderLayers: {
+    OpenInfraMap: {
+      Power: ['OpenInfraMap.Power', undefined]
+    }
+
+
   },
 
   /**
@@ -186,6 +208,7 @@ let BaseMapLayers = {
     //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Esri.WorldGrayCanvas;
     //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.HikeBike.HikeBike;
     //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Hydda.RoadsAndLabels;
+    this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Wikimedia;
 
     // Physical
     //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Hydda.Base;
@@ -206,7 +229,7 @@ let BaseMapLayers = {
 
 
 
-    this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Esri.WorldGrayCanvas;
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Wikimedia;
 
 
 
@@ -223,11 +246,14 @@ let BaseMapLayers = {
 
         let baseLayer = this.namedBasemapLayers[namedLayer];
 
-        if (baseLayer.leafletProvider[1] == null) {
-          baseLayer.mapLayer = L.tileLayer.provider(baseLayer.leafletProvider[0]);
+        if (baseLayer.leafletProvider[leafletProviderLayerOptionsIndex] == undefined) {
+          baseLayer.mapLayer = L.tileLayer.provider(baseLayer.leafletProvider[leafletProviderLayerNameIndex]);
         }
         else {
-          baseLayer.mapLayer = L.tileLayer.provider(baseLayer.leafletProvider[0], baseLayer.leafletProvider[1]);
+          baseLayer.mapLayer = L.tileLayer.provider(
+            baseLayer.leafletProvider[leafletProviderLayerNameIndex],
+            baseLayer.leafletProvider[leafletProviderLayerOptionsIndex]
+          );
         }
 
       }
