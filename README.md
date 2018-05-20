@@ -2,6 +2,6 @@
 
 Accessible temporarily through:
 
-https://resin-crt.github.io/resin-crt-website/
+https://resin-crt.github.io/european-crt-website/
 
 
