@@ -10,14 +10,9 @@
 // ================================================================================
 
 
-const leafletProviderLayerNameIndex = 0;
-const leafletProviderLayerOptionsIndex = 1;
-
 let AppState = {
 
   bootstrapMaterialTooltipEnabled: false
-
-
 
 
 };
@@ -49,13 +44,11 @@ let BaseMapLayers = {
     },
     OpenMapSurfer: {
       Roads: ['OpenMapSurfer.Roads', undefined],
-      Grayscale: ['OpenMapSurfer.Grayscale', undefined],
-      AdminBounds: ['OpenMapSurfer.AdminBounds', undefined]
+      Grayscale: ['OpenMapSurfer.Grayscale', undefined]
     },
     Hydda: {
       Full: ['Hydda.Full', undefined],
-      Base: ['Hydda.Base', undefined],
-      RoadsAndLabels: ['Hydda.RoadsAndLabels', undefined]
+      Base: ['Hydda.Base', undefined]
     },
     MapBox: ['MapBox', undefined],
     Stamen: {
@@ -118,30 +111,61 @@ let BaseMapLayers = {
     NASAGIBS: {
       ModisTerraTrueColorCR: ['NASAGIBS.ModisTerraTrueColorCR', undefined],
       ModisTerraBands367CR: ['NASAGIBS.ModisTerraBands367CR', undefined],
-      ViirsEarthAtNight2012: ['NASAGIBS.ViirsEarthAtNight2012', undefined],
+      ViirsEarthAtNight2012: ['NASAGIBS.ViirsEarthAtNight2012', undefined]
+    },
+    NLS: ['NLS', undefined],
+    Wikimedia: ['Wikimedia', undefined]
+  },
+
+  /**
+   * All the names of the overlay layers that are defined by the leaflet providers plugin.
+   */
+  leafletProviderOverlayLayers: {
+    OpenInfraMap: {
+      Power: ['OpenInfraMap.Power', undefined],
+      Telecom: ['OpenInfraMap.Telecom', undefined],
+      Petroleum: ['OpenInfraMap.Petroleum', undefined],
+      Water: ['OpenInfraMap.Water', undefined]
+    },
+    OpenSeaMap: ['OpenSeaMap', undefined],
+    OpenPtMap: ['OpenPtMap', undefined],
+    OpenRailwayMap: ['OpenRailwayMap', undefined],
+    OpenFireMap: ['OpenFireMap', undefined],
+    SafeCast: ['SafeCast', undefined],
+    OpenMapSurfer: {
+      AdminBounds: ['OpenMapSurfer.AdminBounds', undefined]
+    },
+    Hydda: {
+      RoadsAndLabels: ['Hydda.RoadsAndLabels', undefined]
+    },
+    Stamen: {
+      TonerHybrid: ['Stamen.TonerHybrid', undefined],
+      TonerLines: ['Stamen.TonerLines', undefined],
+      TonerLabels: ['Stamen.TonerLabels', undefined],
+      TopOSMFeatures: ['Stamen.TopOSMFeatures', undefined]
+    },
+    OpenWeatherMap: {
+      Clouds: ['OpenWeatherMap.Clouds', undefined],
+      Pressure: ['OpenWeatherMap.Pressure', undefined],
+      Wind: ['OpenWeatherMap.Wind', undefined]
+    },
+    NASAGIBS: {
       ModisTerraLSTDay: ['NASAGIBS.ModisTerraLSTDay', undefined],
       ModisTerraSnowCover: ['NASAGIBS.ModisTerraSnowCover', undefined],
       ModisTerraAOD: ['NASAGIBS.ModisTerraAOD', undefined],
       ModisTerraChlorophyll: ['NASAGIBS.ModisTerraChlorophyll', undefined]
     },
-    NLS: ['NLS', undefined],
-    Wikimedia: ['Wikimedia', undefined],
-
-
-    OpenSeaMap: ['OpenSeaMap', null],
-    OpenWeatherMap: {
-      Clouds: ['OpenWeatherMap.Clouds', null],
-      Pressure: ['OpenWeatherMap.Pressure', null],
-      Wind: ['OpenWeatherMap.Wind', null]
+    JusticeMap: {
+      income: ['JusticeMap.income', undefined],
+      americanIndian: ['JusticeMap.americanIndian', undefined],
+      asian: ['JusticeMap.asian', undefined],
+      black: ['JusticeMap.black', undefined],
+      hispanic: ['JusticeMap.hispanic', undefined],
+      multi: ['JusticeMap.multi', undefined],
+      nonWhite: ['JusticeMap.nonWhite', undefined],
+      white: ['JusticeMap.white', undefined],
+      plurality: ['JusticeMap.plurality', undefined]
     }
-  },
-
-  leafletProviderLayers: {
-    OpenInfraMap: {
-      Power: ['OpenInfraMap.Power', undefined]
-    }
-
-
   },
 
   /**
@@ -223,15 +247,8 @@ let BaseMapLayers = {
     //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Esri.WorldShadedRelief;
     //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.HikeBike.HillShading;
 
-
     // Satellite
     //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Esri.WorldImagery;
-
-
-
-    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Wikimedia;
-
-
 
   },
 
@@ -244,15 +261,18 @@ let BaseMapLayers = {
     for (let namedLayer in this.namedBasemapLayers) {
       if (this.namedBasemapLayers.hasOwnProperty(namedLayer)) {
 
+        const nameIndex = 0;
+        const optionsIndex = 1;
+
         let baseLayer = this.namedBasemapLayers[namedLayer];
 
-        if (baseLayer.leafletProvider[leafletProviderLayerOptionsIndex] == undefined) {
-          baseLayer.mapLayer = L.tileLayer.provider(baseLayer.leafletProvider[leafletProviderLayerNameIndex]);
+        if (baseLayer.leafletProvider[optionsIndex] === undefined) {
+          baseLayer.mapLayer = L.tileLayer.provider(baseLayer.leafletProvider[nameIndex]);
         }
         else {
           baseLayer.mapLayer = L.tileLayer.provider(
-            baseLayer.leafletProvider[leafletProviderLayerNameIndex],
-            baseLayer.leafletProvider[leafletProviderLayerOptionsIndex]
+            baseLayer.leafletProvider[nameIndex],
+            baseLayer.leafletProvider[optionsIndex]
           );
         }
 
@@ -861,8 +881,7 @@ let MapLayers = {
       // loaderViewModel.isVisible = true;
 
       // TODO: RESIN - Decide which polygon features will be used in the last version.
-      // this.geoJSON = AppData.nuts3PolygonsTypologyOnlyP6;
-      this.geoJSON = AppData.nuts3PolygonsP6;
+      this.geoJSON = AppData.nuts3Polygons;
 
       this.mapLayer = L.geoJSON(this.geoJSON, {
         // style: this.namedBasemapLayers[toggleBaseMapViewModel.currentBaseMap].style,
@@ -1186,7 +1205,6 @@ let toggleBaseMapViewModel = new Vue({
 
       // Add the new current basemap layer.
       let baseLayer = BaseMapLayers.namedBasemapLayers[this.currentBaseMap].mapLayer;
-
 
       baseLayer.addTo(Spatial.map);
       baseLayer.bringToBack();
