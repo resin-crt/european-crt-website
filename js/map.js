@@ -10,6 +10,9 @@
 // ================================================================================
 
 
+/**
+ * The AppState object holds the application state.
+ */
 let AppState = {
 
   bootstrapMaterialTooltipEnabled: false
@@ -17,6 +20,10 @@ let AppState = {
 
 };
 
+
+/**
+ * The BaseMapLayers object provides properties and methods related to basemap layers.
+ */
 let BaseMapLayers = {
 
   /**
@@ -283,6 +290,9 @@ let BaseMapLayers = {
 
 };
 
+/**
+ * The MapLayers object provides properties and methods related to map layers.
+ */
 let MapLayers = {
   // TODO: Update the documentation.
 

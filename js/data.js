@@ -15228,8 +15228,3 @@ AppData.nuts3 = [
     "sort_order" : 1825
   }
 ];
-
-
-
-
-
