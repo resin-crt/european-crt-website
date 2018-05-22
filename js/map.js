@@ -15,8 +15,8 @@
  */
 let AppState = {
 
-  bootstrapMaterialTooltipEnabled: false
-
+  bootstrapMaterialTooltipEnabled: false,
+  isLayerRenderingSetup: false
 
 };
 
@@ -1110,7 +1110,7 @@ let toggleBaseMapViewModel = new Vue({
   },
 
   /**
-   * The model of the view model.
+   * The methods of the view model.
    */
   methods: {
 
@@ -1150,8 +1150,68 @@ let toggleBaseMapViewModel = new Vue({
 
 });
 
+/**
+ * The toggleLayerRenderingSetupButtonViewModel provides tha data and logic
+ * to toggle the layer rendering setup button and panel.
+ *
+ * @type {Vue} - A Vue object with the model and methods used in the view model.
+ */
+let toggleLayerRenderingSetupButtonViewModel = new Vue({
 
+  /**
+   * The name of the view model.
+   */
+  el: '#toggleLayerRenderingSetupButtonVM',
 
+  /**
+   * The model of the view model.
+   */
+  data: {
+
+    /**
+     * Indicates whether the layer rendering setup is displayed or not.
+     */
+    isLayerRenderingSetupVisible: false,
+
+    /**
+     * Button name.
+     */
+    description: 'Layer Rendering Setup',
+
+    /**
+     * The basemap icon names.
+     */
+    buttonIconName: 'fas fa-puzzle-piece'
+
+  },
+
+  /**
+   * The methods of the view model.
+   */
+  methods: {
+
+    /**
+     * Toggles the layer rendering setup button and panel area.
+     *
+     */
+    toggleLayerRenderingSetup() {
+
+      this.isLayerRenderingSetupVisible = !this.isLayerRenderingSetupVisible;
+
+      let onOff = (this.isLayerRenderingSetupVisible === true) ? 'on' : 'off';
+
+      // TODO: RESIN - Add functionality here.
+      //alert('Toggle Layer Rendering Setup ' + onOff);
+
+      if (AppState.bootstrapMaterialTooltipEnabled) {
+        $('#layerRenderingSetupButton').tooltip('hide');
+      }
+
+    }
+
+  }
+
+});
 
 
 
@@ -1173,6 +1233,7 @@ Spatial.initializeMap();
 
 //
 // ================================================================================
+
 
 
 

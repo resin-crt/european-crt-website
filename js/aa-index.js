@@ -7204,7 +7204,7 @@ var toggleBaseMapViewModel = new Vue({
   },
 
   /**
-   * The model of the view model.
+   * The methods of the view model.
    */
   methods: {
 

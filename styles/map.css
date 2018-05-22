@@ -93,6 +93,13 @@ body {
   margin: 10px 0 0 0;
 }
 
+.crt-row-internal {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0;
+  margin-left: 0;
+}
+
 /* Material Icons */
 .crt-material-icons {
   font-family: 'Material Icons';

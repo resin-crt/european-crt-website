@@ -155,48 +155,66 @@
 
             <div class="crt-row">
 
-              <div id="toggleBaseMapButtonsVM" class="btn-group-toggle" role="group"
-                   aria-label="Select basemap" data-toggle="buttons">
-                Basemap:
+              <div class="crt-row-internal">
 
-                <button id="darkButton" type="button" class="btn btn-danger"
-                        data-toggle="tooltip"
-                        data-placement="bottom"
-                        title="Dark basemap"
-                        aria-label="Dark basemap"
-                        v-bind:aria-pressed="[currentBaseMap == 'dark' ? 'true' : 'false']"
-                        v-bind:class="[currentBaseMap == 'dark' ? 'btn-raised active' : '']"
-                        v-on:click="setCurrentBaseMap('dark')">
-                  <i class="fas fa-map"></i>
-                </button>
-                <button id="lightButton" type="button" class="btn btn-danger"
-                        data-toggle="tooltip"
-                        data-placement="bottom"
-                        title="Light basemap"
-                        aria-label="Light basemap"
-                        v-bind:aria-pressed="[currentBaseMap == 'light' ? 'true' : 'false']"
-                        v-bind:class="[currentBaseMap == 'light' ? 'btn-raised active' : '']"
-                        v-on:click="setCurrentBaseMap('light')">
-                  <i v-bind:class="baseMapIconNames[1]"></i>
-                </button>
-                <button id="roadsButton" type="button" class="btn btn-danger"
-                        data-toggle="tooltip"
-                        data-placement="bottom"
-                        title="Road basemap"
-                        aria-label="Road basemap"
-                        v-bind:aria-pressed="[currentBaseMap == 'roads' ? 'true' : 'false']"
-                        v-bind:class="[currentBaseMap == 'roads' ? 'btn-raised active' : '']"
-                        v-on:click="setCurrentBaseMap('roads')">
-                  <i v-bind:class="baseMapIconNames[2]"></i>
-                </button>
+                <div id="toggleBaseMapButtonsVM" class="btn-group-toggle" role="group"
+                     aria-label="Select basemap" data-toggle="buttons">
+                  Basemap:
+
+                  <button id="darkButton" type="button" class="btn btn-danger"
+                          data-toggle="tooltip"
+                          data-placement="bottom"
+                          title="Dark basemap"
+                          aria-label="Dark basemap"
+                          v-bind:aria-pressed="[currentBaseMap == 'dark' ? 'true' : 'false']"
+                          v-bind:class="[currentBaseMap == 'dark' ? 'btn-raised active' : '']"
+                          v-on:click="setCurrentBaseMap('dark')">
+                    <i class="fas fa-map"></i>
+                  </button>
+                  <button id="lightButton" type="button" class="btn btn-danger"
+                          data-toggle="tooltip"
+                          data-placement="bottom"
+                          title="Light basemap"
+                          aria-label="Light basemap"
+                          v-bind:aria-pressed="[currentBaseMap == 'light' ? 'true' : 'false']"
+                          v-bind:class="[currentBaseMap == 'light' ? 'btn-raised active' : '']"
+                          v-on:click="setCurrentBaseMap('light')">
+                    <i v-bind:class="baseMapIconNames[1]"></i>
+                  </button>
+                  <button id="roadsButton" type="button" class="btn btn-danger"
+                          data-toggle="tooltip"
+                          data-placement="bottom"
+                          title="Road basemap"
+                          aria-label="Road basemap"
+                          v-bind:aria-pressed="[currentBaseMap == 'roads' ? 'true' : 'false']"
+                          v-bind:class="[currentBaseMap == 'roads' ? 'btn-raised active' : '']"
+                          v-on:click="setCurrentBaseMap('roads')">
+                    <i v-bind:class="baseMapIconNames[2]"></i>
+                  </button>
+                </div>
+
+                <div id="toggleLayerRenderingSetupButtonVM" class="btn-group-toggle" role="group"
+                     aria-label="..." data-toggle="buttons">
+                  Render:
+
+                  <button id="layerRenderingSetupButton" type="button" class="btn btn-danger"
+                          data-toggle="tooltip"
+                          data-placement="bottom"
+                          v-bind:title="description"
+                          v-bind:aria-label="description"
+                          v-bind:aria-pressed="isLayerRenderingSetupVisible"
+                          v-bind:class="[isLayerRenderingSetupVisible == true ? 'btn-raised active' : '']"
+                          v-on:click="toggleLayerRenderingSetup">
+                    <i v-bind:class="buttonIconName"></i>
+                  </button>
+                </div>
+
               </div>
 
+
+
+
             </div>
-
-
-            <p>
-              S&#x00FC;dburgenland
-            </p>
 
 
 
