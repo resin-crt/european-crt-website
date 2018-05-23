@@ -349,81 +349,65 @@ let MapLayers = {
          * The styles used to render the NUTS3 polygons based on their supergroup.
          */
         supergroups: {
-          //'#d53e4f'
-          '1': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#004358', fillOpacity: 0.7 } },
-          //'#f46d43'
-          '2': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#1F8A70', fillOpacity: 0.7 } },
-          //'#fdae61'
-          '3': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FD7400', fillOpacity: 0.7 } },
-          //'#fee08
-          '4': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FFE11A', fillOpacity: 0.7 } },
-          //'#ffffbf'
-          '5': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF8C00', fillOpacity: 0.7 } },
-          //'#e6f598'
-          '6': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#35478C', fillOpacity: 0.7 } },
-          //'#abdda4'
-          '7': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF2D00', fillOpacity: 0.7 } },
-          //'#66c2a5'
-          '8': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#167F39', fillOpacity: 0.7 } },
-          //'#3288bd'
-          '9': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#00A388', fillOpacity: 0.7 } }
+          '1': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#004358', fillOpacity: 0.6 } },
+          '2': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#1F8A70', fillOpacity: 0.6 } },
+          '3': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FD7400', fillOpacity: 0.6 } },
+          '4': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FFE11A', fillOpacity: 0.6 } },
+          '5': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF8C00', fillOpacity: 0.6 } },
+          '6': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#35478C', fillOpacity: 0.6 } },
+          '7': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF2D00', fillOpacity: 0.6 } },
+          '8': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#167F39', fillOpacity: 0.6 } },
+          '9': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#00A388', fillOpacity: 0.6 } }
         },
 
         /**
          * The styles used to highlight the NUTS3 polygons based on their supergroup.
          */
+        // TODO: RESIN - Styles of Highlighted supergroups are not used at all.
         highlightedSupergroups: {
-          //'#d53e4f'
-          '1': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.7 } },
-          //'#f46d43'
-          '2': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.7 } },
-          //'#fdae61'
-          '3': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.7 } },
-          //'#fee08b'
-          '4': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.7 } },
-          //'#ffffbf'
-          '5': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.7 } },
-          //'#e6f598'
-          '6': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.7 } },
-          //'#abdda4'
-          '7': { visible: true, style: { stroke: true, color: '#ff4500', weight: 5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.7 } },
-          //'#66c2a5'
-          '8': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.7 } },
-          //'#3288bd'
-          '9': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.7 } }
+          '1': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 } },
+          '2': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 } },
+          '3': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 } },
+          '4': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 } },
+          '5': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 } },
+          '6': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 } },
+          '7': { visible: true, style: { stroke: true, color: '#ff4500', weight: 5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 } },
+          '8': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 } },
+          '9': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 } }
         },
 
         /**
          * The styles used to render the NUTS3 polygons based on their group.
          */
+        //TODO: RESIN - Sstyles of groups are not used so far.
         groups: {
           //'#d53e4f'
-          '11': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.7 } },
-          '12': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.7 } },
+          '11': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 } },
+          '12': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 } },
           //'#f46d43'
-          '21': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.7 } },
-          '22': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.7 } },
+          '21': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 } },
+          '22': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 } },
           //'#fdae61'
-          '31': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.7 } },
-          '32': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.7 } },
+          '31': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 } },
+          '32': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 } },
           //'#fee08b'
-          '41': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.7 } },
-          '42': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.7 } },
+          '41': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 } },
+          '42': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 } },
           //'#ffffbf'
-          '51': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.7 } },
-          '52': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.7 } },
+          '51': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 } },
+          '52': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 } },
           //'#e6f598'
-          '61': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.7 } },
-          '62': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.7 } },
+          '61': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 } },
+          '62': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 } },
           //'#abdda4'
-          '71': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.7 } },
-          '72': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.7 } },
+          '71': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 } },
+          '72': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 } },
           //'#66c2a5'
-          '81': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.7 } },
-          '82': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.7 } },
+          '81': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 } },
+          '82': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 } },
           //'#3288bd'
-          '91': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.7 } },
-          '92': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.7 } }
+          '91': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 } },
+          '92': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 } }
         },
 
         /**
@@ -431,32 +415,32 @@ let MapLayers = {
          */
         highlightedGroups: {
           //'#d53e4f'
-          '11': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.7 } },
-          '12': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.7 } },
+          '11': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 } },
+          '12': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 } },
           //'#f46d43'
-          '21': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.7 } },
-          '22': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.7 } },
+          '21': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 } },
+          '22': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 } },
           //'#fdae61'
-          '31': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.7 } },
-          '32': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.7 } },
+          '31': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 } },
+          '32': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 } },
           //'#fee08b'
-          '41': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.7 } },
-          '42': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.7 } },
+          '41': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 } },
+          '42': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 } },
           //'#ffffbf'
-          '51': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.7 } },
-          '52': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.7 } },
+          '51': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 } },
+          '52': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 } },
           //'#e6f598'
-          '61': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.7 } },
-          '62': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.7 } },
+          '61': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 } },
+          '62': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 } },
           //'#abdda4'
-          '71': { visible: true, style: { stroke: true, color: '#ff4500', weight: 5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.7 } },
-          '72': { visible: true, style: { stroke: true, color: '#ff4500', weight: 5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.7 } },
+          '71': { visible: true, style: { stroke: true, color: '#ff4500', weight: 5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 } },
+          '72': { visible: true, style: { stroke: true, color: '#ff4500', weight: 5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 } },
           //'#66c2a5'
-          '81': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.7 } },
-          '82': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.7 } },
+          '81': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 } },
+          '82': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 } },
           //'#3288bd'
-          '91': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.7 } },
-          '92': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.7 } }
+          '91': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 } },
+          '92': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 } }
         },
 
       },
@@ -498,113 +482,99 @@ let MapLayers = {
          * The styles used to render the NUTS3 polygons based on their supergroup.
          */
         supergroups: {
-          //'#d53e4f'
-          '1': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.7 } },
-          //'#f46d43'
-          '2': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.7 } },
-          //'#fdae61'
-          '3': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.7 } },
-          //'#fee08b'
-          '4': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.7 } },
-          //'#ffffbf'
-          '5': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.7 } },
-          //'#e6f598'
-          '6': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.7 } },
-          //'#abdda4'
-          '7': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.7 } },
-          //'#66c2a5'
-          '8': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.7 } },
-          //'#3288bd'
-          '9': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.7 } }
+          '1': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#004358', fillOpacity: 0.6 } },
+          '2': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#1F8A70', fillOpacity: 0.6 } },
+          '3': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FD7400', fillOpacity: 0.6 } },
+          '4': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FFE11A', fillOpacity: 0.6 } },
+          '5': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF8C00', fillOpacity: 0.6 } },
+          '6': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#35478C', fillOpacity: 0.6 } },
+          '7': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF2D00', fillOpacity: 0.6 } },
+          '8': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#167F39', fillOpacity: 0.6 } },
+          '9': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#00A388', fillOpacity: 0.6 } }
         },
 
         /**
          * The styles used to highlight the NUTS3 polygons based on their supergroup.
          */
+        // TODO: RESIN - Styles of Highlighted supergroups are not used at all.
         highlightedSupergroups: {
-          //'#d53e4f'
-          '1': { visible: true, style: { stroke: true, color: '#ff4500', weight: 5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.7 } },
-          //'#f46d43'
-          '2': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.7 } },
-          //'#fdae61'
-          '3': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.7 } },
-          //'#fee08b'
-          '4': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.7 } },
-          //'#ffffbf'
-          '5': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.7 } },
-          //'#e6f598'
-          '6': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.7 } },
-          //'#abdda4'
-          '7': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.7 } },
-          //'#66c2a5'
-          '8': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.7 } },
-          //'#3288bd'
-          '9': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.7 } }
+          '1': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 } },
+          '2': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 } },
+          '3': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 } },
+          '4': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 } },
+          '5': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 } },
+          '6': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 } },
+          '7': { visible: true, style: { stroke: true, color: '#ff4500', weight: 5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 } },
+          '8': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 } },
+          '9': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 } }
         },
 
         /**
          * The styles used to render the NUTS3 polygons based on their group.
          */
+        // TODO: RESIN - Styles of groups are not used so far.
         groups: {
           //'#d53e4f'
-          '11': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.7 } },
-          '12': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.7 } },
+          '11': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 } },
+          '12': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 } },
           //'#f46d43'
-          '21': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.7 } },
-          '22': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.7 } },
+          '21': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 } },
+          '22': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 } },
           //'#fdae61'
-          '31': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.7 } },
-          '32': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.7 } },
+          '31': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 } },
+          '32': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 } },
           //'#fee08b'
-          '41': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.7 } },
+          '41': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 } },
+          '42': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 } },
           //'#ffffbf'
-          '51': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.7 } },
-          '52': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.7 } },
+          '51': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 } },
+          '52': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 } },
           //'#e6f598'
-          '61': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.7 } },
-          '62': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.7 } },
+          '61': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 } },
+          '62': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 } },
           //'#abdda4'
-          '71': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.7 } },
-          '72': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.7 } },
+          '71': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 } },
+          '72': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 } },
           //'#66c2a5'
-          '81': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.7 } },
-          '82': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.7 } },
+          '81': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 } },
+          '82': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 } },
           //'#3288bd'
-          '91': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.7 } },
-          '92': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.7 } }
+          '91': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 } },
+          '92': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 } }
         },
 
         /**
          * The styles used to highlight the NUTS3 polygons based on their group.
          */
+        // TODO: RESIN - Styles of Highlighted groups are not used at all.
         highlightedGroups: {
           //'#d53e4f'
-          '11': { visible: true, style: { stroke: true, color: '#ff4500', weight: 5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.7 } },
-          '12': { visible: true, style: { stroke: true, color: '#ff4500', weight: 5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.7 } },
+          '11': { visible: true, style: { stroke: true, color: '#ff4500', weight: 5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 } },
+          '12': { visible: true, style: { stroke: true, color: '#ff4500', weight: 5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 } },
           //'#f46d43'
-          '21': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.7 } },
-          '22': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.7 } },
+          '21': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 } },
+          '22': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 } },
           //'#fdae61'
-          '31': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.7 } },
-          '32': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.7 } },
+          '31': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 } },
+          '32': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 } },
           //'#fee08b'
-          '41': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.7 } },
-          '42': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.7 } },
+          '41': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 } },
+          '42': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 } },
           //'#ffffbf'
-          '51': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.7 } },
-          '52': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.7 } },
+          '51': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 } },
+          '52': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 } },
           //'#e6f598'
-          '61': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.7 } },
-          '62': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.7 } },
+          '61': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 } },
+          '62': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 } },
           //'#abdda4'
-          '71': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.7 } },
-          '72': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.7 } },
+          '71': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 } },
+          '72': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 } },
           //'#66c2a5'
-          '81': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.7 } },
-          '82': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.7 } },
+          '81': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 } },
+          '82': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 } },
           //'#3288bd'
-          '91': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.7 } },
-          '92': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.7 } }
+          '91': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 } },
+          '92': { visible: true, style: { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 } }
         }
 
       },
@@ -647,132 +617,99 @@ let MapLayers = {
          * The styles used to render the NUTS3 polygons based on their supergroup.
          */
         supergroups: {
-          //'#d53e4f'
-          '11': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.7 } },
-          '12': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.7 } },
-          //'#f46d43'
-          '21': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.7 } },
-          '22': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.7 } },
-          //'#fdae61'
-          '31': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.7 } },
-          '32': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.7 } },
-          //'#fee08b'
-          '41': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.7 } },
-          '42': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.7 } },
-          //'#ffffbf'
-          '51': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.7 } },
-          '52': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.7 } },
-          //'#e6f598'
-          '61': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.7 } },
-          '62': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.7 } },
-          //'#abdda4'
-          '71': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.7 } },
-          '72': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.7 } },
-          //'#66c2a5'
-          '81': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.7 } },
-          '82': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.7 } },
-          //'#3288bd'
-          '91': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.7 } },
-          '92': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.7 } }
+          '1': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#004358', fillOpacity: 0.6 } },
+          '2': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#1F8A70', fillOpacity: 0.6 } },
+          '3': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FD7400', fillOpacity: 0.6 } },
+          '4': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FFE11A', fillOpacity: 0.6 } },
+          '5': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF8C00', fillOpacity: 0.6 } },
+          '6': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#35478C', fillOpacity: 0.6 } },
+          '7': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF2D00', fillOpacity: 0.6 } },
+          '8': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#167F39', fillOpacity: 0.6 } },
+          '9': { visible: true, style: { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#00A388', fillOpacity: 0.6 } }
         },
 
         /**
          * The styles used to highlight the NUTS3 polygons based on their supergroup.
          */
+        // TODO: RESIN - Styles of Highlighted supergroups are not used at all.
         highlightedSupergroups: {
-          //'#d53e4f'
-          '11': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.7 } },
-          '12': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.7 } },
-          //'#f46d43'
-          '21': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.7 } },
-          '22': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.7 } },
-          //'#fdae61'
-          '31': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.7 } },
-          '32': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.7 } },
-          //'#fee08b'
-          '41': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.7 } },
-          '42': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.7 } },
-          //'#ffffbf'
-          '51': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.7 } },
-          '52': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.7 } },
-          //'#e6f598'
-          '61': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.7 } },
-          '62': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.7 } },
-          //'#abdda4'
-          '71': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.7 } },
-          '72': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.7 } },
-          //'#66c2a5'
-          '81': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.7 } },
-          '82': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.7 } },
-          //'#3288bd'
-          '91': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.7 } },
-          '92': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.7 } }
+          '1': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 } },
+          '2': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 } },
+          '3': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 } },
+          '4': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 } },
+          '5': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 } },
+          '6': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 } },
+          '7': { visible: true, style: { stroke: true, color: '#ff4500', weight: 5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 } },
+          '8': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 } },
+          '9': { visible: true, style: { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 } }
         },
 
         /**
          * The styles used to render the NUTS3 polygons based on their group.
          */
+        // TODO: RESIN - Styles of groups are not used so far.
         groups: {
           //'#d53e4f'
-          '11': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.7 } },
-          '12': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.7 } },
+          '11': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 } },
+          '12': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 } },
           //'#f46d43'
-          '21': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.7 } },
-          '22': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.7 } },
+          '21': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 } },
+          '22': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 } },
           //'#fdae61'
-          '31': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.7 } },
-          '32': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.7 } },
+          '31': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 } },
+          '32': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 } },
           //'#fee08b'
-          '41': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.7 } },
-          '42': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.7 } },
+          '41': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 } },
+          '42': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 } },
           //'#ffffbf'
-          '51': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.7 } },
-          '52': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.7 } },
+          '51': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 } },
+          '52': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 } },
           //'#e6f598'
-          '61': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.7 } },
-          '62': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.7 } },
+          '61': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 } },
+          '62': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 } },
           //'#abdda4'
-          '71': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.7 } },
-          '72': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.7 } },
+          '71': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 } },
+          '72': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 } },
           //'#66c2a5'
-          '81': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.7 } },
-          '82': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.7 } },
+          '81': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 } },
+          '82': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 } },
           //'#3288bd'
-          '91': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.7 } },
-          '92': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.7 } }
+          '91': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 } },
+          '92': { visible: true, style: { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 } }
         },
 
         /**
          * The styles used to highlight the NUTS3 polygons based on their group.
          */
+        // TODO: RESIN - Styles of Highlighted groups are not used at all.
         highlightedGroups: {
           //'#d53e4f'
-          '11': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.7 } },
-          '12': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.7 } },
+          '11': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 } },
+          '12': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 } },
           //'#f46d43'
-          '21': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.7 } },
-          '22': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.7 } },
+          '21': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 } },
+          '22': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 } },
           //'#fdae61'
-          '31': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.7 } },
-          '32': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.7 } },
+          '31': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 } },
+          '32': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 } },
           //'#fee08b'
-          '41': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.7 } },
-          '42': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.7 } },
+          '41': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 } },
+          '42': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 } },
           //'#ffffbf'
-          '51': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.7 } },
-          '52': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.7 } },
+          '51': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 } },
+          '52': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 } },
           //'#e6f598'
-          '61': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.7 } },
-          '62': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.7 } },
+          '61': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 } },
+          '62': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 } },
           //'#abdda4'
-          '71': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.7 } },
-          '72': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.7 } },
+          '71': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 } },
+          '72': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 } },
           //'#66c2a5'
-          '81': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.7 } },
-          '82': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.7 } },
+          '81': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 } },
+          '82': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 } },
           //'#3288bd'
-          '91': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.7 } },
-          '92': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.7 } }
+          '91': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 } },
+          '92': { visible: true, style: { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 } }
         }
 
       }
@@ -802,14 +739,13 @@ let MapLayers = {
 
       // loaderViewModel.isVisible = true;
 
-      // TODO: RESIN - Decide which polygon features will be used in the last version.
       this.geoJSON = AppData.nuts3Polygons;
 
       this.mapLayer = L.geoJSON(this.geoJSON, {
         // style: this.namedBasemapLayers[toggleBaseMapViewModel.currentBaseMap].style,
         // style: this.namedBasemapLayers['dark'].supergroupStyles,
 
-        // TODO: RESIN - We need to find a way to render based on supergroups or groups
+        // TODO: RESIN - Correct rendering code to allow the use of the current basemap and the current rendering method (typology supergroups / groups or indicators)
         style: function(feature) {
           let supergroup = MapLayers.NUTS3.namedBasemapLayers['dark'].supergroups[feature.properties.SG];
 
