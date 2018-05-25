@@ -1151,6 +1151,38 @@ let toggleLayerRenderingSetupButtonViewModel = new Vue({
 
 
 
+let layerRenderingSetupTabslistViewModel = new Vue({
+
+  /**
+   * The name of the view model.
+   */
+  el: '#layerRenderingSetupTabslistVM',
+
+  /**
+   * The model of the view model.
+   */
+  data: {
+
+  },
+
+  /**
+   * The methods of the view model.
+   */
+  methods: {
+
+    test() {
+
+      alert('shown');
+
+    },
+    mounted() {
+      $('a[data-toggle="tab"]').on('shown.bs.tab', this.test)
+    }
+
+  }
+
+});
+
 
 
 //
@@ -1164,6 +1196,12 @@ $(document).ready(function(){
   AppState.bootstrapMaterialTooltipEnabled = true;
   $('[data-toggle="tooltip"]').tooltip();
 });
+
+// $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+//   //e.target // newly activated tab
+//   //e.relatedTarget // previous active tab
+//   alert('shown: ' + e.target + ' - hidden: ' + e.relatedTarget);
+// })
 
 Spatial.initializeMap();
 
