@@ -221,21 +221,24 @@
                 <li class="nav-item">
                   <a id="supergroupsTab" class="nav-link active" data-toggle="tab" href="#supergroups"
                      role="tab" aria-controls="Supergroups" aria-selected="true"
-                     >
+                     v-bind:class="[currentTab == 'supergroups' ? 'active border-danger text-danger' : '']"
+                     v-on:click="setCurrentTab('supergroups')">
                     Supergroups
                   </a>
                 </li>
                 <li class="nav-item">
                   <a id="groupsTab" class="nav-link" data-toggle="tab" href="#groups"
                      role="tab" aria-controls="Groups" aria-selected="false"
-                     >
+                     v-bind:class="[currentTab == 'groups' ? 'active border-danger text-danger' : '']"
+                     v-on:click="setCurrentTab('groups')">
                     Groups
                   </a>
                 </li>
                 <li class="nav-item">
                   <a id="indicatorsTab" class="nav-link" data-toggle="tab" href="#indicators"
                      role="tab" aria-controls="Indicators" aria-selected="false"
-                     >
+                     v-bind:class="[currentTab == 'indicators' ? 'active border-danger text-danger' : '']"
+                     v-on:click="setCurrentTab('indicators')">
                     Indicators
                   </a>
                 </li>
