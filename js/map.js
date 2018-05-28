@@ -1087,17 +1087,17 @@ let toggleBaseMapViewModel = new Vue({
 });
 
 /**
- * The toggleLayerRenderingSetupButtonViewModel provides tha data and logic
+ * The toggleNuts3LayerSetupButtonViewModel provides tha data and logic
  * to toggle the layer rendering setup button and panel.
  *
  * @type {Vue} - A Vue object with the model and methods used in the view model.
  */
-let toggleLayerRenderingSetupButtonViewModel = new Vue({
+let toggleNuts3LayerSetupButtonViewModel = new Vue({
 
   /**
    * The name of the view model.
    */
-  el: '#toggleLayerRenderingSetupButtonVM',
+  el: '#toggleNuts3LayerSetupButtonVM',
 
   /**
    * The model of the view model.
@@ -1107,12 +1107,12 @@ let toggleLayerRenderingSetupButtonViewModel = new Vue({
     /**
      * Indicates whether the layer rendering setup is displayed or not.
      */
-    isLayerRenderingSetupVisible: false,
+    isNuts3LayerSetupVisible: false,
 
     /**
      * Button name.
      */
-    description: 'Layer Rendering Setup',
+    description: 'NUTS3 Layer Setup',
 
     /**
      * The basemap icon names.
@@ -1127,20 +1127,18 @@ let toggleLayerRenderingSetupButtonViewModel = new Vue({
   methods: {
 
     /**
-     * Toggles the layer rendering setup button and panel area.
+     * Toggles the NUTS3 layer setup button and panel area.
      *
      */
-    toggleLayerRenderingSetup() {
+    toggleNuts3LayerSetup() {
 
-      this.isLayerRenderingSetupVisible = !this.isLayerRenderingSetupVisible;
-
-      let onOff = (this.isLayerRenderingSetupVisible === true) ? 'on' : 'off';
+      this.isNuts3LayerSetupVisible = !this.isNuts3LayerSetupVisible;
 
       // TODO: RESIN - Add functionality here.
-      //alert('Toggle Layer Rendering Setup ' + onOff);
+
 
       if (AppState.bootstrapMaterialTooltipEnabled) {
-        $('#layerRenderingSetupButton').tooltip('hide');
+        $('#nuts3LayerSetupButton').tooltip('hide');
       }
 
     }
@@ -1151,19 +1149,19 @@ let toggleLayerRenderingSetupButtonViewModel = new Vue({
 
 
 
-let layerRenderingSetupTabslistViewModel = new Vue({
+let nuts3LayerSetupTabsListViewModel = new Vue({
 
   /**
    * The name of the view model.
    */
-  el: '#layerRenderingSetupTabslistVM',
+  el: '#nuts3LayerSetupTabsListVM',
 
   /**
    * The model of the view model.
    */
   data: {
 
-    currentTab: 'supergroups',
+    currentTab: ':supergroups'
 
   },
 
