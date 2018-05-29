@@ -6930,7 +6930,7 @@ var loaderViewModel = new Vue({
 var statisticsViewModel = new Vue({
 
   /**
-   * The name of the view nodel.
+   * The name of the view model.
    */
   el: '#statisticsInfoVM',
 

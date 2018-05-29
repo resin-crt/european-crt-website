@@ -1149,12 +1149,14 @@ let toggleNuts3LayerSetupButtonViewModel = new Vue({
 
 
 
-let nuts3LayerSetupTabsListViewModel = new Vue({
+
+
+let nuts3LayerSetupViewModel = new Vue({
 
   /**
    * The name of the view model.
    */
-  el: '#nuts3LayerSetupTabsListVM',
+  el: '#nuts3LayerSetupVM',
 
   /**
    * The model of the view model.
@@ -1176,11 +1178,20 @@ let nuts3LayerSetupTabsListViewModel = new Vue({
      */
     setCurrentTab(tabName) {
       this.currentTab = tabName;
+    },
+
+    selectAll() {
+      alert('Select all');
+    },
+
+    deselectAll() {
+      alert('Deselect all');
     }
 
   }
 
 });
+
 
 
 
@@ -1200,9 +1211,6 @@ Spatial.initializeMap();
 
 //
 // ================================================================================
-
-
-
 
 
 
