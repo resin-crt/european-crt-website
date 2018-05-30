@@ -148,23 +148,10 @@ body {
   overflow-y: auto;
 }
 
-.legend-narrow-td {
-  width: 20px;
-}
 
-.legend-colour-narrow-td {
-  width: 22px;
-}
 
-.legend-polygon-rect {
-  height: 19px;
-  width: 19px;
-  margin: 2px 0 2px 0;
-}
 
-.legend-label {
-  margin-bottom: 0;
-}
+
 
 
 /*
@@ -601,6 +588,63 @@ body {
     right: 50px;
   }
 }
+
+
+/*
+ *  ================================================================================
+ *    Sidebar Card
+ *  ================================================================================
+ */
+.card > .sidebar-card {
+  height: 100%;
+}
+
+/*.sidebar-card .card-header {*/
+/*padding: 1rem;*/
+/*background-color: transparent;*/
+/*}*/
+
+.sidebar-card > .card-body {
+  padding: 1.0rem;
+}
+
+.sidebar-card > .card-body > .table th, .table td {
+  padding: 0.75rem 0.50rem;
+}
+
+/*.sidebar-card > .card-body > .table th, .table td > .colour-narrow-td {*/
+  /*padding-left: 0;*/
+  /*padding-right: 0;*/
+/*}*/
+
+
+/*
+ *  ================================================================================
+ *    Sidebar Table
+ *  ================================================================================
+ */
+
+/* Used to define very narrow table colums */
+.narrow-td {
+  width: 20px;
+}
+
+.map-polygon-colour-rect {
+  border-radius: 2px;
+  height: 20px;
+  width: 20px;
+  /*margin: 2px 0 2px 0;*/
+}
+
+.legend-label {
+  margin-bottom: 0;
+}
+
+.help {
+  /*cursor: default;*/
+  cursor: help;
+}
+
 
 
 /*

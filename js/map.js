@@ -1164,7 +1164,7 @@ let nuts3LayerSetupViewModel = new Vue({
    */
   data: {
 
-    isVisible: false,
+    isVisible: true,
 
     currentTab: ':supergroups'
 
