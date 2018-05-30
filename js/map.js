@@ -299,12 +299,12 @@ let MapLayers = {
   /**
    * The NUTS3 polygons layer.
    */
-  NUTS3: {
+  nuts3: {
 
     /**
      * The name of the layer.
      */
-    name: 'NUTS3',
+    name: 'nuts3',
 
     /**
      * The named basemap layers.
@@ -733,6 +733,45 @@ let MapLayers = {
     featureToLayerDictionary: {},
 
     /**
+     * The supergroups metadata in the form of a dictionary whose keys are the values of supergroups.
+     */
+    supergroups: {
+      '1': { sg: 1, groups: [11, 12], name: 'This is the name for sg 1', description: 'This is the description of supergroup sg 1' },
+      '2': { sg: 2, groups: [21, 22], name: 'This is the name for sg 2', description: 'This is the description of supergroup sg 2' },
+      '3': { sg: 3, groups: [31, 32], name: 'This is the name for sg 3', description: 'This is the description of supergroup sg 3' },
+      '4': { sg: 4, groups: [41, 42], name: 'This is the name for sg 4', description: 'This is the description of supergroup sg 4' },
+      '5': { sg: 5, groups: [51, 52], name: 'This is the name for sg 5', description: 'This is the description of supergroup sg 5' },
+      '6': { sg: 6, groups: [61, 62], name: 'This is the name for sg 6', description: 'This is the description of supergroup sg 6' },
+      '7': { sg: 7, groups: [71, 72], name: 'This is the name for sg 7', description: 'This is the description of supergroup sg 7' },
+      '8': { sg: 8, groups: [81, 82], name: 'This is the name for sg 8', description: 'This is the description of supergroup sg 8' },
+      '9': { sg: 9, groups: [91, 92], name: 'This is the name for sg 9', description: 'This is the description of supergroup sg 9' }
+    },
+
+    /**
+     * The groups metadata in the form of a dictionary whose keys are the values of groups.
+     */
+    groups: {
+      '11': { g: 11, sg: 1, name: 'This is the name of g 11', description: 'This is the description of g 11' },
+      '12': { g: 12, sg: 1, name: 'This is the name of g 12', description: 'This is the description of g 12' },
+      '21': { g: 21, sg: 2, name: 'This is the name of g 21', description: 'This is the description of g 21' },
+      '22': { g: 22, sg: 2, name: 'This is the name of g 22', description: 'This is the description of g 22' },
+      '31': { g: 31, sg: 3, name: 'This is the name of g 31', description: 'This is the description of g 31' },
+      '32': { g: 32, sg: 3, name: 'This is the name of g 32', description: 'This is the description of g 32' },
+      '41': { g: 41, sg: 4, name: 'This is the name of g 41', description: 'This is the description of g 41' },
+      '42': { g: 42, sg: 4, name: 'This is the name of g 42', description: 'This is the description of g 42' },
+      '51': { g: 51, sg: 5, name: 'This is the name of g 51', description: 'This is the description of g 51' },
+      '52': { g: 52, sg: 5, name: 'This is the name of g 52', description: 'This is the description of g 52' },
+      '61': { g: 61, sg: 6, name: 'This is the name of g 61', description: 'This is the description of g 61' },
+      '62': { g: 62, sg: 6, name: 'This is the name of g 62', description: 'This is the description of g 62' },
+      '71': { g: 71, sg: 7, name: 'This is the name of g 71', description: 'This is the description of g 71' },
+      '72': { g: 72, sg: 7, name: 'This is the name of g 72', description: 'This is the description of g 72' },
+      '81': { g: 81, sg: 8, name: 'This is the name of g 81', description: 'This is the description of g 81' },
+      '82': { g: 82, sg: 8, name: 'This is the name of g 82', description: 'This is the description of g 82' },
+      '91': { g: 91, sg: 9, name: 'This is the name of g 91', description: 'This is the description of g 91' },
+      '92': { g: 92, sg: 9, name: 'This is the name of g 92', description: 'This is the description of g 92' }
+    },
+
+    /**
      * Creates the NUTS3 layer.
      */
     createLayer: function() {
@@ -747,16 +786,16 @@ let MapLayers = {
 
         // TODO: RESIN - Correct rendering code to allow the use of the current basemap and the current rendering method (typology supergroups / groups or indicators)
         style: function(feature) {
-          let supergroup = MapLayers.NUTS3.namedBasemapLayers['dark'].supergroups[feature.properties.SG];
+          let supergroup = MapLayers.nuts3.namedBasemapLayers['dark'].supergroups[feature.properties.SG];
 
           if (supergroup.visible) {
             return supergroup.style;
           }
           else {
-            return MapLayers.NUTS3.namedBasemapLayers['dark'].style;
+            return MapLayers.nuts3.namedBasemapLayers['dark'].style;
           }
 
-          // return MapLayers.NUTS3.namedBasemapLayers[toggleBaseMapViewModel.currentBaseMap].supergroupStyles[feature.properties.SG];
+          // return MapLayers.nuts3.namedBasemapLayers[toggleBaseMapViewModel.currentBaseMap].supergroupStyles[feature.properties.SG];
         },
 
         /**
@@ -772,21 +811,21 @@ let MapLayers = {
              * Raised when the mouse is over a feature.
              */
             mouseover: function() {
-              MapLayers.NUTS3.highlightNuts3(feature, layer);
+              MapLayers.nuts3.highlightNuts3(feature, layer);
             },
 
             /**
              * Raised when the mouse is going out of a feature.
              */
             mouseout: function() {
-              MapLayers.NUTS3.resetNuts3Style(feature, layer);
+              MapLayers.nuts3.resetNuts3Style(feature, layer);
             },
 
             /**
              * Raised when a feature is clicked.
              */
             click: function() {
-              //MapLayers.NUTS3.getCommuteFlows(feature);
+              //MapLayers.nuts3.getCommuteFlows(feature);
             },
 
             /**
@@ -836,7 +875,7 @@ let MapLayers = {
       }
 
       // TODO: RESIN - It seems this line is not needed anymore after using the new version of Leaflet.
-      //MapLayers.NUTS3.mapLayer.bringToFront();
+      //MapLayers.nuts3.mapLayer.bringToFront();
 
       // Update the NUTS3 information on the page.
       // TODO: RESIN - Implement this functionality
@@ -945,7 +984,7 @@ let Spatial = {
     BaseMapLayers.setNamedBasemapLayers();
     BaseMapLayers.createBaseMapLayers();
 
-    MapLayers.NUTS3.createLayer();
+    MapLayers.nuts3.createLayer();
 
     //Spatial.createMSOAsChoroplethLayer();
 
@@ -1166,7 +1205,11 @@ let nuts3LayerSetupViewModel = new Vue({
 
     isVisible: true,
 
-    currentTab: ':supergroups'
+    currentTab: ':supergroups',
+
+    supergroups: MapLayers.nuts3.supergroups,
+
+    groups: MapLayers.nuts3.groups
 
   },
 

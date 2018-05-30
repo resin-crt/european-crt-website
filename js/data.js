@@ -1732,186 +1732,231 @@ AppData.indicatorMetadata = [
 AppData.supergroups = [
   {
     "value" : 1,
-    "description" : "This is the description for sg 1"
+    "description" : "This is the description for sg 1",
+    "details" : "% of total length of major road intersections in NUTS3 unit exposed to 1 in 100 year fluvial flood."
   },
   {
     "value" : 2,
-    "description" : "This is the description for sg 2"
+    "description" : "This is the description for sg 2",
+    "details" : "These are the details about supergroups sg 2"
   },
   {
     "value" : 3,
-    "description" : "This is the description for sg 3"
+    "description" : "This is the description for sg 3",
+    "details" : "These are the details about supergroup sg 3"
   },
   {
     "value" : 4,
-    "description" : "This is the description for sg 4"
+    "description" : "This is the description for sg 4",
+    "details" : "These are the details about supergroup sg 4"
   },
   {
     "value" : 5,
-    "description" : "This is the description for sg 5"
+    "description" : "This is the description for sg 5",
+    "details" : "These are the details about supergroup sg 5"
   },
   {
     "value" : 6,
-    "description" : "This is the description for sg 6"
+    "description" : "This is the description for sg 6",
+    "details" : "These are the details about supergroup sg 6"
   },
   {
     "value" : 7,
-    "description" : "This is the description for sg 7"
+    "description" : "This is the description for sg 7",
+    "details" : "These are the details about supergroup sg 7"
   },
   {
     "value" : 8,
-    "description" : "This is the description for sg 8"
+    "description" : "This is the description for sg 8",
+    "details" : "These are the details about supergroup sg 8"
   },
   {
     "value" : 9,
-    "description" : "This is the description for sg 9"
+    "description" : "This is the description for sg 9",
+    "details" : "These are the details about supergroup sg 9"
   }
 ];
 
 AppData.groups = [
   {
     "value" : 11,
-    "description" : "This is the description for sg 11"
+    "description" : "This is the description for g 11",
+    "details" : "These are the details about group g 11"
   },
   {
     "value" : 12,
-    "description" : "This is the description for sg 12"
+    "description" : "This is the description for g 12",
+    "details" : "These are the details about group g 12"
   },
   {
     "value" : 13,
-    "description" : "This is the description for sg 13"
+    "description" : "This is the description for g 13",
+    "details" : "These are the details about group g 13"
   },
   {
     "value" : 14,
-    "description" : "This is the description for sg 14"
+    "description" : "This is the description for g 14",
+    "details" : "These are the details about group g 14"
   },
   {
     "value" : 21,
-    "description" : "This is the description for sg 21"
+    "description" : "This is the description for g 21",
+    "details" : "These are the details about group g 21"
   },
   {
     "value" : 22,
-    "description" : "This is the description for sg 22"
+    "description" : "This is the description for g 22",
+    "details" : "These are the details about group g 22"
   },
   {
     "value" : 23,
-    "description" : "This is the description for sg 23"
+    "description" : "This is the description for g 23",
+    "details" : "These are the details about group g 23"
   },
   {
     "value" : 24,
-    "description" : "This is the description for sg 24"
+    "description" : "This is the description for g 24",
+    "details" : "These are the details about group g 24"
   },
   {
     "value" : 31,
-    "description" : "This is the description for sg 31"
+    "description" : "This is the description for g 31",
+    "details" : "These are the details about group g 31"
   },
   {
     "value" : 32,
-    "description" : "This is the description for sg 32"
+    "description" : "This is the description for g 32",
+    "details" : "These are the details about group g 32"
   },
   {
     "value" : 33,
-    "description" : "This is the description for sg 33"
+    "description" : "This is the description for g 33",
+    "details" : "These are the details about group g 33"
   },
   {
     "value" : 34,
-    "description" : "This is the description for sg 34"
+    "description" : "This is the description for g 34",
+    "details" : "These are the details about group g 34"
   },
   {
     "value" : 41,
-    "description" : "This is the description for sg 41"
+    "description" : "This is the description for g 41",
+    "details" : "These are the details about group g 41"
   },
   {
     "value" : 42,
-    "description" : "This is the description for sg 42"
+    "description" : "This is the description for g 42",
+    "details" : "These are the details about group g 42"
   },
   {
     "value" : 43,
-    "description" : "This is the description for sg 43"
+    "description" : "This is the description for g 43",
+    "details" : "These are the details about group g 43"
   },
   {
     "value" : 44,
-    "description" : "This is the description for sg 44"
+    "description" : "This is the description for g 44",
+    "details" : "These are the details about group g 44"
   },
   {
     "value" : 51,
-    "description" : "This is the description for sg 51"
+    "description" : "This is the description for g 51",
+    "details" : "These are the details about group g 51"
   },
   {
     "value" : 52,
-    "description" : "This is the description for sg 52"
+    "description" : "This is the description for g 52",
+    "details" : "These are the details about group g 52"
   },
   {
     "value" : 53,
-    "description" : "This is the description for sg 53"
+    "description" : "This is the description for g 53",
+    "details" : "These are the details about group g 53"
   },
   {
     "value" : 54,
-    "description" : "This is the description for sg 54"
+    "description" : "This is the description for g 54",
+    "details" : "These are the details about group g 54"
   },
   {
     "value" : 61,
-    "description" : "This is the description for sg 61"
+    "description" : "This is the description for g 61",
+    "details" : "These are the details about group g 61"
   },
   {
     "value" : 62,
-    "description" : "This is the description for sg 62"
+    "description" : "This is the description for g 62",
+    "details" : "These are the details about group g 62"
   },
   {
     "value" : 63,
-    "description" : "This is the description for sg 63"
+    "description" : "This is the description for g 63",
+    "details" : "These are the details about group g 63"
   },
   {
     "value" : 64,
-    "description" : "This is the description for sg 64"
+    "description" : "This is the description for g 64",
+    "details" : "These are the details about group g 64"
   },
   {
     "value" : 71,
-    "description" : "This is the description for sg 71"
+    "description" : "This is the description for g 71",
+    "details" : "These are the details about group g71"
   },
   {
     "value" : 72,
-    "description" : "This is the description for sg 72"
+    "description" : "This is the description for g 72",
+    "details" : "These are the details about group g72"
   },
   {
     "value" : 73,
-    "description" : "This is the description for sg 73"
+    "description" : "This is the description for g 73",
+    "details" : "These are the details about group g 73"
   },
   {
     "value" : 74,
-    "description" : "This is the description for sg 74"
+    "description" : "This is the description for g 74",
+    "details" : "These are the details about group g 74"
   },
   {
     "value" : 81,
-    "description" : "This is the description for sg 81"
+    "description" : "This is the description for g 81",
+    "details" : "These are the details about group g 81"
   },
   {
     "value" : 82,
-    "description" : "This is the description for sg 82"
+    "description" : "This is the description for g 82",
+    "details" : "These are the details about group g 82"
   },
   {
     "value" : 83,
-    "description" : "This is the description for sg 83"
+    "description" : "This is the description for g 83",
+    "details" : "These are the details about group g 83"
   },
   {
     "value" : 84,
-    "description" : "This is the description for sg 84"
+    "description" : "This is the description for g 84",
+    "details" : "These are the details about group g 84"
   },
   {
     "value" : 91,
-    "description" : "This is the description for sg 91"
+    "description" : "This is the description for g 91",
+    "details" : "These are the details about group g 91"
   },
   {
     "value" : 92,
-    "description" : "This is the description for sg 92"
+    "description" : "This is the description for g 92",
+    "details" : "These are the details about group g 92"
   },
   {
     "value" : 93,
-    "description" : "This is the description for sg 93"
+    "description" : "This is the description for g 93",
+    "details" : "These are the details about group g 93"
   },
   {
     "value" : 94,
-    "description" : "This is the description for sg 94"
+    "description" : "This is the description for g 94",
+    "details" : "These are the details about group g 94"
   }
 ];
 

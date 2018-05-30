@@ -276,8 +276,12 @@
                                 <div class="map-polygon-colour-rect bc-g1"></div>
                               </td>
                               <td><label for="g1">This is the name of supergroup 1</label></td>
-                              <!--<td><a href="classification.html#g1" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
-                              <td><i class="material-icons help">announcement</i></td>
+                              <td>
+                                <i class="material-icons help" data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-bind:title="supergroups['1'].description">
+                                  announcement
+                                </i>
+                              </td>
                             </tr>
                             <tr>
                               <td class="narrow-td">
@@ -291,8 +295,12 @@
                                 <div class="map-polygon-colour-rect bc-g2"></div>
                               </td>
                               <td><label for="g2">Label 2</label></td>
-                              <!--<td><a href="classification.html#g2" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
-                              <td><i class="material-icons help">announcement</i></td>
+                              <td>
+                                <i class="material-icons help" data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-bind:title="supergroups['2'].description">
+                                  announcement
+                                </i>
+                              </td>
                             </tr>
                             <tr>
                               <td class="narrow-td">
@@ -306,14 +314,15 @@
                                 <div class="map-polygon-colour-rect bc-g3"></div>
                               </td>
                               <td><label for="g3">This is the name of supergroup 1</label></td>
-                              <!--<td><a href="classification.html#g3" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
                               <td>
-                                <i class="material-icons help" data-toggle="tooltip" data-html="true"
-                                   title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">announcement</i>
+                                <i class="material-icons help" data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-bind:title="supergroups['3'].description">
+                                  announcement
+                                </i>
                               </td>
                             </tr>
 
-
+                            <!--title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">announcement</i>-->
 
                             </tbody>
                           </table>
