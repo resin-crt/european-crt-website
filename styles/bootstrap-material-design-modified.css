@@ -194,9 +194,11 @@ caption {
 th {
   text-align: inherit; }
 
+/*TODO: RESIN - This is overridden*/
 label {
   display: inline-block;
-  margin-bottom: .5rem; }
+  /*margin-bottom: .5rem;*/
+}
 
 button {
   border-radius: 0; }
@@ -8655,16 +8657,28 @@ fieldset[disabled][disabled] .btn, fieldset[disabled][disabled] .custom-file-con
   .btn-group-vertical > .btn-group {
     margin: 0; }
 
+  /* TODO: RESIN - This portion has been overridden */
 .checkbox label,
 label.checkbox-inline {
   position: relative;
   padding-left: 1.5625rem; }
   .checkbox label .checkbox-decorator,
   label.checkbox-inline .checkbox-decorator {
-    position: absolute;
+    /*position: absolute;*/
     left: 0;
-    padding: .7em;
-    margin: -.7em;
+    /*padding: .7em;*/
+    /*padding-top: .7em;*/
+    /*padding-right: .7em;*/
+    /*padding-bottom: .7em;*/
+    /*padding-left: .7em;*/
+    /*margin: -.7em;*/
+    /*margin-top: -.7em;*/
+    /*margin-right: -.7em;*/
+    /*margin-bottom: -.7em;*/
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: -20px;
     line-height: .7;
     vertical-align: middle;
     cursor: pointer;

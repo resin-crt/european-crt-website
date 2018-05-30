@@ -4,7 +4,7 @@
 //  School of Environment, Education, and Development.
 //
 //  Name:            map.js
-//  Original coding: Vasilis Vlastaras (@gisvlasta), 17/05/2018.
+//  Original coding: Vasilis Vlastaras (@gisvlasta), 29/05/2018.
 //
 //  Description:     The European Climate Risk Typology web mapping functionality.
 // ================================================================================
@@ -1134,8 +1134,7 @@ let toggleNuts3LayerSetupButtonViewModel = new Vue({
 
       this.isNuts3LayerSetupVisible = !this.isNuts3LayerSetupVisible;
 
-      // TODO: RESIN - Add functionality here.
-
+      nuts3LayerSetupViewModel.isVisible = this.isNuts3LayerSetupVisible;
 
       if (AppState.bootstrapMaterialTooltipEnabled) {
         $('#nuts3LayerSetupButton').tooltip('hide');
@@ -1147,10 +1146,12 @@ let toggleNuts3LayerSetupButtonViewModel = new Vue({
 
 });
 
-
-
-
-
+/**
+ * The nuts3LayerSetupViewModel provides tha data and logic
+ * to allow a user to setup the NUTS3 layer rendering.
+ *
+ * @type {Vue} - A Vue object with the model and methods used in the view model.
+ */
 let nuts3LayerSetupViewModel = new Vue({
 
   /**
@@ -1162,6 +1163,8 @@ let nuts3LayerSetupViewModel = new Vue({
    * The model of the view model.
    */
   data: {
+
+    isVisible: false,
 
     currentTab: ':supergroups'
 

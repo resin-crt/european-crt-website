@@ -218,7 +218,8 @@
 
             <div class="ctr-row">
 
-              <div id="nuts3LayerSetupVM" class="card">
+              <div id="nuts3LayerSetupVM" class="card"
+                   v-bind:class="[isVisible === false ? 'd-none' : '']">
                 <div class="card-header">
 
                   <!--nav-fill-->
@@ -259,6 +260,60 @@
 
                     <div id="supergroups" class="tab-pane fade show active" role="tabpanel" aria-labelledby="supergroupsTab">
                       <p>This is the supergroups tab content.</p>
+
+                      <div>
+                        <div id="superGroupSetVisualizationTable" class="nuts3layer-setup-table">
+                          <table class="table table-condensed table-striped">
+                            <tbody>
+                            <tr>
+                              <td class="legend-narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g1" value="1" >
+                                  </label>
+                                </div>
+                              </td>
+                              <td class="legend-colour-narrow-td" style="padding-left: 0; padding-right: 0;">
+                                <div class="legend-polygon-rect bc-g1"></div>
+                              </td>
+                              <td><label for="g1">Label 1</label></td>
+                              <td><a href="classification.html#g1" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td class="legend-narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g2" value="2" >
+                                  </label>
+                                </div>
+                              </td>
+                              <td class="legend-colour-narrow-td" style="padding-left: 0; padding-right: 0;">
+                                <div class="legend-polygon-rect bc-g2"></div>
+                              </td>
+                              <td><label for="g2">Label 2</label></td>
+                              <td><a href="classification.html#g2" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td class="legend-narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g3" value="3" >
+                                  </label>
+                                </div>
+                              </td>
+                              <td class="legend-colour-narrow-td" style="padding-left: 0; padding-right: 0;">
+                                <div class="legend-polygon-rect bc-g3"></div>
+                              </td>
+                              <td><label for="g3">Label 3</label></td>
+                              <td><a href="classification.html#g3" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>
+                            </tr>
+
+
+
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
 
                       <div>
                       <!--<div id="superGroupSetVisualizationTable" class="nuts3layer-setup-table">-->
@@ -815,6 +870,8 @@
 
   <script type="text/javascript" src="libs/bootstrap-material-design-v4.1.1/js/bootstrap-material-design.js"></script>
   <!--<script type="text/javascript" src="libs/bootstrap-material-design-v4.1.1/js/bootstrap-material-design.min.js"></script>-->
+
+  <!--<script type="text/javascript" src="libs/ps-math-stats/ps-math-stats.min.js"></script>-->
 
   <script type="text/javascript" src="js/data.js"></script>
   <script type="text/javascript" src="js/nuts-3-2013-polygons-v1-epsg-4326-p4.js"></script>
