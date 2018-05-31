@@ -1259,8 +1259,33 @@ let nuts3LayerSetupViewModel = new Vue({
 
 
     fillColours: function() {
-      
-      for (let c in MapLayers.nuts3[]) 
+
+      // v-bind:style="{ background-color: fillColours['1'].fillColor, opacity: fillColours['1'].fillOpacity }"
+
+      let fColours = {};
+
+      let supergroups = MapLayers.nuts3.namedBasemapLayers[this.currentTab];
+
+      for (let c in supergroups) {
+        // if (supergroups.hasOwnProperty(c)) {
+          fColours[c] = { fillColor: supergroups[c].fillColor, fillOpacity: supergroups[c].fillOpacity };
+        // }
+      }
+
+      return fColours;
+
+
+      // let fColours = [];
+      //
+      // let supergroups = MapLayers.nuts3.namedBasemapLayers[this.currentTab];
+      //
+      // for (let c in supergroups) {
+      //   if (supergroups.hasOwnProperty(c)) {
+      //     fColours[c] = { fillColor: supergroups[c].fillColor, fillOpacity: supergroups[c].fillOpacity };
+      //   }
+      // }
+      //
+      // return fColours;
 
 
     }

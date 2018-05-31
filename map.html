@@ -277,7 +277,9 @@
                                   </div>
                                 </td>
                                 <td class="narrow-td">
-                                  <div class="map-polygon-colour-rect" ></div>
+                                  <div class="map-polygon-colour-rect"
+                                       v-bind:style="{ background-color: fillColours['1'].fillColor }">
+                                  </div>
                                 </td>
                                 <td><label for="g1" v-text="supergroups['1'].name"></label></td>
                                 <td>
