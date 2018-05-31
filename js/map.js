@@ -736,8 +736,8 @@ let MapLayers = {
      * The supergroups metadata in the form of a dictionary whose keys are the values of supergroups.
      */
     supergroups: {
-      '1': { sg: 1, groups: [11, 12], name: 'This is the name for sg 1', description: 'This is the description of supergroup sg 1' },
-      '2': { sg: 2, groups: [21, 22], name: 'This is the name for sg 2', description: 'This is the description of supergroup sg 2' },
+      '1': { sg: 1, groups: [11, 12], name: 'This is the name for sg 1', description: 'This indicator shows the percentage of the total length of the major road network in the NUTS3 unit that would be exposed to flooding in the event of a 1 in 100 year fluvial flood. Fluvial flooding occurs when watercourses (rivers, streams) overflow and inundate the surrounding area. Although this indicator does not highlight the specific elements of the road network that would be flooded the statistical data provided for this indicator, particularly the Z-score, can be used to better understand whether fluvial flooding to the major road network is a significant issue for the NUTS3 area.' },
+      '2': { sg: 2, groups: [21, 22], name: 'This is the name for sg 2', description: 'The road network was sourced from open street map (2017). Major roads are defined as ‘Highways’ and include ‘motorway’, ‘trunk’, ‘primary’, ‘secondary’ and ‘tertiary’ segments of the network. The road network was intersected with JRC 1-100 year return period flood maps.' },
       '3': { sg: 3, groups: [31, 32], name: 'This is the name for sg 3', description: 'This is the description of supergroup sg 3' },
       '4': { sg: 4, groups: [41, 42], name: 'This is the name for sg 4', description: 'This is the description of supergroup sg 4' },
       '5': { sg: 5, groups: [51, 52], name: 'This is the name for sg 5', description: 'This is the description of supergroup sg 5' },
@@ -1022,7 +1022,7 @@ let HtmlTemplates = {
   /**
    * The HTML template used to display a tooltip with metadata about supergroups or groups.
    */
-  // TODO: RESIN - Change alt image.
+  // TODO: RESIN - Change src and alt in img tag.
   typologyMetadataTooltip: '<div class="card">' +
                              '<img class="card-img-top" src="https://placeimg.com/320/240/arch" alt="Card image cap">' +
                              '<div class="card-body">' +
@@ -1095,7 +1095,11 @@ let toggleBaseMapViewModel = new Vue({
     /**
      * The basemap icon names.
      */
-    baseMapIconNames: [ 'fas fa-map', 'far fa-map', 'fas fa-road' ]
+    baseMapIconNames: {
+      'dark': 'map', //'fas fa-map',
+      'light': 'map', //'far fa-map',
+      'roads': 'directions_car' //'fas fa-road'
+    }
 
   },
 
@@ -1171,7 +1175,7 @@ let toggleNuts3LayerSetupButtonViewModel = new Vue({
     /**
      * The basemap icon names.
      */
-    buttonIconName: 'fas fa-puzzle-piece'
+    buttonIconName: 'layers' //'fas fa-puzzle-piece'
 
   },
 
@@ -1220,11 +1224,13 @@ let nuts3LayerSetupViewModel = new Vue({
 
     isVisible: true,
 
-    currentTab: ':supergroups',
+    currentTab: 'supergroups',
 
     supergroups: MapLayers.nuts3.supergroups,
 
-    groups: MapLayers.nuts3.groups
+    groups: MapLayers.nuts3.groups,
+
+    tooltipIconName: 'announcement' // feedback, info
 
   },
 
@@ -1250,6 +1256,15 @@ let nuts3LayerSetupViewModel = new Vue({
       return tooltips;
 
     },
+
+
+    fillColours: function() {
+      
+      for (let c in MapLayers.nuts3[]) 
+
+
+    }
+
 
   },
 
