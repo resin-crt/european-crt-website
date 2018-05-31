@@ -278,7 +278,7 @@
                               <td><label for="g1">This is the name of supergroup 1</label></td>
                               <td>
                                 <i class="material-icons help" data-toggle="tooltip" data-html="true" data-placement="left"
-                                   v-bind:title="supergroups['1'].description">
+                                   v-bind:title="supergroupTooltips['1']">
                                   announcement
                                 </i>
                               </td>
@@ -297,7 +297,7 @@
                               <td><label for="g2">Label 2</label></td>
                               <td>
                                 <i class="material-icons help" data-toggle="tooltip" data-html="true" data-placement="left"
-                                   v-bind:title="supergroups['2'].description">
+                                   v-bind:title="supergroupTooltips['2']">
                                   announcement
                                 </i>
                               </td>
@@ -316,7 +316,7 @@
                               <td><label for="g3">This is the name of supergroup 1</label></td>
                               <td>
                                 <i class="material-icons help" data-toggle="tooltip" data-html="true" data-placement="left"
-                                   v-bind:title="supergroups['3'].description">
+                                   v-bind:title="supergroupTooltips['3']">
                                   announcement
                                 </i>
                               </td>
@@ -860,7 +860,6 @@
     </div>
 
   </div>
-
 
 
   <script type="text/javascript" src="libs/vue-2.5.16/vue.js"></script>

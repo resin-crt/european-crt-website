@@ -1213,6 +1213,38 @@ let nuts3LayerSetupViewModel = new Vue({
 
   },
 
+  computed: {
+
+    /**
+     * Return the tooltips of the supergroups.
+     */
+    supergroupTooltips: function() {
+
+      let htmlTooltipTemplate = '<div class="card">' +
+                                  '<img class="card-img-top" src="..." alt="Card image cap">' +
+                                  '<div class="card-body">' +
+                                    '<h5 class="card-title">@@name@@</h5>' +
+                                    '<p class="card-text">@@description@@</p>' +
+                                  '</div>' +
+                                '</div>';
+
+      let tooltips = {
+        '1': '', '2': '', '3': '', '4': '', '5': '', '6': '', '7': '', '8': '', '9': ''
+      };
+
+      for (let sg in this.supergroups) {
+        if (MapLayers.nuts3.supergroups.hasOwnProperty(sg)) {
+          tooltips[sg] = htmlTooltipTemplate.replace('@@name@@', MapLayers.nuts3.supergroups[sg].name)
+                                            .replace('@@description@@', MapLayers.nuts3.supergroups[sg].description);
+        }
+      }
+
+      return tooltips;
+
+    },
+
+  },
+
   /**
    * The methods of the view model.
    */
