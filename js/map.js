@@ -914,13 +914,8 @@ let MapLayers = {
 
 };
 
-
-
-
 /**
  * The Spatial object provides properties and methods related to spatial operations.
- *
- * @type {}
  */
 let Spatial = {
   // TODO: Update the documentation here.
@@ -1015,6 +1010,26 @@ let Spatial = {
     baseLayer.bringToBack();
 
   },
+
+};
+
+
+/**
+ * The HTML templates used in the web app.
+ */
+let HtmlTemplates = {
+
+  /**
+   * The HTML template used to display a tooltip with metadata about supergroups or groups.
+   */
+  // TODO: RESIN - Change alt image.
+  typologyMetadataTooltip: '<div class="card">' +
+                             '<img class="card-img-top" src="https://placeimg.com/320/240/arch" alt="Card image cap">' +
+                             '<div class="card-body">' +
+                               '<h5 class="card-title">@@name@@</h5>' +
+                               '<p class="card-text">@@description@@</p>' +
+                             '</div>' +
+                           '</div>'
 
 };
 
@@ -1220,22 +1235,15 @@ let nuts3LayerSetupViewModel = new Vue({
      */
     supergroupTooltips: function() {
 
-      let htmlTooltipTemplate = '<div class="card">' +
-                                  '<img class="card-img-top" src="..." alt="Card image cap">' +
-                                  '<div class="card-body">' +
-                                    '<h5 class="card-title">@@name@@</h5>' +
-                                    '<p class="card-text">@@description@@</p>' +
-                                  '</div>' +
-                                '</div>';
-
       let tooltips = {
         '1': '', '2': '', '3': '', '4': '', '5': '', '6': '', '7': '', '8': '', '9': ''
       };
 
       for (let sg in this.supergroups) {
         if (MapLayers.nuts3.supergroups.hasOwnProperty(sg)) {
-          tooltips[sg] = htmlTooltipTemplate.replace('@@name@@', MapLayers.nuts3.supergroups[sg].name)
-                                            .replace('@@description@@', MapLayers.nuts3.supergroups[sg].description);
+          tooltips[sg] = HtmlTemplates.typologyMetadataTooltip
+                          .replace('@@name@@', MapLayers.nuts3.supergroups[sg].name)
+                          .replace('@@description@@', MapLayers.nuts3.supergroups[sg].description);
         }
       }
 

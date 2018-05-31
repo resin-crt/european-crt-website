@@ -157,12 +157,12 @@ body {
  *  ================================================================================
  */
 .tooltip > .tooltip-inner {
-  /*border: 1px solid;*/
-  padding: 2px;
+  border: 1px solid;
+  padding: 10px;
   max-width: 450px;
-  color: gray;
+  color: #424242;
   text-align: left;
-  background: white;
+  background: #e9ecef;
 
   opacity: 1.0;
   filter: alpha(opacity=100);
