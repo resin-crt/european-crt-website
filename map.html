@@ -268,17 +268,19 @@
                         <div id="superGroupSetVisualizationTable" class="nuts3layer-setup-table">
                           <table class="table table-condensed table-striped">
                             <tbody>
+
+                              <!--1-->
                               <tr>
                                 <td class="narrow-td">
                                   <div class="checkbox checkbox-decorator">
                                     <label>
-                                      <input type="checkbox" id="g1" value="1" >
+                                      <input type="checkbox" id="g1" value="1" v-model="checkedSupergroups" v-on:click="toggleSupergroup('1')">
                                     </label>
                                   </div>
                                 </td>
                                 <td class="narrow-td">
                                   <div class="map-polygon-colour-rect"
-                                       v-bind:style="{ background-color: fillColours['1'].fillColor }">
+                                       v-bind:style="{ 'background-color': typologyClasses['1'].fillColor, 'opacity': typologyClasses['1'].fillOpacity }">
                                   </div>
                                 </td>
                                 <td><label for="g1" v-text="supergroups['1'].name"></label></td>
@@ -290,18 +292,22 @@
                                   </i>
                                 </td>
                               </tr>
+
+                              <!--2-->
                               <tr>
                                 <td class="narrow-td">
                                   <div class="checkbox checkbox-decorator">
                                     <label>
-                                      <input type="checkbox" id="g2" value="2" >
+                                      <input type="checkbox" id="g2" value="2" v-model="checkedSupergroups">
                                     </label>
                                   </div>
                                 </td>
                                 <td class="narrow-td">
-                                  <div class="map-polygon-colour-rect bc-g2"></div>
+                                  <div class="map-polygon-colour-rect"
+                                       v-bind:style="{ 'background-color': typologyClasses['2'].fillColor, 'opacity': typologyClasses['2'].fillOpacity }">
+                                  </div>
                                 </td>
-                                <td><label for="g2" v-text="supergroups['1'].name"></label></td>
+                                <td><label for="g2" v-text="supergroups['2'].name"></label></td>
                                 <td>
                                   <i class="material-icons help text-danger"
                                      data-toggle="tooltip" data-html="true" data-placement="left"
@@ -310,18 +316,22 @@
                                   </i>
                                 </td>
                               </tr>
+
+                              <!--3-->
                               <tr>
                                 <td class="narrow-td">
                                   <div class="checkbox checkbox-decorator">
                                     <label>
-                                      <input type="checkbox" id="g3" value="3" >
+                                      <input type="checkbox" id="g3" value="3" v-model="checkedSupergroups">
                                     </label>
                                   </div>
                                 </td>
                                 <td class="narrow-td">
-                                  <div class="map-polygon-colour-rect bc-g3"></div>
+                                  <div class="map-polygon-colour-rect"
+                                       v-bind:style="{ 'background-color': typologyClasses['3'].fillColor, 'opacity': typologyClasses['3'].fillOpacity }">
+                                  </div>
                                 </td>
-                                <td><label for="g3" v-text="supergroups['1'].name"></label></td>
+                                <td><label for="g3" v-text="supergroups['3'].name"></label></td>
                                 <td>
                                   <i class="material-icons help text-danger"
                                      data-toggle="tooltip" data-html="true" data-placement="left"
@@ -331,7 +341,149 @@
                                 </td>
                               </tr>
 
+                              <!--4-->
+                              <tr>
+                                <td class="narrow-td">
+                                  <div class="checkbox checkbox-decorator">
+                                    <label>
+                                      <input type="checkbox" id="g4" value="4" v-model="checkedSupergroups">
+                                    </label>
+                                  </div>
+                                </td>
+                                <td class="narrow-td">
+                                  <div class="map-polygon-colour-rect"
+                                       v-bind:style="{ 'background-color': typologyClasses['4'].fillColor, 'opacity': typologyClasses['4'].fillOpacity }">
+                                  </div>
+                                </td>
+                                <td><label for="g4" v-text="supergroups['4'].name"></label></td>
+                                <td>
+                                  <i class="material-icons help text-danger"
+                                     data-toggle="tooltip" data-html="true" data-placement="left"
+                                     v-text="tooltipIconName"
+                                     v-bind:title="supergroupTooltips['4']">
+                                  </i>
+                                </td>
+                              </tr>
 
+                              <!--5-->
+                              <tr>
+                                <td class="narrow-td">
+                                  <div class="checkbox checkbox-decorator">
+                                    <label>
+                                      <input type="checkbox" id="g5" value="5" v-model="checkedSupergroups">
+                                    </label>
+                                  </div>
+                                </td>
+                                <td class="narrow-td">
+                                  <div class="map-polygon-colour-rect"
+                                       v-bind:style="{ 'background-color': typologyClasses['5'].fillColor, 'opacity': typologyClasses['5'].fillOpacity }">
+                                  </div>
+                                </td>
+                                <td><label for="g5" v-text="supergroups['5'].name"></label></td>
+                                <td>
+                                  <i class="material-icons help text-danger"
+                                     data-toggle="tooltip" data-html="true" data-placement="left"
+                                     v-text="tooltipIconName"
+                                     v-bind:title="supergroupTooltips['5']">
+                                  </i>
+                                </td>
+                              </tr>
+
+                              <!--6-->
+                              <tr>
+                                <td class="narrow-td">
+                                  <div class="checkbox checkbox-decorator">
+                                    <label>
+                                      <input type="checkbox" id="g6" value="6" v-model="checkedSupergroups">
+                                    </label>
+                                  </div>
+                                </td>
+                                <td class="narrow-td">
+                                  <div class="map-polygon-colour-rect"
+                                       v-bind:style="{ 'background-color': typologyClasses['6'].fillColor, 'opacity': typologyClasses['6'].fillOpacity }">
+                                  </div>
+                                </td>
+                                <td><label for="g6" v-text="supergroups['6'].name"></label></td>
+                                <td>
+                                  <i class="material-icons help text-danger"
+                                     data-toggle="tooltip" data-html="true" data-placement="left"
+                                     v-text="tooltipIconName"
+                                     v-bind:title="supergroupTooltips['6']">
+                                  </i>
+                                </td>
+                              </tr>
+
+                              <!--7-->
+                              <tr>
+                                <td class="narrow-td">
+                                  <div class="checkbox checkbox-decorator">
+                                    <label>
+                                      <input type="checkbox" id="g7" value="7" v-model="checkedSupergroups">
+                                    </label>
+                                  </div>
+                                </td>
+                                <td class="narrow-td">
+                                  <div class="map-polygon-colour-rect"
+                                       v-bind:style="{ 'background-color': typologyClasses['7'].fillColor, 'opacity': typologyClasses['7'].fillOpacity }">
+                                  </div>
+                                </td>
+                                <td><label for="g7" v-text="supergroups['7'].name"></label></td>
+                                <td>
+                                  <i class="material-icons help text-danger"
+                                     data-toggle="tooltip" data-html="true" data-placement="left"
+                                     v-text="tooltipIconName"
+                                     v-bind:title="supergroupTooltips['7']">
+                                  </i>
+                                </td>
+                              </tr>
+
+                              <!--8-->
+                              <tr>
+                                <td class="narrow-td">
+                                  <div class="checkbox checkbox-decorator">
+                                    <label>
+                                      <input type="checkbox" id="g8" value="8" v-model="checkedSupergroups">
+                                    </label>
+                                  </div>
+                                </td>
+                                <td class="narrow-td">
+                                  <div class="map-polygon-colour-rect"
+                                       v-bind:style="{ 'background-color': typologyClasses['8'].fillColor, 'opacity': typologyClasses['8'].fillOpacity }">
+                                  </div>
+                                </td>
+                                <td><label for="g8" v-text="supergroups['8'].name"></label></td>
+                                <td>
+                                  <i class="material-icons help text-danger"
+                                     data-toggle="tooltip" data-html="true" data-placement="left"
+                                     v-text="tooltipIconName"
+                                     v-bind:title="supergroupTooltips['8']">
+                                  </i>
+                                </td>
+                              </tr>
+
+                              <!--9-->
+                              <tr>
+                                <td class="narrow-td">
+                                  <div class="checkbox checkbox-decorator">
+                                    <label>
+                                      <input type="checkbox" id="g9" value="9" v-model="checkedSupergroups">
+                                    </label>
+                                  </div>
+                                </td>
+                                <td class="narrow-td">
+                                  <div class="map-polygon-colour-rect"
+                                       v-bind:style="{ 'background-color': typologyClasses['9'].fillColor, 'opacity': typologyClasses['9'].fillOpacity }">
+                                  </div>
+                                </td>
+                                <td><label for="g9" v-text="supergroups['9'].name"></label></td>
+                                <td>
+                                  <i class="material-icons help text-danger"
+                                     data-toggle="tooltip" data-html="true" data-placement="left"
+                                     v-text="tooltipIconName"
+                                     v-bind:title="supergroupTooltips['9']">
+                                  </i>
+                                </td>
+                              </tr>
                             </tbody>
                           </table>
                         </div>

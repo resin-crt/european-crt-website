@@ -1230,7 +1230,17 @@ let nuts3LayerSetupViewModel = new Vue({
 
     groups: MapLayers.nuts3.groups,
 
-    tooltipIconName: 'announcement' // feedback, info
+    tooltipIconName: 'announcement', // feedback, info
+
+    /**
+     * The array having the super groups that have been selected.
+     */
+    checkedSupergroups: [ '1', '2', '3', '4', '5', '6', '7', '8', '9' ],
+
+    /**
+     * The array having the groups that have been selected.
+     */
+    checkedGroups: []
 
   },
 
@@ -1258,35 +1268,38 @@ let nuts3LayerSetupViewModel = new Vue({
     },
 
 
-    fillColours: function() {
 
-      // v-bind:style="{ background-color: fillColours['1'].fillColor, opacity: fillColours['1'].fillOpacity }"
 
-      let fColours = {};
+    typologyClasses: function() {
 
-      let supergroups = MapLayers.nuts3.namedBasemapLayers[this.currentTab];
+      let classes = {};
+
+      let currentBasemap = toggleBaseMapViewModel.currentBaseMap;
+      let supergroups = MapLayers.nuts3.namedBasemapLayers[currentBasemap][this.currentTab];
 
       for (let c in supergroups) {
-        // if (supergroups.hasOwnProperty(c)) {
-          fColours[c] = { fillColor: supergroups[c].fillColor, fillOpacity: supergroups[c].fillOpacity };
-        // }
+        if (supergroups.hasOwnProperty(c)) {
+          classes[c] = {
+            visible: supergroups[c].visible,
+            fillColor: supergroups[c].style.fillColor,
+            fillOpacity: supergroups[c].style.fillOpacity
+          };
+        }
       }
 
-      return fColours;
+      return classes;
 
-
-      // let fColours = [];
-      //
-      // let supergroups = MapLayers.nuts3.namedBasemapLayers[this.currentTab];
-      //
-      // for (let c in supergroups) {
-      //   if (supergroups.hasOwnProperty(c)) {
-      //     fColours[c] = { fillColor: supergroups[c].fillColor, fillOpacity: supergroups[c].fillOpacity };
-      //   }
-      // }
-      //
-      // return fColours;
-
+    //
+    //   <!--<div id='example-3'>-->
+    //   <!--<input type="checkbox" id="jack" value="Jack" v-model="checkedNames">-->
+    // <!--<label for="jack">Jack</label>-->
+    //     <!--<input type="checkbox" id="john" value="John" v-model="checkedNames">-->
+    //     <!--<label for="john">John</label>-->
+    //     <!--<input type="checkbox" id="mike" value="Mike" v-model="checkedNames">-->
+    //     <!--<label for="mike">Mike</label>-->
+    //     <!--<br>-->
+    //     <!--<span>Checked names: {{ checkedNames }}</span>-->
+    //   <!--</div>-->
 
     }
 
@@ -1306,13 +1319,52 @@ let nuts3LayerSetupViewModel = new Vue({
       this.currentTab = tabName;
     },
 
+
+
+
     selectAll() {
-      alert('Select all');
+      if (this.currentTab === 'supergroups') {
+        this.checkedSupergroups = [ '1', '2', '3', '4', '5', '6', '7', '8', '9' ];
+      }
+      else if (this.currentTab === 'groups') {
+        // TODO: RESIN - Update the groups
+        this.checkedGroups = [
+          '11', '12',
+          '21', '22',
+          '31', '32',
+          '41', '42',
+          '51', '52',
+          '61', '62',
+          '71', '72',
+          '81', '82',
+          '91', '92'
+        ];
+      }
+      // TODO: RESIN - Render Layer
+      // Spatial.renderCommuteFlows();
     },
 
+
+
+
     deselectAll() {
-      alert('Deselect all');
+      if (this.currentTab === 'supergroups') {
+        this.checkedSupergroups = [];
+      }
+      else if (this.currentTab === 'groups') {
+        this.checkedGroups = [];
+      }
+      // TODO: RESIN - Render Layer
+      // Spatial.renderCommuteFlows();
+    },
+
+    toggleSupergroups(sg) {
+
+
+
     }
+
+
 
   }
 
