@@ -1013,6 +1013,49 @@ let loaderViewModel = new Vue({
 
 });
 
+
+
+/**
+ * The sidebarTabsViewModel provides tha data and logic to toggle the sidebar itself or its contents.
+ *
+ * @type {Vue} - A Vue object with the model and methods used in the view model.
+ */
+let sidebarTabsViewModel = new Vue({
+
+  /**
+   * The name of the view model.
+   */
+  el: '#sidebarTabsVM',
+
+  /**
+   * The model of the view model.
+   */
+  data: {
+
+  },
+
+  /**
+   * The methods of the view model.
+   */
+  methods: {
+
+    /**
+     * Hides the tooltip that is displayed on the specified element.
+     * @param element - The element from which the tooltip will be hidden.
+     */
+    hideTooltip(element) {
+      if (AppState.bootstrapMaterialTooltipEnabled) {
+        $(element).tooltip('hide');
+      }
+    }
+
+  }
+
+});
+
+
+
+
 /**
  * The toggleBaseMapViewModel provides tha data and logic to toggle the BaseMap layer.
  *
@@ -1382,9 +1425,12 @@ let nuts3LayerSetupViewModel = new Vue({
 
 
 
-    renderNuts3(typologyClass) {
+    renderNuts3Layer(typologyClass) {
       
-      alert(typologyClass);
+      alert(this.checkedSupergroups);
+
+      alert(this.supergroups["1"].visible);
+      alert(this.supergroups["2"].visible);
       
 
     }
