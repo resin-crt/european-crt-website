@@ -176,6 +176,8 @@
                   </button>
                 </div>
 
+                <div class="crt-ver-sep"></div>
+
                 <div id="toggleNuts3LayerSetupButtonVM" class="btn-group-toggle" role="group"
                      aria-label="Draw NUTS3 Layer" data-toggle="buttons">
                   Draw:
@@ -258,8 +260,7 @@
                               </td>
                               <td class="narrow-td">
                                 <div class="map-polygon-colour-rect"
-                                     >
-                                  <!--v-bind:style="{ 'background-color': typologyClasses['1'].fillColor, 'opacity': typologyClasses['1'].fillOpacity }"-->
+                                     v-bind:style="{ 'background-color': supergroupFillColors['1'].fillColor, 'opacity': supergroupFillColors['1'].fillOpacity }">
                                 </div>
                               </td>
                               <td><label class="clickable-label" for="g1" v-text="supergroups['1'].name"></label></td>
@@ -284,8 +285,7 @@
                               </td>
                               <td class="narrow-td">
                                 <div class="map-polygon-colour-rect"
-                                     >
-                                  <!--v-bind:style="{ 'background-color': typologyClasses['2'].fillColor, 'opacity': typologyClasses['2'].fillOpacity }"-->
+                                     v-bind:style="{ 'background-color': supergroupFillColors['2'].fillColor, 'opacity': supergroupFillColors['2'].fillOpacity }">
                                 </div>
                               </td>
                               <td><label class="clickable-label" for="g2" v-text="supergroups['2'].name"></label></td>
@@ -310,8 +310,7 @@
                               </td>
                               <td class="narrow-td">
                                 <div class="map-polygon-colour-rect"
-                                     >
-                                  <!--v-bind:style="{ 'background-color': typologyClasses['3'].fillColor, 'opacity': typologyClasses['3'].fillOpacity }"-->
+                                     v-bind:style="{ 'background-color': supergroupFillColors['3'].fillColor, 'opacity': supergroupFillColors['3'].fillOpacity }">
                                 </div>
                               </td>
                               <td><label class="clickable-label" for="g3" v-text="supergroups['3'].name"></label></td>
@@ -336,8 +335,7 @@
                               </td>
                               <td class="narrow-td">
                                 <div class="map-polygon-colour-rect"
-                                     >
-                                  <!--v-bind:style="{ 'background-color': typologyClasses['4'].fillColor, 'opacity': typologyClasses['4'].fillOpacity }"-->
+                                     v-bind:style="{ 'background-color': supergroupFillColors['4'].fillColor, 'opacity': supergroupFillColors['4'].fillOpacity }">
                                 </div>
                               </td>
                               <td><label class="clickable-label" for="g4" v-text="supergroups['4'].name"></label></td>
@@ -362,8 +360,7 @@
                               </td>
                               <td class="narrow-td">
                                 <div class="map-polygon-colour-rect"
-                                     >
-                                  <!--v-bind:style="{ 'background-color': typologyClasses['5'].fillColor, 'opacity': typologyClasses['5'].fillOpacity }"-->
+                                     v-bind:style="{ 'background-color': supergroupFillColors['5'].fillColor, 'opacity': supergroupFillColors['5'].fillOpacity }">
                                 </div>
                               </td>
                               <td><label class="clickable-label" for="g5" v-text="supergroups['5'].name"></label></td>
@@ -388,8 +385,7 @@
                               </td>
                               <td class="narrow-td">
                                 <div class="map-polygon-colour-rect"
-                                     >
-                                  <!--v-bind:style="{ 'background-color': typologyClasses['6'].fillColor, 'opacity': typologyClasses['6'].fillOpacity }"-->
+                                     v-bind:style="{ 'background-color': supergroupFillColors['6'].fillColor, 'opacity': supergroupFillColors['6'].fillOpacity }">
                                 </div>
                               </td>
                               <td><label class="clickable-label" for="g6" v-text="supergroups['6'].name"></label></td>
@@ -414,8 +410,7 @@
                               </td>
                               <td class="narrow-td">
                                 <div class="map-polygon-colour-rect"
-                                     >
-                                  <!--v-bind:style="{ 'background-color': typologyClasses['7'].fillColor, 'opacity': typologyClasses['7'].fillOpacity }"-->
+                                     v-bind:style="{ 'background-color': supergroupFillColors['7'].fillColor, 'opacity': supergroupFillColors['7'].fillOpacity }">
                                 </div>
                               </td>
                               <td><label class="clickable-label" for="g7" v-text="supergroups['7'].name"></label></td>
@@ -440,8 +435,7 @@
                               </td>
                               <td class="narrow-td">
                                 <div class="map-polygon-colour-rect"
-                                     >
-                                  <!--v-bind:style="{ 'background-color': typologyClasses['8'].fillColor, 'opacity': typologyClasses['8'].fillOpacity }"-->
+                                     v-bind:style="{ 'background-color': supergroupFillColors['8'].fillColor, 'opacity': supergroupFillColors['8'].fillOpacity }">
                                 </div>
                               </td>
                               <td><label class="clickable-label" for="g8" v-text="supergroups['8'].name"></label></td>
@@ -466,8 +460,7 @@
                               </td>
                               <td class="narrow-td">
                                 <div class="map-polygon-colour-rect"
-                                     >
-                                  <!--v-bind:style="{ 'background-color': typologyClasses['9'].fillColor, 'opacity': typologyClasses['9'].fillOpacity }"-->
+                                     v-bind:style="{ 'background-color': supergroupFillColors['9'].fillColor, 'opacity': supergroupFillColors['9'].fillOpacity }">
                                 </div>
                               </td>
                               <td><label class="clickable-label" for="g9" v-text="supergroups['9'].name"></label></td>

@@ -381,24 +381,24 @@ let MapLayers = {
          */
         //TODO: RESIN - Styles of groups are not used so far.
         groupStyles: {
-          '11': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 },
-          '12': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 },
-          '21': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 },
-          '22': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 },
-          '31': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 },
-          '32': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 },
-          '41': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 },
-          '42': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 },
-          '51': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 },
-          '52': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 },
-          '61': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 },
-          '62': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 },
-          '71': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 },
-          '72': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 },
-          '81': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 },
-          '82': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 },
-          '91': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 },
-          '92': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 }
+          '11': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#004358', fillOpacity: 0.6 },
+          '12': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#004358', fillOpacity: 0.6 },
+          '21': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#1F8A70', fillOpacity: 0.6 },
+          '22': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#1F8A70', fillOpacity: 0.6 },
+          '31': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FD7400', fillOpacity: 0.6 },
+          '32': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FD7400', fillOpacity: 0.6 },
+          '41': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FFE11A', fillOpacity: 0.6 },
+          '42': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FFE11A', fillOpacity: 0.6 },
+          '51': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF8C00', fillOpacity: 0.6 },
+          '52': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF8C00', fillOpacity: 0.6 },
+          '61': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#35478C', fillOpacity: 0.6 },
+          '62': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#35478C', fillOpacity: 0.6 },
+          '71': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF2D00', fillOpacity: 0.6 },
+          '72': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF2D00', fillOpacity: 0.6 },
+          '81': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#167F39', fillOpacity: 0.6 },
+          '82': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#167F39', fillOpacity: 0.6 },
+          '91': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#00A388', fillOpacity: 0.6 },
+          '92': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#00A388', fillOpacity: 0.6 }
         },
 
         /**
@@ -498,24 +498,24 @@ let MapLayers = {
          */
         //TODO: RESIN - Styles of groups are not used so far.
         groupStyles: {
-          '11': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 },
-          '12': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 },
-          '21': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 },
-          '22': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 },
-          '31': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 },
-          '32': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 },
-          '41': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 },
-          '42': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 },
-          '51': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 },
-          '52': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 },
-          '61': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 },
-          '62': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 },
-          '71': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 },
-          '72': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 },
-          '81': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 },
-          '82': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 },
-          '91': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 },
-          '92': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 }
+          '11': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#004358', fillOpacity: 0.6 },
+          '12': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#004358', fillOpacity: 0.6 },
+          '21': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#1F8A70', fillOpacity: 0.6 },
+          '22': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#1F8A70', fillOpacity: 0.6 },
+          '31': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FD7400', fillOpacity: 0.6 },
+          '32': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FD7400', fillOpacity: 0.6 },
+          '41': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FFE11A', fillOpacity: 0.6 },
+          '42': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FFE11A', fillOpacity: 0.6 },
+          '51': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF8C00', fillOpacity: 0.6 },
+          '52': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF8C00', fillOpacity: 0.6 },
+          '61': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#35478C', fillOpacity: 0.6 },
+          '62': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#35478C', fillOpacity: 0.6 },
+          '71': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF2D00', fillOpacity: 0.6 },
+          '72': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF2D00', fillOpacity: 0.6 },
+          '81': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#167F39', fillOpacity: 0.6 },
+          '82': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#167F39', fillOpacity: 0.6 },
+          '91': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#00A388', fillOpacity: 0.6 },
+          '92': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#00A388', fillOpacity: 0.6 }
         },
 
         /**
@@ -615,24 +615,24 @@ let MapLayers = {
          */
         //TODO: RESIN - Styles of groups are not used so far.
         groupStyles: {
-          '11': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 },
-          '12': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 },
-          '21': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 },
-          '22': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 },
-          '31': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 },
-          '32': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 },
-          '41': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 },
-          '42': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 },
-          '51': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 },
-          '52': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 },
-          '61': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 },
-          '62': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 },
-          '71': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 },
-          '72': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 },
-          '81': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 },
-          '82': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 },
-          '91': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 },
-          '92': { stroke: true, color: '#282828', weight: 0.5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 }
+          '11': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#004358', fillOpacity: 0.6 },
+          '12': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#004358', fillOpacity: 0.6 },
+          '21': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#1F8A70', fillOpacity: 0.6 },
+          '22': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#1F8A70', fillOpacity: 0.6 },
+          '31': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FD7400', fillOpacity: 0.6 },
+          '32': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FD7400', fillOpacity: 0.6 },
+          '41': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FFE11A', fillOpacity: 0.6 },
+          '42': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FFE11A', fillOpacity: 0.6 },
+          '51': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF8C00', fillOpacity: 0.6 },
+          '52': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF8C00', fillOpacity: 0.6 },
+          '61': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#35478C', fillOpacity: 0.6 },
+          '62': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#35478C', fillOpacity: 0.6 },
+          '71': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF2D00', fillOpacity: 0.6 },
+          '72': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF2D00', fillOpacity: 0.6 },
+          '81': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#167F39', fillOpacity: 0.6 },
+          '82': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#167F39', fillOpacity: 0.6 },
+          '91': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#00A388', fillOpacity: 0.6 },
+          '92': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#00A388', fillOpacity: 0.6 }
         },
 
         /**
@@ -1231,10 +1231,24 @@ let nuts3LayerSetupViewModel = new Vue({
     /**
      * The array of selected groups used by the list of group checkboxes.
      */
-    checkedGroups: []
+    // TODO: RESIN - Checked Groups need to be updated depending on the final typology.
+    checkedGroups: [
+      '11', '12',
+      '21', '22',
+      '31', '32',
+      '41', '42',
+      '51', '52',
+      '61', '62',
+      '71', '72',
+      '81', '82',
+      '91', '92'
+    ]
 
   },
 
+  /**
+   * The computed properties of the model of the view model.
+   */
   computed: {
 
     /**
@@ -1258,68 +1272,53 @@ let nuts3LayerSetupViewModel = new Vue({
 
     },
 
+    /**
+     * Gets the fill colors used to render the NUTS3 layer.
+     * The colors are displayed on the supergroups toggle buttons.
+     */
+    supergroupFillColors: function() {
 
-    // supergroupFillColors: function() {
-    //
-    //   let fillColors = {};
-    //
-    //   let currentBasemap = toggleBaseMapViewModel.currentBaseMap;
-    //   let supergroups = MapLayers.nuts3.namedBasemapLayers[currentBasemap][this.currentTab];
-    //
-    //   for (let c in supergroups) {
-    //     if (supergroups.hasOwnProperty(c)) {
-    //       classes[c] = {
-    //         visible: supergroups[c].visible,
-    //         fillColor: supergroups[c].style.fillColor,
-    //         fillOpacity: supergroups[c].style.fillOpacity
-    //       };
-    //     }
-    //   }
-    //
-    //   return classes;
-    //
-    // },
-    //
-    // groupFillColors: function() {
-    //
-    // },
+      let fillColors = {};
 
+      let currentBasemap = toggleBaseMapViewModel.currentBaseMap;
+      let supergroupStyles = MapLayers.nuts3.namedBasemapLayers[currentBasemap].supergroupStyles;
 
+      for (let sg in supergroupStyles) {
+        if (supergroupStyles.hasOwnProperty(sg)) {
+          fillColors[sg] = {
+            fillColor: supergroupStyles[sg].fillColor,
+            fillOpacity: supergroupStyles[sg].fillOpacity
+          };
+        }
+      }
 
+      return fillColors;
 
+    },
 
-    // typologyClasses: function() {
-    //
-    //   let classes = {};
-    //
-    //   let currentBasemap = toggleBaseMapViewModel.currentBaseMap;
-    //   let supergroupStyles = MapLayers.nuts3.namedBasemapLayers[currentBasemap][this.currentTab];
-    //
-    //   for (let c in supergroupStyles) {
-    //     if (supergroupStyles.hasOwnProperty(c)) {
-    //       classes[c] = {
-    //         fillColor: supergroupStyles[c].fillColor,
-    //         fillOpacity: supergroupStyles[c].fillOpacity
-    //       };
-    //     }
-    //   }
-    //
-    //   return classes;
-    //
-    // //
-    // //   <!--<div id='example-3'>-->
-    // //   <!--<input type="checkbox" id="jack" value="Jack" v-model="checkedNames">-->
-    // // <!--<label for="jack">Jack</label>-->
-    // //     <!--<input type="checkbox" id="john" value="John" v-model="checkedNames">-->
-    // //     <!--<label for="john">John</label>-->
-    // //     <!--<input type="checkbox" id="mike" value="Mike" v-model="checkedNames">-->
-    // //     <!--<label for="mike">Mike</label>-->
-    // //     <!--<br>-->
-    // //     <!--<span>Checked names: {{ checkedNames }}</span>-->
-    // //   <!--</div>-->
-    //
-    // }
+    /**
+     * Gets the fill colors used to render the NUTS3 layer.
+     * The colors are displayed on the groups toggle buttons.
+     */
+    groupFillColors: function() {
 
+      let fillColors = {};
+
+      let currentBasemap = toggleBaseMapViewModel.currentBaseMap;
+      let supergroupStyles = MapLayers.nuts3.namedBasemapLayers[currentBasemap].supergroupStyles;
+
+      for (let sg in supergroupStyles) {
+        if (supergroupStyles.hasOwnProperty(sg)) {
+          fillColors[sg] = {
+            fillColor: supergroupStyles[sg].fillColor,
+            fillOpacity: supergroupStyles[sg].fillOpacity
+          };
+        }
+      }
+
+      return fillColors;
+
+    }
 
   },
 
@@ -1335,35 +1334,6 @@ let nuts3LayerSetupViewModel = new Vue({
     setCurrentTab(tabName) {
       this.currentTab = tabName;
     },
-
-    /**
-     * Toggles the visibility of the specified supergroup in the NUTS3 layer.
-     * @param sg - The supergroup whose visibility will be toggled on or off.
-     */
-    toggleSupergroup(sg) {
-
-      if (this.supergroups.hasOwnProperty(sg)) {
-        this.supergroups[sg].visible = !this.supergroups[sg].visible;
-      }
-
-      let a = this.checkedSupergroups;
-
-    },
-
-    /**
-     * Toggles the visibility of the specified supergroup in the NUTS3 layer.
-     * @param g - The supergroup whose visibility will be toggled on or off.
-     */
-    toggleGroup(g) {
-
-      if (this.groups.hasOwnProperty(g)) {
-        this.groups[g].visible = !this.groups[g].visible;
-      }
-
-    },
-
-
-
 
     /**
      * Selects all the supergroups or groups depending on the currently selected tab.
@@ -1391,8 +1361,8 @@ let nuts3LayerSetupViewModel = new Vue({
         }
       }
 
-      // TODO: RESIN - Render Layer
-      // Spatial.renderCommuteFlows();
+      // TODO: RESIN - More arguments needed?
+      Spatial.renderNuts3Layer(toggleBaseMapViewModel.currentBaseMap, this.currentTab);
 
     },
 
@@ -1418,31 +1388,30 @@ let nuts3LayerSetupViewModel = new Vue({
         this.checkedGroups = [];
       }
 
-      // TODO: RESIN - Render Layer
-      // Spatial.renderCommuteFlows();
+      // TODO: RESIN - More arguments needed?
+      Spatial.renderNuts3Layer(toggleBaseMapViewModel.currentBaseMap, this.currentTab);
 
     },
 
-
-
+    /**
+     * Renders the NUTS3 layer after toggling on/off the specified typology class.
+     * @param typologyClass - The typology class that is toggled on/off.
+     */
     renderNuts3Layer(typologyClass) {
-      
-      alert(this.checkedSupergroups);
+      if (this.currentTab === 'supergroups') {
+        this.supergroups[typologyClass].visible = !this.supergroups[typologyClass].visible;
+      }
+      else if (this.currentTab === 'groups') {
+        this.groups[typologyClass].visible = !this.groups[typologyClass].visible;
+      }
 
-      alert(this.supergroups["1"].visible);
-      alert(this.supergroups["2"].visible);
-      
-
+      // TODO: RESIN - More arguments needed?
+      Spatial.renderNuts3Layer(toggleBaseMapViewModel.currentBaseMap, this.currentTab);
     }
-
-
 
   }
 
 });
-
-
-
 
 //
 // ================================================================================
@@ -1460,8 +1429,6 @@ Spatial.initializeMap();
 
 //
 // ================================================================================
-
-
 
 
 
