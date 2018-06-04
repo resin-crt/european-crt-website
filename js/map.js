@@ -1032,6 +1032,10 @@ let sidebarTabsViewModel = new Vue({
    */
   data: {
 
+    titles: [
+
+    ]
+
   },
 
   /**
