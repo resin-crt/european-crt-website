@@ -113,9 +113,10 @@
               v-on:click="hideTooltip('#map-controls-button')">
             <!--<a href="#info" role="tab"><i class="fas fa-bars"></i></a>-->
             <!--<a href="#info" role="tab"><i class="fas fa-bars"></i></a>-->
-            <a href="#map-controls" role="tab">
-              <i class="crt-material-icons">menu</i>
-            </a>
+            <!--<a href="#map-controls" role="tab">-->
+              <!--<i class="crt-material-icons">menu</i>-->
+            <!--</a>-->
+            <a href="#map-controls" role="tab"><i class="fas fa-map"></i></a>
           </li>
           <li id="typology-info-button" title="Show / Hide Typology Information"
               data-toggle="tooltip" data-placement="left" aria-label="Show / Hide Typology Information"
@@ -251,16 +252,16 @@
                             <!--1-->
                             <tr>
                               <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': supergroupFillColors['1'].fillColor, 'opacity': supergroupFillColors['1'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
                                 <div class="checkbox checkbox-decorator">
                                   <label>
                                     <input type="checkbox" id="g1" value="1" v-model="checkedSupergroups"
                                            v-on:change="renderNuts3Layer('1')">
                                   </label>
-                                </div>
-                              </td>
-                              <td class="narrow-td">
-                                <div class="map-polygon-colour-rect"
-                                     v-bind:style="{ 'background-color': supergroupFillColors['1'].fillColor, 'opacity': supergroupFillColors['1'].fillOpacity }">
                                 </div>
                               </td>
                               <td><label class="clickable-label" for="g1" v-text="supergroups['1'].name"></label></td>
@@ -276,16 +277,16 @@
                             <!--2-->
                             <tr>
                               <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': supergroupFillColors['2'].fillColor, 'opacity': supergroupFillColors['2'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
                                 <div class="checkbox checkbox-decorator">
                                   <label>
                                     <input type="checkbox" id="g2" value="2" v-model="checkedSupergroups"
                                            v-on:change="renderNuts3Layer('2')">
                                   </label>
-                                </div>
-                              </td>
-                              <td class="narrow-td">
-                                <div class="map-polygon-colour-rect"
-                                     v-bind:style="{ 'background-color': supergroupFillColors['2'].fillColor, 'opacity': supergroupFillColors['2'].fillOpacity }">
                                 </div>
                               </td>
                               <td><label class="clickable-label" for="g2" v-text="supergroups['2'].name"></label></td>
@@ -301,16 +302,16 @@
                             <!--3-->
                             <tr>
                               <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': supergroupFillColors['3'].fillColor, 'opacity': supergroupFillColors['3'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
                                 <div class="checkbox checkbox-decorator">
                                   <label>
                                     <input type="checkbox" id="g3" value="3" v-model="checkedSupergroups"
                                            v-on:change="renderNuts3Layer('3')">
                                   </label>
-                                </div>
-                              </td>
-                              <td class="narrow-td">
-                                <div class="map-polygon-colour-rect"
-                                     v-bind:style="{ 'background-color': supergroupFillColors['3'].fillColor, 'opacity': supergroupFillColors['3'].fillOpacity }">
                                 </div>
                               </td>
                               <td><label class="clickable-label" for="g3" v-text="supergroups['3'].name"></label></td>
