@@ -337,7 +337,7 @@ body {
 .sidebar-tabs > ul > li.active {
   color: #fff;
   /*background-color: #337ab7; !*#0074d9;*!*/
-  background-color: #d9534f; /*#0074d9;*/
+  background-color: #f44336; /*#d9534f;*/ /*#0074d9;*/
 }
 
 .sidebar-tabs > li.disabled,
@@ -591,8 +591,9 @@ body {
   padding: 1.0rem;
 }
 
+
 .sidebar-card > .card-body > .table th, .table td {
-  padding: 0.75rem 0.50rem;
+  padding: 0.75rem 0 0.75rem 0.50rem
 }
 
 /*.sidebar-card > .card-body > .table th, .table td > .colour-narrow-td {*/
@@ -616,7 +617,7 @@ body {
   border-radius: 2px;
   height: 20px;
   width: 20px;
-  /*margin: 2px 0 2px 0;*/
+  margin: 0 0 0 5px;
 }
 
 .legend-label {
@@ -628,7 +629,6 @@ body {
 }
 
 .help {
-  /*cursor: default;*/
   cursor: help;
 }
 
