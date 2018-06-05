@@ -10,6 +10,9 @@
 // ================================================================================
 
 
+const materialRed = '#F44336';
+
+
 /**
  * The AppState object holds the application state.
  */
