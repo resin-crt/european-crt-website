@@ -226,7 +226,7 @@ ColorPalettes.Material = {
   'amber-A400': { name: 'Amber A400', hex: '#FFC400' },
   'amber-A700': { name: 'Amber A700', hex: '#FFAB00' },
 
-  'orange':     { name: 'Orange', hex: '#FF9800' },
+  'orange':      { name: 'Orange',      hex: '#FF9800' },
   'orange-50':   { name: 'Orange 50',   hex: '#FFF3E0' },
   'orange-100':  { name: 'Orange 100',  hex: '#FFE0B2' },
   'orange-200':  { name: 'Orange 200',  hex: '#FFCC80' },
@@ -336,7 +336,7 @@ ColorPalettes.Fluent = {
   'hollywood-cerise': { name: 'Hollywood Cerise', hex: '#E3008C' },
   'flirt': { name: 'Flirt', hex: '#BF0077' },
   'fuchsia-pink': { name: 'Fuchsia Pink', hex: '#C239B3' },
-  'flirt': { name: 'Flirt', hex: '#9A0089' },
+  'flirt2': { name: 'Flirt2', hex: '#9A0089' },  // TODO: RESIN - Change the name of this color.
   
   'lochmara': { name: 'Lochmara', hex: '#0078D7' },
   'endeavour': { name: 'Endeavour', hex: '#0063B1' },
@@ -348,31 +348,31 @@ ColorPalettes.Fluent = {
   'seance': { name: 'Seance', hex: '#881798' },
 
   'bondi-blue': { name: 'Bondi blue', hex: '#0099BC' },
-  '': { name: '', hex: '#2D7D9A' },
-  '': { name: '', hex: '#00B7C3' },
-  '': { name: '', hex: '#038387' },
-  '': { name: '', hex: '#00B294' },
-  '': { name: '', hex: '#018574' },
-  '': { name: '', hex: '#00CC6A' },
-  '': { name: '', hex: '#10893E' },
+  'c1': { name: 'c1', hex: '#2D7D9A' },
+  'c2': { name: 'c2', hex: '#00B7C3' },
+  'c3': { name: 'c3', hex: '#038387' },
+  'c4': { name: 'c4', hex: '#00B294' },
+  'c5': { name: 'c5', hex: '#018574' },
+  'c6': { name: 'c6', hex: '#00CC6A' },
+  'c7': { name: 'c7', hex: '#10893E' },
   
-  '': { name: '', hex: '#7A7574' },
-  '': { name: '', hex: '#5D5A58' },
-  '': { name: '', hex: '#68768A' },
-  '': { name: '', hex: '#515C6B' },
-  '': { name: '', hex: '#567C73' },
-  '': { name: '', hex: '#486860' },
-  '': { name: '', hex: '#498205' },
-  '': { name: '', hex: '#107C10' },
+  'c8':  { name: 'c8',  hex: '#7A7574' },
+  'c9':  { name: 'c9',  hex: '#5D5A58' },
+  'c10': { name: 'c10', hex: '#68768A' },
+  'c11': { name: 'c11', hex: '#515C6B' },
+  'c12': { name: 'c12', hex: '#567C73' },
+  'c13': { name: 'c13', hex: '#486860' },
+  'c14': { name: 'c14', hex: '#498205' },
+  'c15': { name: 'c15', hex: '#107C10' },
 
-  '': { name: '', hex: '#767676' },
-  '': { name: '', hex: '#4C4A48' },
-  '': { name: '', hex: '#69797E' },
-  '': { name: '', hex: '#4A5459' },
-  '': { name: '', hex: '#647C64' },
-  '': { name: '', hex: '#525E54' },
-  '': { name: '', hex: '#847545' },
-  '': { name: '', hex: '#7E735F' }
+  'c16': { name: 'c16', hex: '#767676' },
+  'c17': { name: 'c17', hex: '#4C4A48' },
+  'c18': { name: 'c18', hex: '#69797E' },
+  'c19': { name: 'c19', hex: '#4A5459' },
+  'c20': { name: 'c20', hex: '#647C64' },
+  'c21': { name: 'c21', hex: '#525E54' },
+  'c22': { name: 'c22', hex: '#847545' },
+  'c23': { name: 'c23', hex: '#7E735F' }
 };
 
 

@@ -4,7 +4,7 @@
 //  School of Environment, Education, and Development.
 //
 //  Name:            map.js
-//  Original coding: Vasilis Vlastaras (@gisvlasta), 04/06/2018.
+//  Original coding: Vasilis Vlastaras (@gisvlasta), 05/06/2018.
 //
 //  Description:     The European Climate Risk Typology web mapping functionality.
 // ================================================================================
@@ -359,15 +359,15 @@ let MapLayers = {
           // '8': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#167F39', fillOpacity: 0.6 },
           // '9': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#00A388', fillOpacity: 0.6 }
 
-          '1': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#004358', fillOpacity: 0.6 },
-          '2': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#1F8A70', fillOpacity: 0.6 },
-          '3': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FD7400', fillOpacity: 0.6 },
-          '4': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FFE11A', fillOpacity: 0.6 },
-          '5': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF8C00', fillOpacity: 0.6 },
-          '6': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#35478C', fillOpacity: 0.6 },
-          '7': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF2D00', fillOpacity: 0.6 },
-          '8': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#167F39', fillOpacity: 0.6 },
-          '9': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#00A388', fillOpacity: 0.6 }
+          '1': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material['pink'].hex, fillOpacity: 0.7 },
+          '2': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material['red'].hex, fillOpacity: 0.7 },
+          '3': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material['deep-orange'].hex, fillOpacity: 0.7 },
+          '4': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material['teal'].hex, fillOpacity: 0.7 },
+          '5': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material['green'].hex, fillOpacity: 0.7 },
+          '6': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material['indigo'].hex, fillOpacity: 0.7 },
+          '7': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material['cyan'].hex, fillOpacity: 0.7 },
+          '8': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material['orange'].hex, fillOpacity: 0.7 },
+          '9': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material['light-blue'].hex, fillOpacity: 0.7 }
         },
 
         /**
@@ -734,7 +734,11 @@ let MapLayers = {
      */
     createLayer: function() {
 
+      // TODO: RESIN - Check next line.
       // loaderViewModel.isVisible = true;
+
+      // Get the named basemap layer.
+      let namedBaseMap = toggleBaseMapViewModel.currentBaseMap;
 
       this.geoJSON = AppData.nuts3Polygons;
 
@@ -744,13 +748,14 @@ let MapLayers = {
 
         // TODO: RESIN - Correct rendering code to allow the use of the current basemap and the current rendering method (typology supergroups / groups or indicators)
         style: function(feature) {
+          // TODO: RESIN - Change next line.
           let isVisible = MapLayers.nuts3.supergroups[feature.properties.SG].visible;
 
           if (isVisible) {
-            return MapLayers.nuts3.namedBasemapLayers['dark'].supergroupStyles[feature.properties.SG];
+            return MapLayers.nuts3.namedBasemapLayers[namedBaseMap].supergroupStyles[feature.properties.SG];
           }
           else {
-            return MapLayers.nuts3.namedBasemapLayers['dark'].defaultStyle;
+            return MapLayers.nuts3.namedBasemapLayers[namedBaseMap].defaultStyle;
           }
 
           // return MapLayers.nuts3.namedBasemapLayers[toggleBaseMapViewModel.currentBaseMap].supergroupStyles[feature.properties.SG];
@@ -813,6 +818,102 @@ let MapLayers = {
       // loaderViewModel.isVisible = false;
 
     },
+
+
+    renderLayer: function() {
+
+      Spatial.map.removeLayer(this.mapLayer);
+
+      this.createLayer();
+
+    },
+
+
+
+
+    // renderNuts3Polygon: function(feature, currentBaseMap, currentTypologySet) {
+    //
+    //   // Get the associated feature layer.
+    //   //TODO: RESIN - PROSOXH - Edw einai olo to mystiko
+    //   let featureLayer = this.mapLayer._layers[this.featureToLayerDictionary[msoaCode]];
+    //
+    //   let namedStyles = {
+    //     'supergroups': 'supergroupStyles',
+    //     'groups': 'groupStyles'
+    //   }
+    //
+    //
+    //   if (this[currentTypologySet].visible) {
+    //
+    //     // Change the color of the feature layer.
+    //     featureLayer.setStyle(
+    //       this.namedBasemapLayers[currentBaseMap][namedStyles[currentTypologySet]]. .commuteFlowStyles[feature.properties.g.toString()]
+    //     );
+    //
+    //     // Add the feature layer in to the commute flows dictionary.
+    //     this.commuteFlowsDictionary[msoaCode] = {
+    //       featureLayer: featureLayer,
+    //       g: feature.properties.g
+    //     }
+    //   }
+    //   else {
+    //
+    //   }
+    //
+    // },
+
+
+    // changeNuts3ClassStyle: function(typologyClass) {
+    //
+    //   // Get the current basemap. This is used to decide the symbology of the NUTS3 polygons.
+    //   let currentBaseMap = toggleBaseMapViewModel.currentBaseMap;
+    //
+    //   // Get the current typology set.
+    //   let currentTypologySet = nuts3LayerSetupViewModel.currentTab;
+    //
+    //   // Check whether NUTS3 features exist or not.
+    //   if (this.geoJSON !== undefined || this.geoJSON !== null) {
+    //
+    //     // Loop through the NUTS3 features.
+    //     for (i = 0; i < this.geoJSON.features.length; i++) {
+    //
+    //       // Get the NUTS3 feature.
+    //       let feature = this.geoJSON.features[i];
+    //
+    //       if (feature.properties.SG === typologyClass) {
+    //         // Render the NUTS3 polygon.
+    //         this.renderNuts3Polygon(feature, currentBaseMap, currentTypologySet); // TODO: RESIN - IMMEDIATELY
+    //       }
+    //
+    //     }
+    //
+    //   }
+    //
+    //   // Hide the loader.
+    //   // TODO: RESIN - Check if this is needed.
+    //   //loaderViewModel.isVisible = false;
+    //
+    // },
+
+    //
+    // /**
+    //  * Resets the style of commute flow polygons.
+    //  */
+    // resetStyleCommuteFlowPolygons: function() {
+    //
+    //   for (var key in this.commuteFlowsDictionary) {
+    //     if (this.commuteFlowsDictionary.hasOwnProperty(key)) {
+    //       this.mapLayer.resetStyle(this.commuteFlowsDictionary[key].featureLayer);
+    //     }
+    //   }
+    //
+    //   this.commuteFlowsDictionary = {};
+    //
+    // },
+
+
+
+
 
     /**
      * Highlights a NUTS3 polygon.
@@ -1143,6 +1244,8 @@ let toggleBaseMapViewModel = new Vue({
       //MapLayers.MSOAs.renderCommuteFlowPolygons();
       //Spatial.renderCommuteFlows();
 
+      MapLayers.nuts3.renderLayer();
+
     }
 
   }
@@ -1376,7 +1479,8 @@ let nuts3LayerSetupViewModel = new Vue({
       }
 
       // TODO: RESIN - More arguments needed?
-      Spatial.renderNuts3Layer(toggleBaseMapViewModel.currentBaseMap, this.currentTab);
+      //Spatial.renderNuts3Layer(toggleBaseMapViewModel.currentBaseMap, this.currentTab);
+      MapLayers.nuts3.renderLayer();
 
     },
 
@@ -1403,7 +1507,8 @@ let nuts3LayerSetupViewModel = new Vue({
       }
 
       // TODO: RESIN - More arguments needed?
-      Spatial.renderNuts3Layer(toggleBaseMapViewModel.currentBaseMap, this.currentTab);
+      //Spatial.renderNuts3Layer(toggleBaseMapViewModel.currentBaseMap, this.currentTab);
+      MapLayers.nuts3.renderLayer();
 
     },
 
@@ -1420,7 +1525,8 @@ let nuts3LayerSetupViewModel = new Vue({
       }
 
       // TODO: RESIN - More arguments needed?
-      Spatial.renderNuts3Layer(toggleBaseMapViewModel.currentBaseMap, this.currentTab);
+      //Spatial.renderNuts3Layer(toggleBaseMapViewModel.currentBaseMap, this.currentTab);
+      MapLayers.nuts3.renderLayer();
     }
 
   }
