@@ -134,71 +134,90 @@
 
           <div class="sidebar-container">
 
+
             <div class="crt-row">
-
-              <div class="crt-row-internal">
-
-                <div id="toggleBaseMapButtonsVM" class="btn-group-toggle" role="group"
-                     aria-label="Select basemap" data-toggle="buttons">
-                  Basemap:
-
-                  <button id="darkButton" type="button" class="btn btn-danger"
-                          data-toggle="tooltip"
-                          data-placement="bottom"
-                          title="Dark basemap"
-                          aria-label="Dark basemap"
-                          v-bind:aria-pressed="[currentBaseMap === 'dark' ? 'true' : 'false']"
-                          v-bind:class="[currentBaseMap === 'dark' ? 'btn-raised' : '']"
-                          v-on:click="setCurrentBaseMap('dark')">
-                    <!--<i v-bind:class=baseMapIconNames['dark']></i>-->
-                    <i class="material-icons text-dark" v-text=baseMapIconNames['dark']></i>
-                  </button>
-                  <button id="lightButton" type="button" class="btn btn-danger"
-                          data-toggle="tooltip"
-                          data-placement="bottom"
-                          title="Light basemap"
-                          aria-label="Light basemap"
-                          v-bind:aria-pressed="[currentBaseMap === 'light' ? 'true' : 'false']"
-                          v-bind:class="[currentBaseMap === 'light' ? 'btn-raised' : '']"
-                          v-on:click="setCurrentBaseMap('light')">
-                    <!--<i v-bind:class="baseMapIconNames['light']"></i>-->
-                    <i class="material-icons" v-text="baseMapIconNames['light']"></i>
-                  </button>
-                  <button id="roadsButton" type="button" class="btn btn-danger"
-                          data-toggle="tooltip"
-                          data-placement="bottom"
-                          title="Road basemap"
-                          aria-label="Road basemap"
-                          v-bind:aria-pressed="[currentBaseMap === 'roads' ? 'true' : 'false']"
-                          v-bind:class="[currentBaseMap === 'roads' ? 'btn-raised' : '']"
-                          v-on:click="setCurrentBaseMap('roads')">
-                    <!--<i v-bind:class="baseMapIconNames['roads']"></i>-->
-                    <i class="material-icons" v-text="baseMapIconNames['roads']"></i>
-                  </button>
+              <div class="card sidebar-card">
+                <div class="card-header">
+                  <div class="container">
+                    <div class="row">
+                      <div style="width: 175px;">BaseMap</div>
+                      <div class="crt-ver-sep"></div>
+                      <div>Draw Layer</div>
+                    </div>
+                  </div>
                 </div>
+                <div class="card-body">
 
-                <div class="crt-ver-sep"></div>
+                  <div class="crt-row-internal">
 
-                <div id="toggleNuts3LayerSetupButtonVM" class="btn-group-toggle" role="group"
-                     aria-label="Draw NUTS3 Layer" data-toggle="buttons">
-                  Draw:
+                    <div id="toggleBaseMapButtonsVM" class="btn-group-toggle" role="group"
+                         aria-label="Select basemap" data-toggle="buttons">
+                      <!--Basemap:-->
 
-                  <button id="nuts3LayerSetupButton" type="button" class="btn btn-danger"
-                          data-toggle="tooltip"
-                          data-placement="bottom"
-                          v-bind:title="description"
-                          v-bind:aria-label="description"
-                          v-bind:aria-pressed="isNuts3LayerSetupVisible"
-                          v-bind:class="[isNuts3LayerSetupVisible === true ? 'btn-raised' : '']"
-                          v-on:click="toggleNuts3LayerSetup">
-                    <!--<i v-bind:class="buttonIconName"></i>-->
-                    <i class="material-icons" v-text="buttonIconName"></i>
-                  </button>
+                      <button id="darkButton" type="button" class="btn btn-danger"
+                              data-toggle="tooltip"
+                              data-placement="bottom"
+                              title="Dark basemap"
+                              aria-label="Dark basemap"
+                              v-bind:aria-pressed="[currentBaseMap === 'dark' ? 'true' : 'false']"
+                              v-bind:class="[currentBaseMap === 'dark' ? 'btn-raised' : '']"
+                              v-on:click="setCurrentBaseMap('dark')">
+                        <!--<i v-bind:class=baseMapIconNames['dark']></i>-->
+                        <i class="material-icons text-dark" v-text=baseMapIconNames['dark']></i>
+                      </button>
+                      <button id="lightButton" type="button" class="btn btn-danger"
+                              data-toggle="tooltip"
+                              data-placement="bottom"
+                              title="Light basemap"
+                              aria-label="Light basemap"
+                              v-bind:aria-pressed="[currentBaseMap === 'light' ? 'true' : 'false']"
+                              v-bind:class="[currentBaseMap === 'light' ? 'btn-raised' : '']"
+                              v-on:click="setCurrentBaseMap('light')">
+                        <!--<i v-bind:class="baseMapIconNames['light']"></i>-->
+                        <i class="material-icons" v-text="baseMapIconNames['light']"></i>
+                      </button>
+                      <button id="roadsButton" type="button" class="btn btn-danger"
+                              data-toggle="tooltip"
+                              data-placement="bottom"
+                              title="Road basemap"
+                              aria-label="Road basemap"
+                              v-bind:aria-pressed="[currentBaseMap === 'roads' ? 'true' : 'false']"
+                              v-bind:class="[currentBaseMap === 'roads' ? 'btn-raised' : '']"
+                              v-on:click="setCurrentBaseMap('roads')">
+                        <!--<i v-bind:class="baseMapIconNames['roads']"></i>-->
+                        <i class="material-icons" v-text="baseMapIconNames['roads']"></i>
+                      </button>
+                    </div>
+
+                    <div class="crt-ver-sep"></div>
+
+                    <div id="toggleNuts3LayerSetupButtonVM" class="btn-group-toggle" role="group"
+                         aria-label="Draw NUTS3 Layer" data-toggle="buttons">
+                      <!--Draw:-->
+
+                      <button id="nuts3LayerSetupButton" type="button" class="btn btn-danger"
+                              data-toggle="tooltip"
+                              data-placement="bottom"
+                              v-bind:title="description"
+                              v-bind:aria-label="description"
+                              v-bind:aria-pressed="isNuts3LayerSetupVisible"
+                              v-bind:class="[isNuts3LayerSetupVisible === true ? 'btn-raised' : '']"
+                              v-on:click="toggleNuts3LayerSetup">
+                        <!--<i v-bind:class="buttonIconName"></i>-->
+                        <i class="material-icons" v-text="buttonIconName"></i>
+                      </button>
+                    </div>
+
+                  </div>
+
                 </div>
-
               </div>
 
             </div>
+
+            <!--<div class="crt-row">-->
+
+            <!--</div>-->
 
             <div class="crt-hor-sep"></div>
 
@@ -1033,7 +1052,7 @@
   <!--<script type="text/javascript" src="libs/ps-math-stats/ps-math-stats.min.js"></script>-->
 
   <script type="text/javascript" src="js/data.js"></script>
-  <script type="text/javascript" src="js/color-palletes.js"></script>
+  <script type="text/javascript" src="js/color-palettes.js"></script>
   <script type="text/javascript" src="js/nuts-3-2013-polygons-v1-epsg-4326-p4.js"></script>
   <!--here-->
   <!--<script type="text/javascript" src="js/nuts-3-2013-polygons-v1-epsg-4326-p6.js"></script>-->
