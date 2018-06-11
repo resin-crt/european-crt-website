@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>European Climate Risk Typology | Map</title>
+
+  <meta name="description" content="European Climate Risk Typology Map">
+  <meta name="author" content="Vasilis Vlastaras, University of Manchester">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+
+  <!-- Bootstrap -->
+  <!--<link rel="stylesheet" href="libs/bootstrap-material-design-v4.1.1/css/bootstrap-material-design.css" >-->
+  <!--<link rel="stylesheet" href="libs/bootstrap-material-design-v4.1.1/css/bootstrap-material-design.min.css" >-->
+  <link rel="stylesheet" href="styles/bootstrap-material-design-modified.css" >
+
+  <!-- Font-Awesome -->
+  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fa-brands.css">-->
+  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fa-brands.min.css">-->
+  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fa-regular.css">-->
+  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fa-regular.min.css">-->
+  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fa-solid.css">-->
+  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fa-solid.min.css">-->
+  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fontawesome.css">-->
+  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fontawesome.min.css">-->
+  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fontawesome-all.css">-->
+  <link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fontawesome-all.min.css">
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="libs/leaflet-1.3.1/leaflet.css">
+  <link rel="stylesheet" href="libs/leaflet-plugins/sidebar-v2-0.4.0/leaflet-sidebar.css">
+  <!--<link rel="stylesheet" href="libs/leaflet-plugins/sidebar-v2-0.4.0/leaflet-sidebar.min.css">-->
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles/map.css">
+  <link rel="stylesheet" href="styles/loader.css">
+
+  <!-- JQuery -->
+  <!--<script type="text/javascript" src="libs/jquery-3.2.1/jquery.js"></script>-->
+  <!--<script type="text/javascript" src="libs/jquery-3.2.1/jquery.min.js"></script>-->
+  <script type="text/javascript" src="libs/jquery-3.2.1/jquery.slim.js"></script>
+  <!--<script type="text/javascript" src="libs/jquery-3.2.1/jquery.slim.min.js"></script>-->
+
+  <!--<script type="text/javascript" src="js/shared.js"></script>-->
+
+</head>
+<body>
+
+<nav id="navBarHost" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html">
+    <img src="images/logo-small.png" height="24" class="website-logo" alt="Website Logo">
+    <span class="xs-brand-heading">European Climate Risk Typology</span>
+    <span class="sm-brand-heading">European Climate Risk Typology</span>
+    <span class="md-brand-heading">European Climate Risk Typology</span>
+    <span class="d-none d-sm-inline-block">European Climate Risk Typology</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationBar"
+          aria-controls="navigationBar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div id="navigationBar" class="collapse navbar-collapse">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Map <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="typology.html">Typology</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="uses.html">Uses</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="methodology.html">Methodology</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="indicators.html">Risk Indicators</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-container">
+  <div class="map-container">
+
+    <div id="spinnerVM" class="spinner" v-show="isVisible">
+      <div class="showbox">
+        <div class="loader">
+          <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div id="map" class="sidebar-map"></div>
+  </div>
+
+  <div id="sidebar" class="sidebar collapsed sidebar-right leaflet-touch">
+    <div id="sidebarTabsVM" class="sidebar-tabs">
+      <ul role="tablist">
+        <li id="map-controls-button" title="Show / Hide Map Controls"
+            data-toggle="tooltip" data-placement="left" aria-label="Show / Hide Map Controls"
+            v-on:click="hideTooltip('#map-controls-button')">
+          <!--<a href="#info" role="tab"><i class="fas fa-bars"></i></a>-->
+          <!--<a href="#info" role="tab"><i class="fas fa-bars"></i></a>-->
+          <!--<a href="#map-controls" role="tab">-->
+          <!--<i class="crt-material-icons">menu</i>-->
+          <!--</a>-->
+          <a href="#map-controls" role="tab"><i class="fas fa-map"></i></a>
+        </li>
+        <li id="typology-info-button" title="Show / Hide Typology Information"
+            data-toggle="tooltip" data-placement="left" aria-label="Show / Hide Typology Information"
+            v-on:click="hideTooltip('#typology-info-button')">
+          <a href="#typology-info" role="tab">
+            <i class="crt-material-icons">assignment</i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sidebar-content">
+
+      <div class="sidebar-pane" id="map-controls">
+
+        <div class="sidebar-container">
+
+
+          <div class="crt-row">
+            <div class="card sidebar-card">
+              <div class="card-header">
+                <div class="container">
+                  <div class="row">
+                    <div style="width: 175px;">BaseMap</div>
+                    <div class="crt-ver-sep"></div>
+                    <div>Draw Layer</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+
+                <div class="crt-row-internal">
+
+                  <div class="btn-toolbar" role="toolbar" aria-label="Map Toolbar">
+
+                    <div id="toggleBaseMapButtonsVM" class="btn-group-toggle" role="group"
+                         aria-label="Select basemap" data-toggle="buttons">
+                      <button id="darkButton" type="button" class="btn btn-danger"
+                              data-toggle="tooltip"
+                              data-placement="bottom"
+                              title="Dark basemap"
+                              aria-label="Dark basemap"
+                              v-bind:aria-pressed="[currentBaseMap === 'dark' ? 'true' : 'false']"
+                              v-bind:class="[currentBaseMap === 'dark' ? 'btn-raised' : '']"
+                              v-on:click="setCurrentBaseMap('dark')">
+                        <!--<i v-bind:class=baseMapIconNames['dark']></i>-->
+                        <i class="material-icons text-dark" v-text=baseMapIconNames['dark']></i>
+                      </button>
+                      <button id="lightButton" type="button" class="btn btn-danger"
+                              data-toggle="tooltip"
+                              data-placement="bottom"
+                              title="Light basemap"
+                              aria-label="Light basemap"
+                              v-bind:aria-pressed="[currentBaseMap === 'light' ? 'true' : 'false']"
+                              v-bind:class="[currentBaseMap === 'light' ? 'btn-raised' : '']"
+                              v-on:click="setCurrentBaseMap('light')">
+                        <!--<i v-bind:class="baseMapIconNames['light']"></i>-->
+                        <i class="material-icons" v-text="baseMapIconNames['light']"></i>
+                      </button>
+                      <button id="roadsButton" type="button" class="btn btn-danger"
+                              data-toggle="tooltip"
+                              data-placement="bottom"
+                              title="Road basemap"
+                              aria-label="Road basemap"
+                              v-bind:aria-pressed="[currentBaseMap === 'roads' ? 'true' : 'false']"
+                              v-bind:class="[currentBaseMap === 'roads' ? 'btn-raised' : '']"
+                              v-on:click="setCurrentBaseMap('roads')">
+                        <!--<i v-bind:class="baseMapIconNames['roads']"></i>-->
+                        <i class="material-icons" v-text="baseMapIconNames['roads']"></i>
+                      </button>
+                    </div>
+
+                    <div class="crt-ver-sep"></div>
+
+                    <div id="toggleNuts3LayerSetupButtonVM" class="btn-group-toggle" role="group"
+                         aria-label="Draw Layer" data-toggle="buttons">
+                      <button id="nuts3LayerSetupButton" type="button" class="btn btn-danger"
+                              data-toggle="tooltip"
+                              data-placement="bottom"
+                              v-bind:title="description"
+                              v-bind:aria-label="description"
+                              v-bind:aria-pressed="isNuts3LayerSetupVisible"
+                              v-bind:class="[isNuts3LayerSetupVisible === true ? 'btn-raised' : '']"
+                              v-on:click="toggleNuts3LayerSetup">
+                        <!--<i v-bind:class="buttonIconName"></i>-->
+                        <i class="material-icons" v-text="buttonIconName"></i>
+                      </button>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!--<div class="crt-row">-->
+
+          <!--</div>-->
+
+          <div class="crt-hor-sep"></div>
+
+          <div class="ctr-row">
+
+            <div id="nuts3LayerSetupVM" class="card sidebar-card"
+                 v-bind:class="[isVisible === false ? 'd-none' : '']">
+              <div class="card-header">
+
+                <ul class="nav nav-tabs nav-justified bg-light" role="tablist">
+                  <li class="nav-item">
+                    <a id="supergroupsTab" class="nav-link" data-toggle="tab" href="#supergroups"
+                       role="tab" aria-controls="Supergroups" aria-selected="true"
+                       v-bind:class="[currentTab === 'supergroups' ? 'active border-danger text-danger' : '']"
+                       v-on:click="setCurrentTab('supergroups')">
+                      Supergroups
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="groupsTab" class="nav-link" data-toggle="tab" href="#groups"
+                       role="tab" aria-controls="Groups" aria-selected="false"
+                       v-bind:class="[currentTab === 'groups' ? 'active border-danger text-danger' : '']"
+                       v-on:click="setCurrentTab('groups')">
+                      Groups
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="indicatorsTab" class="nav-link" data-toggle="tab" href="#indicators"
+                       role="tab" aria-controls="Indicators" aria-selected="false"
+                       v-bind:class="[currentTab === 'indicators' ? 'active border-danger text-danger' : '']"
+                       v-on:click="setCurrentTab('indicators')">
+                      Indicators
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+
+              <div class="card-body">
+                <!--<h5 class="card-title">Special title treatment</h5>-->
+                <!--<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+
+                <div id="nuts3LayerSetupContent" class="tab-content">
+
+                  <div id="supergroups" class="tab-pane fade show active" role="tabpanel" aria-labelledby="supergroupsTab">
+
+                    <div id="superGroupSetVisualizationTable" class="nuts3layer-setup-table">
+                      <table class="table table-condensed table-striped">
+                        <tbody>
+
+                        <!--1-->
+                        <tr>
+                          <td class="narrow-td">
+                            <div class="map-polygon-colour-rect"
+                                 v-bind:style="{ 'background-color': supergroupFillColors['1'].fillColor, 'opacity': supergroupFillColors['1'].fillOpacity }">
+                            </div>
+                          </td>
+                          <td class="narrow-td">
+                            <div class="checkbox checkbox-decorator">
+                              <label>
+                                <input type="checkbox" id="g1" value="1" v-model="checkedSupergroups"
+                                       v-on:change="renderNuts3Layer('1')">
+                              </label>
+                            </div>
+                          </td>
+                          <td><label class="clickable-label" for="g1" v-text="supergroups['1'].name"></label></td>
+                          <td>
+                            <i class="material-icons help text-danger"
+                               data-toggle="tooltip" data-html="true" data-placement="left"
+                               v-text="tooltipIconName"
+                               v-bind:title="supergroupTooltips['1']">
+                            </i>
+                          </td>
+                        </tr>
+
+                        <!--2-->
+                        <tr>
+                          <td class="narrow-td">
+                            <div class="map-polygon-colour-rect"
+                                 v-bind:style="{ 'background-color': supergroupFillColors['2'].fillColor, 'opacity': supergroupFillColors['2'].fillOpacity }">
+                            </div>
+                          </td>
+                          <td class="narrow-td">
+                            <div class="checkbox checkbox-decorator">
+                              <label>
+                                <input type="checkbox" id="g2" value="2" v-model="checkedSupergroups"
+                                       v-on:change="renderNuts3Layer('2')">
+                              </label>
+                            </div>
+                          </td>
+                          <td><label class="clickable-label" for="g2" v-text="supergroups['2'].name"></label></td>
+                          <td>
+                            <i class="material-icons help text-danger"
+                               data-toggle="tooltip" data-html="true" data-placement="left"
+                               v-text="tooltipIconName"
+                               v-bind:title="supergroupTooltips['2']">
+                            </i>
+                          </td>
+                        </tr>
+
+                        <!--3-->
+                        <tr>
+                          <td class="narrow-td">
+                            <div class="map-polygon-colour-rect"
+                                 v-bind:style="{ 'background-color': supergroupFillColors['3'].fillColor, 'opacity': supergroupFillColors['3'].fillOpacity }">
+                            </div>
+                          </td>
+                          <td class="narrow-td">
+                            <div class="checkbox checkbox-decorator">
+                              <label>
+                                <input type="checkbox" id="g3" value="3" v-model="checkedSupergroups"
+                                       v-on:change="renderNuts3Layer('3')">
+                              </label>
+                            </div>
+                          </td>
+                          <td><label class="clickable-label" for="g3" v-text="supergroups['3'].name"></label></td>
+                          <td>
+                            <i class="material-icons help text-danger"
+                               data-toggle="tooltip" data-html="true" data-placement="left"
+                               v-text="tooltipIconName"
+                               v-bind:title="supergroupTooltips['3']">
+                            </i>
+                          </td>
+                        </tr>
+
+                        <!--4-->
+                        <tr>
+                          <td class="narrow-td">
+                            <div class="map-polygon-colour-rect"
+                                 v-bind:style="{ 'background-color': supergroupFillColors['4'].fillColor, 'opacity': supergroupFillColors['4'].fillOpacity }">
+                            </div>
+                          </td>
+                          <td class="narrow-td">
+                            <div class="checkbox checkbox-decorator">
+                              <label>
+                                <input type="checkbox" id="g4" value="4" v-model="checkedSupergroups"
+                                       v-on:change="renderNuts3Layer('4')">
+                              </label>
+                            </div>
+                          </td>
+                          <td><label class="clickable-label" for="g4" v-text="supergroups['4'].name"></label></td>
+                          <td>
+                            <i class="material-icons help text-danger"
+                               data-toggle="tooltip" data-html="true" data-placement="left"
+                               v-text="tooltipIconName"
+                               v-bind:title="supergroupTooltips['4']">
+                            </i>
+                          </td>
+                        </tr>
+
+                        <!--5-->
+                        <tr>
+                          <td class="narrow-td">
+                            <div class="map-polygon-colour-rect"
+                                 v-bind:style="{ 'background-color': supergroupFillColors['5'].fillColor, 'opacity': supergroupFillColors['5'].fillOpacity }">
+                            </div>
+                          </td>
+                          <td class="narrow-td">
+                            <div class="checkbox checkbox-decorator">
+                              <label>
+                                <input type="checkbox" id="g5" value="5" v-model="checkedSupergroups"
+                                       v-on:change="renderNuts3Layer('5')">
+                              </label>
+                            </div>
+                          </td>
+                          <td><label class="clickable-label" for="g5" v-text="supergroups['5'].name"></label></td>
+                          <td>
+                            <i class="material-icons help text-danger"
+                               data-toggle="tooltip" data-html="true" data-placement="left"
+                               v-text="tooltipIconName"
+                               v-bind:title="supergroupTooltips['5']">
+                            </i>
+                          </td>
+                        </tr>
+
+                        <!--6-->
+                        <tr>
+                          <td class="narrow-td">
+                            <div class="map-polygon-colour-rect"
+                                 v-bind:style="{ 'background-color': supergroupFillColors['6'].fillColor, 'opacity': supergroupFillColors['6'].fillOpacity }">
+                            </div>
+                          </td>
+                          <td class="narrow-td">
+                            <div class="checkbox checkbox-decorator">
+                              <label>
+                                <input type="checkbox" id="g6" value="6" v-model="checkedSupergroups"
+                                       v-on:change="renderNuts3Layer('6')">
+                              </label>
+                            </div>
+                          </td>
+                          <td><label class="clickable-label" for="g6" v-text="supergroups['6'].name"></label></td>
+                          <td>
+                            <i class="material-icons help text-danger"
+                               data-toggle="tooltip" data-html="true" data-placement="left"
+                               v-text="tooltipIconName"
+                               v-bind:title="supergroupTooltips['6']">
+                            </i>
+                          </td>
+                        </tr>
+
+                        <!--7-->
+                        <tr>
+                          <td class="narrow-td">
+                            <div class="map-polygon-colour-rect"
+                                 v-bind:style="{ 'background-color': supergroupFillColors['7'].fillColor, 'opacity': supergroupFillColors['7'].fillOpacity }">
+                            </div>
+                          </td>
+                          <td class="narrow-td">
+                            <div class="checkbox checkbox-decorator">
+                              <label>
+                                <input type="checkbox" id="g7" value="7" v-model="checkedSupergroups"
+                                       v-on:change="renderNuts3Layer('7')">
+                              </label>
+                            </div>
+                          </td>
+                          <td><label class="clickable-label" for="g7" v-text="supergroups['7'].name"></label></td>
+                          <td>
+                            <i class="material-icons help text-danger"
+                               data-toggle="tooltip" data-html="true" data-placement="left"
+                               v-text="tooltipIconName"
+                               v-bind:title="supergroupTooltips['7']">
+                            </i>
+                          </td>
+                        </tr>
+
+                        <!--8-->
+                        <tr>
+                          <td class="narrow-td">
+                            <div class="map-polygon-colour-rect"
+                                 v-bind:style="{ 'background-color': supergroupFillColors['8'].fillColor, 'opacity': supergroupFillColors['8'].fillOpacity }">
+                            </div>
+                          </td>
+                          <td class="narrow-td">
+                            <div class="checkbox checkbox-decorator">
+                              <label>
+                                <input type="checkbox" id="g8" value="8" v-model="checkedSupergroups"
+                                       v-on:change="renderNuts3Layer('8')">
+                              </label>
+                            </div>
+                          </td>
+                          <td><label class="clickable-label" for="g8" v-text="supergroups['8'].name"></label></td>
+                          <td>
+                            <i class="material-icons help text-danger"
+                               data-toggle="tooltip" data-html="true" data-placement="left"
+                               v-text="tooltipIconName"
+                               v-bind:title="supergroupTooltips['8']">
+                            </i>
+                          </td>
+                        </tr>
+
+                        <!--9-->
+                        <tr>
+                          <td class="narrow-td">
+                            <div class="map-polygon-colour-rect"
+                                 v-bind:style="{ 'background-color': supergroupFillColors['9'].fillColor, 'opacity': supergroupFillColors['9'].fillOpacity }">
+                            </div>
+                          </td>
+                          <td class="narrow-td">
+                            <div class="checkbox checkbox-decorator">
+                              <label>
+                                <input type="checkbox" id="g9" value="9" v-model="checkedSupergroups"
+                                       v-on:change="renderNuts3Layer('9')">
+                              </label>
+                            </div>
+                          </td>
+                          <td><label class="clickable-label" for="g9" v-text="supergroups['9'].name"></label></td>
+                          <td>
+                            <i class="material-icons help text-danger"
+                               data-toggle="tooltip" data-html="true" data-placement="left"
+                               v-text="tooltipIconName"
+                               v-bind:title="supergroupTooltips['9']">
+                            </i>
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div>
+                      <!--<div id="superGroupSetVisualizationTable" class="nuts3layer-setup-table">-->
+                      <!--<table class="table table-condensed table-striped">-->
+                      <!--<tbody>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g1" value="1" checked v-model="checkedSuperGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<div class="legend-polygon-rect bc-g1"></div>-->
+                      <!--</td>-->
+                      <!--<td><label for="g1" v-text="superGroups['1'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g1" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g2" value="2" checked v-model="checkedSuperGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<div class="legend-polygon-rect bc-g2"></div>-->
+                      <!--</td>-->
+                      <!--<td><label for="g2" v-text="superGroups['2'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g2" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g3" value="3" checked v-model="checkedSuperGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<div class="legend-polygon-rect bc-g3"></div>-->
+                      <!--</td>-->
+                      <!--<td><label for="g3" v-text="superGroups['3'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g3" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g4" value="4" checked v-model="checkedSuperGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<div class="legend-polygon-rect bc-g4"></div>-->
+                      <!--</td>-->
+                      <!--<td><label for="g4" v-text="superGroups['4'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g4" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g5" value="5" checked v-model="checkedSuperGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<div class="legend-polygon-rect bc-g5"></div>-->
+                      <!--</td>-->
+                      <!--<td><label for="g5" v-text="superGroups['5'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g5" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g6" value="6" checked v-model="checkedSuperGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<div class="legend-polygon-rect bc-g6"></div>-->
+                      <!--</td>-->
+                      <!--<td><label for="g6" v-text="superGroups['6'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g6" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g7" value="7" checked v-model="checkedSuperGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<div class="legend-polygon-rect bc-g7"></div>-->
+                      <!--</td>-->
+                      <!--<td><label for="g7" v-text="superGroups['7'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g7" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g8" value="8" checked v-model="checkedSuperGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<div class="legend-polygon-rect bc-g8"></div>-->
+                      <!--</td>-->
+                      <!--<td><label for="g8" v-text="superGroups['8'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g8" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g9" value="9" checked v-model="checkedSuperGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<div class="legend-polygon-rect bc-g9"></div>-->
+                      <!--</td>-->
+                      <!--<td><label for="g9" v-text="superGroups['9'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g9" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--</tbody>-->
+                      <!--</table>-->
+                      <!--</div>-->
+                    </div>
+
+                  </div>
+
+                  <div id="groups" class="tab-pane fade" role="tabpanel" aria-labelledby="groupsTab">
+                    <p>This is the groups tab content.</p>
+
+                    <div>
+                      <!--<div id="groupSetVisualizationTable" class="nuts3layer-setup-table">-->
+                      <!--<table class="table table-condensed table-striped">-->
+                      <!--<tbody>-->
+
+                      <!--<tr>-->
+                      <!--<th class="narrow-td">-->
+                      <!--<div class="legend-polygon-rect bc-g1"></div>-->
+                      <!--</th>-->
+                      <!--<th><a href="#" v-on:click="toggleGroupSet(1)" v-text="superGroups['1'].name"></a></th>-->
+                      <!--<th><a href="classification.html#g1" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></th>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g11" value="11" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g11" v-text="groups['11'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g11" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g12" value="12" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g12" v-text="groups['12'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g12" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g13" value="13" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g13" v-text="groups['13'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g13" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g14" value="14" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g14" v-text="groups['14'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g14" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g15" value="15" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g15" v-text="groups['15'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g15" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+
+                      <!--<tr>-->
+                      <!--<th class="narrow-td">-->
+                      <!--<div class="legend-polygon-rect bc-g2"></div>-->
+                      <!--</th>-->
+                      <!--<th><a href="#" v-on:click="toggleGroupSet(2)" v-text="superGroups['2'].name"></a></th>-->
+                      <!--<th><a href="classification.html#g2" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></th>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g21" value="21" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g21" v-text="groups['21'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g21" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g22" value="22" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g22" v-text="groups['22'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g22" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g23" value="23" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g23" v-text="groups['23'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g23" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+
+                      <!--<tr>-->
+                      <!--<th class="narrow-td">-->
+                      <!--<div class="legend-polygon-rect bc-g3"></div>-->
+                      <!--</th>-->
+                      <!--<th><a href="#" v-on:click="toggleGroupSet(3)" v-text="superGroups['3'].name"></a></th>-->
+                      <!--<th><a href="classification.html#g3" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></th>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g31" value="31" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g31" v-text="groups['31'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g31" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g32" value="32" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g32" v-text="groups['32'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g32" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g33" value="33" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g33" v-text="groups['33'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g33" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g34" value="34" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g34" v-text="groups['34'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g34" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g35" value="35" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g35" v-text="groups['35'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g35" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+
+                      <!--<tr>-->
+                      <!--<th class="narrow-td">-->
+                      <!--<div class="legend-polygon-rect bc-g4"></div>-->
+                      <!--</th>-->
+                      <!--<th><a href="#" v-on:click="toggleGroupSet(4)" v-text="superGroups['4'].name"></a></th>-->
+                      <!--<th><a href="classification.html#g4" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></th>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g41" value="41" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g41" v-text="groups['41'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g41" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g42" value="42" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g42" v-text="groups['42'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g42" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g43" value="43" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g43" v-text="groups['43'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g43" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+
+                      <!--<tr>-->
+                      <!--<th class="narrow-td">-->
+                      <!--<div class="legend-polygon-rect bc-g5"></div>-->
+                      <!--</th>-->
+                      <!--<th><a href="#" v-on:click="toggleGroupSet(5)" v-text="superGroups['5'].name"></a></th>-->
+                      <!--<th><a href="classification.html#g5" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></th>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g51" value="51" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g51" v-text="groups['51'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g51" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g52" value="52" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g52" v-text="groups['52'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g52" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g53" value="53" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g53" v-text="groups['53'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g53" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g54" value="54" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g54" v-text="groups['54'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g54" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g55" value="55" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g55" v-text="groups['55'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g55" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+
+                      <!--<tr>-->
+                      <!--<th class="narrow-td">-->
+                      <!--<div class="legend-polygon-rect bc-g6"></div>-->
+                      <!--</th>-->
+                      <!--<th><a href="#" v-on:click="toggleGroupSet(6)" v-text="superGroups['6'].name"></a></th>-->
+                      <!--<th><a href="classification.html#g6" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></th>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g61" value="61" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g61" v-text="groups['61'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g61" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g62" value="62" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g62" v-text="groups['62'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g62" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g63" value="63" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g63" v-text="groups['63'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g63" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g64" value="64" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g64" v-text="groups['64'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g64" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g65" value="65" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g65" v-text="groups['65'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g65" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+
+                      <!--<tr>-->
+                      <!--<th class="narrow-td">-->
+                      <!--<div class="legend-polygon-rect bc-g7"></div>-->
+                      <!--</th>-->
+                      <!--<th><a href="#" v-on:click="toggleGroupSet(7)" v-text="superGroups['7'].name"></a></th>-->
+                      <!--<th><a href="classification.html#g7" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></th>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g71" value="71" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g71" v-text="groups['71'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g71" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g72" value="72" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g72" v-text="groups['72'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g72" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g73" value="73" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g73" v-text="groups['73'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g73" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g74" value="74" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g74" v-text="groups['74'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g74" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g75" value="75" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g75" v-text="groups['75'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g75" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+
+                      <!--<tr>-->
+                      <!--<th class="narrow-td">-->
+                      <!--<div class="legend-polygon-rect bc-g8"></div>-->
+                      <!--</th>-->
+                      <!--<th><a href="#" v-on:click="toggleGroupSet(8)" v-text="superGroups['8'].name"></a></th>-->
+                      <!--<th><a href="classification.html#g8" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></th>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g81" value="81" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g81" v-text="groups['81'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g81" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g82" value="82" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g82" v-text="groups['82'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g82" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g83" value="83" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g83" v-text="groups['83'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g83" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g84" value="84" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g84" v-text="groups['84'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g84" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g85" value="85" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g85" v-text="groups['85'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g85" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+
+                      <!--<tr>-->
+                      <!--<th class="narrow-td">-->
+                      <!--<div class="legend-polygon-rect bc-g9"></div>-->
+                      <!--</th>-->
+                      <!--<th><a href="#" v-on:click="toggleGroupSet(9)" v-text="superGroups['9'].name"></a></th>-->
+                      <!--<th><a href="classification.html#g9" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></th>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g91" value="91" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g91" v-text="groups['91'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g91" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g92" value="92" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g92" v-text="groups['92'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g92" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g93" value="93" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g93" v-text="groups['93'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g93" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td class="narrow-td">-->
+                      <!--<input type="checkbox" id="g94" value="94" checked v-model="checkedGroups" v-on:change="renderCommuteFlows">-->
+                      <!--</td>-->
+                      <!--<td><label for="g94" v-text="groups['94'].name"></label></td>-->
+                      <!--<td><a href="classification.html#g94" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
+                      <!--</tr>-->
+
+                      <!--</tbody>-->
+                      <!--</table>-->
+                      <!--</div>-->
+                    </div>
+                  </div>
+
+                  <div id="indicators" class="tab-pane fade" role="tabpanel" aria-labelledby="indicatorsTab">
+
+                    <p>This is the indicators tab content.</p>
+
+                  </div>
+
+                </div>
+
+                <div class="btn-group btn-group-justified" role="group"
+                     v-bind:class="[currentTab === ':indicators' ? 'd-none' : '']" >
+                  <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-danger" v-on:click="selectAll">Select All</button>
+                  </div>
+                  <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-danger" v-on:click="deselectAll">Deselect All</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="crt-hor-sep"></div>
+
+
+
+          <!--<div id="currentMsoaInfoVM">-->
+          <!--&lt;!&ndash;<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">&ndash;&gt;-->
+          <!--<div class="offer offer-default">-->
+          <!--<div class="shape">-->
+          <!--<div class="shape-text">-->
+          <!--info-->
+          <!--</div>-->
+          <!--</div>-->
+          <!--<div class="offer-content">-->
+          <!--<h3 class="lead" v-text="currentMsoaCode">-->
+
+          <!--</h3>-->
+          <!--<p>-->
+          <!--<span v-text="currentMsoa11Nm"></span>-->
+          <!--<br>-->
+          <!--<span v-text="currentMsoa11Nmw"></span>-->
+          <!--</p>-->
+          <!--</div>-->
+          <!--</div>-->
+          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+          <!--</div>-->
+
+        </div>
+
+      </div>
+
+      <div class="sidebar-pane" id="typology-info">
+        <p>Typology Information</p>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+<script type="text/javascript" src="libs/vue-2.5.16/vue.js"></script>
+<!--<script type="text/javascript" src="libs/vue-2.5.16/vue.min.js"></script>-->
+
+<!--<script type="text/javascript" src="libs/popper.js-1.12.6/esm/popper.js"></script>-->
+<!--<script type="text/javascript" src="libs/popper.js-1.12.6/esm/popper.min.js"></script>-->
+<script type="text/javascript" src="libs/popper.js-1.12.6/umd/popper.js"></script>
+<!--<script type="text/javascript" src="libs/popper.js-1.12.6/umd/popper.min.js"></script>-->
+<!--<script type="text/javascript" src="libs/popper.js-1.12.6/popper.js"></script>-->
+<!--<script type="text/javascript" src="libs/popper.js-1.12.6/popper.min.js"></script>-->
+
+
+
+<!--<script type="text/javascript" src="libs/leaflet-1.3.1/leaflet.js"></script>-->
+<script type="text/javascript" src="libs/leaflet-1.3.1/leaflet-src.js"></script>
+<!--<script type="text/javascript" src="libs/leaflet-plugins/leaflet-providers-1.1.17/leaflet-providers.js"></script>-->
+<script type="text/javascript" src="libs/leaflet-plugins/leaflet-providers-2018-04-11/leaflet-providers.js"></script>
+<script type="text/javascript" src="libs/leaflet-plugins/sidebar-v2-0.4.0/leaflet-sidebar.js"></script>
+<!--<script type="text/javascript" src="libs/leaflet-plugins/sidebar-v2-0.4.0/leaflet-sidebar.min.js"></script>-->
+<!--<script type="text/javascript" src="libs/leaflet-plugins/leaflet-pouch/leaflet.pouch.js"></script>-->
+
+<script type="text/javascript" src="libs/bootstrap-material-design-v4.1.1/js/bootstrap-material-design.js"></script>
+<!--<script type="text/javascript" src="libs/bootstrap-material-design-v4.1.1/js/bootstrap-material-design.min.js"></script>-->
+
+<!--<script type="text/javascript" src="libs/ps-math-stats/ps-math-stats.min.js"></script>-->
+
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript" src="js/color-palettes.js"></script>
+<script type="text/javascript" src="js/nuts-3-2013-polygons-v1-epsg-4326-p4.js"></script>
+<!--here-->
+<!--<script type="text/javascript" src="js/nuts-3-2013-polygons-v1-epsg-4326-p6.js"></script>-->
+<!--<script type="text/javascript" src="js/nuts-3-2013-polygons-v1-epsg-4326-typology-p4.js"></script>-->
+<!--<script type="text/javascript" src="js/nuts-3-2013-polygons-v1-epsg-4326-typology-p6.js"></script>-->
+<!--here-->
+<script type="text/javascript" src="js/map.js"></script>
+
+
+<script>
+  $(document).ready(function() {
+    $('body').bootstrapMaterialDesign();
+  });
+</script>
+
+</body>
+</html>

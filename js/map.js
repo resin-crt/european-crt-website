@@ -691,7 +691,15 @@ let MapLayers = {
      * The dictionary used to retrieve an internal feature layer based on a feature key.
      * The key used in this case is the NUTS3 feature code.
      */
-    featureToLayerDictionary: {},
+    featureToInternalLayerDictionary: {},
+
+    /**
+     * The dictionary that associates the typology levels to style names and attribute names.
+     */
+    typologyLevelDictionary: {
+      'supergroups': { styleName: 'supergroupStyles', attributeName: 'SG' },
+      'groups': { styleName: 'groupStyles', attributeName: 'G' }
+    },
 
     /**
      * The supergroups metadata in the form of a dictionary whose keys are the values of supergroups.
@@ -699,7 +707,7 @@ let MapLayers = {
     supergroups: {
       '1': { sg: 1, groups: [11, 12], visible: true, name: 'This is the name for sg 1', description: 'This indicator shows the percentage of the total length of the major road network in the NUTS3 unit that would be exposed to flooding in the event of a 1 in 100 year fluvial flood. Fluvial flooding occurs when watercourses (rivers, streams) overflow and inundate the surrounding area. Although this indicator does not highlight the specific elements of the road network that would be flooded the statistical data provided for this indicator, particularly the Z-score, can be used to better understand whether fluvial flooding to the major road network is a significant issue for the NUTS3 area.' },
       '2': { sg: 2, groups: [21, 22], visible: true, name: 'This is the name for sg 2', description: 'The road network was sourced from open street map (2017). Major roads are defined as ‘Highways’ and include ‘motorway’, ‘trunk’, ‘primary’, ‘secondary’ and ‘tertiary’ segments of the network. The road network was intersected with JRC 1-100 year return period flood maps.' },
-      '3': { sg: 3, groups: [31, 32], visible: true, name: 'This is the name for sg 3', description: 'This is the description of supergroup sg 3' },
+      '3': { sg: 3, groups: [31, 32], visible: true, name: 'This is the name for sg 3', description: 'This indicator shows the difference between the 2036-2065 period and the 1981-2010 period in the number of nights where the minimum temperature does not drop below 20°C. The 20°C temperature threshold for tropical nights has been established as part of a global set of <a href="http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4" target=\"_cf\">climate change indices</a>. This indicator is developed for the <a href="http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html" target="_cf">IPCC RCP4.5 scenario</a>, which represents a medium greenhouse gas emissions scenario. The statistical data provided for this indicator, particularly the Z-score, can be used to better understand whether tropical nights are a potentially significant climate change hazard for the NUTS3 area. The tropical nights indicator is used by the <a href="https://www.eea.europa.eu/publications/urban-adaptation-to-climate-change" target="_cf">European Environment Agency</a> who note that their occurrence is a crucial factor influencing the degree of health impacts associated with high temperatures in urban areas. The level of risk to people in the NUTS3 area from tropical nights (and associated heat wave days) will depend on factors including the proportion of elderly and young people in the population, groups who are particularly susceptible to harm from high temperatures. Indicator data on these factors is available within the typology portal.' },
       '4': { sg: 4, groups: [41, 42], visible: true, name: 'This is the name for sg 4', description: 'This is the description of supergroup sg 4' },
       '5': { sg: 5, groups: [51, 52], visible: true, name: 'This is the name for sg 5', description: 'This is the description of supergroup sg 5' },
       '6': { sg: 6, groups: [61, 62], visible: true, name: 'This is the name for sg 6', description: 'This is the description of supergroup sg 6' },
@@ -810,19 +818,19 @@ let MapLayers = {
       this.mapLayer.addTo(Spatial.map);
       this.mapLayer.bringToFront();
 
-      // Loop through all the features and create the feature to layer dictionary.
-      // TODO: RESIN - Do we need this?
-      // for (let key in this.mapLayer._layers) {
-      //   if (this.mapLayer._layers.hasOwnProperty(key)) {
-      //     this.featureToLayerDictionary[this.mapLayer._layers[key].feature.properties.C] = key;
-      //   }
-      // }
-
-      // loaderViewModel.isVisible = false;
+      // Loop through all the features and create the feature to internal layer dictionary.
+      for (let key in this.mapLayer._layers) {
+        if (this.mapLayer._layers.hasOwnProperty(key)) {
+          //this.featureToInternalLayerDictionary[this.mapLayer._layers[key].feature.properties.OBJECTID] = key;
+          this.featureToInternalLayerDictionary[this.mapLayer._layers[key].feature.properties.NUTS_ID] = key;
+        }
+      }
 
     },
 
-
+    /**
+     * Renders the NUTS3 layer.
+     */
     renderLayer: function() {
 
       Spatial.map.removeLayer(this.mapLayer);
@@ -833,24 +841,42 @@ let MapLayers = {
 
 
 
+    renderNuts3Polygon: function(feature, typologyClass, currentTypologyLevel, currentBaseMap) {
 
-    // renderNuts3Polygon: function(feature, currentBaseMap, currentTypologySet) {
+      // Get the associated feature layer.
+      let featureLayer = this.mapLayer._layers[feature.properties.NUTS_ID];
+
+      let basemap = this.namedBasemapLayers[currentBaseMap];
+
+
+      // Set the style of the feature layer based on its typology class.
+      if (this[currentTypologyLevel][typologyClass].visible) {
+        featureLayer.setStyle(basemap[this.typologyLevelDictionary[currentTypologyLevel].styleName]);
+      }
+      else {
+        featureLayer.setStyle(basemap.defaultStyle);
+      }
+
+    },
+
+
+
+    // renderCommuteFlowPolygon: function(feature, msoaCodeFieldName, selectedGroups, currentBaseMap) {
     //
-    //   // Get the associated feature layer.
-    //   //TODO: RESIN - PROSOXH - Edw einai olo to mystiko
-    //   let featureLayer = this.mapLayer._layers[this.featureToLayerDictionary[msoaCode]];
+    //   // Determine whether the user has selected the group or not.
+    //   let exists = (selectedGroups.findIndex(f => f == feature.properties.g) !== -1);
     //
-    //   let namedStyles = {
-    //     'supergroups': 'supergroupStyles',
-    //     'groups': 'groupStyles'
-    //   }
+    //   if (exists) {
     //
+    //     // The group is selected. Make sure the feature is rendered.
+    //     let msoaCode = feature.properties[msoaCodeFieldName];
     //
-    //   if (this[currentTypologySet].visible) {
+    //     // Get the associated feature layer.
+    //     let featureLayer = this.mapLayer._layers[this.featureToLayerDictionary[msoaCode]];
     //
     //     // Change the color of the feature layer.
     //     featureLayer.setStyle(
-    //       this.namedBasemapLayers[currentBaseMap][namedStyles[currentTypologySet]]. .commuteFlowStyles[feature.properties.g.toString()]
+    //       this.namedBasemapLayers[currentBaseMap].commuteFlowStyles[feature.properties.g.toString()]
     //     );
     //
     //     // Add the feature layer in to the commute flows dictionary.
@@ -858,47 +884,43 @@ let MapLayers = {
     //       featureLayer: featureLayer,
     //       g: feature.properties.g
     //     }
-    //   }
-    //   else {
     //
     //   }
     //
     // },
 
 
-    // changeNuts3ClassStyle: function(typologyClass) {
-    //
-    //   // Get the current basemap. This is used to decide the symbology of the NUTS3 polygons.
-    //   let currentBaseMap = toggleBaseMapViewModel.currentBaseMap;
-    //
-    //   // Get the current typology set.
-    //   let currentTypologySet = nuts3LayerSetupViewModel.currentTab;
-    //
-    //   // Check whether NUTS3 features exist or not.
-    //   if (this.geoJSON !== undefined || this.geoJSON !== null) {
-    //
-    //     // Loop through the NUTS3 features.
-    //     for (i = 0; i < this.geoJSON.features.length; i++) {
-    //
-    //       // Get the NUTS3 feature.
-    //       let feature = this.geoJSON.features[i];
-    //
-    //       if (feature.properties.SG === typologyClass) {
-    //         // Render the NUTS3 polygon.
-    //         this.renderNuts3Polygon(feature, currentBaseMap, currentTypologySet); // TODO: RESIN - IMMEDIATELY
-    //       }
-    //
-    //     }
-    //
-    //   }
-    //
-    //   // Hide the loader.
-    //   // TODO: RESIN - Check if this is needed.
-    //   //loaderViewModel.isVisible = false;
-    //
-    // },
 
-    //
+    changeTypologyClassStyle: function(typologyClass) {
+
+      // Get the current basemap. This is used to decide the symbology of the NUTS3 polygons.
+      let currentBaseMap = toggleBaseMapViewModel.currentBaseMap;
+
+      // Get the current typology level.
+      let currentTypologyLevel = nuts3LayerSetupViewModel.currentTab;
+
+      // Check whether NUTS3 features exist or not.
+      if (this.geoJSON !== undefined || this.geoJSON !== null) {
+
+        // Loop through the NUTS3 features.
+        for (i = 0; i < this.geoJSON.features.length; i++) {
+
+          // Get the NUTS3 feature.
+          let feature = this.geoJSON.features[i];
+
+          // Check its typology class.
+          if (feature.properties[this.typologyLevelDictionary[currentTypologyLevel].attributeName] === typologyClass) {
+            // Render the NUTS3 polygon.
+            this.renderNuts3Polygon(feature, typologyClass, currentTypologyLevel, currentBaseMap);
+          }
+
+        }
+
+      }
+
+    },
+
+
     // /**
     //  * Resets the style of commute flow polygons.
     //  */
@@ -1013,7 +1035,7 @@ let Spatial = {
    * The options used to create the map.
    */
   mapOptions: {
-    center: [54.5, 10],
+    center: [54.5, 35],
     zoom: 4,
     minZoom: 3,
     maxZoom: 18
@@ -1035,7 +1057,7 @@ let Spatial = {
 
     // Create the sidebar and add it on the map.
     // TODO: RESIN
-    Spatial.sidebar = L.control.sidebar(Spatial.Members.sidebarName, {position: Spatial.Members.sidebarPosition});
+    Spatial.sidebar = L.control.sidebar(Spatial.Members.sidebarName, { position: Spatial.Members.sidebarPosition });
     Spatial.sidebar.addTo(Spatial.map);
 
     BaseMapLayers.setNamedBasemapLayers();
@@ -1276,12 +1298,12 @@ let toggleNuts3LayerSetupButtonViewModel = new Vue({
     /**
      * Indicates whether the layer rendering setup is displayed or not.
      */
-    isNuts3LayerSetupVisible: false,
+    isNuts3LayerSetupVisible: true,
 
     /**
      * Button name.
      */
-    description: 'NUTS3 Layer Setup',
+    description: 'Setup Layer Drawing',
 
     /**
      * The basemap icon names.
@@ -1529,7 +1551,8 @@ let nuts3LayerSetupViewModel = new Vue({
 
       // TODO: RESIN - More arguments needed?
       //Spatial.renderNuts3Layer(toggleBaseMapViewModel.currentBaseMap, this.currentTab);
-      MapLayers.nuts3.renderLayer();
+      //MapLayers.nuts3.renderLayer();
+      MapLayers.nuts3.changeTypologyClassStyle(typologyClass);
     }
 
   }
@@ -1552,9 +1575,6 @@ Spatial.initializeMap();
 
 //
 // ================================================================================
-
-
-
 
 
 
