@@ -4,7 +4,7 @@
 //  School of Environment, Education, and Development.
 //
 //  Name:            map.js
-//  Original coding: Vasilis Vlastaras (@gisvlasta), 05/06/2018.
+//  Original coding: Vasilis Vlastaras (@gisvlasta), 12/06/2018.
 //
 //  Description:     The European Climate Risk Typology web mapping functionality.
 // ================================================================================
@@ -833,9 +833,37 @@ let MapLayers = {
      */
     renderLayer: function() {
 
-      Spatial.map.removeLayer(this.mapLayer);
+      // Spatial.map.removeLayer(this.mapLayer);
+      //
+      // this.createLayer();
 
-      this.createLayer();
+
+      // Get the current basemap. This is used to decide the symbology of the NUTS3 polygons.
+      let currentBaseMap = toggleBaseMapViewModel.currentBaseMap;
+
+      // Get the current typology level.
+      let currentTypologyLevel = nuts3LayerSetupViewModel.currentTab;
+
+      // Check whether NUTS3 features exist or not.
+      if (this.geoJSON !== undefined || this.geoJSON !== null) {
+
+        // Loop through the NUTS3 features.
+        for (i = 0; i < this.geoJSON.features.length; i++) {
+
+          // Get the NUTS3 feature.
+          let feature = this.geoJSON.features[i];
+          let attributeName = this.typologyLevelDictionary[currentTypologyLevel].attributeName;
+          let classValue = feature.properties[attributeName].toString();
+
+          // Render the NUTS3 polygon.
+          this.renderNuts3Polygon(feature, classValue, currentTypologyLevel, currentBaseMap);
+
+        }
+
+      }
+
+
+
 
     },
 
@@ -844,50 +872,21 @@ let MapLayers = {
     renderNuts3Polygon: function(feature, typologyClass, currentTypologyLevel, currentBaseMap) {
 
       // Get the associated feature layer.
-      let featureLayer = this.mapLayer._layers[feature.properties.NUTS_ID];
+      let internalLayerKey = this.featureToInternalLayerDictionary[feature.properties.NUTS_ID];
+      let featureLayer = this.mapLayer._layers[internalLayerKey];
 
       let basemap = this.namedBasemapLayers[currentBaseMap];
 
-
       // Set the style of the feature layer based on its typology class.
       if (this[currentTypologyLevel][typologyClass].visible) {
-        featureLayer.setStyle(basemap[this.typologyLevelDictionary[currentTypologyLevel].styleName]);
+        let styleName = this.typologyLevelDictionary[currentTypologyLevel].styleName;
+        featureLayer.setStyle(basemap[styleName][typologyClass]);
       }
       else {
         featureLayer.setStyle(basemap.defaultStyle);
       }
 
     },
-
-
-
-    // renderCommuteFlowPolygon: function(feature, msoaCodeFieldName, selectedGroups, currentBaseMap) {
-    //
-    //   // Determine whether the user has selected the group or not.
-    //   let exists = (selectedGroups.findIndex(f => f == feature.properties.g) !== -1);
-    //
-    //   if (exists) {
-    //
-    //     // The group is selected. Make sure the feature is rendered.
-    //     let msoaCode = feature.properties[msoaCodeFieldName];
-    //
-    //     // Get the associated feature layer.
-    //     let featureLayer = this.mapLayer._layers[this.featureToLayerDictionary[msoaCode]];
-    //
-    //     // Change the color of the feature layer.
-    //     featureLayer.setStyle(
-    //       this.namedBasemapLayers[currentBaseMap].commuteFlowStyles[feature.properties.g.toString()]
-    //     );
-    //
-    //     // Add the feature layer in to the commute flows dictionary.
-    //     this.commuteFlowsDictionary[msoaCode] = {
-    //       featureLayer: featureLayer,
-    //       g: feature.properties.g
-    //     }
-    //
-    //   }
-    //
-    // },
 
 
 
@@ -907,9 +906,11 @@ let MapLayers = {
 
           // Get the NUTS3 feature.
           let feature = this.geoJSON.features[i];
+          let attributeName = this.typologyLevelDictionary[currentTypologyLevel].attributeName;
+          let classValue = feature.properties[attributeName].toString();
 
           // Check its typology class.
-          if (feature.properties[this.typologyLevelDictionary[currentTypologyLevel].attributeName] === typologyClass) {
+          if (classValue === typologyClass) {
             // Render the NUTS3 polygon.
             this.renderNuts3Polygon(feature, typologyClass, currentTypologyLevel, currentBaseMap);
           }
@@ -1551,7 +1552,7 @@ let nuts3LayerSetupViewModel = new Vue({
 
       // TODO: RESIN - More arguments needed?
       //Spatial.renderNuts3Layer(toggleBaseMapViewModel.currentBaseMap, this.currentTab);
-      //MapLayers.nuts3.renderLayer();
+      // MapLayers.nuts3.renderLayer();
       MapLayers.nuts3.changeTypologyClassStyle(typologyClass);
     }
 
