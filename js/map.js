@@ -768,8 +768,6 @@ let MapLayers = {
           else {
             return MapLayers.nuts3.namedBasemapLayers[namedBaseMap].defaultStyle;
           }
-
-          // return MapLayers.nuts3.namedBasemapLayers[toggleBaseMapViewModel.currentBaseMap].supergroupStyles[feature.properties.SG];
         },
 
         /**
@@ -833,11 +831,6 @@ let MapLayers = {
      */
     renderLayer: function() {
 
-      // Spatial.map.removeLayer(this.mapLayer);
-      //
-      // this.createLayer();
-
-
       // Get the current basemap. This is used to decide the symbology of the NUTS3 polygons.
       let currentBaseMap = toggleBaseMapViewModel.currentBaseMap;
 
@@ -862,13 +855,15 @@ let MapLayers = {
 
       }
 
-
-
-
     },
 
-
-
+    /**
+     * Renders the specified NUTS3 polygon.
+     * @param feature - The feature whose style will be changed.
+     * @param typologyClass - The typology class of the NUTS3 polygon.
+     * @param currentTypologyLevel - The level of the typology class (ie: supergroup or group).
+     * @param currentBaseMap - The current basemap.
+     */
     renderNuts3Polygon: function(feature, typologyClass, currentTypologyLevel, currentBaseMap) {
 
       // Get the associated feature layer.
@@ -888,8 +883,10 @@ let MapLayers = {
 
     },
 
-
-
+    /**
+     * Changes the style of a specified typology class.
+     * @param typologyClass - The typology class whose style will be changed.
+     */
     changeTypologyClassStyle: function(typologyClass) {
 
       // Get the current basemap. This is used to decide the symbology of the NUTS3 polygons.
@@ -904,14 +901,13 @@ let MapLayers = {
         // Loop through the NUTS3 features.
         for (i = 0; i < this.geoJSON.features.length; i++) {
 
-          // Get the NUTS3 feature.
+          // Get the NUTS3 feature, attribute name and the class value.
           let feature = this.geoJSON.features[i];
           let attributeName = this.typologyLevelDictionary[currentTypologyLevel].attributeName;
           let classValue = feature.properties[attributeName].toString();
 
-          // Check its typology class.
+          // Render the NUTS3 polygon having the specified typology class.
           if (classValue === typologyClass) {
-            // Render the NUTS3 polygon.
             this.renderNuts3Polygon(feature, typologyClass, currentTypologyLevel, currentBaseMap);
           }
 
@@ -920,26 +916,6 @@ let MapLayers = {
       }
 
     },
-
-
-    // /**
-    //  * Resets the style of commute flow polygons.
-    //  */
-    // resetStyleCommuteFlowPolygons: function() {
-    //
-    //   for (var key in this.commuteFlowsDictionary) {
-    //     if (this.commuteFlowsDictionary.hasOwnProperty(key)) {
-    //       this.mapLayer.resetStyle(this.commuteFlowsDictionary[key].featureLayer);
-    //     }
-    //   }
-    //
-    //   this.commuteFlowsDictionary = {};
-    //
-    // },
-
-
-
-
 
     /**
      * Highlights a NUTS3 polygon.
@@ -1169,10 +1145,6 @@ let sidebarTabsViewModel = new Vue({
    */
   data: {
 
-    titles: [
-
-    ]
-
   },
 
   /**
@@ -1193,9 +1165,6 @@ let sidebarTabsViewModel = new Vue({
   }
 
 });
-
-
-
 
 /**
  * The toggleBaseMapViewModel provides tha data and logic to toggle the BaseMap layer.
@@ -1219,19 +1188,25 @@ let toggleBaseMapViewModel = new Vue({
      */
     currentBaseMap: 'dark',
 
-    /**
-     * The basemap names.
-     */
-    baseMapNames: [ 'Dark', 'Light', 'Roads' ],
+    dictionary: {
+      'dark':  { name: 'Dark',  iconName: 'map' /* 'fas fa-map' */,             ariaLabel: 'Dark Basemap' },
+      'light': { name: 'Light', iconName: 'map' /* 'far fa-map' */,             ariaLabel: 'Light Basemap' },
+      'roads': { name: 'Roads', iconName: 'directions_car' /* 'fas fa-road' */, ariaLabel: 'Roads Basemap' }
+    },
 
-    /**
-     * The basemap icon names.
-     */
-    baseMapIconNames: {
-      'dark': 'map', //'fas fa-map',
-      'light': 'map', //'far fa-map',
-      'roads': 'directions_car' //'fas fa-road'
-    }
+    // /**
+    //  * The basemap names.
+    //  */
+    // baseMapNames: [ 'Dark', 'Light', 'Roads' ],
+    //
+    // /**
+    //  * The basemap icon names.
+    //  */
+    // baseMapIconNames: {
+    //   'dark': 'map', //'fas fa-map',
+    //   'light': 'map', //'far fa-map',
+    //   'roads': 'directions_car' //'fas fa-road'
+    // }
 
   },
 
@@ -1337,6 +1312,67 @@ let toggleNuts3LayerSetupButtonViewModel = new Vue({
   }
 
 });
+
+
+
+/**
+ * The toggleInfoLevelViewModel provides tha data and logic to toggle the information level displayed to the user.
+ *
+ * @type {Vue} - A Vue object with the model and methods used in the view model.
+ */
+let toggleInfoLevelViewModel = new Vue({
+
+  /**
+   * The name of the view model.
+   */
+  el: '#toggleInfoLevelButtonsVM',
+
+  /**
+   * The model of the view model.
+   */
+  data: {
+
+    /**
+     * The current information Level displayed on the web page.
+     */
+    currentInfoLevel: 'overview',
+
+    dictionary: {
+      'overview': { name: 'Overview',  iconName: 'map', ariaLabel: 'Overview Level Information' },
+      'details':  { name: 'Details',   iconName: 'map', ariaLabel: 'Details Level Information' }
+    },
+
+  },
+
+  /**
+   * The methods of the view model.
+   */
+  methods: {
+
+    /**
+     * Sets the current information level.
+     *
+     * @param infoLevel - The information level.
+     */
+    setCurrentInfoLevel(infoLevel) {
+
+      // if (AppState.bootstrapMaterialTooltipEnabled) {
+      //   let element = '#' + namedBaseMap + 'Button';
+      //   $(element).tooltip('hide');
+      // }
+
+
+
+    }
+
+  }
+
+});
+
+
+
+
+
 
 /**
  * The nuts3LayerSetupViewModel provides tha data and logic
@@ -1504,8 +1540,6 @@ let nuts3LayerSetupViewModel = new Vue({
         }
       }
 
-      // TODO: RESIN - More arguments needed?
-      //Spatial.renderNuts3Layer(toggleBaseMapViewModel.currentBaseMap, this.currentTab);
       MapLayers.nuts3.renderLayer();
 
     },
@@ -1532,8 +1566,6 @@ let nuts3LayerSetupViewModel = new Vue({
         this.checkedGroups = [];
       }
 
-      // TODO: RESIN - More arguments needed?
-      //Spatial.renderNuts3Layer(toggleBaseMapViewModel.currentBaseMap, this.currentTab);
       MapLayers.nuts3.renderLayer();
 
     },
@@ -1550,9 +1582,6 @@ let nuts3LayerSetupViewModel = new Vue({
         this.groups[typologyClass].visible = !this.groups[typologyClass].visible;
       }
 
-      // TODO: RESIN - More arguments needed?
-      //Spatial.renderNuts3Layer(toggleBaseMapViewModel.currentBaseMap, this.currentTab);
-      // MapLayers.nuts3.renderLayer();
       MapLayers.nuts3.changeTypologyClassStyle(typologyClass);
     }
 

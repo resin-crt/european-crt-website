@@ -157,35 +157,35 @@
                         <button id="darkButton" type="button" class="btn btn-danger"
                                 data-toggle="tooltip"
                                 data-placement="bottom"
-                                title="Dark Basemap"
-                                aria-label="Dark Basemap"
+                                v-bind:title="dictionary['dark'].ariaLabel"
+                                v-bind:aria-label="dictionary['dark'].ariaLabel"
                                 v-bind:aria-pressed="[currentBaseMap === 'dark' ? 'true' : 'false']"
                                 v-bind:class="[currentBaseMap === 'dark' ? 'btn-raised' : '']"
                                 v-on:click="setCurrentBaseMap('dark')">
-                          <!--<i v-bind:class=baseMapIconNames['dark']></i>-->
-                          <i class="material-icons text-dark" v-text=baseMapIconNames['dark']></i>
+                          <i class="material-icons text-dark" v-text="dictionary['dark'].iconName"></i>
+                          <div><small class="text-dark" v-text="dictionary['dark'].name"></small></div>
                         </button>
                         <button id="lightButton" type="button" class="btn btn-danger"
                                 data-toggle="tooltip"
                                 data-placement="bottom"
-                                title="Light Basemap"
-                                aria-label="Light Basemap"
+                                v-bind:title="dictionary['light'].ariaLabel"
+                                v-bind:aria-label="dictionary['light'].ariaLabel"
                                 v-bind:aria-pressed="[currentBaseMap === 'light' ? 'true' : 'false']"
                                 v-bind:class="[currentBaseMap === 'light' ? 'btn-raised' : '']"
                                 v-on:click="setCurrentBaseMap('light')">
-                          <!--<i v-bind:class="baseMapIconNames['light']"></i>-->
-                          <i class="material-icons" v-text="baseMapIconNames['light']"></i>
+                          <i class="material-icons" v-text="dictionary['light'].iconName"></i>
+                          <div><small v-text="dictionary['light'].name"></small></div>
                         </button>
                         <button id="roadsButton" type="button" class="btn btn-danger"
                                 data-toggle="tooltip"
                                 data-placement="bottom"
-                                title="Road Basemap"
-                                aria-label="Road Basemap"
+                                v-bind:title="dictionary['roads'].ariaLabel"
+                                v-bind:aria-label="dictionary['roads'].ariaLabel"
                                 v-bind:aria-pressed="[currentBaseMap === 'roads' ? 'true' : 'false']"
                                 v-bind:class="[currentBaseMap === 'roads' ? 'btn-raised' : '']"
                                 v-on:click="setCurrentBaseMap('roads')">
-                          <!--<i v-bind:class="baseMapIconNames['roads']"></i>-->
-                          <i class="material-icons" v-text="baseMapIconNames['roads']"></i>
+                          <i class="material-icons" v-text="dictionary['roads'].iconName"></i>
+                          <div><small v-text="dictionary['roads'].name"></small></div>
                         </button>
                       </div>
 
@@ -201,8 +201,36 @@
                                 v-bind:aria-pressed="isNuts3LayerSetupVisible"
                                 v-bind:class="[isNuts3LayerSetupVisible === true ? 'btn-raised' : '']"
                                 v-on:click="toggleNuts3LayerSetup">
-                          <!--<i v-bind:class="buttonIconName"></i>-->
                           <i class="material-icons" v-text="buttonIconName"></i>
+                          <div><small>Layers</small></div>
+                        </button>
+                      </div>
+
+                      <div class="crt-ver-sep"></div>
+
+                      <div id="toggleInfoLevelButtonsVM" class="btn-group-toggle" role="group"
+                           aria-label="Select displayed information level" data-toggle="buttons">
+                        <button id="overviewLevelButton" type="button" class="btn btn-danger"
+                                data-toggle="tooltip"
+                                data-placement="bottom"
+                                v-bind:title="dictionary['overview'].ariaLabel"
+                                v-bind:aria-label="dictionary['overview'].ariaLabel"
+                                v-bind:aria-pressed="[currentInfoLevel === 'overview' ? 'true' : 'false']"
+                                v-bind:class="[currentInfoLevel === 'dark' ? 'btn-raised' : '']"
+                                v-on:click="setCurrentInfoLevel('overview')">
+                          <i class="material-icons" v-text="dictionary['overview'].iconName"></i>
+                          <div><small v-text="dictionary['overview'].name"></small></div>
+                        </button>
+                        <button id="detailsLevelButton" type="button" class="btn btn-danger"
+                                data-toggle="tooltip"
+                                data-placement="bottom"
+                                v-bind:title="dictionary['details'].ariaLabel"
+                                v-bind:aria-label="dictionary['details'].ariaLabel"
+                                v-bind:aria-pressed="[currentInfoLevel === 'details' ? 'true' : 'false']"
+                                v-bind:class="[currentInfoLevel === 'details' ? 'btn-raised' : '']"
+                                v-on:click="setCurrentInfoLevel('details')">
+                          <i class="material-icons" v-text="dictionary['details'].iconName"></i>
+                          <div><small v-text="dictionary['details'].name"></small></div>
                         </button>
                       </div>
 
