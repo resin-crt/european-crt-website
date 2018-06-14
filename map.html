@@ -216,7 +216,7 @@
                                 v-bind:title="dictionary['overview'].ariaLabel"
                                 v-bind:aria-label="dictionary['overview'].ariaLabel"
                                 v-bind:aria-pressed="[currentInfoLevel === 'overview' ? 'true' : 'false']"
-                                v-bind:class="[currentInfoLevel === 'dark' ? 'btn-raised' : '']"
+                                v-bind:class="[currentInfoLevel === 'overview' ? 'btn-raised' : '']"
                                 v-on:click="setCurrentInfoLevel('overview')">
                           <i class="material-icons" v-text="dictionary['overview'].iconName"></i>
                           <div><small v-text="dictionary['overview'].name"></small></div>

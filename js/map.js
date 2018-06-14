@@ -1356,7 +1356,7 @@ let toggleInfoLevelViewModel = new Vue({
       this.currentInfoLevel = infoLevel;
 
       if (AppState.bootstrapMaterialTooltipEnabled) {
-        let element = '#' + dictionary[infoLevel] + 'LevelButton';
+        let element = '#' + infoLevel + 'LevelButton';
         $(element).tooltip('hide');
       }
 
