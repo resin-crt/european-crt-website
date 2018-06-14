@@ -10,9 +10,6 @@
 // ================================================================================
 
 
-const materialRed = '#F44336';
-
-
 /**
  * The AppState object holds the application state.
  */
@@ -1356,12 +1353,12 @@ let toggleInfoLevelViewModel = new Vue({
      */
     setCurrentInfoLevel(infoLevel) {
 
-      // if (AppState.bootstrapMaterialTooltipEnabled) {
-      //   let element = '#' + namedBaseMap + 'Button';
-      //   $(element).tooltip('hide');
-      // }
+      this.currentInfoLevel = infoLevel;
 
-
+      if (AppState.bootstrapMaterialTooltipEnabled) {
+        let element = '#' + dictionary[infoLevel] + 'LevelButton';
+        $(element).tooltip('hide');
+      }
 
     }
 
