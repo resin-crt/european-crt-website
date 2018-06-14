@@ -10,7 +10,6 @@ var ColorPalettes = ColorPalettes || {};
  *
  *         https://www.materialpalette.com/colors
  */
-
 ColorPalettes.Material = {
   'red':               { name: 'Red',               hex: '#F44336' },
   'red-50':            { name: 'Red 50',            hex: '#FFEBEE' },
@@ -395,6 +394,11 @@ ColorPalettes.Fluent = {
   'pablo':             { name: 'Pablo',             hex: '#7E735F' }
 };
 
+/**
+ * Metro Colors Palette.
+ *
+ * Source: https://www.materialui.co/metrocolors
+ */
 ColorPalettes.Metro = {
   'lime':              { name: 'Lime',              hex: '#a4c400' },
   'green':             { name: 'Green',             hex: '#60a917' },
@@ -418,6 +422,117 @@ ColorPalettes.Metro = {
   'sienna':            { name: 'Sienna',            hex: '#a0522d' }
 };
 
+/**
+ * Windows Metro UI Colors Palette
+ *
+ * Source: https://www.w3schools.com/colors/colors_metro.asp
+ *         https://colorlib.com/etc/metro-colors/
+ */
+ColorPalettes.WindowsMetroUI = {
+  'lightGreen':        { name: 'Light Green',       hex: '#99b433' },
+  'green':             { name: 'Green',             hex: '#00a300' },
+  'darkGreen':         { name: 'Dark Green',        hex: '#1e7145' },
+  'magenta':           { name: 'Magenta',           hex: '#ff0097' },
+  'lightPurple':       { name: 'Light Purple',      hex: '#9f00a7' },
+  'purple':            { name: 'Purple',            hex: '#7e3878' },
+  'darkPurple':        { name: 'Dark Purple',       hex: '#603cba' },
+  'darken':            { name: 'Darken',            hex: '#1d1d1d' },
+  'teal':              { name: 'Teal',              hex: '#00aba9' },
+  'lightBlue':         { name: 'Light Blue',        hex: '#eff4ff' },
+  'blue':              { name: 'Blue',              hex: '#2d89ef' },
+  'darkBlue':          { name: 'Dark Blue',         hex: '#2b5797' },
+  'yellow':            { name: 'Yellow',            hex: '#ffc40d' },
+  'orange':            { name: 'Orange',            hex: '#e3a21a' },
+  'darkOrange':        { name: 'Dark Orange',       hex: '#da532c' },
+  'red':               { name: 'Red',               hex: '#ee1111' },
+  'darkRed':           { name: 'Dark Red',          hex: '#b91d47' }
+};
+
+
+/**
+ * Metro Extended Color Palette.
+ *
+ * Source: https://metroui.org.ua/colors.html
+ */
+ColorPalettes.MetroExtended = {
+  'lightLime':         { name: 'Light Lime',        hex: '##d8ff12' },
+  'lime':              { name: 'Lime',              hex: '#a4c400' },
+  'darkLime':          { name: 'Dark Lime',         hex: '#647800' },
+  'lightGreen':        { name: 'Light Green',       hex: '#86e22a' },
+  'green':             { name: 'Green',             hex: '#60a917' },
+  'darkGreen':         { name: 'Dark Green',        hex: '#3a660e' },
+  'lightEmerland':     { name: 'Light Emerland',    hex: '#00d600' },
+  'emerland':          { name: 'Emerland',          hex: '#008a00' },
+  'darkEmerland':      { name: 'Dark Emerland',     hex: '#003d00' },
+  'lightBlue':         { name: 'Light Blue',        hex: '#3ecbff' },
+  'blue':              { name: 'Blue',              hex: '#00aff0' },
+  'darkBlue':          { name: 'Dark Blue',         hex: '#0077a3' },
+  'lightTeal':         { name: 'Light Teal',        hex: '#00f7f5' },
+  'teal':              { name: 'Teal',              hex: '#00aba9' },
+  'darkTeal':          { name: 'Dark Teal',         hex: '#005e5d' },
+  'lightCyan':         { name: 'Light Cyan',        hex: '#5ebdec' },
+  'cyan':              { name: 'Cyan',              hex: '#1ba1e2' },
+  'darkCyan':          { name: 'Dark Cyan',         hex: '#13709e' },
+  'lightCobalt':       { name: 'Light Cobalt',      hex: '#3d7eff' },
+  'cobalt':            { name: 'Cobalt',            hex: '#0050ef' },
+  'darkCobalt':        { name: 'Dark Cobalt',       hex: '#0036a3' },
+  'lightIndigo':       { name: 'Light Indigo',      hex: '#974dff' },
+  'indigo':            { name: 'Indigo',            hex: '#6a00ff' },
+  'darkIndigo':        { name: 'Dark Indigo',       hex: '#4a00b3' },
+  'lightViolet':       { name: 'Light Violet',      hex: '#c44dff' },
+  'violet':            { name: 'Violet',            hex: '#aa00ff' },
+  'darkViolet':        { name: 'Dark Violet',       hex: '#7700b3' },
+  'lightPink':         { name: 'Light Pink',        hex: '#e98fcb' },
+  'pink':              { name: 'Pink',              hex: '#f472d0' },
+  'darkPink':          { name: 'Dark Pink',         hex: '#ba2588' },
+  'lightMagenta':      { name: 'Light Magenta',     hex: '#ff2599' },
+  'magenta':           { name: 'Magenta',           hex: '#d80073' },
+  'darkMagenta':       { name: 'Dark Magenta',      hex: '#8c004a' },
+  'lightCrimson':      { name: 'Light Crimson',     hex: '#ef0036' },
+  'crimson':           { name: 'Crimson',           hex: '#a20025' },
+  'darkCrimson':       { name: 'Dark Crimson',      hex: '#560014' },
+  'lightRed':          { name: 'Light Red',         hex: '#df6e68' },
+  'red':               { name: 'Red',               hex: '#e51400' },
+  'darkRed':           { name: 'Dark Red',          hex: '#8f251f' },
+  'lightOrange':       { name: 'Light Orange',      hex: '#ff9447' },
+  'orange':            { name: 'Orange',            hex: '#fa6800' },
+  'darkOrange':        { name: 'Dark Orange',       hex: '#ae4800' },
+  'lightAmber':        { name: 'Light Amber',       hex: '#f8bf4f' },
+  'amber':             { name: 'Amber',             hex: '#f0a30a' },
+  'darkAmber':         { name: 'Dark Amber',        hex: '#a77107' },
+  'lightYellow':       { name: 'Light Yellow',      hex: '#fff44d' },
+  'yellow':            { name: 'Yellow',            hex: '#e3c800' },
+  'darkYellow':        { name: 'Dark Yellow',       hex: '#b3a800' },
+  'lightBrown':        { name: 'Light Brown',       hex: '#bb823f' },
+  'brown':             { name: 'Brown',             hex: '#825a2c' },
+  'darkBrown':         { name: 'Dark Brown',        hex: '#493219' },
+  'lightOlive':        { name: 'Light Olive',       hex: '#95ab8d' },
+  'olive':             { name: 'Olive',             hex: '#6d8764' },
+  'darkOlive':         { name: 'Dark Olive',        hex: '#4a5b43' },
+  'lightSteel':        { name: 'Light Steel',       hex: '#8d9cab' },
+  'steel':             { name: 'Steel',             hex: '#647687' },
+  'darkSteel':         { name: 'Dark Steel',        hex: '#43505b' },
+  'lightMauve':        { name: 'Light Mauve',       hex: '#9c89ad' },
+  'mauve':             { name: 'Mauve',             hex: '#76608a' },
+  'darkMauve':         { name: 'Dark Mauve',        hex: '#4f415d' },
+  'lightTaupe':        { name: 'Light Taupe',       hex: '#aea073' },
+  'taupe':             { name: 'Taupe',             hex: '#87794e' },
+  'darkTaupe':         { name: 'Dark Taupe',        hex: '#574e32' },
+  'lightGray':         { name: 'Light Gray',        hex: '#e4e4e4' },
+  'gray':              { name: 'Gray',              hex: '#bebebe' },
+  'darkGray':          { name: 'Dark Gray',         hex: '#989898' },
+  'lightGrayBlue':     { name: 'Light Gray Blue',   hex: '#8aa2ae' },
+  'grayBlue':          { name: 'Gray Blue',         hex: '#607d8b' },
+  'darkGrayBlue':      { name: 'Dark Gray Blue',    hex: '#41545e' }
+};
+
+
+/**
+ *Flat Design color Palette.
+ *
+ * Source: https://htmlcolorcodes.com/color-chart/
+ *         https://htmlcolorcodes.com/color-chart/flat-design-color-chart/
+ */
 ColorPalettes.FlatDesign = {
   'turquoise':         { name: 'Turquoise',         hex: '#1abc9c' },
   'turquoise-50':      { name: 'Turquoise-50',      hex: '#e8f8f5' },
@@ -661,7 +776,8 @@ ColorPalettes.FlatDesign = {
 };
 
 /**
- * Html5 predefined colors.
+ * Html5 predefined color palette.
+ *
  * Source: http://ytiurin.github.io/html5tooltipsjs/
  *         https://github.com/ytiurin/html5tooltipsjs
  */
@@ -716,16 +832,128 @@ ColorPalettes.Html5Predefined = {
 };
 
 
-//
-// #1a1334    #26294a    #01545a
-// #017351    #03c383    #aad962
-// #fbbf45    #ef6a32    #ed0345
-// #a12a5e    #710162    #110141
+ColorPalettes.PatternFly = {
+  'black100':           { name: 'Black 100',        hex: '#fafafa' },
+  'black150':           { name: 'Black 150',        hex: '#f5f5f5' },
+  'black200':           { name: 'Black 200',        hex: '#ededed' },
+  'black300':           { name: 'Black 300',        hex: '#d1d1d1' },
+  'black400':           { name: 'Black 400',        hex: '#bbbbbb' },
+  'black500':           { name: 'Black 500',        hex: '#8b8d8f' },
+  'black600':           { name: 'Black 600',        hex: '#72767b' },
+  'black700':           { name: 'Black 700',        hex: '#4d5258' },
+  'black800':           { name: 'Black 800',        hex: '#393f44' },
+  'black900':           { name: 'Black 900',        hex: '#292e34' },
+  'black':              { name: 'Black',            hex: '#030303' },
+
+  'blue50 ':            { name: 'Blue50 ',          hex: '#def3ff' },
+  'blue100':            { name: 'Blue100',          hex: '#bee1f4' },
+  'blue200':            { name: 'Blue200',          hex: '#7dc3e8' },
+  'blue300':            { name: 'Blue300',          hex: '#39a5dc' },
+  'blue400':            { name: 'Blue400',          hex: '#0088ce' },
+  'blue500':            { name: 'Blue500',          hex: '#00659c' },
+  'blue600':            { name: 'Blue600',          hex: '#004368' },
+  'blue700':            { name: 'Blue700',          hex: '#002235' },
+
+  'red':                { name: 'Red',              hex: '' },
+  'red100':             { name: 'Red100',           hex: '#cc0000' },
+  'red200':             { name: 'Red200',           hex: '#a30000' },
+  'red300':             { name: 'Red300',           hex: '#8b0000' },
+  'red400':             { name: 'Red400',           hex: '#470000' },
+  'red500':             { name: 'Red500',           hex: '#2c0000' },
+
+  'orange':             { name: 'Orange',           hex: '' },
+  'orange-100':         { name: 'Orange 100',       hex: '#fbdebf' },
+  'orange-200':         { name: 'Orange 200',       hex: '#f7bd7f' },
+  'orange-300':         { name: 'Orange 300',       hex: '#f39d3c' },
+  'orange-400':         { name: 'Orange 400',       hex: '#ec7a08' },
+  'orange-500':         { name: 'Orange 500',       hex: '#b35c00' },
+  'orange-600':         { name: 'Orange 600',       hex: '#773d00' },
+  'orange-700':         { name: 'Orange 700',       hex: '#3b1f00' },
+
+  'gold'
+  'gold-100':           { name: '',          hex: '' }, #fbeabc
+  'gold-200':           { name: '',          hex: '' }, #f9d67a
+  'gold-300':           { name: '',          hex: '' }, #f5c12e
+  'gold-400':           { name: '',          hex: '' }, #f0ab00
+  'gold-500':           { name: '',          hex: '' }, #b58100
+  'gold-600':           { name: '',          hex: '' }, #795600
+  'gold-700':           { name: '',          hex: '' }, #3d2c00
+
+  'light-green':        { name: '',          hex: '' },
+  'light-green-100':    { name: '',          hex: '' }, #e4f5bc
+  'light-green-200':    { name: '',          hex: '' }, #c8eb79
+  'light-green-300':    { name: '',          hex: '' }, #ace12e
+  'light-green-400':    { name: '',          hex: '' }, #92d400
+  'light-green-500':    { name: '',          hex: '' }, #6ca100
+  'light-green-600':    { name: '',          hex: '' }, #486b00
+  'light-green-700':    { name: '',          hex: '' }, #253600
+
+  green
+  green-100 #cfe7cd
+  green-200 #9ecf99
+  green-300 #6ec664
+  green-400 #3f9c35
+  green-500 #2d7623
+  green-600 #1e4f18
+  green-700 #0f280d
+
+  cyan
+  cyan-100 #bedee1
+  cyan-200 #7dbdc3
+  cyan-300 #3a9ca6
+  cyan-400 #007a87
+  cyan-500 #005c66
+  cyan-600 #003d44
+  cyan-700 #001f22
+
+  light-blue
+  light-blue-100 #beedf9
+  light-blue-200 #7cdbf3
+  light-blue-300 #35caed
+  light-blue-400 #00b9e4
+  light-blue-500 #008bad
+  light-blue-600 #005c73
+  light-blue-700 #002d39
+
+  purple
+  purple-100 #c7bfff
+  purple-200 #a18fff
+  purple-300 #8461f7
+  purple-400 #703fec
+  purple-500 #582fc0
+  purple-600 #40199a
+  purple-700 #1f0066
+
+}
+
+
+
 
 
 /**
+ * Colrd Colores Color Palette.
  *
+ * Source: http://colrd.com/palette/24070/
+ */
+ColorPalettes.Colrd.Colores = {
+  'oxfordBlue':         { name: 'Oxford Blue',      hex: '#1a1334' },
+  'spaceCadet':         { name: 'Space Cadet',      hex: '#26294a' },
+  'blueStone':          { name: 'Blue Stone',       hex: '#01545a' },
+  'rainForest':         { name: 'Rain Forest',      hex: '#017351' },
+  'caribbeanGreen':     { name: 'Caribbean Green',  hex: '#03c383' },
+  'conifer':            { name: 'Conifer',          hex: '#aad962' },
+  'casablanca':         { name: 'Casablanca',       hex: '#fbbf45' },
+  'darkCarrot':         { name: 'Dark Carrot',      hex: '#ef6a32' },
+  'spanishCrimson':     { name: 'Spanish Crimson',  hex: '#ed0345' },
+  'hibiscus':           { name: 'Hibiscus',         hex: '#a12a5e' },
+  'pompadour':          { name: 'Pompadour',        hex: '#710162' },
+  'tolopea':            { name: 'Tolopea',          hex: '#110141' }
+};
+
+/**
+ * Brands Firefox color Palette.
  *
+ * Source: https://brandcolors.net/b/firefox
  */
 ColorPalettes.Brands.Firefox = {
   'clementine':         {name: 'Clementine', hex: '#e66000'},
@@ -734,7 +962,7 @@ ColorPalettes.Brands.Firefox = {
   'endeavour':          {name: 'Endeavour', hex: '#00539f'},
   'cerulean':           {name: 'Cerulean', hex: '#0095dd'},
   'grape':              {name: 'Grape', hex: '#331e54'},
-  'prussian-blue':      {name: 'Prussian Blue', hex: '#002147'},
+  'prussian-blue':      {name: 'Prussian Blue', hex: '#002147'}
 };
 
 
