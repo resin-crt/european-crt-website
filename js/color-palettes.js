@@ -1,6 +1,16 @@
 
 var ColorPalettes = ColorPalettes || {};
 
+
+/**
+ * Google Material Color Palette.
+ *
+ * Source: https://material.io/design/color/the-color-system.html#tools-for-picking-colors
+ *         https://www.materialui.co/colors
+ *
+ *         https://www.materialpalette.com/colors
+ */
+
 ColorPalettes.Material = {
   'red':               { name: 'Red',               hex: '#F44336' },
   'red-50':            { name: 'Red 50',            hex: '#FFEBEE' },
@@ -295,6 +305,12 @@ ColorPalettes.Material = {
   'blue-gray-900':     { name: 'Blue Gray 900',     hex: '#263238' }
 };
 
+
+/**
+ * Flat UI Color Palette.
+ *
+ * Source: https://www.materialui.co/flatuicolors
+ */
 ColorPalettes.FlatUI = {
   'turquoise':         { name: 'Turquoise',         hex: '#1abc9c' },
   'green-sea':         { name: 'Green Sea',         hex: '#16a085' },
@@ -318,6 +334,11 @@ ColorPalettes.FlatUI = {
   'asbestos':          { name: 'Asbestos',          hex: '#7f8c8d' }
 };
 
+/**
+ * Fluent Design Color Palette.
+ *
+ * Source: https://fluentcolors.com/
+ */
 ColorPalettes.Fluent = {
   'selective-yellow':  { name: 'Selective Yellow',  hex: '#FFB900' },
   'pizazz':            { name: 'Pizazz',            hex: '#FF8C00' },
@@ -639,6 +660,11 @@ ColorPalettes.FlatDesign = {
   'asbestos-900':       { name: 'Asbestos 900',     hex: '#424949' }
 };
 
+/**
+ * Html5 predefined colors.
+ * Source: http://ytiurin.github.io/html5tooltipsjs/
+ *         https://github.com/ytiurin/html5tooltipsjs
+ */
 ColorPalettes.Html5Predefined = {
   'daffodil':           { name: 'Daffodil',         hex: '#FFE617' },
   'daisy':              { name: 'Daisy',            hex: '#FAD31C' },
@@ -675,18 +701,46 @@ ColorPalettes.Html5Predefined = {
   'kelly':              { name: 'Kelly',            hex: '#16884A' },
   'forrest':            { name: 'Forrest',          hex: '#003F2E' },
 
-  'chocolate':          { name: 'Chocolate',        hex: '#7DCDC2' },
-  'terra-cotta':        { name: 'Terra Cotta',      hex: '#00A8A8' },
-  'camel':              { name: 'Camel',            hex: '#12959F' },
-  'linen':              { name: 'Linen',            hex: '#C1D18A' },
-  'stone':              { name: 'Stone',            hex: '#799155' },
-  'smoke':              { name: 'Smoke',            hex: '#80BC42' },
-  'steel':              { name: 'Steel',            hex: '#4AA03F' },
-  'slate':              { name: 'Slate',            hex: '#16884A' },
-  'charcoal':           { name: 'Charcoal',         hex: '#003F2E' },
-  'metalic-silver':     { name: 'Metallic Silver',  hex: '#4AA03F' },
-  'metalic-gold':       { name: 'Metallic Gold',    hex: '#16884A' },
-  'metallic-copper':    { name: 'Metallic Copper',  hex: '#003F2E' }
+  'chocolate':          { name: 'Chocolate',        hex: '#381E11' },
+  'terra-cotta':        { name: 'Terra Cotta',      hex: '#C05C20' },
+  'camel':              { name: 'Camel',            hex: '#BF9B6B' },
+  'linen':              { name: 'Linen',            hex: '#E9D4A7' },
+  'stone':              { name: 'Stone',            hex: '#E7E6E1' },
+  'smoke':              { name: 'Smoke',            hex: '#CFD0D2' },
+  'steel':              { name: 'Steel',            hex: '#8A8B8F' },
+  'slate':              { name: 'Slate',            hex: '#778590' },
+  'charcoal':           { name: 'Charcoal',         hex: '#474D4D' },
+  'metalic-silver':     { name: 'Metallic Silver',  hex: '#98A2AB' },
+  'metalic-gold':       { name: 'Metallic Gold',    hex: '#9F8759' },
+  'metallic-copper':    { name: 'Metallic Copper',  hex: '#8C6641' }
 };
+
+
+//
+// #1a1334    #26294a    #01545a
+// #017351    #03c383    #aad962
+// #fbbf45    #ef6a32    #ed0345
+// #a12a5e    #710162    #110141
+
+
+/**
+ *
+ *
+ */
+ColorPalettes.Brands.Firefox = {
+  'clementine':         {name: 'Clementine', hex: '#e66000'},
+  'orange':             {name: 'Orange', hex: '#ff9500'},
+  'tangerine-yellow':   {name: 'Tangerine Yellow', hex: '#ffcb00'},
+  'endeavour':          {name: 'Endeavour', hex: '#00539f'},
+  'cerulean':           {name: 'Cerulean', hex: '#0095dd'},
+  'grape':              {name: 'Grape', hex: '#331e54'},
+  'prussian-blue':      {name: 'Prussian Blue', hex: '#002147'},
+};
+
+
+
+
+
+
 
 
