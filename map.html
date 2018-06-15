@@ -116,7 +116,10 @@
             <!--<a href="#map-controls" role="tab">-->
             <!--<i class="crt-material-icons">menu</i>-->
             <!--</a>-->
-            <a href="#map-controls" role="tab"><i class="fas fa-map"></i></a>
+            <!--<a href="#map-controls" role="tab"><i class="fas fa-map"></i></a>-->
+            <a href="#map-controls" role="tab">
+              <i class="crt-material-icons">chrome_reader_mode</i>
+            </a>
           </li>
           <li id="typology-info-button" title="Show / Hide Typology Information"
               data-toggle="tooltip" data-placement="left" aria-label="Show / Hide Typology Information"
@@ -157,8 +160,8 @@
                         <button id="darkButton" type="button" class="btn btn-danger"
                                 data-toggle="tooltip"
                                 data-placement="bottom"
-                                v-bind:title="dictionary['dark'].ariaLabel"
-                                v-bind:aria-label="dictionary['dark'].ariaLabel"
+                                v-bind:title="dictionary['dark'].description"
+                                v-bind:aria-label="dictionary['dark'].description"
                                 v-bind:aria-pressed="[currentBaseMap === 'dark' ? 'true' : 'false']"
                                 v-bind:class="[currentBaseMap === 'dark' ? 'btn-raised' : '']"
                                 v-on:click="setCurrentBaseMap('dark')">
@@ -168,8 +171,8 @@
                         <button id="lightButton" type="button" class="btn btn-danger"
                                 data-toggle="tooltip"
                                 data-placement="bottom"
-                                v-bind:title="dictionary['light'].ariaLabel"
-                                v-bind:aria-label="dictionary['light'].ariaLabel"
+                                v-bind:title="dictionary['light'].description"
+                                v-bind:aria-label="dictionary['light'].description"
                                 v-bind:aria-pressed="[currentBaseMap === 'light' ? 'true' : 'false']"
                                 v-bind:class="[currentBaseMap === 'light' ? 'btn-raised' : '']"
                                 v-on:click="setCurrentBaseMap('light')">
@@ -179,8 +182,8 @@
                         <button id="roadsButton" type="button" class="btn btn-danger"
                                 data-toggle="tooltip"
                                 data-placement="bottom"
-                                v-bind:title="dictionary['roads'].ariaLabel"
-                                v-bind:aria-label="dictionary['roads'].ariaLabel"
+                                v-bind:title="dictionary['roads'].description"
+                                v-bind:aria-label="dictionary['roads'].description"
                                 v-bind:aria-pressed="[currentBaseMap === 'roads' ? 'true' : 'false']"
                                 v-bind:class="[currentBaseMap === 'roads' ? 'btn-raised' : '']"
                                 v-on:click="setCurrentBaseMap('roads')">
@@ -201,8 +204,8 @@
                                 v-bind:aria-pressed="isNuts3LayerSetupVisible"
                                 v-bind:class="[isNuts3LayerSetupVisible === true ? 'btn-raised' : '']"
                                 v-on:click="toggleNuts3LayerSetup">
-                          <i class="material-icons" v-text="buttonIconName"></i>
-                          <div><small>Layers</small></div>
+                          <i class="material-icons" v-text="iconName"></i>
+                          <div><small  v-text="name"></small></div>
                         </button>
                       </div>
 
@@ -213,8 +216,8 @@
                         <button id="overviewLevelButton" type="button" class="btn btn-danger"
                                 data-toggle="tooltip"
                                 data-placement="bottom"
-                                v-bind:title="dictionary['overview'].ariaLabel"
-                                v-bind:aria-label="dictionary['overview'].ariaLabel"
+                                v-bind:title="dictionary['overview'].description"
+                                v-bind:aria-label="dictionary['overview'].description"
                                 v-bind:aria-pressed="[currentInfoLevel === 'overview' ? 'true' : 'false']"
                                 v-bind:class="[currentInfoLevel === 'overview' ? 'btn-raised' : '']"
                                 v-on:click="setCurrentInfoLevel('overview')">
@@ -224,8 +227,8 @@
                         <button id="detailsLevelButton" type="button" class="btn btn-danger"
                                 data-toggle="tooltip"
                                 data-placement="bottom"
-                                v-bind:title="dictionary['details'].ariaLabel"
-                                v-bind:aria-label="dictionary['details'].ariaLabel"
+                                v-bind:title="dictionary['details'].description"
+                                v-bind:aria-label="dictionary['details'].description"
                                 v-bind:aria-pressed="[currentInfoLevel === 'details' ? 'true' : 'false']"
                                 v-bind:class="[currentInfoLevel === 'details' ? 'btn-raised' : '']"
                                 v-on:click="setCurrentInfoLevel('details')">

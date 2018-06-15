@@ -359,15 +359,15 @@ let MapLayers = {
           // '8': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#167F39', fillOpacity: 0.6 },
           // '9': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#00A388', fillOpacity: 0.6 }
 
-          '1': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material['pink'].hex, fillOpacity: 0.7 },
-          '2': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material['red'].hex, fillOpacity: 0.7 },
-          '3': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material['deep-orange'].hex, fillOpacity: 0.7 },
-          '4': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material['teal'].hex, fillOpacity: 0.7 },
-          '5': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material['green'].hex, fillOpacity: 0.7 },
-          '6': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material['indigo'].hex, fillOpacity: 0.7 },
-          '7': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material['cyan'].hex, fillOpacity: 0.7 },
-          '8': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material['orange'].hex, fillOpacity: 0.7 },
-          '9': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material['light-blue'].hex, fillOpacity: 0.7 }
+          '1': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.pink.hex, fillOpacity: 0.7 },
+          '2': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.red.hex, fillOpacity: 0.7 },
+          '3': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange.hex, fillOpacity: 0.7 },
+          '4': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.teal.hex, fillOpacity: 0.7 },
+          '5': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.green.hex, fillOpacity: 0.7 },
+          '6': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo.hex, fillOpacity: 0.7 },
+          '7': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.cyan.hex, fillOpacity: 0.7 },
+          '8': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.orange.hex, fillOpacity: 0.7 },
+          '9': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lightBlue.hex, fillOpacity: 0.7 }
         },
 
         /**
@@ -743,7 +743,7 @@ let MapLayers = {
     createLayer: function() {
 
       // TODO: RESIN - Check next line.
-      // loaderViewModel.isVisible = true;
+      // spinnerViewModel.isVisible = true;
 
       // Get the named basemap layer.
       let namedBaseMap = toggleBaseMapViewModel.currentBaseMap;
@@ -828,29 +828,40 @@ let MapLayers = {
      */
     renderLayer: function() {
 
-      // Get the current basemap. This is used to decide the symbology of the NUTS3 polygons.
-      let currentBaseMap = toggleBaseMapViewModel.currentBaseMap;
+      // TODO: RESIN - Reverted back to the old inefficient way to render a layer after toggling typology classed on/off.
 
-      // Get the current typology level.
-      let currentTypologyLevel = nuts3LayerSetupViewModel.currentTab;
+      Spatial.map.removeLayer(this.mapLayer);
 
-      // Check whether NUTS3 features exist or not.
-      if (this.geoJSON !== undefined || this.geoJSON !== null) {
+      this.createLayer();
 
-        // Loop through the NUTS3 features.
-        for (i = 0; i < this.geoJSON.features.length; i++) {
 
-          // Get the NUTS3 feature.
-          let feature = this.geoJSON.features[i];
-          let attributeName = this.typologyLevelDictionary[currentTypologyLevel].attributeName;
-          let classValue = feature.properties[attributeName].toString();
 
-          // Render the NUTS3 polygon.
-          this.renderNuts3Polygon(feature, classValue, currentTypologyLevel, currentBaseMap);
+      // TODO: RESIN - Next lines and the called functions proved to introduce a serious BUG concerning
+      // the default colour rendering when calling the restStyle function.
 
-        }
-
-      }
+      // // Get the current basemap. This is used to decide the symbology of the NUTS3 polygons.
+      // let currentBaseMap = toggleBaseMapViewModel.currentBaseMap;
+      //
+      // // Get the current typology level.
+      // let currentTypologyLevel = nuts3LayerSetupViewModel.currentTab;
+      //
+      // // Check whether NUTS3 features exist or not.
+      // if (this.geoJSON !== undefined || this.geoJSON !== null) {
+      //
+      //   // Loop through the NUTS3 features.
+      //   for (i = 0; i < this.geoJSON.features.length; i++) {
+      //
+      //     // Get the NUTS3 feature.
+      //     let feature = this.geoJSON.features[i];
+      //     let attributeName = this.typologyLevelDictionary[currentTypologyLevel].attributeName;
+      //     let classValue = feature.properties[attributeName].toString();
+      //
+      //     // Render the NUTS3 polygon.
+      //     this.renderNuts3Polygon(feature, classValue, currentTypologyLevel, currentBaseMap);
+      //
+      //   }
+      //
+      // }
 
     },
 
@@ -940,6 +951,12 @@ let MapLayers = {
       // currentMsoaViewModel.updateView(feature.properties.C, feature.properties.NM, feature.properties.NMW);
       // currentMsoaViewModel.show();
 
+      // TODO: RESIN - This needs to be transfered to updateView
+
+      if (toggleNuts3LayerSetupViewModel.isNuts3LayerSetupVisible) {
+        toggleNuts3LayerSetupViewModel.hideNuts3LayerSetup();
+      }
+
     },
 
     /**
@@ -1020,7 +1037,7 @@ let Spatial = {
    */
   initializeMap: function() {
 
-    loaderViewModel.isVisible = true;
+    spinnerViewModel.isVisible = true;
 
     Spatial.map = L.map('map', {
       center: Spatial.mapOptions.center,
@@ -1050,7 +1067,7 @@ let Spatial = {
 
     Spatial.setInitialBaseMapLayer();
 
-    loaderViewModel.isVisible = false;
+    spinnerViewModel.isVisible = false;
 
   },
 
@@ -1098,11 +1115,11 @@ let HtmlTemplates = {
 //  View Models.
 
 /**
- * The loaderViewModel provides the data and logic to toggle the visibility of loader.
+ * The spinnerViewModel provides the data and logic to toggle the visibility of spinner.
  *
  * @type {Vue} - A Vue object with the model and methods used in the view model.
  */
-let loaderViewModel = new Vue({
+let spinnerViewModel = new Vue({
 
   /**
    * The name of the view model.
@@ -1122,8 +1139,6 @@ let loaderViewModel = new Vue({
   }
 
 });
-
-
 
 /**
  * The sidebarTabsViewModel provides tha data and logic to toggle the sidebar itself or its contents.
@@ -1185,10 +1200,15 @@ let toggleBaseMapViewModel = new Vue({
      */
     currentBaseMap: 'dark',
 
+    /**
+     * The dictionary whose keys are the names of basemaps and items are objects providing the
+     * names, icon names and descriptions of the buttons.
+     * The descriptions can be used in aria-labels or as tooltips.
+     */
     dictionary: {
-      'dark':  { name: 'Dark',  iconName: 'map' /* 'fas fa-map' */,             ariaLabel: 'Dark Basemap' },
-      'light': { name: 'Light', iconName: 'map' /* 'far fa-map' */,             ariaLabel: 'Light Basemap' },
-      'roads': { name: 'Roads', iconName: 'directions_car' /* 'fas fa-road' */, ariaLabel: 'Roads Basemap' }
+      'dark':  { name: 'Dark',  iconName: 'map' /* 'fas fa-map' */,             description: 'Dark Basemap' },
+      'light': { name: 'Light', iconName: 'map' /* 'far fa-map' */,             description: 'Light Basemap' },
+      'roads': { name: 'Roads', iconName: 'directions_car' /* 'fas fa-road' */, description: 'Roads Basemap' }
     },
 
     // /**
@@ -1251,12 +1271,12 @@ let toggleBaseMapViewModel = new Vue({
 });
 
 /**
- * The toggleNuts3LayerSetupButtonViewModel provides tha data and logic
+ * The toggleNuts3LayerSetupViewModel provides tha data and logic
  * to toggle the layer rendering setup button and panel.
  *
  * @type {Vue} - A Vue object with the model and methods used in the view model.
  */
-let toggleNuts3LayerSetupButtonViewModel = new Vue({
+let toggleNuts3LayerSetupViewModel = new Vue({
 
   /**
    * The name of the view model.
@@ -1276,12 +1296,17 @@ let toggleNuts3LayerSetupButtonViewModel = new Vue({
     /**
      * Button name.
      */
+    name: 'Layers', // TODO: RESIN - Change this to Layer.
+
+    /**
+     * Button description. Can be used in aria-label or as a tooltip.
+     */
     description: 'Setup Layer Drawing',
 
     /**
-     * The basemap icon names.
+     * The button icon name.
      */
-    buttonIconName: 'layers' //'fas fa-puzzle-piece'
+    iconName: 'layers' //'fas fa-puzzle-piece'
 
   },
 
@@ -1304,13 +1329,21 @@ let toggleNuts3LayerSetupButtonViewModel = new Vue({
         $('#nuts3LayerSetupButton').tooltip('hide');
       }
 
+    },
+
+    /**
+     * Hides the NUTS3 layer setup button and panel area.
+     */
+    hideNuts3LayerSetup() {
+
+      this.isNuts3LayerSetupVisible = false;
+      nuts3LayerSetupViewModel.isVisible = false;
+
     }
 
   }
 
 });
-
-
 
 /**
  * The toggleInfoLevelViewModel provides tha data and logic to toggle the information level displayed to the user.
@@ -1334,9 +1367,16 @@ let toggleInfoLevelViewModel = new Vue({
      */
     currentInfoLevel: 'overview',
 
+    /**
+     * The dictionary whose keys are the names of information level and items are objects providing the
+     * names, icon names and descriptions of the buttons.
+     * The descriptions can be used in aria-labels or as tooltips.
+     */
     dictionary: {
-      'overview': { name: 'Overview',  iconName: 'map', ariaLabel: 'Overview Level Information' },
-      'details':  { name: 'Details',   iconName: 'map', ariaLabel: 'Details Level Information' }
+      // 1.local_library, 2.blur_on, 3.center_focus_weak, all_out, language, wallpaper, calendar_today, 360, trip_origin, fullscreen, public
+      'overview': { name: 'Overview',  iconName: 'blur_on', description: 'Overview Level Information' },
+      // 1.event_note, 2.blur_circular, 3.[center_focus_strong, crop_free], book, class, extension, pageview, library_books, menu
+      'details':  { name: 'Details',   iconName: 'blur_circular', description: 'Details Level Information' }
     },
 
   },
@@ -1365,11 +1405,6 @@ let toggleInfoLevelViewModel = new Vue({
   }
 
 });
-
-
-
-
-
 
 /**
  * The nuts3LayerSetupViewModel provides tha data and logic
