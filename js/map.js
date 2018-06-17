@@ -359,82 +359,53 @@ let MapLayers = {
           // '8': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#167F39', fillOpacity: 0.6 },
           // '9': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#00A388', fillOpacity: 0.6 }
 
-          '1': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.pink.hex, fillOpacity: 0.7 },
-          '2': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.green.hex, fillOpacity: 0.7 },
-          '3': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.teal.hex, fillOpacity: 0.7 },
-          '4': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange.hex, fillOpacity: 0.7 },
-          '5': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo.hex, fillOpacity: 0.7 },
-          '6': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.orange.hex, fillOpacity: 0.7 },
-          '7': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.cyan.hex, fillOpacity: 0.7 },
-          '8': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.red.hex, fillOpacity: 0.7 }
-          // '9': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lightBlue.hex, fillOpacity: 0.7 }
-        },
-
-        /**
-         * The styles used to highlight the current NUTS3 polygon based on its supergroup on top of the Dark Basemap.
-         */
-        // TODO: RESIN - Styles of Highlighted supergroups are not used at all.
-        supergroupHighlightingStyles: {
-          '1': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 },
-          '2': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 },
-          '3': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 },
-          '4': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 },
-          '5': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 },
-          '6': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 },
-          '7': { stroke: true, color: '#ff4500', weight: 5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 },
-          '8': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 },
-          '9': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 }
+          '1': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.pink.hex, fillOpacity: 0.6 },
+          '2': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.green.hex, fillOpacity: 0.6 },
+          '3': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lime.hex, fillOpacity: 0.6 },
+          '4': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange.hex, fillOpacity: 0.6 },
+          '5': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lightBlue900.hex, fillOpacity: 0.6 },
+          '6': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber.hex, fillOpacity: 0.6 },
+          '7': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.cyan.hex, fillOpacity: 0.6 },
+          '8': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.red.hex, fillOpacity: 0.6 }
         },
 
         /**
          * The styles used to render the NUTS3 polygons based on their group on top of the Dark Basemap.
          */
-        //TODO: RESIN - Styles of groups are not used so far.
         groupStyles: {
-          '11': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#004358', fillOpacity: 0.6 },
-          '12': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#004358', fillOpacity: 0.6 },
-          '21': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#1F8A70', fillOpacity: 0.6 },
-          '22': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#1F8A70', fillOpacity: 0.6 },
-          '31': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FD7400', fillOpacity: 0.6 },
-          '32': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FD7400', fillOpacity: 0.6 },
-          '41': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FFE11A', fillOpacity: 0.6 },
-          '42': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FFE11A', fillOpacity: 0.6 },
-          '51': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF8C00', fillOpacity: 0.6 },
-          '52': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF8C00', fillOpacity: 0.6 },
-          '61': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#35478C', fillOpacity: 0.6 },
-          '62': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#35478C', fillOpacity: 0.6 },
-          '71': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF2D00', fillOpacity: 0.6 },
-          '72': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF2D00', fillOpacity: 0.6 },
-          '81': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#167F39', fillOpacity: 0.6 },
-          '82': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#167F39', fillOpacity: 0.6 },
-          '91': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#00A388', fillOpacity: 0.6 },
-          '92': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#00A388', fillOpacity: 0.6 }
-        },
-
-        /**
-         * The styles used to highlight the current NUTS3 polygon based on its group on top of the Dark Basemap.
-         */
-        // TODO: RESIN - Styles of Highlighted groups are not used at all.
-        groupHighlightingStyles: {
-          '11': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 },
-          '12': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 },
-          '21': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 },
-          '22': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 },
-          '31': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 },
-          '32': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 },
-          '41': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 },
-          '42': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 },
-          '51': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 },
-          '52': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 },
-          '61': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 },
-          '62': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 },
-          '71': { stroke: true, color: '#ff4500', weight: 5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 },
-          '72': { stroke: true, color: '#ff4500', weight: 5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 },
-          '81': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 },
-          '82': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 },
-          '91': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 },
-          '92': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 }
-        },
+          '11': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.pink800.hex, fillOpacity: 0.6 },
+          '12': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.pink600.hex, fillOpacity: 0.6 },
+          '13': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.pink400.hex, fillOpacity: 0.6 },
+          '14': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.pink200.hex, fillOpacity: 0.6 },
+          '21': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.green800.hex, fillOpacity: 0.6 },
+          '22': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.green600.hex, fillOpacity: 0.6 },
+          '23': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.green400.hex, fillOpacity: 0.6 },
+          '24': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.green200.hex, fillOpacity: 0.6 },
+          '31': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lime800.hex, fillOpacity: 0.6 },
+          '32': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lime600.hex, fillOpacity: 0.6 },
+          '33': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lime400.hex, fillOpacity: 0.6 },
+          '34': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lime200.hex, fillOpacity: 0.6 },
+          '41': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange800.hex, fillOpacity: 0.6 },
+          '42': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange600.hex, fillOpacity: 0.6 },
+          '43': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange400.hex, fillOpacity: 0.6 },
+          '44': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange200.hex, fillOpacity: 0.6 },
+          '51': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lightBlue800.hex, fillOpacity: 0.6 },
+          '52': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lightBlue600.hex, fillOpacity: 0.6 },
+          '53': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lightBlue400.hex, fillOpacity: 0.6 },
+          '54': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lightBlue200.hex, fillOpacity: 0.6 },
+          '61': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber800.hex, fillOpacity: 0.6 },
+          '62': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber600.hex, fillOpacity: 0.6 },
+          '63': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber400.hex, fillOpacity: 0.6 },
+          '64': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber200.hex, fillOpacity: 0.6 },
+          '71': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.cyan800.hex, fillOpacity: 0.6 },
+          '72': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.cyan600.hex, fillOpacity: 0.6 },
+          '73': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.cyan400.hex, fillOpacity: 0.6 },
+          '74': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.cyan200.hex, fillOpacity: 0.6 },
+          '81': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.red800.hex, fillOpacity: 0.6 },
+          '82': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.red600.hex, fillOpacity: 0.6 },
+          '83': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.red400.hex, fillOpacity: 0.6 },
+          '84': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.red200.hex, fillOpacity: 0.6 }
+        }
 
       },
 
@@ -476,81 +447,62 @@ let MapLayers = {
          * The styles used to render the NUTS3 polygons based on their supergroup on top of the Light Basemap.
          */
         supergroupStyles: {
-          '1': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#004358', fillOpacity: 0.6 },
-          '2': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#1F8A70', fillOpacity: 0.6 },
-          '3': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FD7400', fillOpacity: 0.6 },
-          '4': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FFE11A', fillOpacity: 0.6 },
-          '5': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF8C00', fillOpacity: 0.6 },
-          '6': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#35478C', fillOpacity: 0.6 },
-          '7': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF2D00', fillOpacity: 0.6 },
-          '8': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#167F39', fillOpacity: 0.6 },
-          '9': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#00A388', fillOpacity: 0.6 }
-        },
+          // '1': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#004358', fillOpacity: 0.6 },
+          // '2': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#1F8A70', fillOpacity: 0.6 },
+          // '3': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FD7400', fillOpacity: 0.6 },
+          // '4': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FFE11A', fillOpacity: 0.6 },
+          // '5': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF8C00', fillOpacity: 0.6 },
+          // '6': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#35478C', fillOpacity: 0.6 },
+          // '7': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF2D00', fillOpacity: 0.6 },
+          // '8': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#167F39', fillOpacity: 0.6 },
+          // '9': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#00A388', fillOpacity: 0.6 }
 
-        /**
-         * The styles used to highlight the current NUTS3 polygon based on its supergroup on top of the Light Basemap.
-         */
-        // TODO: RESIN - Styles of Highlighted supergroups are not used at all.
-        supergroupHighlightingStyles: {
-          '1': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 },
-          '2': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 },
-          '3': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 },
-          '4': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 },
-          '5': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 },
-          '6': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 },
-          '7': { stroke: true, color: '#ff4500', weight: 5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 },
-          '8': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 },
-          '9': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 }
+          '1': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.purple.hex, fillOpacity: 0.7 },
+          '2': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.green.hex, fillOpacity: 0.7 },
+          '3': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.teal.hex, fillOpacity: 0.7 },
+          '4': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange.hex, fillOpacity: 0.7 },
+          '5': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo.hex, fillOpacity: 0.7 },
+          '6': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber.hex, fillOpacity: 0.7 },
+          '7': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lightBlue.hex, fillOpacity: 0.7 },
+          '8': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.red.hex, fillOpacity: 0.7 }
         },
 
         /**
          * The styles used to render the NUTS3 polygons based on their group on top of the Light Basemap.
          */
-        //TODO: RESIN - Styles of groups are not used so far.
         groupStyles: {
-          '11': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#004358', fillOpacity: 0.6 },
-          '12': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#004358', fillOpacity: 0.6 },
-          '21': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#1F8A70', fillOpacity: 0.6 },
-          '22': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#1F8A70', fillOpacity: 0.6 },
-          '31': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FD7400', fillOpacity: 0.6 },
-          '32': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FD7400', fillOpacity: 0.6 },
-          '41': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FFE11A', fillOpacity: 0.6 },
-          '42': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FFE11A', fillOpacity: 0.6 },
-          '51': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF8C00', fillOpacity: 0.6 },
-          '52': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF8C00', fillOpacity: 0.6 },
-          '61': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#35478C', fillOpacity: 0.6 },
-          '62': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#35478C', fillOpacity: 0.6 },
-          '71': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF2D00', fillOpacity: 0.6 },
-          '72': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF2D00', fillOpacity: 0.6 },
-          '81': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#167F39', fillOpacity: 0.6 },
-          '82': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#167F39', fillOpacity: 0.6 },
-          '91': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#00A388', fillOpacity: 0.6 },
-          '92': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#00A388', fillOpacity: 0.6 }
-        },
-
-        /**
-         * The styles used to highlight the current NUTS3 polygon based on its group on top of the Light Basemap.
-         */
-        // TODO: RESIN - Styles of Highlighted groups are not used at all.
-        groupHighlightingStyles: {
-          '11': { stroke: true, color: '#ff4500', weight: 5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 },
-          '12': { stroke: true, color: '#ff4500', weight: 5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 },
-          '21': { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 },
-          '22': { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 },
-          '31': { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 },
-          '32': { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 },
-          '41': { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 },
-          '42': { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 },
-          '51': { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 },
-          '52': { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 },
-          '61': { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 },
-          '62': { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 },
-          '71': { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 },
-          '72': { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 },
-          '81': { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 },
-          '82': { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 },
-          '91': { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 },
-          '92': { stroke: true, color: '#4169e1', weight: 5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 }
+          '11': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.purple800.hex, fillOpacity: 0.7 },
+          '12': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.purple600.hex, fillOpacity: 0.7 },
+          '13': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.purple400.hex, fillOpacity: 0.7 },
+          '14': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.purple200.hex, fillOpacity: 0.7 },
+          '21': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.green800.hex, fillOpacity: 0.7 },
+          '22': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.green600.hex, fillOpacity: 0.7 },
+          '23': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.green400.hex, fillOpacity: 0.7 },
+          '24': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.green200.hex, fillOpacity: 0.7 },
+          '31': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.teal800.hex, fillOpacity: 0.7 },
+          '32': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.teal600.hex, fillOpacity: 0.7 },
+          '33': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.teal400.hex, fillOpacity: 0.7 },
+          '34': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.teal200.hex, fillOpacity: 0.7 },
+          '41': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange800.hex, fillOpacity: 0.7 },
+          '42': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange600.hex, fillOpacity: 0.7 },
+          '43': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange400.hex, fillOpacity: 0.7 },
+          '44': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange200.hex, fillOpacity: 0.7 },
+          '51': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo800.hex, fillOpacity: 0.7 },
+          '52': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo600.hex, fillOpacity: 0.7 },
+          '53': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo400.hex, fillOpacity: 0.7 },
+          '54': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo200.hex, fillOpacity: 0.7 },
+          '61': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber800.hex, fillOpacity: 0.7 },
+          '62': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber600.hex, fillOpacity: 0.7 },
+          '63': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber400.hex, fillOpacity: 0.7 },
+          '64': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber200.hex, fillOpacity: 0.7 },
+          '71': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lightBlue800.hex, fillOpacity: 0.7 },
+          '72': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lightBlue600.hex, fillOpacity: 0.7 },
+          '73': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lightBlue400.hex, fillOpacity: 0.7 },
+          '74': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lightBlue200.hex, fillOpacity: 0.7 },
+          '81': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.red800.hex, fillOpacity: 0.7 },
+          '82': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.red600.hex, fillOpacity: 0.7 },
+          '83': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.red400.hex, fillOpacity: 0.7 },
+          '84': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.red200.hex, fillOpacity: 0.7 }
         }
 
       },
@@ -593,81 +545,62 @@ let MapLayers = {
          * The styles used to render the NUTS3 polygons based on their supergroup on top of the Roads Basemap.
          */
         supergroupStyles: {
-          '1': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#004358', fillOpacity: 0.6 },
-          '2': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#1F8A70', fillOpacity: 0.6 },
-          '3': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FD7400', fillOpacity: 0.6 },
-          '4': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FFE11A', fillOpacity: 0.6 },
-          '5': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF8C00', fillOpacity: 0.6 },
-          '6': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#35478C', fillOpacity: 0.6 },
-          '7': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF2D00', fillOpacity: 0.6 },
-          '8': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#167F39', fillOpacity: 0.6 },
-          '9': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#00A388', fillOpacity: 0.6 }
-        },
+          // '1': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#004358', fillOpacity: 0.6 },
+          // '2': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#1F8A70', fillOpacity: 0.6 },
+          // '3': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FD7400', fillOpacity: 0.6 },
+          // '4': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FFE11A', fillOpacity: 0.6 },
+          // '5': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF8C00', fillOpacity: 0.6 },
+          // '6': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#35478C', fillOpacity: 0.6 },
+          // '7': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF2D00', fillOpacity: 0.6 },
+          // '8': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#167F39', fillOpacity: 0.6 },
+          // '9': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#00A388', fillOpacity: 0.6 }
 
-        /**
-         * The styles used to highlight the current NUTS3 polygon based on its supergroup on top of the Roads Basemap.
-         */
-        // TODO: RESIN - Styles of Highlighted supergroups are not used at all.
-        supergroupHighlightingStyles: {
-          '1': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 },
-          '2': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 },
-          '3': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 },
-          '4': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 },
-          '5': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 },
-          '6': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 },
-          '7': { stroke: true, color: '#ff4500', weight: 5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 },
-          '8': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 },
-          '9': { stroke: true, color: '#e1de00', weight: 5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 }
+          '1': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.purple.hex, fillOpacity: 0.7 },
+          '2': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.green.hex, fillOpacity: 0.7 },
+          '3': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.teal.hex, fillOpacity: 0.7 },
+          '4': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange.hex, fillOpacity: 0.7 },
+          '5': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo.hex, fillOpacity: 0.7 },
+          '6': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber.hex, fillOpacity: 0.7 },
+          '7': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lightBlue.hex, fillOpacity: 0.7 },
+          '8': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.red.hex, fillOpacity: 0.7 }
         },
 
         /**
          * The styles used to render the NUTS3 polygons based on their group on top of the Roads Basemap.
          */
-        //TODO: RESIN - Styles of groups are not used so far.
         groupStyles: {
-          '11': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#004358', fillOpacity: 0.6 },
-          '12': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#004358', fillOpacity: 0.6 },
-          '21': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#1F8A70', fillOpacity: 0.6 },
-          '22': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#1F8A70', fillOpacity: 0.6 },
-          '31': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FD7400', fillOpacity: 0.6 },
-          '32': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FD7400', fillOpacity: 0.6 },
-          '41': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FFE11A', fillOpacity: 0.6 },
-          '42': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FFE11A', fillOpacity: 0.6 },
-          '51': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF8C00', fillOpacity: 0.6 },
-          '52': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF8C00', fillOpacity: 0.6 },
-          '61': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#35478C', fillOpacity: 0.6 },
-          '62': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#35478C', fillOpacity: 0.6 },
-          '71': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF2D00', fillOpacity: 0.6 },
-          '72': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#FF2D00', fillOpacity: 0.6 },
-          '81': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#167F39', fillOpacity: 0.6 },
-          '82': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#167F39', fillOpacity: 0.6 },
-          '91': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#00A388', fillOpacity: 0.6 },
-          '92': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: '#00A388', fillOpacity: 0.6 }
-        },
-
-        /**
-         * The styles used to highlight the current NUTS3 polygon based on its group on top of the Roads Basemap.
-         */
-        // TODO: RESIN - Styles of Highlighted groups are not used at all.
-        groupHighlightingStyles: {
-          '11': { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 },
-          '12': { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#1705d6', fillOpacity: 0.6 },
-          '21': { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 },
-          '22': { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#11ea44', fillOpacity: 0.6 },
-          '31': { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 },
-          '32': { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#cc4704', fillOpacity: 0.6 },
-          '41': { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 },
-          '42': { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#6b2ed4', fillOpacity: 0.6 },
-          '51': { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 },
-          '52': { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#d60003', fillOpacity: 0.6 },
-          '61': { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 },
-          '62': { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#23cfb8', fillOpacity: 0.6 },
-          '71': { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 },
-          '72': { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#e1de00', fillOpacity: 0.6 },
-          '81': { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 },
-          '82': { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#de079a', fillOpacity: 0.6 },
-          '91': { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 },
-          '92': { stroke: true, color: '#282828', weight: 5, opacity: 1, fill: true, fillColor: '#1fcd5f', fillOpacity: 0.6 }
+          '11': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.purple800.hex, fillOpacity: 0.7 },
+          '12': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.purple600.hex, fillOpacity: 0.7 },
+          '13': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.purple400.hex, fillOpacity: 0.7 },
+          '14': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.purple200.hex, fillOpacity: 0.7 },
+          '21': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.green800.hex, fillOpacity: 0.7 },
+          '22': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.green600.hex, fillOpacity: 0.7 },
+          '23': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.green400.hex, fillOpacity: 0.7 },
+          '24': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.green200.hex, fillOpacity: 0.7 },
+          '31': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.teal800.hex, fillOpacity: 0.7 },
+          '32': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.teal600.hex, fillOpacity: 0.7 },
+          '33': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.teal400.hex, fillOpacity: 0.7 },
+          '34': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.teal200.hex, fillOpacity: 0.7 },
+          '41': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange800.hex, fillOpacity: 0.7 },
+          '42': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange600.hex, fillOpacity: 0.7 },
+          '43': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange400.hex, fillOpacity: 0.7 },
+          '44': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange200.hex, fillOpacity: 0.7 },
+          '51': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo800.hex, fillOpacity: 0.7 },
+          '52': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo600.hex, fillOpacity: 0.7 },
+          '53': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo400.hex, fillOpacity: 0.7 },
+          '54': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo200.hex, fillOpacity: 0.7 },
+          '61': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber800.hex, fillOpacity: 0.7 },
+          '62': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber600.hex, fillOpacity: 0.7 },
+          '63': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber400.hex, fillOpacity: 0.7 },
+          '64': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber200.hex, fillOpacity: 0.7 },
+          '71': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lightBlue800.hex, fillOpacity: 0.7 },
+          '72': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lightBlue600.hex, fillOpacity: 0.7 },
+          '73': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lightBlue400.hex, fillOpacity: 0.7 },
+          '74': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lightBlue200.hex, fillOpacity: 0.7 },
+          '81': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.red800.hex, fillOpacity: 0.7 },
+          '82': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.red600.hex, fillOpacity: 0.7 },
+          '83': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.red400.hex, fillOpacity: 0.7 },
+          '84': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.red200.hex, fillOpacity: 0.7 }
         }
 
       }
@@ -702,15 +635,14 @@ let MapLayers = {
      * The supergroups metadata in the form of a dictionary whose keys are the values of supergroups.
      */
     supergroups: {
-      '1': { sg: 1, groups: [11, 12], visible: true, name: 'This is the name for sg 1', description: 'This indicator shows the percentage of the total length of the major road network in the NUTS3 unit that would be exposed to flooding in the event of a 1 in 100 year fluvial flood. Fluvial flooding occurs when watercourses (rivers, streams) overflow and inundate the surrounding area. Although this indicator does not highlight the specific elements of the road network that would be flooded the statistical data provided for this indicator, particularly the Z-score, can be used to better understand whether fluvial flooding to the major road network is a significant issue for the NUTS3 area.' },
-      '2': { sg: 2, groups: [21, 22], visible: true, name: 'This is the name for sg 2', description: 'The road network was sourced from open street map (2017). Major roads are defined as ‘Highways’ and include ‘motorway’, ‘trunk’, ‘primary’, ‘secondary’ and ‘tertiary’ segments of the network. The road network was intersected with JRC 1-100 year return period flood maps.' },
-      '3': { sg: 3, groups: [31, 32], visible: true, name: 'This is the name for sg 3', description: 'This indicator shows the difference between the 2036-2065 period and the 1981-2010 period in the number of nights where the minimum temperature does not drop below 20°C. The 20°C temperature threshold for tropical nights has been established as part of a global set of <a href="http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4" target=\"_cf\">climate change indices</a>. This indicator is developed for the <a href="http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html" target="_cf">IPCC RCP4.5 scenario</a>, which represents a medium greenhouse gas emissions scenario. The statistical data provided for this indicator, particularly the Z-score, can be used to better understand whether tropical nights are a potentially significant climate change hazard for the NUTS3 area. The tropical nights indicator is used by the <a href="https://www.eea.europa.eu/publications/urban-adaptation-to-climate-change" target="_cf">European Environment Agency</a> who note that their occurrence is a crucial factor influencing the degree of health impacts associated with high temperatures in urban areas. The level of risk to people in the NUTS3 area from tropical nights (and associated heat wave days) will depend on factors including the proportion of elderly and young people in the population, groups who are particularly susceptible to harm from high temperatures. Indicator data on these factors is available within the typology portal.' },
-      '4': { sg: 4, groups: [41, 42], visible: true, name: 'This is the name for sg 4', description: 'This is the description of supergroup sg 4' },
-      '5': { sg: 5, groups: [51, 52], visible: true, name: 'This is the name for sg 5', description: 'This is the description of supergroup sg 5' },
-      '6': { sg: 6, groups: [61, 62], visible: true, name: 'This is the name for sg 6', description: 'This is the description of supergroup sg 6' },
-      '7': { sg: 7, groups: [71, 72], visible: true, name: 'This is the name for sg 7', description: 'This is the description of supergroup sg 7' },
-      '8': { sg: 8, groups: [81, 82], visible: true, name: 'This is the name for sg 8', description: 'This is the description of supergroup sg 8' },
-      '9': { sg: 9, groups: [91, 92], visible: true, name: 'This is the name for sg 9', description: 'This is the description of supergroup sg 9' }
+      '1': { sg: 1, groups: [11, 12, 13, 14], visible: true, name: 'This is the name of supergroup 1', description: 'This is the description of supergroup sg 1' },
+      '2': { sg: 2, groups: [21, 22, 23, 24], visible: true, name: 'This is the name of supergroup 2', description: 'This is the description of supergroup sg 2' },
+      '3': { sg: 3, groups: [31, 32, 33, 34], visible: true, name: 'This is the name of supergroup 3', description: 'This is the description of supergroup sg 3' },
+      '4': { sg: 4, groups: [41, 42, 43, 44], visible: true, name: 'This is the name of supergroup 4', description: 'This is the description of supergroup sg 4' },
+      '5': { sg: 5, groups: [51, 52, 53, 54], visible: true, name: 'This is the name of supergroup 5', description: 'This is the description of supergroup sg 5' },
+      '6': { sg: 6, groups: [61, 62, 63, 64], visible: true, name: 'This is the name of supergroup 6', description: 'This is the description of supergroup sg 6' },
+      '7': { sg: 7, groups: [71, 72, 73, 74], visible: true, name: 'This is the name of supergroup 7', description: 'This is the description of supergroup sg 7' },
+      '8': { sg: 8, groups: [81, 82, 83, 84], visible: true, name: 'This is the name of supergroup 8', description: 'This is the description of supergroup sg 8' }
     },
 
     /**
@@ -719,22 +651,36 @@ let MapLayers = {
     groups: {
       '11': { g: 11, sg: 1, visible: true, name: 'This is the name of g 11', description: 'This is the description of g 11' },
       '12': { g: 12, sg: 1, visible: true, name: 'This is the name of g 12', description: 'This is the description of g 12' },
+      '13': { g: 13, sg: 1, visible: true, name: 'This is the name of g 13', description: 'This is the description of g 13' },
+      '14': { g: 14, sg: 1, visible: true, name: 'This is the name of g 14', description: 'This is the description of g 14' },
       '21': { g: 21, sg: 2, visible: true, name: 'This is the name of g 21', description: 'This is the description of g 21' },
       '22': { g: 22, sg: 2, visible: true, name: 'This is the name of g 22', description: 'This is the description of g 22' },
+      '23': { g: 23, sg: 2, visible: true, name: 'This is the name of g 23', description: 'This is the description of g 23' },
+      '24': { g: 24, sg: 2, visible: true, name: 'This is the name of g 24', description: 'This is the description of g 24' },
       '31': { g: 31, sg: 3, visible: true, name: 'This is the name of g 31', description: 'This is the description of g 31' },
       '32': { g: 32, sg: 3, visible: true, name: 'This is the name of g 32', description: 'This is the description of g 32' },
+      '33': { g: 33, sg: 3, visible: true, name: 'This is the name of g 33', description: 'This is the description of g 33' },
+      '34': { g: 34, sg: 3, visible: true, name: 'This is the name of g 34', description: 'This is the description of g 34' },
       '41': { g: 41, sg: 4, visible: true, name: 'This is the name of g 41', description: 'This is the description of g 41' },
       '42': { g: 42, sg: 4, visible: true, name: 'This is the name of g 42', description: 'This is the description of g 42' },
+      '43': { g: 43, sg: 4, visible: true, name: 'This is the name of g 43', description: 'This is the description of g 43' },
+      '44': { g: 44, sg: 4, visible: true, name: 'This is the name of g 44', description: 'This is the description of g 44' },
       '51': { g: 51, sg: 5, visible: true, name: 'This is the name of g 51', description: 'This is the description of g 51' },
       '52': { g: 52, sg: 5, visible: true, name: 'This is the name of g 52', description: 'This is the description of g 52' },
+      '53': { g: 53, sg: 5, visible: true, name: 'This is the name of g 53', description: 'This is the description of g 53' },
+      '54': { g: 54, sg: 5, visible: true, name: 'This is the name of g 54', description: 'This is the description of g 54' },
       '61': { g: 61, sg: 6, visible: true, name: 'This is the name of g 61', description: 'This is the description of g 61' },
       '62': { g: 62, sg: 6, visible: true, name: 'This is the name of g 62', description: 'This is the description of g 62' },
+      '63': { g: 63, sg: 6, visible: true, name: 'This is the name of g 63', description: 'This is the description of g 63' },
+      '64': { g: 64, sg: 6, visible: true, name: 'This is the name of g 64', description: 'This is the description of g 64' },
       '71': { g: 71, sg: 7, visible: true, name: 'This is the name of g 71', description: 'This is the description of g 71' },
       '72': { g: 72, sg: 7, visible: true, name: 'This is the name of g 72', description: 'This is the description of g 72' },
+      '73': { g: 73, sg: 7, visible: true, name: 'This is the name of g 73', description: 'This is the description of g 73' },
+      '74': { g: 74, sg: 7, visible: true, name: 'This is the name of g 74', description: 'This is the description of g 74' },
       '81': { g: 81, sg: 8, visible: true, name: 'This is the name of g 81', description: 'This is the description of g 81' },
       '82': { g: 82, sg: 8, visible: true, name: 'This is the name of g 82', description: 'This is the description of g 82' },
-      '91': { g: 91, sg: 9, visible: true, name: 'This is the name of g 91', description: 'This is the description of g 91' },
-      '92': { g: 92, sg: 9, visible: true, name: 'This is the name of g 92', description: 'This is the description of g 92' }
+      '83': { g: 83, sg: 8, visible: true, name: 'This is the name of g 83', description: 'This is the description of g 83' },
+      '84': { g: 84, sg: 8, visible: true, name: 'This is the name of g 84', description: 'This is the description of g 84' }
     },
 
     /**
@@ -761,6 +707,8 @@ let MapLayers = {
         // TODO: RESIN - Correct rendering code to allow the use of the current basemap and the current rendering method (typology supergroups / groups or indicators)
         style: function(feature) {
           // TODO: RESIN - Change next line.
+
+
           let isVisible = MapLayers.nuts3.supergroups[feature.properties.SG].visible;
 
           if (isVisible) {
@@ -955,10 +903,14 @@ let MapLayers = {
       // currentMsoaViewModel.updateView(feature.properties.C, feature.properties.NM, feature.properties.NMW);
       // currentMsoaViewModel.show();
 
-      // TODO: RESIN - This needs to be transfered to updateView
-
-      if (toggleNuts3LayerSetupViewModel.isNuts3LayerSetupVisible) {
-        toggleNuts3LayerSetupViewModel.hideNuts3LayerSetup();
+      // Show the overview or details view panel and then update its contents.
+      if (toggleInfoLevelViewModel.currentInfoLevel === 'overview') {
+        overviewInfoViewModel.showView();
+        overviewInfoViewModel.updateView(feature);
+      }
+      else {
+        detailsInfoViewModel.showView();
+        detailsInfoViewModel.updateView(feature);
       }
 
     },
@@ -1103,7 +1055,8 @@ let HtmlTemplates = {
    */
   // TODO: RESIN - Change src and alt in img tag.
   typologyMetadataTooltip: '<div class="card">' +
-                             '<img class="card-img-top" src="https://placeimg.com/320/240/arch" alt="Card image cap">' +
+                             '<i class="display-1 material-icons" style>@@icon@@</i>' +
+                             //'<img class="card-img-top" src="https://placeimg.com/320/240/arch" alt="Card image cap">' +
                              '<div class="card-body">' +
                                '<h5 class="card-title">@@name@@</h5>' +
                                '<p class="card-text">@@description@@</p>' +
@@ -1300,7 +1253,7 @@ let toggleNuts3LayerSetupViewModel = new Vue({
     /**
      * Button name.
      */
-    name: 'Layers', // TODO: RESIN - Change this to Layer.
+    name: 'Layer',
 
     /**
      * Button description. Can be used in aria-label or as a tooltip.
@@ -1310,7 +1263,7 @@ let toggleNuts3LayerSetupViewModel = new Vue({
     /**
      * The button icon name.
      */
-    iconName: 'layers' //'fas fa-puzzle-piece'
+    iconName: 'layers' //'fas fa-puzzle-piece' // TODO: RESIN - Do we really need these old icons?
 
   },
 
@@ -1325,10 +1278,21 @@ let toggleNuts3LayerSetupViewModel = new Vue({
      */
     toggleNuts3LayerSetup() {
 
-      this.isNuts3LayerSetupVisible = !this.isNuts3LayerSetupVisible;
+      // Hide the overview info panel if it is visible.
+      if (overviewInfoViewModel.isVisible) {
+        overviewInfoViewModel.isVisible = false;
+      }
 
+      // Hide the details info panel if it is visible.
+      if (detailsInfoViewModel.isVisible) {
+        detailsInfoViewModel.isVisible = false;
+      }
+
+      // Toggle the button and then toggle the associated panel.
+      this.isNuts3LayerSetupVisible = !this.isNuts3LayerSetupVisible;
       nuts3LayerSetupViewModel.isVisible = this.isNuts3LayerSetupVisible;
 
+      // Make sure the button tooltip is hidden after clicking on the button.
       if (AppState.bootstrapMaterialTooltipEnabled) {
         $('#nuts3LayerSetupButton').tooltip('hide');
       }
@@ -1354,6 +1318,7 @@ let toggleNuts3LayerSetupViewModel = new Vue({
  *
  * @type {Vue} - A Vue object with the model and methods used in the view model.
  */
+  // TODO: RESIN - This view model most probably will not be needed.
 let toggleInfoLevelViewModel = new Vue({
 
   /**
@@ -1432,31 +1397,37 @@ let nuts3LayerSetupViewModel = new Vue({
 
     currentTab: 'supergroups',
 
+    dictionary: {
+      'supergroups': { name: 'Supergroups' },
+      'groups': { name: 'Groups' },
+      'indicators': { name: 'Indicators' }
+    },
+
     supergroups: MapLayers.nuts3.supergroups,
 
     groups: MapLayers.nuts3.groups,
 
-    tooltipIconName: 'announcement', // feedback, info
+    tooltipIconName: 'announcement', // feedback, info,
 
     /**
      * The array of selected supergroups used by the list of supergroup checkboxes.
      */
-    checkedSupergroups: [ '1', '2', '3', '4', '5', '6', '7', '8', '9' ],
+    checkedSupergroups: [ '1', '2', '3', '4', '5', '6', '7', '8' ],
 
     /**
      * The array of selected groups used by the list of group checkboxes.
      */
     // TODO: RESIN - Checked Groups need to be updated depending on the final typology.
     checkedGroups: [
-      '11', '12',
-      '21', '22',
-      '31', '32',
-      '41', '42',
-      '51', '52',
-      '61', '62',
-      '71', '72',
-      '81', '82',
-      '91', '92'
+      '11', '12', '13', '14',
+      '21', '22', '23', '24',
+      '31', '32', '33', '34',
+      '41', '42', '43', '44',
+      '51', '52', '53', '54',
+      '61', '62', '63', '64',
+      '71', '72', '73', '74',
+      '81', '82', '83', '84',
+      '91', '92', '93', '94'
     ]
 
   },
@@ -1472,14 +1443,68 @@ let nuts3LayerSetupViewModel = new Vue({
     supergroupTooltips: function() {
 
       let tooltips = {
-        '1': '', '2': '', '3': '', '4': '', '5': '', '6': '', '7': '', '8': '', '9': ''
+        '1': '', '2': '', '3': '', '4': '', '5': '', '6': '', '7': '', '8': ''
+      };
+
+      // TODO: RESIN - Replace all these with appropriate tooltip icon names.
+      let icons = {
+        '1': 'class',
+        '2': 'class',
+        '3': 'class',
+        '4': 'class',
+        '5': 'class',
+        '6': 'class',
+        '7': 'class',
+        '8': 'class'
       };
 
       for (let sg in this.supergroups) {
         if (this.supergroups.hasOwnProperty(sg)) {
           tooltips[sg] = HtmlTemplates.typologyMetadataTooltip
+                          .replace('@@icon@@', icons[sg])
                           .replace('@@name@@', MapLayers.nuts3.supergroups[sg].name)
                           .replace('@@description@@', MapLayers.nuts3.supergroups[sg].description);
+        }
+      }
+
+      return tooltips;
+
+    },
+
+    /**
+     * Return the tooltips of the groups.
+     */
+    groupTooltips: function() {
+
+      let tooltips = {
+        '11': '', '12': '', '13': '', '14': '',
+        '21': '', '22': '', '23': '', '24': '',
+        '31': '', '32': '', '33': '', '34': '',
+        '41': '', '42': '', '43': '', '44': '',
+        '51': '', '52': '', '53': '', '54': '',
+        '61': '', '62': '', '63': '', '64': '',
+        '71': '', '72': '', '73': '', '74': '',
+        '81': '', '82': '', '83': '', '84': ''
+      };
+
+      // TODO: RESIN - Replace all these with appropriate tooltip icon names.
+      let icons = {
+        '11': 'class', '12': 'class', '13': 'class', '14': 'class',
+        '21': 'class', '22': 'class', '23': 'class', '24': 'class',
+        '31': 'class', '32': 'class', '33': 'class', '34': 'class',
+        '41': 'class', '42': 'class', '43': 'class', '44': 'class',
+        '51': 'class', '52': 'class', '53': 'class', '54': 'class',
+        '61': 'class', '62': 'class', '63': 'class', '64': 'class',
+        '71': 'class', '72': 'class', '73': 'class', '74': 'class',
+        '81': 'class', '82': 'class', '83': 'class', '84': 'class'
+      };
+
+      for (let g in this.groups) {
+        if (this.groups.hasOwnProperty(g)) {
+          tooltips[g] = HtmlTemplates.typologyMetadataTooltip
+            .replace('@@icon@@', icons[g])
+            .replace('@@name@@', MapLayers.nuts3.groups[g].name)
+            .replace('@@description@@', MapLayers.nuts3.groups[g].description);
         }
       }
 
@@ -1520,13 +1545,13 @@ let nuts3LayerSetupViewModel = new Vue({
       let fillColors = {};
 
       let currentBasemap = toggleBaseMapViewModel.currentBaseMap;
-      let supergroupStyles = MapLayers.nuts3.namedBasemapLayers[currentBasemap].supergroupStyles;
+      let groupStyles = MapLayers.nuts3.namedBasemapLayers[currentBasemap].groupStyles;
 
-      for (let sg in supergroupStyles) {
-        if (supergroupStyles.hasOwnProperty(sg)) {
-          fillColors[sg] = {
-            fillColor: supergroupStyles[sg].fillColor,
-            fillOpacity: supergroupStyles[sg].fillOpacity
+      for (let g in groupStyles) {
+        if (groupStyles.hasOwnProperty(g)) {
+          fillColors[g] = {
+            fillColor: groupStyles[g].fillColor,
+            fillOpacity: groupStyles[g].fillOpacity
           };
         }
       }
@@ -1548,6 +1573,7 @@ let nuts3LayerSetupViewModel = new Vue({
      */
     setCurrentTab(tabName) {
       this.currentTab = tabName;
+      MapLayers.nuts3.renderLayer();
     },
 
     /**
@@ -1625,6 +1651,137 @@ let nuts3LayerSetupViewModel = new Vue({
 
 });
 
+/**
+ * The overviewInfoViewModel provides the data and logic
+ * to display overview information about a NUTS3 region.
+ *
+ * @type {Vue} - A Vue object with the model and methods used in the view model.
+ */
+let overviewInfoViewModel = new Vue({
+
+  /**
+   * The name of the view model.
+   */
+  el: '#overviewInfoVM',
+
+  /**
+   * The model of the view model.
+   */
+  data: {
+
+    isVisible: false,
+
+
+
+  },
+
+  /**
+   * The computed properties of the model of the view model.
+   */
+  computed: {
+
+  },
+
+  /**
+   * The methods of the view model.
+   */
+  methods: {
+
+    /**
+     * Shows the current view.
+     */
+    showView() {
+
+      // Hide the Nuts3LayerSetup panel if it is visible.
+      if (toggleNuts3LayerSetupViewModel.isNuts3LayerSetupVisible) {
+        toggleNuts3LayerSetupViewModel.hideNuts3LayerSetup();
+      }
+      else {
+        // Hide the details info panel if it is visible.
+        if (detailsInfoViewModel.isVisible) {
+          detailsInfoViewModel.isVisible = false;
+        }
+      }
+
+      // Show the overview info panel.
+      this.isVisible = true;
+    },
+
+
+    updateView(feature) {
+
+      
+
+    }
+
+  }
+
+});
+
+/**
+ * The detailsInfoViewModel provides the data and logic
+ * to display detailed information about a NUTS3 region.
+ *
+ * @type {Vue} - A Vue object with the model and methods used in the view model.
+ */
+let detailsInfoViewModel = new Vue({
+
+  /**
+   * The name of the view model.
+   */
+  el: '#detailsInfoVM',
+
+  /**
+   * The model of the view model.
+   */
+  data: {
+
+    isVisible: false
+
+  },
+
+  /**
+   * The computed properties of the model of the view model.
+   */
+  computed: {
+
+  },
+
+  /**
+   * The methods of the view model.
+   */
+  methods: {
+
+    /**
+     * Shows the current view.
+     */
+    showView() {
+
+      // Hide the Nuts3LayerSetup panel if it is visible.
+      if (toggleNuts3LayerSetupViewModel.isNuts3LayerSetupVisible) {
+        toggleNuts3LayerSetupViewModel.hideNuts3LayerSetup();
+      }
+      else {
+        // Hide the overview info panel if it is visible.
+        if (overviewInfoViewModel.isVisible) {
+          overviewInfoViewModel.isVisible = false;
+        }
+      }
+
+      // Show the overview info panel.
+      this.isVisible = true;
+    },
+
+
+    updateView(feature) {
+
+
+    }
+
+  }
+
+});
+
 //
 // ================================================================================
 
@@ -1641,17 +1798,3 @@ Spatial.initializeMap();
 
 //
 // ================================================================================
-
-
-
-
-
-
-
-
-
-
-
-
-
-

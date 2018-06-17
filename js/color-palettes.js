@@ -1,7 +1,6 @@
 
 var ColorPalettes = ColorPalettes || {};
 
-
 /**
  * Google Material Color Palette.
  *

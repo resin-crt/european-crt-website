@@ -1732,13544 +1732,9113 @@ AppData.indicatorMetadata = [
 AppData.supergroups = [
   {
     "value" : 1,
-    "description" : "This is the description for sg 1",
-    "details" : "% of total length of major road intersections in NUTS3 unit exposed to 1 in 100 year fluvial flood."
+    "name" : "This is the description for sg 1",
+    "description" : "% of total length of major road intersections in NUTS3 unit exposed to 1 in 100 year fluvial flood."
   },
   {
     "value" : 2,
-    "description" : "This is the description for sg 2",
-    "details" : "These are the details about supergroups sg 2"
+    "name" : "This is the description for sg 2",
+    "description" : "These are the details about supergroups sg 2"
   },
   {
     "value" : 3,
-    "description" : "This is the description for sg 3",
-    "details" : "These are the details about supergroup sg 3"
+    "name" : "This is the description for sg 3",
+    "description" : "These are the details about supergroup sg 3"
   },
   {
     "value" : 4,
-    "description" : "This is the description for sg 4",
-    "details" : "These are the details about supergroup sg 4"
+    "name" : "This is the description for sg 4",
+    "description" : "These are the details about supergroup sg 4"
   },
   {
     "value" : 5,
-    "description" : "This is the description for sg 5",
-    "details" : "These are the details about supergroup sg 5"
+    "name" : "This is the description for sg 5",
+    "description" : "These are the details about supergroup sg 5"
   },
   {
     "value" : 6,
-    "description" : "This is the description for sg 6",
-    "details" : "These are the details about supergroup sg 6"
+    "name" : "This is the description for sg 6",
+    "description" : "These are the details about supergroup sg 6"
   },
   {
     "value" : 7,
-    "description" : "This is the description for sg 7",
-    "details" : "These are the details about supergroup sg 7"
+    "name" : "This is the description for sg 7",
+    "description" : "These are the details about supergroup sg 7"
   },
   {
     "value" : 8,
-    "description" : "This is the description for sg 8",
-    "details" : "These are the details about supergroup sg 8"
+    "name" : "This is the description for sg 8",
+    "description" : "These are the details about supergroup sg 8"
   },
   {
     "value" : 9,
-    "description" : "This is the description for sg 9",
-    "details" : "These are the details about supergroup sg 9"
+    "name" : "This is the description for sg 9",
+    "description" : "These are the details about supergroup sg 9"
   }
 ];
 
 AppData.groups = [
   {
     "value" : 11,
-    "description" : "This is the description for g 11",
-    "details" : "These are the details about group g 11"
+    "name" : "This is the description for g 11",
+    "description" : "These are the details about group g 11"
   },
   {
     "value" : 12,
-    "description" : "This is the description for g 12",
-    "details" : "These are the details about group g 12"
+    "name" : "This is the description for g 12",
+    "description" : "These are the details about group g 12"
   },
   {
     "value" : 13,
-    "description" : "This is the description for g 13",
-    "details" : "These are the details about group g 13"
+    "name" : "This is the description for g 13",
+    "description" : "These are the details about group g 13"
   },
   {
     "value" : 14,
-    "description" : "This is the description for g 14",
-    "details" : "These are the details about group g 14"
+    "name" : "This is the description for g 14",
+    "description" : "These are the details about group g 14"
   },
   {
     "value" : 21,
-    "description" : "This is the description for g 21",
-    "details" : "These are the details about group g 21"
+    "name" : "This is the description for g 21",
+    "description" : "These are the details about group g 21"
   },
   {
     "value" : 22,
-    "description" : "This is the description for g 22",
-    "details" : "These are the details about group g 22"
+    "name" : "This is the description for g 22",
+    "description" : "These are the details about group g 22"
   },
   {
     "value" : 23,
-    "description" : "This is the description for g 23",
-    "details" : "These are the details about group g 23"
+    "name" : "This is the description for g 23",
+    "description" : "These are the details about group g 23"
   },
   {
     "value" : 24,
-    "description" : "This is the description for g 24",
-    "details" : "These are the details about group g 24"
+    "name" : "This is the description for g 24",
+    "description" : "These are the details about group g 24"
   },
   {
     "value" : 31,
-    "description" : "This is the description for g 31",
-    "details" : "These are the details about group g 31"
+    "name" : "This is the description for g 31",
+    "description" : "These are the details about group g 31"
   },
   {
     "value" : 32,
-    "description" : "This is the description for g 32",
-    "details" : "These are the details about group g 32"
+    "name" : "This is the description for g 32",
+    "description" : "These are the details about group g 32"
   },
   {
     "value" : 33,
-    "description" : "This is the description for g 33",
-    "details" : "These are the details about group g 33"
+    "name" : "This is the description for g 33",
+    "description" : "These are the details about group g 33"
   },
   {
     "value" : 34,
-    "description" : "This is the description for g 34",
-    "details" : "These are the details about group g 34"
+    "name" : "This is the description for g 34",
+    "description" : "These are the details about group g 34"
   },
   {
     "value" : 41,
-    "description" : "This is the description for g 41",
-    "details" : "These are the details about group g 41"
+    "name" : "This is the description for g 41",
+    "description" : "These are the details about group g 41"
   },
   {
     "value" : 42,
-    "description" : "This is the description for g 42",
-    "details" : "These are the details about group g 42"
+    "name" : "This is the description for g 42",
+    "description" : "These are the details about group g 42"
   },
   {
     "value" : 43,
-    "description" : "This is the description for g 43",
-    "details" : "These are the details about group g 43"
+    "name" : "This is the description for g 43",
+    "description" : "These are the details about group g 43"
   },
   {
     "value" : 44,
-    "description" : "This is the description for g 44",
-    "details" : "These are the details about group g 44"
+    "name" : "This is the description for g 44",
+    "description" : "These are the details about group g 44"
   },
   {
     "value" : 51,
-    "description" : "This is the description for g 51",
-    "details" : "These are the details about group g 51"
+    "name" : "This is the description for g 51",
+    "description" : "These are the details about group g 51"
   },
   {
     "value" : 52,
-    "description" : "This is the description for g 52",
-    "details" : "These are the details about group g 52"
+    "name" : "This is the description for g 52",
+    "description" : "These are the details about group g 52"
   },
   {
     "value" : 53,
-    "description" : "This is the description for g 53",
-    "details" : "These are the details about group g 53"
+    "name" : "This is the description for g 53",
+    "description" : "These are the details about group g 53"
   },
   {
     "value" : 54,
-    "description" : "This is the description for g 54",
-    "details" : "These are the details about group g 54"
+    "name" : "This is the description for g 54",
+    "description" : "These are the details about group g 54"
   },
   {
     "value" : 61,
-    "description" : "This is the description for g 61",
-    "details" : "These are the details about group g 61"
+    "name" : "This is the description for g 61",
+    "description" : "These are the details about group g 61"
   },
   {
     "value" : 62,
-    "description" : "This is the description for g 62",
-    "details" : "These are the details about group g 62"
+    "name" : "This is the description for g 62",
+    "description" : "These are the details about group g 62"
   },
   {
     "value" : 63,
-    "description" : "This is the description for g 63",
-    "details" : "These are the details about group g 63"
+    "name" : "This is the description for g 63",
+    "description" : "These are the details about group g 63"
   },
   {
     "value" : 64,
-    "description" : "This is the description for g 64",
-    "details" : "These are the details about group g 64"
+    "name" : "This is the description for g 64",
+    "description" : "These are the details about group g 64"
   },
   {
     "value" : 71,
-    "description" : "This is the description for g 71",
-    "details" : "These are the details about group g71"
+    "name" : "This is the description for g 71",
+    "description" : "These are the details about group g71"
   },
   {
     "value" : 72,
-    "description" : "This is the description for g 72",
-    "details" : "These are the details about group g72"
+    "name" : "This is the description for g 72",
+    "description" : "These are the details about group g72"
   },
   {
     "value" : 73,
-    "description" : "This is the description for g 73",
-    "details" : "These are the details about group g 73"
+    "name" : "This is the description for g 73",
+    "description" : "These are the details about group g 73"
   },
   {
     "value" : 74,
-    "description" : "This is the description for g 74",
-    "details" : "These are the details about group g 74"
+    "name" : "This is the description for g 74",
+    "description" : "These are the details about group g 74"
   },
   {
     "value" : 81,
-    "description" : "This is the description for g 81",
-    "details" : "These are the details about group g 81"
+    "name" : "This is the description for g 81",
+    "description" : "These are the details about group g 81"
   },
   {
     "value" : 82,
-    "description" : "This is the description for g 82",
-    "details" : "These are the details about group g 82"
+    "name" : "This is the description for g 82",
+    "description" : "These are the details about group g 82"
   },
   {
     "value" : 83,
-    "description" : "This is the description for g 83",
-    "details" : "These are the details about group g 83"
+    "name" : "This is the description for g 83",
+    "description" : "These are the details about group g 83"
   },
   {
     "value" : 84,
-    "description" : "This is the description for g 84",
-    "details" : "These are the details about group g 84"
+    "name" : "This is the description for g 84",
+    "description" : "These are the details about group g 84"
   },
   {
     "value" : 91,
-    "description" : "This is the description for g 91",
-    "details" : "These are the details about group g 91"
+    "name" : "This is the description for g 91",
+    "description" : "These are the details about group g 91"
   },
   {
     "value" : 92,
-    "description" : "This is the description for g 92",
-    "details" : "These are the details about group g 92"
+    "name" : "This is the description for g 92",
+    "description" : "These are the details about group g 92"
   },
   {
     "value" : 93,
-    "description" : "This is the description for g 93",
-    "details" : "These are the details about group g 93"
+    "name" : "This is the description for g 93",
+    "description" : "These are the details about group g 93"
   },
   {
     "value" : 94,
-    "description" : "This is the description for g 94",
-    "details" : "These are the details about group g 94"
+    "name" : "This is the description for g 94",
+    "description" : "These are the details about group g 94"
   }
 ];
 
-AppData.nuts3 = [
-  {
-    "nuts_id" : "AT111",
+AppData.nuts3 = {
+  "AT111": {
     "name_latin" : "Mittelburgenland",
     "nuts_name" : "Mittelburgenland",
     "name_ascii" : "Mittelburgenland",
-    "name_html" : "Mittelburgenland",
-    "sort_order" : 1255
+    "name_html" : "Mittelburgenland"
   },
-  {
-    "nuts_id" : "AT112",
+  "AT112": {
     "name_latin" : "Nordburgenland",
     "nuts_name" : "Nordburgenland",
     "name_ascii" : "Nordburgenland",
-    "name_html" : "Nordburgenland",
-    "sort_order" : 1256
+    "name_html" : "Nordburgenland"
   },
-  {
-    "nuts_id" : "AT113",
+  "AT113": {
     "name_latin" : "Südburgenland",
     "nuts_name" : "Südburgenland",
     "name_ascii" : "Sudburgenland",
-    "name_html" : "S&#x00FC;dburgenland",
-    "sort_order" : 1257
+    "name_html" : "S&#x00FC;dburgenland"
   },
-  {
-    "nuts_id" : "AT121",
+  "AT121": {
     "name_latin" : "Mostviertel-Eisenwurzen",
     "nuts_name" : "Mostviertel-Eisenwurzen",
     "name_ascii" : "Mostviertel-Eisenwurzen",
-    "name_html" : "Mostviertel-Eisenwurzen",
-    "sort_order" : 1259
+    "name_html" : "Mostviertel-Eisenwurzen"
   },
-  {
-    "nuts_id" : "AT122",
+  "AT122": {
     "name_latin" : "Niederösterreich-Süd",
     "nuts_name" : "Niederösterreich-Süd",
     "name_ascii" : "Niederosterreich-Sud",
-    "name_html" : "Nieder&#x00F6;sterreich-S&#x00FC;d",
-    "sort_order" : 1260
+    "name_html" : "Nieder&#x00F6;sterreich-S&#x00FC;d"
   },
-  {
-    "nuts_id" : "AT123",
+  "AT123": {
     "name_latin" : "Sankt Pölten",
     "nuts_name" : "Sankt Pölten",
     "name_ascii" : "Sankt Polten",
-    "name_html" : "Sankt P&#x00F6;lten",
-    "sort_order" : 1261
+    "name_html" : "Sankt P&#x00F6;lten"
   },
-  {
-    "nuts_id" : "AT124",
+  "AT124": {
     "name_latin" : "Waldviertel",
     "nuts_name" : "Waldviertel",
     "name_ascii" : "Waldviertel",
-    "name_html" : "Waldviertel",
-    "sort_order" : 1262
+    "name_html" : "Waldviertel"
   },
-  {
-    "nuts_id" : "AT125",
+  "AT125": {
     "name_latin" : "Weinviertel",
     "nuts_name" : "Weinviertel",
     "name_ascii" : "Weinviertel",
-    "name_html" : "Weinviertel",
-    "sort_order" : 1263
+    "name_html" : "Weinviertel"
   },
-  {
-    "nuts_id" : "AT126",
+  "AT126": {
     "name_latin" : "Wiener Umland/Nordteil",
     "nuts_name" : "Wiener Umland/Nordteil",
     "name_ascii" : "Wiener Umland/Nordteil",
-    "name_html" : "Wiener Umland/Nordteil",
-    "sort_order" : 1264
+    "name_html" : "Wiener Umland/Nordteil"
   },
-  {
-    "objectid" : 10,
-    "nuts_id" : "AT127",
+  "AT127": {
     "name_latin" : "Wiener Umland/Südteil",
     "nuts_name" : "Wiener Umland/Südteil",
     "name_ascii" : "Wiener Umland/Sudteil",
-    "name_html" : "Wiener Umland/S&#x00FC;dteil",
-    "sort_order" : 1265
+    "name_html" : "Wiener Umland/S&#x00FC;dteil"
   },
-  {
-    "objectid" : 11,
-    "nuts_id" : "AT130",
+  "AT130": {
     "name_latin" : "Wien",
     "nuts_name" : "Wien",
     "name_ascii" : "Wien",
-    "name_html" : "Wien",
-    "sort_order" : 1267
+    "name_html" : "Wien"
   },
-  {
-    "objectid" : 12,
-    "nuts_id" : "AT211",
+  "AT211": {
     "name_latin" : "Klagenfurt-Villach",
     "nuts_name" : "Klagenfurt-Villach",
     "name_ascii" : "Klagenfurt-Villach",
-    "name_html" : "Klagenfurt-Villach",
-    "sort_order" : 1270
+    "name_html" : "Klagenfurt-Villach"
   },
-  {
-    "objectid" : 13,
-    "nuts_id" : "AT212",
+  "AT212": {
     "name_latin" : "Oberkärnten",
     "nuts_name" : "Oberkärnten",
     "name_ascii" : "Oberkarnten",
-    "name_html" : "Oberk&#x00E4;rnten",
-    "sort_order" : 1271
+    "name_html" : "Oberk&#x00E4;rnten"
   },
-  {
-    "objectid" : 14,
-    "nuts_id" : "AT213",
+  "AT213": {
     "name_latin" : "Unterkärnten",
     "nuts_name" : "Unterkärnten",
     "name_ascii" : "Unterkarnten",
-    "name_html" : "Unterk&#x00E4;rnten",
-    "sort_order" : 1272
+    "name_html" : "Unterk&#x00E4;rnten"
   },
-  {
-    "objectid" : 15,
-    "nuts_id" : "AT221",
+  "AT221": {
     "name_latin" : "Graz",
     "nuts_name" : "Graz",
     "name_ascii" : "Graz",
-    "name_html" : "Graz",
-    "sort_order" : 1274
+    "name_html" : "Graz"
   },
-  {
-    "objectid" : 16,
-    "nuts_id" : "AT222",
+  "AT222": {
     "name_latin" : "Liezen",
     "nuts_name" : "Liezen",
     "name_ascii" : "Liezen",
-    "name_html" : "Liezen",
-    "sort_order" : 1275
+    "name_html" : "Liezen"
   },
-  {
-    "objectid" : 17,
-    "nuts_id" : "AT223",
+  "AT223": {
     "name_latin" : "Östliche Obersteiermark",
     "nuts_name" : "Östliche Obersteiermark",
     "name_ascii" : "Ostliche Obersteiermark",
-    "name_html" : "&#x00D6;stliche Obersteiermark",
-    "sort_order" : 1276
+    "name_html" : "&#x00D6;stliche Obersteiermark"
   },
-  {
-    "objectid" : 18,
-    "nuts_id" : "AT225",
+  "AT225": {
     "name_latin" : "West- und Südsteiermark",
     "nuts_name" : "West- und Südsteiermark",
     "name_ascii" : "West- und Sudsteiermark",
-    "name_html" : "West- und S&#x00FC;dsteiermark",
-    "sort_order" : 1278
+    "name_html" : "West- und S&#x00FC;dsteiermark"
   },
-  {
-    "objectid" : 19,
-    "nuts_id" : "AT226",
+  "AT226": {
     "name_latin" : "Westliche Obersteiermark",
     "nuts_name" : "Westliche Obersteiermark",
     "name_ascii" : "Westliche Obersteiermark",
-    "name_html" : "Westliche Obersteiermark",
-    "sort_order" : 1279
+    "name_html" : "Westliche Obersteiermark"
   },
-  {
-    "objectid" : 20,
-    "nuts_id" : "AT311",
+  "AT311": {
     "name_latin" : "Innviertel",
     "nuts_name" : "Innviertel",
     "name_ascii" : "Innviertel",
-    "name_html" : "Innviertel",
-    "sort_order" : 1282
+    "name_html" : "Innviertel"
   },
-  {
-    "objectid" : 21,
-    "nuts_id" : "AT312",
+  "AT312": {
     "name_latin" : "Linz-Wels",
     "nuts_name" : "Linz-Wels",
     "name_ascii" : "Linz-Wels",
-    "name_html" : "Linz-Wels",
-    "sort_order" : 1283
+    "name_html" : "Linz-Wels"
   },
-  {
-    "objectid" : 22,
-    "nuts_id" : "AT313",
+  "AT313": {
     "name_latin" : "Mühlviertel",
     "nuts_name" : "Mühlviertel",
     "name_ascii" : "Muhlviertel",
-    "name_html" : "M&#x00FC;hlviertel",
-    "sort_order" : 1284
+    "name_html" : "M&#x00FC;hlviertel"
   },
-  {
-    "objectid" : 23,
-    "nuts_id" : "AT314",
+  "AT314": {
     "name_latin" : "Steyr-Kirchdorf",
     "nuts_name" : "Steyr-Kirchdorf",
     "name_ascii" : "Steyr-Kirchdorf",
-    "name_html" : "Steyr-Kirchdorf",
-    "sort_order" : 1285
+    "name_html" : "Steyr-Kirchdorf"
   },
-  {
-    "objectid" : 24,
-    "nuts_id" : "AT321",
+  "AT321": {
     "name_latin" : "Lungau",
     "nuts_name" : "Lungau",
     "name_ascii" : "Lungau",
-    "name_html" : "Lungau",
-    "sort_order" : 1288
+    "name_html" : "Lungau"
   },
-  {
-    "objectid" : 25,
-    "nuts_id" : "AT322",
+  "AT322": {
     "name_latin" : "Pinzgau-Pongau",
     "nuts_name" : "Pinzgau-Pongau",
     "name_ascii" : "Pinzgau-Pongau",
-    "name_html" : "Pinzgau-Pongau",
-    "sort_order" : 1289
+    "name_html" : "Pinzgau-Pongau"
   },
-  {
-    "objectid" : 26,
-    "nuts_id" : "AT323",
+  "AT323": {
     "name_latin" : "Salzburg und Umgebung",
     "nuts_name" : "Salzburg und Umgebung",
     "name_ascii" : "Salzburg Und Umgebung",
-    "name_html" : "Salzburg Und Umgebung",
-    "sort_order" : 1290
+    "name_html" : "Salzburg Und Umgebung"
   },
-  {
-    "objectid" : 27,
-    "nuts_id" : "AT332",
+  "AT332": {
     "name_latin" : "Innsbruck",
     "nuts_name" : "Innsbruck",
     "name_ascii" : "Innsbruck",
-    "name_html" : "Innsbruck",
-    "sort_order" : 1293
+    "name_html" : "Innsbruck"
   },
-  {
-    "objectid" : 28,
-    "nuts_id" : "AT333",
+  "AT333": {
     "name_latin" : "Osttirol",
     "nuts_name" : "Osttirol",
     "name_ascii" : "Osttirol",
-    "name_html" : "Osttirol",
-    "sort_order" : 1294
+    "name_html" : "Osttirol"
   },
-  {
-    "objectid" : 29,
-    "nuts_id" : "AT334",
+  "AT334": {
     "name_latin" : "Tiroler Oberland",
     "nuts_name" : "Tiroler Oberland",
     "name_ascii" : "Tiroler Oberland",
-    "name_html" : "Tiroler Oberland",
-    "sort_order" : 1295
+    "name_html" : "Tiroler Oberland"
   },
-  {
-    "objectid" : 30,
-    "nuts_id" : "AT335",
+  "AT335": {
     "name_latin" : "Tiroler Unterland",
     "nuts_name" : "Tiroler Unterland",
     "name_ascii" : "Tiroler Unterland",
-    "name_html" : "Tiroler Unterland",
-    "sort_order" : 1296
+    "name_html" : "Tiroler Unterland"
   },
-  {
-    "objectid" : 31,
-    "nuts_id" : "AT342",
+  "AT342": {
     "name_latin" : "Rheintal-Bodenseegebiet",
     "nuts_name" : "Rheintal-Bodenseegebiet",
     "name_ascii" : "Rheintal-Bodenseegebiet",
-    "name_html" : "Rheintal-Bodenseegebiet",
-    "sort_order" : 1299
+    "name_html" : "Rheintal-Bodenseegebiet"
   },
-  {
-    "objectid" : 32,
-    "nuts_id" : "BE100",
+  "BE100": {
     "name_latin" : "Arr. de Bruxelles-Capitale / Arr. van Brussel-Hoofdstad",
     "nuts_name" : "Arr. de Bruxelles-Capitale / Arr. van Brussel-Hoofdstad",
     "name_ascii" : "Arr. de Bruxelles-Capitale / Arr. van Brussel-Hoofdstad",
-    "name_html" : "Arr. de Bruxelles-Capitale / Arr. van Brussel-Hoofdstad",
-    "sort_order" : 4
+    "name_html" : "Arr. de Bruxelles-Capitale / Arr. van Brussel-Hoofdstad"
   },
-  {
-    "objectid" : 33,
-    "nuts_id" : "BE211",
+  "BE211": {
     "name_latin" : "Arr. Antwerpen",
     "nuts_name" : "Arr. Antwerpen",
     "name_ascii" : "Arr. Antwerpen",
-    "name_html" : "Arr. Antwerpen",
-    "sort_order" : 7
+    "name_html" : "Arr. Antwerpen"
   },
-  {
-    "objectid" : 34,
-    "nuts_id" : "BE212",
+  "BE212": {
     "name_latin" : "Arr. Mechelen",
     "nuts_name" : "Arr. Mechelen",
     "name_ascii" : "Arr. Mechelen",
-    "name_html" : "Arr. Mechelen",
-    "sort_order" : 8
+    "name_html" : "Arr. Mechelen"
   },
-  {
-    "objectid" : 35,
-    "nuts_id" : "BE213",
+  "BE213": {
     "name_latin" : "Arr. Turnhout",
     "nuts_name" : "Arr. Turnhout",
     "name_ascii" : "Arr. Turnhout",
-    "name_html" : "Arr. Turnhout",
-    "sort_order" : 9
+    "name_html" : "Arr. Turnhout"
   },
-  {
-    "objectid" : 36,
-    "nuts_id" : "BE221",
+  "BE221": {
     "name_latin" : "Arr. Hasselt",
     "nuts_name" : "Arr. Hasselt",
     "name_ascii" : "Arr. Hasselt",
-    "name_html" : "Arr. Hasselt",
-    "sort_order" : 11
+    "name_html" : "Arr. Hasselt"
   },
-  {
-    "objectid" : 37,
-    "nuts_id" : "BE222",
+  "BE222": {
     "name_latin" : "Arr. Maaseik",
     "nuts_name" : "Arr. Maaseik",
     "name_ascii" : "Arr. Maaseik",
-    "name_html" : "Arr. Maaseik",
-    "sort_order" : 12
+    "name_html" : "Arr. Maaseik"
   },
-  {
-    "objectid" : 38,
-    "nuts_id" : "BE223",
+  "BE223": {
     "name_latin" : "Arr. Tongeren",
     "nuts_name" : "Arr. Tongeren",
     "name_ascii" : "Arr. Tongeren",
-    "name_html" : "Arr. Tongeren",
-    "sort_order" : 13
+    "name_html" : "Arr. Tongeren"
   },
-  {
-    "objectid" : 39,
-    "nuts_id" : "BE231",
+  "BE231": {
     "name_latin" : "Arr. Aalst",
     "nuts_name" : "Arr. Aalst",
     "name_ascii" : "Arr. Aalst",
-    "name_html" : "Arr. Aalst",
-    "sort_order" : 15
+    "name_html" : "Arr. Aalst"
   },
-  {
-    "objectid" : 40,
-    "nuts_id" : "BE232",
+  "BE232": {
     "name_latin" : "Arr. Dendermonde",
     "nuts_name" : "Arr. Dendermonde",
     "name_ascii" : "Arr. Dendermonde",
-    "name_html" : "Arr. Dendermonde",
-    "sort_order" : 16
+    "name_html" : "Arr. Dendermonde"
   },
-  {
-    "objectid" : 41,
-    "nuts_id" : "BE233",
+  "BE233": {
     "name_latin" : "Arr. Eeklo",
     "nuts_name" : "Arr. Eeklo",
     "name_ascii" : "Arr. Eeklo",
-    "name_html" : "Arr. Eeklo",
-    "sort_order" : 17
+    "name_html" : "Arr. Eeklo"
   },
-  {
-    "objectid" : 42,
-    "nuts_id" : "BE234",
+  "BE234": {
     "name_latin" : "Arr. Gent",
     "nuts_name" : "Arr. Gent",
     "name_ascii" : "Arr. Gent",
-    "name_html" : "Arr. Gent",
-    "sort_order" : 18
+    "name_html" : "Arr. Gent"
   },
-  {
-    "objectid" : 43,
-    "nuts_id" : "BE236",
+  "BE236": {
     "name_latin" : "Arr. Sint-Niklaas",
     "nuts_name" : "Arr. Sint-Niklaas",
     "name_ascii" : "Arr. Sint-Niklaas",
-    "name_html" : "Arr. Sint-Niklaas",
-    "sort_order" : 20
+    "name_html" : "Arr. Sint-Niklaas"
   },
-  {
-    "objectid" : 44,
-    "nuts_id" : "BE241",
+  "BE241": {
     "name_latin" : "Arr. Halle-Vilvoorde",
     "nuts_name" : "Arr. Halle-Vilvoorde",
     "name_ascii" : "Arr. Halle-Vilvoorde",
-    "name_html" : "Arr. Halle-Vilvoorde",
-    "sort_order" : 22
+    "name_html" : "Arr. Halle-Vilvoorde"
   },
-  {
-    "objectid" : 45,
-    "nuts_id" : "BE242",
+  "BE242": {
     "name_latin" : "Arr. Leuven",
     "nuts_name" : "Arr. Leuven",
     "name_ascii" : "Arr. Leuven",
-    "name_html" : "Arr. Leuven",
-    "sort_order" : 23
+    "name_html" : "Arr. Leuven"
   },
-  {
-    "objectid" : 46,
-    "nuts_id" : "BE251",
+  "BE251": {
     "name_latin" : "Arr. Brugge",
     "nuts_name" : "Arr. Brugge",
     "name_ascii" : "Arr. Brugge",
-    "name_html" : "Arr. Brugge",
-    "sort_order" : 25
+    "name_html" : "Arr. Brugge"
   },
-  {
-    "objectid" : 47,
-    "nuts_id" : "BE252",
+  "BE252": {
     "name_latin" : "Arr. Diksmuide",
     "nuts_name" : "Arr. Diksmuide",
     "name_ascii" : "Arr. Diksmuide",
-    "name_html" : "Arr. Diksmuide",
-    "sort_order" : 26
+    "name_html" : "Arr. Diksmuide"
   },
-  {
-    "objectid" : 48,
-    "nuts_id" : "BE253",
+  "BE253": {
     "name_latin" : "Arr. Ieper",
     "nuts_name" : "Arr. Ieper",
     "name_ascii" : "Arr. Ieper",
-    "name_html" : "Arr. Ieper",
-    "sort_order" : 27
+    "name_html" : "Arr. Ieper"
   },
-  {
-    "objectid" : 49,
-    "nuts_id" : "BE254",
+  "BE254": {
     "name_latin" : "Arr. Kortrijk",
     "nuts_name" : "Arr. Kortrijk",
     "name_ascii" : "Arr. Kortrijk",
-    "name_html" : "Arr. Kortrijk",
-    "sort_order" : 28
+    "name_html" : "Arr. Kortrijk"
   },
-  {
-    "objectid" : 50,
-    "nuts_id" : "BE255",
+  "BE255": {
     "name_latin" : "Arr. Oostende",
     "nuts_name" : "Arr. Oostende",
     "name_ascii" : "Arr. Oostende",
-    "name_html" : "Arr. Oostende",
-    "sort_order" : 29
+    "name_html" : "Arr. Oostende"
   },
-  {
-    "objectid" : 51,
-    "nuts_id" : "BE256",
+  "BE256": {
     "name_latin" : "Arr. Roeselare",
     "nuts_name" : "Arr. Roeselare",
     "name_ascii" : "Arr. Roeselare",
-    "name_html" : "Arr. Roeselare",
-    "sort_order" : 30
+    "name_html" : "Arr. Roeselare"
   },
-  {
-    "objectid" : 52,
-    "nuts_id" : "BE257",
+  "BE257": {
     "name_latin" : "Arr. Tielt",
     "nuts_name" : "Arr. Tielt",
     "name_ascii" : "Arr. Tielt",
-    "name_html" : "Arr. Tielt",
-    "sort_order" : 31
+    "name_html" : "Arr. Tielt"
   },
-  {
-    "objectid" : 53,
-    "nuts_id" : "BE310",
+  "BE310": {
     "name_latin" : "Arr. Nivelles",
     "nuts_name" : "Arr. Nivelles",
     "name_ascii" : "Arr. Nivelles",
-    "name_html" : "Arr. Nivelles",
-    "sort_order" : 35
+    "name_html" : "Arr. Nivelles"
   },
-  {
-    "objectid" : 54,
-    "nuts_id" : "BE321",
+  "BE321": {
     "name_latin" : "Arr. Ath",
     "nuts_name" : "Arr. Ath",
     "name_ascii" : "Arr. Ath",
-    "name_html" : "Arr. Ath",
-    "sort_order" : 37
+    "name_html" : "Arr. Ath"
   },
-  {
-    "objectid" : 55,
-    "nuts_id" : "BE322",
+  "BE322": {
     "name_latin" : "Arr. Charleroi",
     "nuts_name" : "Arr. Charleroi",
     "name_ascii" : "Arr. Charleroi",
-    "name_html" : "Arr. Charleroi",
-    "sort_order" : 38
+    "name_html" : "Arr. Charleroi"
   },
-  {
-    "objectid" : 56,
-    "nuts_id" : "BE323",
+  "BE323": {
     "name_latin" : "Arr. Mons",
     "nuts_name" : "Arr. Mons",
     "name_ascii" : "Arr. Mons",
-    "name_html" : "Arr. Mons",
-    "sort_order" : 39
+    "name_html" : "Arr. Mons"
   },
-  {
-    "objectid" : 57,
-    "nuts_id" : "BE324",
+  "BE324": {
     "name_latin" : "Arr. Mouscron",
     "nuts_name" : "Arr. Mouscron",
     "name_ascii" : "Arr. Mouscron",
-    "name_html" : "Arr. Mouscron",
-    "sort_order" : 40
+    "name_html" : "Arr. Mouscron"
   },
-  {
-    "objectid" : 58,
-    "nuts_id" : "BE325",
+  "BE325": {
     "name_latin" : "Arr. Soignies",
     "nuts_name" : "Arr. Soignies",
     "name_ascii" : "Arr. Soignies",
-    "name_html" : "Arr. Soignies",
-    "sort_order" : 41
+    "name_html" : "Arr. Soignies"
   },
-  {
-    "objectid" : 59,
-    "nuts_id" : "BE327",
+  "BE327": {
     "name_latin" : "Arr. Tournai",
     "nuts_name" : "Arr. Tournai",
     "name_ascii" : "Arr. Tournai",
-    "name_html" : "Arr. Tournai",
-    "sort_order" : 43
+    "name_html" : "Arr. Tournai"
   },
-  {
-    "objectid" : 60,
-    "nuts_id" : "BE331",
+  "BE331": {
     "name_latin" : "Arr. Huy",
     "nuts_name" : "Arr. Huy",
     "name_ascii" : "Arr. Huy",
-    "name_html" : "Arr. Huy",
-    "sort_order" : 45
+    "name_html" : "Arr. Huy"
   },
-  {
-    "objectid" : 61,
-    "nuts_id" : "BE334",
+  "BE334": {
     "name_latin" : "Arr. Waremme",
     "nuts_name" : "Arr. Waremme",
     "name_ascii" : "Arr. Waremme",
-    "name_html" : "Arr. Waremme",
-    "sort_order" : 47
+    "name_html" : "Arr. Waremme"
   },
-  {
-    "objectid" : 62,
-    "nuts_id" : "BE335",
+  "BE335": {
     "name_latin" : "Arr. Verviers - communes francophones",
     "nuts_name" : "Arr. Verviers - communes francophones",
     "name_ascii" : "Arr. Verviers - Communes francophones",
-    "name_html" : "Arr. Verviers - Communes fancophones",
-    "sort_order" : 48
+    "name_html" : "Arr. Verviers - Communes fancophones"
   },
-  {
-    "objectid" : 63,
-    "nuts_id" : "BE336",
+  "BE336": {
     "name_latin" : "Bezirk Verviers - Deutschsprachige Gemeinschaft",
     "nuts_name" : "Bezirk Verviers - Deutschsprachige Gemeinschaft",
     "name_ascii" : "Bezirk Verviers - Deutschsprachige Gemeinschaft",
-    "name_html" : "Bezirk Verviers - Deutschsprachige Gemeinschaft",
-    "sort_order" : 49
+    "name_html" : "Bezirk Verviers - Deutschsprachige Gemeinschaft"
   },
-  {
-    "objectid" : 64,
-    "nuts_id" : "BE341",
+  "BE341": {
     "name_latin" : "Arr. Arlon",
     "nuts_name" : "Arr. Arlon",
     "name_ascii" : "Arr. Arlon",
-    "name_html" : "Arr. Arlon",
-    "sort_order" : 51
+    "name_html" : "Arr. Arlon"
   },
-  {
-    "objectid" : 65,
-    "nuts_id" : "BE342",
+  "BE342": {
     "name_latin" : "Arr. Bastogne",
     "nuts_name" : "Arr. Bastogne",
     "name_ascii" : "Arr. Bastogne",
-    "name_html" : "Arr. Bastogne",
-    "sort_order" : 52
+    "name_html" : "Arr. Bastogne"
   },
-  {
-    "objectid" : 66,
-    "nuts_id" : "BE343",
+  "BE343": {
     "name_latin" : "Arr. Marche-en-Famenne",
     "nuts_name" : "Arr. Marche-en-Famenne",
     "name_ascii" : "Arr. Marche-en-Famenne",
-    "name_html" : "Arr. Marche-en-Famenne",
-    "sort_order" : 53
+    "name_html" : "Arr. Marche-en-Famenne"
   },
-  {
-    "objectid" : 67,
-    "nuts_id" : "BE344",
+  "BE344": {
     "name_latin" : "Arr. Neufchâteau",
     "nuts_name" : "Arr. Neufchâteau",
     "name_ascii" : "Arr. Neufchateau",
-    "name_html" : "Arr. Neufch&#x00E2;teau",
-    "sort_order" : 54
+    "name_html" : "Arr. Neufch&#x00E2;teau"
   },
-  {
-    "objectid" : 68,
-    "nuts_id" : "BE345",
+  "BE345": {
     "name_latin" : "Arr. Virton",
     "nuts_name" : "Arr. Virton",
     "name_ascii" : "Arr. Virton",
-    "name_html" : "Arr. Virton",
-    "sort_order" : 55
+    "name_html" : "Arr. Virton"
   },
-  {
-    "objectid" : 69,
-    "nuts_id" : "BE351",
+  "BE351": {
     "name_latin" : "Arr. Dinant",
     "nuts_name" : "Arr. Dinant",
     "name_ascii" : "Arr. Dinant",
-    "name_html" : "Arr. Dinant",
-    "sort_order" : 57
+    "name_html" : "Arr. Dinant"
   },
-  {
-    "objectid" : 70,
-    "nuts_id" : "BE352",
+  "BE352": {
     "name_latin" : "Arr. Namur",
     "nuts_name" : "Arr. Namur",
     "name_ascii" : "Arr. Namur",
-    "name_html" : "Arr. Namur",
-    "sort_order" : 58
+    "name_html" : "Arr. Namur"
   },
-  {
-    "objectid" : 71,
-    "nuts_id" : "BE353",
+  "BE353": {
     "name_latin" : "Arr. Philippeville",
     "nuts_name" : "Arr. Philippeville",
     "name_ascii" : "Arr. Philippeville",
-    "name_html" : "Arr. Philippeville",
-    "sort_order" : 59
+    "name_html" : "Arr. Philippeville"
   },
-  {
-    "objectid" : 72,
-    "nuts_id" : "BG311",
+  "BG311": {
     "name_latin" : "Vidin",
     "nuts_name" : "Видин",
     "name_ascii" : "Vidin",
-    "name_html" : "&#x0412;&#x0438;&#x0434;&#x0438;&#x043D;",
-    "sort_order" : 66
+    "name_html" : "&#x0412;&#x0438;&#x0434;&#x0438;&#x043D;"
   },
-  {
-    "objectid" : 73,
-    "nuts_id" : "BG312",
+  "BG312": {
     "name_latin" : "Montana",
     "nuts_name" : "Монтана",
     "name_ascii" : "Montana",
-    "name_html" : "&#x041C;&#x043E;&#x043D;&#x0442;&#x0430;&#x043D;&#x0430;",
-    "sort_order" : 67
+    "name_html" : "&#x041C;&#x043E;&#x043D;&#x0442;&#x0430;&#x043D;&#x0430;"
   },
-  {
-    "objectid" : 74,
-    "nuts_id" : "BG313",
+  "BG313": {
     "name_latin" : "Vratsa",
     "nuts_name" : "Враца",
     "name_ascii" : "Vratsa",
-    "name_html" : "&#x0412;&#x0440;&#x0430;&#x0446;&#x0430;",
-    "sort_order" : 68
+    "name_html" : "&#x0412;&#x0440;&#x0430;&#x0446;&#x0430;"
   },
-  {
-    "objectid" : 75,
-    "nuts_id" : "BG314",
+  "BG314": {
     "name_latin" : "Pleven",
     "nuts_name" : "Плевен",
     "name_ascii" : "Pleven",
-    "name_html" : "&#x041F;&#x043B;&#x0435;&#x0432;&#x0435;&#x043D;",
-    "sort_order" : 69
+    "name_html" : "&#x041F;&#x043B;&#x0435;&#x0432;&#x0435;&#x043D;"
   },
-  {
-    "objectid" : 76,
-    "nuts_id" : "BG315",
+  "BG315": {
     "name_latin" : "Lovech",
     "nuts_name" : "Ловеч",
     "name_ascii" : "Lovech",
-    "name_html" : "&#x041B;&#x043E;&#x0432;&#x0435;&#x0447;",
-    "sort_order" : 70
+    "name_html" : "&#x041B;&#x043E;&#x0432;&#x0435;&#x0447;"
   },
-  {
-    "objectid" : 77,
-    "nuts_id" : "BG321",
+  "BG321": {
     "name_latin" : "Veliko Tarnovo",
     "nuts_name" : "Велико Търново",
     "name_ascii" : "Veliko Tarnovo",
-    "name_html" : "&#x0412;&#x0435;&#x043B;&#x0438;&#x043A;&#x043E; &#x0422;&#x044A;&#x0440;&#x043D;&#x043E;&#x0432;&#x043E;",
-    "sort_order" : 72
+    "name_html" : "&#x0412;&#x0435;&#x043B;&#x0438;&#x043A;&#x043E; &#x0422;&#x044A;&#x0440;&#x043D;&#x043E;&#x0432;&#x043E;"
   },
-  {
-    "objectid" : 78,
-    "nuts_id" : "BG322",
+  "BG322": {
     "name_latin" : "Gabrovo",
     "nuts_name" : "Габрово",
     "name_ascii" : "Gabrovo",
-    "name_html" : "&#x0413;&#x0430;&#x0431;&#x0440;&#x043E;&#x0432;&#x043E;",
-    "sort_order" : 73
+    "name_html" : "&#x0413;&#x0430;&#x0431;&#x0440;&#x043E;&#x0432;&#x043E;"
   },
-  {
-    "objectid" : 79,
-    "nuts_id" : "BG323",
+  "BG323": {
     "name_latin" : "Ruse",
     "nuts_name" : "Русе",
     "name_ascii" : "Ruse",
-    "name_html" : "&#x0420;&#x0443;&#x0441;&#x0435;",
-    "sort_order" : 74
+    "name_html" : "&#x0420;&#x0443;&#x0441;&#x0435;"
   },
-  {
-    "objectid" : 80,
-    "nuts_id" : "BG324",
+  "BG324": {
     "name_latin" : "Razgrad",
     "nuts_name" : "Разград",
     "name_ascii" : "Razgrad",
-    "name_html" : "&#x0420;&#x0430;&#x0437;&#x0433;&#x0440;&#x0430;&#x0434;",
-    "sort_order" : 75
+    "name_html" : "&#x0420;&#x0430;&#x0437;&#x0433;&#x0440;&#x0430;&#x0434;"
   },
-  {
-    "objectid" : 81,
-    "nuts_id" : "BG332",
+  "BG332": {
     "name_latin" : "Dobrich",
     "nuts_name" : "Добрич",
     "name_ascii" : "Dobrich",
-    "name_html" : "&#x0414;&#x043E;&#x0431;&#x0440;&#x0438;&#x0447;",
-    "sort_order" : 79
+    "name_html" : "&#x0414;&#x043E;&#x0431;&#x0440;&#x0438;&#x0447;"
   },
-  {
-    "objectid" : 82,
-    "nuts_id" : "BG333",
+  "BG333": {
     "name_latin" : "Shumen",
     "nuts_name" : "Шумен",
     "name_ascii" : "Shumen",
-    "name_html" : "&#x0428;&#x0443;&#x043C;&#x0435;&#x043D;",
-    "sort_order" : 80
+    "name_html" : "&#x0428;&#x0443;&#x043C;&#x0435;&#x043D;"
   },
-  {
-    "objectid" : 83,
-    "nuts_id" : "BG342",
+  "BG342": {
     "name_latin" : "Sliven",
     "nuts_name" : "Сливен",
     "name_ascii" : "Sliven",
-    "name_html" : "&#x0421;&#x043B;&#x0438;&#x0432;&#x0435;&#x043D;",
-    "sort_order" : 84
+    "name_html" : "&#x0421;&#x043B;&#x0438;&#x0432;&#x0435;&#x043D;"
   },
-  {
-    "objectid" : 84,
-    "nuts_id" : "BG343",
+  "BG343": {
     "name_latin" : "Yambol",
     "nuts_name" : "Ямбол",
     "name_ascii" : "Yambol",
-    "name_html" : "&#x042F;&#x043C;&#x0431;&#x043E;&#x043B;",
-    "sort_order" : 85
+    "name_html" : "&#x042F;&#x043C;&#x0431;&#x043E;&#x043B;"
   },
-  {
-    "objectid" : 85,
-    "nuts_id" : "BG411",
+  "BG411": {
     "name_latin" : "Sofia (stolitsa)",
     "nuts_name" : "София (столица)",
     "name_ascii" : "Sofia (stolitsa)",
-    "name_html" : "&#x0421;&#x043E;&#x0444;&#x0438;&#x044F; (&#x0421;&#x0442;&#x043E;&#x043B;&#x0438;&#x0446;&#x0430;)",
-    "sort_order" : 89
+    "name_html" : "&#x0421;&#x043E;&#x0444;&#x0438;&#x044F; (&#x0421;&#x0442;&#x043E;&#x043B;&#x0438;&#x0446;&#x0430;)"
   },
-  {
-    "objectid" : 86,
-    "nuts_id" : "BG412",
+  "BG412": {
     "name_latin" : "Sofia",
     "nuts_name" : "София",
     "name_ascii" : "Sofia",
-    "name_html" : "&#x0421;&#x043E;&#x0444;&#x0438;&#x044F;",
-    "sort_order" : 90
+    "name_html" : "&#x0421;&#x043E;&#x0444;&#x0438;&#x044F;"
   },
-  {
-    "objectid" : 87,
-    "nuts_id" : "BG413",
+  "BG413": {
     "name_latin" : "Blagoevgrad",
     "nuts_name" : "Благоевград",
     "name_ascii" : "Blagoevgrad",
-    "name_html" : "&#x0411;&#x043B;&#x0430;&#x0433;&#x043E;&#x0435;&#x0432;&#x0433;&#x0440;&#x0430;&#x0434;",
-    "sort_order" : 91
+    "name_html" : "&#x0411;&#x043B;&#x0430;&#x0433;&#x043E;&#x0435;&#x0432;&#x0433;&#x0440;&#x0430;&#x0434;"
   },
-  {
-    "objectid" : 88,
-    "nuts_id" : "BG414",
+  "BG414": {
     "name_latin" : "Pernik",
     "nuts_name" : "Перник",
     "name_ascii" : "Pernik",
-    "name_html" : "&#x041F;&#x0435;&#x0440;&#x043D;&#x0438;&#x043A;",
-    "sort_order" : 92
+    "name_html" : "&#x041F;&#x0435;&#x0440;&#x043D;&#x0438;&#x043A;"
   },
-  {
-    "objectid" : 89,
-    "nuts_id" : "BG415",
+  "BG415": {
     "name_latin" : "Kyustendil",
     "nuts_name" : "Кюстендил",
     "name_ascii" : "Kyustendil",
-    "name_html" : "&#x041A;&#x044E;&#x0441;&#x0442;&#x0435;&#x043D;&#x0434;&#x0438;&#x043B;",
-    "sort_order" : 93
+    "name_html" : "&#x041A;&#x044E;&#x0441;&#x0442;&#x0435;&#x043D;&#x0434;&#x0438;&#x043B;"
   },
-  {
-    "objectid" : 90,
-    "nuts_id" : "BG421",
+  "BG421": {
     "name_latin" : "Plovdiv",
     "nuts_name" : "Пловдив",
     "name_ascii" : "Plovdiv",
-    "name_html" : "&#x041F;&#x043B;&#x043E;&#x0432;&#x0434;&#x0438;&#x0432;",
-    "sort_order" : 95
+    "name_html" : "&#x041F;&#x043B;&#x043E;&#x0432;&#x0434;&#x0438;&#x0432;"
   },
-  {
-    "objectid" : 91,
-    "nuts_id" : "BG423",
+  "BG423": {
     "name_latin" : "Pazardzhik",
     "nuts_name" : "Пазарджик",
     "name_ascii" : "Pazardzhik",
-    "name_html" : "&#x041F;&#x0430;&#x0437;&#x0430;&#x0440;&#x0434;&#x0436;&#x0438;&#x043A;",
-    "sort_order" : 97
+    "name_html" : "&#x041F;&#x0430;&#x0437;&#x0430;&#x0440;&#x0434;&#x0436;&#x0438;&#x043A;"
   },
-  {
-    "objectid" : 92,
-    "nuts_id" : "BG425",
+  "BG425": {
     "name_latin" : "Kardzhali",
     "nuts_name" : "Кърджали",
     "name_ascii" : "Kardzhali",
-    "name_html" : "&#x041A;&#x044A;&#x0440;&#x0434;&#x0436;&#x0430;&#x043B;&#x0438;",
-    "sort_order" : 99
+    "name_html" : "&#x041A;&#x044A;&#x0440;&#x0434;&#x0436;&#x0430;&#x043B;&#x0438;"
   },
-  {
-    "objectid" : 93,
-    "nuts_id" : "CH011",
+  "CH011": {
     "name_latin" : "Vaud",
     "nuts_name" : "Vaud",
     "name_ascii" : "Vaud",
-    "name_html" : "Vaud",
-    "sort_order" : 0
+    "name_html" : "Vaud"
   },
-  {
-    "objectid" : 94,
-    "nuts_id" : "CH012",
+  "CH012": {
     "name_latin" : "Valais",
     "nuts_name" : "Valais",
     "name_ascii" : "Valais",
-    "name_html" : "Valais",
-    "sort_order" : 0
+    "name_html" : "Valais"
   },
-  {
-    "objectid" : 95,
-    "nuts_id" : "CH013",
+  "CH013": {
     "name_latin" : "Genève",
     "nuts_name" : "Genève",
     "name_ascii" : "Geneve",
-    "name_html" : "Gen&#x00E8;ve",
-    "sort_order" : 0
+    "name_html" : "Gen&#x00E8;ve"
   },
-  {
-    "objectid" : 96,
-    "nuts_id" : "CH021",
+  "CH021": {
     "name_latin" : "Bern",
     "nuts_name" : "Bern",
     "name_ascii" : "Bern",
-    "name_html" : "Bern",
-    "sort_order" : 0
+    "name_html" : "Bern"
   },
-  {
-    "objectid" : 97,
-    "nuts_id" : "CH022",
+  "CH022": {
     "name_latin" : "Freiburg",
     "nuts_name" : "Freiburg",
     "name_ascii" : "Freiburg",
-    "name_html" : "Freiburg",
-    "sort_order" : 0
+    "name_html" : "Freiburg"
   },
-  {
-    "objectid" : 98,
-    "nuts_id" : "CH023",
+  "CH023": {
     "name_latin" : "Solothurn",
     "nuts_name" : "Solothurn",
     "name_ascii" : "Solothurn",
-    "name_html" : "Solothurn",
-    "sort_order" : 0
+    "name_html" : "Solothurn"
   },
-  {
-    "objectid" : 99,
-    "nuts_id" : "CH024",
+  "CH024": {
     "name_latin" : "Neuchâtel",
     "nuts_name" : "Neuchâtel",
     "name_ascii" : "Neuchatel",
-    "name_html" : "Neuch&#x00E2;tel",
-    "sort_order" : 0
+    "name_html" : "Neuch&#x00E2;tel"
   },
-  {
-    "objectid" : 100,
-    "nuts_id" : "CH025",
+  "CH025": {
     "name_latin" : "Jura",
     "nuts_name" : "Jura",
     "name_ascii" : "Jura",
-    "name_html" : "Jura",
-    "sort_order" : 0
+    "name_html" : "Jura"
   },
-  {
-    "objectid" : 101,
-    "nuts_id" : "CH032",
+  "CH032": {
     "name_latin" : "Basel-Landschaft",
     "nuts_name" : "Basel-Landschaft",
     "name_ascii" : "Basel-Landschaft",
-    "name_html" : "Basel-Landschaft",
-    "sort_order" : 0
+    "name_html" : "Basel-Landschaft"
   },
-  {
-    "objectid" : 102,
-    "nuts_id" : "CH033",
+  "CH033": {
     "name_latin" : "Aargau",
     "nuts_name" : "Aargau",
     "name_ascii" : "Aargau",
-    "name_html" : "Aargau",
-    "sort_order" : 0
+    "name_html" : "Aargau"
   },
-  {
-    "objectid" : 103,
-    "nuts_id" : "CH040",
+  "CH040": {
     "name_latin" : "Zürich",
     "nuts_name" : "Zürich",
     "name_ascii" : "Zurich",
-    "name_html" : "Z&#x00FC;rich",
-    "sort_order" : 0
+    "name_html" : "Z&#x00FC;rich"
   },
-  {
-    "objectid" : 104,
-    "nuts_id" : "CH052",
+  "CH052": {
     "name_latin" : "Schaffhausen",
     "nuts_name" : "Schaffhausen",
     "name_ascii" : "Schaffhausen",
-    "name_html" : "Schaffhausen",
-    "sort_order" : 0
+    "name_html" : "Schaffhausen"
   },
-  {
-    "objectid" : 105,
-    "nuts_id" : "CH053",
+  "CH053": {
     "name_latin" : "Appenzell Ausserrhoden",
     "nuts_name" : "Appenzell Ausserrhoden",
     "name_ascii" : "Appenzell Ausserrhoden",
-    "name_html" : "Appenzell Ausserrhoden",
-    "sort_order" : 0
+    "name_html" : "Appenzell Ausserrhoden"
   },
-  {
-    "objectid" : 106,
-    "nuts_id" : "CH055",
+  "CH055": {
     "name_latin" : "St. Gallen",
     "nuts_name" : "St. Gallen",
     "name_ascii" : "St. Gallen",
-    "name_html" : "St. Gallen",
-    "sort_order" : 0
+    "name_html" : "St. Gallen"
   },
-  {
-    "objectid" : 107,
-    "nuts_id" : "CH056",
+  "CH056": {
     "name_latin" : "Graubünden",
     "nuts_name" : "Graubünden",
     "name_ascii" : "Graubunden",
-    "name_html" : "Graub&#x00FC;nden",
-    "sort_order" : 0
+    "name_html" : "Graub&#x00FC;nden"
   },
-  {
-    "objectid" : 108,
-    "nuts_id" : "CH057",
+  "CH057": {
     "name_latin" : "Thurgau",
     "nuts_name" : "Thurgau",
     "name_ascii" : "Thurgau",
-    "name_html" : "Thurgau",
-    "sort_order" : 0
+    "name_html" : "Thurgau"
   },
-  {
-    "objectid" : 109,
-    "nuts_id" : "CH061",
+  "CH061": {
     "name_latin" : "Luzern",
     "nuts_name" : "Luzern",
     "name_ascii" : "Luzern",
-    "name_html" : "Luzern",
-    "sort_order" : 0
+    "name_html" : "Luzern"
   },
-  {
-    "objectid" : 110,
-    "nuts_id" : "CH062",
+  "CH062": {
     "name_latin" : "Uri",
     "nuts_name" : "Uri",
     "name_ascii" : "Uri",
-    "name_html" : "Uri",
-    "sort_order" : 0
+    "name_html" : "Uri"
   },
-  {
-    "objectid" : 111,
-    "nuts_id" : "CH063",
+  "CH063": {
     "name_latin" : "Schwyz",
     "nuts_name" : "Schwyz",
     "name_ascii" : "Schwyz",
-    "name_html" : "Schwyz",
-    "sort_order" : 0
+    "name_html" : "Schwyz"
   },
-  {
-    "objectid" : 112,
-    "nuts_id" : "CH064",
+  "CH064": {
     "name_latin" : "Obwalden",
     "nuts_name" : "Obwalden",
     "name_ascii" : "Obwalden",
-    "name_html" : "Obwalden",
-    "sort_order" : 0
+    "name_html" : "Obwalden"
   },
-  {
-    "objectid" : 113,
-    "nuts_id" : "CH065",
+  "CH065": {
     "name_latin" : "Nidwalden",
     "nuts_name" : "Nidwalden",
     "name_ascii" : "Nidwalden",
-    "name_html" : "Nidwalden",
-    "sort_order" : 0
+    "name_html" : "Nidwalden"
   },
-  {
-    "objectid" : 114,
-    "nuts_id" : "CH066",
+  "CH066": {
     "name_latin" : "Zug",
     "nuts_name" : "Zug",
     "name_ascii" : "Zug",
-    "name_html" : "Zug",
-    "sort_order" : 0
+    "name_html" : "Zug"
   },
-  {
-    "objectid" : 115,
-    "nuts_id" : "CH070",
+  "CH070": {
     "name_latin" : "Ticino",
     "nuts_name" : "Ticino",
     "name_ascii" : "Ticino",
-    "name_html" : "Ticino",
-    "sort_order" : 0
+    "name_html" : "Ticino"
   },
-  {
-    "objectid" : 116,
-    "nuts_id" : "CY000",
+  "CY000": {
     "name_latin" : "Kýpros",
     "nuts_name" : "Κύπρος",
     "name_ascii" : "Kypros",
-    "name_html" : "&#922;&#973;&#960;&#961;&#959;&#962;",
-    "sort_order" : 1111
+    "name_html" : "&#922;&#973;&#960;&#961;&#959;&#962;"
   },
-  {
-    "objectid" : 117,
-    "nuts_id" : "CZ010",
+  "CZ010": {
     "name_latin" : "Hlavní mesto Praha",
     "nuts_name" : "Hlavní mesto Praha",
     "name_ascii" : "Hlavni mesto Praha",
-    "name_html" : "Hlavn&#x00ED; mesto Praha",
-    "sort_order" : 106
+    "name_html" : "Hlavn&#x00ED; mesto Praha"
   },
-  {
-    "objectid" : 118,
-    "nuts_id" : "CZ020",
+  "CZ020": {
     "name_latin" : "Stredoceský kraj",
     "nuts_name" : "Stredoceský kraj",
     "name_ascii" : "Stredocesky kraj",
-    "name_html" : "Stredocesk&#x00FD; kraj",
-    "sort_order" : 108
+    "name_html" : "Stredocesk&#x00FD; kraj"
   },
-  {
-    "objectid" : 119,
-    "nuts_id" : "CZ031",
+  "CZ031": {
     "name_latin" : "Jihoceský kraj",
     "nuts_name" : "Jihoceský kraj",
     "name_ascii" : "Jihocesky kraj",
-    "name_html" : "Jihocesk&#x00FD; kraj",
-    "sort_order" : 110
+    "name_html" : "Jihocesk&#x00FD; kraj"
   },
-  {
-    "objectid" : 120,
-    "nuts_id" : "CZ032",
+  "CZ032": {
     "name_latin" : "Plzenský kraj",
     "nuts_name" : "Plzenský kraj",
     "name_ascii" : "Plzensky kraj",
-    "name_html" : "Plzensk&#x00FD; kraj",
-    "sort_order" : 111
+    "name_html" : "Plzensk&#x00FD; kraj"
   },
-  {
-    "objectid" : 121,
-    "nuts_id" : "CZ041",
+  "CZ041": {
     "name_latin" : "Karlovarský kraj",
     "nuts_name" : "Karlovarský kraj",
     "name_ascii" : "Karlovarsky kraj",
-    "name_html" : "Karlovarsk&#x00FD; kraj",
-    "sort_order" : 113
+    "name_html" : "Karlovarsk&#x00FD; kraj"
   },
-  {
-    "objectid" : 122,
-    "nuts_id" : "CZ042",
+  "CZ042": {
     "name_latin" : "Ústecký kraj",
     "nuts_name" : "Ústecký kraj",
     "name_ascii" : "Ustecky kraj",
-    "name_html" : "&#x00DA;steck&#x00FD; kraj",
-    "sort_order" : 114
+    "name_html" : "&#x00DA;steck&#x00FD; kraj"
   },
-  {
-    "objectid" : 123,
-    "nuts_id" : "CZ052",
+  "CZ052": {
     "name_latin" : "Královéhradecký kraj",
     "nuts_name" : "Královéhradecký kraj",
     "name_ascii" : "Kralovehradecky kraj",
-    "name_html" : "Kr&#x00E1;lov&#x00E9;hradeck&#x00FD; kraj",
-    "sort_order" : 117
+    "name_html" : "Kr&#x00E1;lov&#x00E9;hradeck&#x00FD; kraj"
   },
-  {
-    "objectid" : 124,
-    "nuts_id" : "CZ053",
+  "CZ053": {
     "name_latin" : "Pardubický kraj",
     "nuts_name" : "Pardubický kraj",
     "name_ascii" : "Pardubicky kraj",
-    "name_html" : "Pardubick&#x00FD; kraj",
-    "sort_order" : 118
+    "name_html" : "Pardubick&#x00FD; kraj"
   },
-  {
-    "objectid" : 125,
-    "nuts_id" : "CZ063",
+  "CZ063": {
     "name_latin" : "Kraj Vysocina",
     "nuts_name" : "Kraj Vysocina",
     "name_ascii" : "Kraj Vysocina",
-    "name_html" : "Kraj Vysocina",
-    "sort_order" : 120
+    "name_html" : "Kraj Vysocina"
   },
-  {
-    "objectid" : 126,
-    "nuts_id" : "CZ064",
+  "CZ064": {
     "name_latin" : "Jihomoravský kraj",
     "nuts_name" : "Jihomoravský kraj",
     "name_ascii" : "Jihomoravsky kraj",
-    "name_html" : "Jihomoravsk&#x00FD; kraj",
-    "sort_order" : 121
+    "name_html" : "Jihomoravsk&#x00FD; kraj"
   },
-  {
-    "objectid" : 127,
-    "nuts_id" : "CZ072",
+  "CZ072": {
     "name_latin" : "Zlínský kraj",
     "nuts_name" : "Zlínský kraj",
     "name_ascii" : "Zlinsky kraj",
-    "name_html" : "Zl&#x00ED;nsk&#x00FD; kraj",
-    "sort_order" : 124
+    "name_html" : "Zl&#x00ED;nsk&#x00FD; kraj"
   },
-  {
-    "objectid" : 128,
-    "nuts_id" : "CZ080",
+  "CZ080": {
     "name_latin" : "Moravskoslezský kraj",
     "nuts_name" : "Moravskoslezský kraj",
     "name_ascii" : "Moravskoslezsky kraj",
-    "name_html" : "Moravskoslezsk&#x00FD; kraj",
-    "sort_order" : 126
+    "name_html" : "Moravskoslezsk&#x00FD; kraj"
   },
-  {
-    "objectid" : 129,
-    "nuts_id" : "DE111",
+  "DE111": {
     "name_latin" : "Stuttgart, Stadtkreis",
     "nuts_name" : "Stuttgart, Stadtkreis",
     "name_ascii" : "Stuttgart, Stadtkreis",
-    "name_html" : "Stuttgart, Stadtkreis",
-    "sort_order" : 154
+    "name_html" : "Stuttgart, Stadtkreis"
   },
-  {
-    "objectid" : 130,
-    "nuts_id" : "DE112",
+  "DE112": {
     "name_latin" : "Böblingen",
     "nuts_name" : "Böblingen",
     "name_ascii" : "Boblingen",
-    "name_html" : "B&#x00F6;blingen",
-    "sort_order" : 155
+    "name_html" : "B&#x00F6;blingen"
   },
-  {
-    "objectid" : 131,
-    "nuts_id" : "DE113",
+  "DE113": {
     "name_latin" : "Esslingen",
     "nuts_name" : "Esslingen",
     "name_ascii" : "Esslingen",
-    "name_html" : "Esslingen",
-    "sort_order" : 156
+    "name_html" : "Esslingen"
   },
-  {
-    "objectid" : 132,
-    "nuts_id" : "DE114",
+  "DE114": {
     "name_latin" : "Göppingen",
     "nuts_name" : "Göppingen",
     "name_ascii" : "Goppingen",
-    "name_html" : "G&#x00F6;ppingen",
-    "sort_order" : 157
+    "name_html" : "G&#x00F6;ppingen"
   },
-  {
-    "objectid" : 133,
-    "nuts_id" : "DE115",
+  "DE115": {
     "name_latin" : "Ludwigsburg",
     "nuts_name" : "Ludwigsburg",
     "name_ascii" : "Ludwigsburg",
-    "name_html" : "Ludwigsburg",
-    "sort_order" : 158
+    "name_html" : "Ludwigsburg"
   },
-  {
-    "objectid" : 134,
-    "nuts_id" : "DE117",
+  "DE117": {
     "name_latin" : "Heilbronn, Stadtkreis",
     "nuts_name" : "Heilbronn, Stadtkreis",
     "name_ascii" : "Heilbronn, Stadtkreis",
-    "name_html" : "Heilbronn, Stadtkreis",
-    "sort_order" : 160
+    "name_html" : "Heilbronn, Stadtkreis"
   },
-  {
-    "objectid" : 135,
-    "nuts_id" : "DE118",
+  "DE118": {
     "name_latin" : "Heilbronn, Landkreis",
     "nuts_name" : "Heilbronn, Landkreis",
     "name_ascii" : "Heilbronn, Landkreis",
-    "name_html" : "Heilbronn, Landkreis",
-    "sort_order" : 161
+    "name_html" : "Heilbronn, Landkreis"
   },
-  {
-    "objectid" : 136,
-    "nuts_id" : "DE119",
+  "DE119": {
     "name_latin" : "Hohenlohekreis",
     "nuts_name" : "Hohenlohekreis",
     "name_ascii" : "Hohenlohekreis",
-    "name_html" : "Hohenlohekreis",
-    "sort_order" : 162
+    "name_html" : "Hohenlohekreis"
   },
-  {
-    "objectid" : 137,
-    "nuts_id" : "DE11B",
+  "DE11B": {
     "name_latin" : "Main-Tauber-Kreis",
     "nuts_name" : "Main-Tauber-Kreis",
     "name_ascii" : "Main-Tauber-Kreis",
-    "name_html" : "Main-Tauber-Kreis",
-    "sort_order" : 164
+    "name_html" : "Main-Tauber-Kreis"
   },
-  {
-    "objectid" : 138,
-    "nuts_id" : "DE11C",
+  "DE11C": {
     "name_latin" : "Heidenheim",
     "nuts_name" : "Heidenheim",
     "name_ascii" : "Heidenheim",
-    "name_html" : "Heidenheim",
-    "sort_order" : 165
+    "name_html" : "Heidenheim"
   },
-  {
-    "objectid" : 139,
-    "nuts_id" : "DE11D",
+  "DE11D": {
     "name_latin" : "Ostalbkreis",
     "nuts_name" : "Ostalbkreis",
     "name_ascii" : "Ostalbkreis",
-    "name_html" : "Ostalbkreis",
-    "sort_order" : 166
+    "name_html" : "Ostalbkreis"
   },
-  {
-    "objectid" : 140,
-    "nuts_id" : "DE121",
+  "DE121": {
     "name_latin" : "Baden-Baden, Stadtkreis",
     "nuts_name" : "Baden-Baden, Stadtkreis",
     "name_ascii" : "Baden-Baden, Stadtkreis",
-    "name_html" : "Baden-Baden, Stadtkreis",
-    "sort_order" : 168
+    "name_html" : "Baden-Baden, Stadtkreis"
   },
-  {
-    "objectid" : 141,
-    "nuts_id" : "DE123",
+  "DE123": {
     "name_latin" : "Karlsruhe, Landkreis",
     "nuts_name" : "Karlsruhe, Landkreis",
     "name_ascii" : "Karlsruhe, Landkreis",
-    "name_html" : "Karlsruhe, Landkreis",
-    "sort_order" : 170
+    "name_html" : "Karlsruhe, Landkreis"
   },
-  {
-    "objectid" : 142,
-    "nuts_id" : "DE124",
+  "DE124": {
     "name_latin" : "Rastatt",
     "nuts_name" : "Rastatt",
     "name_ascii" : "Rastatt",
-    "name_html" : "Rastatt",
-    "sort_order" : 171
+    "name_html" : "Rastatt"
   },
-  {
-    "objectid" : 143,
-    "nuts_id" : "DE125",
+  "DE125": {
     "name_latin" : "Heidelberg, Stadtkreis",
     "nuts_name" : "Heidelberg, Stadtkreis",
     "name_ascii" : "Heidelberg, Stadtkreis",
-    "name_html" : "Heidelberg, Stadtkreis",
-    "sort_order" : 172
+    "name_html" : "Heidelberg, Stadtkreis"
   },
-  {
-    "objectid" : 144,
-    "nuts_id" : "DE126",
+  "DE126": {
     "name_latin" : "Mannheim, Stadtkreis",
     "nuts_name" : "Mannheim, Stadtkreis",
     "name_ascii" : "Mannheim, Stadtkreis",
-    "name_html" : "Mannheim, Stadtkreis",
-    "sort_order" : 173
+    "name_html" : "Mannheim, Stadtkreis"
   },
-  {
-    "objectid" : 145,
-    "nuts_id" : "DE127",
+  "DE127": {
     "name_latin" : "Neckar-Odenwald-Kreis",
     "nuts_name" : "Neckar-Odenwald-Kreis",
     "name_ascii" : "Neckar-Odenwald-Kreis",
-    "name_html" : "Neckar-Odenwald-Kreis",
-    "sort_order" : 174
+    "name_html" : "Neckar-Odenwald-Kreis"
   },
-  {
-    "objectid" : 146,
-    "nuts_id" : "DE128",
+  "DE128": {
     "name_latin" : "Rhein-Neckar-Kreis",
     "nuts_name" : "Rhein-Neckar-Kreis",
     "name_ascii" : "Rhein-Neckar-Kreis",
-    "name_html" : "Rhein-Neckar-Kreis",
-    "sort_order" : 175
+    "name_html" : "Rhein-Neckar-Kreis"
   },
-  {
-    "objectid" : 147,
-    "nuts_id" : "DE12A",
+  "DE12A": {
     "name_latin" : "Calw",
     "nuts_name" : "Calw",
     "name_ascii" : "Calw",
-    "name_html" : "Calw",
-    "sort_order" : 177
+    "name_html" : "Calw"
   },
-  {
-    "objectid" : 148,
-    "nuts_id" : "DE12B",
+  "DE12B": {
     "name_latin" : "Enzkreis",
     "nuts_name" : "Enzkreis",
     "name_ascii" : "Enzkreis",
-    "name_html" : "Enzkreis",
-    "sort_order" : 178
+    "name_html" : "Enzkreis"
   },
-  {
-    "objectid" : 149,
-    "nuts_id" : "DE12C",
+  "DE12C": {
     "name_latin" : "Freudenstadt",
     "nuts_name" : "Freudenstadt",
     "name_ascii" : "Freudenstadt",
-    "name_html" : "Freudenstadt",
-    "sort_order" : 179
+    "name_html" : "Freudenstadt"
   },
-  {
-    "objectid" : 150,
-    "nuts_id" : "DE131",
+  "DE131": {
     "name_latin" : "Freiburg im Breisgau, Stadtkreis",
     "nuts_name" : "Freiburg im Breisgau, Stadtkreis",
     "name_ascii" : "Freiburg im Breisgau, Stadtkreis",
-    "name_html" : "Freiburg im Breisgau, Stadtkreis",
-    "sort_order" : 181
+    "name_html" : "Freiburg im Breisgau, Stadtkreis"
   },
-  {
-    "objectid" : 151,
-    "nuts_id" : "DE132",
+  "DE132": {
     "name_latin" : "Breisgau-Hochschwarzwald",
     "nuts_name" : "Breisgau-Hochschwarzwald",
     "name_ascii" : "Breisgau-Hochschwarzwald",
-    "name_html" : "Breisgau-Hochschwarzwald",
-    "sort_order" : 182
+    "name_html" : "Breisgau-Hochschwarzwald"
   },
-  {
-    "objectid" : 152,
-    "nuts_id" : "DE134",
+  "DE134": {
     "name_latin" : "Ortenaukreis",
     "nuts_name" : "Ortenaukreis",
     "name_ascii" : "Ortenaukreis",
-    "name_html" : "Ortenaukreis",
-    "sort_order" : 184
+    "name_html" : "Ortenaukreis"
   },
-  {
-    "objectid" : 153,
-    "nuts_id" : "DE135",
+  "DE135": {
     "name_latin" : "Rottweil",
     "nuts_name" : "Rottweil",
     "name_ascii" : "Rottweil",
-    "name_html" : "Rottweil",
-    "sort_order" : 185
+    "name_html" : "Rottweil"
   },
-  {
-    "objectid" : 154,
-    "nuts_id" : "DE136",
+  "DE136": {
     "name_latin" : "Schwarzwald-Baar-Kreis",
     "nuts_name" : "Schwarzwald-Baar-Kreis",
     "name_ascii" : "Schwarzwald-Baar-Kreis",
-    "name_html" : "Schwarzwald-Baar-Kreis",
-    "sort_order" : 186
+    "name_html" : "Schwarzwald-Baar-Kreis"
   },
-  {
-    "objectid" : 155,
-    "nuts_id" : "DE137",
+  "DE137": {
     "name_latin" : "Tuttlingen",
     "nuts_name" : "Tuttlingen",
     "name_ascii" : "Tuttlingen",
-    "name_html" : "Tuttlingen",
-    "sort_order" : 187
+    "name_html" : "Tuttlingen"
   },
-  {
-    "objectid" : 156,
-    "nuts_id" : "DE139",
+  "DE139": {
     "name_latin" : "Lörrach",
     "nuts_name" : "Lörrach",
     "name_ascii" : "Lorrach",
-    "name_html" : "L&#x00F6;rrach",
-    "sort_order" : 189
+    "name_html" : "L&#x00F6;rrach"
   },
-  {
-    "objectid" : 157,
-    "nuts_id" : "DE13A",
+  "DE13A": {
     "name_latin" : "Waldshut",
     "nuts_name" : "Waldshut",
     "name_ascii" : "Waldshut",
-    "name_html" : "Waldshut",
-    "sort_order" : 190
+    "name_html" : "Waldshut"
   },
-  {
-    "objectid" : 158,
-    "nuts_id" : "DE141",
+  "DE141": {
     "name_latin" : "Reutlingen",
     "nuts_name" : "Reutlingen",
     "name_ascii" : "Reutlingen",
-    "name_html" : "Reutlingen",
-    "sort_order" : 192
+    "name_html" : "Reutlingen"
   },
-  {
-    "objectid" : 159,
-    "nuts_id" : "DE143",
+  "DE143": {
     "name_latin" : "Zollernalbkreis",
     "nuts_name" : "Zollernalbkreis",
     "name_ascii" : "Zollernalbkreis",
-    "name_html" : "Zollernalbkreis",
-    "sort_order" : 194
+    "name_html" : "Zollernalbkreis"
   },
-  {
-    "objectid" : 160,
-    "nuts_id" : "DE144",
+  "DE144": {
     "name_latin" : "Ulm, Stadtkreis",
     "nuts_name" : "Ulm, Stadtkreis",
     "name_ascii" : "Ulm, Stadtkreis",
-    "name_html" : "Ulm, Stadtkreis",
-    "sort_order" : 195
+    "name_html" : "Ulm, Stadtkreis"
   },
-  {
-    "objectid" : 161,
-    "nuts_id" : "DE145",
+  "DE145": {
     "name_latin" : "Alb-Donau-Kreis",
     "nuts_name" : "Alb-Donau-Kreis",
     "name_ascii" : "Alb-Donau-Kreis",
-    "name_html" : "Alb-Donau-Kreis",
-    "sort_order" : 196
+    "name_html" : "Alb-Donau-Kreis"
   },
-  {
-    "objectid" : 162,
-    "nuts_id" : "DE146",
+  "DE146": {
     "name_latin" : "Biberach",
     "nuts_name" : "Biberach",
     "name_ascii" : "Biberach",
-    "name_html" : "Biberach",
-    "sort_order" : 197
+    "name_html" : "Biberach"
   },
-  {
-    "objectid" : 163,
-    "nuts_id" : "DE147",
+  "DE147": {
     "name_latin" : "Bodenseekreis",
     "nuts_name" : "Bodenseekreis",
     "name_ascii" : "Bodenseekreis",
-    "name_html" : "Bodenseekreis",
-    "sort_order" : 198
+    "name_html" : "Bodenseekreis"
   },
-  {
-    "objectid" : 164,
-    "nuts_id" : "DE148",
+  "DE148": {
     "name_latin" : "Ravensburg",
     "nuts_name" : "Ravensburg",
     "name_ascii" : "Ravensburg",
-    "name_html" : "Ravensburg",
-    "sort_order" : 199
+    "name_html" : "Ravensburg"
   },
-  {
-    "objectid" : 165,
-    "nuts_id" : "DE149",
+  "DE149": {
     "name_latin" : "Sigmaringen",
     "nuts_name" : "Sigmaringen",
     "name_ascii" : "Sigmaringen",
-    "name_html" : "Sigmaringen",
-    "sort_order" : 200
+    "name_html" : "Sigmaringen"
   },
-  {
-    "objectid" : 166,
-    "nuts_id" : "DE211",
+  "DE211": {
     "name_latin" : "Ingolstadt, Kreisfreie Stadt",
     "nuts_name" : "Ingolstadt, Kreisfreie Stadt",
     "name_ascii" : "Ingolstadt, Kreisfreie Stadt",
-    "name_html" : "Ingolstadt, Kreisfreie Stadt",
-    "sort_order" : 203
+    "name_html" : "Ingolstadt, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 167,
-    "nuts_id" : "DE213",
+  "DE213": {
     "name_latin" : "Rosenheim, Kreisfreie Stadt",
     "nuts_name" : "Rosenheim, Kreisfreie Stadt",
     "name_ascii" : "Rosenheim, Kreisfreie Stadt",
-    "name_html" : "Rosenheim, Kreisfreie Stadt",
-    "sort_order" : 205
+    "name_html" : "Rosenheim, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 168,
-    "nuts_id" : "DE214",
+  "DE214": {
     "name_latin" : "Altötting",
     "nuts_name" : "Altötting",
     "name_ascii" : "Altotting",
-    "name_html" : "Alt&#x00F6;tting",
-    "sort_order" : 206
+    "name_html" : "Alt&#x00F6;tting"
   },
-  {
-    "objectid" : 169,
-    "nuts_id" : "DE215",
+  "DE215": {
     "name_latin" : "Berchtesgadener Land",
     "nuts_name" : "Berchtesgadener Land",
     "name_ascii" : "Berchtesgadener Land",
-    "name_html" : "Berchtesgadener Land",
-    "sort_order" : 207
+    "name_html" : "Berchtesgadener Land"
   },
-  {
-    "objectid" : 170,
-    "nuts_id" : "DE216",
+  "DE216": {
     "name_latin" : "Bad Tölz-Wolfratshausen",
     "nuts_name" : "Bad Tölz-Wolfratshausen",
     "name_ascii" : "Bad Tolz-Wolfratshausen",
-    "name_html" : "Bad T&#x00F6;lz-Wolfratshausen",
-    "sort_order" : 208
+    "name_html" : "Bad T&#x00F6;lz-Wolfratshausen"
   },
-  {
-    "objectid" : 171,
-    "nuts_id" : "DE217",
+  "DE217": {
     "name_latin" : "Dachau",
     "nuts_name" : "Dachau",
     "name_ascii" : "Dachau",
-    "name_html" : "Dachau",
-    "sort_order" : 209
+    "name_html" : "Dachau"
   },
-  {
-    "objectid" : 172,
-    "nuts_id" : "DE218",
+  "DE218": {
     "name_latin" : "Ebersberg",
     "nuts_name" : "Ebersberg",
     "name_ascii" : "Ebersberg",
-    "name_html" : "Ebersberg",
-    "sort_order" : 210
+    "name_html" : "Ebersberg"
   },
-  {
-    "objectid" : 173,
-    "nuts_id" : "DE219",
+  "DE219": {
     "name_latin" : "Eichstätt",
     "nuts_name" : "Eichstätt",
     "name_ascii" : "Eichstatt",
-    "name_html" : "Eichst&#x00E4;tt",
-    "sort_order" : 211
+    "name_html" : "Eichst&#x00E4;tt"
   },
-  {
-    "objectid" : 174,
-    "nuts_id" : "DE21A",
+  "DE21A": {
     "name_latin" : "Erding",
     "nuts_name" : "Erding",
     "name_ascii" : "Erding",
-    "name_html" : "Erding",
-    "sort_order" : 212
+    "name_html" : "Erding"
   },
-  {
-    "objectid" : 175,
-    "nuts_id" : "DE21B",
+  "DE21B": {
     "name_latin" : "Freising",
     "nuts_name" : "Freising",
     "name_ascii" : "Freising",
-    "name_html" : "Freising",
-    "sort_order" : 213
+    "name_html" : "Freising"
   },
-  {
-    "objectid" : 176,
-    "nuts_id" : "DE21C",
+  "DE21C": {
     "name_latin" : "Fürstenfeldbruck",
     "nuts_name" : "Fürstenfeldbruck",
     "name_ascii" : "Furstenfeldbruck",
-    "name_html" : "F&#x00FC;rstenfeldbruck",
-    "sort_order" : 214
+    "name_html" : "F&#x00FC;rstenfeldbruck"
   },
-  {
-    "objectid" : 177,
-    "nuts_id" : "DE21D",
+  "DE21D": {
     "name_latin" : "Garmisch-Partenkirchen",
     "nuts_name" : "Garmisch-Partenkirchen",
     "name_ascii" : "Garmisch-Partenkirchen",
-    "name_html" : "Garmisch-Partenkirchen",
-    "sort_order" : 215
+    "name_html" : "Garmisch-Partenkirchen"
   },
-  {
-    "objectid" : 178,
-    "nuts_id" : "DE21E",
+  "DE21E": {
     "name_latin" : "Landsberg am Lech",
     "nuts_name" : "Landsberg am Lech",
     "name_ascii" : "Landsberg am Lech",
-    "name_html" : "Landsberg am Lech",
-    "sort_order" : 216
+    "name_html" : "Landsberg am Lech"
   },
-  {
-    "objectid" : 179,
-    "nuts_id" : "DE21F",
+  "DE21F": {
     "name_latin" : "Miesbach",
     "nuts_name" : "Miesbach",
     "name_ascii" : "Miesbach",
-    "name_html" : "Miesbach",
-    "sort_order" : 217
+    "name_html" : "Miesbach"
   },
-  {
-    "objectid" : 180,
-    "nuts_id" : "DE21G",
+  "DE21G": {
     "name_latin" : "Mühldorf a. Inn",
     "nuts_name" : "Mühldorf a. Inn",
     "name_ascii" : "Muhldorf a. Inn",
-    "name_html" : "M&#x00FC;hldorf a. Inn",
-    "sort_order" : 218
+    "name_html" : "M&#x00FC;hldorf a. Inn"
   },
-  {
-    "objectid" : 181,
-    "nuts_id" : "DE21H",
+  "DE21H": {
     "name_latin" : "München, Landkreis",
     "nuts_name" : "München, Landkreis",
     "name_ascii" : "Munchen, Landkreis",
-    "name_html" : "M&#x00FC;nchen, Landkreis",
-    "sort_order" : 219
+    "name_html" : "M&#x00FC;nchen, Landkreis"
   },
-  {
-    "objectid" : 182,
-    "nuts_id" : "DE21I",
+  "DE21I": {
     "name_latin" : "Neuburg-Schrobenhausen",
     "nuts_name" : "Neuburg-Schrobenhausen",
     "name_ascii" : "Neuburg-Schrobenhausen",
-    "name_html" : "Neuburg-Schrobenhausen",
-    "sort_order" : 220
+    "name_html" : "Neuburg-Schrobenhausen"
   },
-  {
-    "objectid" : 183,
-    "nuts_id" : "DE21J",
+  "DE21J": {
     "name_latin" : "Pfaffenhofen a. d. Ilm",
     "nuts_name" : "Pfaffenhofen a. d. Ilm",
     "name_ascii" : "Pfaffenhofen a. d. Ilm",
-    "name_html" : "Pfaffenhofen a. d. Ilm",
-    "sort_order" : 221
+    "name_html" : "Pfaffenhofen a. d. Ilm"
   },
-  {
-    "objectid" : 184,
-    "nuts_id" : "DE21K",
+  "DE21K": {
     "name_latin" : "Rosenheim, Landkreis",
     "nuts_name" : "Rosenheim, Landkreis",
     "name_ascii" : "Rosenheim, Landkreis",
-    "name_html" : "Rosenheim, Landkreis",
-    "sort_order" : 222
+    "name_html" : "Rosenheim, Landkreis"
   },
-  {
-    "objectid" : 185,
-    "nuts_id" : "DE21L",
+  "DE21L": {
     "name_latin" : "Starnberg",
     "nuts_name" : "Starnberg",
     "name_ascii" : "Starnberg",
-    "name_html" : "Starnberg",
-    "sort_order" : 223
+    "name_html" : "Starnberg"
   },
-  {
-    "objectid" : 186,
-    "nuts_id" : "DE21M",
+  "DE21M": {
     "name_latin" : "Traunstein",
     "nuts_name" : "Traunstein",
     "name_ascii" : "Traunstein",
-    "name_html" : "Traunstein",
-    "sort_order" : 224
+    "name_html" : "Traunstein"
   },
-  {
-    "objectid" : 187,
-    "nuts_id" : "DE21N",
+  "DE21N": {
     "name_latin" : "Weilheim-Schongau",
     "nuts_name" : "Weilheim-Schongau",
     "name_ascii" : "Weilheim-Schongau",
-    "name_html" : "Weilheim-Schongau",
-    "sort_order" : 225
+    "name_html" : "Weilheim-Schongau"
   },
-  {
-    "objectid" : 188,
-    "nuts_id" : "DE221",
+  "DE221": {
     "name_latin" : "Landshut, Kreisfreie Stadt",
     "nuts_name" : "Landshut, Kreisfreie Stadt",
     "name_ascii" : "Landshut, Kreisfreie Stadt",
-    "name_html" : "Landshut, Kreisfreie Stadt",
-    "sort_order" : 227
+    "name_html" : "Landshut, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 189,
-    "nuts_id" : "DE222",
+  "DE222": {
     "name_latin" : "Passau, Kreisfreie Stadt",
     "nuts_name" : "Passau, Kreisfreie Stadt",
     "name_ascii" : "Passau, Kreisfreie Stadt",
-    "name_html" : "Passau, Kreisfreie Stadt",
-    "sort_order" : 228
+    "name_html" : "Passau, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 190,
-    "nuts_id" : "DE223",
+  "DE223": {
     "name_latin" : "Straubing, Kreisfreie Stadt",
     "nuts_name" : "Straubing, Kreisfreie Stadt",
     "name_ascii" : "Straubing, Kreisfreie Stadt",
-    "name_html" : "Straubing, Kreisfreie Stadt",
-    "sort_order" : 229
+    "name_html" : "Straubing, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 191,
-    "nuts_id" : "DE224",
+  "DE224": {
     "name_latin" : "Deggendorf",
     "nuts_name" : "Deggendorf",
     "name_ascii" : "Deggendorf",
-    "name_html" : "Deggendorf",
-    "sort_order" : 230
+    "name_html" : "Deggendorf"
   },
-  {
-    "objectid" : 192,
-    "nuts_id" : "DE225",
+  "DE225": {
     "name_latin" : "Freyung-Grafenau",
     "nuts_name" : "Freyung-Grafenau",
     "name_ascii" : "Freyung-Grafenau",
-    "name_html" : "Freyung-Grafenau",
-    "sort_order" : 231
+    "name_html" : "Freyung-Grafenau"
   },
-  {
-    "objectid" : 193,
-    "nuts_id" : "DE226",
+  "DE226": {
     "name_latin" : "Kelheim",
     "nuts_name" : "Kelheim",
     "name_ascii" : "Kelheim",
-    "name_html" : "Kelheim",
-    "sort_order" : 232
+    "name_html" : "Kelheim"
   },
-  {
-    "objectid" : 194,
-    "nuts_id" : "DE228",
+  "DE228": {
     "name_latin" : "Passau, Landkreis",
     "nuts_name" : "Passau, Landkreis",
     "name_ascii" : "Passau, Landkreis",
-    "name_html" : "Passau, Landkreis",
-    "sort_order" : 234
+    "name_html" : "Passau, Landkreis"
   },
-  {
-    "objectid" : 195,
-    "nuts_id" : "DE229",
+  "DE229": {
     "name_latin" : "Regen",
     "nuts_name" : "Regen",
     "name_ascii" : "Regen",
-    "name_html" : "Regen",
-    "sort_order" : 235
+    "name_html" : "Regen"
   },
-  {
-    "objectid" : 196,
-    "nuts_id" : "DE22A",
+  "DE22A": {
     "name_latin" : "Rottal-Inn",
     "nuts_name" : "Rottal-Inn",
     "name_ascii" : "Rottal-Inn",
-    "name_html" : "Rottal-Inn",
-    "sort_order" : 236
+    "name_html" : "Rottal-Inn"
   },
-  {
-    "objectid" : 197,
-    "nuts_id" : "DE22B",
+  "DE22B": {
     "name_latin" : "Straubing-Bogen",
     "nuts_name" : "Straubing-Bogen",
     "name_ascii" : "Straubing-Bogen",
-    "name_html" : "Straubing-Bogen",
-    "sort_order" : 237
+    "name_html" : "Straubing-Bogen"
   },
-  {
-    "objectid" : 198,
-    "nuts_id" : "DE22C",
+  "DE22C": {
     "name_latin" : "Dingolfing-Landau",
     "nuts_name" : "Dingolfing-Landau",
     "name_ascii" : "Dingolfing-Landau",
-    "name_html" : "Dingolfing-Landau",
-    "sort_order" : 238
+    "name_html" : "Dingolfing-Landau"
   },
-  {
-    "objectid" : 199,
-    "nuts_id" : "DE232",
+  "DE232": {
     "name_latin" : "Regensburg, Kreisfreie Stadt",
     "nuts_name" : "Regensburg, Kreisfreie Stadt",
     "name_ascii" : "Regensburg, Kreisfreie Stadt",
-    "name_html" : "Regensburg, Kreisfreie Stadt",
-    "sort_order" : 241
+    "name_html" : "Regensburg, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 200,
-    "nuts_id" : "DE233",
+  "DE233": {
     "name_latin" : "Weiden i. d. Opf, Kreisfreie Stadt",
     "nuts_name" : "Weiden i. d. Opf, Kreisfreie Stadt",
     "name_ascii" : "Weiden i. d. Opf, Kreisfreie Stadt",
-    "name_html" : "Weiden i. d. Opf, Kreisfreie Stadt",
-    "sort_order" : 242
+    "name_html" : "Weiden i. d. Opf, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 201,
-    "nuts_id" : "DE234",
+  "DE234": {
     "name_latin" : "Amberg-Sulzbach",
     "nuts_name" : "Amberg-Sulzbach",
     "name_ascii" : "Amberg-Sulzbach",
-    "name_html" : "Amberg-Sulzbach",
-    "sort_order" : 243
+    "name_html" : "Amberg-Sulzbach"
   },
-  {
-    "objectid" : 202,
-    "nuts_id" : "DE235",
+  "DE235": {
     "name_latin" : "Cham",
     "nuts_name" : "Cham",
     "name_ascii" : "Cham",
-    "name_html" : "Cham",
-    "sort_order" : 244
+    "name_html" : "Cham"
   },
-  {
-    "objectid" : 203,
-    "nuts_id" : "DE236",
+  "DE236": {
     "name_latin" : "Neumarkt i. d. OPf.",
     "nuts_name" : "Neumarkt i. d. OPf.",
     "name_ascii" : "Neumarkt i. d. Opf.",
-    "name_html" : "Neumarkt i. d. Opf.",
-    "sort_order" : 245
+    "name_html" : "Neumarkt i. d. Opf."
   },
-  {
-    "objectid" : 204,
-    "nuts_id" : "DE238",
+  "DE238": {
     "name_latin" : "Regensburg, Landkreis",
     "nuts_name" : "Regensburg, Landkreis",
     "name_ascii" : "Regensburg, Landkreis",
-    "name_html" : "Regensburg, Landkreis",
-    "sort_order" : 247
+    "name_html" : "Regensburg, Landkreis"
   },
-  {
-    "objectid" : 205,
-    "nuts_id" : "DE239",
+  "DE239": {
     "name_latin" : "Schwandorf",
     "nuts_name" : "Schwandorf",
     "name_ascii" : "Schwandorf",
-    "name_html" : "Schwandorf",
-    "sort_order" : 248
+    "name_html" : "Schwandorf"
   },
-  {
-    "objectid" : 206,
-    "nuts_id" : "DE23A",
+  "DE23A": {
     "name_latin" : "Tirschenreuth",
     "nuts_name" : "Tirschenreuth",
     "name_ascii" : "Tirschenreuth",
-    "name_html" : "Tirschenreuth",
-    "sort_order" : 249
+    "name_html" : "Tirschenreuth"
   },
-  {
-    "objectid" : 207,
-    "nuts_id" : "DE241",
+  "DE241": {
     "name_latin" : "Bamberg, Kreisfreie Stadt",
     "nuts_name" : "Bamberg, Kreisfreie Stadt",
     "name_ascii" : "Bamberg, Kreisfreie Stadt",
-    "name_html" : "Bamberg, Kreisfreie Stadt",
-    "sort_order" : 251
+    "name_html" : "Bamberg, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 208,
-    "nuts_id" : "DE242",
+  "DE242": {
     "name_latin" : "Bayreuth, Kreisfreie Stadt",
     "nuts_name" : "Bayreuth, Kreisfreie Stadt",
     "name_ascii" : "Bayreuth, Kreisfreie Stadt",
-    "name_html" : "Bayreuth, Kreisfreie Stadt",
-    "sort_order" : 252
+    "name_html" : "Bayreuth, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 209,
-    "nuts_id" : "DE244",
+  "DE244": {
     "name_latin" : "Hof, Kreisfreie Stadt",
     "nuts_name" : "Hof, Kreisfreie Stadt",
     "name_ascii" : "Hof, Kreisfreie Stadt",
-    "name_html" : "Hof, Kreisfreie Stadt",
-    "sort_order" : 254
+    "name_html" : "Hof, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 210,
-    "nuts_id" : "DE245",
+  "DE245": {
     "name_latin" : "Bamberg, Landkreis",
     "nuts_name" : "Bamberg, Landkreis",
     "name_ascii" : "Bamberg, Landkreis",
-    "name_html" : "Bamberg, Landkreis",
-    "sort_order" : 255
+    "name_html" : "Bamberg, Landkreis"
   },
-  {
-    "objectid" : 211,
-    "nuts_id" : "DE246",
+  "DE246": {
     "name_latin" : "Bayreuth, Landkreis",
     "nuts_name" : "Bayreuth, Landkreis",
     "name_ascii" : "Bayreuth, Landkreis",
-    "name_html" : "Bayreuth, Landkreis",
-    "sort_order" : 256
+    "name_html" : "Bayreuth, Landkreis"
   },
-  {
-    "objectid" : 212,
-    "nuts_id" : "DE247",
+  "DE247": {
     "name_latin" : "Coburg, Landkreis",
     "nuts_name" : "Coburg, Landkreis",
     "name_ascii" : "Coburg, Landkreis",
-    "name_html" : "Coburg, Landkreis",
-    "sort_order" : 257
+    "name_html" : "Coburg, Landkreis"
   },
-  {
-    "objectid" : 213,
-    "nuts_id" : "DE248",
+  "DE248": {
     "name_latin" : "Forchheim",
     "nuts_name" : "Forchheim",
     "name_ascii" : "Forchheim",
-    "name_html" : "Forchheim",
-    "sort_order" : 258
+    "name_html" : "Forchheim"
   },
-  {
-    "objectid" : 214,
-    "nuts_id" : "DE249",
+  "DE249": {
     "name_latin" : "Hof, Landkreis",
     "nuts_name" : "Hof, Landkreis",
     "name_ascii" : "Hof, Landkreis",
-    "name_html" : "Hof, Landkreis",
-    "sort_order" : 259
+    "name_html" : "Hof, Landkreis"
   },
-  {
-    "objectid" : 215,
-    "nuts_id" : "DE24A",
+  "DE24A": {
     "name_latin" : "Kronach",
     "nuts_name" : "Kronach",
     "name_ascii" : "Kronach",
-    "name_html" : "Kronach",
-    "sort_order" : 260
+    "name_html" : "Kronach"
   },
-  {
-    "objectid" : 216,
-    "nuts_id" : "DE24C",
+  "DE24C": {
     "name_latin" : "Lichtenfels",
     "nuts_name" : "Lichtenfels",
     "name_ascii" : "Lichtenfels",
-    "name_html" : "Lichtenfels",
-    "sort_order" : 262
+    "name_html" : "Lichtenfels"
   },
-  {
-    "objectid" : 217,
-    "nuts_id" : "DE24D",
+  "DE24D": {
     "name_latin" : "Wunsiedel i. Fichtelgebirge",
     "nuts_name" : "Wunsiedel i. Fichtelgebirge",
     "name_ascii" : "Wunsiedel i. Fichtelgebirge",
-    "name_html" : "Wunsiedel i. Fichtelgebirge",
-    "sort_order" : 263
+    "name_html" : "Wunsiedel i. Fichtelgebirge"
   },
-  {
-    "objectid" : 218,
-    "nuts_id" : "DE251",
+  "DE251": {
     "name_latin" : "Ansbach, Kreisfreie Stadt",
     "nuts_name" : "Ansbach, Kreisfreie Stadt",
     "name_ascii" : "Ansbach, Kreisfreie Stadt",
-    "name_html" : "Ansbach, Kreisfreie Stadt",
-    "sort_order" : 265
+    "name_html" : "Ansbach, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 219,
-    "nuts_id" : "DE252",
+  "DE252": {
     "name_latin" : "Erlangen, Kreisfreie Stadt",
     "nuts_name" : "Erlangen, Kreisfreie Stadt",
     "name_ascii" : "Erlangen, Kreisfreie Stadt",
-    "name_html" : "Erlangen, Kreisfreie Stadt",
-    "sort_order" : 266
+    "name_html" : "Erlangen, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 220,
-    "nuts_id" : "DE254",
+  "DE254": {
     "name_latin" : "Nürnberg, Kreisfreie Stadt",
     "nuts_name" : "Nürnberg, Kreisfreie Stadt",
     "name_ascii" : "Nurnberg, Kreisfreie Stadt",
-    "name_html" : "N&#x00FC;rnberg, Kreisfreie Stadt",
-    "sort_order" : 268
+    "name_html" : "N&#x00FC;rnberg, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 221,
-    "nuts_id" : "DE255",
+  "DE255": {
     "name_latin" : "Schwabach, Kreisfreie Stadt",
     "nuts_name" : "Schwabach, Kreisfreie Stadt",
     "name_ascii" : "Schwabach, Kreisfreie Stadt",
-    "name_html" : "Schwabach, Kreisfreie Stadt",
-    "sort_order" : 269
+    "name_html" : "Schwabach, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 222,
-    "nuts_id" : "DE256",
+  "DE256": {
     "name_latin" : "Ansbach, Landkreis",
     "nuts_name" : "Ansbach, Landkreis",
     "name_ascii" : "Ansbach, Landkreis",
-    "name_html" : "Ansbach, Landkreis",
-    "sort_order" : 270
+    "name_html" : "Ansbach, Landkreis"
   },
-  {
-    "objectid" : 223,
-    "nuts_id" : "DE257",
+  "DE257": {
     "name_latin" : "Erlangen-Höchstadt",
     "nuts_name" : "Erlangen-Höchstadt",
     "name_ascii" : "Erlangen-Hochstadt",
-    "name_html" : "Erlangen-H&#x00F6;chstadt",
-    "sort_order" : 271
+    "name_html" : "Erlangen-H&#x00F6;chstadt"
   },
-  {
-    "objectid" : 224,
-    "nuts_id" : "DE259",
+  "DE259": {
     "name_latin" : "Nürnberger Land",
     "nuts_name" : "Nürnberger Land",
     "name_ascii" : "Nurnberger Land",
-    "name_html" : "N&#x00FC;rnberger Land",
-    "sort_order" : 273
+    "name_html" : "N&#x00FC;rnberger Land"
   },
-  {
-    "objectid" : 225,
-    "nuts_id" : "DE25A",
+  "DE25A": {
     "name_latin" : "Neustadt a. d. Aisch-Bad Windsheim",
     "nuts_name" : "Neustadt a. d. Aisch-Bad Windsheim",
     "name_ascii" : "Neustadt a. d. Aisch-Bad Windsheim",
-    "name_html" : "Neustadt a. d. Aisch-Bad Windsheim",
-    "sort_order" : 274
+    "name_html" : "Neustadt a. d. Aisch-Bad Windsheim"
   },
-  {
-    "objectid" : 226,
-    "nuts_id" : "DE25B",
+  "DE25B": {
     "name_latin" : "Roth",
     "nuts_name" : "Roth",
     "name_ascii" : "Roth",
-    "name_html" : "Roth",
-    "sort_order" : 275
+    "name_html" : "Roth"
   },
-  {
-    "objectid" : 227,
-    "nuts_id" : "DE25C",
+  "DE25C": {
     "name_latin" : "Weißenburg-Gunzenhausen",
     "nuts_name" : "Weißenburg-Gunzenhausen",
     "name_ascii" : "Weissenburg-Gunzenhausen",
-    "name_html" : "Wei&#x00DF;enburg-Gunzenhausen",
-    "sort_order" : 276
+    "name_html" : "Wei&#x00DF;enburg-Gunzenhausen"
   },
-  {
-    "objectid" : 228,
-    "nuts_id" : "DE261",
+  "DE261": {
     "name_latin" : "Aschaffenburg, Kreisfreie Stadt",
     "nuts_name" : "Aschaffenburg, Kreisfreie Stadt",
     "name_ascii" : "Aschaffenburg, Kreisfreie Stadt",
-    "name_html" : "Aschaffenburg, Kreisfreie Stadt",
-    "sort_order" : 278
+    "name_html" : "Aschaffenburg, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 229,
-    "nuts_id" : "DE262",
+  "DE262": {
     "name_latin" : "Schweinfurt, Kreisfreie Stadt",
     "nuts_name" : "Schweinfurt, Kreisfreie Stadt",
     "name_ascii" : "Schweinfurt, Kreisfreie Stadt",
-    "name_html" : "Schweinfurt, Kreisfreie Stadt",
-    "sort_order" : 279
+    "name_html" : "Schweinfurt, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 230,
-    "nuts_id" : "DE264",
+  "DE264": {
     "name_latin" : "Aschaffenburg, Landkreis",
     "nuts_name" : "Aschaffenburg, Landkreis",
     "name_ascii" : "Aschaffenburg, Landkreis",
-    "name_html" : "Aschaffenburg, Landkreis",
-    "sort_order" : 281
+    "name_html" : "Aschaffenburg, Landkreis"
   },
-  {
-    "objectid" : 231,
-    "nuts_id" : "DE265",
+  "DE265": {
     "name_latin" : "Bad Kissingen",
     "nuts_name" : "Bad Kissingen",
     "name_ascii" : "Bad Kissingen",
-    "name_html" : "Bad Kissingen",
-    "sort_order" : 282
+    "name_html" : "Bad Kissingen"
   },
-  {
-    "objectid" : 232,
-    "nuts_id" : "DE266",
+  "DE266": {
     "name_latin" : "Rhön-Grabfeld",
     "nuts_name" : "Rhön-Grabfeld",
     "name_ascii" : "Rhon-Grabfeld",
-    "name_html" : "Rh&#x00F6;n-Grabfeld",
-    "sort_order" : 283
+    "name_html" : "Rh&#x00F6;n-Grabfeld"
   },
-  {
-    "objectid" : 233,
-    "nuts_id" : "DE267",
+  "DE267": {
     "name_latin" : "Haßberge",
     "nuts_name" : "Haßberge",
     "name_ascii" : "Hassberge",
-    "name_html" : "Ha&#x00DF;berge",
-    "sort_order" : 284
+    "name_html" : "Ha&#x00DF;berge"
   },
-  {
-    "objectid" : 234,
-    "nuts_id" : "DE268",
+  "DE268": {
     "name_latin" : "Kitzingen",
     "nuts_name" : "Kitzingen",
     "name_ascii" : "Kitzingen",
-    "name_html" : "Kitzingen",
-    "sort_order" : 285
+    "name_html" : "Kitzingen"
   },
-  {
-    "objectid" : 235,
-    "nuts_id" : "DE269",
+  "DE269": {
     "name_latin" : "Miltenberg",
     "nuts_name" : "Miltenberg",
     "name_ascii" : "Miltenberg",
-    "name_html" : "Miltenberg",
-    "sort_order" : 286
+    "name_html" : "Miltenberg"
   },
-  {
-    "objectid" : 236,
-    "nuts_id" : "DE26A",
+  "DE26A": {
     "name_latin" : "Main-Spessart",
     "nuts_name" : "Main-Spessart",
     "name_ascii" : "Main-Spessart",
-    "name_html" : "Main-Spessart",
-    "sort_order" : 287
+    "name_html" : "Main-Spessart"
   },
-  {
-    "objectid" : 237,
-    "nuts_id" : "DE26C",
+  "DE26C": {
     "name_latin" : "Würzburg, Landkreis",
     "nuts_name" : "Würzburg, Landkreis",
     "name_ascii" : "Wurzburg, Landkreis",
-    "name_html" : "W&#x00FC;rzburg, Landkreis",
-    "sort_order" : 289
+    "name_html" : "W&#x00FC;rzburg, Landkreis"
   },
-  {
-    "objectid" : 238,
-    "nuts_id" : "DE271",
+  "DE271": {
     "name_latin" : "Augsburg, Kreisfreie Stadt",
     "nuts_name" : "Augsburg, Kreisfreie Stadt",
     "name_ascii" : "Augsburg, Kreisfreie Stadt",
-    "name_html" : "Augsburg, Kreisfreie Stadt",
-    "sort_order" : 291
+    "name_html" : "Augsburg, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 239,
-    "nuts_id" : "DE272",
+  "DE272": {
     "name_latin" : "Kaufbeuren, Kreisfreie Stadt",
     "nuts_name" : "Kaufbeuren, Kreisfreie Stadt",
     "name_ascii" : "Kaufbeuren, Kreisfreie Stadt",
-    "name_html" : "Kaufbeuren, Kreisfreie Stadt",
-    "sort_order" : 292
+    "name_html" : "Kaufbeuren, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 240,
-    "nuts_id" : "DE274",
+  "DE274": {
     "name_latin" : "Memmingen, Kreisfreie Stadt",
     "nuts_name" : "Memmingen, Kreisfreie Stadt",
     "name_ascii" : "Memmingen, Kreisfreie Stadt",
-    "name_html" : "Memmingen, Kreisfreie Stadt",
-    "sort_order" : 294
+    "name_html" : "Memmingen, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 241,
-    "nuts_id" : "DE275",
+  "DE275": {
     "name_latin" : "Aichach-Friedberg",
     "nuts_name" : "Aichach-Friedberg",
     "name_ascii" : "Aichach-Friedberg",
-    "name_html" : "Aichach-Friedberg",
-    "sort_order" : 295
+    "name_html" : "Aichach-Friedberg"
   },
-  {
-    "objectid" : 242,
-    "nuts_id" : "DE276",
+  "DE276": {
     "name_latin" : "Augsburg, Landkreis",
     "nuts_name" : "Augsburg, Landkreis",
     "name_ascii" : "Augsburg, Landkreis",
-    "name_html" : "Augsburg, Landkreis",
-    "sort_order" : 296
+    "name_html" : "Augsburg, Landkreis"
   },
-  {
-    "objectid" : 243,
-    "nuts_id" : "DE277",
+  "DE277": {
     "name_latin" : "Dillingen a.d. Donau",
     "nuts_name" : "Dillingen a.d. Donau",
     "name_ascii" : "Dillingen a.d. Donau",
-    "name_html" : "Dillingen a.d. Donau",
-    "sort_order" : 297
+    "name_html" : "Dillingen a.d. Donau"
   },
-  {
-    "objectid" : 244,
-    "nuts_id" : "DE278",
+  "DE278": {
     "name_latin" : "Günzburg",
     "nuts_name" : "Günzburg",
     "name_ascii" : "Gunzburg",
-    "name_html" : "G&#x00FC;nzburg",
-    "sort_order" : 298
+    "name_html" : "G&#x00FC;nzburg"
   },
-  {
-    "objectid" : 245,
-    "nuts_id" : "DE279",
+  "DE279": {
     "name_latin" : "Neu-Ulm",
     "nuts_name" : "Neu-Ulm",
     "name_ascii" : "Neu-Ulm",
-    "name_html" : "Neu-Ulm",
-    "sort_order" : 299
+    "name_html" : "Neu-Ulm"
   },
-  {
-    "objectid" : 246,
-    "nuts_id" : "DE27A",
+  "DE27A": {
     "name_latin" : "Lindau (Bodensee)",
     "nuts_name" : "Lindau (Bodensee)",
     "name_ascii" : "Lindau (Bodensee)",
-    "name_html" : "Lindau (Bodensee)",
-    "sort_order" : 300
+    "name_html" : "Lindau (Bodensee)"
   },
-  {
-    "objectid" : 247,
-    "nuts_id" : "DE27B",
+  "DE27B": {
     "name_latin" : "Ostallgäu",
     "nuts_name" : "Ostallgäu",
     "name_ascii" : "Ostallgau",
-    "name_html" : "Ostallg&#x00E4;u",
-    "sort_order" : 301
+    "name_html" : "Ostallg&#x00E4;u"
   },
-  {
-    "objectid" : 248,
-    "nuts_id" : "DE27C",
+  "DE27C": {
     "name_latin" : "Unterallgäu",
     "nuts_name" : "Unterallgäu",
     "name_ascii" : "Unterallgau",
-    "name_html" : "Unterallg&#x00E4;u",
-    "sort_order" : 302
+    "name_html" : "Unterallg&#x00E4;u"
   },
-  {
-    "objectid" : 249,
-    "nuts_id" : "DE27D",
+  "DE27D": {
     "name_latin" : "Donau-Ries",
     "nuts_name" : "Donau-Ries",
     "name_ascii" : "Donau-Ries",
-    "name_html" : "Donau-Ries",
-    "sort_order" : 303
+    "name_html" : "Donau-Ries"
   },
-  {
-    "objectid" : 250,
-    "nuts_id" : "DE27E",
+  "DE27E": {
     "name_latin" : "Oberallgäu",
     "nuts_name" : "Oberallgäu",
     "name_ascii" : "Oberallgau",
-    "name_html" : "Oberallg&#x00E4;u",
-    "sort_order" : 304
+    "name_html" : "Oberallg&#x00E4;u"
   },
-  {
-    "objectid" : 251,
-    "nuts_id" : "DE300",
+  "DE300": {
     "name_latin" : "Berlin",
     "nuts_name" : "Berlin",
     "name_ascii" : "Berlin",
-    "name_html" : "Berlin",
-    "sort_order" : 307
+    "name_html" : "Berlin"
   },
-  {
-    "objectid" : 252,
-    "nuts_id" : "DE401",
+  "DE401": {
     "name_latin" : "Brandenburg an der Havel, Kreisfreie Stadt",
     "nuts_name" : "Brandenburg an der Havel, Kreisfreie Stadt",
     "name_ascii" : "Brandenburg an der Havel, Kreisfreie Stadt",
-    "name_html" : "Brandenburg an der Havel, Kreisfreie Stadt",
-    "sort_order" : 310
+    "name_html" : "Brandenburg an der Havel, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 253,
-    "nuts_id" : "DE402",
+  "DE402": {
     "name_latin" : "Cottbus, Kreisfreie Stadt",
     "nuts_name" : "Cottbus, Kreisfreie Stadt",
     "name_ascii" : "Cottbus, Kreisfreie Stadt",
-    "name_html" : "Cottbus, Kreisfreie Stadt",
-    "sort_order" : 311
+    "name_html" : "Cottbus, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 254,
-    "nuts_id" : "DE403",
+  "DE403": {
     "name_latin" : "Frankfurt (Oder), Kreisfreie Stadt",
     "nuts_name" : "Frankfurt (Oder), Kreisfreie Stadt",
     "name_ascii" : "Frankfurt (Oder), Kreisfreie Stadt",
-    "name_html" : "Frankfurt (Oder), Kreisfreie Stadt",
-    "sort_order" : 312
+    "name_html" : "Frankfurt (Oder), Kreisfreie Stadt"
   },
-  {
-    "objectid" : 255,
-    "nuts_id" : "DE404",
+  "DE404": {
     "name_latin" : "Potsdam, Kreisfreie Stadt",
     "nuts_name" : "Potsdam, Kreisfreie Stadt",
     "name_ascii" : "Potsdam, Kreisfreie Stadt",
-    "name_html" : "Potsdam, Kreisfreie Stadt",
-    "sort_order" : 313
+    "name_html" : "Potsdam, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 256,
-    "nuts_id" : "DE405",
+  "DE405": {
     "name_latin" : "Barnim",
     "nuts_name" : "Barnim",
     "name_ascii" : "Barnim",
-    "name_html" : "Barnim",
-    "sort_order" : 314
+    "name_html" : "Barnim"
   },
-  {
-    "objectid" : 257,
-    "nuts_id" : "DE407",
+  "DE407": {
     "name_latin" : "Elbe-Elster",
     "nuts_name" : "Elbe-Elster",
     "name_ascii" : "Elbe-Elster",
-    "name_html" : "Elbe-Elster",
-    "sort_order" : 316
+    "name_html" : "Elbe-Elster"
   },
-  {
-    "objectid" : 258,
-    "nuts_id" : "DE408",
+  "DE408": {
     "name_latin" : "Havelland",
     "nuts_name" : "Havelland",
     "name_ascii" : "Havelland",
-    "name_html" : "Havelland",
-    "sort_order" : 317
+    "name_html" : "Havelland"
   },
-  {
-    "objectid" : 259,
-    "nuts_id" : "DE409",
+  "DE409": {
     "name_latin" : "Märkisch-Oderland",
     "nuts_name" : "Märkisch-Oderland",
     "name_ascii" : "Markisch-Oderland",
-    "name_html" : "M&#x00E4;rkisch-Oderland",
-    "sort_order" : 318
+    "name_html" : "M&#x00E4;rkisch-Oderland"
   },
-  {
-    "objectid" : 260,
-    "nuts_id" : "DE40A",
+  "DE40A": {
     "name_latin" : "Oberhavel",
     "nuts_name" : "Oberhavel",
     "name_ascii" : "Oberhavel",
-    "name_html" : "Oberhavel",
-    "sort_order" : 319
+    "name_html" : "Oberhavel"
   },
-  {
-    "objectid" : 261,
-    "nuts_id" : "DE40B",
+  "DE40B": {
     "name_latin" : "Oberspreewald-Lausitz",
     "nuts_name" : "Oberspreewald-Lausitz",
     "name_ascii" : "Oberspreewald-Lausitz",
-    "name_html" : "Oberspreewald-Lausitz",
-    "sort_order" : 320
+    "name_html" : "Oberspreewald-Lausitz"
   },
-  {
-    "objectid" : 262,
-    "nuts_id" : "DE40D",
+  "DE40D": {
     "name_latin" : "Ostprignitz-Ruppin",
     "nuts_name" : "Ostprignitz-Ruppin",
     "name_ascii" : "Ostprignitz-Ruppin",
-    "name_html" : "Ostprignitz-Ruppin",
-    "sort_order" : 322
+    "name_html" : "Ostprignitz-Ruppin"
   },
-  {
-    "objectid" : 263,
-    "nuts_id" : "DE40E",
+  "DE40E": {
     "name_latin" : "Potsdam-Mittelmark",
     "nuts_name" : "Potsdam-Mittelmark",
     "name_ascii" : "Potsdam-Mittelmark",
-    "name_html" : "Potsdam-Mittelmark",
-    "sort_order" : 323
+    "name_html" : "Potsdam-Mittelmark"
   },
-  {
-    "objectid" : 264,
-    "nuts_id" : "DE40F",
+  "DE40F": {
     "name_latin" : "Prignitz",
     "nuts_name" : "Prignitz",
     "name_ascii" : "Prignitz",
-    "name_html" : "Prignitz",
-    "sort_order" : 324
+    "name_html" : "Prignitz"
   },
-  {
-    "objectid" : 265,
-    "nuts_id" : "DE40H",
+  "DE40H": {
     "name_latin" : "Teltow-Fläming",
     "nuts_name" : "Teltow-Fläming",
     "name_ascii" : "Teltow-Flaming",
-    "name_html" : "Teltow-Fl&#x00E4;ming",
-    "sort_order" : 326
+    "name_html" : "Teltow-Fl&#x00E4;ming"
   },
-  {
-    "objectid" : 266,
-    "nuts_id" : "DE40I",
+  "DE40I": {
     "name_latin" : "Uckermark",
     "nuts_name" : "Uckermark",
     "name_ascii" : "Uckermark",
-    "name_html" : "Uckermark",
-    "sort_order" : 327
+    "name_html" : "Uckermark"
   },
-  {
-    "objectid" : 267,
-    "nuts_id" : "DE501",
+  "DE501": {
     "name_latin" : "Bremen, Kreisfreie Stadt",
     "nuts_name" : "Bremen, Kreisfreie Stadt",
     "name_ascii" : "Bremen, Kreisfreie Stadt",
-    "name_html" : "Bremen, Kreisfreie Stadt",
-    "sort_order" : 330
+    "name_html" : "Bremen, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 268,
-    "nuts_id" : "DE600",
+  "DE600": {
     "name_latin" : "Hamburg",
     "nuts_name" : "Hamburg",
     "name_ascii" : "Hamburg",
-    "name_html" : "Hamburg",
-    "sort_order" : 334
+    "name_html" : "Hamburg"
   },
-  {
-    "objectid" : 269,
-    "nuts_id" : "DE711",
+  "DE711": {
     "name_latin" : "Darmstadt, Kreisfreie Stadt",
     "nuts_name" : "Darmstadt, Kreisfreie Stadt",
     "name_ascii" : "Darmstadt, Kreisfreie Stadt",
-    "name_html" : "Darmstadt, Kreisfreie Stadt",
-    "sort_order" : 337
+    "name_html" : "Darmstadt, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 270,
-    "nuts_id" : "DE712",
+  "DE712": {
     "name_latin" : "Frankfurt am Main, Kreisfreie Stadt",
     "nuts_name" : "Frankfurt am Main, Kreisfreie Stadt",
     "name_ascii" : "Frankfurt am Main, Kreisfreie Stadt",
-    "name_html" : "Frankfurt am Main, Kreisfreie Stadt",
-    "sort_order" : 338
+    "name_html" : "Frankfurt am Main, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 271,
-    "nuts_id" : "DE714",
+  "DE714": {
     "name_latin" : "Wiesbaden, Kreisfreie Stadt",
     "nuts_name" : "Wiesbaden, Kreisfreie Stadt",
     "name_ascii" : "Wiesbaden, Kreisfreie Stadt",
-    "name_html" : "Wiesbaden, Kreisfreie Stadt",
-    "sort_order" : 340
+    "name_html" : "Wiesbaden, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 272,
-    "nuts_id" : "DE715",
+  "DE715": {
     "name_latin" : "Bergstraße",
     "nuts_name" : "Bergstraße",
     "name_ascii" : "Bergstrasse",
-    "name_html" : "Bergstra&#x00DF;e",
-    "sort_order" : 341
+    "name_html" : "Bergstra&#x00DF;e"
   },
-  {
-    "objectid" : 273,
-    "nuts_id" : "DE716",
+  "DE716": {
     "name_latin" : "Darmstadt-Dieburg",
     "nuts_name" : "Darmstadt-Dieburg",
     "name_ascii" : "Darmstadt-Dieburg",
-    "name_html" : "Darmstadt-Dieburg",
-    "sort_order" : 342
+    "name_html" : "Darmstadt-Dieburg"
   },
-  {
-    "objectid" : 274,
-    "nuts_id" : "DE717",
+  "DE717": {
     "name_latin" : "Groß-Gerau",
     "nuts_name" : "Groß-Gerau",
     "name_ascii" : "Gross-Gerau",
-    "name_html" : "Gro&#x00DF;-Gerau",
-    "sort_order" : 343
+    "name_html" : "Gro&#x00DF;-Gerau"
   },
-  {
-    "objectid" : 275,
-    "nuts_id" : "DE718",
+  "DE718": {
     "name_latin" : "Hochtaunuskreis",
     "nuts_name" : "Hochtaunuskreis",
     "name_ascii" : "Hochtaunuskreis",
-    "name_html" : "Hochtaunuskreis",
-    "sort_order" : 344
+    "name_html" : "Hochtaunuskreis"
   },
-  {
-    "objectid" : 276,
-    "nuts_id" : "DE719",
+  "DE719": {
     "name_latin" : "Main-Kinzig-Kreis",
     "nuts_name" : "Main-Kinzig-Kreis",
     "name_ascii" : "Main-Kinzig-Kreis",
-    "name_html" : "Main-Kinzig-Kreis",
-    "sort_order" : 345
+    "name_html" : "Main-Kinzig-Kreis"
   },
-  {
-    "objectid" : 277,
-    "nuts_id" : "DE71A",
+  "DE71A": {
     "name_latin" : "Main-Taunus-Kreis",
     "nuts_name" : "Main-Taunus-Kreis",
     "name_ascii" : "Main-Taunus-Kreis",
-    "name_html" : "Main-Taunus-Kreis",
-    "sort_order" : 346
+    "name_html" : "Main-Taunus-Kreis"
   },
-  {
-    "objectid" : 278,
-    "nuts_id" : "DE71B",
+  "DE71B": {
     "name_latin" : "Odenwaldkreis",
     "nuts_name" : "Odenwaldkreis",
     "name_ascii" : "Odenwaldkreis",
-    "name_html" : "Odenwaldkreis",
-    "sort_order" : 347
+    "name_html" : "Odenwaldkreis"
   },
-  {
-    "objectid" : 279,
-    "nuts_id" : "DE71C",
+  "DE71C": {
     "name_latin" : "Offenbach, Landkreis",
     "nuts_name" : "Offenbach, Landkreis",
     "name_ascii" : "Offenbach, Landkreis",
-    "name_html" : "Offenbach, Landkreis",
-    "sort_order" : 348
+    "name_html" : "Offenbach, Landkreis"
   },
-  {
-    "objectid" : 280,
-    "nuts_id" : "DE71E",
+  "DE71E": {
     "name_latin" : "Wetteraukreis",
     "nuts_name" : "Wetteraukreis",
     "name_ascii" : "Wetteraukreis",
-    "name_html" : "Wetteraukreis",
-    "sort_order" : 350
+    "name_html" : "Wetteraukreis"
   },
-  {
-    "objectid" : 281,
-    "nuts_id" : "DE721",
+  "DE721": {
     "name_latin" : "Gießen, Landkreis",
     "nuts_name" : "Gießen, Landkreis",
     "name_ascii" : "Giessen, Landkreis",
-    "name_html" : "Gie&#x00DF;en, Landkreis",
-    "sort_order" : 352
+    "name_html" : "Gie&#x00DF;en, Landkreis"
   },
-  {
-    "objectid" : 282,
-    "nuts_id" : "DE722",
+  "DE722": {
     "name_latin" : "Lahn-Dill-Kreis",
     "nuts_name" : "Lahn-Dill-Kreis",
     "name_ascii" : "Lahn-Dill-Kreis",
-    "name_html" : "Lahn-Dill-Kreis",
-    "sort_order" : 353
+    "name_html" : "Lahn-Dill-Kreis"
   },
-  {
-    "objectid" : 283,
-    "nuts_id" : "DE723",
+  "DE723": {
     "name_latin" : "Limburg-Weilburg",
     "nuts_name" : "Limburg-Weilburg",
     "name_ascii" : "Limburg-Weilburg",
-    "name_html" : "Limburg-Weilburg",
-    "sort_order" : 354
+    "name_html" : "Limburg-Weilburg"
   },
-  {
-    "objectid" : 284,
-    "nuts_id" : "DE725",
+  "DE725": {
     "name_latin" : "Vogelsbergkreis",
     "nuts_name" : "Vogelsbergkreis",
     "name_ascii" : "Vogelsbergkreis",
-    "name_html" : "Vogelsbergkreis",
-    "sort_order" : 356
+    "name_html" : "Vogelsbergkreis"
   },
-  {
-    "objectid" : 285,
-    "nuts_id" : "DE731",
+  "DE731": {
     "name_latin" : "Kassel, Kreisfreie Stadt",
     "nuts_name" : "Kassel, Kreisfreie Stadt",
     "name_ascii" : "Kassel, Kreisfreie Stadt",
-    "name_html" : "Kassel, Kreisfreie Stadt",
-    "sort_order" : 358
+    "name_html" : "Kassel, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 286,
-    "nuts_id" : "DE732",
+  "DE732": {
     "name_latin" : "Fulda",
     "nuts_name" : "Fulda",
     "name_ascii" : "Fulda",
-    "name_html" : "Fulda",
-    "sort_order" : 359
+    "name_html" : "Fulda"
   },
-  {
-    "objectid" : 287,
-    "nuts_id" : "DE733",
+  "DE733": {
     "name_latin" : "Hersfeld-Rotenburg",
     "nuts_name" : "Hersfeld-Rotenburg",
     "name_ascii" : "Hersfeld-Rotenburg",
-    "name_html" : "Hersfeld-Rotenburg",
-    "sort_order" : 360
+    "name_html" : "Hersfeld-Rotenburg"
   },
-  {
-    "objectid" : 288,
-    "nuts_id" : "DE734",
+  "DE734": {
     "name_latin" : "Kassel, Landkreis",
     "nuts_name" : "Kassel, Landkreis",
     "name_ascii" : "Kassel, Landkreis",
-    "name_html" : "Kassel, Landkreis",
-    "sort_order" : 361
+    "name_html" : "Kassel, Landkreis"
   },
-  {
-    "objectid" : 289,
-    "nuts_id" : "DE736",
+  "DE736": {
     "name_latin" : "Waldeck-Frankenberg",
     "nuts_name" : "Waldeck-Frankenberg",
     "name_ascii" : "Waldeck-Frankenberg",
-    "name_html" : "Waldeck-Frankenberg",
-    "sort_order" : 363
+    "name_html" : "Waldeck-Frankenberg"
   },
-  {
-    "objectid" : 290,
-    "nuts_id" : "DE737",
+  "DE737": {
     "name_latin" : "Werra-Meißner-Kreis",
     "nuts_name" : "Werra-Meißner-Kreis",
     "name_ascii" : "Werra-Meissner-Kreis",
-    "name_html" : "Werra-Mei&#x00DF;ner-Kreis",
-    "sort_order" : 364
+    "name_html" : "Werra-Mei&#x00DF;ner-Kreis"
   },
-  {
-    "objectid" : 291,
-    "nuts_id" : "DE804",
+  "DE804": {
     "name_latin" : "Schwerin, Kreisfreie Stadt",
     "nuts_name" : "Schwerin, Kreisfreie Stadt",
     "name_ascii" : "Schwerin, Kreisfreie Stadt",
-    "name_html" : "Schwerin, Kreisfreie Stadt",
-    "sort_order" : 368
+    "name_html" : "Schwerin, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 292,
-    "nuts_id" : "DE80J",
+  "DE80J": {
     "name_latin" : "Mecklenburgische Seenplatte",
     "nuts_name" : "Mecklenburgische Seenplatte",
     "name_ascii" : "Mecklenburgische Seenplatte",
-    "name_html" : "Mecklenburgische Seenplatte",
-    "sort_order" : 369
+    "name_html" : "Mecklenburgische Seenplatte"
   },
-  {
-    "objectid" : 293,
-    "nuts_id" : "DE80K",
+  "DE80K": {
     "name_latin" : "Landkreis Rostock",
     "nuts_name" : "Landkreis Rostock",
     "name_ascii" : "Landkreis Rostock",
-    "name_html" : "Landkreis Rostock",
-    "sort_order" : 370
+    "name_html" : "Landkreis Rostock"
   },
-  {
-    "objectid" : 294,
-    "nuts_id" : "DE80L",
+  "DE80L": {
     "name_latin" : "Vorpommern-Rügen",
     "nuts_name" : "Vorpommern-Rügen",
     "name_ascii" : "Vorpommern-Rugen",
-    "name_html" : "Vorpommern-R&#x00FC;gen",
-    "sort_order" : 371
+    "name_html" : "Vorpommern-R&#x00FC;gen"
   },
-  {
-    "objectid" : 295,
-    "nuts_id" : "DE80N",
+  "DE80N": {
     "name_latin" : "Vorpommern-Greifswald",
     "nuts_name" : "Vorpommern-Greifswald",
     "name_ascii" : "Vorpommern-Greifswald",
-    "name_html" : "Vorpommern-Greifswald",
-    "sort_order" : 373
+    "name_html" : "Vorpommern-Greifswald"
   },
-  {
-    "objectid" : 296,
-    "nuts_id" : "DE80O",
+  "DE80O": {
     "name_latin" : "Ludwigslust-Parchim",
     "nuts_name" : "Ludwigslust-Parchim",
     "name_ascii" : "Ludwigslust-Parchim",
-    "name_html" : "Ludwigslust-Parchim",
-    "sort_order" : 374
+    "name_html" : "Ludwigslust-Parchim"
   },
-  {
-    "objectid" : 297,
-    "nuts_id" : "DE911",
+  "DE911": {
     "name_latin" : "Braunschweig, Kreisfreie Stadt",
     "nuts_name" : "Braunschweig, Kreisfreie Stadt",
     "name_ascii" : "Braunschweig, Kreisfreie Stadt",
-    "name_html" : "Braunschweig, Kreisfreie Stadt",
-    "sort_order" : 377
+    "name_html" : "Braunschweig, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 298,
-    "nuts_id" : "DE913",
+  "DE913": {
     "name_latin" : "Wolfsburg, Kreisfreie Stadt",
     "nuts_name" : "Wolfsburg, Kreisfreie Stadt",
     "name_ascii" : "Wolfsburg, Kreisfreie Stadt",
-    "name_html" : "Wolfsburg, Kreisfreie Stadt",
-    "sort_order" : 379
+    "name_html" : "Wolfsburg, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 299,
-    "nuts_id" : "DE914",
+  "DE914": {
     "name_latin" : "Gifhorn",
     "nuts_name" : "Gifhorn",
     "name_ascii" : "Gifhorn",
-    "name_html" : "Gifhorn",
-    "sort_order" : 380
+    "name_html" : "Gifhorn"
   },
-  {
-    "objectid" : 300,
-    "nuts_id" : "DE915",
+  "DE915": {
     "name_latin" : "Göttingen",
     "nuts_name" : "Göttingen",
     "name_ascii" : "Gottingen",
-    "name_html" : "G&#x00F6;ttingen",
-    "sort_order" : 381
+    "name_html" : "G&#x00F6;ttingen"
   },
-  {
-    "objectid" : 301,
-    "nuts_id" : "DE916",
+  "DE916": {
     "name_latin" : "Goslar",
     "nuts_name" : "Goslar",
     "name_ascii" : "Goslar",
-    "name_html" : "Goslar",
-    "sort_order" : 382
+    "name_html" : "Goslar"
   },
-  {
-    "objectid" : 302,
-    "nuts_id" : "DE917",
+  "DE917": {
     "name_latin" : "Helmstedt",
     "nuts_name" : "Helmstedt",
     "name_ascii" : "Helmstedt",
-    "name_html" : "Helmstedt",
-    "sort_order" : 383
+    "name_html" : "Helmstedt"
   },
-  {
-    "objectid" : 303,
-    "nuts_id" : "DE918",
+  "DE918": {
     "name_latin" : "Northeim",
     "nuts_name" : "Northeim",
     "name_ascii" : "Northeim",
-    "name_html" : "Northeim",
-    "sort_order" : 384
+    "name_html" : "Northeim"
   },
-  {
-    "objectid" : 304,
-    "nuts_id" : "DE919",
+  "DE919": {
     "name_latin" : "Osterode am Harz",
     "nuts_name" : "Osterode am Harz",
     "name_ascii" : "Osterode am Harz",
-    "name_html" : "Osterode am Harz",
-    "sort_order" : 385
+    "name_html" : "Osterode am Harz"
   },
-  {
-    "objectid" : 305,
-    "nuts_id" : "DE91A",
+  "DE91A": {
     "name_latin" : "Peine",
     "nuts_name" : "Peine",
     "name_ascii" : "Peine",
-    "name_html" : "Peine",
-    "sort_order" : 386
+    "name_html" : "Peine"
   },
-  {
-    "objectid" : 306,
-    "nuts_id" : "DE91B",
+  "DE91B": {
     "name_latin" : "Wolfenbüttel",
     "nuts_name" : "Wolfenbüttel",
     "name_ascii" : "Wolfenbuttel",
-    "name_html" : "Wolfenb&#x00FC;ttel",
-    "sort_order" : 387
+    "name_html" : "Wolfenb&#x00FC;ttel"
   },
-  {
-    "objectid" : 307,
-    "nuts_id" : "DE922",
+  "DE922": {
     "name_latin" : "Diepholz",
     "nuts_name" : "Diepholz",
     "name_ascii" : "Diepholz",
-    "name_html" : "Diepholz",
-    "sort_order" : 389
+    "name_html" : "Diepholz"
   },
-  {
-    "objectid" : 308,
-    "nuts_id" : "DE923",
+  "DE923": {
     "name_latin" : "Hameln-Pyrmont",
     "nuts_name" : "Hameln-Pyrmont",
     "name_ascii" : "Hameln-Pyrmont",
-    "name_html" : "Hameln-Pyrmont",
-    "sort_order" : 390
+    "name_html" : "Hameln-Pyrmont"
   },
-  {
-    "objectid" : 309,
-    "nuts_id" : "DE925",
+  "DE925": {
     "name_latin" : "Hildesheim",
     "nuts_name" : "Hildesheim",
     "name_ascii" : "Hildesheim",
-    "name_html" : "Hildesheim",
-    "sort_order" : 391
+    "name_html" : "Hildesheim"
   },
-  {
-    "objectid" : 310,
-    "nuts_id" : "DE926",
+  "DE926": {
     "name_latin" : "Holzminden",
     "nuts_name" : "Holzminden",
     "name_ascii" : "Holzminden",
-    "name_html" : "Holzminden",
-    "sort_order" : 392
+    "name_html" : "Holzminden"
   },
-  {
-    "objectid" : 311,
-    "nuts_id" : "DE927",
+  "DE927": {
     "name_latin" : "Nienburg (Weser)",
     "nuts_name" : "Nienburg (Weser)",
     "name_ascii" : "Nienburg (Weser)",
-    "name_html" : "Nienburg (Weser)",
-    "sort_order" : 393
+    "name_html" : "Nienburg (Weser)"
   },
-  {
-    "objectid" : 312,
-    "nuts_id" : "DE928",
+  "DE928": {
     "name_latin" : "Schaumburg",
     "nuts_name" : "Schaumburg",
     "name_ascii" : "Schaumburg",
-    "name_html" : "Schaumburg",
-    "sort_order" : 394
+    "name_html" : "Schaumburg"
   },
-  {
-    "objectid" : 313,
-    "nuts_id" : "DE929",
+  "DE929": {
     "name_latin" : "Region Hannover",
     "nuts_name" : "Region Hannover",
     "name_ascii" : "Region Hannover",
-    "name_html" : "Region Hannover",
-    "sort_order" : 395
+    "name_html" : "Region Hannover"
   },
-  {
-    "objectid" : 314,
-    "nuts_id" : "DE931",
+  "DE931": {
     "name_latin" : "Celle",
     "nuts_name" : "Celle",
     "name_ascii" : "Celle",
-    "name_html" : "Celle",
-    "sort_order" : 397
+    "name_html" : "Celle"
   },
-  {
-    "objectid" : 315,
-    "nuts_id" : "DE932",
+  "DE932": {
     "name_latin" : "Cuxhaven",
     "nuts_name" : "Cuxhaven",
     "name_ascii" : "Cuxhaven",
-    "name_html" : "Cuxhaven",
-    "sort_order" : 398
+    "name_html" : "Cuxhaven"
   },
-  {
-    "objectid" : 316,
-    "nuts_id" : "DE933",
+  "DE933": {
     "name_latin" : "Harburg",
     "nuts_name" : "Harburg",
     "name_ascii" : "Harburg",
-    "name_html" : "Harburg",
-    "sort_order" : 399
+    "name_html" : "Harburg"
   },
-  {
-    "objectid" : 317,
-    "nuts_id" : "DE934",
+  "DE934": {
     "name_latin" : "Lüchow-Dannenberg",
     "nuts_name" : "Lüchow-Dannenberg",
     "name_ascii" : "Luchow-Dannenberg",
-    "name_html" : "L&#x00FC;chow-Dannenberg",
-    "sort_order" : 400
+    "name_html" : "L&#x00FC;chow-Dannenberg"
   },
-  {
-    "objectid" : 318,
-    "nuts_id" : "DE935",
+  "DE935": {
     "name_latin" : "Lüneburg, Landkreis",
     "nuts_name" : "Lüneburg, Landkreis",
     "name_ascii" : "Luneburg, Landkreis",
-    "name_html" : "L&#x00FC;neburg, Landkreis",
-    "sort_order" : 401
+    "name_html" : "L&#x00FC;neburg, Landkreis"
   },
-  {
-    "objectid" : 319,
-    "nuts_id" : "DE936",
+  "DE936": {
     "name_latin" : "Osterholz",
     "nuts_name" : "Osterholz",
     "name_ascii" : "Osterholz",
-    "name_html" : "Osterholz",
-    "sort_order" : 402
+    "name_html" : "Osterholz"
   },
-  {
-    "objectid" : 320,
-    "nuts_id" : "DE937",
+  "DE937": {
     "name_latin" : "Rotenburg (Wümme)",
     "nuts_name" : "Rotenburg (Wümme)",
     "name_ascii" : "Rotenburg (Wumme)",
-    "name_html" : "Rotenburg (W&#x00FC;mme)",
-    "sort_order" : 403
+    "name_html" : "Rotenburg (W&#x00FC;mme)"
   },
-  {
-    "objectid" : 321,
-    "nuts_id" : "DE938",
+  "DE938": {
     "name_latin" : "Heidekreis",
     "nuts_name" : "Heidekreis",
     "name_ascii" : "Heidekreis",
-    "name_html" : "Heidekreis",
-    "sort_order" : 404
+    "name_html" : "Heidekreis"
   },
-  {
-    "objectid" : 322,
-    "nuts_id" : "DE939",
+  "DE939": {
     "name_latin" : "Stade",
     "nuts_name" : "Stade",
     "name_ascii" : "Stade",
-    "name_html" : "Stade",
-    "sort_order" : 405
+    "name_html" : "Stade"
   },
-  {
-    "objectid" : 323,
-    "nuts_id" : "DE93A",
+  "DE93A": {
     "name_latin" : "Uelzen",
     "nuts_name" : "Uelzen",
     "name_ascii" : "Uelzen",
-    "name_html" : "Uelzen",
-    "sort_order" : 406
+    "name_html" : "Uelzen"
   },
-  {
-    "objectid" : 324,
-    "nuts_id" : "DE93B",
+  "DE93B": {
     "name_latin" : "Verden",
     "nuts_name" : "Verden",
     "name_ascii" : "Verden",
-    "name_html" : "Verden",
-    "sort_order" : 407
+    "name_html" : "Verden"
   },
-  {
-    "objectid" : 325,
-    "nuts_id" : "DE941",
+  "DE941": {
     "name_latin" : "Delmenhorst, Kreisfreie Stadt",
     "nuts_name" : "Delmenhorst, Kreisfreie Stadt",
     "name_ascii" : "Delmenhorst, Kreisfreie Stadt",
-    "name_html" : "Delmenhorst, Kreisfreie Stadt",
-    "sort_order" : 409
+    "name_html" : "Delmenhorst, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 326,
-    "nuts_id" : "DE942",
+  "DE942": {
     "name_latin" : "Emden, Kreisfreie Stadt",
     "nuts_name" : "Emden, Kreisfreie Stadt",
     "name_ascii" : "Emden, Kreisfreie Stadt",
-    "name_html" : "Emden, Kreisfreie Stadt",
-    "sort_order" : 410
+    "name_html" : "Emden, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 327,
-    "nuts_id" : "DE944",
+  "DE944": {
     "name_latin" : "Osnabrück, Kreisfreie Stadt",
     "nuts_name" : "Osnabrück, Kreisfreie Stadt",
     "name_ascii" : "Osnabruck, Kreisfreie Stadt",
-    "name_html" : "Osnabr&#x00FC;ck, Kreisfreie Stadt",
-    "sort_order" : 412
+    "name_html" : "Osnabr&#x00FC;ck, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 328,
-    "nuts_id" : "DE945",
+  "DE945": {
     "name_latin" : "Wilhelmshaven, Kreisfreie Stadt",
     "nuts_name" : "Wilhelmshaven, Kreisfreie Stadt",
     "name_ascii" : "Wilhelmshaven, Kreisfreie Stadt",
-    "name_html" : "Wilhelmshaven, Kreisfreie Stadt",
-    "sort_order" : 413
+    "name_html" : "Wilhelmshaven, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 329,
-    "nuts_id" : "DE946",
+  "DE946": {
     "name_latin" : "Ammerland",
     "nuts_name" : "Ammerland",
     "name_ascii" : "Ammerland",
-    "name_html" : "Ammerland",
-    "sort_order" : 414
+    "name_html" : "Ammerland"
   },
-  {
-    "objectid" : 330,
-    "nuts_id" : "DE947",
+  "DE947": {
     "name_latin" : "Aurich",
     "nuts_name" : "Aurich",
     "name_ascii" : "Aurich",
-    "name_html" : "Aurich",
-    "sort_order" : 415
+    "name_html" : "Aurich"
   },
-  {
-    "objectid" : 331,
-    "nuts_id" : "DE948",
+  "DE948": {
     "name_latin" : "Cloppenburg",
     "nuts_name" : "Cloppenburg",
     "name_ascii" : "Cloppenburg",
-    "name_html" : "Cloppenburg",
-    "sort_order" : 416
+    "name_html" : "Cloppenburg"
   },
-  {
-    "objectid" : 332,
-    "nuts_id" : "DE949",
+  "DE949": {
     "name_latin" : "Emsland",
     "nuts_name" : "Emsland",
     "name_ascii" : "Emsland",
-    "name_html" : "Emsland",
-    "sort_order" : 417
+    "name_html" : "Emsland"
   },
-  {
-    "objectid" : 333,
-    "nuts_id" : "DE94A",
+  "DE94A": {
     "name_latin" : "Friesland (DE)",
     "nuts_name" : "Friesland (DE)",
     "name_ascii" : "Friesland (DE)",
-    "name_html" : "Friesland (DE)",
-    "sort_order" : 418
+    "name_html" : "Friesland (DE)"
   },
-  {
-    "objectid" : 334,
-    "nuts_id" : "DE94B",
+  "DE94B": {
     "name_latin" : "Grafschaft Bentheim",
     "nuts_name" : "Grafschaft Bentheim",
     "name_ascii" : "Grafschaft Bentheim",
-    "name_html" : "Grafschaft Bentheim",
-    "sort_order" : 419
+    "name_html" : "Grafschaft Bentheim"
   },
-  {
-    "objectid" : 335,
-    "nuts_id" : "DE94C",
+  "DE94C": {
     "name_latin" : "Leer",
     "nuts_name" : "Leer",
     "name_ascii" : "Leer",
-    "name_html" : "Leer",
-    "sort_order" : 420
+    "name_html" : "Leer"
   },
-  {
-    "objectid" : 336,
-    "nuts_id" : "DE94D",
+  "DE94D": {
     "name_latin" : "Oldenburg, Landkreis",
     "nuts_name" : "Oldenburg, Landkreis",
     "name_ascii" : "Oldenburg, Landkreis",
-    "name_html" : "Oldenburg, Landkreis",
-    "sort_order" : 421
+    "name_html" : "Oldenburg, Landkreis"
   },
-  {
-    "objectid" : 337,
-    "nuts_id" : "DE94F",
+  "DE94F": {
     "name_latin" : "Vechta",
     "nuts_name" : "Vechta",
     "name_ascii" : "Vechta",
-    "name_html" : "Vechta",
-    "sort_order" : 423
+    "name_html" : "Vechta"
   },
-  {
-    "objectid" : 338,
-    "nuts_id" : "DE94G",
+  "DE94G": {
     "name_latin" : "Wesermarsch",
     "nuts_name" : "Wesermarsch",
     "name_ascii" : "Wesermarsch",
-    "name_html" : "Wesermarsch",
-    "sort_order" : 424
+    "name_html" : "Wesermarsch"
   },
-  {
-    "objectid" : 339,
-    "nuts_id" : "DE94H",
+  "DE94H": {
     "name_latin" : "Wittmund",
     "nuts_name" : "Wittmund",
     "name_ascii" : "Wittmund",
-    "name_html" : "Wittmund",
-    "sort_order" : 425
+    "name_html" : "Wittmund"
   },
-  {
-    "objectid" : 340,
-    "nuts_id" : "DEA11",
+  "DEA11": {
     "name_latin" : "Düsseldorf, Kreisfreie Stadt",
     "nuts_name" : "Düsseldorf, Kreisfreie Stadt",
     "name_ascii" : "Dusseldorf, Kreisfreie Stadt",
-    "name_html" : "D&#x00FC;sseldorf, Kreisfreie Stadt",
-    "sort_order" : 428
+    "name_html" : "D&#x00FC;sseldorf, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 341,
-    "nuts_id" : "DEA13",
+  "DEA13": {
     "name_latin" : "Essen, Kreisfreie Stadt",
     "nuts_name" : "Essen, Kreisfreie Stadt",
     "name_ascii" : "Essen, Kreisfreie Stadt",
-    "name_html" : "Essen, Kreisfreie Stadt",
-    "sort_order" : 430
+    "name_html" : "Essen, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 342,
-    "nuts_id" : "DEA14",
+  "DEA14": {
     "name_latin" : "Krefeld, Kreisfreie Stadt",
     "nuts_name" : "Krefeld, Kreisfreie Stadt",
     "name_ascii" : "Krefeld, Kreisfreie Stadt",
-    "name_html" : "Krefeld, Kreisfreie Stadt",
-    "sort_order" : 431
+    "name_html" : "Krefeld, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 343,
-    "nuts_id" : "DEA15",
+  "DEA15": {
     "name_latin" : "Mönchengladbach, Kreisfreie Stadt",
     "nuts_name" : "Mönchengladbach, Kreisfreie Stadt",
     "name_ascii" : "Monchengladbach, Kreisfreie Stadt",
-    "name_html" : "M&#x00F6;nchengladbach, Kreisfreie Stadt",
-    "sort_order" : 432
+    "name_html" : "M&#x00F6;nchengladbach, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 344,
-    "nuts_id" : "DEA17",
+  "DEA17": {
     "name_latin" : "Oberhausen, Kreisfreie Stadt",
     "nuts_name" : "Oberhausen, Kreisfreie Stadt",
     "name_ascii" : "Oberhausen, Kreisfreie Stadt",
-    "name_html" : "Oberhausen, Kreisfreie Stadt",
-    "sort_order" : 434
+    "name_html" : "Oberhausen, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 345,
-    "nuts_id" : "DEA18",
+  "DEA18": {
     "name_latin" : "Remscheid, Kreisfreie Stadt",
     "nuts_name" : "Remscheid, Kreisfreie Stadt",
     "name_ascii" : "Remscheid, Kreisfreie Stadt",
-    "name_html" : "Remscheid, Kreisfreie Stadt",
-    "sort_order" : 435
+    "name_html" : "Remscheid, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 346,
-    "nuts_id" : "DEA19",
+  "DEA19": {
     "name_latin" : "Solingen, Kreisfreie Stadt",
     "nuts_name" : "Solingen, Kreisfreie Stadt",
     "name_ascii" : "Solingen, Kreisfreie Stadt",
-    "name_html" : "Solingen, Kreisfreie Stadt",
-    "sort_order" : 436
+    "name_html" : "Solingen, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 347,
-    "nuts_id" : "DEA1A",
+  "DEA1A": {
     "name_latin" : "Wuppertal, Kreisfreie Stadt",
     "nuts_name" : "Wuppertal, Kreisfreie Stadt",
     "name_ascii" : "Wuppertal, Kreisfreie Stadt",
-    "name_html" : "Wuppertal, Kreisfreie Stadt",
-    "sort_order" : 437
+    "name_html" : "Wuppertal, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 348,
-    "nuts_id" : "DEA1B",
+  "DEA1B": {
     "name_latin" : "Kleve",
     "nuts_name" : "Kleve",
     "name_ascii" : "Kleve",
-    "name_html" : "Kleve",
-    "sort_order" : 438
+    "name_html" : "Kleve"
   },
-  {
-    "objectid" : 349,
-    "nuts_id" : "DEA1C",
+  "DEA1C": {
     "name_latin" : "Mettmann",
     "nuts_name" : "Mettmann",
     "name_ascii" : "Mettmann",
-    "name_html" : "Mettmann",
-    "sort_order" : 439
+    "name_html" : "Mettmann"
   },
-  {
-    "objectid" : 350,
-    "nuts_id" : "DEA1D",
+  "DEA1D": {
     "name_latin" : "Rhein-Kreis Neuss",
     "nuts_name" : "Rhein-Kreis Neuss",
     "name_ascii" : "Rhein-Kreis Neuss",
-    "name_html" : "Rhein-Kreis Neuss",
-    "sort_order" : 440
+    "name_html" : "Rhein-Kreis Neuss"
   },
-  {
-    "objectid" : 351,
-    "nuts_id" : "DEA1E",
+  "DEA1E": {
     "name_latin" : "Viersen",
     "nuts_name" : "Viersen",
     "name_ascii" : "Viersen",
-    "name_html" : "Viersen",
-    "sort_order" : 441
+    "name_html" : "Viersen"
   },
-  {
-    "objectid" : 352,
-    "nuts_id" : "DEA1F",
+  "DEA1F": {
     "name_latin" : "Wesel",
     "nuts_name" : "Wesel",
     "name_ascii" : "Wesel",
-    "name_html" : "Wesel",
-    "sort_order" : 442
+    "name_html" : "Wesel"
   },
-  {
-    "objectid" : 353,
-    "nuts_id" : "DEA23",
+  "DEA23": {
     "name_latin" : "Köln, Kreisfreie Stadt",
     "nuts_name" : "Köln, Kreisfreie Stadt",
     "name_ascii" : "Koln, Kreisfreie Stadt",
-    "name_html" : "K&#x00F6;ln, Kreisfreie Stadt",
-    "sort_order" : 445
+    "name_html" : "K&#x00F6;ln, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 354,
-    "nuts_id" : "DEA24",
+  "DEA24": {
     "name_latin" : "Leverkusen, Kreisfreie Stadt",
     "nuts_name" : "Leverkusen, Kreisfreie Stadt",
     "name_ascii" : "Leverkusen, Kreisfreie Stadt",
-    "name_html" : "Leverkusen, Kreisfreie Stadt",
-    "sort_order" : 446
+    "name_html" : "Leverkusen, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 355,
-    "nuts_id" : "DEA26",
+  "DEA26": {
     "name_latin" : "Düren",
     "nuts_name" : "Düren",
     "name_ascii" : "Duren",
-    "name_html" : "D&#x00FC;ren",
-    "sort_order" : 447
+    "name_html" : "D&#x00FC;ren"
   },
-  {
-    "objectid" : 356,
-    "nuts_id" : "DEA27",
+  "DEA27": {
     "name_latin" : "Rhein-Erft-Kreis",
     "nuts_name" : "Rhein-Erft-Kreis",
     "name_ascii" : "Rhein-Erft-Kreis",
-    "name_html" : "Rhein-Erft-Kreis",
-    "sort_order" : 448
+    "name_html" : "Rhein-Erft-Kreis"
   },
-  {
-    "objectid" : 357,
-    "nuts_id" : "DEA28",
+  "DEA28": {
     "name_latin" : "Euskirchen",
     "nuts_name" : "Euskirchen",
     "name_ascii" : "Euskirchen",
-    "name_html" : "Euskirchen",
-    "sort_order" : 449
+    "name_html" : "Euskirchen"
   },
-  {
-    "objectid" : 358,
-    "nuts_id" : "DEA29",
+  "DEA29": {
     "name_latin" : "Heinsberg",
     "nuts_name" : "Heinsberg",
     "name_ascii" : "Heinsberg",
-    "name_html" : "Heinsberg",
-    "sort_order" : 450
+    "name_html" : "Heinsberg"
   },
-  {
-    "objectid" : 359,
-    "nuts_id" : "DEA2B",
+  "DEA2B": {
     "name_latin" : "Rheinisch-Bergischer Kreis",
     "nuts_name" : "Rheinisch-Bergischer Kreis",
     "name_ascii" : "Rheinisch-Bergischer Kreis",
-    "name_html" : "Rheinisch-Bergischer Kreis",
-    "sort_order" : 452
+    "name_html" : "Rheinisch-Bergischer Kreis"
   },
-  {
-    "objectid" : 360,
-    "nuts_id" : "DEA2C",
+  "DEA2C": {
     "name_latin" : "Rhein-Sieg-Kreis",
     "nuts_name" : "Rhein-Sieg-Kreis",
     "name_ascii" : "Rhein-Sieg-Kreis",
-    "name_html" : "Rhein-Sieg-Kreis",
-    "sort_order" : 453
+    "name_html" : "Rhein-Sieg-Kreis"
   },
-  {
-    "objectid" : 361,
-    "nuts_id" : "DEA2D",
+  "DEA2D": {
     "name_latin" : "Städteregion Aachen",
     "nuts_name" : "Städteregion Aachen",
     "name_ascii" : "Stadteregion Aachen",
-    "name_html" : "St&#x00E4;dteregion Aachen",
-    "sort_order" : 454
+    "name_html" : "St&#x00E4;dteregion Aachen"
   },
-  {
-    "objectid" : 362,
-    "nuts_id" : "DEA32",
+  "DEA32": {
     "name_latin" : "Gelsenkirchen, Kreisfreie Stadt",
     "nuts_name" : "Gelsenkirchen, Kreisfreie Stadt",
     "name_ascii" : "Gelsenkirchen, Kreisfreie Stadt",
-    "name_html" : "Gelsenkirchen, Kreisfreie Stadt",
-    "sort_order" : 457
+    "name_html" : "Gelsenkirchen, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 363,
-    "nuts_id" : "DEA33",
+  "DEA33": {
     "name_latin" : "Münster, Kreisfreie Stadt",
     "nuts_name" : "Münster, Kreisfreie Stadt",
     "name_ascii" : "Munster, Kreisfreie Stadt",
-    "name_html" : "M&#x00FC;nster, Kreisfreie Stadt",
-    "sort_order" : 458
+    "name_html" : "M&#x00FC;nster, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 364,
-    "nuts_id" : "DEA34",
+  "DEA34": {
     "name_latin" : "Borken",
     "nuts_name" : "Borken",
     "name_ascii" : "Borken",
-    "name_html" : "Borken",
-    "sort_order" : 459
+    "name_html" : "Borken"
   },
-  {
-    "objectid" : 365,
-    "nuts_id" : "DEA35",
+  "DEA35": {
     "name_latin" : "Coesfeld",
     "nuts_name" : "Coesfeld",
     "name_ascii" : "Coesfeld",
-    "name_html" : "Coesfeld",
-    "sort_order" : 460
+    "name_html" : "Coesfeld"
   },
-  {
-    "objectid" : 366,
-    "nuts_id" : "DEA36",
+  "DEA36": {
     "name_latin" : "Recklinghausen",
     "nuts_name" : "Recklinghausen",
     "name_ascii" : "Recklinghausen",
-    "name_html" : "Recklinghausen",
-    "sort_order" : 461
+    "name_html" : "Recklinghausen"
   },
-  {
-    "objectid" : 367,
-    "nuts_id" : "DEA37",
+  "DEA37": {
     "name_latin" : "Steinfurt",
     "nuts_name" : "Steinfurt",
     "name_ascii" : "Steinfurt",
-    "name_html" : "Steinfurt",
-    "sort_order" : 462
+    "name_html" : "Steinfurt"
   },
-  {
-    "objectid" : 368,
-    "nuts_id" : "DEA38",
+  "DEA38": {
     "name_latin" : "Warendorf",
     "nuts_name" : "Warendorf",
     "name_ascii" : "Warendorf",
-    "name_html" : "Warendorf",
-    "sort_order" : 463
+    "name_html" : "Warendorf"
   },
-  {
-    "objectid" : 369,
-    "nuts_id" : "DEA42",
+  "DEA42": {
     "name_latin" : "Gütersloh",
     "nuts_name" : "Gütersloh",
     "name_ascii" : "Gutersloh",
-    "name_html" : "G&#x00FC;tersloh",
-    "sort_order" : 466
+    "name_html" : "G&#x00FC;tersloh"
   },
-  {
-    "objectid" : 370,
-    "nuts_id" : "DEA43",
+  "DEA43": {
     "name_latin" : "Herford",
     "nuts_name" : "Herford",
     "name_ascii" : "Herford",
-    "name_html" : "Herford",
-    "sort_order" : 467
+    "name_html" : "Herford"
   },
-  {
-    "objectid" : 371,
-    "nuts_id" : "DEA44",
+  "DEA44": {
     "name_latin" : "Höxter",
     "nuts_name" : "Höxter",
     "name_ascii" : "Hoxter",
-    "name_html" : "H&#x00F6;xter",
-    "sort_order" : 468
+    "name_html" : "H&#x00F6;xter"
   },
-  {
-    "objectid" : 372,
-    "nuts_id" : "DEA45",
+  "DEA45": {
     "name_latin" : "Lippe",
     "nuts_name" : "Lippe",
     "name_ascii" : "Lippe",
-    "name_html" : "Lippe",
-    "sort_order" : 469
+    "name_html" : "Lippe"
   },
-  {
-    "objectid" : 373,
-    "nuts_id" : "DEA46",
+  "DEA46": {
     "name_latin" : "Minden-Lübbecke",
     "nuts_name" : "Minden-Lübbecke",
     "name_ascii" : "Minden-Lubbecke",
-    "name_html" : "Minden-L&#x00FC;bbecke",
-    "sort_order" : 470
+    "name_html" : "Minden-L&#x00FC;bbecke"
   },
-  {
-    "objectid" : 374,
-    "nuts_id" : "DEA47",
+  "DEA47": {
     "name_latin" : "Paderborn",
     "nuts_name" : "Paderborn",
     "name_ascii" : "Paderborn",
-    "name_html" : "Paderborn",
-    "sort_order" : 471
+    "name_html" : "Paderborn"
   },
-  {
-    "objectid" : 375,
-    "nuts_id" : "DEA51",
+  "DEA51": {
     "name_latin" : "Bochum, Kreisfreie Stadt",
     "nuts_name" : "Bochum, Kreisfreie Stadt",
     "name_ascii" : "Bochum, Kreisfreie Stadt",
-    "name_html" : "Bochum, Kreisfreie Stadt",
-    "sort_order" : 473
+    "name_html" : "Bochum, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 376,
-    "nuts_id" : "DEA52",
+  "DEA52": {
     "name_latin" : "Dortmund, Kreisfreie Stadt",
     "nuts_name" : "Dortmund, Kreisfreie Stadt",
     "name_ascii" : "Dortmund, Kreisfreie Stadt",
-    "name_html" : "Dortmund, Kreisfreie Stadt",
-    "sort_order" : 474
+    "name_html" : "Dortmund, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 377,
-    "nuts_id" : "DEA53",
+  "DEA53": {
     "name_latin" : "Hagen, Kreisfreie Stadt",
     "nuts_name" : "Hagen, Kreisfreie Stadt",
     "name_ascii" : "Hagen, Kreisfreie Stadt",
-    "name_html" : "Hagen, Kreisfreie Stadt",
-    "sort_order" : 475
+    "name_html" : "Hagen, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 378,
-    "nuts_id" : "DEA54",
+  "DEA54": {
     "name_latin" : "Hamm, Kreisfreie Stadt",
     "nuts_name" : "Hamm, Kreisfreie Stadt",
     "name_ascii" : "Hamm, Kreisfreie Stadt",
-    "name_html" : "Hamm, Kreisfreie Stadt",
-    "sort_order" : 476
+    "name_html" : "Hamm, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 379,
-    "nuts_id" : "DEA55",
+  "DEA55": {
     "name_latin" : "Herne, Kreisfreie Stadt",
     "nuts_name" : "Herne, Kreisfreie Stadt",
     "name_ascii" : "Herne, Kreisfreie Stadt",
-    "name_html" : "Herne, Kreisfreie Stadt",
-    "sort_order" : 477
+    "name_html" : "Herne, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 380,
-    "nuts_id" : "DEA56",
+  "DEA56": {
     "name_latin" : "Ennepe-Ruhr-Kreis",
     "nuts_name" : "Ennepe-Ruhr-Kreis",
     "name_ascii" : "Ennepe-Ruhr-Kreis",
-    "name_html" : "Ennepe-Ruhr-Kreis",
-    "sort_order" : 478
+    "name_html" : "Ennepe-Ruhr-Kreis"
   },
-  {
-    "objectid" : 381,
-    "nuts_id" : "DEA57",
+  "DEA57": {
     "name_latin" : "Hochsauerlandkreis",
     "nuts_name" : "Hochsauerlandkreis",
     "name_ascii" : "Hochsauerlandkreis",
-    "name_html" : "Hochsauerlandkreis",
-    "sort_order" : 479
+    "name_html" : "Hochsauerlandkreis"
   },
-  {
-    "objectid" : 382,
-    "nuts_id" : "DEA58",
+  "DEA58": {
     "name_latin" : "Märkischer Kreis",
     "nuts_name" : "Märkischer Kreis",
     "name_ascii" : "Markischer Kreis",
-    "name_html" : "M&#x00E4;rkischer Kreis",
-    "sort_order" : 480
+    "name_html" : "M&#x00E4;rkischer Kreis"
   },
-  {
-    "objectid" : 383,
-    "nuts_id" : "DEA59",
+  "DEA59": {
     "name_latin" : "Olpe",
     "nuts_name" : "Olpe",
     "name_ascii" : "Olpe",
-    "name_html" : "Olpe",
-    "sort_order" : 481
+    "name_html" : "Olpe"
   },
-  {
-    "objectid" : 384,
-    "nuts_id" : "DEA5A",
+  "DEA5A": {
     "name_latin" : "Siegen-Wittgenstein",
     "nuts_name" : "Siegen-Wittgenstein",
     "name_ascii" : "Siegen-Wittgenstein",
-    "name_html" : "Siegen-Wittgenstein",
-    "sort_order" : 482
+    "name_html" : "Siegen-Wittgenstein"
   },
-  {
-    "objectid" : 385,
-    "nuts_id" : "DEA5B",
+  "DEA5B": {
     "name_latin" : "Soest",
     "nuts_name" : "Soest",
     "name_ascii" : "Soest",
-    "name_html" : "Soest",
-    "sort_order" : 483
+    "name_html" : "Soest"
   },
-  {
-    "objectid" : 386,
-    "nuts_id" : "DEA5C",
+  "DEA5C": {
     "name_latin" : "Unna",
     "nuts_name" : "Unna",
     "name_ascii" : "Unna",
-    "name_html" : "Unna",
-    "sort_order" : 484
+    "name_html" : "Unna"
   },
-  {
-    "objectid" : 387,
-    "nuts_id" : "DEB11",
+  "DEB11": {
     "name_latin" : "Koblenz, Kreisfreie Stadt",
     "nuts_name" : "Koblenz, Kreisfreie Stadt",
     "name_ascii" : "Koblenz, Kreisfreie Stadt",
-    "name_html" : "Koblenz, Kreisfreie Stadt",
-    "sort_order" : 487
+    "name_html" : "Koblenz, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 388,
-    "nuts_id" : "DEB12",
+  "DEB12": {
     "name_latin" : "Ahrweiler",
     "nuts_name" : "Ahrweiler",
     "name_ascii" : "Ahrweiler",
-    "name_html" : "Ahrweiler",
-    "sort_order" : 488
+    "name_html" : "Ahrweiler"
   },
-  {
-    "objectid" : 389,
-    "nuts_id" : "DEB13",
+  "DEB13": {
     "name_latin" : "Altenkirchen (Westerwald)",
     "nuts_name" : "Altenkirchen (Westerwald)",
     "name_ascii" : "Altenkirchen (Westerwald)",
-    "name_html" : "Altenkirchen (Westerwald)",
-    "sort_order" : 489
+    "name_html" : "Altenkirchen (Westerwald)"
   },
-  {
-    "objectid" : 390,
-    "nuts_id" : "DEB14",
+  "DEB14": {
     "name_latin" : "Bad Kreuznach",
     "nuts_name" : "Bad Kreuznach",
     "name_ascii" : "Bad Kreuznach",
-    "name_html" : "Bad Kreuznach",
-    "sort_order" : 490
+    "name_html" : "Bad Kreuznach"
   },
-  {
-    "objectid" : 391,
-    "nuts_id" : "DEB15",
+  "DEB15": {
     "name_latin" : "Birkenfeld",
     "nuts_name" : "Birkenfeld",
     "name_ascii" : "Birkenfeld",
-    "name_html" : "Birkenfeld",
-    "sort_order" : 491
+    "name_html" : "Birkenfeld"
   },
-  {
-    "objectid" : 392,
-    "nuts_id" : "DEB16",
+  "DEB16": {
     "name_latin" : "Cochem-Zell",
     "nuts_name" : "Cochem-Zell",
     "name_ascii" : "Cochem-Zell",
-    "name_html" : "Cochem-Zell",
-    "sort_order" : 492
+    "name_html" : "Cochem-Zell"
   },
-  {
-    "objectid" : 393,
-    "nuts_id" : "DEB17",
+  "DEB17": {
     "name_latin" : "Mayen-Koblenz",
     "nuts_name" : "Mayen-Koblenz",
     "name_ascii" : "Mayen-Koblenz",
-    "name_html" : "Mayen-Koblenz",
-    "sort_order" : 493
+    "name_html" : "Mayen-Koblenz"
   },
-  {
-    "objectid" : 394,
-    "nuts_id" : "DEB18",
+  "DEB18": {
     "name_latin" : "Neuwied",
     "nuts_name" : "Neuwied",
     "name_ascii" : "Neuwied",
-    "name_html" : "Neuwied",
-    "sort_order" : 494
+    "name_html" : "Neuwied"
   },
-  {
-    "objectid" : 395,
-    "nuts_id" : "DEB19",
+  "DEB19": {
     "name_latin" : "Rhein-Hunsrück-Kreis",
     "nuts_name" : "Rhein-Hunsrück-Kreis",
     "name_ascii" : "Rhein-Hunsruck-Kreis",
-    "name_html" : "Rhein-Hunsr&#x00FC;ck-Kreis",
-    "sort_order" : 495
+    "name_html" : "Rhein-Hunsr&#x00FC;ck-Kreis"
   },
-  {
-    "objectid" : 396,
-    "nuts_id" : "DEB1A",
+  "DEB1A": {
     "name_latin" : "Rhein-Lahn-Kreis",
     "nuts_name" : "Rhein-Lahn-Kreis",
     "name_ascii" : "Rhein-Lahn-Kreis",
-    "name_html" : "Rhein-Lahn-Kreis",
-    "sort_order" : 496
+    "name_html" : "Rhein-Lahn-Kreis"
   },
-  {
-    "objectid" : 397,
-    "nuts_id" : "DEB21",
+  "DEB21": {
     "name_latin" : "Trier, Kreisfreie Stadt",
     "nuts_name" : "Trier, Kreisfreie Stadt",
     "name_ascii" : "Trier, Kreisfreie Stadt",
-    "name_html" : "Trier, Kreisfreie Stadt",
-    "sort_order" : 499
+    "name_html" : "Trier, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 398,
-    "nuts_id" : "DEB22",
+  "DEB22": {
     "name_latin" : "Bernkastel-Wittlich",
     "nuts_name" : "Bernkastel-Wittlich",
     "name_ascii" : "Bernkastel-Wittlich",
-    "name_html" : "Bernkastel-Wittlich",
-    "sort_order" : 500
+    "name_html" : "Bernkastel-Wittlich"
   },
-  {
-    "objectid" : 399,
-    "nuts_id" : "DEB23",
+  "DEB23": {
     "name_latin" : "Eifelkreis Bitburg-Prüm",
     "nuts_name" : "Eifelkreis Bitburg-Prüm",
     "name_ascii" : "Eifelkreis Bitburg-Prum",
-    "name_html" : "Eifelkreis Bitburg-Pr&#x00FC;m",
-    "sort_order" : 501
+    "name_html" : "Eifelkreis Bitburg-Pr&#x00FC;m"
   },
-  {
-    "objectid" : 400,
-    "nuts_id" : "DEB25",
+  "DEB25": {
     "name_latin" : "Trier-Saarburg",
     "nuts_name" : "Trier-Saarburg",
     "name_ascii" : "Trier-Saarburg",
-    "name_html" : "Trier-Saarburg",
-    "sort_order" : 503
+    "name_html" : "Trier-Saarburg"
   },
-  {
-    "objectid" : 401,
-    "nuts_id" : "DEB32",
+  "DEB32": {
     "name_latin" : "Kaiserslautern, Kreisfreie Stadt",
     "nuts_name" : "Kaiserslautern, Kreisfreie Stadt",
     "name_ascii" : "Kaiserslautern, Kreisfreie Stadt",
-    "name_html" : "Kaiserslautern, Kreisfreie Stadt",
-    "sort_order" : 506
+    "name_html" : "Kaiserslautern, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 402,
-    "nuts_id" : "DEB33",
+  "DEB33": {
     "name_latin" : "Landau in der Pfalz, Kreisfreie Stadt",
     "nuts_name" : "Landau in der Pfalz, Kreisfreie Stadt",
     "name_ascii" : "Landau in der Pfalz, Kreisfreie Stadt",
-    "name_html" : "Landau in der Pfalz, Kreisfreie Stadt",
-    "sort_order" : 507
+    "name_html" : "Landau in der Pfalz, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 403,
-    "nuts_id" : "DEB34",
+  "DEB34": {
     "name_latin" : "Ludwigshafen am Rhein, Kreisfreie Stadt",
     "nuts_name" : "Ludwigshafen am Rhein, Kreisfreie Stadt",
     "name_ascii" : "Ludwigshafen am Rhein, Kreisfreie Stadt",
-    "name_html" : "Ludwigshafen am Rhein, Kreisfreie Stadt",
-    "sort_order" : 508
+    "name_html" : "Ludwigshafen am Rhein, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 404,
-    "nuts_id" : "DEB35",
+  "DEB35": {
     "name_latin" : "Mainz, Kreisfreie Stadt",
     "nuts_name" : "Mainz, Kreisfreie Stadt",
     "name_ascii" : "Mainz, Kreisfreie Stadt",
-    "name_html" : "Mainz, Kreisfreie Stadt",
-    "sort_order" : 509
+    "name_html" : "Mainz, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 405,
-    "nuts_id" : "DEB37",
+  "DEB37": {
     "name_latin" : "Pirmasens, Kreisfreie Stadt",
     "nuts_name" : "Pirmasens, Kreisfreie Stadt",
     "name_ascii" : "Pirmasens, Kreisfreie Stadt",
-    "name_html" : "Pirmasens, Kreisfreie Stadt",
-    "sort_order" : 511
+    "name_html" : "Pirmasens, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 406,
-    "nuts_id" : "DEB38",
+  "DEB38": {
     "name_latin" : "Speyer, Kreisfreie Stadt",
     "nuts_name" : "Speyer, Kreisfreie Stadt",
     "name_ascii" : "Speyer, Kreisfreie Stadt",
-    "name_html" : "Speyer, Kreisfreie Stadt",
-    "sort_order" : 512
+    "name_html" : "Speyer, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 407,
-    "nuts_id" : "DEB39",
+  "DEB39": {
     "name_latin" : "Worms, Kreisfreie Stadt",
     "nuts_name" : "Worms, Kreisfreie Stadt",
     "name_ascii" : "Worms, Kreisfreie Stadt",
-    "name_html" : "Worms, Kreisfreie Stadt",
-    "sort_order" : 513
+    "name_html" : "Worms, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 408,
-    "nuts_id" : "DEB3A",
+  "DEB3A": {
     "name_latin" : "Zweibrücken, Kreisfreie Stadt",
     "nuts_name" : "Zweibrücken, Kreisfreie Stadt",
     "name_ascii" : "Zweibrucken, Kreisfreie Stadt",
-    "name_html" : "Zweibr&#x00FC;cken, Kreisfreie Stadt",
-    "sort_order" : 514
+    "name_html" : "Zweibr&#x00FC;cken, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 409,
-    "nuts_id" : "DEB3B",
+  "DEB3B": {
     "name_latin" : "Alzey-Worms",
     "nuts_name" : "Alzey-Worms",
     "name_ascii" : "Alzey-Worms",
-    "name_html" : "Alzey-Worms",
-    "sort_order" : 515
+    "name_html" : "Alzey-Worms"
   },
-  {
-    "objectid" : 410,
-    "nuts_id" : "DEB3C",
+  "DEB3C": {
     "name_latin" : "Bad Dürkheim",
     "nuts_name" : "Bad Dürkheim",
     "name_ascii" : "Bad Durkheim",
-    "name_html" : "Bad D&#x00FC;rkheim",
-    "sort_order" : 516
+    "name_html" : "Bad D&#x00FC;rkheim"
   },
-  {
-    "objectid" : 411,
-    "nuts_id" : "DEB3D",
+  "DEB3D": {
     "name_latin" : "Donnersbergkreis",
     "nuts_name" : "Donnersbergkreis",
     "name_ascii" : "Donnersbergkreis",
-    "name_html" : "Donnersbergkreis",
-    "sort_order" : 517
+    "name_html" : "Donnersbergkreis"
   },
-  {
-    "objectid" : 412,
-    "nuts_id" : "DEB3E",
+  "DEB3E": {
     "name_latin" : "Germersheim",
     "nuts_name" : "Germersheim",
     "name_ascii" : "Germersheim",
-    "name_html" : "Germersheim",
-    "sort_order" : 518
+    "name_html" : "Germersheim"
   },
-  {
-    "objectid" : 413,
-    "nuts_id" : "DEB3F",
+  "DEB3F": {
     "name_latin" : "Kaiserslautern, Landkreis",
     "nuts_name" : "Kaiserslautern, Landkreis",
     "name_ascii" : "Kaiserslautern, Landkreis",
-    "name_html" : "Kaiserslautern, Landkreis",
-    "sort_order" : 519
+    "name_html" : "Kaiserslautern, Landkreis"
   },
-  {
-    "objectid" : 414,
-    "nuts_id" : "DEB3G",
+  "DEB3G": {
     "name_latin" : "Kusel",
     "nuts_name" : "Kusel",
     "name_ascii" : "Kusel",
-    "name_html" : "Kusel",
-    "sort_order" : 520
+    "name_html" : "Kusel"
   },
-  {
-    "objectid" : 415,
-    "nuts_id" : "DEB3H",
+  "DEB3H": {
     "name_latin" : "Südliche Weinstraße",
     "nuts_name" : "Südliche Weinstraße",
     "name_ascii" : "Sudliche Weinstrasse",
-    "name_html" : "S&#x00FC;dliche Weinstra&#x00DF;e",
-    "sort_order" : 521
+    "name_html" : "S&#x00FC;dliche Weinstra&#x00DF;e"
   },
-  {
-    "objectid" : 416,
-    "nuts_id" : "DEB3J",
+  "DEB3J": {
     "name_latin" : "Mainz-Bingen",
     "nuts_name" : "Mainz-Bingen",
     "name_ascii" : "Mainz-Bingen",
-    "name_html" : "Mainz-Bingen",
-    "sort_order" : 523
+    "name_html" : "Mainz-Bingen"
   },
-  {
-    "objectid" : 417,
-    "nuts_id" : "DEB3K",
+  "DEB3K": {
     "name_latin" : "Südwestpfalz",
     "nuts_name" : "Südwestpfalz",
     "name_ascii" : "Sudwestpfalz",
-    "name_html" : "S&#x00FC;dwestpfalz",
-    "sort_order" : 524
+    "name_html" : "S&#x00FC;dwestpfalz"
   },
-  {
-    "objectid" : 418,
-    "nuts_id" : "DEC02",
+  "DEC02": {
     "name_latin" : "Merzig-Wadern",
     "nuts_name" : "Merzig-Wadern",
     "name_ascii" : "Merzig-Wadern",
-    "name_html" : "Merzig-Wadern",
-    "sort_order" : 528
+    "name_html" : "Merzig-Wadern"
   },
-  {
-    "objectid" : 419,
-    "nuts_id" : "DEC03",
+  "DEC03": {
     "name_latin" : "Neunkirchen",
     "nuts_name" : "Neunkirchen",
     "name_ascii" : "Neunkirchen",
-    "name_html" : "Neunkirchen",
-    "sort_order" : 529
+    "name_html" : "Neunkirchen"
   },
-  {
-    "objectid" : 420,
-    "nuts_id" : "DEC04",
+  "DEC04": {
     "name_latin" : "Saarlouis",
     "nuts_name" : "Saarlouis",
     "name_ascii" : "Saarlouis",
-    "name_html" : "Saarlouis",
-    "sort_order" : 530
+    "name_html" : "Saarlouis"
   },
-  {
-    "objectid" : 421,
-    "nuts_id" : "DEC05",
+  "DEC05": {
     "name_latin" : "Saarpfalz-Kreis",
     "nuts_name" : "Saarpfalz-Kreis",
     "name_ascii" : "Saarpfalz-Kreis",
-    "name_html" : "Saarpfalz-Kreis",
-    "sort_order" : 531
+    "name_html" : "Saarpfalz-Kreis"
   },
-  {
-    "objectid" : 422,
-    "nuts_id" : "DEC06",
+  "DEC06": {
     "name_latin" : "St. Wendel",
     "nuts_name" : "St. Wendel",
     "name_ascii" : "St. Wendel",
-    "name_html" : "St. Wendel",
-    "sort_order" : 532
+    "name_html" : "St. Wendel"
   },
-  {
-    "objectid" : 423,
-    "nuts_id" : "DED21",
+  "DED21": {
     "name_latin" : "Dresden, Kreisfreie Stadt",
     "nuts_name" : "Dresden, Kreisfreie Stadt",
     "name_ascii" : "Dresden, Kreisfreie Stadt",
-    "name_html" : "Dresden, Kreisfreie Stadt",
-    "sort_order" : 535
+    "name_html" : "Dresden, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 424,
-    "nuts_id" : "DED2C",
+  "DED2C": {
     "name_latin" : "Bautzen",
     "nuts_name" : "Bautzen",
     "name_ascii" : "Bautzen",
-    "name_html" : "Bautzen",
-    "sort_order" : 536
+    "name_html" : "Bautzen"
   },
-  {
-    "objectid" : 425,
-    "nuts_id" : "DED2D",
+  "DED2D": {
     "name_latin" : "Görlitz",
     "nuts_name" : "Görlitz",
     "name_ascii" : "Gorlitz",
-    "name_html" : "G&#x00F6;rlitz",
-    "sort_order" : 537
+    "name_html" : "G&#x00F6;rlitz"
   },
-  {
-    "objectid" : 426,
-    "nuts_id" : "DED2E",
+  "DED2E": {
     "name_latin" : "Meißen",
     "nuts_name" : "Meißen",
     "name_ascii" : "Meissen",
-    "name_html" : "Mei&#x00DF;en",
-    "sort_order" : 538
+    "name_html" : "Mei&#x00DF;en"
   },
-  {
-    "objectid" : 427,
-    "nuts_id" : "DED41",
+  "DED41": {
     "name_latin" : "Chemnitz, Kreisfreie Stadt",
     "nuts_name" : "Chemnitz, Kreisfreie Stadt",
     "name_ascii" : "Chemnitz, Kreisfreie Stadt",
-    "name_html" : "Chemnitz, Kreisfreie Stadt",
-    "sort_order" : 541
+    "name_html" : "Chemnitz, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 428,
-    "nuts_id" : "DED42",
+  "DED42": {
     "name_latin" : "Erzgebirgskreis",
     "nuts_name" : "Erzgebirgskreis",
     "name_ascii" : "Erzgebirgskreis",
-    "name_html" : "Erzgebirgskreis",
-    "sort_order" : 542
+    "name_html" : "Erzgebirgskreis"
   },
-  {
-    "objectid" : 429,
-    "nuts_id" : "DED43",
+  "DED43": {
     "name_latin" : "Mittelsachsen",
     "nuts_name" : "Mittelsachsen",
     "name_ascii" : "Mittelsachsen",
-    "name_html" : "Mittelsachsen",
-    "sort_order" : 543
+    "name_html" : "Mittelsachsen"
   },
-  {
-    "objectid" : 430,
-    "nuts_id" : "DED44",
+  "DED44": {
     "name_latin" : "Vogtlandkreis",
     "nuts_name" : "Vogtlandkreis",
     "name_ascii" : "Vogtlandkreis",
-    "name_html" : "Vogtlandkreis",
-    "sort_order" : 544
+    "name_html" : "Vogtlandkreis"
   },
-  {
-    "objectid" : 431,
-    "nuts_id" : "DED45",
+  "DED45": {
     "name_latin" : "Zwickau",
     "nuts_name" : "Zwickau",
     "name_ascii" : "Zwickau",
-    "name_html" : "Zwickau",
-    "sort_order" : 545
+    "name_html" : "Zwickau"
   },
-  {
-    "objectid" : 432,
-    "nuts_id" : "DED51",
+  "DED51": {
     "name_latin" : "Leipzig, Kreisfreie Stadt",
     "nuts_name" : "Leipzig, Kreisfreie Stadt",
     "name_ascii" : "Leipzig, Kreisfreie Stadt",
-    "name_html" : "Leipzig, Kreisfreie Stadt",
-    "sort_order" : 547
+    "name_html" : "Leipzig, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 433,
-    "nuts_id" : "DED52",
+  "DED52": {
     "name_latin" : "Leipzig",
     "nuts_name" : "Leipzig",
     "name_ascii" : "Leipzig",
-    "name_html" : "Leipzig",
-    "sort_order" : 548
+    "name_html" : "Leipzig"
   },
-  {
-    "objectid" : 434,
-    "nuts_id" : "DED53",
+  "DED53": {
     "name_latin" : "Nordsachsen",
     "nuts_name" : "Nordsachsen",
     "name_ascii" : "Nordsachsen",
-    "name_html" : "Nordsachsen",
-    "sort_order" : 549
+    "name_html" : "Nordsachsen"
   },
-  {
-    "objectid" : 435,
-    "nuts_id" : "DEE01",
+  "DEE01": {
     "name_latin" : "Dessau-Roßlau, Kreisfreie Stadt",
     "nuts_name" : "Dessau-Roßlau, Kreisfreie Stadt",
     "name_ascii" : "Dessau-Rosslau, Kreisfreie Stadt",
-    "name_html" : "Dessau-Ro&#x00DF;lau, Kreisfreie Stadt",
-    "sort_order" : 552
+    "name_html" : "Dessau-Ro&#x00DF;lau, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 436,
-    "nuts_id" : "DEE02",
+  "DEE02": {
     "name_latin" : "Halle (Saale), Kreisfreie Stadt",
     "nuts_name" : "Halle (Saale), Kreisfreie Stadt",
     "name_ascii" : "Halle (Saale), Kreisfreie Stadt",
-    "name_html" : "Halle (Saale), Kreisfreie Stadt",
-    "sort_order" : 553
+    "name_html" : "Halle (Saale), Kreisfreie Stadt"
   },
-  {
-    "objectid" : 437,
-    "nuts_id" : "DEE04",
+  "DEE04": {
     "name_latin" : "Altmarkkreis Salzwedel",
     "nuts_name" : "Altmarkkreis Salzwedel",
     "name_ascii" : "Altmarkkreis Salzwedel",
-    "name_html" : "Altmarkkreis Salzwedel",
-    "sort_order" : 555
+    "name_html" : "Altmarkkreis Salzwedel"
   },
-  {
-    "objectid" : 438,
-    "nuts_id" : "DEE05",
+  "DEE05": {
     "name_latin" : "Anhalt-Bitterfeld",
     "nuts_name" : "Anhalt-Bitterfeld",
     "name_ascii" : "Anhalt-Bitterfeld",
-    "name_html" : "Anhalt-Bitterfeld",
-    "sort_order" : 556
+    "name_html" : "Anhalt-Bitterfeld"
   },
-  {
-    "objectid" : 439,
-    "nuts_id" : "DEE06",
+  "DEE06": {
     "name_latin" : "Jerichower Land",
     "nuts_name" : "Jerichower Land",
     "name_ascii" : "Jerichower Land",
-    "name_html" : "Jerichower Land",
-    "sort_order" : 557
+    "name_html" : "Jerichower Land"
   },
-  {
-    "objectid" : 440,
-    "nuts_id" : "DEE07",
+  "DEE07": {
     "name_latin" : "Börde",
     "nuts_name" : "Börde",
     "name_ascii" : "Borde",
-    "name_html" : "B&#x00F6;rde",
-    "sort_order" : 558
+    "name_html" : "B&#x00F6;rde"
   },
-  {
-    "objectid" : 441,
-    "nuts_id" : "DEE08",
+  "DEE08": {
     "name_latin" : "Burgenland (DE)",
     "nuts_name" : "Burgenland (DE)",
     "name_ascii" : "Burgenland (DE)",
-    "name_html" : "Burgenland (DE)",
-    "sort_order" : 559
+    "name_html" : "Burgenland (DE)"
   },
-  {
-    "objectid" : 442,
-    "nuts_id" : "DEE09",
+  "DEE09": {
     "name_latin" : "Harz",
     "nuts_name" : "Harz",
     "name_ascii" : "Harz",
-    "name_html" : "Harz",
-    "sort_order" : 560
+    "name_html" : "Harz"
   },
-  {
-    "objectid" : 443,
-    "nuts_id" : "DEE0A",
+  "DEE0A": {
     "name_latin" : "Mansfeld-Südharz",
     "nuts_name" : "Mansfeld-Südharz",
     "name_ascii" : "Mansfeld-Sudharz",
-    "name_html" : "Mansfeld-S&#x00FC;dharz",
-    "sort_order" : 561
+    "name_html" : "Mansfeld-S&#x00FC;dharz"
   },
-  {
-    "objectid" : 444,
-    "nuts_id" : "DEE0B",
+  "DEE0B": {
     "name_latin" : "Saalekreis",
     "nuts_name" : "Saalekreis",
     "name_ascii" : "Saalekreis",
-    "name_html" : "Saalekreis",
-    "sort_order" : 562
+    "name_html" : "Saalekreis"
   },
-  {
-    "objectid" : 445,
-    "nuts_id" : "DEE0C",
+  "DEE0C": {
     "name_latin" : "Salzlandkreis",
     "nuts_name" : "Salzlandkreis",
     "name_ascii" : "Salzlandkreis",
-    "name_html" : "Salzlandkreis",
-    "sort_order" : 563
+    "name_html" : "Salzlandkreis"
   },
-  {
-    "objectid" : 446,
-    "nuts_id" : "DEE0D",
+  "DEE0D": {
     "name_latin" : "Stendal",
     "nuts_name" : "Stendal",
     "name_ascii" : "Stendal",
-    "name_html" : "Stendal",
-    "sort_order" : 564
+    "name_html" : "Stendal"
   },
-  {
-    "objectid" : 447,
-    "nuts_id" : "DEE0E",
+  "DEE0E": {
     "name_latin" : "Wittenberg",
     "nuts_name" : "Wittenberg",
     "name_ascii" : "Wittenberg",
-    "name_html" : "Wittenberg",
-    "sort_order" : 565
+    "name_html" : "Wittenberg"
   },
-  {
-    "objectid" : 448,
-    "nuts_id" : "DEF01",
+  "DEF01": {
     "name_latin" : "Flensburg, Kreisfreie Stadt",
     "nuts_name" : "Flensburg, Kreisfreie Stadt",
     "name_ascii" : "Flensburg, Kreisfreie Stadt",
-    "name_html" : "Flensburg, Kreisfreie Stadt",
-    "sort_order" : 568
+    "name_html" : "Flensburg, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 449,
-    "nuts_id" : "DEF02",
+  "DEF02": {
     "name_latin" : "Kiel, Kreisfreie Stadt",
     "nuts_name" : "Kiel, Kreisfreie Stadt",
     "name_ascii" : "Kiel, Kreisfreie Stadt",
-    "name_html" : "Kiel, Kreisfreie Stadt",
-    "sort_order" : 569
+    "name_html" : "Kiel, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 450,
-    "nuts_id" : "DEF03",
+  "DEF03": {
     "name_latin" : "Lübeck, Kreisfreie Stadt",
     "nuts_name" : "Lübeck, Kreisfreie Stadt",
     "name_ascii" : "Lubeck, Kreisfreie Stadt",
-    "name_html" : "L&#x00FC;beck, Kreisfreie Stadt",
-    "sort_order" : 570
+    "name_html" : "L&#x00FC;beck, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 451,
-    "nuts_id" : "DEF04",
+  "DEF04": {
     "name_latin" : "Neumünster, Kreisfreie Stadt",
     "nuts_name" : "Neumünster, Kreisfreie Stadt",
     "name_ascii" : "Neumunster, Kreisfreie Stadt",
-    "name_html" : "Neum&#x00FC;nster, Kreisfreie Stadt",
-    "sort_order" : 571
+    "name_html" : "Neum&#x00FC;nster, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 452,
-    "nuts_id" : "DEF05",
+  "DEF05": {
     "name_latin" : "Dithmarschen",
     "nuts_name" : "Dithmarschen",
     "name_ascii" : "Dithmarschen",
-    "name_html" : "Dithmarschen",
-    "sort_order" : 572
+    "name_html" : "Dithmarschen"
   },
-  {
-    "objectid" : 453,
-    "nuts_id" : "DEF06",
+  "DEF06": {
     "name_latin" : "Herzogtum Lauenburg",
     "nuts_name" : "Herzogtum Lauenburg",
     "name_ascii" : "Herzogtum Lauenburg",
-    "name_html" : "Herzogtum Lauenburg",
-    "sort_order" : 573
+    "name_html" : "Herzogtum Lauenburg"
   },
-  {
-    "objectid" : 454,
-    "nuts_id" : "DEF07",
+  "DEF07": {
     "name_latin" : "Nordfriesland",
     "nuts_name" : "Nordfriesland",
     "name_ascii" : "Nordfriesland",
-    "name_html" : "Nordfriesland",
-    "sort_order" : 574
+    "name_html" : "Nordfriesland"
   },
-  {
-    "objectid" : 455,
-    "nuts_id" : "DEF08",
+  "DEF08": {
     "name_latin" : "Ostholstein",
     "nuts_name" : "Ostholstein",
     "name_ascii" : "Ostholstein",
-    "name_html" : "Ostholstein",
-    "sort_order" : 575
+    "name_html" : "Ostholstein"
   },
-  {
-    "objectid" : 456,
-    "nuts_id" : "DEF09",
+  "DEF09": {
     "name_latin" : "Pinneberg",
     "nuts_name" : "Pinneberg",
     "name_ascii" : "Pinneberg",
-    "name_html" : "Pinneberg",
-    "sort_order" : 576
+    "name_html" : "Pinneberg"
   },
-  {
-    "objectid" : 457,
-    "nuts_id" : "DEF0B",
+  "DEF0B": {
     "name_latin" : "Rendsburg-Eckernförde",
     "nuts_name" : "Rendsburg-Eckernförde",
     "name_ascii" : "Rendsburg-Eckernforde",
-    "name_html" : "Rendsburg-Eckernf&#x00F6;rde",
-    "sort_order" : 578
+    "name_html" : "Rendsburg-Eckernf&#x00F6;rde"
   },
-  {
-    "objectid" : 458,
-    "nuts_id" : "DEF0D",
+  "DEF0D": {
     "name_latin" : "Segeberg",
     "nuts_name" : "Segeberg",
     "name_ascii" : "Segeberg",
-    "name_html" : "Segeberg",
-    "sort_order" : 580
+    "name_html" : "Segeberg"
   },
-  {
-    "objectid" : 459,
-    "nuts_id" : "DEF0E",
+  "DEF0E": {
     "name_latin" : "Steinburg",
     "nuts_name" : "Steinburg",
     "name_ascii" : "Steinburg",
-    "name_html" : "Steinburg",
-    "sort_order" : 581
+    "name_html" : "Steinburg"
   },
-  {
-    "objectid" : 1176,
-    "nuts_id" : "UKE45",
+  "UKE45": {
     "name_latin" : "Wakefield",
     "nuts_name" : "Wakefield",
     "name_ascii" : "Wakefield",
-    "name_html" : "Wakefield",
-    "sort_order" : 1652
+    "name_html" : "Wakefield"
   },
-  {
-    "objectid" : 1177,
-    "nuts_id" : "UKF11",
+  "UKF11": {
     "name_latin" : "Derby",
     "nuts_name" : "Derby",
     "name_ascii" : "Derby",
-    "name_html" : "Derby",
-    "sort_order" : 1655
+    "name_html" : "Derby"
   },
-  {
-    "objectid" : 1178,
-    "nuts_id" : "UKF12",
+  "UKF12": {
     "name_latin" : "East Derbyshire",
     "nuts_name" : "East Derbyshire",
     "name_ascii" : "East Derbyshire",
-    "name_html" : "East Derbyshire",
-    "sort_order" : 1656
+    "name_html" : "East Derbyshire"
   },
-  {
-    "objectid" : 1179,
-    "nuts_id" : "UKF13",
+  "UKF13": {
     "name_latin" : "South and West Derbyshire",
     "nuts_name" : "South and West Derbyshire",
     "name_ascii" : "South and West Derbyshire",
-    "name_html" : "South and West Derbyshire",
-    "sort_order" : 1657
+    "name_html" : "South and West Derbyshire"
   },
-  {
-    "objectid" : 1180,
-    "nuts_id" : "UKF14",
+  "UKF14": {
     "name_latin" : "Nottingham",
     "nuts_name" : "Nottingham",
     "name_ascii" : "Nottingham",
-    "name_html" : "Nottingham",
-    "sort_order" : 1658
+    "name_html" : "Nottingham"
   },
-  {
-    "objectid" : 1181,
-    "nuts_id" : "UKF16",
+  "UKF16": {
     "name_latin" : "South Nottinghamshire",
     "nuts_name" : "South Nottinghamshire",
     "name_ascii" : "South Nottinghamshire",
-    "name_html" : "South Nottinghamshire",
-    "sort_order" : 1660
+    "name_html" : "South Nottinghamshire"
   },
-  {
-    "objectid" : 1182,
-    "nuts_id" : "UKF21",
+  "UKF21": {
     "name_latin" : "Leicester",
     "nuts_name" : "Leicester",
     "name_ascii" : "Leicester",
-    "name_html" : "Leicester",
-    "sort_order" : 1662
+    "name_html" : "Leicester"
   },
-  {
-    "objectid" : 1183,
-    "nuts_id" : "UKF22",
+  "UKF22": {
     "name_latin" : "Leicestershire CC and Rutland",
     "nuts_name" : "Leicestershire CC and Rutland",
     "name_ascii" : "Leicestershire CC and Rutland",
-    "name_html" : "Leicestershire CC and Rutland",
-    "sort_order" : 1663
+    "name_html" : "Leicestershire CC and Rutland"
   },
-  {
-    "objectid" : 1184,
-    "nuts_id" : "UKF25",
+  "UKF25": {
     "name_latin" : "North Northamptonshire",
     "nuts_name" : "North Northamptonshire",
     "name_ascii" : "North Northamptonshire",
-    "name_html" : "North Northamptonshire",
-    "sort_order" : 1665
+    "name_html" : "North Northamptonshire"
   },
-  {
-    "objectid" : 1185,
-    "nuts_id" : "UKF30",
+  "UKF30": {
     "name_latin" : "Lincolnshire",
     "nuts_name" : "Lincolnshire",
     "name_ascii" : "Lincolnshire",
-    "name_html" : "Lincolnshire",
-    "sort_order" : 1667
+    "name_html" : "Lincolnshire"
   },
-  {
-    "objectid" : 1186,
-    "nuts_id" : "UKG11",
+  "UKG11": {
     "name_latin" : "Herefordshire, County of",
     "nuts_name" : "Herefordshire, County of",
     "name_ascii" : "Herefordshire, County Of",
-    "name_html" : "Herefordshire, County Of",
-    "sort_order" : 1670
+    "name_html" : "Herefordshire, County Of"
   },
-  {
-    "objectid" : 1187,
-    "nuts_id" : "UKG12",
+  "UKG12": {
     "name_latin" : "Worcestershire",
     "nuts_name" : "Worcestershire",
     "name_ascii" : "Worcestershire",
-    "name_html" : "Worcestershire",
-    "sort_order" : 1671
+    "name_html" : "Worcestershire"
   },
-  {
-    "objectid" : 1188,
-    "nuts_id" : "UKG13",
+  "UKG13": {
     "name_latin" : "Warwickshire",
     "nuts_name" : "Warwickshire",
     "name_ascii" : "Warwickshire",
-    "name_html" : "Warwickshire",
-    "sort_order" : 1672
+    "name_html" : "Warwickshire"
   },
-  {
-    "objectid" : 1189,
-    "nuts_id" : "UKG21",
+  "UKG21": {
     "name_latin" : "Telford and Wrekin",
     "nuts_name" : "Telford and Wrekin",
     "name_ascii" : "Telford and Wrekin",
-    "name_html" : "Telford and Wrekin",
-    "sort_order" : 1674
+    "name_html" : "Telford and Wrekin"
   },
-  {
-    "objectid" : 1190,
-    "nuts_id" : "UKG22",
+  "UKG22": {
     "name_latin" : "Shropshire CC",
     "nuts_name" : "Shropshire CC",
     "name_ascii" : "Shropshire CC",
-    "name_html" : "Shropshire CC",
-    "sort_order" : 1675
+    "name_html" : "Shropshire CC"
   },
-  {
-    "objectid" : 1191,
-    "nuts_id" : "UKG23",
+  "UKG23": {
     "name_latin" : "Stoke-on-Trent",
     "nuts_name" : "Stoke-on-Trent",
     "name_ascii" : "Stoke-on-Trent",
-    "name_html" : "Stoke-on-Trent",
-    "sort_order" : 1676
+    "name_html" : "Stoke-on-Trent"
   },
-  {
-    "objectid" : 1192,
-    "nuts_id" : "UKG24",
+  "UKG24": {
     "name_latin" : "Staffordshire CC",
     "nuts_name" : "Staffordshire CC",
     "name_ascii" : "Staffordshire CC",
-    "name_html" : "Staffordshire CC",
-    "sort_order" : 1677
+    "name_html" : "Staffordshire CC"
   },
-  {
-    "objectid" : 1193,
-    "nuts_id" : "UKG31",
+  "UKG31": {
     "name_latin" : "Birmingham",
     "nuts_name" : "Birmingham",
     "name_ascii" : "Birmingham",
-    "name_html" : "Birmingham",
-    "sort_order" : 1679
+    "name_html" : "Birmingham"
   },
-  {
-    "objectid" : 1194,
-    "nuts_id" : "UKG32",
+  "UKG32": {
     "name_latin" : "Solihull",
     "nuts_name" : "Solihull",
     "name_ascii" : "Solihull",
-    "name_html" : "Solihull",
-    "sort_order" : 1680
+    "name_html" : "Solihull"
   },
-  {
-    "objectid" : 1195,
-    "nuts_id" : "UKG33",
+  "UKG33": {
     "name_latin" : "Coventry",
     "nuts_name" : "Coventry",
     "name_ascii" : "Coventry",
-    "name_html" : "Coventry",
-    "sort_order" : 1681
+    "name_html" : "Coventry"
   },
-  {
-    "objectid" : 1196,
-    "nuts_id" : "UKG36",
+  "UKG36": {
     "name_latin" : "Dudley",
     "nuts_name" : "Dudley",
     "name_ascii" : "Dudley",
-    "name_html" : "Dudley",
-    "sort_order" : 1682
+    "name_html" : "Dudley"
   },
-  {
-    "objectid" : 1197,
-    "nuts_id" : "UKG37",
+  "UKG37": {
     "name_latin" : "Sandwell",
     "nuts_name" : "Sandwell",
     "name_ascii" : "Sandwell",
-    "name_html" : "Sandwell",
-    "sort_order" : 1683
+    "name_html" : "Sandwell"
   },
-  {
-    "objectid" : 1198,
-    "nuts_id" : "UKG38",
+  "UKG38": {
     "name_latin" : "Walsall",
     "nuts_name" : "Walsall",
     "name_ascii" : "Walsall",
-    "name_html" : "Walsall",
-    "sort_order" : 1684
+    "name_html" : "Walsall"
   },
-  {
-    "objectid" : 1199,
-    "nuts_id" : "UKH11",
+  "UKH11": {
     "name_latin" : "Peterborough",
     "nuts_name" : "Peterborough",
     "name_ascii" : "Peterborough",
-    "name_html" : "Peterborough",
-    "sort_order" : 1688
+    "name_html" : "Peterborough"
   },
-  {
-    "objectid" : 1200,
-    "nuts_id" : "UKH12",
+  "UKH12": {
     "name_latin" : "Cambridgeshire CC",
     "nuts_name" : "Cambridgeshire CC",
     "name_ascii" : "Cambridgeshire CC",
-    "name_html" : "Cambridgeshire CC",
-    "sort_order" : 1689
+    "name_html" : "Cambridgeshire CC"
   },
-  {
-    "objectid" : 1201,
-    "nuts_id" : "UKH14",
+  "UKH14": {
     "name_latin" : "Suffolk",
     "nuts_name" : "Suffolk",
     "name_ascii" : "Suffolk",
-    "name_html" : "Suffolk",
-    "sort_order" : 1690
+    "name_html" : "Suffolk"
   },
-  {
-    "objectid" : 1202,
-    "nuts_id" : "UKH16",
+  "UKH16": {
     "name_latin" : "North & West Norfolk",
     "nuts_name" : "North & West Norfolk",
     "name_ascii" : "North & West Norfolk",
-    "name_html" : "North & West Norfolk",
-    "sort_order" : 1692
+    "name_html" : "North & West Norfolk"
   },
-  {
-    "objectid" : 1203,
-    "nuts_id" : "UKH17",
+  "UKH17": {
     "name_latin" : "Breckland & South Norfolk",
     "nuts_name" : "Breckland & South Norfolk",
     "name_ascii" : "Breckland & South Norfolk",
-    "name_html" : "Breckland & South Norfolk",
-    "sort_order" : 1693
+    "name_html" : "Breckland & South Norfolk"
   },
-  {
-    "objectid" : 1204,
-    "nuts_id" : "UKH21",
+  "UKH21": {
     "name_latin" : "Luton",
     "nuts_name" : "Luton",
     "name_ascii" : "Luton",
-    "name_html" : "Luton",
-    "sort_order" : 1695
+    "name_html" : "Luton"
   },
-  {
-    "objectid" : 1205,
-    "nuts_id" : "UKH23",
+  "UKH23": {
     "name_latin" : "Hertfordshire",
     "nuts_name" : "Hertfordshire",
     "name_ascii" : "Hertfordshire",
-    "name_html" : "Hertfordshire",
-    "sort_order" : 1696
+    "name_html" : "Hertfordshire"
   },
-  {
-    "objectid" : 1206,
-    "nuts_id" : "UKH25",
+  "UKH25": {
     "name_latin" : "Central Bedfordshire",
     "nuts_name" : "Central Bedfordshire",
     "name_ascii" : "Central Bedfordshire",
-    "name_html" : "Central Bedfordshire",
-    "sort_order" : 1698
+    "name_html" : "Central Bedfordshire"
   },
-  {
-    "objectid" : 1207,
-    "nuts_id" : "UKH31",
+  "UKH31": {
     "name_latin" : "Southend-on-Sea",
     "nuts_name" : "Southend-on-Sea",
     "name_ascii" : "Southend-On-Sea",
-    "name_html" : "Southend-On-Sea",
-    "sort_order" : 1700
+    "name_html" : "Southend-On-Sea"
   },
-  {
-    "objectid" : 1208,
-    "nuts_id" : "UKH34",
+  "UKH34": {
     "name_latin" : "Essex Haven Gateway",
     "nuts_name" : "Essex Haven Gateway",
     "name_ascii" : "Essex Haven Gateway",
-    "name_html" : "Essex Haven Gateway",
-    "sort_order" : 1702
+    "name_html" : "Essex Haven Gateway"
   },
-  {
-    "objectid" : 1209,
-    "nuts_id" : "UKH35",
+  "UKH35": {
     "name_latin" : "West Essex",
     "nuts_name" : "West Essex",
     "name_ascii" : "West Essex",
-    "name_html" : "West Essex",
-    "sort_order" : 1703
+    "name_html" : "West Essex"
   },
-  {
-    "objectid" : 1210,
-    "nuts_id" : "UKH37",
+  "UKH37": {
     "name_latin" : "Essex Thames Gateway",
     "nuts_name" : "Essex Thames Gateway",
     "name_ascii" : "Essex Thames Gateway",
-    "name_html" : "Essex Thames Gateway",
-    "sort_order" : 1705
+    "name_html" : "Essex Thames Gateway"
   },
-  {
-    "objectid" : 1211,
-    "nuts_id" : "UKI31",
+  "UKI31": {
     "name_latin" : "Camden & City of London",
     "nuts_name" : "Camden & City of London",
     "name_ascii" : "Camden & City of London",
-    "name_html" : "Camden & City of London",
-    "sort_order" : 1708
+    "name_html" : "Camden & City of London"
   },
-  {
-    "objectid" : 1212,
-    "nuts_id" : "UKI33",
+  "UKI33": {
     "name_latin" : "Kensington and Chelsea & Hammersmith and Fulham",
     "nuts_name" : "Kensington and Chelsea & Hammersmith and Fulham",
     "name_ascii" : "Kensington and Chelsea & Hammersmith and Fulham",
-    "name_html" : "Kensington and Chelsea & Hammersmith and Fulham",
-    "sort_order" : 1710
+    "name_html" : "Kensington and Chelsea & Hammersmith and Fulham"
   },
-  {
-    "objectid" : 1213,
-    "nuts_id" : "UKI34",
+  "UKI34": {
     "name_latin" : "Wandsworth",
     "nuts_name" : "Wandsworth",
     "name_ascii" : "Wandsworth",
-    "name_html" : "Wandsworth",
-    "sort_order" : 1711
+    "name_html" : "Wandsworth"
   },
-  {
-    "objectid" : 1214,
-    "nuts_id" : "UKI41",
+  "UKI41": {
     "name_latin" : "Hackney & Newham",
     "nuts_name" : "Hackney & Newham",
     "name_ascii" : "Hackney & Newham",
-    "name_html" : "Hackney & Newham",
-    "sort_order" : 1713
+    "name_html" : "Hackney & Newham"
   },
-  {
-    "objectid" : 460,
-    "nuts_id" : "DEF0F",
+  "DEF0F": {
     "name_latin" : "Stormarn",
     "nuts_name" : "Stormarn",
     "name_ascii" : "Stormarn",
-    "name_html" : "Stormarn",
-    "sort_order" : 582
+    "name_html" : "Stormarn"
   },
-  {
-    "objectid" : 461,
-    "nuts_id" : "DEG01",
+  "DEG01": {
     "name_latin" : "Erfurt, Kreisfreie Stadt",
     "nuts_name" : "Erfurt, Kreisfreie Stadt",
     "name_ascii" : "Erfurt, Kreisfreie Stadt",
-    "name_html" : "Erfurt, Kreisfreie Stadt",
-    "sort_order" : 585
+    "name_html" : "Erfurt, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 462,
-    "nuts_id" : "DEG03",
+  "DEG03": {
     "name_latin" : "Jena, Kreisfreie Stadt",
     "nuts_name" : "Jena, Kreisfreie Stadt",
     "name_ascii" : "Jena, Kreisfreie Stadt",
-    "name_html" : "Jena, Kreisfreie Stadt",
-    "sort_order" : 587
+    "name_html" : "Jena, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 463,
-    "nuts_id" : "DEG04",
+  "DEG04": {
     "name_latin" : "Suhl, Kreisfreie Stadt",
     "nuts_name" : "Suhl, Kreisfreie Stadt",
     "name_ascii" : "Suhl, Kreisfreie Stadt",
-    "name_html" : "Suhl, Kreisfreie Stadt",
-    "sort_order" : 588
+    "name_html" : "Suhl, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 464,
-    "nuts_id" : "DEG05",
+  "DEG05": {
     "name_latin" : "Weimar, Kreisfreie Stadt",
     "nuts_name" : "Weimar, Kreisfreie Stadt",
     "name_ascii" : "Weimar, Kreisfreie Stadt",
-    "name_html" : "Weimar, Kreisfreie Stadt",
-    "sort_order" : 589
+    "name_html" : "Weimar, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 465,
-    "nuts_id" : "DEG06",
+  "DEG06": {
     "name_latin" : "Eichsfeld",
     "nuts_name" : "Eichsfeld",
     "name_ascii" : "Eichsfeld",
-    "name_html" : "Eichsfeld",
-    "sort_order" : 590
+    "name_html" : "Eichsfeld"
   },
-  {
-    "objectid" : 466,
-    "nuts_id" : "DEG07",
+  "DEG07": {
     "name_latin" : "Nordhausen",
     "nuts_name" : "Nordhausen",
     "name_ascii" : "Nordhausen",
-    "name_html" : "Nordhausen",
-    "sort_order" : 591
+    "name_html" : "Nordhausen"
   },
-  {
-    "objectid" : 467,
-    "nuts_id" : "DEG09",
+  "DEG09": {
     "name_latin" : "Unstrut-Hainich-Kreis",
     "nuts_name" : "Unstrut-Hainich-Kreis",
     "name_ascii" : "Unstrut-Hainich-Kreis",
-    "name_html" : "Unstrut-Hainich-Kreis",
-    "sort_order" : 592
+    "name_html" : "Unstrut-Hainich-Kreis"
   },
-  {
-    "objectid" : 468,
-    "nuts_id" : "DEG0B",
+  "DEG0B": {
     "name_latin" : "Schmalkalden-Meiningen",
     "nuts_name" : "Schmalkalden-Meiningen",
     "name_ascii" : "Schmalkalden-Meiningen",
-    "name_html" : "Schmalkalden-Meiningen",
-    "sort_order" : 594
+    "name_html" : "Schmalkalden-Meiningen"
   },
-  {
-    "objectid" : 469,
-    "nuts_id" : "DEG0C",
+  "DEG0C": {
     "name_latin" : "Gotha",
     "nuts_name" : "Gotha",
     "name_ascii" : "Gotha",
-    "name_html" : "Gotha",
-    "sort_order" : 595
+    "name_html" : "Gotha"
   },
-  {
-    "objectid" : 470,
-    "nuts_id" : "DEG0D",
+  "DEG0D": {
     "name_latin" : "Sömmerda",
     "nuts_name" : "Sömmerda",
     "name_ascii" : "Sommerda",
-    "name_html" : "S&#x00F6;mmerda",
-    "sort_order" : 596
+    "name_html" : "S&#x00F6;mmerda"
   },
-  {
-    "objectid" : 471,
-    "nuts_id" : "DEG0E",
+  "DEG0E": {
     "name_latin" : "Hildburghausen",
     "nuts_name" : "Hildburghausen",
     "name_ascii" : "Hildburghausen",
-    "name_html" : "Hildburghausen",
-    "sort_order" : 597
+    "name_html" : "Hildburghausen"
   },
-  {
-    "objectid" : 472,
-    "nuts_id" : "DEG0F",
+  "DEG0F": {
     "name_latin" : "Ilm-Kreis",
     "nuts_name" : "Ilm-Kreis",
     "name_ascii" : "Ilm-Kreis",
-    "name_html" : "Ilm-Kreis",
-    "sort_order" : 598
+    "name_html" : "Ilm-Kreis"
   },
-  {
-    "objectid" : 473,
-    "nuts_id" : "DEG0H",
+  "DEG0H": {
     "name_latin" : "Sonneberg",
     "nuts_name" : "Sonneberg",
     "name_ascii" : "Sonneberg",
-    "name_html" : "Sonneberg",
-    "sort_order" : 600
+    "name_html" : "Sonneberg"
   },
-  {
-    "objectid" : 474,
-    "nuts_id" : "DEG0I",
+  "DEG0I": {
     "name_latin" : "Saalfeld-Rudolstadt",
     "nuts_name" : "Saalfeld-Rudolstadt",
     "name_ascii" : "Saalfeld-Rudolstadt",
-    "name_html" : "Saalfeld-Rudolstadt",
-    "sort_order" : 601
+    "name_html" : "Saalfeld-Rudolstadt"
   },
-  {
-    "objectid" : 475,
-    "nuts_id" : "DEG0J",
+  "DEG0J": {
     "name_latin" : "Saale-Holzland-Kreis",
     "nuts_name" : "Saale-Holzland-Kreis",
     "name_ascii" : "Saale-Holzland-Kreis",
-    "name_html" : "Saale-Holzland-Kreis",
-    "sort_order" : 602
+    "name_html" : "Saale-Holzland-Kreis"
   },
-  {
-    "objectid" : 476,
-    "nuts_id" : "DEG0K",
+  "DEG0K": {
     "name_latin" : "Saale-Orla-Kreis",
     "nuts_name" : "Saale-Orla-Kreis",
     "name_ascii" : "Saale-Orla-Kreis",
-    "name_html" : "Saale-Orla-Kreis",
-    "sort_order" : 603
+    "name_html" : "Saale-Orla-Kreis"
   },
-  {
-    "objectid" : 477,
-    "nuts_id" : "DEG0L",
+  "DEG0L": {
     "name_latin" : "Greiz",
     "nuts_name" : "Greiz",
     "name_ascii" : "Greiz",
-    "name_html" : "Greiz",
-    "sort_order" : 604
+    "name_html" : "Greiz"
   },
-  {
-    "objectid" : 478,
-    "nuts_id" : "DEG0N",
+  "DEG0N": {
     "name_latin" : "Eisenach, Kreisfreie Stadt",
     "nuts_name" : "Eisenach, Kreisfreie Stadt",
     "name_ascii" : "Eisenach, Kreisfreie Stadt",
-    "name_html" : "Eisenach, Kreisfreie Stadt",
-    "sort_order" : 606
+    "name_html" : "Eisenach, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 479,
-    "nuts_id" : "DEG0P",
+  "DEG0P": {
     "name_latin" : "Wartburgkreis",
     "nuts_name" : "Wartburgkreis",
     "name_ascii" : "Wartburgkreis",
-    "name_html" : "Wartburgkreis",
-    "sort_order" : 607
+    "name_html" : "Wartburgkreis"
   },
-  {
-    "objectid" : 480,
-    "nuts_id" : "DK012",
+  "DK012": {
     "name_latin" : "Københavns omegn",
     "nuts_name" : "Københavns omegn",
     "name_ascii" : "Kobenhavns Omegn",
-    "name_html" : "K&#x00F8;benhavns Omegn",
-    "sort_order" : 134
+    "name_html" : "K&#x00F8;benhavns Omegn"
   },
-  {
-    "objectid" : 481,
-    "nuts_id" : "DK013",
+  "DK013": {
     "name_latin" : "Nordsjælland",
     "nuts_name" : "Nordsjælland",
     "name_ascii" : "Nordsjaelland",
-    "name_html" : "Nordsj&#x00E6;lland",
-    "sort_order" : 135
+    "name_html" : "Nordsj&#x00E6;lland"
   },
-  {
-    "objectid" : 482,
-    "nuts_id" : "DK014",
+  "DK014": {
     "name_latin" : "Bornholm",
     "nuts_name" : "Bornholm",
     "name_ascii" : "Bornholm",
-    "name_html" : "Bornholm",
-    "sort_order" : 136
+    "name_html" : "Bornholm"
   },
-  {
-    "objectid" : 483,
-    "nuts_id" : "DK022",
+  "DK022": {
     "name_latin" : "Vest- og Sydsjælland",
     "nuts_name" : "Vest- og Sydsjælland",
     "name_ascii" : "Vest- og Sydsjaelland",
-    "name_html" : "Vest- og Sydsj&#x00E6;lland",
-    "sort_order" : 139
+    "name_html" : "Vest- og Sydsj&#x00E6;lland"
   },
-  {
-    "objectid" : 484,
-    "nuts_id" : "DK031",
+  "DK031": {
     "name_latin" : "Fyn",
     "nuts_name" : "Fyn",
     "name_ascii" : "Fyn",
-    "name_html" : "Fyn",
-    "sort_order" : 141
+    "name_html" : "Fyn"
   },
-  {
-    "objectid" : 485,
-    "nuts_id" : "DK032",
+  "DK032": {
     "name_latin" : "Sydjylland",
     "nuts_name" : "Sydjylland",
     "name_ascii" : "Sydjylland",
-    "name_html" : "Sydjylland",
-    "sort_order" : 142
+    "name_html" : "Sydjylland"
   },
-  {
-    "objectid" : 486,
-    "nuts_id" : "DK041",
+  "DK041": {
     "name_latin" : "Vestjylland",
     "nuts_name" : "Vestjylland",
     "name_ascii" : "Vestjylland",
-    "name_html" : "Vestjylland",
-    "sort_order" : 144
+    "name_html" : "Vestjylland"
   },
-  {
-    "objectid" : 487,
-    "nuts_id" : "DK042",
+  "DK042": {
     "name_latin" : "Østjylland",
     "nuts_name" : "Østjylland",
     "name_ascii" : "Ostjylland",
-    "name_html" : "&#x00D8;stjylland",
-    "sort_order" : 145
+    "name_html" : "&#x00D8;stjylland"
   },
-  {
-    "objectid" : 488,
-    "nuts_id" : "DK050",
+  "DK050": {
     "name_latin" : "Nordjylland",
     "nuts_name" : "Nordjylland",
     "name_ascii" : "Nordjylland",
-    "name_html" : "Nordjylland",
-    "sort_order" : 147
+    "name_html" : "Nordjylland"
   },
-  {
-    "objectid" : 489,
-    "nuts_id" : "EE001",
+  "EE001": {
     "name_latin" : "Põhja-Eesti",
     "nuts_name" : "Põhja-Eesti",
     "name_ascii" : "Pohja-Eesti",
-    "name_html" : "P&#x00F5;hja-Eesti",
-    "sort_order" : 614
+    "name_html" : "P&#x00F5;hja-Eesti"
   },
-  {
-    "objectid" : 490,
-    "nuts_id" : "EE006",
+  "EE006": {
     "name_latin" : "Kesk-Eesti",
     "nuts_name" : "Kesk-Eesti",
     "name_ascii" : "Kesk-Eesti",
-    "name_html" : "Kesk-Eesti",
-    "sort_order" : 616
+    "name_html" : "Kesk-Eesti"
   },
-  {
-    "objectid" : 491,
-    "nuts_id" : "EE007",
+  "EE007": {
     "name_latin" : "Kirde-Eesti",
     "nuts_name" : "Kirde-Eesti",
     "name_ascii" : "Kirde-Eesti",
-    "name_html" : "Kirde-Eesti",
-    "sort_order" : 617
+    "name_html" : "Kirde-Eesti"
   },
-  {
-    "objectid" : 492,
-    "nuts_id" : "EE008",
+  "EE008": {
     "name_latin" : "Lõuna-Eesti",
     "nuts_name" : "Lõuna-Eesti",
     "name_ascii" : "Louna-Eesti",
-    "name_html" : "L&#x00F5;una-Eesti",
-    "sort_order" : 618
+    "name_html" : "L&#x00F5;una-Eesti"
   },
-  {
-    "objectid" : 493,
-    "nuts_id" : "EL302",
+  "EL302": {
     "name_latin" : "Ditikos Tomeas Athinon",
     "nuts_name" : "Δυτικός Τομέας Αθηνών",
     "name_ascii" : "Ditikos Tomeas Athinon",
-    "name_html" : "&#x0394;&#x03C5;&#x03C4;&#x03B9;&#x03BA;&#x03CC;&#x03C2; &#x03A4;&#x03BF;&#x03BC;&#x03AD;&#x03B1;&#x03C2; &#x0391;&#x03B8;&#x03B7;&#x03BD;&#x03CE;&#x03BD;",
-    "sort_order" : 641
+    "name_html" : "&#x0394;&#x03C5;&#x03C4;&#x03B9;&#x03BA;&#x03CC;&#x03C2; &#x03A4;&#x03BF;&#x03BC;&#x03AD;&#x03B1;&#x03C2; &#x0391;&#x03B8;&#x03B7;&#x03BD;&#x03CE;&#x03BD;"
   },
-  {
-    "objectid" : 494,
-    "nuts_id" : "EL303",
+  "EL303": {
     "name_latin" : "Kentrikos Tomeas Athinon",
     "nuts_name" : "Κεντρικός Τομέας Αθηνών",
     "name_ascii" : "Kentrikos Tomeas Athinon",
-    "name_html" : "&#x039A;&#x03B5;&#x03BD;&#x03C4;&#x03C1;&#x03B9;&#x03BA;&#x03CC;&#x03C2; &#x03A4;&#x03BF;&#x03BC;&#x03AD;&#x03B1;&#x03C2; &#x0391;&#x03B8;&#x03B7;&#x03BD;&#x03CE;&#x03BD;",
-    "sort_order" : 642
+    "name_html" : "&#x039A;&#x03B5;&#x03BD;&#x03C4;&#x03C1;&#x03B9;&#x03BA;&#x03CC;&#x03C2; &#x03A4;&#x03BF;&#x03BC;&#x03AD;&#x03B1;&#x03C2; &#x0391;&#x03B8;&#x03B7;&#x03BD;&#x03CE;&#x03BD;"
   },
-  {
-    "objectid" : 495,
-    "nuts_id" : "EL305",
+  "EL305": {
     "name_latin" : "Anatoliki Attiki",
     "nuts_name" : "Ανατολική Αττική",
     "name_ascii" : "Anatoliki Attiki",
-    "name_html" : "&#x0391;&#x03BD;&#x03B1;&#x03C4;&#x03BF;&#x03BB;&#x03B9;&#x03BA;&#x03AE; &#x0391;&#x03C4;&#x03C4;&#x03B9;&#x03BA;&#x03AE;",
-    "sort_order" : 644
+    "name_html" : "&#x0391;&#x03BD;&#x03B1;&#x03C4;&#x03BF;&#x03BB;&#x03B9;&#x03BA;&#x03AE; &#x0391;&#x03C4;&#x03C4;&#x03B9;&#x03BA;&#x03AE;"
   },
-  {
-    "objectid" : 496,
-    "nuts_id" : "EL306",
+  "EL306": {
     "name_latin" : "Ditiki Attiki",
     "nuts_name" : "Δυτική Αττική",
     "name_ascii" : "Ditiki Attiki",
-    "name_html" : "&#x0394;&#x03C5;&#x03C4;&#x03B9;&#x03BA;&#x03AE; &#x0391;&#x03C4;&#x03C4;&#x03B9;&#x03BA;&#x03AE;",
-    "sort_order" : 645
+    "name_html" : "&#x0394;&#x03C5;&#x03C4;&#x03B9;&#x03BA;&#x03AE; &#x0391;&#x03C4;&#x03C4;&#x03B9;&#x03BA;&#x03AE;"
   },
-  {
-    "objectid" : 497,
-    "nuts_id" : "EL412",
+  "EL412": {
     "name_latin" : "Ikaria, Samos",
     "nuts_name" : "Ικαρία, Σάμος",
     "name_ascii" : "Ikaria, Samos",
-    "name_html" : "&#x0399;&#x03BA;&#x03B1;&#x03C1;&#x03AF;&#x03B1;, &#x03A3;&#x03AC;&#x03BC;&#x03BF;&#x03C2;",
-    "sort_order" : 650
+    "name_html" : "&#x0399;&#x03BA;&#x03B1;&#x03C1;&#x03AF;&#x03B1;, &#x03A3;&#x03AC;&#x03BC;&#x03BF;&#x03C2;"
   },
-  {
-    "objectid" : 498,
-    "nuts_id" : "EL413",
+  "EL413": {
     "name_latin" : "Xios",
     "nuts_name" : "Χίος",
     "name_ascii" : "Xios",
-    "name_html" : "&#x03A7;&#x03AF;&#x03BF;&#x03C2;",
-    "sort_order" : 651
+    "name_html" : "&#x03A7;&#x03AF;&#x03BF;&#x03C2;"
   },
-  {
-    "objectid" : 499,
-    "nuts_id" : "EL421",
+  "EL421": {
     "name_latin" : "Kalimnos, Karpathos, Kos, Rodos",
     "nuts_name" : "Κάλυμνος, Κάρπαθος, Κως, Ρόδος",
     "name_ascii" : "Kalimnos, Karpathos, Kos, Rodos",
-    "name_html" : "&#x039A;&#x03AC;&#x03BB;&#x03C5;&#x03BC;&#x03BD;&#x03BF;&#x03C2;, &#x039A;&#x03AC;&#x03C1;&#x03C0;&#x03B1;&#x03B8;&#x03BF;&#x03C2;, &#x039A;&#x03C9;&#x03C2;, &#x03A1;&#x03CC;&#x03B4;&#x03BF;&#x03C2;",
-    "sort_order" : 653
+    "name_html" : "&#x039A;&#x03AC;&#x03BB;&#x03C5;&#x03BC;&#x03BD;&#x03BF;&#x03C2;, &#x039A;&#x03AC;&#x03C1;&#x03C0;&#x03B1;&#x03B8;&#x03BF;&#x03C2;, &#x039A;&#x03C9;&#x03C2;, &#x03A1;&#x03CC;&#x03B4;&#x03BF;&#x03C2;"
   },
-  {
-    "objectid" : 500,
-    "nuts_id" : "EL431",
+  "EL431": {
     "name_latin" : "Irakleio",
     "nuts_name" : "Ηράκλειο",
     "name_ascii" : "Irakleio",
-    "name_html" : "&#x0397;&#x03C1;&#x03AC;&#x03BA;&#x03BB;&#x03B5;&#x03B9;&#x03BF;",
-    "sort_order" : 656
+    "name_html" : "&#x0397;&#x03C1;&#x03AC;&#x03BA;&#x03BB;&#x03B5;&#x03B9;&#x03BF;"
   },
-  {
-    "objectid" : 501,
-    "nuts_id" : "EL432",
+  "EL432": {
     "name_latin" : "Lasithi",
     "nuts_name" : "Λασίθι",
     "name_ascii" : "Lasithi",
-    "name_html" : "&#x039B;&#x03B1;&#x03C3;&#x03AF;&#x03B8;&#x03B9;",
-    "sort_order" : 657
+    "name_html" : "&#x039B;&#x03B1;&#x03C3;&#x03AF;&#x03B8;&#x03B9;"
   },
-  {
-    "objectid" : 502,
-    "nuts_id" : "EL433",
+  "EL433": {
     "name_latin" : "Rethymni",
     "nuts_name" : "Ρεθύμνη",
     "name_ascii" : "Rethimni",
-    "name_html" : "&#x03A1;&#x03B5;&#x03B8;&#x03CD;&#x03BC;&#x03BD;&#x03B7;",
-    "sort_order" : 658
+    "name_html" : "&#x03A1;&#x03B5;&#x03B8;&#x03CD;&#x03BC;&#x03BD;&#x03B7;"
   },
-  {
-    "objectid" : 503,
-    "nuts_id" : "EL434",
+  "EL434": {
     "name_latin" : "Chania",
     "nuts_name" : "Χανιά",
     "name_ascii" : "Xania",
-    "name_html" : "&#x03A7;&#x03B1;&#x03BD;&#x03B9;&#x03AC;",
-    "sort_order" : 659
+    "name_html" : "&#x03A7;&#x03B1;&#x03BD;&#x03B9;&#x03AC;"
   },
-  {
-    "objectid" : 504,
-    "nuts_id" : "EL512",
+  "EL512": {
     "name_latin" : "Xanthi",
     "nuts_name" : "Ξάνθη",
     "name_ascii" : "Xanthi",
-    "name_html" : "&#x039E;&#x03AC;&#x03BD;&#x03B8;&#x03B7;",
-    "sort_order" : 663
+    "name_html" : "&#x039E;&#x03AC;&#x03BD;&#x03B8;&#x03B7;"
   },
-  {
-    "objectid" : 505,
-    "nuts_id" : "EL514",
+  "EL514": {
     "name_latin" : "Drama",
     "nuts_name" : "Δράμα",
     "name_ascii" : "Drama",
-    "name_html" : "&#x0394;&#x03C1;&#x03AC;&#x03BC;&#x03B1;",
-    "sort_order" : 665
+    "name_html" : "&#x0394;&#x03C1;&#x03AC;&#x03BC;&#x03B1;"
   },
-  {
-    "objectid" : 506,
-    "nuts_id" : "EL521",
+  "EL521": {
     "name_latin" : "Imathia",
     "nuts_name" : "Ημαθία",
     "name_ascii" : "Imathia",
-    "name_html" : "&#x0397;&#x03BC;&#x03B1;&#x03B8;&#x03AF;&#x03B1;",
-    "sort_order" : 668
+    "name_html" : "&#x0397;&#x03BC;&#x03B1;&#x03B8;&#x03AF;&#x03B1;"
   },
-  {
-    "objectid" : 507,
-    "nuts_id" : "EL523",
+  "EL523": {
     "name_latin" : "Kilkis",
     "nuts_name" : "Κιλκίς",
     "name_ascii" : "Kilkis",
-    "name_html" : "&#x039A;&#x03B9;&#x03BB;&#x03BA;&#x03AF;&#x03C2;",
-    "sort_order" : 670
+    "name_html" : "&#x039A;&#x03B9;&#x03BB;&#x03BA;&#x03AF;&#x03C2;"
   },
-  {
-    "objectid" : 508,
-    "nuts_id" : "EL524",
+  "EL524": {
     "name_latin" : "Pella",
     "nuts_name" : "Πέλλα",
     "name_ascii" : "Pella",
-    "name_html" : "&#x03A0;&#x03AD;&#x03BB;&#x03BB;&#x03B1;",
-    "sort_order" : 671
+    "name_html" : "&#x03A0;&#x03AD;&#x03BB;&#x03BB;&#x03B1;"
   },
-  {
-    "objectid" : 509,
-    "nuts_id" : "EL525",
+  "EL525": {
     "name_latin" : "Pieria",
     "nuts_name" : "Πιερία",
     "name_ascii" : "Pieria",
-    "name_html" : "&#x03A0;&#x03B9;&#x03B5;&#x03C1;&#x03AF;&#x03B1;",
-    "sort_order" : 672
+    "name_html" : "&#x03A0;&#x03B9;&#x03B5;&#x03C1;&#x03AF;&#x03B1;"
   },
-  {
-    "objectid" : 510,
-    "nuts_id" : "EL526",
+  "EL526": {
     "name_latin" : "Serres",
     "nuts_name" : "Σέρρες",
     "name_ascii" : "Serres",
-    "name_html" : "&#x03A3;&#x03AD;&#x03C1;&#x03C1;&#x03B5;&#x03C2;",
-    "sort_order" : 673
+    "name_html" : "&#x03A3;&#x03AD;&#x03C1;&#x03C1;&#x03B5;&#x03C2;"
   },
-  {
-    "objectid" : 511,
-    "nuts_id" : "EL532",
+  "EL532": {
     "name_latin" : "Kastoria",
     "nuts_name" : "Καστοριά",
     "name_ascii" : "Kastoria",
-    "name_html" : "&#x039A;&#x03B1;&#x03C3;&#x03C4;&#x03BF;&#x03C1;&#x03B9;&#x03AC;",
-    "sort_order" : 677
+    "name_html" : "&#x039A;&#x03B1;&#x03C3;&#x03C4;&#x03BF;&#x03C1;&#x03B9;&#x03AC;"
   },
-  {
-    "objectid" : 512,
-    "nuts_id" : "EL533",
+  "EL533": {
     "name_latin" : "Florina",
     "nuts_name" : "Φλώρινα",
     "name_ascii" : "Florina",
-    "name_html" : "&#x03A6;&#x03BB;&#x03CE;&#x03C1;&#x03B9;&#x03BD;&#x03B1;",
-    "sort_order" : 678
+    "name_html" : "&#x03A6;&#x03BB;&#x03CE;&#x03C1;&#x03B9;&#x03BD;&#x03B1;"
   },
-  {
-    "objectid" : 513,
-    "nuts_id" : "EL541",
+  "EL541": {
     "name_latin" : "Arta, Prebeza",
     "nuts_name" : "Άρτα, Πρέβεζα",
     "name_ascii" : "Arta, Prebeza",
-    "name_html" : "&#x0386;&#x03C1;&#x03C4;&#x03B1;, &#x03A0;&#x03C1;&#x03AD;&#x03B2;&#x03B5;&#x03B6;&#x03B1;",
-    "sort_order" : 680
+    "name_html" : "&#x0386;&#x03C1;&#x03C4;&#x03B1;, &#x03A0;&#x03C1;&#x03AD;&#x03B2;&#x03B5;&#x03B6;&#x03B1;"
   },
-  {
-    "objectid" : 514,
-    "nuts_id" : "EL543",
+  "EL543": {
     "name_latin" : "Ioannina",
     "nuts_name" : "Ιωάννινα",
     "name_ascii" : "Ioannina",
-    "name_html" : "&#x0399;&#x03C9;&#x03AC;&#x03BD;&#x03BD;&#x03B9;&#x03BD;&#x03B1;",
-    "sort_order" : 682
+    "name_html" : "&#x0399;&#x03C9;&#x03AC;&#x03BD;&#x03BD;&#x03B9;&#x03BD;&#x03B1;"
   },
-  {
-    "objectid" : 515,
-    "nuts_id" : "EL611",
+  "EL611": {
     "name_latin" : "Karditsa, Trikala",
     "nuts_name" : "Καρδίτσα, Τρίκαλα",
     "name_ascii" : "Karditsa, Trikala",
-    "name_html" : "&#x039A;&#x03B1;&#x03C1;&#x03B4;&#x03AF;&#x03C4;&#x03C3;&#x03B1;, &#x03A4;&#x03C1;&#x03AF;&#x03BA;&#x03B1;&#x03BB;&#x03B1;",
-    "sort_order" : 685
+    "name_html" : "&#x039A;&#x03B1;&#x03C1;&#x03B4;&#x03AF;&#x03C4;&#x03C3;&#x03B1;, &#x03A4;&#x03C1;&#x03AF;&#x03BA;&#x03B1;&#x03BB;&#x03B1;"
   },
-  {
-    "objectid" : 516,
-    "nuts_id" : "EL613",
+  "EL613": {
     "name_latin" : "Magnisia",
     "nuts_name" : "Μαγνησία",
     "name_ascii" : "Magnisia",
-    "name_html" : "&#x039C;&#x03B1;&#x03B3;&#x03BD;&#x03B7;&#x03C3;&#x03AF;&#x03B1;",
-    "sort_order" : 687
+    "name_html" : "&#x039C;&#x03B1;&#x03B3;&#x03BD;&#x03B7;&#x03C3;&#x03AF;&#x03B1;"
   },
-  {
-    "objectid" : 517,
-    "nuts_id" : "EL621",
+  "EL621": {
     "name_latin" : "Zakynthos",
     "nuts_name" : "Ζάκυνθος",
     "name_ascii" : "Zakinthos",
-    "name_html" : "&#x0396;&#x03AC;&#x03BA;&#x03C5;&#x03BD;&#x03B8;&#x03BF;&#x03C2;",
-    "sort_order" : 689
+    "name_html" : "&#x0396;&#x03AC;&#x03BA;&#x03C5;&#x03BD;&#x03B8;&#x03BF;&#x03C2;"
   },
-  {
-    "objectid" : 518,
-    "nuts_id" : "EL622",
+  "EL622": {
     "name_latin" : "Kerkyra",
     "nuts_name" : "Κέρκυρα",
     "name_ascii" : "Kerkira",
-    "name_html" : "&#x039A;&#x03AD;&#x03C1;&#x03BA;&#x03C5;&#x03C1;&#x03B1;",
-    "sort_order" : 690
+    "name_html" : "&#x039A;&#x03AD;&#x03C1;&#x03BA;&#x03C5;&#x03C1;&#x03B1;"
   },
-  {
-    "objectid" : 519,
-    "nuts_id" : "EL624",
+  "EL624": {
     "name_latin" : "Lefkada",
     "nuts_name" : "Λευκάδα",
     "name_ascii" : "Leikada",
-    "name_html" : "&#x039B;&#x03B5;&#x03C5;&#x03BA;&#x03AC;&#x03B4;&#x03B1;",
-    "sort_order" : 692
+    "name_html" : "&#x039B;&#x03B5;&#x03C5;&#x03BA;&#x03AC;&#x03B4;&#x03B1;"
   },
-  {
-    "objectid" : 520,
-    "nuts_id" : "EL632",
+  "EL632": {
     "name_latin" : "Achaia",
     "nuts_name" : "Αχαΐα",
     "name_ascii" : "AxaIa",
-    "name_html" : "&#x0391;&#x03C7;&#x03B1;&#x0390;&#x03B1;",
-    "sort_order" : 695
+    "name_html" : "&#x0391;&#x03C7;&#x03B1;&#x0390;&#x03B1;"
   },
-  {
-    "objectid" : 521,
-    "nuts_id" : "EL633",
+  "EL633": {
     "name_latin" : "Ileia",
     "nuts_name" : "Ηλεία",
     "name_ascii" : "Ileia",
-    "name_html" : "&#x0397;&#x03BB;&#x03B5;&#x03AF;&#x03B1;",
-    "sort_order" : 696
+    "name_html" : "&#x0397;&#x03BB;&#x03B5;&#x03AF;&#x03B1;"
   },
-  {
-    "objectid" : 522,
-    "nuts_id" : "EL641",
+  "EL641": {
     "name_latin" : "Voiotia",
     "nuts_name" : "Βοιωτία",
     "name_ascii" : "Boiotia",
-    "name_html" : "&#x0392;&#x03BF;&#x03B9;&#x03C9;&#x03C4;&#x03AF;&#x03B1;",
-    "sort_order" : 698
+    "name_html" : "&#x0392;&#x03BF;&#x03B9;&#x03C9;&#x03C4;&#x03AF;&#x03B1;"
   },
-  {
-    "objectid" : 523,
-    "nuts_id" : "EL643",
+  "EL643": {
     "name_latin" : "Evrytania",
     "nuts_name" : "Ευρυτανία",
     "name_ascii" : "Eiritania",
-    "name_html" : "&#x0395;&#x03C5;&#x03C1;&#x03C5;&#x03C4;&#x03B1;&#x03BD;&#x03AF;&#x03B1;",
-    "sort_order" : 700
+    "name_html" : "&#x0395;&#x03C5;&#x03C1;&#x03C5;&#x03C4;&#x03B1;&#x03BD;&#x03AF;&#x03B1;"
   },
-  {
-    "objectid" : 524,
-    "nuts_id" : "EL644",
+  "EL644": {
     "name_latin" : "Fthiotida",
     "nuts_name" : "Φθιώτιδα",
     "name_ascii" : "Fthiotida",
-    "name_html" : "&#x03A6;&#x03B8;&#x03B9;&#x03CE;&#x03C4;&#x03B9;&#x03B4;&#x03B1;",
-    "sort_order" : 701
+    "name_html" : "&#x03A6;&#x03B8;&#x03B9;&#x03CE;&#x03C4;&#x03B9;&#x03B4;&#x03B1;"
   },
-  {
-    "objectid" : 525,
-    "nuts_id" : "EL645",
+  "EL645": {
     "name_latin" : "Fokida",
     "nuts_name" : "Φωκίδα",
     "name_ascii" : "Fokida",
-    "name_html" : "&#x03A6;&#x03C9;&#x03BA;&#x03AF;&#x03B4;&#x03B1;",
-    "sort_order" : 702
+    "name_html" : "&#x03A6;&#x03C9;&#x03BA;&#x03AF;&#x03B4;&#x03B1;"
   },
-  {
-    "objectid" : 526,
-    "nuts_id" : "EL651",
+  "EL651": {
     "name_latin" : "Argolida, Arkadia",
     "nuts_name" : "Αργολίδα, Αρκαδία",
     "name_ascii" : "Argolida, Arkadia",
-    "name_html" : "&#x0391;&#x03C1;&#x03B3;&#x03BF;&#x03BB;&#x03AF;&#x03B4;&#x03B1;, &#x0391;&#x03C1;&#x03BA;&#x03B1;&#x03B4;&#x03AF;&#x03B1;",
-    "sort_order" : 704
+    "name_html" : "&#x0391;&#x03C1;&#x03B3;&#x03BF;&#x03BB;&#x03AF;&#x03B4;&#x03B1;, &#x0391;&#x03C1;&#x03BA;&#x03B1;&#x03B4;&#x03AF;&#x03B1;"
   },
-  {
-    "objectid" : 527,
-    "nuts_id" : "EL652",
+  "EL652": {
     "name_latin" : "Korinthia",
     "nuts_name" : "Κορινθία",
     "name_ascii" : "Korinthia",
-    "name_html" : "&#x039A;&#x03BF;&#x03C1;&#x03B9;&#x03BD;&#x03B8;&#x03AF;&#x03B1;",
-    "sort_order" : 705
+    "name_html" : "&#x039A;&#x03BF;&#x03C1;&#x03B9;&#x03BD;&#x03B8;&#x03AF;&#x03B1;"
   },
-  {
-    "objectid" : 528,
-    "nuts_id" : "ES111",
+  "ES111": {
     "name_latin" : "A Coruña",
     "nuts_name" : "A Coruña",
     "name_ascii" : "A Coruna",
-    "name_html" : "A Coru&#x00F1;a",
-    "sort_order" : 713
+    "name_html" : "A Coru&#x00F1;a"
   },
-  {
-    "objectid" : 529,
-    "nuts_id" : "ES112",
+  "ES112": {
     "name_latin" : "Lugo",
     "nuts_name" : "Lugo",
     "name_ascii" : "Lugo",
-    "name_html" : "Lugo",
-    "sort_order" : 714
+    "name_html" : "Lugo"
   },
-  {
-    "objectid" : 530,
-    "nuts_id" : "ES113",
+  "ES113": {
     "name_latin" : "Ourense",
     "nuts_name" : "Ourense",
     "name_ascii" : "Ourense",
-    "name_html" : "Ourense",
-    "sort_order" : 715
+    "name_html" : "Ourense"
   },
-  {
-    "objectid" : 531,
-    "nuts_id" : "ES114",
+  "ES114": {
     "name_latin" : "Pontevedra",
     "nuts_name" : "Pontevedra",
     "name_ascii" : "Pontevedra",
-    "name_html" : "Pontevedra",
-    "sort_order" : 716
+    "name_html" : "Pontevedra"
   },
-  {
-    "objectid" : 532,
-    "nuts_id" : "ES120",
+  "ES120": {
     "name_latin" : "Asturias",
     "nuts_name" : "Asturias",
     "name_ascii" : "Asturias",
-    "name_html" : "Asturias",
-    "sort_order" : 718
+    "name_html" : "Asturias"
   },
-  {
-    "objectid" : 533,
-    "nuts_id" : "ES130",
+  "ES130": {
     "name_latin" : "Cantabria",
     "nuts_name" : "Cantabria",
     "name_ascii" : "Cantabria",
-    "name_html" : "Cantabria",
-    "sort_order" : 720
+    "name_html" : "Cantabria"
   },
-  {
-    "objectid" : 534,
-    "nuts_id" : "ES211",
+  "ES211": {
     "name_latin" : "Araba/Álava",
     "nuts_name" : "Araba/Álava",
     "name_ascii" : "Araba/Alava",
-    "name_html" : "Araba/&#x00C1;lava",
-    "sort_order" : 723
+    "name_html" : "Araba/&#x00C1;lava"
   },
-  {
-    "objectid" : 535,
-    "nuts_id" : "ES212",
+  "ES212": {
     "name_latin" : "Gipuzkoa",
     "nuts_name" : "Gipuzkoa",
     "name_ascii" : "Gipuzkoa",
-    "name_html" : "Gipuzkoa",
-    "sort_order" : 724
+    "name_html" : "Gipuzkoa"
   },
-  {
-    "objectid" : 536,
-    "nuts_id" : "ES213",
+  "ES213": {
     "name_latin" : "Bizkaia",
     "nuts_name" : "Bizkaia",
     "name_ascii" : "Bizkaia",
-    "name_html" : "Bizkaia",
-    "sort_order" : 725
+    "name_html" : "Bizkaia"
   },
-  {
-    "objectid" : 537,
-    "nuts_id" : "ES220",
+  "ES220": {
     "name_latin" : "Navarra",
     "nuts_name" : "Navarra",
     "name_ascii" : "Navarra",
-    "name_html" : "Navarra",
-    "sort_order" : 727
+    "name_html" : "Navarra"
   },
-  {
-    "objectid" : 538,
-    "nuts_id" : "ES230",
+  "ES230": {
     "name_latin" : "La Rioja",
     "nuts_name" : "La Rioja",
     "name_ascii" : "La Rioja",
-    "name_html" : "La Rioja",
-    "sort_order" : 729
+    "name_html" : "La Rioja"
   },
-  {
-    "objectid" : 539,
-    "nuts_id" : "ES241",
+  "ES241": {
     "name_latin" : "Huesca",
     "nuts_name" : "Huesca",
     "name_ascii" : "Huesca",
-    "name_html" : "Huesca",
-    "sort_order" : 731
+    "name_html" : "Huesca"
   },
-  {
-    "objectid" : 540,
-    "nuts_id" : "ES242",
+  "ES242": {
     "name_latin" : "Teruel",
     "nuts_name" : "Teruel",
     "name_ascii" : "Teruel",
-    "name_html" : "Teruel",
-    "sort_order" : 732
+    "name_html" : "Teruel"
   },
-  {
-    "objectid" : 541,
-    "nuts_id" : "ES243",
+  "ES243": {
     "name_latin" : "Zaragoza",
     "nuts_name" : "Zaragoza",
     "name_ascii" : "Zaragoza",
-    "name_html" : "Zaragoza",
-    "sort_order" : 733
+    "name_html" : "Zaragoza"
   },
-  {
-    "objectid" : 542,
-    "nuts_id" : "ES412",
+  "ES412": {
     "name_latin" : "Burgos",
     "nuts_name" : "Burgos",
     "name_ascii" : "Burgos",
-    "name_html" : "Burgos",
-    "sort_order" : 740
+    "name_html" : "Burgos"
   },
-  {
-    "objectid" : 543,
-    "nuts_id" : "ES413",
+  "ES413": {
     "name_latin" : "León",
     "nuts_name" : "León",
     "name_ascii" : "Leon",
-    "name_html" : "Le&#x00F3;n",
-    "sort_order" : 741
+    "name_html" : "Le&#x00F3;n"
   },
-  {
-    "objectid" : 544,
-    "nuts_id" : "ES414",
+  "ES414": {
     "name_latin" : "Palencia",
     "nuts_name" : "Palencia",
     "name_ascii" : "Palencia",
-    "name_html" : "Palencia",
-    "sort_order" : 742
+    "name_html" : "Palencia"
   },
-  {
-    "objectid" : 545,
-    "nuts_id" : "ES415",
+  "ES415": {
     "name_latin" : "Salamanca",
     "nuts_name" : "Salamanca",
     "name_ascii" : "Salamanca",
-    "name_html" : "Salamanca",
-    "sort_order" : 743
+    "name_html" : "Salamanca"
   },
-  {
-    "objectid" : 546,
-    "nuts_id" : "ES417",
+  "ES417": {
     "name_latin" : "Soria",
     "nuts_name" : "Soria",
     "name_ascii" : "Soria",
-    "name_html" : "Soria",
-    "sort_order" : 745
+    "name_html" : "Soria"
   },
-  {
-    "objectid" : 547,
-    "nuts_id" : "ES418",
+  "ES418": {
     "name_latin" : "Valladolid",
     "nuts_name" : "Valladolid",
     "name_ascii" : "Valladolid",
-    "name_html" : "Valladolid",
-    "sort_order" : 746
+    "name_html" : "Valladolid"
   },
-  {
-    "objectid" : 548,
-    "nuts_id" : "ES419",
+  "ES419": {
     "name_latin" : "Zamora",
     "nuts_name" : "Zamora",
     "name_ascii" : "Zamora",
-    "name_html" : "Zamora",
-    "sort_order" : 747
+    "name_html" : "Zamora"
   },
-  {
-    "objectid" : 549,
-    "nuts_id" : "ES422",
+  "ES422": {
     "name_latin" : "Ciudad Real",
     "nuts_name" : "Ciudad Real",
     "name_ascii" : "Ciudad Real",
-    "name_html" : "Ciudad Real",
-    "sort_order" : 750
+    "name_html" : "Ciudad Real"
   },
-  {
-    "objectid" : 550,
-    "nuts_id" : "ES423",
+  "ES423": {
     "name_latin" : "Cuenca",
     "nuts_name" : "Cuenca",
     "name_ascii" : "Cuenca",
-    "name_html" : "Cuenca",
-    "sort_order" : 751
+    "name_html" : "Cuenca"
   },
-  {
-    "objectid" : 551,
-    "nuts_id" : "ES424",
+  "ES424": {
     "name_latin" : "Guadalajara",
     "nuts_name" : "Guadalajara",
     "name_ascii" : "Guadalajara",
-    "name_html" : "Guadalajara",
-    "sort_order" : 752
+    "name_html" : "Guadalajara"
   },
-  {
-    "objectid" : 552,
-    "nuts_id" : "ES425",
+  "ES425": {
     "name_latin" : "Toledo",
     "nuts_name" : "Toledo",
     "name_ascii" : "Toledo",
-    "name_html" : "Toledo",
-    "sort_order" : 753
+    "name_html" : "Toledo"
   },
-  {
-    "objectid" : 553,
-    "nuts_id" : "ES431",
+  "ES431": {
     "name_latin" : "Badajoz",
     "nuts_name" : "Badajoz",
     "name_ascii" : "Badajoz",
-    "name_html" : "Badajoz",
-    "sort_order" : 755
+    "name_html" : "Badajoz"
   },
-  {
-    "objectid" : 554,
-    "nuts_id" : "ES432",
+  "ES432": {
     "name_latin" : "Cáceres",
     "nuts_name" : "Cáceres",
     "name_ascii" : "Caceres",
-    "name_html" : "C&#x00E1;ceres",
-    "sort_order" : 756
+    "name_html" : "C&#x00E1;ceres"
   },
-  {
-    "objectid" : 555,
-    "nuts_id" : "ES511",
+  "ES511": {
     "name_latin" : "Barcelona",
     "nuts_name" : "Barcelona",
     "name_ascii" : "Barcelona",
-    "name_html" : "Barcelona",
-    "sort_order" : 759
+    "name_html" : "Barcelona"
   },
-  {
-    "objectid" : 556,
-    "nuts_id" : "ES513",
+  "ES513": {
     "name_latin" : "Lleida",
     "nuts_name" : "Lleida",
     "name_ascii" : "Lleida",
-    "name_html" : "Lleida",
-    "sort_order" : 761
+    "name_html" : "Lleida"
   },
-  {
-    "objectid" : 557,
-    "nuts_id" : "ES514",
+  "ES514": {
     "name_latin" : "Tarragona",
     "nuts_name" : "Tarragona",
     "name_ascii" : "Tarragona",
-    "name_html" : "Tarragona",
-    "sort_order" : 762
+    "name_html" : "Tarragona"
   },
-  {
-    "objectid" : 558,
-    "nuts_id" : "ES522",
+  "ES522": {
     "name_latin" : "Castellón / Castelló",
     "nuts_name" : "Castellón / Castelló",
     "name_ascii" : "Castellon / Castello",
-    "name_html" : "Castell&#x00F3;n / Castell&#x00F3;",
-    "sort_order" : 765
+    "name_html" : "Castell&#x00F3;n / Castell&#x00F3;"
   },
-  {
-    "objectid" : 559,
-    "nuts_id" : "ES523",
+  "ES523": {
     "name_latin" : "Valencia / València",
     "nuts_name" : "Valencia / València",
     "name_ascii" : "Valencia / Valencia",
-    "name_html" : "Valencia / Val&#x00E8;ncia",
-    "sort_order" : 766
+    "name_html" : "Valencia / Val&#x00E8;ncia"
   },
-  {
-    "objectid" : 560,
-    "nuts_id" : "ES532",
+  "ES532": {
     "name_latin" : "Mallorca",
     "nuts_name" : "Mallorca",
     "name_ascii" : "Mallorca",
-    "name_html" : "Mallorca",
-    "sort_order" : 769
+    "name_html" : "Mallorca"
   },
-  {
-    "objectid" : 561,
-    "nuts_id" : "ES533",
+  "ES533": {
     "name_latin" : "Menorca",
     "nuts_name" : "Menorca",
     "name_ascii" : "Menorca",
-    "name_html" : "Menorca",
-    "sort_order" : 770
+    "name_html" : "Menorca"
   },
-  {
-    "objectid" : 562,
-    "nuts_id" : "ES611",
+  "ES611": {
     "name_latin" : "Almería",
     "nuts_name" : "Almería",
     "name_ascii" : "Almeria",
-    "name_html" : "Almer&#x00ED;a",
-    "sort_order" : 773
+    "name_html" : "Almer&#x00ED;a"
   },
-  {
-    "objectid" : 563,
-    "nuts_id" : "ES612",
+  "ES612": {
     "name_latin" : "Cádiz",
     "nuts_name" : "Cádiz",
     "name_ascii" : "Cadiz",
-    "name_html" : "C&#x00E1;diz",
-    "sort_order" : 774
+    "name_html" : "C&#x00E1;diz"
   },
-  {
-    "objectid" : 564,
-    "nuts_id" : "ES613",
+  "ES613": {
     "name_latin" : "Córdoba",
     "nuts_name" : "Córdoba",
     "name_ascii" : "Cordoba",
-    "name_html" : "C&#x00F3;rdoba",
-    "sort_order" : 775
+    "name_html" : "C&#x00F3;rdoba"
   },
-  {
-    "objectid" : 565,
-    "nuts_id" : "ES614",
+  "ES614": {
     "name_latin" : "Granada",
     "nuts_name" : "Granada",
     "name_ascii" : "Granada",
-    "name_html" : "Granada",
-    "sort_order" : 776
+    "name_html" : "Granada"
   },
-  {
-    "objectid" : 566,
-    "nuts_id" : "ES615",
+  "ES615": {
     "name_latin" : "Huelva",
     "nuts_name" : "Huelva",
     "name_ascii" : "Huelva",
-    "name_html" : "Huelva",
-    "sort_order" : 777
+    "name_html" : "Huelva"
   },
-  {
-    "objectid" : 567,
-    "nuts_id" : "ES617",
+  "ES617": {
     "name_latin" : "Málaga",
     "nuts_name" : "Málaga",
     "name_ascii" : "Malaga",
-    "name_html" : "M&#x00E1;laga",
-    "sort_order" : 779
+    "name_html" : "M&#x00E1;laga"
   },
-  {
-    "objectid" : 568,
-    "nuts_id" : "ES618",
+  "ES618": {
     "name_latin" : "Sevilla",
     "nuts_name" : "Sevilla",
     "name_ascii" : "Sevilla",
-    "name_html" : "Sevilla",
-    "sort_order" : 780
+    "name_html" : "Sevilla"
   },
-  {
-    "objectid" : 569,
-    "nuts_id" : "ES620",
+  "ES620": {
     "name_latin" : "Murcia",
     "nuts_name" : "Murcia",
     "name_ascii" : "Murcia",
-    "name_html" : "Murcia",
-    "sort_order" : 782
+    "name_html" : "Murcia"
   },
-  {
-    "objectid" : 570,
-    "nuts_id" : "ES630",
+  "ES630": {
     "name_latin" : "Ceuta",
     "nuts_name" : "Ceuta",
     "name_ascii" : "Ceuta",
-    "name_html" : "Ceuta",
-    "sort_order" : 784
+    "name_html" : "Ceuta"
   },
-  {
-    "objectid" : 571,
-    "nuts_id" : "ES640",
+  "ES640": {
     "name_latin" : "Melilla",
     "nuts_name" : "Melilla",
     "name_ascii" : "Melilla",
-    "name_html" : "Melilla",
-    "sort_order" : 786
+    "name_html" : "Melilla"
   },
-  {
-    "objectid" : 572,
-    "nuts_id" : "ES703",
+  "ES703": {
     "name_latin" : "El Hierro",
     "nuts_name" : "El Hierro",
     "name_ascii" : "El Hierro",
-    "name_html" : "El Hierro",
-    "sort_order" : 789
+    "name_html" : "El Hierro"
   },
-  {
-    "objectid" : 573,
-    "nuts_id" : "ES704",
+  "ES704": {
     "name_latin" : "Fuerteventura",
     "nuts_name" : "Fuerteventura",
     "name_ascii" : "Fuerteventura",
-    "name_html" : "Fuerteventura",
-    "sort_order" : 790
+    "name_html" : "Fuerteventura"
   },
-  {
-    "objectid" : 574,
-    "nuts_id" : "ES705",
+  "ES705": {
     "name_latin" : "Gran Canaria",
     "nuts_name" : "Gran Canaria",
     "name_ascii" : "Gran Canaria",
-    "name_html" : "Gran Canaria",
-    "sort_order" : 791
+    "name_html" : "Gran Canaria"
   },
-  {
-    "objectid" : 575,
-    "nuts_id" : "ES706",
+  "ES706": {
     "name_latin" : "La Gomera",
     "nuts_name" : "La Gomera",
     "name_ascii" : "La Gomera",
-    "name_html" : "La Gomera",
-    "sort_order" : 792
+    "name_html" : "La Gomera"
   },
-  {
-    "objectid" : 576,
-    "nuts_id" : "ES708",
+  "ES708": {
     "name_latin" : "Lanzarote",
     "nuts_name" : "Lanzarote",
     "name_ascii" : "Lanzarote",
-    "name_html" : "Lanzarote",
-    "sort_order" : 794
+    "name_html" : "Lanzarote"
   },
-  {
-    "objectid" : 577,
-    "nuts_id" : "ES709",
+  "ES709": {
     "name_latin" : "Tenerife",
     "nuts_name" : "Tenerife",
     "name_ascii" : "Tenerife",
-    "name_html" : "Tenerife",
-    "sort_order" : 795
+    "name_html" : "Tenerife"
   },
-  {
-    "objectid" : 578,
-    "nuts_id" : "FI193",
+  "FI193": {
     "name_latin" : "Keski-Suomi",
     "nuts_name" : "Keski-Suomi",
     "name_ascii" : "Keski-Suomi",
-    "name_html" : "Keski-Suomi",
-    "sort_order" : 1537
+    "name_html" : "Keski-Suomi"
   },
-  {
-    "objectid" : 579,
-    "nuts_id" : "FI194",
+  "FI194": {
     "name_latin" : "Etelä-Pohjanmaa",
     "nuts_name" : "Etelä-Pohjanmaa",
     "name_ascii" : "Etela-Pohjanmaa",
-    "name_html" : "Etel&#x00E4;-Pohjanmaa",
-    "sort_order" : 1538
+    "name_html" : "Etel&#x00E4;-Pohjanmaa"
   },
-  {
-    "objectid" : 580,
-    "nuts_id" : "FI195",
+  "FI195": {
     "name_latin" : "Pohjanmaa",
     "nuts_name" : "Pohjanmaa",
     "name_ascii" : "Pohjanmaa",
-    "name_html" : "Pohjanmaa",
-    "sort_order" : 1539
+    "name_html" : "Pohjanmaa"
   },
-  {
-    "objectid" : 581,
-    "nuts_id" : "FI196",
+  "FI196": {
     "name_latin" : "Satakunta",
     "nuts_name" : "Satakunta",
     "name_ascii" : "Satakunta",
-    "name_html" : "Satakunta",
-    "sort_order" : 1540
+    "name_html" : "Satakunta"
   },
-  {
-    "objectid" : 582,
-    "nuts_id" : "FI197",
+  "FI197": {
     "name_latin" : "Pirkanmaa",
     "nuts_name" : "Pirkanmaa",
     "name_ascii" : "Pirkanmaa",
-    "name_html" : "Pirkanmaa",
-    "sort_order" : 1541
+    "name_html" : "Pirkanmaa"
   },
-  {
-    "objectid" : 583,
-    "nuts_id" : "FI1B1",
+  "FI1B1": {
     "name_latin" : "Helsinki-Uusimaa",
     "nuts_name" : "Helsinki-Uusimaa",
     "name_ascii" : "Helsinki-Uusimaa",
-    "name_html" : "Helsinki-Uusimaa",
-    "sort_order" : 1543
+    "name_html" : "Helsinki-Uusimaa"
   },
-  {
-    "objectid" : 584,
-    "nuts_id" : "FI1C1",
+  "FI1C1": {
     "name_latin" : "Varsinais-Suomi",
     "nuts_name" : "Varsinais-Suomi",
     "name_ascii" : "Varsinais-Suomi",
-    "name_html" : "Varsinais-Suomi",
-    "sort_order" : 1545
+    "name_html" : "Varsinais-Suomi"
   },
-  {
-    "objectid" : 585,
-    "nuts_id" : "FI1C2",
+  "FI1C2": {
     "name_latin" : "Kanta-Häme",
     "nuts_name" : "Kanta-Häme",
     "name_ascii" : "Kanta-Hame",
-    "name_html" : "Kanta-H&#x00E4;me",
-    "sort_order" : 1546
+    "name_html" : "Kanta-H&#x00E4;me"
   },
-  {
-    "objectid" : 586,
-    "nuts_id" : "FI1C4",
+  "FI1C4": {
     "name_latin" : "Kymenlaakso",
     "nuts_name" : "Kymenlaakso",
     "name_ascii" : "Kymenlaakso",
-    "name_html" : "Kymenlaakso",
-    "sort_order" : 1548
+    "name_html" : "Kymenlaakso"
   },
-  {
-    "objectid" : 587,
-    "nuts_id" : "FI1C5",
+  "FI1C5": {
     "name_latin" : "Etelä-Karjala",
     "nuts_name" : "Etelä-Karjala",
     "name_ascii" : "Etela-Karjala",
-    "name_html" : "Etel&#x00E4;-Karjala",
-    "sort_order" : 1549
+    "name_html" : "Etel&#x00E4;-Karjala"
   },
-  {
-    "objectid" : 588,
-    "nuts_id" : "FI1D1",
+  "FI1D1": {
     "name_latin" : "Etelä-Savo",
     "nuts_name" : "Etelä-Savo",
     "name_ascii" : "Etela-Savo",
-    "name_html" : "Etel&#x00E4;-Savo",
-    "sort_order" : 1551
+    "name_html" : "Etel&#x00E4;-Savo"
   },
-  {
-    "objectid" : 589,
-    "nuts_id" : "FI1D2",
+  "FI1D2": {
     "name_latin" : "Pohjois-Savo",
     "nuts_name" : "Pohjois-Savo",
     "name_ascii" : "Pohjois-Savo",
-    "name_html" : "Pohjois-Savo",
-    "sort_order" : 1552
+    "name_html" : "Pohjois-Savo"
   },
-  {
-    "objectid" : 590,
-    "nuts_id" : "FI1D3",
+  "FI1D3": {
     "name_latin" : "Pohjois-Karjala",
     "nuts_name" : "Pohjois-Karjala",
     "name_ascii" : "Pohjois-Karjala",
-    "name_html" : "Pohjois-Karjala",
-    "sort_order" : 1553
+    "name_html" : "Pohjois-Karjala"
   },
-  {
-    "objectid" : 591,
-    "nuts_id" : "FI1D4",
+  "FI1D4": {
     "name_latin" : "Kainuu",
     "nuts_name" : "Kainuu",
     "name_ascii" : "Kainuu",
-    "name_html" : "Kainuu",
-    "sort_order" : 1554
+    "name_html" : "Kainuu"
   },
-  {
-    "objectid" : 592,
-    "nuts_id" : "FI1D5",
+  "FI1D5": {
     "name_latin" : "Keski-Pohjanmaa",
     "nuts_name" : "Keski-Pohjanmaa",
     "name_ascii" : "Keski-Pohjanmaa",
-    "name_html" : "Keski-Pohjanmaa",
-    "sort_order" : 1555
+    "name_html" : "Keski-Pohjanmaa"
   },
-  {
-    "objectid" : 593,
-    "nuts_id" : "FI1D6",
+  "FI1D6": {
     "name_latin" : "Pohjois-Pohjanmaa",
     "nuts_name" : "Pohjois-Pohjanmaa",
     "name_ascii" : "Pohjois-Pohjanmaa",
-    "name_html" : "Pohjois-Pohjanmaa",
-    "sort_order" : 1556
+    "name_html" : "Pohjois-Pohjanmaa"
   },
-  {
-    "objectid" : 594,
-    "nuts_id" : "FI1D7",
+  "FI1D7": {
     "name_latin" : "Lappi",
     "nuts_name" : "Lappi",
     "name_ascii" : "Lappi",
-    "name_html" : "Lappi",
-    "sort_order" : 1557
+    "name_html" : "Lappi"
   },
-  {
-    "objectid" : 595,
-    "nuts_id" : "FI200",
+  "FI200": {
     "name_latin" : "Åland",
     "nuts_name" : "Åland",
     "name_ascii" : "Aland",
-    "name_html" : "&#x00C5;land",
-    "sort_order" : 1560
+    "name_html" : "&#x00C5;land"
   },
-  {
-    "objectid" : 596,
-    "nuts_id" : "FR101",
+  "FR101": {
     "name_latin" : "Paris",
     "nuts_name" : "Paris",
     "name_ascii" : "Paris",
-    "name_html" : "Paris",
-    "sort_order" : 802
+    "name_html" : "Paris"
   },
-  {
-    "objectid" : 597,
-    "nuts_id" : "FR102",
+  "FR102": {
     "name_latin" : "Seine-et-Marne",
     "nuts_name" : "Seine-et-Marne",
     "name_ascii" : "Seine-et-Marne",
-    "name_html" : "Seine-et-Marne",
-    "sort_order" : 803
+    "name_html" : "Seine-et-Marne"
   },
-  {
-    "objectid" : 598,
-    "nuts_id" : "FR103",
+  "FR103": {
     "name_latin" : "Yvelines",
     "nuts_name" : "Yvelines",
     "name_ascii" : "Yvelines",
-    "name_html" : "Yvelines",
-    "sort_order" : 804
+    "name_html" : "Yvelines"
   },
-  {
-    "objectid" : 599,
-    "nuts_id" : "FR104",
+  "FR104": {
     "name_latin" : "Essonne",
     "nuts_name" : "Essonne",
     "name_ascii" : "Essonne",
-    "name_html" : "Essonne",
-    "sort_order" : 805
+    "name_html" : "Essonne"
   },
-  {
-    "objectid" : 600,
-    "nuts_id" : "FR105",
+  "FR105": {
     "name_latin" : "Hauts-de-Seine",
     "nuts_name" : "Hauts-de-Seine",
     "name_ascii" : "Hauts-de-Seine",
-    "name_html" : "Hauts-de-Seine",
-    "sort_order" : 806
+    "name_html" : "Hauts-de-Seine"
   },
-  {
-    "objectid" : 601,
-    "nuts_id" : "FR106",
+  "FR106": {
     "name_latin" : "Seine-Saint-Denis",
     "nuts_name" : "Seine-Saint-Denis",
     "name_ascii" : "Seine-Saint-Denis",
-    "name_html" : "Seine-Saint-Denis",
-    "sort_order" : 807
+    "name_html" : "Seine-Saint-Denis"
   },
-  {
-    "objectid" : 602,
-    "nuts_id" : "FR107",
+  "FR107": {
     "name_latin" : "Val-de-Marne",
     "nuts_name" : "Val-de-Marne",
     "name_ascii" : "Val-de-Marne",
-    "name_html" : "Val-de-Marne",
-    "sort_order" : 808
+    "name_html" : "Val-de-Marne"
   },
-  {
-    "objectid" : 603,
-    "nuts_id" : "FR108",
+  "FR108": {
     "name_latin" : "Val-d'Oise",
     "nuts_name" : "Val-d'Oise",
     "name_ascii" : "Val-d'Oise",
-    "name_html" : "Val-d'Oise",
-    "sort_order" : 809
+    "name_html" : "Val-d'Oise"
   },
-  {
-    "objectid" : 604,
-    "nuts_id" : "FR211",
+  "FR211": {
     "name_latin" : "Ardennes",
     "nuts_name" : "Ardennes",
     "name_ascii" : "Ardennes",
-    "name_html" : "Ardennes",
-    "sort_order" : 812
+    "name_html" : "Ardennes"
   },
-  {
-    "objectid" : 605,
-    "nuts_id" : "FR212",
+  "FR212": {
     "name_latin" : "Aube",
     "nuts_name" : "Aube",
     "name_ascii" : "Aube",
-    "name_html" : "Aube",
-    "sort_order" : 813
+    "name_html" : "Aube"
   },
-  {
-    "objectid" : 606,
-    "nuts_id" : "FR213",
+  "FR213": {
     "name_latin" : "Marne",
     "nuts_name" : "Marne",
     "name_ascii" : "Marne",
-    "name_html" : "Marne",
-    "sort_order" : 814
+    "name_html" : "Marne"
   },
-  {
-    "objectid" : 607,
-    "nuts_id" : "FR214",
+  "FR214": {
     "name_latin" : "Haute-Marne",
     "nuts_name" : "Haute-Marne",
     "name_ascii" : "Haute-Marne",
-    "name_html" : "Haute-Marne",
-    "sort_order" : 815
+    "name_html" : "Haute-Marne"
   },
-  {
-    "objectid" : 608,
-    "nuts_id" : "FR221",
+  "FR221": {
     "name_latin" : "Aisne",
     "nuts_name" : "Aisne",
     "name_ascii" : "Aisne",
-    "name_html" : "Aisne",
-    "sort_order" : 817
+    "name_html" : "Aisne"
   },
-  {
-    "objectid" : 609,
-    "nuts_id" : "FR222",
+  "FR222": {
     "name_latin" : "Oise",
     "nuts_name" : "Oise",
     "name_ascii" : "Oise",
-    "name_html" : "Oise",
-    "sort_order" : 818
+    "name_html" : "Oise"
   },
-  {
-    "objectid" : 610,
-    "nuts_id" : "FR223",
+  "FR223": {
     "name_latin" : "Somme",
     "nuts_name" : "Somme",
     "name_ascii" : "Somme",
-    "name_html" : "Somme",
-    "sort_order" : 819
+    "name_html" : "Somme"
   },
-  {
-    "objectid" : 611,
-    "nuts_id" : "FR231",
+  "FR231": {
     "name_latin" : "Eure",
     "nuts_name" : "Eure",
     "name_ascii" : "Eure",
-    "name_html" : "Eure",
-    "sort_order" : 821
+    "name_html" : "Eure"
   },
-  {
-    "objectid" : 612,
-    "nuts_id" : "FR232",
+  "FR232": {
     "name_latin" : "Seine-Maritime",
     "nuts_name" : "Seine-Maritime",
     "name_ascii" : "Seine-Maritime",
-    "name_html" : "Seine-Maritime",
-    "sort_order" : 822
+    "name_html" : "Seine-Maritime"
   },
-  {
-    "objectid" : 613,
-    "nuts_id" : "FR241",
+  "FR241": {
     "name_latin" : "Cher",
     "nuts_name" : "Cher",
     "name_ascii" : "Cher",
-    "name_html" : "Cher",
-    "sort_order" : 824
+    "name_html" : "Cher"
   },
-  {
-    "objectid" : 614,
-    "nuts_id" : "FR242",
+  "FR242": {
     "name_latin" : "Eure-et-Loir",
     "nuts_name" : "Eure-et-Loir",
     "name_ascii" : "Eure-et-Loir",
-    "name_html" : "Eure-et-Loir",
-    "sort_order" : 825
+    "name_html" : "Eure-et-Loir"
   },
-  {
-    "objectid" : 615,
-    "nuts_id" : "FR243",
+  "FR243": {
     "name_latin" : "Indre",
     "nuts_name" : "Indre",
     "name_ascii" : "Indre",
-    "name_html" : "Indre",
-    "sort_order" : 826
+    "name_html" : "Indre"
   },
-  {
-    "objectid" : 616,
-    "nuts_id" : "FR244",
+  "FR244": {
     "name_latin" : "Indre-et-Loire",
     "nuts_name" : "Indre-et-Loire",
     "name_ascii" : "Indre-et-Loire",
-    "name_html" : "Indre-et-Loire",
-    "sort_order" : 827
+    "name_html" : "Indre-et-Loire"
   },
-  {
-    "objectid" : 617,
-    "nuts_id" : "FR245",
+  "FR245": {
     "name_latin" : "Loir-et-Cher",
     "nuts_name" : "Loir-et-Cher",
     "name_ascii" : "Loir-et-Cher",
-    "name_html" : "Loir-et-Cher",
-    "sort_order" : 828
+    "name_html" : "Loir-et-Cher"
   },
-  {
-    "objectid" : 618,
-    "nuts_id" : "FR246",
+  "FR246": {
     "name_latin" : "Loiret",
     "nuts_name" : "Loiret",
     "name_ascii" : "Loiret",
-    "name_html" : "Loiret",
-    "sort_order" : 829
+    "name_html" : "Loiret"
   },
-  {
-    "objectid" : 619,
-    "nuts_id" : "FR251",
+  "FR251": {
     "name_latin" : "Calvados",
     "nuts_name" : "Calvados",
     "name_ascii" : "Calvados",
-    "name_html" : "Calvados",
-    "sort_order" : 831
+    "name_html" : "Calvados"
   },
-  {
-    "objectid" : 620,
-    "nuts_id" : "FR252",
+  "FR252": {
     "name_latin" : "Manche",
     "nuts_name" : "Manche",
     "name_ascii" : "Manche",
-    "name_html" : "Manche",
-    "sort_order" : 832
+    "name_html" : "Manche"
   },
-  {
-    "objectid" : 621,
-    "nuts_id" : "FR253",
+  "FR253": {
     "name_latin" : "Orne",
     "nuts_name" : "Orne",
     "name_ascii" : "Orne",
-    "name_html" : "Orne",
-    "sort_order" : 833
+    "name_html" : "Orne"
   },
-  {
-    "objectid" : 622,
-    "nuts_id" : "FR261",
+  "FR261": {
     "name_latin" : "Côte-d'Or",
     "nuts_name" : "Côte-d'Or",
     "name_ascii" : "Cote-d'Or",
-    "name_html" : "C&#x00F4;te-d'Or",
-    "sort_order" : 835
+    "name_html" : "C&#x00F4;te-d'Or"
   },
-  {
-    "objectid" : 623,
-    "nuts_id" : "FR262",
+  "FR262": {
     "name_latin" : "Nièvre",
     "nuts_name" : "Nièvre",
     "name_ascii" : "Nievre",
-    "name_html" : "Ni&#x00E8;vre",
-    "sort_order" : 836
+    "name_html" : "Ni&#x00E8;vre"
   },
-  {
-    "objectid" : 624,
-    "nuts_id" : "FR264",
+  "FR264": {
     "name_latin" : "Yonne",
     "nuts_name" : "Yonne",
     "name_ascii" : "Yonne",
-    "name_html" : "Yonne",
-    "sort_order" : 838
+    "name_html" : "Yonne"
   },
-  {
-    "objectid" : 625,
-    "nuts_id" : "FR301",
+  "FR301": {
     "name_latin" : "Nord",
     "nuts_name" : "Nord",
     "name_ascii" : "Nord",
-    "name_html" : "Nord",
-    "sort_order" : 841
+    "name_html" : "Nord"
   },
-  {
-    "objectid" : 626,
-    "nuts_id" : "FR302",
+  "FR302": {
     "name_latin" : "Pas-de-Calais",
     "nuts_name" : "Pas-de-Calais",
     "name_ascii" : "Pas-de-Calais",
-    "name_html" : "Pas-de-Calais",
-    "sort_order" : 842
+    "name_html" : "Pas-de-Calais"
   },
-  {
-    "objectid" : 627,
-    "nuts_id" : "FR412",
+  "FR412": {
     "name_latin" : "Meuse",
     "nuts_name" : "Meuse",
     "name_ascii" : "Meuse",
-    "name_html" : "Meuse",
-    "sort_order" : 846
+    "name_html" : "Meuse"
   },
-  {
-    "objectid" : 628,
-    "nuts_id" : "FR413",
+  "FR413": {
     "name_latin" : "Moselle",
     "nuts_name" : "Moselle",
     "name_ascii" : "Moselle",
-    "name_html" : "Moselle",
-    "sort_order" : 847
+    "name_html" : "Moselle"
   },
-  {
-    "objectid" : 629,
-    "nuts_id" : "FR414",
+  "FR414": {
     "name_latin" : "Vosges",
     "nuts_name" : "Vosges",
     "name_ascii" : "Vosges",
-    "name_html" : "Vosges",
-    "sort_order" : 848
+    "name_html" : "Vosges"
   },
-  {
-    "objectid" : 630,
-    "nuts_id" : "FR421",
+  "FR421": {
     "name_latin" : "Bas-Rhin",
     "nuts_name" : "Bas-Rhin",
     "name_ascii" : "Bas-Rhin",
-    "name_html" : "Bas-Rhin",
-    "sort_order" : 850
+    "name_html" : "Bas-Rhin"
   },
-  {
-    "objectid" : 631,
-    "nuts_id" : "FR422",
+  "FR422": {
     "name_latin" : "Haut-Rhin",
     "nuts_name" : "Haut-Rhin",
     "name_ascii" : "Haut-Rhin",
-    "name_html" : "Haut-Rhin",
-    "sort_order" : 851
+    "name_html" : "Haut-Rhin"
   },
-  {
-    "objectid" : 632,
-    "nuts_id" : "FR431",
+  "FR431": {
     "name_latin" : "Doubs",
     "nuts_name" : "Doubs",
     "name_ascii" : "Doubs",
-    "name_html" : "Doubs",
-    "sort_order" : 853
+    "name_html" : "Doubs"
   },
-  {
-    "objectid" : 633,
-    "nuts_id" : "FR432",
+  "FR432": {
     "name_latin" : "Jura",
     "nuts_name" : "Jura",
     "name_ascii" : "Jura",
-    "name_html" : "Jura",
-    "sort_order" : 854
+    "name_html" : "Jura"
   },
-  {
-    "objectid" : 634,
-    "nuts_id" : "FR434",
+  "FR434": {
     "name_latin" : "Territoire de Belfort",
     "nuts_name" : "Territoire de Belfort",
     "name_ascii" : "Territoire de Belfort",
-    "name_html" : "Territoire de Belfort",
-    "sort_order" : 856
+    "name_html" : "Territoire de Belfort"
   },
-  {
-    "objectid" : 635,
-    "nuts_id" : "FR511",
+  "FR511": {
     "name_latin" : "Loire-Atlantique",
     "nuts_name" : "Loire-Atlantique",
     "name_ascii" : "Loire-Atlantique",
-    "name_html" : "Loire-Atlantique",
-    "sort_order" : 859
+    "name_html" : "Loire-Atlantique"
   },
-  {
-    "objectid" : 636,
-    "nuts_id" : "FR513",
+  "FR513": {
     "name_latin" : "Mayenne",
     "nuts_name" : "Mayenne",
     "name_ascii" : "Mayenne",
-    "name_html" : "Mayenne",
-    "sort_order" : 861
+    "name_html" : "Mayenne"
   },
-  {
-    "objectid" : 637,
-    "nuts_id" : "FR514",
+  "FR514": {
     "name_latin" : "Sarthe",
     "nuts_name" : "Sarthe",
     "name_ascii" : "Sarthe",
-    "name_html" : "Sarthe",
-    "sort_order" : 862
+    "name_html" : "Sarthe"
   },
-  {
-    "objectid" : 638,
-    "nuts_id" : "FR515",
+  "FR515": {
     "name_latin" : "Vendée",
     "nuts_name" : "Vendée",
     "name_ascii" : "Vendee",
-    "name_html" : "Vend&#x00E9;e",
-    "sort_order" : 863
+    "name_html" : "Vend&#x00E9;e"
   },
-  {
-    "objectid" : 639,
-    "nuts_id" : "FR521",
+  "FR521": {
     "name_latin" : "Côtes-d'Armor",
     "nuts_name" : "Côtes-d'Armor",
     "name_ascii" : "Cotes-d'Armor",
-    "name_html" : "C&#x00F4;tes-d'Armor",
-    "sort_order" : 865
+    "name_html" : "C&#x00F4;tes-d'Armor"
   },
-  {
-    "objectid" : 640,
-    "nuts_id" : "FR523",
+  "FR523": {
     "name_latin" : "Ille-et-Vilaine",
     "nuts_name" : "Ille-et-Vilaine",
     "name_ascii" : "Ille-et-Vilaine",
-    "name_html" : "Ille-et-Vilaine",
-    "sort_order" : 867
+    "name_html" : "Ille-et-Vilaine"
   },
-  {
-    "objectid" : 641,
-    "nuts_id" : "FR524",
+  "FR524": {
     "name_latin" : "Morbihan",
     "nuts_name" : "Morbihan",
     "name_ascii" : "Morbihan",
-    "name_html" : "Morbihan",
-    "sort_order" : 868
+    "name_html" : "Morbihan"
   },
-  {
-    "objectid" : 642,
-    "nuts_id" : "FR531",
+  "FR531": {
     "name_latin" : "Charente",
     "nuts_name" : "Charente",
     "name_ascii" : "Charente",
-    "name_html" : "Charente",
-    "sort_order" : 870
+    "name_html" : "Charente"
   },
-  {
-    "objectid" : 643,
-    "nuts_id" : "FR532",
+  "FR532": {
     "name_latin" : "Charente-Maritime",
     "nuts_name" : "Charente-Maritime",
     "name_ascii" : "Charente-Maritime",
-    "name_html" : "Charente-Maritime",
-    "sort_order" : 871
+    "name_html" : "Charente-Maritime"
   },
-  {
-    "objectid" : 644,
-    "nuts_id" : "FR534",
+  "FR534": {
     "name_latin" : "Vienne",
     "nuts_name" : "Vienne",
     "name_ascii" : "Vienne",
-    "name_html" : "Vienne",
-    "sort_order" : 873
+    "name_html" : "Vienne"
   },
-  {
-    "objectid" : 645,
-    "nuts_id" : "FR611",
+  "FR611": {
     "name_latin" : "Dordogne",
     "nuts_name" : "Dordogne",
     "name_ascii" : "Dordogne",
-    "name_html" : "Dordogne",
-    "sort_order" : 876
+    "name_html" : "Dordogne"
   },
-  {
-    "objectid" : 646,
-    "nuts_id" : "FR612",
+  "FR612": {
     "name_latin" : "Gironde",
     "nuts_name" : "Gironde",
     "name_ascii" : "Gironde",
-    "name_html" : "Gironde",
-    "sort_order" : 877
+    "name_html" : "Gironde"
   },
-  {
-    "objectid" : 647,
-    "nuts_id" : "FR613",
+  "FR613": {
     "name_latin" : "Landes",
     "nuts_name" : "Landes",
     "name_ascii" : "Landes",
-    "name_html" : "Landes",
-    "sort_order" : 878
+    "name_html" : "Landes"
   },
-  {
-    "objectid" : 648,
-    "nuts_id" : "FR615",
+  "FR615": {
     "name_latin" : "Pyrénées-Atlantiques",
     "nuts_name" : "Pyrénées-Atlantiques",
     "name_ascii" : "Pyrenees-Atlantiques",
-    "name_html" : "Pyr&#x00E9;n&#x00E9;es-Atlantiques",
-    "sort_order" : 880
+    "name_html" : "Pyr&#x00E9;n&#x00E9;es-Atlantiques"
   },
-  {
-    "objectid" : 649,
-    "nuts_id" : "FR621",
+  "FR621": {
     "name_latin" : "Ariège",
     "nuts_name" : "Ariège",
     "name_ascii" : "Ariege",
-    "name_html" : "Ari&#x00E8;ge",
-    "sort_order" : 882
+    "name_html" : "Ari&#x00E8;ge"
   },
-  {
-    "objectid" : 650,
-    "nuts_id" : "FR623",
+  "FR623": {
     "name_latin" : "Haute-Garonne",
     "nuts_name" : "Haute-Garonne",
     "name_ascii" : "Haute-Garonne",
-    "name_html" : "Haute-Garonne",
-    "sort_order" : 884
+    "name_html" : "Haute-Garonne"
   },
-  {
-    "objectid" : 651,
-    "nuts_id" : "FR624",
+  "FR624": {
     "name_latin" : "Gers",
     "nuts_name" : "Gers",
     "name_ascii" : "Gers",
-    "name_html" : "Gers",
-    "sort_order" : 885
+    "name_html" : "Gers"
   },
-  {
-    "objectid" : 652,
-    "nuts_id" : "FR625",
+  "FR625": {
     "name_latin" : "Lot",
     "nuts_name" : "Lot",
     "name_ascii" : "Lot",
-    "name_html" : "Lot",
-    "sort_order" : 886
+    "name_html" : "Lot"
   },
-  {
-    "objectid" : 653,
-    "nuts_id" : "FR627",
+  "FR627": {
     "name_latin" : "Tarn",
     "nuts_name" : "Tarn",
     "name_ascii" : "Tarn",
-    "name_html" : "Tarn",
-    "sort_order" : 888
+    "name_html" : "Tarn"
   },
-  {
-    "objectid" : 654,
-    "nuts_id" : "FR628",
+  "FR628": {
     "name_latin" : "Tarn-et-Garonne",
     "nuts_name" : "Tarn-et-Garonne",
     "name_ascii" : "Tarn-et-Garonne",
-    "name_html" : "Tarn-et-Garonne",
-    "sort_order" : 889
+    "name_html" : "Tarn-et-Garonne"
   },
-  {
-    "objectid" : 655,
-    "nuts_id" : "FR631",
+  "FR631": {
     "name_latin" : "Corrèze",
     "nuts_name" : "Corrèze",
     "name_ascii" : "Correze",
-    "name_html" : "Corr&#x00E8;ze",
-    "sort_order" : 891
+    "name_html" : "Corr&#x00E8;ze"
   },
-  {
-    "objectid" : 656,
-    "nuts_id" : "FR632",
+  "FR632": {
     "name_latin" : "Creuse",
     "nuts_name" : "Creuse",
     "name_ascii" : "Creuse",
-    "name_html" : "Creuse",
-    "sort_order" : 892
+    "name_html" : "Creuse"
   },
-  {
-    "objectid" : 657,
-    "nuts_id" : "FR633",
+  "FR633": {
     "name_latin" : "Haute-Vienne",
     "nuts_name" : "Haute-Vienne",
     "name_ascii" : "Haute-Vienne",
-    "name_html" : "Haute-Vienne",
-    "sort_order" : 893
+    "name_html" : "Haute-Vienne"
   },
-  {
-    "objectid" : 658,
-    "nuts_id" : "FR711",
+  "FR711": {
     "name_latin" : "Ain",
     "nuts_name" : "Ain",
     "name_ascii" : "Ain",
-    "name_html" : "Ain",
-    "sort_order" : 896
+    "name_html" : "Ain"
   },
-  {
-    "objectid" : 659,
-    "nuts_id" : "FR713",
+  "FR713": {
     "name_latin" : "Drôme",
     "nuts_name" : "Drôme",
     "name_ascii" : "Drome",
-    "name_html" : "Dr&#x00F4;me",
-    "sort_order" : 898
+    "name_html" : "Dr&#x00F4;me"
   },
-  {
-    "objectid" : 660,
-    "nuts_id" : "FR714",
+  "FR714": {
     "name_latin" : "Isère",
     "nuts_name" : "Isère",
     "name_ascii" : "Isere",
-    "name_html" : "Is&#x00E8;re",
-    "sort_order" : 899
+    "name_html" : "Is&#x00E8;re"
   },
-  {
-    "objectid" : 661,
-    "nuts_id" : "FR715",
+  "FR715": {
     "name_latin" : "Loire",
     "nuts_name" : "Loire",
     "name_ascii" : "Loire",
-    "name_html" : "Loire",
-    "sort_order" : 900
+    "name_html" : "Loire"
   },
-  {
-    "objectid" : 662,
-    "nuts_id" : "FR716",
+  "FR716": {
     "name_latin" : "Rhône",
     "nuts_name" : "Rhône",
     "name_ascii" : "Rhone",
-    "name_html" : "Rh&#x00F4;ne",
-    "sort_order" : 901
+    "name_html" : "Rh&#x00F4;ne"
   },
-  {
-    "objectid" : 663,
-    "nuts_id" : "FR717",
+  "FR717": {
     "name_latin" : "Savoie",
     "nuts_name" : "Savoie",
     "name_ascii" : "Savoie",
-    "name_html" : "Savoie",
-    "sort_order" : 902
+    "name_html" : "Savoie"
   },
-  {
-    "objectid" : 664,
-    "nuts_id" : "FR721",
+  "FR721": {
     "name_latin" : "Allier",
     "nuts_name" : "Allier",
     "name_ascii" : "Allier",
-    "name_html" : "Allier",
-    "sort_order" : 905
+    "name_html" : "Allier"
   },
-  {
-    "objectid" : 665,
-    "nuts_id" : "FR722",
+  "FR722": {
     "name_latin" : "Cantal",
     "nuts_name" : "Cantal",
     "name_ascii" : "Cantal",
-    "name_html" : "Cantal",
-    "sort_order" : 906
+    "name_html" : "Cantal"
   },
-  {
-    "objectid" : 666,
-    "nuts_id" : "FR723",
+  "FR723": {
     "name_latin" : "Haute-Loire",
     "nuts_name" : "Haute-Loire",
     "name_ascii" : "Haute-Loire",
-    "name_html" : "Haute-Loire",
-    "sort_order" : 907
+    "name_html" : "Haute-Loire"
   },
-  {
-    "objectid" : 667,
-    "nuts_id" : "FR724",
+  "FR724": {
     "name_latin" : "Puy-de-Dôme",
     "nuts_name" : "Puy-de-Dôme",
     "name_ascii" : "Puy-de-Dome",
-    "name_html" : "Puy-de-D&#x00F4;me",
-    "sort_order" : 908
+    "name_html" : "Puy-de-D&#x00F4;me"
   },
-  {
-    "objectid" : 668,
-    "nuts_id" : "FR811",
+  "FR811": {
     "name_latin" : "Aude",
     "nuts_name" : "Aude",
     "name_ascii" : "Aude",
-    "name_html" : "Aude",
-    "sort_order" : 911
+    "name_html" : "Aude"
   },
-  {
-    "objectid" : 669,
-    "nuts_id" : "FR812",
+  "FR812": {
     "name_latin" : "Gard",
     "nuts_name" : "Gard",
     "name_ascii" : "Gard",
-    "name_html" : "Gard",
-    "sort_order" : 912
+    "name_html" : "Gard"
   },
-  {
-    "objectid" : 670,
-    "nuts_id" : "FR813",
+  "FR813": {
     "name_latin" : "Hérault",
     "nuts_name" : "Hérault",
     "name_ascii" : "Herault",
-    "name_html" : "H&#x00E9;rault",
-    "sort_order" : 913
+    "name_html" : "H&#x00E9;rault"
   },
-  {
-    "objectid" : 671,
-    "nuts_id" : "FR814",
+  "FR814": {
     "name_latin" : "Lozère",
     "nuts_name" : "Lozère",
     "name_ascii" : "Lozere",
-    "name_html" : "Loz&#x00E8;re",
-    "sort_order" : 914
+    "name_html" : "Loz&#x00E8;re"
   },
-  {
-    "objectid" : 672,
-    "nuts_id" : "FR815",
+  "FR815": {
     "name_latin" : "Pyrénées-Orientales",
     "nuts_name" : "Pyrénées-Orientales",
     "name_ascii" : "Pyrenees-Orientales",
-    "name_html" : "Pyr&#x00E9;n&#x00E9;es-Orientales",
-    "sort_order" : 915
+    "name_html" : "Pyr&#x00E9;n&#x00E9;es-Orientales"
   },
-  {
-    "objectid" : 673,
-    "nuts_id" : "FR821",
+  "FR821": {
     "name_latin" : "Alpes-de-Haute-Provence",
     "nuts_name" : "Alpes-de-Haute-Provence",
     "name_ascii" : "Alpes-de-Haute-Provence",
-    "name_html" : "Alpes-de-Haute-Provence",
-    "sort_order" : 917
+    "name_html" : "Alpes-de-Haute-Provence"
   },
-  {
-    "objectid" : 674,
-    "nuts_id" : "FR822",
+  "FR822": {
     "name_latin" : "Hautes-Alpes",
     "nuts_name" : "Hautes-Alpes",
     "name_ascii" : "Hautes-Alpes",
-    "name_html" : "Hautes-Alpes",
-    "sort_order" : 918
+    "name_html" : "Hautes-Alpes"
   },
-  {
-    "objectid" : 675,
-    "nuts_id" : "FR823",
+  "FR823": {
     "name_latin" : "Alpes-Maritimes",
     "nuts_name" : "Alpes-Maritimes",
     "name_ascii" : "Alpes-Maritimes",
-    "name_html" : "Alpes-Maritimes",
-    "sort_order" : 919
+    "name_html" : "Alpes-Maritimes"
   },
-  {
-    "objectid" : 676,
-    "nuts_id" : "FR824",
+  "FR824": {
     "name_latin" : "Bouches-du-Rhône",
     "nuts_name" : "Bouches-du-Rhône",
     "name_ascii" : "Bouches-du-Rhone",
-    "name_html" : "Bouches-du-Rh&#x00F4;ne",
-    "sort_order" : 920
+    "name_html" : "Bouches-du-Rh&#x00F4;ne"
   },
-  {
-    "objectid" : 677,
-    "nuts_id" : "FR825",
+  "FR825": {
     "name_latin" : "Var",
     "nuts_name" : "Var",
     "name_ascii" : "Var",
-    "name_html" : "Var",
-    "sort_order" : 921
+    "name_html" : "Var"
   },
-  {
-    "objectid" : 678,
-    "nuts_id" : "FR826",
+  "FR826": {
     "name_latin" : "Vaucluse",
     "nuts_name" : "Vaucluse",
     "name_ascii" : "Vaucluse",
-    "name_html" : "Vaucluse",
-    "sort_order" : 922
+    "name_html" : "Vaucluse"
   },
-  {
-    "objectid" : 679,
-    "nuts_id" : "FR831",
+  "FR831": {
     "name_latin" : "Corse-du-Sud",
     "nuts_name" : "Corse-du-Sud",
     "name_ascii" : "Corse-du-Sud",
-    "name_html" : "Corse-du-Sud",
-    "sort_order" : 924
+    "name_html" : "Corse-du-Sud"
   },
-  {
-    "objectid" : 680,
-    "nuts_id" : "FR832",
+  "FR832": {
     "name_latin" : "Haute-Corse",
     "nuts_name" : "Haute-Corse",
     "name_ascii" : "Haute-Corse",
-    "name_html" : "Haute-Corse",
-    "sort_order" : 925
+    "name_html" : "Haute-Corse"
   },
-  {
-    "objectid" : 681,
-    "nuts_id" : "FRA10",
+  "FRA10": {
     "name_latin" : "Guadeloupe",
     "nuts_name" : "Guadeloupe",
     "name_ascii" : "Guadeloupe",
-    "name_html" : "Guadeloupe",
-    "sort_order" : 928
+    "name_html" : "Guadeloupe"
   },
-  {
-    "objectid" : 682,
-    "nuts_id" : "FRA20",
+  "FRA20": {
     "name_latin" : "Martinique",
     "nuts_name" : "Martinique",
     "name_ascii" : "Martinique",
-    "name_html" : "Martinique",
-    "sort_order" : 930
+    "name_html" : "Martinique"
   },
-  {
-    "objectid" : 683,
-    "nuts_id" : "FRA30",
+  "FRA30": {
     "name_latin" : "Guyane",
     "nuts_name" : "Guyane",
     "name_ascii" : "Guyane",
-    "name_html" : "Guyane",
-    "sort_order" : 932
+    "name_html" : "Guyane"
   },
-  {
-    "objectid" : 684,
-    "nuts_id" : "FRA40",
+  "FRA40": {
     "name_latin" : "La Réunion",
     "nuts_name" : "La Réunion",
     "name_ascii" : "La Reunion",
-    "name_html" : "La R&#x00E9;union",
-    "sort_order" : 934
+    "name_html" : "La R&#x00E9;union"
   },
-  {
-    "objectid" : 685,
-    "nuts_id" : "FRA50",
+  "FRA50": {
     "name_latin" : "Mayotte",
     "nuts_name" : "Mayotte",
     "name_ascii" : "Mayotte",
-    "name_html" : "Mayotte",
-    "sort_order" : 936
+    "name_html" : "Mayotte"
   },
-  {
-    "objectid" : 686,
-    "nuts_id" : "HR031",
+  "HR031": {
     "name_latin" : "Primorsko-goranska županija",
     "nuts_name" : "Primorsko-goranska županija",
     "name_ascii" : "Primorsko-Goranska Zupanija",
-    "name_html" : "Primorsko-Goranska &#x017D;upanija",
-    "sort_order" : 943
+    "name_html" : "Primorsko-Goranska &#x017D;upanija"
   },
-  {
-    "objectid" : 687,
-    "nuts_id" : "HR032",
+  "HR032": {
     "name_latin" : "Licko-senjska županija",
     "nuts_name" : "Licko-senjska županija",
     "name_ascii" : "Licko-Senjska Zupanija",
-    "name_html" : "Licko-Senjska &#x017D;upanija",
-    "sort_order" : 944
+    "name_html" : "Licko-Senjska &#x017D;upanija"
   },
-  {
-    "objectid" : 688,
-    "nuts_id" : "HR033",
+  "HR033": {
     "name_latin" : "Zadarska županija",
     "nuts_name" : "Zadarska županija",
     "name_ascii" : "Zadarska Zupanija",
-    "name_html" : "Zadarska &#x017D;upanija",
-    "sort_order" : 945
+    "name_html" : "Zadarska &#x017D;upanija"
   },
-  {
-    "objectid" : 689,
-    "nuts_id" : "HR035",
+  "HR035": {
     "name_latin" : "Splitsko-dalmatinska županija",
     "nuts_name" : "Splitsko-dalmatinska županija",
     "name_ascii" : "Splitsko-Dalmatinska Zupanija",
-    "name_html" : "Splitsko-Dalmatinska &#x017D;upanija",
-    "sort_order" : 947
+    "name_html" : "Splitsko-Dalmatinska &#x017D;upanija"
   },
-  {
-    "objectid" : 690,
-    "nuts_id" : "HR036",
+  "HR036": {
     "name_latin" : "Istarska županija",
     "nuts_name" : "Istarska županija",
     "name_ascii" : "Istarska Zupanija",
-    "name_html" : "Istarska &#x017D;upanija",
-    "sort_order" : 948
+    "name_html" : "Istarska &#x017D;upanija"
   },
-  {
-    "objectid" : 691,
-    "nuts_id" : "HR037",
+  "HR037": {
     "name_latin" : "Dubrovacko-neretvanska županija",
     "nuts_name" : "Dubrovacko-neretvanska županija",
     "name_ascii" : "Dubrovacko-Neretvanska Zupanija",
-    "name_html" : "Dubrovacko-Neretvanska &#x017D;upanija",
-    "sort_order" : 949
+    "name_html" : "Dubrovacko-Neretvanska &#x017D;upanija"
   },
-  {
-    "objectid" : 692,
-    "nuts_id" : "HR042",
+  "HR042": {
     "name_latin" : "Zagrebacka županija",
     "nuts_name" : "Zagrebacka županija",
     "name_ascii" : "Zagrebacka Zupanija",
-    "name_html" : "Zagrebacka &#x017D;upanija",
-    "sort_order" : 952
+    "name_html" : "Zagrebacka &#x017D;upanija"
   },
-  {
-    "objectid" : 693,
-    "nuts_id" : "HR043",
+  "HR043": {
     "name_latin" : "Krapinsko-zagorska županija",
     "nuts_name" : "Krapinsko-zagorska županija",
     "name_ascii" : "Krapinsko-Zagorska Zupanija",
-    "name_html" : "Krapinsko-Zagorska &#x017D;upanija",
-    "sort_order" : 953
+    "name_html" : "Krapinsko-Zagorska &#x017D;upanija"
   },
-  {
-    "objectid" : 694,
-    "nuts_id" : "HR045",
+  "HR045": {
     "name_latin" : "Koprivnicko-križevacka županija",
     "nuts_name" : "Koprivnicko-križevacka županija",
     "name_ascii" : "Koprivnicko-Krizevacka Zupanija",
-    "name_html" : "Koprivnicko-Kri&#x017E;evacka &#x017D;upanija",
-    "sort_order" : 955
+    "name_html" : "Koprivnicko-Kri&#x017E;evacka &#x017D;upanija"
   },
-  {
-    "objectid" : 695,
-    "nuts_id" : "HR046",
+  "HR046": {
     "name_latin" : "Medimurska županija",
     "nuts_name" : "Medimurska županija",
     "name_ascii" : "Medimurska Zupanija",
-    "name_html" : "Medimurska &#x017D;upanija",
-    "sort_order" : 956
+    "name_html" : "Medimurska &#x017D;upanija"
   },
-  {
-    "objectid" : 696,
-    "nuts_id" : "HR047",
+  "HR047": {
     "name_latin" : "Bjelovarsko-bilogorska županija",
     "nuts_name" : "Bjelovarsko-bilogorska županija",
     "name_ascii" : "Bjelovarsko-Bilogorska Zupanija",
-    "name_html" : "Bjelovarsko-Bilogorska &#x017D;upanija",
-    "sort_order" : 957
+    "name_html" : "Bjelovarsko-Bilogorska &#x017D;upanija"
   },
-  {
-    "objectid" : 697,
-    "nuts_id" : "HR049",
+  "HR049": {
     "name_latin" : "Požeško-slavonska županija",
     "nuts_name" : "Požeško-slavonska županija",
     "name_ascii" : "Pozesko-Slavonska Zupanija",
-    "name_html" : "Po&#x017E;e&#x0161;ko-Slavonska &#x017D;upanija",
-    "sort_order" : 959
+    "name_html" : "Po&#x017E;e&#x0161;ko-Slavonska &#x017D;upanija"
   },
-  {
-    "objectid" : 698,
-    "nuts_id" : "HR04A",
+  "HR04A": {
     "name_latin" : "Brodsko-posavska županija",
     "nuts_name" : "Brodsko-posavska županija",
     "name_ascii" : "Brodsko-Posavska Zupanija",
-    "name_html" : "Brodsko-Posavska &#x017D;upanija",
-    "sort_order" : 960
+    "name_html" : "Brodsko-Posavska &#x017D;upanija"
   },
-  {
-    "objectid" : 699,
-    "nuts_id" : "HR04B",
+  "HR04B": {
     "name_latin" : "Osjecko-baranjska županija",
     "nuts_name" : "Osjecko-baranjska županija",
     "name_ascii" : "Osjecko-Baranjska Zupanija",
-    "name_html" : "Osjecko-Baranjska &#x017D;upanija",
-    "sort_order" : 961
+    "name_html" : "Osjecko-Baranjska &#x017D;upanija"
   },
-  {
-    "objectid" : 700,
-    "nuts_id" : "HR04D",
+  "HR04D": {
     "name_latin" : "Karlovacka županija",
     "nuts_name" : "Karlovacka županija",
     "name_ascii" : "Karlovacka Zupanija",
-    "name_html" : "Karlovacka &#x017D;upanija",
-    "sort_order" : 963
+    "name_html" : "Karlovacka &#x017D;upanija"
   },
-  {
-    "objectid" : 701,
-    "nuts_id" : "HR04E",
+  "HR04E": {
     "name_latin" : "Sisacko-moslavacka županija",
     "nuts_name" : "Sisacko-moslavacka županija",
     "name_ascii" : "Sisacko-Moslavacka Zupanija",
-    "name_html" : "Sisacko-Moslavacka &#x017D;upanija",
-    "sort_order" : 964
+    "name_html" : "Sisacko-Moslavacka &#x017D;upanija"
   },
-  {
-    "objectid" : 702,
-    "nuts_id" : "HU101",
+  "HU101": {
     "name_latin" : "Budapest",
     "nuts_name" : "Budapest",
     "name_ascii" : "Budapest",
-    "name_html" : "Budapest",
-    "sort_order" : 1153
+    "name_html" : "Budapest"
   },
-  {
-    "objectid" : 703,
-    "nuts_id" : "HU102",
+  "HU102": {
     "name_latin" : "Pest",
     "nuts_name" : "Pest",
     "name_ascii" : "Pest",
-    "name_html" : "Pest",
-    "sort_order" : 1154
+    "name_html" : "Pest"
   },
-  {
-    "objectid" : 704,
-    "nuts_id" : "HU211",
+  "HU211": {
     "name_latin" : "Fejér",
     "nuts_name" : "Fejér",
     "name_ascii" : "Fejer",
-    "name_html" : "Fej&#x00E9;r",
-    "sort_order" : 1157
+    "name_html" : "Fej&#x00E9;r"
   },
-  {
-    "objectid" : 705,
-    "nuts_id" : "HU213",
+  "HU213": {
     "name_latin" : "Veszprém",
     "nuts_name" : "Veszprém",
     "name_ascii" : "Veszprem",
-    "name_html" : "Veszpr&#x00E9;m",
-    "sort_order" : 1159
+    "name_html" : "Veszpr&#x00E9;m"
   },
-  {
-    "objectid" : 706,
-    "nuts_id" : "HU221",
+  "HU221": {
     "name_latin" : "Gyor-Moson-Sopron",
     "nuts_name" : "Gyor-Moson-Sopron",
     "name_ascii" : "Gyor-Moson-Sopron",
-    "name_html" : "Gyor-Moson-Sopron",
-    "sort_order" : 1161
+    "name_html" : "Gyor-Moson-Sopron"
   },
-  {
-    "objectid" : 707,
-    "nuts_id" : "HU222",
+  "HU222": {
     "name_latin" : "Vas",
     "nuts_name" : "Vas",
     "name_ascii" : "Vas",
-    "name_html" : "Vas",
-    "sort_order" : 1162
+    "name_html" : "Vas"
   },
-  {
-    "objectid" : 708,
-    "nuts_id" : "HU223",
+  "HU223": {
     "name_latin" : "Zala",
     "nuts_name" : "Zala",
     "name_ascii" : "Zala",
-    "name_html" : "Zala",
-    "sort_order" : 1163
+    "name_html" : "Zala"
   },
-  {
-    "objectid" : 709,
-    "nuts_id" : "HU231",
+  "HU231": {
     "name_latin" : "Baranya",
     "nuts_name" : "Baranya",
     "name_ascii" : "Baranya",
-    "name_html" : "Baranya",
-    "sort_order" : 1165
+    "name_html" : "Baranya"
   },
-  {
-    "objectid" : 710,
-    "nuts_id" : "HU232",
+  "HU232": {
     "name_latin" : "Somogy",
     "nuts_name" : "Somogy",
     "name_ascii" : "Somogy",
-    "name_html" : "Somogy",
-    "sort_order" : 1166
+    "name_html" : "Somogy"
   },
-  {
-    "objectid" : 711,
-    "nuts_id" : "HU233",
+  "HU233": {
     "name_latin" : "Tolna",
     "nuts_name" : "Tolna",
     "name_ascii" : "Tolna",
-    "name_html" : "Tolna",
-    "sort_order" : 1167
+    "name_html" : "Tolna"
   },
-  {
-    "objectid" : 712,
-    "nuts_id" : "HU312",
+  "HU312": {
     "name_latin" : "Heves",
     "nuts_name" : "Heves",
     "name_ascii" : "Heves",
-    "name_html" : "Heves",
-    "sort_order" : 1171
+    "name_html" : "Heves"
   },
-  {
-    "objectid" : 713,
-    "nuts_id" : "HU313",
+  "HU313": {
     "name_latin" : "Nógrád",
     "nuts_name" : "Nógrád",
     "name_ascii" : "Nograd",
-    "name_html" : "N&#x00F3;gr&#x00E1;d",
-    "sort_order" : 1172
+    "name_html" : "N&#x00F3;gr&#x00E1;d"
   },
-  {
-    "objectid" : 714,
-    "nuts_id" : "HU321",
+  "HU321": {
     "name_latin" : "Hajdú-Bihar",
     "nuts_name" : "Hajdú-Bihar",
     "name_ascii" : "Hajdu-Bihar",
-    "name_html" : "Hajd&#x00FA;-Bihar",
-    "sort_order" : 1174
+    "name_html" : "Hajd&#x00FA;-Bihar"
   },
-  {
-    "objectid" : 715,
-    "nuts_id" : "HU322",
+  "HU322": {
     "name_latin" : "Jász-Nagykun-Szolnok",
     "nuts_name" : "Jász-Nagykun-Szolnok",
     "name_ascii" : "Jasz-Nagykun-Szolnok",
-    "name_html" : "J&#x00E1;sz-Nagykun-Szolnok",
-    "sort_order" : 1175
+    "name_html" : "J&#x00E1;sz-Nagykun-Szolnok"
   },
-  {
-    "objectid" : 716,
-    "nuts_id" : "HU331",
+  "HU331": {
     "name_latin" : "Bács-Kiskun",
     "nuts_name" : "Bács-Kiskun",
     "name_ascii" : "Bacs-Kiskun",
-    "name_html" : "B&#x00E1;cs-Kiskun",
-    "sort_order" : 1178
+    "name_html" : "B&#x00E1;cs-Kiskun"
   },
-  {
-    "objectid" : 717,
-    "nuts_id" : "HU332",
+  "HU332": {
     "name_latin" : "Békés",
     "nuts_name" : "Békés",
     "name_ascii" : "Bekes",
-    "name_html" : "B&#x00E9;k&#x00E9;s",
-    "sort_order" : 1179
+    "name_html" : "B&#x00E9;k&#x00E9;s"
   },
-  {
-    "objectid" : 718,
-    "nuts_id" : "HU333",
+  "HU333": {
     "name_latin" : "Csongrád",
     "nuts_name" : "Csongrád",
     "name_ascii" : "Csongrad",
-    "name_html" : "Csongr&#x00E1;d",
-    "sort_order" : 1180
+    "name_html" : "Csongr&#x00E1;d"
   },
-  {
-    "objectid" : 719,
-    "nuts_id" : "IE011",
+  "IE011": {
     "name_latin" : "Border",
     "nuts_name" : "Border",
     "name_ascii" : "Border",
-    "name_html" : "Border",
-    "sort_order" : 625
+    "name_html" : "Border"
   },
-  {
-    "objectid" : 720,
-    "nuts_id" : "IE012",
+  "IE012": {
     "name_latin" : "Midland",
     "nuts_name" : "Midland",
     "name_ascii" : "Midland",
-    "name_html" : "Midland",
-    "sort_order" : 626
+    "name_html" : "Midland"
   },
-  {
-    "objectid" : 721,
-    "nuts_id" : "IE021",
+  "IE021": {
     "name_latin" : "Dublin",
     "nuts_name" : "Dublin",
     "name_ascii" : "Dublin",
-    "name_html" : "Dublin",
-    "sort_order" : 629
+    "name_html" : "Dublin"
   },
-  {
-    "objectid" : 722,
-    "nuts_id" : "IE023",
+  "IE023": {
     "name_latin" : "Mid-West",
     "nuts_name" : "Mid-West",
     "name_ascii" : "Mid-West",
-    "name_html" : "Mid-West",
-    "sort_order" : 631
+    "name_html" : "Mid-West"
   },
-  {
-    "objectid" : 723,
-    "nuts_id" : "IE024",
+  "IE024": {
     "name_latin" : "South-East (IE)",
     "nuts_name" : "South-East (IE)",
     "name_ascii" : "South-East (IE)",
-    "name_html" : "South-East (IE)",
-    "sort_order" : 632
+    "name_html" : "South-East (IE)"
   },
-  {
-    "objectid" : 724,
-    "nuts_id" : "IE025",
+  "IE025": {
     "name_latin" : "South-West (IE)",
     "nuts_name" : "South-West (IE)",
     "name_ascii" : "South-West (IE)",
-    "name_html" : "South-West (IE)",
-    "sort_order" : 633
+    "name_html" : "South-West (IE)"
   },
-  {
-    "objectid" : 725,
-    "nuts_id" : "IS001",
+  "IS001": {
     "name_latin" : "Höfuðborgarsvæði",
     "nuts_name" : "Höfuðborgarsvæði",
     "name_ascii" : "Hofudborgarsvaedi",
-    "name_html" : "H&#x00F6;fu&#x00F0;borgarsv&#x00E6;&#x00F0;i",
-    "sort_order" : 0
+    "name_html" : "H&#x00F6;fu&#x00F0;borgarsv&#x00E6;&#x00F0;i"
   },
-  {
-    "objectid" : 726,
-    "nuts_id" : "IS002",
+  "IS002": {
     "name_latin" : "Landsbyggð",
     "nuts_name" : "Landsbyggð",
     "name_ascii" : "Landsbyggd",
-    "name_html" : "Landsbygg&#x00F0;",
-    "sort_order" : 0
+    "name_html" : "Landsbygg&#x00F0;"
   },
-  {
-    "objectid" : 727,
-    "nuts_id" : "ITC11",
+  "ITC11": {
     "name_latin" : "Torino",
     "nuts_name" : "Torino",
     "name_ascii" : "Torino",
-    "name_html" : "Torino",
-    "sort_order" : 971
+    "name_html" : "Torino"
   },
-  {
-    "objectid" : 728,
-    "nuts_id" : "ITC12",
+  "ITC12": {
     "name_latin" : "Vercelli",
     "nuts_name" : "Vercelli",
     "name_ascii" : "Vercelli",
-    "name_html" : "Vercelli",
-    "sort_order" : 972
+    "name_html" : "Vercelli"
   },
-  {
-    "objectid" : 729,
-    "nuts_id" : "ITC13",
+  "ITC13": {
     "name_latin" : "Biella",
     "nuts_name" : "Biella",
     "name_ascii" : "Biella",
-    "name_html" : "Biella",
-    "sort_order" : 973
+    "name_html" : "Biella"
   },
-  {
-    "objectid" : 730,
-    "nuts_id" : "ITC14",
+  "ITC14": {
     "name_latin" : "Verbano-Cusio-Ossola",
     "nuts_name" : "Verbano-Cusio-Ossola",
     "name_ascii" : "Verbano-Cusio-Ossola",
-    "name_html" : "Verbano-Cusio-Ossola",
-    "sort_order" : 974
+    "name_html" : "Verbano-Cusio-Ossola"
   },
-  {
-    "objectid" : 731,
-    "nuts_id" : "ITC15",
+  "ITC15": {
     "name_latin" : "Novara",
     "nuts_name" : "Novara",
     "name_ascii" : "Novara",
-    "name_html" : "Novara",
-    "sort_order" : 975
+    "name_html" : "Novara"
   },
-  {
-    "objectid" : 732,
-    "nuts_id" : "ITC16",
+  "ITC16": {
     "name_latin" : "Cuneo",
     "nuts_name" : "Cuneo",
     "name_ascii" : "Cuneo",
-    "name_html" : "Cuneo",
-    "sort_order" : 976
+    "name_html" : "Cuneo"
   },
-  {
-    "objectid" : 733,
-    "nuts_id" : "ITC17",
+  "ITC17": {
     "name_latin" : "Asti",
     "nuts_name" : "Asti",
     "name_ascii" : "Asti",
-    "name_html" : "Asti",
-    "sort_order" : 977
+    "name_html" : "Asti"
   },
-  {
-    "objectid" : 734,
-    "nuts_id" : "ITC18",
+  "ITC18": {
     "name_latin" : "Alessandria",
     "nuts_name" : "Alessandria",
     "name_ascii" : "Alessandria",
-    "name_html" : "Alessandria",
-    "sort_order" : 978
+    "name_html" : "Alessandria"
   },
-  {
-    "objectid" : 735,
-    "nuts_id" : "ITC20",
+  "ITC20": {
     "name_latin" : "Valle d'Aosta/Vallée d'Aoste",
     "nuts_name" : "Valle d'Aosta/Vallée d'Aoste",
     "name_ascii" : "Valle d'Aosta/Vallee D'Aoste",
-    "name_html" : "Valle d'Aosta/Vall&#x00E9;e D'Aoste",
-    "sort_order" : 980
+    "name_html" : "Valle d'Aosta/Vall&#x00E9;e D'Aoste"
   },
-  {
-    "objectid" : 736,
-    "nuts_id" : "ITC31",
+  "ITC31": {
     "name_latin" : "Imperia",
     "nuts_name" : "Imperia",
     "name_ascii" : "Imperia",
-    "name_html" : "Imperia",
-    "sort_order" : 982
+    "name_html" : "Imperia"
   },
-  {
-    "objectid" : 737,
-    "nuts_id" : "ITC32",
+  "ITC32": {
     "name_latin" : "Savona",
     "nuts_name" : "Savona",
     "name_ascii" : "Savona",
-    "name_html" : "Savona",
-    "sort_order" : 983
+    "name_html" : "Savona"
   },
-  {
-    "objectid" : 738,
-    "nuts_id" : "ITC33",
+  "ITC33": {
     "name_latin" : "Genova",
     "nuts_name" : "Genova",
     "name_ascii" : "Genova",
-    "name_html" : "Genova",
-    "sort_order" : 984
+    "name_html" : "Genova"
   },
-  {
-    "objectid" : 739,
-    "nuts_id" : "ITC34",
+  "ITC34": {
     "name_latin" : "La Spezia",
     "nuts_name" : "La Spezia",
     "name_ascii" : "La Spezia",
-    "name_html" : "La Spezia",
-    "sort_order" : 985
+    "name_html" : "La Spezia"
   },
-  {
-    "objectid" : 740,
-    "nuts_id" : "ITC41",
+  "ITC41": {
     "name_latin" : "Varese",
     "nuts_name" : "Varese",
     "name_ascii" : "Varese",
-    "name_html" : "Varese",
-    "sort_order" : 987
+    "name_html" : "Varese"
   },
-  {
-    "objectid" : 741,
-    "nuts_id" : "ITC42",
+  "ITC42": {
     "name_latin" : "Como",
     "nuts_name" : "Como",
     "name_ascii" : "Como",
-    "name_html" : "Como",
-    "sort_order" : 988
+    "name_html" : "Como"
   },
-  {
-    "objectid" : 742,
-    "nuts_id" : "ITC43",
+  "ITC43": {
     "name_latin" : "Lecco",
     "nuts_name" : "Lecco",
     "name_ascii" : "Lecco",
-    "name_html" : "Lecco",
-    "sort_order" : 989
+    "name_html" : "Lecco"
   },
-  {
-    "objectid" : 743,
-    "nuts_id" : "ITC44",
+  "ITC44": {
     "name_latin" : "Sondrio",
     "nuts_name" : "Sondrio",
     "name_ascii" : "Sondrio",
-    "name_html" : "Sondrio",
-    "sort_order" : 990
+    "name_html" : "Sondrio"
   },
-  {
-    "objectid" : 744,
-    "nuts_id" : "ITC46",
+  "ITC46": {
     "name_latin" : "Bergamo",
     "nuts_name" : "Bergamo",
     "name_ascii" : "Bergamo",
-    "name_html" : "Bergamo",
-    "sort_order" : 991
+    "name_html" : "Bergamo"
   },
-  {
-    "objectid" : 745,
-    "nuts_id" : "ITC47",
+  "ITC47": {
     "name_latin" : "Brescia",
     "nuts_name" : "Brescia",
     "name_ascii" : "Brescia",
-    "name_html" : "Brescia",
-    "sort_order" : 992
+    "name_html" : "Brescia"
   },
-  {
-    "objectid" : 746,
-    "nuts_id" : "ITC48",
+  "ITC48": {
     "name_latin" : "Pavia",
     "nuts_name" : "Pavia",
     "name_ascii" : "Pavia",
-    "name_html" : "Pavia",
-    "sort_order" : 993
+    "name_html" : "Pavia"
   },
-  {
-    "objectid" : 747,
-    "nuts_id" : "ITC49",
+  "ITC49": {
     "name_latin" : "Lodi",
     "nuts_name" : "Lodi",
     "name_ascii" : "Lodi",
-    "name_html" : "Lodi",
-    "sort_order" : 994
+    "name_html" : "Lodi"
   },
-  {
-    "objectid" : 748,
-    "nuts_id" : "ITC4A",
+  "ITC4A": {
     "name_latin" : "Cremona",
     "nuts_name" : "Cremona",
     "name_ascii" : "Cremona",
-    "name_html" : "Cremona",
-    "sort_order" : 995
+    "name_html" : "Cremona"
   },
-  {
-    "objectid" : 749,
-    "nuts_id" : "ITC4B",
+  "ITC4B": {
     "name_latin" : "Mantova",
     "nuts_name" : "Mantova",
     "name_ascii" : "Mantova",
-    "name_html" : "Mantova",
-    "sort_order" : 996
+    "name_html" : "Mantova"
   },
-  {
-    "objectid" : 750,
-    "nuts_id" : "ITC4C",
+  "ITC4C": {
     "name_latin" : "Milano",
     "nuts_name" : "Milano",
     "name_ascii" : "Milano",
-    "name_html" : "Milano",
-    "sort_order" : 997
+    "name_html" : "Milano"
   },
-  {
-    "objectid" : 751,
-    "nuts_id" : "ITC4D",
+  "ITC4D": {
     "name_latin" : "Monza e della Brianza",
     "nuts_name" : "Monza e della Brianza",
     "name_ascii" : "Monza e della Brianza",
-    "name_html" : "Monza e della Brianza",
-    "sort_order" : 998
+    "name_html" : "Monza e della Brianza"
   },
-  {
-    "objectid" : 752,
-    "nuts_id" : "ITF11",
+  "ITF11": {
     "name_latin" : "L'Aquila",
     "nuts_name" : "L'Aquila",
     "name_ascii" : "L'Aquila",
-    "name_html" : "L'Aquila",
-    "sort_order" : 1001
+    "name_html" : "L'Aquila"
   },
-  {
-    "objectid" : 753,
-    "nuts_id" : "ITF12",
+  "ITF12": {
     "name_latin" : "Teramo",
     "nuts_name" : "Teramo",
     "name_ascii" : "Teramo",
-    "name_html" : "Teramo",
-    "sort_order" : 1002
+    "name_html" : "Teramo"
   },
-  {
-    "objectid" : 754,
-    "nuts_id" : "ITF13",
+  "ITF13": {
     "name_latin" : "Pescara",
     "nuts_name" : "Pescara",
     "name_ascii" : "Pescara",
-    "name_html" : "Pescara",
-    "sort_order" : 1003
+    "name_html" : "Pescara"
   },
-  {
-    "objectid" : 755,
-    "nuts_id" : "ITF14",
+  "ITF14": {
     "name_latin" : "Chieti",
     "nuts_name" : "Chieti",
     "name_ascii" : "Chieti",
-    "name_html" : "Chieti",
-    "sort_order" : 1004
+    "name_html" : "Chieti"
   },
-  {
-    "objectid" : 756,
-    "nuts_id" : "ITF21",
+  "ITF21": {
     "name_latin" : "Isernia",
     "nuts_name" : "Isernia",
     "name_ascii" : "Isernia",
-    "name_html" : "Isernia",
-    "sort_order" : 1006
+    "name_html" : "Isernia"
   },
-  {
-    "objectid" : 757,
-    "nuts_id" : "ITF22",
+  "ITF22": {
     "name_latin" : "Campobasso",
     "nuts_name" : "Campobasso",
     "name_ascii" : "Campobasso",
-    "name_html" : "Campobasso",
-    "sort_order" : 1007
+    "name_html" : "Campobasso"
   },
-  {
-    "objectid" : 758,
-    "nuts_id" : "ITF31",
+  "ITF31": {
     "name_latin" : "Caserta",
     "nuts_name" : "Caserta",
     "name_ascii" : "Caserta",
-    "name_html" : "Caserta",
-    "sort_order" : 1009
+    "name_html" : "Caserta"
   },
-  {
-    "objectid" : 759,
-    "nuts_id" : "ITF32",
+  "ITF32": {
     "name_latin" : "Benevento",
     "nuts_name" : "Benevento",
     "name_ascii" : "Benevento",
-    "name_html" : "Benevento",
-    "sort_order" : 1010
+    "name_html" : "Benevento"
   },
-  {
-    "objectid" : 760,
-    "nuts_id" : "ITF33",
+  "ITF33": {
     "name_latin" : "Napoli",
     "nuts_name" : "Napoli",
     "name_ascii" : "Napoli",
-    "name_html" : "Napoli",
-    "sort_order" : 1011
+    "name_html" : "Napoli"
   },
-  {
-    "objectid" : 761,
-    "nuts_id" : "ITF34",
+  "ITF34": {
     "name_latin" : "Avellino",
     "nuts_name" : "Avellino",
     "name_ascii" : "Avellino",
-    "name_html" : "Avellino",
-    "sort_order" : 1012
+    "name_html" : "Avellino"
   },
-  {
-    "objectid" : 762,
-    "nuts_id" : "ITF35",
+  "ITF35": {
     "name_latin" : "Salerno",
     "nuts_name" : "Salerno",
     "name_ascii" : "Salerno",
-    "name_html" : "Salerno",
-    "sort_order" : 1013
+    "name_html" : "Salerno"
   },
-  {
-    "objectid" : 763,
-    "nuts_id" : "ITF43",
+  "ITF43": {
     "name_latin" : "Taranto",
     "nuts_name" : "Taranto",
     "name_ascii" : "Taranto",
-    "name_html" : "Taranto",
-    "sort_order" : 1015
+    "name_html" : "Taranto"
   },
-  {
-    "objectid" : 764,
-    "nuts_id" : "ITF44",
+  "ITF44": {
     "name_latin" : "Brindisi",
     "nuts_name" : "Brindisi",
     "name_ascii" : "Brindisi",
-    "name_html" : "Brindisi",
-    "sort_order" : 1016
+    "name_html" : "Brindisi"
   },
-  {
-    "objectid" : 765,
-    "nuts_id" : "ITF45",
+  "ITF45": {
     "name_latin" : "Lecce",
     "nuts_name" : "Lecce",
     "name_ascii" : "Lecce",
-    "name_html" : "Lecce",
-    "sort_order" : 1017
+    "name_html" : "Lecce"
   },
-  {
-    "objectid" : 766,
-    "nuts_id" : "ITF46",
+  "ITF46": {
     "name_latin" : "Foggia",
     "nuts_name" : "Foggia",
     "name_ascii" : "Foggia",
-    "name_html" : "Foggia",
-    "sort_order" : 1018
+    "name_html" : "Foggia"
   },
-  {
-    "objectid" : 767,
-    "nuts_id" : "ITF47",
+  "ITF47": {
     "name_latin" : "Bari",
     "nuts_name" : "Bari",
     "name_ascii" : "Bari",
-    "name_html" : "Bari",
-    "sort_order" : 1019
+    "name_html" : "Bari"
   },
-  {
-    "objectid" : 768,
-    "nuts_id" : "ITF51",
+  "ITF51": {
     "name_latin" : "Potenza",
     "nuts_name" : "Potenza",
     "name_ascii" : "Potenza",
-    "name_html" : "Potenza",
-    "sort_order" : 1022
+    "name_html" : "Potenza"
   },
-  {
-    "objectid" : 769,
-    "nuts_id" : "ITF52",
+  "ITF52": {
     "name_latin" : "Matera",
     "nuts_name" : "Matera",
     "name_ascii" : "Matera",
-    "name_html" : "Matera",
-    "sort_order" : 1023
+    "name_html" : "Matera"
   },
-  {
-    "objectid" : 770,
-    "nuts_id" : "ITF61",
+  "ITF61": {
     "name_latin" : "Cosenza",
     "nuts_name" : "Cosenza",
     "name_ascii" : "Cosenza",
-    "name_html" : "Cosenza",
-    "sort_order" : 1025
+    "name_html" : "Cosenza"
   },
-  {
-    "objectid" : 771,
-    "nuts_id" : "ITF62",
+  "ITF62": {
     "name_latin" : "Crotone",
     "nuts_name" : "Crotone",
     "name_ascii" : "Crotone",
-    "name_html" : "Crotone",
-    "sort_order" : 1026
+    "name_html" : "Crotone"
   },
-  {
-    "objectid" : 772,
-    "nuts_id" : "ITF63",
+  "ITF63": {
     "name_latin" : "Catanzaro",
     "nuts_name" : "Catanzaro",
     "name_ascii" : "Catanzaro",
-    "name_html" : "Catanzaro",
-    "sort_order" : 1027
+    "name_html" : "Catanzaro"
   },
-  {
-    "objectid" : 773,
-    "nuts_id" : "ITF64",
+  "ITF64": {
     "name_latin" : "Vibo Valentia",
     "nuts_name" : "Vibo Valentia",
     "name_ascii" : "Vibo Valentia",
-    "name_html" : "Vibo Valentia",
-    "sort_order" : 1028
+    "name_html" : "Vibo Valentia"
   },
-  {
-    "objectid" : 774,
-    "nuts_id" : "ITF65",
+  "ITF65": {
     "name_latin" : "Reggio di Calabria",
     "nuts_name" : "Reggio di Calabria",
     "name_ascii" : "Reggio di Calabria",
-    "name_html" : "Reggio di Calabria",
-    "sort_order" : 1029
+    "name_html" : "Reggio di Calabria"
   },
-  {
-    "objectid" : 775,
-    "nuts_id" : "ITG12",
+  "ITG12": {
     "name_latin" : "Palermo",
     "nuts_name" : "Palermo",
     "name_ascii" : "Palermo",
-    "name_html" : "Palermo",
-    "sort_order" : 1033
+    "name_html" : "Palermo"
   },
-  {
-    "objectid" : 776,
-    "nuts_id" : "ITG13",
+  "ITG13": {
     "name_latin" : "Messina",
     "nuts_name" : "Messina",
     "name_ascii" : "Messina",
-    "name_html" : "Messina",
-    "sort_order" : 1034
+    "name_html" : "Messina"
   },
-  {
-    "objectid" : 777,
-    "nuts_id" : "ITG14",
+  "ITG14": {
     "name_latin" : "Agrigento",
     "nuts_name" : "Agrigento",
     "name_ascii" : "Agrigento",
-    "name_html" : "Agrigento",
-    "sort_order" : 1035
+    "name_html" : "Agrigento"
   },
-  {
-    "objectid" : 778,
-    "nuts_id" : "ITG15",
+  "ITG15": {
     "name_latin" : "Caltanissetta",
     "nuts_name" : "Caltanissetta",
     "name_ascii" : "Caltanissetta",
-    "name_html" : "Caltanissetta",
-    "sort_order" : 1036
+    "name_html" : "Caltanissetta"
   },
-  {
-    "objectid" : 779,
-    "nuts_id" : "ITG17",
+  "ITG17": {
     "name_latin" : "Catania",
     "nuts_name" : "Catania",
     "name_ascii" : "Catania",
-    "name_html" : "Catania",
-    "sort_order" : 1038
+    "name_html" : "Catania"
   },
-  {
-    "objectid" : 780,
-    "nuts_id" : "ITG18",
+  "ITG18": {
     "name_latin" : "Ragusa",
     "nuts_name" : "Ragusa",
     "name_ascii" : "Ragusa",
-    "name_html" : "Ragusa",
-    "sort_order" : 1039
+    "name_html" : "Ragusa"
   },
-  {
-    "objectid" : 781,
-    "nuts_id" : "ITG19",
+  "ITG19": {
     "name_latin" : "Siracusa",
     "nuts_name" : "Siracusa",
     "name_ascii" : "Siracusa",
-    "name_html" : "Siracusa",
-    "sort_order" : 1040
+    "name_html" : "Siracusa"
   },
-  {
-    "objectid" : 782,
-    "nuts_id" : "ITG25",
+  "ITG25": {
     "name_latin" : "Sassari",
     "nuts_name" : "Sassari",
     "name_ascii" : "Sassari",
-    "name_html" : "Sassari",
-    "sort_order" : 1042
+    "name_html" : "Sassari"
   },
-  {
-    "objectid" : 783,
-    "nuts_id" : "ITG26",
+  "ITG26": {
     "name_latin" : "Nuoro",
     "nuts_name" : "Nuoro",
     "name_ascii" : "Nuoro",
-    "name_html" : "Nuoro",
-    "sort_order" : 1043
+    "name_html" : "Nuoro"
   },
-  {
-    "objectid" : 784,
-    "nuts_id" : "ITG27",
+  "ITG27": {
     "name_latin" : "Cagliari",
     "nuts_name" : "Cagliari",
     "name_ascii" : "Cagliari",
-    "name_html" : "Cagliari",
-    "sort_order" : 1044
+    "name_html" : "Cagliari"
   },
-  {
-    "objectid" : 785,
-    "nuts_id" : "ITG28",
+  "ITG28": {
     "name_latin" : "Oristano",
     "nuts_name" : "Oristano",
     "name_ascii" : "Oristano",
-    "name_html" : "Oristano",
-    "sort_order" : 1045
+    "name_html" : "Oristano"
   },
-  {
-    "objectid" : 786,
-    "nuts_id" : "ITG29",
+  "ITG29": {
     "name_latin" : "Olbia-Tempio",
     "nuts_name" : "Olbia-Tempio",
     "name_ascii" : "Olbia-Tempio",
-    "name_html" : "Olbia-Tempio",
-    "sort_order" : 1046
+    "name_html" : "Olbia-Tempio"
   },
-  {
-    "objectid" : 787,
-    "nuts_id" : "ITG2B",
+  "ITG2B": {
     "name_latin" : "Medio Campidano",
     "nuts_name" : "Medio Campidano",
     "name_ascii" : "Medio Campidano",
-    "name_html" : "Medio Campidano",
-    "sort_order" : 1048
+    "name_html" : "Medio Campidano"
   },
-  {
-    "objectid" : 788,
-    "nuts_id" : "ITG2C",
+  "ITG2C": {
     "name_latin" : "Carbonia-Iglesias",
     "nuts_name" : "Carbonia-Iglesias",
     "name_ascii" : "Carbonia-Iglesias",
-    "name_html" : "Carbonia-Iglesias",
-    "sort_order" : 1049
+    "name_html" : "Carbonia-Iglesias"
   },
-  {
-    "objectid" : 789,
-    "nuts_id" : "ITH10",
+  "ITH10": {
     "name_latin" : "Bolzano-Bozen",
     "nuts_name" : "Bolzano-Bozen",
     "name_ascii" : "Bolzano-Bozen",
-    "name_html" : "Bolzano-Bozen",
-    "sort_order" : 1052
+    "name_html" : "Bolzano-Bozen"
   },
-  {
-    "objectid" : 790,
-    "nuts_id" : "ITH20",
+  "ITH20": {
     "name_latin" : "Trento",
     "nuts_name" : "Trento",
     "name_ascii" : "Trento",
-    "name_html" : "Trento",
-    "sort_order" : 1054
+    "name_html" : "Trento"
   },
-  {
-    "objectid" : 791,
-    "nuts_id" : "ITH31",
+  "ITH31": {
     "name_latin" : "Verona",
     "nuts_name" : "Verona",
     "name_ascii" : "Verona",
-    "name_html" : "Verona",
-    "sort_order" : 1056
+    "name_html" : "Verona"
   },
-  {
-    "objectid" : 792,
-    "nuts_id" : "ITH32",
+  "ITH32": {
     "name_latin" : "Vicenza",
     "nuts_name" : "Vicenza",
     "name_ascii" : "Vicenza",
-    "name_html" : "Vicenza",
-    "sort_order" : 1057
+    "name_html" : "Vicenza"
   },
-  {
-    "objectid" : 793,
-    "nuts_id" : "ITH33",
+  "ITH33": {
     "name_latin" : "Belluno",
     "nuts_name" : "Belluno",
     "name_ascii" : "Belluno",
-    "name_html" : "Belluno",
-    "sort_order" : 1058
+    "name_html" : "Belluno"
   },
-  {
-    "objectid" : 794,
-    "nuts_id" : "ITH34",
+  "ITH34": {
     "name_latin" : "Treviso",
     "nuts_name" : "Treviso",
     "name_ascii" : "Treviso",
-    "name_html" : "Treviso",
-    "sort_order" : 1059
+    "name_html" : "Treviso"
   },
-  {
-    "objectid" : 795,
-    "nuts_id" : "ITH35",
+  "ITH35": {
     "name_latin" : "Venezia",
     "nuts_name" : "Venezia",
     "name_ascii" : "Venezia",
-    "name_html" : "Venezia",
-    "sort_order" : 1060
+    "name_html" : "Venezia"
   },
-  {
-    "objectid" : 796,
-    "nuts_id" : "ITH36",
+  "ITH36": {
     "name_latin" : "Padova",
     "nuts_name" : "Padova",
     "name_ascii" : "Padova",
-    "name_html" : "Padova",
-    "sort_order" : 1061
+    "name_html" : "Padova"
   },
-  {
-    "objectid" : 797,
-    "nuts_id" : "ITH37",
+  "ITH37": {
     "name_latin" : "Rovigo",
     "nuts_name" : "Rovigo",
     "name_ascii" : "Rovigo",
-    "name_html" : "Rovigo",
-    "sort_order" : 1062
+    "name_html" : "Rovigo"
   },
-  {
-    "objectid" : 798,
-    "nuts_id" : "ITH41",
+  "ITH41": {
     "name_latin" : "Pordenone",
     "nuts_name" : "Pordenone",
     "name_ascii" : "Pordenone",
-    "name_html" : "Pordenone",
-    "sort_order" : 1064
+    "name_html" : "Pordenone"
   },
-  {
-    "objectid" : 799,
-    "nuts_id" : "ITH42",
+  "ITH42": {
     "name_latin" : "Udine",
     "nuts_name" : "Udine",
     "name_ascii" : "Udine",
-    "name_html" : "Udine",
-    "sort_order" : 1065
+    "name_html" : "Udine"
   },
-  {
-    "objectid" : 800,
-    "nuts_id" : "ITH44",
+  "ITH44": {
     "name_latin" : "Trieste",
     "nuts_name" : "Trieste",
     "name_ascii" : "Trieste",
-    "name_html" : "Trieste",
-    "sort_order" : 1067
+    "name_html" : "Trieste"
   },
-  {
-    "objectid" : 801,
-    "nuts_id" : "ITH51",
+  "ITH51": {
     "name_latin" : "Piacenza",
     "nuts_name" : "Piacenza",
     "name_ascii" : "Piacenza",
-    "name_html" : "Piacenza",
-    "sort_order" : 1069
+    "name_html" : "Piacenza"
   },
-  {
-    "objectid" : 802,
-    "nuts_id" : "ITH52",
+  "ITH52": {
     "name_latin" : "Parma",
     "nuts_name" : "Parma",
     "name_ascii" : "Parma",
-    "name_html" : "Parma",
-    "sort_order" : 1070
+    "name_html" : "Parma"
   },
-  {
-    "objectid" : 803,
-    "nuts_id" : "ITH54",
+  "ITH54": {
     "name_latin" : "Modena",
     "nuts_name" : "Modena",
     "name_ascii" : "Modena",
-    "name_html" : "Modena",
-    "sort_order" : 1072
+    "name_html" : "Modena"
   },
-  {
-    "objectid" : 804,
-    "nuts_id" : "ITH55",
+  "ITH55": {
     "name_latin" : "Bologna",
     "nuts_name" : "Bologna",
     "name_ascii" : "Bologna",
-    "name_html" : "Bologna",
-    "sort_order" : 1073
+    "name_html" : "Bologna"
   },
-  {
-    "objectid" : 805,
-    "nuts_id" : "ITH56",
+  "ITH56": {
     "name_latin" : "Ferrara",
     "nuts_name" : "Ferrara",
     "name_ascii" : "Ferrara",
-    "name_html" : "Ferrara",
-    "sort_order" : 1074
+    "name_html" : "Ferrara"
   },
-  {
-    "objectid" : 806,
-    "nuts_id" : "ITH57",
+  "ITH57": {
     "name_latin" : "Ravenna",
     "nuts_name" : "Ravenna",
     "name_ascii" : "Ravenna",
-    "name_html" : "Ravenna",
-    "sort_order" : 1075
+    "name_html" : "Ravenna"
   },
-  {
-    "objectid" : 807,
-    "nuts_id" : "ITH58",
+  "ITH58": {
     "name_latin" : "Forlì-Cesena",
     "nuts_name" : "Forlì-Cesena",
     "name_ascii" : "Forli-Cesena",
-    "name_html" : "Forl&#x00EC;-Cesena",
-    "sort_order" : 1076
+    "name_html" : "Forl&#x00EC;-Cesena"
   },
-  {
-    "objectid" : 808,
-    "nuts_id" : "ITH59",
+  "ITH59": {
     "name_latin" : "Rimini",
     "nuts_name" : "Rimini",
     "name_ascii" : "Rimini",
-    "name_html" : "Rimini",
-    "sort_order" : 1077
+    "name_html" : "Rimini"
   },
-  {
-    "objectid" : 809,
-    "nuts_id" : "ITI12",
+  "ITI12": {
     "name_latin" : "Lucca",
     "nuts_name" : "Lucca",
     "name_ascii" : "Lucca",
-    "name_html" : "Lucca",
-    "sort_order" : 1081
+    "name_html" : "Lucca"
   },
-  {
-    "objectid" : 810,
-    "nuts_id" : "ITI13",
+  "ITI13": {
     "name_latin" : "Pistoia",
     "nuts_name" : "Pistoia",
     "name_ascii" : "Pistoia",
-    "name_html" : "Pistoia",
-    "sort_order" : 1082
+    "name_html" : "Pistoia"
   },
-  {
-    "objectid" : 811,
-    "nuts_id" : "ITI14",
+  "ITI14": {
     "name_latin" : "Firenze",
     "nuts_name" : "Firenze",
     "name_ascii" : "Firenze",
-    "name_html" : "Firenze",
-    "sort_order" : 1083
+    "name_html" : "Firenze"
   },
-  {
-    "objectid" : 812,
-    "nuts_id" : "ITI15",
+  "ITI15": {
     "name_latin" : "Prato",
     "nuts_name" : "Prato",
     "name_ascii" : "Prato",
-    "name_html" : "Prato",
-    "sort_order" : 1084
+    "name_html" : "Prato"
   },
-  {
-    "objectid" : 813,
-    "nuts_id" : "ITI16",
+  "ITI16": {
     "name_latin" : "Livorno",
     "nuts_name" : "Livorno",
     "name_ascii" : "Livorno",
-    "name_html" : "Livorno",
-    "sort_order" : 1085
+    "name_html" : "Livorno"
   },
-  {
-    "objectid" : 814,
-    "nuts_id" : "ITI17",
+  "ITI17": {
     "name_latin" : "Pisa",
     "nuts_name" : "Pisa",
     "name_ascii" : "Pisa",
-    "name_html" : "Pisa",
-    "sort_order" : 1086
+    "name_html" : "Pisa"
   },
-  {
-    "objectid" : 815,
-    "nuts_id" : "ITI18",
+  "ITI18": {
     "name_latin" : "Arezzo",
     "nuts_name" : "Arezzo",
     "name_ascii" : "Arezzo",
-    "name_html" : "Arezzo",
-    "sort_order" : 1087
+    "name_html" : "Arezzo"
   },
-  {
-    "objectid" : 816,
-    "nuts_id" : "ITI19",
+  "ITI19": {
     "name_latin" : "Siena",
     "nuts_name" : "Siena",
     "name_ascii" : "Siena",
-    "name_html" : "Siena",
-    "sort_order" : 1088
+    "name_html" : "Siena"
   },
-  {
-    "objectid" : 817,
-    "nuts_id" : "ITI1A",
+  "ITI1A": {
     "name_latin" : "Grosseto",
     "nuts_name" : "Grosseto",
     "name_ascii" : "Grosseto",
-    "name_html" : "Grosseto",
-    "sort_order" : 1089
+    "name_html" : "Grosseto"
   },
-  {
-    "objectid" : 818,
-    "nuts_id" : "ITI22",
+  "ITI22": {
     "name_latin" : "Terni",
     "nuts_name" : "Terni",
     "name_ascii" : "Terni",
-    "name_html" : "Terni",
-    "sort_order" : 1092
+    "name_html" : "Terni"
   },
-  {
-    "objectid" : 819,
-    "nuts_id" : "ITI31",
+  "ITI31": {
     "name_latin" : "Pesaro e Urbino",
     "nuts_name" : "Pesaro e Urbino",
     "name_ascii" : "Pesaro E Urbino",
-    "name_html" : "Pesaro E Urbino",
-    "sort_order" : 1094
+    "name_html" : "Pesaro E Urbino"
   },
-  {
-    "objectid" : 820,
-    "nuts_id" : "ITI32",
+  "ITI32": {
     "name_latin" : "Ancona",
     "nuts_name" : "Ancona",
     "name_ascii" : "Ancona",
-    "name_html" : "Ancona",
-    "sort_order" : 1095
+    "name_html" : "Ancona"
   },
-  {
-    "objectid" : 821,
-    "nuts_id" : "ITI33",
+  "ITI33": {
     "name_latin" : "Macerata",
     "nuts_name" : "Macerata",
     "name_ascii" : "Macerata",
-    "name_html" : "Macerata",
-    "sort_order" : 1096
+    "name_html" : "Macerata"
   },
-  {
-    "objectid" : 822,
-    "nuts_id" : "ITI34",
+  "ITI34": {
     "name_latin" : "Ascoli Piceno",
     "nuts_name" : "Ascoli Piceno",
     "name_ascii" : "Ascoli Piceno",
-    "name_html" : "Ascoli Piceno",
-    "sort_order" : 1097
+    "name_html" : "Ascoli Piceno"
   },
-  {
-    "objectid" : 823,
-    "nuts_id" : "ITI35",
+  "ITI35": {
     "name_latin" : "Fermo",
     "nuts_name" : "Fermo",
     "name_ascii" : "Fermo",
-    "name_html" : "Fermo",
-    "sort_order" : 1098
+    "name_html" : "Fermo"
   },
-  {
-    "objectid" : 824,
-    "nuts_id" : "ITI41",
+  "ITI41": {
     "name_latin" : "Viterbo",
     "nuts_name" : "Viterbo",
     "name_ascii" : "Viterbo",
-    "name_html" : "Viterbo",
-    "sort_order" : 1100
+    "name_html" : "Viterbo"
   },
-  {
-    "objectid" : 825,
-    "nuts_id" : "ITI42",
+  "ITI42": {
     "name_latin" : "Rieti",
     "nuts_name" : "Rieti",
     "name_ascii" : "Rieti",
-    "name_html" : "Rieti",
-    "sort_order" : 1101
+    "name_html" : "Rieti"
   },
-  {
-    "objectid" : 826,
-    "nuts_id" : "ITI43",
+  "ITI43": {
     "name_latin" : "Roma",
     "nuts_name" : "Roma",
     "name_ascii" : "Roma",
-    "name_html" : "Roma",
-    "sort_order" : 1102
+    "name_html" : "Roma"
   },
-  {
-    "objectid" : 827,
-    "nuts_id" : "ITI44",
+  "ITI44": {
     "name_latin" : "Latina",
     "nuts_name" : "Latina",
     "name_ascii" : "Latina",
-    "name_html" : "Latina",
-    "sort_order" : 1103
+    "name_html" : "Latina"
   },
-  {
-    "objectid" : 828,
-    "nuts_id" : "ITI45",
+  "ITI45": {
     "name_latin" : "Frosinone",
     "nuts_name" : "Frosinone",
     "name_ascii" : "Frosinone",
-    "name_html" : "Frosinone",
-    "sort_order" : 1104
+    "name_html" : "Frosinone"
   },
-  {
-    "objectid" : 829,
-    "nuts_id" : "LI000",
+  "LI000": {
     "name_latin" : "Liechtenstein",
     "nuts_name" : "Liechtenstein",
     "name_ascii" : "Liechtenstein",
-    "name_html" : "Liechtenstein",
-    "sort_order" : 0
+    "name_html" : "Liechtenstein"
   },
-  {
-    "objectid" : 830,
-    "nuts_id" : "LT001",
+  "LT001": {
     "name_latin" : "Alytaus apskritis",
     "nuts_name" : "Alytaus apskritis",
     "name_ascii" : "Alytaus apskritis",
-    "name_html" : "Alytaus pskritis",
-    "sort_order" : 1130
+    "name_html" : "Alytaus pskritis"
   },
-  {
-    "objectid" : 831,
-    "nuts_id" : "LT002",
+  "LT002": {
     "name_latin" : "Kauno apskritis",
     "nuts_name" : "Kauno apskritis",
     "name_ascii" : "Kauno apskritis",
-    "name_html" : "Kauno apskritis",
-    "sort_order" : 1131
+    "name_html" : "Kauno apskritis"
   },
-  {
-    "objectid" : 832,
-    "nuts_id" : "LT003",
+  "LT003": {
     "name_latin" : "Klaipedos apskritis",
     "nuts_name" : "Klaipedos apskritis",
     "name_ascii" : "Klaipedos apskritis",
-    "name_html" : "Klaipedos apskritis",
-    "sort_order" : 1132
+    "name_html" : "Klaipedos apskritis"
   },
-  {
-    "objectid" : 833,
-    "nuts_id" : "LT004",
+  "LT004": {
     "name_latin" : "Marijampoles apskritis",
     "nuts_name" : "Marijampoles apskritis",
     "name_ascii" : "Marijampoles apskritis",
-    "name_html" : "Marijampoles apskritis",
-    "sort_order" : 1133
+    "name_html" : "Marijampoles apskritis"
   },
-  {
-    "objectid" : 834,
-    "nuts_id" : "LT005",
+  "LT005": {
     "name_latin" : "Panevežio apskritis",
     "nuts_name" : "Panevežio apskritis",
     "name_ascii" : "Panevezio apskritis",
-    "name_html" : "Paneve&#x017E;io apskritis",
-    "sort_order" : 1134
+    "name_html" : "Paneve&#x017E;io apskritis"
   },
-  {
-    "objectid" : 835,
-    "nuts_id" : "LT006",
+  "LT006": {
     "name_latin" : "Šiauliu apskritis",
     "nuts_name" : "Šiauliu apskritis",
     "name_ascii" : "Siauliu apskritis",
-    "name_html" : "&#x0160;iauliu apskritis",
-    "sort_order" : 1135
+    "name_html" : "&#x0160;iauliu apskritis"
   },
-  {
-    "objectid" : 836,
-    "nuts_id" : "LT007",
+  "LT007": {
     "name_latin" : "Taurages apskritis",
     "nuts_name" : "Taurages apskritis",
     "name_ascii" : "Taurages apskritis",
-    "name_html" : "Taurages apskritis",
-    "sort_order" : 1136
+    "name_html" : "Taurages apskritis"
   },
-  {
-    "objectid" : 837,
-    "nuts_id" : "LT008",
+  "LT008": {
     "name_latin" : "Telšiu apskritis",
     "nuts_name" : "Telšiu apskritis",
     "name_ascii" : "Telsiu apskritis",
-    "name_html" : "Tel&#x0161;iu apskritis",
-    "sort_order" : 1137
+    "name_html" : "Tel&#x0161;iu apskritis"
   },
-  {
-    "objectid" : 838,
-    "nuts_id" : "LT009",
+  "LT009": {
     "name_latin" : "Utenos apskritis",
     "nuts_name" : "Utenos apskritis",
     "name_ascii" : "Utenos apskritis",
-    "name_html" : "Utenos apskritis",
-    "sort_order" : 1138
+    "name_html" : "Utenos apskritis"
   },
-  {
-    "objectid" : 839,
-    "nuts_id" : "LT00A",
+  "LT00A": {
     "name_latin" : "Vilniaus apskritis",
     "nuts_name" : "Vilniaus apskritis",
     "name_ascii" : "Vilniaus apskritis",
-    "name_html" : "Vilniaus apskritis",
-    "sort_order" : 1139
+    "name_html" : "Vilniaus apskritis"
   },
-  {
-    "objectid" : 840,
-    "nuts_id" : "LU000",
+  "LU000": {
     "name_latin" : "Luxembourg",
     "nuts_name" : "Luxembourg",
     "name_ascii" : "Luxembourg",
-    "name_html" : "Luxembourg",
-    "sort_order" : 1146
+    "name_html" : "Luxembourg"
   },
-  {
-    "objectid" : 841,
-    "nuts_id" : "LV003",
+  "LV003": {
     "name_latin" : "Kurzeme",
     "nuts_name" : "Kurzeme",
     "name_ascii" : "Kurzeme",
-    "name_html" : "Kurzeme",
-    "sort_order" : 1118
+    "name_html" : "Kurzeme"
   },
-  {
-    "objectid" : 842,
-    "nuts_id" : "LV005",
+  "LV005": {
     "name_latin" : "Latgale",
     "nuts_name" : "Latgale",
     "name_ascii" : "Latgale",
-    "name_html" : "Latgale",
-    "sort_order" : 1119
+    "name_html" : "Latgale"
   },
-  {
-    "objectid" : 843,
-    "nuts_id" : "LV006",
+  "LV006": {
     "name_latin" : "Riga",
     "nuts_name" : "Riga",
     "name_ascii" : "Riga",
-    "name_html" : "Riga",
-    "sort_order" : 1120
+    "name_html" : "Riga"
   },
-  {
-    "objectid" : 844,
-    "nuts_id" : "LV007",
+  "LV007": {
     "name_latin" : "Pieriga",
     "nuts_name" : "Pieriga",
     "name_ascii" : "Pieriga",
-    "name_html" : "Pieriga",
-    "sort_order" : 1121
+    "name_html" : "Pieriga"
   },
-  {
-    "objectid" : 845,
-    "nuts_id" : "LV008",
+  "LV008": {
     "name_latin" : "Vidzeme",
     "nuts_name" : "Vidzeme",
     "name_ascii" : "Vidzeme",
-    "name_html" : "Vidzeme",
-    "sort_order" : 1122
+    "name_html" : "Vidzeme"
   },
-  {
-    "objectid" : 846,
-    "nuts_id" : "MK001",
+  "MK001": {
     "name_latin" : "Vardarski",
     "nuts_name" : "Вардарски",
     "name_ascii" : "Vardarski",
-    "name_html" : "Vardarski",
-    "sort_order" : 0
+    "name_html" : "Vardarski"
   },
-  {
-    "objectid" : 847,
-    "nuts_id" : "MK002",
+  "MK002": {
     "name_latin" : "Istočen",
     "nuts_name" : "Источен",
     "name_ascii" : "Istocen",
-    "name_html" : "Istocen",
-    "sort_order" : 0
+    "name_html" : "Istocen"
   },
-  {
-    "objectid" : 848,
-    "nuts_id" : "MK003",
+  "MK003": {
     "name_latin" : "Jugozapaden",
     "nuts_name" : "Југозападен",
     "name_ascii" : "Jugozapaden",
-    "name_html" : "Jugozapaden",
-    "sort_order" : 0
+    "name_html" : "Jugozapaden"
   },
-  {
-    "objectid" : 849,
-    "nuts_id" : "MK004",
+  "MK004": {
     "name_latin" : "Jugoistočen",
     "nuts_name" : "Југоисточен",
     "name_ascii" : "Jugoistocen",
-    "name_html" : "Jugoistocen",
-    "sort_order" : 0
+    "name_html" : "Jugoistocen"
   },
-  {
-    "objectid" : 850,
-    "nuts_id" : "MK005",
+  "MK005": {
     "name_latin" : "Пелагониски",
     "nuts_name" : "Пелагониски",
     "name_ascii" : "Pelagoniski",
-    "name_html" : "Pelagoniski",
-    "sort_order" : 0
+    "name_html" : "Pelagoniski"
   },
-  {
-    "objectid" : 851,
-    "nuts_id" : "MK006",
+  "MK006": {
     "name_latin" : "Pološki",
     "nuts_name" : "Полошки",
     "name_ascii" : "Poloski",
-    "name_html" : "Polo&#x0161;ki",
-    "sort_order" : 0
+    "name_html" : "Polo&#x0161;ki"
   },
-  {
-    "objectid" : 852,
-    "nuts_id" : "MK007",
+  "MK007": {
     "name_latin" : "Severoistočen",
     "nuts_name" : "Североисточен",
     "name_ascii" : "Severoistocen",
-    "name_html" : "Severoistocen",
-    "sort_order" : 0
+    "name_html" : "Severoistocen"
   },
-  {
-    "objectid" : 853,
-    "nuts_id" : "MK008",
+  "MK008": {
     "name_latin" : "Skopski",
     "nuts_name" : "Скопски",
     "name_ascii" : "Skopski",
-    "name_html" : "Skopski",
-    "sort_order" : 0
+    "name_html" : "Skopski"
   },
-  {
-    "objectid" : 854,
-    "nuts_id" : "MT001",
+  "MT001": {
     "name_latin" : "Malta",
     "nuts_name" : "Malta",
     "name_ascii" : "Malta",
-    "name_html" : "Malta",
-    "sort_order" : 1187
+    "name_html" : "Malta"
   },
-  {
-    "objectid" : 855,
-    "nuts_id" : "MT002",
+  "MT002": {
     "name_latin" : "Gozo and Comino / Ghawdex u Kemmuna",
     "nuts_name" : "Gozo and Comino / Ghawdex u Kemmuna",
     "name_ascii" : "Gozo and Comino / Ghawdex u Kemmuna",
-    "name_html" : "Gozo and Comino / Ghawdex u Kemmuna",
-    "sort_order" : 1188
+    "name_html" : "Gozo and Comino / Ghawdex u Kemmuna"
   },
-  {
-    "objectid" : 856,
-    "nuts_id" : "NL111",
+  "NL111": {
     "name_latin" : "Oost-Groningen",
     "nuts_name" : "Oost-Groningen",
     "name_ascii" : "Oost-Groningen",
-    "name_html" : "Oost-Groningen",
-    "sort_order" : 1195
+    "name_html" : "Oost-Groningen"
   },
-  {
-    "objectid" : 857,
-    "nuts_id" : "NL112",
+  "NL112": {
     "name_latin" : "Delfzijl en omgeving",
     "nuts_name" : "Delfzijl en omgeving",
     "name_ascii" : "Delfzijl en Omgeving",
-    "name_html" : "Delfzijl en Omgeving",
-    "sort_order" : 1196
+    "name_html" : "Delfzijl en Omgeving"
   },
-  {
-    "objectid" : 858,
-    "nuts_id" : "NL121",
+  "NL121": {
     "name_latin" : "Noord-Friesland",
     "nuts_name" : "Noord-Friesland",
     "name_ascii" : "Noord-Friesland",
-    "name_html" : "Noord-Friesland",
-    "sort_order" : 1199
+    "name_html" : "Noord-Friesland"
   },
-  {
-    "objectid" : 859,
-    "nuts_id" : "NL122",
+  "NL122": {
     "name_latin" : "Zuidwest-Friesland",
     "nuts_name" : "Zuidwest-Friesland",
     "name_ascii" : "Zuidwest-Friesland",
-    "name_html" : "Zuidwest-Friesland",
-    "sort_order" : 1200
+    "name_html" : "Zuidwest-Friesland"
   },
-  {
-    "objectid" : 860,
-    "nuts_id" : "NL123",
+  "NL123": {
     "name_latin" : "Zuidoost-Friesland",
     "nuts_name" : "Zuidoost-Friesland",
     "name_ascii" : "Zuidoost-Friesland",
-    "name_html" : "Zuidoost-Friesland",
-    "sort_order" : 1201
+    "name_html" : "Zuidoost-Friesland"
   },
-  {
-    "objectid" : 861,
-    "nuts_id" : "NL132",
+  "NL132": {
     "name_latin" : "Zuidoost-Drenthe",
     "nuts_name" : "Zuidoost-Drenthe",
     "name_ascii" : "Zuidoost-Drenthe",
-    "name_html" : "Zuidoost-Drenthe",
-    "sort_order" : 1204
+    "name_html" : "Zuidoost-Drenthe"
   },
-  {
-    "objectid" : 862,
-    "nuts_id" : "NL133",
+  "NL133": {
     "name_latin" : "Zuidwest-Drenthe",
     "nuts_name" : "Zuidwest-Drenthe",
     "name_ascii" : "Zuidwest-Drenthe",
-    "name_html" : "Zuidwest-Drenthe",
-    "sort_order" : 1205
+    "name_html" : "Zuidwest-Drenthe"
   },
-  {
-    "objectid" : 863,
-    "nuts_id" : "NL212",
+  "NL212": {
     "name_latin" : "Zuidwest-Overijssel",
     "nuts_name" : "Zuidwest-Overijssel",
     "name_ascii" : "Zuidwest-Overijssel",
-    "name_html" : "Zuidwest-Overijssel",
-    "sort_order" : 1209
+    "name_html" : "Zuidwest-Overijssel"
   },
-  {
-    "objectid" : 864,
-    "nuts_id" : "NL213",
+  "NL213": {
     "name_latin" : "Twente",
     "nuts_name" : "Twente",
     "name_ascii" : "Twente",
-    "name_html" : "Twente",
-    "sort_order" : 1210
+    "name_html" : "Twente"
   },
-  {
-    "objectid" : 865,
-    "nuts_id" : "NL221",
+  "NL221": {
     "name_latin" : "Veluwe",
     "nuts_name" : "Veluwe",
     "name_ascii" : "Veluwe",
-    "name_html" : "Veluwe",
-    "sort_order" : 1212
+    "name_html" : "Veluwe"
   },
-  {
-    "objectid" : 866,
-    "nuts_id" : "NL224",
+  "NL224": {
     "name_latin" : "Zuidwest-Gelderland",
     "nuts_name" : "Zuidwest-Gelderland",
     "name_ascii" : "Zuidwest-Gelderland",
-    "name_html" : "Zuidwest-Gelderland",
-    "sort_order" : 1213
+    "name_html" : "Zuidwest-Gelderland"
   },
-  {
-    "objectid" : 867,
-    "nuts_id" : "NL225",
+  "NL225": {
     "name_latin" : "Achterhoek",
     "nuts_name" : "Achterhoek",
     "name_ascii" : "Achterhoek",
-    "name_html" : "Achterhoek",
-    "sort_order" : 1214
+    "name_html" : "Achterhoek"
   },
-  {
-    "objectid" : 868,
-    "nuts_id" : "NL230",
+  "NL230": {
     "name_latin" : "Flevoland",
     "nuts_name" : "Flevoland",
     "name_ascii" : "Flevoland",
-    "name_html" : "Flevoland",
-    "sort_order" : 1217
+    "name_html" : "Flevoland"
   },
-  {
-    "objectid" : 869,
-    "nuts_id" : "NL310",
+  "NL310": {
     "name_latin" : "Utrecht",
     "nuts_name" : "Utrecht",
     "name_ascii" : "Utrecht",
-    "name_html" : "Utrecht",
-    "sort_order" : 1220
+    "name_html" : "Utrecht"
   },
-  {
-    "objectid" : 870,
-    "nuts_id" : "NL322",
+  "NL322": {
     "name_latin" : "Alkmaar en omgeving",
     "nuts_name" : "Alkmaar en omgeving",
     "name_ascii" : "Alkmaar en Omgeving",
-    "name_html" : "Alkmaar en Omgeving",
-    "sort_order" : 1223
+    "name_html" : "Alkmaar en Omgeving"
   },
-  {
-    "objectid" : 871,
-    "nuts_id" : "NL323",
+  "NL323": {
     "name_latin" : "IJmond",
     "nuts_name" : "IJmond",
     "name_ascii" : "Ijmond",
-    "name_html" : "Ijmond",
-    "sort_order" : 1224
+    "name_html" : "Ijmond"
   },
-  {
-    "objectid" : 872,
-    "nuts_id" : "NL324",
+  "NL324": {
     "name_latin" : "Agglomeratie Haarlem",
     "nuts_name" : "Agglomeratie Haarlem",
     "name_ascii" : "Agglomeratie Haarlem",
-    "name_html" : "Agglomeratie Haarlem",
-    "sort_order" : 1225
+    "name_html" : "Agglomeratie Haarlem"
   },
-  {
-    "objectid" : 873,
-    "nuts_id" : "NL325",
+  "NL325": {
     "name_latin" : "Zaanstreek",
     "nuts_name" : "Zaanstreek",
     "name_ascii" : "Zaanstreek",
-    "name_html" : "Zaanstreek",
-    "sort_order" : 1226
+    "name_html" : "Zaanstreek"
   },
-  {
-    "objectid" : 874,
-    "nuts_id" : "NL326",
+  "NL326": {
     "name_latin" : "Groot-Amsterdam",
     "nuts_name" : "Groot-Amsterdam",
     "name_ascii" : "Groot-Amsterdam",
-    "name_html" : "Groot-Amsterdam",
-    "sort_order" : 1227
+    "name_html" : "Groot-Amsterdam"
   },
-  {
-    "objectid" : 875,
-    "nuts_id" : "NL327",
+  "NL327": {
     "name_latin" : "Het Gooi en Vechtstreek",
     "nuts_name" : "Het Gooi en Vechtstreek",
     "name_ascii" : "Het Gooi en Vechtstreek",
-    "name_html" : "Het Gooi en Vechtstreek",
-    "sort_order" : 1228
+    "name_html" : "Het Gooi en Vechtstreek"
   },
-  {
-    "objectid" : 876,
-    "nuts_id" : "NL332",
+  "NL332": {
     "name_latin" : "Agglomeratie 's-Gravenhage",
     "nuts_name" : "Agglomeratie 's-Gravenhage",
     "name_ascii" : "Agglomeratie 's-Gravenhage",
-    "name_html" : "Agglomeratie 's-Gravenhage",
-    "sort_order" : 1230
+    "name_html" : "Agglomeratie 's-Gravenhage"
   },
-  {
-    "objectid" : 877,
-    "nuts_id" : "NL333",
+  "NL333": {
     "name_latin" : "Delft en Westland",
     "nuts_name" : "Delft en Westland",
     "name_ascii" : "Delft en Westland",
-    "name_html" : "Delft en Westland",
-    "sort_order" : 1231
+    "name_html" : "Delft en Westland"
   },
-  {
-    "objectid" : 878,
-    "nuts_id" : "NL338",
+  "NL338": {
     "name_latin" : "Oost-Zuid-Holland",
     "nuts_name" : "Oost-Zuid-Holland",
     "name_ascii" : "Oost-Zuid-Holland",
-    "name_html" : "Oost-Zuid-Holland",
-    "sort_order" : 1233
+    "name_html" : "Oost-Zuid-Holland"
   },
-  {
-    "objectid" : 879,
-    "nuts_id" : "NL339",
+  "NL339": {
     "name_latin" : "Groot-Rijnmond",
     "nuts_name" : "Groot-Rijnmond",
     "name_ascii" : "Groot-Rijnmond",
-    "name_html" : "Groot-Rijnmond",
-    "sort_order" : 1234
+    "name_html" : "Groot-Rijnmond"
   },
-  {
-    "objectid" : 880,
-    "nuts_id" : "NL33A",
+  "NL33A": {
     "name_latin" : "Zuidoost-Zuid-Holland",
     "nuts_name" : "Zuidoost-Zuid-Holland",
     "name_ascii" : "Zuidoost-Zuid-Holland",
-    "name_html" : "Zuidoost-Zuid-Holland",
-    "sort_order" : 1235
+    "name_html" : "Zuidoost-Zuid-Holland"
   },
-  {
-    "objectid" : 881,
-    "nuts_id" : "NL341",
+  "NL341": {
     "name_latin" : "Zeeuwsch-Vlaanderen",
     "nuts_name" : "Zeeuwsch-Vlaanderen",
     "name_ascii" : "Zeeuwsch-Vlaanderen",
-    "name_html" : "Zeeuwsch-Vlaanderen",
-    "sort_order" : 1237
+    "name_html" : "Zeeuwsch-Vlaanderen"
   },
-  {
-    "objectid" : 882,
-    "nuts_id" : "NL342",
+  "NL342": {
     "name_latin" : "Overig Zeeland",
     "nuts_name" : "Overig Zeeland",
     "name_ascii" : "Overig Zeeland",
-    "name_html" : "Overig Zeeland",
-    "sort_order" : 1238
+    "name_html" : "Overig Zeeland"
   },
-  {
-    "objectid" : 883,
-    "nuts_id" : "NL411",
+  "NL411": {
     "name_latin" : "West-Noord-Brabant",
     "nuts_name" : "West-Noord-Brabant",
     "name_ascii" : "West-Noord-Brabant",
-    "name_html" : "West-Noord-Brabant",
-    "sort_order" : 1241
+    "name_html" : "West-Noord-Brabant"
   },
-  {
-    "objectid" : 884,
-    "nuts_id" : "NL412",
+  "NL412": {
     "name_latin" : "Midden-Noord-Brabant",
     "nuts_name" : "Midden-Noord-Brabant",
     "name_ascii" : "Midden-Noord-Brabant",
-    "name_html" : "Midden-Noord-Brabant",
-    "sort_order" : 1242
+    "name_html" : "Midden-Noord-Brabant"
   },
-  {
-    "objectid" : 885,
-    "nuts_id" : "NL413",
+  "NL413": {
     "name_latin" : "Noordoost-Noord-Brabant",
     "nuts_name" : "Noordoost-Noord-Brabant",
     "name_ascii" : "Noordoost-Noord-Brabant",
-    "name_html" : "Noordoost-Noord-Brabant",
-    "sort_order" : 1243
+    "name_html" : "Noordoost-Noord-Brabant"
   },
-  {
-    "objectid" : 886,
-    "nuts_id" : "NL414",
+  "NL414": {
     "name_latin" : "Zuidoost-Noord-Brabant",
     "nuts_name" : "Zuidoost-Noord-Brabant",
     "name_ascii" : "Zuidoost-Noord-Brabant",
-    "name_html" : "Zuidoost-Noord-Brabant",
-    "sort_order" : 1244
+    "name_html" : "Zuidoost-Noord-Brabant"
   },
-  {
-    "objectid" : 887,
-    "nuts_id" : "NL421",
+  "NL421": {
     "name_latin" : "Noord-Limburg",
     "nuts_name" : "Noord-Limburg",
     "name_ascii" : "Noord-Limburg",
-    "name_html" : "Noord-Limburg",
-    "sort_order" : 1246
+    "name_html" : "Noord-Limburg"
   },
-  {
-    "objectid" : 888,
-    "nuts_id" : "NL422",
+  "NL422": {
     "name_latin" : "Midden-Limburg",
     "nuts_name" : "Midden-Limburg",
     "name_ascii" : "Midden-Limburg",
-    "name_html" : "Midden-Limburg",
-    "sort_order" : 1247
+    "name_html" : "Midden-Limburg"
   },
-  {
-    "objectid" : 889,
-    "nuts_id" : "NL423",
+  "NL423": {
     "name_latin" : "Zuid-Limburg",
     "nuts_name" : "Zuid-Limburg",
     "name_ascii" : "Zuid-Limburg",
-    "name_html" : "Zuid-Limburg",
-    "sort_order" : 1248
+    "name_html" : "Zuid-Limburg"
   },
-  {
-    "objectid" : 890,
-    "nuts_id" : "NO011",
+  "NO011": {
     "name_latin" : "Oslo",
     "nuts_name" : "Oslo",
     "name_ascii" : "Oslo",
-    "name_html" : "Oslo",
-    "sort_order" : 0
+    "name_html" : "Oslo"
   },
-  {
-    "objectid" : 891,
-    "nuts_id" : "NO012",
+  "NO012": {
     "name_latin" : "Akershus",
     "nuts_name" : "Akershus",
     "name_ascii" : "Akershus",
-    "name_html" : "Akershus",
-    "sort_order" : 0
+    "name_html" : "Akershus"
   },
-  {
-    "objectid" : 892,
-    "nuts_id" : "NO021",
+  "NO021": {
     "name_latin" : "Hedmark",
     "nuts_name" : "Hedmark",
     "name_ascii" : "Hedmark",
-    "name_html" : "Hedmark",
-    "sort_order" : 0
+    "name_html" : "Hedmark"
   },
-  {
-    "objectid" : 893,
-    "nuts_id" : "NO022",
+  "NO022": {
     "name_latin" : "Oppland",
     "nuts_name" : "Oppland",
     "name_ascii" : "Oppland",
-    "name_html" : "Oppland",
-    "sort_order" : 0
+    "name_html" : "Oppland"
   },
-  {
-    "objectid" : 894,
-    "nuts_id" : "NO031",
+  "NO031": {
     "name_latin" : "Østfold",
     "nuts_name" : "Østfold",
     "name_ascii" : "Ostfold",
-    "name_html" : "&#x00D8;stfold",
-    "sort_order" : 0
+    "name_html" : "&#x00D8;stfold"
   },
-  {
-    "objectid" : 895,
-    "nuts_id" : "NO032",
+  "NO032": {
     "name_latin" : "Buskerud",
     "nuts_name" : "Buskerud",
     "name_ascii" : "Buskerud",
-    "name_html" : "Buskerud",
-    "sort_order" : 0
+    "name_html" : "Buskerud"
   },
-  {
-    "objectid" : 896,
-    "nuts_id" : "NO033",
+  "NO033": {
     "name_latin" : "Vestfold",
     "nuts_name" : "Vestfold",
     "name_ascii" : "Vestfold",
-    "name_html" : "Vestfold",
-    "sort_order" : 0
+    "name_html" : "Vestfold"
   },
-  {
-    "objectid" : 897,
-    "nuts_id" : "NO034",
+  "NO034": {
     "name_latin" : "Telemark",
     "nuts_name" : "Telemark",
     "name_ascii" : "Telemark",
-    "name_html" : "Telemark",
-    "sort_order" : 0
+    "name_html" : "Telemark"
   },
-  {
-    "objectid" : 898,
-    "nuts_id" : "NO041",
+  "NO041": {
     "name_latin" : "Aust-Agder",
     "nuts_name" : "Aust-Agder",
     "name_ascii" : "Aust-Agder",
-    "name_html" : "Aust-Agder",
-    "sort_order" : 0
+    "name_html" : "Aust-Agder"
   },
-  {
-    "objectid" : 899,
-    "nuts_id" : "NO042",
+  "NO042": {
     "name_latin" : "Vest-Agder",
     "nuts_name" : "Vest-Agder",
     "name_ascii" : "Vest-Agder",
-    "name_html" : "Vest-Agder",
-    "sort_order" : 0
+    "name_html" : "Vest-Agder"
   },
-  {
-    "objectid" : 900,
-    "nuts_id" : "NO043",
+  "NO043": {
     "name_latin" : "Rogaland",
     "nuts_name" : "Rogaland",
     "name_ascii" : "Rogaland",
-    "name_html" : "Rogaland",
-    "sort_order" : 0
+    "name_html" : "Rogaland"
   },
-  {
-    "objectid" : 901,
-    "nuts_id" : "NO051",
+  "NO051": {
     "name_latin" : "Hordaland",
     "nuts_name" : "Hordaland",
     "name_ascii" : "Hordaland",
-    "name_html" : "Hordaland",
-    "sort_order" : 0
+    "name_html" : "Hordaland"
   },
-  {
-    "objectid" : 902,
-    "nuts_id" : "NO052",
+  "NO052": {
     "name_latin" : "Sogn og Fjordane",
     "nuts_name" : "Sogn og Fjordane",
     "name_ascii" : "Sogn og Fjordane",
-    "name_html" : "Sogn og Fjordane",
-    "sort_order" : 0
+    "name_html" : "Sogn og Fjordane"
   },
-  {
-    "objectid" : 903,
-    "nuts_id" : "NO053",
+  "NO053": {
     "name_latin" : "Møre og Romsdal",
     "nuts_name" : "Møre og Romsdal",
     "name_ascii" : "More og Romsdal",
-    "name_html" : "M&#x00F8;re og Romsdal",
-    "sort_order" : 0
+    "name_html" : "M&#x00F8;re og Romsdal"
   },
-  {
-    "objectid" : 904,
-    "nuts_id" : "NO062",
+  "NO062": {
     "name_latin" : "Nord-Trøndelag",
     "nuts_name" : "Nord-Trøndelag",
     "name_ascii" : "Nord-Trondelag",
-    "name_html" : "Nord-Tr&#x00F8;ndelag",
-    "sort_order" : 0
+    "name_html" : "Nord-Tr&#x00F8;ndelag"
   },
-  {
-    "objectid" : 905,
-    "nuts_id" : "NO071",
+  "NO071": {
     "name_latin" : "Nordland",
     "nuts_name" : "Nordland",
     "name_ascii" : "Nordland",
-    "name_html" : "Nordland",
-    "sort_order" : 0
+    "name_html" : "Nordland"
   },
-  {
-    "objectid" : 906,
-    "nuts_id" : "NO072",
+  "NO072": {
     "name_latin" : "Troms",
     "nuts_name" : "Troms",
     "name_ascii" : "Troms",
-    "name_html" : "Troms",
-    "sort_order" : 0
+    "name_html" : "Troms"
   },
-  {
-    "objectid" : 907,
-    "nuts_id" : "NO073",
+  "NO073": {
     "name_latin" : "Finnmark",
     "nuts_name" : "Finnmark",
     "name_ascii" : "Finnmark",
-    "name_html" : "Finnmark",
-    "sort_order" : 0
+    "name_html" : "Finnmark"
   },
-  {
-    "objectid" : 908,
-    "nuts_id" : "PL114",
+  "PL114": {
     "name_latin" : "Lódzki",
     "nuts_name" : "Lódzki",
     "name_ascii" : "Lodzki",
-    "name_html" : "L&#x00F3;dzki",
-    "sort_order" : 1307
+    "name_html" : "L&#x00F3;dzki"
   },
-  {
-    "objectid" : 909,
-    "nuts_id" : "PL115",
+  "PL115": {
     "name_latin" : "Piotrkowski",
     "nuts_name" : "Piotrkowski",
     "name_ascii" : "Piotrkowski",
-    "name_html" : "Piotrkowski",
-    "sort_order" : 1308
+    "name_html" : "Piotrkowski"
   },
-  {
-    "objectid" : 910,
-    "nuts_id" : "PL116",
+  "PL116": {
     "name_latin" : "Sieradzki",
     "nuts_name" : "Sieradzki",
     "name_ascii" : "Sieradzki",
-    "name_html" : "Sieradzki",
-    "sort_order" : 1309
+    "name_html" : "Sieradzki"
   },
-  {
-    "objectid" : 911,
-    "nuts_id" : "PL117",
+  "PL117": {
     "name_latin" : "Skierniewicki",
     "nuts_name" : "Skierniewicki",
     "name_ascii" : "Skierniewicki",
-    "name_html" : "Skierniewicki",
-    "sort_order" : 1310
+    "name_html" : "Skierniewicki"
   },
-  {
-    "objectid" : 912,
-    "nuts_id" : "PL128",
+  "PL128": {
     "name_latin" : "Radomski",
     "nuts_name" : "Radomski",
     "name_ascii" : "Radomski",
-    "name_html" : "Radomski",
-    "sort_order" : 1313
+    "name_html" : "Radomski"
   },
-  {
-    "objectid" : 913,
-    "nuts_id" : "PL129",
+  "PL129": {
     "name_latin" : "Warszawski wschodni",
     "nuts_name" : "Warszawski wschodni",
     "name_ascii" : "Warszawski wschodni",
-    "name_html" : "Warszawski wschodni",
-    "sort_order" : 1314
+    "name_html" : "Warszawski wschodni"
   },
-  {
-    "objectid" : 914,
-    "nuts_id" : "PL12A",
+  "PL12A": {
     "name_latin" : "Warszawski zachodni",
     "nuts_name" : "Warszawski zachodni",
     "name_ascii" : "Warszawski zachodni",
-    "name_html" : "Warszawski zachodni",
-    "sort_order" : 1315
+    "name_html" : "Warszawski zachodni"
   },
-  {
-    "objectid" : 915,
-    "nuts_id" : "PL12B",
+  "PL12B": {
     "name_latin" : "Ciechanowski",
     "nuts_name" : "Ciechanowski",
     "name_ascii" : "Ciechanowski",
-    "name_html" : "Ciechanowski",
-    "sort_order" : 1316
+    "name_html" : "Ciechanowski"
   },
-  {
-    "objectid" : 916,
-    "nuts_id" : "PL12C",
+  "PL12C": {
     "name_latin" : "Plocki",
     "nuts_name" : "Plocki",
     "name_ascii" : "Plocki",
-    "name_html" : "Plocki",
-    "sort_order" : 1317
+    "name_html" : "Plocki"
   },
-  {
-    "objectid" : 917,
-    "nuts_id" : "PL12D",
+  "PL12D": {
     "name_latin" : "Ostrolecki",
     "nuts_name" : "Ostrolecki",
     "name_ascii" : "Ostrolecki",
-    "name_html" : "Ostrolecki",
-    "sort_order" : 1318
+    "name_html" : "Ostrolecki"
   },
-  {
-    "objectid" : 918,
-    "nuts_id" : "PL214",
+  "PL214": {
     "name_latin" : "Krakowski",
     "nuts_name" : "Krakowski",
     "name_ascii" : "Krakowski",
-    "name_html" : "Krakowski",
-    "sort_order" : 1323
+    "name_html" : "Krakowski"
   },
-  {
-    "objectid" : 919,
-    "nuts_id" : "PL217",
+  "PL217": {
     "name_latin" : "Tarnowski",
     "nuts_name" : "Tarnowski",
     "name_ascii" : "Tarnowski",
-    "name_html" : "Tarnowski",
-    "sort_order" : 1324
+    "name_html" : "Tarnowski"
   },
-  {
-    "objectid" : 920,
-    "nuts_id" : "PL218",
+  "PL218": {
     "name_latin" : "Nowosadecki",
     "nuts_name" : "Nowosadecki",
     "name_ascii" : "Nowosadecki",
-    "name_html" : "Nowosadecki",
-    "sort_order" : 1325
+    "name_html" : "Nowosadecki"
   },
-  {
-    "objectid" : 921,
-    "nuts_id" : "PL219",
+  "PL219": {
     "name_latin" : "Nowotarski",
     "nuts_name" : "Nowotarski",
     "name_ascii" : "Nowotarski",
-    "name_html" : "Nowotarski",
-    "sort_order" : 1326
+    "name_html" : "Nowotarski"
   },
-  {
-    "objectid" : 922,
-    "nuts_id" : "PL21A",
+  "PL21A": {
     "name_latin" : "Oswiecimski",
     "nuts_name" : "Oswiecimski",
     "name_ascii" : "Oswiecimski",
-    "name_html" : "Oswiecimski",
-    "sort_order" : 1327
+    "name_html" : "Oswiecimski"
   },
-  {
-    "objectid" : 923,
-    "nuts_id" : "PL224",
+  "PL224": {
     "name_latin" : "Czestochowski",
     "nuts_name" : "Czestochowski",
     "name_ascii" : "Czestochowski",
-    "name_html" : "Czestochowski",
-    "sort_order" : 1329
+    "name_html" : "Czestochowski"
   },
-  {
-    "objectid" : 924,
-    "nuts_id" : "PL225",
+  "PL225": {
     "name_latin" : "Bielski",
     "nuts_name" : "Bielski",
     "name_ascii" : "Bielski",
-    "name_html" : "Bielski",
-    "sort_order" : 1330
+    "name_html" : "Bielski"
   },
-  {
-    "objectid" : 925,
-    "nuts_id" : "PL228",
+  "PL228": {
     "name_latin" : "Bytomski",
     "nuts_name" : "Bytomski",
     "name_ascii" : "Bytomski",
-    "name_html" : "Bytomski",
-    "sort_order" : 1332
+    "name_html" : "Bytomski"
   },
-  {
-    "objectid" : 926,
-    "nuts_id" : "PL229",
+  "PL229": {
     "name_latin" : "Gliwicki",
     "nuts_name" : "Gliwicki",
     "name_ascii" : "Gliwicki",
-    "name_html" : "Gliwicki",
-    "sort_order" : 1333
+    "name_html" : "Gliwicki"
   },
-  {
-    "objectid" : 927,
-    "nuts_id" : "PL22A",
+  "PL22A": {
     "name_latin" : "Katowicki",
     "nuts_name" : "Katowicki",
     "name_ascii" : "Katowicki",
-    "name_html" : "Katowicki",
-    "sort_order" : 1334
+    "name_html" : "Katowicki"
   },
-  {
-    "objectid" : 928,
-    "nuts_id" : "PL22B",
+  "PL22B": {
     "name_latin" : "Sosnowiecki",
     "nuts_name" : "Sosnowiecki",
     "name_ascii" : "Sosnowiecki",
-    "name_html" : "Sosnowiecki",
-    "sort_order" : 1335
+    "name_html" : "Sosnowiecki"
   },
-  {
-    "objectid" : 929,
-    "nuts_id" : "PL22C",
+  "PL22C": {
     "name_latin" : "Tyski",
     "nuts_name" : "Tyski",
     "name_ascii" : "Tyski",
-    "name_html" : "Tyski",
-    "sort_order" : 1336
+    "name_html" : "Tyski"
   },
-  {
-    "objectid" : 930,
-    "nuts_id" : "PL311",
+  "PL311": {
     "name_latin" : "Bialski",
     "nuts_name" : "Bialski",
     "name_ascii" : "Bialski",
-    "name_html" : "Bialski",
-    "sort_order" : 1339
+    "name_html" : "Bialski"
   },
-  {
-    "objectid" : 931,
-    "nuts_id" : "PL312",
+  "PL312": {
     "name_latin" : "Chelmsko-zamojski",
     "nuts_name" : "Chelmsko-zamojski",
     "name_ascii" : "Chelmsko-zamojski",
-    "name_html" : "Chelmsko-zamojski",
-    "sort_order" : 1340
+    "name_html" : "Chelmsko-zamojski"
   },
-  {
-    "objectid" : 932,
-    "nuts_id" : "PL314",
+  "PL314": {
     "name_latin" : "Lubelski",
     "nuts_name" : "Lubelski",
     "name_ascii" : "Lubelski",
-    "name_html" : "Lubelski",
-    "sort_order" : 1341
+    "name_html" : "Lubelski"
   },
-  {
-    "objectid" : 933,
-    "nuts_id" : "PL315",
+  "PL315": {
     "name_latin" : "Pulawski",
     "nuts_name" : "Pulawski",
     "name_ascii" : "Pulawski",
-    "name_html" : "Pulawski",
-    "sort_order" : 1342
+    "name_html" : "Pulawski"
   },
-  {
-    "objectid" : 934,
-    "nuts_id" : "PL324",
+  "PL324": {
     "name_latin" : "Przemyski",
     "nuts_name" : "Przemyski",
     "name_ascii" : "Przemyski",
-    "name_html" : "Przemyski",
-    "sort_order" : 1345
+    "name_html" : "Przemyski"
   },
-  {
-    "objectid" : 935,
-    "nuts_id" : "PL325",
+  "PL325": {
     "name_latin" : "Rzeszowski",
     "nuts_name" : "Rzeszowski",
     "name_ascii" : "Rzeszowski",
-    "name_html" : "Rzeszowski",
-    "sort_order" : 1346
+    "name_html" : "Rzeszowski"
   },
-  {
-    "objectid" : 936,
-    "nuts_id" : "PL326",
+  "PL326": {
     "name_latin" : "Tarnobrzeski",
     "nuts_name" : "Tarnobrzeski",
     "name_ascii" : "Tarnobrzeski",
-    "name_html" : "Tarnobrzeski",
-    "sort_order" : 1347
+    "name_html" : "Tarnobrzeski"
   },
-  {
-    "objectid" : 937,
-    "nuts_id" : "PL331",
+  "PL331": {
     "name_latin" : "Kielecki",
     "nuts_name" : "Kielecki",
     "name_ascii" : "Kielecki",
-    "name_html" : "Kielecki",
-    "sort_order" : 1349
+    "name_html" : "Kielecki"
   },
-  {
-    "objectid" : 938,
-    "nuts_id" : "PL343",
+  "PL343": {
     "name_latin" : "Bialostocki",
     "nuts_name" : "Bialostocki",
     "name_ascii" : "Bialostocki",
-    "name_html" : "Bialostocki",
-    "sort_order" : 1352
+    "name_html" : "Bialostocki"
   },
-  {
-    "objectid" : 939,
-    "nuts_id" : "PL344",
+  "PL344": {
     "name_latin" : "Lomzynski",
     "nuts_name" : "Lomzynski",
     "name_ascii" : "Lomzynski",
-    "name_html" : "Lomzynski",
-    "sort_order" : 1353
+    "name_html" : "Lomzynski"
   },
-  {
-    "objectid" : 940,
-    "nuts_id" : "PL345",
+  "PL345": {
     "name_latin" : "Suwalski",
     "nuts_name" : "Suwalski",
     "name_ascii" : "Suwalski",
-    "name_html" : "Suwalski",
-    "sort_order" : 1354
+    "name_html" : "Suwalski"
   },
-  {
-    "objectid" : 941,
-    "nuts_id" : "PL411",
+  "PL411": {
     "name_latin" : "Pilski",
     "nuts_name" : "Pilski",
     "name_ascii" : "Pilski",
-    "name_html" : "Pilski",
-    "sort_order" : 1357
+    "name_html" : "Pilski"
   },
-  {
-    "objectid" : 942,
-    "nuts_id" : "PL414",
+  "PL414": {
     "name_latin" : "Koninski",
     "nuts_name" : "Koninski",
     "name_ascii" : "Koninski",
-    "name_html" : "Koninski",
-    "sort_order" : 1358
+    "name_html" : "Koninski"
   },
-  {
-    "objectid" : 943,
-    "nuts_id" : "PL415",
+  "PL415": {
     "name_latin" : "Miasto Poznan",
     "nuts_name" : "Miasto Poznan",
     "name_ascii" : "Miasto Poznan",
-    "name_html" : "Miasto Poznan",
-    "sort_order" : 1359
+    "name_html" : "Miasto Poznan"
   },
-  {
-    "objectid" : 944,
-    "nuts_id" : "PL417",
+  "PL417": {
     "name_latin" : "Leszczynski",
     "nuts_name" : "Leszczynski",
     "name_ascii" : "Leszczynski",
-    "name_html" : "Leszczynski",
-    "sort_order" : 1361
+    "name_html" : "Leszczynski"
   },
-  {
-    "objectid" : 945,
-    "nuts_id" : "PL418",
+  "PL418": {
     "name_latin" : "Poznanski",
     "nuts_name" : "Poznanski",
     "name_ascii" : "Poznanski",
-    "name_html" : "Poznanski",
-    "sort_order" : 1362
+    "name_html" : "Poznanski"
   },
-  {
-    "objectid" : 946,
-    "nuts_id" : "PL426",
+  "PL426": {
     "name_latin" : "Koszalinski",
     "nuts_name" : "Koszalinski",
     "name_ascii" : "Koszalinski",
-    "name_html" : "Koszalinski",
-    "sort_order" : 1365
+    "name_html" : "Koszalinski"
   },
-  {
-    "objectid" : 947,
-    "nuts_id" : "PL427",
+  "PL427": {
     "name_latin" : "Szczecinecko-pyrzycki",
     "nuts_name" : "Szczecinecko-pyrzycki",
     "name_ascii" : "Szczecinecko-pyrzycki",
-    "name_html" : "Szczecinecko-pyrzycki",
-    "sort_order" : 1366
+    "name_html" : "Szczecinecko-pyrzycki"
   },
-  {
-    "objectid" : 948,
-    "nuts_id" : "PL428",
+  "PL428": {
     "name_latin" : "Szczecinski",
     "nuts_name" : "Szczecinski",
     "name_ascii" : "Szczecinski",
-    "name_html" : "Szczecinski",
-    "sort_order" : 1367
+    "name_html" : "Szczecinski"
   },
-  {
-    "objectid" : 949,
-    "nuts_id" : "PL431",
+  "PL431": {
     "name_latin" : "Gorzowski",
     "nuts_name" : "Gorzowski",
     "name_ascii" : "Gorzowski",
-    "name_html" : "Gorzowski",
-    "sort_order" : 1369
+    "name_html" : "Gorzowski"
   },
-  {
-    "objectid" : 950,
-    "nuts_id" : "PL514",
+  "PL514": {
     "name_latin" : "Miasto Wroclaw",
     "nuts_name" : "Miasto Wroclaw",
     "name_ascii" : "Miasto Wroclaw",
-    "name_html" : "Miasto Wroclaw",
-    "sort_order" : 1373
+    "name_html" : "Miasto Wroclaw"
   },
-  {
-    "objectid" : 951,
-    "nuts_id" : "PL515",
+  "PL515": {
     "name_latin" : "Jeleniogórski",
     "nuts_name" : "Jeleniogórski",
     "name_ascii" : "Jeleniogorski",
-    "name_html" : "Jeleniog&#x00F3;rski",
-    "sort_order" : 1374
+    "name_html" : "Jeleniog&#x00F3;rski"
   },
-  {
-    "objectid" : 952,
-    "nuts_id" : "PL517",
+  "PL517": {
     "name_latin" : "Walbrzyski",
     "nuts_name" : "Walbrzyski",
     "name_ascii" : "Walbrzyski",
-    "name_html" : "Walbrzyski",
-    "sort_order" : 1376
+    "name_html" : "Walbrzyski"
   },
-  {
-    "objectid" : 953,
-    "nuts_id" : "PL518",
+  "PL518": {
     "name_latin" : "Wroclawski",
     "nuts_name" : "Wroclawski",
     "name_ascii" : "Wroclawski",
-    "name_html" : "Wroclawski",
-    "sort_order" : 1377
+    "name_html" : "Wroclawski"
   },
-  {
-    "objectid" : 954,
-    "nuts_id" : "PL523",
+  "PL523": {
     "name_latin" : "Nyski",
     "nuts_name" : "Nyski",
     "name_ascii" : "Nyski",
-    "name_html" : "Nyski",
-    "sort_order" : 1379
+    "name_html" : "Nyski"
   },
-  {
-    "objectid" : 955,
-    "nuts_id" : "PL524",
+  "PL524": {
     "name_latin" : "Opolski",
     "nuts_name" : "Opolski",
     "name_ascii" : "Opolski",
-    "name_html" : "Opolski",
-    "sort_order" : 1380
+    "name_html" : "Opolski"
   },
-  {
-    "objectid" : 956,
-    "nuts_id" : "PL613",
+  "PL613": {
     "name_latin" : "Bydgosko-Torunski",
     "nuts_name" : "Bydgosko-Torunski",
     "name_ascii" : "Bydgosko-Torunski",
-    "name_html" : "Bydgosko-Torunski",
-    "sort_order" : 1383
+    "name_html" : "Bydgosko-Torunski"
   },
-  {
-    "objectid" : 957,
-    "nuts_id" : "PL616",
+  "PL616": {
     "name_latin" : "Grudziadzki",
     "nuts_name" : "Grudziadzki",
     "name_ascii" : "Grudziadzki",
-    "name_html" : "Grudziadzki",
-    "sort_order" : 1384
+    "name_html" : "Grudziadzki"
   },
-  {
-    "objectid" : 958,
-    "nuts_id" : "PL617",
+  "PL617": {
     "name_latin" : "Inowroclawski",
     "nuts_name" : "Inowroclawski",
     "name_ascii" : "Inowroclawski",
-    "name_html" : "Inowroclawski",
-    "sort_order" : 1385
+    "name_html" : "Inowroclawski"
   },
-  {
-    "objectid" : 959,
-    "nuts_id" : "PL618",
+  "PL618": {
     "name_latin" : "Swiecki",
     "nuts_name" : "Swiecki",
     "name_ascii" : "Swiecki",
-    "name_html" : "Swiecki",
-    "sort_order" : 1386
+    "name_html" : "Swiecki"
   },
-  {
-    "objectid" : 960,
-    "nuts_id" : "PL619",
+  "PL619": {
     "name_latin" : "Wloclawski",
     "nuts_name" : "Wloclawski",
     "name_ascii" : "Wloclawski",
-    "name_html" : "Wloclawski",
-    "sort_order" : 1387
+    "name_html" : "Wloclawski"
   },
-  {
-    "objectid" : 961,
-    "nuts_id" : "PL621",
+  "PL621": {
     "name_latin" : "Elblaski",
     "nuts_name" : "Elblaski",
     "name_ascii" : "Elblaski",
-    "name_html" : "Elblaski",
-    "sort_order" : 1389
+    "name_html" : "Elblaski"
   },
-  {
-    "objectid" : 962,
-    "nuts_id" : "PL622",
+  "PL622": {
     "name_latin" : "Olsztynski",
     "nuts_name" : "Olsztynski",
     "name_ascii" : "Olsztynski",
-    "name_html" : "Olsztynski",
-    "sort_order" : 1390
+    "name_html" : "Olsztynski"
   },
-  {
-    "objectid" : 963,
-    "nuts_id" : "PL623",
+  "PL623": {
     "name_latin" : "Elcki",
     "nuts_name" : "Elcki",
     "name_ascii" : "Elcki",
-    "name_html" : "Elcki",
-    "sort_order" : 1391
+    "name_html" : "Elcki"
   },
-  {
-    "objectid" : 964,
-    "nuts_id" : "PL633",
+  "PL633": {
     "name_latin" : "Trójmiejski",
     "nuts_name" : "Trójmiejski",
     "name_ascii" : "Trojmiejski",
-    "name_html" : "Tr&#x00F3;jmiejski",
-    "sort_order" : 1393
+    "name_html" : "Tr&#x00F3;jmiejski"
   },
-  {
-    "objectid" : 965,
-    "nuts_id" : "PL634",
+  "PL634": {
     "name_latin" : "Gdanski",
     "nuts_name" : "Gdanski",
     "name_ascii" : "Gdanski",
-    "name_html" : "Gdanski",
-    "sort_order" : 1394
+    "name_html" : "Gdanski"
   },
-  {
-    "objectid" : 966,
-    "nuts_id" : "PL636",
+  "PL636": {
     "name_latin" : "Slupski",
     "nuts_name" : "Slupski",
     "name_ascii" : "Slupski",
-    "name_html" : "Slupski",
-    "sort_order" : 1395
+    "name_html" : "Slupski"
   },
-  {
-    "objectid" : 967,
-    "nuts_id" : "PL637",
+  "PL637": {
     "name_latin" : "Chojnicki",
     "nuts_name" : "Chojnicki",
     "name_ascii" : "Chojnicki",
-    "name_html" : "Chojnicki",
-    "sort_order" : 1396
+    "name_html" : "Chojnicki"
   },
-  {
-    "objectid" : 968,
-    "nuts_id" : "PL638",
+  "PL638": {
     "name_latin" : "Starogardzki",
     "nuts_name" : "Starogardzki",
     "name_ascii" : "Starogardzki",
-    "name_html" : "Starogardzki",
-    "sort_order" : 1397
+    "name_html" : "Starogardzki"
   },
-  {
-    "objectid" : 969,
-    "nuts_id" : "PT111",
+  "PT111": {
     "name_latin" : "Alto Minho",
     "nuts_name" : "Alto Minho",
     "name_ascii" : "Alto Minho",
-    "name_html" : "Alto Minho",
-    "sort_order" : 1404
+    "name_html" : "Alto Minho"
   },
-  {
-    "objectid" : 970,
-    "nuts_id" : "PT112",
+  "PT112": {
     "name_latin" : "Cávado",
     "nuts_name" : "Cávado",
     "name_ascii" : "Cavado",
-    "name_html" : "C&#x00E1;vado",
-    "sort_order" : 1405
+    "name_html" : "C&#x00E1;vado"
   },
-  {
-    "objectid" : 971,
-    "nuts_id" : "PT119",
+  "PT119": {
     "name_latin" : "Ave",
     "nuts_name" : "Ave",
     "name_ascii" : "Ave",
-    "name_html" : "Ave",
-    "sort_order" : 1406
+    "name_html" : "Ave"
   },
-  {
-    "objectid" : 972,
-    "nuts_id" : "PT11A",
+  "PT11A": {
     "name_latin" : "Área Metropolitana do Porto",
     "nuts_name" : "Área Metropolitana do Porto",
     "name_ascii" : "Area Metropolitana do Porto",
-    "name_html" : "&#x00C1;rea Metropolitana do Porto",
-    "sort_order" : 1407
+    "name_html" : "&#x00C1;rea Metropolitana do Porto"
   },
-  {
-    "objectid" : 973,
-    "nuts_id" : "PT11B",
+  "PT11B": {
     "name_latin" : "Alto Tâmega",
     "nuts_name" : "Alto Tâmega",
     "name_ascii" : "Alto Tamega",
-    "name_html" : "Alto T&#x00E2;mega",
-    "sort_order" : 1408
+    "name_html" : "Alto T&#x00E2;mega"
   },
-  {
-    "objectid" : 974,
-    "nuts_id" : "PT11C",
+  "PT11C": {
     "name_latin" : "Tâmega e Sousa",
     "nuts_name" : "Tâmega e Sousa",
     "name_ascii" : "Tamega e Sousa",
-    "name_html" : "T&#x00E2;mega e Sousa",
-    "sort_order" : 1409
+    "name_html" : "T&#x00E2;mega e Sousa"
   },
-  {
-    "objectid" : 975,
-    "nuts_id" : "PT11D",
+  "PT11D": {
     "name_latin" : "Douro",
     "nuts_name" : "Douro",
     "name_ascii" : "Douro",
-    "name_html" : "Douro",
-    "sort_order" : 1410
+    "name_html" : "Douro"
   },
-  {
-    "objectid" : 976,
-    "nuts_id" : "PT11E",
+  "PT11E": {
     "name_latin" : "Terras de Trás-os-Montes",
     "nuts_name" : "Terras de Trás-os-Montes",
     "name_ascii" : "Terras de Tras-s-Montes",
-    "name_html" : "Terras de Tr&#x00E1;s-os-Montes",
-    "sort_order" : 1411
+    "name_html" : "Terras de Tr&#x00E1;s-os-Montes"
   },
-  {
-    "objectid" : 977,
-    "nuts_id" : "PT150",
+  "PT150": {
     "name_latin" : "Algarve",
     "nuts_name" : "Algarve",
     "name_ascii" : "Algarve",
-    "name_html" : "Algarve",
-    "sort_order" : 1413
+    "name_html" : "Algarve"
   },
-  {
-    "objectid" : 978,
-    "nuts_id" : "PT16B",
+  "PT16B": {
     "name_latin" : "Oeste",
     "nuts_name" : "Oeste",
     "name_ascii" : "Oeste",
-    "name_html" : "Oeste",
-    "sort_order" : 1415
+    "name_html" : "Oeste"
   },
-  {
-    "objectid" : 979,
-    "nuts_id" : "PT16D",
+  "PT16D": {
     "name_latin" : "Região de Aveiro",
     "nuts_name" : "Região de Aveiro",
     "name_ascii" : "Regiao de Aveiro",
-    "name_html" : "Regi&#x00E3;o de Aveiro",
-    "sort_order" : 1416
+    "name_html" : "Regi&#x00E3;o de Aveiro"
   },
-  {
-    "objectid" : 980,
-    "nuts_id" : "PT16F",
+  "PT16F": {
     "name_latin" : "Região de Leiria",
     "nuts_name" : "Região de Leiria",
     "name_ascii" : "Regiao de Leiria",
-    "name_html" : "Regi&#x00E3;o de Leiria",
-    "sort_order" : 1418
+    "name_html" : "Regi&#x00E3;o de Leiria"
   },
-  {
-    "objectid" : 981,
-    "nuts_id" : "PT16G",
+  "PT16G": {
     "name_latin" : "Viseu Dão Lafões",
     "nuts_name" : "Viseu Dão Lafões",
     "name_ascii" : "Viseu Dao Lafoes",
-    "name_html" : "Viseu D&#x00E3;o Laf&#x00F5;es",
-    "sort_order" : 1419
+    "name_html" : "Viseu D&#x00E3;o Laf&#x00F5;es"
   },
-  {
-    "objectid" : 982,
-    "nuts_id" : "PT16H",
+  "PT16H": {
     "name_latin" : "Beira Baixa",
     "nuts_name" : "Beira Baixa",
     "name_ascii" : "Beira Baixa",
-    "name_html" : "Beira Baixa",
-    "sort_order" : 1420
+    "name_html" : "Beira Baixa"
   },
-  {
-    "objectid" : 983,
-    "nuts_id" : "PT16I",
+  "PT16I": {
     "name_latin" : "Médio Tejo",
     "nuts_name" : "Médio Tejo",
     "name_ascii" : "Medio Tejo",
-    "name_html" : "M&#x00E9;dio Tejo",
-    "sort_order" : 1421
+    "name_html" : "M&#x00E9;dio Tejo"
   },
-  {
-    "objectid" : 984,
-    "nuts_id" : "PT170",
+  "PT170": {
     "name_latin" : "Área Metropolitana de Lisboa",
     "nuts_name" : "Área Metropolitana de Lisboa",
     "name_ascii" : "Area Metropolitana de Lisboa",
-    "name_html" : "&#x00C1;rea Metropolitana de Lisboa",
-    "sort_order" : 1424
+    "name_html" : "&#x00C1;rea Metropolitana de Lisboa"
   },
-  {
-    "objectid" : 985,
-    "nuts_id" : "PT181",
+  "PT181": {
     "name_latin" : "Alentejo Litoral",
     "nuts_name" : "Alentejo Litoral",
     "name_ascii" : "Alentejo Litoral",
-    "name_html" : "Alentejo Litoral",
-    "sort_order" : 1426
+    "name_html" : "Alentejo Litoral"
   },
-  {
-    "objectid" : 986,
-    "nuts_id" : "PT184",
+  "PT184": {
     "name_latin" : "Baixo Alentejo",
     "nuts_name" : "Baixo Alentejo",
     "name_ascii" : "Baixo Alentejo",
-    "name_html" : "Baixo Alentejo",
-    "sort_order" : 1427
+    "name_html" : "Baixo Alentejo"
   },
-  {
-    "objectid" : 987,
-    "nuts_id" : "PT186",
+  "PT186": {
     "name_latin" : "Alto Alentejo",
     "nuts_name" : "Alto Alentejo",
     "name_ascii" : "Alto Alentejo",
-    "name_html" : "Alto Alentejo",
-    "sort_order" : 1429
+    "name_html" : "Alto Alentejo"
   },
-  {
-    "objectid" : 988,
-    "nuts_id" : "PT187",
+  "PT187": {
     "name_latin" : "Alentejo Central",
     "nuts_name" : "Alentejo Central",
     "name_ascii" : "Alentejo Central",
-    "name_html" : "Alentejo Central",
-    "sort_order" : 1430
+    "name_html" : "Alentejo Central"
   },
-  {
-    "objectid" : 989,
-    "nuts_id" : "PT200",
+  "PT200": {
     "name_latin" : "Região Autónoma dos Açores",
     "nuts_name" : "Região Autónoma dos Açores",
     "name_ascii" : "Regiao Autonoma dos Acores",
-    "name_html" : "Regi&#x00E3;o Aut&#x00F3;noma dos A&#x00E7;ores",
-    "sort_order" : 1433
+    "name_html" : "Regi&#x00E3;o Aut&#x00F3;noma dos A&#x00E7;ores"
   },
-  {
-    "objectid" : 990,
-    "nuts_id" : "RO111",
+  "RO111": {
     "name_latin" : "Bihor",
     "nuts_name" : "Bihor",
     "name_ascii" : "Bihor",
-    "name_html" : "Bihor",
-    "sort_order" : 1443
+    "name_html" : "Bihor"
   },
-  {
-    "objectid" : 991,
-    "nuts_id" : "RO112",
+  "RO112": {
     "name_latin" : "Bistrita-Nasaud",
     "nuts_name" : "Bistrita-Nasaud",
     "name_ascii" : "Bistrita-Nasaud",
-    "name_html" : "Bistrita-Nasaud",
-    "sort_order" : 1444
+    "name_html" : "Bistrita-Nasaud"
   },
-  {
-    "objectid" : 992,
-    "nuts_id" : "RO113",
+  "RO113": {
     "name_latin" : "Cluj",
     "nuts_name" : "Cluj",
     "name_ascii" : "Cluj",
-    "name_html" : "Cluj",
-    "sort_order" : 1445
+    "name_html" : "Cluj"
   },
-  {
-    "objectid" : 993,
-    "nuts_id" : "RO114",
+  "RO114": {
     "name_latin" : "Maramures",
     "nuts_name" : "Maramures",
     "name_ascii" : "Maramures",
-    "name_html" : "Maramures",
-    "sort_order" : 1446
+    "name_html" : "Maramures"
   },
-  {
-    "objectid" : 994,
-    "nuts_id" : "RO115",
+  "RO115": {
     "name_latin" : "Satu Mare",
     "nuts_name" : "Satu Mare",
     "name_ascii" : "Satu Mare",
-    "name_html" : "Satu Mare",
-    "sort_order" : 1447
+    "name_html" : "Satu Mare"
   },
-  {
-    "objectid" : 995,
-    "nuts_id" : "RO116",
+  "RO116": {
     "name_latin" : "Salaj",
     "nuts_name" : "Salaj",
     "name_ascii" : "Salaj",
-    "name_html" : "Salaj",
-    "sort_order" : 1448
+    "name_html" : "Salaj"
   },
-  {
-    "objectid" : 996,
-    "nuts_id" : "RO121",
+  "RO121": {
     "name_latin" : "Alba",
     "nuts_name" : "Alba",
     "name_ascii" : "Alba",
-    "name_html" : "Alba",
-    "sort_order" : 1450
+    "name_html" : "Alba"
   },
-  {
-    "objectid" : 997,
-    "nuts_id" : "RO122",
+  "RO122": {
     "name_latin" : "Brasov",
     "nuts_name" : "Brasov",
     "name_ascii" : "Brasov",
-    "name_html" : "Brasov",
-    "sort_order" : 1451
+    "name_html" : "Brasov"
   },
-  {
-    "objectid" : 998,
-    "nuts_id" : "RO123",
+  "RO123": {
     "name_latin" : "Covasna",
     "nuts_name" : "Covasna",
     "name_ascii" : "Covasna",
-    "name_html" : "Covasna",
-    "sort_order" : 1452
+    "name_html" : "Covasna"
   },
-  {
-    "objectid" : 999,
-    "nuts_id" : "RO124",
+  "RO124": {
     "name_latin" : "Harghita",
     "nuts_name" : "Harghita",
     "name_ascii" : "Harghita",
-    "name_html" : "Harghita",
-    "sort_order" : 1453
+    "name_html" : "Harghita"
   },
-  {
-    "objectid" : 1000,
-    "nuts_id" : "RO125",
+  "RO125": {
     "name_latin" : "Mures",
     "nuts_name" : "Mures",
     "name_ascii" : "Mures",
-    "name_html" : "Mures",
-    "sort_order" : 1454
+    "name_html" : "Mures"
   },
-  {
-    "objectid" : 1001,
-    "nuts_id" : "RO126",
+  "RO126": {
     "name_latin" : "Sibiu",
     "nuts_name" : "Sibiu",
     "name_ascii" : "Sibiu",
-    "name_html" : "Sibiu",
-    "sort_order" : 1455
+    "name_html" : "Sibiu"
   },
-  {
-    "objectid" : 1002,
-    "nuts_id" : "RO212",
+  "RO212": {
     "name_latin" : "Botosani",
     "nuts_name" : "Botosani",
     "name_ascii" : "Botosani",
-    "name_html" : "Botosani",
-    "sort_order" : 1459
+    "name_html" : "Botosani"
   },
-  {
-    "objectid" : 1003,
-    "nuts_id" : "RO213",
+  "RO213": {
     "name_latin" : "Iasi",
     "nuts_name" : "Iasi",
     "name_ascii" : "Iasi",
-    "name_html" : "Iasi",
-    "sort_order" : 1460
+    "name_html" : "Iasi"
   },
-  {
-    "objectid" : 1004,
-    "nuts_id" : "RO214",
+  "RO214": {
     "name_latin" : "Neamt",
     "nuts_name" : "Neamt",
     "name_ascii" : "Neamt",
-    "name_html" : "Neamt",
-    "sort_order" : 1461
+    "name_html" : "Neamt"
   },
-  {
-    "objectid" : 1005,
-    "nuts_id" : "RO215",
+  "RO215": {
     "name_latin" : "Suceava",
     "nuts_name" : "Suceava",
     "name_ascii" : "Suceava",
-    "name_html" : "Suceava",
-    "sort_order" : 1462
+    "name_html" : "Suceava"
   },
-  {
-    "objectid" : 1006,
-    "nuts_id" : "RO216",
+  "RO216": {
     "name_latin" : "Vaslui",
     "nuts_name" : "Vaslui",
     "name_ascii" : "Vaslui",
-    "name_html" : "Vaslui",
-    "sort_order" : 1463
+    "name_html" : "Vaslui"
   },
-  {
-    "objectid" : 1007,
-    "nuts_id" : "RO221",
+  "RO221": {
     "name_latin" : "Braila",
     "nuts_name" : "Braila",
     "name_ascii" : "Braila",
-    "name_html" : "Braila",
-    "sort_order" : 1465
+    "name_html" : "Braila"
   },
-  {
-    "objectid" : 1008,
-    "nuts_id" : "RO222",
+  "RO222": {
     "name_latin" : "Buzau",
     "nuts_name" : "Buzau",
     "name_ascii" : "Buzau",
-    "name_html" : "Buzau",
-    "sort_order" : 1466
+    "name_html" : "Buzau"
   },
-  {
-    "objectid" : 1009,
-    "nuts_id" : "RO223",
+  "RO223": {
     "name_latin" : "Constanta",
     "nuts_name" : "Constanta",
     "name_ascii" : "Constanta",
-    "name_html" : "Constanta",
-    "sort_order" : 1467
+    "name_html" : "Constanta"
   },
-  {
-    "objectid" : 1010,
-    "nuts_id" : "RO224",
+  "RO224": {
     "name_latin" : "Galati",
     "nuts_name" : "Galati",
     "name_ascii" : "Galati",
-    "name_html" : "Galati",
-    "sort_order" : 1468
+    "name_html" : "Galati"
   },
-  {
-    "objectid" : 1011,
-    "nuts_id" : "RO225",
+  "RO225": {
     "name_latin" : "Tulcea",
     "nuts_name" : "Tulcea",
     "name_ascii" : "Tulcea",
-    "name_html" : "Tulcea",
-    "sort_order" : 1469
+    "name_html" : "Tulcea"
   },
-  {
-    "objectid" : 1012,
-    "nuts_id" : "RO311",
+  "RO311": {
     "name_latin" : "Arges",
     "nuts_name" : "Arges",
     "name_ascii" : "Arges",
-    "name_html" : "Arges",
-    "sort_order" : 1473
+    "name_html" : "Arges"
   },
-  {
-    "objectid" : 1013,
-    "nuts_id" : "RO313",
+  "RO313": {
     "name_latin" : "Dâmbovita",
     "nuts_name" : "Dâmbovita",
     "name_ascii" : "Dambovita",
-    "name_html" : "D&#x00E2;mbovita",
-    "sort_order" : 1475
+    "name_html" : "D&#x00E2;mbovita"
   },
-  {
-    "objectid" : 1014,
-    "nuts_id" : "RO314",
+  "RO314": {
     "name_latin" : "Giurgiu",
     "nuts_name" : "Giurgiu",
     "name_ascii" : "Giurgiu",
-    "name_html" : "Giurgiu",
-    "sort_order" : 1476
+    "name_html" : "Giurgiu"
   },
-  {
-    "objectid" : 1015,
-    "nuts_id" : "RO315",
+  "RO315": {
     "name_latin" : "Ialomita",
     "nuts_name" : "Ialomita",
     "name_ascii" : "Ialomita",
-    "name_html" : "Ialomita",
-    "sort_order" : 1477
+    "name_html" : "Ialomita"
   },
-  {
-    "objectid" : 1016,
-    "nuts_id" : "RO316",
+  "RO316": {
     "name_latin" : "Prahova",
     "nuts_name" : "Prahova",
     "name_ascii" : "Prahova",
-    "name_html" : "Prahova",
-    "sort_order" : 1478
+    "name_html" : "Prahova"
   },
-  {
-    "objectid" : 1017,
-    "nuts_id" : "RO321",
+  "RO321": {
     "name_latin" : "Bucuresti",
     "nuts_name" : "Bucuresti",
     "name_ascii" : "Bucuresti",
-    "name_html" : "Bucuresti",
-    "sort_order" : 1481
+    "name_html" : "Bucuresti"
   },
-  {
-    "objectid" : 1018,
-    "nuts_id" : "RO322",
+  "RO322": {
     "name_latin" : "Ilfov",
     "nuts_name" : "Ilfov",
     "name_ascii" : "Ilfov",
-    "name_html" : "Ilfov",
-    "sort_order" : 1482
+    "name_html" : "Ilfov"
   },
-  {
-    "objectid" : 1019,
-    "nuts_id" : "RO411",
+  "RO411": {
     "name_latin" : "Dolj",
     "nuts_name" : "Dolj",
     "name_ascii" : "Dolj",
-    "name_html" : "Dolj",
-    "sort_order" : 1485
+    "name_html" : "Dolj"
   },
-  {
-    "objectid" : 1020,
-    "nuts_id" : "RO412",
+  "RO412": {
     "name_latin" : "Gorj",
     "nuts_name" : "Gorj",
     "name_ascii" : "Gorj",
-    "name_html" : "Gorj",
-    "sort_order" : 1486
+    "name_html" : "Gorj"
   },
-  {
-    "objectid" : 1021,
-    "nuts_id" : "RO413",
+  "RO413": {
     "name_latin" : "Mehedinti",
     "nuts_name" : "Mehedinti",
     "name_ascii" : "Mehedinti",
-    "name_html" : "Mehedinti",
-    "sort_order" : 1487
+    "name_html" : "Mehedinti"
   },
-  {
-    "objectid" : 1022,
-    "nuts_id" : "RO414",
+  "RO414": {
     "name_latin" : "Olt",
     "nuts_name" : "Olt",
     "name_ascii" : "Olt",
-    "name_html" : "Olt",
-    "sort_order" : 1488
+    "name_html" : "Olt"
   },
-  {
-    "objectid" : 1023,
-    "nuts_id" : "RO415",
+  "RO415": {
     "name_latin" : "Vâlcea",
     "nuts_name" : "Vâlcea",
     "name_ascii" : "Valcea",
-    "name_html" : "V&#x00E2;lcea",
-    "sort_order" : 1489
+    "name_html" : "V&#x00E2;lcea"
   },
-  {
-    "objectid" : 1024,
-    "nuts_id" : "RO421",
+  "RO421": {
     "name_latin" : "Arad",
     "nuts_name" : "Arad",
     "name_ascii" : "Arad",
-    "name_html" : "Arad",
-    "sort_order" : 1491
+    "name_html" : "Arad"
   },
-  {
-    "objectid" : 1025,
-    "nuts_id" : "RO422",
+  "RO422": {
     "name_latin" : "Caras-Severin",
     "nuts_name" : "Caras-Severin",
     "name_ascii" : "Caras-Severin",
-    "name_html" : "Caras-Severin",
-    "sort_order" : 1492
+    "name_html" : "Caras-Severin"
   },
-  {
-    "objectid" : 1026,
-    "nuts_id" : "RO423",
+  "RO423": {
     "name_latin" : "Hunedoara",
     "nuts_name" : "Hunedoara",
     "name_ascii" : "Hunedoara",
-    "name_html" : "Hunedoara",
-    "sort_order" : 1493
+    "name_html" : "Hunedoara"
   },
-  {
-    "objectid" : 1027,
-    "nuts_id" : "RO424",
+  "RO424": {
     "name_latin" : "Timis",
     "nuts_name" : "Timis",
     "name_ascii" : "Timis",
-    "name_html" : "Timis",
-    "sort_order" : 1494
+    "name_html" : "Timis"
   },
-  {
-    "objectid" : 1028,
-    "nuts_id" : "SE110",
+  "SE110": {
     "name_latin" : "Stockholms län",
     "nuts_name" : "Stockholms län",
     "name_ascii" : "Stockholms lan",
-    "name_html" : "Stockholms l&#x00E4;n",
-    "sort_order" : 1567
+    "name_html" : "Stockholms l&#x00E4;n"
   },
-  {
-    "objectid" : 1029,
-    "nuts_id" : "SE121",
+  "SE121": {
     "name_latin" : "Uppsala län",
     "nuts_name" : "Uppsala län",
     "name_ascii" : "Uppsala lan",
-    "name_html" : "Uppsala l&#x00E4;n",
-    "sort_order" : 1569
+    "name_html" : "Uppsala l&#x00E4;n"
   },
-  {
-    "objectid" : 1030,
-    "nuts_id" : "SE122",
+  "SE122": {
     "name_latin" : "Södermanlands län",
     "nuts_name" : "Södermanlands län",
     "name_ascii" : "Sodermanlands lan",
-    "name_html" : "S&#x00F6;dermanlands l&#x00E4;n",
-    "sort_order" : 1570
+    "name_html" : "S&#x00F6;dermanlands l&#x00E4;n"
   },
-  {
-    "objectid" : 1031,
-    "nuts_id" : "SE123",
+  "SE123": {
     "name_latin" : "Östergötlands län",
     "nuts_name" : "Östergötlands län",
     "name_ascii" : "Ostergotlands lan",
-    "name_html" : "&#x00D6;sterg&#x00F6;tlands l&#x00E4;n",
-    "sort_order" : 1571
+    "name_html" : "&#x00D6;sterg&#x00F6;tlands l&#x00E4;n"
   },
-  {
-    "objectid" : 1032,
-    "nuts_id" : "SE124",
+  "SE124": {
     "name_latin" : "Örebro län",
     "nuts_name" : "Örebro län",
     "name_ascii" : "Orebro lan",
-    "name_html" : "&#x00D6;rebro l&#x00E4;n",
-    "sort_order" : 1572
+    "name_html" : "&#x00D6;rebro l&#x00E4;n"
   },
-  {
-    "objectid" : 1033,
-    "nuts_id" : "SE125",
+  "SE125": {
     "name_latin" : "Västmanlands län",
     "nuts_name" : "Västmanlands län",
     "name_ascii" : "Vastmanlands lan",
-    "name_html" : "V&#x00E4;stmanlands l&#x00E4;n",
-    "sort_order" : 1573
+    "name_html" : "V&#x00E4;stmanlands l&#x00E4;n"
   },
-  {
-    "objectid" : 1034,
-    "nuts_id" : "SE211",
+  "SE211": {
     "name_latin" : "Jönköpings län",
     "nuts_name" : "Jönköpings län",
     "name_ascii" : "Jonkopings lan",
-    "name_html" : "J&#x00F6;nk&#x00F6;pings l&#x00E4;n",
-    "sort_order" : 1576
+    "name_html" : "J&#x00F6;nk&#x00F6;pings l&#x00E4;n"
   },
-  {
-    "objectid" : 1035,
-    "nuts_id" : "SE212",
+  "SE212": {
     "name_latin" : "Kronobergs län",
     "nuts_name" : "Kronobergs län",
     "name_ascii" : "Kronobergs lan",
-    "name_html" : "Kronobergs l&#x00E4;n",
-    "sort_order" : 1577
+    "name_html" : "Kronobergs l&#x00E4;n"
   },
-  {
-    "objectid" : 1036,
-    "nuts_id" : "SE213",
+  "SE213": {
     "name_latin" : "Kalmar län",
     "nuts_name" : "Kalmar län",
     "name_ascii" : "Kronobergs lan",
-    "name_html" : "Kalmar L&#x00E4;n",
-    "sort_order" : 1578
+    "name_html" : "Kalmar L&#x00E4;n"
   },
-  {
-    "objectid" : 1037,
-    "nuts_id" : "SE214",
+  "SE214": {
     "name_latin" : "Gotlands län",
     "nuts_name" : "Gotlands län",
     "name_ascii" : "Gotlands lan",
-    "name_html" : "Gotlands l&#x00E4;n",
-    "sort_order" : 1579
+    "name_html" : "Gotlands l&#x00E4;n"
   },
-  {
-    "objectid" : 1038,
-    "nuts_id" : "SE221",
+  "SE221": {
     "name_latin" : "Blekinge län",
     "nuts_name" : "Blekinge län",
     "name_ascii" : "Blekinge lan",
-    "name_html" : "Blekinge l&#x00E4;n",
-    "sort_order" : 1581
+    "name_html" : "Blekinge l&#x00E4;n"
   },
-  {
-    "objectid" : 1039,
-    "nuts_id" : "SE224",
+  "SE224": {
     "name_latin" : "Skåne län",
     "nuts_name" : "Skåne län",
     "name_ascii" : "Skane lan",
-    "name_html" : "Sk&#x00E5;ne l&#x00E4;n",
-    "sort_order" : 1582
+    "name_html" : "Sk&#x00E5;ne l&#x00E4;n"
   },
-  {
-    "objectid" : 1040,
-    "nuts_id" : "SE232",
+  "SE232": {
     "name_latin" : "Västra Götalands län",
     "nuts_name" : "Västra Götalands län",
     "name_ascii" : "Vastra Gotalands lan",
-    "name_html" : "V&#x00E4;stra G&#x00F6;talands l&#x00E4;n",
-    "sort_order" : 1585
+    "name_html" : "V&#x00E4;stra G&#x00F6;talands l&#x00E4;n"
   },
-  {
-    "objectid" : 1041,
-    "nuts_id" : "SE312",
+  "SE312": {
     "name_latin" : "Dalarnas län",
     "nuts_name" : "Dalarnas län",
     "name_ascii" : "Dalarnas lan",
-    "name_html" : "Dalarnas l&#x00E4;n",
-    "sort_order" : 1589
+    "name_html" : "Dalarnas l&#x00E4;n"
   },
-  {
-    "objectid" : 1042,
-    "nuts_id" : "SE313",
+  "SE313": {
     "name_latin" : "Gävleborgs län",
     "nuts_name" : "Gävleborgs län",
     "name_ascii" : "Gavleborgs lan",
-    "name_html" : "G&#x00E4;vleborgs l&#x00E4;n",
-    "sort_order" : 1590
+    "name_html" : "G&#x00E4;vleborgs l&#x00E4;n"
   },
-  {
-    "objectid" : 1043,
-    "nuts_id" : "SE322",
+  "SE322": {
     "name_latin" : "Jämtlands län",
     "nuts_name" : "Jämtlands län",
     "name_ascii" : "Jamtlands lan",
-    "name_html" : "J&#x00E4;mtlandslL&#x00E4;n",
-    "sort_order" : 1593
+    "name_html" : "J&#x00E4;mtlandslL&#x00E4;n"
   },
-  {
-    "objectid" : 1044,
-    "nuts_id" : "SE331",
+  "SE331": {
     "name_latin" : "Västerbottens län",
     "nuts_name" : "Västerbottens län",
     "name_ascii" : "Vasterbottens lan",
-    "name_html" : "V&#x00E4;sterbottens l&#x00E4;n",
-    "sort_order" : 1595
+    "name_html" : "V&#x00E4;sterbottens l&#x00E4;n"
   },
-  {
-    "objectid" : 1045,
-    "nuts_id" : "SE332",
+  "SE332": {
     "name_latin" : "Norrbottens län",
     "nuts_name" : "Norrbottens län",
     "name_ascii" : "Norrbottens lan",
-    "name_html" : "Norrbottens l&#x00E4;n",
-    "sort_order" : 1596
+    "name_html" : "Norrbottens l&#x00E4;n"
   },
-  {
-    "objectid" : 1046,
-    "nuts_id" : "SI031",
+  "SI031": {
     "name_latin" : "Pomurska",
     "nuts_name" : "Pomurska",
     "name_ascii" : "Pomurska",
-    "name_html" : "Pomurska",
-    "sort_order" : 1501
+    "name_html" : "Pomurska"
   },
-  {
-    "objectid" : 1047,
-    "nuts_id" : "SI032",
+  "SI032": {
     "name_latin" : "Podravska",
     "nuts_name" : "Podravska",
     "name_ascii" : "Podravska",
-    "name_html" : "Podravska",
-    "sort_order" : 1502
+    "name_html" : "Podravska"
   },
-  {
-    "objectid" : 1048,
-    "nuts_id" : "SI033",
+  "SI033": {
     "name_latin" : "Koroška",
     "nuts_name" : "Koroška",
     "name_ascii" : "Koroska",
-    "name_html" : "Koro&#x0161;ka",
-    "sort_order" : 1503
+    "name_html" : "Koro&#x0161;ka"
   },
-  {
-    "objectid" : 1049,
-    "nuts_id" : "SI034",
+  "SI034": {
     "name_latin" : "Savinjska",
     "nuts_name" : "Savinjska",
     "name_ascii" : "Savinjska",
-    "name_html" : "Savinjska",
-    "sort_order" : 1504
+    "name_html" : "Savinjska"
   },
-  {
-    "objectid" : 1050,
-    "nuts_id" : "SI035",
+  "SI035": {
     "name_latin" : "Zasavska",
     "nuts_name" : "Zasavska",
     "name_ascii" : "Zasavska",
-    "name_html" : "Zasavska",
-    "sort_order" : 1505
+    "name_html" : "Zasavska"
   },
-  {
-    "objectid" : 1051,
-    "nuts_id" : "SI036",
+  "SI036": {
     "name_latin" : "Posavska",
     "nuts_name" : "Posavska",
     "name_ascii" : "Posavska",
-    "name_html" : "Posavska",
-    "sort_order" : 1506
+    "name_html" : "Posavska"
   },
-  {
-    "objectid" : 1052,
-    "nuts_id" : "SI038",
+  "SI038": {
     "name_latin" : "Primorsko-notranjska",
     "nuts_name" : "Primorsko-notranjska",
     "name_ascii" : "Primorsko-notranjska",
-    "name_html" : "Primorsko-notranjska",
-    "sort_order" : 1508
+    "name_html" : "Primorsko-notranjska"
   },
-  {
-    "objectid" : 1053,
-    "nuts_id" : "SI041",
+  "SI041": {
     "name_latin" : "Osrednjeslovenska",
     "nuts_name" : "Osrednjeslovenska",
     "name_ascii" : "Osrednjeslovenska",
-    "name_html" : "Osrednjeslovenska",
-    "sort_order" : 1510
+    "name_html" : "Osrednjeslovenska"
   },
-  {
-    "objectid" : 1054,
-    "nuts_id" : "SI042",
+  "SI042": {
     "name_latin" : "Gorenjska",
     "nuts_name" : "Gorenjska",
     "name_ascii" : "Gorenjska",
-    "name_html" : "Gorenjska",
-    "sort_order" : 1511
+    "name_html" : "Gorenjska"
   },
-  {
-    "objectid" : 1055,
-    "nuts_id" : "SI043",
+  "SI043": {
     "name_latin" : "Goriška",
     "nuts_name" : "Goriška",
     "name_ascii" : "Goriska",
-    "name_html" : "Gori&#x0161;ka",
-    "sort_order" : 1512
+    "name_html" : "Gori&#x0161;ka"
   },
-  {
-    "objectid" : 1056,
-    "nuts_id" : "SI044",
+  "SI044": {
     "name_latin" : "Obalno-kraška",
     "nuts_name" : "Obalno-kraška",
     "name_ascii" : "Obalno-kraska",
-    "name_html" : "Obalno-kra&#x0161;ka",
-    "sort_order" : 1513
+    "name_html" : "Obalno-kra&#x0161;ka"
   },
-  {
-    "objectid" : 1057,
-    "nuts_id" : "SK010",
+  "SK010": {
     "name_latin" : "Bratislavský kraj",
     "nuts_name" : "Bratislavský kraj",
     "name_ascii" : "Bratislavsky kraj",
-    "name_html" : "Bratislavsk&#x00FD; kraj",
-    "sort_order" : 1520
+    "name_html" : "Bratislavsk&#x00FD; kraj"
   },
-  {
-    "objectid" : 1058,
-    "nuts_id" : "SK021",
+  "SK021": {
     "name_latin" : "Trnavský kraj",
     "nuts_name" : "Trnavský kraj",
     "name_ascii" : "Trnavsky kraj",
-    "name_html" : "Trnavsk&#x00FD; kraj",
-    "sort_order" : 1522
+    "name_html" : "Trnavsk&#x00FD; kraj"
   },
-  {
-    "objectid" : 1059,
-    "nuts_id" : "SK023",
+  "SK023": {
     "name_latin" : "Nitriansky kraj",
     "nuts_name" : "Nitriansky kraj",
     "name_ascii" : "Nitriansky kraj",
-    "name_html" : "Nitriansky kraj",
-    "sort_order" : 1524
+    "name_html" : "Nitriansky kraj"
   },
-  {
-    "objectid" : 1060,
-    "nuts_id" : "SK031",
+  "SK031": {
     "name_latin" : "Žilinský kraj",
     "nuts_name" : "Žilinský kraj",
     "name_ascii" : "Zilinsky kraj",
-    "name_html" : "&#x017D;ilinsk&#x00FD; kraj",
-    "sort_order" : 1526
+    "name_html" : "&#x017D;ilinsk&#x00FD; kraj"
   },
-  {
-    "objectid" : 1061,
-    "nuts_id" : "SK041",
+  "SK041": {
     "name_latin" : "Prešovský kraj",
     "nuts_name" : "Prešovský kraj",
     "name_ascii" : "Presovsky kraj",
-    "name_html" : "Pre&#x0161;ovsk&#x00FD; kraj",
-    "sort_order" : 1529
+    "name_html" : "Pre&#x0161;ovsk&#x00FD; kraj"
   },
-  {
-    "objectid" : 1062,
-    "nuts_id" : "SK042",
+  "SK042": {
     "name_latin" : "Košický kraj",
     "nuts_name" : "Košický kraj",
     "name_ascii" : "Kosicky kraj",
-    "name_html" : "Ko&#x0161;ick&#x00FD; kraj",
-    "sort_order" : 1530
+    "name_html" : "Ko&#x0161;ick&#x00FD; kraj"
   },
-  {
-    "objectid" : 1063,
-    "nuts_id" : "TR100",
+  "TR100": {
     "name_latin" : "Istanbul",
     "nuts_name" : "Istanbul",
     "name_ascii" : "Istanbul",
-    "name_html" : "Istanbul",
-    "sort_order" : 0
+    "name_html" : "Istanbul"
   },
-  {
-    "objectid" : 1064,
-    "nuts_id" : "TR211",
+  "TR211": {
     "name_latin" : "Tekirdag",
     "nuts_name" : "Tekirdag",
     "name_ascii" : "Tekirdag",
-    "name_html" : "Tekirdag",
-    "sort_order" : 0
+    "name_html" : "Tekirdag"
   },
-  {
-    "objectid" : 1065,
-    "nuts_id" : "TR212",
+  "TR212": {
     "name_latin" : "Edirne",
     "nuts_name" : "Edirne",
     "name_ascii" : "Edirne",
-    "name_html" : "Edirne",
-    "sort_order" : 0
+    "name_html" : "Edirne"
   },
-  {
-    "objectid" : 1066,
-    "nuts_id" : "TR213",
+  "TR213": {
     "name_latin" : "Kirklareli",
     "nuts_name" : "Kirklareli",
     "name_ascii" : "Kirklareli",
-    "name_html" : "Kirklareli",
-    "sort_order" : 0
+    "name_html" : "Kirklareli"
   },
-  {
-    "objectid" : 1067,
-    "nuts_id" : "TR221",
+  "TR221": {
     "name_latin" : "Balikesir",
     "nuts_name" : "Balikesir",
     "name_ascii" : "Balikesir",
-    "name_html" : "Balikesir",
-    "sort_order" : 0
+    "name_html" : "Balikesir"
   },
-  {
-    "objectid" : 1068,
-    "nuts_id" : "TR222",
+  "TR222": {
     "name_latin" : "Çanakkale",
     "nuts_name" : "Çanakkale",
     "name_ascii" : "Canakkale",
-    "name_html" : "&#x00C7;anakkale",
-    "sort_order" : 0
+    "name_html" : "&#x00C7;anakkale"
   },
-  {
-    "objectid" : 1069,
-    "nuts_id" : "TR310",
+  "TR310": {
     "name_latin" : "Izmir",
     "nuts_name" : "Izmir",
     "name_ascii" : "Izmir",
-    "name_html" : "Izmir",
-    "sort_order" : 0
+    "name_html" : "Izmir"
   },
-  {
-    "objectid" : 1070,
-    "nuts_id" : "TR321",
+  "TR321": {
     "name_latin" : "Aydin",
     "nuts_name" : "Aydin",
     "name_ascii" : "Aydin",
-    "name_html" : "Aydin",
-    "sort_order" : 0
+    "name_html" : "Aydin"
   },
-  {
-    "objectid" : 1071,
-    "nuts_id" : "TR322",
+  "TR322": {
     "name_latin" : "Denizli",
     "nuts_name" : "Denizli",
     "name_ascii" : "Denizli",
-    "name_html" : "Denizli",
-    "sort_order" : 0
+    "name_html" : "Denizli"
   },
-  {
-    "objectid" : 1072,
-    "nuts_id" : "TR323",
+  "TR323": {
     "name_latin" : "Mugla",
     "nuts_name" : "Mugla",
     "name_ascii" : "Mugla",
-    "name_html" : "Mugla",
-    "sort_order" : 0
+    "name_html" : "Mugla"
   },
-  {
-    "objectid" : 1073,
-    "nuts_id" : "TR331",
+  "TR331": {
     "name_latin" : "Manisa",
     "nuts_name" : "Manisa",
     "name_ascii" : "Manisa",
-    "name_html" : "Manisa",
-    "sort_order" : 0
+    "name_html" : "Manisa"
   },
-  {
-    "objectid" : 1074,
-    "nuts_id" : "TR332",
+  "TR332": {
     "name_latin" : "Afyon",
     "nuts_name" : "Afyon",
     "name_ascii" : "Afyon",
-    "name_html" : "Afyon",
-    "sort_order" : 0
+    "name_html" : "Afyon"
   },
-  {
-    "objectid" : 1075,
-    "nuts_id" : "TR333",
+  "TR333": {
     "name_latin" : "Kütahya",
     "nuts_name" : "Kütahya",
     "name_ascii" : "Kutahya",
-    "name_html" : "K&#x00FC;tahya",
-    "sort_order" : 0
+    "name_html" : "K&#x00FC;tahya"
   },
-  {
-    "objectid" : 1076,
-    "nuts_id" : "TR334",
+  "TR334": {
     "name_latin" : "Usak",
     "nuts_name" : "Usak",
     "name_ascii" : "Usak",
-    "name_html" : "Usak",
-    "sort_order" : 0
+    "name_html" : "Usak"
   },
-  {
-    "objectid" : 1077,
-    "nuts_id" : "TR411",
+  "TR411": {
     "name_latin" : "Bursa",
     "nuts_name" : "Bursa",
     "name_ascii" : "Bursa",
-    "name_html" : "Bursa",
-    "sort_order" : 0
+    "name_html" : "Bursa"
   },
-  {
-    "objectid" : 1078,
-    "nuts_id" : "TR412",
+  "TR412": {
     "name_latin" : "Eskisehir",
     "nuts_name" : "Eskisehir",
     "name_ascii" : "Eskisehir",
-    "name_html" : "Eskisehir",
-    "sort_order" : 0
+    "name_html" : "Eskisehir"
   },
-  {
-    "objectid" : 1079,
-    "nuts_id" : "TR413",
+  "TR413": {
     "name_latin" : "Bilecik",
     "nuts_name" : "Bilecik",
     "name_ascii" : "Bilecik",
-    "name_html" : "Bilecik",
-    "sort_order" : 0
+    "name_html" : "Bilecik"
   },
-  {
-    "objectid" : 1080,
-    "nuts_id" : "TR421",
+  "TR421": {
     "name_latin" : "Kocaeli",
     "nuts_name" : "Kocaeli",
     "name_ascii" : "Kocaeli",
-    "name_html" : "Kocaeli",
-    "sort_order" : 0
+    "name_html" : "Kocaeli"
   },
-  {
-    "objectid" : 1081,
-    "nuts_id" : "TR422",
+  "TR422": {
     "name_latin" : "Sakarya",
     "nuts_name" : "Sakarya",
     "name_ascii" : "Sakarya",
-    "name_html" : "Sakarya",
-    "sort_order" : 0
+    "name_html" : "Sakarya"
   },
-  {
-    "objectid" : 1082,
-    "nuts_id" : "TR423",
+  "TR423": {
     "name_latin" : "Düzce",
     "nuts_name" : "Düzce",
     "name_ascii" : "Duzce",
-    "name_html" : "D&#x00FC;zce",
-    "sort_order" : 0
+    "name_html" : "D&#x00FC;zce"
   },
-  {
-    "objectid" : 1083,
-    "nuts_id" : "TR424",
+  "TR424": {
     "name_latin" : "Bolu",
     "nuts_name" : "Bolu",
     "name_ascii" : "Bolu",
-    "name_html" : "Bolu",
-    "sort_order" : 0
+    "name_html" : "Bolu"
   },
-  {
-    "objectid" : 1084,
-    "nuts_id" : "TR425",
+  "TR425": {
     "name_latin" : "Yalova",
     "nuts_name" : "Yalova",
     "name_ascii" : "Yalova",
-    "name_html" : "Yalova",
-    "sort_order" : 0
+    "name_html" : "Yalova"
   },
-  {
-    "objectid" : 1085,
-    "nuts_id" : "TR510",
+  "TR510": {
     "name_latin" : "Ankara",
     "nuts_name" : "Ankara",
     "name_ascii" : "Ankara",
-    "name_html" : "Ankara",
-    "sort_order" : 0
+    "name_html" : "Ankara"
   },
-  {
-    "objectid" : 1086,
-    "nuts_id" : "TR521",
+  "TR521": {
     "name_latin" : "Konya",
     "nuts_name" : "Konya",
     "name_ascii" : "Konya",
-    "name_html" : "Konya",
-    "sort_order" : 0
+    "name_html" : "Konya"
   },
-  {
-    "objectid" : 1087,
-    "nuts_id" : "TR522",
+  "TR522": {
     "name_latin" : "Karaman",
     "nuts_name" : "Karaman",
     "name_ascii" : "Karaman",
-    "name_html" : "Karaman",
-    "sort_order" : 0
+    "name_html" : "Karaman"
   },
-  {
-    "objectid" : 1088,
-    "nuts_id" : "TR611",
+  "TR611": {
     "name_latin" : "Antalya",
     "nuts_name" : "Antalya",
     "name_ascii" : "Antalya",
-    "name_html" : "Antalya",
-    "sort_order" : 0
+    "name_html" : "Antalya"
   },
-  {
-    "objectid" : 1089,
-    "nuts_id" : "TR612",
+  "TR612": {
     "name_latin" : "Isparta",
     "nuts_name" : "Isparta",
     "name_ascii" : "Isparta",
-    "name_html" : "Isparta",
-    "sort_order" : 0
+    "name_html" : "Isparta"
   },
-  {
-    "objectid" : 1090,
-    "nuts_id" : "TR613",
+  "TR613": {
     "name_latin" : "Burdur",
     "nuts_name" : "Burdur",
     "name_ascii" : "Burdur",
-    "name_html" : "Burdur",
-    "sort_order" : 0
+    "name_html" : "Burdur"
   },
-  {
-    "objectid" : 1091,
-    "nuts_id" : "TR621",
+  "TR621": {
     "name_latin" : "Adana",
     "nuts_name" : "Adana",
     "name_ascii" : "Adana",
-    "name_html" : "Adana",
-    "sort_order" : 0
+    "name_html" : "Adana"
   },
-  {
-    "objectid" : 1092,
-    "nuts_id" : "TR622",
+  "TR622": {
     "name_latin" : "Içel",
     "nuts_name" : "Içel",
     "name_ascii" : "Icel",
-    "name_html" : "I&#x00E7;el",
-    "sort_order" : 0
+    "name_html" : "I&#x00E7;el"
   },
-  {
-    "objectid" : 1093,
-    "nuts_id" : "TR631",
+  "TR631": {
     "name_latin" : "Hatay",
     "nuts_name" : "Hatay",
     "name_ascii" : "Hatay",
-    "name_html" : "Hatay",
-    "sort_order" : 0
+    "name_html" : "Hatay"
   },
-  {
-    "objectid" : 1094,
-    "nuts_id" : "TR632",
+  "TR632": {
     "name_latin" : "Kahramanmaras",
     "nuts_name" : "Kahramanmaras",
     "name_ascii" : "Kahramanmaras",
-    "name_html" : "Kahramanmaras",
-    "sort_order" : 0
+    "name_html" : "Kahramanmaras"
   },
-  {
-    "objectid" : 1095,
-    "nuts_id" : "TR633",
+  "TR633": {
     "name_latin" : "Osmaniye",
     "nuts_name" : "Osmaniye",
     "name_ascii" : "Osmaniye",
-    "name_html" : "Osmaniye",
-    "sort_order" : 0
+    "name_html" : "Osmaniye"
   },
-  {
-    "objectid" : 1096,
-    "nuts_id" : "TR711",
+  "TR711": {
     "name_latin" : "Kirikkale",
     "nuts_name" : "Kirikkale",
     "name_ascii" : "Kirikkale",
-    "name_html" : "Kirikkale",
-    "sort_order" : 0
+    "name_html" : "Kirikkale"
   },
-  {
-    "objectid" : 1097,
-    "nuts_id" : "TR712",
+  "TR712": {
     "name_latin" : "Aksaray",
     "nuts_name" : "Aksaray",
     "name_ascii" : "Aksaray",
-    "name_html" : "Aksaray",
-    "sort_order" : 0
+    "name_html" : "Aksaray"
   },
-  {
-    "objectid" : 1098,
-    "nuts_id" : "TR713",
+  "TR713": {
     "name_latin" : "Nigde",
     "nuts_name" : "Nigde",
     "name_ascii" : "Nigde",
-    "name_html" : "Nigde",
-    "sort_order" : 0
+    "name_html" : "Nigde"
   },
-  {
-    "objectid" : 1099,
-    "nuts_id" : "TR714",
+  "TR714": {
     "name_latin" : "Nevsehir",
     "nuts_name" : "Nevsehir",
     "name_ascii" : "Nevsehir",
-    "name_html" : "Nevsehir",
-    "sort_order" : 0
+    "name_html" : "Nevsehir"
   },
-  {
-    "objectid" : 1100,
-    "nuts_id" : "TR715",
+  "TR715": {
     "name_latin" : "Kirsehir",
     "nuts_name" : "Kirsehir",
     "name_ascii" : "Kirsehir",
-    "name_html" : "Kirsehir",
-    "sort_order" : 0
+    "name_html" : "Kirsehir"
   },
-  {
-    "objectid" : 1101,
-    "nuts_id" : "TR721",
+  "TR721": {
     "name_latin" : "Kayseri",
     "nuts_name" : "Kayseri",
     "name_ascii" : "Kayseri",
-    "name_html" : "Kayseri",
-    "sort_order" : 0
+    "name_html" : "Kayseri"
   },
-  {
-    "objectid" : 1102,
-    "nuts_id" : "TR722",
+  "TR722": {
     "name_latin" : "Sivas",
     "nuts_name" : "Sivas",
     "name_ascii" : "Sivas",
-    "name_html" : "Sivas",
-    "sort_order" : 0
+    "name_html" : "Sivas"
   },
-  {
-    "objectid" : 1103,
-    "nuts_id" : "TR723",
+  "TR723": {
     "name_latin" : "Yozgat",
     "nuts_name" : "Yozgat",
     "name_ascii" : "Yozgat",
-    "name_html" : "Yozgat",
-    "sort_order" : 0
+    "name_html" : "Yozgat"
   },
-  {
-    "objectid" : 1104,
-    "nuts_id" : "TR811",
+  "TR811": {
     "name_latin" : "Zonguldak",
     "nuts_name" : "Zonguldak",
     "name_ascii" : "Zonguldak",
-    "name_html" : "Zonguldak",
-    "sort_order" : 0
+    "name_html" : "Zonguldak"
   },
-  {
-    "objectid" : 1105,
-    "nuts_id" : "TR812",
+  "TR812": {
     "name_latin" : "Karabük",
     "nuts_name" : "Karabük",
     "name_ascii" : "Karabuk",
-    "name_html" : "Karab&#x00FC;k",
-    "sort_order" : 0
+    "name_html" : "Karab&#x00FC;k"
   },
-  {
-    "objectid" : 1106,
-    "nuts_id" : "TR813",
+  "TR813": {
     "name_latin" : "Bartin",
     "nuts_name" : "Bartin",
     "name_ascii" : "Bartin",
-    "name_html" : "Bartin",
-    "sort_order" : 0
+    "name_html" : "Bartin"
   },
-  {
-    "objectid" : 1107,
-    "nuts_id" : "TR821",
+  "TR821": {
     "name_latin" : "Kastamonu",
     "nuts_name" : "Kastamonu",
     "name_ascii" : "Kastamonu",
-    "name_html" : "Kastamonu",
-    "sort_order" : 0
+    "name_html" : "Kastamonu"
   },
-  {
-    "objectid" : 1108,
-    "nuts_id" : "TR822",
+  "TR822": {
     "name_latin" : "Çankiri",
     "nuts_name" : "Çankiri",
     "name_ascii" : "Cankiri",
-    "name_html" : "&#x00C7;ankiri",
-    "sort_order" : 0
+    "name_html" : "&#x00C7;ankiri"
   },
-  {
-    "objectid" : 1109,
-    "nuts_id" : "TR823",
+  "TR823": {
     "name_latin" : "Sinop",
     "nuts_name" : "Sinop",
     "name_ascii" : "Sinop",
-    "name_html" : "Sinop",
-    "sort_order" : 0
+    "name_html" : "Sinop"
   },
-  {
-    "objectid" : 1110,
-    "nuts_id" : "TR831",
+  "TR831": {
     "name_latin" : "Samsun",
     "nuts_name" : "Samsun",
     "name_ascii" : "Samsun",
-    "name_html" : "Samsun",
-    "sort_order" : 0
+    "name_html" : "Samsun"
   },
-  {
-    "objectid" : 1111,
-    "nuts_id" : "TR832",
+  "TR832": {
     "name_latin" : "Tokat",
     "nuts_name" : "Tokat",
     "name_ascii" : "Tokat",
-    "name_html" : "Tokat",
-    "sort_order" : 0
+    "name_html" : "Tokat"
   },
-  {
-    "objectid" : 1112,
-    "nuts_id" : "TR833",
+  "TR833": {
     "name_latin" : "Çorum",
     "nuts_name" : "Çorum",
     "name_ascii" : "Corum",
-    "name_html" : "&#x00C7;orum",
-    "sort_order" : 0
+    "name_html" : "&#x00C7;orum"
   },
-  {
-    "objectid" : 1113,
-    "nuts_id" : "TR834",
+  "TR834": {
     "name_latin" : "Amasya",
     "nuts_name" : "Amasya",
     "name_ascii" : "Amasya",
-    "name_html" : "Amasya",
-    "sort_order" : 0
+    "name_html" : "Amasya"
   },
-  {
-    "objectid" : 1114,
-    "nuts_id" : "TR901",
+  "TR901": {
     "name_latin" : "Trabzon",
     "nuts_name" : "Trabzon",
     "name_ascii" : "Trabzon",
-    "name_html" : "Trabzon",
-    "sort_order" : 0
+    "name_html" : "Trabzon"
   },
-  {
-    "objectid" : 1115,
-    "nuts_id" : "TR902",
+  "TR902": {
     "name_latin" : "Ordu",
     "nuts_name" : "Ordu",
     "name_ascii" : "Ordu",
-    "name_html" : "Ordu",
-    "sort_order" : 0
+    "name_html" : "Ordu"
   },
-  {
-    "objectid" : 1116,
-    "nuts_id" : "TR903",
+  "TR903": {
     "name_latin" : "Giresun",
     "nuts_name" : "Giresun",
     "name_ascii" : "Giresun",
-    "name_html" : "Giresun",
-    "sort_order" : 0
+    "name_html" : "Giresun"
   },
-  {
-    "objectid" : 1117,
-    "nuts_id" : "TR904",
+  "TR904": {
     "name_latin" : "Rize",
     "nuts_name" : "Rize",
     "name_ascii" : "Rize",
-    "name_html" : "Rize",
-    "sort_order" : 0
+    "name_html" : "Rize"
   },
-  {
-    "objectid" : 1118,
-    "nuts_id" : "TR905",
+  "TR905": {
     "name_latin" : "Artvin",
     "nuts_name" : "Artvin",
     "name_ascii" : "Artvin",
-    "name_html" : "Artvin",
-    "sort_order" : 0
+    "name_html" : "Artvin"
   },
-  {
-    "objectid" : 1119,
-    "nuts_id" : "TR906",
+  "TR906": {
     "name_latin" : "Gümüshane",
     "nuts_name" : "Gümüshane",
     "name_ascii" : "Gumushane",
-    "name_html" : "G&#x00FC;m&#x00FC;shane",
-    "sort_order" : 0
+    "name_html" : "G&#x00FC;m&#x00FC;shane"
   },
-  {
-    "objectid" : 1120,
-    "nuts_id" : "TRA11",
+  "TRA11": {
     "name_latin" : "Erzurum",
     "nuts_name" : "Erzurum",
     "name_ascii" : "Erzurum",
-    "name_html" : "Erzurum",
-    "sort_order" : 0
+    "name_html" : "Erzurum"
   },
-  {
-    "objectid" : 1121,
-    "nuts_id" : "TRA12",
+  "TRA12": {
     "name_latin" : "Erzincan",
     "nuts_name" : "Erzincan",
     "name_ascii" : "Erzincan",
-    "name_html" : "Erzincan",
-    "sort_order" : 0
+    "name_html" : "Erzincan"
   },
-  {
-    "objectid" : 1122,
-    "nuts_id" : "TRA13",
+  "TRA13": {
     "name_latin" : "Bayburt",
     "nuts_name" : "Bayburt",
     "name_ascii" : "Bayburt",
-    "name_html" : "Bayburt",
-    "sort_order" : 0
+    "name_html" : "Bayburt"
   },
-  {
-    "objectid" : 1123,
-    "nuts_id" : "TRA21",
+  "TRA21": {
     "name_latin" : "Agri",
     "nuts_name" : "Agri",
     "name_ascii" : "Agri",
-    "name_html" : "Agri",
-    "sort_order" : 0
+    "name_html" : "Agri"
   },
-  {
-    "objectid" : 1124,
-    "nuts_id" : "TRA22",
+  "TRA22": {
     "name_latin" : "Kars",
     "nuts_name" : "Kars",
     "name_ascii" : "Kars",
-    "name_html" : "Kars",
-    "sort_order" : 0
+    "name_html" : "Kars"
   },
-  {
-    "objectid" : 1125,
-    "nuts_id" : "TRA23",
+  "TRA23": {
     "name_latin" : "Igdir",
     "nuts_name" : "Igdir",
     "name_ascii" : "Igdir",
-    "name_html" : "Igdir",
-    "sort_order" : 0
+    "name_html" : "Igdir"
   },
-  {
-    "objectid" : 1126,
-    "nuts_id" : "TRA24",
+  "TRA24": {
     "name_latin" : "Ardahan",
     "nuts_name" : "Ardahan",
     "name_ascii" : "Ardahan",
-    "name_html" : "Ardahan",
-    "sort_order" : 0
+    "name_html" : "Ardahan"
   },
-  {
-    "objectid" : 1127,
-    "nuts_id" : "TRB11",
+  "TRB11": {
     "name_latin" : "Malatya",
     "nuts_name" : "Malatya",
     "name_ascii" : "Malatya",
-    "name_html" : "Malatya",
-    "sort_order" : 0
+    "name_html" : "Malatya"
   },
-  {
-    "objectid" : 1128,
-    "nuts_id" : "TRB12",
+  "TRB12": {
     "name_latin" : "Elazig",
     "nuts_name" : "Elazig",
     "name_ascii" : "Elazig",
-    "name_html" : "Elazig",
-    "sort_order" : 0
+    "name_html" : "Elazig"
   },
-  {
-    "objectid" : 1129,
-    "nuts_id" : "TRB13",
+  "TRB13": {
     "name_latin" : "Bingöl",
     "nuts_name" : "Bingöl",
     "name_ascii" : "Bingol",
-    "name_html" : "Bing&#x00F6;l",
-    "sort_order" : 0
+    "name_html" : "Bing&#x00F6;l"
   },
-  {
-    "objectid" : 1130,
-    "nuts_id" : "TRB14",
+  "TRB14": {
     "name_latin" : "Tunceli",
     "nuts_name" : "Tunceli",
     "name_ascii" : "Tunceli",
-    "name_html" : "Tunceli",
-    "sort_order" : 0
+    "name_html" : "Tunceli"
   },
-  {
-    "objectid" : 1131,
-    "nuts_id" : "TRB21",
+  "TRB21": {
     "name_latin" : "Van",
     "nuts_name" : "Van",
     "name_ascii" : "Van",
-    "name_html" : "Van",
-    "sort_order" : 0
+    "name_html" : "Van"
   },
-  {
-    "objectid" : 1132,
-    "nuts_id" : "TRB22",
+  "TRB22": {
     "name_latin" : "Mus",
     "nuts_name" : "Mus",
     "name_ascii" : "Mus",
-    "name_html" : "Mus",
-    "sort_order" : 0
+    "name_html" : "Mus"
   },
-  {
-    "objectid" : 1133,
-    "nuts_id" : "TRB23",
+  "TRB23": {
     "name_latin" : "Bitlis",
     "nuts_name" : "Bitlis",
     "name_ascii" : "Bitlis",
-    "name_html" : "Bitlis",
-    "sort_order" : 0
+    "name_html" : "Bitlis"
   },
-  {
-    "objectid" : 1134,
-    "nuts_id" : "TRB24",
+  "TRB24": {
     "name_latin" : "Hakkari",
     "nuts_name" : "Hakkari",
     "name_ascii" : "Hakkari",
-    "name_html" : "Hakkari",
-    "sort_order" : 0
+    "name_html" : "Hakkari"
   },
-  {
-    "objectid" : 1135,
-    "nuts_id" : "TRC11",
+  "TRC11": {
     "name_latin" : "Gaziantep",
     "nuts_name" : "Gaziantep",
     "name_ascii" : "Gaziantep",
-    "name_html" : "Gaziantep",
-    "sort_order" : 0
+    "name_html" : "Gaziantep"
   },
-  {
-    "objectid" : 1136,
-    "nuts_id" : "TRC12",
+  "TRC12": {
     "name_latin" : "Adiyaman",
     "nuts_name" : "Adiyaman",
     "name_ascii" : "Adiyaman",
-    "name_html" : "Adiyaman",
-    "sort_order" : 0
+    "name_html" : "Adiyaman"
   },
-  {
-    "objectid" : 1137,
-    "nuts_id" : "TRC13",
+  "TRC13": {
     "name_latin" : "Kilis",
     "nuts_name" : "Kilis",
     "name_ascii" : "Kilis",
-    "name_html" : "Kilis",
-    "sort_order" : 0
+    "name_html" : "Kilis"
   },
-  {
-    "objectid" : 1138,
-    "nuts_id" : "TRC21",
+  "TRC21": {
     "name_latin" : "Sanliurfa",
     "nuts_name" : "Sanliurfa",
     "name_ascii" : "Sanliurfa",
-    "name_html" : "Sanliurfa",
-    "sort_order" : 0
+    "name_html" : "Sanliurfa"
   },
-  {
-    "objectid" : 1139,
-    "nuts_id" : "TRC22",
+  "TRC22": {
     "name_latin" : "Diyarbakir",
     "nuts_name" : "Diyarbakir",
     "name_ascii" : "Diyarbakir",
-    "name_html" : "Diyarbakir",
-    "sort_order" : 0
+    "name_html" : "Diyarbakir"
   },
-  {
-    "objectid" : 1140,
-    "nuts_id" : "TRC31",
+  "TRC31": {
     "name_latin" : "Mardin",
     "nuts_name" : "Mardin",
     "name_ascii" : "Mardin",
-    "name_html" : "Mardin",
-    "sort_order" : 0
+    "name_html" : "Mardin"
   },
-  {
-    "objectid" : 1141,
-    "nuts_id" : "TRC32",
+  "TRC32": {
     "name_latin" : "Batman",
     "nuts_name" : "Batman",
     "name_ascii" : "Batman",
-    "name_html" : "Batman",
-    "sort_order" : 0
+    "name_html" : "Batman"
   },
-  {
-    "objectid" : 1142,
-    "nuts_id" : "TRC33",
+  "TRC33": {
     "name_latin" : "Sirnak",
     "nuts_name" : "Sirnak",
     "name_ascii" : "Sirnak",
-    "name_html" : "Sirnak",
-    "sort_order" : 0
+    "name_html" : "Sirnak"
   },
-  {
-    "objectid" : 1143,
-    "nuts_id" : "TRC34",
+  "TRC34": {
     "name_latin" : "Siirt",
     "nuts_name" : "Siirt",
     "name_ascii" : "Siirt",
-    "name_html" : "Siirt",
-    "sort_order" : 0
+    "name_html" : "Siirt"
   },
-  {
-    "objectid" : 1144,
-    "nuts_id" : "UKC11",
+  "UKC11": {
     "name_latin" : "Hartlepool and Stockton-on-Tees",
     "nuts_name" : "Hartlepool and Stockton-on-Tees",
     "name_ascii" : "Hartlepool and Stockton-On-Tees",
-    "name_html" : "Hartlepool and Stockton-On-Tees",
-    "sort_order" : 1603
+    "name_html" : "Hartlepool and Stockton-On-Tees"
   },
-  {
-    "objectid" : 1145,
-    "nuts_id" : "UKC12",
+  "UKC12": {
     "name_latin" : "South Teesside",
     "nuts_name" : "South Teesside",
     "name_ascii" : "South Teesside",
-    "name_html" : "South Teesside",
-    "sort_order" : 1604
+    "name_html" : "South Teesside"
   },
-  {
-    "objectid" : 1146,
-    "nuts_id" : "UKC13",
+  "UKC13": {
     "name_latin" : "Darlington",
     "nuts_name" : "Darlington",
     "name_ascii" : "Darlington",
-    "name_html" : "Darlington",
-    "sort_order" : 1605
+    "name_html" : "Darlington"
   },
-  {
-    "objectid" : 1147,
-    "nuts_id" : "UKC14",
+  "UKC14": {
     "name_latin" : "Durham CC",
     "nuts_name" : "Durham CC",
     "name_ascii" : "Durham CC",
-    "name_html" : "Durham CC",
-    "sort_order" : 1606
+    "name_html" : "Durham CC"
   },
-  {
-    "objectid" : 1148,
-    "nuts_id" : "UKC22",
+  "UKC22": {
     "name_latin" : "Tyneside",
     "nuts_name" : "Tyneside",
     "name_ascii" : "Tyneside",
-    "name_html" : "Tyneside",
-    "sort_order" : 1609
+    "name_html" : "Tyneside"
   },
-  {
-    "objectid" : 1149,
-    "nuts_id" : "UKC23",
+  "UKC23": {
     "name_latin" : "Sunderland",
     "nuts_name" : "Sunderland",
     "name_ascii" : "Sunderland",
-    "name_html" : "Sunderland",
-    "sort_order" : 1610
+    "name_html" : "Sunderland"
   },
-  {
-    "objectid" : 1150,
-    "nuts_id" : "UKD11",
+  "UKD11": {
     "name_latin" : "West Cumbria",
     "nuts_name" : "West Cumbria",
     "name_ascii" : "West Cumbria",
-    "name_html" : "West Cumbria",
-    "sort_order" : 1613
+    "name_html" : "West Cumbria"
   },
-  {
-    "objectid" : 1151,
-    "nuts_id" : "UKD33",
+  "UKD33": {
     "name_latin" : "Manchester",
     "nuts_name" : "Manchester",
     "name_ascii" : "Manchester",
-    "name_html" : "Manchester",
-    "sort_order" : 1616
+    "name_html" : "Manchester"
   },
-  {
-    "objectid" : 1152,
-    "nuts_id" : "UKD34",
+  "UKD34": {
     "name_latin" : "Greater Manchester South West",
     "nuts_name" : "Greater Manchester South West",
     "name_ascii" : "Greater Manchester South West",
-    "name_html" : "Greater Manchester South West",
-    "sort_order" : 1617
+    "name_html" : "Greater Manchester South West"
   },
-  {
-    "objectid" : 1153,
-    "nuts_id" : "UKD36",
+  "UKD36": {
     "name_latin" : "Greater Manchester North West",
     "nuts_name" : "Greater Manchester North West",
     "name_ascii" : "Greater Manchester North West",
-    "name_html" : "Greater Manchester North West",
-    "sort_order" : 1619
+    "name_html" : "Greater Manchester North West"
   },
-  {
-    "objectid" : 1154,
-    "nuts_id" : "UKD37",
+  "UKD37": {
     "name_latin" : "Greater Manchester North East",
     "nuts_name" : "Greater Manchester North East",
     "name_ascii" : "Greater Manchester North East",
-    "name_html" : "Greater Manchester North East",
-    "sort_order" : 1620
+    "name_html" : "Greater Manchester North East"
   },
-  {
-    "objectid" : 1155,
-    "nuts_id" : "UKD41",
+  "UKD41": {
     "name_latin" : "Blackburn with Darwen",
     "nuts_name" : "Blackburn with Darwen",
     "name_ascii" : "Blackburn with Darwen",
-    "name_html" : "Blackburn with Darwen",
-    "sort_order" : 1622
+    "name_html" : "Blackburn with Darwen"
   },
-  {
-    "objectid" : 1156,
-    "nuts_id" : "UKD42",
+  "UKD42": {
     "name_latin" : "Blackpool",
     "nuts_name" : "Blackpool",
     "name_ascii" : "Blackpool",
-    "name_html" : "Blackpool",
-    "sort_order" : 1623
+    "name_html" : "Blackpool"
   },
-  {
-    "objectid" : 1157,
-    "nuts_id" : "UKD44",
+  "UKD44": {
     "name_latin" : "Lancaster & Wyre",
     "nuts_name" : "Lancaster & Wyre",
     "name_ascii" : "Lancaster & Wyre",
-    "name_html" : "Lancaster & Wyre",
-    "sort_order" : 1624
+    "name_html" : "Lancaster & Wyre"
   },
-  {
-    "objectid" : 1158,
-    "nuts_id" : "UKD45",
+  "UKD45": {
     "name_latin" : "Mid Lancashire",
     "nuts_name" : "Mid Lancashire",
     "name_ascii" : "Mid Lancashire",
-    "name_html" : "Mid Lancashire",
-    "sort_order" : 1625
+    "name_html" : "Mid Lancashire"
   },
-  {
-    "objectid" : 1159,
-    "nuts_id" : "UKD47",
+  "UKD47": {
     "name_latin" : "Chorley & West Lancashire",
     "nuts_name" : "Chorley & West Lancashire",
     "name_ascii" : "Chorley & West Lancashire",
-    "name_html" : "Chorley & West Lancashire",
-    "sort_order" : 1627
+    "name_html" : "Chorley & West Lancashire"
   },
-  {
-    "objectid" : 1160,
-    "nuts_id" : "UKD61",
+  "UKD61": {
     "name_latin" : "Warrington",
     "nuts_name" : "Warrington",
     "name_ascii" : "Warrington",
-    "name_html" : "Warrington",
-    "sort_order" : 1629
+    "name_html" : "Warrington"
   },
-  {
-    "objectid" : 1161,
-    "nuts_id" : "UKD62",
+  "UKD62": {
     "name_latin" : "Cheshire East",
     "nuts_name" : "Cheshire East",
     "name_ascii" : "Cheshire East",
-    "name_html" : "Cheshire East",
-    "sort_order" : 1630
+    "name_html" : "Cheshire East"
   },
-  {
-    "objectid" : 1162,
-    "nuts_id" : "UKD63",
+  "UKD63": {
     "name_latin" : "Cheshire West and Chester",
     "nuts_name" : "Cheshire West and Chester",
     "name_ascii" : "Cheshire West and Chester",
-    "name_html" : "Cheshire West and Chester",
-    "sort_order" : 1631
+    "name_html" : "Cheshire West and Chester"
   },
-  {
-    "objectid" : 1163,
-    "nuts_id" : "UKD71",
+  "UKD71": {
     "name_latin" : "East Merseyside",
     "nuts_name" : "East Merseyside",
     "name_ascii" : "East Merseyside",
-    "name_html" : "East Merseyside",
-    "sort_order" : 1633
+    "name_html" : "East Merseyside"
   },
-  {
-    "objectid" : 1164,
-    "nuts_id" : "UKD72",
+  "UKD72": {
     "name_latin" : "Liverpool",
     "nuts_name" : "Liverpool",
     "name_ascii" : "Liverpool",
-    "name_html" : "Liverpool",
-    "sort_order" : 1634
+    "name_html" : "Liverpool"
   },
-  {
-    "objectid" : 1165,
-    "nuts_id" : "UKD73",
+  "UKD73": {
     "name_latin" : "Sefton",
     "nuts_name" : "Sefton",
     "name_ascii" : "Sefton",
-    "name_html" : "Sefton",
-    "sort_order" : 1635
+    "name_html" : "Sefton"
   },
-  {
-    "objectid" : 1166,
-    "nuts_id" : "UKD74",
+  "UKD74": {
     "name_latin" : "Wirral",
     "nuts_name" : "Wirral",
     "name_ascii" : "Wirral",
-    "name_html" : "Wirral",
-    "sort_order" : 1636
+    "name_html" : "Wirral"
   },
-  {
-    "objectid" : 1167,
-    "nuts_id" : "UKE11",
+  "UKE11": {
     "name_latin" : "Kingston upon Hull, City of",
     "nuts_name" : "Kingston upon Hull, City of",
     "name_ascii" : "Kingston Upon Hull, City Of",
-    "name_html" : "Kingston Upon Hull, City Of",
-    "sort_order" : 1639
+    "name_html" : "Kingston Upon Hull, City Of"
   },
-  {
-    "objectid" : 1168,
-    "nuts_id" : "UKE12",
+  "UKE12": {
     "name_latin" : "East Riding of Yorkshire",
     "nuts_name" : "East Riding of Yorkshire",
     "name_ascii" : "East Riding of Yorkshire",
-    "name_html" : "East Riding of Yorkshire",
-    "sort_order" : 1640
+    "name_html" : "East Riding of Yorkshire"
   },
-  {
-    "objectid" : 1169,
-    "nuts_id" : "UKE13",
+  "UKE13": {
     "name_latin" : "North and North East Lincolnshire",
     "nuts_name" : "North and North East Lincolnshire",
     "name_ascii" : "North and North East Lincolnshire",
-    "name_html" : "North and North East Lincolnshire",
-    "sort_order" : 1641
+    "name_html" : "North and North East Lincolnshire"
   },
-  {
-    "objectid" : 1170,
-    "nuts_id" : "UKE21",
+  "UKE21": {
     "name_latin" : "York",
     "nuts_name" : "York",
     "name_ascii" : "York",
-    "name_html" : "York",
-    "sort_order" : 1643
+    "name_html" : "York"
   },
-  {
-    "objectid" : 1171,
-    "nuts_id" : "UKE22",
+  "UKE22": {
     "name_latin" : "North Yorkshire CC",
     "nuts_name" : "North Yorkshire CC",
     "name_ascii" : "North Yorkshire CC",
-    "name_html" : "North Yorkshire CC",
-    "sort_order" : 1644
+    "name_html" : "North Yorkshire CC"
   },
-  {
-    "objectid" : 1172,
-    "nuts_id" : "UKE31",
+  "UKE31": {
     "name_latin" : "Barnsley, Doncaster and Rotherham",
     "nuts_name" : "Barnsley, Doncaster and Rotherham",
     "name_ascii" : "Barnsley, Doncaster and Rotherham",
-    "name_html" : "Barnsley, Doncaster and Rotherham",
-    "sort_order" : 1646
+    "name_html" : "Barnsley, Doncaster and Rotherham"
   },
-  {
-    "objectid" : 1173,
-    "nuts_id" : "UKE32",
+  "UKE32": {
     "name_latin" : "Sheffield",
     "nuts_name" : "Sheffield",
     "name_ascii" : "Sheffield",
-    "name_html" : "Sheffield",
-    "sort_order" : 1647
+    "name_html" : "Sheffield"
   },
-  {
-    "objectid" : 1174,
-    "nuts_id" : "UKE42",
+  "UKE42": {
     "name_latin" : "Leeds",
     "nuts_name" : "Leeds",
     "name_ascii" : "Leeds",
-    "name_html" : "Leeds",
-    "sort_order" : 1650
+    "name_html" : "Leeds"
   },
-  {
-    "objectid" : 1175,
-    "nuts_id" : "UKE44",
+  "UKE44": {
     "name_latin" : "Calderdale and Kirklees",
     "nuts_name" : "Calderdale and Kirklees",
     "name_ascii" : "Calderdale and Kirklees",
-    "name_html" : "Calderdale and Kirklees",
-    "sort_order" : 1651
+    "name_html" : "Calderdale and Kirklees"
   },
-  {
-    "objectid" : 1215,
-    "nuts_id" : "UKI42",
+  "UKI42": {
     "name_latin" : "Tower Hamlets",
     "nuts_name" : "Tower Hamlets",
     "name_ascii" : "Tower Hamlets",
-    "name_html" : "Tower Hamlets",
-    "sort_order" : 1714
+    "name_html" : "Tower Hamlets"
   },
-  {
-    "objectid" : 1216,
-    "nuts_id" : "UKI43",
+  "UKI43": {
     "name_latin" : "Haringey & Islington",
     "nuts_name" : "Haringey & Islington",
     "name_ascii" : "Haringey & Islington",
-    "name_html" : "Haringey & Islington",
-    "sort_order" : 1715
+    "name_html" : "Haringey & Islington"
   },
-  {
-    "objectid" : 1217,
-    "nuts_id" : "UKI44",
+  "UKI44": {
     "name_latin" : "Lewisham & Southwark",
     "nuts_name" : "Lewisham & Southwark",
     "name_ascii" : "Lewisham & Southwark",
-    "name_html" : "Lewisham & Southwark",
-    "sort_order" : 1716
+    "name_html" : "Lewisham & Southwark"
   },
-  {
-    "objectid" : 1218,
-    "nuts_id" : "UKI45",
+  "UKI45": {
     "name_latin" : "Lambeth",
     "nuts_name" : "Lambeth",
     "name_ascii" : "Lambeth",
-    "name_html" : "Lambeth",
-    "sort_order" : 1717
+    "name_html" : "Lambeth"
   },
-  {
-    "objectid" : 1219,
-    "nuts_id" : "UKI51",
+  "UKI51": {
     "name_latin" : "Bexley & Greenwich",
     "nuts_name" : "Bexley & Greenwich",
     "name_ascii" : "Bexley & Greenwich",
-    "name_html" : "Bexley & Greenwich",
-    "sort_order" : 1719
+    "name_html" : "Bexley & Greenwich"
   },
-  {
-    "objectid" : 1220,
-    "nuts_id" : "UKI52",
+  "UKI52": {
     "name_latin" : "Barking and Dagenham & Havering",
     "nuts_name" : "Barking and Dagenham & Havering",
     "name_ascii" : "Barking and Dagenham & Havering",
-    "name_html" : "Barking and Dagenham & Havering",
-    "sort_order" : 1720
+    "name_html" : "Barking and Dagenham & Havering"
   },
-  {
-    "objectid" : 1221,
-    "nuts_id" : "UKI53",
+  "UKI53": {
     "name_latin" : "Redbridge & Waltham Forest",
     "nuts_name" : "Redbridge & Waltham Forest",
     "name_ascii" : "Redbridge & Waltham Forest",
-    "name_html" : "Redbridge & Waltham Forest",
-    "sort_order" : 1721
+    "name_html" : "Redbridge & Waltham Forest"
   },
-  {
-    "objectid" : 1222,
-    "nuts_id" : "UKI54",
+  "UKI54": {
     "name_latin" : "Enfield",
     "nuts_name" : "Enfield",
     "name_ascii" : "Enfield",
-    "name_html" : "Enfield",
-    "sort_order" : 1722
+    "name_html" : "Enfield"
   },
-  {
-    "objectid" : 1223,
-    "nuts_id" : "UKI61",
+  "UKI61": {
     "name_latin" : "Bromley",
     "nuts_name" : "Bromley",
     "name_ascii" : "Bromley",
-    "name_html" : "Bromley",
-    "sort_order" : 1724
+    "name_html" : "Bromley"
   },
-  {
-    "objectid" : 1224,
-    "nuts_id" : "UKI62",
+  "UKI62": {
     "name_latin" : "Croydon",
     "nuts_name" : "Croydon",
     "name_ascii" : "Croydon",
-    "name_html" : "Croydon",
-    "sort_order" : 1725
+    "name_html" : "Croydon"
   },
-  {
-    "objectid" : 1225,
-    "nuts_id" : "UKI63",
+  "UKI63": {
     "name_latin" : "Merton, Kingston upon Thames & Sutton",
     "nuts_name" : "Merton, Kingston upon Thames & Sutton",
     "name_ascii" : "Merton, Kingston Upon Thames & Sutton",
-    "name_html" : "Merton, Kingston Upon Thames & Sutton",
-    "sort_order" : 1726
+    "name_html" : "Merton, Kingston Upon Thames & Sutton"
   },
-  {
-    "objectid" : 1226,
-    "nuts_id" : "UKI71",
+  "UKI71": {
     "name_latin" : "Barnet",
     "nuts_name" : "Barnet",
     "name_ascii" : "Barnet",
-    "name_html" : "Barnet",
-    "sort_order" : 1728
+    "name_html" : "Barnet"
   },
-  {
-    "objectid" : 1227,
-    "nuts_id" : "UKI72",
+  "UKI72": {
     "name_latin" : "Brent",
     "nuts_name" : "Brent",
     "name_ascii" : "Brent",
-    "name_html" : "Brent",
-    "sort_order" : 1729
+    "name_html" : "Brent"
   },
-  {
-    "objectid" : 1228,
-    "nuts_id" : "UKI73",
+  "UKI73": {
     "name_latin" : "Ealing",
     "nuts_name" : "Ealing",
     "name_ascii" : "Ealing",
-    "name_html" : "Ealing",
-    "sort_order" : 1730
+    "name_html" : "Ealing"
   },
-  {
-    "objectid" : 1229,
-    "nuts_id" : "UKI74",
+  "UKI74": {
     "name_latin" : "Harrow & Hillingdon",
     "nuts_name" : "Harrow & Hillingdon",
     "name_ascii" : "Harrow & Hillingdon",
-    "name_html" : "Harrow & Hillingdon",
-    "sort_order" : 1731
+    "name_html" : "Harrow & Hillingdon"
   },
-  {
-    "objectid" : 1230,
-    "nuts_id" : "UKJ11",
+  "UKJ11": {
     "name_latin" : "Berkshire",
     "nuts_name" : "Berkshire",
     "name_ascii" : "Berkshire",
-    "name_html" : "Berkshire",
-    "sort_order" : 1735
+    "name_html" : "Berkshire"
   },
-  {
-    "objectid" : 1231,
-    "nuts_id" : "UKJ12",
+  "UKJ12": {
     "name_latin" : "Milton Keynes",
     "nuts_name" : "Milton Keynes",
     "name_ascii" : "Milton Keynes",
-    "name_html" : "Milton Keynes",
-    "sort_order" : 1736
+    "name_html" : "Milton Keynes"
   },
-  {
-    "objectid" : 1232,
-    "nuts_id" : "UKJ13",
+  "UKJ13": {
     "name_latin" : "Buckinghamshire CC",
     "nuts_name" : "Buckinghamshire CC",
     "name_ascii" : "Buckinghamshire CC",
-    "name_html" : "Buckinghamshire CC",
-    "sort_order" : 1737
+    "name_html" : "Buckinghamshire CC"
   },
-  {
-    "objectid" : 1233,
-    "nuts_id" : "UKJ14",
+  "UKJ14": {
     "name_latin" : "Oxfordshire",
     "nuts_name" : "Oxfordshire",
     "name_ascii" : "Oxfordshire",
-    "name_html" : "Oxfordshire",
-    "sort_order" : 1738
+    "name_html" : "Oxfordshire"
   },
-  {
-    "objectid" : 1234,
-    "nuts_id" : "UKJ22",
+  "UKJ22": {
     "name_latin" : "East Sussex CC",
     "nuts_name" : "East Sussex CC",
     "name_ascii" : "East Sussex CC",
-    "name_html" : "East Sussex CC",
-    "sort_order" : 1741
+    "name_html" : "East Sussex CC"
   },
-  {
-    "objectid" : 1235,
-    "nuts_id" : "UKJ25",
+  "UKJ25": {
     "name_latin" : "West Surrey",
     "nuts_name" : "West Surrey",
     "name_ascii" : "West Surrey",
-    "name_html" : "West Surrey",
-    "sort_order" : 1742
+    "name_html" : "West Surrey"
   },
-  {
-    "objectid" : 1236,
-    "nuts_id" : "UKJ26",
+  "UKJ26": {
     "name_latin" : "East Surrey",
     "nuts_name" : "East Surrey",
     "name_ascii" : "East Surrey",
-    "name_html" : "East Surrey",
-    "sort_order" : 1743
+    "name_html" : "East Surrey"
   },
-  {
-    "objectid" : 1237,
-    "nuts_id" : "UKJ27",
+  "UKJ27": {
     "name_latin" : "West Sussex (South West)",
     "nuts_name" : "West Sussex (South West)",
     "name_ascii" : "West Sussex (South West)",
-    "name_html" : "West Sussex (South West)",
-    "sort_order" : 1744
+    "name_html" : "West Sussex (South West)"
   },
-  {
-    "objectid" : 1238,
-    "nuts_id" : "UKJ31",
+  "UKJ31": {
     "name_latin" : "Portsmouth",
     "nuts_name" : "Portsmouth",
     "name_ascii" : "Portsmouth",
-    "name_html" : "Portsmouth",
-    "sort_order" : 1747
+    "name_html" : "Portsmouth"
   },
-  {
-    "objectid" : 1239,
-    "nuts_id" : "UKJ32",
+  "UKJ32": {
     "name_latin" : "Southampton",
     "nuts_name" : "Southampton",
     "name_ascii" : "Southampton",
-    "name_html" : "Southampton",
-    "sort_order" : 1748
+    "name_html" : "Southampton"
   },
-  {
-    "objectid" : 1240,
-    "nuts_id" : "UKJ34",
+  "UKJ34": {
     "name_latin" : "Isle of Wight",
     "nuts_name" : "Isle of Wight",
     "name_ascii" : "Isle of Wight",
-    "name_html" : "Isle of Wight",
-    "sort_order" : 1749
+    "name_html" : "Isle of Wight"
   },
-  {
-    "objectid" : 1241,
-    "nuts_id" : "UKJ35",
+  "UKJ35": {
     "name_latin" : "South Hampshire",
     "nuts_name" : "South Hampshire",
     "name_ascii" : "South Hampshire",
-    "name_html" : "South Hampshire",
-    "sort_order" : 1750
+    "name_html" : "South Hampshire"
   },
-  {
-    "objectid" : 1242,
-    "nuts_id" : "UKJ36",
+  "UKJ36": {
     "name_latin" : "Central Hampshire",
     "nuts_name" : "Central Hampshire",
     "name_ascii" : "Central Hampshire",
-    "name_html" : "Central Hampshire",
-    "sort_order" : 1751
+    "name_html" : "Central Hampshire"
   },
-  {
-    "objectid" : 1243,
-    "nuts_id" : "UKJ37",
+  "UKJ37": {
     "name_latin" : "North Hampshire",
     "nuts_name" : "North Hampshire",
     "name_ascii" : "North Hampshire",
-    "name_html" : "North Hampshire",
-    "sort_order" : 1752
+    "name_html" : "North Hampshire"
   },
-  {
-    "objectid" : 1244,
-    "nuts_id" : "UKJ41",
+  "UKJ41": {
     "name_latin" : "Medway",
     "nuts_name" : "Medway",
     "name_ascii" : "Medway",
-    "name_html" : "Medway",
-    "sort_order" : 1754
+    "name_html" : "Medway"
   },
-  {
-    "objectid" : 1245,
-    "nuts_id" : "UKJ44",
+  "UKJ44": {
     "name_latin" : "East Kent",
     "nuts_name" : "East Kent",
     "name_ascii" : "East Kent",
-    "name_html" : "East Kent",
-    "sort_order" : 1756
+    "name_html" : "East Kent"
   },
-  {
-    "objectid" : 1246,
-    "nuts_id" : "UKJ45",
+  "UKJ45": {
     "name_latin" : "Mid Kent",
     "nuts_name" : "Mid Kent",
     "name_ascii" : "Mid Kent",
-    "name_html" : "Mid Kent",
-    "sort_order" : 1757
+    "name_html" : "Mid Kent"
   },
-  {
-    "objectid" : 1247,
-    "nuts_id" : "UKJ46",
+  "UKJ46": {
     "name_latin" : "West Kent",
     "nuts_name" : "West Kent",
     "name_ascii" : "West Kent",
-    "name_html" : "West Kent",
-    "sort_order" : 1758
+    "name_html" : "West Kent"
   },
-  {
-    "objectid" : 1248,
-    "nuts_id" : "UKK11",
+  "UKK11": {
     "name_latin" : "Bristol, City of",
     "nuts_name" : "Bristol, City of",
     "name_ascii" : "Bristol, City Of",
-    "name_html" : "Bristol, City Of",
-    "sort_order" : 1761
+    "name_html" : "Bristol, City Of"
   },
-  {
-    "objectid" : 1249,
-    "nuts_id" : "UKK12",
+  "UKK12": {
     "name_latin" : "Bath and North East Somerset, North Somerset and South Gloucestershire",
     "nuts_name" : "Bath and North East Somerset, North Somerset and South Gloucestershire",
     "name_ascii" : "Bath and North East Somerset, North Somerset and South Gloucestershire",
-    "name_html" : "Bath and North East Somerset, North Somerset and South Gloucestershire",
-    "sort_order" : 1762
+    "name_html" : "Bath and North East Somerset, North Somerset and South Gloucestershire"
   },
-  {
-    "objectid" : 1250,
-    "nuts_id" : "UKK13",
+  "UKK13": {
     "name_latin" : "Gloucestershire",
     "nuts_name" : "Gloucestershire",
     "name_ascii" : "Gloucestershire",
-    "name_html" : "Gloucestershire",
-    "sort_order" : 1763
+    "name_html" : "Gloucestershire"
   },
-  {
-    "objectid" : 1251,
-    "nuts_id" : "UKK14",
+  "UKK14": {
     "name_latin" : "Swindon",
     "nuts_name" : "Swindon",
     "name_ascii" : "Swindon",
-    "name_html" : "Swindon",
-    "sort_order" : 1764
+    "name_html" : "Swindon"
   },
-  {
-    "objectid" : 1252,
-    "nuts_id" : "UKK15",
+  "UKK15": {
     "name_latin" : "Wiltshire CC",
     "nuts_name" : "Wiltshire CC",
     "name_ascii" : "Wiltshire CC",
-    "name_html" : "Wiltshire CC",
-    "sort_order" : 1765
+    "name_html" : "Wiltshire CC"
   },
-  {
-    "objectid" : 1253,
-    "nuts_id" : "UKK21",
+  "UKK21": {
     "name_latin" : "Bournemouth and Poole",
     "nuts_name" : "Bournemouth and Poole",
     "name_ascii" : "Bournemouth and Poole",
-    "name_html" : "Bournemouth and Poole",
-    "sort_order" : 1767
+    "name_html" : "Bournemouth and Poole"
   },
-  {
-    "objectid" : 1254,
-    "nuts_id" : "UKK22",
+  "UKK22": {
     "name_latin" : "Dorset CC",
     "nuts_name" : "Dorset CC",
     "name_ascii" : "Dorset CC",
-    "name_html" : "Dorset CC",
-    "sort_order" : 1768
+    "name_html" : "Dorset CC"
   },
-  {
-    "objectid" : 1255,
-    "nuts_id" : "UKK23",
+  "UKK23": {
     "name_latin" : "Somerset",
     "nuts_name" : "Somerset",
     "name_ascii" : "Somerset",
-    "name_html" : "Somerset",
-    "sort_order" : 1769
+    "name_html" : "Somerset"
   },
-  {
-    "objectid" : 1256,
-    "nuts_id" : "UKK41",
+  "UKK41": {
     "name_latin" : "Plymouth",
     "nuts_name" : "Plymouth",
     "name_ascii" : "Plymouth",
-    "name_html" : "Plymouth",
-    "sort_order" : 1773
+    "name_html" : "Plymouth"
   },
-  {
-    "objectid" : 1257,
-    "nuts_id" : "UKK42",
+  "UKK42": {
     "name_latin" : "Torbay",
     "nuts_name" : "Torbay",
     "name_ascii" : "Torbay",
-    "name_html" : "Torbay",
-    "sort_order" : 1774
+    "name_html" : "Torbay"
   },
-  {
-    "objectid" : 1258,
-    "nuts_id" : "UKK43",
+  "UKK43": {
     "name_latin" : "Devon CC",
     "nuts_name" : "Devon CC",
     "name_ascii" : "Devon CC",
-    "name_html" : "Devon CC",
-    "sort_order" : 1775
+    "name_html" : "Devon CC"
   },
-  {
-    "objectid" : 1259,
-    "nuts_id" : "UKL11",
+  "UKL11": {
     "name_latin" : "Isle of Anglesey",
     "nuts_name" : "Isle of Anglesey",
     "name_ascii" : "Isle of Anglesey",
-    "name_html" : "Isle of Anglesey",
-    "sort_order" : 1778
+    "name_html" : "Isle of Anglesey"
   },
-  {
-    "objectid" : 1260,
-    "nuts_id" : "UKL12",
+  "UKL12": {
     "name_latin" : "Gwynedd",
     "nuts_name" : "Gwynedd",
     "name_ascii" : "Gwynedd",
-    "name_html" : "Gwynedd",
-    "sort_order" : 1779
+    "name_html" : "Gwynedd"
   },
-  {
-    "objectid" : 1261,
-    "nuts_id" : "UKL13",
+  "UKL13": {
     "name_latin" : "Conwy and Denbighshire",
     "nuts_name" : "Conwy and Denbighshire",
     "name_ascii" : "Conwy and Denbighshire",
-    "name_html" : "Conwy and Denbighshire",
-    "sort_order" : 1780
+    "name_html" : "Conwy and Denbighshire"
   },
-  {
-    "objectid" : 1262,
-    "nuts_id" : "UKL14",
+  "UKL14": {
     "name_latin" : "South West Wales",
     "nuts_name" : "South West Wales",
     "name_ascii" : "South West Wales",
-    "name_html" : "South West Wales",
-    "sort_order" : 1781
+    "name_html" : "South West Wales"
   },
-  {
-    "objectid" : 1263,
-    "nuts_id" : "UKL15",
+  "UKL15": {
     "name_latin" : "Central Valleys",
     "nuts_name" : "Central Valleys",
     "name_ascii" : "Central Valleys",
-    "name_html" : "Central Valleys",
-    "sort_order" : 1782
+    "name_html" : "Central Valleys"
   },
-  {
-    "objectid" : 1264,
-    "nuts_id" : "UKL17",
+  "UKL17": {
     "name_latin" : "Bridgend and Neath Port Talbot",
     "nuts_name" : "Bridgend and Neath Port Talbot",
     "name_ascii" : "Bridgend and Neath Port Talbot",
-    "name_html" : "Bridgend and Neath Port Talbot",
-    "sort_order" : 1784
+    "name_html" : "Bridgend and Neath Port Talbot"
   },
-  {
-    "objectid" : 1265,
-    "nuts_id" : "UKL18",
+  "UKL18": {
     "name_latin" : "Swansea",
     "nuts_name" : "Swansea",
     "name_ascii" : "Swansea",
-    "name_html" : "Swansea",
-    "sort_order" : 1785
+    "name_html" : "Swansea"
   },
-  {
-    "objectid" : 1266,
-    "nuts_id" : "UKL22",
+  "UKL22": {
     "name_latin" : "Cardiff and Vale of Glamorgan",
     "nuts_name" : "Cardiff and Vale of Glamorgan",
     "name_ascii" : "Cardiff and Vale of Glamorgan",
-    "name_html" : "Cardiff and Vale of Glamorgan",
-    "sort_order" : 1788
+    "name_html" : "Cardiff and Vale of Glamorgan"
   },
-  {
-    "objectid" : 1267,
-    "nuts_id" : "UKL23",
+  "UKL23": {
     "name_latin" : "Flintshire and Wrexham",
     "nuts_name" : "Flintshire and Wrexham",
     "name_ascii" : "Flintshire and Wrexham",
-    "name_html" : "Flintshire and Wrexham",
-    "sort_order" : 1789
+    "name_html" : "Flintshire and Wrexham"
   },
-  {
-    "objectid" : 1268,
-    "nuts_id" : "UKL24",
+  "UKL24": {
     "name_latin" : "Powys",
     "nuts_name" : "Powys",
     "name_ascii" : "Powys",
-    "name_html" : "Powys",
-    "sort_order" : 1790
+    "name_html" : "Powys"
   },
-  {
-    "objectid" : 1269,
-    "nuts_id" : "UKM21",
+  "UKM21": {
     "name_latin" : "Angus and Dundee City",
     "nuts_name" : "Angus and Dundee City",
     "name_ascii" : "Angus and Dundee City",
-    "name_html" : "Angus and Dundee City",
-    "sort_order" : 1793
+    "name_html" : "Angus and Dundee City"
   },
-  {
-    "objectid" : 1270,
-    "nuts_id" : "UKM23",
+  "UKM23": {
     "name_latin" : "East Lothian and Midlothian",
     "nuts_name" : "East Lothian and Midlothian",
     "name_ascii" : "East Lothian and Midlothian",
-    "name_html" : "East Lothian and Midlothian",
-    "sort_order" : 1795
+    "name_html" : "East Lothian and Midlothian"
   },
-  {
-    "objectid" : 1271,
-    "nuts_id" : "UKM24",
+  "UKM24": {
     "name_latin" : "Scottish Borders",
     "nuts_name" : "Scottish Borders",
     "name_ascii" : "Scottish Borders",
-    "name_html" : "Scottish Borders",
-    "sort_order" : 1796
+    "name_html" : "Scottish Borders"
   },
-  {
-    "objectid" : 1272,
-    "nuts_id" : "UKM25",
+  "UKM25": {
     "name_latin" : "Edinburgh, City of",
     "nuts_name" : "Edinburgh, City of",
     "name_ascii" : "Edinburgh, City Of",
-    "name_html" : "Edinburgh, City Of",
-    "sort_order" : 1797
+    "name_html" : "Edinburgh, City Of"
   },
-  {
-    "objectid" : 1273,
-    "nuts_id" : "UKM26",
+  "UKM26": {
     "name_latin" : "Falkirk",
     "nuts_name" : "Falkirk",
     "name_ascii" : "Falkirk",
-    "name_html" : "Falkirk",
-    "sort_order" : 1798
+    "name_html" : "Falkirk"
   },
-  {
-    "objectid" : 1274,
-    "nuts_id" : "UKM27",
+  "UKM27": {
     "name_latin" : "Perth & Kinross and Stirling",
     "nuts_name" : "Perth & Kinross and Stirling",
     "name_ascii" : "Perth & Kinross and Stirling",
-    "name_html" : "Perth & Kinross and Stirling",
-    "sort_order" : 1799
+    "name_html" : "Perth & Kinross and Stirling"
   },
-  {
-    "objectid" : 1275,
-    "nuts_id" : "UKM28",
+  "UKM28": {
     "name_latin" : "West Lothian",
     "nuts_name" : "West Lothian",
     "name_ascii" : "West Lothian",
-    "name_html" : "West Lothian",
-    "sort_order" : 1800
+    "name_html" : "West Lothian"
   },
-  {
-    "objectid" : 1276,
-    "nuts_id" : "UKM31",
+  "UKM31": {
     "name_latin" : "East Dunbartonshire, West Dunbartonshire and Helensburgh & Lomond",
     "nuts_name" : "East Dunbartonshire, West Dunbartonshire and Helensburgh & Lomond",
     "name_ascii" : "East Dunbartonshire, West Dunbartonshire and Helensburgh & Lomond",
-    "name_html" : "East Dunbartonshire, West Dunbartonshire and Helensburgh & Lomond",
-    "sort_order" : 1802
+    "name_html" : "East Dunbartonshire, West Dunbartonshire and Helensburgh & Lomond"
   },
-  {
-    "objectid" : 1277,
-    "nuts_id" : "UKM32",
+  "UKM32": {
     "name_latin" : "Dumfries & Galloway",
     "nuts_name" : "Dumfries & Galloway",
     "name_ascii" : "Dumfries & Galloway",
-    "name_html" : "Dumfries & Galloway",
-    "sort_order" : 1803
+    "name_html" : "Dumfries & Galloway"
   },
-  {
-    "objectid" : 1278,
-    "nuts_id" : "UKM34",
+  "UKM34": {
     "name_latin" : "Glasgow City",
     "nuts_name" : "Glasgow City",
     "name_ascii" : "Glasgow City",
-    "name_html" : "Glasgow City",
-    "sort_order" : 1805
+    "name_html" : "Glasgow City"
   },
-  {
-    "objectid" : 1279,
-    "nuts_id" : "UKM35",
+  "UKM35": {
     "name_latin" : "Inverclyde, East Renfrewshire and Renfrewshire",
     "nuts_name" : "Inverclyde, East Renfrewshire and Renfrewshire",
     "name_ascii" : "Inverclyde, East Renfrewshire and Renfrewshire",
-    "name_html" : "Inverclyde, East Renfrewshire and Renfrewshire",
-    "sort_order" : 1806
+    "name_html" : "Inverclyde, East Renfrewshire and Renfrewshire"
   },
-  {
-    "objectid" : 1280,
-    "nuts_id" : "UKM36",
+  "UKM36": {
     "name_latin" : "North Lanarkshire",
     "nuts_name" : "North Lanarkshire",
     "name_ascii" : "North Lanarkshire",
-    "name_html" : "North Lanarkshire",
-    "sort_order" : 1807
+    "name_html" : "North Lanarkshire"
   },
-  {
-    "objectid" : 1281,
-    "nuts_id" : "UKM37",
+  "UKM37": {
     "name_latin" : "South Ayrshire",
     "nuts_name" : "South Ayrshire",
     "name_ascii" : "South Ayrshire",
-    "name_html" : "South Ayrshire",
-    "sort_order" : 1808
+    "name_html" : "South Ayrshire"
   },
-  {
-    "objectid" : 1282,
-    "nuts_id" : "UKM38",
+  "UKM38": {
     "name_latin" : "South Lanarkshire",
     "nuts_name" : "South Lanarkshire",
     "name_ascii" : "South Lanarkshire",
-    "name_html" : "South Lanarkshire",
-    "sort_order" : 1809
+    "name_html" : "South Lanarkshire"
   },
-  {
-    "objectid" : 1283,
-    "nuts_id" : "UKM50",
+  "UKM50": {
     "name_latin" : "Aberdeen City and Aberdeenshire",
     "nuts_name" : "Aberdeen City and Aberdeenshire",
     "name_ascii" : "Aberdeen City and Aberdeenshire",
-    "name_html" : "Aberdeen City and Aberdeenshire",
-    "sort_order" : 1811
+    "name_html" : "Aberdeen City and Aberdeenshire"
   },
-  {
-    "objectid" : 1284,
-    "nuts_id" : "UKM62",
+  "UKM62": {
     "name_latin" : "Inverness & Nairn and Moray, Badenoch & Strathspey",
     "nuts_name" : "Inverness & Nairn and Moray, Badenoch & Strathspey",
     "name_ascii" : "Inverness & Nairn and Moray, Badenoch & Strathspey",
-    "name_html" : "Inverness & Nairn and Moray, Badenoch & Strathspey",
-    "sort_order" : 1814
+    "name_html" : "Inverness & Nairn and Moray, Badenoch & Strathspey"
   },
-  {
-    "objectid" : 1285,
-    "nuts_id" : "UKM63",
+  "UKM63": {
     "name_latin" : "Lochaber, Skye & Lochalsh, Arran & Cumbrae and Argyll & Bute",
     "nuts_name" : "Lochaber, Skye & Lochalsh, Arran & Cumbrae and Argyll & Bute",
     "name_ascii" : "Lochaber, Skye & Lochalsh, Arran & Cumbrae and Argyll & Bute",
-    "name_html" : "Lochaber, Skye & Lochalsh, Arran & Cumbrae and Argyll & Bute",
-    "sort_order" : 1815
+    "name_html" : "Lochaber, Skye & Lochalsh, Arran & Cumbrae and Argyll & Bute"
   },
-  {
-    "objectid" : 1286,
-    "nuts_id" : "UKM64",
+  "UKM64": {
     "name_latin" : "Eilean Siar (Western Isles)",
     "nuts_name" : "Eilean Siar (Western Isles)",
     "name_ascii" : "Eilean Siar (Western Isles)",
-    "name_html" : "Eilean Siar (Western Isles)",
-    "sort_order" : 1816
+    "name_html" : "Eilean Siar (Western Isles)"
   },
-  {
-    "objectid" : 1287,
-    "nuts_id" : "UKM65",
+  "UKM65": {
     "name_latin" : "Orkney Islands",
     "nuts_name" : "Orkney Islands",
     "name_ascii" : "Orkney Islands",
-    "name_html" : "Orkney Islands",
-    "sort_order" : 1817
+    "name_html" : "Orkney Islands"
   },
-  {
-    "objectid" : 1288,
-    "nuts_id" : "UKM66",
+  "UKM66": {
     "name_latin" : "Shetland Islands",
     "nuts_name" : "Shetland Islands",
     "name_ascii" : "Shetland Islands",
-    "name_html" : "Shetland Islands",
-    "sort_order" : 1818
+    "name_html" : "Shetland Islands"
   },
-  {
-    "objectid" : 1289,
-    "nuts_id" : "UKN01",
+  "UKN01": {
     "name_latin" : "Belfast",
     "nuts_name" : "Belfast",
     "name_ascii" : "Belfast",
-    "name_html" : "Belfast",
-    "sort_order" : 1821
+    "name_html" : "Belfast"
   },
-  {
-    "objectid" : 1290,
-    "nuts_id" : "UKN02",
+  "UKN02": {
     "name_latin" : "Outer Belfast",
     "nuts_name" : "Outer Belfast",
     "name_ascii" : "Outer Belfast",
-    "name_html" : "Outer Belfast",
-    "sort_order" : 1822
+    "name_html" : "Outer Belfast"
   },
-  {
-    "objectid" : 1291,
-    "nuts_id" : "UKN03",
+  "UKN03": {
     "name_latin" : "East of Northern Ireland",
     "nuts_name" : "East of Northern Ireland",
     "name_ascii" : "East of Northern Ireland",
-    "name_html" : "East of Northern Ireland",
-    "sort_order" : 1823
+    "name_html" : "East of Northern Ireland"
   },
-  {
-    "objectid" : 1292,
-    "nuts_id" : "UKN04",
+  "UKN04": {
     "name_latin" : "North of Northern Ireland",
     "nuts_name" : "North of Northern Ireland",
     "name_ascii" : "North of Northern Ireland",
-    "name_html" : "North of Northern Ireland",
-    "sort_order" : 1824
+    "name_html" : "North of Northern Ireland"
   },
-  {
-    "objectid" : 1293,
-    "nuts_id" : "ME000",
+  "ME000": {
     "name_latin" : "Crna Gora",
     "nuts_name" : "Црна Гора",
     "name_ascii" : "Crna Gora",
-    "name_html" : "Crna Gora",
-    "sort_order" : 0
+    "name_html" : "Crna Gora"
   },
-  {
-    "objectid" : 1294,
-    "nuts_id" : "AT224",
+  "AT224": {
     "name_latin" : "Oststeiermark",
     "nuts_name" : "Oststeiermark",
     "name_ascii" : "Oststeiermark",
-    "name_html" : "Oststeiermark",
-    "sort_order" : 1277
+    "name_html" : "Oststeiermark"
   },
-  {
-    "objectid" : 1295,
-    "nuts_id" : "AT315",
+  "AT315": {
     "name_latin" : "Traunviertel",
     "nuts_name" : "Traunviertel",
     "name_ascii" : "Traunviertel",
-    "name_html" : "Traunviertel",
-    "sort_order" : 1286
+    "name_html" : "Traunviertel"
   },
-  {
-    "objectid" : 1296,
-    "nuts_id" : "AT331",
+  "AT331": {
     "name_latin" : "Außerfern",
     "nuts_name" : "Außerfern",
     "name_ascii" : "Ausserfern",
-    "name_html" : "Au&#x00DF;erfern",
-    "sort_order" : 1292
+    "name_html" : "Au&#x00DF;erfern"
   },
-  {
-    "objectid" : 1297,
-    "nuts_id" : "AT341",
+  "AT341": {
     "name_latin" : "Bludenz-Bregenzer Wald",
     "nuts_name" : "Bludenz-Bregenzer Wald",
     "name_ascii" : "Bludenz-Bregenzer Wald",
-    "name_html" : "Bludenz-Bregenzer Wald",
-    "sort_order" : 1298
+    "name_html" : "Bludenz-Bregenzer Wald"
   },
-  {
-    "objectid" : 1298,
-    "nuts_id" : "BE235",
+  "BE235": {
     "name_latin" : "Arr. Oudenaarde",
     "nuts_name" : "Arr. Oudenaarde",
     "name_ascii" : "Arr. Oudenaarde",
-    "name_html" : "Arr. Oudenaarde",
-    "sort_order" : 19
+    "name_html" : "Arr. Oudenaarde"
   },
-  {
-    "objectid" : 1299,
-    "nuts_id" : "BE258",
+  "BE258": {
     "name_latin" : "Arr. Veurne",
     "nuts_name" : "Arr. Veurne",
     "name_ascii" : "Arr. Veurne",
-    "name_html" : "Arr. Veurne",
-    "sort_order" : 32
+    "name_html" : "Arr. Veurne"
   },
-  {
-    "objectid" : 1300,
-    "nuts_id" : "BE326",
+  "BE326": {
     "name_latin" : "Arr. Thuin",
     "nuts_name" : "Arr. Thuin",
     "name_ascii" : "Arr. Thuin",
-    "name_html" : "Arr. Thuin",
-    "sort_order" : 42
+    "name_html" : "Arr. Thuin"
   },
-  {
-    "objectid" : 1301,
-    "nuts_id" : "BE332",
+  "BE332": {
     "name_latin" : "Arr. Liège",
     "nuts_name" : "Arr. Liège",
     "name_ascii" : "Arr. Liege",
-    "name_html" : "Arr. Li&#x00E8;ge",
-    "sort_order" : 46
+    "name_html" : "Arr. Li&#x00E8;ge"
   },
-  {
-    "objectid" : 1302,
-    "nuts_id" : "BG325",
+  "BG325": {
     "name_latin" : "Silistra",
     "nuts_name" : "Силистра",
     "name_ascii" : "Silistra",
-    "name_html" : "&#x0421;&#x0438;&#x043B;&#x0438;&#x0441;&#x0442;&#x0440;&#x0430;",
-    "sort_order" : 76
+    "name_html" : "&#x0421;&#x0438;&#x043B;&#x0438;&#x0441;&#x0442;&#x0440;&#x0430;"
   },
-  {
-    "objectid" : 1303,
-    "nuts_id" : "BG331",
+  "BG331": {
     "name_latin" : "Varna",
     "nuts_name" : "Варна",
     "name_ascii" : "Varna",
-    "name_html" : "&#x0412;&#x0430;&#x0440;&#x043D;&#x0430;",
-    "sort_order" : 78
+    "name_html" : "&#x0412;&#x0430;&#x0440;&#x043D;&#x0430;"
   },
-  {
-    "objectid" : 1304,
-    "nuts_id" : "BG334",
+  "BG334": {
     "name_latin" : "Targovishte",
     "nuts_name" : "Търговище",
     "name_ascii" : "Targovishte",
-    "name_html" : "&#x0422;&#x044A;&#x0440;&#x0433;&#x043E;&#x0432;&#x0438;&#x0449;&#x0435;",
-    "sort_order" : 81
+    "name_html" : "&#x0422;&#x044A;&#x0440;&#x0433;&#x043E;&#x0432;&#x0438;&#x0449;&#x0435;"
   },
-  {
-    "objectid" : 1305,
-    "nuts_id" : "BG341",
+  "BG341": {
     "name_latin" : "Burgas",
     "nuts_name" : "Бургас",
     "name_ascii" : "Burgas",
-    "name_html" : "&#x0411;&#x0443;&#x0440;&#x0433;&#x0430;&#x0441;",
-    "sort_order" : 83
+    "name_html" : "&#x0411;&#x0443;&#x0440;&#x0433;&#x0430;&#x0441;"
   },
-  {
-    "objectid" : 1306,
-    "nuts_id" : "BG344",
+  "BG344": {
     "name_latin" : "Stara Zagora",
     "nuts_name" : "Стара Загора",
     "name_ascii" : "Stara Zagora",
-    "name_html" : "&#x0421;&#x0442;&#x0430;&#x0440;&#x0430; &#x0417;&#x0430;&#x0433;&#x043E;&#x0440;&#x0430;",
-    "sort_order" : 86
+    "name_html" : "&#x0421;&#x0442;&#x0430;&#x0440;&#x0430; &#x0417;&#x0430;&#x0433;&#x043E;&#x0440;&#x0430;"
   },
-  {
-    "objectid" : 1307,
-    "nuts_id" : "BG422",
+  "BG422": {
     "name_latin" : "Haskovo",
     "nuts_name" : "Хасково",
     "name_ascii" : "Haskovo",
-    "name_html" : "&#x0425;&#x0430;&#x0441;&#x043A;&#x043E;&#x0432;&#x043E;",
-    "sort_order" : 96
+    "name_html" : "&#x0425;&#x0430;&#x0441;&#x043A;&#x043E;&#x0432;&#x043E;"
   },
-  {
-    "objectid" : 1308,
-    "nuts_id" : "BG424",
+  "BG424": {
     "name_latin" : "Smolyan",
     "nuts_name" : "Смолян",
     "name_ascii" : "Smolyan",
-    "name_html" : "&#x0421;&#x043C;&#x043E;&#x043B;&#x044F;&#x043D;",
-    "sort_order" : 98
+    "name_html" : "&#x0421;&#x043C;&#x043E;&#x043B;&#x044F;&#x043D;"
   },
-  {
-    "objectid" : 1309,
-    "nuts_id" : "CH031",
+  "CH031": {
     "name_latin" : "Basel-Stadt",
     "nuts_name" : "Basel-Stadt",
     "name_ascii" : "Basel-Stadt",
-    "name_html" : "Basel-Stadt",
-    "sort_order" : 0
+    "name_html" : "Basel-Stadt"
   },
-  {
-    "objectid" : 1310,
-    "nuts_id" : "CH051",
+  "CH051": {
     "name_latin" : "Glarus",
     "nuts_name" : "Glarus",
     "name_ascii" : "Glarus",
-    "name_html" : "Glarus",
-    "sort_order" : 0
+    "name_html" : "Glarus"
   },
-  {
-    "objectid" : 1311,
-    "nuts_id" : "CH054",
+  "CH054": {
     "name_latin" : "Appenzell Innerrhoden",
     "nuts_name" : "Appenzell Innerrhoden",
     "name_ascii" : "Appenzell Innerrhoden",
-    "name_html" : "Appenzell Innerrhoden",
-    "sort_order" : 0
+    "name_html" : "Appenzell Innerrhoden"
   },
-  {
-    "objectid" : 1312,
-    "nuts_id" : "CZ051",
+  "CZ051": {
     "name_latin" : "Liberecký kraj",
     "nuts_name" : "Liberecký kraj",
     "name_ascii" : "Liberecky kraj",
-    "name_html" : "Libereck&#x00FD; kraj",
-    "sort_order" : 116
+    "name_html" : "Libereck&#x00FD; kraj"
   },
-  {
-    "objectid" : 1313,
-    "nuts_id" : "CZ071",
+  "CZ071": {
     "name_latin" : "Olomoucký kraj",
     "nuts_name" : "Olomoucký kraj",
     "name_ascii" : "Olomoucky kraj",
-    "name_html" : "Olomouck&#x00FD; kraj",
-    "sort_order" : 123
+    "name_html" : "Olomouck&#x00FD; kraj"
   },
-  {
-    "objectid" : 1314,
-    "nuts_id" : "DE116",
+  "DE116": {
     "name_latin" : "Rems-Murr-Kreis",
     "nuts_name" : "Rems-Murr-Kreis",
     "name_ascii" : "Rems-Murr-Kreis",
-    "name_html" : "Rems-Murr-Kreis",
-    "sort_order" : 159
+    "name_html" : "Rems-Murr-Kreis"
   },
-  {
-    "objectid" : 1315,
-    "nuts_id" : "DE11A",
+  "DE11A": {
     "name_latin" : "Schwäbisch Hall",
     "nuts_name" : "Schwäbisch Hall",
     "name_ascii" : "Schwabisch Hall",
-    "name_html" : "Schw&#x00E4;bisch Hall",
-    "sort_order" : 163
+    "name_html" : "Schw&#x00E4;bisch Hall"
   },
-  {
-    "objectid" : 1316,
-    "nuts_id" : "DE122",
+  "DE122": {
     "name_latin" : "Karlsruhe, Stadtkreis",
     "nuts_name" : "Karlsruhe, Stadtkreis",
     "name_ascii" : "Karlsruhe, Stadtkreis",
-    "name_html" : "Karlsruhe, Stadtkreis",
-    "sort_order" : 169
+    "name_html" : "Karlsruhe, Stadtkreis"
   },
-  {
-    "objectid" : 1317,
-    "nuts_id" : "DE129",
+  "DE129": {
     "name_latin" : "Pforzheim, Stadtkreis",
     "nuts_name" : "Pforzheim, Stadtkreis",
     "name_ascii" : "Pforzheim, Stadtkreis",
-    "name_html" : "Pforzheim, Stadtkreis",
-    "sort_order" : 176
+    "name_html" : "Pforzheim, Stadtkreis"
   },
-  {
-    "objectid" : 1318,
-    "nuts_id" : "DE133",
+  "DE133": {
     "name_latin" : "Emmendingen",
     "nuts_name" : "Emmendingen",
     "name_ascii" : "Emmendingen",
-    "name_html" : "Emmendingen",
-    "sort_order" : 183
+    "name_html" : "Emmendingen"
   },
-  {
-    "objectid" : 1319,
-    "nuts_id" : "DE138",
+  "DE138": {
     "name_latin" : "Konstanz",
     "nuts_name" : "Konstanz",
     "name_ascii" : "Konstanz",
-    "name_html" : "Konstanz",
-    "sort_order" : 188
+    "name_html" : "Konstanz"
   },
-  {
-    "objectid" : 1320,
-    "nuts_id" : "DE142",
+  "DE142": {
     "name_latin" : "Tübingen, Landkreis",
     "nuts_name" : "Tübingen, Landkreis",
     "name_ascii" : "Tubingen, Landkreis",
-    "name_html" : "T&#x00FC;bingen, Landkreis",
-    "sort_order" : 193
+    "name_html" : "T&#x00FC;bingen, Landkreis"
   },
-  {
-    "objectid" : 1321,
-    "nuts_id" : "DE212",
+  "DE212": {
     "name_latin" : "München, Kreisfreie Stadt",
     "nuts_name" : "München, Kreisfreie Stadt",
     "name_ascii" : "Munchen, Kreisfreie Stadt",
-    "name_html" : "M&#x00FC;nchen, Kreisfreie Stadt",
-    "sort_order" : 204
+    "name_html" : "M&#x00FC;nchen, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 1322,
-    "nuts_id" : "DE227",
+  "DE227": {
     "name_latin" : "Landshut, Landkreis",
     "nuts_name" : "Landshut, Landkreis",
     "name_ascii" : "Landshut, Landkreis",
-    "name_html" : "Landshut, Landkreis",
-    "sort_order" : 233
+    "name_html" : "Landshut, Landkreis"
   },
-  {
-    "objectid" : 1323,
-    "nuts_id" : "DE231",
+  "DE231": {
     "name_latin" : "Amberg, Kreisfreie Stadt",
     "nuts_name" : "Amberg, Kreisfreie Stadt",
     "name_ascii" : "Amberg, Kreisfreie Stadt",
-    "name_html" : "Amberg, Kreisfreie Stadt",
-    "sort_order" : 240
+    "name_html" : "Amberg, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 1324,
-    "nuts_id" : "DE237",
+  "DE237": {
     "name_latin" : "Neustadt a. d. Waldnaab",
     "nuts_name" : "Neustadt a. d. Waldnaab",
     "name_ascii" : "Neustadt a. d. Waldnaab",
-    "name_html" : "Neustadt a. d. Waldnaab",
-    "sort_order" : 246
+    "name_html" : "Neustadt a. d. Waldnaab"
   },
-  {
-    "objectid" : 1325,
-    "nuts_id" : "DE243",
+  "DE243": {
     "name_latin" : "Coburg, Kreisfreie Stadt",
     "nuts_name" : "Coburg, Kreisfreie Stadt",
     "name_ascii" : "Coburg, Kreisfreie Stadt",
-    "name_html" : "Coburg, Kreisfreie Stadt",
-    "sort_order" : 253
+    "name_html" : "Coburg, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 1326,
-    "nuts_id" : "DE24B",
+  "DE24B": {
     "name_latin" : "Kulmbach",
     "nuts_name" : "Kulmbach",
     "name_ascii" : "Kulmbach",
-    "name_html" : "Kulmbach",
-    "sort_order" : 261
+    "name_html" : "Kulmbach"
   },
-  {
-    "objectid" : 1327,
-    "nuts_id" : "DE253",
+  "DE253": {
     "name_latin" : "Fürth, Kreisfreie Stadt",
     "nuts_name" : "Fürth, Kreisfreie Stadt",
     "name_ascii" : "Furth, Kreisfreie Stadt",
-    "name_html" : "F&#x00FC;rth, Kreisfreie Stadt",
-    "sort_order" : 267
+    "name_html" : "F&#x00FC;rth, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 1328,
-    "nuts_id" : "DE258",
+  "DE258": {
     "name_latin" : "Fürth, Landkreis",
     "nuts_name" : "Fürth, Landkreis",
     "name_ascii" : "Furth, Landkreis",
-    "name_html" : "F&#x00FC;rth, Landkreis",
-    "sort_order" : 272
+    "name_html" : "F&#x00FC;rth, Landkreis"
   },
-  {
-    "objectid" : 1329,
-    "nuts_id" : "DE263",
+  "DE263": {
     "name_latin" : "Würzburg, Kreisfreie Stadt",
     "nuts_name" : "Würzburg, Kreisfreie Stadt",
     "name_ascii" : "Wurzburg, Kreisfreie Stadt",
-    "name_html" : "W&#x00FC;rzburg, Kreisfreie Stadt",
-    "sort_order" : 280
+    "name_html" : "W&#x00FC;rzburg, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 1330,
-    "nuts_id" : "DE26B",
+  "DE26B": {
     "name_latin" : "Schweinfurt, Landkreis",
     "nuts_name" : "Schweinfurt, Landkreis",
     "name_ascii" : "Schweinfurt, Landkreis",
-    "name_html" : "Schweinfurt, Landkreis",
-    "sort_order" : 288
+    "name_html" : "Schweinfurt, Landkreis"
   },
-  {
-    "objectid" : 1331,
-    "nuts_id" : "DE273",
+  "DE273": {
     "name_latin" : "Kempten (Allgäu), Kreisfreie Stadt",
     "nuts_name" : "Kempten (Allgäu), Kreisfreie Stadt",
     "name_ascii" : "Kempten (Allgau), Kreisfreie Stadt",
-    "name_html" : "Kempten (Allg&#x00E4;u), Kreisfreie Stadt",
-    "sort_order" : 293
+    "name_html" : "Kempten (Allg&#x00E4;u), Kreisfreie Stadt"
   },
-  {
-    "objectid" : 1332,
-    "nuts_id" : "DE406",
+  "DE406": {
     "name_latin" : "Dahme-Spreewald",
     "nuts_name" : "Dahme-Spreewald",
     "name_ascii" : "Dahme-Spreewald",
-    "name_html" : "Dahme-Spreewald",
-    "sort_order" : 315
+    "name_html" : "Dahme-Spreewald"
   },
-  {
-    "objectid" : 1333,
-    "nuts_id" : "DE40C",
+  "DE40C": {
     "name_latin" : "Oder-Spree",
     "nuts_name" : "Oder-Spree",
     "name_ascii" : "Oder-Spree",
-    "name_html" : "Oder-Spree",
-    "sort_order" : 321
+    "name_html" : "Oder-Spree"
   },
-  {
-    "objectid" : 1334,
-    "nuts_id" : "DE40G",
+  "DE40G": {
     "name_latin" : "Spree-Neiße",
     "nuts_name" : "Spree-Neiße",
     "name_ascii" : "Spree-Neisse",
-    "name_html" : "Spree-Nei&#x00DF;e",
-    "sort_order" : 325
+    "name_html" : "Spree-Nei&#x00DF;e"
   },
-  {
-    "objectid" : 1335,
-    "nuts_id" : "DE502",
+  "DE502": {
     "name_latin" : "Bremerhaven, Kreisfreie Stadt",
     "nuts_name" : "Bremerhaven, Kreisfreie Stadt",
     "name_ascii" : "Bremerhaven, Kreisfreie Stadt",
-    "name_html" : "Bremerhaven, Kreisfreie Stadt",
-    "sort_order" : 331
+    "name_html" : "Bremerhaven, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 1336,
-    "nuts_id" : "DE713",
+  "DE713": {
     "name_latin" : "Offenbach am Main, Kreisfreie Stadt",
     "nuts_name" : "Offenbach am Main, Kreisfreie Stadt",
     "name_ascii" : "Offenbach am Main, Kreisfreie Stadt",
-    "name_html" : "Offenbach am Main, Kreisfreie Stadt",
-    "sort_order" : 339
+    "name_html" : "Offenbach am Main, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 1337,
-    "nuts_id" : "DE71D",
+  "DE71D": {
     "name_latin" : "Rheingau-Taunus-Kreis",
     "nuts_name" : "Rheingau-Taunus-Kreis",
     "name_ascii" : "Rheingau-Taunus-Kreis",
-    "name_html" : "Rheingau-Taunus-Kreis",
-    "sort_order" : 349
+    "name_html" : "Rheingau-Taunus-Kreis"
   },
-  {
-    "objectid" : 1338,
-    "nuts_id" : "DE724",
+  "DE724": {
     "name_latin" : "Marburg-Biedenkopf",
     "nuts_name" : "Marburg-Biedenkopf",
     "name_ascii" : "Marburg-Biedenkopf",
-    "name_html" : "Marburg-Biedenkopf",
-    "sort_order" : 355
+    "name_html" : "Marburg-Biedenkopf"
   },
-  {
-    "objectid" : 1339,
-    "nuts_id" : "DE735",
+  "DE735": {
     "name_latin" : "Schwalm-Eder-Kreis",
     "nuts_name" : "Schwalm-Eder-Kreis",
     "name_ascii" : "Schwalm-Eder-Kreis",
-    "name_html" : "Schwalm-Eder-Kreis",
-    "sort_order" : 362
+    "name_html" : "Schwalm-Eder-Kreis"
   },
-  {
-    "objectid" : 1340,
-    "nuts_id" : "DE803",
+  "DE803": {
     "name_latin" : "Rostock, Kreisfreie Stadt",
     "nuts_name" : "Rostock, Kreisfreie Stadt",
     "name_ascii" : "Rostock, Kreisfreie Stadt",
-    "name_html" : "Rostock, Kreisfreie Stadt",
-    "sort_order" : 367
+    "name_html" : "Rostock, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 1341,
-    "nuts_id" : "DE80M",
+  "DE80M": {
     "name_latin" : "Nordwestmecklenburg",
     "nuts_name" : "Nordwestmecklenburg",
     "name_ascii" : "Nordwestmecklenburg",
-    "name_html" : "Nordwestmecklenburg",
-    "sort_order" : 372
+    "name_html" : "Nordwestmecklenburg"
   },
-  {
-    "objectid" : 1342,
-    "nuts_id" : "DE912",
+  "DE912": {
     "name_latin" : "Salzgitter, Kreisfreie Stadt",
     "nuts_name" : "Salzgitter, Kreisfreie Stadt",
     "name_ascii" : "Salzgitter, Kreisfreie Stadt",
-    "name_html" : "Salzgitter, Kreisfreie Stadt",
-    "sort_order" : 378
+    "name_html" : "Salzgitter, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 1343,
-    "nuts_id" : "DE943",
+  "DE943": {
     "name_latin" : "Oldenburg (Oldenburg), Kreisfreie Stadt",
     "nuts_name" : "Oldenburg (Oldenburg), Kreisfreie Stadt",
     "name_ascii" : "Oldenburg (Oldenburg), Kreisfreie Stadt",
-    "name_html" : "Oldenburg (Oldenburg), Kreisfreie Stadt",
-    "sort_order" : 411
+    "name_html" : "Oldenburg (Oldenburg), Kreisfreie Stadt"
   },
-  {
-    "objectid" : 1344,
-    "nuts_id" : "DE94E",
+  "DE94E": {
     "name_latin" : "Osnabrück, Landkreis",
     "nuts_name" : "Osnabrück, Landkreis",
     "name_ascii" : "Osnabruck, Landkreis",
-    "name_html" : "Osnabr&#x00FC;ck, Landkreis",
-    "sort_order" : 422
+    "name_html" : "Osnabr&#x00FC;ck, Landkreis"
   },
-  {
-    "objectid" : 1345,
-    "nuts_id" : "DEA12",
+  "DEA12": {
     "name_latin" : "Duisburg, Kreisfreie Stadt",
     "nuts_name" : "Duisburg, Kreisfreie Stadt",
     "name_ascii" : "Duisburg, Kreisfreie Stadt",
-    "name_html" : "Duisburg, Kreisfreie Stadt",
-    "sort_order" : 429
+    "name_html" : "Duisburg, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 1346,
-    "nuts_id" : "DEA16",
+  "DEA16": {
     "name_latin" : "Mülheim an der Ruhr,Kreisfreie Stadt",
     "nuts_name" : "Mülheim an der Ruhr,Kreisfreie Stadt",
     "name_ascii" : "Mulheim an der Ruhr,Kreisfreie Stadt",
-    "name_html" : "M&#x00FC;lheim an der Ruhr,Kreisfreie Stadt",
-    "sort_order" : 433
+    "name_html" : "M&#x00FC;lheim an der Ruhr,Kreisfreie Stadt"
   },
-  {
-    "objectid" : 1347,
-    "nuts_id" : "DEA22",
+  "DEA22": {
     "name_latin" : "Bonn, Kreisfreie Stadt",
     "nuts_name" : "Bonn, Kreisfreie Stadt",
     "name_ascii" : "Bonn, Kreisfreie Stadt",
-    "name_html" : "Bonn, Kreisfreie Stadt",
-    "sort_order" : 444
+    "name_html" : "Bonn, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 1348,
-    "nuts_id" : "DEA2A",
+  "DEA2A": {
     "name_latin" : "Oberbergischer Kreis",
     "nuts_name" : "Oberbergischer Kreis",
     "name_ascii" : "Oberbergischer Kreis",
-    "name_html" : "Oberbergischer Kreis",
-    "sort_order" : 451
+    "name_html" : "Oberbergischer Kreis"
   },
-  {
-    "objectid" : 1349,
-    "nuts_id" : "DEA31",
+  "DEA31": {
     "name_latin" : "Bottrop, Kreisfreie Stadt",
     "nuts_name" : "Bottrop, Kreisfreie Stadt",
     "name_ascii" : "Bottrop, Kreisfreie Stadt",
-    "name_html" : "Bottrop, Kreisfreie Stadt",
-    "sort_order" : 456
+    "name_html" : "Bottrop, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 1350,
-    "nuts_id" : "DEA41",
+  "DEA41": {
     "name_latin" : "Bielefeld, Kreisfreie Stadt",
     "nuts_name" : "Bielefeld, Kreisfreie Stadt",
     "name_ascii" : "Bielefeld, Kreisfreie Stadt",
-    "name_html" : "Bielefeld, Kreisfreie Stadt",
-    "sort_order" : 465
+    "name_html" : "Bielefeld, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 1351,
-    "nuts_id" : "DEB1B",
+  "DEB1B": {
     "name_latin" : "Westerwaldkreis",
     "nuts_name" : "Westerwaldkreis",
     "name_ascii" : "Westerwaldkreis",
-    "name_html" : "Westerwaldkreis",
-    "sort_order" : 497
+    "name_html" : "Westerwaldkreis"
   },
-  {
-    "objectid" : 1352,
-    "nuts_id" : "DEB24",
+  "DEB24": {
     "name_latin" : "Vulkaneifel",
     "nuts_name" : "Vulkaneifel",
     "name_ascii" : "Vulkaneifel",
-    "name_html" : "Vulkaneifel",
-    "sort_order" : 502
+    "name_html" : "Vulkaneifel"
   },
-  {
-    "objectid" : 1353,
-    "nuts_id" : "DEB31",
+  "DEB31": {
     "name_latin" : "Frankenthal (Pfalz), Kreisfreie Stadt",
     "nuts_name" : "Frankenthal (Pfalz), Kreisfreie Stadt",
     "name_ascii" : "Frankenthal (Pfalz), Kreisfreie Stadt",
-    "name_html" : "Frankenthal (Pfalz), Kreisfreie Stadt",
-    "sort_order" : 505
+    "name_html" : "Frankenthal (Pfalz), Kreisfreie Stadt"
   },
-  {
-    "objectid" : 1354,
-    "nuts_id" : "DEB36",
+  "DEB36": {
     "name_latin" : "Neustadt an der Weinstraße, Kreisfreie Stadt",
     "nuts_name" : "Neustadt an der Weinstraße, Kreisfreie Stadt",
     "name_ascii" : "Neustadt an der Weinstrasse, Kreisfreie Stadt",
-    "name_html" : "Neustadt an der Weinstra&#x00DF;e, Kreisfreie Stadt",
-    "sort_order" : 510
+    "name_html" : "Neustadt an der Weinstra&#x00DF;e, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 1355,
-    "nuts_id" : "DEB3I",
+  "DEB3I": {
     "name_latin" : "Rhein-Pfalz-Kreis",
     "nuts_name" : "Rhein-Pfalz-Kreis",
     "name_ascii" : "Rhein-Pfalz-Kreis",
-    "name_html" : "Rhein-Pfalz-Kreis",
-    "sort_order" : 522
+    "name_html" : "Rhein-Pfalz-Kreis"
   },
-  {
-    "objectid" : 1356,
-    "nuts_id" : "DEC01",
+  "DEC01": {
     "name_latin" : "Regionalverband Saarbrücken",
     "nuts_name" : "Regionalverband Saarbrücken",
     "name_ascii" : "Regionalverband Saarbrucken",
-    "name_html" : "Regionalverband Saarbr&#x00FC;cken",
-    "sort_order" : 527
+    "name_html" : "Regionalverband Saarbr&#x00FC;cken"
   },
-  {
-    "objectid" : 1357,
-    "nuts_id" : "DED2F",
+  "DED2F": {
     "name_latin" : "Sächsische Schweiz-Osterzgebirge",
     "nuts_name" : "Sächsische Schweiz-Osterzgebirge",
     "name_ascii" : "Sachsische Schweiz-Osterzgebirge",
-    "name_html" : "S&#x00E4;chsische Schweiz-Osterzgebirge",
-    "sort_order" : 539
+    "name_html" : "S&#x00E4;chsische Schweiz-Osterzgebirge"
   },
-  {
-    "objectid" : 1358,
-    "nuts_id" : "DEE03",
+  "DEE03": {
     "name_latin" : "Magdeburg, Kreisfreie Stadt",
     "nuts_name" : "Magdeburg, Kreisfreie Stadt",
     "name_ascii" : "Magdeburg, Kreisfreie Stadt",
-    "name_html" : "Magdeburg, Kreisfreie Stadt",
-    "sort_order" : 554
+    "name_html" : "Magdeburg, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 1359,
-    "nuts_id" : "DEF0A",
+  "DEF0A": {
     "name_latin" : "Plön",
     "nuts_name" : "Plön",
     "name_ascii" : "Plon",
-    "name_html" : "Pl&#x00F6;n",
-    "sort_order" : 577
+    "name_html" : "Pl&#x00F6;n"
   },
-  {
-    "objectid" : 1360,
-    "nuts_id" : "DEF0C",
+  "DEF0C": {
     "name_latin" : "Schleswig-Flensburg",
     "nuts_name" : "Schleswig-Flensburg",
     "name_ascii" : "Schleswig-Flensburg",
-    "name_html" : "Schleswig-Flensburg",
-    "sort_order" : 579
+    "name_html" : "Schleswig-Flensburg"
   },
-  {
-    "objectid" : 1361,
-    "nuts_id" : "DEG02",
+  "DEG02": {
     "name_latin" : "Gera, Kreisfreie Stadt",
     "nuts_name" : "Gera, Kreisfreie Stadt",
     "name_ascii" : "Gera, Kreisfreie Stadt",
-    "name_html" : "Gera, Kreisfreie Stadt",
-    "sort_order" : 586
+    "name_html" : "Gera, Kreisfreie Stadt"
   },
-  {
-    "objectid" : 1362,
-    "nuts_id" : "DEG0A",
+  "DEG0A": {
     "name_latin" : "Kyffhäuserkreis",
     "nuts_name" : "Kyffhäuserkreis",
     "name_ascii" : "Kyffhauserkreis",
-    "name_html" : "Kyffh&#x00E4;userkreis",
-    "sort_order" : 593
+    "name_html" : "Kyffh&#x00E4;userkreis"
   },
-  {
-    "objectid" : 1363,
-    "nuts_id" : "DEG0G",
+  "DEG0G": {
     "name_latin" : "Weimarer Land",
     "nuts_name" : "Weimarer Land",
     "name_ascii" : "Weimarer Land",
-    "name_html" : "Weimarer Land",
-    "sort_order" : 599
+    "name_html" : "Weimarer Land"
   },
-  {
-    "objectid" : 1364,
-    "nuts_id" : "DEG0M",
+  "DEG0M": {
     "name_latin" : "Altenburger Land",
     "nuts_name" : "Altenburger Land",
     "name_ascii" : "Altenburger Land",
-    "name_html" : "Altenburger Land",
-    "sort_order" : 605
+    "name_html" : "Altenburger Land"
   },
-  {
-    "objectid" : 1365,
-    "nuts_id" : "DK011",
+  "DK011": {
     "name_latin" : "Byen København",
     "nuts_name" : "Byen København",
     "name_ascii" : "Byen Kobenhavn",
-    "name_html" : "Byen K&#x00F8;benhavn",
-    "sort_order" : 133
+    "name_html" : "Byen K&#x00F8;benhavn"
   },
-  {
-    "objectid" : 1366,
-    "nuts_id" : "DK021",
+  "DK021": {
     "name_latin" : "Østsjælland",
     "nuts_name" : "Østsjælland",
     "name_ascii" : "Ostsjaelland",
-    "name_html" : "&#x00D8;stsj&#x00E6;lland",
-    "sort_order" : 138
+    "name_html" : "&#x00D8;stsj&#x00E6;lland"
   },
-  {
-    "objectid" : 1367,
-    "nuts_id" : "EE004",
+  "EE004": {
     "name_latin" : "Lääne-Eesti",
     "nuts_name" : "Lääne-Eesti",
     "name_ascii" : "Laane-Eesti",
-    "name_html" : "L&#x00E4;&#x00E4;ne-Eesti",
-    "sort_order" : 615
+    "name_html" : "L&#x00E4;&#x00E4;ne-Eesti"
   },
-  {
-    "objectid" : 1368,
-    "nuts_id" : "EL301",
+  "EL301": {
     "name_latin" : "Boreios Tomeas Athinon",
     "nuts_name" : "Βόρειος Τομέας Αθηνών",
     "name_ascii" : "Boreios Tomeas Athinon",
-    "name_html" : "&#x0392;&#x03CC;&#x03C1;&#x03B5;&#x03B9;&#x03BF;&#x03C2; &#x03A4;&#x03BF;&#x03BC;&#x03AD;&#x03B1;&#x03C2; &#x0391;&#x03B8;&#x03B7;&#x03BD;&#x03CE;&#x03BD;",
-    "sort_order" : 640
+    "name_html" : "&#x0392;&#x03CC;&#x03C1;&#x03B5;&#x03B9;&#x03BF;&#x03C2; &#x03A4;&#x03BF;&#x03BC;&#x03AD;&#x03B1;&#x03C2; &#x0391;&#x03B8;&#x03B7;&#x03BD;&#x03CE;&#x03BD;"
   },
-  {
-    "objectid" : 1369,
-    "nuts_id" : "EL304",
+  "EL304": {
     "name_latin" : "Notios Tomeas Athinon",
     "nuts_name" : "Νότιος Τομέας Αθηνών",
     "name_ascii" : "Notios Tomeas Athinon",
-    "name_html" : "&#x039D;&#x03CC;&#x03C4;&#x03B9;&#x03BF;&#x03C2; &#x03A4;&#x03BF;&#x03BC;&#x03AD;&#x03B1;&#x03C2; &#x0391;&#x03B8;&#x03B7;&#x03BD;&#x03CE;&#x03BD;",
-    "sort_order" : 643
+    "name_html" : "&#x039D;&#x03CC;&#x03C4;&#x03B9;&#x03BF;&#x03C2; &#x03A4;&#x03BF;&#x03BC;&#x03AD;&#x03B1;&#x03C2; &#x0391;&#x03B8;&#x03B7;&#x03BD;&#x03CE;&#x03BD;"
   },
-  {
-    "objectid" : 1370,
-    "nuts_id" : "EL307",
+  "EL307": {
     "name_latin" : "Peiraias, Nisoi",
     "nuts_name" : "Πειραιάς, Νήσοι",
     "name_ascii" : "Peiraias, Nisoi",
-    "name_html" : "&#x03A0;&#x03B5;&#x03B9;&#x03C1;&#x03B1;&#x03B9;&#x03AC;&#x03C2;, &#x039D;&#x03AE;&#x03C3;&#x03BF;&#x03B9;",
-    "sort_order" : 646
+    "name_html" : "&#x03A0;&#x03B5;&#x03B9;&#x03C1;&#x03B1;&#x03B9;&#x03AC;&#x03C2;, &#x039D;&#x03AE;&#x03C3;&#x03BF;&#x03B9;"
   },
-  {
-    "objectid" : 1371,
-    "nuts_id" : "EL411",
+  "EL411": {
     "name_latin" : "Lesbos, Limnos",
     "nuts_name" : "Λέσβος, Λήμνος",
     "name_ascii" : "Lesbos, Limnos",
-    "name_html" : "&#x039B;&#x03AD;&#x03C3;&#x03B2;&#x03BF;&#x03C2;, &#x039B;&#x03AE;&#x03BC;&#x03BD;&#x03BF;&#x03C2;",
-    "sort_order" : 649
+    "name_html" : "&#x039B;&#x03AD;&#x03C3;&#x03B2;&#x03BF;&#x03C2;, &#x039B;&#x03AE;&#x03BC;&#x03BD;&#x03BF;&#x03C2;"
   },
-  {
-    "objectid" : 1372,
-    "nuts_id" : "EL422",
+  "EL422": {
     "name_latin" : "Andros, Thira, Kea, Milos, Mikonos, Naxos, Paros, Siros, Tinos",
     "nuts_name" : "Άνδρος, Θήρα, Κέα, Μήλος, Μύκονος, Νάξος, Πάρος, Σύρος, Τήνος",
     "name_ascii" : "Andros, Thira, Kea, Milos, Mikonos, Naxos, Paros, Siros, Tinos",
-    "name_html" : "&#x0386;&#x03BD;&#x03B4;&#x03C1;&#x03BF;&#x03C2;, &#x0398;&#x03AE;&#x03C1;&#x03B1;, &#x039A;&#x03AD;&#x03B1;, &#x039C;&#x03AE;&#x03BB;&#x03BF;&#x03C2;, &#x039C;&#x03CD;&#x03BA;&#x03BF;&#x03BD;&#x03BF;&#x03C2;, &#x039D;&#x03AC;&#x03BE;&#x03BF;&#x03C2;, &#x",
-    "sort_order" : 654
+    "name_html" : "&#x0386;&#x03BD;&#x03B4;&#x03C1;&#x03BF;&#x03C2;, &#x0398;&#x03AE;&#x03C1;&#x03B1;, &#x039A;&#x03AD;&#x03B1;, &#x039C;&#x03AE;&#x03BB;&#x03BF;&#x03C2;, &#x039C;&#x03CD;&#x03BA;&#x03BF;&#x03BD;&#x03BF;&#x03C2;, &#x039D;&#x03AC;&#x03BE;&#x03BF;&#x03C2;, &#x"
   },
-  {
-    "objectid" : 1373,
-    "nuts_id" : "EL511",
+  "EL511": {
     "name_latin" : "Evros",
     "nuts_name" : "Έβρος",
     "name_ascii" : "Ebros",
-    "name_html" : "&#x0388;&#x03B2;&#x03C1;&#x03BF;&#x03C2;",
-    "sort_order" : 662
+    "name_html" : "&#x0388;&#x03B2;&#x03C1;&#x03BF;&#x03C2;"
   },
-  {
-    "objectid" : 1374,
-    "nuts_id" : "EL513",
+  "EL513": {
     "name_latin" : "Rodopi",
     "nuts_name" : "Ροδόπη",
     "name_ascii" : "Rodopi",
-    "name_html" : "&#x03A1;&#x03BF;&#x03B4;&#x03CC;&#x03C0;&#x03B7;",
-    "sort_order" : 664
+    "name_html" : "&#x03A1;&#x03BF;&#x03B4;&#x03CC;&#x03C0;&#x03B7;"
   },
-  {
-    "objectid" : 1375,
-    "nuts_id" : "EL515",
+  "EL515": {
     "name_latin" : "Thasos, Kavala",
     "nuts_name" : "Θάσος, Καβάλα",
     "name_ascii" : "Thasos, Kabala",
-    "name_html" : "&#x0398;&#x03AC;&#x03C3;&#x03BF;&#x03C2;, &#x039A;&#x03B1;&#x03B2;&#x03AC;&#x03BB;&#x03B1;",
-    "sort_order" : 666
+    "name_html" : "&#x0398;&#x03AC;&#x03C3;&#x03BF;&#x03C2;, &#x039A;&#x03B1;&#x03B2;&#x03AC;&#x03BB;&#x03B1;"
   },
-  {
-    "objectid" : 1376,
-    "nuts_id" : "EL522",
+  "EL522": {
     "name_latin" : "Thessaloniki",
     "nuts_name" : "Θεσσαλονίκη",
     "name_ascii" : "Thessaloniki",
-    "name_html" : "&#x0398;&#x03B5;&#x03C3;&#x03C3;&#x03B1;&#x03BB;&#x03BF;&#x03BD;&#x03AF;&#x03BA;&#x03B7;",
-    "sort_order" : 669
+    "name_html" : "&#x0398;&#x03B5;&#x03C3;&#x03C3;&#x03B1;&#x03BB;&#x03BF;&#x03BD;&#x03AF;&#x03BA;&#x03B7;"
   },
-  {
-    "objectid" : 1377,
-    "nuts_id" : "EL527",
+  "EL527": {
     "name_latin" : "Chalkidiki",
     "nuts_name" : "Χαλκιδική",
     "name_ascii" : "Xalkidiki",
-    "name_html" : "&#x03A7;&#x03B1;&#x03BB;&#x03BA;&#x03B9;&#x03B4;&#x03B9;&#x03BA;&#x03AE;",
-    "sort_order" : 674
+    "name_html" : "&#x03A7;&#x03B1;&#x03BB;&#x03BA;&#x03B9;&#x03B4;&#x03B9;&#x03BA;&#x03AE;"
   },
-  {
-    "objectid" : 1378,
-    "nuts_id" : "EL531",
+  "EL531": {
     "name_latin" : "Grebena, Kozani",
     "nuts_name" : "Γρεβενά, Κοζάνη",
     "name_ascii" : "Grebena, Kozani",
-    "name_html" : "&#x0393;&#x03C1;&#x03B5;&#x03B2;&#x03B5;&#x03BD;&#x03AC;, &#x039A;&#x03BF;&#x03B6;&#x03AC;&#x03BD;&#x03B7;",
-    "sort_order" : 676
+    "name_html" : "&#x0393;&#x03C1;&#x03B5;&#x03B2;&#x03B5;&#x03BD;&#x03AC;, &#x039A;&#x03BF;&#x03B6;&#x03AC;&#x03BD;&#x03B7;"
   },
-  {
-    "objectid" : 1379,
-    "nuts_id" : "EL542",
+  "EL542": {
     "name_latin" : "Thesprotia",
     "nuts_name" : "Θεσπρωτία",
     "name_ascii" : "Thesprotia",
-    "name_html" : "&#x0398;&#x03B5;&#x03C3;&#x03C0;&#x03C1;&#x03C9;&#x03C4;&#x03AF;&#x03B1;",
-    "sort_order" : 681
+    "name_html" : "&#x0398;&#x03B5;&#x03C3;&#x03C0;&#x03C1;&#x03C9;&#x03C4;&#x03AF;&#x03B1;"
   },
-  {
-    "objectid" : 1380,
-    "nuts_id" : "EL612",
+  "EL612": {
     "name_latin" : "Larisa",
     "nuts_name" : "Λάρισα",
     "name_ascii" : "Larisa",
-    "name_html" : "&#x039B;&#x03AC;&#x03C1;&#x03B9;&#x03C3;&#x03B1;",
-    "sort_order" : 686
+    "name_html" : "&#x039B;&#x03AC;&#x03C1;&#x03B9;&#x03C3;&#x03B1;"
   },
-  {
-    "objectid" : 1381,
-    "nuts_id" : "EL623",
+  "EL623": {
     "name_latin" : "Ithaki, Kefallinia",
     "nuts_name" : "Ιθάκη, Κεφαλληνία",
     "name_ascii" : "Ithaki, Kefallinia",
-    "name_html" : "&#x0399;&#x03B8;&#x03AC;&#x03BA;&#x03B7;, &#x039A;&#x03B5;&#x03C6;&#x03B1;&#x03BB;&#x03BB;&#x03B7;&#x03BD;&#x03AF;&#x03B1;",
-    "sort_order" : 691
+    "name_html" : "&#x0399;&#x03B8;&#x03AC;&#x03BA;&#x03B7;, &#x039A;&#x03B5;&#x03C6;&#x03B1;&#x03BB;&#x03BB;&#x03B7;&#x03BD;&#x03AF;&#x03B1;"
   },
-  {
-    "objectid" : 1382,
-    "nuts_id" : "EL631",
+  "EL631": {
     "name_latin" : "Aitoloakarnania",
     "nuts_name" : "Αιτωλοακαρνανία",
     "name_ascii" : "Aitoloakarnania",
-    "name_html" : "&#x0391;&#x03B9;&#x03C4;&#x03C9;&#x03BB;&#x03BF;&#x03B1;&#x03BA;&#x03B1;&#x03C1;&#x03BD;&#x03B1;&#x03BD;&#x03AF;&#x03B1;",
-    "sort_order" : 694
+    "name_html" : "&#x0391;&#x03B9;&#x03C4;&#x03C9;&#x03BB;&#x03BF;&#x03B1;&#x03BA;&#x03B1;&#x03C1;&#x03BD;&#x03B1;&#x03BD;&#x03AF;&#x03B1;"
   },
-  {
-    "objectid" : 1383,
-    "nuts_id" : "EL642",
+  "EL642": {
     "name_latin" : "Evvoia",
     "nuts_name" : "Εύβοια",
     "name_ascii" : "Eiboia",
-    "name_html" : "&#x0395;&#x03CD;&#x03B2;&#x03BF;&#x03B9;&#x03B1;",
-    "sort_order" : 699
+    "name_html" : "&#x0395;&#x03CD;&#x03B2;&#x03BF;&#x03B9;&#x03B1;"
   },
-  {
-    "objectid" : 1384,
-    "nuts_id" : "EL653",
+  "EL653": {
     "name_latin" : "Lakonia, Messinia",
     "nuts_name" : "Λακωνία, Μεσσηνία",
     "name_ascii" : "Lakonia, Messinia",
-    "name_html" : "&#x039B;&#x03B1;&#x03BA;&#x03C9;&#x03BD;&#x03AF;&#x03B1;, &#x039C;&#x03B5;&#x03C3;&#x03C3;&#x03B7;&#x03BD;&#x03AF;&#x03B1;",
-    "sort_order" : 706
+    "name_html" : "&#x039B;&#x03B1;&#x03BA;&#x03C9;&#x03BD;&#x03AF;&#x03B1;, &#x039C;&#x03B5;&#x03C3;&#x03C3;&#x03B7;&#x03BD;&#x03AF;&#x03B1;"
   },
-  {
-    "objectid" : 1385,
-    "nuts_id" : "ES300",
+  "ES300": {
     "name_latin" : "Madrid",
     "nuts_name" : "Madrid",
     "name_ascii" : "Madrid",
-    "name_html" : "Madrid",
-    "sort_order" : 736
+    "name_html" : "Madrid"
   },
-  {
-    "objectid" : 1386,
-    "nuts_id" : "ES411",
+  "ES411": {
     "name_latin" : "Ávila",
     "nuts_name" : "Ávila",
     "name_ascii" : "Avila",
-    "name_html" : "&#x00C1;vila",
-    "sort_order" : 739
+    "name_html" : "&#x00C1;vila"
   },
-  {
-    "objectid" : 1387,
-    "nuts_id" : "ES416",
+  "ES416": {
     "name_latin" : "Segovia",
     "nuts_name" : "Segovia",
     "name_ascii" : "Segovia",
-    "name_html" : "Segovia",
-    "sort_order" : 744
+    "name_html" : "Segovia"
   },
-  {
-    "objectid" : 1388,
-    "nuts_id" : "ES421",
+  "ES421": {
     "name_latin" : "Albacete",
     "nuts_name" : "Albacete",
     "name_ascii" : "Albacete",
-    "name_html" : "Albacete",
-    "sort_order" : 749
+    "name_html" : "Albacete"
   },
-  {
-    "objectid" : 1389,
-    "nuts_id" : "ES512",
+  "ES512": {
     "name_latin" : "Girona",
     "nuts_name" : "Girona",
     "name_ascii" : "Girona",
-    "name_html" : "Girona",
-    "sort_order" : 760
+    "name_html" : "Girona"
   },
-  {
-    "objectid" : 1390,
-    "nuts_id" : "ES521",
+  "ES521": {
     "name_latin" : "Alicante / Alacant",
     "nuts_name" : "Alicante / Alacant",
     "name_ascii" : "Alicante / Alacant",
-    "name_html" : "Alicante / Alacant",
-    "sort_order" : 764
+    "name_html" : "Alicante / Alacant"
   },
-  {
-    "objectid" : 1391,
-    "nuts_id" : "ES531",
+  "ES531": {
     "name_latin" : "Eivissa y Formentera",
     "nuts_name" : "Eivissa y Formentera",
     "name_ascii" : "Eivissa Y Formentera",
-    "name_html" : "Eivissa Y Formentera",
-    "sort_order" : 768
+    "name_html" : "Eivissa Y Formentera"
   },
-  {
-    "objectid" : 1392,
-    "nuts_id" : "ES616",
+  "ES616": {
     "name_latin" : "Jaén",
     "nuts_name" : "Jaén",
     "name_ascii" : "Jaen",
-    "name_html" : "Ja&#x00E9;n",
-    "sort_order" : 778
+    "name_html" : "Ja&#x00E9;n"
   },
-  {
-    "objectid" : 1393,
-    "nuts_id" : "ES707",
+  "ES707": {
     "name_latin" : "La Palma",
     "nuts_name" : "La Palma",
     "name_ascii" : "La Palma",
-    "name_html" : "La Palma",
-    "sort_order" : 793
+    "name_html" : "La Palma"
   },
-  {
-    "objectid" : 1394,
-    "nuts_id" : "FI1C3",
+  "FI1C3": {
     "name_latin" : "Päijät-Häme",
     "nuts_name" : "Päijät-Häme",
     "name_ascii" : "Paijat-Hame",
-    "name_html" : "P&#x00E4;ij&#x00E4;t-H&#x00E4;me",
-    "sort_order" : 1547
+    "name_html" : "P&#x00E4;ij&#x00E4;t-H&#x00E4;me"
   },
-  {
-    "objectid" : 1395,
-    "nuts_id" : "FR263",
+  "FR263": {
     "name_latin" : "Saône-et-Loire",
     "nuts_name" : "Saône-et-Loire",
     "name_ascii" : "Saone-et-Loire",
-    "name_html" : "Sa&#x00F4;ne-et-Loire",
-    "sort_order" : 837
+    "name_html" : "Sa&#x00F4;ne-et-Loire"
   },
-  {
-    "objectid" : 1396,
-    "nuts_id" : "FR411",
+  "FR411": {
     "name_latin" : "Meurthe-et-Moselle",
     "nuts_name" : "Meurthe-et-Moselle",
     "name_ascii" : "Meurthe-et-Moselle",
-    "name_html" : "Meurthe-et-Moselle",
-    "sort_order" : 845
+    "name_html" : "Meurthe-et-Moselle"
   },
-  {
-    "objectid" : 1397,
-    "nuts_id" : "FR433",
+  "FR433": {
     "name_latin" : "Haute-Saône",
     "nuts_name" : "Haute-Saône",
     "name_ascii" : "Haute-Saone",
-    "name_html" : "Haute-Sa&#x00F4;ne",
-    "sort_order" : 855
+    "name_html" : "Haute-Sa&#x00F4;ne"
   },
-  {
-    "objectid" : 1398,
-    "nuts_id" : "FR512",
+  "FR512": {
     "name_latin" : "Maine-et-Loire",
     "nuts_name" : "Maine-et-Loire",
     "name_ascii" : "Maine-et-Loire",
-    "name_html" : "Maine-et-Loire",
-    "sort_order" : 860
+    "name_html" : "Maine-et-Loire"
   },
-  {
-    "objectid" : 1399,
-    "nuts_id" : "FR522",
+  "FR522": {
     "name_latin" : "Finistère",
     "nuts_name" : "Finistère",
     "name_ascii" : "Finistere",
-    "name_html" : "Finist&#x00E8;re",
-    "sort_order" : 866
+    "name_html" : "Finist&#x00E8;re"
   },
-  {
-    "objectid" : 1400,
-    "nuts_id" : "FR533",
+  "FR533": {
     "name_latin" : "Deux-Sèvres",
     "nuts_name" : "Deux-Sèvres",
     "name_ascii" : "Deux-Sevres",
-    "name_html" : "Deux-S&#x00E8;vres",
-    "sort_order" : 872
+    "name_html" : "Deux-S&#x00E8;vres"
   },
-  {
-    "objectid" : 1401,
-    "nuts_id" : "FR614",
+  "FR614": {
     "name_latin" : "Lot-et-Garonne",
     "nuts_name" : "Lot-et-Garonne",
     "name_ascii" : "Lot-et-Garonne",
-    "name_html" : "Lot-et-Garonne",
-    "sort_order" : 879
+    "name_html" : "Lot-et-Garonne"
   },
-  {
-    "objectid" : 1402,
-    "nuts_id" : "FR622",
+  "FR622": {
     "name_latin" : "Aveyron",
     "nuts_name" : "Aveyron",
     "name_ascii" : "Aveyron",
-    "name_html" : "Aveyron",
-    "sort_order" : 883
+    "name_html" : "Aveyron"
   },
-  {
-    "objectid" : 1403,
-    "nuts_id" : "FR626",
+  "FR626": {
     "name_latin" : "Hautes-Pyrénées",
     "nuts_name" : "Hautes-Pyrénées",
     "name_ascii" : "Hautes-Pyrenees",
-    "name_html" : "Hautes-Pyr&#x00E9;n&#x00E9;es",
-    "sort_order" : 887
+    "name_html" : "Hautes-Pyr&#x00E9;n&#x00E9;es"
   },
-  {
-    "objectid" : 1404,
-    "nuts_id" : "FR712",
+  "FR712": {
     "name_latin" : "Ardèche",
     "nuts_name" : "Ardèche",
     "name_ascii" : "Ardeche",
-    "name_html" : "Ard&#x00E8;che",
-    "sort_order" : 897
+    "name_html" : "Ard&#x00E8;che"
   },
-  {
-    "objectid" : 1405,
-    "nuts_id" : "FR718",
+  "FR718": {
     "name_latin" : "Haute-Savoie",
     "nuts_name" : "Haute-Savoie",
     "name_ascii" : "Haute-Savoie",
-    "name_html" : "Haute-Savoie",
-    "sort_order" : 903
+    "name_html" : "Haute-Savoie"
   },
-  {
-    "objectid" : 1406,
-    "nuts_id" : "HR034",
+  "HR034": {
     "name_latin" : "Šibensko-kninska županija",
     "nuts_name" : "Šibensko-kninska županija",
     "name_ascii" : "Sibensko-Kninska Zupanija",
-    "name_html" : "&#x0160;ibensko-Kninska &#x017D;upanija",
-    "sort_order" : 946
+    "name_html" : "&#x0160;ibensko-Kninska &#x017D;upanija"
   },
-  {
-    "objectid" : 1407,
-    "nuts_id" : "HR041",
+  "HR041": {
     "name_latin" : "Grad Zagreb",
     "nuts_name" : "Grad Zagreb",
     "name_ascii" : "Grad Zagreb",
-    "name_html" : "Grad Zagreb",
-    "sort_order" : 951
+    "name_html" : "Grad Zagreb"
   },
-  {
-    "objectid" : 1408,
-    "nuts_id" : "HR044",
+  "HR044": {
     "name_latin" : "Varaždinska županija",
     "nuts_name" : "Varaždinska županija",
     "name_ascii" : "Varazdinska Zupanija",
-    "name_html" : "Vara&#x017E;dinska &#x017D;upanija",
-    "sort_order" : 954
+    "name_html" : "Vara&#x017E;dinska &#x017D;upanija"
   },
-  {
-    "objectid" : 1409,
-    "nuts_id" : "HR048",
+  "HR048": {
     "name_latin" : "Viroviticko-podravska županija",
     "nuts_name" : "Viroviticko-podravska županija",
     "name_ascii" : "Viroviticko-Podravska Zupanija",
-    "name_html" : "Viroviticko-Podravska &#x017D;upanija",
-    "sort_order" : 958
+    "name_html" : "Viroviticko-Podravska &#x017D;upanija"
   },
-  {
-    "objectid" : 1410,
-    "nuts_id" : "HR04C",
+  "HR04C": {
     "name_latin" : "Vukovarsko-srijemska županija",
     "nuts_name" : "Vukovarsko-srijemska županija",
     "name_ascii" : "Vukovarsko-Srijemska Zupanija",
-    "name_html" : "Vukovarsko-Srijemska &#x017D;upanija",
-    "sort_order" : 962
+    "name_html" : "Vukovarsko-Srijemska &#x017D;upanija"
   },
-  {
-    "objectid" : 1411,
-    "nuts_id" : "HU212",
+  "HU212": {
     "name_latin" : "Komárom-Esztergom",
     "nuts_name" : "Komárom-Esztergom",
     "name_ascii" : "Komarom-Esztergom",
-    "name_html" : "Kom&#x00E1;rom-Esztergom",
-    "sort_order" : 1158
+    "name_html" : "Kom&#x00E1;rom-Esztergom"
   },
-  {
-    "objectid" : 1412,
-    "nuts_id" : "HU311",
+  "HU311": {
     "name_latin" : "Borsod-Abaúj-Zemplén",
     "nuts_name" : "Borsod-Abaúj-Zemplén",
     "name_ascii" : "Borsod-Abauj-Zemplen",
-    "name_html" : "Borsod-Aba&#x00FA;j-Zempl&#x00E9;n",
-    "sort_order" : 1170
+    "name_html" : "Borsod-Aba&#x00FA;j-Zempl&#x00E9;n"
   },
-  {
-    "objectid" : 1413,
-    "nuts_id" : "HU323",
+  "HU323": {
     "name_latin" : "Szabolcs-Szatmár-Bereg",
     "nuts_name" : "Szabolcs-Szatmár-Bereg",
     "name_ascii" : "Szabolcs-Szatmar-Bereg",
-    "name_html" : "Szabolcs-Szatm&#x00E1;r-Bereg",
-    "sort_order" : 1176
+    "name_html" : "Szabolcs-Szatm&#x00E1;r-Bereg"
   },
-  {
-    "objectid" : 1414,
-    "nuts_id" : "IE013",
+  "IE013": {
     "name_latin" : "West",
     "nuts_name" : "West",
     "name_ascii" : "West",
-    "name_html" : "West",
-    "sort_order" : 627
+    "name_html" : "West"
   },
-  {
-    "objectid" : 1415,
-    "nuts_id" : "IE022",
+  "IE022": {
     "name_latin" : "Mid-East",
     "nuts_name" : "Mid-East",
     "name_ascii" : "Mid-East",
-    "name_html" : "Mid-East",
-    "sort_order" : 630
+    "name_html" : "Mid-East"
   },
-  {
-    "objectid" : 1416,
-    "nuts_id" : "ITF48",
+  "ITF48": {
     "name_latin" : "Barletta-Andria-Trani",
     "nuts_name" : "Barletta-Andria-Trani",
     "name_ascii" : "Barletta-Andria-Trani",
-    "name_html" : "Barletta-Andria-Trani",
-    "sort_order" : 1020
+    "name_html" : "Barletta-Andria-Trani"
   },
-  {
-    "objectid" : 1417,
-    "nuts_id" : "ITG11",
+  "ITG11": {
     "name_latin" : "Trapani",
     "nuts_name" : "Trapani",
     "name_ascii" : "Trapani",
-    "name_html" : "Trapani",
-    "sort_order" : 1032
+    "name_html" : "Trapani"
   },
-  {
-    "objectid" : 1418,
-    "nuts_id" : "ITG16",
+  "ITG16": {
     "name_latin" : "Enna",
     "nuts_name" : "Enna",
     "name_ascii" : "Enna",
-    "name_html" : "Enna",
-    "sort_order" : 1037
+    "name_html" : "Enna"
   },
-  {
-    "objectid" : 1419,
-    "nuts_id" : "ITG2A",
+  "ITG2A": {
     "name_latin" : "Ogliastra",
     "nuts_name" : "Ogliastra",
     "name_ascii" : "Ogliastra",
-    "name_html" : "Ogliastra",
-    "sort_order" : 1047
+    "name_html" : "Ogliastra"
   },
-  {
-    "objectid" : 1420,
-    "nuts_id" : "ITH43",
+  "ITH43": {
     "name_latin" : "Gorizia",
     "nuts_name" : "Gorizia",
     "name_ascii" : "Gorizia",
-    "name_html" : "Gorizia",
-    "sort_order" : 1066
+    "name_html" : "Gorizia"
   },
-  {
-    "objectid" : 1421,
-    "nuts_id" : "ITH53",
+  "ITH53": {
     "name_latin" : "Reggio nell'Emilia",
     "nuts_name" : "Reggio nell'Emilia",
     "name_ascii" : "Reggio Nell'Emilia",
-    "name_html" : "Reggio Nell'Emilia",
-    "sort_order" : 1071
+    "name_html" : "Reggio Nell'Emilia"
   },
-  {
-    "objectid" : 1422,
-    "nuts_id" : "ITI11",
+  "ITI11": {
     "name_latin" : "Massa-Carrara",
     "nuts_name" : "Massa-Carrara",
     "name_ascii" : "Massa-Carrara",
-    "name_html" : "Massa-Carrara",
-    "sort_order" : 1080
+    "name_html" : "Massa-Carrara"
   },
-  {
-    "objectid" : 1423,
-    "nuts_id" : "ITI21",
+  "ITI21": {
     "name_latin" : "Perugia",
     "nuts_name" : "Perugia",
     "name_ascii" : "Perugia",
-    "name_html" : "Perugia",
-    "sort_order" : 1091
+    "name_html" : "Perugia"
   },
-  {
-    "objectid" : 1424,
-    "nuts_id" : "LV009",
+  "LV009": {
     "name_latin" : "Zemgale",
     "nuts_name" : "Zemgale",
     "name_ascii" : "Zemgale",
-    "name_html" : "Zemgale",
-    "sort_order" : 1123
+    "name_html" : "Zemgale"
   },
-  {
-    "objectid" : 1425,
-    "nuts_id" : "NL113",
+  "NL113": {
     "name_latin" : "Overig Groningen",
     "nuts_name" : "Overig Groningen",
     "name_ascii" : "Overig Groningen",
-    "name_html" : "Overig Groningen",
-    "sort_order" : 1197
+    "name_html" : "Overig Groningen"
   },
-  {
-    "objectid" : 1426,
-    "nuts_id" : "NL131",
+  "NL131": {
     "name_latin" : "Noord-Drenthe",
     "nuts_name" : "Noord-Drenthe",
     "name_ascii" : "Noord-Drenthe",
-    "name_html" : "Noord-Drenthe",
-    "sort_order" : 1203
+    "name_html" : "Noord-Drenthe"
   },
-  {
-    "objectid" : 1427,
-    "nuts_id" : "NL211",
+  "NL211": {
     "name_latin" : "Noord-Overijssel",
     "nuts_name" : "Noord-Overijssel",
     "name_ascii" : "Noord-Overijssel",
-    "name_html" : "Noord-Overijssel",
-    "sort_order" : 1208
+    "name_html" : "Noord-Overijssel"
   },
-  {
-    "objectid" : 1428,
-    "nuts_id" : "NL226",
+  "NL226": {
     "name_latin" : "Arnhem/Nijmegen",
     "nuts_name" : "Arnhem/Nijmegen",
     "name_ascii" : "Arnhem/Nijmegen",
-    "name_html" : "Arnhem/Nijmegen",
-    "sort_order" : 1215
+    "name_html" : "Arnhem/Nijmegen"
   },
-  {
-    "objectid" : 1429,
-    "nuts_id" : "NL321",
+  "NL321": {
     "name_latin" : "Kop van Noord-Holland",
     "nuts_name" : "Kop van Noord-Holland",
     "name_ascii" : "Kop Van Noord-Holland",
-    "name_html" : "Kop Van Noord-Holland",
-    "sort_order" : 1222
+    "name_html" : "Kop Van Noord-Holland"
   },
-  {
-    "objectid" : 1430,
-    "nuts_id" : "NL337",
+  "NL337": {
     "name_latin" : "Agglomeratie Leiden en Bollenstreek",
     "nuts_name" : "Agglomeratie Leiden en Bollenstreek",
     "name_ascii" : "Agglomeratie Leiden en Bollenstreek",
-    "name_html" : "Agglomeratie Leiden en Bollenstreek",
-    "sort_order" : 1232
+    "name_html" : "Agglomeratie Leiden en Bollenstreek"
   },
-  {
-    "objectid" : 1431,
-    "nuts_id" : "NO061",
+  "NO061": {
     "name_latin" : "Sør-Trøndelag",
     "nuts_name" : "Sør-Trøndelag",
     "name_ascii" : "Sor-Trondelag",
-    "name_html" : "S&#x00F8;r-Tr&#x00F8;ndelag",
-    "sort_order" : 0
+    "name_html" : "S&#x00F8;r-Tr&#x00F8;ndelag"
   },
-  {
-    "objectid" : 1432,
-    "nuts_id" : "PL113",
+  "PL113": {
     "name_latin" : "Miasto Lódz",
     "nuts_name" : "Miasto Lódz",
     "name_ascii" : "Miasto Lodz",
-    "name_html" : "Miasto L&#x00F3;dz",
-    "sort_order" : 1306
+    "name_html" : "Miasto L&#x00F3;dz"
   },
-  {
-    "objectid" : 1433,
-    "nuts_id" : "PL127",
+  "PL127": {
     "name_latin" : "Miasto Warszawa",
     "nuts_name" : "Miasto Warszawa",
     "name_ascii" : "Miasto Warszawa",
-    "name_html" : "Miasto Warszawa",
-    "sort_order" : 1312
+    "name_html" : "Miasto Warszawa"
   },
-  {
-    "objectid" : 1434,
-    "nuts_id" : "PL12E",
+  "PL12E": {
     "name_latin" : "Siedlecki",
     "nuts_name" : "Siedlecki",
     "name_ascii" : "Siedlecki",
-    "name_html" : "Siedlecki",
-    "sort_order" : 1319
+    "name_html" : "Siedlecki"
   },
-  {
-    "objectid" : 1435,
-    "nuts_id" : "PL213",
+  "PL213": {
     "name_latin" : "Miasto Kraków",
     "nuts_name" : "Miasto Kraków",
     "name_ascii" : "Miasto Krakow",
-    "name_html" : "Miasto Krak&#x00F3;w",
-    "sort_order" : 1322
+    "name_html" : "Miasto Krak&#x00F3;w"
   },
-  {
-    "objectid" : 1436,
-    "nuts_id" : "PL227",
+  "PL227": {
     "name_latin" : "Rybnicki",
     "nuts_name" : "Rybnicki",
     "name_ascii" : "Rybnicki",
-    "name_html" : "Rybnicki",
-    "sort_order" : 1331
+    "name_html" : "Rybnicki"
   },
-  {
-    "objectid" : 1437,
-    "nuts_id" : "PL323",
+  "PL323": {
     "name_latin" : "Krosnienski",
     "nuts_name" : "Krosnienski",
     "name_ascii" : "Krosnienski",
-    "name_html" : "Krosnienski",
-    "sort_order" : 1344
+    "name_html" : "Krosnienski"
   },
-  {
-    "objectid" : 1438,
-    "nuts_id" : "PL332",
+  "PL332": {
     "name_latin" : "Sandomiersko-jedrzejowski",
     "nuts_name" : "Sandomiersko-jedrzejowski",
     "name_ascii" : "Sandomiersko-jedrzejowski",
-    "name_html" : "Sandomiersko-jedrzejowski",
-    "sort_order" : 1350
+    "name_html" : "Sandomiersko-jedrzejowski"
   },
-  {
-    "objectid" : 1439,
-    "nuts_id" : "PL416",
+  "PL416": {
     "name_latin" : "Kaliski",
     "nuts_name" : "Kaliski",
     "name_ascii" : "Kaliski",
-    "name_html" : "Kaliski",
-    "sort_order" : 1360
+    "name_html" : "Kaliski"
   },
-  {
-    "objectid" : 1440,
-    "nuts_id" : "PL424",
+  "PL424": {
     "name_latin" : "Miasto Szczecin",
     "nuts_name" : "Miasto Szczecin",
     "name_ascii" : "Miasto Szczecin",
-    "name_html" : "Miasto Szczecin",
-    "sort_order" : 1364
+    "name_html" : "Miasto Szczecin"
   },
-  {
-    "objectid" : 1441,
-    "nuts_id" : "PL432",
+  "PL432": {
     "name_latin" : "Zielonogórski",
     "nuts_name" : "Zielonogórski",
     "name_ascii" : "Zielonogorski",
-    "name_html" : "Zielonog&#x00F3;rski",
-    "sort_order" : 1370
+    "name_html" : "Zielonog&#x00F3;rski"
   },
-  {
-    "objectid" : 1442,
-    "nuts_id" : "PL516",
+  "PL516": {
     "name_latin" : "Legnicko-Glogowski",
     "nuts_name" : "Legnicko-Glogowski",
     "name_ascii" : "Legnicko-Glogowski",
-    "name_html" : "Legnicko-Glogowski",
-    "sort_order" : 1375
+    "name_html" : "Legnicko-Glogowski"
   },
-  {
-    "objectid" : 1443,
-    "nuts_id" : "PT16E",
+  "PT16E": {
     "name_latin" : "Região de Coimbra",
     "nuts_name" : "Região de Coimbra",
     "name_ascii" : "Regiao de Coimbra",
-    "name_html" : "Regi&#x00E3;o de Coimbra",
-    "sort_order" : 1417
+    "name_html" : "Regi&#x00E3;o de Coimbra"
   },
-  {
-    "objectid" : 1444,
-    "nuts_id" : "PT16J",
+  "PT16J": {
     "name_latin" : "Beiras e Serra da Estrela",
     "nuts_name" : "Beiras e Serra da Estrela",
     "name_ascii" : "Beiras e Serra Da Estrela",
-    "name_html" : "Beiras e Serra Da Estrela",
-    "sort_order" : 1422
+    "name_html" : "Beiras e Serra Da Estrela"
   },
-  {
-    "objectid" : 1445,
-    "nuts_id" : "PT185",
+  "PT185": {
     "name_latin" : "Lezíria do Tejo",
     "nuts_name" : "Lezíria do Tejo",
     "name_ascii" : "Leziria do Tejo",
-    "name_html" : "Lez&#x00ED;ria do Tejo",
-    "sort_order" : 1428
+    "name_html" : "Lez&#x00ED;ria do Tejo"
   },
-  {
-    "objectid" : 1446,
-    "nuts_id" : "PT300",
+  "PT300": {
     "name_latin" : "Região Autónoma da Madeira",
     "nuts_name" : "Região Autónoma da Madeira",
     "name_ascii" : "Regiao Autonoma da Madeira",
-    "name_html" : "Regi&#x00E3;o Aut&#x00F3;noma da Madeira",
-    "sort_order" : 1436
+    "name_html" : "Regi&#x00E3;o Aut&#x00F3;noma da Madeira"
   },
-  {
-    "objectid" : 1447,
-    "nuts_id" : "RO211",
+  "RO211": {
     "name_latin" : "Bacau",
     "nuts_name" : "Bacau",
     "name_ascii" : "Bacau",
-    "name_html" : "Bacau",
-    "sort_order" : 1458
+    "name_html" : "Bacau"
   },
-  {
-    "objectid" : 1448,
-    "nuts_id" : "RO226",
+  "RO226": {
     "name_latin" : "Vrancea",
     "nuts_name" : "Vrancea",
     "name_ascii" : "Vrancea",
-    "name_html" : "Vrancea",
-    "sort_order" : 1470
+    "name_html" : "Vrancea"
   },
-  {
-    "objectid" : 1449,
-    "nuts_id" : "RO312",
+  "RO312": {
     "name_latin" : "Calarasi",
     "nuts_name" : "Calarasi",
     "name_ascii" : "Calarasi",
-    "name_html" : "Calarasi",
-    "sort_order" : 1474
+    "name_html" : "Calarasi"
   },
-  {
-    "objectid" : 1450,
-    "nuts_id" : "RO317",
+  "RO317": {
     "name_latin" : "Teleorman",
     "nuts_name" : "Teleorman",
     "name_ascii" : "Teleorman",
-    "name_html" : "Teleorman",
-    "sort_order" : 1479
+    "name_html" : "Teleorman"
   },
-  {
-    "objectid" : 1451,
-    "nuts_id" : "SE231",
+  "SE231": {
     "name_latin" : "Hallands län",
     "nuts_name" : "Hallands län",
     "name_ascii" : "Hallands lan",
-    "name_html" : "Hallands l&#x00E4;n",
-    "sort_order" : 1584
+    "name_html" : "Hallands l&#x00E4;n"
   },
-  {
-    "objectid" : 1452,
-    "nuts_id" : "SE311",
+  "SE311": {
     "name_latin" : "Värmlands län",
     "nuts_name" : "Värmlands län",
     "name_ascii" : "Varmlands lan",
-    "name_html" : "V&#x00E4;rmlands l&#x00E4;n",
-    "sort_order" : 1588
+    "name_html" : "V&#x00E4;rmlands l&#x00E4;n"
   },
-  {
-    "objectid" : 1453,
-    "nuts_id" : "SE321",
+  "SE321": {
     "name_latin" : "Västernorrlands län",
     "nuts_name" : "Västernorrlands län",
     "name_ascii" : "Vasternorrlands lan",
-    "name_html" : "V&#x00E4;sternorrlands l&#x00E4;n",
-    "sort_order" : 1592
+    "name_html" : "V&#x00E4;sternorrlands l&#x00E4;n"
   },
-  {
-    "objectid" : 1454,
-    "nuts_id" : "SI037",
+  "SI037": {
     "name_latin" : "Jugovzhodna Slovenija",
     "nuts_name" : "Jugovzhodna Slovenija",
     "name_ascii" : "Jugovzhodna Slovenija",
-    "name_html" : "Jugovzhodna Slovenija",
-    "sort_order" : 1507
+    "name_html" : "Jugovzhodna Slovenija"
   },
-  {
-    "objectid" : 1455,
-    "nuts_id" : "SK022",
+  "SK022": {
     "name_latin" : "Trenciansky kraj",
     "nuts_name" : "Trenciansky kraj",
     "name_ascii" : "Trenciansky kraj",
-    "name_html" : "Trenciansky kraj",
-    "sort_order" : 1523
+    "name_html" : "Trenciansky kraj"
   },
-  {
-    "objectid" : 1456,
-    "nuts_id" : "SK032",
+  "SK032": {
     "name_latin" : "Banskobystrický kraj",
     "nuts_name" : "Banskobystrický kraj",
     "name_ascii" : "Banskobystricky kraj",
-    "name_html" : "Banskobystrick&#x00FD; kraj",
-    "sort_order" : 1527
+    "name_html" : "Banskobystrick&#x00FD; kraj"
   },
-  {
-    "objectid" : 1457,
-    "nuts_id" : "UKC21",
+  "UKC21": {
     "name_latin" : "Northumberland",
     "nuts_name" : "Northumberland",
     "name_ascii" : "Northumberland",
-    "name_html" : "Northumberland",
-    "sort_order" : 1608
+    "name_html" : "Northumberland"
   },
-  {
-    "objectid" : 1458,
-    "nuts_id" : "UKD12",
+  "UKD12": {
     "name_latin" : "East Cumbria",
     "nuts_name" : "East Cumbria",
     "name_ascii" : "East Cumbria",
-    "name_html" : "East Cumbria",
-    "sort_order" : 1614
+    "name_html" : "East Cumbria"
   },
-  {
-    "objectid" : 1459,
-    "nuts_id" : "UKD35",
+  "UKD35": {
     "name_latin" : "Greater Manchester South East",
     "nuts_name" : "Greater Manchester South East",
     "name_ascii" : "Greater Manchester South East",
-    "name_html" : "Greater Manchester South East",
-    "sort_order" : 1618
+    "name_html" : "Greater Manchester South East"
   },
-  {
-    "objectid" : 1460,
-    "nuts_id" : "UKD46",
+  "UKD46": {
     "name_latin" : "East Lancashire",
     "nuts_name" : "East Lancashire",
     "name_ascii" : "East Lancashire",
-    "name_html" : "East Lancashire",
-    "sort_order" : 1626
+    "name_html" : "East Lancashire"
   },
-  {
-    "objectid" : 1461,
-    "nuts_id" : "UKE41",
+  "UKE41": {
     "name_latin" : "Bradford",
     "nuts_name" : "Bradford",
     "name_ascii" : "Bradford",
-    "name_html" : "Bradford",
-    "sort_order" : 1649
+    "name_html" : "Bradford"
   },
-  {
-    "objectid" : 1462,
-    "nuts_id" : "UKF15",
+  "UKF15": {
     "name_latin" : "North Nottinghamshire",
     "nuts_name" : "North Nottinghamshire",
     "name_ascii" : "North Nottinghamshire",
-    "name_html" : "North Nottinghamshire",
-    "sort_order" : 1659
+    "name_html" : "North Nottinghamshire"
   },
-  {
-    "objectid" : 1463,
-    "nuts_id" : "UKF24",
+  "UKF24": {
     "name_latin" : "West Northamptonshire",
     "nuts_name" : "West Northamptonshire",
     "name_ascii" : "West Northamptonshire",
-    "name_html" : "West Northamptonshire",
-    "sort_order" : 1664
+    "name_html" : "West Northamptonshire"
   },
-  {
-    "objectid" : 1464,
-    "nuts_id" : "UKG39",
+  "UKG39": {
     "name_latin" : "Wolverhampton",
     "nuts_name" : "Wolverhampton",
     "name_ascii" : "Wolverhampton",
-    "name_html" : "Wolverhampton",
-    "sort_order" : 1685
+    "name_html" : "Wolverhampton"
   },
-  {
-    "objectid" : 1465,
-    "nuts_id" : "UKH15",
+  "UKH15": {
     "name_latin" : "Norwich & East Norfolk",
     "nuts_name" : "Norwich & East Norfolk",
     "name_ascii" : "Norwich & East Norfolk",
-    "name_html" : "Norwich & East Norfolk",
-    "sort_order" : 1691
+    "name_html" : "Norwich & East Norfolk"
   },
-  {
-    "objectid" : 1466,
-    "nuts_id" : "UKH24",
+  "UKH24": {
     "name_latin" : "Bedford",
     "nuts_name" : "Bedford",
     "name_ascii" : "Bedford",
-    "name_html" : "Bedford",
-    "sort_order" : 1697
+    "name_html" : "Bedford"
   },
-  {
-    "objectid" : 1467,
-    "nuts_id" : "UKH32",
+  "UKH32": {
     "name_latin" : "Thurrock",
     "nuts_name" : "Thurrock",
     "name_ascii" : "Thurrock",
-    "name_html" : "Thurrock",
-    "sort_order" : 1701
+    "name_html" : "Thurrock"
   },
-  {
-    "objectid" : 1468,
-    "nuts_id" : "UKH36",
+  "UKH36": {
     "name_latin" : "Heart of Essex",
     "nuts_name" : "Heart of Essex",
     "name_ascii" : "Heart of Essex",
-    "name_html" : "Heart of Essex",
-    "sort_order" : 1704
+    "name_html" : "Heart of Essex"
   },
-  {
-    "objectid" : 1469,
-    "nuts_id" : "UKI32",
+  "UKI32": {
     "name_latin" : "Westminster",
     "nuts_name" : "Westminster",
     "name_ascii" : "Westminster",
-    "name_html" : "Westminster",
-    "sort_order" : 1709
+    "name_html" : "Westminster"
   },
-  {
-    "objectid" : 1470,
-    "nuts_id" : "UKI75",
+  "UKI75": {
     "name_latin" : "Hounslow & Richmond upon Thames",
     "nuts_name" : "Hounslow & Richmond upon Thames",
     "name_ascii" : "Hounslow & Richmond Upon Thames",
-    "name_html" : "Hounslow & Richmond Upon Thames",
-    "sort_order" : 1732
+    "name_html" : "Hounslow & Richmond Upon Thames"
   },
-  {
-    "objectid" : 1471,
-    "nuts_id" : "UKJ21",
+  "UKJ21": {
     "name_latin" : "Brighton and Hove",
     "nuts_name" : "Brighton and Hove",
     "name_ascii" : "Brighton and Hove",
-    "name_html" : "Brighton and Hove",
-    "sort_order" : 1740
+    "name_html" : "Brighton and Hove"
   },
-  {
-    "objectid" : 1472,
-    "nuts_id" : "UKJ28",
+  "UKJ28": {
     "name_latin" : "West Sussex (North East)",
     "nuts_name" : "West Sussex (North East)",
     "name_ascii" : "West Sussex (North East)",
-    "name_html" : "West Sussex (North East)",
-    "sort_order" : 1745
+    "name_html" : "West Sussex (North East)"
   },
-  {
-    "objectid" : 1473,
-    "nuts_id" : "UKJ43",
+  "UKJ43": {
     "name_latin" : "Kent Thames Gateway",
     "nuts_name" : "Kent Thames Gateway",
     "name_ascii" : "Kent Thames Gateway",
-    "name_html" : "Kent Thames Gateway",
-    "sort_order" : 1755
+    "name_html" : "Kent Thames Gateway"
   },
-  {
-    "objectid" : 1474,
-    "nuts_id" : "UKK30",
+  "UKK30": {
     "name_latin" : "Cornwall and Isles of Scilly",
     "nuts_name" : "Cornwall and Isles of Scilly",
     "name_ascii" : "Cornwall and Isles of Scilly",
-    "name_html" : "Cornwall and Isles of Scilly",
-    "sort_order" : 1771
+    "name_html" : "Cornwall and Isles of Scilly"
   },
-  {
-    "objectid" : 1475,
-    "nuts_id" : "UKL16",
+  "UKL16": {
     "name_latin" : "Gwent Valleys",
     "nuts_name" : "Gwent Valleys",
     "name_ascii" : "Gwent Valleys",
-    "name_html" : "Gwent Valleys",
-    "sort_order" : 1783
+    "name_html" : "Gwent Valleys"
   },
-  {
-    "objectid" : 1476,
-    "nuts_id" : "UKL21",
+  "UKL21": {
     "name_latin" : "Monmouthshire and Newport",
     "nuts_name" : "Monmouthshire and Newport",
     "name_ascii" : "Monmouthshire and Newport",
-    "name_html" : "Monmouthshire and Newport",
-    "sort_order" : 1787
+    "name_html" : "Monmouthshire and Newport"
   },
-  {
-    "objectid" : 1477,
-    "nuts_id" : "UKM22",
+  "UKM22": {
     "name_latin" : "Clackmannanshire and Fife",
     "nuts_name" : "Clackmannanshire and Fife",
     "name_ascii" : "Clackmannanshire and Fife",
-    "name_html" : "Clackmannanshire and Fife",
-    "sort_order" : 1794
+    "name_html" : "Clackmannanshire and Fife"
   },
-  {
-    "objectid" : 1478,
-    "nuts_id" : "UKM33",
+  "UKM33": {
     "name_latin" : "East Ayrshire and North Ayrshire mainland",
     "nuts_name" : "East Ayrshire and North Ayrshire mainland",
     "name_ascii" : "East Ayrshire and North Ayrshire Mainland",
-    "name_html" : "East Ayrshire and North Ayrshire Mainland",
-    "sort_order" : 1804
+    "name_html" : "East Ayrshire and North Ayrshire Mainland"
   },
-  {
-    "objectid" : 1479,
-    "nuts_id" : "UKM61",
+  "UKM61": {
     "name_latin" : "Caithness & Sutherland and Ross & Cromarty",
     "nuts_name" : "Caithness & Sutherland and Ross & Cromarty",
     "name_ascii" : "Caithness & Sutherland and Ross & Cromarty",
-    "name_html" : "Caithness & Sutherland and Ross & Cromarty",
-    "sort_order" : 1813
+    "name_html" : "Caithness & Sutherland and Ross & Cromarty"
   },
-  {
-    "objectid" : 1480,
-    "nuts_id" : "UKN05",
+  "UKN05": {
     "name_latin" : "West and South of Northern Ireland",
     "nuts_name" : "West and South of Northern Ireland",
     "name_ascii" : "West and South of Northern Ireland",
-    "name_html" : "West and South of Northern Ireland",
-    "sort_order" : 1825
+    "name_html" : "West and South of Northern Ireland"
   }
-];
+};
