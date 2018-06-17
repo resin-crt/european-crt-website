@@ -366,8 +366,8 @@ let MapLayers = {
           '5': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.green.hex, fillOpacity: 0.7 },
           '6': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo.hex, fillOpacity: 0.7 },
           '7': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.cyan.hex, fillOpacity: 0.7 },
-          '8': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.orange.hex, fillOpacity: 0.7 },
-          '9': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lightBlue.hex, fillOpacity: 0.7 }
+          '8': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.orange.hex, fillOpacity: 0.7 }
+          // '9': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lightBlue.hex, fillOpacity: 0.7 }
         },
 
         /**
@@ -741,6 +741,10 @@ let MapLayers = {
      * Creates the NUTS3 layer.
      */
     createLayer: function() {
+
+      // TODO: RESIN - Add the following Copyright Aknowlegement
+      // Data source: GISCO - Eurostat (European Commission)
+      // Administrative boundaries: © EuroGeographics © UN-FAO © Turkstat.
 
       // TODO: RESIN - Check next line.
       // spinnerViewModel.isVisible = true;
