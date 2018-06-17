@@ -1005,10 +1005,17 @@
                   <div class="btn-group btn-group-justified" role="group"
                        v-bind:class="[currentTab === ':indicators' ? 'd-none' : '']" >
                     <div class="btn-group" role="group">
-                      <button type="button" class="btn btn-danger" v-on:click="selectAll">Select All</button>
+                      <button type="button" class="btn btn-danger btn-outline-danger"
+                              v-on:click="selectAll">Select All
+                      </button>
                     </div>
+
+                    <div class="crt-ver-sep"></div>
+
                     <div class="btn-group" role="group">
-                      <button type="button" class="btn btn-danger" v-on:click="deselectAll">Deselect All</button>
+                      <button type="button" class="btn btn-danger btn-outline-danger"
+                              v-on:click="deselectAll">Deselect All
+                      </button>
                     </div>
                   </div>
 
