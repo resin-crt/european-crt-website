@@ -294,7 +294,7 @@
                                 <div class="checkbox checkbox-decorator">
                                   <label>
                                     <input type="checkbox" id="g1" value="1" v-model="checkedSupergroups"
-                                           v-on:change="renderNuts3Layer('1')">
+                                           v-on:change="renderNuts3TypologyClass('1')">
                                   </label>
                                 </div>
                               </td>
@@ -319,7 +319,7 @@
                                 <div class="checkbox checkbox-decorator">
                                   <label>
                                     <input type="checkbox" id="g2" value="2" v-model="checkedSupergroups"
-                                           v-on:change="renderNuts3Layer('2')">
+                                           v-on:change="renderNuts3TypologyClass('2')">
                                   </label>
                                 </div>
                               </td>
@@ -344,7 +344,7 @@
                                 <div class="checkbox checkbox-decorator">
                                   <label>
                                     <input type="checkbox" id="g3" value="3" v-model="checkedSupergroups"
-                                           v-on:change="renderNuts3Layer('3')">
+                                           v-on:change="renderNuts3TypologyClass('3')">
                                   </label>
                                 </div>
                               </td>
@@ -369,7 +369,7 @@
                                 <div class="checkbox checkbox-decorator">
                                   <label>
                                     <input type="checkbox" id="g4" value="4" v-model="checkedSupergroups"
-                                           v-on:change="renderNuts3Layer('4')">
+                                           v-on:change="renderNuts3TypologyClass('4')">
                                   </label>
                                 </div>
                               </td>
@@ -394,7 +394,7 @@
                                 <div class="checkbox checkbox-decorator">
                                   <label>
                                     <input type="checkbox" id="g5" value="5" v-model="checkedSupergroups"
-                                           v-on:change="renderNuts3Layer('5')">
+                                           v-on:change="renderNuts3TypologyClass('5')">
                                   </label>
                                 </div>
                               </td>
@@ -419,7 +419,7 @@
                                 <div class="checkbox checkbox-decorator">
                                   <label>
                                     <input type="checkbox" id="g6" value="6" v-model="checkedSupergroups"
-                                           v-on:change="renderNuts3Layer('6')">
+                                           v-on:change="renderNuts3TypologyClass('6')">
                                   </label>
                                 </div>
                               </td>
@@ -444,7 +444,7 @@
                                 <div class="checkbox checkbox-decorator">
                                   <label>
                                     <input type="checkbox" id="g7" value="7" v-model="checkedSupergroups"
-                                           v-on:change="renderNuts3Layer('7')">
+                                           v-on:change="renderNuts3TypologyClass('7')">
                                   </label>
                                 </div>
                               </td>
@@ -469,7 +469,7 @@
                                 <div class="checkbox checkbox-decorator">
                                   <label>
                                     <input type="checkbox" id="g8" value="8" v-model="checkedSupergroups"
-                                           v-on:change="renderNuts3Layer('8')">
+                                           v-on:change="renderNuts3TypologyClass('8')">
                                   </label>
                                 </div>
                               </td>
@@ -605,7 +605,7 @@
                                 <div class="checkbox checkbox-decorator">
                                   <label>
                                     <input type="checkbox" id="g11" value="11" v-model="checkedGroups"
-                                           v-on:change="renderNuts3Layer('11')">
+                                           v-on:change="renderNuts3TypologyClass('11')">
                                   </label>
                                 </div>
                               </td>
@@ -630,7 +630,7 @@
                                 <div class="checkbox checkbox-decorator">
                                   <label>
                                     <input type="checkbox" id="g12" value="12" v-model="checkedGroups"
-                                           v-on:change="renderNuts3Layer('12')">
+                                           v-on:change="renderNuts3TypologyClass('12')">
                                   </label>
                                 </div>
                               </td>
@@ -655,7 +655,7 @@
                                 <div class="checkbox checkbox-decorator">
                                   <label>
                                     <input type="checkbox" id="g13" value="13" v-model="checkedGroups"
-                                           v-on:change="renderNuts3Layer('13')">
+                                           v-on:change="renderNuts3TypologyClass('13')">
                                   </label>
                                 </div>
                               </td>
@@ -680,7 +680,7 @@
                                 <div class="checkbox checkbox-decorator">
                                   <label>
                                     <input type="checkbox" id="g14" value="14" v-model="checkedGroups"
-                                           v-on:change="renderNuts3Layer('14')">
+                                           v-on:change="renderNuts3TypologyClass('14')">
                                   </label>
                                 </div>
                               </td>
@@ -694,10 +694,705 @@
                               </td>
                             </tr>
 
+                            <!--21-->
+                            <tr>
+                              <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': groupFillColors['21'].fillColor, 'opacity': groupFillColors['21'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g21" value="21" v-model="checkedGroups"
+                                           v-on:change="renderNuts3TypologyClass('21')">
+                                  </label>
+                                </div>
+                              </td>
+                              <td><label class="clickable-label" for="g21" v-text="groups['21'].name"></label></td>
+                              <td>
+                                <i class="material-icons help text-danger"
+                                   data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-text="tooltipIconName"
+                                   v-bind:title="groupTooltips['21']">
+                                </i>
+                              </td>
+                            </tr>
 
+                            <!--22-->
+                            <tr>
+                              <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': groupFillColors['22'].fillColor, 'opacity': groupFillColors['22'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g22" value="22" v-model="checkedGroups"
+                                           v-on:change="renderNuts3TypologyClass('22')">
+                                  </label>
+                                </div>
+                              </td>
+                              <td><label class="clickable-label" for="g22" v-text="groups['22'].name"></label></td>
+                              <td>
+                                <i class="material-icons help text-danger"
+                                   data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-text="tooltipIconName"
+                                   v-bind:title="groupTooltips['22']">
+                                </i>
+                              </td>
+                            </tr>
 
+                            <!--23-->
+                            <tr>
+                              <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': groupFillColors['23'].fillColor, 'opacity': groupFillColors['23'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g23" value="23" v-model="checkedGroups"
+                                           v-on:change="renderNuts3TypologyClass('23')">
+                                  </label>
+                                </div>
+                              </td>
+                              <td><label class="clickable-label" for="g23" v-text="groups['23'].name"></label></td>
+                              <td>
+                                <i class="material-icons help text-danger"
+                                   data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-text="tooltipIconName"
+                                   v-bind:title="groupTooltips['23']">
+                                </i>
+                              </td>
+                            </tr>
 
+                            <!--24-->
+                            <tr>
+                              <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': groupFillColors['24'].fillColor, 'opacity': groupFillColors['24'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g24" value="24" v-model="checkedGroups"
+                                           v-on:change="renderNuts3TypologyClass('24')">
+                                  </label>
+                                </div>
+                              </td>
+                              <td><label class="clickable-label" for="g24" v-text="groups['24'].name"></label></td>
+                              <td>
+                                <i class="material-icons help text-danger"
+                                   data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-text="tooltipIconName"
+                                   v-bind:title="groupTooltips['24']">
+                                </i>
+                              </td>
+                            </tr>
 
+                            <!--31-->
+                            <tr>
+                              <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': groupFillColors['31'].fillColor, 'opacity': groupFillColors['31'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g31" value="31" v-model="checkedGroups"
+                                           v-on:change="renderNuts3TypologyClass('31')">
+                                  </label>
+                                </div>
+                              </td>
+                              <td><label class="clickable-label" for="g31" v-text="groups['31'].name"></label></td>
+                              <td>
+                                <i class="material-icons help text-danger"
+                                   data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-text="tooltipIconName"
+                                   v-bind:title="groupTooltips['31']">
+                                </i>
+                              </td>
+                            </tr>
+
+                            <!--32-->
+                            <tr>
+                              <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': groupFillColors['32'].fillColor, 'opacity': groupFillColors['32'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g32" value="32" v-model="checkedGroups"
+                                           v-on:change="renderNuts3TypologyClass('32')">
+                                  </label>
+                                </div>
+                              </td>
+                              <td><label class="clickable-label" for="g32" v-text="groups['32'].name"></label></td>
+                              <td>
+                                <i class="material-icons help text-danger"
+                                   data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-text="tooltipIconName"
+                                   v-bind:title="groupTooltips['32']">
+                                </i>
+                              </td>
+                            </tr>
+
+                            <!--33-->
+                            <tr>
+                              <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': groupFillColors['33'].fillColor, 'opacity': groupFillColors['33'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g33" value="33" v-model="checkedGroups"
+                                           v-on:change="renderNuts3TypologyClass('33')">
+                                  </label>
+                                </div>
+                              </td>
+                              <td><label class="clickable-label" for="g33" v-text="groups['33'].name"></label></td>
+                              <td>
+                                <i class="material-icons help text-danger"
+                                   data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-text="tooltipIconName"
+                                   v-bind:title="groupTooltips['33']">
+                                </i>
+                              </td>
+                            </tr>
+
+                            <!--34-->
+                            <tr>
+                              <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': groupFillColors['34'].fillColor, 'opacity': groupFillColors['34'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g34" value="34" v-model="checkedGroups"
+                                           v-on:change="renderNuts3TypologyClass('34')">
+                                  </label>
+                                </div>
+                              </td>
+                              <td><label class="clickable-label" for="g34" v-text="groups['34'].name"></label></td>
+                              <td>
+                                <i class="material-icons help text-danger"
+                                   data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-text="tooltipIconName"
+                                   v-bind:title="groupTooltips['34']">
+                                </i>
+                              </td>
+                            </tr>
+
+                            <!--41-->
+                            <tr>
+                              <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': groupFillColors['41'].fillColor, 'opacity': groupFillColors['41'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g41" value="41" v-model="checkedGroups"
+                                           v-on:change="renderNuts3TypologyClass('41')">
+                                  </label>
+                                </div>
+                              </td>
+                              <td><label class="clickable-label" for="g41" v-text="groups['41'].name"></label></td>
+                              <td>
+                                <i class="material-icons help text-danger"
+                                   data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-text="tooltipIconName"
+                                   v-bind:title="groupTooltips['41']">
+                                </i>
+                              </td>
+                            </tr>
+
+                            <!--42-->
+                            <tr>
+                              <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': groupFillColors['42'].fillColor, 'opacity': groupFillColors['42'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g42" value="42" v-model="checkedGroups"
+                                           v-on:change="renderNuts3TypologyClass('42')">
+                                  </label>
+                                </div>
+                              </td>
+                              <td><label class="clickable-label" for="g42" v-text="groups['42'].name"></label></td>
+                              <td>
+                                <i class="material-icons help text-danger"
+                                   data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-text="tooltipIconName"
+                                   v-bind:title="groupTooltips['42']">
+                                </i>
+                              </td>
+                            </tr>
+
+                            <!--43-->
+                            <tr>
+                              <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': groupFillColors['43'].fillColor, 'opacity': groupFillColors['43'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g43" value="43" v-model="checkedGroups"
+                                           v-on:change="renderNuts3TypologyClass('43')">
+                                  </label>
+                                </div>
+                              </td>
+                              <td><label class="clickable-label" for="g43" v-text="groups['43'].name"></label></td>
+                              <td>
+                                <i class="material-icons help text-danger"
+                                   data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-text="tooltipIconName"
+                                   v-bind:title="groupTooltips['43']">
+                                </i>
+                              </td>
+                            </tr>
+
+                            <!--44-->
+                            <tr>
+                              <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': groupFillColors['44'].fillColor, 'opacity': groupFillColors['44'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g44" value="44" v-model="checkedGroups"
+                                           v-on:change="renderNuts3TypologyClass('44')">
+                                  </label>
+                                </div>
+                              </td>
+                              <td><label class="clickable-label" for="g44" v-text="groups['44'].name"></label></td>
+                              <td>
+                                <i class="material-icons help text-danger"
+                                   data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-text="tooltipIconName"
+                                   v-bind:title="groupTooltips['44']">
+                                </i>
+                              </td>
+                            </tr>
+
+                            <!--51-->
+                            <tr>
+                              <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': groupFillColors['51'].fillColor, 'opacity': groupFillColors['51'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g51" value="51" v-model="checkedGroups"
+                                           v-on:change="renderNuts3TypologyClass('51')">
+                                  </label>
+                                </div>
+                              </td>
+                              <td><label class="clickable-label" for="g51" v-text="groups['51'].name"></label></td>
+                              <td>
+                                <i class="material-icons help text-danger"
+                                   data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-text="tooltipIconName"
+                                   v-bind:title="groupTooltips['51']">
+                                </i>
+                              </td>
+                            </tr>
+
+                            <!--52-->
+                            <tr>
+                              <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': groupFillColors['52'].fillColor, 'opacity': groupFillColors['52'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g52" value="52" v-model="checkedGroups"
+                                           v-on:change="renderNuts3TypologyClass('52')">
+                                  </label>
+                                </div>
+                              </td>
+                              <td><label class="clickable-label" for="g52" v-text="groups['52'].name"></label></td>
+                              <td>
+                                <i class="material-icons help text-danger"
+                                   data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-text="tooltipIconName"
+                                   v-bind:title="groupTooltips['52']">
+                                </i>
+                              </td>
+                            </tr>
+
+                            <!--53-->
+                            <tr>
+                              <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': groupFillColors['53'].fillColor, 'opacity': groupFillColors['53'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g53" value="53" v-model="checkedGroups"
+                                           v-on:change="renderNuts3TypologyClass('53')">
+                                  </label>
+                                </div>
+                              </td>
+                              <td><label class="clickable-label" for="g53" v-text="groups['53'].name"></label></td>
+                              <td>
+                                <i class="material-icons help text-danger"
+                                   data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-text="tooltipIconName"
+                                   v-bind:title="groupTooltips['53']">
+                                </i>
+                              </td>
+                            </tr>
+
+                            <!--54-->
+                            <tr>
+                              <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': groupFillColors['54'].fillColor, 'opacity': groupFillColors['54'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g54" value="54" v-model="checkedGroups"
+                                           v-on:change="renderNuts3TypologyClass('54')">
+                                  </label>
+                                </div>
+                              </td>
+                              <td><label class="clickable-label" for="g54" v-text="groups['54'].name"></label></td>
+                              <td>
+                                <i class="material-icons help text-danger"
+                                   data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-text="tooltipIconName"
+                                   v-bind:title="groupTooltips['54']">
+                                </i>
+                              </td>
+                            </tr>
+
+                            <!--61-->
+                            <tr>
+                              <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': groupFillColors['61'].fillColor, 'opacity': groupFillColors['61'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g61" value="61" v-model="checkedGroups"
+                                           v-on:change="renderNuts3TypologyClass('61')">
+                                  </label>
+                                </div>
+                              </td>
+                              <td><label class="clickable-label" for="g61" v-text="groups['61'].name"></label></td>
+                              <td>
+                                <i class="material-icons help text-danger"
+                                   data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-text="tooltipIconName"
+                                   v-bind:title="groupTooltips['61']">
+                                </i>
+                              </td>
+                            </tr>
+
+                            <!--62-->
+                            <tr>
+                              <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': groupFillColors['62'].fillColor, 'opacity': groupFillColors['62'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g62" value="62" v-model="checkedGroups"
+                                           v-on:change="renderNuts3TypologyClass('62')">
+                                  </label>
+                                </div>
+                              </td>
+                              <td><label class="clickable-label" for="g62" v-text="groups['62'].name"></label></td>
+                              <td>
+                                <i class="material-icons help text-danger"
+                                   data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-text="tooltipIconName"
+                                   v-bind:title="groupTooltips['62']">
+                                </i>
+                              </td>
+                            </tr>
+
+                            <!--63-->
+                            <tr>
+                              <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': groupFillColors['63'].fillColor, 'opacity': groupFillColors['63'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g63" value="63" v-model="checkedGroups"
+                                           v-on:change="renderNuts3TypologyClass('63')">
+                                  </label>
+                                </div>
+                              </td>
+                              <td><label class="clickable-label" for="g63" v-text="groups['63'].name"></label></td>
+                              <td>
+                                <i class="material-icons help text-danger"
+                                   data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-text="tooltipIconName"
+                                   v-bind:title="groupTooltips['63']">
+                                </i>
+                              </td>
+                            </tr>
+
+                            <!--64-->
+                            <tr>
+                              <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': groupFillColors['64'].fillColor, 'opacity': groupFillColors['64'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g64" value="64" v-model="checkedGroups"
+                                           v-on:change="renderNuts3TypologyClass('64')">
+                                  </label>
+                                </div>
+                              </td>
+                              <td><label class="clickable-label" for="g64" v-text="groups['64'].name"></label></td>
+                              <td>
+                                <i class="material-icons help text-danger"
+                                   data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-text="tooltipIconName"
+                                   v-bind:title="groupTooltips['64']">
+                                </i>
+                              </td>
+                            </tr>
+
+                            <!--71-->
+                            <tr>
+                              <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': groupFillColors['71'].fillColor, 'opacity': groupFillColors['71'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g71" value="71" v-model="checkedGroups"
+                                           v-on:change="renderNuts3TypologyClass('71')">
+                                  </label>
+                                </div>
+                              </td>
+                              <td><label class="clickable-label" for="g71" v-text="groups['71'].name"></label></td>
+                              <td>
+                                <i class="material-icons help text-danger"
+                                   data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-text="tooltipIconName"
+                                   v-bind:title="groupTooltips['71']">
+                                </i>
+                              </td>
+                            </tr>
+
+                            <!--72-->
+                            <tr>
+                              <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': groupFillColors['72'].fillColor, 'opacity': groupFillColors['72'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g72" value="72" v-model="checkedGroups"
+                                           v-on:change="renderNuts3TypologyClass('72')">
+                                  </label>
+                                </div>
+                              </td>
+                              <td><label class="clickable-label" for="g72" v-text="groups['72'].name"></label></td>
+                              <td>
+                                <i class="material-icons help text-danger"
+                                   data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-text="tooltipIconName"
+                                   v-bind:title="groupTooltips['72']">
+                                </i>
+                              </td>
+                            </tr>
+
+                            <!--73-->
+                            <tr>
+                              <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': groupFillColors['73'].fillColor, 'opacity': groupFillColors['73'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g73" value="73" v-model="checkedGroups"
+                                           v-on:change="renderNuts3TypologyClass('73')">
+                                  </label>
+                                </div>
+                              </td>
+                              <td><label class="clickable-label" for="g73" v-text="groups['73'].name"></label></td>
+                              <td>
+                                <i class="material-icons help text-danger"
+                                   data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-text="tooltipIconName"
+                                   v-bind:title="groupTooltips['73']">
+                                </i>
+                              </td>
+                            </tr>
+
+                            <!--74-->
+                            <tr>
+                              <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': groupFillColors['74'].fillColor, 'opacity': groupFillColors['74'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g74" value="74" v-model="checkedGroups"
+                                           v-on:change="renderNuts3TypologyClass('74')">
+                                  </label>
+                                </div>
+                              </td>
+                              <td><label class="clickable-label" for="g74" v-text="groups['74'].name"></label></td>
+                              <td>
+                                <i class="material-icons help text-danger"
+                                   data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-text="tooltipIconName"
+                                   v-bind:title="groupTooltips['74']">
+                                </i>
+                              </td>
+                            </tr>
+
+                            <!--81-->
+                            <tr>
+                              <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': groupFillColors['81'].fillColor, 'opacity': groupFillColors['81'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g81" value="81" v-model="checkedGroups"
+                                           v-on:change="renderNuts3TypologyClass('81')">
+                                  </label>
+                                </div>
+                              </td>
+                              <td><label class="clickable-label" for="g81" v-text="groups['81'].name"></label></td>
+                              <td>
+                                <i class="material-icons help text-danger"
+                                   data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-text="tooltipIconName"
+                                   v-bind:title="groupTooltips['81']">
+                                </i>
+                              </td>
+                            </tr>
+
+                            <!--82-->
+                            <tr>
+                              <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': groupFillColors['82'].fillColor, 'opacity': groupFillColors['82'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g82" value="82" v-model="checkedGroups"
+                                           v-on:change="renderNuts3TypologyClass('82')">
+                                  </label>
+                                </div>
+                              </td>
+                              <td><label class="clickable-label" for="g82" v-text="groups['82'].name"></label></td>
+                              <td>
+                                <i class="material-icons help text-danger"
+                                   data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-text="tooltipIconName"
+                                   v-bind:title="groupTooltips['82']">
+                                </i>
+                              </td>
+                            </tr>
+
+                            <!--83-->
+                            <tr>
+                              <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': groupFillColors['83'].fillColor, 'opacity': groupFillColors['83'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g83" value="83" v-model="checkedGroups"
+                                           v-on:change="renderNuts3TypologyClass('83')">
+                                  </label>
+                                </div>
+                              </td>
+                              <td><label class="clickable-label" for="g83" v-text="groups['83'].name"></label></td>
+                              <td>
+                                <i class="material-icons help text-danger"
+                                   data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-text="tooltipIconName"
+                                   v-bind:title="groupTooltips['83']">
+                                </i>
+                              </td>
+                            </tr>
+
+                            <!--84-->
+                            <tr>
+                              <td class="narrow-td">
+                                <div class="map-polygon-colour-rect"
+                                     v-bind:style="{ 'background-color': groupFillColors['84'].fillColor, 'opacity': groupFillColors['84'].fillOpacity }">
+                                </div>
+                              </td>
+                              <td class="narrow-td">
+                                <div class="checkbox checkbox-decorator">
+                                  <label>
+                                    <input type="checkbox" id="g84" value="84" v-model="checkedGroups"
+                                           v-on:change="renderNuts3TypologyClass('84')">
+                                  </label>
+                                </div>
+                              </td>
+                              <td><label class="clickable-label" for="g84" v-text="groups['84'].name"></label></td>
+                              <td>
+                                <i class="material-icons help text-danger"
+                                   data-toggle="tooltip" data-html="true" data-placement="left"
+                                   v-text="tooltipIconName"
+                                   v-bind:title="groupTooltips['84']">
+                                </i>
+                              </td>
+                            </tr>
 
                           </tbody>
                         </table>
@@ -1113,7 +1808,10 @@
 
                 <div class="card-body">
 
-                  Overview Body
+                  <h3 v-text="nuts3Name"></h3>
+
+                  <h5 v-text="supergroupName"></h5>
+                  <h5 v-text="groupName"></h5>
 
                 </div>
               </div>

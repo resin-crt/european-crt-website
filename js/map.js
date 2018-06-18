@@ -780,13 +780,43 @@ let MapLayers = {
      */
     renderLayer: function() {
 
+      // ======== Method No 1 ================================================================================
+
       // TODO: RESIN - Reverted back to the old inefficient way to render a layer after toggling typology classed on/off.
 
-      Spatial.map.removeLayer(this.mapLayer);
+      // Spatial.map.removeLayer(this.mapLayer);
+      //
+      // this.createLayer();
 
-      this.createLayer();
+
+      // ======== Method No 2 ================================================================================
+
+      // Get the current basemap. This is used to decide the symbology of the NUTS3 polygons.
+      let currentBaseMap = toggleBaseMapViewModel.currentBaseMap;
+
+      // Get the current typology level.
+      let currentTypologyLevel = nuts3LayerSetupViewModel.currentTab;
+
+      // Check whether NUTS3 features exist or not.
+      if (this.geoJSON !== undefined || this.geoJSON !== null) {
+
+        // Loop through the NUTS3 features.
+        for (i = 0; i < this.geoJSON.features.length; i++) {
+
+          // Get the NUTS3 feature, attribute name and the class value.
+          let feature = this.geoJSON.features[i];
+          let attributeName = this.typologyLevelDictionary[currentTypologyLevel].attributeName;
+          let classValue = feature.properties[attributeName].toString();
+
+          // Render the NUTS3 polygon having the specified typology class.
+          this.renderNuts3Polygon(feature, classValue, currentTypologyLevel, currentBaseMap);
+
+        }
+
+      }
 
 
+      // ======== Method No 3 ================================================================================
 
       // TODO: RESIN - Next lines and the called functions proved to introduce a serious BUG concerning
       // the default colour rendering when calling the restStyle function.
@@ -813,6 +843,15 @@ let MapLayers = {
       //
       //   }
       //
+      // }
+
+
+      // ======== Method No 4 ================================================================================
+
+      // for (let sg in this.supergroups) {
+      //   if (this.supergroups.hasOwnProperty(sg)) {
+      //     this.changeTypologyClassStyle(sg);
+      //   }
       // }
 
     },
@@ -924,13 +963,30 @@ let MapLayers = {
     resetNuts3Style: function(feature, layer) {
 
       // Get the named basemap layer.
-      let namedBaseMap = toggleBaseMapViewModel.currentBaseMap;
+      //let namedBaseMap = toggleBaseMapViewModel.currentBaseMap;
       // TODO: RESIN
       //let namedBaseMap = 'dark';
 
       // Reset the style of the NUTS3 polygon.
-      layer.defaultOptions.style = this.namedBasemapLayers[namedBaseMap].defaultStyle;
-      this.mapLayer.resetStyle(layer);
+      // layer.defaultOptions.style = this.namedBasemapLayers[namedBaseMap].defaultStyle;
+      // this.mapLayer.resetStyle(layer);
+
+
+
+      // Get the current basemap. This is used to decide the symbology of the NUTS3 polygons.
+      let currentBaseMap = toggleBaseMapViewModel.currentBaseMap;
+
+      // Get the current typology level.
+      let currentTypologyLevel = nuts3LayerSetupViewModel.currentTab;
+
+      // Get the NUTS3 attribute name and the class value.
+      let attributeName = this.typologyLevelDictionary[currentTypologyLevel].attributeName;
+      let classValue = feature.properties[attributeName].toString();
+
+      // Render the NUTS3 polygon having the specified typology class.
+      this.renderNuts3Polygon(feature, classValue, currentTypologyLevel, currentBaseMap);
+
+
 
       //MapLayers.CommuteFlows.mapLayer.bringToFront();
 
@@ -1633,10 +1689,10 @@ let nuts3LayerSetupViewModel = new Vue({
     },
 
     /**
-     * Renders the NUTS3 layer after toggling on/off the specified typology class.
+     * Renders the regions of the NUTS3 layer having the specified typology class after toggling it on/off.
      * @param typologyClass - The typology class that is toggled on/off.
      */
-    renderNuts3Layer(typologyClass) {
+    renderNuts3TypologyClass(typologyClass) {
       if (this.currentTab === 'supergroups') {
         this.supergroups[typologyClass].visible = !this.supergroups[typologyClass].visible;
       }
@@ -1645,6 +1701,13 @@ let nuts3LayerSetupViewModel = new Vue({
       }
 
       MapLayers.nuts3.changeTypologyClassStyle(typologyClass);
+    },
+
+    /**
+     * Renders the NUTS3 layer.
+     */
+    renderNuts3Layer() {
+      MapLayers.nuts3.renderLayer();
     }
 
   }
@@ -1671,7 +1734,11 @@ let overviewInfoViewModel = new Vue({
 
     isVisible: false,
 
+    nuts3Name: '',
 
+    supergroupName: '',
+
+    groupName: ''
 
   },
 
@@ -1710,6 +1777,10 @@ let overviewInfoViewModel = new Vue({
 
     updateView(feature) {
 
+      this.nuts3Name = AppData.nuts3[feature.properties.NUTS_ID].name_ascii;
+
+      this.supergroupName = MapLayers.nuts3.supergroups[feature.properties.SG].name;
+      this.groupName = MapLayers.nuts3.groups[feature.properties.G].name;
       
 
     }
