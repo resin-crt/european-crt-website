@@ -16,7 +16,9 @@
 let AppState = {
 
   bootstrapMaterialTooltipEnabled: false,
-  isLayerRenderingSetup: false
+  isLayerRenderingSetup: false,
+
+  transparentColor: { fillColor: '#ffffff', fillOpacity: 0.01 }
 
 };
 
@@ -635,14 +637,14 @@ let MapLayers = {
      * The supergroups metadata in the form of a dictionary whose keys are the values of supergroups.
      */
     supergroups: {
-      '1': { sg: 1, groups: [11, 12, 13, 14], visible: true, name: 'This is the name of supergroup 1', description: 'This is the description of supergroup sg 1' },
-      '2': { sg: 2, groups: [21, 22, 23, 24], visible: true, name: 'This is the name of supergroup 2', description: 'This is the description of supergroup sg 2' },
-      '3': { sg: 3, groups: [31, 32, 33, 34], visible: true, name: 'This is the name of supergroup 3', description: 'This is the description of supergroup sg 3' },
-      '4': { sg: 4, groups: [41, 42, 43, 44], visible: true, name: 'This is the name of supergroup 4', description: 'This is the description of supergroup sg 4' },
-      '5': { sg: 5, groups: [51, 52, 53, 54], visible: true, name: 'This is the name of supergroup 5', description: 'This is the description of supergroup sg 5' },
-      '6': { sg: 6, groups: [61, 62, 63, 64], visible: true, name: 'This is the name of supergroup 6', description: 'This is the description of supergroup sg 6' },
-      '7': { sg: 7, groups: [71, 72, 73, 74], visible: true, name: 'This is the name of supergroup 7', description: 'This is the description of supergroup sg 7' },
-      '8': { sg: 8, groups: [81, 82, 83, 84], visible: true, name: 'This is the name of supergroup 8', description: 'This is the description of supergroup sg 8' }
+      '1': { sg: 1, groups: [11, 12, 13, 14], visible: true, name: 'Inland and Urbanised', description: 'NUTS3 regions in this supergroup are virtually all landlocked, and are predominantly located in Central and Western Europe. They are urbanised, and include a number of capital cities. The key climate hazards facing these regions, now and in the future, link particularly to fluvial flooding from rivers. There is the potential for increases in surface water flooding arising from projected growth in heavy rainfall events over the coming decades. Exposure of people, settlements and critical infrastructure to fluvial flooding is currently relatively high in a European context. However, due to their inland location and topography, exposure to coastal hazards and landslides is relatively low. These are relatively affluent and innovative areas with projected increases in migration and numbers of young people. They also have well developed road networks and high broadband access and bandwidth capacity. For reasons such as these, they have relatively low sensitivity to climate change hazards and high adaptive capacity. In effect, their vulnerability to climate change is relatively low. However, given that exposure to fluvial flooding is high, climate change risk remains an important issue.' },
+      '2': { sg: 2, groups: [21, 22, 23, 24], visible: true, name: 'Inland Hinterlands', description: 'The majority of the NUTS3 regions in this supergroup are located inland, and are concentrated in Eastern Europe and Central France. They face a wide range of climate change hazards including fluvial flooding, rising temperatures and heat waves and wild fires. These NUTS3 regions show relatively high exposure of people, settlements and critical infrastructure to fluvial flooding from rivers, but less so to coastal and landslide hazards. They have relatively low provision of critical infrastructure and broadband/bandwidth capacity relative to other parts of Europe. This is related to their peri-urban and rural locations, which also reflects in their relatively low population densities and proportions of built up area. These regions have relatively low levels of GDP and employment opportunities, and as a result are in receipt of high levels of European funding via priority allocation schemes. This can also help to explain the projections for low levels of migration into these NUTS3 regions and numbers of young people in the population in the future. Due to the range of hazards that these regions face, their notable exposure to fluvial flooding and relatively high levels of vulnerability, climate change risk is an important issue.' },
+      '3': { sg: 3, groups: [31, 32, 33, 34], visible: true, name: 'Northern Lands', description: 'As suggested by the name of this supergroup, these NUTS3 regions are located in Northern Europe. Aside from Oslo, all of Scandinavia falls within this supergroup. Also encompassed are NUTS3 regions in Western Scotland, the Baltic States and Iceland (aside from Reyjavik). As would be expected, these are cool and wet regions, although temperatures are nevertheless rising at a higher than average rate for Europe, with the number of ice days projected to fall significantly. They are also projected to experience a large increase in heavy and very heavy precipitation days compared to many other European NUTS3 regions, which may increase the chance of surface water flooding. Coastal hazards are a threat to a number of these regions, which results in high exposure of people, settlements and critical infrastructure to this hazard. These are often large regions with relatively low urban population densities and many rural settlements. Urban areas have high levels of green space, and are not densely built up. Broadband and bandwidth capacity are low, as is the density of transport networks with a low numbers of road intersections and transport nodes.  Due to low population densities, the number of critical infrastructure assets per 1000 people (e.g. airports, hospitals etc) is high from a European perspective. These are affluent and dynamic regions with projected increases in migration and numbers of young people over the coming decades. This increases their capacity to adapt to the changing climate, and lessens their level of climate risk.' },
+      '4': { sg: 4, groups: [41, 42, 43, 44], visible: true, name: 'Southern States', description: 'This supergroup is principally Mediterranean. It\'s NUTS3 regions cover the majority of Portugal and Spain, France\'s Mediterranean coast, Italy, Croatia and Greece. These areas are hot and dry, and are projected to become increasingly so over the coming decades. Landslides and coastal hazards are a feature of these areas, with people, settlements and infrastructure currently exposed to both of these hazards, particularly landslides. High soil moisture stress and projected water consumption pressure increase the threat of drought. Critical infrastructure provision and broadband/bandwidth capacity is relatively low from a European perspective. Urban population density is above the average for European NUTS3 regions, although coverage of built up areas and green spaces in urban areas is lower than the European average. Socio-economic indicators highlight that these regions face challenges, with higher than average levels of poverty risk, and lower than average GDP, employment prospects and patent applications. These factors combine to increase vulnerability to climate change hazards and increase overall levels of climate risk.' },
+      '5': { sg: 5, groups: [51, 52, 53, 54], visible: true, name: 'Northern Coasts', description: 'This supergroup covers the majority of the coastal zones of the UK, Northern France and Denmark. Parts of the Belgium, Netherlands and Northern Germany are also include. However, this supergroup does not encompass the Scandinavian or Baltic coasts. Coastal hazards are a particular feature of these NUTS3 regions. Given the high urban population densities and number of transport nodes in these areas, this translates into especially high levels of exposure of people, settlements and infrastructure to coastal hazards in comparison to other NUTS3 regions. Conversely, exposure to fluvial flooding and landslide hazards is relatively low from a European perspective.  Socio-economic factors do not suggest that these are amongst Europe\'s most affluent and dynamic regions, although also highlight that they are also not amongst the poorest. The number of young people is projected to increase as is migration, and there is relatively good access to broadband and high internet bandwidths. These factors can help to moderate levels of vulnerability to the coastal hazards that these NUTS3 regions face, although the high degree of exposure to this hazard places climate change as a key risk to economic development and health and wellbeing.' },
+      '6': { sg: 6, groups: [61, 62, 63, 64], visible: true, name: 'Landlocked and Elevated ', description: 'This predominantly inland supergroup covers the Alpine regions, upland areas of Germany, parts of the Carpathians and France\'s Massif Central and Eastern mountain ranges. The topography and high rainfall levels contribute to landslides standing out as a key hazard facing these areas. Climate change is projected to increase the frequency and intensity of heavy and very heavy rainfall days, which could result in an even greater threat of landslides. It is therefore understandable that exposure of people, settlements and critical infrastructure to landslides is high from a European perspective. Here, high transport infrastructure densities (road intersections, transport nodes) stand out as a particular issue, although population densities are relatively low. Exposure to fluvial flooding is also relatively high. Climate change induced intensification of extreme rainfall may drive exposure levels higher still. These NUTS 3 regions are relatively affluent and innovative compared to others in Europe, and are projected to experience increasing migration in the future. It is clear that climate change poses a range of risks to these regions over the coming decades, although their relatively high levels of adaptive capacity may help to lessen levels of risk.' },
+      '7': { sg: 7, groups: [71, 72, 73, 74], visible: true, name: 'North Western Heartlands', description: 'England, Belgium and Germany dominate this supergroup, although there are outliers in France, Poland and Austria. The NUTS3 regions are predominantly landlocked. Projections highlight that they will experience an increasing number of consecutive wet days and days with heavy and very heavy rainfall.  Aside from this, the hazard profile of these regions is relatively benign. As a result, exposure to hazards including fluvial flooding, landslides and coastal hazards is low in relation to other NUTS3 regions. These are generally urban regions with above average population densities, urban built environment coverage and numbers of road intersections and transport nodes (reflecting dense transport networks). GDP, employment prospects and patent applications indicators are at a level above the European average, demonstrating higher levels of adaptive capacity to climate change hazards. This can help to moderate risks associated with increasing rainfall (and potential fluvial and surface water flood risk) that these NUTS3 regions may face in the future.' },
+      '8': { sg: 8, groups: [81, 82, 83, 84], visible: true, name: 'Lowlands and Estuaries', description: 'This supergroup encompasses a relatively small number of NUTS3 regions sited in low lying and estuarine locations, particularly in the Netherlands and Denmark. Other regions sharing these geographical characteristics, for example in North Eastern Italy and Northern Germany, also fall within this supergroup. The key hazards that they face are fluvial flooding and coastal hazards, to a degree that is well above the European average. Exposure of people, settlements and critical infrastructure to these hazards is also particularly high in a European context. There are relatively few people at risk of poverty, and migration levels are projected to increase. GDP, employment prospects and patent applications indicators show values that are above the average for Europe\'s NUTS3 regions. There is also relatively high critical infrastructure provision and access to broadband and high bandwidths. This suggests that capacity to adapt to hazards is relatively high and sensitivity relatively low. However, the severity of the hazards faced by these regions, and the level of exposure to these hazards, highlights that climate change stands out as a major risk factor.' }
     },
 
     /**
@@ -937,11 +939,6 @@ let MapLayers = {
       // TODO: RESIN - It seems this line is not needed anymore after using the new version of Leaflet.
       //MapLayers.nuts3.mapLayer.bringToFront();
 
-      // Update the NUTS3 information on the page.
-      // TODO: RESIN - Implement this functionality
-      // currentMsoaViewModel.updateView(feature.properties.C, feature.properties.NM, feature.properties.NMW);
-      // currentMsoaViewModel.show();
-
       // Show the overview or details view panel and then update its contents.
       if (toggleInfoLevelViewModel.currentInfoLevel === 'overview') {
         overviewInfoViewModel.showView();
@@ -986,14 +983,16 @@ let MapLayers = {
       // Render the NUTS3 polygon having the specified typology class.
       this.renderNuts3Polygon(feature, classValue, currentTypologyLevel, currentBaseMap);
 
-
-
+      // TODO: RESIN - It seems this line is not needed anymore after using the new version of Leaflet.
       //MapLayers.CommuteFlows.mapLayer.bringToFront();
 
-      // Update the MSOA information on the page.
-      // TODO: RESIN - Implement this functionality.
-      // currentMsoaViewModel.updateView(null, '', '');
-      // currentMsoaViewModel.hide();
+      // Hide the overview or details view panel.
+      if (toggleInfoLevelViewModel.currentInfoLevel === 'overview') {
+        overviewInfoViewModel.hideView();
+      }
+      else {
+        detailsInfoViewModel.hideView();
+      }
 
     }
 
@@ -1038,7 +1037,8 @@ let Spatial = {
    * The options used to create the map.
    */
   mapOptions: {
-    center: [54.5, 35],
+    //54.5
+    center: [55, 31],
     zoom: 4,
     minZoom: 3,
     maxZoom: 18
@@ -1100,7 +1100,6 @@ let Spatial = {
 
 };
 
-
 /**
  * The HTML templates used in the web app.
  */
@@ -1109,12 +1108,12 @@ let HtmlTemplates = {
   /**
    * The HTML template used to display a tooltip with metadata about supergroups or groups.
    */
-  // TODO: RESIN - Change src and alt in img tag.
   typologyMetadataTooltip: '<div class="card">' +
-                             '<i class="display-1 material-icons" style>@@icon@@</i>' +
-                             //'<img class="card-img-top" src="https://placeimg.com/320/240/arch" alt="Card image cap">' +
+                             '<div class="crt-hor-sep"></div>' +
+                             //'<i class="display-1 text-center text-danger material-icons">@@icon@@</i>' +
+                             '<i class="display-1 text-center text-danger @@icon@@"></i>' +
                              '<div class="card-body">' +
-                               '<h5 class="card-title">@@name@@</h5>' +
+                               '<h4 class="card-title"><strong><em>@@name@@</em></strong></h4>' +
                                '<p class="card-text">@@description@@</p>' +
                              '</div>' +
                            '</div>'
@@ -1356,6 +1355,16 @@ let toggleNuts3LayerSetupViewModel = new Vue({
     },
 
     /**
+     * Shows the NUTS3 Layer setup button and panel area.
+     */
+    showNuts3LayerSetup() {
+
+      this.isNuts3LayerSetupVisible = true;
+      nuts3LayerSetupViewModel.isVisible = true;
+
+    },
+
+    /**
      * Hides the NUTS3 layer setup button and panel area.
      */
     hideNuts3LayerSetup() {
@@ -1451,6 +1460,8 @@ let nuts3LayerSetupViewModel = new Vue({
 
     isVisible: true,
 
+    keepHiddenWhileHovering: false,
+
     currentTab: 'supergroups',
 
     dictionary: {
@@ -1504,14 +1515,14 @@ let nuts3LayerSetupViewModel = new Vue({
 
       // TODO: RESIN - Replace all these with appropriate tooltip icon names.
       let icons = {
-        '1': 'class',
-        '2': 'class',
-        '3': 'class',
-        '4': 'class',
-        '5': 'class',
-        '6': 'class',
-        '7': 'class',
-        '8': 'class'
+        '1': 'far fa-building',    // fa:fas fa-building, fa:far fa-building, material:location_city
+        '2': 'fab fa-leanpub',     // material:class
+        '3': 'fab fa-leanpub',     // material:class
+        '4': 'fab fa-leanpub',     // material:class
+        '5': 'fab fa-leanpub',     // material:class
+        '6': 'fab fa-leanpub',     // material:class
+        '7': 'fab fa-leanpub',     // material:class
+        '8': 'fab fa-leanpub'      // material:class
       };
 
       for (let sg in this.supergroups) {
@@ -1736,9 +1747,13 @@ let overviewInfoViewModel = new Vue({
 
     nuts3Name: '',
 
-    supergroupName: '',
+    supergroupName: null,
 
-    groupName: ''
+    groupName: null,
+
+    supergroupFillColor: { fillColor: '#ffffff', fillOpacity: 0.01 },
+
+    groupFillColor: { fillColor: '#ffffff', fillOpacity: 0.01 }
 
   },
 
@@ -1755,12 +1770,14 @@ let overviewInfoViewModel = new Vue({
   methods: {
 
     /**
-     * Shows the current view.
+     * Shows the overview view.
      */
     showView() {
 
       // Hide the Nuts3LayerSetup panel if it is visible.
       if (toggleNuts3LayerSetupViewModel.isNuts3LayerSetupVisible) {
+        // Mark the 'layer setup' view as 'hidden while hovering'.
+        nuts3LayerSetupViewModel.keepHiddenWhileHovering = true;
         toggleNuts3LayerSetupViewModel.hideNuts3LayerSetup();
       }
       else {
@@ -1772,16 +1789,79 @@ let overviewInfoViewModel = new Vue({
 
       // Show the overview info panel.
       this.isVisible = true;
+
     },
+
+    /**
+     * Hide the overview view.
+     */
+    hideView() {
+
+      // Hide the overview info panel.
+      this.isVisible = false;
+
+      // Show the 'Layer Setup' view if it is marked as 'hidden while hovering'.
+      if (nuts3LayerSetupViewModel.keepHiddenWhileHovering) {
+        nuts3LayerSetupViewModel.keepHiddenWhileHovering = false;
+        toggleNuts3LayerSetupViewModel.showNuts3LayerSetup();
+      }
+
+    },
+
 
 
     updateView(feature) {
 
-      this.nuts3Name = AppData.nuts3[feature.properties.NUTS_ID].name_ascii;
+      if (feature === null) {
+        // TODO: RESIN - Implement this when the user hovers out of a feature.
 
-      this.supergroupName = MapLayers.nuts3.supergroups[feature.properties.SG].name;
-      this.groupName = MapLayers.nuts3.groups[feature.properties.G].name;
-      
+        return;
+      }
+
+      let nuts3id = feature.properties.NUTS_ID;
+      let sg = feature.properties.SG;
+      let g = feature.properties.G;
+
+      this.nuts3Name = AppData.nuts3[nuts3id].name_ascii;
+
+      let currentLevel = nuts3LayerSetupViewModel.currentTab;
+
+      if (currentLevel === 'supergroups') {
+        if (MapLayers.nuts3.supergroups[sg].visible) {
+          this.supergroupName = MapLayers.nuts3.supergroups[sg].name;
+          this.supergroupFillColor = nuts3LayerSetupViewModel.supergroupFillColors[sg];
+          this.groupName = MapLayers.nuts3.groups[g].name;
+          this.groupFillColor = nuts3LayerSetupViewModel.groupFillColors[g];
+        }
+        else {
+          this.supergroupName = null;
+          this.supergroupFillColor = AppState.transparentColor;
+          this.groupName = null;
+          this.groupFillColor = AppState.transparentColor;
+        }
+      }
+      else if (currentLevel === 'groups') {
+        if (MapLayers.nuts3.groups[g].visible) {
+          this.supergroupName = MapLayers.nuts3.supergroups[sg].name;
+          this.supergroupFillColor = nuts3LayerSetupViewModel.supergroupFillColors[sg];
+          this.groupName = MapLayers.nuts3.groups[g].name;
+          this.groupFillColor = nuts3LayerSetupViewModel.groupFillColors[g];
+        }
+        else {
+          this.supergroupName = null;
+          this.supergroupFillColor = AppState.transparentColor;
+          this.groupName = null;
+          this.groupFillColor = AppState.transparentColor;
+        }
+      }
+      else {
+        this.supergroupName = MapLayers.nuts3.supergroups[sg].name;
+        this.supergroupFillColor = nuts3LayerSetupViewModel.supergroupFillColors[sg];
+        this.groupName = MapLayers.nuts3.groups[g].name;
+        this.groupFillColor = nuts3LayerSetupViewModel.groupFillColors[g];
+      }
+
+
 
     }
 
@@ -1824,12 +1904,14 @@ let detailsInfoViewModel = new Vue({
   methods: {
 
     /**
-     * Shows the current view.
+     * Shows the details view.
      */
     showView() {
 
       // Hide the Nuts3LayerSetup panel if it is visible.
       if (toggleNuts3LayerSetupViewModel.isNuts3LayerSetupVisible) {
+        // Mark the 'layer setup' view as 'hidden while hovering'.
+        nuts3LayerSetupViewModel.keepHiddenWhileHovering = true;
         toggleNuts3LayerSetupViewModel.hideNuts3LayerSetup();
       }
       else {
@@ -1839,8 +1921,25 @@ let detailsInfoViewModel = new Vue({
         }
       }
 
-      // Show the overview info panel.
+      // Show the details info panel.
       this.isVisible = true;
+
+    },
+
+    /**
+     * Hide the details View.
+     */
+    hideView() {
+
+      // Hide the details info panel.
+      this.isVisible = false;
+
+      // Show the 'Layer Setup' view if it is marked as 'hidden while hovering'.
+      if (nuts3LayerSetupViewModel.keepHiddenWhileHovering) {
+        nuts3LayerSetupViewModel.keepHiddenWhileHovering = false;
+        toggleNuts3LayerSetupViewModel.showNuts3LayerSetup();
+      }
+
     },
 
 

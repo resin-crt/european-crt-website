@@ -167,7 +167,7 @@ body {
 .tooltip > .tooltip-inner {
   border: 1px solid;
   padding: 10px;
-  max-width: 450px;
+  max-width: 550px;
   color: #424242;
   text-align: left;
   background: #e9ecef;
