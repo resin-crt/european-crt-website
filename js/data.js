@@ -991,6 +991,9 @@ AppData.indicatorMetadata = {
 AppData.domainSortedIndicators = [];
 AppData.groupSortedIndicators = [];
 
+AppData.domainDictionaryIndicators = {};
+AppData.groupDictionaryIndicators = {};
+
 AppData.indicatorValuesStatistics = {
    "I001": {
       "mean": 2.3872228474672688,
@@ -12571,34 +12574,85 @@ AppData.nuts3 = {
   }
 };
 
-AppData.PopulateArrays = function() {
+AppData.PopulateArraysAndDictionaries = function() {
+
+  let arr = [];
+  let domains = [];
+  let groups =[];
   
+  // Loop through the indicator names and populate the array used to 
   for (let indicator in AppData.indicatorMetadata) {
     if (AppData.indicatorMetadata.hasOwnProperty(indicator)) {
 
-      let arr = [];
-
       arr.push({
         name: indicator,
+        domain: AppData.indicatorMetadata[indicator].domain,
         domainSort: AppData.indicatorMetadata[indicator].domainsort,
+        group: AppData.indicatorMetadata[indicator].group,
         groupSort: AppData.indicatorMetadata[indicator].groupsort
       });
 
-      arr.sort(indicator => indicator.domainSort);
-
-      for (let i = 0; i < arr.length; i++) {
-        AppData.domainSortedIndicators.push(indicator.name);
+      if (domains.findIndex(indicator.domain) !== -1) {
+        domains.push(indicator.domain);
       }
 
-      arr.sort(indicator => indicator.groupSort);
-
-      for (let i = 0; i < arr.length; i++) {
-        AppData.groupSortedIndicators.push(indicator.name);
+      if (groups.findIndex(indicator.groups) !== -1) {
+        groups.push(indicator.groups);
       }
 
     }
   }
 
+  arr.sort(indicator => indicator.domainSort);
+  
+  for (let i = 0; i < arr.length; i++) {
+    AppData.domainSortedIndicators.push(indicator.name);
+
+    // if (AppData.domainDictionaryIndicators.hasOwnProperty())
+    
+  }
+
+
+
+  arr.sort(indicator => indicator.groupSort);
+
+  for (let i = 0; i < arr.length; i++) {
+    AppData.groupSortedIndicators.push(indicator.name);
+
+    
+  }
+
 };
 
-AppData.PopulateArrays();
+AppData.PopulateArraysAndDictionaries();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
