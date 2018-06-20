@@ -4,20 +4,104 @@
 //  School of Environment, Education, and Development.
 //
 //  Name:            map.js
-//  Original coding: Vasilis Vlastaras (@gisvlasta), 17/06/2018.
+//  Original coding: Vasilis Vlastaras (@gisvlasta), 20/06/2018.
 //
 //  Description:     The European Climate Risk Typology web mapping functionality.
 // ================================================================================
 
+AppData.PopulateArraysAndDictionaries = function() {
+
+  let indicators = [];
+  let domains = [];
+  let groups =[];
+
+  for (let name in AppData.indicatorMetadata) {
+    if (AppData.indicatorMetadata.hasOwnProperty(name)) {
+
+      let indicator = {
+        name: name,
+        domain: AppData.indicatorMetadata[name].domain,
+        domainSort: AppData.indicatorMetadata[name].domainsort,
+        group: AppData.indicatorMetadata[name].group,
+        groupSort: AppData.indicatorMetadata[name].groupsort
+      };
+
+      indicators.push(indicator);
+
+      if (domains.findIndex(d => d === indicator.domain) === -1) {
+        domains.push(indicator.domain);
+      }
+
+      if (groups.findIndex(g => g === indicator.group) === -1) {
+        groups.push(indicator.group);
+      }
+
+    }
+  }
+
+  indicators.sort(function(item1, item2) {
+    if (item1.domainSort < item2.domainSort) {
+      return -1;
+    }
+    if (item1.domainSort > item2.domainSort) {
+      return 1;
+    }
+    return 0;
+  });
+
+  for (let i = 0; i < indicators.length; i++) {
+    let indicator = indicators[i];
+
+    AppData.domainSortedIndicators.push(indicator.name);
+
+    if (!AppData.domainDictionaryIndicators.hasOwnProperty(indicator.domain)) {
+      AppData.domainDictionaryIndicators[indicator.domain] = [];
+    }
+
+    if (AppData.indicatorMetadata[indicator.name].isvalid) {
+      AppData.domainDictionaryIndicators[indicator.domain].push(AppData.indicatorMetadata[indicator.name]);
+    }
+  }
+
+  indicators.sort(function(item1, item2) {
+    if (item1.groupSort < item2.groupSort) {
+      return -1;
+    }
+    if (item1.groupSort > item2.groupSort) {
+      return 1;
+    }
+    return 0;
+  });
+
+  for (let i = 0; i < indicators.length; i++) {
+    let indicator = indicators[i];
+
+    AppData.groupSortedIndicators.push(indicator.name);
+
+    if (!AppData.groupDictionaryIndicators.hasOwnProperty(indicator.group)) {
+      AppData.groupDictionaryIndicators[indicator.group] = [];
+    }
+
+    if (AppData.indicatorMetadata[indicator.name].isvalid) {
+      AppData.groupDictionaryIndicators[indicator.group].push(AppData.indicatorMetadata[indicator.name]);
+    }
+  }
+
+};
 
 /**
  * The AppState object holds the application state.
  */
 let AppState = {
 
+  /**
+   * Indicates whether the bootstrap material tooltip is enabled or not.
+   */
   bootstrapMaterialTooltipEnabled: false,
-  isLayerRenderingSetup: false,
 
+  /**
+   * The transparent color is used in those cases that a very transparent color needs to be rendered.
+   */
   transparentColor: { fillColor: '#ffffff', fillOpacity: 0.01 }
 
 };
@@ -1493,8 +1577,7 @@ let nuts3LayerSetupViewModel = new Vue({
       '51', '52', '53', '54',
       '61', '62', '63', '64',
       '71', '72', '73', '74',
-      '81', '82', '83', '84',
-      '91', '92', '93', '94'
+      '81', '82', '83', '84'
     ]
 
   },
@@ -1981,6 +2064,8 @@ $(document).ready(function(){
   AppState.bootstrapMaterialTooltipEnabled = true;
   $('[data-toggle="tooltip"]').tooltip();
 });
+
+AppData.PopulateArraysAndDictionaries();
 
 Spatial.initializeMap();
 
