@@ -1753,7 +1753,11 @@ let overviewInfoViewModel = new Vue({
 
     supergroupFillColor: { fillColor: '#ffffff', fillOpacity: 0.01 },
 
-    groupFillColor: { fillColor: '#ffffff', fillOpacity: 0.01 }
+    groupFillColor: { fillColor: '#ffffff', fillOpacity: 0.01 },
+
+    domainSortedIndicators: [],
+
+    groupSortedIndicators: [],
 
   },
 
@@ -1860,6 +1864,20 @@ let overviewInfoViewModel = new Vue({
         this.groupName = MapLayers.nuts3.groups[g].name;
         this.groupFillColor = nuts3LayerSetupViewModel.groupFillColors[g];
       }
+
+      // If domainSortedIndicators and groupSortedIndicators are empty, populate them with objects.
+      if (this.domainSortedIndicators.length === 0) {
+        for (let i = 0; i < AppData.domainSortedIndicators.length; i++) {
+          let filteredFeatures = AppData.nuts3Polygons.features.filter(f => f.properties["NUTS_ID"] === AppData.domainSortedIndicators[i]);
+
+          this.domainSortedIndicators.push({
+            description: AppData.indicatorMetadata[AppData.domainSortedIndicators[i]].description
+
+            
+          })
+        }
+      }
+
 
 
 
