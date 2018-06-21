@@ -1615,12 +1615,12 @@ let nuts3LayerSetupViewModel = new Vue({
       let icons = {
         '1': 'far fa-building',    // fa:fas fa-building, fa:far fa-building, material:location_city
         '2': 'fab fa-leanpub',     // material:class
-        '3': 'fab fa-leanpub',     // material:class
-        '4': 'fab fa-leanpub',     // material:class
+        '3': 'fas fa-snowflake',   // far fa-snowflake // material:class
+        '4': 'fas fa-sun',         // far fa-sun       // material:class
         '5': 'fab fa-leanpub',     // material:class
         '6': 'fab fa-leanpub',     // material:class
         '7': 'fab fa-leanpub',     // material:class
-        '8': 'fab fa-leanpub'      // material:class
+        '8': 'fab fa-firstdraft'   // material:class
       };
 
       for (let sg in this.supergroups) {
