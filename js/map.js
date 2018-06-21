@@ -834,12 +834,12 @@ let MapLayers = {
             click: function() {
               if (toggleInfoLevelViewModel.currentInfoLevel === 'overview') {
                 if (overviewInfoViewModel.isVisible) {
-                  overviewInfoViewModel.isSticky = true;
+                  overviewInfoViewModel.isPinned = true;
                 }
               }
               else {
                 if (detailsInfoViewModel.isVisible) {
-                  detailsInfoViewModel.isSticky = true;
+                  detailsInfoViewModel.isPinned = true;
                 }
               }
             },
@@ -1022,7 +1022,7 @@ let MapLayers = {
       // Get the named basemap layer.
       let namedBaseMap = toggleBaseMapViewModel.currentBaseMap;
 
-      if (!(overviewInfoViewModel.isSticky || detailsInfoViewModel.isSticky)) {
+      if (!(overviewInfoViewModel.isPinned || detailsInfoViewModel.isPinned)) {
         // Highlight the current NUTS3.
         layer.setStyle(this.namedBasemapLayers[namedBaseMap].defaultHighlightingStyle);
 
@@ -1033,13 +1033,13 @@ let MapLayers = {
 
       // Show the overview or details view panel and then update its contents.
       if (toggleInfoLevelViewModel.currentInfoLevel === 'overview') {
-        if (!overviewInfoViewModel.isSticky) {
+        if (!overviewInfoViewModel.isPinned) {
           overviewInfoViewModel.showView();
           overviewInfoViewModel.updateView(feature);
         }
       }
       else {
-        if (!detailsInfoViewModel.isSticky) {
+        if (!detailsInfoViewModel.isPinned) {
           detailsInfoViewModel.showView();
           detailsInfoViewModel.updateView(feature);
         }
@@ -1076,19 +1076,19 @@ let MapLayers = {
       let attributeName = this.typologyLevelDictionary[currentTypologyLevel].attributeName;
       let classValue = feature.properties[attributeName].toString();
 
-      if (!(overviewInfoViewModel.isSticky || detailsInfoViewModel.isSticky)) {
+      if (!(overviewInfoViewModel.isPinned || detailsInfoViewModel.isPinned)) {
         // Render the NUTS3 polygon having the specified typology class.
         this.renderNuts3Polygon(feature, classValue, currentTypologyLevel, currentBaseMap);
       }
 
       // Hide the overview or details view panel.
       if (toggleInfoLevelViewModel.currentInfoLevel === 'overview') {
-        if (!overviewInfoViewModel.isSticky) {
+        if (!overviewInfoViewModel.isPinned) {
           overviewInfoViewModel.hideView();
         }
       }
       else {
-        if (!detailsInfoViewModel.isSticky) {
+        if (!detailsInfoViewModel.isPinned) {
           detailsInfoViewModel.hideView();
         }
       }
@@ -1843,7 +1843,7 @@ let overviewInfoViewModel = new Vue({
 
     isVisible: false,
 
-    isSticky: false,
+    isPinned: false,
 
     nuts3Name: '',
 
@@ -2011,7 +2011,7 @@ let detailsInfoViewModel = new Vue({
 
     isVisible: false,
 
-    isSticky: false
+    isPinned: false
 
   },
 
