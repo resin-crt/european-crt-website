@@ -832,7 +832,16 @@ let MapLayers = {
              * Raised when a feature is clicked.
              */
             click: function() {
-              //MapLayers.nuts3.getCommuteFlows(feature);
+              if (toggleInfoLevelViewModel.currentInfoLevel === 'overview') {
+                if (overviewInfoViewModel.isVisible) {
+                  overviewInfoViewModel.isSticky = true;
+                }
+              }
+              else {
+                if (detailsInfoViewModel.isVisible) {
+                  detailsInfoViewModel.isSticky = true;
+                }
+              }
             },
 
             /**
@@ -1013,24 +1022,27 @@ let MapLayers = {
       // Get the named basemap layer.
       let namedBaseMap = toggleBaseMapViewModel.currentBaseMap;
 
-      // Highlight the current NUTS3.
-      layer.setStyle(this.namedBasemapLayers[namedBaseMap].defaultHighlightingStyle);
+      if (!(overviewInfoViewModel.isSticky || detailsInfoViewModel.isSticky)) {
+        // Highlight the current NUTS3.
+        layer.setStyle(this.namedBasemapLayers[namedBaseMap].defaultHighlightingStyle);
 
-      if (!L.Browser.ie && !L.Browser.opera) {
-        layer.bringToFront();
+        if (!L.Browser.ie && !L.Browser.opera) {
+          layer.bringToFront();
+        }
       }
-
-      // TODO: RESIN - It seems this line is not needed anymore after using the new version of Leaflet.
-      //MapLayers.nuts3.mapLayer.bringToFront();
 
       // Show the overview or details view panel and then update its contents.
       if (toggleInfoLevelViewModel.currentInfoLevel === 'overview') {
-        overviewInfoViewModel.showView();
-        overviewInfoViewModel.updateView(feature);
+        if (!overviewInfoViewModel.isSticky) {
+          overviewInfoViewModel.showView();
+          overviewInfoViewModel.updateView(feature);
+        }
       }
       else {
-        detailsInfoViewModel.showView();
-        detailsInfoViewModel.updateView(feature);
+        if (!detailsInfoViewModel.isSticky) {
+          detailsInfoViewModel.showView();
+          detailsInfoViewModel.updateView(feature);
+        }
       }
 
     },
@@ -1064,18 +1076,21 @@ let MapLayers = {
       let attributeName = this.typologyLevelDictionary[currentTypologyLevel].attributeName;
       let classValue = feature.properties[attributeName].toString();
 
-      // Render the NUTS3 polygon having the specified typology class.
-      this.renderNuts3Polygon(feature, classValue, currentTypologyLevel, currentBaseMap);
-
-      // TODO: RESIN - It seems this line is not needed anymore after using the new version of Leaflet.
-      //MapLayers.CommuteFlows.mapLayer.bringToFront();
+      if (!(overviewInfoViewModel.isSticky || detailsInfoViewModel.isSticky)) {
+        // Render the NUTS3 polygon having the specified typology class.
+        this.renderNuts3Polygon(feature, classValue, currentTypologyLevel, currentBaseMap);
+      }
 
       // Hide the overview or details view panel.
       if (toggleInfoLevelViewModel.currentInfoLevel === 'overview') {
-        overviewInfoViewModel.hideView();
+        if (!overviewInfoViewModel.isSticky) {
+          overviewInfoViewModel.hideView();
+        }
       }
       else {
-        detailsInfoViewModel.hideView();
+        if (!detailsInfoViewModel.isSticky) {
+          detailsInfoViewModel.hideView();
+        }
       }
 
     }
@@ -1828,6 +1843,8 @@ let overviewInfoViewModel = new Vue({
 
     isVisible: false,
 
+    isSticky: false,
+
     nuts3Name: '',
 
     supergroupName: null,
@@ -1892,6 +1909,10 @@ let overviewInfoViewModel = new Vue({
         nuts3LayerSetupViewModel.keepHiddenWhileHovering = false;
         toggleNuts3LayerSetupViewModel.showNuts3LayerSetup();
       }
+
+    },
+
+    makeSticky() {
 
     },
 
@@ -1988,7 +2009,9 @@ let detailsInfoViewModel = new Vue({
    */
   data: {
 
-    isVisible: false
+    isVisible: false,
+
+    isSticky: false
 
   },
 
@@ -2040,6 +2063,10 @@ let detailsInfoViewModel = new Vue({
         nuts3LayerSetupViewModel.keepHiddenWhileHovering = false;
         toggleNuts3LayerSetupViewModel.showNuts3LayerSetup();
       }
+
+    },
+
+    MakeSticky() {
 
     },
 
