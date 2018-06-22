@@ -156,6 +156,9 @@ body {
   overflow-y: auto;
 }
 
+.indicators-container {
+  margin-left: 10px;
+}
 
 
 
@@ -250,6 +253,7 @@ body {
 
 @media (min-width: 768px) {
   .sidebar {
+    width: 590px;
     /*top: 56px; !* OVERRIDE *!*/
     /*bottom: 0px; !* OVERRIDE *!*/
     transition: width 250ms; /* OVERRIDE */
@@ -258,19 +262,20 @@ body {
 
 @media (min-width: 768px) and (max-width: 991.99px) {
   .sidebar {
-    width: 600px;
+    width: 590px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199.99px) {
   .sidebar {
-    width: 600px;
+    width: 590px;
   }
 }
 
 @media (min-width: 1200px) {
   .sidebar {
-    width: 580px;
+    width: 590px;
+    /*width: 580px;*/
   }
 }
 

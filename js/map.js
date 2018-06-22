@@ -4,90 +4,10 @@
 //  School of Environment, Education, and Development.
 //
 //  Name:            map.js
-//  Original coding: Vasilis Vlastaras (@gisvlasta), 20/06/2018.
+//  Original coding: Vasilis Vlastaras (@gisvlasta), 22/06/2018.
 //
 //  Description:     The European Climate Risk Typology web mapping functionality.
 // ================================================================================
-
-AppData.PopulateArraysAndDictionaries = function() {
-
-  let indicators = [];
-  let domains = [];
-  let groups =[];
-
-  for (let name in AppData.indicatorMetadata) {
-    if (AppData.indicatorMetadata.hasOwnProperty(name)) {
-
-      let indicator = {
-        name: name,
-        domain: AppData.indicatorMetadata[name].domain,
-        domainSort: AppData.indicatorMetadata[name].domainsort,
-        group: AppData.indicatorMetadata[name].group,
-        groupSort: AppData.indicatorMetadata[name].groupsort
-      };
-
-      indicators.push(indicator);
-
-      if (domains.findIndex(d => d === indicator.domain) === -1) {
-        domains.push(indicator.domain);
-      }
-
-      if (groups.findIndex(g => g === indicator.group) === -1) {
-        groups.push(indicator.group);
-      }
-
-    }
-  }
-
-  indicators.sort(function(item1, item2) {
-    if (item1.domainSort < item2.domainSort) {
-      return -1;
-    }
-    if (item1.domainSort > item2.domainSort) {
-      return 1;
-    }
-    return 0;
-  });
-
-  for (let i = 0; i < indicators.length; i++) {
-    let indicator = indicators[i];
-
-    AppData.domainSortedIndicators.push(indicator.name);
-
-    if (!AppData.domainDictionaryIndicators.hasOwnProperty(indicator.domain)) {
-      AppData.domainDictionaryIndicators[indicator.domain] = [];
-    }
-
-    if (AppData.indicatorMetadata[indicator.name].isvalid) {
-      AppData.domainDictionaryIndicators[indicator.domain].push(AppData.indicatorMetadata[indicator.name]);
-    }
-  }
-
-  indicators.sort(function(item1, item2) {
-    if (item1.groupSort < item2.groupSort) {
-      return -1;
-    }
-    if (item1.groupSort > item2.groupSort) {
-      return 1;
-    }
-    return 0;
-  });
-
-  for (let i = 0; i < indicators.length; i++) {
-    let indicator = indicators[i];
-
-    AppData.groupSortedIndicators.push(indicator.name);
-
-    if (!AppData.groupDictionaryIndicators.hasOwnProperty(indicator.group)) {
-      AppData.groupDictionaryIndicators[indicator.group] = [];
-    }
-
-    if (AppData.indicatorMetadata[indicator.name].isvalid) {
-      AppData.groupDictionaryIndicators[indicator.group].push(AppData.indicatorMetadata[indicator.name]);
-    }
-  }
-
-};
 
 /**
  * The AppState object holds the application state.
@@ -105,7 +25,6 @@ let AppState = {
   transparentColor: { fillColor: '#ffffff', fillOpacity: 0.01 }
 
 };
-
 
 /**
  * The BaseMapLayers object provides properties and methods related to basemap layers.
@@ -325,7 +244,8 @@ let BaseMapLayers = {
     //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Esri.WorldGrayCanvas;
     //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.HikeBike.HikeBike;
     //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Hydda.RoadsAndLabels;
-    this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Wikimedia;
+    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Wikimedia;
+    this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Esri.WorldImagery
 
     // Physical
     //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Hydda.Base;
@@ -709,6 +629,10 @@ let MapLayers = {
      */
     featureToInternalLayerDictionary: {},
 
+    selectedFeature: null,
+
+    selectedInternalLayer: null,
+
     /**
      * The dictionary that associates the typology levels to style names and attribute names.
      */
@@ -832,22 +756,17 @@ let MapLayers = {
              * Raised when a feature is clicked.
              */
             click: function() {
-              if (toggleInfoLevelViewModel.currentInfoLevel === 'overview') {
-                if (overviewInfoViewModel.isVisible) {
-                  overviewInfoViewModel.Pin();
-                }
-              }
-              else {
-                if (detailsInfoViewModel.isVisible) {
-                  detailsInfoViewModel.Pin();
-                }
-              }
+              MapLayers.nuts3.selectNuts3(feature, layer);
             },
 
             /**
              * Raised when a feature is double clicked.
              */
             dblclick: function() {
+              //MapLayers.nuts3.resetNuts3Style(feature, layer);
+              //alert('double clicked');
+              //map.doubleClickZoom.disable();
+              //map.doubleClickZoom.enable()
               // TODO: This is a problem. A click event is fired before the double click. We need to change this behaviour.
               //Spatial.map.fitBounds(layer.getBounds());
             }
@@ -948,6 +867,8 @@ let MapLayers = {
       //     this.changeTypologyClassStyle(sg);
       //   }
       // }
+
+      MapLayers.nuts3.reselectNuts3();
 
     },
 
@@ -1093,6 +1014,51 @@ let MapLayers = {
         }
       }
 
+    },
+
+    selectNuts3(feature, layer) {
+      if (!(overviewInfoViewModel.isPinned || detailsInfoViewModel.isPinned)) {
+        this.selectedFeature = feature;
+        this.selectedInternalLayer = layer;
+
+        if (toggleInfoLevelViewModel.currentInfoLevel === 'overview') {
+          if (overviewInfoViewModel.isVisible) {
+            overviewInfoViewModel.Pin();
+          }
+        }
+        else {
+          if (detailsInfoViewModel.isVisible) {
+            detailsInfoViewModel.Pin();
+          }
+        }
+      }
+    },
+
+    unselectNuts3() {
+      this.resetNuts3Style(this.selectedFeature, this.selectedInternalLayer);
+
+      this.selectedFeature = null;
+      this.selectedInternalLayer = null;
+    },
+
+    reselectNuts3() {
+      if (this.selectedFeature) {
+        if (toggleInfoLevelViewModel.currentInfoLevel === 'overview') {
+          overviewInfoViewModel.isPinned = false;
+        }
+        else {
+          detailsInfoViewModel.isPinned = false;
+        }
+
+        this.highlightNuts3(this.selectedFeature, this.selectedInternalLayer);
+
+        if (toggleInfoLevelViewModel.currentInfoLevel === 'overview') {
+          overviewInfoViewModel.isPinned = true;
+        }
+        else {
+          detailsInfoViewModel.isPinned = true;
+        }
+      }
     }
 
   }
@@ -1208,9 +1174,10 @@ let HtmlTemplates = {
    * The HTML template used to display a tooltip with metadata about supergroups or groups.
    */
   typologyMetadataTooltip: '<div class="card">' +
-                             '<div class="crt-hor-sep"></div>' +
-                             //'<i class="display-1 text-center text-danger material-icons">@@icon@@</i>' +
-                             '<i class="display-1 text-center text-danger @@icon@@"></i>' +
+                             '<div class="card-header bg-dark">' +
+                               //'<i class="display-1 text-center text-danger material-icons">@@icon@@</i>' +
+                               '<i class="display-1 text-danger @@icon@@" style="margin-left: 20px;"></i>' +
+                             '</div>' +
                              '<div class="card-body">' +
                                '<h4 class="card-title"><strong><em>@@name@@</em></strong></h4>' +
                                '<p class="card-text">@@description@@</p>' +
@@ -1434,11 +1401,19 @@ let toggleNuts3LayerSetupViewModel = new Vue({
 
       // Hide the overview info panel if it is visible.
       if (overviewInfoViewModel.isVisible) {
+        // Make sure the panel is unpinned first.
+        if (overviewInfoViewModel.isPinned) {
+          overviewInfoViewModel.unPin();
+        }
         overviewInfoViewModel.isVisible = false;
       }
 
       // Hide the details info panel if it is visible.
       if (detailsInfoViewModel.isVisible) {
+        // Make sure the panel is unpinned first.
+        if (detailsInfoViewModel.isPinned) {
+          detailsInfoViewModel.unPin();
+        }
         detailsInfoViewModel.isVisible = false;
       }
 
@@ -1613,14 +1588,15 @@ let nuts3LayerSetupViewModel = new Vue({
 
       // TODO: RESIN - Replace all these with appropriate tooltip icon names.
       let icons = {
-        '1': 'far fa-building',    // fa:fas fa-building, fa:far fa-building, material:location_city
-        '2': 'fab fa-leanpub',     // material:class
-        '3': 'fas fa-snowflake',   // far fa-snowflake // material:class
-        '4': 'fas fa-sun',         // far fa-sun       // material:class
-        '5': 'fab fa-leanpub',     // material:class
-        '6': 'fab fa-leanpub',     // material:class
-        '7': 'fab fa-leanpub',     // material:class
-        '8': 'fab fa-firstdraft'   // material:class
+        // Default Icon names        // fa:[fab fa-leanpub]: material:[class]
+        '1': 'far fa-building',      // fa:[fas fa-building], fa:[far fa-building], material:[location_city]
+        '2': 'fas fa-leaf',          // fa:[fab fa-envira], fa:[fas fa-leaf], fa:[fab fa-pagelines], fa:[fas fa-seedling], fa:[fas fa-tree]
+        '3': 'fas fa-snowflake',     // fa:[far fa-snowflake]
+        '4': 'fas fa-sun',           // fa:[far fa-sun]
+        '5': 'fab fa-servicestack',  // fa:[fab fa-servicestack]
+        '6': 'far fa-image',         // fa:[fas fa-image], fa:[far fa-image], fa:[material:class]
+        '7': 'fas fa-tint',          // fa:[fas fa-tint]
+        '8': 'fab fa-firstdraft'     // fa:[fab fa-firstdraft]
       };
 
       for (let sg in this.supergroups) {
@@ -1855,9 +1831,15 @@ let overviewInfoViewModel = new Vue({
 
     groupFillColor: { fillColor: '#ffffff', fillOpacity: 0.01 },
 
-    domainSortedIndicators: [],
+    domains: AppData.domains,
 
-    groupSortedIndicators: [],
+    domainSortedIndicators: AppData.domainSortedIndicators,
+
+    domainDictionaryIndicators: AppData.domainDictionaryIndicators
+
+    // groupSortedIndicators: AppData.groupSortedIndicators,
+    //
+    // groupDictionaryIndicators: AppData.groupDictionaryIndicators
 
   },
 
@@ -1865,6 +1847,18 @@ let overviewInfoViewModel = new Vue({
    * The computed properties of the model of the view model.
    */
   computed: {
+
+    // domainSortedIndicatorsCollapsed: function() {
+    //
+    //   let indicatorPanelsCollapsed = {};
+    //
+    //   for (let i = 0; i < this.domainSortedIndicators; i++) {
+    //     indicatorPanelsVisibility[i.toString()] = false;
+    //   }
+    //
+    //   return indicatorPanelsCollapsed;
+    //
+    // }
 
   },
 
@@ -1912,6 +1906,11 @@ let overviewInfoViewModel = new Vue({
 
     },
 
+    toggleDomain(index) {
+
+      this.domainSortedIndicatorsVisibility[index] = !this.domainSortedIndicatorsVisibility[index];
+
+    },
 
 
     updateView(feature) {
@@ -1965,18 +1964,13 @@ let overviewInfoViewModel = new Vue({
         this.groupFillColor = nuts3LayerSetupViewModel.groupFillColors[g];
       }
 
-      // If domainSortedIndicators and groupSortedIndicators are empty, populate them with objects.
-      if (this.domainSortedIndicators.length === 0) {
-        for (let i = 0; i < AppData.domainSortedIndicators.length; i++) {
-          let filteredFeatures = AppData.nuts3Polygons.features.filter(f => f.properties["NUTS_ID"] === AppData.domainSortedIndicators[i]);
 
-          this.domainSortedIndicators.push({
-            description: AppData.indicatorMetadata[AppData.domainSortedIndicators[i]].description
 
-            
-          })
-        }
-      }
+
+
+
+
+
 
     },
 
@@ -1989,6 +1983,9 @@ let overviewInfoViewModel = new Vue({
 
     unPin() {
       this.isPinned = false;
+      this.isVisible = false;
+
+      MapLayers.nuts3.unselectNuts3();
     }
 
 
@@ -2087,6 +2084,9 @@ let detailsInfoViewModel = new Vue({
 
     unPin() {
       this.isPinned = false;
+      this.isVisible = false;
+
+      MapLayers.nuts3.unselectNuts3();
     }
 
 
@@ -2106,9 +2106,9 @@ $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
 });
 
-AppData.PopulateArraysAndDictionaries();
-
 Spatial.initializeMap();
+
+Spatial.sidebar.open('map-controls');
 
 //
 // ================================================================================

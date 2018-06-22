@@ -48,6 +48,8 @@
   <script type="text/javascript" src="libs/jquery-3.2.1/jquery.slim.js"></script>
   <!--<script type="text/javascript" src="libs/jquery-3.2.1/jquery.slim.min.js"></script>-->
 
+  <script type="text/javascript" src="js/data.js"></script>
+
   <!--<script type="text/javascript" src="js/shared.js"></script>-->
 
 </head>
@@ -117,7 +119,7 @@
             <!--<i class="crt-material-icons">menu</i>-->
             <!--</a>-->
             <!--<a href="#map-controls" role="tab"><i class="fas fa-map"></i></a>-->
-            <a href="#map-controls" role="tab">
+            <a id="aaaa" href="#map-controls" role="tab">
               <i class="crt-material-icons">chrome_reader_mode</i>
             </a>
           </li>
@@ -145,46 +147,48 @@
 
                     <div class="btn-toolbar" role="toolbar" aria-label="Map Toolbar">
 
-                      <div id="toggleBaseMapButtonsVM" class="btn-group-toggle" role="group"
-                           aria-label="Select basemap" data-toggle="buttons">
-                        <button id="darkButton" type="button" class="btn btn-danger"
-                                data-toggle="tooltip"
-                                data-placement="bottom"
-                                v-bind:title="dictionary['dark'].description"
-                                v-bind:aria-label="dictionary['dark'].description"
-                                v-bind:aria-pressed="[currentBaseMap === 'dark' ? 'true' : 'false']"
-                                v-bind:class="[currentBaseMap === 'dark' ? 'btn-raised' : '']"
-                                v-on:click="setCurrentBaseMap('dark')">
-                          <i class="material-icons text-dark" v-text="dictionary['dark'].iconName"></i>
-                          <div><small class="text-dark" v-text="dictionary['dark'].name"></small></div>
-                        </button>
-                        <button id="lightButton" type="button" class="btn btn-danger"
-                                data-toggle="tooltip"
-                                data-placement="bottom"
-                                v-bind:title="dictionary['light'].description"
-                                v-bind:aria-label="dictionary['light'].description"
-                                v-bind:aria-pressed="[currentBaseMap === 'light' ? 'true' : 'false']"
-                                v-bind:class="[currentBaseMap === 'light' ? 'btn-raised' : '']"
-                                v-on:click="setCurrentBaseMap('light')">
-                          <i class="material-icons" v-text="dictionary['light'].iconName"></i>
-                          <div><small v-text="dictionary['light'].name"></small></div>
-                        </button>
-                        <button id="roadsButton" type="button" class="btn btn-danger"
-                                data-toggle="tooltip"
-                                data-placement="bottom"
-                                v-bind:title="dictionary['roads'].description"
-                                v-bind:aria-label="dictionary['roads'].description"
-                                v-bind:aria-pressed="[currentBaseMap === 'roads' ? 'true' : 'false']"
-                                v-bind:class="[currentBaseMap === 'roads' ? 'btn-raised' : '']"
-                                v-on:click="setCurrentBaseMap('roads')">
-                          <i class="material-icons" v-text="dictionary['roads'].iconName"></i>
-                          <div><small v-text="dictionary['roads'].name"></small></div>
-                        </button>
-                      </div>
+                      <!--<div class="alert alert-warning" style="padding: 0 0 0 0;">-->
+                        <div id="toggleBaseMapButtonsVM" class="btn-group-toggle border rounded" role="group"
+                             aria-label="Select basemap" data-toggle="buttons">
+                          <button id="darkButton" type="button" class="btn btn-danger"
+                                  data-toggle="tooltip"
+                                  data-placement="bottom"
+                                  v-bind:title="dictionary['dark'].description"
+                                  v-bind:aria-label="dictionary['dark'].description"
+                                  v-bind:aria-pressed="[currentBaseMap === 'dark' ? 'true' : 'false']"
+                                  v-bind:class="[currentBaseMap === 'dark' ? 'btn-raised' : '']"
+                                  v-on:click="setCurrentBaseMap('dark')">
+                            <i class="material-icons text-dark" v-text="dictionary['dark'].iconName"></i>
+                            <div><small class="text-dark" v-text="dictionary['dark'].name"></small></div>
+                          </button>
+                          <button id="lightButton" type="button" class="btn btn-danger"
+                                  data-toggle="tooltip"
+                                  data-placement="bottom"
+                                  v-bind:title="dictionary['light'].description"
+                                  v-bind:aria-label="dictionary['light'].description"
+                                  v-bind:aria-pressed="[currentBaseMap === 'light' ? 'true' : 'false']"
+                                  v-bind:class="[currentBaseMap === 'light' ? 'btn-raised' : '']"
+                                  v-on:click="setCurrentBaseMap('light')">
+                            <i class="material-icons" v-text="dictionary['light'].iconName"></i>
+                            <div><small class="text-dark" v-text="dictionary['light'].name"></small></div>
+                          </button>
+                          <button id="roadsButton" type="button" class="btn btn-danger"
+                                  data-toggle="tooltip"
+                                  data-placement="bottom"
+                                  v-bind:title="dictionary['roads'].description"
+                                  v-bind:aria-label="dictionary['roads'].description"
+                                  v-bind:aria-pressed="[currentBaseMap === 'roads' ? 'true' : 'false']"
+                                  v-bind:class="[currentBaseMap === 'roads' ? 'btn-raised' : '']"
+                                  v-on:click="setCurrentBaseMap('roads')">
+                            <i class="material-icons" v-text="dictionary['roads'].iconName"></i>
+                            <div><small class="text-dark" v-text="dictionary['roads'].name"></small></div>
+                          </button>
+                        </div>
+                      <!--</div>-->
 
                       <div class="crt-ver-sep"></div>
 
-                      <div id="toggleNuts3LayerSetupButtonVM" class="btn-group-toggle" role="group"
+                      <div id="toggleNuts3LayerSetupButtonVM" class="btn-group-toggle border rounded" role="group"
                            aria-label="Draw Layer" data-toggle="buttons">
                         <button id="nuts3LayerSetupButton" type="button" class="btn btn-danger"
                                 data-toggle="tooltip"
@@ -193,7 +197,7 @@
                                 v-bind:aria-label="description"
                                 v-bind:aria-pressed="isNuts3LayerSetupVisible"
                                 v-bind:class="[isNuts3LayerSetupVisible === true ? 'btn-raised' : '']"
-                                v-on:click="toggleNuts3LayerSetup">
+                                v-on:click="toggleNuts3LayerSetup()">
                           <i class="material-icons" v-text="iconName"></i>
                           <div><small v-text="name"></small></div>
                         </button>
@@ -201,7 +205,8 @@
 
                       <div class="crt-ver-sep"></div>
 
-                      <div id="toggleInfoLevelButtonsVM" class="btn-group-toggle" role="group"
+                      <!--<div class="alert alert-info" style="padding: 0 0 0 0;">-->
+                        <div id="toggleInfoLevelButtonsVM" class="btn-group-toggle border rounded" role="group"
                            aria-label="Select displayed information level" data-toggle="buttons">
                         <button id="overviewLevelButton" type="button" class="btn btn-danger"
                                 data-toggle="tooltip"
@@ -226,6 +231,7 @@
                           <div><small v-text="dictionary['details'].name"></small></div>
                         </button>
                       </div>
+                      <!--</div>-->
 
                     </div>
 
@@ -1814,7 +1820,7 @@
                       <button id="overviewPin" type="button" class="btn btn-danger"
                               data-toggle="tooltip"
                               data-placement="top"
-                              title="Click to unpin the overview information view"
+                              title="Click to unpin the overview information panel"
                               aria-label="Click to unpin the overview information view"
                               v-bind:class="[isPinned === false ? 'invisible' : 'visible']"
                               v-on:click="unPin()">
@@ -2042,92 +2048,95 @@
                   <!-- ######## Accordion ######## -->
 
                   <div id="accordion">
-                    <div class="card">
-                      <div class="card-header" id="heading0">
+                    <div>
+                      <div id="heading0">
                         <h5 class="mb-0">
-                          <button class="btn btn-danger"
-                                  data-toggle="collapse" data-target="#collapse0"
-                                  aria-expanded="true" aria-controls="collapse0">
-                            Hazard
+                          <button class="btn btn-danger" aria-expanded="true"
+                                  v-text="domains[0]">
                           </button>
                         </h5>
                       </div>
 
-                      <div id="collapse0" class="collapse show" aria-labelledby="heading0" data-parent="#accordion">
-                        <div class="card-body">
-                          Hazard Indicators
-                        </div>
-                      </div>
+                      <!--<div id="collapse0" class="indicators-container" aria-labelledby="heading0"-->
+                           <!--v-bind:class="[domainSortedIndicatorsCollapsed['0'] === true ? 'collapse' : '']"-->
+                           <!--v-on:click="toggleDomain('0')">-->
+                        <!--&lt;!&ndash;<div class="card-body">&ndash;&gt;-->
+                          <!--Hazard Indicators-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                      <!--</div>-->
                     </div>
 
-                    <div class="card">
-                      <div class="card-header" id="heading1">
+                    <div>
+                      <div id="heading1">
                         <h5 class="mb-0">
-                          <button class="btn btn-danger"
-                                  data-toggle="collapse" data-target="#collapse1"
-                                  aria-expanded="true" aria-controls="collapse1">
-                            Exposure
+                          <button class="btn btn-danger" aria-expanded="true"
+                                  v-text="domains[1]">
                           </button>
                         </h5>
                       </div>
-                      <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">
-                        <div class="card-body">
-                          Exposure Indicators
-                        </div>
-                      </div>
+
+                      <!--<div id="collapse1" class="indicators-container" aria-labelledby="heading1"-->
+                           <!--v-bind:class="[domainSortedIndicatorsCollapsed['1'] === true ? 'collapse' : '']"-->
+                           <!--v-on:click="toggleDomain('1')">-->
+                        <!--&lt;!&ndash;<div class="card-body">&ndash;&gt;-->
+                        <!--Exposure Indicators-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                      <!--</div>-->
                     </div>
 
-                    <div class="card">
-                      <div class="card-header" id="heading2">
+                    <div>
+                      <div id="heading2">
                         <h5 class="mb-0">
-                          <button class="btn btn-danger"
-                                  data-toggle="collapse" data-target="#collapse2"
-                                  aria-expanded="true" aria-controls="collapse2">
-                            Vulnerability - Sensitivity
+                          <button class="btn btn-danger" aria-expanded="true"
+                                  v-text="domains[2]">
                           </button>
                         </h5>
                       </div>
-                      <div id="collapse2" class="collapse show" aria-labelledby="heading2" data-parent="#accordion">
-                        <div class="card-body">
-                          Vulnerability - Sensitivity Indicators
-                        </div>
-                      </div>
+
+                      <!--<div id="collapse2" class="indicators-container" aria-labelledby="heading2"-->
+                           <!--v-bind:class="[domainSortedIndicatorsCollapsed['2'] === true ? 'collapse' : '']"-->
+                           <!--v-on:click="toggleDomain('2')">-->
+                        <!--&lt;!&ndash;<div class="card-body">&ndash;&gt;-->
+                        <!--Vulnerability - Sensitivity Indicators-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                      <!--</div>-->
                     </div>
 
-                    <div class="card">
-                      <div class="card-header" id="heading3">
+                    <div>
+                      <div id="heading3">
                         <h5 class="mb-0">
-                          <button class="btn btn-danger"
-                                  data-toggle="collapse" data-target="#collapse3"
-                                  aria-expanded="true" aria-controls="collapse3">
-                            Vulnerability - Adaptive Capacity
+                          <button class="btn btn-danger" aria-expanded="true"
+                                  v-text="domains[3]">
                           </button>
                         </h5>
                       </div>
-                      <div id="collapse3" class="collapse show" aria-labelledby="heading3" data-parent="#accordion">
-                        <div class="card-body">
-                          Vulnerability - Adaptive Capacity Indicators
-                        </div>
-                      </div>
+
+                      <!--<div id="collapse3" class="indicators-container" aria-labelledby="heading3"-->
+                           <!--v-bind:class="[domainSortedIndicatorsCollapsed['3'] === true ? 'collapse' : '']"-->
+                           <!--v-on:click="toggleDomain('3')">-->
+                        <!--&lt;!&ndash;<div class="card-body">&ndash;&gt;-->
+                        <!--Vulnerability - Adaptive Capacity Indicators-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                      <!--</div>-->
                     </div>
 
-                    <div class="card">
-                      <div class="card-header" id="heading4">
+                    <div>
+                      <div id="heading4">
                         <h5 class="mb-0">
-                          <button class="btn btn-danger"
-                                  data-toggle="collapse" data-target="#collapse4"
-                                  aria-expanded="true" aria-controls="collapse4">
-                            Other
+                          <button class="btn btn-danger" aria-expanded="true"
+                                  v-text="domains[4]">
                           </button>
                         </h5>
                       </div>
-                      <div id="collapse4" class="collapse show" aria-labelledby="heading4" data-parent="#accordion">
-                        <div class="card-body">
-                          Other Indicators
-                        </div>
-                      </div>
-                    </div>
 
+                      <!--<div id="collapse3" class="indicators-container" aria-labelledby="heading4"-->
+                           <!--v-bind:class="[domainSortedIndicatorsCollapsed['4'] === true ? 'collapse' : '']"-->
+                           <!--v-on:click="toggleDomain('4')">-->
+                        <!--&lt;!&ndash;<div class="card-body">&ndash;&gt;-->
+                        <!--Other Indicators-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                      <!--</div>-->
+                    </div>
                   </div>
 
 
@@ -2220,7 +2229,7 @@
 
   <!--<script type="text/javascript" src="libs/ps-math-stats/ps-math-stats.min.js"></script>-->
 
-  <script type="text/javascript" src="js/data.js"></script>
+  <!--<script type="text/javascript" src="js/data.js"></script>-->
   <script type="text/javascript" src="js/color-palettes.js"></script>
   <script type="text/javascript" src="js/nuts-3-2013-polygons-v3-epsg-4326-p4.js"></script>
   <script type="text/javascript" src="js/map.js"></script>

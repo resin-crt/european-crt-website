@@ -1070,7 +1070,10 @@ AppData.indicatorMetadata = {
   }
 };
 
+AppData.domains = null;
 AppData.domainSortedIndicators = [];
+
+AppData.groups = null;
 AppData.groupSortedIndicators = [];
 
 AppData.domainDictionaryIndicators = {};
@@ -12819,3 +12822,89 @@ AppData.nuts3 = {
     "name_html" : "West and South of Northern Ireland"
   }
 };
+
+AppData.PopulateArraysAndDictionaries = function() {
+
+  let indicators = [];
+  let domains = [];
+  let groups = [];
+
+  for (let name in AppData.indicatorMetadata) {
+    if (AppData.indicatorMetadata.hasOwnProperty(name)) {
+
+      let indicator = {
+        name: name,
+        domain: AppData.indicatorMetadata[name].domain,
+        domainSort: AppData.indicatorMetadata[name].domainsort,
+        group: AppData.indicatorMetadata[name].group,
+        groupSort: AppData.indicatorMetadata[name].groupsort
+      };
+
+      indicators.push(indicator);
+
+    }
+  }
+
+  indicators.sort(function(item1, item2) {
+    if (item1.domainSort < item2.domainSort) {
+      return -1;
+    }
+    if (item1.domainSort > item2.domainSort) {
+      return 1;
+    }
+    return 0;
+  });
+
+  for (let i = 0; i < indicators.length; i++) {
+    let indicator = indicators[i];
+
+    if (domains.findIndex(d => d === indicator.domain) === -1) {
+      domains.push(indicator.domain);
+    }
+
+    AppData.domainSortedIndicators.push(indicator.name);
+
+    if (!AppData.domainDictionaryIndicators.hasOwnProperty(indicator.domain)) {
+      AppData.domainDictionaryIndicators[indicator.domain] = [];
+    }
+
+    if (AppData.indicatorMetadata[indicator.name].isvalid) {
+      AppData.domainDictionaryIndicators[indicator.domain].push(AppData.indicatorMetadata[indicator.name]);
+    }
+  }
+
+  AppData.domains = domains;
+
+  indicators.sort(function(item1, item2) {
+    if (item1.groupSort < item2.groupSort) {
+      return -1;
+    }
+    if (item1.groupSort > item2.groupSort) {
+      return 1;
+    }
+    return 0;
+  });
+
+  for (let i = 0; i < indicators.length; i++) {
+    let indicator = indicators[i];
+
+    if (groups.findIndex(g => g === indicator.group) === -1) {
+      groups.push(indicator.group);
+    }
+
+    AppData.groupSortedIndicators.push(indicator.name);
+
+    if (!AppData.groupDictionaryIndicators.hasOwnProperty(indicator.group)) {
+      AppData.groupDictionaryIndicators[indicator.group] = [];
+    }
+
+    if (AppData.indicatorMetadata[indicator.name].isvalid) {
+      AppData.groupDictionaryIndicators[indicator.group].push(AppData.indicatorMetadata[indicator.name]);
+    }
+  }
+
+  AppData.groups = groups;
+
+};
+
+AppData.PopulateArraysAndDictionaries();
