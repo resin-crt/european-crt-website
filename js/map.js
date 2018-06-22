@@ -834,12 +834,12 @@ let MapLayers = {
             click: function() {
               if (toggleInfoLevelViewModel.currentInfoLevel === 'overview') {
                 if (overviewInfoViewModel.isVisible) {
-                  overviewInfoViewModel.isPinned = true;
+                  overviewInfoViewModel.Pin();
                 }
               }
               else {
                 if (detailsInfoViewModel.isVisible) {
-                  detailsInfoViewModel.isPinned = true;
+                  detailsInfoViewModel.Pin();
                 }
               }
             },
@@ -1912,10 +1912,6 @@ let overviewInfoViewModel = new Vue({
 
     },
 
-    makeSticky() {
-
-    },
-
 
 
     updateView(feature) {
@@ -1982,10 +1978,19 @@ let overviewInfoViewModel = new Vue({
         }
       }
 
+    },
 
+    Pin() {
+      this.isPinned = true;
+      if (AppState.bootstrapMaterialTooltipEnabled) {
+        $('#overviewPin').tooltip('show');
+      }
+    },
 
-
+    unPin() {
+      this.isPinned = false;
     }
+
 
   }
 
@@ -2066,15 +2071,24 @@ let detailsInfoViewModel = new Vue({
 
     },
 
-    MakeSticky() {
-
-    },
-
 
     updateView(feature) {
 
 
+    },
+
+
+    Pin() {
+      this.isPinned = true;
+      if (AppState.bootstrapMaterialTooltipEnabled) {
+        $('#detailsPin').tooltip('show');
+      }
+    },
+
+    unPin() {
+      this.isPinned = false;
     }
+
 
   }
 

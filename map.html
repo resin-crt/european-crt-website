@@ -1811,13 +1811,13 @@
                   <div class="d-flex">
                     <div class="mr-auto p-2"><h4 class="text-danger" v-text="nuts3Name"></h4></div>
                     <div class="p-2">
-                      <button type="button" class="btn btn-danger"
+                      <button id="overviewPin" type="button" class="btn btn-danger"
                               data-toggle="tooltip"
-                              data-placement="bottom"
+                              data-placement="left"
                               title="Click to unpin the overview information view"
                               aria-label="Click to unpin the overview information view"
                               v-bind:class="[isPinned === false ? 'invisible' : 'visible']"
-                              v-on:click="unpin()">
+                              v-on:click="unPin()">
                         <i class="fas fa-thumbtack"></i>
                       </button>
                     </div>
