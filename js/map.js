@@ -1848,6 +1848,18 @@ let overviewInfoViewModel = new Vue({
    */
   computed: {
 
+    // domains: function() {
+    //
+    //   let domainsArray = [];
+    //
+    //   for (let i = 0; i < AppData.domains.length; i++) {
+    //     domainsArray.push({ name: AppData.domains[i], isVisible: true });
+    //   }
+    //
+    //   return domainsArray;
+    //
+    // },
+
     // domainSortedIndicatorsCollapsed: function() {
     //
     //   let indicatorPanelsCollapsed = {};
@@ -1906,10 +1918,9 @@ let overviewInfoViewModel = new Vue({
 
     },
 
+
     toggleDomain(index) {
-
-      this.domainSortedIndicatorsVisibility[index] = !this.domainSortedIndicatorsVisibility[index];
-
+      this.domains[index].isOverviewVisible = !this.domains[index].isOverviewVisible;
     },
 
 

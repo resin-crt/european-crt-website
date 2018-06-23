@@ -12858,8 +12858,13 @@ AppData.PopulateArraysAndDictionaries = function() {
   for (let i = 0; i < indicators.length; i++) {
     let indicator = indicators[i];
 
-    if (domains.findIndex(d => d === indicator.domain) === -1) {
-      domains.push(indicator.domain);
+    if (domains.length > 0) {
+      if (domains.findIndex(d => d.name === indicator.domain) === -1) {
+        domains.push({ name: indicator.domain, isOverviewVisible: true, isDetailsVisible: true });
+      }
+    }
+    else {
+      domains.push({ name: indicator.domain, isOverviewVisible: true, isDetailsVisible: true });
     }
 
     AppData.domainSortedIndicators.push(indicator.name);
@@ -12889,7 +12894,16 @@ AppData.PopulateArraysAndDictionaries = function() {
     let indicator = indicators[i];
 
     if (groups.findIndex(g => g === indicator.group) === -1) {
-      groups.push(indicator.group);
+      groups.push({ name: indicator.group, isOverviewVisible: true, isDetailsVisible: true });
+    }
+
+    if (groups.length > 0) {
+      if (groups.findIndex(d => d.name === indicator.group) === -1) {
+        groups.push({ name: indicator.group, isOverviewVisible: true, isDetailsVisible: true });
+      }
+    }
+    else {
+      groups.push({ name: indicator.group, isOverviewVisible: true, isDetailsVisible: true });
     }
 
     AppData.groupSortedIndicators.push(indicator.name);

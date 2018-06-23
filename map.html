@@ -2048,94 +2048,116 @@
                   <!-- ######## Accordion ######## -->
 
                   <div id="accordion">
+
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+                            aria-expanded="false" aria-controls="collapseExample">
+                      Button with data-target
+                    </button>
+                    </p>
+
+                    <div class="collapse" id="collapseExample">
+                      <div class="card card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                      </div>
+                    </div>
+
                     <div>
                       <div id="heading0">
                         <h5 class="mb-0">
-                          <button class="btn btn-danger" aria-expanded="true"
-                                  v-text="domains[0]">
+                          <button class="btn btn-danger" type="button"
+                                  data-toggle="collapse" data-target="#collapse0"
+                                  aria-expanded="true" aria-controls="collapse0"
+                                  v-text="domains[0].name"
+                                  v-on:click="toggleDomain(0)">
                           </button>
                         </h5>
                       </div>
 
-                      <!--<div id="collapse0" class="indicators-container" aria-labelledby="heading0"-->
-                           <!--v-bind:class="[domainSortedIndicatorsCollapsed['0'] === true ? 'collapse' : '']"-->
-                           <!--v-on:click="toggleDomain('0')">-->
-                        <!--&lt;!&ndash;<div class="card-body">&ndash;&gt;-->
-                          <!--Hazard Indicators-->
-                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                      <!--</div>-->
+                      <div id="collapse0" class="indicators-container collapse" aria-labelledby="heading0"
+                           v-bind:class="[domains[0].isOverviewVisible === true ? 'show' : '']">
+                        <div class="card card-body">
+                          Hazard Indicators
+                          Hazard Indicators
+                          Hazard Indicators
+                          Hazard Indicators
+                          Hazard Indicators
+                          Hazard Indicators
+                          Hazard Indicators
+                          Hazard Indicators
+                        </div>
+                      </div>
                     </div>
 
                     <div>
                       <div id="heading1">
                         <h5 class="mb-0">
                           <button class="btn btn-danger" aria-expanded="true"
-                                  v-text="domains[1]">
+                                  v-text="domains[1].name"
+                                  v-on:click="toggleDomain(1)">
                           </button>
                         </h5>
                       </div>
 
-                      <!--<div id="collapse1" class="indicators-container" aria-labelledby="heading1"-->
-                           <!--v-bind:class="[domainSortedIndicatorsCollapsed['1'] === true ? 'collapse' : '']"-->
-                           <!--v-on:click="toggleDomain('1')">-->
-                        <!--&lt;!&ndash;<div class="card-body">&ndash;&gt;-->
-                        <!--Exposure Indicators-->
-                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                      <!--</div>-->
+                      <div id="collapse1" class="indicators-container" aria-labelledby="heading1"
+                           v-bind:class="[domains[1].isOverviewVisible === false ? 'collapse' : '']">
+                        <!--<div class="card-body">-->
+                        Exposure Indicators
+                        <!--</div>-->
+                      </div>
                     </div>
 
                     <div>
                       <div id="heading2">
                         <h5 class="mb-0">
                           <button class="btn btn-danger" aria-expanded="true"
-                                  v-text="domains[2]">
+                                  v-text="domains[2].name"
+                                  v-on:click="toggleDomain(2)">
                           </button>
                         </h5>
                       </div>
 
-                      <!--<div id="collapse2" class="indicators-container" aria-labelledby="heading2"-->
-                           <!--v-bind:class="[domainSortedIndicatorsCollapsed['2'] === true ? 'collapse' : '']"-->
-                           <!--v-on:click="toggleDomain('2')">-->
-                        <!--&lt;!&ndash;<div class="card-body">&ndash;&gt;-->
-                        <!--Vulnerability - Sensitivity Indicators-->
-                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                      <!--</div>-->
+                      <div id="collapse2" class="indicators-container" aria-labelledby="heading2"
+                           v-bind:class="[domains[2].isOverviewVisible === false ? 'collapse' : '']">
+                        <!--<div class="card-body">-->
+                        Vulnerability - Sensitivity Indicators
+                        <!--</div>-->
+                      </div>
                     </div>
 
                     <div>
                       <div id="heading3">
                         <h5 class="mb-0">
                           <button class="btn btn-danger" aria-expanded="true"
-                                  v-text="domains[3]">
+                                  v-text="domains[3].name"
+                                  v-on:click="toggleDomain(3)">
                           </button>
                         </h5>
                       </div>
 
-                      <!--<div id="collapse3" class="indicators-container" aria-labelledby="heading3"-->
-                           <!--v-bind:class="[domainSortedIndicatorsCollapsed['3'] === true ? 'collapse' : '']"-->
-                           <!--v-on:click="toggleDomain('3')">-->
-                        <!--&lt;!&ndash;<div class="card-body">&ndash;&gt;-->
-                        <!--Vulnerability - Adaptive Capacity Indicators-->
-                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                      <!--</div>-->
+                      <div id="collapse3" class="indicators-container" aria-labelledby="heading3"
+                           v-bind:class="[domains[3].isOverviewVisible === false ? 'collapse' : '']">
+                        <!--<div class="card-body">-->
+                        Vulnerability - Adaptive Capacity Indicators
+                        <!--</div>-->
+                      </div>
                     </div>
 
                     <div>
                       <div id="heading4">
                         <h5 class="mb-0">
                           <button class="btn btn-danger" aria-expanded="true"
-                                  v-text="domains[4]">
+                                  v-text="domains[4].name"
+                                  v-on:click="toggleDomain(4)">
                           </button>
                         </h5>
                       </div>
 
-                      <!--<div id="collapse3" class="indicators-container" aria-labelledby="heading4"-->
-                           <!--v-bind:class="[domainSortedIndicatorsCollapsed['4'] === true ? 'collapse' : '']"-->
-                           <!--v-on:click="toggleDomain('4')">-->
-                        <!--&lt;!&ndash;<div class="card-body">&ndash;&gt;-->
-                        <!--Other Indicators-->
-                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                      <!--</div>-->
+                      <div id="collapse4" class="indicators-container" aria-labelledby="heading4"
+                           v-bind:class="[domains[4].isOverviewVisible === false ? 'collapse' : '']">
+                        <!--<div class="card-body">-->
+                        Other Indicators
+                        <!--</div>-->
+                      </div>
                     </div>
                   </div>
 
