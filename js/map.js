@@ -244,8 +244,7 @@ let BaseMapLayers = {
     //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Esri.WorldGrayCanvas;
     //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.HikeBike.HikeBike;
     //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Hydda.RoadsAndLabels;
-    //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Wikimedia;
-    this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Esri.WorldImagery
+    this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Wikimedia;
 
     // Physical
     //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.Hydda.Base;
@@ -1975,8 +1974,9 @@ let overviewInfoViewModel = new Vue({
         this.groupFillColor = nuts3LayerSetupViewModel.groupFillColors[g];
       }
 
+      //this.domainDictionaryIndicators
 
-
+      // alert(this.domainDictionaryIndicators[this.domains[0].name].toJSON());
 
 
 
