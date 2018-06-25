@@ -2074,38 +2074,44 @@
 
                       <div>
                         <!--class="table table-striped"-->
-                        <table>
-                          <tbody v-for="hi in hazardIndicators" v-if="hazardIndicators.length !== 0">
-
+                        <table class="table-striped">
+                          <tbody>
                           <tr>
-                            <td>{{ hi.description }}</td>
-                            <td>{{ hi.value }}</td>
+                            <th>Name</th>
+                            <th>Value</th>
+                            <th>Z Score</th>
+                          </tr>
+                          <tr v-for="hi in hazardIndicators" v-if="hazardIndicators.length !== 0">
+                            <td class="border-right">{{ hi.description }}</td>
+                            <td class="border-right">{{ hi.value }}</td>
+                            <td>{{ hi.zscore }}</td>
 
                             <!--<td class="narrow-td">-->
-                              <!--<div class="map-polygon-colour-rect"-->
-                                   <!--v-bind:style="{ 'background-color': supergroupFillColors['1'].fillColor, 'opacity': supergroupFillColors['1'].fillOpacity }">-->
-                              <!--</div>-->
+                            <!--<div class="map-polygon-colour-rect"-->
+                            <!--v-bind:style="{ 'background-color': supergroupFillColors['1'].fillColor, 'opacity': supergroupFillColors['1'].fillOpacity }">-->
+                            <!--</div>-->
                             <!--</td>-->
                             <!--<td class="narrow-td">-->
-                              <!--{{ index }}-->
+                            <!--{{ index }}-->
                             <!--</td>-->
                             <!--<td class="narrow-td">-->
-                              <!--<div class="checkbox checkbox-decorator">-->
-                                <!--<label>-->
-                                  <!--<input type="checkbox" id="g1" value="1" v-model="checkedSupergroups"-->
-                                         <!--v-on:change="renderNuts3TypologyClass('1')">-->
-                                <!--</label>-->
-                              <!--</div>-->
+                            <!--<div class="checkbox checkbox-decorator">-->
+                            <!--<label>-->
+                            <!--<input type="checkbox" id="g1" value="1" v-model="checkedSupergroups"-->
+                            <!--v-on:change="renderNuts3TypologyClass('1')">-->
+                            <!--</label>-->
+                            <!--</div>-->
                             <!--</td>-->
                             <!--<td><label class="clickable-label" for="g1" v-text="supergroups['1'].name"></label></td>-->
                             <!--<td>-->
-                              <!--<i class="material-icons help text-danger"-->
-                                 <!--data-toggle="tooltip" data-html="true" data-placement="left"-->
-                                 <!--v-text="tooltipIconName"-->
-                                 <!--v-bind:title="supergroupTooltips['1']">-->
-                              <!--</i>-->
+                            <!--<i class="material-icons help text-danger"-->
+                            <!--data-toggle="tooltip" data-html="true" data-placement="left"-->
+                            <!--v-text="tooltipIconName"-->
+                            <!--v-bind:title="supergroupTooltips['1']">-->
+                            <!--</i>-->
                             <!--</td>-->
                           </tr>
+
                           </tbody>
                         </table>
 

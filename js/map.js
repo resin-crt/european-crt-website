@@ -1976,20 +1976,11 @@ let overviewInfoViewModel = new Vue({
         this.groupFillColor = nuts3LayerSetupViewModel.groupFillColors[g];
       }
 
-      let aa = this.domainDictionaryIndicators[this.domains[0].name];
-      let bb = '';
-
-      // alert(this.domainDictionaryIndicators[this.domains[0].name].toJSON());
-
-      //AppData.domainDictionaryIndicators[this.domain[0].name][0]
-
       this.hazardIndicators = [];
-
-      let geojson = MapLayers.nuts3.geoJSON;
-
 
       for (let i = 0; i < AppData.domainDictionaryIndicators[this.domains[0].name].length; i++) {
         let im = AppData.domainDictionaryIndicators[this.domains[0].name][i];
+        let value = im.type === 'double' ? feature.properties[im.name].toFixed(3) : feature.properties[im.name];
 
         this.hazardIndicators.push({
           name: im.name,
@@ -1998,7 +1989,8 @@ let overviewInfoViewModel = new Vue({
           details: im.details,
           source: im.source,
           domain: im.domain,
-          value: feature.properties[im.name]
+          value: value,
+          zscore: feature.properties[im.name + 'Z'].toFixed(3)
         });
       }
 
