@@ -1834,7 +1834,9 @@ let overviewInfoViewModel = new Vue({
 
     domainSortedIndicators: AppData.domainSortedIndicators,
 
-    domainDictionaryIndicators: AppData.domainDictionaryIndicators
+    domainDictionaryIndicators: AppData.domainDictionaryIndicators,
+
+    hazardIndicators: []
 
     // groupSortedIndicators: AppData.groupSortedIndicators,
     //
@@ -1974,12 +1976,31 @@ let overviewInfoViewModel = new Vue({
         this.groupFillColor = nuts3LayerSetupViewModel.groupFillColors[g];
       }
 
-      //this.domainDictionaryIndicators
+      let aa = this.domainDictionaryIndicators[this.domains[0].name];
+      let bb = '';
 
       // alert(this.domainDictionaryIndicators[this.domains[0].name].toJSON());
 
+      //AppData.domainDictionaryIndicators[this.domain[0].name][0]
+
+      this.hazardIndicators = [];
+
+      let geojson = MapLayers.nuts3.geoJSON;
 
 
+      for (let i = 0; i < AppData.domainDictionaryIndicators[this.domains[0].name].length; i++) {
+        let im = AppData.domainDictionaryIndicators[this.domains[0].name][i];
+
+        this.hazardIndicators.push({
+          name: im.name,
+          description: im.description,
+          unit: im.unit,
+          details: im.details,
+          source: im.source,
+          domain: im.domain,
+          value: feature.properties[im.name]
+        });
+      }
 
 
 
