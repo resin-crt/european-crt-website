@@ -1181,7 +1181,22 @@ let HtmlTemplates = {
                                '<h4 class="card-title"><strong><em>@@name@@</em></strong></h4>' +
                                '<p class="card-text">@@description@@</p>' +
                              '</div>' +
-                           '</div>'
+                           '</div>',
+
+  /**
+   * The HTML template used to display a tooltip with metadata about indicators/
+   */
+  indicatorMetadataTooltip: '<div class="card">' +
+                              '<div class="card-header bg-dark">' +
+                                //'<i class="display-1 text-center text-danger material-icons">@@icon@@</i>' +
+                                '<i class="display-1 text-danger @@icon@@" style="margin-left: 20px;"></i>' +
+                              '</div>' +
+                              '<div class="card-body">' +
+                                '<h4 class="card-title"><strong><em>@@description@@</em></strong></h4>' +
+                                // '<h4 class="card-title text-right border-left"><strong><em>@@unit@@</em></strong></h4>' +
+                                // '<p class="card-text">@@details@@</p>' +
+                              '</div>' +
+                            '</div>'
 
 };
 
@@ -1836,11 +1851,10 @@ let overviewInfoViewModel = new Vue({
 
     domainDictionaryIndicators: AppData.domainDictionaryIndicators,
 
-    hazardIndicators: []
+    hazardIndicators: [],
 
-    // groupSortedIndicators: AppData.groupSortedIndicators,
-    //
-    // groupDictionaryIndicators: AppData.groupDictionaryIndicators
+    tooltipIconName: 'announcement', // feedback, info,
+
 
   },
 
@@ -1849,29 +1863,32 @@ let overviewInfoViewModel = new Vue({
    */
   computed: {
 
-    // domains: function() {
-    //
-    //   let domainsArray = [];
-    //
-    //   for (let i = 0; i < AppData.domains.length; i++) {
-    //     domainsArray.push({ name: AppData.domains[i], isVisible: true });
-    //   }
-    //
-    //   return domainsArray;
-    //
-    // },
+    /**
+     * Return the tooltips of the indicators.
+     */
+    indicatorTooltips: function() {
 
-    // domainSortedIndicatorsCollapsed: function() {
-    //
-    //   let indicatorPanelsCollapsed = {};
-    //
-    //   for (let i = 0; i < this.domainSortedIndicators; i++) {
-    //     indicatorPanelsVisibility[i.toString()] = false;
-    //   }
-    //
-    //   return indicatorPanelsCollapsed;
-    //
-    // }
+      let tooltipsDic = {};
+
+      for (let domain in this.domainDictionaryIndicators) {
+        if (this.domainDictionaryIndicators.hasOwnProperty(domain)) {
+          tooltipsDic[domain] = [];
+
+          for (let i = 0; i < this.domainDictionaryIndicators[domain].length; i++) {
+            let html = HtmlTemplates.indicatorMetadataTooltip
+                        .replace('@@icon@@', this.domainDictionaryIndicators[domain][i].faicon)
+                        .replace('@@description@@', this.domainDictionaryIndicators[domain][i].description)
+                          // .replace('@@unit@@', this.domainDictionaryIndicators[domain][i].unit)
+                        // .replace('@@details@@', this.domainDictionaryIndicators[domain][i].details);
+
+            tooltipsDic[domain].push(html);
+          }
+        }
+      }
+
+      return tooltipsDic;
+
+    },
 
   },
 
@@ -1980,7 +1997,7 @@ let overviewInfoViewModel = new Vue({
 
       for (let i = 0; i < AppData.domainDictionaryIndicators[this.domains[0].name].length; i++) {
         let im = AppData.domainDictionaryIndicators[this.domains[0].name][i];
-        let value = im.type === 'double' ? feature.properties[im.name].toFixed(3) : feature.properties[im.name];
+        let value = im.type === 'double' ? feature.properties[im.name].toFixed(3) : feature.properties[im.name].toFixed(0); // TODO: RESIN - toFixed(0) MUST be removed once I have the correct data.
 
         this.hazardIndicators.push({
           name: im.name,
@@ -2001,7 +2018,7 @@ let overviewInfoViewModel = new Vue({
     Pin() {
       this.isPinned = true;
       if (AppState.bootstrapMaterialTooltipEnabled) {
-        $('#overviewPin').tooltip('show');
+        $('#overview-pin').tooltip('show');
       }
     },
 
@@ -2102,7 +2119,7 @@ let detailsInfoViewModel = new Vue({
     Pin() {
       this.isPinned = true;
       if (AppState.bootstrapMaterialTooltipEnabled) {
-        $('#detailsPin').tooltip('show');
+        $('#details-pin').tooltip('show');
       }
     },
 

@@ -126,6 +126,7 @@ body {
 }
 
 /* Rules for sizing the icon. */
+.material-icons.md-875-rem { font-size: .875rem; }
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
@@ -152,12 +153,39 @@ body {
 
 
 .nuts3layer-setup-table {
-  height: 460px;
+  height: 460px; /* TODO: RESIN - This height is hardcoded and needs to be removed */
   overflow-y: auto;
 }
 
 .indicators-container {
   margin-left: 10px;
+}
+
+.ind-table {
+  margin: -10px;
+
+}
+
+.ind-index {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.ind-name {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+/* TODO: RESIN - Perhaps remove this one? */
+.ind-tooltip {
+  /*.875rem;*/
+
+}
+
+.ind-value {
+  padding-left: 3px;
+  padding-right: 3px;
+  width: 60px;
 }
 
 
