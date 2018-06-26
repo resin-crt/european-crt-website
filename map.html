@@ -1825,7 +1825,27 @@
               <div class="card-body">
 
                 <div class="d-flex">
-                  <div class="mr-auto p-2"><h4 class="text-danger" v-text="nuts3Name"></h4></div>
+                  <div class="p-2">
+                    <button id="toggle-lang" type="button" class="btn btn-danger"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Click to change language"
+                            aria-label="Click to change language"
+                            v-bind:class="[language === 'en' ? 'btn-raised' : '']"
+                            v-on:click="toggleLanguage()">
+                      EN
+                    </button>
+                  </div>
+
+                  <div class="mr-auto p-2"
+                       v-bind:class="[language === 'other' ? 'collapse' : '']">
+                    <h4 class="text-danger" v-text="nuts3Name"></h4>
+                  </div>
+                  <div class="mr-auto p-2"
+                       v-bind:class="[language === 'en' ? 'collapse' : '']">
+                    <h4 class="text-danger" v-text="nuts3NativeName"></h4>
+                  </div>
+
                   <div class="p-2">
                     <button id="overview-pin" type="button" class="btn btn-danger"
                             data-toggle="tooltip"
@@ -1880,7 +1900,7 @@
                   </tbody>
                 </table>
 
-                <div id="overview-indicator-area">
+                <div id="overview-indicator-area" style="margin-top: -20px;">
 
                   <div>
                     <button class="btn btn-danger" type="button"
@@ -1902,13 +1922,13 @@
                                 <i class="material-icons md-18 text-danger align-middle" v-text="tooltipIconName"></i>
                               </th>
                               <th scope="col" class="ind-name">Name</th>
+                              <!--<th scope="col" class="ind-tooltip">T</th>-->
                               <th scope="col" class="text-right ind-value">Value</th>
                               <th scope="col" class="text-right ind-value">Z Score</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr v-for="(hi, index) in hazardIndicators" v-if="hazardIndicators.length !== 0">
-                              <!--v-bind:title="indicatorTooltips[domains[0].name][index]"-->
                               <th scope="row" class="text-right help ind-index"
                                   data-toggle="tooltip" data-html="true" data-placement="left"
                                   v-bind:title="indicatorTooltips[domains[0].name][index]">
@@ -1922,8 +1942,7 @@
                                 <!--<i class="material-icons md-18 help text-danger"-->
                                    <!--data-toggle="tooltip" data-html="true" data-placement="left"-->
                                    <!--v-text="tooltipIconName"-->
-                                   <!--&gt;-->
-                                  <!--&lt;!&ndash;v-bind:title="supergroupTooltips['1']"&ndash;&gt;-->
+                                   <!--v-bind:title="indicatorTooltips[domains[0].name][index]">-->
                                 <!--</i>-->
                               <!--</td>-->
                               <td class="text-right ind-value">{{ hi.value }}</td>

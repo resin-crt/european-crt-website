@@ -1193,8 +1193,8 @@ let HtmlTemplates = {
                               '</div>' +
                               '<div class="card-body">' +
                                 '<h4 class="card-title"><strong><em>@@description@@</em></strong></h4>' +
-                                // '<h4 class="card-title text-right border-left"><strong><em>@@unit@@</em></strong></h4>' +
-                                // '<p class="card-text">@@details@@</p>' +
+                                '<h4 class="card-title text-right border-left"><strong><em>@@unit@@</em></strong></h4>' +
+                                '<p class="card-text">@@details@@</p>' +
                               '</div>' +
                             '</div>'
 
@@ -1837,6 +1837,10 @@ let overviewInfoViewModel = new Vue({
 
     nuts3Name: '',
 
+    nuts3NativeName: '',
+
+    language: 'en',
+
     supergroupName: null,
 
     groupName: null,
@@ -1878,8 +1882,8 @@ let overviewInfoViewModel = new Vue({
             let html = HtmlTemplates.indicatorMetadataTooltip
                         .replace('@@icon@@', this.domainDictionaryIndicators[domain][i].faicon)
                         .replace('@@description@@', this.domainDictionaryIndicators[domain][i].description)
-                          // .replace('@@unit@@', this.domainDictionaryIndicators[domain][i].unit)
-                        // .replace('@@details@@', this.domainDictionaryIndicators[domain][i].details);
+                        .replace('@@unit@@', this.domainDictionaryIndicators[domain][i].unit)
+                        .replace('@@details@@', this.domainDictionaryIndicators[domain][i].details);
 
             tooltipsDic[domain].push(html);
           }
@@ -1896,6 +1900,21 @@ let overviewInfoViewModel = new Vue({
    * The methods of the view model.
    */
   methods: {
+
+    /**
+     * Toggles the language from en to other and vice versa.
+     */
+    toggleLanguage() {
+      if (this.language === 'en') {
+        this. language = 'other';
+      }
+      else {
+        this.language = 'en';
+      }
+      if (AppState.bootstrapMaterialTooltipEnabled) {
+        $('#toggle-lang').tooltip('hide');
+      }
+    },
 
     /**
      * Shows the overview view.
@@ -1955,6 +1974,7 @@ let overviewInfoViewModel = new Vue({
       let g = feature.properties.G;
 
       this.nuts3Name = AppData.nuts3[nuts3id].name_ascii;
+      this.nuts3NativeName = AppData.nuts3[nuts3id].nuts_name;
 
       let currentLevel = nuts3LayerSetupViewModel.currentTab;
 
@@ -2011,6 +2031,10 @@ let overviewInfoViewModel = new Vue({
         });
       }
 
+
+
+
+      $('[data-toggle="tooltip"]').tooltip();
 
 
     },
