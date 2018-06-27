@@ -1,0 +1,712 @@
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  overflow-y: hidden;
+}
+
+.xs-brand-heading {
+  font-size: 0.75rem;
+}
+
+.sm-brand-heading {
+  display: none;
+  font-size: 1.00rem;
+}
+
+.md-brand-heading {
+  display: none;
+}
+
+@media only screen and (max-width: 320px) {
+  .website-logo {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .xs-brand-heading {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 459px) {
+  .sm-brand-heading {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 460px) and (max-width: 575px) {
+  .md-brand-heading {
+    display: inline-block;
+  }
+}
+
+.page-container {
+  /*background-color: #d62d20;*/
+  position: relative;
+  padding: 56px 0 0 0;
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+  /*height: calc(100% - 60px);*/
+  /*min-height: calc(100% - 60px);*/
+}
+
+.map-container {
+  /*background-color: #027fb8;*/
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.spinner {
+  /*float: none;*/
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1000;
+}
+
+#map {
+  /*background-color: #ffa000;*/
+  /*background-color: #282828;*/
+  background-color: #3d3d3d;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+}
+
+.sidebar-container {
+  height: 100%;
+  overflow-y: auto;
+  /*padding: 10px 10px 10px 10px; !* TODO: RESIN - Check if this needs to change *!*/
+  padding: 0 10px 0 10px;
+}
+
+.crt-row {
+  margin: 10px 0 0 0;
+}
+
+.crt-row-internal {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.crt-hor-sep {
+  margin: 20px 0 0 0;
+}
+
+.crt-ver-sep {
+  margin: 0 10px 0 0;
+}
+
+/* Material Icons */
+.crt-material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* line-height: 1; */
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-875-rem { font-size: .875rem; }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.crt-material-icons.md-18 { font-size: 18px; }
+.crt-material-icons.md-24 { font-size: 24px; }
+.crt-material-icons.md-36 { font-size: 36px; }
+.crt-material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+.crt-material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.crt-material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+.crt-material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.crt-material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.material-icons.orange600 { color: #FB8C00; }
+.crt-material-icons.orange600 { color: #FB8C00; }
+
+
+.nuts3layer-setup-table {
+  height: 460px; /* TODO: RESIN - This height is hardcoded and needs to be removed */
+  overflow-y: auto;
+}
+
+.indicators-container {
+  margin-left: 10px;
+}
+
+.ind-table {
+  margin: -10px;
+
+}
+
+.ind-index {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.ind-name {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+/* TODO: RESIN - Perhaps remove this one? */
+.ind-tooltip {
+  /*.875rem;*/
+
+}
+
+.ind-value {
+  padding-left: 3px;
+  padding-right: 3px;
+  width: 60px;
+}
+
+
+
+/*
+ *  ================================================================================
+ *    Override Tooltip
+ *  ================================================================================
+ */
+.tooltip > .tooltip-inner {
+  border: 1px solid;
+  padding: 10px;
+  max-width: 550px;
+  color: #424242;
+  text-align: left;
+  background: #e9ecef;
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+.tooltip > .tooltip-arrow {
+  border-bottom-color: gray;
+}
+
+.tooltip.show {
+  opacity: 1.0;
+}
+
+
+/*
+ *  ================================================================================
+ *    Colours
+ *  ================================================================================
+ */
+/*.yellow {*/
+/*color: #ff9c00;*/
+/*}*/
+
+/*.title {*/
+/*font-weight: bold;*/
+/*text-shadow: -1px 0 #696969, 0 1px #696969, 1px 0 #696969, 0 -1px #696969;*/
+/*!*text-shadow: -1px 0 #808080, 0 1px #808080, 1px 0 #808080, 0 -1px #808080;*!*/
+/*}*/
+
+/*
+ *  ================================================================================
+ *    Override Leaflet default values
+ *  ================================================================================
+ */
+.leaflet-popup-content-wrapper {
+  padding: 1px;
+  text-align: left;
+  border-radius: 2px;
+}
+
+.leaflet-popup-content {
+  margin: 4px 4px;
+  line-height: 1.4;
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 12px 23px 0 0;
+  text-align: center;
+  width: 18px;
+  height: 14px;
+  font: 16px/14px Tahoma, Verdana, sans-serif;
+  color: #c3c3c3;
+  text-decoration: none;
+  font-weight: bold;
+  background: transparent;
+}
+
+/*
+ *  ================================================================================
+ *    Override Sidebar default values
+ *  ================================================================================
+ */
+.sidebar {
+  /*position: absolute;*/
+  top: 56px;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2000;
+}
+
+.sidebar.collapsed {
+  width: 40px;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    width: 590px;
+    /*top: 56px; !* OVERRIDE *!*/
+    /*bottom: 0px; !* OVERRIDE *!*/
+    transition: width 250ms; /* OVERRIDE */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .sidebar {
+    width: 590px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  .sidebar {
+    width: 590px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sidebar {
+    width: 590px;
+    /*width: 580px;*/
+  }
+}
+
+.sidebar-left {
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  .sidebar-left {
+    left: 0px;
+  }
+}
+
+.sidebar-right {
+  right: 0;
+}
+
+@media (min-width: 768px) {
+  .sidebar-right {
+    right: 0px; /* OVERRIDE */
+  }
+}
+
+.sidebar-tabs {
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  background-color: #fff;
+}
+
+.sidebar-left .sidebar-tabs {
+  left: 0;
+}
+
+.sidebar-right .sidebar-tabs {
+  right: 0;
+}
+
+.sidebar-tabs,
+.sidebar-tabs > ul {
+  position: absolute;
+  width: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-tabs > li,
+.sidebar-tabs > ul > li {
+  width: 100%;
+  height: 40px;
+  color: #333;
+  font-size: 12pt;
+  overflow: hidden;
+  transition: all 80ms;
+}
+
+.sidebar-tabs > li:hover,
+.sidebar-tabs > ul > li:hover {
+  color: #000;
+  background-color: #eee;
+}
+
+.sidebar-tabs > li.active,
+.sidebar-tabs > ul > li.active {
+  color: #fff;
+  /*background-color: #337ab7; !*#0074d9;*!*/
+  background-color: #f44336; /*#d9534f;*/ /*#0074d9;*/
+}
+
+.sidebar-tabs > li.disabled,
+.sidebar-tabs > ul > li.disabled {
+  color: rgba(51, 51, 51, 0.4);
+}
+
+.sidebar-tabs > li.disabled:hover,
+.sidebar-tabs > ul > li.disabled:hover {
+  background: transparent;
+}
+
+.sidebar-tabs > li.disabled > a,
+.sidebar-tabs > ul > li.disabled > a {
+  cursor: default;
+}
+
+.sidebar-tabs > li > a,
+.sidebar-tabs > ul > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+}
+
+.sidebar-tabs > ul + ul {
+  bottom: 0;
+}
+
+.sidebar-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  background-color: #fff;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /*direction: ltf;*/  /* This neess to be used after padding changed so as to allow nice scrollbars appear on the panel */
+}
+
+.sidebar-left .sidebar-content {
+  left: 40px;
+  right: 0;
+}
+
+.sidebar-right .sidebar-content {
+  left: 0;
+  right: 40px;
+}
+
+.sidebar.collapsed > .sidebar-content {
+  overflow-y: hidden;
+}
+
+.sidebar-pane {
+  display: none;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  /*padding: 10px 20px; !* TODO: RESIN - Check if these settings need to change *!*/
+  padding: 10px 10px; /* TODO: RESIN - Check if these settings need to change */
+}
+
+.sidebar-pane.active {
+  display: block;
+}
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .sidebar-pane {
+    /*min-width: 265px;*/
+    min-width: 560px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  .sidebar-pane {
+    /*min-width: 350px;*/
+    min-width: 540px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sidebar-pane {
+    /*min-width: 420px;*/
+    /*min-width: 720px;*/
+    min-width: 520px;
+  }
+}
+
+.sidebar-header {
+  margin: -10px -20px 0;
+  height: 40px;
+  padding: 0 20px;
+  line-height: 40px;
+  font-size: 14.4pt;
+  color: #fff;
+  /*background-color: #337ab7; !*#0074d9;*!*/
+  background-color: #d9534f; /*#0074d9;*/
+}
+
+.sidebar-right .sidebar-header {
+  padding-left: 40px;
+}
+
+.sidebar-close {
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sidebar-left .sidebar-close {
+  right: 0;
+}
+
+.sidebar-right .sidebar-close {
+  left: 0;
+}
+
+.sidebar-left ~ .sidebar-map {
+  margin-left: 40px;
+}
+
+@media (min-width: 768px) {
+  .sidebar-left ~ .sidebar-map {
+    margin-left: 0;
+  }
+}
+
+.sidebar-right ~ .sidebar-map {
+  margin-right: 40px;
+}
+
+@media (min-width: 768px) {
+  .sidebar-right ~ .sidebar-map {
+    margin-right: 0;
+  }
+}
+
+.sidebar {
+  /*box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);*/
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25); /* OVERRIDE */
+}
+
+.sidebar.leaflet-touch {
+  box-shadow: none;
+  /*border-right: 2px solid rgba(0, 0, 0, 0);*/
+  border-right: 0px solid rgba(0, 0, 0, 0);
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    border-radius: 0px; /* OVERRIDE */
+  }
+  .sidebar.leaflet-touch {
+    /*border: 2px solid rgba(0, 0, 0, 0.2);*/
+    border: 0px solid rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (min-width: 768px) {
+  .sidebar-left ~ .sidebar-map .leaflet-left {
+    transition: left 250ms; /* OVERRIDE */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .sidebar-left ~ .sidebar-map .leaflet-left {
+    /*left: 315px;*/
+    left: 620px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  .sidebar-left ~ .sidebar-map .leaflet-left {
+    /*left: 400px;*/
+    left: 700px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sidebar-left ~ .sidebar-map .leaflet-left {
+    /*left: 470px;*/
+    /*left: 800px;*/
+    left: 600px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sidebar-left.collapsed ~ .sidebar-map .leaflet-left {
+    left: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sidebar-right ~ .sidebar-map .leaflet-right {
+    transition: right 250ms; /* OVERRIDE */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .sidebar-right ~ .sidebar-map .leaflet-right {
+    /*right: 315px;*/
+    right: 620px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  .sidebar-right ~ .sidebar-map .leaflet-right {
+    /*right: 400px;*/
+    right: 700px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sidebar-right ~ .sidebar-map .leaflet-right {
+    /*right: 470px;*/
+    /*right: 800px;*/
+    right: 600px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sidebar-right.collapsed ~ .sidebar-map .leaflet-right {
+    right: 50px;
+  }
+}
+
+
+/*
+ *  ================================================================================
+ *    Sidebar Card
+ *  ================================================================================
+ */
+/*TODO: RESIN - Check out if this can be used.*/
+.card > .sidebar-card {
+  height: 100%;
+}
+
+/*.sidebar-card .card-header {*/
+/*padding: 1rem;*/
+/*background-color: transparent;*/
+/*}*/
+
+.sidebar-card > .card-body {
+  padding: 1.0rem;
+}
+
+
+.sidebar-card > .card-body > .table th, .table td {
+  padding: 0.75rem 0 0.75rem 0.50rem
+}
+
+/*.sidebar-card > .card-body > .table th, .table td > .colour-narrow-td {*/
+/*padding-left: 0;*/
+/*padding-right: 0;*/
+/*}*/
+
+
+/*
+ *  ================================================================================
+ *    Sidebar Table
+ *  ================================================================================
+ */
+
+/* Used to define very narrow table colums */
+.narrow-td {
+  width: 20px;
+}
+
+.map-polygon-colour-rect {
+  border-radius: 2px;
+  height: 20px;
+  width: 20px;
+  margin: 0 0 0 5px;
+}
+
+.legend-label {
+  margin-bottom: 0;
+}
+
+.clickable-label {
+  cursor: pointer;
+}
+
+.help {
+  cursor: help;
+}
+
+
+
+/*
+ *  ================================================================================
+ *    Override z-indexes
+ *  ================================================================================
+ */
+.navbar {
+  z-index: 3000;
+}
+
+.dropdown-menu {
+  z-index: 4000;
+}
+
+@supports (position: sticky) {
+  .sticky-top {
+    z-index: 4020;
+  }
+}
+
+.fixed-top {
+  z-index: 4030;
+}
+
+.fixed-bottom {
+  z-index: 4030;
+}
+
+.modal-backdrop {
+  z-index: 4040;
+}
+
+.modal {
+  z-index: 4050;
+}
+
+.popover {
+  z-index: 4060;
+}
+
+.tooltip {
+  z-index: 4070;
+}
