@@ -9,14 +9,17 @@ AppData.indicatorMetadata = {
     "unit": "°C",
     "details": "Mean temperature is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. This indicator shows the difference in daily mean temperature between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection). The future projection is developed for a high greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (RCP) <a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">8.5 scenario</a>). Projected change in daily mean temperature is not itself a climate change hazard. However, this indicator and the supporting statistical data (the Z-Score) can be used to enhance understanding of how the climate of the NUTS3 area is projected to change over the coming decades.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP8.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Hazard",
-    "domainsort": 2,
-    "group": "Heat Stress",
-    "groupsort": 2,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Hazard",
+    "domainSort": 2,
+    "group": "Heat Stress",
+    "groupSort": 2,
+    "isOverviewVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I002": {
     "name": "I002",
@@ -24,14 +27,17 @@ AppData.indicatorMetadata = {
     "unit": "°C",
     "details": "Minimum temperature is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. This indicator shows the difference in minimum temperature between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection). The future projection is developed for a high greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (RCP) <a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">8.5 scenario</a>). Projected change in minimum temperature is not itself a climate change hazard. However, this indicator and the supporting statistical data (the Z-Score) can be considered alongside other low temperature related indicators (e.g. frost days and ice days) to demonstrate how low temperature related hazards may evolve in the NUTS3 area over the coming decades.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP8.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Hazard",
-    "domainsort": 12,
-    "group": "Extreme cold",
-    "groupsort": 12,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Hazard",
+    "domainSort": 12,
+    "group": "Extreme cold",
+    "groupSort": 12,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I003": {
     "name": "I003",
@@ -39,14 +45,17 @@ AppData.indicatorMetadata = {
     "unit": "°C",
     "details": "Maximum temperature is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. This indicator shows the difference in maximum temperature between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection). The future projection is developed for a high greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (RCP) <a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">8.5 scenario</a>). Projected change in maximum temperature is not itself a climate change hazard. However, this indicator and the supporting statistical data (the Z-Score) can be considered alongside other high temperature related indicators (e.g. heat wave days) to demonstrate how high temperature related hazards may evolve in the NUTS3 area over the coming decades.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP8.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Hazard",
-    "domainsort": 4,
-    "group": "Heat Stress",
-    "groupsort": 4,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Hazard",
+    "domainSort": 4,
+    "group": "Heat Stress",
+    "groupSort": 4,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I004": {
     "name": "I004",
@@ -54,14 +63,17 @@ AppData.indicatorMetadata = {
     "unit": "Number of days",
     "details": "This indicator shows the difference in the number of days with a minimum temperature of less than 0°C between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection). The future projection is developed for a high greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (RCP) <a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">8.5 scenario</a>). The 0°C temperature threshold for frost days is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether change in the number of frost days is a potentially significant issue for the NUTS3 area. The number of frost days is decreasing across Europe, and the impacts of this shift may be positive or negative depending on the location being considered and related factors including the nature of dominant industries and land uses.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP8.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Hazard",
-    "domainsort": 14,
-    "group": "Extreme cold",
-    "groupsort": 14,
     "type": "int",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Hazard",
+    "domainSort": 14,
+    "group": "Extreme cold",
+    "groupSort": 14,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I005": {
     "name": "I005",
@@ -69,14 +81,17 @@ AppData.indicatorMetadata = {
     "unit": "Number of days",
     "details": "This indicator shows the difference in the number of days with a maximum temperature more than 25°C between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection). The future projection is developed for a high greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (RCP) <a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">8.5 scenario</a>). The 25°C temperature threshold for summer days is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. The supporting statistical data (the Z-Score) provides further information on this indicator in the context of the NUTS3 area. Although the summer days threshold of 25°C does not pose a threat to the majority of people and infrastructure, it can be considered alongside other heat-related indicators to better understand projected changes in temperature and related hazards in the NUTS3 area.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP8.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Hazard",
-    "domainsort": 6,
-    "group": "Heat Stress",
-    "groupsort": 6,
     "type": "int",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Hazard",
+    "domainSort": 6,
+    "group": "Heat Stress",
+    "groupSort": 6,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I006": {
     "name": "I006",
@@ -84,14 +99,17 @@ AppData.indicatorMetadata = {
     "unit": "Number of days",
     "details": "This indicator shows the difference in the number of nights where the minimum temperature does not drop below 20°C between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection). The future projection is developed for a high greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (RCP) <a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">8.5 scenario</a>). The 20°C temperature threshold for tropical nights is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether change in the number of tropical nights is a potentially significant issue for the NUTS3 area. The tropical nights indicator is used by the <a href=\"https://www.eea.europa.eu/publications/urban-adaptation-to-climate-change\" target=\"_cf\">European Environment Agency</a> who note that their occurrence is a crucial factor influencing the degree of health impacts associated with high temperatures in urban areas. The level of risk to people in the NUTS3 area from tropical nights (and associated heat wave days) will depend on factors including the proportion of elderly and young people in the population, groups who are particularly susceptible to harm from high temperatures. Indicator data on these factors is available within the typology portal.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP8.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Hazard",
-    "domainsort": 8,
-    "group": "Heat Stress",
-    "groupsort": 8,
     "type": "int",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Hazard",
+    "domainSort": 8,
+    "group": "Heat Stress",
+    "groupSort": 8,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I007": {
     "name": "I007",
@@ -99,14 +117,17 @@ AppData.indicatorMetadata = {
     "unit": "Number of days",
     "details": "This indicator shows the difference in the number of days with a maximum temperature of less than 0°C between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection). The future projection is developed for a high greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (RCP) <a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">8.5 scenario</a>). The 0°C temperature threshold for ice days is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether change in the number of ice days is a potentially significant issue for the NUTS3 area. The number of ice days is decreasing across Europe, and the impacts of this shift may be positive or negative depending on the location being considered and related factors including the nature of dominant industries and land uses.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP8.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Hazard",
-    "domainsort": 16,
-    "group": "Extreme cold",
-    "groupsort": 16,
     "type": "int",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Hazard",
+    "domainSort": 16,
+    "group": "Extreme cold",
+    "groupSort": 16,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I008": {
     "name": "I008",
@@ -114,14 +135,17 @@ AppData.indicatorMetadata = {
     "unit": "Number of days",
     "details": "This indicator shows the difference in the number of days with a maximum temperature of more than 35°C between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection). The future projection is developed for a high greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (RCP) <a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">8.5 scenario</a>). There is no universal standard definition for a heat wave, although they are generally regarded as periods of extremely high temperature that exceeds a certain threshold (which varies depending on location and sector being considered) for a set number of days. Heat waves can negatively impact on people, ecosystems and infrastructure. The severity of impacts will depend on factors including the degree to which they are exposed to high temperatures and their vulnerability to this hazard. Vulnerability to heat waves is influenced by factors including the proportion of elderly and young people in the population and the extent of green space cover in urban areas. Indicator data on both of these factors is available within the typology portal. The severity and duration of the heat wave will also influence levels of associated risks. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether change in the number of heat waves is a potentially significant issue for the NUTS3 area.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP8.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Hazard",
-    "domainsort": 10,
-    "group": "Heat Stress",
-    "groupsort": 10,
     "type": "int",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Hazard",
+    "domainSort": 10,
+    "group": "Heat Stress",
+    "groupSort": 10,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I009": {
     "name": "I009",
@@ -129,14 +153,17 @@ AppData.indicatorMetadata = {
     "unit": "mm",
     "details": "Total wet-day precipitation is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. This indicator shows the difference between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection) in the cumulated precipitation for days with precipitation greater than or equal to 1mm. The future projection is developed for a high greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (RCP) <a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">8.5 scenario</a>). Projected change in total wet day precipitation is not itself a climate change hazard. However, this indicator and the supporting statistical data (the Z-Score) can enhance understanding of how the climate of the NUTS3 area is projected to change over the coming decades.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP8.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Hazard",
-    "domainsort": 18,
-    "group": "Fluvial and Pluvial Flooding",
-    "groupsort": 38,
     "type": "int",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Hazard",
+    "domainSort": 18,
+    "group": "Fluvial and Pluvial Flooding",
+    "groupSort": 38,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I010": {
     "name": "I010",
@@ -144,14 +171,17 @@ AppData.indicatorMetadata = {
     "unit": "Number of days",
     "details": "Consecutive dry days is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. This indicator shows the difference between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection) in the number of consecutive dry days with precipitation less than 1mm. The future projection is developed for a high greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (RCP) <a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">8.5 scenario</a>). The statistical data provided for this indicator (the Z-Score) can be used to better understand whether change in the number of consecutive dry days is a potentially significant issue for the NUTS3 area.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP8.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Hazard",
-    "domainsort": 26,
-    "group": "Drought",
-    "groupsort": 18,
     "type": "int",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Hazard",
+    "domainSort": 26,
+    "group": "Drought",
+    "groupSort": 18,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I011": {
     "name": "I011",
@@ -159,14 +189,17 @@ AppData.indicatorMetadata = {
     "unit": "Number of days",
     "details": "Consecutive wet days is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. This indicator shows the difference between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection) in the number of consecutive wet days with precipitation greater than or equal to 1mm. The future projection is developed for a high greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (RCP) <a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">8.5 scenario</a>). Projected change in consecutive wet days is not itself a climate change hazard. However, this indicator and the supporting statistical data (the Z-Score) can enhance understanding of how the climate of the NUTS3 area is projected to change over the coming decades. Considering this indicator alongside other related indicators can support this process. For example, where consecutive wet days are projected to increase, in addition to increases in heavy and very heavy precipitation days, this indicates that flood hazards may become more common within the NUTS3 area.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP8.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Hazard",
-    "domainsort": 20,
-    "group": "Fluvial and Pluvial Flooding",
-    "groupsort": 40,
     "type": "int",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Hazard",
+    "domainSort": 20,
+    "group": "Fluvial and Pluvial Flooding",
+    "groupSort": 40,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I012": {
     "name": "I012",
@@ -174,14 +207,17 @@ AppData.indicatorMetadata = {
     "unit": "Number of days",
     "details": "Heavy precipitation days is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. This indicator shows the difference between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection) in the number of days with precipitation greater than or equal to 10mm. The future projection is developed for a high greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (RCP) <a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">8.5 scenario</a>). Where the frequency of heavy precipitation days is projected to increase, this indicates that flood hazards may also increase (although flooding is driven by multiple other factors including land use change). The statistical data provided for this indicator (the Z-Score) can be used to better understand whether change in the number of heavy precipitation days is a potentially significant issue for the NUTS3 area.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP8.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Hazard",
-    "domainsort": 22,
-    "group": "Fluvial and Pluvial Flooding",
-    "groupsort": 42,
     "type": "int",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Hazard",
+    "domainSort": 22,
+    "group": "Fluvial and Pluvial Flooding",
+    "groupSort": 42,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I013": {
     "name": "I013",
@@ -189,14 +225,17 @@ AppData.indicatorMetadata = {
     "unit": "Number of days",
     "details": "Very heavy precipitation days is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. This indicator shows the difference between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection) in the number of days with precipitation greater than or equal to 20mm. The future projection is developed for a high greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (RCP) <a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">8.5 scenario</a>). Where the frequency of very heavy precipitation days is projected to increase, this indicates that flood hazards may also increase (although flooding is driven by multiple other factors including land use change). The statistical data provided for this indicator (the Z-Score) can be used to better understand whether change in the number of very heavy precipitation days is a potentially significant issue for the NUTS3 area.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP8.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Hazard",
-    "domainsort": 24,
-    "group": "Fluvial and Pluvial Flooding",
-    "groupsort": 44,
     "type": "int",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Hazard",
+    "domainSort": 24,
+    "group": "Fluvial and Pluvial Flooding",
+    "groupSort": 44,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I014": {
     "name": "I014",
@@ -204,14 +243,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "% of total length of NUTS3 unit coastline in km that is exposed to a 1 in 100 year coastal storm surge and exposed to 1 meter sea level rise.",
     "source": "1 metre sea level rise inundation area defined by CReSIS (www.cresis.ku.edu/content/research/maps). GTSR (Global Tide and Surge Reanalysis) is an analysis of storm surges and extreme sea-levels based on hydrodynamic modelling (Muis et al, 2016). GTSR covers the entire world's coastline and provides estimates of extreme sea-levels values based on the period 1979-2014. The dataset is based on the application of two global hydrodynamic models: GTSM to simulate storm surges [Verlaan et al., 2015], and FES2012 to simulate tides [Carrere et al. 2012]. Surge levels were modelled by forcing GTSM with with 10 m wind speed and atmospheric pressure from the ERA-Interim climate reanalysis [Dee et al., 2011]. Total water levels are calculated by superimposing tides and surges.  The 1-in-100 year sea level was estimated by fitting a Gumbel extreme value distribution to the annual maxima. The water levels included over 12,000 locations along the coastline defined as a centroid of the DIVA segments database.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Hazard",
-    "domainsort": 28,
-    "group": "Coastal Flooding",
-    "groupsort": 20,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Hazard",
+    "domainSort": 28,
+    "group": "Coastal Flooding",
+    "groupSort": 20,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I015": {
     "name": "I015",
@@ -219,14 +261,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "To be completed",
     "source": "To be completed",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Hazard",
-    "domainsort": 29,
-    "group": "Drought",
-    "groupsort": 19,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Hazard",
+    "domainSort": 29,
+    "group": "Drought",
+    "groupSort": 19,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I016": {
     "name": "I016",
@@ -234,14 +279,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "% of total area of the NUTS3 unit covered by burning.",
     "source": "Use Corine land cover data 2012 to identify the percentage of land in each NUTS 3 area that is classified as ‘burnt areas’.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Hazard",
-    "domainsort": 27,
-    "group": "Other",
-    "groupsort": 56,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Hazard",
+    "domainSort": 27,
+    "group": "Other",
+    "groupSort": 56,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I017": {
     "name": "I017",
@@ -249,14 +297,17 @@ AppData.indicatorMetadata = {
     "unit": "Km",
     "details": "This indicator shows the length of major road network in NUTS3 unit.  Major roads are defined as ‘Highways’ and include ‘motorway’, ‘trunk’, ‘primary’, ‘secondary’ and ‘tertiary’ segments of the network. Redundancy is an important concept in resilience.  Redundancy demonstrates that there is excess capacity in given system means that during crises, the system may still be able to retain functionality. Where road length is higher than average in a NUTS 3 area, this may signal that there is redundancy in the road network and alternative routes can be found.  This is also important from an emergency management point of view as during an extreme event, alternative means of providing key services and moving people may be found.\n",
     "source": "The road network was sourced from open street map (2017). Major roads are defined as ‘Highways’ and include ‘motorway’, ‘trunk’, ‘primary’, ‘secondary’ and ‘tertiary’ segments of the network.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Vulnerability - Adaptive Capacity",
-    "domainsort": 67,
-    "group": "Other",
-    "groupsort": 64,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Vulnerability - Adaptive Capacity",
+    "domainSort": 67,
+    "group": "Other",
+    "groupSort": 64,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I018": {
     "name": "I018",
@@ -264,14 +315,17 @@ AppData.indicatorMetadata = {
     "unit": "Km",
     "details": "Length of railway network in NUTS3 unit. The rail network was sourced from open street map (2017) and includes standard gauge rail, subways, trams and light rail segments of the network.\nRedundancy is an important concept in resilience.  Redundancy demonstrates that there is excess capacity in given system means that during crises, the system may still be able to retain functionality. Where rail length is higher than average in a NUTS 3 area, this may signal that there is redundancy in the rail network and alternative routes can be found.  This is also important from an emergency management point of view as during an extreme event, alternative means of providing key services and moving people may be found.\n",
     "source": "The rail network was sourced from open street map (2017) and includes standard gauge rail, subways, trams and light rail segments of the network.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Vulnerability - Adaptive Capacity",
-    "domainsort": 68,
-    "group": "Other",
-    "groupsort": 65,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Vulnerability - Adaptive Capacity",
+    "domainSort": 68,
+    "group": "Other",
+    "groupSort": 65,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I019": {
     "name": "I019",
@@ -279,14 +333,17 @@ AppData.indicatorMetadata = {
     "unit": "Ratio",
     "details": "This indicator shows the density of major road intersections per km2 of the NUTS3 unit. Redundancy is an important concept in resilience.  Redundancy demonstrates that there is excess capacity in given system means that during crises, the system may still be able to retain functionality. Where there are more road intersections than the EU average  in a NUTS 3 area, this may signal that there is redundancy in the road network and alternative routes can be found.  This is also important from an emergency management point of view as during an extreme event, alternative means of providing key services and moving people may be found.",
     "source": "Calculated as intersections in ArcGIS Network Analyst using open street map road data (2017).",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Vulnerability - Adaptive Capacity",
-    "domainsort": 69,
-    "group": "Other",
-    "groupsort": 66,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Vulnerability - Adaptive Capacity",
+    "domainSort": 69,
+    "group": "Other",
+    "groupSort": 66,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I020": {
     "name": "I020",
@@ -294,14 +351,17 @@ AppData.indicatorMetadata = {
     "unit": "Ratio",
     "details": "This indicator shows the density of transport nodes per km2 of the NUTS3 unit. Redundancy is an important concept in resilience.  Redundancy demonstrates that there is excess capacity in given system means that during crises, the system may still be able to retain functionality. Where there are more transport nodes than the EU average  in a NUTS 3 area, this may signal that there is redundancy in the overall transport network and alternative routes/modes of travel can be found.  This is also important from an emergency management point of view as during an extreme event, alternative means of providing key services and moving people may be found.",
     "source": "Transport nodes were sourced from open street map (2017) and excluded taxis, airports and ports.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Vulnerability - Adaptive Capacity",
-    "domainsort": 70,
-    "group": "Other",
-    "groupsort": 67,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Vulnerability - Adaptive Capacity",
+    "domainSort": 70,
+    "group": "Other",
+    "groupSort": 67,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I021": {
     "name": "I021",
@@ -309,14 +369,17 @@ AppData.indicatorMetadata = {
     "unit": "Number of airports per 1000 head of population",
     "details": "This indicator shows the number of airports per head of population in the NUTS3 unit.  Redundancy is an important concept in resilience.  Redundancy demonstrates that there is excess capacity in given system means that during crises, the system may still be able to retain functionality. Where there are more transport nodes than the EU average  in a NUTS 3 area, this may signal that other airports can help to provide alternative routes/modes of travel.  This is also important from an emergency management point of view as during an extreme event, alternative means of providing key services and moving people may be found. \n",
     "source": "Airport nodes were sourced from the GISCO repository (Eurostat 2013). These were weighted by population data sourced from EUROSTAT (demo_r_d3dens).",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Vulnerability - Adaptive Capacity",
-    "domainsort": 71,
-    "group": "Other",
-    "groupsort": 68,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Vulnerability - Adaptive Capacity",
+    "domainSort": 71,
+    "group": "Other",
+    "groupSort": 68,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I022": {
     "name": "I022",
@@ -324,14 +387,17 @@ AppData.indicatorMetadata = {
     "unit": "Number of ports per 1000 head of population",
     "details": "This indicator shows the number of ports per head of population in the NUTS3 unit. Redundancy is an important concept in resilience.  Redundancy demonstrates that there is excess capacity in given system means that during crises, the system may still be able to retain functionality. Where there are more ports than the EU average  in a NUTS 3 area, this may signal that there is redundancy and alternative routes/methods of moving goods around can be found.  ",
     "source": "Port nodes were sourced from the GISCO repository (Eurostat 2013). These were weighted by population data sourced from EUROSTAT (demo_r_d3dens).",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Vulnerability - Adaptive Capacity",
-    "domainsort": 72,
-    "group": "Other",
-    "groupsort": 69,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Vulnerability - Adaptive Capacity",
+    "domainSort": 72,
+    "group": "Other",
+    "groupSort": 69,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I023": {
     "name": "I023",
@@ -339,14 +405,17 @@ AppData.indicatorMetadata = {
     "unit": "Number of hospitals per 1000 head of population",
     "details": "This indicator shows the number of hospitals per head of population in the NUTS3 unit.The ability for the population to access hospitals and other medical units during an extreme weather event is of paramount importance. Where there are lower than average numbers of hospitals per head of the population, this may indicate that an area will experience intense pressure in ensuring that the population receive necessary medical support during, for example, a flood or a heatwave.  ",
     "source": "Hospital locations were sourced from open street map (2017). These were weighted by population data sourced from EUROSTAT (demo_r_d3dens).",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Vulnerability - Adaptive Capacity",
-    "domainsort": 73,
-    "group": "Other",
-    "groupsort": 70,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Vulnerability - Adaptive Capacity",
+    "domainSort": 73,
+    "group": "Other",
+    "groupSort": 70,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I024": {
     "name": "I024",
@@ -354,14 +423,17 @@ AppData.indicatorMetadata = {
     "unit": "Power plants per head of population",
     "details": "This indicator shows the power plants per head of population in the NUTS3 unit. Redundancy is an important concept in resilience.  Redundancy demonstrates that there is excess capacity in given system means that during crises, the system may still be able to retain functionality. If there are more powerplants in a NUTS3 area than the EU average, this may mean that alternative ways of providing energy to a given population may be found. ",
     "source": "Power plant facility locations were sourced from Enipedia and does not distinguish between different types of power generation (e.g. coal, renewable). These were weighted by population data sourced from EUROSTAT (demo_r_d3dens).",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Vulnerability - Adaptive Capacity",
-    "domainsort": 74,
-    "group": "Other",
-    "groupsort": 71,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Vulnerability - Adaptive Capacity",
+    "domainSort": 74,
+    "group": "Other",
+    "groupSort": 71,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I025": {
     "name": "I025",
@@ -369,14 +441,17 @@ AppData.indicatorMetadata = {
     "unit": "To be completed",
     "details": "This indicator shows fixed broadband coverage. Fixed broadband data has been sourced from Point Topic’s Point Topic’s European Broadband Markets Service ocial media is becoming an increasingly common way of sharing risk information and warnings.  Therefore,  access to decent broadband is important in order to support the adaptive capacity of a given area. There may be more locally specific measures available that will give a greater insight into what this indicator is measuring e.g. % of population with access to a smart phone, and so on. ",
     "source": "To be completed",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Vulnerability - Adaptive Capacity",
-    "domainsort": 75,
-    "group": "Other",
-    "groupsort": 72,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Vulnerability - Adaptive Capacity",
+    "domainSort": 75,
+    "group": "Other",
+    "groupSort": 72,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I026": {
     "name": "I026",
@@ -384,14 +459,17 @@ AppData.indicatorMetadata = {
     "unit": "To be completed",
     "details": "Next Generation Access (NGA) provision has been sourced from Point Topic’s European Broadband Markets Service  . NGA are access networks which consist wholly or in part of optical elements and which are capable of delivering broadband access services with enhanced characteristics (such as higher throughput) as compared to those provided over already existing copper networks. In most cases NGAs are the result of an upgrade of an already existing copper or co-axial access network .Next Generation Access (NGA) provision has been variable across Europe dependent on a country’s need. Essentially NGA provides the infrastructure to allow superfast broadband speeds of up to 100MB. Increasing population densities, for example, are thought to indicate a need for faster broadband access in the future. Therefore, given the reliance on social media for weather, risk and crisis information, superfast broadband may increase an area’s adaptive capacity. Low NGA provision may indicate that policies should be put in place to prioritise NGA provision in the future. ",
     "source": "To be completed",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Other",
-    "domainsort": 82,
-    "group": "Other",
-    "groupsort": 73,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Other",
+    "domainSort": 82,
+    "group": "Other",
+    "groupSort": 73,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I030": {
     "name": "I030",
@@ -399,14 +477,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "Fluvial flooding occurs when watercourses (rivers, streams) overflow and inundate the surrounding area. This indicator shows the percentage of the total population of the NUTS3 area living in settlements that would be exposed to flooding in the event of a 1 in 100 year fluvial flood. This indicator does not highlight the specific elements of the population living in settlements that would be affected in the event of a flood. Further, it does not account for flood defences that may protect certain locations. More localised flood risk assessments would therefore be needed to establish which specific locations would be exposed if a 1 in 100 year fluvial flood occurred. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether the exposure of populations living in settlements to fluvial flooding is a significant issue for the NUTS3 area.",
     "source": "GHSL Population Source 100m resolution / Settlement defined through GHSL Urban Centres data / JRC flood maps 100 year return period.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Exposure",
-    "domainsort": 32,
-    "group": "Fluvial Flooding",
-    "groupsort": 29,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Exposure",
+    "domainSort": 32,
+    "group": "Fluvial Flooding",
+    "groupSort": 29,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I032": {
     "name": "I032",
@@ -414,14 +495,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "Fluvial flooding occurs when watercourses (rivers, streams) overflow and inundate the surrounding area. This indicator shows the percentage of the total length of road infrastructure in the NUTS3 area (major roads and major road intersections) that would be exposed to flooding in the event of a 1 in 100 year fluvial flood. This indicator does not highlight the specific elements of road infrastructure that would be affected in the event of a flood. Further, it does not account for flood defences that may protect certain stretches of road infrastructure. More localised flood risk assessments would therefore be needed to establish which specific infrastructure elements would be exposed if a 1 in 100 year fluvial flood occurred. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether fluvial flooding to road infrastructure is a significant issue for the NUTS3 area.",
     "source": "The road network was sourced from open street map (2017). Major roads are defined as ‘Highways’ and include ‘motorway’, ‘trunk’, ‘primary’, ‘secondary’ and ‘tertiary’ segments of the network. Calculated as intersections in ArcGIS Network Analyst using open street map road data (2017). The road network was intersected with JRC 1-100 year return period flood maps.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Exposure",
-    "domainsort": 35,
-    "group": "Fluvial Flooding",
-    "groupsort": 30,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Exposure",
+    "domainSort": 35,
+    "group": "Fluvial Flooding",
+    "groupSort": 30,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I033": {
     "name": "I033",
@@ -429,14 +513,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "Fluvial flooding occurs when watercourses (rivers, streams) overflow and inundate the surrounding area. This indicator shows the percentage of the total length of the rail network in the NUTS3 area that would be exposed to flooding in the event of a 1 in 100 year fluvial flood. This indicator does not highlight the specific elements of the rail network that would be affected in the event of a flood. Further, it does not account for flood defence infrastructure that may protect certain stretches of rail line. More localised flood risk assessments would therefore be needed to establish which specific elements of the rail network would be exposed if a 1 in 100 year fluvial flood occurred. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether fluvial flooding to the rail network is a significant issue for the NUTS3 area.",
     "source": "The rail network was sourced from open street map (2017) and includes standard gauge rail, subways, trams and light rail segments of the network. The rail network was intersected with JRC 1-100 year return period flood maps.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Exposure",
-    "domainsort": 36,
-    "group": "Fluvial Flooding",
-    "groupsort": 31,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Exposure",
+    "domainSort": 36,
+    "group": "Fluvial Flooding",
+    "groupSort": 31,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I035": {
     "name": "I035",
@@ -444,14 +531,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "Fluvial flooding occurs when watercourses (rivers, streams) overflow and inundate the surrounding area. This indicator shows the percentage of the total number of transport nodes in the NUTS3 area that would be exposed to flooding in the event of a 1 in 100 year fluvial flood. Transport nodes include tram, rail and bus stations, airports and ports. This indicator does not highlight specific transport nodes that would be affected in the event of a flood. Further, it does not account for flood defence infrastructure that may protect certain transport nodes. More localised flood risk assessments would therefore be needed to establish which transport nodes would be exposed if a 1 in 100 year fluvial flood occurred. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether fluvial flooding to transport nodes is a significant issue for the NUTS3 area.",
     "source": "Transport nodes calculated from Open Street Map (2017) and intersected with JRC 1-100 year return period flood maps.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Exposure",
-    "domainsort": 41,
-    "group": "Fluvial Flooding",
-    "groupsort": 32,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Exposure",
+    "domainSort": 41,
+    "group": "Fluvial Flooding",
+    "groupSort": 32,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I036": {
     "name": "I036",
@@ -459,14 +549,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "Fluvial flooding occurs when watercourses (rivers, streams) overflow and inundate the surrounding area. This indicator shows the percentage of the total number of airports in the NUTS3 area that would be exposed to flooding in the event of a 1 in 100 year fluvial flood. This indicator does not highlight specific airports that would be affected in the event of a flood. Further, it does not account for flood defence infrastructure that may protect certain airports. More localised flood risk assessments would therefore be needed to establish which airports would be exposed if a 1 in 100 year fluvial flood occurred. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether fluvial flooding to airports is a significant issue for the NUTS3 area.",
     "source": "Airport nodes were sourced from the GISCO repository (Eurostat 2013). The nodes were intersected with JRC 1-100 year return period flood maps.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Exposure",
-    "domainsort": 44,
-    "group": "Fluvial Flooding",
-    "groupsort": 33,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Exposure",
+    "domainSort": 44,
+    "group": "Fluvial Flooding",
+    "groupSort": 33,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I037": {
     "name": "I037",
@@ -474,14 +567,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "Fluvial flooding occurs when watercourses (rivers, streams) overflow and inundate the surrounding area. This indicator shows the percentage of the total number of ports in the NUTS3 area that would be exposed to flooding in the event of a 1 in 100 year fluvial flood. This indicator does not highlight specific ports that would be affected in the event of a flood. Further, it does not account for flood defence infrastructure that may protect certain ports. More localised flood risk assessments would therefore be needed to establish which ports would be exposed if a 1 in 100 year fluvial flood occurred. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether fluvial flooding to ports is a significant issue for the NUTS3 area.",
     "source": "Port nodes were sourced from the GISCO repository (Eurostat 2013). The nodes were intersected with JRC 1-100 year return period flood maps.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Exposure",
-    "domainsort": 50,
-    "group": "Fluvial Flooding",
-    "groupsort": 35,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Exposure",
+    "domainSort": 50,
+    "group": "Fluvial Flooding",
+    "groupSort": 35,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I038": {
     "name": "I038",
@@ -489,14 +585,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "Fluvial flooding occurs when watercourses (rivers, streams) overflow and inundate the surrounding area. This indicator shows the percentage of the total number of hospitals in the NUTS3 area that would be exposed to flooding in the event of a 1 in 100 year fluvial flood. This indicator does not highlight specific hospitals that would be affected in the event of a flood. Further, it does not account for flood defence infrastructure that may protect certain hospitals. More localised flood risk assessments would therefore be needed to establish which hospitals would be exposed if a 1 in 100 year fluvial flood occurred. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether fluvial flooding to hospitals is a significant issue for the NUTS3 area.",
     "source": "Hospital locations were sourced from open street map (2017). The nodes were intersected with JRC 1-100 year return period flood maps.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Exposure",
-    "domainsort": 53,
-    "group": "Fluvial Flooding",
-    "groupsort": 36,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Exposure",
+    "domainSort": 53,
+    "group": "Fluvial Flooding",
+    "groupSort": 36,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I039": {
     "name": "I039",
@@ -504,14 +603,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "Fluvial flooding occurs when watercourses (rivers, streams) overflow and inundate the surrounding area. This indicator shows the percentage of the total number of power plants in the NUTS3 area that would be exposed to flooding in the event of a 1 in 100 year fluvial flood. This indicator does not highlight specific power plants that would be affected in the event of a flood. Further, it does not account for flood defence infrastructure that may protect certain power plants. More localised flood risk assessments would therefore be needed to establish which power plants would be exposed if a 1 in 100 year fluvial flood occurred. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether fluvial flooding to power plants is a significant issue for the NUTS3 area.",
     "source": "Power plant facility locations were sourced from Enipedia and does not distinguish between different types of power generation (e.g. coal, renewable). The nodes were intersected with JRC 1-100 year return period flood maps.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Exposure",
-    "domainsort": 47,
-    "group": "Fluvial Flooding",
-    "groupsort": 34,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Exposure",
+    "domainSort": 47,
+    "group": "Fluvial Flooding",
+    "groupSort": 34,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I040": {
     "name": "I040",
@@ -519,14 +621,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "This indicator shows the proportion of the total population of the NUTS3 area living in settlements located in areas that are potentially exposed to coastal hazards. Coastal hazards include sea level rise (1 metre above current levels) and susceptibility to storm surge. This indicator does not highlight the specific elements of the population living in settlements that would be affected should these coastal hazards occur. Further, it does not account for defences that may protect certain locations from coastal hazards. More localised flood risk assessments would therefore be needed to establish which specific locations would be exposed in the event of coastal hazards occurring. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether the exposure of populations living in settlements to coastal hazards is a significant issue for the NUTS3 area.",
     "source": "GHSL Population grids / Settlement defined through GHSL Urban Centres data / These were intersected with the 1 metre sea level rise inundation area defined by CReSIS (www.cresis.ku.edu/content/research/maps). GTSR (Global Tide and Surge Reanalysis) is an analysis of storm surges and extreme sea-levels based on hydrodynamic modelling (Muis et al, 2016). GTSR covers the entire world's coastline and provides estimates of extreme sea-levels values based on the period 1979-2014. The dataset is based on the application of two global hydrodynamic models: GTSM to simulate storm surges [Verlaan et al., 2015], and FES2012 to simulate tides [Carrere et al. 2012]. Surge levels were modelled by forcing GTSM with with 10 m wind speed and atmospheric pressure from the ERA-Interim climate reanalysis [Dee et al., 2011]. Total water levels are calculated by superimposing tides and surges.  The 1-in-100 year sea level was estimated by fitting a Gumbel extreme value distribution to the annual maxima. The water levels included over 12,000 locations along the coastline defined as a centroid of the DIVA segments database.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Exposure",
-    "domainsort": 33,
-    "group": "Coastal Flooding",
-    "groupsort": 21,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Exposure",
+    "domainSort": 33,
+    "group": "Coastal Flooding",
+    "groupSort": 21,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I042": {
     "name": "I042",
@@ -534,14 +639,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "This indicator shows the proportion of the total length of road infrastructure in the NUTS3 area (major roads and major road intersections) that is located in areas that are potentially exposed to coastal hazards. Coastal hazards include sea level rise (1 metre above current levels) and susceptibility to storm surge. This indicator does not highlight the specific elements of the road infrastructure that would be affected should these coastal hazards occur. Further, it does not account for defences that may protect certain road infrastructure from coastal hazards. More localised flood risk assessments would therefore be needed to establish which specific infrastructure elements would be exposed in the event of coastal hazards occurring. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether the exposure of road infrastructure to coastal hazards is a significant issue for the NUTS3 area.",
     "source": "The road network was sourced from open street map (2017). Major roads are defined as ‘Highways’ and include ‘motorway’, ‘trunk’, ‘primary’, ‘secondary’ and ‘tertiary’ segments of the network. Calculated as intersections in ArcGIS Network Analyst using open street map road data (2017). The road network was intersected with the 1 metre sea level rise inundation area defined by CReSIS (www.cresis.ku.edu/content/research/maps). GTSR (Global Tide and Surge Reanalysis) is an analysis of storm surges and extreme sea-levels based on hydrodynamic modelling (Muis et al, 2016). GTSR covers the entire world's coastline and provides estimates of extreme sea-levels values based on the period 1979-2014. The dataset is based on the application of two global hydrodynamic models: GTSM to simulate storm surges [Verlaan et al., 2015], and FES2012 to simulate tides [Carrere et al. 2012]. Surge levels were modelled by forcing GTSM with with 10 m wind speed and atmospheric pressure from the ERA-Interim climate reanalysis [Dee et al., 2011]. Total water levels are calculated by superimposing tides and surges.  The 1-in-100 year sea level was estimated by fitting a Gumbel extreme value distribution to the annual maxima. The water levels included over 12,000 locations along the coastline defined as a centroid of the DIVA segments database.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Exposure",
-    "domainsort": 37,
-    "group": "Coastal Flooding",
-    "groupsort": 22,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Exposure",
+    "domainSort": 37,
+    "group": "Coastal Flooding",
+    "groupSort": 22,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I043": {
     "name": "I043",
@@ -549,14 +657,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "This indicator shows the proportion of the total length of the rail network in the NUTS3 area (major roads and major road intersections) that is located in areas that are potentially exposed to coastal hazards. Coastal hazards include sea level rise (1 metre above current levels) and susceptibility to storm surge. This indicator does not highlight the specific elements of the rail network that would be affected should these coastal hazards occur. Further, it does not account for defences that may protect certain elements of the rail network from coastal hazards. More localised flood risk assessments would therefore be needed to establish which parts of the rail network would be exposed in the event of coastal hazards occurring. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether the exposure of the rail network to coastal hazards is a significant issue for the NUTS3 area.",
     "source": "The rail network was sourced from open street map (2017) and includes standard gauge rail, subways, trams and light rail segments of the network. The rail network was intersected with the 1 metre sea level rise inundation area defined by CReSIS (www.cresis.ku.edu/content/research/maps). GTSR (Global Tide and Surge Reanalysis) is an analysis of storm surges and extreme sea-levels based on hydrodynamic modelling (Muis et al, 2016). GTSR covers the entire world's coastline and provides estimates of extreme sea-levels values based on the period 1979-2014. The dataset is based on the application of two global hydrodynamic models: GTSM to simulate storm surges [Verlaan et al., 2015], and FES2012 to simulate tides [Carrere et al. 2012]. Surge levels were modelled by forcing GTSM with with 10 m wind speed and atmospheric pressure from the ERA-Interim climate reanalysis [Dee et al., 2011]. Total water levels are calculated by superimposing tides and surges.  The 1-in-100 year sea level was estimated by fitting a Gumbel extreme value distribution to the annual maxima. The water levels included over 12,000 locations along the coastline defined as a centroid of the DIVA segments database.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Exposure",
-    "domainsort": 39,
-    "group": "Coastal Flooding",
-    "groupsort": 23,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Exposure",
+    "domainSort": 39,
+    "group": "Coastal Flooding",
+    "groupSort": 23,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I045": {
     "name": "I045",
@@ -564,14 +675,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "This indicator shows the percentage of the total number of transport nodes in the NUTS3 area that are located in areas that are potentially exposed to coastal hazards. Coastal hazards include sea level rise (1 metre above current levels) and susceptibility to storm surge. Transport nodes include tram, rail and bus stations, airports and ports. This indicator does not highlight the specific transport nodes that would be affected should these coastal hazards occur. Further, it does not account for defences that may protect certain transport nodes from coastal hazards. More localised flood risk assessments would therefore be needed to establish which specific transport nodes would be exposed in the event of coastal hazards occurring. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether the exposure of transport nodes to coastal hazards is a significant issue for the NUTS3 area.",
     "source": "Transport nodes were sourced from open street map (2017). The intersections were intersected with the 1 metre sea level rise inundation area defined by CReSIS (www.cresis.ku.edu/content/research/maps). ections in ArcGIS Network Analyst using open street map road data (2017). The road network was intersected with the 1 metre sea level rise inundation area defined by CReSIS (www.cresis.ku.edu/content/research/maps). GTSR (Global Tide and Surge Reanalysis) is an analysis of storm surges and extreme sea-levels based on hydrodynamic modelling (Muis et al, 2016). GTSR covers the entire world's coastline and provides estimates of extreme sea-levels values based on the period 1979-2014. The dataset is based on the application of two global hydrodynamic models: GTSM to simulate storm surges [Verlaan et al., 2015], and FES2012 to simulate tides [Carrere et al. 2012]. Surge levels were modelled by forcing GTSM with with 10 m wind speed and atmospheric pressure from the ERA-Interim climate reanalysis [Dee et al., 2011]. Total water levels are calculated by superimposing tides and surges.  The 1-in-100 year sea level was estimated by fitting a Gumbel extreme value distribution to the annual maxima. The water levels included over 12,000 locations along the coastline defined as a centroid of the DIVA segments database.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Exposure",
-    "domainsort": 42,
-    "group": "Coastal Flooding",
-    "groupsort": 24,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Exposure",
+    "domainSort": 42,
+    "group": "Coastal Flooding",
+    "groupSort": 24,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I046": {
     "name": "I046",
@@ -579,14 +693,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "This indicator shows the percentage of the total number of airports in the NUTS3 area that are located in areas that are potentially exposed to coastal hazards. Coastal hazards include sea level rise (1 metre above current levels) and susceptibility to storm surge. This indicator does not highlight the specific airports that would be affected should these coastal hazards occur. Further, it does not account for defences that may protect certain airports from coastal hazards. More localised flood risk assessments would therefore be needed to establish which specific airports would be exposed in the event of coastal hazards occurring. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether the exposure of airports to coastal hazards is a significant issue for the NUTS3 area.",
     "source": "Airport nodes were sourced from the GISCO repository (Eurostat 2013). The nodes were intersected with the 1 metre sea level rise inundation area defined by CReSIS (www.cresis.ku.edu/content/research/maps). GTSR (Global Tide and Surge Reanalysis) is an analysis of storm surges and extreme sea-levels based on hydrodynamic modelling (Muis et al, 2016). GTSR covers the entire world's coastline and provides estimates of extreme sea-levels values based on the period 1979-2014. The dataset is based on the application of two global hydrodynamic models: GTSM to simulate storm surges [Verlaan et al., 2015], and FES2012 to simulate tides [Carrere et al. 2012]. Surge levels were modelled by forcing GTSM with with 10 m wind speed and atmospheric pressure from the ERA-Interim climate reanalysis [Dee et al., 2011]. Total water levels are calculated by superimposing tides and surges.  The 1-in-100 year sea level was estimated by fitting a Gumbel extreme value distribution to the annual maxima. The water levels included over 12,000 locations along the coastline defined as a centroid of the DIVA segments database.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Exposure",
-    "domainsort": 45,
-    "group": "Coastal Flooding",
-    "groupsort": 25,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Exposure",
+    "domainSort": 45,
+    "group": "Coastal Flooding",
+    "groupSort": 25,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I047": {
     "name": "I047",
@@ -594,14 +711,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "This indicator shows the percentage of the total number of ports in the NUTS3 area that are located in areas that are potentially exposed to coastal hazards. Coastal hazards include sea level rise (1 metre above current levels) and susceptibility to storm surge. This indicator does not highlight the specific ports that would be affected should these coastal hazards occur. Further, it does not account for defences that may protect certain ports from coastal hazards. More localised flood risk assessments would therefore be needed to establish which specific ports would be exposed in the event of coastal hazards occurring. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether the exposure of ports to coastal hazards is a significant issue for the NUTS3 area.",
     "source": "Port nodes were sourced from the GISCO repository (Eurostat 2013). The nodes were intersected with the 1 metre sea level rise inundation area defined by CReSIS (www.cresis.ku.edu/content/research/maps). GTSR (Global Tide and Surge Reanalysis) is an analysis of storm surges and extreme sea-levels based on hydrodynamic modelling (Muis et al, 2016). GTSR covers the entire world's coastline and provides estimates of extreme sea-levels values based on the period 1979-2014. The dataset is based on the application of two global hydrodynamic models: GTSM to simulate storm surges [Verlaan et al., 2015], and FES2012 to simulate tides [Carrere et al. 2012]. Surge levels were modelled by forcing GTSM with with 10 m wind speed and atmospheric pressure from the ERA-Interim climate reanalysis [Dee et al., 2011]. Total water levels are calculated by superimposing tides and surges.  The 1-in-100 year sea level was estimated by fitting a Gumbel extreme value distribution to the annual maxima. The water levels included over 12,000 locations along the coastline defined as a centroid of the DIVA segments database.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Exposure",
-    "domainsort": 51,
-    "group": "Coastal Flooding",
-    "groupsort": 27,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Exposure",
+    "domainSort": 51,
+    "group": "Coastal Flooding",
+    "groupSort": 27,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I048": {
     "name": "I048",
@@ -609,14 +729,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "This indicator shows the percentage of the total number of hospitals in the NUTS3 area that are located in areas that are potentially exposed to coastal hazards. Coastal hazards include sea level rise (1 metre above current levels) and susceptibility to storm surge. This indicator does not highlight the specific hospitals that would be affected should these coastal hazards occur. Further, it does not account for defences that may protect certain hospitals from coastal hazards. More localised flood risk assessments would therefore be needed to establish which specific hospitals would be exposed in the event of coastal hazards occurring. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether the exposure of hospitals to coastal hazards is a significant issue for the NUTS3 area.",
     "source": "Hospital locations were sourced from open street map (2017). The nodes were intersected with the 1 metre sea level rise inundation area defined by CReSIS (www.cresis.ku.edu/content/research/maps).  GTSR (Global Tide and Surge Reanalysis) is an analysis of storm surges and extreme sea-levels based on hydrodynamic modelling (Muis et al, 2016). GTSR covers the entire world's coastline and provides estimates of extreme sea-levels values based on the period 1979-2014. The dataset is based on the application of two global hydrodynamic models: GTSM to simulate storm surges [Verlaan et al., 2015], and FES2012 to simulate tides [Carrere et al. 2012]. Surge levels were modelled by forcing GTSM with with 10 m wind speed and atmospheric pressure from the ERA-Interim climate reanalysis [Dee et al., 2011]. Total water levels are calculated by superimposing tides and surges.  The 1-in-100 year sea level was estimated by fitting a Gumbel extreme value distribution to the annual maxima. The water levels included over 12,000 locations along the coastline defined as a centroid of the DIVA segments database.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Exposure",
-    "domainsort": 54,
-    "group": "Coastal Flooding",
-    "groupsort": 28,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Exposure",
+    "domainSort": 54,
+    "group": "Coastal Flooding",
+    "groupSort": 28,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I049": {
     "name": "I049",
@@ -624,14 +747,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "This indicator shows the percentage of the total number of power plants in the NUTS3 area that are located in areas that are potentially exposed to coastal hazards. Coastal hazards include sea level rise (1 metre above current levels) and susceptibility to storm surge. This indicator does not highlight the specific power plants that would be affected should these coastal hazards occur. Further, it does not account for defences that may protect certain power plants from coastal hazards. More localised flood risk assessments would therefore be needed to establish which specific power plants would be exposed in the event of coastal hazards occurring. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether the exposure of power plants to coastal hazards is a significant issue for the NUTS3 area.",
     "source": "Power plant facility locations were sourced from Enipedia and does not distinguish between different types of power generation (e.g. coal, renewable). The nodes were intersected with the 1 metre sea level rise inundation area defined by CReSIS (www.cresis.ku.edu/content/research/maps). GTSR (Global Tide and Surge Reanalysis) is an analysis of storm surges and extreme sea-levels based on hydrodynamic modelling (Muis et al, 2016). GTSR covers the entire world's coastline and provides estimates of extreme sea-levels values based on the period 1979-2014. The dataset is based on the application of two global hydrodynamic models: GTSM to simulate storm surges [Verlaan et al., 2015], and FES2012 to simulate tides [Carrere et al. 2012]. Surge levels were modelled by forcing GTSM with with 10 m wind speed and atmospheric pressure from the ERA-Interim climate reanalysis [Dee et al., 2011]. Total water levels are calculated by superimposing tides and surges.  The 1-in-100 year sea level was estimated by fitting a Gumbel extreme value distribution to the annual maxima. The water levels included over 12,000 locations along the coastline defined as a centroid of the DIVA segments database.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Exposure",
-    "domainsort": 48,
-    "group": "Coastal Flooding",
-    "groupsort": 26,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Exposure",
+    "domainSort": 48,
+    "group": "Coastal Flooding",
+    "groupSort": 26,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I050": {
     "name": "I050",
@@ -639,14 +765,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "This indicator shows the percentage of the total population of the NUTS3 area living in settlements located in areas that are susceptible to landslide hazard. This indicator and the supporting statistical data (the Z-Score) can be used to better understand whether exposure of population in settlements to landslides is a significant issue for the NUTS3 area. The key factor that influences landslide susceptibility is the presence of steep slopes. Others include bedrock and soil characteristics, deforestation and the presence of roads. Heavy rainfall can often trigger landslides. The typology portal includes an indicator on projected changes to the occurrence of very heavy rainfall days in NUTS3 areas.",
     "source": "To be completed",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Exposure",
-    "domainsort": 34,
-    "group": "Other - Landslide",
-    "groupsort": 47,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Exposure",
+    "domainSort": 34,
+    "group": "Other - Landslide",
+    "groupSort": 47,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I052": {
     "name": "I052",
@@ -654,14 +783,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "This indicator shows the percentage of the total length of road infrastructure in the NUTS3 area (major roads and major road intersections) that is located in areas that are susceptible to landslide hazard. This indicator and the supporting statistical data (the Z-Score) can be used to better understand whether exposure of road infrastructure to landslides is a significant issue for the NUTS3 area. The key factor that influences landslide susceptibility is the presence of steep slopes. Others include bedrock and soil characteristics, deforestation and the presence of roads. Heavy rainfall can often trigger landslides. The typology portal includes an indicator on projected changes to the occurrence of very heavy rainfall days in NUTS3 areas.",
     "source": "To be completed",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Exposure",
-    "domainsort": 38,
-    "group": "Other - Landslide",
-    "groupsort": 48,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Exposure",
+    "domainSort": 38,
+    "group": "Other - Landslide",
+    "groupSort": 48,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I053": {
     "name": "I053",
@@ -669,14 +801,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "This indicator shows the percentage of the total length of the rail network in the NUTS3 area that is located in areas that are susceptible to landslide hazard. This indicator and the supporting statistical data (the Z-Score) can be used to better understand whether exposure of the rail network to landslides is a significant issue for the NUTS3 area. The key factor that influences landslide susceptibility is the presence of steep slopes. Others include bedrock and soil characteristics, deforestation and the presence of roads. Heavy rainfall can often trigger landslides. The typology portal includes an indicator on projected changes to the occurrence of very heavy rainfall days in NUTS3 areas.",
     "source": "To be completed",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Exposure",
-    "domainsort": 40,
-    "group": "Other - Landslide",
-    "groupsort": 49,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Exposure",
+    "domainSort": 40,
+    "group": "Other - Landslide",
+    "groupSort": 49,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I055": {
     "name": "I055",
@@ -684,14 +819,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "This indicator shows the percentage of the total number of transport nodes in the NUTS3 area that are located in areas that are susceptible to landslide hazard. Transport nodes include tram, rail and bus stations, airports and ports. This indicator and the supporting statistical data (the Z-Score) can be used to better understand whether exposure of transport nodes to landslides is a significant issue for the NUTS3 area. The key factor that influences landslide susceptibility is the presence of steep slopes. Others include bedrock and soil characteristics, deforestation and the presence of roads. Heavy rainfall can often trigger landslides. The typology portal includes an indicator on projected changes to the occurrence of very heavy rainfall days in NUTS3 areas.",
     "source": "To be completed",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Exposure",
-    "domainsort": 43,
-    "group": "Other - Landslide",
-    "groupsort": 50,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Exposure",
+    "domainSort": 43,
+    "group": "Other - Landslide",
+    "groupSort": 50,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I056": {
     "name": "I056",
@@ -699,14 +837,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "This indicator shows the percentage of the total number airports in the NUTS3 area that are located in areas that are susceptible to landslide hazard. This indicator and the supporting statistical data (the Z-Score) can be used to better understand whether exposure of airports to landslides is a significant issue for the NUTS3 area. The key factor that influences landslide susceptibility is the presence of steep slopes. Others include bedrock and soil characteristics, deforestation and the presence of roads. Heavy rainfall can often trigger landslides. The typology portal includes an indicator on projected changes to the occurrence of very heavy rainfall days in NUTS3 areas.",
     "source": "To be completed",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Exposure",
-    "domainsort": 46,
-    "group": "Other - Landslide",
-    "groupsort": 51,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Exposure",
+    "domainSort": 46,
+    "group": "Other - Landslide",
+    "groupSort": 51,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I057": {
     "name": "I057",
@@ -714,14 +855,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "This indicator shows the percentage of the total number of ports in the NUTS3 area that are located in areas that are susceptible to landslide hazard. This indicator and the supporting statistical data (the Z-Score) can be used to better understand whether exposure of ports to landslides is a significant issue for the NUTS3 area. The key factor that influences landslide susceptibility is the presence of steep slopes. Others include bedrock and soil characteristics, deforestation and the presence of roads. Heavy rainfall can often trigger landslides. The typology portal includes an indicator on projected changes to the occurrence of very heavy rainfall days in NUTS3 areas.",
     "source": "To be completed",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Exposure",
-    "domainsort": 52,
-    "group": "Other - Landslide",
-    "groupsort": 53,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Exposure",
+    "domainSort": 52,
+    "group": "Other - Landslide",
+    "groupSort": 53,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I058": {
     "name": "I058",
@@ -729,14 +873,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "This indicator shows the percentage of the total number of hospitals in the NUTS3 area that are located in areas that are susceptible to landslide hazard. This indicator and the supporting statistical data (the Z-Score) can be used to better understand whether exposure of hospitals to landslides is a significant issue for the NUTS3 area. The key factor that influences landslide susceptibility is the presence of steep slopes. Others include bedrock and soil characteristics, deforestation and the presence of roads. Heavy rainfall can often trigger landslides. The typology portal includes an indicator on projected changes to the occurrence of very heavy rainfall days in NUTS3 areas.",
     "source": "To be completed",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Exposure",
-    "domainsort": 55,
-    "group": "Other - Landslide",
-    "groupsort": 54,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Exposure",
+    "domainSort": 55,
+    "group": "Other - Landslide",
+    "groupSort": 54,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I059": {
     "name": "I059",
@@ -744,14 +891,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "This indicator shows the percentage of the total number of power plants in the NUTS3 area that are located in areas that are susceptible to landslide hazard. This indicator and the supporting statistical data (the Z-Score) can be used to better understand whether exposure of power plants to landslides is a significant issue for the NUTS3 area. The key factor that influences landslide susceptibility is the presence of steep slopes. Others include bedrock and soil characteristics, deforestation and the presence of roads. Heavy rainfall can often trigger landslides. The typology portal includes an indicator on projected changes to the occurrence of very heavy rainfall days in NUTS3 areas.",
     "source": "To be completed",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Exposure",
-    "domainsort": 49,
-    "group": "Other - Landslide",
-    "groupsort": 52,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Exposure",
+    "domainSort": 49,
+    "group": "Other - Landslide",
+    "groupSort": 52,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I060": {
     "name": "I060",
@@ -759,14 +909,17 @@ AppData.indicatorMetadata = {
     "unit": "Ratio",
     "details": "Averaged population density for the NUTS3 unit calculated over period 2010-2015.",
     "source": "Population data sourced from Eurostat (demo_r_d3dens). Calculated as total population/area in km2",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Vulnerability - Sensitivity",
-    "domainsort": 56,
-    "group": "Other",
-    "groupsort": 55,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Vulnerability - Sensitivity",
+    "domainSort": 56,
+    "group": "Other",
+    "groupSort": 55,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I061": {
     "name": "I061",
@@ -774,14 +927,17 @@ AppData.indicatorMetadata = {
     "unit": "Ratio",
     "details": "Population density measures the concentration of individuals living in a particular spatial unit. Population density may be considered in tandem with hazard indicators relating to temperature and heatwaves as population density (which can be used as a proxy for the density of the built environment) may indicate more intense urban heat island effects (Swart et al. 2012).  On the other hand, where dense urban populations are supported by good infrastructure and resources, their climate resilience may be increased (UCCRN 2011) ",
     "source": "To be completed",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Vulnerability - Sensitivity",
-    "domainsort": 57,
-    "group": "Other",
-    "groupsort": 57,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Vulnerability - Sensitivity",
+    "domainSort": 57,
+    "group": "Other",
+    "groupSort": 57,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I062": {
     "name": "I062",
@@ -789,14 +945,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "This indicator shows the % of total urban area in NUTS3 unit that is classified as green space (2012 data). There is robust evidence that green spaces can help city’s resilience to the effects of climate change and extreme weather events (Swart et al. 2012).  A lack of green space, as a % of the overall urban area, may indicate that a city is more sensitive to the effects of climate change and extreme weather events as it may lack the absorptive effects of green spaces in a flood, or the evapotranspiration effects of green spaces during a heatwave. Therefore, this indicator should be considered alongside these hazards. In addition, this indicator can also be considered alongside % total change in green space since an existing lack of green space, combined with a decreasing trend, may signal to city planners that more should be done in terms of increasing urban greening.",
     "source": "Corine (2012) green space area as percentage of total urban area (km2). Urban area defined using GHSL Urban Centres.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Vulnerability - Adaptive Capacity",
-    "domainsort": 77,
-    "group": "Other",
-    "groupsort": 75,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Vulnerability - Adaptive Capacity",
+    "domainSort": 77,
+    "group": "Other",
+    "groupSort": 75,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I063": {
     "name": "I063",
@@ -804,14 +963,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "This indicator shows the built up urban area based on CORINE data. This includes continuous urban fabric (more than 80% of the land is covered by artificial surface cover), discontinuous urban fabric (where50% - 80% of the land is covered by artificial surface cover) and industrial, commercial and  transport units. There is robust evidence that the amount of artificial areas, such as buildings and other structures, intensifies heat and can exacerbate the urban heat island (UHI) effect. This will make an area more sensitive to the effects of high temperatures and heatwaves",
     "source": "Corine (2012) continuous and discontinuous urban fabric as a percentage of total NUTS 3 area (km2).",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Vulnerability - Adaptive Capacity",
-    "domainsort": 80,
-    "group": "Other",
-    "groupsort": 78,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Vulnerability - Adaptive Capacity",
+    "domainSort": 80,
+    "group": "Other",
+    "groupSort": 78,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I064": {
     "name": "I064",
@@ -819,14 +981,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "This indicator shows the change in % of total urban area in NUTS3 unit that is classified as green space (2009-2012 data).There is robust evidence that green spaces can help city’s resilience to the effects of climate change and extreme weather events (Swart et al. 2012).  Green spaces can help to absorb runoff during a flood. Green spaces can also help to reduce temperature due to evapotranspiration effects. Therefore, this indicator should be considered alongside hazards relating to flood and heat. A decreasing trend in green space, compared to the European average, may indicate increased sensitivity to the effects of these hazards and may signal to city planners that more should be done in terms of increasing urban greening.",
     "source": "Change in Corine (2009-2012) green space area measured as percentage of total urban area (km2). Urban area defined using GHSL Urban Centres.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Vulnerability - Adaptive Capacity",
-    "domainsort": 79,
-    "group": "Other",
-    "groupsort": 77,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Vulnerability - Adaptive Capacity",
+    "domainSort": 79,
+    "group": "Other",
+    "groupSort": 77,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I065": {
     "name": "I065",
@@ -834,14 +999,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "This indicator shows the change in the % of the built up urban area based on CORINE data. This  includes continuous urban fabric (more than 80% of the land is covered by artificial surface cover), discontinuous urban fabric (where50% - 80% of the land is covered by artificial surface cover) and industrial, commercial and  transport units. There is robust evidence that the amount of artificial areas, such as buildings and other structures, intensifies heat and can exacerbate the urban heat island (UHI) effect. This will make an area more sensitive to the effects of high temperatures and heatwaves. An increasing trend in built-up areas that is above the European average may indicate that a city is increasing in its sensitivity to high temperatures and heatwaves. ",
     "source": "Change in Corine (2009-2012) continuous and discontinuous urban fabric as a percentage of total NUTS 3 area (km2).",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Vulnerability - Adaptive Capacity",
-    "domainsort": 81,
-    "group": "Other",
-    "groupsort": 79,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Vulnerability - Adaptive Capacity",
+    "domainSort": 81,
+    "group": "Other",
+    "groupSort": 79,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I066": {
     "name": "I066",
@@ -849,14 +1017,17 @@ AppData.indicatorMetadata = {
     "unit": "To be completed",
     "details": "Sensitivity to drought also includes a measure of soil moisture stress. When soil moisture is depleted, e.g. through reduced precipitation, this lack of soil moisture inhibits the effective functioning of natural and managed ecosystems.  The EEA use information on soil moisture content as a proxy for agricultural droughts. This indicator can be used in tandem with historic drought and projected water consumption in order to give an overall sense of the risk of drought to a NUTS 3 region. If soil moisture stress is higher than the European average, then a NUTS 3 region may be more sensitive to drought.",
     "source": "To be completed",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Vulnerability - Sensitivity",
-    "domainsort": 63,
-    "group": "Other",
-    "groupsort": 80,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Vulnerability - Sensitivity",
+    "domainSort": 63,
+    "group": "Other",
+    "groupSort": 80,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I067": {
     "name": "I067",
@@ -864,14 +1035,17 @@ AppData.indicatorMetadata = {
     "unit": "To be completed",
     "details": "Drought occurs not only because of natural processes, but also because of pressures on the demand for water by users. Water consumption can be increased by a number of factors including a dense population and a period of hot and dry weather. It is important to understand the potential  water consumption pressure  in order to understand the risk of drought (in combination with soil moisture stress and historic instances of drought. If water consumption is higher than the EU average, policy makers may want to consider ‘softer’ measures to reduce user demand in greater detail. ",
     "source": "To be completed",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Vulnerability - Sensitivity",
-    "domainsort": 64,
-    "group": "Other",
-    "groupsort": 81,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Vulnerability - Sensitivity",
+    "domainSort": 64,
+    "group": "Other",
+    "groupSort": 81,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I068": {
     "name": "I068",
@@ -879,14 +1053,17 @@ AppData.indicatorMetadata = {
     "unit": "To be completed",
     "details": "Priority allocations and expenditure on EU projects. Sourced from EU InfoRegion.\nThis indicator refers to the amount of Euros received in a NUTS3 region. More details to follow. \n",
     "source": "EU InfoRegio.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Vulnerability - Adaptive Capacity",
-    "domainsort": 78,
-    "group": "Other",
-    "groupsort": 76,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Vulnerability - Adaptive Capacity",
+    "domainSort": 78,
+    "group": "Other",
+    "groupSort": 76,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I069": {
     "name": "I069",
@@ -894,14 +1071,17 @@ AppData.indicatorMetadata = {
     "unit": "To be completed",
     "details": "This indicator shows those living in a household with an 'equivalised disposable income' below 60 % of the national median, after taxes and social transfers (ESPON 2013). This is the European definition of poverty. This indicator is a proxy for deprivation. Those living in deprived areas may be more sensitive to climate change because of poor accommodation and an inability to prepare for an extreme event e.g. lack of insurance (ClimateJust 2014)",
     "source": "To be completed",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Vulnerability - Sensitivity",
-    "domainsort": 65,
-    "group": "Other",
-    "groupsort": 82,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Vulnerability - Sensitivity",
+    "domainSort": 65,
+    "group": "Other",
+    "groupSort": 82,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I070": {
     "name": "I070",
@@ -909,14 +1089,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "This indicator show projected change in population less than 15 years. This indicator shows how the % of population under 15 may change between 2017 and 2050. This indicator could be considered in the context of heat and flood indicators. Children and babies may be more sensitive during heat waves but there is less evidence about the significance of child deaths during heat waves (Swart et al. 2012). Children are also emotionally impacted upon after a flood and may lose out due to the subsequent instability in place of residence and education (Walker et al. 2010).  Additionally, this indicator may be considered alongside Projected Change in Population over 70 in terms of understanding the age-dependency. For example, if there is a projected decrease in the younger population combined with a projected increase in the older population, there may be differential effects in terms of the impacts of climate change e.g. more sensitivity to heat (ESPON 2011). \n",
     "source": "Sourced from Eurostat (proj_13rpms3).",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Vulnerability - Sensitivity",
-    "domainsort": 60,
-    "group": "Other",
-    "groupsort": 60,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Vulnerability - Sensitivity",
+    "domainSort": 60,
+    "group": "Other",
+    "groupSort": 60,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I073": {
     "name": "I073",
@@ -924,14 +1107,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "This indicator shows projected change in population more than 70 years. The relationship between age and heatwaves is well-evidenced. Older people, for example, may have pre-existing health conditions which heighten their sensitivity during a heatwave (Kovats & Kristie 2006). Similarly, older people are more sensitive to the effects of flooding due to a number of reasons. Often, they are socially isolated or tend to live in properties that are sensitive to floods. For this reason, older age is often correlated with increased sensitivity to flood (see Green et al. 1994; Climate Just 2014).  This means that older age is a high confidence indicator across a range of hazards. That said, there is some discrepancy over the precise age when, for example, mortality during a heatwave begins to be significant. For example, Kovats and Hajat (2006, cited in Swart et al. 2012) found that mortality was pronounced in the over-75’s and not significant between 65 and 74. Owing to data availability, this indicator shows over-70s.\n ",
     "source": "Sourced from Eurostat (proj_13rpms3).",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Vulnerability - Sensitivity",
-    "domainsort": 61,
-    "group": "Other",
-    "groupsort": 61,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Vulnerability - Sensitivity",
+    "domainSort": 61,
+    "group": "Other",
+    "groupSort": 61,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I075": {
     "name": "I075",
@@ -939,14 +1125,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "This indicator shows the % change in population through migration in NUTS3 unit between 2017-2050.  There is some debate in the literature over the extent to which a population with a high number of recent migrants may indicate increased sensitivity to extreme weather events and climate change because, for example, they may live in sub-standard housing or to communicate ill-health (e.g. Cutter 2003; Kazmierczak and Cavan 2011; Tapia et al. 2015). \nDecreases in migration, when combined with other population indicators such as age, may indicate that there is an aging population.\n",
     "source": "Sourced from Eurostat (proj_13rdbims3).",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Vulnerability - Sensitivity",
-    "domainsort": 59,
-    "group": "Other",
-    "groupsort": 59,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Vulnerability - Sensitivity",
+    "domainSort": 59,
+    "group": "Other",
+    "groupSort": 59,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I076": {
     "name": "I076",
@@ -954,14 +1143,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "Projected Change in Total Population and NUTS 3 Density. Increasing population and density will interact with the effects of climate change and may render a NUTS 3 region more sensitive to the effects of climate change. For example, increased density may interact with high temperatures to increase the urban heat island (UHI) effect. Increased population may put pressure on resources in order to devise strategies for dealing with the effects of climate change. ",
     "source": "Population data sourced from Eurostat (proj_13rpms3) and used to calculate change in population density of NUTS3 areas between 2017 and 2050.",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Vulnerability - Sensitivity",
-    "domainsort": 58,
-    "group": "Other",
-    "groupsort": 58,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Vulnerability - Sensitivity",
+    "domainSort": 58,
+    "group": "Other",
+    "groupSort": 58,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I077": {
     "name": "I077",
@@ -969,14 +1161,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "This indicator shows the employment-population balance. The ratio of jobs to people can be an important indication of economic concerns within an area. When thinking about the way that the employment-population balance works in a given area, there may be particular interactions with climate resilience. For example, where there are more jobs than people (e.g. central London) this may indicate a high number of commuters, which may put pressure on a city’s resources, particularly its transport infrastructure, to deal with extreme weather events. In addition, there may be issues with getting supporting people to fill vacant jobs (e.g. in a hospital) during an extreme weather event when existing staff cannot travel. (Description to be enhanced in the future).",
     "source": "Calculated as percentage of total employment in NUTS1 unit (nama_10r_3empers). Switzerland (Economic activity rate of the permanent resident population aged 15 and above by canton, in 2016 (T 40.02.03.02.03).",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Vulnerability - Adaptive Capacity",
-    "domainsort": 66,
-    "group": "Other",
-    "groupsort": 63,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Vulnerability - Adaptive Capacity",
+    "domainSort": 66,
+    "group": "Other",
+    "groupSort": 63,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I078": {
     "name": "I078",
@@ -984,14 +1179,17 @@ AppData.indicatorMetadata = {
     "unit": "Number of patent applications to the EPO per 1000 population",
     "details": "This indicator shows the number  of patent applications to the European Patent Office per 1000 population.  Technology and innovation are important in helping a city to adapt to climate change e.g. investment in new flood technologies or building technologies that can help to mitigate heat. The ability of a country or urban area to invest in technological solutions, is thought to be an indicator of its adaptive capacity (Grieving et al. 2011; Swart et al. 2012; Acosta et al. 2013). Therefore, number of patents per year is used as a proxy indicator reflecting this issue. Ideally, the availability of adaptation solutions would be a direct indicator; however, such data is not typically collected on a city-by-city basis.\n",
     "source": "As nominal GDP in billion euros weighted by population data sourced from EUROSTAT (demo_r_d3dens).",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Vulnerability - Adaptive Capacity",
-    "domainsort": 76,
-    "group": "Other",
-    "groupsort": 74,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Vulnerability - Adaptive Capacity",
+    "domainSort": 76,
+    "group": "Other",
+    "groupSort": 74,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I079": {
     "name": "I079",
@@ -999,14 +1197,17 @@ AppData.indicatorMetadata = {
     "unit": "Euro",
     "details": "Gross Value Added (GVA) is defined as output value at basic prices less intermediate consumption valued at purchasers' prices. GVA is calculated before consumption of fixed capital.  The resources that a city has can be a good indicator of a city’s sensitivity in terms of extreme weather events and climate change. If a city has a lower than average GVA, then it may have be more susceptible to damage from all types of extreme weather events. A city with low resources may not be able to adequately address climate change adaptation due to other pressures. ",
     "source": "GVA data sourced from EUROSTAT (nama_10r_3gva) except Switzerland which was sourced from Knoema (https://knoema.com/nama_r_e3gdp/gross-domestic-product-gdp-at-current-market-prices-by-nuts-3-regions?geo=1027030-switzerland).",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Vulnerability - Sensitivity",
-    "domainsort": 62,
-    "group": "Other",
-    "groupsort": 62,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Vulnerability - Sensitivity",
+    "domainSort": 62,
+    "group": "Other",
+    "groupSort": 62,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I081": {
     "name": "I081",
@@ -1014,14 +1215,17 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "This indicator shows the percentage of the total area of the NUTS3 area that would be exposed to flooding in the event of a 1 in 100 year fluvial flood. Fluvial flooding occurs when watercourses (rivers, streams) overflow and inundate the surrounding area. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether fluvial flooding is a significant issue for the NUTS3 area. Also, this indicator can be considered alongside others included in the typology portal that show the extent of exposure of people and infrastructure to fluvial flooding in the NUTS3 area.",
     "source": "To be completed",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Hazard",
-    "domainsort": 30,
-    "group": "Fluvial and Pluvial Flooding",
-    "groupsort": 45,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Hazard",
+    "domainSort": 30,
+    "group": "Fluvial and Pluvial Flooding",
+    "groupSort": 45,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "I082": {
     "name": "I082",
@@ -1029,183 +1233,225 @@ AppData.indicatorMetadata = {
     "unit": "%",
     "details": "This indicator draws on NASA’s Global Landslide Susceptibility Map, which identifies the potential for landslides across the Earth’s surface on a scale from slight to severe. This indicator calculates the proportion of all areas that are susceptible to landslide in the NUTS3 area where the potential for landslide is moderate or higher. This indicator and the supporting statistical data (the Z-Score) can be used to better understand whether landslide hazard is a significant issue for the NUTS3 area. The key factor that influences landslide susceptibility is the presence of steep slopes. Others include bedrock and soil characteristics, deforestation and the presence of roads. Heavy rainfall can often trigger landslides. The typology portal includes an indicator on projected changes to the occurrence of very heavy rainfall days in NUTS3 areas. This can be used alongside the landslide hazard indicator, and also other indicators related to the exposure of people and infrastructure to landslides, to better understand this hazard in the NUTS3 area.",
     "source": "To be completed",
-    "micon": "description",
-    "faicon": "fab fa-leanpub",
-    "domain": "Hazard",
-    "domainsort": 31,
-    "group": "Other - Landslide",
-    "groupsort": 46,
     "type": "double",
-    "isvalid": true
+    "mIcon": "description",
+    "faIcon": "fab fa-leanpub",
+    "domain": "Hazard",
+    "domainSort": 31,
+    "group": "Other - Landslide",
+    "groupSort": 46,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": true
   },
   "V1.1": {
     "name": "V1.1",
     "description": "Mean temperature (RCP 4.5)",
     "unit": "°C",
+    "type": "double",
     "details": "Mean temperature is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. This indicator shows the difference in daily mean temperature between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection). The future projection is developed for a medium greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (RCP) <a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">4.5 scenario</a>). Projected change in daily mean temperature is not itself a climate change hazard. However, this indicator and the supporting statistical data (the Z-Score) can enhance understanding of how the climate of the NUTS3 area is projected to change over the coming decades. ",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP4.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
     "domain": "Hazard",
-    "domainsort": 1,
+    "domainSort": 1,
     "group": "Heat Stress",
-    "groupsort": 1,
-    "type": "double",
-    "isvalid": false
+    "groupSort": 1,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": false
   },
   "V10.1": {
     "name": "V10.1",
     "description": "Consecutive dry days (RCP 4.5)",
     "unit": "Number of days",
+    "type": "int",
     "details": "Consecutive dry days is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. This indicator shows the difference between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection) in the number of consecutive dry days with precipitation less than 1mm. The future projection is developed for a medium greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (RCP) <a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">4.5 scenario</a>). Where the frequency of consecutive dry days is projected to increase this highlights that drought may become more of a threat in the NUTS3 area. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether change in the number of consecutive dry days is a potentially significant issue for the NUTS3 area.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP4.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
     "domain": "Hazard",
-    "domainsort": 25,
+    "domainSort": 25,
     "group": "Drought",
-    "groupsort": 17,
-    "type": "int",
-    "isvalid": false
+    "groupSort": 17,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": false
   },
   "V11.1": {
     "name": "V11.1",
     "description": "Consecutive wet days (RCP 4.5)",
     "unit": "Number of days",
+    "type": "int",
     "details": "Consecutive wet days is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. This indicator shows the difference between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection) in the number of consecutive wet days with precipitation greater than or equal to 1mm. The future projection is developed for a medium greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (RCP) <a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">4.5 scenario</a>). Projected change in consecutive wet days is not itself a climate change hazard. However, this indicator and the supporting statistical data (the Z-Score) can enhance understanding of how the climate of the NUTS3 area is projected to change over the coming decades. Considering this indicator alongside other related indicators can support this process. For example, where consecutive wet days are projected to increase, in addition to increases in heavy and very heavy precipitation days, this indicates that flood hazards may become more common within the NUTS3 area. ",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP4.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
     "domain": "Hazard",
-    "domainsort": 19,
+    "domainSort": 19,
     "group": "Fluvial and Pluvial Flooding",
-    "groupsort": 39,
-    "type": "int",
-    "isvalid": false
+    "groupSort": 39,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": false
   },
   "V12.1": {
     "name": "V12.1",
     "description": "Heavy precipitation days (RCP 4.5)",
     "unit": "Number of days",
+    "type": "int",
     "details": "Heavy precipitation days is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. This indicator shows the difference between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection) in the number of days with precipitation greater than or equal to 10mm. The future projection is developed for a medium greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (RCP) <a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">4.5 scenario</a>). Where the frequency of heavy precipitation days is projected to increase, this indicates that flood hazards may also increase (although flooding is driven by multiple other factors including land use change). The statistical data provided for this indicator (the Z-Score) can be used to better understand whether change in the number of heavy precipitation days is a potentially significant issue for the NUTS3 area. ",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP4.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
     "domain": "Hazard",
-    "domainsort": 21,
+    "domainSort": 21,
     "group": "Fluvial and Pluvial Flooding",
-    "groupsort": 41,
-    "type": "int",
-    "isvalid": false
+    "groupSort": 41,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": false
   },
   "V13.1": {
     "name": "V13.1",
     "description": "Very heavy precipitation days (RCP 4.5)",
     "unit": "Number of days",
+    "type": "int",
     "details": "Very heavy precipitation days is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. This indicator shows the difference between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection) in the number of days with precipitation greater than or equal to 20mm. The future projection is developed for a medium greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (RCP) <a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">4.5 scenario</a>). Where the frequency of very heavy precipitation days is projected to increase, this indicates that flood hazards may also increase (although flooding is driven by multiple other factors including land use change). The statistical data provided for this indicator (the Z-Score) can be used to better understand whether change in the number of very heavy precipitation days is a potentially significant issue for the NUTS3 area.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP4.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
     "domain": "Hazard",
-    "domainsort": 23,
+    "domainSort": 23,
     "group": "Fluvial and Pluvial Flooding",
-    "groupsort": 43,
-    "type": "int",
-    "isvalid": false
+    "groupSort": 43,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": false
   },
   "V2.1": {
     "name": "V2.1",
     "description": "Minimum temperature (RCP 4.5)",
     "unit": "°C",
+    "type": "double",
     "details": "Minimum temperature is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. This indicator shows the difference in minimum temperature between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection). The future projection is developed for a medium greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (RCP) <a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">4.5 scenario</a>). Projected change in minimum temperature is not itself a climate change hazard. However, this indicator and the supporting statistical data (the Z-Score) can be considered alongside other low temperature related indicators (e.g. frost days and ice days) to demonstrate how low temperature related hazards may evolve in the NUTS3 area over the coming decades.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP4.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
     "domain": "Hazard",
-    "domainsort": 11,
+    "domainSort": 11,
     "group": "Extreme cold",
-    "groupsort": 11,
-    "type": "double",
-    "isvalid": false
+    "groupSort": 11,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": false
   },
   "V3.1": {
     "name": "V3.1",
     "description": "Maximum temperature (RCP 4.5)",
     "unit": "°C",
+    "type": "double",
     "details": "Maximum temperature is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. This indicator shows the difference in maximum temperature between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection). The future projection is developed for a medium greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (RCP) <a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">4.5 scenario</a>). Projected change in maximum temperature is not itself a climate change hazard. However, this indicator and the supporting statistical data (the Z-Score) can be considered alongside other high temperature related indicators (e.g. heat wave days) to demonstrate how high temperature related hazards may evolve in the NUTS3 area over the coming decades.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP4.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
     "domain": "Hazard",
-    "domainsort": 3,
+    "domainSort": 3,
     "group": "Heat Stress",
-    "groupsort": 3,
-    "type": "double",
-    "isvalid": false
+    "groupSort": 3,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": false
   },
   "V4.1": {
     "name": "V4.1",
     "description": "Frost days (RCP 4.5)",
     "unit": "Number of days",
+    "type": "int",
     "details": "This indicator shows the difference in the number of days with a minimum temperature of less than 0°C between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection). The future projection is developed for a medium greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (RCP) <a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">4.5 scenario</a>). The 0°C temperature threshold for frost days is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether change in the number of frost days is a potentially significant issue for the NUTS3 area. The number of frost days is decreasing across Europe, and the impacts of this shift may be positive or negative depending on the location being considered and related factors including the nature of dominant industries and land uses.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP4.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
     "domain": "Hazard",
-    "domainsort": 13,
+    "domainSort": 13,
     "group": "Extreme cold",
-    "groupsort": 13,
-    "type": "int",
-    "isvalid": false
+    "groupSort": 13,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": false
   },
   "V5.1": {
     "name": "V5.1",
     "description": "Summer days (RCP 4.5)",
     "unit": "Number of days",
+    "type": "int",
     "details": "This indicator shows the difference in the number of days with a maximum temperature more than 25°C between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection). The future projection is developed for a medium greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (RCP) <a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">4.5 scenario</a>). The 25°C temperature threshold for summer days is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. The supporting statistical data (the Z-Score) provides further information on this indicator in the context of the NUTS3 area. Although the summer days threshold of 25°C does not pose a threat to the majority of people and infrastructure, it can be considered alongside other heat-related indicators to better understand projected changes in temperature and related hazards in the NUTS3 area. ",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP4.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
     "domain": "Hazard",
-    "domainsort": 5,
+    "domainSort": 5,
     "group": "Heat Stress",
-    "groupsort": 5,
-    "type": "int",
-    "isvalid": false
+    "groupSort": 5,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": false
   },
   "V6.1": {
     "name": "V6.1",
     "description": "Tropical nights (RCP 4.5)",
     "unit": "Number of days",
+    "type": "int",
     "details": "This indicator shows the difference in the number of nights where the minimum temperature does not drop below 20°C between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection). The future projection is developed for a medium greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (RCP) <a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">4.5 scenario</a>). The 20°C temperature threshold for tropical nights is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether change in the number of tropical nights is a potentially significant issue for the NUTS3 area. The tropical nights indicator is used by the <a href=\"https://www.eea.europa.eu/publications/urban-adaptation-to-climate-change\" target=\"_cf\">European Environment Agency</a> who note that their occurrence is a crucial factor influencing the degree of health impacts associated with high temperatures in urban areas. The level of risk to people in the NUTS3 area from tropical nights (and associated heat wave days) will depend on factors including the proportion of elderly and young people in the population, groups who are particularly susceptible to harm from high temperatures. Indicator data on these factors is available within the typology portal.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP4.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
     "domain": "Hazard",
-    "domainsort": 7,
+    "domainSort": 7,
     "group": "Heat Stress",
-    "groupsort": 7,
-    "type": "int",
-    "isvalid": false
+    "groupSort": 7,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": false
   },
   "V7.1": {
     "name": "V7.1",
     "description": "Ice days (RCP 4.5)",
     "unit": "Number of days",
+    "type": "int",
     "details": "This indicator shows the difference in the number of days with a maximum temperature of less than 0°C between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection). The future projection is developed for a medium greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (RCP) <a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">4.5 scenario</a>). The 0°C temperature threshold for ice days is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether change in the number of ice days is a potentially significant issue for the NUTS3 area. The number of ice days is decreasing across Europe, and the impacts of this shift may be positive or negative depending on the location being considered and related factors including the nature of dominant industries and land uses.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP4.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
     "domain": "Hazard",
-    "domainsort": 15,
+    "domainSort": 15,
     "group": "Extreme cold",
-    "groupsort": 15,
-    "type": "int",
-    "isvalid": false
+    "groupSort": 15,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": false
   },
   "V8.1": {
     "name": "V8.1",
     "description": "Heat waves (RCP 4.5)",
     "unit": "Number of days",
+    "type": "int",
     "details": "This indicator shows the difference in the number of days with a maximum temperature of more than 35°C between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection). The future projection is developed for a medium greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (RCP) <a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">4.5 scenario</a>). There is no universal standard definition for a heat wave, although they are generally regarded as periods of extremely high temperature that exceeds a certain threshold (which varies depending on location and sector being considered) for a set number of days. Heat waves can negatively impact on people, ecosystems and infrastructure. The severity of impacts will depend on factors including the degree to which they are exposed to high temperatures and their vulnerability to this hazard. Vulnerability to heat waves is influenced by factors including the proportion of elderly and young people in the population and the extent of green space cover in urban areas. Indicator data on both of these factors is available within the typology portal. The severity and duration of the heat wave will also influence levels of associated risks. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether change in the number of heat waves is a potentially significant issue for the NUTS3 area.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP4.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
     "domain": "Hazard",
-    "domainsort": 9,
+    "domainSort": 9,
     "group": "Heat Stress",
-    "groupsort": 9,
-    "type": "int",
-    "isvalid": false
+    "groupSort": 9,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": false
   },
   "V9.1": {
     "name": "V9.1",
     "description": "Total wet-day precipitation (RCP 4.5)",
     "unit": "mm",
+    "type": "int",
     "details": "Total wet-day precipitation is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. This indicator shows the difference between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection) in the cumulated precipitation for days with precipitation greater than or equal to 1mm. The future projection is developed for a medium greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (RCP) <a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">4.5 scenario</a>). Projected change in total wet day precipitation is not itself a climate change hazard. However, this indicator and the supporting statistical data (the Z-Score) can enhance understanding of how the climate of the NUTS3 area is projected to change over the coming decades. ",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP4.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
     "domain": "Hazard",
-    "domainsort": 17,
+    "domainSort": 17,
     "group": "Fluvial and Pluvial Flooding",
-    "groupsort": 37,
-    "type": "int",
-    "isvalid": false
+    "groupSort": 37,
+    "isVisible": true,
+    "isDetailsVisible": true,
+    "isPinned": true,
+    "isValid": false
   }
 };
 
@@ -4081,8884 +4327,8884 @@ AppData.groups = [
 
 AppData.nuts3 = {
   "AT111": {
-    "name_latin" : "Mittelburgenland",
-    "nuts_name" : "Mittelburgenland",
-    "name_ascii" : "Mittelburgenland",
-    "name_html" : "Mittelburgenland"
+    "nameLatin" : "Mittelburgenland",
+    "nutsName" : "Mittelburgenland",
+    "nameAscii" : "Mittelburgenland",
+    "nameHtml" : "Mittelburgenland"
   },
   "AT112": {
-    "name_latin" : "Nordburgenland",
-    "nuts_name" : "Nordburgenland",
-    "name_ascii" : "Nordburgenland",
-    "name_html" : "Nordburgenland"
+    "nameLatin" : "Nordburgenland",
+    "nutsName" : "Nordburgenland",
+    "nameAscii" : "Nordburgenland",
+    "nameHtml" : "Nordburgenland"
   },
   "AT113": {
-    "name_latin" : "Südburgenland",
-    "nuts_name" : "Südburgenland",
-    "name_ascii" : "Sudburgenland",
-    "name_html" : "S&#x00FC;dburgenland"
+    "nameLatin" : "Südburgenland",
+    "nutsName" : "Südburgenland",
+    "nameAscii" : "Sudburgenland",
+    "nameHtml" : "S&#x00FC;dburgenland"
   },
   "AT121": {
-    "name_latin" : "Mostviertel-Eisenwurzen",
-    "nuts_name" : "Mostviertel-Eisenwurzen",
-    "name_ascii" : "Mostviertel-Eisenwurzen",
-    "name_html" : "Mostviertel-Eisenwurzen"
+    "nameLatin" : "Mostviertel-Eisenwurzen",
+    "nutsName" : "Mostviertel-Eisenwurzen",
+    "nameAscii" : "Mostviertel-Eisenwurzen",
+    "nameHtml" : "Mostviertel-Eisenwurzen"
   },
   "AT122": {
-    "name_latin" : "Niederösterreich-Süd",
-    "nuts_name" : "Niederösterreich-Süd",
-    "name_ascii" : "Niederosterreich-Sud",
-    "name_html" : "Nieder&#x00F6;sterreich-S&#x00FC;d"
+    "nameLatin" : "Niederösterreich-Süd",
+    "nutsName" : "Niederösterreich-Süd",
+    "nameAscii" : "Niederosterreich-Sud",
+    "nameHtml" : "Nieder&#x00F6;sterreich-S&#x00FC;d"
   },
   "AT123": {
-    "name_latin" : "Sankt Pölten",
-    "nuts_name" : "Sankt Pölten",
-    "name_ascii" : "Sankt Polten",
-    "name_html" : "Sankt P&#x00F6;lten"
+    "nameLatin" : "Sankt Pölten",
+    "nutsName" : "Sankt Pölten",
+    "nameAscii" : "Sankt Polten",
+    "nameHtml" : "Sankt P&#x00F6;lten"
   },
   "AT124": {
-    "name_latin" : "Waldviertel",
-    "nuts_name" : "Waldviertel",
-    "name_ascii" : "Waldviertel",
-    "name_html" : "Waldviertel"
+    "nameLatin" : "Waldviertel",
+    "nutsName" : "Waldviertel",
+    "nameAscii" : "Waldviertel",
+    "nameHtml" : "Waldviertel"
   },
   "AT125": {
-    "name_latin" : "Weinviertel",
-    "nuts_name" : "Weinviertel",
-    "name_ascii" : "Weinviertel",
-    "name_html" : "Weinviertel"
+    "nameLatin" : "Weinviertel",
+    "nutsName" : "Weinviertel",
+    "nameAscii" : "Weinviertel",
+    "nameHtml" : "Weinviertel"
   },
   "AT126": {
-    "name_latin" : "Wiener Umland/Nordteil",
-    "nuts_name" : "Wiener Umland/Nordteil",
-    "name_ascii" : "Wiener Umland/Nordteil",
-    "name_html" : "Wiener Umland/Nordteil"
+    "nameLatin" : "Wiener Umland/Nordteil",
+    "nutsName" : "Wiener Umland/Nordteil",
+    "nameAscii" : "Wiener Umland/Nordteil",
+    "nameHtml" : "Wiener Umland/Nordteil"
   },
   "AT127": {
-    "name_latin" : "Wiener Umland/Südteil",
-    "nuts_name" : "Wiener Umland/Südteil",
-    "name_ascii" : "Wiener Umland/Sudteil",
-    "name_html" : "Wiener Umland/S&#x00FC;dteil"
+    "nameLatin" : "Wiener Umland/Südteil",
+    "nutsName" : "Wiener Umland/Südteil",
+    "nameAscii" : "Wiener Umland/Sudteil",
+    "nameHtml" : "Wiener Umland/S&#x00FC;dteil"
   },
   "AT130": {
-    "name_latin" : "Wien",
-    "nuts_name" : "Wien",
-    "name_ascii" : "Wien",
-    "name_html" : "Wien"
+    "nameLatin" : "Wien",
+    "nutsName" : "Wien",
+    "nameAscii" : "Wien",
+    "nameHtml" : "Wien"
   },
   "AT211": {
-    "name_latin" : "Klagenfurt-Villach",
-    "nuts_name" : "Klagenfurt-Villach",
-    "name_ascii" : "Klagenfurt-Villach",
-    "name_html" : "Klagenfurt-Villach"
+    "nameLatin" : "Klagenfurt-Villach",
+    "nutsName" : "Klagenfurt-Villach",
+    "nameAscii" : "Klagenfurt-Villach",
+    "nameHtml" : "Klagenfurt-Villach"
   },
   "AT212": {
-    "name_latin" : "Oberkärnten",
-    "nuts_name" : "Oberkärnten",
-    "name_ascii" : "Oberkarnten",
-    "name_html" : "Oberk&#x00E4;rnten"
+    "nameLatin" : "Oberkärnten",
+    "nutsName" : "Oberkärnten",
+    "nameAscii" : "Oberkarnten",
+    "nameHtml" : "Oberk&#x00E4;rnten"
   },
   "AT213": {
-    "name_latin" : "Unterkärnten",
-    "nuts_name" : "Unterkärnten",
-    "name_ascii" : "Unterkarnten",
-    "name_html" : "Unterk&#x00E4;rnten"
+    "nameLatin" : "Unterkärnten",
+    "nutsName" : "Unterkärnten",
+    "nameAscii" : "Unterkarnten",
+    "nameHtml" : "Unterk&#x00E4;rnten"
   },
   "AT221": {
-    "name_latin" : "Graz",
-    "nuts_name" : "Graz",
-    "name_ascii" : "Graz",
-    "name_html" : "Graz"
+    "nameLatin" : "Graz",
+    "nutsName" : "Graz",
+    "nameAscii" : "Graz",
+    "nameHtml" : "Graz"
   },
   "AT222": {
-    "name_latin" : "Liezen",
-    "nuts_name" : "Liezen",
-    "name_ascii" : "Liezen",
-    "name_html" : "Liezen"
+    "nameLatin" : "Liezen",
+    "nutsName" : "Liezen",
+    "nameAscii" : "Liezen",
+    "nameHtml" : "Liezen"
   },
   "AT223": {
-    "name_latin" : "Östliche Obersteiermark",
-    "nuts_name" : "Östliche Obersteiermark",
-    "name_ascii" : "Ostliche Obersteiermark",
-    "name_html" : "&#x00D6;stliche Obersteiermark"
+    "nameLatin" : "Östliche Obersteiermark",
+    "nutsName" : "Östliche Obersteiermark",
+    "nameAscii" : "Ostliche Obersteiermark",
+    "nameHtml" : "&#x00D6;stliche Obersteiermark"
   },
   "AT225": {
-    "name_latin" : "West- und Südsteiermark",
-    "nuts_name" : "West- und Südsteiermark",
-    "name_ascii" : "West- und Sudsteiermark",
-    "name_html" : "West- und S&#x00FC;dsteiermark"
+    "nameLatin" : "West- und Südsteiermark",
+    "nutsName" : "West- und Südsteiermark",
+    "nameAscii" : "West- und Sudsteiermark",
+    "nameHtml" : "West- und S&#x00FC;dsteiermark"
   },
   "AT226": {
-    "name_latin" : "Westliche Obersteiermark",
-    "nuts_name" : "Westliche Obersteiermark",
-    "name_ascii" : "Westliche Obersteiermark",
-    "name_html" : "Westliche Obersteiermark"
+    "nameLatin" : "Westliche Obersteiermark",
+    "nutsName" : "Westliche Obersteiermark",
+    "nameAscii" : "Westliche Obersteiermark",
+    "nameHtml" : "Westliche Obersteiermark"
   },
   "AT311": {
-    "name_latin" : "Innviertel",
-    "nuts_name" : "Innviertel",
-    "name_ascii" : "Innviertel",
-    "name_html" : "Innviertel"
+    "nameLatin" : "Innviertel",
+    "nutsName" : "Innviertel",
+    "nameAscii" : "Innviertel",
+    "nameHtml" : "Innviertel"
   },
   "AT312": {
-    "name_latin" : "Linz-Wels",
-    "nuts_name" : "Linz-Wels",
-    "name_ascii" : "Linz-Wels",
-    "name_html" : "Linz-Wels"
+    "nameLatin" : "Linz-Wels",
+    "nutsName" : "Linz-Wels",
+    "nameAscii" : "Linz-Wels",
+    "nameHtml" : "Linz-Wels"
   },
   "AT313": {
-    "name_latin" : "Mühlviertel",
-    "nuts_name" : "Mühlviertel",
-    "name_ascii" : "Muhlviertel",
-    "name_html" : "M&#x00FC;hlviertel"
+    "nameLatin" : "Mühlviertel",
+    "nutsName" : "Mühlviertel",
+    "nameAscii" : "Muhlviertel",
+    "nameHtml" : "M&#x00FC;hlviertel"
   },
   "AT314": {
-    "name_latin" : "Steyr-Kirchdorf",
-    "nuts_name" : "Steyr-Kirchdorf",
-    "name_ascii" : "Steyr-Kirchdorf",
-    "name_html" : "Steyr-Kirchdorf"
+    "nameLatin" : "Steyr-Kirchdorf",
+    "nutsName" : "Steyr-Kirchdorf",
+    "nameAscii" : "Steyr-Kirchdorf",
+    "nameHtml" : "Steyr-Kirchdorf"
   },
   "AT321": {
-    "name_latin" : "Lungau",
-    "nuts_name" : "Lungau",
-    "name_ascii" : "Lungau",
-    "name_html" : "Lungau"
+    "nameLatin" : "Lungau",
+    "nutsName" : "Lungau",
+    "nameAscii" : "Lungau",
+    "nameHtml" : "Lungau"
   },
   "AT322": {
-    "name_latin" : "Pinzgau-Pongau",
-    "nuts_name" : "Pinzgau-Pongau",
-    "name_ascii" : "Pinzgau-Pongau",
-    "name_html" : "Pinzgau-Pongau"
+    "nameLatin" : "Pinzgau-Pongau",
+    "nutsName" : "Pinzgau-Pongau",
+    "nameAscii" : "Pinzgau-Pongau",
+    "nameHtml" : "Pinzgau-Pongau"
   },
   "AT323": {
-    "name_latin" : "Salzburg und Umgebung",
-    "nuts_name" : "Salzburg und Umgebung",
-    "name_ascii" : "Salzburg Und Umgebung",
-    "name_html" : "Salzburg Und Umgebung"
+    "nameLatin" : "Salzburg und Umgebung",
+    "nutsName" : "Salzburg und Umgebung",
+    "nameAscii" : "Salzburg Und Umgebung",
+    "nameHtml" : "Salzburg Und Umgebung"
   },
   "AT332": {
-    "name_latin" : "Innsbruck",
-    "nuts_name" : "Innsbruck",
-    "name_ascii" : "Innsbruck",
-    "name_html" : "Innsbruck"
+    "nameLatin" : "Innsbruck",
+    "nutsName" : "Innsbruck",
+    "nameAscii" : "Innsbruck",
+    "nameHtml" : "Innsbruck"
   },
   "AT333": {
-    "name_latin" : "Osttirol",
-    "nuts_name" : "Osttirol",
-    "name_ascii" : "Osttirol",
-    "name_html" : "Osttirol"
+    "nameLatin" : "Osttirol",
+    "nutsName" : "Osttirol",
+    "nameAscii" : "Osttirol",
+    "nameHtml" : "Osttirol"
   },
   "AT334": {
-    "name_latin" : "Tiroler Oberland",
-    "nuts_name" : "Tiroler Oberland",
-    "name_ascii" : "Tiroler Oberland",
-    "name_html" : "Tiroler Oberland"
+    "nameLatin" : "Tiroler Oberland",
+    "nutsName" : "Tiroler Oberland",
+    "nameAscii" : "Tiroler Oberland",
+    "nameHtml" : "Tiroler Oberland"
   },
   "AT335": {
-    "name_latin" : "Tiroler Unterland",
-    "nuts_name" : "Tiroler Unterland",
-    "name_ascii" : "Tiroler Unterland",
-    "name_html" : "Tiroler Unterland"
+    "nameLatin" : "Tiroler Unterland",
+    "nutsName" : "Tiroler Unterland",
+    "nameAscii" : "Tiroler Unterland",
+    "nameHtml" : "Tiroler Unterland"
   },
   "AT342": {
-    "name_latin" : "Rheintal-Bodenseegebiet",
-    "nuts_name" : "Rheintal-Bodenseegebiet",
-    "name_ascii" : "Rheintal-Bodenseegebiet",
-    "name_html" : "Rheintal-Bodenseegebiet"
+    "nameLatin" : "Rheintal-Bodenseegebiet",
+    "nutsName" : "Rheintal-Bodenseegebiet",
+    "nameAscii" : "Rheintal-Bodenseegebiet",
+    "nameHtml" : "Rheintal-Bodenseegebiet"
   },
   "BE100": {
-    "name_latin" : "Arr. de Bruxelles-Capitale / Arr. van Brussel-Hoofdstad",
-    "nuts_name" : "Arr. de Bruxelles-Capitale / Arr. van Brussel-Hoofdstad",
-    "name_ascii" : "Arr. de Bruxelles-Capitale / Arr. van Brussel-Hoofdstad",
-    "name_html" : "Arr. de Bruxelles-Capitale / Arr. van Brussel-Hoofdstad"
+    "nameLatin" : "Arr. de Bruxelles-Capitale / Arr. van Brussel-Hoofdstad",
+    "nutsName" : "Arr. de Bruxelles-Capitale / Arr. van Brussel-Hoofdstad",
+    "nameAscii" : "Arr. de Bruxelles-Capitale / Arr. van Brussel-Hoofdstad",
+    "nameHtml" : "Arr. de Bruxelles-Capitale / Arr. van Brussel-Hoofdstad"
   },
   "BE211": {
-    "name_latin" : "Arr. Antwerpen",
-    "nuts_name" : "Arr. Antwerpen",
-    "name_ascii" : "Arr. Antwerpen",
-    "name_html" : "Arr. Antwerpen"
+    "nameLatin" : "Arr. Antwerpen",
+    "nutsName" : "Arr. Antwerpen",
+    "nameAscii" : "Arr. Antwerpen",
+    "nameHtml" : "Arr. Antwerpen"
   },
   "BE212": {
-    "name_latin" : "Arr. Mechelen",
-    "nuts_name" : "Arr. Mechelen",
-    "name_ascii" : "Arr. Mechelen",
-    "name_html" : "Arr. Mechelen"
+    "nameLatin" : "Arr. Mechelen",
+    "nutsName" : "Arr. Mechelen",
+    "nameAscii" : "Arr. Mechelen",
+    "nameHtml" : "Arr. Mechelen"
   },
   "BE213": {
-    "name_latin" : "Arr. Turnhout",
-    "nuts_name" : "Arr. Turnhout",
-    "name_ascii" : "Arr. Turnhout",
-    "name_html" : "Arr. Turnhout"
+    "nameLatin" : "Arr. Turnhout",
+    "nutsName" : "Arr. Turnhout",
+    "nameAscii" : "Arr. Turnhout",
+    "nameHtml" : "Arr. Turnhout"
   },
   "BE221": {
-    "name_latin" : "Arr. Hasselt",
-    "nuts_name" : "Arr. Hasselt",
-    "name_ascii" : "Arr. Hasselt",
-    "name_html" : "Arr. Hasselt"
+    "nameLatin" : "Arr. Hasselt",
+    "nutsName" : "Arr. Hasselt",
+    "nameAscii" : "Arr. Hasselt",
+    "nameHtml" : "Arr. Hasselt"
   },
   "BE222": {
-    "name_latin" : "Arr. Maaseik",
-    "nuts_name" : "Arr. Maaseik",
-    "name_ascii" : "Arr. Maaseik",
-    "name_html" : "Arr. Maaseik"
+    "nameLatin" : "Arr. Maaseik",
+    "nutsName" : "Arr. Maaseik",
+    "nameAscii" : "Arr. Maaseik",
+    "nameHtml" : "Arr. Maaseik"
   },
   "BE223": {
-    "name_latin" : "Arr. Tongeren",
-    "nuts_name" : "Arr. Tongeren",
-    "name_ascii" : "Arr. Tongeren",
-    "name_html" : "Arr. Tongeren"
+    "nameLatin" : "Arr. Tongeren",
+    "nutsName" : "Arr. Tongeren",
+    "nameAscii" : "Arr. Tongeren",
+    "nameHtml" : "Arr. Tongeren"
   },
   "BE231": {
-    "name_latin" : "Arr. Aalst",
-    "nuts_name" : "Arr. Aalst",
-    "name_ascii" : "Arr. Aalst",
-    "name_html" : "Arr. Aalst"
+    "nameLatin" : "Arr. Aalst",
+    "nutsName" : "Arr. Aalst",
+    "nameAscii" : "Arr. Aalst",
+    "nameHtml" : "Arr. Aalst"
   },
   "BE232": {
-    "name_latin" : "Arr. Dendermonde",
-    "nuts_name" : "Arr. Dendermonde",
-    "name_ascii" : "Arr. Dendermonde",
-    "name_html" : "Arr. Dendermonde"
+    "nameLatin" : "Arr. Dendermonde",
+    "nutsName" : "Arr. Dendermonde",
+    "nameAscii" : "Arr. Dendermonde",
+    "nameHtml" : "Arr. Dendermonde"
   },
   "BE233": {
-    "name_latin" : "Arr. Eeklo",
-    "nuts_name" : "Arr. Eeklo",
-    "name_ascii" : "Arr. Eeklo",
-    "name_html" : "Arr. Eeklo"
+    "nameLatin" : "Arr. Eeklo",
+    "nutsName" : "Arr. Eeklo",
+    "nameAscii" : "Arr. Eeklo",
+    "nameHtml" : "Arr. Eeklo"
   },
   "BE234": {
-    "name_latin" : "Arr. Gent",
-    "nuts_name" : "Arr. Gent",
-    "name_ascii" : "Arr. Gent",
-    "name_html" : "Arr. Gent"
+    "nameLatin" : "Arr. Gent",
+    "nutsName" : "Arr. Gent",
+    "nameAscii" : "Arr. Gent",
+    "nameHtml" : "Arr. Gent"
   },
   "BE236": {
-    "name_latin" : "Arr. Sint-Niklaas",
-    "nuts_name" : "Arr. Sint-Niklaas",
-    "name_ascii" : "Arr. Sint-Niklaas",
-    "name_html" : "Arr. Sint-Niklaas"
+    "nameLatin" : "Arr. Sint-Niklaas",
+    "nutsName" : "Arr. Sint-Niklaas",
+    "nameAscii" : "Arr. Sint-Niklaas",
+    "nameHtml" : "Arr. Sint-Niklaas"
   },
   "BE241": {
-    "name_latin" : "Arr. Halle-Vilvoorde",
-    "nuts_name" : "Arr. Halle-Vilvoorde",
-    "name_ascii" : "Arr. Halle-Vilvoorde",
-    "name_html" : "Arr. Halle-Vilvoorde"
+    "nameLatin" : "Arr. Halle-Vilvoorde",
+    "nutsName" : "Arr. Halle-Vilvoorde",
+    "nameAscii" : "Arr. Halle-Vilvoorde",
+    "nameHtml" : "Arr. Halle-Vilvoorde"
   },
   "BE242": {
-    "name_latin" : "Arr. Leuven",
-    "nuts_name" : "Arr. Leuven",
-    "name_ascii" : "Arr. Leuven",
-    "name_html" : "Arr. Leuven"
+    "nameLatin" : "Arr. Leuven",
+    "nutsName" : "Arr. Leuven",
+    "nameAscii" : "Arr. Leuven",
+    "nameHtml" : "Arr. Leuven"
   },
   "BE251": {
-    "name_latin" : "Arr. Brugge",
-    "nuts_name" : "Arr. Brugge",
-    "name_ascii" : "Arr. Brugge",
-    "name_html" : "Arr. Brugge"
+    "nameLatin" : "Arr. Brugge",
+    "nutsName" : "Arr. Brugge",
+    "nameAscii" : "Arr. Brugge",
+    "nameHtml" : "Arr. Brugge"
   },
   "BE252": {
-    "name_latin" : "Arr. Diksmuide",
-    "nuts_name" : "Arr. Diksmuide",
-    "name_ascii" : "Arr. Diksmuide",
-    "name_html" : "Arr. Diksmuide"
+    "nameLatin" : "Arr. Diksmuide",
+    "nutsName" : "Arr. Diksmuide",
+    "nameAscii" : "Arr. Diksmuide",
+    "nameHtml" : "Arr. Diksmuide"
   },
   "BE253": {
-    "name_latin" : "Arr. Ieper",
-    "nuts_name" : "Arr. Ieper",
-    "name_ascii" : "Arr. Ieper",
-    "name_html" : "Arr. Ieper"
+    "nameLatin" : "Arr. Ieper",
+    "nutsName" : "Arr. Ieper",
+    "nameAscii" : "Arr. Ieper",
+    "nameHtml" : "Arr. Ieper"
   },
   "BE254": {
-    "name_latin" : "Arr. Kortrijk",
-    "nuts_name" : "Arr. Kortrijk",
-    "name_ascii" : "Arr. Kortrijk",
-    "name_html" : "Arr. Kortrijk"
+    "nameLatin" : "Arr. Kortrijk",
+    "nutsName" : "Arr. Kortrijk",
+    "nameAscii" : "Arr. Kortrijk",
+    "nameHtml" : "Arr. Kortrijk"
   },
   "BE255": {
-    "name_latin" : "Arr. Oostende",
-    "nuts_name" : "Arr. Oostende",
-    "name_ascii" : "Arr. Oostende",
-    "name_html" : "Arr. Oostende"
+    "nameLatin" : "Arr. Oostende",
+    "nutsName" : "Arr. Oostende",
+    "nameAscii" : "Arr. Oostende",
+    "nameHtml" : "Arr. Oostende"
   },
   "BE256": {
-    "name_latin" : "Arr. Roeselare",
-    "nuts_name" : "Arr. Roeselare",
-    "name_ascii" : "Arr. Roeselare",
-    "name_html" : "Arr. Roeselare"
+    "nameLatin" : "Arr. Roeselare",
+    "nutsName" : "Arr. Roeselare",
+    "nameAscii" : "Arr. Roeselare",
+    "nameHtml" : "Arr. Roeselare"
   },
   "BE257": {
-    "name_latin" : "Arr. Tielt",
-    "nuts_name" : "Arr. Tielt",
-    "name_ascii" : "Arr. Tielt",
-    "name_html" : "Arr. Tielt"
+    "nameLatin" : "Arr. Tielt",
+    "nutsName" : "Arr. Tielt",
+    "nameAscii" : "Arr. Tielt",
+    "nameHtml" : "Arr. Tielt"
   },
   "BE310": {
-    "name_latin" : "Arr. Nivelles",
-    "nuts_name" : "Arr. Nivelles",
-    "name_ascii" : "Arr. Nivelles",
-    "name_html" : "Arr. Nivelles"
+    "nameLatin" : "Arr. Nivelles",
+    "nutsName" : "Arr. Nivelles",
+    "nameAscii" : "Arr. Nivelles",
+    "nameHtml" : "Arr. Nivelles"
   },
   "BE321": {
-    "name_latin" : "Arr. Ath",
-    "nuts_name" : "Arr. Ath",
-    "name_ascii" : "Arr. Ath",
-    "name_html" : "Arr. Ath"
+    "nameLatin" : "Arr. Ath",
+    "nutsName" : "Arr. Ath",
+    "nameAscii" : "Arr. Ath",
+    "nameHtml" : "Arr. Ath"
   },
   "BE322": {
-    "name_latin" : "Arr. Charleroi",
-    "nuts_name" : "Arr. Charleroi",
-    "name_ascii" : "Arr. Charleroi",
-    "name_html" : "Arr. Charleroi"
+    "nameLatin" : "Arr. Charleroi",
+    "nutsName" : "Arr. Charleroi",
+    "nameAscii" : "Arr. Charleroi",
+    "nameHtml" : "Arr. Charleroi"
   },
   "BE323": {
-    "name_latin" : "Arr. Mons",
-    "nuts_name" : "Arr. Mons",
-    "name_ascii" : "Arr. Mons",
-    "name_html" : "Arr. Mons"
+    "nameLatin" : "Arr. Mons",
+    "nutsName" : "Arr. Mons",
+    "nameAscii" : "Arr. Mons",
+    "nameHtml" : "Arr. Mons"
   },
   "BE324": {
-    "name_latin" : "Arr. Mouscron",
-    "nuts_name" : "Arr. Mouscron",
-    "name_ascii" : "Arr. Mouscron",
-    "name_html" : "Arr. Mouscron"
+    "nameLatin" : "Arr. Mouscron",
+    "nutsName" : "Arr. Mouscron",
+    "nameAscii" : "Arr. Mouscron",
+    "nameHtml" : "Arr. Mouscron"
   },
   "BE325": {
-    "name_latin" : "Arr. Soignies",
-    "nuts_name" : "Arr. Soignies",
-    "name_ascii" : "Arr. Soignies",
-    "name_html" : "Arr. Soignies"
+    "nameLatin" : "Arr. Soignies",
+    "nutsName" : "Arr. Soignies",
+    "nameAscii" : "Arr. Soignies",
+    "nameHtml" : "Arr. Soignies"
   },
   "BE327": {
-    "name_latin" : "Arr. Tournai",
-    "nuts_name" : "Arr. Tournai",
-    "name_ascii" : "Arr. Tournai",
-    "name_html" : "Arr. Tournai"
+    "nameLatin" : "Arr. Tournai",
+    "nutsName" : "Arr. Tournai",
+    "nameAscii" : "Arr. Tournai",
+    "nameHtml" : "Arr. Tournai"
   },
   "BE331": {
-    "name_latin" : "Arr. Huy",
-    "nuts_name" : "Arr. Huy",
-    "name_ascii" : "Arr. Huy",
-    "name_html" : "Arr. Huy"
+    "nameLatin" : "Arr. Huy",
+    "nutsName" : "Arr. Huy",
+    "nameAscii" : "Arr. Huy",
+    "nameHtml" : "Arr. Huy"
   },
   "BE334": {
-    "name_latin" : "Arr. Waremme",
-    "nuts_name" : "Arr. Waremme",
-    "name_ascii" : "Arr. Waremme",
-    "name_html" : "Arr. Waremme"
+    "nameLatin" : "Arr. Waremme",
+    "nutsName" : "Arr. Waremme",
+    "nameAscii" : "Arr. Waremme",
+    "nameHtml" : "Arr. Waremme"
   },
   "BE335": {
-    "name_latin" : "Arr. Verviers - communes francophones",
-    "nuts_name" : "Arr. Verviers - communes francophones",
-    "name_ascii" : "Arr. Verviers - Communes francophones",
-    "name_html" : "Arr. Verviers - Communes fancophones"
+    "nameLatin" : "Arr. Verviers - communes francophones",
+    "nutsName" : "Arr. Verviers - communes francophones",
+    "nameAscii" : "Arr. Verviers - Communes francophones",
+    "nameHtml" : "Arr. Verviers - Communes fancophones"
   },
   "BE336": {
-    "name_latin" : "Bezirk Verviers - Deutschsprachige Gemeinschaft",
-    "nuts_name" : "Bezirk Verviers - Deutschsprachige Gemeinschaft",
-    "name_ascii" : "Bezirk Verviers - Deutschsprachige Gemeinschaft",
-    "name_html" : "Bezirk Verviers - Deutschsprachige Gemeinschaft"
+    "nameLatin" : "Bezirk Verviers - Deutschsprachige Gemeinschaft",
+    "nutsName" : "Bezirk Verviers - Deutschsprachige Gemeinschaft",
+    "nameAscii" : "Bezirk Verviers - Deutschsprachige Gemeinschaft",
+    "nameHtml" : "Bezirk Verviers - Deutschsprachige Gemeinschaft"
   },
   "BE341": {
-    "name_latin" : "Arr. Arlon",
-    "nuts_name" : "Arr. Arlon",
-    "name_ascii" : "Arr. Arlon",
-    "name_html" : "Arr. Arlon"
+    "nameLatin" : "Arr. Arlon",
+    "nutsName" : "Arr. Arlon",
+    "nameAscii" : "Arr. Arlon",
+    "nameHtml" : "Arr. Arlon"
   },
   "BE342": {
-    "name_latin" : "Arr. Bastogne",
-    "nuts_name" : "Arr. Bastogne",
-    "name_ascii" : "Arr. Bastogne",
-    "name_html" : "Arr. Bastogne"
+    "nameLatin" : "Arr. Bastogne",
+    "nutsName" : "Arr. Bastogne",
+    "nameAscii" : "Arr. Bastogne",
+    "nameHtml" : "Arr. Bastogne"
   },
   "BE343": {
-    "name_latin" : "Arr. Marche-en-Famenne",
-    "nuts_name" : "Arr. Marche-en-Famenne",
-    "name_ascii" : "Arr. Marche-en-Famenne",
-    "name_html" : "Arr. Marche-en-Famenne"
+    "nameLatin" : "Arr. Marche-en-Famenne",
+    "nutsName" : "Arr. Marche-en-Famenne",
+    "nameAscii" : "Arr. Marche-en-Famenne",
+    "nameHtml" : "Arr. Marche-en-Famenne"
   },
   "BE344": {
-    "name_latin" : "Arr. Neufchâteau",
-    "nuts_name" : "Arr. Neufchâteau",
-    "name_ascii" : "Arr. Neufchateau",
-    "name_html" : "Arr. Neufch&#x00E2;teau"
+    "nameLatin" : "Arr. Neufchâteau",
+    "nutsName" : "Arr. Neufchâteau",
+    "nameAscii" : "Arr. Neufchateau",
+    "nameHtml" : "Arr. Neufch&#x00E2;teau"
   },
   "BE345": {
-    "name_latin" : "Arr. Virton",
-    "nuts_name" : "Arr. Virton",
-    "name_ascii" : "Arr. Virton",
-    "name_html" : "Arr. Virton"
+    "nameLatin" : "Arr. Virton",
+    "nutsName" : "Arr. Virton",
+    "nameAscii" : "Arr. Virton",
+    "nameHtml" : "Arr. Virton"
   },
   "BE351": {
-    "name_latin" : "Arr. Dinant",
-    "nuts_name" : "Arr. Dinant",
-    "name_ascii" : "Arr. Dinant",
-    "name_html" : "Arr. Dinant"
+    "nameLatin" : "Arr. Dinant",
+    "nutsName" : "Arr. Dinant",
+    "nameAscii" : "Arr. Dinant",
+    "nameHtml" : "Arr. Dinant"
   },
   "BE352": {
-    "name_latin" : "Arr. Namur",
-    "nuts_name" : "Arr. Namur",
-    "name_ascii" : "Arr. Namur",
-    "name_html" : "Arr. Namur"
+    "nameLatin" : "Arr. Namur",
+    "nutsName" : "Arr. Namur",
+    "nameAscii" : "Arr. Namur",
+    "nameHtml" : "Arr. Namur"
   },
   "BE353": {
-    "name_latin" : "Arr. Philippeville",
-    "nuts_name" : "Arr. Philippeville",
-    "name_ascii" : "Arr. Philippeville",
-    "name_html" : "Arr. Philippeville"
+    "nameLatin" : "Arr. Philippeville",
+    "nutsName" : "Arr. Philippeville",
+    "nameAscii" : "Arr. Philippeville",
+    "nameHtml" : "Arr. Philippeville"
   },
   "BG311": {
-    "name_latin" : "Vidin",
-    "nuts_name" : "Видин",
-    "name_ascii" : "Vidin",
-    "name_html" : "&#x0412;&#x0438;&#x0434;&#x0438;&#x043D;"
+    "nameLatin" : "Vidin",
+    "nutsName" : "Видин",
+    "nameAscii" : "Vidin",
+    "nameHtml" : "&#x0412;&#x0438;&#x0434;&#x0438;&#x043D;"
   },
   "BG312": {
-    "name_latin" : "Montana",
-    "nuts_name" : "Монтана",
-    "name_ascii" : "Montana",
-    "name_html" : "&#x041C;&#x043E;&#x043D;&#x0442;&#x0430;&#x043D;&#x0430;"
+    "nameLatin" : "Montana",
+    "nutsName" : "Монтана",
+    "nameAscii" : "Montana",
+    "nameHtml" : "&#x041C;&#x043E;&#x043D;&#x0442;&#x0430;&#x043D;&#x0430;"
   },
   "BG313": {
-    "name_latin" : "Vratsa",
-    "nuts_name" : "Враца",
-    "name_ascii" : "Vratsa",
-    "name_html" : "&#x0412;&#x0440;&#x0430;&#x0446;&#x0430;"
+    "nameLatin" : "Vratsa",
+    "nutsName" : "Враца",
+    "nameAscii" : "Vratsa",
+    "nameHtml" : "&#x0412;&#x0440;&#x0430;&#x0446;&#x0430;"
   },
   "BG314": {
-    "name_latin" : "Pleven",
-    "nuts_name" : "Плевен",
-    "name_ascii" : "Pleven",
-    "name_html" : "&#x041F;&#x043B;&#x0435;&#x0432;&#x0435;&#x043D;"
+    "nameLatin" : "Pleven",
+    "nutsName" : "Плевен",
+    "nameAscii" : "Pleven",
+    "nameHtml" : "&#x041F;&#x043B;&#x0435;&#x0432;&#x0435;&#x043D;"
   },
   "BG315": {
-    "name_latin" : "Lovech",
-    "nuts_name" : "Ловеч",
-    "name_ascii" : "Lovech",
-    "name_html" : "&#x041B;&#x043E;&#x0432;&#x0435;&#x0447;"
+    "nameLatin" : "Lovech",
+    "nutsName" : "Ловеч",
+    "nameAscii" : "Lovech",
+    "nameHtml" : "&#x041B;&#x043E;&#x0432;&#x0435;&#x0447;"
   },
   "BG321": {
-    "name_latin" : "Veliko Tarnovo",
-    "nuts_name" : "Велико Търново",
-    "name_ascii" : "Veliko Tarnovo",
-    "name_html" : "&#x0412;&#x0435;&#x043B;&#x0438;&#x043A;&#x043E; &#x0422;&#x044A;&#x0440;&#x043D;&#x043E;&#x0432;&#x043E;"
+    "nameLatin" : "Veliko Tarnovo",
+    "nutsName" : "Велико Търново",
+    "nameAscii" : "Veliko Tarnovo",
+    "nameHtml" : "&#x0412;&#x0435;&#x043B;&#x0438;&#x043A;&#x043E; &#x0422;&#x044A;&#x0440;&#x043D;&#x043E;&#x0432;&#x043E;"
   },
   "BG322": {
-    "name_latin" : "Gabrovo",
-    "nuts_name" : "Габрово",
-    "name_ascii" : "Gabrovo",
-    "name_html" : "&#x0413;&#x0430;&#x0431;&#x0440;&#x043E;&#x0432;&#x043E;"
+    "nameLatin" : "Gabrovo",
+    "nutsName" : "Габрово",
+    "nameAscii" : "Gabrovo",
+    "nameHtml" : "&#x0413;&#x0430;&#x0431;&#x0440;&#x043E;&#x0432;&#x043E;"
   },
   "BG323": {
-    "name_latin" : "Ruse",
-    "nuts_name" : "Русе",
-    "name_ascii" : "Ruse",
-    "name_html" : "&#x0420;&#x0443;&#x0441;&#x0435;"
+    "nameLatin" : "Ruse",
+    "nutsName" : "Русе",
+    "nameAscii" : "Ruse",
+    "nameHtml" : "&#x0420;&#x0443;&#x0441;&#x0435;"
   },
   "BG324": {
-    "name_latin" : "Razgrad",
-    "nuts_name" : "Разград",
-    "name_ascii" : "Razgrad",
-    "name_html" : "&#x0420;&#x0430;&#x0437;&#x0433;&#x0440;&#x0430;&#x0434;"
+    "nameLatin" : "Razgrad",
+    "nutsName" : "Разград",
+    "nameAscii" : "Razgrad",
+    "nameHtml" : "&#x0420;&#x0430;&#x0437;&#x0433;&#x0440;&#x0430;&#x0434;"
   },
   "BG332": {
-    "name_latin" : "Dobrich",
-    "nuts_name" : "Добрич",
-    "name_ascii" : "Dobrich",
-    "name_html" : "&#x0414;&#x043E;&#x0431;&#x0440;&#x0438;&#x0447;"
+    "nameLatin" : "Dobrich",
+    "nutsName" : "Добрич",
+    "nameAscii" : "Dobrich",
+    "nameHtml" : "&#x0414;&#x043E;&#x0431;&#x0440;&#x0438;&#x0447;"
   },
   "BG333": {
-    "name_latin" : "Shumen",
-    "nuts_name" : "Шумен",
-    "name_ascii" : "Shumen",
-    "name_html" : "&#x0428;&#x0443;&#x043C;&#x0435;&#x043D;"
+    "nameLatin" : "Shumen",
+    "nutsName" : "Шумен",
+    "nameAscii" : "Shumen",
+    "nameHtml" : "&#x0428;&#x0443;&#x043C;&#x0435;&#x043D;"
   },
   "BG342": {
-    "name_latin" : "Sliven",
-    "nuts_name" : "Сливен",
-    "name_ascii" : "Sliven",
-    "name_html" : "&#x0421;&#x043B;&#x0438;&#x0432;&#x0435;&#x043D;"
+    "nameLatin" : "Sliven",
+    "nutsName" : "Сливен",
+    "nameAscii" : "Sliven",
+    "nameHtml" : "&#x0421;&#x043B;&#x0438;&#x0432;&#x0435;&#x043D;"
   },
   "BG343": {
-    "name_latin" : "Yambol",
-    "nuts_name" : "Ямбол",
-    "name_ascii" : "Yambol",
-    "name_html" : "&#x042F;&#x043C;&#x0431;&#x043E;&#x043B;"
+    "nameLatin" : "Yambol",
+    "nutsName" : "Ямбол",
+    "nameAscii" : "Yambol",
+    "nameHtml" : "&#x042F;&#x043C;&#x0431;&#x043E;&#x043B;"
   },
   "BG411": {
-    "name_latin" : "Sofia (stolitsa)",
-    "nuts_name" : "София (столица)",
-    "name_ascii" : "Sofia (stolitsa)",
-    "name_html" : "&#x0421;&#x043E;&#x0444;&#x0438;&#x044F; (&#x0421;&#x0442;&#x043E;&#x043B;&#x0438;&#x0446;&#x0430;)"
+    "nameLatin" : "Sofia (stolitsa)",
+    "nutsName" : "София (столица)",
+    "nameAscii" : "Sofia (stolitsa)",
+    "nameHtml" : "&#x0421;&#x043E;&#x0444;&#x0438;&#x044F; (&#x0421;&#x0442;&#x043E;&#x043B;&#x0438;&#x0446;&#x0430;)"
   },
   "BG412": {
-    "name_latin" : "Sofia",
-    "nuts_name" : "София",
-    "name_ascii" : "Sofia",
-    "name_html" : "&#x0421;&#x043E;&#x0444;&#x0438;&#x044F;"
+    "nameLatin" : "Sofia",
+    "nutsName" : "София",
+    "nameAscii" : "Sofia",
+    "nameHtml" : "&#x0421;&#x043E;&#x0444;&#x0438;&#x044F;"
   },
   "BG413": {
-    "name_latin" : "Blagoevgrad",
-    "nuts_name" : "Благоевград",
-    "name_ascii" : "Blagoevgrad",
-    "name_html" : "&#x0411;&#x043B;&#x0430;&#x0433;&#x043E;&#x0435;&#x0432;&#x0433;&#x0440;&#x0430;&#x0434;"
+    "nameLatin" : "Blagoevgrad",
+    "nutsName" : "Благоевград",
+    "nameAscii" : "Blagoevgrad",
+    "nameHtml" : "&#x0411;&#x043B;&#x0430;&#x0433;&#x043E;&#x0435;&#x0432;&#x0433;&#x0440;&#x0430;&#x0434;"
   },
   "BG414": {
-    "name_latin" : "Pernik",
-    "nuts_name" : "Перник",
-    "name_ascii" : "Pernik",
-    "name_html" : "&#x041F;&#x0435;&#x0440;&#x043D;&#x0438;&#x043A;"
+    "nameLatin" : "Pernik",
+    "nutsName" : "Перник",
+    "nameAscii" : "Pernik",
+    "nameHtml" : "&#x041F;&#x0435;&#x0440;&#x043D;&#x0438;&#x043A;"
   },
   "BG415": {
-    "name_latin" : "Kyustendil",
-    "nuts_name" : "Кюстендил",
-    "name_ascii" : "Kyustendil",
-    "name_html" : "&#x041A;&#x044E;&#x0441;&#x0442;&#x0435;&#x043D;&#x0434;&#x0438;&#x043B;"
+    "nameLatin" : "Kyustendil",
+    "nutsName" : "Кюстендил",
+    "nameAscii" : "Kyustendil",
+    "nameHtml" : "&#x041A;&#x044E;&#x0441;&#x0442;&#x0435;&#x043D;&#x0434;&#x0438;&#x043B;"
   },
   "BG421": {
-    "name_latin" : "Plovdiv",
-    "nuts_name" : "Пловдив",
-    "name_ascii" : "Plovdiv",
-    "name_html" : "&#x041F;&#x043B;&#x043E;&#x0432;&#x0434;&#x0438;&#x0432;"
+    "nameLatin" : "Plovdiv",
+    "nutsName" : "Пловдив",
+    "nameAscii" : "Plovdiv",
+    "nameHtml" : "&#x041F;&#x043B;&#x043E;&#x0432;&#x0434;&#x0438;&#x0432;"
   },
   "BG423": {
-    "name_latin" : "Pazardzhik",
-    "nuts_name" : "Пазарджик",
-    "name_ascii" : "Pazardzhik",
-    "name_html" : "&#x041F;&#x0430;&#x0437;&#x0430;&#x0440;&#x0434;&#x0436;&#x0438;&#x043A;"
+    "nameLatin" : "Pazardzhik",
+    "nutsName" : "Пазарджик",
+    "nameAscii" : "Pazardzhik",
+    "nameHtml" : "&#x041F;&#x0430;&#x0437;&#x0430;&#x0440;&#x0434;&#x0436;&#x0438;&#x043A;"
   },
   "BG425": {
-    "name_latin" : "Kardzhali",
-    "nuts_name" : "Кърджали",
-    "name_ascii" : "Kardzhali",
-    "name_html" : "&#x041A;&#x044A;&#x0440;&#x0434;&#x0436;&#x0430;&#x043B;&#x0438;"
+    "nameLatin" : "Kardzhali",
+    "nutsName" : "Кърджали",
+    "nameAscii" : "Kardzhali",
+    "nameHtml" : "&#x041A;&#x044A;&#x0440;&#x0434;&#x0436;&#x0430;&#x043B;&#x0438;"
   },
   "CH011": {
-    "name_latin" : "Vaud",
-    "nuts_name" : "Vaud",
-    "name_ascii" : "Vaud",
-    "name_html" : "Vaud"
+    "nameLatin" : "Vaud",
+    "nutsName" : "Vaud",
+    "nameAscii" : "Vaud",
+    "nameHtml" : "Vaud"
   },
   "CH012": {
-    "name_latin" : "Valais",
-    "nuts_name" : "Valais",
-    "name_ascii" : "Valais",
-    "name_html" : "Valais"
+    "nameLatin" : "Valais",
+    "nutsName" : "Valais",
+    "nameAscii" : "Valais",
+    "nameHtml" : "Valais"
   },
   "CH013": {
-    "name_latin" : "Genève",
-    "nuts_name" : "Genève",
-    "name_ascii" : "Geneve",
-    "name_html" : "Gen&#x00E8;ve"
+    "nameLatin" : "Genève",
+    "nutsName" : "Genève",
+    "nameAscii" : "Geneve",
+    "nameHtml" : "Gen&#x00E8;ve"
   },
   "CH021": {
-    "name_latin" : "Bern",
-    "nuts_name" : "Bern",
-    "name_ascii" : "Bern",
-    "name_html" : "Bern"
+    "nameLatin" : "Bern",
+    "nutsName" : "Bern",
+    "nameAscii" : "Bern",
+    "nameHtml" : "Bern"
   },
   "CH022": {
-    "name_latin" : "Freiburg",
-    "nuts_name" : "Freiburg",
-    "name_ascii" : "Freiburg",
-    "name_html" : "Freiburg"
+    "nameLatin" : "Freiburg",
+    "nutsName" : "Freiburg",
+    "nameAscii" : "Freiburg",
+    "nameHtml" : "Freiburg"
   },
   "CH023": {
-    "name_latin" : "Solothurn",
-    "nuts_name" : "Solothurn",
-    "name_ascii" : "Solothurn",
-    "name_html" : "Solothurn"
+    "nameLatin" : "Solothurn",
+    "nutsName" : "Solothurn",
+    "nameAscii" : "Solothurn",
+    "nameHtml" : "Solothurn"
   },
   "CH024": {
-    "name_latin" : "Neuchâtel",
-    "nuts_name" : "Neuchâtel",
-    "name_ascii" : "Neuchatel",
-    "name_html" : "Neuch&#x00E2;tel"
+    "nameLatin" : "Neuchâtel",
+    "nutsName" : "Neuchâtel",
+    "nameAscii" : "Neuchatel",
+    "nameHtml" : "Neuch&#x00E2;tel"
   },
   "CH025": {
-    "name_latin" : "Jura",
-    "nuts_name" : "Jura",
-    "name_ascii" : "Jura",
-    "name_html" : "Jura"
+    "nameLatin" : "Jura",
+    "nutsName" : "Jura",
+    "nameAscii" : "Jura",
+    "nameHtml" : "Jura"
   },
   "CH032": {
-    "name_latin" : "Basel-Landschaft",
-    "nuts_name" : "Basel-Landschaft",
-    "name_ascii" : "Basel-Landschaft",
-    "name_html" : "Basel-Landschaft"
+    "nameLatin" : "Basel-Landschaft",
+    "nutsName" : "Basel-Landschaft",
+    "nameAscii" : "Basel-Landschaft",
+    "nameHtml" : "Basel-Landschaft"
   },
   "CH033": {
-    "name_latin" : "Aargau",
-    "nuts_name" : "Aargau",
-    "name_ascii" : "Aargau",
-    "name_html" : "Aargau"
+    "nameLatin" : "Aargau",
+    "nutsName" : "Aargau",
+    "nameAscii" : "Aargau",
+    "nameHtml" : "Aargau"
   },
   "CH040": {
-    "name_latin" : "Zürich",
-    "nuts_name" : "Zürich",
-    "name_ascii" : "Zurich",
-    "name_html" : "Z&#x00FC;rich"
+    "nameLatin" : "Zürich",
+    "nutsName" : "Zürich",
+    "nameAscii" : "Zurich",
+    "nameHtml" : "Z&#x00FC;rich"
   },
   "CH052": {
-    "name_latin" : "Schaffhausen",
-    "nuts_name" : "Schaffhausen",
-    "name_ascii" : "Schaffhausen",
-    "name_html" : "Schaffhausen"
+    "nameLatin" : "Schaffhausen",
+    "nutsName" : "Schaffhausen",
+    "nameAscii" : "Schaffhausen",
+    "nameHtml" : "Schaffhausen"
   },
   "CH053": {
-    "name_latin" : "Appenzell Ausserrhoden",
-    "nuts_name" : "Appenzell Ausserrhoden",
-    "name_ascii" : "Appenzell Ausserrhoden",
-    "name_html" : "Appenzell Ausserrhoden"
+    "nameLatin" : "Appenzell Ausserrhoden",
+    "nutsName" : "Appenzell Ausserrhoden",
+    "nameAscii" : "Appenzell Ausserrhoden",
+    "nameHtml" : "Appenzell Ausserrhoden"
   },
   "CH055": {
-    "name_latin" : "St. Gallen",
-    "nuts_name" : "St. Gallen",
-    "name_ascii" : "St. Gallen",
-    "name_html" : "St. Gallen"
+    "nameLatin" : "St. Gallen",
+    "nutsName" : "St. Gallen",
+    "nameAscii" : "St. Gallen",
+    "nameHtml" : "St. Gallen"
   },
   "CH056": {
-    "name_latin" : "Graubünden",
-    "nuts_name" : "Graubünden",
-    "name_ascii" : "Graubunden",
-    "name_html" : "Graub&#x00FC;nden"
+    "nameLatin" : "Graubünden",
+    "nutsName" : "Graubünden",
+    "nameAscii" : "Graubunden",
+    "nameHtml" : "Graub&#x00FC;nden"
   },
   "CH057": {
-    "name_latin" : "Thurgau",
-    "nuts_name" : "Thurgau",
-    "name_ascii" : "Thurgau",
-    "name_html" : "Thurgau"
+    "nameLatin" : "Thurgau",
+    "nutsName" : "Thurgau",
+    "nameAscii" : "Thurgau",
+    "nameHtml" : "Thurgau"
   },
   "CH061": {
-    "name_latin" : "Luzern",
-    "nuts_name" : "Luzern",
-    "name_ascii" : "Luzern",
-    "name_html" : "Luzern"
+    "nameLatin" : "Luzern",
+    "nutsName" : "Luzern",
+    "nameAscii" : "Luzern",
+    "nameHtml" : "Luzern"
   },
   "CH062": {
-    "name_latin" : "Uri",
-    "nuts_name" : "Uri",
-    "name_ascii" : "Uri",
-    "name_html" : "Uri"
+    "nameLatin" : "Uri",
+    "nutsName" : "Uri",
+    "nameAscii" : "Uri",
+    "nameHtml" : "Uri"
   },
   "CH063": {
-    "name_latin" : "Schwyz",
-    "nuts_name" : "Schwyz",
-    "name_ascii" : "Schwyz",
-    "name_html" : "Schwyz"
+    "nameLatin" : "Schwyz",
+    "nutsName" : "Schwyz",
+    "nameAscii" : "Schwyz",
+    "nameHtml" : "Schwyz"
   },
   "CH064": {
-    "name_latin" : "Obwalden",
-    "nuts_name" : "Obwalden",
-    "name_ascii" : "Obwalden",
-    "name_html" : "Obwalden"
+    "nameLatin" : "Obwalden",
+    "nutsName" : "Obwalden",
+    "nameAscii" : "Obwalden",
+    "nameHtml" : "Obwalden"
   },
   "CH065": {
-    "name_latin" : "Nidwalden",
-    "nuts_name" : "Nidwalden",
-    "name_ascii" : "Nidwalden",
-    "name_html" : "Nidwalden"
+    "nameLatin" : "Nidwalden",
+    "nutsName" : "Nidwalden",
+    "nameAscii" : "Nidwalden",
+    "nameHtml" : "Nidwalden"
   },
   "CH066": {
-    "name_latin" : "Zug",
-    "nuts_name" : "Zug",
-    "name_ascii" : "Zug",
-    "name_html" : "Zug"
+    "nameLatin" : "Zug",
+    "nutsName" : "Zug",
+    "nameAscii" : "Zug",
+    "nameHtml" : "Zug"
   },
   "CH070": {
-    "name_latin" : "Ticino",
-    "nuts_name" : "Ticino",
-    "name_ascii" : "Ticino",
-    "name_html" : "Ticino"
+    "nameLatin" : "Ticino",
+    "nutsName" : "Ticino",
+    "nameAscii" : "Ticino",
+    "nameHtml" : "Ticino"
   },
   "CY000": {
-    "name_latin" : "Kýpros",
-    "nuts_name" : "Κύπρος",
-    "name_ascii" : "Kypros",
-    "name_html" : "&#922;&#973;&#960;&#961;&#959;&#962;"
+    "nameLatin" : "Kýpros",
+    "nutsName" : "Κύπρος",
+    "nameAscii" : "Kypros",
+    "nameHtml" : "&#922;&#973;&#960;&#961;&#959;&#962;"
   },
   "CZ010": {
-    "name_latin" : "Hlavní mesto Praha",
-    "nuts_name" : "Hlavní mesto Praha",
-    "name_ascii" : "Hlavni mesto Praha",
-    "name_html" : "Hlavn&#x00ED; mesto Praha"
+    "nameLatin" : "Hlavní mesto Praha",
+    "nutsName" : "Hlavní mesto Praha",
+    "nameAscii" : "Hlavni mesto Praha",
+    "nameHtml" : "Hlavn&#x00ED; mesto Praha"
   },
   "CZ020": {
-    "name_latin" : "Stredoceský kraj",
-    "nuts_name" : "Stredoceský kraj",
-    "name_ascii" : "Stredocesky kraj",
-    "name_html" : "Stredocesk&#x00FD; kraj"
+    "nameLatin" : "Stredoceský kraj",
+    "nutsName" : "Stredoceský kraj",
+    "nameAscii" : "Stredocesky kraj",
+    "nameHtml" : "Stredocesk&#x00FD; kraj"
   },
   "CZ031": {
-    "name_latin" : "Jihoceský kraj",
-    "nuts_name" : "Jihoceský kraj",
-    "name_ascii" : "Jihocesky kraj",
-    "name_html" : "Jihocesk&#x00FD; kraj"
+    "nameLatin" : "Jihoceský kraj",
+    "nutsName" : "Jihoceský kraj",
+    "nameAscii" : "Jihocesky kraj",
+    "nameHtml" : "Jihocesk&#x00FD; kraj"
   },
   "CZ032": {
-    "name_latin" : "Plzenský kraj",
-    "nuts_name" : "Plzenský kraj",
-    "name_ascii" : "Plzensky kraj",
-    "name_html" : "Plzensk&#x00FD; kraj"
+    "nameLatin" : "Plzenský kraj",
+    "nutsName" : "Plzenský kraj",
+    "nameAscii" : "Plzensky kraj",
+    "nameHtml" : "Plzensk&#x00FD; kraj"
   },
   "CZ041": {
-    "name_latin" : "Karlovarský kraj",
-    "nuts_name" : "Karlovarský kraj",
-    "name_ascii" : "Karlovarsky kraj",
-    "name_html" : "Karlovarsk&#x00FD; kraj"
+    "nameLatin" : "Karlovarský kraj",
+    "nutsName" : "Karlovarský kraj",
+    "nameAscii" : "Karlovarsky kraj",
+    "nameHtml" : "Karlovarsk&#x00FD; kraj"
   },
   "CZ042": {
-    "name_latin" : "Ústecký kraj",
-    "nuts_name" : "Ústecký kraj",
-    "name_ascii" : "Ustecky kraj",
-    "name_html" : "&#x00DA;steck&#x00FD; kraj"
+    "nameLatin" : "Ústecký kraj",
+    "nutsName" : "Ústecký kraj",
+    "nameAscii" : "Ustecky kraj",
+    "nameHtml" : "&#x00DA;steck&#x00FD; kraj"
   },
   "CZ052": {
-    "name_latin" : "Královéhradecký kraj",
-    "nuts_name" : "Královéhradecký kraj",
-    "name_ascii" : "Kralovehradecky kraj",
-    "name_html" : "Kr&#x00E1;lov&#x00E9;hradeck&#x00FD; kraj"
+    "nameLatin" : "Královéhradecký kraj",
+    "nutsName" : "Královéhradecký kraj",
+    "nameAscii" : "Kralovehradecky kraj",
+    "nameHtml" : "Kr&#x00E1;lov&#x00E9;hradeck&#x00FD; kraj"
   },
   "CZ053": {
-    "name_latin" : "Pardubický kraj",
-    "nuts_name" : "Pardubický kraj",
-    "name_ascii" : "Pardubicky kraj",
-    "name_html" : "Pardubick&#x00FD; kraj"
+    "nameLatin" : "Pardubický kraj",
+    "nutsName" : "Pardubický kraj",
+    "nameAscii" : "Pardubicky kraj",
+    "nameHtml" : "Pardubick&#x00FD; kraj"
   },
   "CZ063": {
-    "name_latin" : "Kraj Vysocina",
-    "nuts_name" : "Kraj Vysocina",
-    "name_ascii" : "Kraj Vysocina",
-    "name_html" : "Kraj Vysocina"
+    "nameLatin" : "Kraj Vysocina",
+    "nutsName" : "Kraj Vysocina",
+    "nameAscii" : "Kraj Vysocina",
+    "nameHtml" : "Kraj Vysocina"
   },
   "CZ064": {
-    "name_latin" : "Jihomoravský kraj",
-    "nuts_name" : "Jihomoravský kraj",
-    "name_ascii" : "Jihomoravsky kraj",
-    "name_html" : "Jihomoravsk&#x00FD; kraj"
+    "nameLatin" : "Jihomoravský kraj",
+    "nutsName" : "Jihomoravský kraj",
+    "nameAscii" : "Jihomoravsky kraj",
+    "nameHtml" : "Jihomoravsk&#x00FD; kraj"
   },
   "CZ072": {
-    "name_latin" : "Zlínský kraj",
-    "nuts_name" : "Zlínský kraj",
-    "name_ascii" : "Zlinsky kraj",
-    "name_html" : "Zl&#x00ED;nsk&#x00FD; kraj"
+    "nameLatin" : "Zlínský kraj",
+    "nutsName" : "Zlínský kraj",
+    "nameAscii" : "Zlinsky kraj",
+    "nameHtml" : "Zl&#x00ED;nsk&#x00FD; kraj"
   },
   "CZ080": {
-    "name_latin" : "Moravskoslezský kraj",
-    "nuts_name" : "Moravskoslezský kraj",
-    "name_ascii" : "Moravskoslezsky kraj",
-    "name_html" : "Moravskoslezsk&#x00FD; kraj"
+    "nameLatin" : "Moravskoslezský kraj",
+    "nutsName" : "Moravskoslezský kraj",
+    "nameAscii" : "Moravskoslezsky kraj",
+    "nameHtml" : "Moravskoslezsk&#x00FD; kraj"
   },
   "DE111": {
-    "name_latin" : "Stuttgart, Stadtkreis",
-    "nuts_name" : "Stuttgart, Stadtkreis",
-    "name_ascii" : "Stuttgart, Stadtkreis",
-    "name_html" : "Stuttgart, Stadtkreis"
+    "nameLatin" : "Stuttgart, Stadtkreis",
+    "nutsName" : "Stuttgart, Stadtkreis",
+    "nameAscii" : "Stuttgart, Stadtkreis",
+    "nameHtml" : "Stuttgart, Stadtkreis"
   },
   "DE112": {
-    "name_latin" : "Böblingen",
-    "nuts_name" : "Böblingen",
-    "name_ascii" : "Boblingen",
-    "name_html" : "B&#x00F6;blingen"
+    "nameLatin" : "Böblingen",
+    "nutsName" : "Böblingen",
+    "nameAscii" : "Boblingen",
+    "nameHtml" : "B&#x00F6;blingen"
   },
   "DE113": {
-    "name_latin" : "Esslingen",
-    "nuts_name" : "Esslingen",
-    "name_ascii" : "Esslingen",
-    "name_html" : "Esslingen"
+    "nameLatin" : "Esslingen",
+    "nutsName" : "Esslingen",
+    "nameAscii" : "Esslingen",
+    "nameHtml" : "Esslingen"
   },
   "DE114": {
-    "name_latin" : "Göppingen",
-    "nuts_name" : "Göppingen",
-    "name_ascii" : "Goppingen",
-    "name_html" : "G&#x00F6;ppingen"
+    "nameLatin" : "Göppingen",
+    "nutsName" : "Göppingen",
+    "nameAscii" : "Goppingen",
+    "nameHtml" : "G&#x00F6;ppingen"
   },
   "DE115": {
-    "name_latin" : "Ludwigsburg",
-    "nuts_name" : "Ludwigsburg",
-    "name_ascii" : "Ludwigsburg",
-    "name_html" : "Ludwigsburg"
+    "nameLatin" : "Ludwigsburg",
+    "nutsName" : "Ludwigsburg",
+    "nameAscii" : "Ludwigsburg",
+    "nameHtml" : "Ludwigsburg"
   },
   "DE117": {
-    "name_latin" : "Heilbronn, Stadtkreis",
-    "nuts_name" : "Heilbronn, Stadtkreis",
-    "name_ascii" : "Heilbronn, Stadtkreis",
-    "name_html" : "Heilbronn, Stadtkreis"
+    "nameLatin" : "Heilbronn, Stadtkreis",
+    "nutsName" : "Heilbronn, Stadtkreis",
+    "nameAscii" : "Heilbronn, Stadtkreis",
+    "nameHtml" : "Heilbronn, Stadtkreis"
   },
   "DE118": {
-    "name_latin" : "Heilbronn, Landkreis",
-    "nuts_name" : "Heilbronn, Landkreis",
-    "name_ascii" : "Heilbronn, Landkreis",
-    "name_html" : "Heilbronn, Landkreis"
+    "nameLatin" : "Heilbronn, Landkreis",
+    "nutsName" : "Heilbronn, Landkreis",
+    "nameAscii" : "Heilbronn, Landkreis",
+    "nameHtml" : "Heilbronn, Landkreis"
   },
   "DE119": {
-    "name_latin" : "Hohenlohekreis",
-    "nuts_name" : "Hohenlohekreis",
-    "name_ascii" : "Hohenlohekreis",
-    "name_html" : "Hohenlohekreis"
+    "nameLatin" : "Hohenlohekreis",
+    "nutsName" : "Hohenlohekreis",
+    "nameAscii" : "Hohenlohekreis",
+    "nameHtml" : "Hohenlohekreis"
   },
   "DE11B": {
-    "name_latin" : "Main-Tauber-Kreis",
-    "nuts_name" : "Main-Tauber-Kreis",
-    "name_ascii" : "Main-Tauber-Kreis",
-    "name_html" : "Main-Tauber-Kreis"
+    "nameLatin" : "Main-Tauber-Kreis",
+    "nutsName" : "Main-Tauber-Kreis",
+    "nameAscii" : "Main-Tauber-Kreis",
+    "nameHtml" : "Main-Tauber-Kreis"
   },
   "DE11C": {
-    "name_latin" : "Heidenheim",
-    "nuts_name" : "Heidenheim",
-    "name_ascii" : "Heidenheim",
-    "name_html" : "Heidenheim"
+    "nameLatin" : "Heidenheim",
+    "nutsName" : "Heidenheim",
+    "nameAscii" : "Heidenheim",
+    "nameHtml" : "Heidenheim"
   },
   "DE11D": {
-    "name_latin" : "Ostalbkreis",
-    "nuts_name" : "Ostalbkreis",
-    "name_ascii" : "Ostalbkreis",
-    "name_html" : "Ostalbkreis"
+    "nameLatin" : "Ostalbkreis",
+    "nutsName" : "Ostalbkreis",
+    "nameAscii" : "Ostalbkreis",
+    "nameHtml" : "Ostalbkreis"
   },
   "DE121": {
-    "name_latin" : "Baden-Baden, Stadtkreis",
-    "nuts_name" : "Baden-Baden, Stadtkreis",
-    "name_ascii" : "Baden-Baden, Stadtkreis",
-    "name_html" : "Baden-Baden, Stadtkreis"
+    "nameLatin" : "Baden-Baden, Stadtkreis",
+    "nutsName" : "Baden-Baden, Stadtkreis",
+    "nameAscii" : "Baden-Baden, Stadtkreis",
+    "nameHtml" : "Baden-Baden, Stadtkreis"
   },
   "DE123": {
-    "name_latin" : "Karlsruhe, Landkreis",
-    "nuts_name" : "Karlsruhe, Landkreis",
-    "name_ascii" : "Karlsruhe, Landkreis",
-    "name_html" : "Karlsruhe, Landkreis"
+    "nameLatin" : "Karlsruhe, Landkreis",
+    "nutsName" : "Karlsruhe, Landkreis",
+    "nameAscii" : "Karlsruhe, Landkreis",
+    "nameHtml" : "Karlsruhe, Landkreis"
   },
   "DE124": {
-    "name_latin" : "Rastatt",
-    "nuts_name" : "Rastatt",
-    "name_ascii" : "Rastatt",
-    "name_html" : "Rastatt"
+    "nameLatin" : "Rastatt",
+    "nutsName" : "Rastatt",
+    "nameAscii" : "Rastatt",
+    "nameHtml" : "Rastatt"
   },
   "DE125": {
-    "name_latin" : "Heidelberg, Stadtkreis",
-    "nuts_name" : "Heidelberg, Stadtkreis",
-    "name_ascii" : "Heidelberg, Stadtkreis",
-    "name_html" : "Heidelberg, Stadtkreis"
+    "nameLatin" : "Heidelberg, Stadtkreis",
+    "nutsName" : "Heidelberg, Stadtkreis",
+    "nameAscii" : "Heidelberg, Stadtkreis",
+    "nameHtml" : "Heidelberg, Stadtkreis"
   },
   "DE126": {
-    "name_latin" : "Mannheim, Stadtkreis",
-    "nuts_name" : "Mannheim, Stadtkreis",
-    "name_ascii" : "Mannheim, Stadtkreis",
-    "name_html" : "Mannheim, Stadtkreis"
+    "nameLatin" : "Mannheim, Stadtkreis",
+    "nutsName" : "Mannheim, Stadtkreis",
+    "nameAscii" : "Mannheim, Stadtkreis",
+    "nameHtml" : "Mannheim, Stadtkreis"
   },
   "DE127": {
-    "name_latin" : "Neckar-Odenwald-Kreis",
-    "nuts_name" : "Neckar-Odenwald-Kreis",
-    "name_ascii" : "Neckar-Odenwald-Kreis",
-    "name_html" : "Neckar-Odenwald-Kreis"
+    "nameLatin" : "Neckar-Odenwald-Kreis",
+    "nutsName" : "Neckar-Odenwald-Kreis",
+    "nameAscii" : "Neckar-Odenwald-Kreis",
+    "nameHtml" : "Neckar-Odenwald-Kreis"
   },
   "DE128": {
-    "name_latin" : "Rhein-Neckar-Kreis",
-    "nuts_name" : "Rhein-Neckar-Kreis",
-    "name_ascii" : "Rhein-Neckar-Kreis",
-    "name_html" : "Rhein-Neckar-Kreis"
+    "nameLatin" : "Rhein-Neckar-Kreis",
+    "nutsName" : "Rhein-Neckar-Kreis",
+    "nameAscii" : "Rhein-Neckar-Kreis",
+    "nameHtml" : "Rhein-Neckar-Kreis"
   },
   "DE12A": {
-    "name_latin" : "Calw",
-    "nuts_name" : "Calw",
-    "name_ascii" : "Calw",
-    "name_html" : "Calw"
+    "nameLatin" : "Calw",
+    "nutsName" : "Calw",
+    "nameAscii" : "Calw",
+    "nameHtml" : "Calw"
   },
   "DE12B": {
-    "name_latin" : "Enzkreis",
-    "nuts_name" : "Enzkreis",
-    "name_ascii" : "Enzkreis",
-    "name_html" : "Enzkreis"
+    "nameLatin" : "Enzkreis",
+    "nutsName" : "Enzkreis",
+    "nameAscii" : "Enzkreis",
+    "nameHtml" : "Enzkreis"
   },
   "DE12C": {
-    "name_latin" : "Freudenstadt",
-    "nuts_name" : "Freudenstadt",
-    "name_ascii" : "Freudenstadt",
-    "name_html" : "Freudenstadt"
+    "nameLatin" : "Freudenstadt",
+    "nutsName" : "Freudenstadt",
+    "nameAscii" : "Freudenstadt",
+    "nameHtml" : "Freudenstadt"
   },
   "DE131": {
-    "name_latin" : "Freiburg im Breisgau, Stadtkreis",
-    "nuts_name" : "Freiburg im Breisgau, Stadtkreis",
-    "name_ascii" : "Freiburg im Breisgau, Stadtkreis",
-    "name_html" : "Freiburg im Breisgau, Stadtkreis"
+    "nameLatin" : "Freiburg im Breisgau, Stadtkreis",
+    "nutsName" : "Freiburg im Breisgau, Stadtkreis",
+    "nameAscii" : "Freiburg im Breisgau, Stadtkreis",
+    "nameHtml" : "Freiburg im Breisgau, Stadtkreis"
   },
   "DE132": {
-    "name_latin" : "Breisgau-Hochschwarzwald",
-    "nuts_name" : "Breisgau-Hochschwarzwald",
-    "name_ascii" : "Breisgau-Hochschwarzwald",
-    "name_html" : "Breisgau-Hochschwarzwald"
+    "nameLatin" : "Breisgau-Hochschwarzwald",
+    "nutsName" : "Breisgau-Hochschwarzwald",
+    "nameAscii" : "Breisgau-Hochschwarzwald",
+    "nameHtml" : "Breisgau-Hochschwarzwald"
   },
   "DE134": {
-    "name_latin" : "Ortenaukreis",
-    "nuts_name" : "Ortenaukreis",
-    "name_ascii" : "Ortenaukreis",
-    "name_html" : "Ortenaukreis"
+    "nameLatin" : "Ortenaukreis",
+    "nutsName" : "Ortenaukreis",
+    "nameAscii" : "Ortenaukreis",
+    "nameHtml" : "Ortenaukreis"
   },
   "DE135": {
-    "name_latin" : "Rottweil",
-    "nuts_name" : "Rottweil",
-    "name_ascii" : "Rottweil",
-    "name_html" : "Rottweil"
+    "nameLatin" : "Rottweil",
+    "nutsName" : "Rottweil",
+    "nameAscii" : "Rottweil",
+    "nameHtml" : "Rottweil"
   },
   "DE136": {
-    "name_latin" : "Schwarzwald-Baar-Kreis",
-    "nuts_name" : "Schwarzwald-Baar-Kreis",
-    "name_ascii" : "Schwarzwald-Baar-Kreis",
-    "name_html" : "Schwarzwald-Baar-Kreis"
+    "nameLatin" : "Schwarzwald-Baar-Kreis",
+    "nutsName" : "Schwarzwald-Baar-Kreis",
+    "nameAscii" : "Schwarzwald-Baar-Kreis",
+    "nameHtml" : "Schwarzwald-Baar-Kreis"
   },
   "DE137": {
-    "name_latin" : "Tuttlingen",
-    "nuts_name" : "Tuttlingen",
-    "name_ascii" : "Tuttlingen",
-    "name_html" : "Tuttlingen"
+    "nameLatin" : "Tuttlingen",
+    "nutsName" : "Tuttlingen",
+    "nameAscii" : "Tuttlingen",
+    "nameHtml" : "Tuttlingen"
   },
   "DE139": {
-    "name_latin" : "Lörrach",
-    "nuts_name" : "Lörrach",
-    "name_ascii" : "Lorrach",
-    "name_html" : "L&#x00F6;rrach"
+    "nameLatin" : "Lörrach",
+    "nutsName" : "Lörrach",
+    "nameAscii" : "Lorrach",
+    "nameHtml" : "L&#x00F6;rrach"
   },
   "DE13A": {
-    "name_latin" : "Waldshut",
-    "nuts_name" : "Waldshut",
-    "name_ascii" : "Waldshut",
-    "name_html" : "Waldshut"
+    "nameLatin" : "Waldshut",
+    "nutsName" : "Waldshut",
+    "nameAscii" : "Waldshut",
+    "nameHtml" : "Waldshut"
   },
   "DE141": {
-    "name_latin" : "Reutlingen",
-    "nuts_name" : "Reutlingen",
-    "name_ascii" : "Reutlingen",
-    "name_html" : "Reutlingen"
+    "nameLatin" : "Reutlingen",
+    "nutsName" : "Reutlingen",
+    "nameAscii" : "Reutlingen",
+    "nameHtml" : "Reutlingen"
   },
   "DE143": {
-    "name_latin" : "Zollernalbkreis",
-    "nuts_name" : "Zollernalbkreis",
-    "name_ascii" : "Zollernalbkreis",
-    "name_html" : "Zollernalbkreis"
+    "nameLatin" : "Zollernalbkreis",
+    "nutsName" : "Zollernalbkreis",
+    "nameAscii" : "Zollernalbkreis",
+    "nameHtml" : "Zollernalbkreis"
   },
   "DE144": {
-    "name_latin" : "Ulm, Stadtkreis",
-    "nuts_name" : "Ulm, Stadtkreis",
-    "name_ascii" : "Ulm, Stadtkreis",
-    "name_html" : "Ulm, Stadtkreis"
+    "nameLatin" : "Ulm, Stadtkreis",
+    "nutsName" : "Ulm, Stadtkreis",
+    "nameAscii" : "Ulm, Stadtkreis",
+    "nameHtml" : "Ulm, Stadtkreis"
   },
   "DE145": {
-    "name_latin" : "Alb-Donau-Kreis",
-    "nuts_name" : "Alb-Donau-Kreis",
-    "name_ascii" : "Alb-Donau-Kreis",
-    "name_html" : "Alb-Donau-Kreis"
+    "nameLatin" : "Alb-Donau-Kreis",
+    "nutsName" : "Alb-Donau-Kreis",
+    "nameAscii" : "Alb-Donau-Kreis",
+    "nameHtml" : "Alb-Donau-Kreis"
   },
   "DE146": {
-    "name_latin" : "Biberach",
-    "nuts_name" : "Biberach",
-    "name_ascii" : "Biberach",
-    "name_html" : "Biberach"
+    "nameLatin" : "Biberach",
+    "nutsName" : "Biberach",
+    "nameAscii" : "Biberach",
+    "nameHtml" : "Biberach"
   },
   "DE147": {
-    "name_latin" : "Bodenseekreis",
-    "nuts_name" : "Bodenseekreis",
-    "name_ascii" : "Bodenseekreis",
-    "name_html" : "Bodenseekreis"
+    "nameLatin" : "Bodenseekreis",
+    "nutsName" : "Bodenseekreis",
+    "nameAscii" : "Bodenseekreis",
+    "nameHtml" : "Bodenseekreis"
   },
   "DE148": {
-    "name_latin" : "Ravensburg",
-    "nuts_name" : "Ravensburg",
-    "name_ascii" : "Ravensburg",
-    "name_html" : "Ravensburg"
+    "nameLatin" : "Ravensburg",
+    "nutsName" : "Ravensburg",
+    "nameAscii" : "Ravensburg",
+    "nameHtml" : "Ravensburg"
   },
   "DE149": {
-    "name_latin" : "Sigmaringen",
-    "nuts_name" : "Sigmaringen",
-    "name_ascii" : "Sigmaringen",
-    "name_html" : "Sigmaringen"
+    "nameLatin" : "Sigmaringen",
+    "nutsName" : "Sigmaringen",
+    "nameAscii" : "Sigmaringen",
+    "nameHtml" : "Sigmaringen"
   },
   "DE211": {
-    "name_latin" : "Ingolstadt, Kreisfreie Stadt",
-    "nuts_name" : "Ingolstadt, Kreisfreie Stadt",
-    "name_ascii" : "Ingolstadt, Kreisfreie Stadt",
-    "name_html" : "Ingolstadt, Kreisfreie Stadt"
+    "nameLatin" : "Ingolstadt, Kreisfreie Stadt",
+    "nutsName" : "Ingolstadt, Kreisfreie Stadt",
+    "nameAscii" : "Ingolstadt, Kreisfreie Stadt",
+    "nameHtml" : "Ingolstadt, Kreisfreie Stadt"
   },
   "DE213": {
-    "name_latin" : "Rosenheim, Kreisfreie Stadt",
-    "nuts_name" : "Rosenheim, Kreisfreie Stadt",
-    "name_ascii" : "Rosenheim, Kreisfreie Stadt",
-    "name_html" : "Rosenheim, Kreisfreie Stadt"
+    "nameLatin" : "Rosenheim, Kreisfreie Stadt",
+    "nutsName" : "Rosenheim, Kreisfreie Stadt",
+    "nameAscii" : "Rosenheim, Kreisfreie Stadt",
+    "nameHtml" : "Rosenheim, Kreisfreie Stadt"
   },
   "DE214": {
-    "name_latin" : "Altötting",
-    "nuts_name" : "Altötting",
-    "name_ascii" : "Altotting",
-    "name_html" : "Alt&#x00F6;tting"
+    "nameLatin" : "Altötting",
+    "nutsName" : "Altötting",
+    "nameAscii" : "Altotting",
+    "nameHtml" : "Alt&#x00F6;tting"
   },
   "DE215": {
-    "name_latin" : "Berchtesgadener Land",
-    "nuts_name" : "Berchtesgadener Land",
-    "name_ascii" : "Berchtesgadener Land",
-    "name_html" : "Berchtesgadener Land"
+    "nameLatin" : "Berchtesgadener Land",
+    "nutsName" : "Berchtesgadener Land",
+    "nameAscii" : "Berchtesgadener Land",
+    "nameHtml" : "Berchtesgadener Land"
   },
   "DE216": {
-    "name_latin" : "Bad Tölz-Wolfratshausen",
-    "nuts_name" : "Bad Tölz-Wolfratshausen",
-    "name_ascii" : "Bad Tolz-Wolfratshausen",
-    "name_html" : "Bad T&#x00F6;lz-Wolfratshausen"
+    "nameLatin" : "Bad Tölz-Wolfratshausen",
+    "nutsName" : "Bad Tölz-Wolfratshausen",
+    "nameAscii" : "Bad Tolz-Wolfratshausen",
+    "nameHtml" : "Bad T&#x00F6;lz-Wolfratshausen"
   },
   "DE217": {
-    "name_latin" : "Dachau",
-    "nuts_name" : "Dachau",
-    "name_ascii" : "Dachau",
-    "name_html" : "Dachau"
+    "nameLatin" : "Dachau",
+    "nutsName" : "Dachau",
+    "nameAscii" : "Dachau",
+    "nameHtml" : "Dachau"
   },
   "DE218": {
-    "name_latin" : "Ebersberg",
-    "nuts_name" : "Ebersberg",
-    "name_ascii" : "Ebersberg",
-    "name_html" : "Ebersberg"
+    "nameLatin" : "Ebersberg",
+    "nutsName" : "Ebersberg",
+    "nameAscii" : "Ebersberg",
+    "nameHtml" : "Ebersberg"
   },
   "DE219": {
-    "name_latin" : "Eichstätt",
-    "nuts_name" : "Eichstätt",
-    "name_ascii" : "Eichstatt",
-    "name_html" : "Eichst&#x00E4;tt"
+    "nameLatin" : "Eichstätt",
+    "nutsName" : "Eichstätt",
+    "nameAscii" : "Eichstatt",
+    "nameHtml" : "Eichst&#x00E4;tt"
   },
   "DE21A": {
-    "name_latin" : "Erding",
-    "nuts_name" : "Erding",
-    "name_ascii" : "Erding",
-    "name_html" : "Erding"
+    "nameLatin" : "Erding",
+    "nutsName" : "Erding",
+    "nameAscii" : "Erding",
+    "nameHtml" : "Erding"
   },
   "DE21B": {
-    "name_latin" : "Freising",
-    "nuts_name" : "Freising",
-    "name_ascii" : "Freising",
-    "name_html" : "Freising"
+    "nameLatin" : "Freising",
+    "nutsName" : "Freising",
+    "nameAscii" : "Freising",
+    "nameHtml" : "Freising"
   },
   "DE21C": {
-    "name_latin" : "Fürstenfeldbruck",
-    "nuts_name" : "Fürstenfeldbruck",
-    "name_ascii" : "Furstenfeldbruck",
-    "name_html" : "F&#x00FC;rstenfeldbruck"
+    "nameLatin" : "Fürstenfeldbruck",
+    "nutsName" : "Fürstenfeldbruck",
+    "nameAscii" : "Furstenfeldbruck",
+    "nameHtml" : "F&#x00FC;rstenfeldbruck"
   },
   "DE21D": {
-    "name_latin" : "Garmisch-Partenkirchen",
-    "nuts_name" : "Garmisch-Partenkirchen",
-    "name_ascii" : "Garmisch-Partenkirchen",
-    "name_html" : "Garmisch-Partenkirchen"
+    "nameLatin" : "Garmisch-Partenkirchen",
+    "nutsName" : "Garmisch-Partenkirchen",
+    "nameAscii" : "Garmisch-Partenkirchen",
+    "nameHtml" : "Garmisch-Partenkirchen"
   },
   "DE21E": {
-    "name_latin" : "Landsberg am Lech",
-    "nuts_name" : "Landsberg am Lech",
-    "name_ascii" : "Landsberg am Lech",
-    "name_html" : "Landsberg am Lech"
+    "nameLatin" : "Landsberg am Lech",
+    "nutsName" : "Landsberg am Lech",
+    "nameAscii" : "Landsberg am Lech",
+    "nameHtml" : "Landsberg am Lech"
   },
   "DE21F": {
-    "name_latin" : "Miesbach",
-    "nuts_name" : "Miesbach",
-    "name_ascii" : "Miesbach",
-    "name_html" : "Miesbach"
+    "nameLatin" : "Miesbach",
+    "nutsName" : "Miesbach",
+    "nameAscii" : "Miesbach",
+    "nameHtml" : "Miesbach"
   },
   "DE21G": {
-    "name_latin" : "Mühldorf a. Inn",
-    "nuts_name" : "Mühldorf a. Inn",
-    "name_ascii" : "Muhldorf a. Inn",
-    "name_html" : "M&#x00FC;hldorf a. Inn"
+    "nameLatin" : "Mühldorf a. Inn",
+    "nutsName" : "Mühldorf a. Inn",
+    "nameAscii" : "Muhldorf a. Inn",
+    "nameHtml" : "M&#x00FC;hldorf a. Inn"
   },
   "DE21H": {
-    "name_latin" : "München, Landkreis",
-    "nuts_name" : "München, Landkreis",
-    "name_ascii" : "Munchen, Landkreis",
-    "name_html" : "M&#x00FC;nchen, Landkreis"
+    "nameLatin" : "München, Landkreis",
+    "nutsName" : "München, Landkreis",
+    "nameAscii" : "Munchen, Landkreis",
+    "nameHtml" : "M&#x00FC;nchen, Landkreis"
   },
   "DE21I": {
-    "name_latin" : "Neuburg-Schrobenhausen",
-    "nuts_name" : "Neuburg-Schrobenhausen",
-    "name_ascii" : "Neuburg-Schrobenhausen",
-    "name_html" : "Neuburg-Schrobenhausen"
+    "nameLatin" : "Neuburg-Schrobenhausen",
+    "nutsName" : "Neuburg-Schrobenhausen",
+    "nameAscii" : "Neuburg-Schrobenhausen",
+    "nameHtml" : "Neuburg-Schrobenhausen"
   },
   "DE21J": {
-    "name_latin" : "Pfaffenhofen a. d. Ilm",
-    "nuts_name" : "Pfaffenhofen a. d. Ilm",
-    "name_ascii" : "Pfaffenhofen a. d. Ilm",
-    "name_html" : "Pfaffenhofen a. d. Ilm"
+    "nameLatin" : "Pfaffenhofen a. d. Ilm",
+    "nutsName" : "Pfaffenhofen a. d. Ilm",
+    "nameAscii" : "Pfaffenhofen a. d. Ilm",
+    "nameHtml" : "Pfaffenhofen a. d. Ilm"
   },
   "DE21K": {
-    "name_latin" : "Rosenheim, Landkreis",
-    "nuts_name" : "Rosenheim, Landkreis",
-    "name_ascii" : "Rosenheim, Landkreis",
-    "name_html" : "Rosenheim, Landkreis"
+    "nameLatin" : "Rosenheim, Landkreis",
+    "nutsName" : "Rosenheim, Landkreis",
+    "nameAscii" : "Rosenheim, Landkreis",
+    "nameHtml" : "Rosenheim, Landkreis"
   },
   "DE21L": {
-    "name_latin" : "Starnberg",
-    "nuts_name" : "Starnberg",
-    "name_ascii" : "Starnberg",
-    "name_html" : "Starnberg"
+    "nameLatin" : "Starnberg",
+    "nutsName" : "Starnberg",
+    "nameAscii" : "Starnberg",
+    "nameHtml" : "Starnberg"
   },
   "DE21M": {
-    "name_latin" : "Traunstein",
-    "nuts_name" : "Traunstein",
-    "name_ascii" : "Traunstein",
-    "name_html" : "Traunstein"
+    "nameLatin" : "Traunstein",
+    "nutsName" : "Traunstein",
+    "nameAscii" : "Traunstein",
+    "nameHtml" : "Traunstein"
   },
   "DE21N": {
-    "name_latin" : "Weilheim-Schongau",
-    "nuts_name" : "Weilheim-Schongau",
-    "name_ascii" : "Weilheim-Schongau",
-    "name_html" : "Weilheim-Schongau"
+    "nameLatin" : "Weilheim-Schongau",
+    "nutsName" : "Weilheim-Schongau",
+    "nameAscii" : "Weilheim-Schongau",
+    "nameHtml" : "Weilheim-Schongau"
   },
   "DE221": {
-    "name_latin" : "Landshut, Kreisfreie Stadt",
-    "nuts_name" : "Landshut, Kreisfreie Stadt",
-    "name_ascii" : "Landshut, Kreisfreie Stadt",
-    "name_html" : "Landshut, Kreisfreie Stadt"
+    "nameLatin" : "Landshut, Kreisfreie Stadt",
+    "nutsName" : "Landshut, Kreisfreie Stadt",
+    "nameAscii" : "Landshut, Kreisfreie Stadt",
+    "nameHtml" : "Landshut, Kreisfreie Stadt"
   },
   "DE222": {
-    "name_latin" : "Passau, Kreisfreie Stadt",
-    "nuts_name" : "Passau, Kreisfreie Stadt",
-    "name_ascii" : "Passau, Kreisfreie Stadt",
-    "name_html" : "Passau, Kreisfreie Stadt"
+    "nameLatin" : "Passau, Kreisfreie Stadt",
+    "nutsName" : "Passau, Kreisfreie Stadt",
+    "nameAscii" : "Passau, Kreisfreie Stadt",
+    "nameHtml" : "Passau, Kreisfreie Stadt"
   },
   "DE223": {
-    "name_latin" : "Straubing, Kreisfreie Stadt",
-    "nuts_name" : "Straubing, Kreisfreie Stadt",
-    "name_ascii" : "Straubing, Kreisfreie Stadt",
-    "name_html" : "Straubing, Kreisfreie Stadt"
+    "nameLatin" : "Straubing, Kreisfreie Stadt",
+    "nutsName" : "Straubing, Kreisfreie Stadt",
+    "nameAscii" : "Straubing, Kreisfreie Stadt",
+    "nameHtml" : "Straubing, Kreisfreie Stadt"
   },
   "DE224": {
-    "name_latin" : "Deggendorf",
-    "nuts_name" : "Deggendorf",
-    "name_ascii" : "Deggendorf",
-    "name_html" : "Deggendorf"
+    "nameLatin" : "Deggendorf",
+    "nutsName" : "Deggendorf",
+    "nameAscii" : "Deggendorf",
+    "nameHtml" : "Deggendorf"
   },
   "DE225": {
-    "name_latin" : "Freyung-Grafenau",
-    "nuts_name" : "Freyung-Grafenau",
-    "name_ascii" : "Freyung-Grafenau",
-    "name_html" : "Freyung-Grafenau"
+    "nameLatin" : "Freyung-Grafenau",
+    "nutsName" : "Freyung-Grafenau",
+    "nameAscii" : "Freyung-Grafenau",
+    "nameHtml" : "Freyung-Grafenau"
   },
   "DE226": {
-    "name_latin" : "Kelheim",
-    "nuts_name" : "Kelheim",
-    "name_ascii" : "Kelheim",
-    "name_html" : "Kelheim"
+    "nameLatin" : "Kelheim",
+    "nutsName" : "Kelheim",
+    "nameAscii" : "Kelheim",
+    "nameHtml" : "Kelheim"
   },
   "DE228": {
-    "name_latin" : "Passau, Landkreis",
-    "nuts_name" : "Passau, Landkreis",
-    "name_ascii" : "Passau, Landkreis",
-    "name_html" : "Passau, Landkreis"
+    "nameLatin" : "Passau, Landkreis",
+    "nutsName" : "Passau, Landkreis",
+    "nameAscii" : "Passau, Landkreis",
+    "nameHtml" : "Passau, Landkreis"
   },
   "DE229": {
-    "name_latin" : "Regen",
-    "nuts_name" : "Regen",
-    "name_ascii" : "Regen",
-    "name_html" : "Regen"
+    "nameLatin" : "Regen",
+    "nutsName" : "Regen",
+    "nameAscii" : "Regen",
+    "nameHtml" : "Regen"
   },
   "DE22A": {
-    "name_latin" : "Rottal-Inn",
-    "nuts_name" : "Rottal-Inn",
-    "name_ascii" : "Rottal-Inn",
-    "name_html" : "Rottal-Inn"
+    "nameLatin" : "Rottal-Inn",
+    "nutsName" : "Rottal-Inn",
+    "nameAscii" : "Rottal-Inn",
+    "nameHtml" : "Rottal-Inn"
   },
   "DE22B": {
-    "name_latin" : "Straubing-Bogen",
-    "nuts_name" : "Straubing-Bogen",
-    "name_ascii" : "Straubing-Bogen",
-    "name_html" : "Straubing-Bogen"
+    "nameLatin" : "Straubing-Bogen",
+    "nutsName" : "Straubing-Bogen",
+    "nameAscii" : "Straubing-Bogen",
+    "nameHtml" : "Straubing-Bogen"
   },
   "DE22C": {
-    "name_latin" : "Dingolfing-Landau",
-    "nuts_name" : "Dingolfing-Landau",
-    "name_ascii" : "Dingolfing-Landau",
-    "name_html" : "Dingolfing-Landau"
+    "nameLatin" : "Dingolfing-Landau",
+    "nutsName" : "Dingolfing-Landau",
+    "nameAscii" : "Dingolfing-Landau",
+    "nameHtml" : "Dingolfing-Landau"
   },
   "DE232": {
-    "name_latin" : "Regensburg, Kreisfreie Stadt",
-    "nuts_name" : "Regensburg, Kreisfreie Stadt",
-    "name_ascii" : "Regensburg, Kreisfreie Stadt",
-    "name_html" : "Regensburg, Kreisfreie Stadt"
+    "nameLatin" : "Regensburg, Kreisfreie Stadt",
+    "nutsName" : "Regensburg, Kreisfreie Stadt",
+    "nameAscii" : "Regensburg, Kreisfreie Stadt",
+    "nameHtml" : "Regensburg, Kreisfreie Stadt"
   },
   "DE233": {
-    "name_latin" : "Weiden i. d. Opf, Kreisfreie Stadt",
-    "nuts_name" : "Weiden i. d. Opf, Kreisfreie Stadt",
-    "name_ascii" : "Weiden i. d. Opf, Kreisfreie Stadt",
-    "name_html" : "Weiden i. d. Opf, Kreisfreie Stadt"
+    "nameLatin" : "Weiden i. d. Opf, Kreisfreie Stadt",
+    "nutsName" : "Weiden i. d. Opf, Kreisfreie Stadt",
+    "nameAscii" : "Weiden i. d. Opf, Kreisfreie Stadt",
+    "nameHtml" : "Weiden i. d. Opf, Kreisfreie Stadt"
   },
   "DE234": {
-    "name_latin" : "Amberg-Sulzbach",
-    "nuts_name" : "Amberg-Sulzbach",
-    "name_ascii" : "Amberg-Sulzbach",
-    "name_html" : "Amberg-Sulzbach"
+    "nameLatin" : "Amberg-Sulzbach",
+    "nutsName" : "Amberg-Sulzbach",
+    "nameAscii" : "Amberg-Sulzbach",
+    "nameHtml" : "Amberg-Sulzbach"
   },
   "DE235": {
-    "name_latin" : "Cham",
-    "nuts_name" : "Cham",
-    "name_ascii" : "Cham",
-    "name_html" : "Cham"
+    "nameLatin" : "Cham",
+    "nutsName" : "Cham",
+    "nameAscii" : "Cham",
+    "nameHtml" : "Cham"
   },
   "DE236": {
-    "name_latin" : "Neumarkt i. d. OPf.",
-    "nuts_name" : "Neumarkt i. d. OPf.",
-    "name_ascii" : "Neumarkt i. d. Opf.",
-    "name_html" : "Neumarkt i. d. Opf."
+    "nameLatin" : "Neumarkt i. d. OPf.",
+    "nutsName" : "Neumarkt i. d. OPf.",
+    "nameAscii" : "Neumarkt i. d. Opf.",
+    "nameHtml" : "Neumarkt i. d. Opf."
   },
   "DE238": {
-    "name_latin" : "Regensburg, Landkreis",
-    "nuts_name" : "Regensburg, Landkreis",
-    "name_ascii" : "Regensburg, Landkreis",
-    "name_html" : "Regensburg, Landkreis"
+    "nameLatin" : "Regensburg, Landkreis",
+    "nutsName" : "Regensburg, Landkreis",
+    "nameAscii" : "Regensburg, Landkreis",
+    "nameHtml" : "Regensburg, Landkreis"
   },
   "DE239": {
-    "name_latin" : "Schwandorf",
-    "nuts_name" : "Schwandorf",
-    "name_ascii" : "Schwandorf",
-    "name_html" : "Schwandorf"
+    "nameLatin" : "Schwandorf",
+    "nutsName" : "Schwandorf",
+    "nameAscii" : "Schwandorf",
+    "nameHtml" : "Schwandorf"
   },
   "DE23A": {
-    "name_latin" : "Tirschenreuth",
-    "nuts_name" : "Tirschenreuth",
-    "name_ascii" : "Tirschenreuth",
-    "name_html" : "Tirschenreuth"
+    "nameLatin" : "Tirschenreuth",
+    "nutsName" : "Tirschenreuth",
+    "nameAscii" : "Tirschenreuth",
+    "nameHtml" : "Tirschenreuth"
   },
   "DE241": {
-    "name_latin" : "Bamberg, Kreisfreie Stadt",
-    "nuts_name" : "Bamberg, Kreisfreie Stadt",
-    "name_ascii" : "Bamberg, Kreisfreie Stadt",
-    "name_html" : "Bamberg, Kreisfreie Stadt"
+    "nameLatin" : "Bamberg, Kreisfreie Stadt",
+    "nutsName" : "Bamberg, Kreisfreie Stadt",
+    "nameAscii" : "Bamberg, Kreisfreie Stadt",
+    "nameHtml" : "Bamberg, Kreisfreie Stadt"
   },
   "DE242": {
-    "name_latin" : "Bayreuth, Kreisfreie Stadt",
-    "nuts_name" : "Bayreuth, Kreisfreie Stadt",
-    "name_ascii" : "Bayreuth, Kreisfreie Stadt",
-    "name_html" : "Bayreuth, Kreisfreie Stadt"
+    "nameLatin" : "Bayreuth, Kreisfreie Stadt",
+    "nutsName" : "Bayreuth, Kreisfreie Stadt",
+    "nameAscii" : "Bayreuth, Kreisfreie Stadt",
+    "nameHtml" : "Bayreuth, Kreisfreie Stadt"
   },
   "DE244": {
-    "name_latin" : "Hof, Kreisfreie Stadt",
-    "nuts_name" : "Hof, Kreisfreie Stadt",
-    "name_ascii" : "Hof, Kreisfreie Stadt",
-    "name_html" : "Hof, Kreisfreie Stadt"
+    "nameLatin" : "Hof, Kreisfreie Stadt",
+    "nutsName" : "Hof, Kreisfreie Stadt",
+    "nameAscii" : "Hof, Kreisfreie Stadt",
+    "nameHtml" : "Hof, Kreisfreie Stadt"
   },
   "DE245": {
-    "name_latin" : "Bamberg, Landkreis",
-    "nuts_name" : "Bamberg, Landkreis",
-    "name_ascii" : "Bamberg, Landkreis",
-    "name_html" : "Bamberg, Landkreis"
+    "nameLatin" : "Bamberg, Landkreis",
+    "nutsName" : "Bamberg, Landkreis",
+    "nameAscii" : "Bamberg, Landkreis",
+    "nameHtml" : "Bamberg, Landkreis"
   },
   "DE246": {
-    "name_latin" : "Bayreuth, Landkreis",
-    "nuts_name" : "Bayreuth, Landkreis",
-    "name_ascii" : "Bayreuth, Landkreis",
-    "name_html" : "Bayreuth, Landkreis"
+    "nameLatin" : "Bayreuth, Landkreis",
+    "nutsName" : "Bayreuth, Landkreis",
+    "nameAscii" : "Bayreuth, Landkreis",
+    "nameHtml" : "Bayreuth, Landkreis"
   },
   "DE247": {
-    "name_latin" : "Coburg, Landkreis",
-    "nuts_name" : "Coburg, Landkreis",
-    "name_ascii" : "Coburg, Landkreis",
-    "name_html" : "Coburg, Landkreis"
+    "nameLatin" : "Coburg, Landkreis",
+    "nutsName" : "Coburg, Landkreis",
+    "nameAscii" : "Coburg, Landkreis",
+    "nameHtml" : "Coburg, Landkreis"
   },
   "DE248": {
-    "name_latin" : "Forchheim",
-    "nuts_name" : "Forchheim",
-    "name_ascii" : "Forchheim",
-    "name_html" : "Forchheim"
+    "nameLatin" : "Forchheim",
+    "nutsName" : "Forchheim",
+    "nameAscii" : "Forchheim",
+    "nameHtml" : "Forchheim"
   },
   "DE249": {
-    "name_latin" : "Hof, Landkreis",
-    "nuts_name" : "Hof, Landkreis",
-    "name_ascii" : "Hof, Landkreis",
-    "name_html" : "Hof, Landkreis"
+    "nameLatin" : "Hof, Landkreis",
+    "nutsName" : "Hof, Landkreis",
+    "nameAscii" : "Hof, Landkreis",
+    "nameHtml" : "Hof, Landkreis"
   },
   "DE24A": {
-    "name_latin" : "Kronach",
-    "nuts_name" : "Kronach",
-    "name_ascii" : "Kronach",
-    "name_html" : "Kronach"
+    "nameLatin" : "Kronach",
+    "nutsName" : "Kronach",
+    "nameAscii" : "Kronach",
+    "nameHtml" : "Kronach"
   },
   "DE24C": {
-    "name_latin" : "Lichtenfels",
-    "nuts_name" : "Lichtenfels",
-    "name_ascii" : "Lichtenfels",
-    "name_html" : "Lichtenfels"
+    "nameLatin" : "Lichtenfels",
+    "nutsName" : "Lichtenfels",
+    "nameAscii" : "Lichtenfels",
+    "nameHtml" : "Lichtenfels"
   },
   "DE24D": {
-    "name_latin" : "Wunsiedel i. Fichtelgebirge",
-    "nuts_name" : "Wunsiedel i. Fichtelgebirge",
-    "name_ascii" : "Wunsiedel i. Fichtelgebirge",
-    "name_html" : "Wunsiedel i. Fichtelgebirge"
+    "nameLatin" : "Wunsiedel i. Fichtelgebirge",
+    "nutsName" : "Wunsiedel i. Fichtelgebirge",
+    "nameAscii" : "Wunsiedel i. Fichtelgebirge",
+    "nameHtml" : "Wunsiedel i. Fichtelgebirge"
   },
   "DE251": {
-    "name_latin" : "Ansbach, Kreisfreie Stadt",
-    "nuts_name" : "Ansbach, Kreisfreie Stadt",
-    "name_ascii" : "Ansbach, Kreisfreie Stadt",
-    "name_html" : "Ansbach, Kreisfreie Stadt"
+    "nameLatin" : "Ansbach, Kreisfreie Stadt",
+    "nutsName" : "Ansbach, Kreisfreie Stadt",
+    "nameAscii" : "Ansbach, Kreisfreie Stadt",
+    "nameHtml" : "Ansbach, Kreisfreie Stadt"
   },
   "DE252": {
-    "name_latin" : "Erlangen, Kreisfreie Stadt",
-    "nuts_name" : "Erlangen, Kreisfreie Stadt",
-    "name_ascii" : "Erlangen, Kreisfreie Stadt",
-    "name_html" : "Erlangen, Kreisfreie Stadt"
+    "nameLatin" : "Erlangen, Kreisfreie Stadt",
+    "nutsName" : "Erlangen, Kreisfreie Stadt",
+    "nameAscii" : "Erlangen, Kreisfreie Stadt",
+    "nameHtml" : "Erlangen, Kreisfreie Stadt"
   },
   "DE254": {
-    "name_latin" : "Nürnberg, Kreisfreie Stadt",
-    "nuts_name" : "Nürnberg, Kreisfreie Stadt",
-    "name_ascii" : "Nurnberg, Kreisfreie Stadt",
-    "name_html" : "N&#x00FC;rnberg, Kreisfreie Stadt"
+    "nameLatin" : "Nürnberg, Kreisfreie Stadt",
+    "nutsName" : "Nürnberg, Kreisfreie Stadt",
+    "nameAscii" : "Nurnberg, Kreisfreie Stadt",
+    "nameHtml" : "N&#x00FC;rnberg, Kreisfreie Stadt"
   },
   "DE255": {
-    "name_latin" : "Schwabach, Kreisfreie Stadt",
-    "nuts_name" : "Schwabach, Kreisfreie Stadt",
-    "name_ascii" : "Schwabach, Kreisfreie Stadt",
-    "name_html" : "Schwabach, Kreisfreie Stadt"
+    "nameLatin" : "Schwabach, Kreisfreie Stadt",
+    "nutsName" : "Schwabach, Kreisfreie Stadt",
+    "nameAscii" : "Schwabach, Kreisfreie Stadt",
+    "nameHtml" : "Schwabach, Kreisfreie Stadt"
   },
   "DE256": {
-    "name_latin" : "Ansbach, Landkreis",
-    "nuts_name" : "Ansbach, Landkreis",
-    "name_ascii" : "Ansbach, Landkreis",
-    "name_html" : "Ansbach, Landkreis"
+    "nameLatin" : "Ansbach, Landkreis",
+    "nutsName" : "Ansbach, Landkreis",
+    "nameAscii" : "Ansbach, Landkreis",
+    "nameHtml" : "Ansbach, Landkreis"
   },
   "DE257": {
-    "name_latin" : "Erlangen-Höchstadt",
-    "nuts_name" : "Erlangen-Höchstadt",
-    "name_ascii" : "Erlangen-Hochstadt",
-    "name_html" : "Erlangen-H&#x00F6;chstadt"
+    "nameLatin" : "Erlangen-Höchstadt",
+    "nutsName" : "Erlangen-Höchstadt",
+    "nameAscii" : "Erlangen-Hochstadt",
+    "nameHtml" : "Erlangen-H&#x00F6;chstadt"
   },
   "DE259": {
-    "name_latin" : "Nürnberger Land",
-    "nuts_name" : "Nürnberger Land",
-    "name_ascii" : "Nurnberger Land",
-    "name_html" : "N&#x00FC;rnberger Land"
+    "nameLatin" : "Nürnberger Land",
+    "nutsName" : "Nürnberger Land",
+    "nameAscii" : "Nurnberger Land",
+    "nameHtml" : "N&#x00FC;rnberger Land"
   },
   "DE25A": {
-    "name_latin" : "Neustadt a. d. Aisch-Bad Windsheim",
-    "nuts_name" : "Neustadt a. d. Aisch-Bad Windsheim",
-    "name_ascii" : "Neustadt a. d. Aisch-Bad Windsheim",
-    "name_html" : "Neustadt a. d. Aisch-Bad Windsheim"
+    "nameLatin" : "Neustadt a. d. Aisch-Bad Windsheim",
+    "nutsName" : "Neustadt a. d. Aisch-Bad Windsheim",
+    "nameAscii" : "Neustadt a. d. Aisch-Bad Windsheim",
+    "nameHtml" : "Neustadt a. d. Aisch-Bad Windsheim"
   },
   "DE25B": {
-    "name_latin" : "Roth",
-    "nuts_name" : "Roth",
-    "name_ascii" : "Roth",
-    "name_html" : "Roth"
+    "nameLatin" : "Roth",
+    "nutsName" : "Roth",
+    "nameAscii" : "Roth",
+    "nameHtml" : "Roth"
   },
   "DE25C": {
-    "name_latin" : "Weißenburg-Gunzenhausen",
-    "nuts_name" : "Weißenburg-Gunzenhausen",
-    "name_ascii" : "Weissenburg-Gunzenhausen",
-    "name_html" : "Wei&#x00DF;enburg-Gunzenhausen"
+    "nameLatin" : "Weißenburg-Gunzenhausen",
+    "nutsName" : "Weißenburg-Gunzenhausen",
+    "nameAscii" : "Weissenburg-Gunzenhausen",
+    "nameHtml" : "Wei&#x00DF;enburg-Gunzenhausen"
   },
   "DE261": {
-    "name_latin" : "Aschaffenburg, Kreisfreie Stadt",
-    "nuts_name" : "Aschaffenburg, Kreisfreie Stadt",
-    "name_ascii" : "Aschaffenburg, Kreisfreie Stadt",
-    "name_html" : "Aschaffenburg, Kreisfreie Stadt"
+    "nameLatin" : "Aschaffenburg, Kreisfreie Stadt",
+    "nutsName" : "Aschaffenburg, Kreisfreie Stadt",
+    "nameAscii" : "Aschaffenburg, Kreisfreie Stadt",
+    "nameHtml" : "Aschaffenburg, Kreisfreie Stadt"
   },
   "DE262": {
-    "name_latin" : "Schweinfurt, Kreisfreie Stadt",
-    "nuts_name" : "Schweinfurt, Kreisfreie Stadt",
-    "name_ascii" : "Schweinfurt, Kreisfreie Stadt",
-    "name_html" : "Schweinfurt, Kreisfreie Stadt"
+    "nameLatin" : "Schweinfurt, Kreisfreie Stadt",
+    "nutsName" : "Schweinfurt, Kreisfreie Stadt",
+    "nameAscii" : "Schweinfurt, Kreisfreie Stadt",
+    "nameHtml" : "Schweinfurt, Kreisfreie Stadt"
   },
   "DE264": {
-    "name_latin" : "Aschaffenburg, Landkreis",
-    "nuts_name" : "Aschaffenburg, Landkreis",
-    "name_ascii" : "Aschaffenburg, Landkreis",
-    "name_html" : "Aschaffenburg, Landkreis"
+    "nameLatin" : "Aschaffenburg, Landkreis",
+    "nutsName" : "Aschaffenburg, Landkreis",
+    "nameAscii" : "Aschaffenburg, Landkreis",
+    "nameHtml" : "Aschaffenburg, Landkreis"
   },
   "DE265": {
-    "name_latin" : "Bad Kissingen",
-    "nuts_name" : "Bad Kissingen",
-    "name_ascii" : "Bad Kissingen",
-    "name_html" : "Bad Kissingen"
+    "nameLatin" : "Bad Kissingen",
+    "nutsName" : "Bad Kissingen",
+    "nameAscii" : "Bad Kissingen",
+    "nameHtml" : "Bad Kissingen"
   },
   "DE266": {
-    "name_latin" : "Rhön-Grabfeld",
-    "nuts_name" : "Rhön-Grabfeld",
-    "name_ascii" : "Rhon-Grabfeld",
-    "name_html" : "Rh&#x00F6;n-Grabfeld"
+    "nameLatin" : "Rhön-Grabfeld",
+    "nutsName" : "Rhön-Grabfeld",
+    "nameAscii" : "Rhon-Grabfeld",
+    "nameHtml" : "Rh&#x00F6;n-Grabfeld"
   },
   "DE267": {
-    "name_latin" : "Haßberge",
-    "nuts_name" : "Haßberge",
-    "name_ascii" : "Hassberge",
-    "name_html" : "Ha&#x00DF;berge"
+    "nameLatin" : "Haßberge",
+    "nutsName" : "Haßberge",
+    "nameAscii" : "Hassberge",
+    "nameHtml" : "Ha&#x00DF;berge"
   },
   "DE268": {
-    "name_latin" : "Kitzingen",
-    "nuts_name" : "Kitzingen",
-    "name_ascii" : "Kitzingen",
-    "name_html" : "Kitzingen"
+    "nameLatin" : "Kitzingen",
+    "nutsName" : "Kitzingen",
+    "nameAscii" : "Kitzingen",
+    "nameHtml" : "Kitzingen"
   },
   "DE269": {
-    "name_latin" : "Miltenberg",
-    "nuts_name" : "Miltenberg",
-    "name_ascii" : "Miltenberg",
-    "name_html" : "Miltenberg"
+    "nameLatin" : "Miltenberg",
+    "nutsName" : "Miltenberg",
+    "nameAscii" : "Miltenberg",
+    "nameHtml" : "Miltenberg"
   },
   "DE26A": {
-    "name_latin" : "Main-Spessart",
-    "nuts_name" : "Main-Spessart",
-    "name_ascii" : "Main-Spessart",
-    "name_html" : "Main-Spessart"
+    "nameLatin" : "Main-Spessart",
+    "nutsName" : "Main-Spessart",
+    "nameAscii" : "Main-Spessart",
+    "nameHtml" : "Main-Spessart"
   },
   "DE26C": {
-    "name_latin" : "Würzburg, Landkreis",
-    "nuts_name" : "Würzburg, Landkreis",
-    "name_ascii" : "Wurzburg, Landkreis",
-    "name_html" : "W&#x00FC;rzburg, Landkreis"
+    "nameLatin" : "Würzburg, Landkreis",
+    "nutsName" : "Würzburg, Landkreis",
+    "nameAscii" : "Wurzburg, Landkreis",
+    "nameHtml" : "W&#x00FC;rzburg, Landkreis"
   },
   "DE271": {
-    "name_latin" : "Augsburg, Kreisfreie Stadt",
-    "nuts_name" : "Augsburg, Kreisfreie Stadt",
-    "name_ascii" : "Augsburg, Kreisfreie Stadt",
-    "name_html" : "Augsburg, Kreisfreie Stadt"
+    "nameLatin" : "Augsburg, Kreisfreie Stadt",
+    "nutsName" : "Augsburg, Kreisfreie Stadt",
+    "nameAscii" : "Augsburg, Kreisfreie Stadt",
+    "nameHtml" : "Augsburg, Kreisfreie Stadt"
   },
   "DE272": {
-    "name_latin" : "Kaufbeuren, Kreisfreie Stadt",
-    "nuts_name" : "Kaufbeuren, Kreisfreie Stadt",
-    "name_ascii" : "Kaufbeuren, Kreisfreie Stadt",
-    "name_html" : "Kaufbeuren, Kreisfreie Stadt"
+    "nameLatin" : "Kaufbeuren, Kreisfreie Stadt",
+    "nutsName" : "Kaufbeuren, Kreisfreie Stadt",
+    "nameAscii" : "Kaufbeuren, Kreisfreie Stadt",
+    "nameHtml" : "Kaufbeuren, Kreisfreie Stadt"
   },
   "DE274": {
-    "name_latin" : "Memmingen, Kreisfreie Stadt",
-    "nuts_name" : "Memmingen, Kreisfreie Stadt",
-    "name_ascii" : "Memmingen, Kreisfreie Stadt",
-    "name_html" : "Memmingen, Kreisfreie Stadt"
+    "nameLatin" : "Memmingen, Kreisfreie Stadt",
+    "nutsName" : "Memmingen, Kreisfreie Stadt",
+    "nameAscii" : "Memmingen, Kreisfreie Stadt",
+    "nameHtml" : "Memmingen, Kreisfreie Stadt"
   },
   "DE275": {
-    "name_latin" : "Aichach-Friedberg",
-    "nuts_name" : "Aichach-Friedberg",
-    "name_ascii" : "Aichach-Friedberg",
-    "name_html" : "Aichach-Friedberg"
+    "nameLatin" : "Aichach-Friedberg",
+    "nutsName" : "Aichach-Friedberg",
+    "nameAscii" : "Aichach-Friedberg",
+    "nameHtml" : "Aichach-Friedberg"
   },
   "DE276": {
-    "name_latin" : "Augsburg, Landkreis",
-    "nuts_name" : "Augsburg, Landkreis",
-    "name_ascii" : "Augsburg, Landkreis",
-    "name_html" : "Augsburg, Landkreis"
+    "nameLatin" : "Augsburg, Landkreis",
+    "nutsName" : "Augsburg, Landkreis",
+    "nameAscii" : "Augsburg, Landkreis",
+    "nameHtml" : "Augsburg, Landkreis"
   },
   "DE277": {
-    "name_latin" : "Dillingen a.d. Donau",
-    "nuts_name" : "Dillingen a.d. Donau",
-    "name_ascii" : "Dillingen a.d. Donau",
-    "name_html" : "Dillingen a.d. Donau"
+    "nameLatin" : "Dillingen a.d. Donau",
+    "nutsName" : "Dillingen a.d. Donau",
+    "nameAscii" : "Dillingen a.d. Donau",
+    "nameHtml" : "Dillingen a.d. Donau"
   },
   "DE278": {
-    "name_latin" : "Günzburg",
-    "nuts_name" : "Günzburg",
-    "name_ascii" : "Gunzburg",
-    "name_html" : "G&#x00FC;nzburg"
+    "nameLatin" : "Günzburg",
+    "nutsName" : "Günzburg",
+    "nameAscii" : "Gunzburg",
+    "nameHtml" : "G&#x00FC;nzburg"
   },
   "DE279": {
-    "name_latin" : "Neu-Ulm",
-    "nuts_name" : "Neu-Ulm",
-    "name_ascii" : "Neu-Ulm",
-    "name_html" : "Neu-Ulm"
+    "nameLatin" : "Neu-Ulm",
+    "nutsName" : "Neu-Ulm",
+    "nameAscii" : "Neu-Ulm",
+    "nameHtml" : "Neu-Ulm"
   },
   "DE27A": {
-    "name_latin" : "Lindau (Bodensee)",
-    "nuts_name" : "Lindau (Bodensee)",
-    "name_ascii" : "Lindau (Bodensee)",
-    "name_html" : "Lindau (Bodensee)"
+    "nameLatin" : "Lindau (Bodensee)",
+    "nutsName" : "Lindau (Bodensee)",
+    "nameAscii" : "Lindau (Bodensee)",
+    "nameHtml" : "Lindau (Bodensee)"
   },
   "DE27B": {
-    "name_latin" : "Ostallgäu",
-    "nuts_name" : "Ostallgäu",
-    "name_ascii" : "Ostallgau",
-    "name_html" : "Ostallg&#x00E4;u"
+    "nameLatin" : "Ostallgäu",
+    "nutsName" : "Ostallgäu",
+    "nameAscii" : "Ostallgau",
+    "nameHtml" : "Ostallg&#x00E4;u"
   },
   "DE27C": {
-    "name_latin" : "Unterallgäu",
-    "nuts_name" : "Unterallgäu",
-    "name_ascii" : "Unterallgau",
-    "name_html" : "Unterallg&#x00E4;u"
+    "nameLatin" : "Unterallgäu",
+    "nutsName" : "Unterallgäu",
+    "nameAscii" : "Unterallgau",
+    "nameHtml" : "Unterallg&#x00E4;u"
   },
   "DE27D": {
-    "name_latin" : "Donau-Ries",
-    "nuts_name" : "Donau-Ries",
-    "name_ascii" : "Donau-Ries",
-    "name_html" : "Donau-Ries"
+    "nameLatin" : "Donau-Ries",
+    "nutsName" : "Donau-Ries",
+    "nameAscii" : "Donau-Ries",
+    "nameHtml" : "Donau-Ries"
   },
   "DE27E": {
-    "name_latin" : "Oberallgäu",
-    "nuts_name" : "Oberallgäu",
-    "name_ascii" : "Oberallgau",
-    "name_html" : "Oberallg&#x00E4;u"
+    "nameLatin" : "Oberallgäu",
+    "nutsName" : "Oberallgäu",
+    "nameAscii" : "Oberallgau",
+    "nameHtml" : "Oberallg&#x00E4;u"
   },
   "DE300": {
-    "name_latin" : "Berlin",
-    "nuts_name" : "Berlin",
-    "name_ascii" : "Berlin",
-    "name_html" : "Berlin"
+    "nameLatin" : "Berlin",
+    "nutsName" : "Berlin",
+    "nameAscii" : "Berlin",
+    "nameHtml" : "Berlin"
   },
   "DE401": {
-    "name_latin" : "Brandenburg an der Havel, Kreisfreie Stadt",
-    "nuts_name" : "Brandenburg an der Havel, Kreisfreie Stadt",
-    "name_ascii" : "Brandenburg an der Havel, Kreisfreie Stadt",
-    "name_html" : "Brandenburg an der Havel, Kreisfreie Stadt"
+    "nameLatin" : "Brandenburg an der Havel, Kreisfreie Stadt",
+    "nutsName" : "Brandenburg an der Havel, Kreisfreie Stadt",
+    "nameAscii" : "Brandenburg an der Havel, Kreisfreie Stadt",
+    "nameHtml" : "Brandenburg an der Havel, Kreisfreie Stadt"
   },
   "DE402": {
-    "name_latin" : "Cottbus, Kreisfreie Stadt",
-    "nuts_name" : "Cottbus, Kreisfreie Stadt",
-    "name_ascii" : "Cottbus, Kreisfreie Stadt",
-    "name_html" : "Cottbus, Kreisfreie Stadt"
+    "nameLatin" : "Cottbus, Kreisfreie Stadt",
+    "nutsName" : "Cottbus, Kreisfreie Stadt",
+    "nameAscii" : "Cottbus, Kreisfreie Stadt",
+    "nameHtml" : "Cottbus, Kreisfreie Stadt"
   },
   "DE403": {
-    "name_latin" : "Frankfurt (Oder), Kreisfreie Stadt",
-    "nuts_name" : "Frankfurt (Oder), Kreisfreie Stadt",
-    "name_ascii" : "Frankfurt (Oder), Kreisfreie Stadt",
-    "name_html" : "Frankfurt (Oder), Kreisfreie Stadt"
+    "nameLatin" : "Frankfurt (Oder), Kreisfreie Stadt",
+    "nutsName" : "Frankfurt (Oder), Kreisfreie Stadt",
+    "nameAscii" : "Frankfurt (Oder), Kreisfreie Stadt",
+    "nameHtml" : "Frankfurt (Oder), Kreisfreie Stadt"
   },
   "DE404": {
-    "name_latin" : "Potsdam, Kreisfreie Stadt",
-    "nuts_name" : "Potsdam, Kreisfreie Stadt",
-    "name_ascii" : "Potsdam, Kreisfreie Stadt",
-    "name_html" : "Potsdam, Kreisfreie Stadt"
+    "nameLatin" : "Potsdam, Kreisfreie Stadt",
+    "nutsName" : "Potsdam, Kreisfreie Stadt",
+    "nameAscii" : "Potsdam, Kreisfreie Stadt",
+    "nameHtml" : "Potsdam, Kreisfreie Stadt"
   },
   "DE405": {
-    "name_latin" : "Barnim",
-    "nuts_name" : "Barnim",
-    "name_ascii" : "Barnim",
-    "name_html" : "Barnim"
+    "nameLatin" : "Barnim",
+    "nutsName" : "Barnim",
+    "nameAscii" : "Barnim",
+    "nameHtml" : "Barnim"
   },
   "DE407": {
-    "name_latin" : "Elbe-Elster",
-    "nuts_name" : "Elbe-Elster",
-    "name_ascii" : "Elbe-Elster",
-    "name_html" : "Elbe-Elster"
+    "nameLatin" : "Elbe-Elster",
+    "nutsName" : "Elbe-Elster",
+    "nameAscii" : "Elbe-Elster",
+    "nameHtml" : "Elbe-Elster"
   },
   "DE408": {
-    "name_latin" : "Havelland",
-    "nuts_name" : "Havelland",
-    "name_ascii" : "Havelland",
-    "name_html" : "Havelland"
+    "nameLatin" : "Havelland",
+    "nutsName" : "Havelland",
+    "nameAscii" : "Havelland",
+    "nameHtml" : "Havelland"
   },
   "DE409": {
-    "name_latin" : "Märkisch-Oderland",
-    "nuts_name" : "Märkisch-Oderland",
-    "name_ascii" : "Markisch-Oderland",
-    "name_html" : "M&#x00E4;rkisch-Oderland"
+    "nameLatin" : "Märkisch-Oderland",
+    "nutsName" : "Märkisch-Oderland",
+    "nameAscii" : "Markisch-Oderland",
+    "nameHtml" : "M&#x00E4;rkisch-Oderland"
   },
   "DE40A": {
-    "name_latin" : "Oberhavel",
-    "nuts_name" : "Oberhavel",
-    "name_ascii" : "Oberhavel",
-    "name_html" : "Oberhavel"
+    "nameLatin" : "Oberhavel",
+    "nutsName" : "Oberhavel",
+    "nameAscii" : "Oberhavel",
+    "nameHtml" : "Oberhavel"
   },
   "DE40B": {
-    "name_latin" : "Oberspreewald-Lausitz",
-    "nuts_name" : "Oberspreewald-Lausitz",
-    "name_ascii" : "Oberspreewald-Lausitz",
-    "name_html" : "Oberspreewald-Lausitz"
+    "nameLatin" : "Oberspreewald-Lausitz",
+    "nutsName" : "Oberspreewald-Lausitz",
+    "nameAscii" : "Oberspreewald-Lausitz",
+    "nameHtml" : "Oberspreewald-Lausitz"
   },
   "DE40D": {
-    "name_latin" : "Ostprignitz-Ruppin",
-    "nuts_name" : "Ostprignitz-Ruppin",
-    "name_ascii" : "Ostprignitz-Ruppin",
-    "name_html" : "Ostprignitz-Ruppin"
+    "nameLatin" : "Ostprignitz-Ruppin",
+    "nutsName" : "Ostprignitz-Ruppin",
+    "nameAscii" : "Ostprignitz-Ruppin",
+    "nameHtml" : "Ostprignitz-Ruppin"
   },
   "DE40E": {
-    "name_latin" : "Potsdam-Mittelmark",
-    "nuts_name" : "Potsdam-Mittelmark",
-    "name_ascii" : "Potsdam-Mittelmark",
-    "name_html" : "Potsdam-Mittelmark"
+    "nameLatin" : "Potsdam-Mittelmark",
+    "nutsName" : "Potsdam-Mittelmark",
+    "nameAscii" : "Potsdam-Mittelmark",
+    "nameHtml" : "Potsdam-Mittelmark"
   },
   "DE40F": {
-    "name_latin" : "Prignitz",
-    "nuts_name" : "Prignitz",
-    "name_ascii" : "Prignitz",
-    "name_html" : "Prignitz"
+    "nameLatin" : "Prignitz",
+    "nutsName" : "Prignitz",
+    "nameAscii" : "Prignitz",
+    "nameHtml" : "Prignitz"
   },
   "DE40H": {
-    "name_latin" : "Teltow-Fläming",
-    "nuts_name" : "Teltow-Fläming",
-    "name_ascii" : "Teltow-Flaming",
-    "name_html" : "Teltow-Fl&#x00E4;ming"
+    "nameLatin" : "Teltow-Fläming",
+    "nutsName" : "Teltow-Fläming",
+    "nameAscii" : "Teltow-Flaming",
+    "nameHtml" : "Teltow-Fl&#x00E4;ming"
   },
   "DE40I": {
-    "name_latin" : "Uckermark",
-    "nuts_name" : "Uckermark",
-    "name_ascii" : "Uckermark",
-    "name_html" : "Uckermark"
+    "nameLatin" : "Uckermark",
+    "nutsName" : "Uckermark",
+    "nameAscii" : "Uckermark",
+    "nameHtml" : "Uckermark"
   },
   "DE501": {
-    "name_latin" : "Bremen, Kreisfreie Stadt",
-    "nuts_name" : "Bremen, Kreisfreie Stadt",
-    "name_ascii" : "Bremen, Kreisfreie Stadt",
-    "name_html" : "Bremen, Kreisfreie Stadt"
+    "nameLatin" : "Bremen, Kreisfreie Stadt",
+    "nutsName" : "Bremen, Kreisfreie Stadt",
+    "nameAscii" : "Bremen, Kreisfreie Stadt",
+    "nameHtml" : "Bremen, Kreisfreie Stadt"
   },
   "DE600": {
-    "name_latin" : "Hamburg",
-    "nuts_name" : "Hamburg",
-    "name_ascii" : "Hamburg",
-    "name_html" : "Hamburg"
+    "nameLatin" : "Hamburg",
+    "nutsName" : "Hamburg",
+    "nameAscii" : "Hamburg",
+    "nameHtml" : "Hamburg"
   },
   "DE711": {
-    "name_latin" : "Darmstadt, Kreisfreie Stadt",
-    "nuts_name" : "Darmstadt, Kreisfreie Stadt",
-    "name_ascii" : "Darmstadt, Kreisfreie Stadt",
-    "name_html" : "Darmstadt, Kreisfreie Stadt"
+    "nameLatin" : "Darmstadt, Kreisfreie Stadt",
+    "nutsName" : "Darmstadt, Kreisfreie Stadt",
+    "nameAscii" : "Darmstadt, Kreisfreie Stadt",
+    "nameHtml" : "Darmstadt, Kreisfreie Stadt"
   },
   "DE712": {
-    "name_latin" : "Frankfurt am Main, Kreisfreie Stadt",
-    "nuts_name" : "Frankfurt am Main, Kreisfreie Stadt",
-    "name_ascii" : "Frankfurt am Main, Kreisfreie Stadt",
-    "name_html" : "Frankfurt am Main, Kreisfreie Stadt"
+    "nameLatin" : "Frankfurt am Main, Kreisfreie Stadt",
+    "nutsName" : "Frankfurt am Main, Kreisfreie Stadt",
+    "nameAscii" : "Frankfurt am Main, Kreisfreie Stadt",
+    "nameHtml" : "Frankfurt am Main, Kreisfreie Stadt"
   },
   "DE714": {
-    "name_latin" : "Wiesbaden, Kreisfreie Stadt",
-    "nuts_name" : "Wiesbaden, Kreisfreie Stadt",
-    "name_ascii" : "Wiesbaden, Kreisfreie Stadt",
-    "name_html" : "Wiesbaden, Kreisfreie Stadt"
+    "nameLatin" : "Wiesbaden, Kreisfreie Stadt",
+    "nutsName" : "Wiesbaden, Kreisfreie Stadt",
+    "nameAscii" : "Wiesbaden, Kreisfreie Stadt",
+    "nameHtml" : "Wiesbaden, Kreisfreie Stadt"
   },
   "DE715": {
-    "name_latin" : "Bergstraße",
-    "nuts_name" : "Bergstraße",
-    "name_ascii" : "Bergstrasse",
-    "name_html" : "Bergstra&#x00DF;e"
+    "nameLatin" : "Bergstraße",
+    "nutsName" : "Bergstraße",
+    "nameAscii" : "Bergstrasse",
+    "nameHtml" : "Bergstra&#x00DF;e"
   },
   "DE716": {
-    "name_latin" : "Darmstadt-Dieburg",
-    "nuts_name" : "Darmstadt-Dieburg",
-    "name_ascii" : "Darmstadt-Dieburg",
-    "name_html" : "Darmstadt-Dieburg"
+    "nameLatin" : "Darmstadt-Dieburg",
+    "nutsName" : "Darmstadt-Dieburg",
+    "nameAscii" : "Darmstadt-Dieburg",
+    "nameHtml" : "Darmstadt-Dieburg"
   },
   "DE717": {
-    "name_latin" : "Groß-Gerau",
-    "nuts_name" : "Groß-Gerau",
-    "name_ascii" : "Gross-Gerau",
-    "name_html" : "Gro&#x00DF;-Gerau"
+    "nameLatin" : "Groß-Gerau",
+    "nutsName" : "Groß-Gerau",
+    "nameAscii" : "Gross-Gerau",
+    "nameHtml" : "Gro&#x00DF;-Gerau"
   },
   "DE718": {
-    "name_latin" : "Hochtaunuskreis",
-    "nuts_name" : "Hochtaunuskreis",
-    "name_ascii" : "Hochtaunuskreis",
-    "name_html" : "Hochtaunuskreis"
+    "nameLatin" : "Hochtaunuskreis",
+    "nutsName" : "Hochtaunuskreis",
+    "nameAscii" : "Hochtaunuskreis",
+    "nameHtml" : "Hochtaunuskreis"
   },
   "DE719": {
-    "name_latin" : "Main-Kinzig-Kreis",
-    "nuts_name" : "Main-Kinzig-Kreis",
-    "name_ascii" : "Main-Kinzig-Kreis",
-    "name_html" : "Main-Kinzig-Kreis"
+    "nameLatin" : "Main-Kinzig-Kreis",
+    "nutsName" : "Main-Kinzig-Kreis",
+    "nameAscii" : "Main-Kinzig-Kreis",
+    "nameHtml" : "Main-Kinzig-Kreis"
   },
   "DE71A": {
-    "name_latin" : "Main-Taunus-Kreis",
-    "nuts_name" : "Main-Taunus-Kreis",
-    "name_ascii" : "Main-Taunus-Kreis",
-    "name_html" : "Main-Taunus-Kreis"
+    "nameLatin" : "Main-Taunus-Kreis",
+    "nutsName" : "Main-Taunus-Kreis",
+    "nameAscii" : "Main-Taunus-Kreis",
+    "nameHtml" : "Main-Taunus-Kreis"
   },
   "DE71B": {
-    "name_latin" : "Odenwaldkreis",
-    "nuts_name" : "Odenwaldkreis",
-    "name_ascii" : "Odenwaldkreis",
-    "name_html" : "Odenwaldkreis"
+    "nameLatin" : "Odenwaldkreis",
+    "nutsName" : "Odenwaldkreis",
+    "nameAscii" : "Odenwaldkreis",
+    "nameHtml" : "Odenwaldkreis"
   },
   "DE71C": {
-    "name_latin" : "Offenbach, Landkreis",
-    "nuts_name" : "Offenbach, Landkreis",
-    "name_ascii" : "Offenbach, Landkreis",
-    "name_html" : "Offenbach, Landkreis"
+    "nameLatin" : "Offenbach, Landkreis",
+    "nutsName" : "Offenbach, Landkreis",
+    "nameAscii" : "Offenbach, Landkreis",
+    "nameHtml" : "Offenbach, Landkreis"
   },
   "DE71E": {
-    "name_latin" : "Wetteraukreis",
-    "nuts_name" : "Wetteraukreis",
-    "name_ascii" : "Wetteraukreis",
-    "name_html" : "Wetteraukreis"
+    "nameLatin" : "Wetteraukreis",
+    "nutsName" : "Wetteraukreis",
+    "nameAscii" : "Wetteraukreis",
+    "nameHtml" : "Wetteraukreis"
   },
   "DE721": {
-    "name_latin" : "Gießen, Landkreis",
-    "nuts_name" : "Gießen, Landkreis",
-    "name_ascii" : "Giessen, Landkreis",
-    "name_html" : "Gie&#x00DF;en, Landkreis"
+    "nameLatin" : "Gießen, Landkreis",
+    "nutsName" : "Gießen, Landkreis",
+    "nameAscii" : "Giessen, Landkreis",
+    "nameHtml" : "Gie&#x00DF;en, Landkreis"
   },
   "DE722": {
-    "name_latin" : "Lahn-Dill-Kreis",
-    "nuts_name" : "Lahn-Dill-Kreis",
-    "name_ascii" : "Lahn-Dill-Kreis",
-    "name_html" : "Lahn-Dill-Kreis"
+    "nameLatin" : "Lahn-Dill-Kreis",
+    "nutsName" : "Lahn-Dill-Kreis",
+    "nameAscii" : "Lahn-Dill-Kreis",
+    "nameHtml" : "Lahn-Dill-Kreis"
   },
   "DE723": {
-    "name_latin" : "Limburg-Weilburg",
-    "nuts_name" : "Limburg-Weilburg",
-    "name_ascii" : "Limburg-Weilburg",
-    "name_html" : "Limburg-Weilburg"
+    "nameLatin" : "Limburg-Weilburg",
+    "nutsName" : "Limburg-Weilburg",
+    "nameAscii" : "Limburg-Weilburg",
+    "nameHtml" : "Limburg-Weilburg"
   },
   "DE725": {
-    "name_latin" : "Vogelsbergkreis",
-    "nuts_name" : "Vogelsbergkreis",
-    "name_ascii" : "Vogelsbergkreis",
-    "name_html" : "Vogelsbergkreis"
+    "nameLatin" : "Vogelsbergkreis",
+    "nutsName" : "Vogelsbergkreis",
+    "nameAscii" : "Vogelsbergkreis",
+    "nameHtml" : "Vogelsbergkreis"
   },
   "DE731": {
-    "name_latin" : "Kassel, Kreisfreie Stadt",
-    "nuts_name" : "Kassel, Kreisfreie Stadt",
-    "name_ascii" : "Kassel, Kreisfreie Stadt",
-    "name_html" : "Kassel, Kreisfreie Stadt"
+    "nameLatin" : "Kassel, Kreisfreie Stadt",
+    "nutsName" : "Kassel, Kreisfreie Stadt",
+    "nameAscii" : "Kassel, Kreisfreie Stadt",
+    "nameHtml" : "Kassel, Kreisfreie Stadt"
   },
   "DE732": {
-    "name_latin" : "Fulda",
-    "nuts_name" : "Fulda",
-    "name_ascii" : "Fulda",
-    "name_html" : "Fulda"
+    "nameLatin" : "Fulda",
+    "nutsName" : "Fulda",
+    "nameAscii" : "Fulda",
+    "nameHtml" : "Fulda"
   },
   "DE733": {
-    "name_latin" : "Hersfeld-Rotenburg",
-    "nuts_name" : "Hersfeld-Rotenburg",
-    "name_ascii" : "Hersfeld-Rotenburg",
-    "name_html" : "Hersfeld-Rotenburg"
+    "nameLatin" : "Hersfeld-Rotenburg",
+    "nutsName" : "Hersfeld-Rotenburg",
+    "nameAscii" : "Hersfeld-Rotenburg",
+    "nameHtml" : "Hersfeld-Rotenburg"
   },
   "DE734": {
-    "name_latin" : "Kassel, Landkreis",
-    "nuts_name" : "Kassel, Landkreis",
-    "name_ascii" : "Kassel, Landkreis",
-    "name_html" : "Kassel, Landkreis"
+    "nameLatin" : "Kassel, Landkreis",
+    "nutsName" : "Kassel, Landkreis",
+    "nameAscii" : "Kassel, Landkreis",
+    "nameHtml" : "Kassel, Landkreis"
   },
   "DE736": {
-    "name_latin" : "Waldeck-Frankenberg",
-    "nuts_name" : "Waldeck-Frankenberg",
-    "name_ascii" : "Waldeck-Frankenberg",
-    "name_html" : "Waldeck-Frankenberg"
+    "nameLatin" : "Waldeck-Frankenberg",
+    "nutsName" : "Waldeck-Frankenberg",
+    "nameAscii" : "Waldeck-Frankenberg",
+    "nameHtml" : "Waldeck-Frankenberg"
   },
   "DE737": {
-    "name_latin" : "Werra-Meißner-Kreis",
-    "nuts_name" : "Werra-Meißner-Kreis",
-    "name_ascii" : "Werra-Meissner-Kreis",
-    "name_html" : "Werra-Mei&#x00DF;ner-Kreis"
+    "nameLatin" : "Werra-Meißner-Kreis",
+    "nutsName" : "Werra-Meißner-Kreis",
+    "nameAscii" : "Werra-Meissner-Kreis",
+    "nameHtml" : "Werra-Mei&#x00DF;ner-Kreis"
   },
   "DE804": {
-    "name_latin" : "Schwerin, Kreisfreie Stadt",
-    "nuts_name" : "Schwerin, Kreisfreie Stadt",
-    "name_ascii" : "Schwerin, Kreisfreie Stadt",
-    "name_html" : "Schwerin, Kreisfreie Stadt"
+    "nameLatin" : "Schwerin, Kreisfreie Stadt",
+    "nutsName" : "Schwerin, Kreisfreie Stadt",
+    "nameAscii" : "Schwerin, Kreisfreie Stadt",
+    "nameHtml" : "Schwerin, Kreisfreie Stadt"
   },
   "DE80J": {
-    "name_latin" : "Mecklenburgische Seenplatte",
-    "nuts_name" : "Mecklenburgische Seenplatte",
-    "name_ascii" : "Mecklenburgische Seenplatte",
-    "name_html" : "Mecklenburgische Seenplatte"
+    "nameLatin" : "Mecklenburgische Seenplatte",
+    "nutsName" : "Mecklenburgische Seenplatte",
+    "nameAscii" : "Mecklenburgische Seenplatte",
+    "nameHtml" : "Mecklenburgische Seenplatte"
   },
   "DE80K": {
-    "name_latin" : "Landkreis Rostock",
-    "nuts_name" : "Landkreis Rostock",
-    "name_ascii" : "Landkreis Rostock",
-    "name_html" : "Landkreis Rostock"
+    "nameLatin" : "Landkreis Rostock",
+    "nutsName" : "Landkreis Rostock",
+    "nameAscii" : "Landkreis Rostock",
+    "nameHtml" : "Landkreis Rostock"
   },
   "DE80L": {
-    "name_latin" : "Vorpommern-Rügen",
-    "nuts_name" : "Vorpommern-Rügen",
-    "name_ascii" : "Vorpommern-Rugen",
-    "name_html" : "Vorpommern-R&#x00FC;gen"
+    "nameLatin" : "Vorpommern-Rügen",
+    "nutsName" : "Vorpommern-Rügen",
+    "nameAscii" : "Vorpommern-Rugen",
+    "nameHtml" : "Vorpommern-R&#x00FC;gen"
   },
   "DE80N": {
-    "name_latin" : "Vorpommern-Greifswald",
-    "nuts_name" : "Vorpommern-Greifswald",
-    "name_ascii" : "Vorpommern-Greifswald",
-    "name_html" : "Vorpommern-Greifswald"
+    "nameLatin" : "Vorpommern-Greifswald",
+    "nutsName" : "Vorpommern-Greifswald",
+    "nameAscii" : "Vorpommern-Greifswald",
+    "nameHtml" : "Vorpommern-Greifswald"
   },
   "DE80O": {
-    "name_latin" : "Ludwigslust-Parchim",
-    "nuts_name" : "Ludwigslust-Parchim",
-    "name_ascii" : "Ludwigslust-Parchim",
-    "name_html" : "Ludwigslust-Parchim"
+    "nameLatin" : "Ludwigslust-Parchim",
+    "nutsName" : "Ludwigslust-Parchim",
+    "nameAscii" : "Ludwigslust-Parchim",
+    "nameHtml" : "Ludwigslust-Parchim"
   },
   "DE911": {
-    "name_latin" : "Braunschweig, Kreisfreie Stadt",
-    "nuts_name" : "Braunschweig, Kreisfreie Stadt",
-    "name_ascii" : "Braunschweig, Kreisfreie Stadt",
-    "name_html" : "Braunschweig, Kreisfreie Stadt"
+    "nameLatin" : "Braunschweig, Kreisfreie Stadt",
+    "nutsName" : "Braunschweig, Kreisfreie Stadt",
+    "nameAscii" : "Braunschweig, Kreisfreie Stadt",
+    "nameHtml" : "Braunschweig, Kreisfreie Stadt"
   },
   "DE913": {
-    "name_latin" : "Wolfsburg, Kreisfreie Stadt",
-    "nuts_name" : "Wolfsburg, Kreisfreie Stadt",
-    "name_ascii" : "Wolfsburg, Kreisfreie Stadt",
-    "name_html" : "Wolfsburg, Kreisfreie Stadt"
+    "nameLatin" : "Wolfsburg, Kreisfreie Stadt",
+    "nutsName" : "Wolfsburg, Kreisfreie Stadt",
+    "nameAscii" : "Wolfsburg, Kreisfreie Stadt",
+    "nameHtml" : "Wolfsburg, Kreisfreie Stadt"
   },
   "DE914": {
-    "name_latin" : "Gifhorn",
-    "nuts_name" : "Gifhorn",
-    "name_ascii" : "Gifhorn",
-    "name_html" : "Gifhorn"
+    "nameLatin" : "Gifhorn",
+    "nutsName" : "Gifhorn",
+    "nameAscii" : "Gifhorn",
+    "nameHtml" : "Gifhorn"
   },
   "DE915": {
-    "name_latin" : "Göttingen",
-    "nuts_name" : "Göttingen",
-    "name_ascii" : "Gottingen",
-    "name_html" : "G&#x00F6;ttingen"
+    "nameLatin" : "Göttingen",
+    "nutsName" : "Göttingen",
+    "nameAscii" : "Gottingen",
+    "nameHtml" : "G&#x00F6;ttingen"
   },
   "DE916": {
-    "name_latin" : "Goslar",
-    "nuts_name" : "Goslar",
-    "name_ascii" : "Goslar",
-    "name_html" : "Goslar"
+    "nameLatin" : "Goslar",
+    "nutsName" : "Goslar",
+    "nameAscii" : "Goslar",
+    "nameHtml" : "Goslar"
   },
   "DE917": {
-    "name_latin" : "Helmstedt",
-    "nuts_name" : "Helmstedt",
-    "name_ascii" : "Helmstedt",
-    "name_html" : "Helmstedt"
+    "nameLatin" : "Helmstedt",
+    "nutsName" : "Helmstedt",
+    "nameAscii" : "Helmstedt",
+    "nameHtml" : "Helmstedt"
   },
   "DE918": {
-    "name_latin" : "Northeim",
-    "nuts_name" : "Northeim",
-    "name_ascii" : "Northeim",
-    "name_html" : "Northeim"
+    "nameLatin" : "Northeim",
+    "nutsName" : "Northeim",
+    "nameAscii" : "Northeim",
+    "nameHtml" : "Northeim"
   },
   "DE919": {
-    "name_latin" : "Osterode am Harz",
-    "nuts_name" : "Osterode am Harz",
-    "name_ascii" : "Osterode am Harz",
-    "name_html" : "Osterode am Harz"
+    "nameLatin" : "Osterode am Harz",
+    "nutsName" : "Osterode am Harz",
+    "nameAscii" : "Osterode am Harz",
+    "nameHtml" : "Osterode am Harz"
   },
   "DE91A": {
-    "name_latin" : "Peine",
-    "nuts_name" : "Peine",
-    "name_ascii" : "Peine",
-    "name_html" : "Peine"
+    "nameLatin" : "Peine",
+    "nutsName" : "Peine",
+    "nameAscii" : "Peine",
+    "nameHtml" : "Peine"
   },
   "DE91B": {
-    "name_latin" : "Wolfenbüttel",
-    "nuts_name" : "Wolfenbüttel",
-    "name_ascii" : "Wolfenbuttel",
-    "name_html" : "Wolfenb&#x00FC;ttel"
+    "nameLatin" : "Wolfenbüttel",
+    "nutsName" : "Wolfenbüttel",
+    "nameAscii" : "Wolfenbuttel",
+    "nameHtml" : "Wolfenb&#x00FC;ttel"
   },
   "DE922": {
-    "name_latin" : "Diepholz",
-    "nuts_name" : "Diepholz",
-    "name_ascii" : "Diepholz",
-    "name_html" : "Diepholz"
+    "nameLatin" : "Diepholz",
+    "nutsName" : "Diepholz",
+    "nameAscii" : "Diepholz",
+    "nameHtml" : "Diepholz"
   },
   "DE923": {
-    "name_latin" : "Hameln-Pyrmont",
-    "nuts_name" : "Hameln-Pyrmont",
-    "name_ascii" : "Hameln-Pyrmont",
-    "name_html" : "Hameln-Pyrmont"
+    "nameLatin" : "Hameln-Pyrmont",
+    "nutsName" : "Hameln-Pyrmont",
+    "nameAscii" : "Hameln-Pyrmont",
+    "nameHtml" : "Hameln-Pyrmont"
   },
   "DE925": {
-    "name_latin" : "Hildesheim",
-    "nuts_name" : "Hildesheim",
-    "name_ascii" : "Hildesheim",
-    "name_html" : "Hildesheim"
+    "nameLatin" : "Hildesheim",
+    "nutsName" : "Hildesheim",
+    "nameAscii" : "Hildesheim",
+    "nameHtml" : "Hildesheim"
   },
   "DE926": {
-    "name_latin" : "Holzminden",
-    "nuts_name" : "Holzminden",
-    "name_ascii" : "Holzminden",
-    "name_html" : "Holzminden"
+    "nameLatin" : "Holzminden",
+    "nutsName" : "Holzminden",
+    "nameAscii" : "Holzminden",
+    "nameHtml" : "Holzminden"
   },
   "DE927": {
-    "name_latin" : "Nienburg (Weser)",
-    "nuts_name" : "Nienburg (Weser)",
-    "name_ascii" : "Nienburg (Weser)",
-    "name_html" : "Nienburg (Weser)"
+    "nameLatin" : "Nienburg (Weser)",
+    "nutsName" : "Nienburg (Weser)",
+    "nameAscii" : "Nienburg (Weser)",
+    "nameHtml" : "Nienburg (Weser)"
   },
   "DE928": {
-    "name_latin" : "Schaumburg",
-    "nuts_name" : "Schaumburg",
-    "name_ascii" : "Schaumburg",
-    "name_html" : "Schaumburg"
+    "nameLatin" : "Schaumburg",
+    "nutsName" : "Schaumburg",
+    "nameAscii" : "Schaumburg",
+    "nameHtml" : "Schaumburg"
   },
   "DE929": {
-    "name_latin" : "Region Hannover",
-    "nuts_name" : "Region Hannover",
-    "name_ascii" : "Region Hannover",
-    "name_html" : "Region Hannover"
+    "nameLatin" : "Region Hannover",
+    "nutsName" : "Region Hannover",
+    "nameAscii" : "Region Hannover",
+    "nameHtml" : "Region Hannover"
   },
   "DE931": {
-    "name_latin" : "Celle",
-    "nuts_name" : "Celle",
-    "name_ascii" : "Celle",
-    "name_html" : "Celle"
+    "nameLatin" : "Celle",
+    "nutsName" : "Celle",
+    "nameAscii" : "Celle",
+    "nameHtml" : "Celle"
   },
   "DE932": {
-    "name_latin" : "Cuxhaven",
-    "nuts_name" : "Cuxhaven",
-    "name_ascii" : "Cuxhaven",
-    "name_html" : "Cuxhaven"
+    "nameLatin" : "Cuxhaven",
+    "nutsName" : "Cuxhaven",
+    "nameAscii" : "Cuxhaven",
+    "nameHtml" : "Cuxhaven"
   },
   "DE933": {
-    "name_latin" : "Harburg",
-    "nuts_name" : "Harburg",
-    "name_ascii" : "Harburg",
-    "name_html" : "Harburg"
+    "nameLatin" : "Harburg",
+    "nutsName" : "Harburg",
+    "nameAscii" : "Harburg",
+    "nameHtml" : "Harburg"
   },
   "DE934": {
-    "name_latin" : "Lüchow-Dannenberg",
-    "nuts_name" : "Lüchow-Dannenberg",
-    "name_ascii" : "Luchow-Dannenberg",
-    "name_html" : "L&#x00FC;chow-Dannenberg"
+    "nameLatin" : "Lüchow-Dannenberg",
+    "nutsName" : "Lüchow-Dannenberg",
+    "nameAscii" : "Luchow-Dannenberg",
+    "nameHtml" : "L&#x00FC;chow-Dannenberg"
   },
   "DE935": {
-    "name_latin" : "Lüneburg, Landkreis",
-    "nuts_name" : "Lüneburg, Landkreis",
-    "name_ascii" : "Luneburg, Landkreis",
-    "name_html" : "L&#x00FC;neburg, Landkreis"
+    "nameLatin" : "Lüneburg, Landkreis",
+    "nutsName" : "Lüneburg, Landkreis",
+    "nameAscii" : "Luneburg, Landkreis",
+    "nameHtml" : "L&#x00FC;neburg, Landkreis"
   },
   "DE936": {
-    "name_latin" : "Osterholz",
-    "nuts_name" : "Osterholz",
-    "name_ascii" : "Osterholz",
-    "name_html" : "Osterholz"
+    "nameLatin" : "Osterholz",
+    "nutsName" : "Osterholz",
+    "nameAscii" : "Osterholz",
+    "nameHtml" : "Osterholz"
   },
   "DE937": {
-    "name_latin" : "Rotenburg (Wümme)",
-    "nuts_name" : "Rotenburg (Wümme)",
-    "name_ascii" : "Rotenburg (Wumme)",
-    "name_html" : "Rotenburg (W&#x00FC;mme)"
+    "nameLatin" : "Rotenburg (Wümme)",
+    "nutsName" : "Rotenburg (Wümme)",
+    "nameAscii" : "Rotenburg (Wumme)",
+    "nameHtml" : "Rotenburg (W&#x00FC;mme)"
   },
   "DE938": {
-    "name_latin" : "Heidekreis",
-    "nuts_name" : "Heidekreis",
-    "name_ascii" : "Heidekreis",
-    "name_html" : "Heidekreis"
+    "nameLatin" : "Heidekreis",
+    "nutsName" : "Heidekreis",
+    "nameAscii" : "Heidekreis",
+    "nameHtml" : "Heidekreis"
   },
   "DE939": {
-    "name_latin" : "Stade",
-    "nuts_name" : "Stade",
-    "name_ascii" : "Stade",
-    "name_html" : "Stade"
+    "nameLatin" : "Stade",
+    "nutsName" : "Stade",
+    "nameAscii" : "Stade",
+    "nameHtml" : "Stade"
   },
   "DE93A": {
-    "name_latin" : "Uelzen",
-    "nuts_name" : "Uelzen",
-    "name_ascii" : "Uelzen",
-    "name_html" : "Uelzen"
+    "nameLatin" : "Uelzen",
+    "nutsName" : "Uelzen",
+    "nameAscii" : "Uelzen",
+    "nameHtml" : "Uelzen"
   },
   "DE93B": {
-    "name_latin" : "Verden",
-    "nuts_name" : "Verden",
-    "name_ascii" : "Verden",
-    "name_html" : "Verden"
+    "nameLatin" : "Verden",
+    "nutsName" : "Verden",
+    "nameAscii" : "Verden",
+    "nameHtml" : "Verden"
   },
   "DE941": {
-    "name_latin" : "Delmenhorst, Kreisfreie Stadt",
-    "nuts_name" : "Delmenhorst, Kreisfreie Stadt",
-    "name_ascii" : "Delmenhorst, Kreisfreie Stadt",
-    "name_html" : "Delmenhorst, Kreisfreie Stadt"
+    "nameLatin" : "Delmenhorst, Kreisfreie Stadt",
+    "nutsName" : "Delmenhorst, Kreisfreie Stadt",
+    "nameAscii" : "Delmenhorst, Kreisfreie Stadt",
+    "nameHtml" : "Delmenhorst, Kreisfreie Stadt"
   },
   "DE942": {
-    "name_latin" : "Emden, Kreisfreie Stadt",
-    "nuts_name" : "Emden, Kreisfreie Stadt",
-    "name_ascii" : "Emden, Kreisfreie Stadt",
-    "name_html" : "Emden, Kreisfreie Stadt"
+    "nameLatin" : "Emden, Kreisfreie Stadt",
+    "nutsName" : "Emden, Kreisfreie Stadt",
+    "nameAscii" : "Emden, Kreisfreie Stadt",
+    "nameHtml" : "Emden, Kreisfreie Stadt"
   },
   "DE944": {
-    "name_latin" : "Osnabrück, Kreisfreie Stadt",
-    "nuts_name" : "Osnabrück, Kreisfreie Stadt",
-    "name_ascii" : "Osnabruck, Kreisfreie Stadt",
-    "name_html" : "Osnabr&#x00FC;ck, Kreisfreie Stadt"
+    "nameLatin" : "Osnabrück, Kreisfreie Stadt",
+    "nutsName" : "Osnabrück, Kreisfreie Stadt",
+    "nameAscii" : "Osnabruck, Kreisfreie Stadt",
+    "nameHtml" : "Osnabr&#x00FC;ck, Kreisfreie Stadt"
   },
   "DE945": {
-    "name_latin" : "Wilhelmshaven, Kreisfreie Stadt",
-    "nuts_name" : "Wilhelmshaven, Kreisfreie Stadt",
-    "name_ascii" : "Wilhelmshaven, Kreisfreie Stadt",
-    "name_html" : "Wilhelmshaven, Kreisfreie Stadt"
+    "nameLatin" : "Wilhelmshaven, Kreisfreie Stadt",
+    "nutsName" : "Wilhelmshaven, Kreisfreie Stadt",
+    "nameAscii" : "Wilhelmshaven, Kreisfreie Stadt",
+    "nameHtml" : "Wilhelmshaven, Kreisfreie Stadt"
   },
   "DE946": {
-    "name_latin" : "Ammerland",
-    "nuts_name" : "Ammerland",
-    "name_ascii" : "Ammerland",
-    "name_html" : "Ammerland"
+    "nameLatin" : "Ammerland",
+    "nutsName" : "Ammerland",
+    "nameAscii" : "Ammerland",
+    "nameHtml" : "Ammerland"
   },
   "DE947": {
-    "name_latin" : "Aurich",
-    "nuts_name" : "Aurich",
-    "name_ascii" : "Aurich",
-    "name_html" : "Aurich"
+    "nameLatin" : "Aurich",
+    "nutsName" : "Aurich",
+    "nameAscii" : "Aurich",
+    "nameHtml" : "Aurich"
   },
   "DE948": {
-    "name_latin" : "Cloppenburg",
-    "nuts_name" : "Cloppenburg",
-    "name_ascii" : "Cloppenburg",
-    "name_html" : "Cloppenburg"
+    "nameLatin" : "Cloppenburg",
+    "nutsName" : "Cloppenburg",
+    "nameAscii" : "Cloppenburg",
+    "nameHtml" : "Cloppenburg"
   },
   "DE949": {
-    "name_latin" : "Emsland",
-    "nuts_name" : "Emsland",
-    "name_ascii" : "Emsland",
-    "name_html" : "Emsland"
+    "nameLatin" : "Emsland",
+    "nutsName" : "Emsland",
+    "nameAscii" : "Emsland",
+    "nameHtml" : "Emsland"
   },
   "DE94A": {
-    "name_latin" : "Friesland (DE)",
-    "nuts_name" : "Friesland (DE)",
-    "name_ascii" : "Friesland (DE)",
-    "name_html" : "Friesland (DE)"
+    "nameLatin" : "Friesland (DE)",
+    "nutsName" : "Friesland (DE)",
+    "nameAscii" : "Friesland (DE)",
+    "nameHtml" : "Friesland (DE)"
   },
   "DE94B": {
-    "name_latin" : "Grafschaft Bentheim",
-    "nuts_name" : "Grafschaft Bentheim",
-    "name_ascii" : "Grafschaft Bentheim",
-    "name_html" : "Grafschaft Bentheim"
+    "nameLatin" : "Grafschaft Bentheim",
+    "nutsName" : "Grafschaft Bentheim",
+    "nameAscii" : "Grafschaft Bentheim",
+    "nameHtml" : "Grafschaft Bentheim"
   },
   "DE94C": {
-    "name_latin" : "Leer",
-    "nuts_name" : "Leer",
-    "name_ascii" : "Leer",
-    "name_html" : "Leer"
+    "nameLatin" : "Leer",
+    "nutsName" : "Leer",
+    "nameAscii" : "Leer",
+    "nameHtml" : "Leer"
   },
   "DE94D": {
-    "name_latin" : "Oldenburg, Landkreis",
-    "nuts_name" : "Oldenburg, Landkreis",
-    "name_ascii" : "Oldenburg, Landkreis",
-    "name_html" : "Oldenburg, Landkreis"
+    "nameLatin" : "Oldenburg, Landkreis",
+    "nutsName" : "Oldenburg, Landkreis",
+    "nameAscii" : "Oldenburg, Landkreis",
+    "nameHtml" : "Oldenburg, Landkreis"
   },
   "DE94F": {
-    "name_latin" : "Vechta",
-    "nuts_name" : "Vechta",
-    "name_ascii" : "Vechta",
-    "name_html" : "Vechta"
+    "nameLatin" : "Vechta",
+    "nutsName" : "Vechta",
+    "nameAscii" : "Vechta",
+    "nameHtml" : "Vechta"
   },
   "DE94G": {
-    "name_latin" : "Wesermarsch",
-    "nuts_name" : "Wesermarsch",
-    "name_ascii" : "Wesermarsch",
-    "name_html" : "Wesermarsch"
+    "nameLatin" : "Wesermarsch",
+    "nutsName" : "Wesermarsch",
+    "nameAscii" : "Wesermarsch",
+    "nameHtml" : "Wesermarsch"
   },
   "DE94H": {
-    "name_latin" : "Wittmund",
-    "nuts_name" : "Wittmund",
-    "name_ascii" : "Wittmund",
-    "name_html" : "Wittmund"
+    "nameLatin" : "Wittmund",
+    "nutsName" : "Wittmund",
+    "nameAscii" : "Wittmund",
+    "nameHtml" : "Wittmund"
   },
   "DEA11": {
-    "name_latin" : "Düsseldorf, Kreisfreie Stadt",
-    "nuts_name" : "Düsseldorf, Kreisfreie Stadt",
-    "name_ascii" : "Dusseldorf, Kreisfreie Stadt",
-    "name_html" : "D&#x00FC;sseldorf, Kreisfreie Stadt"
+    "nameLatin" : "Düsseldorf, Kreisfreie Stadt",
+    "nutsName" : "Düsseldorf, Kreisfreie Stadt",
+    "nameAscii" : "Dusseldorf, Kreisfreie Stadt",
+    "nameHtml" : "D&#x00FC;sseldorf, Kreisfreie Stadt"
   },
   "DEA13": {
-    "name_latin" : "Essen, Kreisfreie Stadt",
-    "nuts_name" : "Essen, Kreisfreie Stadt",
-    "name_ascii" : "Essen, Kreisfreie Stadt",
-    "name_html" : "Essen, Kreisfreie Stadt"
+    "nameLatin" : "Essen, Kreisfreie Stadt",
+    "nutsName" : "Essen, Kreisfreie Stadt",
+    "nameAscii" : "Essen, Kreisfreie Stadt",
+    "nameHtml" : "Essen, Kreisfreie Stadt"
   },
   "DEA14": {
-    "name_latin" : "Krefeld, Kreisfreie Stadt",
-    "nuts_name" : "Krefeld, Kreisfreie Stadt",
-    "name_ascii" : "Krefeld, Kreisfreie Stadt",
-    "name_html" : "Krefeld, Kreisfreie Stadt"
+    "nameLatin" : "Krefeld, Kreisfreie Stadt",
+    "nutsName" : "Krefeld, Kreisfreie Stadt",
+    "nameAscii" : "Krefeld, Kreisfreie Stadt",
+    "nameHtml" : "Krefeld, Kreisfreie Stadt"
   },
   "DEA15": {
-    "name_latin" : "Mönchengladbach, Kreisfreie Stadt",
-    "nuts_name" : "Mönchengladbach, Kreisfreie Stadt",
-    "name_ascii" : "Monchengladbach, Kreisfreie Stadt",
-    "name_html" : "M&#x00F6;nchengladbach, Kreisfreie Stadt"
+    "nameLatin" : "Mönchengladbach, Kreisfreie Stadt",
+    "nutsName" : "Mönchengladbach, Kreisfreie Stadt",
+    "nameAscii" : "Monchengladbach, Kreisfreie Stadt",
+    "nameHtml" : "M&#x00F6;nchengladbach, Kreisfreie Stadt"
   },
   "DEA17": {
-    "name_latin" : "Oberhausen, Kreisfreie Stadt",
-    "nuts_name" : "Oberhausen, Kreisfreie Stadt",
-    "name_ascii" : "Oberhausen, Kreisfreie Stadt",
-    "name_html" : "Oberhausen, Kreisfreie Stadt"
+    "nameLatin" : "Oberhausen, Kreisfreie Stadt",
+    "nutsName" : "Oberhausen, Kreisfreie Stadt",
+    "nameAscii" : "Oberhausen, Kreisfreie Stadt",
+    "nameHtml" : "Oberhausen, Kreisfreie Stadt"
   },
   "DEA18": {
-    "name_latin" : "Remscheid, Kreisfreie Stadt",
-    "nuts_name" : "Remscheid, Kreisfreie Stadt",
-    "name_ascii" : "Remscheid, Kreisfreie Stadt",
-    "name_html" : "Remscheid, Kreisfreie Stadt"
+    "nameLatin" : "Remscheid, Kreisfreie Stadt",
+    "nutsName" : "Remscheid, Kreisfreie Stadt",
+    "nameAscii" : "Remscheid, Kreisfreie Stadt",
+    "nameHtml" : "Remscheid, Kreisfreie Stadt"
   },
   "DEA19": {
-    "name_latin" : "Solingen, Kreisfreie Stadt",
-    "nuts_name" : "Solingen, Kreisfreie Stadt",
-    "name_ascii" : "Solingen, Kreisfreie Stadt",
-    "name_html" : "Solingen, Kreisfreie Stadt"
+    "nameLatin" : "Solingen, Kreisfreie Stadt",
+    "nutsName" : "Solingen, Kreisfreie Stadt",
+    "nameAscii" : "Solingen, Kreisfreie Stadt",
+    "nameHtml" : "Solingen, Kreisfreie Stadt"
   },
   "DEA1A": {
-    "name_latin" : "Wuppertal, Kreisfreie Stadt",
-    "nuts_name" : "Wuppertal, Kreisfreie Stadt",
-    "name_ascii" : "Wuppertal, Kreisfreie Stadt",
-    "name_html" : "Wuppertal, Kreisfreie Stadt"
+    "nameLatin" : "Wuppertal, Kreisfreie Stadt",
+    "nutsName" : "Wuppertal, Kreisfreie Stadt",
+    "nameAscii" : "Wuppertal, Kreisfreie Stadt",
+    "nameHtml" : "Wuppertal, Kreisfreie Stadt"
   },
   "DEA1B": {
-    "name_latin" : "Kleve",
-    "nuts_name" : "Kleve",
-    "name_ascii" : "Kleve",
-    "name_html" : "Kleve"
+    "nameLatin" : "Kleve",
+    "nutsName" : "Kleve",
+    "nameAscii" : "Kleve",
+    "nameHtml" : "Kleve"
   },
   "DEA1C": {
-    "name_latin" : "Mettmann",
-    "nuts_name" : "Mettmann",
-    "name_ascii" : "Mettmann",
-    "name_html" : "Mettmann"
+    "nameLatin" : "Mettmann",
+    "nutsName" : "Mettmann",
+    "nameAscii" : "Mettmann",
+    "nameHtml" : "Mettmann"
   },
   "DEA1D": {
-    "name_latin" : "Rhein-Kreis Neuss",
-    "nuts_name" : "Rhein-Kreis Neuss",
-    "name_ascii" : "Rhein-Kreis Neuss",
-    "name_html" : "Rhein-Kreis Neuss"
+    "nameLatin" : "Rhein-Kreis Neuss",
+    "nutsName" : "Rhein-Kreis Neuss",
+    "nameAscii" : "Rhein-Kreis Neuss",
+    "nameHtml" : "Rhein-Kreis Neuss"
   },
   "DEA1E": {
-    "name_latin" : "Viersen",
-    "nuts_name" : "Viersen",
-    "name_ascii" : "Viersen",
-    "name_html" : "Viersen"
+    "nameLatin" : "Viersen",
+    "nutsName" : "Viersen",
+    "nameAscii" : "Viersen",
+    "nameHtml" : "Viersen"
   },
   "DEA1F": {
-    "name_latin" : "Wesel",
-    "nuts_name" : "Wesel",
-    "name_ascii" : "Wesel",
-    "name_html" : "Wesel"
+    "nameLatin" : "Wesel",
+    "nutsName" : "Wesel",
+    "nameAscii" : "Wesel",
+    "nameHtml" : "Wesel"
   },
   "DEA23": {
-    "name_latin" : "Köln, Kreisfreie Stadt",
-    "nuts_name" : "Köln, Kreisfreie Stadt",
-    "name_ascii" : "Koln, Kreisfreie Stadt",
-    "name_html" : "K&#x00F6;ln, Kreisfreie Stadt"
+    "nameLatin" : "Köln, Kreisfreie Stadt",
+    "nutsName" : "Köln, Kreisfreie Stadt",
+    "nameAscii" : "Koln, Kreisfreie Stadt",
+    "nameHtml" : "K&#x00F6;ln, Kreisfreie Stadt"
   },
   "DEA24": {
-    "name_latin" : "Leverkusen, Kreisfreie Stadt",
-    "nuts_name" : "Leverkusen, Kreisfreie Stadt",
-    "name_ascii" : "Leverkusen, Kreisfreie Stadt",
-    "name_html" : "Leverkusen, Kreisfreie Stadt"
+    "nameLatin" : "Leverkusen, Kreisfreie Stadt",
+    "nutsName" : "Leverkusen, Kreisfreie Stadt",
+    "nameAscii" : "Leverkusen, Kreisfreie Stadt",
+    "nameHtml" : "Leverkusen, Kreisfreie Stadt"
   },
   "DEA26": {
-    "name_latin" : "Düren",
-    "nuts_name" : "Düren",
-    "name_ascii" : "Duren",
-    "name_html" : "D&#x00FC;ren"
+    "nameLatin" : "Düren",
+    "nutsName" : "Düren",
+    "nameAscii" : "Duren",
+    "nameHtml" : "D&#x00FC;ren"
   },
   "DEA27": {
-    "name_latin" : "Rhein-Erft-Kreis",
-    "nuts_name" : "Rhein-Erft-Kreis",
-    "name_ascii" : "Rhein-Erft-Kreis",
-    "name_html" : "Rhein-Erft-Kreis"
+    "nameLatin" : "Rhein-Erft-Kreis",
+    "nutsName" : "Rhein-Erft-Kreis",
+    "nameAscii" : "Rhein-Erft-Kreis",
+    "nameHtml" : "Rhein-Erft-Kreis"
   },
   "DEA28": {
-    "name_latin" : "Euskirchen",
-    "nuts_name" : "Euskirchen",
-    "name_ascii" : "Euskirchen",
-    "name_html" : "Euskirchen"
+    "nameLatin" : "Euskirchen",
+    "nutsName" : "Euskirchen",
+    "nameAscii" : "Euskirchen",
+    "nameHtml" : "Euskirchen"
   },
   "DEA29": {
-    "name_latin" : "Heinsberg",
-    "nuts_name" : "Heinsberg",
-    "name_ascii" : "Heinsberg",
-    "name_html" : "Heinsberg"
+    "nameLatin" : "Heinsberg",
+    "nutsName" : "Heinsberg",
+    "nameAscii" : "Heinsberg",
+    "nameHtml" : "Heinsberg"
   },
   "DEA2B": {
-    "name_latin" : "Rheinisch-Bergischer Kreis",
-    "nuts_name" : "Rheinisch-Bergischer Kreis",
-    "name_ascii" : "Rheinisch-Bergischer Kreis",
-    "name_html" : "Rheinisch-Bergischer Kreis"
+    "nameLatin" : "Rheinisch-Bergischer Kreis",
+    "nutsName" : "Rheinisch-Bergischer Kreis",
+    "nameAscii" : "Rheinisch-Bergischer Kreis",
+    "nameHtml" : "Rheinisch-Bergischer Kreis"
   },
   "DEA2C": {
-    "name_latin" : "Rhein-Sieg-Kreis",
-    "nuts_name" : "Rhein-Sieg-Kreis",
-    "name_ascii" : "Rhein-Sieg-Kreis",
-    "name_html" : "Rhein-Sieg-Kreis"
+    "nameLatin" : "Rhein-Sieg-Kreis",
+    "nutsName" : "Rhein-Sieg-Kreis",
+    "nameAscii" : "Rhein-Sieg-Kreis",
+    "nameHtml" : "Rhein-Sieg-Kreis"
   },
   "DEA2D": {
-    "name_latin" : "Städteregion Aachen",
-    "nuts_name" : "Städteregion Aachen",
-    "name_ascii" : "Stadteregion Aachen",
-    "name_html" : "St&#x00E4;dteregion Aachen"
+    "nameLatin" : "Städteregion Aachen",
+    "nutsName" : "Städteregion Aachen",
+    "nameAscii" : "Stadteregion Aachen",
+    "nameHtml" : "St&#x00E4;dteregion Aachen"
   },
   "DEA32": {
-    "name_latin" : "Gelsenkirchen, Kreisfreie Stadt",
-    "nuts_name" : "Gelsenkirchen, Kreisfreie Stadt",
-    "name_ascii" : "Gelsenkirchen, Kreisfreie Stadt",
-    "name_html" : "Gelsenkirchen, Kreisfreie Stadt"
+    "nameLatin" : "Gelsenkirchen, Kreisfreie Stadt",
+    "nutsName" : "Gelsenkirchen, Kreisfreie Stadt",
+    "nameAscii" : "Gelsenkirchen, Kreisfreie Stadt",
+    "nameHtml" : "Gelsenkirchen, Kreisfreie Stadt"
   },
   "DEA33": {
-    "name_latin" : "Münster, Kreisfreie Stadt",
-    "nuts_name" : "Münster, Kreisfreie Stadt",
-    "name_ascii" : "Munster, Kreisfreie Stadt",
-    "name_html" : "M&#x00FC;nster, Kreisfreie Stadt"
+    "nameLatin" : "Münster, Kreisfreie Stadt",
+    "nutsName" : "Münster, Kreisfreie Stadt",
+    "nameAscii" : "Munster, Kreisfreie Stadt",
+    "nameHtml" : "M&#x00FC;nster, Kreisfreie Stadt"
   },
   "DEA34": {
-    "name_latin" : "Borken",
-    "nuts_name" : "Borken",
-    "name_ascii" : "Borken",
-    "name_html" : "Borken"
+    "nameLatin" : "Borken",
+    "nutsName" : "Borken",
+    "nameAscii" : "Borken",
+    "nameHtml" : "Borken"
   },
   "DEA35": {
-    "name_latin" : "Coesfeld",
-    "nuts_name" : "Coesfeld",
-    "name_ascii" : "Coesfeld",
-    "name_html" : "Coesfeld"
+    "nameLatin" : "Coesfeld",
+    "nutsName" : "Coesfeld",
+    "nameAscii" : "Coesfeld",
+    "nameHtml" : "Coesfeld"
   },
   "DEA36": {
-    "name_latin" : "Recklinghausen",
-    "nuts_name" : "Recklinghausen",
-    "name_ascii" : "Recklinghausen",
-    "name_html" : "Recklinghausen"
+    "nameLatin" : "Recklinghausen",
+    "nutsName" : "Recklinghausen",
+    "nameAscii" : "Recklinghausen",
+    "nameHtml" : "Recklinghausen"
   },
   "DEA37": {
-    "name_latin" : "Steinfurt",
-    "nuts_name" : "Steinfurt",
-    "name_ascii" : "Steinfurt",
-    "name_html" : "Steinfurt"
+    "nameLatin" : "Steinfurt",
+    "nutsName" : "Steinfurt",
+    "nameAscii" : "Steinfurt",
+    "nameHtml" : "Steinfurt"
   },
   "DEA38": {
-    "name_latin" : "Warendorf",
-    "nuts_name" : "Warendorf",
-    "name_ascii" : "Warendorf",
-    "name_html" : "Warendorf"
+    "nameLatin" : "Warendorf",
+    "nutsName" : "Warendorf",
+    "nameAscii" : "Warendorf",
+    "nameHtml" : "Warendorf"
   },
   "DEA42": {
-    "name_latin" : "Gütersloh",
-    "nuts_name" : "Gütersloh",
-    "name_ascii" : "Gutersloh",
-    "name_html" : "G&#x00FC;tersloh"
+    "nameLatin" : "Gütersloh",
+    "nutsName" : "Gütersloh",
+    "nameAscii" : "Gutersloh",
+    "nameHtml" : "G&#x00FC;tersloh"
   },
   "DEA43": {
-    "name_latin" : "Herford",
-    "nuts_name" : "Herford",
-    "name_ascii" : "Herford",
-    "name_html" : "Herford"
+    "nameLatin" : "Herford",
+    "nutsName" : "Herford",
+    "nameAscii" : "Herford",
+    "nameHtml" : "Herford"
   },
   "DEA44": {
-    "name_latin" : "Höxter",
-    "nuts_name" : "Höxter",
-    "name_ascii" : "Hoxter",
-    "name_html" : "H&#x00F6;xter"
+    "nameLatin" : "Höxter",
+    "nutsName" : "Höxter",
+    "nameAscii" : "Hoxter",
+    "nameHtml" : "H&#x00F6;xter"
   },
   "DEA45": {
-    "name_latin" : "Lippe",
-    "nuts_name" : "Lippe",
-    "name_ascii" : "Lippe",
-    "name_html" : "Lippe"
+    "nameLatin" : "Lippe",
+    "nutsName" : "Lippe",
+    "nameAscii" : "Lippe",
+    "nameHtml" : "Lippe"
   },
   "DEA46": {
-    "name_latin" : "Minden-Lübbecke",
-    "nuts_name" : "Minden-Lübbecke",
-    "name_ascii" : "Minden-Lubbecke",
-    "name_html" : "Minden-L&#x00FC;bbecke"
+    "nameLatin" : "Minden-Lübbecke",
+    "nutsName" : "Minden-Lübbecke",
+    "nameAscii" : "Minden-Lubbecke",
+    "nameHtml" : "Minden-L&#x00FC;bbecke"
   },
   "DEA47": {
-    "name_latin" : "Paderborn",
-    "nuts_name" : "Paderborn",
-    "name_ascii" : "Paderborn",
-    "name_html" : "Paderborn"
+    "nameLatin" : "Paderborn",
+    "nutsName" : "Paderborn",
+    "nameAscii" : "Paderborn",
+    "nameHtml" : "Paderborn"
   },
   "DEA51": {
-    "name_latin" : "Bochum, Kreisfreie Stadt",
-    "nuts_name" : "Bochum, Kreisfreie Stadt",
-    "name_ascii" : "Bochum, Kreisfreie Stadt",
-    "name_html" : "Bochum, Kreisfreie Stadt"
+    "nameLatin" : "Bochum, Kreisfreie Stadt",
+    "nutsName" : "Bochum, Kreisfreie Stadt",
+    "nameAscii" : "Bochum, Kreisfreie Stadt",
+    "nameHtml" : "Bochum, Kreisfreie Stadt"
   },
   "DEA52": {
-    "name_latin" : "Dortmund, Kreisfreie Stadt",
-    "nuts_name" : "Dortmund, Kreisfreie Stadt",
-    "name_ascii" : "Dortmund, Kreisfreie Stadt",
-    "name_html" : "Dortmund, Kreisfreie Stadt"
+    "nameLatin" : "Dortmund, Kreisfreie Stadt",
+    "nutsName" : "Dortmund, Kreisfreie Stadt",
+    "nameAscii" : "Dortmund, Kreisfreie Stadt",
+    "nameHtml" : "Dortmund, Kreisfreie Stadt"
   },
   "DEA53": {
-    "name_latin" : "Hagen, Kreisfreie Stadt",
-    "nuts_name" : "Hagen, Kreisfreie Stadt",
-    "name_ascii" : "Hagen, Kreisfreie Stadt",
-    "name_html" : "Hagen, Kreisfreie Stadt"
+    "nameLatin" : "Hagen, Kreisfreie Stadt",
+    "nutsName" : "Hagen, Kreisfreie Stadt",
+    "nameAscii" : "Hagen, Kreisfreie Stadt",
+    "nameHtml" : "Hagen, Kreisfreie Stadt"
   },
   "DEA54": {
-    "name_latin" : "Hamm, Kreisfreie Stadt",
-    "nuts_name" : "Hamm, Kreisfreie Stadt",
-    "name_ascii" : "Hamm, Kreisfreie Stadt",
-    "name_html" : "Hamm, Kreisfreie Stadt"
+    "nameLatin" : "Hamm, Kreisfreie Stadt",
+    "nutsName" : "Hamm, Kreisfreie Stadt",
+    "nameAscii" : "Hamm, Kreisfreie Stadt",
+    "nameHtml" : "Hamm, Kreisfreie Stadt"
   },
   "DEA55": {
-    "name_latin" : "Herne, Kreisfreie Stadt",
-    "nuts_name" : "Herne, Kreisfreie Stadt",
-    "name_ascii" : "Herne, Kreisfreie Stadt",
-    "name_html" : "Herne, Kreisfreie Stadt"
+    "nameLatin" : "Herne, Kreisfreie Stadt",
+    "nutsName" : "Herne, Kreisfreie Stadt",
+    "nameAscii" : "Herne, Kreisfreie Stadt",
+    "nameHtml" : "Herne, Kreisfreie Stadt"
   },
   "DEA56": {
-    "name_latin" : "Ennepe-Ruhr-Kreis",
-    "nuts_name" : "Ennepe-Ruhr-Kreis",
-    "name_ascii" : "Ennepe-Ruhr-Kreis",
-    "name_html" : "Ennepe-Ruhr-Kreis"
+    "nameLatin" : "Ennepe-Ruhr-Kreis",
+    "nutsName" : "Ennepe-Ruhr-Kreis",
+    "nameAscii" : "Ennepe-Ruhr-Kreis",
+    "nameHtml" : "Ennepe-Ruhr-Kreis"
   },
   "DEA57": {
-    "name_latin" : "Hochsauerlandkreis",
-    "nuts_name" : "Hochsauerlandkreis",
-    "name_ascii" : "Hochsauerlandkreis",
-    "name_html" : "Hochsauerlandkreis"
+    "nameLatin" : "Hochsauerlandkreis",
+    "nutsName" : "Hochsauerlandkreis",
+    "nameAscii" : "Hochsauerlandkreis",
+    "nameHtml" : "Hochsauerlandkreis"
   },
   "DEA58": {
-    "name_latin" : "Märkischer Kreis",
-    "nuts_name" : "Märkischer Kreis",
-    "name_ascii" : "Markischer Kreis",
-    "name_html" : "M&#x00E4;rkischer Kreis"
+    "nameLatin" : "Märkischer Kreis",
+    "nutsName" : "Märkischer Kreis",
+    "nameAscii" : "Markischer Kreis",
+    "nameHtml" : "M&#x00E4;rkischer Kreis"
   },
   "DEA59": {
-    "name_latin" : "Olpe",
-    "nuts_name" : "Olpe",
-    "name_ascii" : "Olpe",
-    "name_html" : "Olpe"
+    "nameLatin" : "Olpe",
+    "nutsName" : "Olpe",
+    "nameAscii" : "Olpe",
+    "nameHtml" : "Olpe"
   },
   "DEA5A": {
-    "name_latin" : "Siegen-Wittgenstein",
-    "nuts_name" : "Siegen-Wittgenstein",
-    "name_ascii" : "Siegen-Wittgenstein",
-    "name_html" : "Siegen-Wittgenstein"
+    "nameLatin" : "Siegen-Wittgenstein",
+    "nutsName" : "Siegen-Wittgenstein",
+    "nameAscii" : "Siegen-Wittgenstein",
+    "nameHtml" : "Siegen-Wittgenstein"
   },
   "DEA5B": {
-    "name_latin" : "Soest",
-    "nuts_name" : "Soest",
-    "name_ascii" : "Soest",
-    "name_html" : "Soest"
+    "nameLatin" : "Soest",
+    "nutsName" : "Soest",
+    "nameAscii" : "Soest",
+    "nameHtml" : "Soest"
   },
   "DEA5C": {
-    "name_latin" : "Unna",
-    "nuts_name" : "Unna",
-    "name_ascii" : "Unna",
-    "name_html" : "Unna"
+    "nameLatin" : "Unna",
+    "nutsName" : "Unna",
+    "nameAscii" : "Unna",
+    "nameHtml" : "Unna"
   },
   "DEB11": {
-    "name_latin" : "Koblenz, Kreisfreie Stadt",
-    "nuts_name" : "Koblenz, Kreisfreie Stadt",
-    "name_ascii" : "Koblenz, Kreisfreie Stadt",
-    "name_html" : "Koblenz, Kreisfreie Stadt"
+    "nameLatin" : "Koblenz, Kreisfreie Stadt",
+    "nutsName" : "Koblenz, Kreisfreie Stadt",
+    "nameAscii" : "Koblenz, Kreisfreie Stadt",
+    "nameHtml" : "Koblenz, Kreisfreie Stadt"
   },
   "DEB12": {
-    "name_latin" : "Ahrweiler",
-    "nuts_name" : "Ahrweiler",
-    "name_ascii" : "Ahrweiler",
-    "name_html" : "Ahrweiler"
+    "nameLatin" : "Ahrweiler",
+    "nutsName" : "Ahrweiler",
+    "nameAscii" : "Ahrweiler",
+    "nameHtml" : "Ahrweiler"
   },
   "DEB13": {
-    "name_latin" : "Altenkirchen (Westerwald)",
-    "nuts_name" : "Altenkirchen (Westerwald)",
-    "name_ascii" : "Altenkirchen (Westerwald)",
-    "name_html" : "Altenkirchen (Westerwald)"
+    "nameLatin" : "Altenkirchen (Westerwald)",
+    "nutsName" : "Altenkirchen (Westerwald)",
+    "nameAscii" : "Altenkirchen (Westerwald)",
+    "nameHtml" : "Altenkirchen (Westerwald)"
   },
   "DEB14": {
-    "name_latin" : "Bad Kreuznach",
-    "nuts_name" : "Bad Kreuznach",
-    "name_ascii" : "Bad Kreuznach",
-    "name_html" : "Bad Kreuznach"
+    "nameLatin" : "Bad Kreuznach",
+    "nutsName" : "Bad Kreuznach",
+    "nameAscii" : "Bad Kreuznach",
+    "nameHtml" : "Bad Kreuznach"
   },
   "DEB15": {
-    "name_latin" : "Birkenfeld",
-    "nuts_name" : "Birkenfeld",
-    "name_ascii" : "Birkenfeld",
-    "name_html" : "Birkenfeld"
+    "nameLatin" : "Birkenfeld",
+    "nutsName" : "Birkenfeld",
+    "nameAscii" : "Birkenfeld",
+    "nameHtml" : "Birkenfeld"
   },
   "DEB16": {
-    "name_latin" : "Cochem-Zell",
-    "nuts_name" : "Cochem-Zell",
-    "name_ascii" : "Cochem-Zell",
-    "name_html" : "Cochem-Zell"
+    "nameLatin" : "Cochem-Zell",
+    "nutsName" : "Cochem-Zell",
+    "nameAscii" : "Cochem-Zell",
+    "nameHtml" : "Cochem-Zell"
   },
   "DEB17": {
-    "name_latin" : "Mayen-Koblenz",
-    "nuts_name" : "Mayen-Koblenz",
-    "name_ascii" : "Mayen-Koblenz",
-    "name_html" : "Mayen-Koblenz"
+    "nameLatin" : "Mayen-Koblenz",
+    "nutsName" : "Mayen-Koblenz",
+    "nameAscii" : "Mayen-Koblenz",
+    "nameHtml" : "Mayen-Koblenz"
   },
   "DEB18": {
-    "name_latin" : "Neuwied",
-    "nuts_name" : "Neuwied",
-    "name_ascii" : "Neuwied",
-    "name_html" : "Neuwied"
+    "nameLatin" : "Neuwied",
+    "nutsName" : "Neuwied",
+    "nameAscii" : "Neuwied",
+    "nameHtml" : "Neuwied"
   },
   "DEB19": {
-    "name_latin" : "Rhein-Hunsrück-Kreis",
-    "nuts_name" : "Rhein-Hunsrück-Kreis",
-    "name_ascii" : "Rhein-Hunsruck-Kreis",
-    "name_html" : "Rhein-Hunsr&#x00FC;ck-Kreis"
+    "nameLatin" : "Rhein-Hunsrück-Kreis",
+    "nutsName" : "Rhein-Hunsrück-Kreis",
+    "nameAscii" : "Rhein-Hunsruck-Kreis",
+    "nameHtml" : "Rhein-Hunsr&#x00FC;ck-Kreis"
   },
   "DEB1A": {
-    "name_latin" : "Rhein-Lahn-Kreis",
-    "nuts_name" : "Rhein-Lahn-Kreis",
-    "name_ascii" : "Rhein-Lahn-Kreis",
-    "name_html" : "Rhein-Lahn-Kreis"
+    "nameLatin" : "Rhein-Lahn-Kreis",
+    "nutsName" : "Rhein-Lahn-Kreis",
+    "nameAscii" : "Rhein-Lahn-Kreis",
+    "nameHtml" : "Rhein-Lahn-Kreis"
   },
   "DEB21": {
-    "name_latin" : "Trier, Kreisfreie Stadt",
-    "nuts_name" : "Trier, Kreisfreie Stadt",
-    "name_ascii" : "Trier, Kreisfreie Stadt",
-    "name_html" : "Trier, Kreisfreie Stadt"
+    "nameLatin" : "Trier, Kreisfreie Stadt",
+    "nutsName" : "Trier, Kreisfreie Stadt",
+    "nameAscii" : "Trier, Kreisfreie Stadt",
+    "nameHtml" : "Trier, Kreisfreie Stadt"
   },
   "DEB22": {
-    "name_latin" : "Bernkastel-Wittlich",
-    "nuts_name" : "Bernkastel-Wittlich",
-    "name_ascii" : "Bernkastel-Wittlich",
-    "name_html" : "Bernkastel-Wittlich"
+    "nameLatin" : "Bernkastel-Wittlich",
+    "nutsName" : "Bernkastel-Wittlich",
+    "nameAscii" : "Bernkastel-Wittlich",
+    "nameHtml" : "Bernkastel-Wittlich"
   },
   "DEB23": {
-    "name_latin" : "Eifelkreis Bitburg-Prüm",
-    "nuts_name" : "Eifelkreis Bitburg-Prüm",
-    "name_ascii" : "Eifelkreis Bitburg-Prum",
-    "name_html" : "Eifelkreis Bitburg-Pr&#x00FC;m"
+    "nameLatin" : "Eifelkreis Bitburg-Prüm",
+    "nutsName" : "Eifelkreis Bitburg-Prüm",
+    "nameAscii" : "Eifelkreis Bitburg-Prum",
+    "nameHtml" : "Eifelkreis Bitburg-Pr&#x00FC;m"
   },
   "DEB25": {
-    "name_latin" : "Trier-Saarburg",
-    "nuts_name" : "Trier-Saarburg",
-    "name_ascii" : "Trier-Saarburg",
-    "name_html" : "Trier-Saarburg"
+    "nameLatin" : "Trier-Saarburg",
+    "nutsName" : "Trier-Saarburg",
+    "nameAscii" : "Trier-Saarburg",
+    "nameHtml" : "Trier-Saarburg"
   },
   "DEB32": {
-    "name_latin" : "Kaiserslautern, Kreisfreie Stadt",
-    "nuts_name" : "Kaiserslautern, Kreisfreie Stadt",
-    "name_ascii" : "Kaiserslautern, Kreisfreie Stadt",
-    "name_html" : "Kaiserslautern, Kreisfreie Stadt"
+    "nameLatin" : "Kaiserslautern, Kreisfreie Stadt",
+    "nutsName" : "Kaiserslautern, Kreisfreie Stadt",
+    "nameAscii" : "Kaiserslautern, Kreisfreie Stadt",
+    "nameHtml" : "Kaiserslautern, Kreisfreie Stadt"
   },
   "DEB33": {
-    "name_latin" : "Landau in der Pfalz, Kreisfreie Stadt",
-    "nuts_name" : "Landau in der Pfalz, Kreisfreie Stadt",
-    "name_ascii" : "Landau in der Pfalz, Kreisfreie Stadt",
-    "name_html" : "Landau in der Pfalz, Kreisfreie Stadt"
+    "nameLatin" : "Landau in der Pfalz, Kreisfreie Stadt",
+    "nutsName" : "Landau in der Pfalz, Kreisfreie Stadt",
+    "nameAscii" : "Landau in der Pfalz, Kreisfreie Stadt",
+    "nameHtml" : "Landau in der Pfalz, Kreisfreie Stadt"
   },
   "DEB34": {
-    "name_latin" : "Ludwigshafen am Rhein, Kreisfreie Stadt",
-    "nuts_name" : "Ludwigshafen am Rhein, Kreisfreie Stadt",
-    "name_ascii" : "Ludwigshafen am Rhein, Kreisfreie Stadt",
-    "name_html" : "Ludwigshafen am Rhein, Kreisfreie Stadt"
+    "nameLatin" : "Ludwigshafen am Rhein, Kreisfreie Stadt",
+    "nutsName" : "Ludwigshafen am Rhein, Kreisfreie Stadt",
+    "nameAscii" : "Ludwigshafen am Rhein, Kreisfreie Stadt",
+    "nameHtml" : "Ludwigshafen am Rhein, Kreisfreie Stadt"
   },
   "DEB35": {
-    "name_latin" : "Mainz, Kreisfreie Stadt",
-    "nuts_name" : "Mainz, Kreisfreie Stadt",
-    "name_ascii" : "Mainz, Kreisfreie Stadt",
-    "name_html" : "Mainz, Kreisfreie Stadt"
+    "nameLatin" : "Mainz, Kreisfreie Stadt",
+    "nutsName" : "Mainz, Kreisfreie Stadt",
+    "nameAscii" : "Mainz, Kreisfreie Stadt",
+    "nameHtml" : "Mainz, Kreisfreie Stadt"
   },
   "DEB37": {
-    "name_latin" : "Pirmasens, Kreisfreie Stadt",
-    "nuts_name" : "Pirmasens, Kreisfreie Stadt",
-    "name_ascii" : "Pirmasens, Kreisfreie Stadt",
-    "name_html" : "Pirmasens, Kreisfreie Stadt"
+    "nameLatin" : "Pirmasens, Kreisfreie Stadt",
+    "nutsName" : "Pirmasens, Kreisfreie Stadt",
+    "nameAscii" : "Pirmasens, Kreisfreie Stadt",
+    "nameHtml" : "Pirmasens, Kreisfreie Stadt"
   },
   "DEB38": {
-    "name_latin" : "Speyer, Kreisfreie Stadt",
-    "nuts_name" : "Speyer, Kreisfreie Stadt",
-    "name_ascii" : "Speyer, Kreisfreie Stadt",
-    "name_html" : "Speyer, Kreisfreie Stadt"
+    "nameLatin" : "Speyer, Kreisfreie Stadt",
+    "nutsName" : "Speyer, Kreisfreie Stadt",
+    "nameAscii" : "Speyer, Kreisfreie Stadt",
+    "nameHtml" : "Speyer, Kreisfreie Stadt"
   },
   "DEB39": {
-    "name_latin" : "Worms, Kreisfreie Stadt",
-    "nuts_name" : "Worms, Kreisfreie Stadt",
-    "name_ascii" : "Worms, Kreisfreie Stadt",
-    "name_html" : "Worms, Kreisfreie Stadt"
+    "nameLatin" : "Worms, Kreisfreie Stadt",
+    "nutsName" : "Worms, Kreisfreie Stadt",
+    "nameAscii" : "Worms, Kreisfreie Stadt",
+    "nameHtml" : "Worms, Kreisfreie Stadt"
   },
   "DEB3A": {
-    "name_latin" : "Zweibrücken, Kreisfreie Stadt",
-    "nuts_name" : "Zweibrücken, Kreisfreie Stadt",
-    "name_ascii" : "Zweibrucken, Kreisfreie Stadt",
-    "name_html" : "Zweibr&#x00FC;cken, Kreisfreie Stadt"
+    "nameLatin" : "Zweibrücken, Kreisfreie Stadt",
+    "nutsName" : "Zweibrücken, Kreisfreie Stadt",
+    "nameAscii" : "Zweibrucken, Kreisfreie Stadt",
+    "nameHtml" : "Zweibr&#x00FC;cken, Kreisfreie Stadt"
   },
   "DEB3B": {
-    "name_latin" : "Alzey-Worms",
-    "nuts_name" : "Alzey-Worms",
-    "name_ascii" : "Alzey-Worms",
-    "name_html" : "Alzey-Worms"
+    "nameLatin" : "Alzey-Worms",
+    "nutsName" : "Alzey-Worms",
+    "nameAscii" : "Alzey-Worms",
+    "nameHtml" : "Alzey-Worms"
   },
   "DEB3C": {
-    "name_latin" : "Bad Dürkheim",
-    "nuts_name" : "Bad Dürkheim",
-    "name_ascii" : "Bad Durkheim",
-    "name_html" : "Bad D&#x00FC;rkheim"
+    "nameLatin" : "Bad Dürkheim",
+    "nutsName" : "Bad Dürkheim",
+    "nameAscii" : "Bad Durkheim",
+    "nameHtml" : "Bad D&#x00FC;rkheim"
   },
   "DEB3D": {
-    "name_latin" : "Donnersbergkreis",
-    "nuts_name" : "Donnersbergkreis",
-    "name_ascii" : "Donnersbergkreis",
-    "name_html" : "Donnersbergkreis"
+    "nameLatin" : "Donnersbergkreis",
+    "nutsName" : "Donnersbergkreis",
+    "nameAscii" : "Donnersbergkreis",
+    "nameHtml" : "Donnersbergkreis"
   },
   "DEB3E": {
-    "name_latin" : "Germersheim",
-    "nuts_name" : "Germersheim",
-    "name_ascii" : "Germersheim",
-    "name_html" : "Germersheim"
+    "nameLatin" : "Germersheim",
+    "nutsName" : "Germersheim",
+    "nameAscii" : "Germersheim",
+    "nameHtml" : "Germersheim"
   },
   "DEB3F": {
-    "name_latin" : "Kaiserslautern, Landkreis",
-    "nuts_name" : "Kaiserslautern, Landkreis",
-    "name_ascii" : "Kaiserslautern, Landkreis",
-    "name_html" : "Kaiserslautern, Landkreis"
+    "nameLatin" : "Kaiserslautern, Landkreis",
+    "nutsName" : "Kaiserslautern, Landkreis",
+    "nameAscii" : "Kaiserslautern, Landkreis",
+    "nameHtml" : "Kaiserslautern, Landkreis"
   },
   "DEB3G": {
-    "name_latin" : "Kusel",
-    "nuts_name" : "Kusel",
-    "name_ascii" : "Kusel",
-    "name_html" : "Kusel"
+    "nameLatin" : "Kusel",
+    "nutsName" : "Kusel",
+    "nameAscii" : "Kusel",
+    "nameHtml" : "Kusel"
   },
   "DEB3H": {
-    "name_latin" : "Südliche Weinstraße",
-    "nuts_name" : "Südliche Weinstraße",
-    "name_ascii" : "Sudliche Weinstrasse",
-    "name_html" : "S&#x00FC;dliche Weinstra&#x00DF;e"
+    "nameLatin" : "Südliche Weinstraße",
+    "nutsName" : "Südliche Weinstraße",
+    "nameAscii" : "Sudliche Weinstrasse",
+    "nameHtml" : "S&#x00FC;dliche Weinstra&#x00DF;e"
   },
   "DEB3J": {
-    "name_latin" : "Mainz-Bingen",
-    "nuts_name" : "Mainz-Bingen",
-    "name_ascii" : "Mainz-Bingen",
-    "name_html" : "Mainz-Bingen"
+    "nameLatin" : "Mainz-Bingen",
+    "nutsName" : "Mainz-Bingen",
+    "nameAscii" : "Mainz-Bingen",
+    "nameHtml" : "Mainz-Bingen"
   },
   "DEB3K": {
-    "name_latin" : "Südwestpfalz",
-    "nuts_name" : "Südwestpfalz",
-    "name_ascii" : "Sudwestpfalz",
-    "name_html" : "S&#x00FC;dwestpfalz"
+    "nameLatin" : "Südwestpfalz",
+    "nutsName" : "Südwestpfalz",
+    "nameAscii" : "Sudwestpfalz",
+    "nameHtml" : "S&#x00FC;dwestpfalz"
   },
   "DEC02": {
-    "name_latin" : "Merzig-Wadern",
-    "nuts_name" : "Merzig-Wadern",
-    "name_ascii" : "Merzig-Wadern",
-    "name_html" : "Merzig-Wadern"
+    "nameLatin" : "Merzig-Wadern",
+    "nutsName" : "Merzig-Wadern",
+    "nameAscii" : "Merzig-Wadern",
+    "nameHtml" : "Merzig-Wadern"
   },
   "DEC03": {
-    "name_latin" : "Neunkirchen",
-    "nuts_name" : "Neunkirchen",
-    "name_ascii" : "Neunkirchen",
-    "name_html" : "Neunkirchen"
+    "nameLatin" : "Neunkirchen",
+    "nutsName" : "Neunkirchen",
+    "nameAscii" : "Neunkirchen",
+    "nameHtml" : "Neunkirchen"
   },
   "DEC04": {
-    "name_latin" : "Saarlouis",
-    "nuts_name" : "Saarlouis",
-    "name_ascii" : "Saarlouis",
-    "name_html" : "Saarlouis"
+    "nameLatin" : "Saarlouis",
+    "nutsName" : "Saarlouis",
+    "nameAscii" : "Saarlouis",
+    "nameHtml" : "Saarlouis"
   },
   "DEC05": {
-    "name_latin" : "Saarpfalz-Kreis",
-    "nuts_name" : "Saarpfalz-Kreis",
-    "name_ascii" : "Saarpfalz-Kreis",
-    "name_html" : "Saarpfalz-Kreis"
+    "nameLatin" : "Saarpfalz-Kreis",
+    "nutsName" : "Saarpfalz-Kreis",
+    "nameAscii" : "Saarpfalz-Kreis",
+    "nameHtml" : "Saarpfalz-Kreis"
   },
   "DEC06": {
-    "name_latin" : "St. Wendel",
-    "nuts_name" : "St. Wendel",
-    "name_ascii" : "St. Wendel",
-    "name_html" : "St. Wendel"
+    "nameLatin" : "St. Wendel",
+    "nutsName" : "St. Wendel",
+    "nameAscii" : "St. Wendel",
+    "nameHtml" : "St. Wendel"
   },
   "DED21": {
-    "name_latin" : "Dresden, Kreisfreie Stadt",
-    "nuts_name" : "Dresden, Kreisfreie Stadt",
-    "name_ascii" : "Dresden, Kreisfreie Stadt",
-    "name_html" : "Dresden, Kreisfreie Stadt"
+    "nameLatin" : "Dresden, Kreisfreie Stadt",
+    "nutsName" : "Dresden, Kreisfreie Stadt",
+    "nameAscii" : "Dresden, Kreisfreie Stadt",
+    "nameHtml" : "Dresden, Kreisfreie Stadt"
   },
   "DED2C": {
-    "name_latin" : "Bautzen",
-    "nuts_name" : "Bautzen",
-    "name_ascii" : "Bautzen",
-    "name_html" : "Bautzen"
+    "nameLatin" : "Bautzen",
+    "nutsName" : "Bautzen",
+    "nameAscii" : "Bautzen",
+    "nameHtml" : "Bautzen"
   },
   "DED2D": {
-    "name_latin" : "Görlitz",
-    "nuts_name" : "Görlitz",
-    "name_ascii" : "Gorlitz",
-    "name_html" : "G&#x00F6;rlitz"
+    "nameLatin" : "Görlitz",
+    "nutsName" : "Görlitz",
+    "nameAscii" : "Gorlitz",
+    "nameHtml" : "G&#x00F6;rlitz"
   },
   "DED2E": {
-    "name_latin" : "Meißen",
-    "nuts_name" : "Meißen",
-    "name_ascii" : "Meissen",
-    "name_html" : "Mei&#x00DF;en"
+    "nameLatin" : "Meißen",
+    "nutsName" : "Meißen",
+    "nameAscii" : "Meissen",
+    "nameHtml" : "Mei&#x00DF;en"
   },
   "DED41": {
-    "name_latin" : "Chemnitz, Kreisfreie Stadt",
-    "nuts_name" : "Chemnitz, Kreisfreie Stadt",
-    "name_ascii" : "Chemnitz, Kreisfreie Stadt",
-    "name_html" : "Chemnitz, Kreisfreie Stadt"
+    "nameLatin" : "Chemnitz, Kreisfreie Stadt",
+    "nutsName" : "Chemnitz, Kreisfreie Stadt",
+    "nameAscii" : "Chemnitz, Kreisfreie Stadt",
+    "nameHtml" : "Chemnitz, Kreisfreie Stadt"
   },
   "DED42": {
-    "name_latin" : "Erzgebirgskreis",
-    "nuts_name" : "Erzgebirgskreis",
-    "name_ascii" : "Erzgebirgskreis",
-    "name_html" : "Erzgebirgskreis"
+    "nameLatin" : "Erzgebirgskreis",
+    "nutsName" : "Erzgebirgskreis",
+    "nameAscii" : "Erzgebirgskreis",
+    "nameHtml" : "Erzgebirgskreis"
   },
   "DED43": {
-    "name_latin" : "Mittelsachsen",
-    "nuts_name" : "Mittelsachsen",
-    "name_ascii" : "Mittelsachsen",
-    "name_html" : "Mittelsachsen"
+    "nameLatin" : "Mittelsachsen",
+    "nutsName" : "Mittelsachsen",
+    "nameAscii" : "Mittelsachsen",
+    "nameHtml" : "Mittelsachsen"
   },
   "DED44": {
-    "name_latin" : "Vogtlandkreis",
-    "nuts_name" : "Vogtlandkreis",
-    "name_ascii" : "Vogtlandkreis",
-    "name_html" : "Vogtlandkreis"
+    "nameLatin" : "Vogtlandkreis",
+    "nutsName" : "Vogtlandkreis",
+    "nameAscii" : "Vogtlandkreis",
+    "nameHtml" : "Vogtlandkreis"
   },
   "DED45": {
-    "name_latin" : "Zwickau",
-    "nuts_name" : "Zwickau",
-    "name_ascii" : "Zwickau",
-    "name_html" : "Zwickau"
+    "nameLatin" : "Zwickau",
+    "nutsName" : "Zwickau",
+    "nameAscii" : "Zwickau",
+    "nameHtml" : "Zwickau"
   },
   "DED51": {
-    "name_latin" : "Leipzig, Kreisfreie Stadt",
-    "nuts_name" : "Leipzig, Kreisfreie Stadt",
-    "name_ascii" : "Leipzig, Kreisfreie Stadt",
-    "name_html" : "Leipzig, Kreisfreie Stadt"
+    "nameLatin" : "Leipzig, Kreisfreie Stadt",
+    "nutsName" : "Leipzig, Kreisfreie Stadt",
+    "nameAscii" : "Leipzig, Kreisfreie Stadt",
+    "nameHtml" : "Leipzig, Kreisfreie Stadt"
   },
   "DED52": {
-    "name_latin" : "Leipzig",
-    "nuts_name" : "Leipzig",
-    "name_ascii" : "Leipzig",
-    "name_html" : "Leipzig"
+    "nameLatin" : "Leipzig",
+    "nutsName" : "Leipzig",
+    "nameAscii" : "Leipzig",
+    "nameHtml" : "Leipzig"
   },
   "DED53": {
-    "name_latin" : "Nordsachsen",
-    "nuts_name" : "Nordsachsen",
-    "name_ascii" : "Nordsachsen",
-    "name_html" : "Nordsachsen"
+    "nameLatin" : "Nordsachsen",
+    "nutsName" : "Nordsachsen",
+    "nameAscii" : "Nordsachsen",
+    "nameHtml" : "Nordsachsen"
   },
   "DEE01": {
-    "name_latin" : "Dessau-Roßlau, Kreisfreie Stadt",
-    "nuts_name" : "Dessau-Roßlau, Kreisfreie Stadt",
-    "name_ascii" : "Dessau-Rosslau, Kreisfreie Stadt",
-    "name_html" : "Dessau-Ro&#x00DF;lau, Kreisfreie Stadt"
+    "nameLatin" : "Dessau-Roßlau, Kreisfreie Stadt",
+    "nutsName" : "Dessau-Roßlau, Kreisfreie Stadt",
+    "nameAscii" : "Dessau-Rosslau, Kreisfreie Stadt",
+    "nameHtml" : "Dessau-Ro&#x00DF;lau, Kreisfreie Stadt"
   },
   "DEE02": {
-    "name_latin" : "Halle (Saale), Kreisfreie Stadt",
-    "nuts_name" : "Halle (Saale), Kreisfreie Stadt",
-    "name_ascii" : "Halle (Saale), Kreisfreie Stadt",
-    "name_html" : "Halle (Saale), Kreisfreie Stadt"
+    "nameLatin" : "Halle (Saale), Kreisfreie Stadt",
+    "nutsName" : "Halle (Saale), Kreisfreie Stadt",
+    "nameAscii" : "Halle (Saale), Kreisfreie Stadt",
+    "nameHtml" : "Halle (Saale), Kreisfreie Stadt"
   },
   "DEE04": {
-    "name_latin" : "Altmarkkreis Salzwedel",
-    "nuts_name" : "Altmarkkreis Salzwedel",
-    "name_ascii" : "Altmarkkreis Salzwedel",
-    "name_html" : "Altmarkkreis Salzwedel"
+    "nameLatin" : "Altmarkkreis Salzwedel",
+    "nutsName" : "Altmarkkreis Salzwedel",
+    "nameAscii" : "Altmarkkreis Salzwedel",
+    "nameHtml" : "Altmarkkreis Salzwedel"
   },
   "DEE05": {
-    "name_latin" : "Anhalt-Bitterfeld",
-    "nuts_name" : "Anhalt-Bitterfeld",
-    "name_ascii" : "Anhalt-Bitterfeld",
-    "name_html" : "Anhalt-Bitterfeld"
+    "nameLatin" : "Anhalt-Bitterfeld",
+    "nutsName" : "Anhalt-Bitterfeld",
+    "nameAscii" : "Anhalt-Bitterfeld",
+    "nameHtml" : "Anhalt-Bitterfeld"
   },
   "DEE06": {
-    "name_latin" : "Jerichower Land",
-    "nuts_name" : "Jerichower Land",
-    "name_ascii" : "Jerichower Land",
-    "name_html" : "Jerichower Land"
+    "nameLatin" : "Jerichower Land",
+    "nutsName" : "Jerichower Land",
+    "nameAscii" : "Jerichower Land",
+    "nameHtml" : "Jerichower Land"
   },
   "DEE07": {
-    "name_latin" : "Börde",
-    "nuts_name" : "Börde",
-    "name_ascii" : "Borde",
-    "name_html" : "B&#x00F6;rde"
+    "nameLatin" : "Börde",
+    "nutsName" : "Börde",
+    "nameAscii" : "Borde",
+    "nameHtml" : "B&#x00F6;rde"
   },
   "DEE08": {
-    "name_latin" : "Burgenland (DE)",
-    "nuts_name" : "Burgenland (DE)",
-    "name_ascii" : "Burgenland (DE)",
-    "name_html" : "Burgenland (DE)"
+    "nameLatin" : "Burgenland (DE)",
+    "nutsName" : "Burgenland (DE)",
+    "nameAscii" : "Burgenland (DE)",
+    "nameHtml" : "Burgenland (DE)"
   },
   "DEE09": {
-    "name_latin" : "Harz",
-    "nuts_name" : "Harz",
-    "name_ascii" : "Harz",
-    "name_html" : "Harz"
+    "nameLatin" : "Harz",
+    "nutsName" : "Harz",
+    "nameAscii" : "Harz",
+    "nameHtml" : "Harz"
   },
   "DEE0A": {
-    "name_latin" : "Mansfeld-Südharz",
-    "nuts_name" : "Mansfeld-Südharz",
-    "name_ascii" : "Mansfeld-Sudharz",
-    "name_html" : "Mansfeld-S&#x00FC;dharz"
+    "nameLatin" : "Mansfeld-Südharz",
+    "nutsName" : "Mansfeld-Südharz",
+    "nameAscii" : "Mansfeld-Sudharz",
+    "nameHtml" : "Mansfeld-S&#x00FC;dharz"
   },
   "DEE0B": {
-    "name_latin" : "Saalekreis",
-    "nuts_name" : "Saalekreis",
-    "name_ascii" : "Saalekreis",
-    "name_html" : "Saalekreis"
+    "nameLatin" : "Saalekreis",
+    "nutsName" : "Saalekreis",
+    "nameAscii" : "Saalekreis",
+    "nameHtml" : "Saalekreis"
   },
   "DEE0C": {
-    "name_latin" : "Salzlandkreis",
-    "nuts_name" : "Salzlandkreis",
-    "name_ascii" : "Salzlandkreis",
-    "name_html" : "Salzlandkreis"
+    "nameLatin" : "Salzlandkreis",
+    "nutsName" : "Salzlandkreis",
+    "nameAscii" : "Salzlandkreis",
+    "nameHtml" : "Salzlandkreis"
   },
   "DEE0D": {
-    "name_latin" : "Stendal",
-    "nuts_name" : "Stendal",
-    "name_ascii" : "Stendal",
-    "name_html" : "Stendal"
+    "nameLatin" : "Stendal",
+    "nutsName" : "Stendal",
+    "nameAscii" : "Stendal",
+    "nameHtml" : "Stendal"
   },
   "DEE0E": {
-    "name_latin" : "Wittenberg",
-    "nuts_name" : "Wittenberg",
-    "name_ascii" : "Wittenberg",
-    "name_html" : "Wittenberg"
+    "nameLatin" : "Wittenberg",
+    "nutsName" : "Wittenberg",
+    "nameAscii" : "Wittenberg",
+    "nameHtml" : "Wittenberg"
   },
   "DEF01": {
-    "name_latin" : "Flensburg, Kreisfreie Stadt",
-    "nuts_name" : "Flensburg, Kreisfreie Stadt",
-    "name_ascii" : "Flensburg, Kreisfreie Stadt",
-    "name_html" : "Flensburg, Kreisfreie Stadt"
+    "nameLatin" : "Flensburg, Kreisfreie Stadt",
+    "nutsName" : "Flensburg, Kreisfreie Stadt",
+    "nameAscii" : "Flensburg, Kreisfreie Stadt",
+    "nameHtml" : "Flensburg, Kreisfreie Stadt"
   },
   "DEF02": {
-    "name_latin" : "Kiel, Kreisfreie Stadt",
-    "nuts_name" : "Kiel, Kreisfreie Stadt",
-    "name_ascii" : "Kiel, Kreisfreie Stadt",
-    "name_html" : "Kiel, Kreisfreie Stadt"
+    "nameLatin" : "Kiel, Kreisfreie Stadt",
+    "nutsName" : "Kiel, Kreisfreie Stadt",
+    "nameAscii" : "Kiel, Kreisfreie Stadt",
+    "nameHtml" : "Kiel, Kreisfreie Stadt"
   },
   "DEF03": {
-    "name_latin" : "Lübeck, Kreisfreie Stadt",
-    "nuts_name" : "Lübeck, Kreisfreie Stadt",
-    "name_ascii" : "Lubeck, Kreisfreie Stadt",
-    "name_html" : "L&#x00FC;beck, Kreisfreie Stadt"
+    "nameLatin" : "Lübeck, Kreisfreie Stadt",
+    "nutsName" : "Lübeck, Kreisfreie Stadt",
+    "nameAscii" : "Lubeck, Kreisfreie Stadt",
+    "nameHtml" : "L&#x00FC;beck, Kreisfreie Stadt"
   },
   "DEF04": {
-    "name_latin" : "Neumünster, Kreisfreie Stadt",
-    "nuts_name" : "Neumünster, Kreisfreie Stadt",
-    "name_ascii" : "Neumunster, Kreisfreie Stadt",
-    "name_html" : "Neum&#x00FC;nster, Kreisfreie Stadt"
+    "nameLatin" : "Neumünster, Kreisfreie Stadt",
+    "nutsName" : "Neumünster, Kreisfreie Stadt",
+    "nameAscii" : "Neumunster, Kreisfreie Stadt",
+    "nameHtml" : "Neum&#x00FC;nster, Kreisfreie Stadt"
   },
   "DEF05": {
-    "name_latin" : "Dithmarschen",
-    "nuts_name" : "Dithmarschen",
-    "name_ascii" : "Dithmarschen",
-    "name_html" : "Dithmarschen"
+    "nameLatin" : "Dithmarschen",
+    "nutsName" : "Dithmarschen",
+    "nameAscii" : "Dithmarschen",
+    "nameHtml" : "Dithmarschen"
   },
   "DEF06": {
-    "name_latin" : "Herzogtum Lauenburg",
-    "nuts_name" : "Herzogtum Lauenburg",
-    "name_ascii" : "Herzogtum Lauenburg",
-    "name_html" : "Herzogtum Lauenburg"
+    "nameLatin" : "Herzogtum Lauenburg",
+    "nutsName" : "Herzogtum Lauenburg",
+    "nameAscii" : "Herzogtum Lauenburg",
+    "nameHtml" : "Herzogtum Lauenburg"
   },
   "DEF07": {
-    "name_latin" : "Nordfriesland",
-    "nuts_name" : "Nordfriesland",
-    "name_ascii" : "Nordfriesland",
-    "name_html" : "Nordfriesland"
+    "nameLatin" : "Nordfriesland",
+    "nutsName" : "Nordfriesland",
+    "nameAscii" : "Nordfriesland",
+    "nameHtml" : "Nordfriesland"
   },
   "DEF08": {
-    "name_latin" : "Ostholstein",
-    "nuts_name" : "Ostholstein",
-    "name_ascii" : "Ostholstein",
-    "name_html" : "Ostholstein"
+    "nameLatin" : "Ostholstein",
+    "nutsName" : "Ostholstein",
+    "nameAscii" : "Ostholstein",
+    "nameHtml" : "Ostholstein"
   },
   "DEF09": {
-    "name_latin" : "Pinneberg",
-    "nuts_name" : "Pinneberg",
-    "name_ascii" : "Pinneberg",
-    "name_html" : "Pinneberg"
+    "nameLatin" : "Pinneberg",
+    "nutsName" : "Pinneberg",
+    "nameAscii" : "Pinneberg",
+    "nameHtml" : "Pinneberg"
   },
   "DEF0B": {
-    "name_latin" : "Rendsburg-Eckernförde",
-    "nuts_name" : "Rendsburg-Eckernförde",
-    "name_ascii" : "Rendsburg-Eckernforde",
-    "name_html" : "Rendsburg-Eckernf&#x00F6;rde"
+    "nameLatin" : "Rendsburg-Eckernförde",
+    "nutsName" : "Rendsburg-Eckernförde",
+    "nameAscii" : "Rendsburg-Eckernforde",
+    "nameHtml" : "Rendsburg-Eckernf&#x00F6;rde"
   },
   "DEF0D": {
-    "name_latin" : "Segeberg",
-    "nuts_name" : "Segeberg",
-    "name_ascii" : "Segeberg",
-    "name_html" : "Segeberg"
+    "nameLatin" : "Segeberg",
+    "nutsName" : "Segeberg",
+    "nameAscii" : "Segeberg",
+    "nameHtml" : "Segeberg"
   },
   "DEF0E": {
-    "name_latin" : "Steinburg",
-    "nuts_name" : "Steinburg",
-    "name_ascii" : "Steinburg",
-    "name_html" : "Steinburg"
+    "nameLatin" : "Steinburg",
+    "nutsName" : "Steinburg",
+    "nameAscii" : "Steinburg",
+    "nameHtml" : "Steinburg"
   },
   "UKE45": {
-    "name_latin" : "Wakefield",
-    "nuts_name" : "Wakefield",
-    "name_ascii" : "Wakefield",
-    "name_html" : "Wakefield"
+    "nameLatin" : "Wakefield",
+    "nutsName" : "Wakefield",
+    "nameAscii" : "Wakefield",
+    "nameHtml" : "Wakefield"
   },
   "UKF11": {
-    "name_latin" : "Derby",
-    "nuts_name" : "Derby",
-    "name_ascii" : "Derby",
-    "name_html" : "Derby"
+    "nameLatin" : "Derby",
+    "nutsName" : "Derby",
+    "nameAscii" : "Derby",
+    "nameHtml" : "Derby"
   },
   "UKF12": {
-    "name_latin" : "East Derbyshire",
-    "nuts_name" : "East Derbyshire",
-    "name_ascii" : "East Derbyshire",
-    "name_html" : "East Derbyshire"
+    "nameLatin" : "East Derbyshire",
+    "nutsName" : "East Derbyshire",
+    "nameAscii" : "East Derbyshire",
+    "nameHtml" : "East Derbyshire"
   },
   "UKF13": {
-    "name_latin" : "South and West Derbyshire",
-    "nuts_name" : "South and West Derbyshire",
-    "name_ascii" : "South and West Derbyshire",
-    "name_html" : "South and West Derbyshire"
+    "nameLatin" : "South and West Derbyshire",
+    "nutsName" : "South and West Derbyshire",
+    "nameAscii" : "South and West Derbyshire",
+    "nameHtml" : "South and West Derbyshire"
   },
   "UKF14": {
-    "name_latin" : "Nottingham",
-    "nuts_name" : "Nottingham",
-    "name_ascii" : "Nottingham",
-    "name_html" : "Nottingham"
+    "nameLatin" : "Nottingham",
+    "nutsName" : "Nottingham",
+    "nameAscii" : "Nottingham",
+    "nameHtml" : "Nottingham"
   },
   "UKF16": {
-    "name_latin" : "South Nottinghamshire",
-    "nuts_name" : "South Nottinghamshire",
-    "name_ascii" : "South Nottinghamshire",
-    "name_html" : "South Nottinghamshire"
+    "nameLatin" : "South Nottinghamshire",
+    "nutsName" : "South Nottinghamshire",
+    "nameAscii" : "South Nottinghamshire",
+    "nameHtml" : "South Nottinghamshire"
   },
   "UKF21": {
-    "name_latin" : "Leicester",
-    "nuts_name" : "Leicester",
-    "name_ascii" : "Leicester",
-    "name_html" : "Leicester"
+    "nameLatin" : "Leicester",
+    "nutsName" : "Leicester",
+    "nameAscii" : "Leicester",
+    "nameHtml" : "Leicester"
   },
   "UKF22": {
-    "name_latin" : "Leicestershire CC and Rutland",
-    "nuts_name" : "Leicestershire CC and Rutland",
-    "name_ascii" : "Leicestershire CC and Rutland",
-    "name_html" : "Leicestershire CC and Rutland"
+    "nameLatin" : "Leicestershire CC and Rutland",
+    "nutsName" : "Leicestershire CC and Rutland",
+    "nameAscii" : "Leicestershire CC and Rutland",
+    "nameHtml" : "Leicestershire CC and Rutland"
   },
   "UKF25": {
-    "name_latin" : "North Northamptonshire",
-    "nuts_name" : "North Northamptonshire",
-    "name_ascii" : "North Northamptonshire",
-    "name_html" : "North Northamptonshire"
+    "nameLatin" : "North Northamptonshire",
+    "nutsName" : "North Northamptonshire",
+    "nameAscii" : "North Northamptonshire",
+    "nameHtml" : "North Northamptonshire"
   },
   "UKF30": {
-    "name_latin" : "Lincolnshire",
-    "nuts_name" : "Lincolnshire",
-    "name_ascii" : "Lincolnshire",
-    "name_html" : "Lincolnshire"
+    "nameLatin" : "Lincolnshire",
+    "nutsName" : "Lincolnshire",
+    "nameAscii" : "Lincolnshire",
+    "nameHtml" : "Lincolnshire"
   },
   "UKG11": {
-    "name_latin" : "Herefordshire, County of",
-    "nuts_name" : "Herefordshire, County of",
-    "name_ascii" : "Herefordshire, County Of",
-    "name_html" : "Herefordshire, County Of"
+    "nameLatin" : "Herefordshire, County of",
+    "nutsName" : "Herefordshire, County of",
+    "nameAscii" : "Herefordshire, County Of",
+    "nameHtml" : "Herefordshire, County Of"
   },
   "UKG12": {
-    "name_latin" : "Worcestershire",
-    "nuts_name" : "Worcestershire",
-    "name_ascii" : "Worcestershire",
-    "name_html" : "Worcestershire"
+    "nameLatin" : "Worcestershire",
+    "nutsName" : "Worcestershire",
+    "nameAscii" : "Worcestershire",
+    "nameHtml" : "Worcestershire"
   },
   "UKG13": {
-    "name_latin" : "Warwickshire",
-    "nuts_name" : "Warwickshire",
-    "name_ascii" : "Warwickshire",
-    "name_html" : "Warwickshire"
+    "nameLatin" : "Warwickshire",
+    "nutsName" : "Warwickshire",
+    "nameAscii" : "Warwickshire",
+    "nameHtml" : "Warwickshire"
   },
   "UKG21": {
-    "name_latin" : "Telford and Wrekin",
-    "nuts_name" : "Telford and Wrekin",
-    "name_ascii" : "Telford and Wrekin",
-    "name_html" : "Telford and Wrekin"
+    "nameLatin" : "Telford and Wrekin",
+    "nutsName" : "Telford and Wrekin",
+    "nameAscii" : "Telford and Wrekin",
+    "nameHtml" : "Telford and Wrekin"
   },
   "UKG22": {
-    "name_latin" : "Shropshire CC",
-    "nuts_name" : "Shropshire CC",
-    "name_ascii" : "Shropshire CC",
-    "name_html" : "Shropshire CC"
+    "nameLatin" : "Shropshire CC",
+    "nutsName" : "Shropshire CC",
+    "nameAscii" : "Shropshire CC",
+    "nameHtml" : "Shropshire CC"
   },
   "UKG23": {
-    "name_latin" : "Stoke-on-Trent",
-    "nuts_name" : "Stoke-on-Trent",
-    "name_ascii" : "Stoke-on-Trent",
-    "name_html" : "Stoke-on-Trent"
+    "nameLatin" : "Stoke-on-Trent",
+    "nutsName" : "Stoke-on-Trent",
+    "nameAscii" : "Stoke-on-Trent",
+    "nameHtml" : "Stoke-on-Trent"
   },
   "UKG24": {
-    "name_latin" : "Staffordshire CC",
-    "nuts_name" : "Staffordshire CC",
-    "name_ascii" : "Staffordshire CC",
-    "name_html" : "Staffordshire CC"
+    "nameLatin" : "Staffordshire CC",
+    "nutsName" : "Staffordshire CC",
+    "nameAscii" : "Staffordshire CC",
+    "nameHtml" : "Staffordshire CC"
   },
   "UKG31": {
-    "name_latin" : "Birmingham",
-    "nuts_name" : "Birmingham",
-    "name_ascii" : "Birmingham",
-    "name_html" : "Birmingham"
+    "nameLatin" : "Birmingham",
+    "nutsName" : "Birmingham",
+    "nameAscii" : "Birmingham",
+    "nameHtml" : "Birmingham"
   },
   "UKG32": {
-    "name_latin" : "Solihull",
-    "nuts_name" : "Solihull",
-    "name_ascii" : "Solihull",
-    "name_html" : "Solihull"
+    "nameLatin" : "Solihull",
+    "nutsName" : "Solihull",
+    "nameAscii" : "Solihull",
+    "nameHtml" : "Solihull"
   },
   "UKG33": {
-    "name_latin" : "Coventry",
-    "nuts_name" : "Coventry",
-    "name_ascii" : "Coventry",
-    "name_html" : "Coventry"
+    "nameLatin" : "Coventry",
+    "nutsName" : "Coventry",
+    "nameAscii" : "Coventry",
+    "nameHtml" : "Coventry"
   },
   "UKG36": {
-    "name_latin" : "Dudley",
-    "nuts_name" : "Dudley",
-    "name_ascii" : "Dudley",
-    "name_html" : "Dudley"
+    "nameLatin" : "Dudley",
+    "nutsName" : "Dudley",
+    "nameAscii" : "Dudley",
+    "nameHtml" : "Dudley"
   },
   "UKG37": {
-    "name_latin" : "Sandwell",
-    "nuts_name" : "Sandwell",
-    "name_ascii" : "Sandwell",
-    "name_html" : "Sandwell"
+    "nameLatin" : "Sandwell",
+    "nutsName" : "Sandwell",
+    "nameAscii" : "Sandwell",
+    "nameHtml" : "Sandwell"
   },
   "UKG38": {
-    "name_latin" : "Walsall",
-    "nuts_name" : "Walsall",
-    "name_ascii" : "Walsall",
-    "name_html" : "Walsall"
+    "nameLatin" : "Walsall",
+    "nutsName" : "Walsall",
+    "nameAscii" : "Walsall",
+    "nameHtml" : "Walsall"
   },
   "UKH11": {
-    "name_latin" : "Peterborough",
-    "nuts_name" : "Peterborough",
-    "name_ascii" : "Peterborough",
-    "name_html" : "Peterborough"
+    "nameLatin" : "Peterborough",
+    "nutsName" : "Peterborough",
+    "nameAscii" : "Peterborough",
+    "nameHtml" : "Peterborough"
   },
   "UKH12": {
-    "name_latin" : "Cambridgeshire CC",
-    "nuts_name" : "Cambridgeshire CC",
-    "name_ascii" : "Cambridgeshire CC",
-    "name_html" : "Cambridgeshire CC"
+    "nameLatin" : "Cambridgeshire CC",
+    "nutsName" : "Cambridgeshire CC",
+    "nameAscii" : "Cambridgeshire CC",
+    "nameHtml" : "Cambridgeshire CC"
   },
   "UKH14": {
-    "name_latin" : "Suffolk",
-    "nuts_name" : "Suffolk",
-    "name_ascii" : "Suffolk",
-    "name_html" : "Suffolk"
+    "nameLatin" : "Suffolk",
+    "nutsName" : "Suffolk",
+    "nameAscii" : "Suffolk",
+    "nameHtml" : "Suffolk"
   },
   "UKH16": {
-    "name_latin" : "North & West Norfolk",
-    "nuts_name" : "North & West Norfolk",
-    "name_ascii" : "North & West Norfolk",
-    "name_html" : "North & West Norfolk"
+    "nameLatin" : "North & West Norfolk",
+    "nutsName" : "North & West Norfolk",
+    "nameAscii" : "North & West Norfolk",
+    "nameHtml" : "North & West Norfolk"
   },
   "UKH17": {
-    "name_latin" : "Breckland & South Norfolk",
-    "nuts_name" : "Breckland & South Norfolk",
-    "name_ascii" : "Breckland & South Norfolk",
-    "name_html" : "Breckland & South Norfolk"
+    "nameLatin" : "Breckland & South Norfolk",
+    "nutsName" : "Breckland & South Norfolk",
+    "nameAscii" : "Breckland & South Norfolk",
+    "nameHtml" : "Breckland & South Norfolk"
   },
   "UKH21": {
-    "name_latin" : "Luton",
-    "nuts_name" : "Luton",
-    "name_ascii" : "Luton",
-    "name_html" : "Luton"
+    "nameLatin" : "Luton",
+    "nutsName" : "Luton",
+    "nameAscii" : "Luton",
+    "nameHtml" : "Luton"
   },
   "UKH23": {
-    "name_latin" : "Hertfordshire",
-    "nuts_name" : "Hertfordshire",
-    "name_ascii" : "Hertfordshire",
-    "name_html" : "Hertfordshire"
+    "nameLatin" : "Hertfordshire",
+    "nutsName" : "Hertfordshire",
+    "nameAscii" : "Hertfordshire",
+    "nameHtml" : "Hertfordshire"
   },
   "UKH25": {
-    "name_latin" : "Central Bedfordshire",
-    "nuts_name" : "Central Bedfordshire",
-    "name_ascii" : "Central Bedfordshire",
-    "name_html" : "Central Bedfordshire"
+    "nameLatin" : "Central Bedfordshire",
+    "nutsName" : "Central Bedfordshire",
+    "nameAscii" : "Central Bedfordshire",
+    "nameHtml" : "Central Bedfordshire"
   },
   "UKH31": {
-    "name_latin" : "Southend-on-Sea",
-    "nuts_name" : "Southend-on-Sea",
-    "name_ascii" : "Southend-On-Sea",
-    "name_html" : "Southend-On-Sea"
+    "nameLatin" : "Southend-on-Sea",
+    "nutsName" : "Southend-on-Sea",
+    "nameAscii" : "Southend-On-Sea",
+    "nameHtml" : "Southend-On-Sea"
   },
   "UKH34": {
-    "name_latin" : "Essex Haven Gateway",
-    "nuts_name" : "Essex Haven Gateway",
-    "name_ascii" : "Essex Haven Gateway",
-    "name_html" : "Essex Haven Gateway"
+    "nameLatin" : "Essex Haven Gateway",
+    "nutsName" : "Essex Haven Gateway",
+    "nameAscii" : "Essex Haven Gateway",
+    "nameHtml" : "Essex Haven Gateway"
   },
   "UKH35": {
-    "name_latin" : "West Essex",
-    "nuts_name" : "West Essex",
-    "name_ascii" : "West Essex",
-    "name_html" : "West Essex"
+    "nameLatin" : "West Essex",
+    "nutsName" : "West Essex",
+    "nameAscii" : "West Essex",
+    "nameHtml" : "West Essex"
   },
   "UKH37": {
-    "name_latin" : "Essex Thames Gateway",
-    "nuts_name" : "Essex Thames Gateway",
-    "name_ascii" : "Essex Thames Gateway",
-    "name_html" : "Essex Thames Gateway"
+    "nameLatin" : "Essex Thames Gateway",
+    "nutsName" : "Essex Thames Gateway",
+    "nameAscii" : "Essex Thames Gateway",
+    "nameHtml" : "Essex Thames Gateway"
   },
   "UKI31": {
-    "name_latin" : "Camden & City of London",
-    "nuts_name" : "Camden & City of London",
-    "name_ascii" : "Camden & City of London",
-    "name_html" : "Camden & City of London"
+    "nameLatin" : "Camden & City of London",
+    "nutsName" : "Camden & City of London",
+    "nameAscii" : "Camden & City of London",
+    "nameHtml" : "Camden & City of London"
   },
   "UKI33": {
-    "name_latin" : "Kensington and Chelsea & Hammersmith and Fulham",
-    "nuts_name" : "Kensington and Chelsea & Hammersmith and Fulham",
-    "name_ascii" : "Kensington and Chelsea & Hammersmith and Fulham",
-    "name_html" : "Kensington and Chelsea & Hammersmith and Fulham"
+    "nameLatin" : "Kensington and Chelsea & Hammersmith and Fulham",
+    "nutsName" : "Kensington and Chelsea & Hammersmith and Fulham",
+    "nameAscii" : "Kensington and Chelsea & Hammersmith and Fulham",
+    "nameHtml" : "Kensington and Chelsea & Hammersmith and Fulham"
   },
   "UKI34": {
-    "name_latin" : "Wandsworth",
-    "nuts_name" : "Wandsworth",
-    "name_ascii" : "Wandsworth",
-    "name_html" : "Wandsworth"
+    "nameLatin" : "Wandsworth",
+    "nutsName" : "Wandsworth",
+    "nameAscii" : "Wandsworth",
+    "nameHtml" : "Wandsworth"
   },
   "UKI41": {
-    "name_latin" : "Hackney & Newham",
-    "nuts_name" : "Hackney & Newham",
-    "name_ascii" : "Hackney & Newham",
-    "name_html" : "Hackney & Newham"
+    "nameLatin" : "Hackney & Newham",
+    "nutsName" : "Hackney & Newham",
+    "nameAscii" : "Hackney & Newham",
+    "nameHtml" : "Hackney & Newham"
   },
   "DEF0F": {
-    "name_latin" : "Stormarn",
-    "nuts_name" : "Stormarn",
-    "name_ascii" : "Stormarn",
-    "name_html" : "Stormarn"
+    "nameLatin" : "Stormarn",
+    "nutsName" : "Stormarn",
+    "nameAscii" : "Stormarn",
+    "nameHtml" : "Stormarn"
   },
   "DEG01": {
-    "name_latin" : "Erfurt, Kreisfreie Stadt",
-    "nuts_name" : "Erfurt, Kreisfreie Stadt",
-    "name_ascii" : "Erfurt, Kreisfreie Stadt",
-    "name_html" : "Erfurt, Kreisfreie Stadt"
+    "nameLatin" : "Erfurt, Kreisfreie Stadt",
+    "nutsName" : "Erfurt, Kreisfreie Stadt",
+    "nameAscii" : "Erfurt, Kreisfreie Stadt",
+    "nameHtml" : "Erfurt, Kreisfreie Stadt"
   },
   "DEG03": {
-    "name_latin" : "Jena, Kreisfreie Stadt",
-    "nuts_name" : "Jena, Kreisfreie Stadt",
-    "name_ascii" : "Jena, Kreisfreie Stadt",
-    "name_html" : "Jena, Kreisfreie Stadt"
+    "nameLatin" : "Jena, Kreisfreie Stadt",
+    "nutsName" : "Jena, Kreisfreie Stadt",
+    "nameAscii" : "Jena, Kreisfreie Stadt",
+    "nameHtml" : "Jena, Kreisfreie Stadt"
   },
   "DEG04": {
-    "name_latin" : "Suhl, Kreisfreie Stadt",
-    "nuts_name" : "Suhl, Kreisfreie Stadt",
-    "name_ascii" : "Suhl, Kreisfreie Stadt",
-    "name_html" : "Suhl, Kreisfreie Stadt"
+    "nameLatin" : "Suhl, Kreisfreie Stadt",
+    "nutsName" : "Suhl, Kreisfreie Stadt",
+    "nameAscii" : "Suhl, Kreisfreie Stadt",
+    "nameHtml" : "Suhl, Kreisfreie Stadt"
   },
   "DEG05": {
-    "name_latin" : "Weimar, Kreisfreie Stadt",
-    "nuts_name" : "Weimar, Kreisfreie Stadt",
-    "name_ascii" : "Weimar, Kreisfreie Stadt",
-    "name_html" : "Weimar, Kreisfreie Stadt"
+    "nameLatin" : "Weimar, Kreisfreie Stadt",
+    "nutsName" : "Weimar, Kreisfreie Stadt",
+    "nameAscii" : "Weimar, Kreisfreie Stadt",
+    "nameHtml" : "Weimar, Kreisfreie Stadt"
   },
   "DEG06": {
-    "name_latin" : "Eichsfeld",
-    "nuts_name" : "Eichsfeld",
-    "name_ascii" : "Eichsfeld",
-    "name_html" : "Eichsfeld"
+    "nameLatin" : "Eichsfeld",
+    "nutsName" : "Eichsfeld",
+    "nameAscii" : "Eichsfeld",
+    "nameHtml" : "Eichsfeld"
   },
   "DEG07": {
-    "name_latin" : "Nordhausen",
-    "nuts_name" : "Nordhausen",
-    "name_ascii" : "Nordhausen",
-    "name_html" : "Nordhausen"
+    "nameLatin" : "Nordhausen",
+    "nutsName" : "Nordhausen",
+    "nameAscii" : "Nordhausen",
+    "nameHtml" : "Nordhausen"
   },
   "DEG09": {
-    "name_latin" : "Unstrut-Hainich-Kreis",
-    "nuts_name" : "Unstrut-Hainich-Kreis",
-    "name_ascii" : "Unstrut-Hainich-Kreis",
-    "name_html" : "Unstrut-Hainich-Kreis"
+    "nameLatin" : "Unstrut-Hainich-Kreis",
+    "nutsName" : "Unstrut-Hainich-Kreis",
+    "nameAscii" : "Unstrut-Hainich-Kreis",
+    "nameHtml" : "Unstrut-Hainich-Kreis"
   },
   "DEG0B": {
-    "name_latin" : "Schmalkalden-Meiningen",
-    "nuts_name" : "Schmalkalden-Meiningen",
-    "name_ascii" : "Schmalkalden-Meiningen",
-    "name_html" : "Schmalkalden-Meiningen"
+    "nameLatin" : "Schmalkalden-Meiningen",
+    "nutsName" : "Schmalkalden-Meiningen",
+    "nameAscii" : "Schmalkalden-Meiningen",
+    "nameHtml" : "Schmalkalden-Meiningen"
   },
   "DEG0C": {
-    "name_latin" : "Gotha",
-    "nuts_name" : "Gotha",
-    "name_ascii" : "Gotha",
-    "name_html" : "Gotha"
+    "nameLatin" : "Gotha",
+    "nutsName" : "Gotha",
+    "nameAscii" : "Gotha",
+    "nameHtml" : "Gotha"
   },
   "DEG0D": {
-    "name_latin" : "Sömmerda",
-    "nuts_name" : "Sömmerda",
-    "name_ascii" : "Sommerda",
-    "name_html" : "S&#x00F6;mmerda"
+    "nameLatin" : "Sömmerda",
+    "nutsName" : "Sömmerda",
+    "nameAscii" : "Sommerda",
+    "nameHtml" : "S&#x00F6;mmerda"
   },
   "DEG0E": {
-    "name_latin" : "Hildburghausen",
-    "nuts_name" : "Hildburghausen",
-    "name_ascii" : "Hildburghausen",
-    "name_html" : "Hildburghausen"
+    "nameLatin" : "Hildburghausen",
+    "nutsName" : "Hildburghausen",
+    "nameAscii" : "Hildburghausen",
+    "nameHtml" : "Hildburghausen"
   },
   "DEG0F": {
-    "name_latin" : "Ilm-Kreis",
-    "nuts_name" : "Ilm-Kreis",
-    "name_ascii" : "Ilm-Kreis",
-    "name_html" : "Ilm-Kreis"
+    "nameLatin" : "Ilm-Kreis",
+    "nutsName" : "Ilm-Kreis",
+    "nameAscii" : "Ilm-Kreis",
+    "nameHtml" : "Ilm-Kreis"
   },
   "DEG0H": {
-    "name_latin" : "Sonneberg",
-    "nuts_name" : "Sonneberg",
-    "name_ascii" : "Sonneberg",
-    "name_html" : "Sonneberg"
+    "nameLatin" : "Sonneberg",
+    "nutsName" : "Sonneberg",
+    "nameAscii" : "Sonneberg",
+    "nameHtml" : "Sonneberg"
   },
   "DEG0I": {
-    "name_latin" : "Saalfeld-Rudolstadt",
-    "nuts_name" : "Saalfeld-Rudolstadt",
-    "name_ascii" : "Saalfeld-Rudolstadt",
-    "name_html" : "Saalfeld-Rudolstadt"
+    "nameLatin" : "Saalfeld-Rudolstadt",
+    "nutsName" : "Saalfeld-Rudolstadt",
+    "nameAscii" : "Saalfeld-Rudolstadt",
+    "nameHtml" : "Saalfeld-Rudolstadt"
   },
   "DEG0J": {
-    "name_latin" : "Saale-Holzland-Kreis",
-    "nuts_name" : "Saale-Holzland-Kreis",
-    "name_ascii" : "Saale-Holzland-Kreis",
-    "name_html" : "Saale-Holzland-Kreis"
+    "nameLatin" : "Saale-Holzland-Kreis",
+    "nutsName" : "Saale-Holzland-Kreis",
+    "nameAscii" : "Saale-Holzland-Kreis",
+    "nameHtml" : "Saale-Holzland-Kreis"
   },
   "DEG0K": {
-    "name_latin" : "Saale-Orla-Kreis",
-    "nuts_name" : "Saale-Orla-Kreis",
-    "name_ascii" : "Saale-Orla-Kreis",
-    "name_html" : "Saale-Orla-Kreis"
+    "nameLatin" : "Saale-Orla-Kreis",
+    "nutsName" : "Saale-Orla-Kreis",
+    "nameAscii" : "Saale-Orla-Kreis",
+    "nameHtml" : "Saale-Orla-Kreis"
   },
   "DEG0L": {
-    "name_latin" : "Greiz",
-    "nuts_name" : "Greiz",
-    "name_ascii" : "Greiz",
-    "name_html" : "Greiz"
+    "nameLatin" : "Greiz",
+    "nutsName" : "Greiz",
+    "nameAscii" : "Greiz",
+    "nameHtml" : "Greiz"
   },
   "DEG0N": {
-    "name_latin" : "Eisenach, Kreisfreie Stadt",
-    "nuts_name" : "Eisenach, Kreisfreie Stadt",
-    "name_ascii" : "Eisenach, Kreisfreie Stadt",
-    "name_html" : "Eisenach, Kreisfreie Stadt"
+    "nameLatin" : "Eisenach, Kreisfreie Stadt",
+    "nutsName" : "Eisenach, Kreisfreie Stadt",
+    "nameAscii" : "Eisenach, Kreisfreie Stadt",
+    "nameHtml" : "Eisenach, Kreisfreie Stadt"
   },
   "DEG0P": {
-    "name_latin" : "Wartburgkreis",
-    "nuts_name" : "Wartburgkreis",
-    "name_ascii" : "Wartburgkreis",
-    "name_html" : "Wartburgkreis"
+    "nameLatin" : "Wartburgkreis",
+    "nutsName" : "Wartburgkreis",
+    "nameAscii" : "Wartburgkreis",
+    "nameHtml" : "Wartburgkreis"
   },
   "DK012": {
-    "name_latin" : "Københavns omegn",
-    "nuts_name" : "Københavns omegn",
-    "name_ascii" : "Kobenhavns Omegn",
-    "name_html" : "K&#x00F8;benhavns Omegn"
+    "nameLatin" : "Københavns omegn",
+    "nutsName" : "Københavns omegn",
+    "nameAscii" : "Kobenhavns Omegn",
+    "nameHtml" : "K&#x00F8;benhavns Omegn"
   },
   "DK013": {
-    "name_latin" : "Nordsjælland",
-    "nuts_name" : "Nordsjælland",
-    "name_ascii" : "Nordsjaelland",
-    "name_html" : "Nordsj&#x00E6;lland"
+    "nameLatin" : "Nordsjælland",
+    "nutsName" : "Nordsjælland",
+    "nameAscii" : "Nordsjaelland",
+    "nameHtml" : "Nordsj&#x00E6;lland"
   },
   "DK014": {
-    "name_latin" : "Bornholm",
-    "nuts_name" : "Bornholm",
-    "name_ascii" : "Bornholm",
-    "name_html" : "Bornholm"
+    "nameLatin" : "Bornholm",
+    "nutsName" : "Bornholm",
+    "nameAscii" : "Bornholm",
+    "nameHtml" : "Bornholm"
   },
   "DK022": {
-    "name_latin" : "Vest- og Sydsjælland",
-    "nuts_name" : "Vest- og Sydsjælland",
-    "name_ascii" : "Vest- og Sydsjaelland",
-    "name_html" : "Vest- og Sydsj&#x00E6;lland"
+    "nameLatin" : "Vest- og Sydsjælland",
+    "nutsName" : "Vest- og Sydsjælland",
+    "nameAscii" : "Vest- og Sydsjaelland",
+    "nameHtml" : "Vest- og Sydsj&#x00E6;lland"
   },
   "DK031": {
-    "name_latin" : "Fyn",
-    "nuts_name" : "Fyn",
-    "name_ascii" : "Fyn",
-    "name_html" : "Fyn"
+    "nameLatin" : "Fyn",
+    "nutsName" : "Fyn",
+    "nameAscii" : "Fyn",
+    "nameHtml" : "Fyn"
   },
   "DK032": {
-    "name_latin" : "Sydjylland",
-    "nuts_name" : "Sydjylland",
-    "name_ascii" : "Sydjylland",
-    "name_html" : "Sydjylland"
+    "nameLatin" : "Sydjylland",
+    "nutsName" : "Sydjylland",
+    "nameAscii" : "Sydjylland",
+    "nameHtml" : "Sydjylland"
   },
   "DK041": {
-    "name_latin" : "Vestjylland",
-    "nuts_name" : "Vestjylland",
-    "name_ascii" : "Vestjylland",
-    "name_html" : "Vestjylland"
+    "nameLatin" : "Vestjylland",
+    "nutsName" : "Vestjylland",
+    "nameAscii" : "Vestjylland",
+    "nameHtml" : "Vestjylland"
   },
   "DK042": {
-    "name_latin" : "Østjylland",
-    "nuts_name" : "Østjylland",
-    "name_ascii" : "Ostjylland",
-    "name_html" : "&#x00D8;stjylland"
+    "nameLatin" : "Østjylland",
+    "nutsName" : "Østjylland",
+    "nameAscii" : "Ostjylland",
+    "nameHtml" : "&#x00D8;stjylland"
   },
   "DK050": {
-    "name_latin" : "Nordjylland",
-    "nuts_name" : "Nordjylland",
-    "name_ascii" : "Nordjylland",
-    "name_html" : "Nordjylland"
+    "nameLatin" : "Nordjylland",
+    "nutsName" : "Nordjylland",
+    "nameAscii" : "Nordjylland",
+    "nameHtml" : "Nordjylland"
   },
   "EE001": {
-    "name_latin" : "Põhja-Eesti",
-    "nuts_name" : "Põhja-Eesti",
-    "name_ascii" : "Pohja-Eesti",
-    "name_html" : "P&#x00F5;hja-Eesti"
+    "nameLatin" : "Põhja-Eesti",
+    "nutsName" : "Põhja-Eesti",
+    "nameAscii" : "Pohja-Eesti",
+    "nameHtml" : "P&#x00F5;hja-Eesti"
   },
   "EE006": {
-    "name_latin" : "Kesk-Eesti",
-    "nuts_name" : "Kesk-Eesti",
-    "name_ascii" : "Kesk-Eesti",
-    "name_html" : "Kesk-Eesti"
+    "nameLatin" : "Kesk-Eesti",
+    "nutsName" : "Kesk-Eesti",
+    "nameAscii" : "Kesk-Eesti",
+    "nameHtml" : "Kesk-Eesti"
   },
   "EE007": {
-    "name_latin" : "Kirde-Eesti",
-    "nuts_name" : "Kirde-Eesti",
-    "name_ascii" : "Kirde-Eesti",
-    "name_html" : "Kirde-Eesti"
+    "nameLatin" : "Kirde-Eesti",
+    "nutsName" : "Kirde-Eesti",
+    "nameAscii" : "Kirde-Eesti",
+    "nameHtml" : "Kirde-Eesti"
   },
   "EE008": {
-    "name_latin" : "Lõuna-Eesti",
-    "nuts_name" : "Lõuna-Eesti",
-    "name_ascii" : "Louna-Eesti",
-    "name_html" : "L&#x00F5;una-Eesti"
+    "nameLatin" : "Lõuna-Eesti",
+    "nutsName" : "Lõuna-Eesti",
+    "nameAscii" : "Louna-Eesti",
+    "nameHtml" : "L&#x00F5;una-Eesti"
   },
   "EL302": {
-    "name_latin" : "Ditikos Tomeas Athinon",
-    "nuts_name" : "Δυτικός Τομέας Αθηνών",
-    "name_ascii" : "Ditikos Tomeas Athinon",
-    "name_html" : "&#x0394;&#x03C5;&#x03C4;&#x03B9;&#x03BA;&#x03CC;&#x03C2; &#x03A4;&#x03BF;&#x03BC;&#x03AD;&#x03B1;&#x03C2; &#x0391;&#x03B8;&#x03B7;&#x03BD;&#x03CE;&#x03BD;"
+    "nameLatin" : "Ditikos Tomeas Athinon",
+    "nutsName" : "Δυτικός Τομέας Αθηνών",
+    "nameAscii" : "Ditikos Tomeas Athinon",
+    "nameHtml" : "&#x0394;&#x03C5;&#x03C4;&#x03B9;&#x03BA;&#x03CC;&#x03C2; &#x03A4;&#x03BF;&#x03BC;&#x03AD;&#x03B1;&#x03C2; &#x0391;&#x03B8;&#x03B7;&#x03BD;&#x03CE;&#x03BD;"
   },
   "EL303": {
-    "name_latin" : "Kentrikos Tomeas Athinon",
-    "nuts_name" : "Κεντρικός Τομέας Αθηνών",
-    "name_ascii" : "Kentrikos Tomeas Athinon",
-    "name_html" : "&#x039A;&#x03B5;&#x03BD;&#x03C4;&#x03C1;&#x03B9;&#x03BA;&#x03CC;&#x03C2; &#x03A4;&#x03BF;&#x03BC;&#x03AD;&#x03B1;&#x03C2; &#x0391;&#x03B8;&#x03B7;&#x03BD;&#x03CE;&#x03BD;"
+    "nameLatin" : "Kentrikos Tomeas Athinon",
+    "nutsName" : "Κεντρικός Τομέας Αθηνών",
+    "nameAscii" : "Kentrikos Tomeas Athinon",
+    "nameHtml" : "&#x039A;&#x03B5;&#x03BD;&#x03C4;&#x03C1;&#x03B9;&#x03BA;&#x03CC;&#x03C2; &#x03A4;&#x03BF;&#x03BC;&#x03AD;&#x03B1;&#x03C2; &#x0391;&#x03B8;&#x03B7;&#x03BD;&#x03CE;&#x03BD;"
   },
   "EL305": {
-    "name_latin" : "Anatoliki Attiki",
-    "nuts_name" : "Ανατολική Αττική",
-    "name_ascii" : "Anatoliki Attiki",
-    "name_html" : "&#x0391;&#x03BD;&#x03B1;&#x03C4;&#x03BF;&#x03BB;&#x03B9;&#x03BA;&#x03AE; &#x0391;&#x03C4;&#x03C4;&#x03B9;&#x03BA;&#x03AE;"
+    "nameLatin" : "Anatoliki Attiki",
+    "nutsName" : "Ανατολική Αττική",
+    "nameAscii" : "Anatoliki Attiki",
+    "nameHtml" : "&#x0391;&#x03BD;&#x03B1;&#x03C4;&#x03BF;&#x03BB;&#x03B9;&#x03BA;&#x03AE; &#x0391;&#x03C4;&#x03C4;&#x03B9;&#x03BA;&#x03AE;"
   },
   "EL306": {
-    "name_latin" : "Ditiki Attiki",
-    "nuts_name" : "Δυτική Αττική",
-    "name_ascii" : "Ditiki Attiki",
-    "name_html" : "&#x0394;&#x03C5;&#x03C4;&#x03B9;&#x03BA;&#x03AE; &#x0391;&#x03C4;&#x03C4;&#x03B9;&#x03BA;&#x03AE;"
+    "nameLatin" : "Ditiki Attiki",
+    "nutsName" : "Δυτική Αττική",
+    "nameAscii" : "Ditiki Attiki",
+    "nameHtml" : "&#x0394;&#x03C5;&#x03C4;&#x03B9;&#x03BA;&#x03AE; &#x0391;&#x03C4;&#x03C4;&#x03B9;&#x03BA;&#x03AE;"
   },
   "EL412": {
-    "name_latin" : "Ikaria, Samos",
-    "nuts_name" : "Ικαρία, Σάμος",
-    "name_ascii" : "Ikaria, Samos",
-    "name_html" : "&#x0399;&#x03BA;&#x03B1;&#x03C1;&#x03AF;&#x03B1;, &#x03A3;&#x03AC;&#x03BC;&#x03BF;&#x03C2;"
+    "nameLatin" : "Ikaria, Samos",
+    "nutsName" : "Ικαρία, Σάμος",
+    "nameAscii" : "Ikaria, Samos",
+    "nameHtml" : "&#x0399;&#x03BA;&#x03B1;&#x03C1;&#x03AF;&#x03B1;, &#x03A3;&#x03AC;&#x03BC;&#x03BF;&#x03C2;"
   },
   "EL413": {
-    "name_latin" : "Xios",
-    "nuts_name" : "Χίος",
-    "name_ascii" : "Xios",
-    "name_html" : "&#x03A7;&#x03AF;&#x03BF;&#x03C2;"
+    "nameLatin" : "Xios",
+    "nutsName" : "Χίος",
+    "nameAscii" : "Xios",
+    "nameHtml" : "&#x03A7;&#x03AF;&#x03BF;&#x03C2;"
   },
   "EL421": {
-    "name_latin" : "Kalimnos, Karpathos, Kos, Rodos",
-    "nuts_name" : "Κάλυμνος, Κάρπαθος, Κως, Ρόδος",
-    "name_ascii" : "Kalimnos, Karpathos, Kos, Rodos",
-    "name_html" : "&#x039A;&#x03AC;&#x03BB;&#x03C5;&#x03BC;&#x03BD;&#x03BF;&#x03C2;, &#x039A;&#x03AC;&#x03C1;&#x03C0;&#x03B1;&#x03B8;&#x03BF;&#x03C2;, &#x039A;&#x03C9;&#x03C2;, &#x03A1;&#x03CC;&#x03B4;&#x03BF;&#x03C2;"
+    "nameLatin" : "Kalimnos, Karpathos, Kos, Rodos",
+    "nutsName" : "Κάλυμνος, Κάρπαθος, Κως, Ρόδος",
+    "nameAscii" : "Kalimnos, Karpathos, Kos, Rodos",
+    "nameHtml" : "&#x039A;&#x03AC;&#x03BB;&#x03C5;&#x03BC;&#x03BD;&#x03BF;&#x03C2;, &#x039A;&#x03AC;&#x03C1;&#x03C0;&#x03B1;&#x03B8;&#x03BF;&#x03C2;, &#x039A;&#x03C9;&#x03C2;, &#x03A1;&#x03CC;&#x03B4;&#x03BF;&#x03C2;"
   },
   "EL431": {
-    "name_latin" : "Irakleio",
-    "nuts_name" : "Ηράκλειο",
-    "name_ascii" : "Irakleio",
-    "name_html" : "&#x0397;&#x03C1;&#x03AC;&#x03BA;&#x03BB;&#x03B5;&#x03B9;&#x03BF;"
+    "nameLatin" : "Irakleio",
+    "nutsName" : "Ηράκλειο",
+    "nameAscii" : "Irakleio",
+    "nameHtml" : "&#x0397;&#x03C1;&#x03AC;&#x03BA;&#x03BB;&#x03B5;&#x03B9;&#x03BF;"
   },
   "EL432": {
-    "name_latin" : "Lasithi",
-    "nuts_name" : "Λασίθι",
-    "name_ascii" : "Lasithi",
-    "name_html" : "&#x039B;&#x03B1;&#x03C3;&#x03AF;&#x03B8;&#x03B9;"
+    "nameLatin" : "Lasithi",
+    "nutsName" : "Λασίθι",
+    "nameAscii" : "Lasithi",
+    "nameHtml" : "&#x039B;&#x03B1;&#x03C3;&#x03AF;&#x03B8;&#x03B9;"
   },
   "EL433": {
-    "name_latin" : "Rethymni",
-    "nuts_name" : "Ρεθύμνη",
-    "name_ascii" : "Rethimni",
-    "name_html" : "&#x03A1;&#x03B5;&#x03B8;&#x03CD;&#x03BC;&#x03BD;&#x03B7;"
+    "nameLatin" : "Rethymni",
+    "nutsName" : "Ρεθύμνη",
+    "nameAscii" : "Rethimni",
+    "nameHtml" : "&#x03A1;&#x03B5;&#x03B8;&#x03CD;&#x03BC;&#x03BD;&#x03B7;"
   },
   "EL434": {
-    "name_latin" : "Chania",
-    "nuts_name" : "Χανιά",
-    "name_ascii" : "Xania",
-    "name_html" : "&#x03A7;&#x03B1;&#x03BD;&#x03B9;&#x03AC;"
+    "nameLatin" : "Chania",
+    "nutsName" : "Χανιά",
+    "nameAscii" : "Xania",
+    "nameHtml" : "&#x03A7;&#x03B1;&#x03BD;&#x03B9;&#x03AC;"
   },
   "EL512": {
-    "name_latin" : "Xanthi",
-    "nuts_name" : "Ξάνθη",
-    "name_ascii" : "Xanthi",
-    "name_html" : "&#x039E;&#x03AC;&#x03BD;&#x03B8;&#x03B7;"
+    "nameLatin" : "Xanthi",
+    "nutsName" : "Ξάνθη",
+    "nameAscii" : "Xanthi",
+    "nameHtml" : "&#x039E;&#x03AC;&#x03BD;&#x03B8;&#x03B7;"
   },
   "EL514": {
-    "name_latin" : "Drama",
-    "nuts_name" : "Δράμα",
-    "name_ascii" : "Drama",
-    "name_html" : "&#x0394;&#x03C1;&#x03AC;&#x03BC;&#x03B1;"
+    "nameLatin" : "Drama",
+    "nutsName" : "Δράμα",
+    "nameAscii" : "Drama",
+    "nameHtml" : "&#x0394;&#x03C1;&#x03AC;&#x03BC;&#x03B1;"
   },
   "EL521": {
-    "name_latin" : "Imathia",
-    "nuts_name" : "Ημαθία",
-    "name_ascii" : "Imathia",
-    "name_html" : "&#x0397;&#x03BC;&#x03B1;&#x03B8;&#x03AF;&#x03B1;"
+    "nameLatin" : "Imathia",
+    "nutsName" : "Ημαθία",
+    "nameAscii" : "Imathia",
+    "nameHtml" : "&#x0397;&#x03BC;&#x03B1;&#x03B8;&#x03AF;&#x03B1;"
   },
   "EL523": {
-    "name_latin" : "Kilkis",
-    "nuts_name" : "Κιλκίς",
-    "name_ascii" : "Kilkis",
-    "name_html" : "&#x039A;&#x03B9;&#x03BB;&#x03BA;&#x03AF;&#x03C2;"
+    "nameLatin" : "Kilkis",
+    "nutsName" : "Κιλκίς",
+    "nameAscii" : "Kilkis",
+    "nameHtml" : "&#x039A;&#x03B9;&#x03BB;&#x03BA;&#x03AF;&#x03C2;"
   },
   "EL524": {
-    "name_latin" : "Pella",
-    "nuts_name" : "Πέλλα",
-    "name_ascii" : "Pella",
-    "name_html" : "&#x03A0;&#x03AD;&#x03BB;&#x03BB;&#x03B1;"
+    "nameLatin" : "Pella",
+    "nutsName" : "Πέλλα",
+    "nameAscii" : "Pella",
+    "nameHtml" : "&#x03A0;&#x03AD;&#x03BB;&#x03BB;&#x03B1;"
   },
   "EL525": {
-    "name_latin" : "Pieria",
-    "nuts_name" : "Πιερία",
-    "name_ascii" : "Pieria",
-    "name_html" : "&#x03A0;&#x03B9;&#x03B5;&#x03C1;&#x03AF;&#x03B1;"
+    "nameLatin" : "Pieria",
+    "nutsName" : "Πιερία",
+    "nameAscii" : "Pieria",
+    "nameHtml" : "&#x03A0;&#x03B9;&#x03B5;&#x03C1;&#x03AF;&#x03B1;"
   },
   "EL526": {
-    "name_latin" : "Serres",
-    "nuts_name" : "Σέρρες",
-    "name_ascii" : "Serres",
-    "name_html" : "&#x03A3;&#x03AD;&#x03C1;&#x03C1;&#x03B5;&#x03C2;"
+    "nameLatin" : "Serres",
+    "nutsName" : "Σέρρες",
+    "nameAscii" : "Serres",
+    "nameHtml" : "&#x03A3;&#x03AD;&#x03C1;&#x03C1;&#x03B5;&#x03C2;"
   },
   "EL532": {
-    "name_latin" : "Kastoria",
-    "nuts_name" : "Καστοριά",
-    "name_ascii" : "Kastoria",
-    "name_html" : "&#x039A;&#x03B1;&#x03C3;&#x03C4;&#x03BF;&#x03C1;&#x03B9;&#x03AC;"
+    "nameLatin" : "Kastoria",
+    "nutsName" : "Καστοριά",
+    "nameAscii" : "Kastoria",
+    "nameHtml" : "&#x039A;&#x03B1;&#x03C3;&#x03C4;&#x03BF;&#x03C1;&#x03B9;&#x03AC;"
   },
   "EL533": {
-    "name_latin" : "Florina",
-    "nuts_name" : "Φλώρινα",
-    "name_ascii" : "Florina",
-    "name_html" : "&#x03A6;&#x03BB;&#x03CE;&#x03C1;&#x03B9;&#x03BD;&#x03B1;"
+    "nameLatin" : "Florina",
+    "nutsName" : "Φλώρινα",
+    "nameAscii" : "Florina",
+    "nameHtml" : "&#x03A6;&#x03BB;&#x03CE;&#x03C1;&#x03B9;&#x03BD;&#x03B1;"
   },
   "EL541": {
-    "name_latin" : "Arta, Prebeza",
-    "nuts_name" : "Άρτα, Πρέβεζα",
-    "name_ascii" : "Arta, Prebeza",
-    "name_html" : "&#x0386;&#x03C1;&#x03C4;&#x03B1;, &#x03A0;&#x03C1;&#x03AD;&#x03B2;&#x03B5;&#x03B6;&#x03B1;"
+    "nameLatin" : "Arta, Prebeza",
+    "nutsName" : "Άρτα, Πρέβεζα",
+    "nameAscii" : "Arta, Prebeza",
+    "nameHtml" : "&#x0386;&#x03C1;&#x03C4;&#x03B1;, &#x03A0;&#x03C1;&#x03AD;&#x03B2;&#x03B5;&#x03B6;&#x03B1;"
   },
   "EL543": {
-    "name_latin" : "Ioannina",
-    "nuts_name" : "Ιωάννινα",
-    "name_ascii" : "Ioannina",
-    "name_html" : "&#x0399;&#x03C9;&#x03AC;&#x03BD;&#x03BD;&#x03B9;&#x03BD;&#x03B1;"
+    "nameLatin" : "Ioannina",
+    "nutsName" : "Ιωάννινα",
+    "nameAscii" : "Ioannina",
+    "nameHtml" : "&#x0399;&#x03C9;&#x03AC;&#x03BD;&#x03BD;&#x03B9;&#x03BD;&#x03B1;"
   },
   "EL611": {
-    "name_latin" : "Karditsa, Trikala",
-    "nuts_name" : "Καρδίτσα, Τρίκαλα",
-    "name_ascii" : "Karditsa, Trikala",
-    "name_html" : "&#x039A;&#x03B1;&#x03C1;&#x03B4;&#x03AF;&#x03C4;&#x03C3;&#x03B1;, &#x03A4;&#x03C1;&#x03AF;&#x03BA;&#x03B1;&#x03BB;&#x03B1;"
+    "nameLatin" : "Karditsa, Trikala",
+    "nutsName" : "Καρδίτσα, Τρίκαλα",
+    "nameAscii" : "Karditsa, Trikala",
+    "nameHtml" : "&#x039A;&#x03B1;&#x03C1;&#x03B4;&#x03AF;&#x03C4;&#x03C3;&#x03B1;, &#x03A4;&#x03C1;&#x03AF;&#x03BA;&#x03B1;&#x03BB;&#x03B1;"
   },
   "EL613": {
-    "name_latin" : "Magnisia",
-    "nuts_name" : "Μαγνησία",
-    "name_ascii" : "Magnisia",
-    "name_html" : "&#x039C;&#x03B1;&#x03B3;&#x03BD;&#x03B7;&#x03C3;&#x03AF;&#x03B1;"
+    "nameLatin" : "Magnisia",
+    "nutsName" : "Μαγνησία",
+    "nameAscii" : "Magnisia",
+    "nameHtml" : "&#x039C;&#x03B1;&#x03B3;&#x03BD;&#x03B7;&#x03C3;&#x03AF;&#x03B1;"
   },
   "EL621": {
-    "name_latin" : "Zakynthos",
-    "nuts_name" : "Ζάκυνθος",
-    "name_ascii" : "Zakinthos",
-    "name_html" : "&#x0396;&#x03AC;&#x03BA;&#x03C5;&#x03BD;&#x03B8;&#x03BF;&#x03C2;"
+    "nameLatin" : "Zakynthos",
+    "nutsName" : "Ζάκυνθος",
+    "nameAscii" : "Zakinthos",
+    "nameHtml" : "&#x0396;&#x03AC;&#x03BA;&#x03C5;&#x03BD;&#x03B8;&#x03BF;&#x03C2;"
   },
   "EL622": {
-    "name_latin" : "Kerkyra",
-    "nuts_name" : "Κέρκυρα",
-    "name_ascii" : "Kerkira",
-    "name_html" : "&#x039A;&#x03AD;&#x03C1;&#x03BA;&#x03C5;&#x03C1;&#x03B1;"
+    "nameLatin" : "Kerkyra",
+    "nutsName" : "Κέρκυρα",
+    "nameAscii" : "Kerkira",
+    "nameHtml" : "&#x039A;&#x03AD;&#x03C1;&#x03BA;&#x03C5;&#x03C1;&#x03B1;"
   },
   "EL624": {
-    "name_latin" : "Lefkada",
-    "nuts_name" : "Λευκάδα",
-    "name_ascii" : "Leikada",
-    "name_html" : "&#x039B;&#x03B5;&#x03C5;&#x03BA;&#x03AC;&#x03B4;&#x03B1;"
+    "nameLatin" : "Lefkada",
+    "nutsName" : "Λευκάδα",
+    "nameAscii" : "Leikada",
+    "nameHtml" : "&#x039B;&#x03B5;&#x03C5;&#x03BA;&#x03AC;&#x03B4;&#x03B1;"
   },
   "EL632": {
-    "name_latin" : "Achaia",
-    "nuts_name" : "Αχαΐα",
-    "name_ascii" : "AxaIa",
-    "name_html" : "&#x0391;&#x03C7;&#x03B1;&#x0390;&#x03B1;"
+    "nameLatin" : "Achaia",
+    "nutsName" : "Αχαΐα",
+    "nameAscii" : "AxaIa",
+    "nameHtml" : "&#x0391;&#x03C7;&#x03B1;&#x0390;&#x03B1;"
   },
   "EL633": {
-    "name_latin" : "Ileia",
-    "nuts_name" : "Ηλεία",
-    "name_ascii" : "Ileia",
-    "name_html" : "&#x0397;&#x03BB;&#x03B5;&#x03AF;&#x03B1;"
+    "nameLatin" : "Ileia",
+    "nutsName" : "Ηλεία",
+    "nameAscii" : "Ileia",
+    "nameHtml" : "&#x0397;&#x03BB;&#x03B5;&#x03AF;&#x03B1;"
   },
   "EL641": {
-    "name_latin" : "Voiotia",
-    "nuts_name" : "Βοιωτία",
-    "name_ascii" : "Boiotia",
-    "name_html" : "&#x0392;&#x03BF;&#x03B9;&#x03C9;&#x03C4;&#x03AF;&#x03B1;"
+    "nameLatin" : "Voiotia",
+    "nutsName" : "Βοιωτία",
+    "nameAscii" : "Boiotia",
+    "nameHtml" : "&#x0392;&#x03BF;&#x03B9;&#x03C9;&#x03C4;&#x03AF;&#x03B1;"
   },
   "EL643": {
-    "name_latin" : "Evrytania",
-    "nuts_name" : "Ευρυτανία",
-    "name_ascii" : "Eiritania",
-    "name_html" : "&#x0395;&#x03C5;&#x03C1;&#x03C5;&#x03C4;&#x03B1;&#x03BD;&#x03AF;&#x03B1;"
+    "nameLatin" : "Evrytania",
+    "nutsName" : "Ευρυτανία",
+    "nameAscii" : "Eiritania",
+    "nameHtml" : "&#x0395;&#x03C5;&#x03C1;&#x03C5;&#x03C4;&#x03B1;&#x03BD;&#x03AF;&#x03B1;"
   },
   "EL644": {
-    "name_latin" : "Fthiotida",
-    "nuts_name" : "Φθιώτιδα",
-    "name_ascii" : "Fthiotida",
-    "name_html" : "&#x03A6;&#x03B8;&#x03B9;&#x03CE;&#x03C4;&#x03B9;&#x03B4;&#x03B1;"
+    "nameLatin" : "Fthiotida",
+    "nutsName" : "Φθιώτιδα",
+    "nameAscii" : "Fthiotida",
+    "nameHtml" : "&#x03A6;&#x03B8;&#x03B9;&#x03CE;&#x03C4;&#x03B9;&#x03B4;&#x03B1;"
   },
   "EL645": {
-    "name_latin" : "Fokida",
-    "nuts_name" : "Φωκίδα",
-    "name_ascii" : "Fokida",
-    "name_html" : "&#x03A6;&#x03C9;&#x03BA;&#x03AF;&#x03B4;&#x03B1;"
+    "nameLatin" : "Fokida",
+    "nutsName" : "Φωκίδα",
+    "nameAscii" : "Fokida",
+    "nameHtml" : "&#x03A6;&#x03C9;&#x03BA;&#x03AF;&#x03B4;&#x03B1;"
   },
   "EL651": {
-    "name_latin" : "Argolida, Arkadia",
-    "nuts_name" : "Αργολίδα, Αρκαδία",
-    "name_ascii" : "Argolida, Arkadia",
-    "name_html" : "&#x0391;&#x03C1;&#x03B3;&#x03BF;&#x03BB;&#x03AF;&#x03B4;&#x03B1;, &#x0391;&#x03C1;&#x03BA;&#x03B1;&#x03B4;&#x03AF;&#x03B1;"
+    "nameLatin" : "Argolida, Arkadia",
+    "nutsName" : "Αργολίδα, Αρκαδία",
+    "nameAscii" : "Argolida, Arkadia",
+    "nameHtml" : "&#x0391;&#x03C1;&#x03B3;&#x03BF;&#x03BB;&#x03AF;&#x03B4;&#x03B1;, &#x0391;&#x03C1;&#x03BA;&#x03B1;&#x03B4;&#x03AF;&#x03B1;"
   },
   "EL652": {
-    "name_latin" : "Korinthia",
-    "nuts_name" : "Κορινθία",
-    "name_ascii" : "Korinthia",
-    "name_html" : "&#x039A;&#x03BF;&#x03C1;&#x03B9;&#x03BD;&#x03B8;&#x03AF;&#x03B1;"
+    "nameLatin" : "Korinthia",
+    "nutsName" : "Κορινθία",
+    "nameAscii" : "Korinthia",
+    "nameHtml" : "&#x039A;&#x03BF;&#x03C1;&#x03B9;&#x03BD;&#x03B8;&#x03AF;&#x03B1;"
   },
   "ES111": {
-    "name_latin" : "A Coruña",
-    "nuts_name" : "A Coruña",
-    "name_ascii" : "A Coruna",
-    "name_html" : "A Coru&#x00F1;a"
+    "nameLatin" : "A Coruña",
+    "nutsName" : "A Coruña",
+    "nameAscii" : "A Coruna",
+    "nameHtml" : "A Coru&#x00F1;a"
   },
   "ES112": {
-    "name_latin" : "Lugo",
-    "nuts_name" : "Lugo",
-    "name_ascii" : "Lugo",
-    "name_html" : "Lugo"
+    "nameLatin" : "Lugo",
+    "nutsName" : "Lugo",
+    "nameAscii" : "Lugo",
+    "nameHtml" : "Lugo"
   },
   "ES113": {
-    "name_latin" : "Ourense",
-    "nuts_name" : "Ourense",
-    "name_ascii" : "Ourense",
-    "name_html" : "Ourense"
+    "nameLatin" : "Ourense",
+    "nutsName" : "Ourense",
+    "nameAscii" : "Ourense",
+    "nameHtml" : "Ourense"
   },
   "ES114": {
-    "name_latin" : "Pontevedra",
-    "nuts_name" : "Pontevedra",
-    "name_ascii" : "Pontevedra",
-    "name_html" : "Pontevedra"
+    "nameLatin" : "Pontevedra",
+    "nutsName" : "Pontevedra",
+    "nameAscii" : "Pontevedra",
+    "nameHtml" : "Pontevedra"
   },
   "ES120": {
-    "name_latin" : "Asturias",
-    "nuts_name" : "Asturias",
-    "name_ascii" : "Asturias",
-    "name_html" : "Asturias"
+    "nameLatin" : "Asturias",
+    "nutsName" : "Asturias",
+    "nameAscii" : "Asturias",
+    "nameHtml" : "Asturias"
   },
   "ES130": {
-    "name_latin" : "Cantabria",
-    "nuts_name" : "Cantabria",
-    "name_ascii" : "Cantabria",
-    "name_html" : "Cantabria"
+    "nameLatin" : "Cantabria",
+    "nutsName" : "Cantabria",
+    "nameAscii" : "Cantabria",
+    "nameHtml" : "Cantabria"
   },
   "ES211": {
-    "name_latin" : "Araba/Álava",
-    "nuts_name" : "Araba/Álava",
-    "name_ascii" : "Araba/Alava",
-    "name_html" : "Araba/&#x00C1;lava"
+    "nameLatin" : "Araba/Álava",
+    "nutsName" : "Araba/Álava",
+    "nameAscii" : "Araba/Alava",
+    "nameHtml" : "Araba/&#x00C1;lava"
   },
   "ES212": {
-    "name_latin" : "Gipuzkoa",
-    "nuts_name" : "Gipuzkoa",
-    "name_ascii" : "Gipuzkoa",
-    "name_html" : "Gipuzkoa"
+    "nameLatin" : "Gipuzkoa",
+    "nutsName" : "Gipuzkoa",
+    "nameAscii" : "Gipuzkoa",
+    "nameHtml" : "Gipuzkoa"
   },
   "ES213": {
-    "name_latin" : "Bizkaia",
-    "nuts_name" : "Bizkaia",
-    "name_ascii" : "Bizkaia",
-    "name_html" : "Bizkaia"
+    "nameLatin" : "Bizkaia",
+    "nutsName" : "Bizkaia",
+    "nameAscii" : "Bizkaia",
+    "nameHtml" : "Bizkaia"
   },
   "ES220": {
-    "name_latin" : "Navarra",
-    "nuts_name" : "Navarra",
-    "name_ascii" : "Navarra",
-    "name_html" : "Navarra"
+    "nameLatin" : "Navarra",
+    "nutsName" : "Navarra",
+    "nameAscii" : "Navarra",
+    "nameHtml" : "Navarra"
   },
   "ES230": {
-    "name_latin" : "La Rioja",
-    "nuts_name" : "La Rioja",
-    "name_ascii" : "La Rioja",
-    "name_html" : "La Rioja"
+    "nameLatin" : "La Rioja",
+    "nutsName" : "La Rioja",
+    "nameAscii" : "La Rioja",
+    "nameHtml" : "La Rioja"
   },
   "ES241": {
-    "name_latin" : "Huesca",
-    "nuts_name" : "Huesca",
-    "name_ascii" : "Huesca",
-    "name_html" : "Huesca"
+    "nameLatin" : "Huesca",
+    "nutsName" : "Huesca",
+    "nameAscii" : "Huesca",
+    "nameHtml" : "Huesca"
   },
   "ES242": {
-    "name_latin" : "Teruel",
-    "nuts_name" : "Teruel",
-    "name_ascii" : "Teruel",
-    "name_html" : "Teruel"
+    "nameLatin" : "Teruel",
+    "nutsName" : "Teruel",
+    "nameAscii" : "Teruel",
+    "nameHtml" : "Teruel"
   },
   "ES243": {
-    "name_latin" : "Zaragoza",
-    "nuts_name" : "Zaragoza",
-    "name_ascii" : "Zaragoza",
-    "name_html" : "Zaragoza"
+    "nameLatin" : "Zaragoza",
+    "nutsName" : "Zaragoza",
+    "nameAscii" : "Zaragoza",
+    "nameHtml" : "Zaragoza"
   },
   "ES412": {
-    "name_latin" : "Burgos",
-    "nuts_name" : "Burgos",
-    "name_ascii" : "Burgos",
-    "name_html" : "Burgos"
+    "nameLatin" : "Burgos",
+    "nutsName" : "Burgos",
+    "nameAscii" : "Burgos",
+    "nameHtml" : "Burgos"
   },
   "ES413": {
-    "name_latin" : "León",
-    "nuts_name" : "León",
-    "name_ascii" : "Leon",
-    "name_html" : "Le&#x00F3;n"
+    "nameLatin" : "León",
+    "nutsName" : "León",
+    "nameAscii" : "Leon",
+    "nameHtml" : "Le&#x00F3;n"
   },
   "ES414": {
-    "name_latin" : "Palencia",
-    "nuts_name" : "Palencia",
-    "name_ascii" : "Palencia",
-    "name_html" : "Palencia"
+    "nameLatin" : "Palencia",
+    "nutsName" : "Palencia",
+    "nameAscii" : "Palencia",
+    "nameHtml" : "Palencia"
   },
   "ES415": {
-    "name_latin" : "Salamanca",
-    "nuts_name" : "Salamanca",
-    "name_ascii" : "Salamanca",
-    "name_html" : "Salamanca"
+    "nameLatin" : "Salamanca",
+    "nutsName" : "Salamanca",
+    "nameAscii" : "Salamanca",
+    "nameHtml" : "Salamanca"
   },
   "ES417": {
-    "name_latin" : "Soria",
-    "nuts_name" : "Soria",
-    "name_ascii" : "Soria",
-    "name_html" : "Soria"
+    "nameLatin" : "Soria",
+    "nutsName" : "Soria",
+    "nameAscii" : "Soria",
+    "nameHtml" : "Soria"
   },
   "ES418": {
-    "name_latin" : "Valladolid",
-    "nuts_name" : "Valladolid",
-    "name_ascii" : "Valladolid",
-    "name_html" : "Valladolid"
+    "nameLatin" : "Valladolid",
+    "nutsName" : "Valladolid",
+    "nameAscii" : "Valladolid",
+    "nameHtml" : "Valladolid"
   },
   "ES419": {
-    "name_latin" : "Zamora",
-    "nuts_name" : "Zamora",
-    "name_ascii" : "Zamora",
-    "name_html" : "Zamora"
+    "nameLatin" : "Zamora",
+    "nutsName" : "Zamora",
+    "nameAscii" : "Zamora",
+    "nameHtml" : "Zamora"
   },
   "ES422": {
-    "name_latin" : "Ciudad Real",
-    "nuts_name" : "Ciudad Real",
-    "name_ascii" : "Ciudad Real",
-    "name_html" : "Ciudad Real"
+    "nameLatin" : "Ciudad Real",
+    "nutsName" : "Ciudad Real",
+    "nameAscii" : "Ciudad Real",
+    "nameHtml" : "Ciudad Real"
   },
   "ES423": {
-    "name_latin" : "Cuenca",
-    "nuts_name" : "Cuenca",
-    "name_ascii" : "Cuenca",
-    "name_html" : "Cuenca"
+    "nameLatin" : "Cuenca",
+    "nutsName" : "Cuenca",
+    "nameAscii" : "Cuenca",
+    "nameHtml" : "Cuenca"
   },
   "ES424": {
-    "name_latin" : "Guadalajara",
-    "nuts_name" : "Guadalajara",
-    "name_ascii" : "Guadalajara",
-    "name_html" : "Guadalajara"
+    "nameLatin" : "Guadalajara",
+    "nutsName" : "Guadalajara",
+    "nameAscii" : "Guadalajara",
+    "nameHtml" : "Guadalajara"
   },
   "ES425": {
-    "name_latin" : "Toledo",
-    "nuts_name" : "Toledo",
-    "name_ascii" : "Toledo",
-    "name_html" : "Toledo"
+    "nameLatin" : "Toledo",
+    "nutsName" : "Toledo",
+    "nameAscii" : "Toledo",
+    "nameHtml" : "Toledo"
   },
   "ES431": {
-    "name_latin" : "Badajoz",
-    "nuts_name" : "Badajoz",
-    "name_ascii" : "Badajoz",
-    "name_html" : "Badajoz"
+    "nameLatin" : "Badajoz",
+    "nutsName" : "Badajoz",
+    "nameAscii" : "Badajoz",
+    "nameHtml" : "Badajoz"
   },
   "ES432": {
-    "name_latin" : "Cáceres",
-    "nuts_name" : "Cáceres",
-    "name_ascii" : "Caceres",
-    "name_html" : "C&#x00E1;ceres"
+    "nameLatin" : "Cáceres",
+    "nutsName" : "Cáceres",
+    "nameAscii" : "Caceres",
+    "nameHtml" : "C&#x00E1;ceres"
   },
   "ES511": {
-    "name_latin" : "Barcelona",
-    "nuts_name" : "Barcelona",
-    "name_ascii" : "Barcelona",
-    "name_html" : "Barcelona"
+    "nameLatin" : "Barcelona",
+    "nutsName" : "Barcelona",
+    "nameAscii" : "Barcelona",
+    "nameHtml" : "Barcelona"
   },
   "ES513": {
-    "name_latin" : "Lleida",
-    "nuts_name" : "Lleida",
-    "name_ascii" : "Lleida",
-    "name_html" : "Lleida"
+    "nameLatin" : "Lleida",
+    "nutsName" : "Lleida",
+    "nameAscii" : "Lleida",
+    "nameHtml" : "Lleida"
   },
   "ES514": {
-    "name_latin" : "Tarragona",
-    "nuts_name" : "Tarragona",
-    "name_ascii" : "Tarragona",
-    "name_html" : "Tarragona"
+    "nameLatin" : "Tarragona",
+    "nutsName" : "Tarragona",
+    "nameAscii" : "Tarragona",
+    "nameHtml" : "Tarragona"
   },
   "ES522": {
-    "name_latin" : "Castellón / Castelló",
-    "nuts_name" : "Castellón / Castelló",
-    "name_ascii" : "Castellon / Castello",
-    "name_html" : "Castell&#x00F3;n / Castell&#x00F3;"
+    "nameLatin" : "Castellón / Castelló",
+    "nutsName" : "Castellón / Castelló",
+    "nameAscii" : "Castellon / Castello",
+    "nameHtml" : "Castell&#x00F3;n / Castell&#x00F3;"
   },
   "ES523": {
-    "name_latin" : "Valencia / València",
-    "nuts_name" : "Valencia / València",
-    "name_ascii" : "Valencia / Valencia",
-    "name_html" : "Valencia / Val&#x00E8;ncia"
+    "nameLatin" : "Valencia / València",
+    "nutsName" : "Valencia / València",
+    "nameAscii" : "Valencia / Valencia",
+    "nameHtml" : "Valencia / Val&#x00E8;ncia"
   },
   "ES532": {
-    "name_latin" : "Mallorca",
-    "nuts_name" : "Mallorca",
-    "name_ascii" : "Mallorca",
-    "name_html" : "Mallorca"
+    "nameLatin" : "Mallorca",
+    "nutsName" : "Mallorca",
+    "nameAscii" : "Mallorca",
+    "nameHtml" : "Mallorca"
   },
   "ES533": {
-    "name_latin" : "Menorca",
-    "nuts_name" : "Menorca",
-    "name_ascii" : "Menorca",
-    "name_html" : "Menorca"
+    "nameLatin" : "Menorca",
+    "nutsName" : "Menorca",
+    "nameAscii" : "Menorca",
+    "nameHtml" : "Menorca"
   },
   "ES611": {
-    "name_latin" : "Almería",
-    "nuts_name" : "Almería",
-    "name_ascii" : "Almeria",
-    "name_html" : "Almer&#x00ED;a"
+    "nameLatin" : "Almería",
+    "nutsName" : "Almería",
+    "nameAscii" : "Almeria",
+    "nameHtml" : "Almer&#x00ED;a"
   },
   "ES612": {
-    "name_latin" : "Cádiz",
-    "nuts_name" : "Cádiz",
-    "name_ascii" : "Cadiz",
-    "name_html" : "C&#x00E1;diz"
+    "nameLatin" : "Cádiz",
+    "nutsName" : "Cádiz",
+    "nameAscii" : "Cadiz",
+    "nameHtml" : "C&#x00E1;diz"
   },
   "ES613": {
-    "name_latin" : "Córdoba",
-    "nuts_name" : "Córdoba",
-    "name_ascii" : "Cordoba",
-    "name_html" : "C&#x00F3;rdoba"
+    "nameLatin" : "Córdoba",
+    "nutsName" : "Córdoba",
+    "nameAscii" : "Cordoba",
+    "nameHtml" : "C&#x00F3;rdoba"
   },
   "ES614": {
-    "name_latin" : "Granada",
-    "nuts_name" : "Granada",
-    "name_ascii" : "Granada",
-    "name_html" : "Granada"
+    "nameLatin" : "Granada",
+    "nutsName" : "Granada",
+    "nameAscii" : "Granada",
+    "nameHtml" : "Granada"
   },
   "ES615": {
-    "name_latin" : "Huelva",
-    "nuts_name" : "Huelva",
-    "name_ascii" : "Huelva",
-    "name_html" : "Huelva"
+    "nameLatin" : "Huelva",
+    "nutsName" : "Huelva",
+    "nameAscii" : "Huelva",
+    "nameHtml" : "Huelva"
   },
   "ES617": {
-    "name_latin" : "Málaga",
-    "nuts_name" : "Málaga",
-    "name_ascii" : "Malaga",
-    "name_html" : "M&#x00E1;laga"
+    "nameLatin" : "Málaga",
+    "nutsName" : "Málaga",
+    "nameAscii" : "Malaga",
+    "nameHtml" : "M&#x00E1;laga"
   },
   "ES618": {
-    "name_latin" : "Sevilla",
-    "nuts_name" : "Sevilla",
-    "name_ascii" : "Sevilla",
-    "name_html" : "Sevilla"
+    "nameLatin" : "Sevilla",
+    "nutsName" : "Sevilla",
+    "nameAscii" : "Sevilla",
+    "nameHtml" : "Sevilla"
   },
   "ES620": {
-    "name_latin" : "Murcia",
-    "nuts_name" : "Murcia",
-    "name_ascii" : "Murcia",
-    "name_html" : "Murcia"
+    "nameLatin" : "Murcia",
+    "nutsName" : "Murcia",
+    "nameAscii" : "Murcia",
+    "nameHtml" : "Murcia"
   },
   "ES630": {
-    "name_latin" : "Ceuta",
-    "nuts_name" : "Ceuta",
-    "name_ascii" : "Ceuta",
-    "name_html" : "Ceuta"
+    "nameLatin" : "Ceuta",
+    "nutsName" : "Ceuta",
+    "nameAscii" : "Ceuta",
+    "nameHtml" : "Ceuta"
   },
   "ES640": {
-    "name_latin" : "Melilla",
-    "nuts_name" : "Melilla",
-    "name_ascii" : "Melilla",
-    "name_html" : "Melilla"
+    "nameLatin" : "Melilla",
+    "nutsName" : "Melilla",
+    "nameAscii" : "Melilla",
+    "nameHtml" : "Melilla"
   },
   "ES703": {
-    "name_latin" : "El Hierro",
-    "nuts_name" : "El Hierro",
-    "name_ascii" : "El Hierro",
-    "name_html" : "El Hierro"
+    "nameLatin" : "El Hierro",
+    "nutsName" : "El Hierro",
+    "nameAscii" : "El Hierro",
+    "nameHtml" : "El Hierro"
   },
   "ES704": {
-    "name_latin" : "Fuerteventura",
-    "nuts_name" : "Fuerteventura",
-    "name_ascii" : "Fuerteventura",
-    "name_html" : "Fuerteventura"
+    "nameLatin" : "Fuerteventura",
+    "nutsName" : "Fuerteventura",
+    "nameAscii" : "Fuerteventura",
+    "nameHtml" : "Fuerteventura"
   },
   "ES705": {
-    "name_latin" : "Gran Canaria",
-    "nuts_name" : "Gran Canaria",
-    "name_ascii" : "Gran Canaria",
-    "name_html" : "Gran Canaria"
+    "nameLatin" : "Gran Canaria",
+    "nutsName" : "Gran Canaria",
+    "nameAscii" : "Gran Canaria",
+    "nameHtml" : "Gran Canaria"
   },
   "ES706": {
-    "name_latin" : "La Gomera",
-    "nuts_name" : "La Gomera",
-    "name_ascii" : "La Gomera",
-    "name_html" : "La Gomera"
+    "nameLatin" : "La Gomera",
+    "nutsName" : "La Gomera",
+    "nameAscii" : "La Gomera",
+    "nameHtml" : "La Gomera"
   },
   "ES708": {
-    "name_latin" : "Lanzarote",
-    "nuts_name" : "Lanzarote",
-    "name_ascii" : "Lanzarote",
-    "name_html" : "Lanzarote"
+    "nameLatin" : "Lanzarote",
+    "nutsName" : "Lanzarote",
+    "nameAscii" : "Lanzarote",
+    "nameHtml" : "Lanzarote"
   },
   "ES709": {
-    "name_latin" : "Tenerife",
-    "nuts_name" : "Tenerife",
-    "name_ascii" : "Tenerife",
-    "name_html" : "Tenerife"
+    "nameLatin" : "Tenerife",
+    "nutsName" : "Tenerife",
+    "nameAscii" : "Tenerife",
+    "nameHtml" : "Tenerife"
   },
   "FI193": {
-    "name_latin" : "Keski-Suomi",
-    "nuts_name" : "Keski-Suomi",
-    "name_ascii" : "Keski-Suomi",
-    "name_html" : "Keski-Suomi"
+    "nameLatin" : "Keski-Suomi",
+    "nutsName" : "Keski-Suomi",
+    "nameAscii" : "Keski-Suomi",
+    "nameHtml" : "Keski-Suomi"
   },
   "FI194": {
-    "name_latin" : "Etelä-Pohjanmaa",
-    "nuts_name" : "Etelä-Pohjanmaa",
-    "name_ascii" : "Etela-Pohjanmaa",
-    "name_html" : "Etel&#x00E4;-Pohjanmaa"
+    "nameLatin" : "Etelä-Pohjanmaa",
+    "nutsName" : "Etelä-Pohjanmaa",
+    "nameAscii" : "Etela-Pohjanmaa",
+    "nameHtml" : "Etel&#x00E4;-Pohjanmaa"
   },
   "FI195": {
-    "name_latin" : "Pohjanmaa",
-    "nuts_name" : "Pohjanmaa",
-    "name_ascii" : "Pohjanmaa",
-    "name_html" : "Pohjanmaa"
+    "nameLatin" : "Pohjanmaa",
+    "nutsName" : "Pohjanmaa",
+    "nameAscii" : "Pohjanmaa",
+    "nameHtml" : "Pohjanmaa"
   },
   "FI196": {
-    "name_latin" : "Satakunta",
-    "nuts_name" : "Satakunta",
-    "name_ascii" : "Satakunta",
-    "name_html" : "Satakunta"
+    "nameLatin" : "Satakunta",
+    "nutsName" : "Satakunta",
+    "nameAscii" : "Satakunta",
+    "nameHtml" : "Satakunta"
   },
   "FI197": {
-    "name_latin" : "Pirkanmaa",
-    "nuts_name" : "Pirkanmaa",
-    "name_ascii" : "Pirkanmaa",
-    "name_html" : "Pirkanmaa"
+    "nameLatin" : "Pirkanmaa",
+    "nutsName" : "Pirkanmaa",
+    "nameAscii" : "Pirkanmaa",
+    "nameHtml" : "Pirkanmaa"
   },
   "FI1B1": {
-    "name_latin" : "Helsinki-Uusimaa",
-    "nuts_name" : "Helsinki-Uusimaa",
-    "name_ascii" : "Helsinki-Uusimaa",
-    "name_html" : "Helsinki-Uusimaa"
+    "nameLatin" : "Helsinki-Uusimaa",
+    "nutsName" : "Helsinki-Uusimaa",
+    "nameAscii" : "Helsinki-Uusimaa",
+    "nameHtml" : "Helsinki-Uusimaa"
   },
   "FI1C1": {
-    "name_latin" : "Varsinais-Suomi",
-    "nuts_name" : "Varsinais-Suomi",
-    "name_ascii" : "Varsinais-Suomi",
-    "name_html" : "Varsinais-Suomi"
+    "nameLatin" : "Varsinais-Suomi",
+    "nutsName" : "Varsinais-Suomi",
+    "nameAscii" : "Varsinais-Suomi",
+    "nameHtml" : "Varsinais-Suomi"
   },
   "FI1C2": {
-    "name_latin" : "Kanta-Häme",
-    "nuts_name" : "Kanta-Häme",
-    "name_ascii" : "Kanta-Hame",
-    "name_html" : "Kanta-H&#x00E4;me"
+    "nameLatin" : "Kanta-Häme",
+    "nutsName" : "Kanta-Häme",
+    "nameAscii" : "Kanta-Hame",
+    "nameHtml" : "Kanta-H&#x00E4;me"
   },
   "FI1C4": {
-    "name_latin" : "Kymenlaakso",
-    "nuts_name" : "Kymenlaakso",
-    "name_ascii" : "Kymenlaakso",
-    "name_html" : "Kymenlaakso"
+    "nameLatin" : "Kymenlaakso",
+    "nutsName" : "Kymenlaakso",
+    "nameAscii" : "Kymenlaakso",
+    "nameHtml" : "Kymenlaakso"
   },
   "FI1C5": {
-    "name_latin" : "Etelä-Karjala",
-    "nuts_name" : "Etelä-Karjala",
-    "name_ascii" : "Etela-Karjala",
-    "name_html" : "Etel&#x00E4;-Karjala"
+    "nameLatin" : "Etelä-Karjala",
+    "nutsName" : "Etelä-Karjala",
+    "nameAscii" : "Etela-Karjala",
+    "nameHtml" : "Etel&#x00E4;-Karjala"
   },
   "FI1D1": {
-    "name_latin" : "Etelä-Savo",
-    "nuts_name" : "Etelä-Savo",
-    "name_ascii" : "Etela-Savo",
-    "name_html" : "Etel&#x00E4;-Savo"
+    "nameLatin" : "Etelä-Savo",
+    "nutsName" : "Etelä-Savo",
+    "nameAscii" : "Etela-Savo",
+    "nameHtml" : "Etel&#x00E4;-Savo"
   },
   "FI1D2": {
-    "name_latin" : "Pohjois-Savo",
-    "nuts_name" : "Pohjois-Savo",
-    "name_ascii" : "Pohjois-Savo",
-    "name_html" : "Pohjois-Savo"
+    "nameLatin" : "Pohjois-Savo",
+    "nutsName" : "Pohjois-Savo",
+    "nameAscii" : "Pohjois-Savo",
+    "nameHtml" : "Pohjois-Savo"
   },
   "FI1D3": {
-    "name_latin" : "Pohjois-Karjala",
-    "nuts_name" : "Pohjois-Karjala",
-    "name_ascii" : "Pohjois-Karjala",
-    "name_html" : "Pohjois-Karjala"
+    "nameLatin" : "Pohjois-Karjala",
+    "nutsName" : "Pohjois-Karjala",
+    "nameAscii" : "Pohjois-Karjala",
+    "nameHtml" : "Pohjois-Karjala"
   },
   "FI1D4": {
-    "name_latin" : "Kainuu",
-    "nuts_name" : "Kainuu",
-    "name_ascii" : "Kainuu",
-    "name_html" : "Kainuu"
+    "nameLatin" : "Kainuu",
+    "nutsName" : "Kainuu",
+    "nameAscii" : "Kainuu",
+    "nameHtml" : "Kainuu"
   },
   "FI1D5": {
-    "name_latin" : "Keski-Pohjanmaa",
-    "nuts_name" : "Keski-Pohjanmaa",
-    "name_ascii" : "Keski-Pohjanmaa",
-    "name_html" : "Keski-Pohjanmaa"
+    "nameLatin" : "Keski-Pohjanmaa",
+    "nutsName" : "Keski-Pohjanmaa",
+    "nameAscii" : "Keski-Pohjanmaa",
+    "nameHtml" : "Keski-Pohjanmaa"
   },
   "FI1D6": {
-    "name_latin" : "Pohjois-Pohjanmaa",
-    "nuts_name" : "Pohjois-Pohjanmaa",
-    "name_ascii" : "Pohjois-Pohjanmaa",
-    "name_html" : "Pohjois-Pohjanmaa"
+    "nameLatin" : "Pohjois-Pohjanmaa",
+    "nutsName" : "Pohjois-Pohjanmaa",
+    "nameAscii" : "Pohjois-Pohjanmaa",
+    "nameHtml" : "Pohjois-Pohjanmaa"
   },
   "FI1D7": {
-    "name_latin" : "Lappi",
-    "nuts_name" : "Lappi",
-    "name_ascii" : "Lappi",
-    "name_html" : "Lappi"
+    "nameLatin" : "Lappi",
+    "nutsName" : "Lappi",
+    "nameAscii" : "Lappi",
+    "nameHtml" : "Lappi"
   },
   "FI200": {
-    "name_latin" : "Åland",
-    "nuts_name" : "Åland",
-    "name_ascii" : "Aland",
-    "name_html" : "&#x00C5;land"
+    "nameLatin" : "Åland",
+    "nutsName" : "Åland",
+    "nameAscii" : "Aland",
+    "nameHtml" : "&#x00C5;land"
   },
   "FR101": {
-    "name_latin" : "Paris",
-    "nuts_name" : "Paris",
-    "name_ascii" : "Paris",
-    "name_html" : "Paris"
+    "nameLatin" : "Paris",
+    "nutsName" : "Paris",
+    "nameAscii" : "Paris",
+    "nameHtml" : "Paris"
   },
   "FR102": {
-    "name_latin" : "Seine-et-Marne",
-    "nuts_name" : "Seine-et-Marne",
-    "name_ascii" : "Seine-et-Marne",
-    "name_html" : "Seine-et-Marne"
+    "nameLatin" : "Seine-et-Marne",
+    "nutsName" : "Seine-et-Marne",
+    "nameAscii" : "Seine-et-Marne",
+    "nameHtml" : "Seine-et-Marne"
   },
   "FR103": {
-    "name_latin" : "Yvelines",
-    "nuts_name" : "Yvelines",
-    "name_ascii" : "Yvelines",
-    "name_html" : "Yvelines"
+    "nameLatin" : "Yvelines",
+    "nutsName" : "Yvelines",
+    "nameAscii" : "Yvelines",
+    "nameHtml" : "Yvelines"
   },
   "FR104": {
-    "name_latin" : "Essonne",
-    "nuts_name" : "Essonne",
-    "name_ascii" : "Essonne",
-    "name_html" : "Essonne"
+    "nameLatin" : "Essonne",
+    "nutsName" : "Essonne",
+    "nameAscii" : "Essonne",
+    "nameHtml" : "Essonne"
   },
   "FR105": {
-    "name_latin" : "Hauts-de-Seine",
-    "nuts_name" : "Hauts-de-Seine",
-    "name_ascii" : "Hauts-de-Seine",
-    "name_html" : "Hauts-de-Seine"
+    "nameLatin" : "Hauts-de-Seine",
+    "nutsName" : "Hauts-de-Seine",
+    "nameAscii" : "Hauts-de-Seine",
+    "nameHtml" : "Hauts-de-Seine"
   },
   "FR106": {
-    "name_latin" : "Seine-Saint-Denis",
-    "nuts_name" : "Seine-Saint-Denis",
-    "name_ascii" : "Seine-Saint-Denis",
-    "name_html" : "Seine-Saint-Denis"
+    "nameLatin" : "Seine-Saint-Denis",
+    "nutsName" : "Seine-Saint-Denis",
+    "nameAscii" : "Seine-Saint-Denis",
+    "nameHtml" : "Seine-Saint-Denis"
   },
   "FR107": {
-    "name_latin" : "Val-de-Marne",
-    "nuts_name" : "Val-de-Marne",
-    "name_ascii" : "Val-de-Marne",
-    "name_html" : "Val-de-Marne"
+    "nameLatin" : "Val-de-Marne",
+    "nutsName" : "Val-de-Marne",
+    "nameAscii" : "Val-de-Marne",
+    "nameHtml" : "Val-de-Marne"
   },
   "FR108": {
-    "name_latin" : "Val-d'Oise",
-    "nuts_name" : "Val-d'Oise",
-    "name_ascii" : "Val-d'Oise",
-    "name_html" : "Val-d'Oise"
+    "nameLatin" : "Val-d'Oise",
+    "nutsName" : "Val-d'Oise",
+    "nameAscii" : "Val-d'Oise",
+    "nameHtml" : "Val-d'Oise"
   },
   "FR211": {
-    "name_latin" : "Ardennes",
-    "nuts_name" : "Ardennes",
-    "name_ascii" : "Ardennes",
-    "name_html" : "Ardennes"
+    "nameLatin" : "Ardennes",
+    "nutsName" : "Ardennes",
+    "nameAscii" : "Ardennes",
+    "nameHtml" : "Ardennes"
   },
   "FR212": {
-    "name_latin" : "Aube",
-    "nuts_name" : "Aube",
-    "name_ascii" : "Aube",
-    "name_html" : "Aube"
+    "nameLatin" : "Aube",
+    "nutsName" : "Aube",
+    "nameAscii" : "Aube",
+    "nameHtml" : "Aube"
   },
   "FR213": {
-    "name_latin" : "Marne",
-    "nuts_name" : "Marne",
-    "name_ascii" : "Marne",
-    "name_html" : "Marne"
+    "nameLatin" : "Marne",
+    "nutsName" : "Marne",
+    "nameAscii" : "Marne",
+    "nameHtml" : "Marne"
   },
   "FR214": {
-    "name_latin" : "Haute-Marne",
-    "nuts_name" : "Haute-Marne",
-    "name_ascii" : "Haute-Marne",
-    "name_html" : "Haute-Marne"
+    "nameLatin" : "Haute-Marne",
+    "nutsName" : "Haute-Marne",
+    "nameAscii" : "Haute-Marne",
+    "nameHtml" : "Haute-Marne"
   },
   "FR221": {
-    "name_latin" : "Aisne",
-    "nuts_name" : "Aisne",
-    "name_ascii" : "Aisne",
-    "name_html" : "Aisne"
+    "nameLatin" : "Aisne",
+    "nutsName" : "Aisne",
+    "nameAscii" : "Aisne",
+    "nameHtml" : "Aisne"
   },
   "FR222": {
-    "name_latin" : "Oise",
-    "nuts_name" : "Oise",
-    "name_ascii" : "Oise",
-    "name_html" : "Oise"
+    "nameLatin" : "Oise",
+    "nutsName" : "Oise",
+    "nameAscii" : "Oise",
+    "nameHtml" : "Oise"
   },
   "FR223": {
-    "name_latin" : "Somme",
-    "nuts_name" : "Somme",
-    "name_ascii" : "Somme",
-    "name_html" : "Somme"
+    "nameLatin" : "Somme",
+    "nutsName" : "Somme",
+    "nameAscii" : "Somme",
+    "nameHtml" : "Somme"
   },
   "FR231": {
-    "name_latin" : "Eure",
-    "nuts_name" : "Eure",
-    "name_ascii" : "Eure",
-    "name_html" : "Eure"
+    "nameLatin" : "Eure",
+    "nutsName" : "Eure",
+    "nameAscii" : "Eure",
+    "nameHtml" : "Eure"
   },
   "FR232": {
-    "name_latin" : "Seine-Maritime",
-    "nuts_name" : "Seine-Maritime",
-    "name_ascii" : "Seine-Maritime",
-    "name_html" : "Seine-Maritime"
+    "nameLatin" : "Seine-Maritime",
+    "nutsName" : "Seine-Maritime",
+    "nameAscii" : "Seine-Maritime",
+    "nameHtml" : "Seine-Maritime"
   },
   "FR241": {
-    "name_latin" : "Cher",
-    "nuts_name" : "Cher",
-    "name_ascii" : "Cher",
-    "name_html" : "Cher"
+    "nameLatin" : "Cher",
+    "nutsName" : "Cher",
+    "nameAscii" : "Cher",
+    "nameHtml" : "Cher"
   },
   "FR242": {
-    "name_latin" : "Eure-et-Loir",
-    "nuts_name" : "Eure-et-Loir",
-    "name_ascii" : "Eure-et-Loir",
-    "name_html" : "Eure-et-Loir"
+    "nameLatin" : "Eure-et-Loir",
+    "nutsName" : "Eure-et-Loir",
+    "nameAscii" : "Eure-et-Loir",
+    "nameHtml" : "Eure-et-Loir"
   },
   "FR243": {
-    "name_latin" : "Indre",
-    "nuts_name" : "Indre",
-    "name_ascii" : "Indre",
-    "name_html" : "Indre"
+    "nameLatin" : "Indre",
+    "nutsName" : "Indre",
+    "nameAscii" : "Indre",
+    "nameHtml" : "Indre"
   },
   "FR244": {
-    "name_latin" : "Indre-et-Loire",
-    "nuts_name" : "Indre-et-Loire",
-    "name_ascii" : "Indre-et-Loire",
-    "name_html" : "Indre-et-Loire"
+    "nameLatin" : "Indre-et-Loire",
+    "nutsName" : "Indre-et-Loire",
+    "nameAscii" : "Indre-et-Loire",
+    "nameHtml" : "Indre-et-Loire"
   },
   "FR245": {
-    "name_latin" : "Loir-et-Cher",
-    "nuts_name" : "Loir-et-Cher",
-    "name_ascii" : "Loir-et-Cher",
-    "name_html" : "Loir-et-Cher"
+    "nameLatin" : "Loir-et-Cher",
+    "nutsName" : "Loir-et-Cher",
+    "nameAscii" : "Loir-et-Cher",
+    "nameHtml" : "Loir-et-Cher"
   },
   "FR246": {
-    "name_latin" : "Loiret",
-    "nuts_name" : "Loiret",
-    "name_ascii" : "Loiret",
-    "name_html" : "Loiret"
+    "nameLatin" : "Loiret",
+    "nutsName" : "Loiret",
+    "nameAscii" : "Loiret",
+    "nameHtml" : "Loiret"
   },
   "FR251": {
-    "name_latin" : "Calvados",
-    "nuts_name" : "Calvados",
-    "name_ascii" : "Calvados",
-    "name_html" : "Calvados"
+    "nameLatin" : "Calvados",
+    "nutsName" : "Calvados",
+    "nameAscii" : "Calvados",
+    "nameHtml" : "Calvados"
   },
   "FR252": {
-    "name_latin" : "Manche",
-    "nuts_name" : "Manche",
-    "name_ascii" : "Manche",
-    "name_html" : "Manche"
+    "nameLatin" : "Manche",
+    "nutsName" : "Manche",
+    "nameAscii" : "Manche",
+    "nameHtml" : "Manche"
   },
   "FR253": {
-    "name_latin" : "Orne",
-    "nuts_name" : "Orne",
-    "name_ascii" : "Orne",
-    "name_html" : "Orne"
+    "nameLatin" : "Orne",
+    "nutsName" : "Orne",
+    "nameAscii" : "Orne",
+    "nameHtml" : "Orne"
   },
   "FR261": {
-    "name_latin" : "Côte-d'Or",
-    "nuts_name" : "Côte-d'Or",
-    "name_ascii" : "Cote-d'Or",
-    "name_html" : "C&#x00F4;te-d'Or"
+    "nameLatin" : "Côte-d'Or",
+    "nutsName" : "Côte-d'Or",
+    "nameAscii" : "Cote-d'Or",
+    "nameHtml" : "C&#x00F4;te-d'Or"
   },
   "FR262": {
-    "name_latin" : "Nièvre",
-    "nuts_name" : "Nièvre",
-    "name_ascii" : "Nievre",
-    "name_html" : "Ni&#x00E8;vre"
+    "nameLatin" : "Nièvre",
+    "nutsName" : "Nièvre",
+    "nameAscii" : "Nievre",
+    "nameHtml" : "Ni&#x00E8;vre"
   },
   "FR264": {
-    "name_latin" : "Yonne",
-    "nuts_name" : "Yonne",
-    "name_ascii" : "Yonne",
-    "name_html" : "Yonne"
+    "nameLatin" : "Yonne",
+    "nutsName" : "Yonne",
+    "nameAscii" : "Yonne",
+    "nameHtml" : "Yonne"
   },
   "FR301": {
-    "name_latin" : "Nord",
-    "nuts_name" : "Nord",
-    "name_ascii" : "Nord",
-    "name_html" : "Nord"
+    "nameLatin" : "Nord",
+    "nutsName" : "Nord",
+    "nameAscii" : "Nord",
+    "nameHtml" : "Nord"
   },
   "FR302": {
-    "name_latin" : "Pas-de-Calais",
-    "nuts_name" : "Pas-de-Calais",
-    "name_ascii" : "Pas-de-Calais",
-    "name_html" : "Pas-de-Calais"
+    "nameLatin" : "Pas-de-Calais",
+    "nutsName" : "Pas-de-Calais",
+    "nameAscii" : "Pas-de-Calais",
+    "nameHtml" : "Pas-de-Calais"
   },
   "FR412": {
-    "name_latin" : "Meuse",
-    "nuts_name" : "Meuse",
-    "name_ascii" : "Meuse",
-    "name_html" : "Meuse"
+    "nameLatin" : "Meuse",
+    "nutsName" : "Meuse",
+    "nameAscii" : "Meuse",
+    "nameHtml" : "Meuse"
   },
   "FR413": {
-    "name_latin" : "Moselle",
-    "nuts_name" : "Moselle",
-    "name_ascii" : "Moselle",
-    "name_html" : "Moselle"
+    "nameLatin" : "Moselle",
+    "nutsName" : "Moselle",
+    "nameAscii" : "Moselle",
+    "nameHtml" : "Moselle"
   },
   "FR414": {
-    "name_latin" : "Vosges",
-    "nuts_name" : "Vosges",
-    "name_ascii" : "Vosges",
-    "name_html" : "Vosges"
+    "nameLatin" : "Vosges",
+    "nutsName" : "Vosges",
+    "nameAscii" : "Vosges",
+    "nameHtml" : "Vosges"
   },
   "FR421": {
-    "name_latin" : "Bas-Rhin",
-    "nuts_name" : "Bas-Rhin",
-    "name_ascii" : "Bas-Rhin",
-    "name_html" : "Bas-Rhin"
+    "nameLatin" : "Bas-Rhin",
+    "nutsName" : "Bas-Rhin",
+    "nameAscii" : "Bas-Rhin",
+    "nameHtml" : "Bas-Rhin"
   },
   "FR422": {
-    "name_latin" : "Haut-Rhin",
-    "nuts_name" : "Haut-Rhin",
-    "name_ascii" : "Haut-Rhin",
-    "name_html" : "Haut-Rhin"
+    "nameLatin" : "Haut-Rhin",
+    "nutsName" : "Haut-Rhin",
+    "nameAscii" : "Haut-Rhin",
+    "nameHtml" : "Haut-Rhin"
   },
   "FR431": {
-    "name_latin" : "Doubs",
-    "nuts_name" : "Doubs",
-    "name_ascii" : "Doubs",
-    "name_html" : "Doubs"
+    "nameLatin" : "Doubs",
+    "nutsName" : "Doubs",
+    "nameAscii" : "Doubs",
+    "nameHtml" : "Doubs"
   },
   "FR432": {
-    "name_latin" : "Jura",
-    "nuts_name" : "Jura",
-    "name_ascii" : "Jura",
-    "name_html" : "Jura"
+    "nameLatin" : "Jura",
+    "nutsName" : "Jura",
+    "nameAscii" : "Jura",
+    "nameHtml" : "Jura"
   },
   "FR434": {
-    "name_latin" : "Territoire de Belfort",
-    "nuts_name" : "Territoire de Belfort",
-    "name_ascii" : "Territoire de Belfort",
-    "name_html" : "Territoire de Belfort"
+    "nameLatin" : "Territoire de Belfort",
+    "nutsName" : "Territoire de Belfort",
+    "nameAscii" : "Territoire de Belfort",
+    "nameHtml" : "Territoire de Belfort"
   },
   "FR511": {
-    "name_latin" : "Loire-Atlantique",
-    "nuts_name" : "Loire-Atlantique",
-    "name_ascii" : "Loire-Atlantique",
-    "name_html" : "Loire-Atlantique"
+    "nameLatin" : "Loire-Atlantique",
+    "nutsName" : "Loire-Atlantique",
+    "nameAscii" : "Loire-Atlantique",
+    "nameHtml" : "Loire-Atlantique"
   },
   "FR513": {
-    "name_latin" : "Mayenne",
-    "nuts_name" : "Mayenne",
-    "name_ascii" : "Mayenne",
-    "name_html" : "Mayenne"
+    "nameLatin" : "Mayenne",
+    "nutsName" : "Mayenne",
+    "nameAscii" : "Mayenne",
+    "nameHtml" : "Mayenne"
   },
   "FR514": {
-    "name_latin" : "Sarthe",
-    "nuts_name" : "Sarthe",
-    "name_ascii" : "Sarthe",
-    "name_html" : "Sarthe"
+    "nameLatin" : "Sarthe",
+    "nutsName" : "Sarthe",
+    "nameAscii" : "Sarthe",
+    "nameHtml" : "Sarthe"
   },
   "FR515": {
-    "name_latin" : "Vendée",
-    "nuts_name" : "Vendée",
-    "name_ascii" : "Vendee",
-    "name_html" : "Vend&#x00E9;e"
+    "nameLatin" : "Vendée",
+    "nutsName" : "Vendée",
+    "nameAscii" : "Vendee",
+    "nameHtml" : "Vend&#x00E9;e"
   },
   "FR521": {
-    "name_latin" : "Côtes-d'Armor",
-    "nuts_name" : "Côtes-d'Armor",
-    "name_ascii" : "Cotes-d'Armor",
-    "name_html" : "C&#x00F4;tes-d'Armor"
+    "nameLatin" : "Côtes-d'Armor",
+    "nutsName" : "Côtes-d'Armor",
+    "nameAscii" : "Cotes-d'Armor",
+    "nameHtml" : "C&#x00F4;tes-d'Armor"
   },
   "FR523": {
-    "name_latin" : "Ille-et-Vilaine",
-    "nuts_name" : "Ille-et-Vilaine",
-    "name_ascii" : "Ille-et-Vilaine",
-    "name_html" : "Ille-et-Vilaine"
+    "nameLatin" : "Ille-et-Vilaine",
+    "nutsName" : "Ille-et-Vilaine",
+    "nameAscii" : "Ille-et-Vilaine",
+    "nameHtml" : "Ille-et-Vilaine"
   },
   "FR524": {
-    "name_latin" : "Morbihan",
-    "nuts_name" : "Morbihan",
-    "name_ascii" : "Morbihan",
-    "name_html" : "Morbihan"
+    "nameLatin" : "Morbihan",
+    "nutsName" : "Morbihan",
+    "nameAscii" : "Morbihan",
+    "nameHtml" : "Morbihan"
   },
   "FR531": {
-    "name_latin" : "Charente",
-    "nuts_name" : "Charente",
-    "name_ascii" : "Charente",
-    "name_html" : "Charente"
+    "nameLatin" : "Charente",
+    "nutsName" : "Charente",
+    "nameAscii" : "Charente",
+    "nameHtml" : "Charente"
   },
   "FR532": {
-    "name_latin" : "Charente-Maritime",
-    "nuts_name" : "Charente-Maritime",
-    "name_ascii" : "Charente-Maritime",
-    "name_html" : "Charente-Maritime"
+    "nameLatin" : "Charente-Maritime",
+    "nutsName" : "Charente-Maritime",
+    "nameAscii" : "Charente-Maritime",
+    "nameHtml" : "Charente-Maritime"
   },
   "FR534": {
-    "name_latin" : "Vienne",
-    "nuts_name" : "Vienne",
-    "name_ascii" : "Vienne",
-    "name_html" : "Vienne"
+    "nameLatin" : "Vienne",
+    "nutsName" : "Vienne",
+    "nameAscii" : "Vienne",
+    "nameHtml" : "Vienne"
   },
   "FR611": {
-    "name_latin" : "Dordogne",
-    "nuts_name" : "Dordogne",
-    "name_ascii" : "Dordogne",
-    "name_html" : "Dordogne"
+    "nameLatin" : "Dordogne",
+    "nutsName" : "Dordogne",
+    "nameAscii" : "Dordogne",
+    "nameHtml" : "Dordogne"
   },
   "FR612": {
-    "name_latin" : "Gironde",
-    "nuts_name" : "Gironde",
-    "name_ascii" : "Gironde",
-    "name_html" : "Gironde"
+    "nameLatin" : "Gironde",
+    "nutsName" : "Gironde",
+    "nameAscii" : "Gironde",
+    "nameHtml" : "Gironde"
   },
   "FR613": {
-    "name_latin" : "Landes",
-    "nuts_name" : "Landes",
-    "name_ascii" : "Landes",
-    "name_html" : "Landes"
+    "nameLatin" : "Landes",
+    "nutsName" : "Landes",
+    "nameAscii" : "Landes",
+    "nameHtml" : "Landes"
   },
   "FR615": {
-    "name_latin" : "Pyrénées-Atlantiques",
-    "nuts_name" : "Pyrénées-Atlantiques",
-    "name_ascii" : "Pyrenees-Atlantiques",
-    "name_html" : "Pyr&#x00E9;n&#x00E9;es-Atlantiques"
+    "nameLatin" : "Pyrénées-Atlantiques",
+    "nutsName" : "Pyrénées-Atlantiques",
+    "nameAscii" : "Pyrenees-Atlantiques",
+    "nameHtml" : "Pyr&#x00E9;n&#x00E9;es-Atlantiques"
   },
   "FR621": {
-    "name_latin" : "Ariège",
-    "nuts_name" : "Ariège",
-    "name_ascii" : "Ariege",
-    "name_html" : "Ari&#x00E8;ge"
+    "nameLatin" : "Ariège",
+    "nutsName" : "Ariège",
+    "nameAscii" : "Ariege",
+    "nameHtml" : "Ari&#x00E8;ge"
   },
   "FR623": {
-    "name_latin" : "Haute-Garonne",
-    "nuts_name" : "Haute-Garonne",
-    "name_ascii" : "Haute-Garonne",
-    "name_html" : "Haute-Garonne"
+    "nameLatin" : "Haute-Garonne",
+    "nutsName" : "Haute-Garonne",
+    "nameAscii" : "Haute-Garonne",
+    "nameHtml" : "Haute-Garonne"
   },
   "FR624": {
-    "name_latin" : "Gers",
-    "nuts_name" : "Gers",
-    "name_ascii" : "Gers",
-    "name_html" : "Gers"
+    "nameLatin" : "Gers",
+    "nutsName" : "Gers",
+    "nameAscii" : "Gers",
+    "nameHtml" : "Gers"
   },
   "FR625": {
-    "name_latin" : "Lot",
-    "nuts_name" : "Lot",
-    "name_ascii" : "Lot",
-    "name_html" : "Lot"
+    "nameLatin" : "Lot",
+    "nutsName" : "Lot",
+    "nameAscii" : "Lot",
+    "nameHtml" : "Lot"
   },
   "FR627": {
-    "name_latin" : "Tarn",
-    "nuts_name" : "Tarn",
-    "name_ascii" : "Tarn",
-    "name_html" : "Tarn"
+    "nameLatin" : "Tarn",
+    "nutsName" : "Tarn",
+    "nameAscii" : "Tarn",
+    "nameHtml" : "Tarn"
   },
   "FR628": {
-    "name_latin" : "Tarn-et-Garonne",
-    "nuts_name" : "Tarn-et-Garonne",
-    "name_ascii" : "Tarn-et-Garonne",
-    "name_html" : "Tarn-et-Garonne"
+    "nameLatin" : "Tarn-et-Garonne",
+    "nutsName" : "Tarn-et-Garonne",
+    "nameAscii" : "Tarn-et-Garonne",
+    "nameHtml" : "Tarn-et-Garonne"
   },
   "FR631": {
-    "name_latin" : "Corrèze",
-    "nuts_name" : "Corrèze",
-    "name_ascii" : "Correze",
-    "name_html" : "Corr&#x00E8;ze"
+    "nameLatin" : "Corrèze",
+    "nutsName" : "Corrèze",
+    "nameAscii" : "Correze",
+    "nameHtml" : "Corr&#x00E8;ze"
   },
   "FR632": {
-    "name_latin" : "Creuse",
-    "nuts_name" : "Creuse",
-    "name_ascii" : "Creuse",
-    "name_html" : "Creuse"
+    "nameLatin" : "Creuse",
+    "nutsName" : "Creuse",
+    "nameAscii" : "Creuse",
+    "nameHtml" : "Creuse"
   },
   "FR633": {
-    "name_latin" : "Haute-Vienne",
-    "nuts_name" : "Haute-Vienne",
-    "name_ascii" : "Haute-Vienne",
-    "name_html" : "Haute-Vienne"
+    "nameLatin" : "Haute-Vienne",
+    "nutsName" : "Haute-Vienne",
+    "nameAscii" : "Haute-Vienne",
+    "nameHtml" : "Haute-Vienne"
   },
   "FR711": {
-    "name_latin" : "Ain",
-    "nuts_name" : "Ain",
-    "name_ascii" : "Ain",
-    "name_html" : "Ain"
+    "nameLatin" : "Ain",
+    "nutsName" : "Ain",
+    "nameAscii" : "Ain",
+    "nameHtml" : "Ain"
   },
   "FR713": {
-    "name_latin" : "Drôme",
-    "nuts_name" : "Drôme",
-    "name_ascii" : "Drome",
-    "name_html" : "Dr&#x00F4;me"
+    "nameLatin" : "Drôme",
+    "nutsName" : "Drôme",
+    "nameAscii" : "Drome",
+    "nameHtml" : "Dr&#x00F4;me"
   },
   "FR714": {
-    "name_latin" : "Isère",
-    "nuts_name" : "Isère",
-    "name_ascii" : "Isere",
-    "name_html" : "Is&#x00E8;re"
+    "nameLatin" : "Isère",
+    "nutsName" : "Isère",
+    "nameAscii" : "Isere",
+    "nameHtml" : "Is&#x00E8;re"
   },
   "FR715": {
-    "name_latin" : "Loire",
-    "nuts_name" : "Loire",
-    "name_ascii" : "Loire",
-    "name_html" : "Loire"
+    "nameLatin" : "Loire",
+    "nutsName" : "Loire",
+    "nameAscii" : "Loire",
+    "nameHtml" : "Loire"
   },
   "FR716": {
-    "name_latin" : "Rhône",
-    "nuts_name" : "Rhône",
-    "name_ascii" : "Rhone",
-    "name_html" : "Rh&#x00F4;ne"
+    "nameLatin" : "Rhône",
+    "nutsName" : "Rhône",
+    "nameAscii" : "Rhone",
+    "nameHtml" : "Rh&#x00F4;ne"
   },
   "FR717": {
-    "name_latin" : "Savoie",
-    "nuts_name" : "Savoie",
-    "name_ascii" : "Savoie",
-    "name_html" : "Savoie"
+    "nameLatin" : "Savoie",
+    "nutsName" : "Savoie",
+    "nameAscii" : "Savoie",
+    "nameHtml" : "Savoie"
   },
   "FR721": {
-    "name_latin" : "Allier",
-    "nuts_name" : "Allier",
-    "name_ascii" : "Allier",
-    "name_html" : "Allier"
+    "nameLatin" : "Allier",
+    "nutsName" : "Allier",
+    "nameAscii" : "Allier",
+    "nameHtml" : "Allier"
   },
   "FR722": {
-    "name_latin" : "Cantal",
-    "nuts_name" : "Cantal",
-    "name_ascii" : "Cantal",
-    "name_html" : "Cantal"
+    "nameLatin" : "Cantal",
+    "nutsName" : "Cantal",
+    "nameAscii" : "Cantal",
+    "nameHtml" : "Cantal"
   },
   "FR723": {
-    "name_latin" : "Haute-Loire",
-    "nuts_name" : "Haute-Loire",
-    "name_ascii" : "Haute-Loire",
-    "name_html" : "Haute-Loire"
+    "nameLatin" : "Haute-Loire",
+    "nutsName" : "Haute-Loire",
+    "nameAscii" : "Haute-Loire",
+    "nameHtml" : "Haute-Loire"
   },
   "FR724": {
-    "name_latin" : "Puy-de-Dôme",
-    "nuts_name" : "Puy-de-Dôme",
-    "name_ascii" : "Puy-de-Dome",
-    "name_html" : "Puy-de-D&#x00F4;me"
+    "nameLatin" : "Puy-de-Dôme",
+    "nutsName" : "Puy-de-Dôme",
+    "nameAscii" : "Puy-de-Dome",
+    "nameHtml" : "Puy-de-D&#x00F4;me"
   },
   "FR811": {
-    "name_latin" : "Aude",
-    "nuts_name" : "Aude",
-    "name_ascii" : "Aude",
-    "name_html" : "Aude"
+    "nameLatin" : "Aude",
+    "nutsName" : "Aude",
+    "nameAscii" : "Aude",
+    "nameHtml" : "Aude"
   },
   "FR812": {
-    "name_latin" : "Gard",
-    "nuts_name" : "Gard",
-    "name_ascii" : "Gard",
-    "name_html" : "Gard"
+    "nameLatin" : "Gard",
+    "nutsName" : "Gard",
+    "nameAscii" : "Gard",
+    "nameHtml" : "Gard"
   },
   "FR813": {
-    "name_latin" : "Hérault",
-    "nuts_name" : "Hérault",
-    "name_ascii" : "Herault",
-    "name_html" : "H&#x00E9;rault"
+    "nameLatin" : "Hérault",
+    "nutsName" : "Hérault",
+    "nameAscii" : "Herault",
+    "nameHtml" : "H&#x00E9;rault"
   },
   "FR814": {
-    "name_latin" : "Lozère",
-    "nuts_name" : "Lozère",
-    "name_ascii" : "Lozere",
-    "name_html" : "Loz&#x00E8;re"
+    "nameLatin" : "Lozère",
+    "nutsName" : "Lozère",
+    "nameAscii" : "Lozere",
+    "nameHtml" : "Loz&#x00E8;re"
   },
   "FR815": {
-    "name_latin" : "Pyrénées-Orientales",
-    "nuts_name" : "Pyrénées-Orientales",
-    "name_ascii" : "Pyrenees-Orientales",
-    "name_html" : "Pyr&#x00E9;n&#x00E9;es-Orientales"
+    "nameLatin" : "Pyrénées-Orientales",
+    "nutsName" : "Pyrénées-Orientales",
+    "nameAscii" : "Pyrenees-Orientales",
+    "nameHtml" : "Pyr&#x00E9;n&#x00E9;es-Orientales"
   },
   "FR821": {
-    "name_latin" : "Alpes-de-Haute-Provence",
-    "nuts_name" : "Alpes-de-Haute-Provence",
-    "name_ascii" : "Alpes-de-Haute-Provence",
-    "name_html" : "Alpes-de-Haute-Provence"
+    "nameLatin" : "Alpes-de-Haute-Provence",
+    "nutsName" : "Alpes-de-Haute-Provence",
+    "nameAscii" : "Alpes-de-Haute-Provence",
+    "nameHtml" : "Alpes-de-Haute-Provence"
   },
   "FR822": {
-    "name_latin" : "Hautes-Alpes",
-    "nuts_name" : "Hautes-Alpes",
-    "name_ascii" : "Hautes-Alpes",
-    "name_html" : "Hautes-Alpes"
+    "nameLatin" : "Hautes-Alpes",
+    "nutsName" : "Hautes-Alpes",
+    "nameAscii" : "Hautes-Alpes",
+    "nameHtml" : "Hautes-Alpes"
   },
   "FR823": {
-    "name_latin" : "Alpes-Maritimes",
-    "nuts_name" : "Alpes-Maritimes",
-    "name_ascii" : "Alpes-Maritimes",
-    "name_html" : "Alpes-Maritimes"
+    "nameLatin" : "Alpes-Maritimes",
+    "nutsName" : "Alpes-Maritimes",
+    "nameAscii" : "Alpes-Maritimes",
+    "nameHtml" : "Alpes-Maritimes"
   },
   "FR824": {
-    "name_latin" : "Bouches-du-Rhône",
-    "nuts_name" : "Bouches-du-Rhône",
-    "name_ascii" : "Bouches-du-Rhone",
-    "name_html" : "Bouches-du-Rh&#x00F4;ne"
+    "nameLatin" : "Bouches-du-Rhône",
+    "nutsName" : "Bouches-du-Rhône",
+    "nameAscii" : "Bouches-du-Rhone",
+    "nameHtml" : "Bouches-du-Rh&#x00F4;ne"
   },
   "FR825": {
-    "name_latin" : "Var",
-    "nuts_name" : "Var",
-    "name_ascii" : "Var",
-    "name_html" : "Var"
+    "nameLatin" : "Var",
+    "nutsName" : "Var",
+    "nameAscii" : "Var",
+    "nameHtml" : "Var"
   },
   "FR826": {
-    "name_latin" : "Vaucluse",
-    "nuts_name" : "Vaucluse",
-    "name_ascii" : "Vaucluse",
-    "name_html" : "Vaucluse"
+    "nameLatin" : "Vaucluse",
+    "nutsName" : "Vaucluse",
+    "nameAscii" : "Vaucluse",
+    "nameHtml" : "Vaucluse"
   },
   "FR831": {
-    "name_latin" : "Corse-du-Sud",
-    "nuts_name" : "Corse-du-Sud",
-    "name_ascii" : "Corse-du-Sud",
-    "name_html" : "Corse-du-Sud"
+    "nameLatin" : "Corse-du-Sud",
+    "nutsName" : "Corse-du-Sud",
+    "nameAscii" : "Corse-du-Sud",
+    "nameHtml" : "Corse-du-Sud"
   },
   "FR832": {
-    "name_latin" : "Haute-Corse",
-    "nuts_name" : "Haute-Corse",
-    "name_ascii" : "Haute-Corse",
-    "name_html" : "Haute-Corse"
+    "nameLatin" : "Haute-Corse",
+    "nutsName" : "Haute-Corse",
+    "nameAscii" : "Haute-Corse",
+    "nameHtml" : "Haute-Corse"
   },
   "FRA10": {
-    "name_latin" : "Guadeloupe",
-    "nuts_name" : "Guadeloupe",
-    "name_ascii" : "Guadeloupe",
-    "name_html" : "Guadeloupe"
+    "nameLatin" : "Guadeloupe",
+    "nutsName" : "Guadeloupe",
+    "nameAscii" : "Guadeloupe",
+    "nameHtml" : "Guadeloupe"
   },
   "FRA20": {
-    "name_latin" : "Martinique",
-    "nuts_name" : "Martinique",
-    "name_ascii" : "Martinique",
-    "name_html" : "Martinique"
+    "nameLatin" : "Martinique",
+    "nutsName" : "Martinique",
+    "nameAscii" : "Martinique",
+    "nameHtml" : "Martinique"
   },
   "FRA30": {
-    "name_latin" : "Guyane",
-    "nuts_name" : "Guyane",
-    "name_ascii" : "Guyane",
-    "name_html" : "Guyane"
+    "nameLatin" : "Guyane",
+    "nutsName" : "Guyane",
+    "nameAscii" : "Guyane",
+    "nameHtml" : "Guyane"
   },
   "FRA40": {
-    "name_latin" : "La Réunion",
-    "nuts_name" : "La Réunion",
-    "name_ascii" : "La Reunion",
-    "name_html" : "La R&#x00E9;union"
+    "nameLatin" : "La Réunion",
+    "nutsName" : "La Réunion",
+    "nameAscii" : "La Reunion",
+    "nameHtml" : "La R&#x00E9;union"
   },
   "FRA50": {
-    "name_latin" : "Mayotte",
-    "nuts_name" : "Mayotte",
-    "name_ascii" : "Mayotte",
-    "name_html" : "Mayotte"
+    "nameLatin" : "Mayotte",
+    "nutsName" : "Mayotte",
+    "nameAscii" : "Mayotte",
+    "nameHtml" : "Mayotte"
   },
   "HR031": {
-    "name_latin" : "Primorsko-goranska županija",
-    "nuts_name" : "Primorsko-goranska županija",
-    "name_ascii" : "Primorsko-Goranska Zupanija",
-    "name_html" : "Primorsko-Goranska &#x017D;upanija"
+    "nameLatin" : "Primorsko-goranska županija",
+    "nutsName" : "Primorsko-goranska županija",
+    "nameAscii" : "Primorsko-Goranska Zupanija",
+    "nameHtml" : "Primorsko-Goranska &#x017D;upanija"
   },
   "HR032": {
-    "name_latin" : "Licko-senjska županija",
-    "nuts_name" : "Licko-senjska županija",
-    "name_ascii" : "Licko-Senjska Zupanija",
-    "name_html" : "Licko-Senjska &#x017D;upanija"
+    "nameLatin" : "Licko-senjska županija",
+    "nutsName" : "Licko-senjska županija",
+    "nameAscii" : "Licko-Senjska Zupanija",
+    "nameHtml" : "Licko-Senjska &#x017D;upanija"
   },
   "HR033": {
-    "name_latin" : "Zadarska županija",
-    "nuts_name" : "Zadarska županija",
-    "name_ascii" : "Zadarska Zupanija",
-    "name_html" : "Zadarska &#x017D;upanija"
+    "nameLatin" : "Zadarska županija",
+    "nutsName" : "Zadarska županija",
+    "nameAscii" : "Zadarska Zupanija",
+    "nameHtml" : "Zadarska &#x017D;upanija"
   },
   "HR035": {
-    "name_latin" : "Splitsko-dalmatinska županija",
-    "nuts_name" : "Splitsko-dalmatinska županija",
-    "name_ascii" : "Splitsko-Dalmatinska Zupanija",
-    "name_html" : "Splitsko-Dalmatinska &#x017D;upanija"
+    "nameLatin" : "Splitsko-dalmatinska županija",
+    "nutsName" : "Splitsko-dalmatinska županija",
+    "nameAscii" : "Splitsko-Dalmatinska Zupanija",
+    "nameHtml" : "Splitsko-Dalmatinska &#x017D;upanija"
   },
   "HR036": {
-    "name_latin" : "Istarska županija",
-    "nuts_name" : "Istarska županija",
-    "name_ascii" : "Istarska Zupanija",
-    "name_html" : "Istarska &#x017D;upanija"
+    "nameLatin" : "Istarska županija",
+    "nutsName" : "Istarska županija",
+    "nameAscii" : "Istarska Zupanija",
+    "nameHtml" : "Istarska &#x017D;upanija"
   },
   "HR037": {
-    "name_latin" : "Dubrovacko-neretvanska županija",
-    "nuts_name" : "Dubrovacko-neretvanska županija",
-    "name_ascii" : "Dubrovacko-Neretvanska Zupanija",
-    "name_html" : "Dubrovacko-Neretvanska &#x017D;upanija"
+    "nameLatin" : "Dubrovacko-neretvanska županija",
+    "nutsName" : "Dubrovacko-neretvanska županija",
+    "nameAscii" : "Dubrovacko-Neretvanska Zupanija",
+    "nameHtml" : "Dubrovacko-Neretvanska &#x017D;upanija"
   },
   "HR042": {
-    "name_latin" : "Zagrebacka županija",
-    "nuts_name" : "Zagrebacka županija",
-    "name_ascii" : "Zagrebacka Zupanija",
-    "name_html" : "Zagrebacka &#x017D;upanija"
+    "nameLatin" : "Zagrebacka županija",
+    "nutsName" : "Zagrebacka županija",
+    "nameAscii" : "Zagrebacka Zupanija",
+    "nameHtml" : "Zagrebacka &#x017D;upanija"
   },
   "HR043": {
-    "name_latin" : "Krapinsko-zagorska županija",
-    "nuts_name" : "Krapinsko-zagorska županija",
-    "name_ascii" : "Krapinsko-Zagorska Zupanija",
-    "name_html" : "Krapinsko-Zagorska &#x017D;upanija"
+    "nameLatin" : "Krapinsko-zagorska županija",
+    "nutsName" : "Krapinsko-zagorska županija",
+    "nameAscii" : "Krapinsko-Zagorska Zupanija",
+    "nameHtml" : "Krapinsko-Zagorska &#x017D;upanija"
   },
   "HR045": {
-    "name_latin" : "Koprivnicko-križevacka županija",
-    "nuts_name" : "Koprivnicko-križevacka županija",
-    "name_ascii" : "Koprivnicko-Krizevacka Zupanija",
-    "name_html" : "Koprivnicko-Kri&#x017E;evacka &#x017D;upanija"
+    "nameLatin" : "Koprivnicko-križevacka županija",
+    "nutsName" : "Koprivnicko-križevacka županija",
+    "nameAscii" : "Koprivnicko-Krizevacka Zupanija",
+    "nameHtml" : "Koprivnicko-Kri&#x017E;evacka &#x017D;upanija"
   },
   "HR046": {
-    "name_latin" : "Medimurska županija",
-    "nuts_name" : "Medimurska županija",
-    "name_ascii" : "Medimurska Zupanija",
-    "name_html" : "Medimurska &#x017D;upanija"
+    "nameLatin" : "Medimurska županija",
+    "nutsName" : "Medimurska županija",
+    "nameAscii" : "Medimurska Zupanija",
+    "nameHtml" : "Medimurska &#x017D;upanija"
   },
   "HR047": {
-    "name_latin" : "Bjelovarsko-bilogorska županija",
-    "nuts_name" : "Bjelovarsko-bilogorska županija",
-    "name_ascii" : "Bjelovarsko-Bilogorska Zupanija",
-    "name_html" : "Bjelovarsko-Bilogorska &#x017D;upanija"
+    "nameLatin" : "Bjelovarsko-bilogorska županija",
+    "nutsName" : "Bjelovarsko-bilogorska županija",
+    "nameAscii" : "Bjelovarsko-Bilogorska Zupanija",
+    "nameHtml" : "Bjelovarsko-Bilogorska &#x017D;upanija"
   },
   "HR049": {
-    "name_latin" : "Požeško-slavonska županija",
-    "nuts_name" : "Požeško-slavonska županija",
-    "name_ascii" : "Pozesko-Slavonska Zupanija",
-    "name_html" : "Po&#x017E;e&#x0161;ko-Slavonska &#x017D;upanija"
+    "nameLatin" : "Požeško-slavonska županija",
+    "nutsName" : "Požeško-slavonska županija",
+    "nameAscii" : "Pozesko-Slavonska Zupanija",
+    "nameHtml" : "Po&#x017E;e&#x0161;ko-Slavonska &#x017D;upanija"
   },
   "HR04A": {
-    "name_latin" : "Brodsko-posavska županija",
-    "nuts_name" : "Brodsko-posavska županija",
-    "name_ascii" : "Brodsko-Posavska Zupanija",
-    "name_html" : "Brodsko-Posavska &#x017D;upanija"
+    "nameLatin" : "Brodsko-posavska županija",
+    "nutsName" : "Brodsko-posavska županija",
+    "nameAscii" : "Brodsko-Posavska Zupanija",
+    "nameHtml" : "Brodsko-Posavska &#x017D;upanija"
   },
   "HR04B": {
-    "name_latin" : "Osjecko-baranjska županija",
-    "nuts_name" : "Osjecko-baranjska županija",
-    "name_ascii" : "Osjecko-Baranjska Zupanija",
-    "name_html" : "Osjecko-Baranjska &#x017D;upanija"
+    "nameLatin" : "Osjecko-baranjska županija",
+    "nutsName" : "Osjecko-baranjska županija",
+    "nameAscii" : "Osjecko-Baranjska Zupanija",
+    "nameHtml" : "Osjecko-Baranjska &#x017D;upanija"
   },
   "HR04D": {
-    "name_latin" : "Karlovacka županija",
-    "nuts_name" : "Karlovacka županija",
-    "name_ascii" : "Karlovacka Zupanija",
-    "name_html" : "Karlovacka &#x017D;upanija"
+    "nameLatin" : "Karlovacka županija",
+    "nutsName" : "Karlovacka županija",
+    "nameAscii" : "Karlovacka Zupanija",
+    "nameHtml" : "Karlovacka &#x017D;upanija"
   },
   "HR04E": {
-    "name_latin" : "Sisacko-moslavacka županija",
-    "nuts_name" : "Sisacko-moslavacka županija",
-    "name_ascii" : "Sisacko-Moslavacka Zupanija",
-    "name_html" : "Sisacko-Moslavacka &#x017D;upanija"
+    "nameLatin" : "Sisacko-moslavacka županija",
+    "nutsName" : "Sisacko-moslavacka županija",
+    "nameAscii" : "Sisacko-Moslavacka Zupanija",
+    "nameHtml" : "Sisacko-Moslavacka &#x017D;upanija"
   },
   "HU101": {
-    "name_latin" : "Budapest",
-    "nuts_name" : "Budapest",
-    "name_ascii" : "Budapest",
-    "name_html" : "Budapest"
+    "nameLatin" : "Budapest",
+    "nutsName" : "Budapest",
+    "nameAscii" : "Budapest",
+    "nameHtml" : "Budapest"
   },
   "HU102": {
-    "name_latin" : "Pest",
-    "nuts_name" : "Pest",
-    "name_ascii" : "Pest",
-    "name_html" : "Pest"
+    "nameLatin" : "Pest",
+    "nutsName" : "Pest",
+    "nameAscii" : "Pest",
+    "nameHtml" : "Pest"
   },
   "HU211": {
-    "name_latin" : "Fejér",
-    "nuts_name" : "Fejér",
-    "name_ascii" : "Fejer",
-    "name_html" : "Fej&#x00E9;r"
+    "nameLatin" : "Fejér",
+    "nutsName" : "Fejér",
+    "nameAscii" : "Fejer",
+    "nameHtml" : "Fej&#x00E9;r"
   },
   "HU213": {
-    "name_latin" : "Veszprém",
-    "nuts_name" : "Veszprém",
-    "name_ascii" : "Veszprem",
-    "name_html" : "Veszpr&#x00E9;m"
+    "nameLatin" : "Veszprém",
+    "nutsName" : "Veszprém",
+    "nameAscii" : "Veszprem",
+    "nameHtml" : "Veszpr&#x00E9;m"
   },
   "HU221": {
-    "name_latin" : "Gyor-Moson-Sopron",
-    "nuts_name" : "Gyor-Moson-Sopron",
-    "name_ascii" : "Gyor-Moson-Sopron",
-    "name_html" : "Gyor-Moson-Sopron"
+    "nameLatin" : "Gyor-Moson-Sopron",
+    "nutsName" : "Gyor-Moson-Sopron",
+    "nameAscii" : "Gyor-Moson-Sopron",
+    "nameHtml" : "Gyor-Moson-Sopron"
   },
   "HU222": {
-    "name_latin" : "Vas",
-    "nuts_name" : "Vas",
-    "name_ascii" : "Vas",
-    "name_html" : "Vas"
+    "nameLatin" : "Vas",
+    "nutsName" : "Vas",
+    "nameAscii" : "Vas",
+    "nameHtml" : "Vas"
   },
   "HU223": {
-    "name_latin" : "Zala",
-    "nuts_name" : "Zala",
-    "name_ascii" : "Zala",
-    "name_html" : "Zala"
+    "nameLatin" : "Zala",
+    "nutsName" : "Zala",
+    "nameAscii" : "Zala",
+    "nameHtml" : "Zala"
   },
   "HU231": {
-    "name_latin" : "Baranya",
-    "nuts_name" : "Baranya",
-    "name_ascii" : "Baranya",
-    "name_html" : "Baranya"
+    "nameLatin" : "Baranya",
+    "nutsName" : "Baranya",
+    "nameAscii" : "Baranya",
+    "nameHtml" : "Baranya"
   },
   "HU232": {
-    "name_latin" : "Somogy",
-    "nuts_name" : "Somogy",
-    "name_ascii" : "Somogy",
-    "name_html" : "Somogy"
+    "nameLatin" : "Somogy",
+    "nutsName" : "Somogy",
+    "nameAscii" : "Somogy",
+    "nameHtml" : "Somogy"
   },
   "HU233": {
-    "name_latin" : "Tolna",
-    "nuts_name" : "Tolna",
-    "name_ascii" : "Tolna",
-    "name_html" : "Tolna"
+    "nameLatin" : "Tolna",
+    "nutsName" : "Tolna",
+    "nameAscii" : "Tolna",
+    "nameHtml" : "Tolna"
   },
   "HU312": {
-    "name_latin" : "Heves",
-    "nuts_name" : "Heves",
-    "name_ascii" : "Heves",
-    "name_html" : "Heves"
+    "nameLatin" : "Heves",
+    "nutsName" : "Heves",
+    "nameAscii" : "Heves",
+    "nameHtml" : "Heves"
   },
   "HU313": {
-    "name_latin" : "Nógrád",
-    "nuts_name" : "Nógrád",
-    "name_ascii" : "Nograd",
-    "name_html" : "N&#x00F3;gr&#x00E1;d"
+    "nameLatin" : "Nógrád",
+    "nutsName" : "Nógrád",
+    "nameAscii" : "Nograd",
+    "nameHtml" : "N&#x00F3;gr&#x00E1;d"
   },
   "HU321": {
-    "name_latin" : "Hajdú-Bihar",
-    "nuts_name" : "Hajdú-Bihar",
-    "name_ascii" : "Hajdu-Bihar",
-    "name_html" : "Hajd&#x00FA;-Bihar"
+    "nameLatin" : "Hajdú-Bihar",
+    "nutsName" : "Hajdú-Bihar",
+    "nameAscii" : "Hajdu-Bihar",
+    "nameHtml" : "Hajd&#x00FA;-Bihar"
   },
   "HU322": {
-    "name_latin" : "Jász-Nagykun-Szolnok",
-    "nuts_name" : "Jász-Nagykun-Szolnok",
-    "name_ascii" : "Jasz-Nagykun-Szolnok",
-    "name_html" : "J&#x00E1;sz-Nagykun-Szolnok"
+    "nameLatin" : "Jász-Nagykun-Szolnok",
+    "nutsName" : "Jász-Nagykun-Szolnok",
+    "nameAscii" : "Jasz-Nagykun-Szolnok",
+    "nameHtml" : "J&#x00E1;sz-Nagykun-Szolnok"
   },
   "HU331": {
-    "name_latin" : "Bács-Kiskun",
-    "nuts_name" : "Bács-Kiskun",
-    "name_ascii" : "Bacs-Kiskun",
-    "name_html" : "B&#x00E1;cs-Kiskun"
+    "nameLatin" : "Bács-Kiskun",
+    "nutsName" : "Bács-Kiskun",
+    "nameAscii" : "Bacs-Kiskun",
+    "nameHtml" : "B&#x00E1;cs-Kiskun"
   },
   "HU332": {
-    "name_latin" : "Békés",
-    "nuts_name" : "Békés",
-    "name_ascii" : "Bekes",
-    "name_html" : "B&#x00E9;k&#x00E9;s"
+    "nameLatin" : "Békés",
+    "nutsName" : "Békés",
+    "nameAscii" : "Bekes",
+    "nameHtml" : "B&#x00E9;k&#x00E9;s"
   },
   "HU333": {
-    "name_latin" : "Csongrád",
-    "nuts_name" : "Csongrád",
-    "name_ascii" : "Csongrad",
-    "name_html" : "Csongr&#x00E1;d"
+    "nameLatin" : "Csongrád",
+    "nutsName" : "Csongrád",
+    "nameAscii" : "Csongrad",
+    "nameHtml" : "Csongr&#x00E1;d"
   },
   "IE011": {
-    "name_latin" : "Border",
-    "nuts_name" : "Border",
-    "name_ascii" : "Border",
-    "name_html" : "Border"
+    "nameLatin" : "Border",
+    "nutsName" : "Border",
+    "nameAscii" : "Border",
+    "nameHtml" : "Border"
   },
   "IE012": {
-    "name_latin" : "Midland",
-    "nuts_name" : "Midland",
-    "name_ascii" : "Midland",
-    "name_html" : "Midland"
+    "nameLatin" : "Midland",
+    "nutsName" : "Midland",
+    "nameAscii" : "Midland",
+    "nameHtml" : "Midland"
   },
   "IE021": {
-    "name_latin" : "Dublin",
-    "nuts_name" : "Dublin",
-    "name_ascii" : "Dublin",
-    "name_html" : "Dublin"
+    "nameLatin" : "Dublin",
+    "nutsName" : "Dublin",
+    "nameAscii" : "Dublin",
+    "nameHtml" : "Dublin"
   },
   "IE023": {
-    "name_latin" : "Mid-West",
-    "nuts_name" : "Mid-West",
-    "name_ascii" : "Mid-West",
-    "name_html" : "Mid-West"
+    "nameLatin" : "Mid-West",
+    "nutsName" : "Mid-West",
+    "nameAscii" : "Mid-West",
+    "nameHtml" : "Mid-West"
   },
   "IE024": {
-    "name_latin" : "South-East (IE)",
-    "nuts_name" : "South-East (IE)",
-    "name_ascii" : "South-East (IE)",
-    "name_html" : "South-East (IE)"
+    "nameLatin" : "South-East (IE)",
+    "nutsName" : "South-East (IE)",
+    "nameAscii" : "South-East (IE)",
+    "nameHtml" : "South-East (IE)"
   },
   "IE025": {
-    "name_latin" : "South-West (IE)",
-    "nuts_name" : "South-West (IE)",
-    "name_ascii" : "South-West (IE)",
-    "name_html" : "South-West (IE)"
+    "nameLatin" : "South-West (IE)",
+    "nutsName" : "South-West (IE)",
+    "nameAscii" : "South-West (IE)",
+    "nameHtml" : "South-West (IE)"
   },
   "IS001": {
-    "name_latin" : "Höfuðborgarsvæði",
-    "nuts_name" : "Höfuðborgarsvæði",
-    "name_ascii" : "Hofudborgarsvaedi",
-    "name_html" : "H&#x00F6;fu&#x00F0;borgarsv&#x00E6;&#x00F0;i"
+    "nameLatin" : "Höfuðborgarsvæði",
+    "nutsName" : "Höfuðborgarsvæði",
+    "nameAscii" : "Hofudborgarsvaedi",
+    "nameHtml" : "H&#x00F6;fu&#x00F0;borgarsv&#x00E6;&#x00F0;i"
   },
   "IS002": {
-    "name_latin" : "Landsbyggð",
-    "nuts_name" : "Landsbyggð",
-    "name_ascii" : "Landsbyggd",
-    "name_html" : "Landsbygg&#x00F0;"
+    "nameLatin" : "Landsbyggð",
+    "nutsName" : "Landsbyggð",
+    "nameAscii" : "Landsbyggd",
+    "nameHtml" : "Landsbygg&#x00F0;"
   },
   "ITC11": {
-    "name_latin" : "Torino",
-    "nuts_name" : "Torino",
-    "name_ascii" : "Torino",
-    "name_html" : "Torino"
+    "nameLatin" : "Torino",
+    "nutsName" : "Torino",
+    "nameAscii" : "Torino",
+    "nameHtml" : "Torino"
   },
   "ITC12": {
-    "name_latin" : "Vercelli",
-    "nuts_name" : "Vercelli",
-    "name_ascii" : "Vercelli",
-    "name_html" : "Vercelli"
+    "nameLatin" : "Vercelli",
+    "nutsName" : "Vercelli",
+    "nameAscii" : "Vercelli",
+    "nameHtml" : "Vercelli"
   },
   "ITC13": {
-    "name_latin" : "Biella",
-    "nuts_name" : "Biella",
-    "name_ascii" : "Biella",
-    "name_html" : "Biella"
+    "nameLatin" : "Biella",
+    "nutsName" : "Biella",
+    "nameAscii" : "Biella",
+    "nameHtml" : "Biella"
   },
   "ITC14": {
-    "name_latin" : "Verbano-Cusio-Ossola",
-    "nuts_name" : "Verbano-Cusio-Ossola",
-    "name_ascii" : "Verbano-Cusio-Ossola",
-    "name_html" : "Verbano-Cusio-Ossola"
+    "nameLatin" : "Verbano-Cusio-Ossola",
+    "nutsName" : "Verbano-Cusio-Ossola",
+    "nameAscii" : "Verbano-Cusio-Ossola",
+    "nameHtml" : "Verbano-Cusio-Ossola"
   },
   "ITC15": {
-    "name_latin" : "Novara",
-    "nuts_name" : "Novara",
-    "name_ascii" : "Novara",
-    "name_html" : "Novara"
+    "nameLatin" : "Novara",
+    "nutsName" : "Novara",
+    "nameAscii" : "Novara",
+    "nameHtml" : "Novara"
   },
   "ITC16": {
-    "name_latin" : "Cuneo",
-    "nuts_name" : "Cuneo",
-    "name_ascii" : "Cuneo",
-    "name_html" : "Cuneo"
+    "nameLatin" : "Cuneo",
+    "nutsName" : "Cuneo",
+    "nameAscii" : "Cuneo",
+    "nameHtml" : "Cuneo"
   },
   "ITC17": {
-    "name_latin" : "Asti",
-    "nuts_name" : "Asti",
-    "name_ascii" : "Asti",
-    "name_html" : "Asti"
+    "nameLatin" : "Asti",
+    "nutsName" : "Asti",
+    "nameAscii" : "Asti",
+    "nameHtml" : "Asti"
   },
   "ITC18": {
-    "name_latin" : "Alessandria",
-    "nuts_name" : "Alessandria",
-    "name_ascii" : "Alessandria",
-    "name_html" : "Alessandria"
+    "nameLatin" : "Alessandria",
+    "nutsName" : "Alessandria",
+    "nameAscii" : "Alessandria",
+    "nameHtml" : "Alessandria"
   },
   "ITC20": {
-    "name_latin" : "Valle d'Aosta/Vallée d'Aoste",
-    "nuts_name" : "Valle d'Aosta/Vallée d'Aoste",
-    "name_ascii" : "Valle d'Aosta/Vallee D'Aoste",
-    "name_html" : "Valle d'Aosta/Vall&#x00E9;e D'Aoste"
+    "nameLatin" : "Valle d'Aosta/Vallée d'Aoste",
+    "nutsName" : "Valle d'Aosta/Vallée d'Aoste",
+    "nameAscii" : "Valle d'Aosta/Vallee D'Aoste",
+    "nameHtml" : "Valle d'Aosta/Vall&#x00E9;e D'Aoste"
   },
   "ITC31": {
-    "name_latin" : "Imperia",
-    "nuts_name" : "Imperia",
-    "name_ascii" : "Imperia",
-    "name_html" : "Imperia"
+    "nameLatin" : "Imperia",
+    "nutsName" : "Imperia",
+    "nameAscii" : "Imperia",
+    "nameHtml" : "Imperia"
   },
   "ITC32": {
-    "name_latin" : "Savona",
-    "nuts_name" : "Savona",
-    "name_ascii" : "Savona",
-    "name_html" : "Savona"
+    "nameLatin" : "Savona",
+    "nutsName" : "Savona",
+    "nameAscii" : "Savona",
+    "nameHtml" : "Savona"
   },
   "ITC33": {
-    "name_latin" : "Genova",
-    "nuts_name" : "Genova",
-    "name_ascii" : "Genova",
-    "name_html" : "Genova"
+    "nameLatin" : "Genova",
+    "nutsName" : "Genova",
+    "nameAscii" : "Genova",
+    "nameHtml" : "Genova"
   },
   "ITC34": {
-    "name_latin" : "La Spezia",
-    "nuts_name" : "La Spezia",
-    "name_ascii" : "La Spezia",
-    "name_html" : "La Spezia"
+    "nameLatin" : "La Spezia",
+    "nutsName" : "La Spezia",
+    "nameAscii" : "La Spezia",
+    "nameHtml" : "La Spezia"
   },
   "ITC41": {
-    "name_latin" : "Varese",
-    "nuts_name" : "Varese",
-    "name_ascii" : "Varese",
-    "name_html" : "Varese"
+    "nameLatin" : "Varese",
+    "nutsName" : "Varese",
+    "nameAscii" : "Varese",
+    "nameHtml" : "Varese"
   },
   "ITC42": {
-    "name_latin" : "Como",
-    "nuts_name" : "Como",
-    "name_ascii" : "Como",
-    "name_html" : "Como"
+    "nameLatin" : "Como",
+    "nutsName" : "Como",
+    "nameAscii" : "Como",
+    "nameHtml" : "Como"
   },
   "ITC43": {
-    "name_latin" : "Lecco",
-    "nuts_name" : "Lecco",
-    "name_ascii" : "Lecco",
-    "name_html" : "Lecco"
+    "nameLatin" : "Lecco",
+    "nutsName" : "Lecco",
+    "nameAscii" : "Lecco",
+    "nameHtml" : "Lecco"
   },
   "ITC44": {
-    "name_latin" : "Sondrio",
-    "nuts_name" : "Sondrio",
-    "name_ascii" : "Sondrio",
-    "name_html" : "Sondrio"
+    "nameLatin" : "Sondrio",
+    "nutsName" : "Sondrio",
+    "nameAscii" : "Sondrio",
+    "nameHtml" : "Sondrio"
   },
   "ITC46": {
-    "name_latin" : "Bergamo",
-    "nuts_name" : "Bergamo",
-    "name_ascii" : "Bergamo",
-    "name_html" : "Bergamo"
+    "nameLatin" : "Bergamo",
+    "nutsName" : "Bergamo",
+    "nameAscii" : "Bergamo",
+    "nameHtml" : "Bergamo"
   },
   "ITC47": {
-    "name_latin" : "Brescia",
-    "nuts_name" : "Brescia",
-    "name_ascii" : "Brescia",
-    "name_html" : "Brescia"
+    "nameLatin" : "Brescia",
+    "nutsName" : "Brescia",
+    "nameAscii" : "Brescia",
+    "nameHtml" : "Brescia"
   },
   "ITC48": {
-    "name_latin" : "Pavia",
-    "nuts_name" : "Pavia",
-    "name_ascii" : "Pavia",
-    "name_html" : "Pavia"
+    "nameLatin" : "Pavia",
+    "nutsName" : "Pavia",
+    "nameAscii" : "Pavia",
+    "nameHtml" : "Pavia"
   },
   "ITC49": {
-    "name_latin" : "Lodi",
-    "nuts_name" : "Lodi",
-    "name_ascii" : "Lodi",
-    "name_html" : "Lodi"
+    "nameLatin" : "Lodi",
+    "nutsName" : "Lodi",
+    "nameAscii" : "Lodi",
+    "nameHtml" : "Lodi"
   },
   "ITC4A": {
-    "name_latin" : "Cremona",
-    "nuts_name" : "Cremona",
-    "name_ascii" : "Cremona",
-    "name_html" : "Cremona"
+    "nameLatin" : "Cremona",
+    "nutsName" : "Cremona",
+    "nameAscii" : "Cremona",
+    "nameHtml" : "Cremona"
   },
   "ITC4B": {
-    "name_latin" : "Mantova",
-    "nuts_name" : "Mantova",
-    "name_ascii" : "Mantova",
-    "name_html" : "Mantova"
+    "nameLatin" : "Mantova",
+    "nutsName" : "Mantova",
+    "nameAscii" : "Mantova",
+    "nameHtml" : "Mantova"
   },
   "ITC4C": {
-    "name_latin" : "Milano",
-    "nuts_name" : "Milano",
-    "name_ascii" : "Milano",
-    "name_html" : "Milano"
+    "nameLatin" : "Milano",
+    "nutsName" : "Milano",
+    "nameAscii" : "Milano",
+    "nameHtml" : "Milano"
   },
   "ITC4D": {
-    "name_latin" : "Monza e della Brianza",
-    "nuts_name" : "Monza e della Brianza",
-    "name_ascii" : "Monza e della Brianza",
-    "name_html" : "Monza e della Brianza"
+    "nameLatin" : "Monza e della Brianza",
+    "nutsName" : "Monza e della Brianza",
+    "nameAscii" : "Monza e della Brianza",
+    "nameHtml" : "Monza e della Brianza"
   },
   "ITF11": {
-    "name_latin" : "L'Aquila",
-    "nuts_name" : "L'Aquila",
-    "name_ascii" : "L'Aquila",
-    "name_html" : "L'Aquila"
+    "nameLatin" : "L'Aquila",
+    "nutsName" : "L'Aquila",
+    "nameAscii" : "L'Aquila",
+    "nameHtml" : "L'Aquila"
   },
   "ITF12": {
-    "name_latin" : "Teramo",
-    "nuts_name" : "Teramo",
-    "name_ascii" : "Teramo",
-    "name_html" : "Teramo"
+    "nameLatin" : "Teramo",
+    "nutsName" : "Teramo",
+    "nameAscii" : "Teramo",
+    "nameHtml" : "Teramo"
   },
   "ITF13": {
-    "name_latin" : "Pescara",
-    "nuts_name" : "Pescara",
-    "name_ascii" : "Pescara",
-    "name_html" : "Pescara"
+    "nameLatin" : "Pescara",
+    "nutsName" : "Pescara",
+    "nameAscii" : "Pescara",
+    "nameHtml" : "Pescara"
   },
   "ITF14": {
-    "name_latin" : "Chieti",
-    "nuts_name" : "Chieti",
-    "name_ascii" : "Chieti",
-    "name_html" : "Chieti"
+    "nameLatin" : "Chieti",
+    "nutsName" : "Chieti",
+    "nameAscii" : "Chieti",
+    "nameHtml" : "Chieti"
   },
   "ITF21": {
-    "name_latin" : "Isernia",
-    "nuts_name" : "Isernia",
-    "name_ascii" : "Isernia",
-    "name_html" : "Isernia"
+    "nameLatin" : "Isernia",
+    "nutsName" : "Isernia",
+    "nameAscii" : "Isernia",
+    "nameHtml" : "Isernia"
   },
   "ITF22": {
-    "name_latin" : "Campobasso",
-    "nuts_name" : "Campobasso",
-    "name_ascii" : "Campobasso",
-    "name_html" : "Campobasso"
+    "nameLatin" : "Campobasso",
+    "nutsName" : "Campobasso",
+    "nameAscii" : "Campobasso",
+    "nameHtml" : "Campobasso"
   },
   "ITF31": {
-    "name_latin" : "Caserta",
-    "nuts_name" : "Caserta",
-    "name_ascii" : "Caserta",
-    "name_html" : "Caserta"
+    "nameLatin" : "Caserta",
+    "nutsName" : "Caserta",
+    "nameAscii" : "Caserta",
+    "nameHtml" : "Caserta"
   },
   "ITF32": {
-    "name_latin" : "Benevento",
-    "nuts_name" : "Benevento",
-    "name_ascii" : "Benevento",
-    "name_html" : "Benevento"
+    "nameLatin" : "Benevento",
+    "nutsName" : "Benevento",
+    "nameAscii" : "Benevento",
+    "nameHtml" : "Benevento"
   },
   "ITF33": {
-    "name_latin" : "Napoli",
-    "nuts_name" : "Napoli",
-    "name_ascii" : "Napoli",
-    "name_html" : "Napoli"
+    "nameLatin" : "Napoli",
+    "nutsName" : "Napoli",
+    "nameAscii" : "Napoli",
+    "nameHtml" : "Napoli"
   },
   "ITF34": {
-    "name_latin" : "Avellino",
-    "nuts_name" : "Avellino",
-    "name_ascii" : "Avellino",
-    "name_html" : "Avellino"
+    "nameLatin" : "Avellino",
+    "nutsName" : "Avellino",
+    "nameAscii" : "Avellino",
+    "nameHtml" : "Avellino"
   },
   "ITF35": {
-    "name_latin" : "Salerno",
-    "nuts_name" : "Salerno",
-    "name_ascii" : "Salerno",
-    "name_html" : "Salerno"
+    "nameLatin" : "Salerno",
+    "nutsName" : "Salerno",
+    "nameAscii" : "Salerno",
+    "nameHtml" : "Salerno"
   },
   "ITF43": {
-    "name_latin" : "Taranto",
-    "nuts_name" : "Taranto",
-    "name_ascii" : "Taranto",
-    "name_html" : "Taranto"
+    "nameLatin" : "Taranto",
+    "nutsName" : "Taranto",
+    "nameAscii" : "Taranto",
+    "nameHtml" : "Taranto"
   },
   "ITF44": {
-    "name_latin" : "Brindisi",
-    "nuts_name" : "Brindisi",
-    "name_ascii" : "Brindisi",
-    "name_html" : "Brindisi"
+    "nameLatin" : "Brindisi",
+    "nutsName" : "Brindisi",
+    "nameAscii" : "Brindisi",
+    "nameHtml" : "Brindisi"
   },
   "ITF45": {
-    "name_latin" : "Lecce",
-    "nuts_name" : "Lecce",
-    "name_ascii" : "Lecce",
-    "name_html" : "Lecce"
+    "nameLatin" : "Lecce",
+    "nutsName" : "Lecce",
+    "nameAscii" : "Lecce",
+    "nameHtml" : "Lecce"
   },
   "ITF46": {
-    "name_latin" : "Foggia",
-    "nuts_name" : "Foggia",
-    "name_ascii" : "Foggia",
-    "name_html" : "Foggia"
+    "nameLatin" : "Foggia",
+    "nutsName" : "Foggia",
+    "nameAscii" : "Foggia",
+    "nameHtml" : "Foggia"
   },
   "ITF47": {
-    "name_latin" : "Bari",
-    "nuts_name" : "Bari",
-    "name_ascii" : "Bari",
-    "name_html" : "Bari"
+    "nameLatin" : "Bari",
+    "nutsName" : "Bari",
+    "nameAscii" : "Bari",
+    "nameHtml" : "Bari"
   },
   "ITF51": {
-    "name_latin" : "Potenza",
-    "nuts_name" : "Potenza",
-    "name_ascii" : "Potenza",
-    "name_html" : "Potenza"
+    "nameLatin" : "Potenza",
+    "nutsName" : "Potenza",
+    "nameAscii" : "Potenza",
+    "nameHtml" : "Potenza"
   },
   "ITF52": {
-    "name_latin" : "Matera",
-    "nuts_name" : "Matera",
-    "name_ascii" : "Matera",
-    "name_html" : "Matera"
+    "nameLatin" : "Matera",
+    "nutsName" : "Matera",
+    "nameAscii" : "Matera",
+    "nameHtml" : "Matera"
   },
   "ITF61": {
-    "name_latin" : "Cosenza",
-    "nuts_name" : "Cosenza",
-    "name_ascii" : "Cosenza",
-    "name_html" : "Cosenza"
+    "nameLatin" : "Cosenza",
+    "nutsName" : "Cosenza",
+    "nameAscii" : "Cosenza",
+    "nameHtml" : "Cosenza"
   },
   "ITF62": {
-    "name_latin" : "Crotone",
-    "nuts_name" : "Crotone",
-    "name_ascii" : "Crotone",
-    "name_html" : "Crotone"
+    "nameLatin" : "Crotone",
+    "nutsName" : "Crotone",
+    "nameAscii" : "Crotone",
+    "nameHtml" : "Crotone"
   },
   "ITF63": {
-    "name_latin" : "Catanzaro",
-    "nuts_name" : "Catanzaro",
-    "name_ascii" : "Catanzaro",
-    "name_html" : "Catanzaro"
+    "nameLatin" : "Catanzaro",
+    "nutsName" : "Catanzaro",
+    "nameAscii" : "Catanzaro",
+    "nameHtml" : "Catanzaro"
   },
   "ITF64": {
-    "name_latin" : "Vibo Valentia",
-    "nuts_name" : "Vibo Valentia",
-    "name_ascii" : "Vibo Valentia",
-    "name_html" : "Vibo Valentia"
+    "nameLatin" : "Vibo Valentia",
+    "nutsName" : "Vibo Valentia",
+    "nameAscii" : "Vibo Valentia",
+    "nameHtml" : "Vibo Valentia"
   },
   "ITF65": {
-    "name_latin" : "Reggio di Calabria",
-    "nuts_name" : "Reggio di Calabria",
-    "name_ascii" : "Reggio di Calabria",
-    "name_html" : "Reggio di Calabria"
+    "nameLatin" : "Reggio di Calabria",
+    "nutsName" : "Reggio di Calabria",
+    "nameAscii" : "Reggio di Calabria",
+    "nameHtml" : "Reggio di Calabria"
   },
   "ITG12": {
-    "name_latin" : "Palermo",
-    "nuts_name" : "Palermo",
-    "name_ascii" : "Palermo",
-    "name_html" : "Palermo"
+    "nameLatin" : "Palermo",
+    "nutsName" : "Palermo",
+    "nameAscii" : "Palermo",
+    "nameHtml" : "Palermo"
   },
   "ITG13": {
-    "name_latin" : "Messina",
-    "nuts_name" : "Messina",
-    "name_ascii" : "Messina",
-    "name_html" : "Messina"
+    "nameLatin" : "Messina",
+    "nutsName" : "Messina",
+    "nameAscii" : "Messina",
+    "nameHtml" : "Messina"
   },
   "ITG14": {
-    "name_latin" : "Agrigento",
-    "nuts_name" : "Agrigento",
-    "name_ascii" : "Agrigento",
-    "name_html" : "Agrigento"
+    "nameLatin" : "Agrigento",
+    "nutsName" : "Agrigento",
+    "nameAscii" : "Agrigento",
+    "nameHtml" : "Agrigento"
   },
   "ITG15": {
-    "name_latin" : "Caltanissetta",
-    "nuts_name" : "Caltanissetta",
-    "name_ascii" : "Caltanissetta",
-    "name_html" : "Caltanissetta"
+    "nameLatin" : "Caltanissetta",
+    "nutsName" : "Caltanissetta",
+    "nameAscii" : "Caltanissetta",
+    "nameHtml" : "Caltanissetta"
   },
   "ITG17": {
-    "name_latin" : "Catania",
-    "nuts_name" : "Catania",
-    "name_ascii" : "Catania",
-    "name_html" : "Catania"
+    "nameLatin" : "Catania",
+    "nutsName" : "Catania",
+    "nameAscii" : "Catania",
+    "nameHtml" : "Catania"
   },
   "ITG18": {
-    "name_latin" : "Ragusa",
-    "nuts_name" : "Ragusa",
-    "name_ascii" : "Ragusa",
-    "name_html" : "Ragusa"
+    "nameLatin" : "Ragusa",
+    "nutsName" : "Ragusa",
+    "nameAscii" : "Ragusa",
+    "nameHtml" : "Ragusa"
   },
   "ITG19": {
-    "name_latin" : "Siracusa",
-    "nuts_name" : "Siracusa",
-    "name_ascii" : "Siracusa",
-    "name_html" : "Siracusa"
+    "nameLatin" : "Siracusa",
+    "nutsName" : "Siracusa",
+    "nameAscii" : "Siracusa",
+    "nameHtml" : "Siracusa"
   },
   "ITG25": {
-    "name_latin" : "Sassari",
-    "nuts_name" : "Sassari",
-    "name_ascii" : "Sassari",
-    "name_html" : "Sassari"
+    "nameLatin" : "Sassari",
+    "nutsName" : "Sassari",
+    "nameAscii" : "Sassari",
+    "nameHtml" : "Sassari"
   },
   "ITG26": {
-    "name_latin" : "Nuoro",
-    "nuts_name" : "Nuoro",
-    "name_ascii" : "Nuoro",
-    "name_html" : "Nuoro"
+    "nameLatin" : "Nuoro",
+    "nutsName" : "Nuoro",
+    "nameAscii" : "Nuoro",
+    "nameHtml" : "Nuoro"
   },
   "ITG27": {
-    "name_latin" : "Cagliari",
-    "nuts_name" : "Cagliari",
-    "name_ascii" : "Cagliari",
-    "name_html" : "Cagliari"
+    "nameLatin" : "Cagliari",
+    "nutsName" : "Cagliari",
+    "nameAscii" : "Cagliari",
+    "nameHtml" : "Cagliari"
   },
   "ITG28": {
-    "name_latin" : "Oristano",
-    "nuts_name" : "Oristano",
-    "name_ascii" : "Oristano",
-    "name_html" : "Oristano"
+    "nameLatin" : "Oristano",
+    "nutsName" : "Oristano",
+    "nameAscii" : "Oristano",
+    "nameHtml" : "Oristano"
   },
   "ITG29": {
-    "name_latin" : "Olbia-Tempio",
-    "nuts_name" : "Olbia-Tempio",
-    "name_ascii" : "Olbia-Tempio",
-    "name_html" : "Olbia-Tempio"
+    "nameLatin" : "Olbia-Tempio",
+    "nutsName" : "Olbia-Tempio",
+    "nameAscii" : "Olbia-Tempio",
+    "nameHtml" : "Olbia-Tempio"
   },
   "ITG2B": {
-    "name_latin" : "Medio Campidano",
-    "nuts_name" : "Medio Campidano",
-    "name_ascii" : "Medio Campidano",
-    "name_html" : "Medio Campidano"
+    "nameLatin" : "Medio Campidano",
+    "nutsName" : "Medio Campidano",
+    "nameAscii" : "Medio Campidano",
+    "nameHtml" : "Medio Campidano"
   },
   "ITG2C": {
-    "name_latin" : "Carbonia-Iglesias",
-    "nuts_name" : "Carbonia-Iglesias",
-    "name_ascii" : "Carbonia-Iglesias",
-    "name_html" : "Carbonia-Iglesias"
+    "nameLatin" : "Carbonia-Iglesias",
+    "nutsName" : "Carbonia-Iglesias",
+    "nameAscii" : "Carbonia-Iglesias",
+    "nameHtml" : "Carbonia-Iglesias"
   },
   "ITH10": {
-    "name_latin" : "Bolzano-Bozen",
-    "nuts_name" : "Bolzano-Bozen",
-    "name_ascii" : "Bolzano-Bozen",
-    "name_html" : "Bolzano-Bozen"
+    "nameLatin" : "Bolzano-Bozen",
+    "nutsName" : "Bolzano-Bozen",
+    "nameAscii" : "Bolzano-Bozen",
+    "nameHtml" : "Bolzano-Bozen"
   },
   "ITH20": {
-    "name_latin" : "Trento",
-    "nuts_name" : "Trento",
-    "name_ascii" : "Trento",
-    "name_html" : "Trento"
+    "nameLatin" : "Trento",
+    "nutsName" : "Trento",
+    "nameAscii" : "Trento",
+    "nameHtml" : "Trento"
   },
   "ITH31": {
-    "name_latin" : "Verona",
-    "nuts_name" : "Verona",
-    "name_ascii" : "Verona",
-    "name_html" : "Verona"
+    "nameLatin" : "Verona",
+    "nutsName" : "Verona",
+    "nameAscii" : "Verona",
+    "nameHtml" : "Verona"
   },
   "ITH32": {
-    "name_latin" : "Vicenza",
-    "nuts_name" : "Vicenza",
-    "name_ascii" : "Vicenza",
-    "name_html" : "Vicenza"
+    "nameLatin" : "Vicenza",
+    "nutsName" : "Vicenza",
+    "nameAscii" : "Vicenza",
+    "nameHtml" : "Vicenza"
   },
   "ITH33": {
-    "name_latin" : "Belluno",
-    "nuts_name" : "Belluno",
-    "name_ascii" : "Belluno",
-    "name_html" : "Belluno"
+    "nameLatin" : "Belluno",
+    "nutsName" : "Belluno",
+    "nameAscii" : "Belluno",
+    "nameHtml" : "Belluno"
   },
   "ITH34": {
-    "name_latin" : "Treviso",
-    "nuts_name" : "Treviso",
-    "name_ascii" : "Treviso",
-    "name_html" : "Treviso"
+    "nameLatin" : "Treviso",
+    "nutsName" : "Treviso",
+    "nameAscii" : "Treviso",
+    "nameHtml" : "Treviso"
   },
   "ITH35": {
-    "name_latin" : "Venezia",
-    "nuts_name" : "Venezia",
-    "name_ascii" : "Venezia",
-    "name_html" : "Venezia"
+    "nameLatin" : "Venezia",
+    "nutsName" : "Venezia",
+    "nameAscii" : "Venezia",
+    "nameHtml" : "Venezia"
   },
   "ITH36": {
-    "name_latin" : "Padova",
-    "nuts_name" : "Padova",
-    "name_ascii" : "Padova",
-    "name_html" : "Padova"
+    "nameLatin" : "Padova",
+    "nutsName" : "Padova",
+    "nameAscii" : "Padova",
+    "nameHtml" : "Padova"
   },
   "ITH37": {
-    "name_latin" : "Rovigo",
-    "nuts_name" : "Rovigo",
-    "name_ascii" : "Rovigo",
-    "name_html" : "Rovigo"
+    "nameLatin" : "Rovigo",
+    "nutsName" : "Rovigo",
+    "nameAscii" : "Rovigo",
+    "nameHtml" : "Rovigo"
   },
   "ITH41": {
-    "name_latin" : "Pordenone",
-    "nuts_name" : "Pordenone",
-    "name_ascii" : "Pordenone",
-    "name_html" : "Pordenone"
+    "nameLatin" : "Pordenone",
+    "nutsName" : "Pordenone",
+    "nameAscii" : "Pordenone",
+    "nameHtml" : "Pordenone"
   },
   "ITH42": {
-    "name_latin" : "Udine",
-    "nuts_name" : "Udine",
-    "name_ascii" : "Udine",
-    "name_html" : "Udine"
+    "nameLatin" : "Udine",
+    "nutsName" : "Udine",
+    "nameAscii" : "Udine",
+    "nameHtml" : "Udine"
   },
   "ITH44": {
-    "name_latin" : "Trieste",
-    "nuts_name" : "Trieste",
-    "name_ascii" : "Trieste",
-    "name_html" : "Trieste"
+    "nameLatin" : "Trieste",
+    "nutsName" : "Trieste",
+    "nameAscii" : "Trieste",
+    "nameHtml" : "Trieste"
   },
   "ITH51": {
-    "name_latin" : "Piacenza",
-    "nuts_name" : "Piacenza",
-    "name_ascii" : "Piacenza",
-    "name_html" : "Piacenza"
+    "nameLatin" : "Piacenza",
+    "nutsName" : "Piacenza",
+    "nameAscii" : "Piacenza",
+    "nameHtml" : "Piacenza"
   },
   "ITH52": {
-    "name_latin" : "Parma",
-    "nuts_name" : "Parma",
-    "name_ascii" : "Parma",
-    "name_html" : "Parma"
+    "nameLatin" : "Parma",
+    "nutsName" : "Parma",
+    "nameAscii" : "Parma",
+    "nameHtml" : "Parma"
   },
   "ITH54": {
-    "name_latin" : "Modena",
-    "nuts_name" : "Modena",
-    "name_ascii" : "Modena",
-    "name_html" : "Modena"
+    "nameLatin" : "Modena",
+    "nutsName" : "Modena",
+    "nameAscii" : "Modena",
+    "nameHtml" : "Modena"
   },
   "ITH55": {
-    "name_latin" : "Bologna",
-    "nuts_name" : "Bologna",
-    "name_ascii" : "Bologna",
-    "name_html" : "Bologna"
+    "nameLatin" : "Bologna",
+    "nutsName" : "Bologna",
+    "nameAscii" : "Bologna",
+    "nameHtml" : "Bologna"
   },
   "ITH56": {
-    "name_latin" : "Ferrara",
-    "nuts_name" : "Ferrara",
-    "name_ascii" : "Ferrara",
-    "name_html" : "Ferrara"
+    "nameLatin" : "Ferrara",
+    "nutsName" : "Ferrara",
+    "nameAscii" : "Ferrara",
+    "nameHtml" : "Ferrara"
   },
   "ITH57": {
-    "name_latin" : "Ravenna",
-    "nuts_name" : "Ravenna",
-    "name_ascii" : "Ravenna",
-    "name_html" : "Ravenna"
+    "nameLatin" : "Ravenna",
+    "nutsName" : "Ravenna",
+    "nameAscii" : "Ravenna",
+    "nameHtml" : "Ravenna"
   },
   "ITH58": {
-    "name_latin" : "Forlì-Cesena",
-    "nuts_name" : "Forlì-Cesena",
-    "name_ascii" : "Forli-Cesena",
-    "name_html" : "Forl&#x00EC;-Cesena"
+    "nameLatin" : "Forlì-Cesena",
+    "nutsName" : "Forlì-Cesena",
+    "nameAscii" : "Forli-Cesena",
+    "nameHtml" : "Forl&#x00EC;-Cesena"
   },
   "ITH59": {
-    "name_latin" : "Rimini",
-    "nuts_name" : "Rimini",
-    "name_ascii" : "Rimini",
-    "name_html" : "Rimini"
+    "nameLatin" : "Rimini",
+    "nutsName" : "Rimini",
+    "nameAscii" : "Rimini",
+    "nameHtml" : "Rimini"
   },
   "ITI12": {
-    "name_latin" : "Lucca",
-    "nuts_name" : "Lucca",
-    "name_ascii" : "Lucca",
-    "name_html" : "Lucca"
+    "nameLatin" : "Lucca",
+    "nutsName" : "Lucca",
+    "nameAscii" : "Lucca",
+    "nameHtml" : "Lucca"
   },
   "ITI13": {
-    "name_latin" : "Pistoia",
-    "nuts_name" : "Pistoia",
-    "name_ascii" : "Pistoia",
-    "name_html" : "Pistoia"
+    "nameLatin" : "Pistoia",
+    "nutsName" : "Pistoia",
+    "nameAscii" : "Pistoia",
+    "nameHtml" : "Pistoia"
   },
   "ITI14": {
-    "name_latin" : "Firenze",
-    "nuts_name" : "Firenze",
-    "name_ascii" : "Firenze",
-    "name_html" : "Firenze"
+    "nameLatin" : "Firenze",
+    "nutsName" : "Firenze",
+    "nameAscii" : "Firenze",
+    "nameHtml" : "Firenze"
   },
   "ITI15": {
-    "name_latin" : "Prato",
-    "nuts_name" : "Prato",
-    "name_ascii" : "Prato",
-    "name_html" : "Prato"
+    "nameLatin" : "Prato",
+    "nutsName" : "Prato",
+    "nameAscii" : "Prato",
+    "nameHtml" : "Prato"
   },
   "ITI16": {
-    "name_latin" : "Livorno",
-    "nuts_name" : "Livorno",
-    "name_ascii" : "Livorno",
-    "name_html" : "Livorno"
+    "nameLatin" : "Livorno",
+    "nutsName" : "Livorno",
+    "nameAscii" : "Livorno",
+    "nameHtml" : "Livorno"
   },
   "ITI17": {
-    "name_latin" : "Pisa",
-    "nuts_name" : "Pisa",
-    "name_ascii" : "Pisa",
-    "name_html" : "Pisa"
+    "nameLatin" : "Pisa",
+    "nutsName" : "Pisa",
+    "nameAscii" : "Pisa",
+    "nameHtml" : "Pisa"
   },
   "ITI18": {
-    "name_latin" : "Arezzo",
-    "nuts_name" : "Arezzo",
-    "name_ascii" : "Arezzo",
-    "name_html" : "Arezzo"
+    "nameLatin" : "Arezzo",
+    "nutsName" : "Arezzo",
+    "nameAscii" : "Arezzo",
+    "nameHtml" : "Arezzo"
   },
   "ITI19": {
-    "name_latin" : "Siena",
-    "nuts_name" : "Siena",
-    "name_ascii" : "Siena",
-    "name_html" : "Siena"
+    "nameLatin" : "Siena",
+    "nutsName" : "Siena",
+    "nameAscii" : "Siena",
+    "nameHtml" : "Siena"
   },
   "ITI1A": {
-    "name_latin" : "Grosseto",
-    "nuts_name" : "Grosseto",
-    "name_ascii" : "Grosseto",
-    "name_html" : "Grosseto"
+    "nameLatin" : "Grosseto",
+    "nutsName" : "Grosseto",
+    "nameAscii" : "Grosseto",
+    "nameHtml" : "Grosseto"
   },
   "ITI22": {
-    "name_latin" : "Terni",
-    "nuts_name" : "Terni",
-    "name_ascii" : "Terni",
-    "name_html" : "Terni"
+    "nameLatin" : "Terni",
+    "nutsName" : "Terni",
+    "nameAscii" : "Terni",
+    "nameHtml" : "Terni"
   },
   "ITI31": {
-    "name_latin" : "Pesaro e Urbino",
-    "nuts_name" : "Pesaro e Urbino",
-    "name_ascii" : "Pesaro E Urbino",
-    "name_html" : "Pesaro E Urbino"
+    "nameLatin" : "Pesaro e Urbino",
+    "nutsName" : "Pesaro e Urbino",
+    "nameAscii" : "Pesaro E Urbino",
+    "nameHtml" : "Pesaro E Urbino"
   },
   "ITI32": {
-    "name_latin" : "Ancona",
-    "nuts_name" : "Ancona",
-    "name_ascii" : "Ancona",
-    "name_html" : "Ancona"
+    "nameLatin" : "Ancona",
+    "nutsName" : "Ancona",
+    "nameAscii" : "Ancona",
+    "nameHtml" : "Ancona"
   },
   "ITI33": {
-    "name_latin" : "Macerata",
-    "nuts_name" : "Macerata",
-    "name_ascii" : "Macerata",
-    "name_html" : "Macerata"
+    "nameLatin" : "Macerata",
+    "nutsName" : "Macerata",
+    "nameAscii" : "Macerata",
+    "nameHtml" : "Macerata"
   },
   "ITI34": {
-    "name_latin" : "Ascoli Piceno",
-    "nuts_name" : "Ascoli Piceno",
-    "name_ascii" : "Ascoli Piceno",
-    "name_html" : "Ascoli Piceno"
+    "nameLatin" : "Ascoli Piceno",
+    "nutsName" : "Ascoli Piceno",
+    "nameAscii" : "Ascoli Piceno",
+    "nameHtml" : "Ascoli Piceno"
   },
   "ITI35": {
-    "name_latin" : "Fermo",
-    "nuts_name" : "Fermo",
-    "name_ascii" : "Fermo",
-    "name_html" : "Fermo"
+    "nameLatin" : "Fermo",
+    "nutsName" : "Fermo",
+    "nameAscii" : "Fermo",
+    "nameHtml" : "Fermo"
   },
   "ITI41": {
-    "name_latin" : "Viterbo",
-    "nuts_name" : "Viterbo",
-    "name_ascii" : "Viterbo",
-    "name_html" : "Viterbo"
+    "nameLatin" : "Viterbo",
+    "nutsName" : "Viterbo",
+    "nameAscii" : "Viterbo",
+    "nameHtml" : "Viterbo"
   },
   "ITI42": {
-    "name_latin" : "Rieti",
-    "nuts_name" : "Rieti",
-    "name_ascii" : "Rieti",
-    "name_html" : "Rieti"
+    "nameLatin" : "Rieti",
+    "nutsName" : "Rieti",
+    "nameAscii" : "Rieti",
+    "nameHtml" : "Rieti"
   },
   "ITI43": {
-    "name_latin" : "Roma",
-    "nuts_name" : "Roma",
-    "name_ascii" : "Roma",
-    "name_html" : "Roma"
+    "nameLatin" : "Roma",
+    "nutsName" : "Roma",
+    "nameAscii" : "Roma",
+    "nameHtml" : "Roma"
   },
   "ITI44": {
-    "name_latin" : "Latina",
-    "nuts_name" : "Latina",
-    "name_ascii" : "Latina",
-    "name_html" : "Latina"
+    "nameLatin" : "Latina",
+    "nutsName" : "Latina",
+    "nameAscii" : "Latina",
+    "nameHtml" : "Latina"
   },
   "ITI45": {
-    "name_latin" : "Frosinone",
-    "nuts_name" : "Frosinone",
-    "name_ascii" : "Frosinone",
-    "name_html" : "Frosinone"
+    "nameLatin" : "Frosinone",
+    "nutsName" : "Frosinone",
+    "nameAscii" : "Frosinone",
+    "nameHtml" : "Frosinone"
   },
   "LI000": {
-    "name_latin" : "Liechtenstein",
-    "nuts_name" : "Liechtenstein",
-    "name_ascii" : "Liechtenstein",
-    "name_html" : "Liechtenstein"
+    "nameLatin" : "Liechtenstein",
+    "nutsName" : "Liechtenstein",
+    "nameAscii" : "Liechtenstein",
+    "nameHtml" : "Liechtenstein"
   },
   "LT001": {
-    "name_latin" : "Alytaus apskritis",
-    "nuts_name" : "Alytaus apskritis",
-    "name_ascii" : "Alytaus apskritis",
-    "name_html" : "Alytaus pskritis"
+    "nameLatin" : "Alytaus apskritis",
+    "nutsName" : "Alytaus apskritis",
+    "nameAscii" : "Alytaus apskritis",
+    "nameHtml" : "Alytaus pskritis"
   },
   "LT002": {
-    "name_latin" : "Kauno apskritis",
-    "nuts_name" : "Kauno apskritis",
-    "name_ascii" : "Kauno apskritis",
-    "name_html" : "Kauno apskritis"
+    "nameLatin" : "Kauno apskritis",
+    "nutsName" : "Kauno apskritis",
+    "nameAscii" : "Kauno apskritis",
+    "nameHtml" : "Kauno apskritis"
   },
   "LT003": {
-    "name_latin" : "Klaipedos apskritis",
-    "nuts_name" : "Klaipedos apskritis",
-    "name_ascii" : "Klaipedos apskritis",
-    "name_html" : "Klaipedos apskritis"
+    "nameLatin" : "Klaipedos apskritis",
+    "nutsName" : "Klaipedos apskritis",
+    "nameAscii" : "Klaipedos apskritis",
+    "nameHtml" : "Klaipedos apskritis"
   },
   "LT004": {
-    "name_latin" : "Marijampoles apskritis",
-    "nuts_name" : "Marijampoles apskritis",
-    "name_ascii" : "Marijampoles apskritis",
-    "name_html" : "Marijampoles apskritis"
+    "nameLatin" : "Marijampoles apskritis",
+    "nutsName" : "Marijampoles apskritis",
+    "nameAscii" : "Marijampoles apskritis",
+    "nameHtml" : "Marijampoles apskritis"
   },
   "LT005": {
-    "name_latin" : "Panevežio apskritis",
-    "nuts_name" : "Panevežio apskritis",
-    "name_ascii" : "Panevezio apskritis",
-    "name_html" : "Paneve&#x017E;io apskritis"
+    "nameLatin" : "Panevežio apskritis",
+    "nutsName" : "Panevežio apskritis",
+    "nameAscii" : "Panevezio apskritis",
+    "nameHtml" : "Paneve&#x017E;io apskritis"
   },
   "LT006": {
-    "name_latin" : "Šiauliu apskritis",
-    "nuts_name" : "Šiauliu apskritis",
-    "name_ascii" : "Siauliu apskritis",
-    "name_html" : "&#x0160;iauliu apskritis"
+    "nameLatin" : "Šiauliu apskritis",
+    "nutsName" : "Šiauliu apskritis",
+    "nameAscii" : "Siauliu apskritis",
+    "nameHtml" : "&#x0160;iauliu apskritis"
   },
   "LT007": {
-    "name_latin" : "Taurages apskritis",
-    "nuts_name" : "Taurages apskritis",
-    "name_ascii" : "Taurages apskritis",
-    "name_html" : "Taurages apskritis"
+    "nameLatin" : "Taurages apskritis",
+    "nutsName" : "Taurages apskritis",
+    "nameAscii" : "Taurages apskritis",
+    "nameHtml" : "Taurages apskritis"
   },
   "LT008": {
-    "name_latin" : "Telšiu apskritis",
-    "nuts_name" : "Telšiu apskritis",
-    "name_ascii" : "Telsiu apskritis",
-    "name_html" : "Tel&#x0161;iu apskritis"
+    "nameLatin" : "Telšiu apskritis",
+    "nutsName" : "Telšiu apskritis",
+    "nameAscii" : "Telsiu apskritis",
+    "nameHtml" : "Tel&#x0161;iu apskritis"
   },
   "LT009": {
-    "name_latin" : "Utenos apskritis",
-    "nuts_name" : "Utenos apskritis",
-    "name_ascii" : "Utenos apskritis",
-    "name_html" : "Utenos apskritis"
+    "nameLatin" : "Utenos apskritis",
+    "nutsName" : "Utenos apskritis",
+    "nameAscii" : "Utenos apskritis",
+    "nameHtml" : "Utenos apskritis"
   },
   "LT00A": {
-    "name_latin" : "Vilniaus apskritis",
-    "nuts_name" : "Vilniaus apskritis",
-    "name_ascii" : "Vilniaus apskritis",
-    "name_html" : "Vilniaus apskritis"
+    "nameLatin" : "Vilniaus apskritis",
+    "nutsName" : "Vilniaus apskritis",
+    "nameAscii" : "Vilniaus apskritis",
+    "nameHtml" : "Vilniaus apskritis"
   },
   "LU000": {
-    "name_latin" : "Luxembourg",
-    "nuts_name" : "Luxembourg",
-    "name_ascii" : "Luxembourg",
-    "name_html" : "Luxembourg"
+    "nameLatin" : "Luxembourg",
+    "nutsName" : "Luxembourg",
+    "nameAscii" : "Luxembourg",
+    "nameHtml" : "Luxembourg"
   },
   "LV003": {
-    "name_latin" : "Kurzeme",
-    "nuts_name" : "Kurzeme",
-    "name_ascii" : "Kurzeme",
-    "name_html" : "Kurzeme"
+    "nameLatin" : "Kurzeme",
+    "nutsName" : "Kurzeme",
+    "nameAscii" : "Kurzeme",
+    "nameHtml" : "Kurzeme"
   },
   "LV005": {
-    "name_latin" : "Latgale",
-    "nuts_name" : "Latgale",
-    "name_ascii" : "Latgale",
-    "name_html" : "Latgale"
+    "nameLatin" : "Latgale",
+    "nutsName" : "Latgale",
+    "nameAscii" : "Latgale",
+    "nameHtml" : "Latgale"
   },
   "LV006": {
-    "name_latin" : "Riga",
-    "nuts_name" : "Riga",
-    "name_ascii" : "Riga",
-    "name_html" : "Riga"
+    "nameLatin" : "Riga",
+    "nutsName" : "Riga",
+    "nameAscii" : "Riga",
+    "nameHtml" : "Riga"
   },
   "LV007": {
-    "name_latin" : "Pieriga",
-    "nuts_name" : "Pieriga",
-    "name_ascii" : "Pieriga",
-    "name_html" : "Pieriga"
+    "nameLatin" : "Pieriga",
+    "nutsName" : "Pieriga",
+    "nameAscii" : "Pieriga",
+    "nameHtml" : "Pieriga"
   },
   "LV008": {
-    "name_latin" : "Vidzeme",
-    "nuts_name" : "Vidzeme",
-    "name_ascii" : "Vidzeme",
-    "name_html" : "Vidzeme"
+    "nameLatin" : "Vidzeme",
+    "nutsName" : "Vidzeme",
+    "nameAscii" : "Vidzeme",
+    "nameHtml" : "Vidzeme"
   },
   "MK001": {
-    "name_latin" : "Vardarski",
-    "nuts_name" : "Вардарски",
-    "name_ascii" : "Vardarski",
-    "name_html" : "Vardarski"
+    "nameLatin" : "Vardarski",
+    "nutsName" : "Вардарски",
+    "nameAscii" : "Vardarski",
+    "nameHtml" : "Vardarski"
   },
   "MK002": {
-    "name_latin" : "Istočen",
-    "nuts_name" : "Источен",
-    "name_ascii" : "Istocen",
-    "name_html" : "Istocen"
+    "nameLatin" : "Istočen",
+    "nutsName" : "Источен",
+    "nameAscii" : "Istocen",
+    "nameHtml" : "Istocen"
   },
   "MK003": {
-    "name_latin" : "Jugozapaden",
-    "nuts_name" : "Југозападен",
-    "name_ascii" : "Jugozapaden",
-    "name_html" : "Jugozapaden"
+    "nameLatin" : "Jugozapaden",
+    "nutsName" : "Југозападен",
+    "nameAscii" : "Jugozapaden",
+    "nameHtml" : "Jugozapaden"
   },
   "MK004": {
-    "name_latin" : "Jugoistočen",
-    "nuts_name" : "Југоисточен",
-    "name_ascii" : "Jugoistocen",
-    "name_html" : "Jugoistocen"
+    "nameLatin" : "Jugoistočen",
+    "nutsName" : "Југоисточен",
+    "nameAscii" : "Jugoistocen",
+    "nameHtml" : "Jugoistocen"
   },
   "MK005": {
-    "name_latin" : "Пелагониски",
-    "nuts_name" : "Пелагониски",
-    "name_ascii" : "Pelagoniski",
-    "name_html" : "Pelagoniski"
+    "nameLatin" : "Пелагониски",
+    "nutsName" : "Пелагониски",
+    "nameAscii" : "Pelagoniski",
+    "nameHtml" : "Pelagoniski"
   },
   "MK006": {
-    "name_latin" : "Pološki",
-    "nuts_name" : "Полошки",
-    "name_ascii" : "Poloski",
-    "name_html" : "Polo&#x0161;ki"
+    "nameLatin" : "Pološki",
+    "nutsName" : "Полошки",
+    "nameAscii" : "Poloski",
+    "nameHtml" : "Polo&#x0161;ki"
   },
   "MK007": {
-    "name_latin" : "Severoistočen",
-    "nuts_name" : "Североисточен",
-    "name_ascii" : "Severoistocen",
-    "name_html" : "Severoistocen"
+    "nameLatin" : "Severoistočen",
+    "nutsName" : "Североисточен",
+    "nameAscii" : "Severoistocen",
+    "nameHtml" : "Severoistocen"
   },
   "MK008": {
-    "name_latin" : "Skopski",
-    "nuts_name" : "Скопски",
-    "name_ascii" : "Skopski",
-    "name_html" : "Skopski"
+    "nameLatin" : "Skopski",
+    "nutsName" : "Скопски",
+    "nameAscii" : "Skopski",
+    "nameHtml" : "Skopski"
   },
   "MT001": {
-    "name_latin" : "Malta",
-    "nuts_name" : "Malta",
-    "name_ascii" : "Malta",
-    "name_html" : "Malta"
+    "nameLatin" : "Malta",
+    "nutsName" : "Malta",
+    "nameAscii" : "Malta",
+    "nameHtml" : "Malta"
   },
   "MT002": {
-    "name_latin" : "Gozo and Comino / Ghawdex u Kemmuna",
-    "nuts_name" : "Gozo and Comino / Ghawdex u Kemmuna",
-    "name_ascii" : "Gozo and Comino / Ghawdex u Kemmuna",
-    "name_html" : "Gozo and Comino / Ghawdex u Kemmuna"
+    "nameLatin" : "Gozo and Comino / Ghawdex u Kemmuna",
+    "nutsName" : "Gozo and Comino / Ghawdex u Kemmuna",
+    "nameAscii" : "Gozo and Comino / Ghawdex u Kemmuna",
+    "nameHtml" : "Gozo and Comino / Ghawdex u Kemmuna"
   },
   "NL111": {
-    "name_latin" : "Oost-Groningen",
-    "nuts_name" : "Oost-Groningen",
-    "name_ascii" : "Oost-Groningen",
-    "name_html" : "Oost-Groningen"
+    "nameLatin" : "Oost-Groningen",
+    "nutsName" : "Oost-Groningen",
+    "nameAscii" : "Oost-Groningen",
+    "nameHtml" : "Oost-Groningen"
   },
   "NL112": {
-    "name_latin" : "Delfzijl en omgeving",
-    "nuts_name" : "Delfzijl en omgeving",
-    "name_ascii" : "Delfzijl en Omgeving",
-    "name_html" : "Delfzijl en Omgeving"
+    "nameLatin" : "Delfzijl en omgeving",
+    "nutsName" : "Delfzijl en omgeving",
+    "nameAscii" : "Delfzijl en Omgeving",
+    "nameHtml" : "Delfzijl en Omgeving"
   },
   "NL121": {
-    "name_latin" : "Noord-Friesland",
-    "nuts_name" : "Noord-Friesland",
-    "name_ascii" : "Noord-Friesland",
-    "name_html" : "Noord-Friesland"
+    "nameLatin" : "Noord-Friesland",
+    "nutsName" : "Noord-Friesland",
+    "nameAscii" : "Noord-Friesland",
+    "nameHtml" : "Noord-Friesland"
   },
   "NL122": {
-    "name_latin" : "Zuidwest-Friesland",
-    "nuts_name" : "Zuidwest-Friesland",
-    "name_ascii" : "Zuidwest-Friesland",
-    "name_html" : "Zuidwest-Friesland"
+    "nameLatin" : "Zuidwest-Friesland",
+    "nutsName" : "Zuidwest-Friesland",
+    "nameAscii" : "Zuidwest-Friesland",
+    "nameHtml" : "Zuidwest-Friesland"
   },
   "NL123": {
-    "name_latin" : "Zuidoost-Friesland",
-    "nuts_name" : "Zuidoost-Friesland",
-    "name_ascii" : "Zuidoost-Friesland",
-    "name_html" : "Zuidoost-Friesland"
+    "nameLatin" : "Zuidoost-Friesland",
+    "nutsName" : "Zuidoost-Friesland",
+    "nameAscii" : "Zuidoost-Friesland",
+    "nameHtml" : "Zuidoost-Friesland"
   },
   "NL132": {
-    "name_latin" : "Zuidoost-Drenthe",
-    "nuts_name" : "Zuidoost-Drenthe",
-    "name_ascii" : "Zuidoost-Drenthe",
-    "name_html" : "Zuidoost-Drenthe"
+    "nameLatin" : "Zuidoost-Drenthe",
+    "nutsName" : "Zuidoost-Drenthe",
+    "nameAscii" : "Zuidoost-Drenthe",
+    "nameHtml" : "Zuidoost-Drenthe"
   },
   "NL133": {
-    "name_latin" : "Zuidwest-Drenthe",
-    "nuts_name" : "Zuidwest-Drenthe",
-    "name_ascii" : "Zuidwest-Drenthe",
-    "name_html" : "Zuidwest-Drenthe"
+    "nameLatin" : "Zuidwest-Drenthe",
+    "nutsName" : "Zuidwest-Drenthe",
+    "nameAscii" : "Zuidwest-Drenthe",
+    "nameHtml" : "Zuidwest-Drenthe"
   },
   "NL212": {
-    "name_latin" : "Zuidwest-Overijssel",
-    "nuts_name" : "Zuidwest-Overijssel",
-    "name_ascii" : "Zuidwest-Overijssel",
-    "name_html" : "Zuidwest-Overijssel"
+    "nameLatin" : "Zuidwest-Overijssel",
+    "nutsName" : "Zuidwest-Overijssel",
+    "nameAscii" : "Zuidwest-Overijssel",
+    "nameHtml" : "Zuidwest-Overijssel"
   },
   "NL213": {
-    "name_latin" : "Twente",
-    "nuts_name" : "Twente",
-    "name_ascii" : "Twente",
-    "name_html" : "Twente"
+    "nameLatin" : "Twente",
+    "nutsName" : "Twente",
+    "nameAscii" : "Twente",
+    "nameHtml" : "Twente"
   },
   "NL221": {
-    "name_latin" : "Veluwe",
-    "nuts_name" : "Veluwe",
-    "name_ascii" : "Veluwe",
-    "name_html" : "Veluwe"
+    "nameLatin" : "Veluwe",
+    "nutsName" : "Veluwe",
+    "nameAscii" : "Veluwe",
+    "nameHtml" : "Veluwe"
   },
   "NL224": {
-    "name_latin" : "Zuidwest-Gelderland",
-    "nuts_name" : "Zuidwest-Gelderland",
-    "name_ascii" : "Zuidwest-Gelderland",
-    "name_html" : "Zuidwest-Gelderland"
+    "nameLatin" : "Zuidwest-Gelderland",
+    "nutsName" : "Zuidwest-Gelderland",
+    "nameAscii" : "Zuidwest-Gelderland",
+    "nameHtml" : "Zuidwest-Gelderland"
   },
   "NL225": {
-    "name_latin" : "Achterhoek",
-    "nuts_name" : "Achterhoek",
-    "name_ascii" : "Achterhoek",
-    "name_html" : "Achterhoek"
+    "nameLatin" : "Achterhoek",
+    "nutsName" : "Achterhoek",
+    "nameAscii" : "Achterhoek",
+    "nameHtml" : "Achterhoek"
   },
   "NL230": {
-    "name_latin" : "Flevoland",
-    "nuts_name" : "Flevoland",
-    "name_ascii" : "Flevoland",
-    "name_html" : "Flevoland"
+    "nameLatin" : "Flevoland",
+    "nutsName" : "Flevoland",
+    "nameAscii" : "Flevoland",
+    "nameHtml" : "Flevoland"
   },
   "NL310": {
-    "name_latin" : "Utrecht",
-    "nuts_name" : "Utrecht",
-    "name_ascii" : "Utrecht",
-    "name_html" : "Utrecht"
+    "nameLatin" : "Utrecht",
+    "nutsName" : "Utrecht",
+    "nameAscii" : "Utrecht",
+    "nameHtml" : "Utrecht"
   },
   "NL322": {
-    "name_latin" : "Alkmaar en omgeving",
-    "nuts_name" : "Alkmaar en omgeving",
-    "name_ascii" : "Alkmaar en Omgeving",
-    "name_html" : "Alkmaar en Omgeving"
+    "nameLatin" : "Alkmaar en omgeving",
+    "nutsName" : "Alkmaar en omgeving",
+    "nameAscii" : "Alkmaar en Omgeving",
+    "nameHtml" : "Alkmaar en Omgeving"
   },
   "NL323": {
-    "name_latin" : "IJmond",
-    "nuts_name" : "IJmond",
-    "name_ascii" : "Ijmond",
-    "name_html" : "Ijmond"
+    "nameLatin" : "IJmond",
+    "nutsName" : "IJmond",
+    "nameAscii" : "Ijmond",
+    "nameHtml" : "Ijmond"
   },
   "NL324": {
-    "name_latin" : "Agglomeratie Haarlem",
-    "nuts_name" : "Agglomeratie Haarlem",
-    "name_ascii" : "Agglomeratie Haarlem",
-    "name_html" : "Agglomeratie Haarlem"
+    "nameLatin" : "Agglomeratie Haarlem",
+    "nutsName" : "Agglomeratie Haarlem",
+    "nameAscii" : "Agglomeratie Haarlem",
+    "nameHtml" : "Agglomeratie Haarlem"
   },
   "NL325": {
-    "name_latin" : "Zaanstreek",
-    "nuts_name" : "Zaanstreek",
-    "name_ascii" : "Zaanstreek",
-    "name_html" : "Zaanstreek"
+    "nameLatin" : "Zaanstreek",
+    "nutsName" : "Zaanstreek",
+    "nameAscii" : "Zaanstreek",
+    "nameHtml" : "Zaanstreek"
   },
   "NL326": {
-    "name_latin" : "Groot-Amsterdam",
-    "nuts_name" : "Groot-Amsterdam",
-    "name_ascii" : "Groot-Amsterdam",
-    "name_html" : "Groot-Amsterdam"
+    "nameLatin" : "Groot-Amsterdam",
+    "nutsName" : "Groot-Amsterdam",
+    "nameAscii" : "Groot-Amsterdam",
+    "nameHtml" : "Groot-Amsterdam"
   },
   "NL327": {
-    "name_latin" : "Het Gooi en Vechtstreek",
-    "nuts_name" : "Het Gooi en Vechtstreek",
-    "name_ascii" : "Het Gooi en Vechtstreek",
-    "name_html" : "Het Gooi en Vechtstreek"
+    "nameLatin" : "Het Gooi en Vechtstreek",
+    "nutsName" : "Het Gooi en Vechtstreek",
+    "nameAscii" : "Het Gooi en Vechtstreek",
+    "nameHtml" : "Het Gooi en Vechtstreek"
   },
   "NL332": {
-    "name_latin" : "Agglomeratie 's-Gravenhage",
-    "nuts_name" : "Agglomeratie 's-Gravenhage",
-    "name_ascii" : "Agglomeratie 's-Gravenhage",
-    "name_html" : "Agglomeratie 's-Gravenhage"
+    "nameLatin" : "Agglomeratie 's-Gravenhage",
+    "nutsName" : "Agglomeratie 's-Gravenhage",
+    "nameAscii" : "Agglomeratie 's-Gravenhage",
+    "nameHtml" : "Agglomeratie 's-Gravenhage"
   },
   "NL333": {
-    "name_latin" : "Delft en Westland",
-    "nuts_name" : "Delft en Westland",
-    "name_ascii" : "Delft en Westland",
-    "name_html" : "Delft en Westland"
+    "nameLatin" : "Delft en Westland",
+    "nutsName" : "Delft en Westland",
+    "nameAscii" : "Delft en Westland",
+    "nameHtml" : "Delft en Westland"
   },
   "NL338": {
-    "name_latin" : "Oost-Zuid-Holland",
-    "nuts_name" : "Oost-Zuid-Holland",
-    "name_ascii" : "Oost-Zuid-Holland",
-    "name_html" : "Oost-Zuid-Holland"
+    "nameLatin" : "Oost-Zuid-Holland",
+    "nutsName" : "Oost-Zuid-Holland",
+    "nameAscii" : "Oost-Zuid-Holland",
+    "nameHtml" : "Oost-Zuid-Holland"
   },
   "NL339": {
-    "name_latin" : "Groot-Rijnmond",
-    "nuts_name" : "Groot-Rijnmond",
-    "name_ascii" : "Groot-Rijnmond",
-    "name_html" : "Groot-Rijnmond"
+    "nameLatin" : "Groot-Rijnmond",
+    "nutsName" : "Groot-Rijnmond",
+    "nameAscii" : "Groot-Rijnmond",
+    "nameHtml" : "Groot-Rijnmond"
   },
   "NL33A": {
-    "name_latin" : "Zuidoost-Zuid-Holland",
-    "nuts_name" : "Zuidoost-Zuid-Holland",
-    "name_ascii" : "Zuidoost-Zuid-Holland",
-    "name_html" : "Zuidoost-Zuid-Holland"
+    "nameLatin" : "Zuidoost-Zuid-Holland",
+    "nutsName" : "Zuidoost-Zuid-Holland",
+    "nameAscii" : "Zuidoost-Zuid-Holland",
+    "nameHtml" : "Zuidoost-Zuid-Holland"
   },
   "NL341": {
-    "name_latin" : "Zeeuwsch-Vlaanderen",
-    "nuts_name" : "Zeeuwsch-Vlaanderen",
-    "name_ascii" : "Zeeuwsch-Vlaanderen",
-    "name_html" : "Zeeuwsch-Vlaanderen"
+    "nameLatin" : "Zeeuwsch-Vlaanderen",
+    "nutsName" : "Zeeuwsch-Vlaanderen",
+    "nameAscii" : "Zeeuwsch-Vlaanderen",
+    "nameHtml" : "Zeeuwsch-Vlaanderen"
   },
   "NL342": {
-    "name_latin" : "Overig Zeeland",
-    "nuts_name" : "Overig Zeeland",
-    "name_ascii" : "Overig Zeeland",
-    "name_html" : "Overig Zeeland"
+    "nameLatin" : "Overig Zeeland",
+    "nutsName" : "Overig Zeeland",
+    "nameAscii" : "Overig Zeeland",
+    "nameHtml" : "Overig Zeeland"
   },
   "NL411": {
-    "name_latin" : "West-Noord-Brabant",
-    "nuts_name" : "West-Noord-Brabant",
-    "name_ascii" : "West-Noord-Brabant",
-    "name_html" : "West-Noord-Brabant"
+    "nameLatin" : "West-Noord-Brabant",
+    "nutsName" : "West-Noord-Brabant",
+    "nameAscii" : "West-Noord-Brabant",
+    "nameHtml" : "West-Noord-Brabant"
   },
   "NL412": {
-    "name_latin" : "Midden-Noord-Brabant",
-    "nuts_name" : "Midden-Noord-Brabant",
-    "name_ascii" : "Midden-Noord-Brabant",
-    "name_html" : "Midden-Noord-Brabant"
+    "nameLatin" : "Midden-Noord-Brabant",
+    "nutsName" : "Midden-Noord-Brabant",
+    "nameAscii" : "Midden-Noord-Brabant",
+    "nameHtml" : "Midden-Noord-Brabant"
   },
   "NL413": {
-    "name_latin" : "Noordoost-Noord-Brabant",
-    "nuts_name" : "Noordoost-Noord-Brabant",
-    "name_ascii" : "Noordoost-Noord-Brabant",
-    "name_html" : "Noordoost-Noord-Brabant"
+    "nameLatin" : "Noordoost-Noord-Brabant",
+    "nutsName" : "Noordoost-Noord-Brabant",
+    "nameAscii" : "Noordoost-Noord-Brabant",
+    "nameHtml" : "Noordoost-Noord-Brabant"
   },
   "NL414": {
-    "name_latin" : "Zuidoost-Noord-Brabant",
-    "nuts_name" : "Zuidoost-Noord-Brabant",
-    "name_ascii" : "Zuidoost-Noord-Brabant",
-    "name_html" : "Zuidoost-Noord-Brabant"
+    "nameLatin" : "Zuidoost-Noord-Brabant",
+    "nutsName" : "Zuidoost-Noord-Brabant",
+    "nameAscii" : "Zuidoost-Noord-Brabant",
+    "nameHtml" : "Zuidoost-Noord-Brabant"
   },
   "NL421": {
-    "name_latin" : "Noord-Limburg",
-    "nuts_name" : "Noord-Limburg",
-    "name_ascii" : "Noord-Limburg",
-    "name_html" : "Noord-Limburg"
+    "nameLatin" : "Noord-Limburg",
+    "nutsName" : "Noord-Limburg",
+    "nameAscii" : "Noord-Limburg",
+    "nameHtml" : "Noord-Limburg"
   },
   "NL422": {
-    "name_latin" : "Midden-Limburg",
-    "nuts_name" : "Midden-Limburg",
-    "name_ascii" : "Midden-Limburg",
-    "name_html" : "Midden-Limburg"
+    "nameLatin" : "Midden-Limburg",
+    "nutsName" : "Midden-Limburg",
+    "nameAscii" : "Midden-Limburg",
+    "nameHtml" : "Midden-Limburg"
   },
   "NL423": {
-    "name_latin" : "Zuid-Limburg",
-    "nuts_name" : "Zuid-Limburg",
-    "name_ascii" : "Zuid-Limburg",
-    "name_html" : "Zuid-Limburg"
+    "nameLatin" : "Zuid-Limburg",
+    "nutsName" : "Zuid-Limburg",
+    "nameAscii" : "Zuid-Limburg",
+    "nameHtml" : "Zuid-Limburg"
   },
   "NO011": {
-    "name_latin" : "Oslo",
-    "nuts_name" : "Oslo",
-    "name_ascii" : "Oslo",
-    "name_html" : "Oslo"
+    "nameLatin" : "Oslo",
+    "nutsName" : "Oslo",
+    "nameAscii" : "Oslo",
+    "nameHtml" : "Oslo"
   },
   "NO012": {
-    "name_latin" : "Akershus",
-    "nuts_name" : "Akershus",
-    "name_ascii" : "Akershus",
-    "name_html" : "Akershus"
+    "nameLatin" : "Akershus",
+    "nutsName" : "Akershus",
+    "nameAscii" : "Akershus",
+    "nameHtml" : "Akershus"
   },
   "NO021": {
-    "name_latin" : "Hedmark",
-    "nuts_name" : "Hedmark",
-    "name_ascii" : "Hedmark",
-    "name_html" : "Hedmark"
+    "nameLatin" : "Hedmark",
+    "nutsName" : "Hedmark",
+    "nameAscii" : "Hedmark",
+    "nameHtml" : "Hedmark"
   },
   "NO022": {
-    "name_latin" : "Oppland",
-    "nuts_name" : "Oppland",
-    "name_ascii" : "Oppland",
-    "name_html" : "Oppland"
+    "nameLatin" : "Oppland",
+    "nutsName" : "Oppland",
+    "nameAscii" : "Oppland",
+    "nameHtml" : "Oppland"
   },
   "NO031": {
-    "name_latin" : "Østfold",
-    "nuts_name" : "Østfold",
-    "name_ascii" : "Ostfold",
-    "name_html" : "&#x00D8;stfold"
+    "nameLatin" : "Østfold",
+    "nutsName" : "Østfold",
+    "nameAscii" : "Ostfold",
+    "nameHtml" : "&#x00D8;stfold"
   },
   "NO032": {
-    "name_latin" : "Buskerud",
-    "nuts_name" : "Buskerud",
-    "name_ascii" : "Buskerud",
-    "name_html" : "Buskerud"
+    "nameLatin" : "Buskerud",
+    "nutsName" : "Buskerud",
+    "nameAscii" : "Buskerud",
+    "nameHtml" : "Buskerud"
   },
   "NO033": {
-    "name_latin" : "Vestfold",
-    "nuts_name" : "Vestfold",
-    "name_ascii" : "Vestfold",
-    "name_html" : "Vestfold"
+    "nameLatin" : "Vestfold",
+    "nutsName" : "Vestfold",
+    "nameAscii" : "Vestfold",
+    "nameHtml" : "Vestfold"
   },
   "NO034": {
-    "name_latin" : "Telemark",
-    "nuts_name" : "Telemark",
-    "name_ascii" : "Telemark",
-    "name_html" : "Telemark"
+    "nameLatin" : "Telemark",
+    "nutsName" : "Telemark",
+    "nameAscii" : "Telemark",
+    "nameHtml" : "Telemark"
   },
   "NO041": {
-    "name_latin" : "Aust-Agder",
-    "nuts_name" : "Aust-Agder",
-    "name_ascii" : "Aust-Agder",
-    "name_html" : "Aust-Agder"
+    "nameLatin" : "Aust-Agder",
+    "nutsName" : "Aust-Agder",
+    "nameAscii" : "Aust-Agder",
+    "nameHtml" : "Aust-Agder"
   },
   "NO042": {
-    "name_latin" : "Vest-Agder",
-    "nuts_name" : "Vest-Agder",
-    "name_ascii" : "Vest-Agder",
-    "name_html" : "Vest-Agder"
+    "nameLatin" : "Vest-Agder",
+    "nutsName" : "Vest-Agder",
+    "nameAscii" : "Vest-Agder",
+    "nameHtml" : "Vest-Agder"
   },
   "NO043": {
-    "name_latin" : "Rogaland",
-    "nuts_name" : "Rogaland",
-    "name_ascii" : "Rogaland",
-    "name_html" : "Rogaland"
+    "nameLatin" : "Rogaland",
+    "nutsName" : "Rogaland",
+    "nameAscii" : "Rogaland",
+    "nameHtml" : "Rogaland"
   },
   "NO051": {
-    "name_latin" : "Hordaland",
-    "nuts_name" : "Hordaland",
-    "name_ascii" : "Hordaland",
-    "name_html" : "Hordaland"
+    "nameLatin" : "Hordaland",
+    "nutsName" : "Hordaland",
+    "nameAscii" : "Hordaland",
+    "nameHtml" : "Hordaland"
   },
   "NO052": {
-    "name_latin" : "Sogn og Fjordane",
-    "nuts_name" : "Sogn og Fjordane",
-    "name_ascii" : "Sogn og Fjordane",
-    "name_html" : "Sogn og Fjordane"
+    "nameLatin" : "Sogn og Fjordane",
+    "nutsName" : "Sogn og Fjordane",
+    "nameAscii" : "Sogn og Fjordane",
+    "nameHtml" : "Sogn og Fjordane"
   },
   "NO053": {
-    "name_latin" : "Møre og Romsdal",
-    "nuts_name" : "Møre og Romsdal",
-    "name_ascii" : "More og Romsdal",
-    "name_html" : "M&#x00F8;re og Romsdal"
+    "nameLatin" : "Møre og Romsdal",
+    "nutsName" : "Møre og Romsdal",
+    "nameAscii" : "More og Romsdal",
+    "nameHtml" : "M&#x00F8;re og Romsdal"
   },
   "NO062": {
-    "name_latin" : "Nord-Trøndelag",
-    "nuts_name" : "Nord-Trøndelag",
-    "name_ascii" : "Nord-Trondelag",
-    "name_html" : "Nord-Tr&#x00F8;ndelag"
+    "nameLatin" : "Nord-Trøndelag",
+    "nutsName" : "Nord-Trøndelag",
+    "nameAscii" : "Nord-Trondelag",
+    "nameHtml" : "Nord-Tr&#x00F8;ndelag"
   },
   "NO071": {
-    "name_latin" : "Nordland",
-    "nuts_name" : "Nordland",
-    "name_ascii" : "Nordland",
-    "name_html" : "Nordland"
+    "nameLatin" : "Nordland",
+    "nutsName" : "Nordland",
+    "nameAscii" : "Nordland",
+    "nameHtml" : "Nordland"
   },
   "NO072": {
-    "name_latin" : "Troms",
-    "nuts_name" : "Troms",
-    "name_ascii" : "Troms",
-    "name_html" : "Troms"
+    "nameLatin" : "Troms",
+    "nutsName" : "Troms",
+    "nameAscii" : "Troms",
+    "nameHtml" : "Troms"
   },
   "NO073": {
-    "name_latin" : "Finnmark",
-    "nuts_name" : "Finnmark",
-    "name_ascii" : "Finnmark",
-    "name_html" : "Finnmark"
+    "nameLatin" : "Finnmark",
+    "nutsName" : "Finnmark",
+    "nameAscii" : "Finnmark",
+    "nameHtml" : "Finnmark"
   },
   "PL114": {
-    "name_latin" : "Lódzki",
-    "nuts_name" : "Lódzki",
-    "name_ascii" : "Lodzki",
-    "name_html" : "L&#x00F3;dzki"
+    "nameLatin" : "Lódzki",
+    "nutsName" : "Lódzki",
+    "nameAscii" : "Lodzki",
+    "nameHtml" : "L&#x00F3;dzki"
   },
   "PL115": {
-    "name_latin" : "Piotrkowski",
-    "nuts_name" : "Piotrkowski",
-    "name_ascii" : "Piotrkowski",
-    "name_html" : "Piotrkowski"
+    "nameLatin" : "Piotrkowski",
+    "nutsName" : "Piotrkowski",
+    "nameAscii" : "Piotrkowski",
+    "nameHtml" : "Piotrkowski"
   },
   "PL116": {
-    "name_latin" : "Sieradzki",
-    "nuts_name" : "Sieradzki",
-    "name_ascii" : "Sieradzki",
-    "name_html" : "Sieradzki"
+    "nameLatin" : "Sieradzki",
+    "nutsName" : "Sieradzki",
+    "nameAscii" : "Sieradzki",
+    "nameHtml" : "Sieradzki"
   },
   "PL117": {
-    "name_latin" : "Skierniewicki",
-    "nuts_name" : "Skierniewicki",
-    "name_ascii" : "Skierniewicki",
-    "name_html" : "Skierniewicki"
+    "nameLatin" : "Skierniewicki",
+    "nutsName" : "Skierniewicki",
+    "nameAscii" : "Skierniewicki",
+    "nameHtml" : "Skierniewicki"
   },
   "PL128": {
-    "name_latin" : "Radomski",
-    "nuts_name" : "Radomski",
-    "name_ascii" : "Radomski",
-    "name_html" : "Radomski"
+    "nameLatin" : "Radomski",
+    "nutsName" : "Radomski",
+    "nameAscii" : "Radomski",
+    "nameHtml" : "Radomski"
   },
   "PL129": {
-    "name_latin" : "Warszawski wschodni",
-    "nuts_name" : "Warszawski wschodni",
-    "name_ascii" : "Warszawski wschodni",
-    "name_html" : "Warszawski wschodni"
+    "nameLatin" : "Warszawski wschodni",
+    "nutsName" : "Warszawski wschodni",
+    "nameAscii" : "Warszawski wschodni",
+    "nameHtml" : "Warszawski wschodni"
   },
   "PL12A": {
-    "name_latin" : "Warszawski zachodni",
-    "nuts_name" : "Warszawski zachodni",
-    "name_ascii" : "Warszawski zachodni",
-    "name_html" : "Warszawski zachodni"
+    "nameLatin" : "Warszawski zachodni",
+    "nutsName" : "Warszawski zachodni",
+    "nameAscii" : "Warszawski zachodni",
+    "nameHtml" : "Warszawski zachodni"
   },
   "PL12B": {
-    "name_latin" : "Ciechanowski",
-    "nuts_name" : "Ciechanowski",
-    "name_ascii" : "Ciechanowski",
-    "name_html" : "Ciechanowski"
+    "nameLatin" : "Ciechanowski",
+    "nutsName" : "Ciechanowski",
+    "nameAscii" : "Ciechanowski",
+    "nameHtml" : "Ciechanowski"
   },
   "PL12C": {
-    "name_latin" : "Plocki",
-    "nuts_name" : "Plocki",
-    "name_ascii" : "Plocki",
-    "name_html" : "Plocki"
+    "nameLatin" : "Plocki",
+    "nutsName" : "Plocki",
+    "nameAscii" : "Plocki",
+    "nameHtml" : "Plocki"
   },
   "PL12D": {
-    "name_latin" : "Ostrolecki",
-    "nuts_name" : "Ostrolecki",
-    "name_ascii" : "Ostrolecki",
-    "name_html" : "Ostrolecki"
+    "nameLatin" : "Ostrolecki",
+    "nutsName" : "Ostrolecki",
+    "nameAscii" : "Ostrolecki",
+    "nameHtml" : "Ostrolecki"
   },
   "PL214": {
-    "name_latin" : "Krakowski",
-    "nuts_name" : "Krakowski",
-    "name_ascii" : "Krakowski",
-    "name_html" : "Krakowski"
+    "nameLatin" : "Krakowski",
+    "nutsName" : "Krakowski",
+    "nameAscii" : "Krakowski",
+    "nameHtml" : "Krakowski"
   },
   "PL217": {
-    "name_latin" : "Tarnowski",
-    "nuts_name" : "Tarnowski",
-    "name_ascii" : "Tarnowski",
-    "name_html" : "Tarnowski"
+    "nameLatin" : "Tarnowski",
+    "nutsName" : "Tarnowski",
+    "nameAscii" : "Tarnowski",
+    "nameHtml" : "Tarnowski"
   },
   "PL218": {
-    "name_latin" : "Nowosadecki",
-    "nuts_name" : "Nowosadecki",
-    "name_ascii" : "Nowosadecki",
-    "name_html" : "Nowosadecki"
+    "nameLatin" : "Nowosadecki",
+    "nutsName" : "Nowosadecki",
+    "nameAscii" : "Nowosadecki",
+    "nameHtml" : "Nowosadecki"
   },
   "PL219": {
-    "name_latin" : "Nowotarski",
-    "nuts_name" : "Nowotarski",
-    "name_ascii" : "Nowotarski",
-    "name_html" : "Nowotarski"
+    "nameLatin" : "Nowotarski",
+    "nutsName" : "Nowotarski",
+    "nameAscii" : "Nowotarski",
+    "nameHtml" : "Nowotarski"
   },
   "PL21A": {
-    "name_latin" : "Oswiecimski",
-    "nuts_name" : "Oswiecimski",
-    "name_ascii" : "Oswiecimski",
-    "name_html" : "Oswiecimski"
+    "nameLatin" : "Oswiecimski",
+    "nutsName" : "Oswiecimski",
+    "nameAscii" : "Oswiecimski",
+    "nameHtml" : "Oswiecimski"
   },
   "PL224": {
-    "name_latin" : "Czestochowski",
-    "nuts_name" : "Czestochowski",
-    "name_ascii" : "Czestochowski",
-    "name_html" : "Czestochowski"
+    "nameLatin" : "Czestochowski",
+    "nutsName" : "Czestochowski",
+    "nameAscii" : "Czestochowski",
+    "nameHtml" : "Czestochowski"
   },
   "PL225": {
-    "name_latin" : "Bielski",
-    "nuts_name" : "Bielski",
-    "name_ascii" : "Bielski",
-    "name_html" : "Bielski"
+    "nameLatin" : "Bielski",
+    "nutsName" : "Bielski",
+    "nameAscii" : "Bielski",
+    "nameHtml" : "Bielski"
   },
   "PL228": {
-    "name_latin" : "Bytomski",
-    "nuts_name" : "Bytomski",
-    "name_ascii" : "Bytomski",
-    "name_html" : "Bytomski"
+    "nameLatin" : "Bytomski",
+    "nutsName" : "Bytomski",
+    "nameAscii" : "Bytomski",
+    "nameHtml" : "Bytomski"
   },
   "PL229": {
-    "name_latin" : "Gliwicki",
-    "nuts_name" : "Gliwicki",
-    "name_ascii" : "Gliwicki",
-    "name_html" : "Gliwicki"
+    "nameLatin" : "Gliwicki",
+    "nutsName" : "Gliwicki",
+    "nameAscii" : "Gliwicki",
+    "nameHtml" : "Gliwicki"
   },
   "PL22A": {
-    "name_latin" : "Katowicki",
-    "nuts_name" : "Katowicki",
-    "name_ascii" : "Katowicki",
-    "name_html" : "Katowicki"
+    "nameLatin" : "Katowicki",
+    "nutsName" : "Katowicki",
+    "nameAscii" : "Katowicki",
+    "nameHtml" : "Katowicki"
   },
   "PL22B": {
-    "name_latin" : "Sosnowiecki",
-    "nuts_name" : "Sosnowiecki",
-    "name_ascii" : "Sosnowiecki",
-    "name_html" : "Sosnowiecki"
+    "nameLatin" : "Sosnowiecki",
+    "nutsName" : "Sosnowiecki",
+    "nameAscii" : "Sosnowiecki",
+    "nameHtml" : "Sosnowiecki"
   },
   "PL22C": {
-    "name_latin" : "Tyski",
-    "nuts_name" : "Tyski",
-    "name_ascii" : "Tyski",
-    "name_html" : "Tyski"
+    "nameLatin" : "Tyski",
+    "nutsName" : "Tyski",
+    "nameAscii" : "Tyski",
+    "nameHtml" : "Tyski"
   },
   "PL311": {
-    "name_latin" : "Bialski",
-    "nuts_name" : "Bialski",
-    "name_ascii" : "Bialski",
-    "name_html" : "Bialski"
+    "nameLatin" : "Bialski",
+    "nutsName" : "Bialski",
+    "nameAscii" : "Bialski",
+    "nameHtml" : "Bialski"
   },
   "PL312": {
-    "name_latin" : "Chelmsko-zamojski",
-    "nuts_name" : "Chelmsko-zamojski",
-    "name_ascii" : "Chelmsko-zamojski",
-    "name_html" : "Chelmsko-zamojski"
+    "nameLatin" : "Chelmsko-zamojski",
+    "nutsName" : "Chelmsko-zamojski",
+    "nameAscii" : "Chelmsko-zamojski",
+    "nameHtml" : "Chelmsko-zamojski"
   },
   "PL314": {
-    "name_latin" : "Lubelski",
-    "nuts_name" : "Lubelski",
-    "name_ascii" : "Lubelski",
-    "name_html" : "Lubelski"
+    "nameLatin" : "Lubelski",
+    "nutsName" : "Lubelski",
+    "nameAscii" : "Lubelski",
+    "nameHtml" : "Lubelski"
   },
   "PL315": {
-    "name_latin" : "Pulawski",
-    "nuts_name" : "Pulawski",
-    "name_ascii" : "Pulawski",
-    "name_html" : "Pulawski"
+    "nameLatin" : "Pulawski",
+    "nutsName" : "Pulawski",
+    "nameAscii" : "Pulawski",
+    "nameHtml" : "Pulawski"
   },
   "PL324": {
-    "name_latin" : "Przemyski",
-    "nuts_name" : "Przemyski",
-    "name_ascii" : "Przemyski",
-    "name_html" : "Przemyski"
+    "nameLatin" : "Przemyski",
+    "nutsName" : "Przemyski",
+    "nameAscii" : "Przemyski",
+    "nameHtml" : "Przemyski"
   },
   "PL325": {
-    "name_latin" : "Rzeszowski",
-    "nuts_name" : "Rzeszowski",
-    "name_ascii" : "Rzeszowski",
-    "name_html" : "Rzeszowski"
+    "nameLatin" : "Rzeszowski",
+    "nutsName" : "Rzeszowski",
+    "nameAscii" : "Rzeszowski",
+    "nameHtml" : "Rzeszowski"
   },
   "PL326": {
-    "name_latin" : "Tarnobrzeski",
-    "nuts_name" : "Tarnobrzeski",
-    "name_ascii" : "Tarnobrzeski",
-    "name_html" : "Tarnobrzeski"
+    "nameLatin" : "Tarnobrzeski",
+    "nutsName" : "Tarnobrzeski",
+    "nameAscii" : "Tarnobrzeski",
+    "nameHtml" : "Tarnobrzeski"
   },
   "PL331": {
-    "name_latin" : "Kielecki",
-    "nuts_name" : "Kielecki",
-    "name_ascii" : "Kielecki",
-    "name_html" : "Kielecki"
+    "nameLatin" : "Kielecki",
+    "nutsName" : "Kielecki",
+    "nameAscii" : "Kielecki",
+    "nameHtml" : "Kielecki"
   },
   "PL343": {
-    "name_latin" : "Bialostocki",
-    "nuts_name" : "Bialostocki",
-    "name_ascii" : "Bialostocki",
-    "name_html" : "Bialostocki"
+    "nameLatin" : "Bialostocki",
+    "nutsName" : "Bialostocki",
+    "nameAscii" : "Bialostocki",
+    "nameHtml" : "Bialostocki"
   },
   "PL344": {
-    "name_latin" : "Lomzynski",
-    "nuts_name" : "Lomzynski",
-    "name_ascii" : "Lomzynski",
-    "name_html" : "Lomzynski"
+    "nameLatin" : "Lomzynski",
+    "nutsName" : "Lomzynski",
+    "nameAscii" : "Lomzynski",
+    "nameHtml" : "Lomzynski"
   },
   "PL345": {
-    "name_latin" : "Suwalski",
-    "nuts_name" : "Suwalski",
-    "name_ascii" : "Suwalski",
-    "name_html" : "Suwalski"
+    "nameLatin" : "Suwalski",
+    "nutsName" : "Suwalski",
+    "nameAscii" : "Suwalski",
+    "nameHtml" : "Suwalski"
   },
   "PL411": {
-    "name_latin" : "Pilski",
-    "nuts_name" : "Pilski",
-    "name_ascii" : "Pilski",
-    "name_html" : "Pilski"
+    "nameLatin" : "Pilski",
+    "nutsName" : "Pilski",
+    "nameAscii" : "Pilski",
+    "nameHtml" : "Pilski"
   },
   "PL414": {
-    "name_latin" : "Koninski",
-    "nuts_name" : "Koninski",
-    "name_ascii" : "Koninski",
-    "name_html" : "Koninski"
+    "nameLatin" : "Koninski",
+    "nutsName" : "Koninski",
+    "nameAscii" : "Koninski",
+    "nameHtml" : "Koninski"
   },
   "PL415": {
-    "name_latin" : "Miasto Poznan",
-    "nuts_name" : "Miasto Poznan",
-    "name_ascii" : "Miasto Poznan",
-    "name_html" : "Miasto Poznan"
+    "nameLatin" : "Miasto Poznan",
+    "nutsName" : "Miasto Poznan",
+    "nameAscii" : "Miasto Poznan",
+    "nameHtml" : "Miasto Poznan"
   },
   "PL417": {
-    "name_latin" : "Leszczynski",
-    "nuts_name" : "Leszczynski",
-    "name_ascii" : "Leszczynski",
-    "name_html" : "Leszczynski"
+    "nameLatin" : "Leszczynski",
+    "nutsName" : "Leszczynski",
+    "nameAscii" : "Leszczynski",
+    "nameHtml" : "Leszczynski"
   },
   "PL418": {
-    "name_latin" : "Poznanski",
-    "nuts_name" : "Poznanski",
-    "name_ascii" : "Poznanski",
-    "name_html" : "Poznanski"
+    "nameLatin" : "Poznanski",
+    "nutsName" : "Poznanski",
+    "nameAscii" : "Poznanski",
+    "nameHtml" : "Poznanski"
   },
   "PL426": {
-    "name_latin" : "Koszalinski",
-    "nuts_name" : "Koszalinski",
-    "name_ascii" : "Koszalinski",
-    "name_html" : "Koszalinski"
+    "nameLatin" : "Koszalinski",
+    "nutsName" : "Koszalinski",
+    "nameAscii" : "Koszalinski",
+    "nameHtml" : "Koszalinski"
   },
   "PL427": {
-    "name_latin" : "Szczecinecko-pyrzycki",
-    "nuts_name" : "Szczecinecko-pyrzycki",
-    "name_ascii" : "Szczecinecko-pyrzycki",
-    "name_html" : "Szczecinecko-pyrzycki"
+    "nameLatin" : "Szczecinecko-pyrzycki",
+    "nutsName" : "Szczecinecko-pyrzycki",
+    "nameAscii" : "Szczecinecko-pyrzycki",
+    "nameHtml" : "Szczecinecko-pyrzycki"
   },
   "PL428": {
-    "name_latin" : "Szczecinski",
-    "nuts_name" : "Szczecinski",
-    "name_ascii" : "Szczecinski",
-    "name_html" : "Szczecinski"
+    "nameLatin" : "Szczecinski",
+    "nutsName" : "Szczecinski",
+    "nameAscii" : "Szczecinski",
+    "nameHtml" : "Szczecinski"
   },
   "PL431": {
-    "name_latin" : "Gorzowski",
-    "nuts_name" : "Gorzowski",
-    "name_ascii" : "Gorzowski",
-    "name_html" : "Gorzowski"
+    "nameLatin" : "Gorzowski",
+    "nutsName" : "Gorzowski",
+    "nameAscii" : "Gorzowski",
+    "nameHtml" : "Gorzowski"
   },
   "PL514": {
-    "name_latin" : "Miasto Wroclaw",
-    "nuts_name" : "Miasto Wroclaw",
-    "name_ascii" : "Miasto Wroclaw",
-    "name_html" : "Miasto Wroclaw"
+    "nameLatin" : "Miasto Wroclaw",
+    "nutsName" : "Miasto Wroclaw",
+    "nameAscii" : "Miasto Wroclaw",
+    "nameHtml" : "Miasto Wroclaw"
   },
   "PL515": {
-    "name_latin" : "Jeleniogórski",
-    "nuts_name" : "Jeleniogórski",
-    "name_ascii" : "Jeleniogorski",
-    "name_html" : "Jeleniog&#x00F3;rski"
+    "nameLatin" : "Jeleniogórski",
+    "nutsName" : "Jeleniogórski",
+    "nameAscii" : "Jeleniogorski",
+    "nameHtml" : "Jeleniog&#x00F3;rski"
   },
   "PL517": {
-    "name_latin" : "Walbrzyski",
-    "nuts_name" : "Walbrzyski",
-    "name_ascii" : "Walbrzyski",
-    "name_html" : "Walbrzyski"
+    "nameLatin" : "Walbrzyski",
+    "nutsName" : "Walbrzyski",
+    "nameAscii" : "Walbrzyski",
+    "nameHtml" : "Walbrzyski"
   },
   "PL518": {
-    "name_latin" : "Wroclawski",
-    "nuts_name" : "Wroclawski",
-    "name_ascii" : "Wroclawski",
-    "name_html" : "Wroclawski"
+    "nameLatin" : "Wroclawski",
+    "nutsName" : "Wroclawski",
+    "nameAscii" : "Wroclawski",
+    "nameHtml" : "Wroclawski"
   },
   "PL523": {
-    "name_latin" : "Nyski",
-    "nuts_name" : "Nyski",
-    "name_ascii" : "Nyski",
-    "name_html" : "Nyski"
+    "nameLatin" : "Nyski",
+    "nutsName" : "Nyski",
+    "nameAscii" : "Nyski",
+    "nameHtml" : "Nyski"
   },
   "PL524": {
-    "name_latin" : "Opolski",
-    "nuts_name" : "Opolski",
-    "name_ascii" : "Opolski",
-    "name_html" : "Opolski"
+    "nameLatin" : "Opolski",
+    "nutsName" : "Opolski",
+    "nameAscii" : "Opolski",
+    "nameHtml" : "Opolski"
   },
   "PL613": {
-    "name_latin" : "Bydgosko-Torunski",
-    "nuts_name" : "Bydgosko-Torunski",
-    "name_ascii" : "Bydgosko-Torunski",
-    "name_html" : "Bydgosko-Torunski"
+    "nameLatin" : "Bydgosko-Torunski",
+    "nutsName" : "Bydgosko-Torunski",
+    "nameAscii" : "Bydgosko-Torunski",
+    "nameHtml" : "Bydgosko-Torunski"
   },
   "PL616": {
-    "name_latin" : "Grudziadzki",
-    "nuts_name" : "Grudziadzki",
-    "name_ascii" : "Grudziadzki",
-    "name_html" : "Grudziadzki"
+    "nameLatin" : "Grudziadzki",
+    "nutsName" : "Grudziadzki",
+    "nameAscii" : "Grudziadzki",
+    "nameHtml" : "Grudziadzki"
   },
   "PL617": {
-    "name_latin" : "Inowroclawski",
-    "nuts_name" : "Inowroclawski",
-    "name_ascii" : "Inowroclawski",
-    "name_html" : "Inowroclawski"
+    "nameLatin" : "Inowroclawski",
+    "nutsName" : "Inowroclawski",
+    "nameAscii" : "Inowroclawski",
+    "nameHtml" : "Inowroclawski"
   },
   "PL618": {
-    "name_latin" : "Swiecki",
-    "nuts_name" : "Swiecki",
-    "name_ascii" : "Swiecki",
-    "name_html" : "Swiecki"
+    "nameLatin" : "Swiecki",
+    "nutsName" : "Swiecki",
+    "nameAscii" : "Swiecki",
+    "nameHtml" : "Swiecki"
   },
   "PL619": {
-    "name_latin" : "Wloclawski",
-    "nuts_name" : "Wloclawski",
-    "name_ascii" : "Wloclawski",
-    "name_html" : "Wloclawski"
+    "nameLatin" : "Wloclawski",
+    "nutsName" : "Wloclawski",
+    "nameAscii" : "Wloclawski",
+    "nameHtml" : "Wloclawski"
   },
   "PL621": {
-    "name_latin" : "Elblaski",
-    "nuts_name" : "Elblaski",
-    "name_ascii" : "Elblaski",
-    "name_html" : "Elblaski"
+    "nameLatin" : "Elblaski",
+    "nutsName" : "Elblaski",
+    "nameAscii" : "Elblaski",
+    "nameHtml" : "Elblaski"
   },
   "PL622": {
-    "name_latin" : "Olsztynski",
-    "nuts_name" : "Olsztynski",
-    "name_ascii" : "Olsztynski",
-    "name_html" : "Olsztynski"
+    "nameLatin" : "Olsztynski",
+    "nutsName" : "Olsztynski",
+    "nameAscii" : "Olsztynski",
+    "nameHtml" : "Olsztynski"
   },
   "PL623": {
-    "name_latin" : "Elcki",
-    "nuts_name" : "Elcki",
-    "name_ascii" : "Elcki",
-    "name_html" : "Elcki"
+    "nameLatin" : "Elcki",
+    "nutsName" : "Elcki",
+    "nameAscii" : "Elcki",
+    "nameHtml" : "Elcki"
   },
   "PL633": {
-    "name_latin" : "Trójmiejski",
-    "nuts_name" : "Trójmiejski",
-    "name_ascii" : "Trojmiejski",
-    "name_html" : "Tr&#x00F3;jmiejski"
+    "nameLatin" : "Trójmiejski",
+    "nutsName" : "Trójmiejski",
+    "nameAscii" : "Trojmiejski",
+    "nameHtml" : "Tr&#x00F3;jmiejski"
   },
   "PL634": {
-    "name_latin" : "Gdanski",
-    "nuts_name" : "Gdanski",
-    "name_ascii" : "Gdanski",
-    "name_html" : "Gdanski"
+    "nameLatin" : "Gdanski",
+    "nutsName" : "Gdanski",
+    "nameAscii" : "Gdanski",
+    "nameHtml" : "Gdanski"
   },
   "PL636": {
-    "name_latin" : "Slupski",
-    "nuts_name" : "Slupski",
-    "name_ascii" : "Slupski",
-    "name_html" : "Slupski"
+    "nameLatin" : "Slupski",
+    "nutsName" : "Slupski",
+    "nameAscii" : "Slupski",
+    "nameHtml" : "Slupski"
   },
   "PL637": {
-    "name_latin" : "Chojnicki",
-    "nuts_name" : "Chojnicki",
-    "name_ascii" : "Chojnicki",
-    "name_html" : "Chojnicki"
+    "nameLatin" : "Chojnicki",
+    "nutsName" : "Chojnicki",
+    "nameAscii" : "Chojnicki",
+    "nameHtml" : "Chojnicki"
   },
   "PL638": {
-    "name_latin" : "Starogardzki",
-    "nuts_name" : "Starogardzki",
-    "name_ascii" : "Starogardzki",
-    "name_html" : "Starogardzki"
+    "nameLatin" : "Starogardzki",
+    "nutsName" : "Starogardzki",
+    "nameAscii" : "Starogardzki",
+    "nameHtml" : "Starogardzki"
   },
   "PT111": {
-    "name_latin" : "Alto Minho",
-    "nuts_name" : "Alto Minho",
-    "name_ascii" : "Alto Minho",
-    "name_html" : "Alto Minho"
+    "nameLatin" : "Alto Minho",
+    "nutsName" : "Alto Minho",
+    "nameAscii" : "Alto Minho",
+    "nameHtml" : "Alto Minho"
   },
   "PT112": {
-    "name_latin" : "Cávado",
-    "nuts_name" : "Cávado",
-    "name_ascii" : "Cavado",
-    "name_html" : "C&#x00E1;vado"
+    "nameLatin" : "Cávado",
+    "nutsName" : "Cávado",
+    "nameAscii" : "Cavado",
+    "nameHtml" : "C&#x00E1;vado"
   },
   "PT119": {
-    "name_latin" : "Ave",
-    "nuts_name" : "Ave",
-    "name_ascii" : "Ave",
-    "name_html" : "Ave"
+    "nameLatin" : "Ave",
+    "nutsName" : "Ave",
+    "nameAscii" : "Ave",
+    "nameHtml" : "Ave"
   },
   "PT11A": {
-    "name_latin" : "Área Metropolitana do Porto",
-    "nuts_name" : "Área Metropolitana do Porto",
-    "name_ascii" : "Area Metropolitana do Porto",
-    "name_html" : "&#x00C1;rea Metropolitana do Porto"
+    "nameLatin" : "Área Metropolitana do Porto",
+    "nutsName" : "Área Metropolitana do Porto",
+    "nameAscii" : "Area Metropolitana do Porto",
+    "nameHtml" : "&#x00C1;rea Metropolitana do Porto"
   },
   "PT11B": {
-    "name_latin" : "Alto Tâmega",
-    "nuts_name" : "Alto Tâmega",
-    "name_ascii" : "Alto Tamega",
-    "name_html" : "Alto T&#x00E2;mega"
+    "nameLatin" : "Alto Tâmega",
+    "nutsName" : "Alto Tâmega",
+    "nameAscii" : "Alto Tamega",
+    "nameHtml" : "Alto T&#x00E2;mega"
   },
   "PT11C": {
-    "name_latin" : "Tâmega e Sousa",
-    "nuts_name" : "Tâmega e Sousa",
-    "name_ascii" : "Tamega e Sousa",
-    "name_html" : "T&#x00E2;mega e Sousa"
+    "nameLatin" : "Tâmega e Sousa",
+    "nutsName" : "Tâmega e Sousa",
+    "nameAscii" : "Tamega e Sousa",
+    "nameHtml" : "T&#x00E2;mega e Sousa"
   },
   "PT11D": {
-    "name_latin" : "Douro",
-    "nuts_name" : "Douro",
-    "name_ascii" : "Douro",
-    "name_html" : "Douro"
+    "nameLatin" : "Douro",
+    "nutsName" : "Douro",
+    "nameAscii" : "Douro",
+    "nameHtml" : "Douro"
   },
   "PT11E": {
-    "name_latin" : "Terras de Trás-os-Montes",
-    "nuts_name" : "Terras de Trás-os-Montes",
-    "name_ascii" : "Terras de Tras-s-Montes",
-    "name_html" : "Terras de Tr&#x00E1;s-os-Montes"
+    "nameLatin" : "Terras de Trás-os-Montes",
+    "nutsName" : "Terras de Trás-os-Montes",
+    "nameAscii" : "Terras de Tras-s-Montes",
+    "nameHtml" : "Terras de Tr&#x00E1;s-os-Montes"
   },
   "PT150": {
-    "name_latin" : "Algarve",
-    "nuts_name" : "Algarve",
-    "name_ascii" : "Algarve",
-    "name_html" : "Algarve"
+    "nameLatin" : "Algarve",
+    "nutsName" : "Algarve",
+    "nameAscii" : "Algarve",
+    "nameHtml" : "Algarve"
   },
   "PT16B": {
-    "name_latin" : "Oeste",
-    "nuts_name" : "Oeste",
-    "name_ascii" : "Oeste",
-    "name_html" : "Oeste"
+    "nameLatin" : "Oeste",
+    "nutsName" : "Oeste",
+    "nameAscii" : "Oeste",
+    "nameHtml" : "Oeste"
   },
   "PT16D": {
-    "name_latin" : "Região de Aveiro",
-    "nuts_name" : "Região de Aveiro",
-    "name_ascii" : "Regiao de Aveiro",
-    "name_html" : "Regi&#x00E3;o de Aveiro"
+    "nameLatin" : "Região de Aveiro",
+    "nutsName" : "Região de Aveiro",
+    "nameAscii" : "Regiao de Aveiro",
+    "nameHtml" : "Regi&#x00E3;o de Aveiro"
   },
   "PT16F": {
-    "name_latin" : "Região de Leiria",
-    "nuts_name" : "Região de Leiria",
-    "name_ascii" : "Regiao de Leiria",
-    "name_html" : "Regi&#x00E3;o de Leiria"
+    "nameLatin" : "Região de Leiria",
+    "nutsName" : "Região de Leiria",
+    "nameAscii" : "Regiao de Leiria",
+    "nameHtml" : "Regi&#x00E3;o de Leiria"
   },
   "PT16G": {
-    "name_latin" : "Viseu Dão Lafões",
-    "nuts_name" : "Viseu Dão Lafões",
-    "name_ascii" : "Viseu Dao Lafoes",
-    "name_html" : "Viseu D&#x00E3;o Laf&#x00F5;es"
+    "nameLatin" : "Viseu Dão Lafões",
+    "nutsName" : "Viseu Dão Lafões",
+    "nameAscii" : "Viseu Dao Lafoes",
+    "nameHtml" : "Viseu D&#x00E3;o Laf&#x00F5;es"
   },
   "PT16H": {
-    "name_latin" : "Beira Baixa",
-    "nuts_name" : "Beira Baixa",
-    "name_ascii" : "Beira Baixa",
-    "name_html" : "Beira Baixa"
+    "nameLatin" : "Beira Baixa",
+    "nutsName" : "Beira Baixa",
+    "nameAscii" : "Beira Baixa",
+    "nameHtml" : "Beira Baixa"
   },
   "PT16I": {
-    "name_latin" : "Médio Tejo",
-    "nuts_name" : "Médio Tejo",
-    "name_ascii" : "Medio Tejo",
-    "name_html" : "M&#x00E9;dio Tejo"
+    "nameLatin" : "Médio Tejo",
+    "nutsName" : "Médio Tejo",
+    "nameAscii" : "Medio Tejo",
+    "nameHtml" : "M&#x00E9;dio Tejo"
   },
   "PT170": {
-    "name_latin" : "Área Metropolitana de Lisboa",
-    "nuts_name" : "Área Metropolitana de Lisboa",
-    "name_ascii" : "Area Metropolitana de Lisboa",
-    "name_html" : "&#x00C1;rea Metropolitana de Lisboa"
+    "nameLatin" : "Área Metropolitana de Lisboa",
+    "nutsName" : "Área Metropolitana de Lisboa",
+    "nameAscii" : "Area Metropolitana de Lisboa",
+    "nameHtml" : "&#x00C1;rea Metropolitana de Lisboa"
   },
   "PT181": {
-    "name_latin" : "Alentejo Litoral",
-    "nuts_name" : "Alentejo Litoral",
-    "name_ascii" : "Alentejo Litoral",
-    "name_html" : "Alentejo Litoral"
+    "nameLatin" : "Alentejo Litoral",
+    "nutsName" : "Alentejo Litoral",
+    "nameAscii" : "Alentejo Litoral",
+    "nameHtml" : "Alentejo Litoral"
   },
   "PT184": {
-    "name_latin" : "Baixo Alentejo",
-    "nuts_name" : "Baixo Alentejo",
-    "name_ascii" : "Baixo Alentejo",
-    "name_html" : "Baixo Alentejo"
+    "nameLatin" : "Baixo Alentejo",
+    "nutsName" : "Baixo Alentejo",
+    "nameAscii" : "Baixo Alentejo",
+    "nameHtml" : "Baixo Alentejo"
   },
   "PT186": {
-    "name_latin" : "Alto Alentejo",
-    "nuts_name" : "Alto Alentejo",
-    "name_ascii" : "Alto Alentejo",
-    "name_html" : "Alto Alentejo"
+    "nameLatin" : "Alto Alentejo",
+    "nutsName" : "Alto Alentejo",
+    "nameAscii" : "Alto Alentejo",
+    "nameHtml" : "Alto Alentejo"
   },
   "PT187": {
-    "name_latin" : "Alentejo Central",
-    "nuts_name" : "Alentejo Central",
-    "name_ascii" : "Alentejo Central",
-    "name_html" : "Alentejo Central"
+    "nameLatin" : "Alentejo Central",
+    "nutsName" : "Alentejo Central",
+    "nameAscii" : "Alentejo Central",
+    "nameHtml" : "Alentejo Central"
   },
   "PT200": {
-    "name_latin" : "Região Autónoma dos Açores",
-    "nuts_name" : "Região Autónoma dos Açores",
-    "name_ascii" : "Regiao Autonoma dos Acores",
-    "name_html" : "Regi&#x00E3;o Aut&#x00F3;noma dos A&#x00E7;ores"
+    "nameLatin" : "Região Autónoma dos Açores",
+    "nutsName" : "Região Autónoma dos Açores",
+    "nameAscii" : "Regiao Autonoma dos Acores",
+    "nameHtml" : "Regi&#x00E3;o Aut&#x00F3;noma dos A&#x00E7;ores"
   },
   "RO111": {
-    "name_latin" : "Bihor",
-    "nuts_name" : "Bihor",
-    "name_ascii" : "Bihor",
-    "name_html" : "Bihor"
+    "nameLatin" : "Bihor",
+    "nutsName" : "Bihor",
+    "nameAscii" : "Bihor",
+    "nameHtml" : "Bihor"
   },
   "RO112": {
-    "name_latin" : "Bistrita-Nasaud",
-    "nuts_name" : "Bistrita-Nasaud",
-    "name_ascii" : "Bistrita-Nasaud",
-    "name_html" : "Bistrita-Nasaud"
+    "nameLatin" : "Bistrita-Nasaud",
+    "nutsName" : "Bistrita-Nasaud",
+    "nameAscii" : "Bistrita-Nasaud",
+    "nameHtml" : "Bistrita-Nasaud"
   },
   "RO113": {
-    "name_latin" : "Cluj",
-    "nuts_name" : "Cluj",
-    "name_ascii" : "Cluj",
-    "name_html" : "Cluj"
+    "nameLatin" : "Cluj",
+    "nutsName" : "Cluj",
+    "nameAscii" : "Cluj",
+    "nameHtml" : "Cluj"
   },
   "RO114": {
-    "name_latin" : "Maramures",
-    "nuts_name" : "Maramures",
-    "name_ascii" : "Maramures",
-    "name_html" : "Maramures"
+    "nameLatin" : "Maramures",
+    "nutsName" : "Maramures",
+    "nameAscii" : "Maramures",
+    "nameHtml" : "Maramures"
   },
   "RO115": {
-    "name_latin" : "Satu Mare",
-    "nuts_name" : "Satu Mare",
-    "name_ascii" : "Satu Mare",
-    "name_html" : "Satu Mare"
+    "nameLatin" : "Satu Mare",
+    "nutsName" : "Satu Mare",
+    "nameAscii" : "Satu Mare",
+    "nameHtml" : "Satu Mare"
   },
   "RO116": {
-    "name_latin" : "Salaj",
-    "nuts_name" : "Salaj",
-    "name_ascii" : "Salaj",
-    "name_html" : "Salaj"
+    "nameLatin" : "Salaj",
+    "nutsName" : "Salaj",
+    "nameAscii" : "Salaj",
+    "nameHtml" : "Salaj"
   },
   "RO121": {
-    "name_latin" : "Alba",
-    "nuts_name" : "Alba",
-    "name_ascii" : "Alba",
-    "name_html" : "Alba"
+    "nameLatin" : "Alba",
+    "nutsName" : "Alba",
+    "nameAscii" : "Alba",
+    "nameHtml" : "Alba"
   },
   "RO122": {
-    "name_latin" : "Brasov",
-    "nuts_name" : "Brasov",
-    "name_ascii" : "Brasov",
-    "name_html" : "Brasov"
+    "nameLatin" : "Brasov",
+    "nutsName" : "Brasov",
+    "nameAscii" : "Brasov",
+    "nameHtml" : "Brasov"
   },
   "RO123": {
-    "name_latin" : "Covasna",
-    "nuts_name" : "Covasna",
-    "name_ascii" : "Covasna",
-    "name_html" : "Covasna"
+    "nameLatin" : "Covasna",
+    "nutsName" : "Covasna",
+    "nameAscii" : "Covasna",
+    "nameHtml" : "Covasna"
   },
   "RO124": {
-    "name_latin" : "Harghita",
-    "nuts_name" : "Harghita",
-    "name_ascii" : "Harghita",
-    "name_html" : "Harghita"
+    "nameLatin" : "Harghita",
+    "nutsName" : "Harghita",
+    "nameAscii" : "Harghita",
+    "nameHtml" : "Harghita"
   },
   "RO125": {
-    "name_latin" : "Mures",
-    "nuts_name" : "Mures",
-    "name_ascii" : "Mures",
-    "name_html" : "Mures"
+    "nameLatin" : "Mures",
+    "nutsName" : "Mures",
+    "nameAscii" : "Mures",
+    "nameHtml" : "Mures"
   },
   "RO126": {
-    "name_latin" : "Sibiu",
-    "nuts_name" : "Sibiu",
-    "name_ascii" : "Sibiu",
-    "name_html" : "Sibiu"
+    "nameLatin" : "Sibiu",
+    "nutsName" : "Sibiu",
+    "nameAscii" : "Sibiu",
+    "nameHtml" : "Sibiu"
   },
   "RO212": {
-    "name_latin" : "Botosani",
-    "nuts_name" : "Botosani",
-    "name_ascii" : "Botosani",
-    "name_html" : "Botosani"
+    "nameLatin" : "Botosani",
+    "nutsName" : "Botosani",
+    "nameAscii" : "Botosani",
+    "nameHtml" : "Botosani"
   },
   "RO213": {
-    "name_latin" : "Iasi",
-    "nuts_name" : "Iasi",
-    "name_ascii" : "Iasi",
-    "name_html" : "Iasi"
+    "nameLatin" : "Iasi",
+    "nutsName" : "Iasi",
+    "nameAscii" : "Iasi",
+    "nameHtml" : "Iasi"
   },
   "RO214": {
-    "name_latin" : "Neamt",
-    "nuts_name" : "Neamt",
-    "name_ascii" : "Neamt",
-    "name_html" : "Neamt"
+    "nameLatin" : "Neamt",
+    "nutsName" : "Neamt",
+    "nameAscii" : "Neamt",
+    "nameHtml" : "Neamt"
   },
   "RO215": {
-    "name_latin" : "Suceava",
-    "nuts_name" : "Suceava",
-    "name_ascii" : "Suceava",
-    "name_html" : "Suceava"
+    "nameLatin" : "Suceava",
+    "nutsName" : "Suceava",
+    "nameAscii" : "Suceava",
+    "nameHtml" : "Suceava"
   },
   "RO216": {
-    "name_latin" : "Vaslui",
-    "nuts_name" : "Vaslui",
-    "name_ascii" : "Vaslui",
-    "name_html" : "Vaslui"
+    "nameLatin" : "Vaslui",
+    "nutsName" : "Vaslui",
+    "nameAscii" : "Vaslui",
+    "nameHtml" : "Vaslui"
   },
   "RO221": {
-    "name_latin" : "Braila",
-    "nuts_name" : "Braila",
-    "name_ascii" : "Braila",
-    "name_html" : "Braila"
+    "nameLatin" : "Braila",
+    "nutsName" : "Braila",
+    "nameAscii" : "Braila",
+    "nameHtml" : "Braila"
   },
   "RO222": {
-    "name_latin" : "Buzau",
-    "nuts_name" : "Buzau",
-    "name_ascii" : "Buzau",
-    "name_html" : "Buzau"
+    "nameLatin" : "Buzau",
+    "nutsName" : "Buzau",
+    "nameAscii" : "Buzau",
+    "nameHtml" : "Buzau"
   },
   "RO223": {
-    "name_latin" : "Constanta",
-    "nuts_name" : "Constanta",
-    "name_ascii" : "Constanta",
-    "name_html" : "Constanta"
+    "nameLatin" : "Constanta",
+    "nutsName" : "Constanta",
+    "nameAscii" : "Constanta",
+    "nameHtml" : "Constanta"
   },
   "RO224": {
-    "name_latin" : "Galati",
-    "nuts_name" : "Galati",
-    "name_ascii" : "Galati",
-    "name_html" : "Galati"
+    "nameLatin" : "Galati",
+    "nutsName" : "Galati",
+    "nameAscii" : "Galati",
+    "nameHtml" : "Galati"
   },
   "RO225": {
-    "name_latin" : "Tulcea",
-    "nuts_name" : "Tulcea",
-    "name_ascii" : "Tulcea",
-    "name_html" : "Tulcea"
+    "nameLatin" : "Tulcea",
+    "nutsName" : "Tulcea",
+    "nameAscii" : "Tulcea",
+    "nameHtml" : "Tulcea"
   },
   "RO311": {
-    "name_latin" : "Arges",
-    "nuts_name" : "Arges",
-    "name_ascii" : "Arges",
-    "name_html" : "Arges"
+    "nameLatin" : "Arges",
+    "nutsName" : "Arges",
+    "nameAscii" : "Arges",
+    "nameHtml" : "Arges"
   },
   "RO313": {
-    "name_latin" : "Dâmbovita",
-    "nuts_name" : "Dâmbovita",
-    "name_ascii" : "Dambovita",
-    "name_html" : "D&#x00E2;mbovita"
+    "nameLatin" : "Dâmbovita",
+    "nutsName" : "Dâmbovita",
+    "nameAscii" : "Dambovita",
+    "nameHtml" : "D&#x00E2;mbovita"
   },
   "RO314": {
-    "name_latin" : "Giurgiu",
-    "nuts_name" : "Giurgiu",
-    "name_ascii" : "Giurgiu",
-    "name_html" : "Giurgiu"
+    "nameLatin" : "Giurgiu",
+    "nutsName" : "Giurgiu",
+    "nameAscii" : "Giurgiu",
+    "nameHtml" : "Giurgiu"
   },
   "RO315": {
-    "name_latin" : "Ialomita",
-    "nuts_name" : "Ialomita",
-    "name_ascii" : "Ialomita",
-    "name_html" : "Ialomita"
+    "nameLatin" : "Ialomita",
+    "nutsName" : "Ialomita",
+    "nameAscii" : "Ialomita",
+    "nameHtml" : "Ialomita"
   },
   "RO316": {
-    "name_latin" : "Prahova",
-    "nuts_name" : "Prahova",
-    "name_ascii" : "Prahova",
-    "name_html" : "Prahova"
+    "nameLatin" : "Prahova",
+    "nutsName" : "Prahova",
+    "nameAscii" : "Prahova",
+    "nameHtml" : "Prahova"
   },
   "RO321": {
-    "name_latin" : "Bucuresti",
-    "nuts_name" : "Bucuresti",
-    "name_ascii" : "Bucuresti",
-    "name_html" : "Bucuresti"
+    "nameLatin" : "Bucuresti",
+    "nutsName" : "Bucuresti",
+    "nameAscii" : "Bucuresti",
+    "nameHtml" : "Bucuresti"
   },
   "RO322": {
-    "name_latin" : "Ilfov",
-    "nuts_name" : "Ilfov",
-    "name_ascii" : "Ilfov",
-    "name_html" : "Ilfov"
+    "nameLatin" : "Ilfov",
+    "nutsName" : "Ilfov",
+    "nameAscii" : "Ilfov",
+    "nameHtml" : "Ilfov"
   },
   "RO411": {
-    "name_latin" : "Dolj",
-    "nuts_name" : "Dolj",
-    "name_ascii" : "Dolj",
-    "name_html" : "Dolj"
+    "nameLatin" : "Dolj",
+    "nutsName" : "Dolj",
+    "nameAscii" : "Dolj",
+    "nameHtml" : "Dolj"
   },
   "RO412": {
-    "name_latin" : "Gorj",
-    "nuts_name" : "Gorj",
-    "name_ascii" : "Gorj",
-    "name_html" : "Gorj"
+    "nameLatin" : "Gorj",
+    "nutsName" : "Gorj",
+    "nameAscii" : "Gorj",
+    "nameHtml" : "Gorj"
   },
   "RO413": {
-    "name_latin" : "Mehedinti",
-    "nuts_name" : "Mehedinti",
-    "name_ascii" : "Mehedinti",
-    "name_html" : "Mehedinti"
+    "nameLatin" : "Mehedinti",
+    "nutsName" : "Mehedinti",
+    "nameAscii" : "Mehedinti",
+    "nameHtml" : "Mehedinti"
   },
   "RO414": {
-    "name_latin" : "Olt",
-    "nuts_name" : "Olt",
-    "name_ascii" : "Olt",
-    "name_html" : "Olt"
+    "nameLatin" : "Olt",
+    "nutsName" : "Olt",
+    "nameAscii" : "Olt",
+    "nameHtml" : "Olt"
   },
   "RO415": {
-    "name_latin" : "Vâlcea",
-    "nuts_name" : "Vâlcea",
-    "name_ascii" : "Valcea",
-    "name_html" : "V&#x00E2;lcea"
+    "nameLatin" : "Vâlcea",
+    "nutsName" : "Vâlcea",
+    "nameAscii" : "Valcea",
+    "nameHtml" : "V&#x00E2;lcea"
   },
   "RO421": {
-    "name_latin" : "Arad",
-    "nuts_name" : "Arad",
-    "name_ascii" : "Arad",
-    "name_html" : "Arad"
+    "nameLatin" : "Arad",
+    "nutsName" : "Arad",
+    "nameAscii" : "Arad",
+    "nameHtml" : "Arad"
   },
   "RO422": {
-    "name_latin" : "Caras-Severin",
-    "nuts_name" : "Caras-Severin",
-    "name_ascii" : "Caras-Severin",
-    "name_html" : "Caras-Severin"
+    "nameLatin" : "Caras-Severin",
+    "nutsName" : "Caras-Severin",
+    "nameAscii" : "Caras-Severin",
+    "nameHtml" : "Caras-Severin"
   },
   "RO423": {
-    "name_latin" : "Hunedoara",
-    "nuts_name" : "Hunedoara",
-    "name_ascii" : "Hunedoara",
-    "name_html" : "Hunedoara"
+    "nameLatin" : "Hunedoara",
+    "nutsName" : "Hunedoara",
+    "nameAscii" : "Hunedoara",
+    "nameHtml" : "Hunedoara"
   },
   "RO424": {
-    "name_latin" : "Timis",
-    "nuts_name" : "Timis",
-    "name_ascii" : "Timis",
-    "name_html" : "Timis"
+    "nameLatin" : "Timis",
+    "nutsName" : "Timis",
+    "nameAscii" : "Timis",
+    "nameHtml" : "Timis"
   },
   "SE110": {
-    "name_latin" : "Stockholms län",
-    "nuts_name" : "Stockholms län",
-    "name_ascii" : "Stockholms lan",
-    "name_html" : "Stockholms l&#x00E4;n"
+    "nameLatin" : "Stockholms län",
+    "nutsName" : "Stockholms län",
+    "nameAscii" : "Stockholms lan",
+    "nameHtml" : "Stockholms l&#x00E4;n"
   },
   "SE121": {
-    "name_latin" : "Uppsala län",
-    "nuts_name" : "Uppsala län",
-    "name_ascii" : "Uppsala lan",
-    "name_html" : "Uppsala l&#x00E4;n"
+    "nameLatin" : "Uppsala län",
+    "nutsName" : "Uppsala län",
+    "nameAscii" : "Uppsala lan",
+    "nameHtml" : "Uppsala l&#x00E4;n"
   },
   "SE122": {
-    "name_latin" : "Södermanlands län",
-    "nuts_name" : "Södermanlands län",
-    "name_ascii" : "Sodermanlands lan",
-    "name_html" : "S&#x00F6;dermanlands l&#x00E4;n"
+    "nameLatin" : "Södermanlands län",
+    "nutsName" : "Södermanlands län",
+    "nameAscii" : "Sodermanlands lan",
+    "nameHtml" : "S&#x00F6;dermanlands l&#x00E4;n"
   },
   "SE123": {
-    "name_latin" : "Östergötlands län",
-    "nuts_name" : "Östergötlands län",
-    "name_ascii" : "Ostergotlands lan",
-    "name_html" : "&#x00D6;sterg&#x00F6;tlands l&#x00E4;n"
+    "nameLatin" : "Östergötlands län",
+    "nutsName" : "Östergötlands län",
+    "nameAscii" : "Ostergotlands lan",
+    "nameHtml" : "&#x00D6;sterg&#x00F6;tlands l&#x00E4;n"
   },
   "SE124": {
-    "name_latin" : "Örebro län",
-    "nuts_name" : "Örebro län",
-    "name_ascii" : "Orebro lan",
-    "name_html" : "&#x00D6;rebro l&#x00E4;n"
+    "nameLatin" : "Örebro län",
+    "nutsName" : "Örebro län",
+    "nameAscii" : "Orebro lan",
+    "nameHtml" : "&#x00D6;rebro l&#x00E4;n"
   },
   "SE125": {
-    "name_latin" : "Västmanlands län",
-    "nuts_name" : "Västmanlands län",
-    "name_ascii" : "Vastmanlands lan",
-    "name_html" : "V&#x00E4;stmanlands l&#x00E4;n"
+    "nameLatin" : "Västmanlands län",
+    "nutsName" : "Västmanlands län",
+    "nameAscii" : "Vastmanlands lan",
+    "nameHtml" : "V&#x00E4;stmanlands l&#x00E4;n"
   },
   "SE211": {
-    "name_latin" : "Jönköpings län",
-    "nuts_name" : "Jönköpings län",
-    "name_ascii" : "Jonkopings lan",
-    "name_html" : "J&#x00F6;nk&#x00F6;pings l&#x00E4;n"
+    "nameLatin" : "Jönköpings län",
+    "nutsName" : "Jönköpings län",
+    "nameAscii" : "Jonkopings lan",
+    "nameHtml" : "J&#x00F6;nk&#x00F6;pings l&#x00E4;n"
   },
   "SE212": {
-    "name_latin" : "Kronobergs län",
-    "nuts_name" : "Kronobergs län",
-    "name_ascii" : "Kronobergs lan",
-    "name_html" : "Kronobergs l&#x00E4;n"
+    "nameLatin" : "Kronobergs län",
+    "nutsName" : "Kronobergs län",
+    "nameAscii" : "Kronobergs lan",
+    "nameHtml" : "Kronobergs l&#x00E4;n"
   },
   "SE213": {
-    "name_latin" : "Kalmar län",
-    "nuts_name" : "Kalmar län",
-    "name_ascii" : "Kronobergs lan",
-    "name_html" : "Kalmar L&#x00E4;n"
+    "nameLatin" : "Kalmar län",
+    "nutsName" : "Kalmar län",
+    "nameAscii" : "Kronobergs lan",
+    "nameHtml" : "Kalmar L&#x00E4;n"
   },
   "SE214": {
-    "name_latin" : "Gotlands län",
-    "nuts_name" : "Gotlands län",
-    "name_ascii" : "Gotlands lan",
-    "name_html" : "Gotlands l&#x00E4;n"
+    "nameLatin" : "Gotlands län",
+    "nutsName" : "Gotlands län",
+    "nameAscii" : "Gotlands lan",
+    "nameHtml" : "Gotlands l&#x00E4;n"
   },
   "SE221": {
-    "name_latin" : "Blekinge län",
-    "nuts_name" : "Blekinge län",
-    "name_ascii" : "Blekinge lan",
-    "name_html" : "Blekinge l&#x00E4;n"
+    "nameLatin" : "Blekinge län",
+    "nutsName" : "Blekinge län",
+    "nameAscii" : "Blekinge lan",
+    "nameHtml" : "Blekinge l&#x00E4;n"
   },
   "SE224": {
-    "name_latin" : "Skåne län",
-    "nuts_name" : "Skåne län",
-    "name_ascii" : "Skane lan",
-    "name_html" : "Sk&#x00E5;ne l&#x00E4;n"
+    "nameLatin" : "Skåne län",
+    "nutsName" : "Skåne län",
+    "nameAscii" : "Skane lan",
+    "nameHtml" : "Sk&#x00E5;ne l&#x00E4;n"
   },
   "SE232": {
-    "name_latin" : "Västra Götalands län",
-    "nuts_name" : "Västra Götalands län",
-    "name_ascii" : "Vastra Gotalands lan",
-    "name_html" : "V&#x00E4;stra G&#x00F6;talands l&#x00E4;n"
+    "nameLatin" : "Västra Götalands län",
+    "nutsName" : "Västra Götalands län",
+    "nameAscii" : "Vastra Gotalands lan",
+    "nameHtml" : "V&#x00E4;stra G&#x00F6;talands l&#x00E4;n"
   },
   "SE312": {
-    "name_latin" : "Dalarnas län",
-    "nuts_name" : "Dalarnas län",
-    "name_ascii" : "Dalarnas lan",
-    "name_html" : "Dalarnas l&#x00E4;n"
+    "nameLatin" : "Dalarnas län",
+    "nutsName" : "Dalarnas län",
+    "nameAscii" : "Dalarnas lan",
+    "nameHtml" : "Dalarnas l&#x00E4;n"
   },
   "SE313": {
-    "name_latin" : "Gävleborgs län",
-    "nuts_name" : "Gävleborgs län",
-    "name_ascii" : "Gavleborgs lan",
-    "name_html" : "G&#x00E4;vleborgs l&#x00E4;n"
+    "nameLatin" : "Gävleborgs län",
+    "nutsName" : "Gävleborgs län",
+    "nameAscii" : "Gavleborgs lan",
+    "nameHtml" : "G&#x00E4;vleborgs l&#x00E4;n"
   },
   "SE322": {
-    "name_latin" : "Jämtlands län",
-    "nuts_name" : "Jämtlands län",
-    "name_ascii" : "Jamtlands lan",
-    "name_html" : "J&#x00E4;mtlandslL&#x00E4;n"
+    "nameLatin" : "Jämtlands län",
+    "nutsName" : "Jämtlands län",
+    "nameAscii" : "Jamtlands lan",
+    "nameHtml" : "J&#x00E4;mtlandslL&#x00E4;n"
   },
   "SE331": {
-    "name_latin" : "Västerbottens län",
-    "nuts_name" : "Västerbottens län",
-    "name_ascii" : "Vasterbottens lan",
-    "name_html" : "V&#x00E4;sterbottens l&#x00E4;n"
+    "nameLatin" : "Västerbottens län",
+    "nutsName" : "Västerbottens län",
+    "nameAscii" : "Vasterbottens lan",
+    "nameHtml" : "V&#x00E4;sterbottens l&#x00E4;n"
   },
   "SE332": {
-    "name_latin" : "Norrbottens län",
-    "nuts_name" : "Norrbottens län",
-    "name_ascii" : "Norrbottens lan",
-    "name_html" : "Norrbottens l&#x00E4;n"
+    "nameLatin" : "Norrbottens län",
+    "nutsName" : "Norrbottens län",
+    "nameAscii" : "Norrbottens lan",
+    "nameHtml" : "Norrbottens l&#x00E4;n"
   },
   "SI031": {
-    "name_latin" : "Pomurska",
-    "nuts_name" : "Pomurska",
-    "name_ascii" : "Pomurska",
-    "name_html" : "Pomurska"
+    "nameLatin" : "Pomurska",
+    "nutsName" : "Pomurska",
+    "nameAscii" : "Pomurska",
+    "nameHtml" : "Pomurska"
   },
   "SI032": {
-    "name_latin" : "Podravska",
-    "nuts_name" : "Podravska",
-    "name_ascii" : "Podravska",
-    "name_html" : "Podravska"
+    "nameLatin" : "Podravska",
+    "nutsName" : "Podravska",
+    "nameAscii" : "Podravska",
+    "nameHtml" : "Podravska"
   },
   "SI033": {
-    "name_latin" : "Koroška",
-    "nuts_name" : "Koroška",
-    "name_ascii" : "Koroska",
-    "name_html" : "Koro&#x0161;ka"
+    "nameLatin" : "Koroška",
+    "nutsName" : "Koroška",
+    "nameAscii" : "Koroska",
+    "nameHtml" : "Koro&#x0161;ka"
   },
   "SI034": {
-    "name_latin" : "Savinjska",
-    "nuts_name" : "Savinjska",
-    "name_ascii" : "Savinjska",
-    "name_html" : "Savinjska"
+    "nameLatin" : "Savinjska",
+    "nutsName" : "Savinjska",
+    "nameAscii" : "Savinjska",
+    "nameHtml" : "Savinjska"
   },
   "SI035": {
-    "name_latin" : "Zasavska",
-    "nuts_name" : "Zasavska",
-    "name_ascii" : "Zasavska",
-    "name_html" : "Zasavska"
+    "nameLatin" : "Zasavska",
+    "nutsName" : "Zasavska",
+    "nameAscii" : "Zasavska",
+    "nameHtml" : "Zasavska"
   },
   "SI036": {
-    "name_latin" : "Posavska",
-    "nuts_name" : "Posavska",
-    "name_ascii" : "Posavska",
-    "name_html" : "Posavska"
+    "nameLatin" : "Posavska",
+    "nutsName" : "Posavska",
+    "nameAscii" : "Posavska",
+    "nameHtml" : "Posavska"
   },
   "SI038": {
-    "name_latin" : "Primorsko-notranjska",
-    "nuts_name" : "Primorsko-notranjska",
-    "name_ascii" : "Primorsko-notranjska",
-    "name_html" : "Primorsko-notranjska"
+    "nameLatin" : "Primorsko-notranjska",
+    "nutsName" : "Primorsko-notranjska",
+    "nameAscii" : "Primorsko-notranjska",
+    "nameHtml" : "Primorsko-notranjska"
   },
   "SI041": {
-    "name_latin" : "Osrednjeslovenska",
-    "nuts_name" : "Osrednjeslovenska",
-    "name_ascii" : "Osrednjeslovenska",
-    "name_html" : "Osrednjeslovenska"
+    "nameLatin" : "Osrednjeslovenska",
+    "nutsName" : "Osrednjeslovenska",
+    "nameAscii" : "Osrednjeslovenska",
+    "nameHtml" : "Osrednjeslovenska"
   },
   "SI042": {
-    "name_latin" : "Gorenjska",
-    "nuts_name" : "Gorenjska",
-    "name_ascii" : "Gorenjska",
-    "name_html" : "Gorenjska"
+    "nameLatin" : "Gorenjska",
+    "nutsName" : "Gorenjska",
+    "nameAscii" : "Gorenjska",
+    "nameHtml" : "Gorenjska"
   },
   "SI043": {
-    "name_latin" : "Goriška",
-    "nuts_name" : "Goriška",
-    "name_ascii" : "Goriska",
-    "name_html" : "Gori&#x0161;ka"
+    "nameLatin" : "Goriška",
+    "nutsName" : "Goriška",
+    "nameAscii" : "Goriska",
+    "nameHtml" : "Gori&#x0161;ka"
   },
   "SI044": {
-    "name_latin" : "Obalno-kraška",
-    "nuts_name" : "Obalno-kraška",
-    "name_ascii" : "Obalno-kraska",
-    "name_html" : "Obalno-kra&#x0161;ka"
+    "nameLatin" : "Obalno-kraška",
+    "nutsName" : "Obalno-kraška",
+    "nameAscii" : "Obalno-kraska",
+    "nameHtml" : "Obalno-kra&#x0161;ka"
   },
   "SK010": {
-    "name_latin" : "Bratislavský kraj",
-    "nuts_name" : "Bratislavský kraj",
-    "name_ascii" : "Bratislavsky kraj",
-    "name_html" : "Bratislavsk&#x00FD; kraj"
+    "nameLatin" : "Bratislavský kraj",
+    "nutsName" : "Bratislavský kraj",
+    "nameAscii" : "Bratislavsky kraj",
+    "nameHtml" : "Bratislavsk&#x00FD; kraj"
   },
   "SK021": {
-    "name_latin" : "Trnavský kraj",
-    "nuts_name" : "Trnavský kraj",
-    "name_ascii" : "Trnavsky kraj",
-    "name_html" : "Trnavsk&#x00FD; kraj"
+    "nameLatin" : "Trnavský kraj",
+    "nutsName" : "Trnavský kraj",
+    "nameAscii" : "Trnavsky kraj",
+    "nameHtml" : "Trnavsk&#x00FD; kraj"
   },
   "SK023": {
-    "name_latin" : "Nitriansky kraj",
-    "nuts_name" : "Nitriansky kraj",
-    "name_ascii" : "Nitriansky kraj",
-    "name_html" : "Nitriansky kraj"
+    "nameLatin" : "Nitriansky kraj",
+    "nutsName" : "Nitriansky kraj",
+    "nameAscii" : "Nitriansky kraj",
+    "nameHtml" : "Nitriansky kraj"
   },
   "SK031": {
-    "name_latin" : "Žilinský kraj",
-    "nuts_name" : "Žilinský kraj",
-    "name_ascii" : "Zilinsky kraj",
-    "name_html" : "&#x017D;ilinsk&#x00FD; kraj"
+    "nameLatin" : "Žilinský kraj",
+    "nutsName" : "Žilinský kraj",
+    "nameAscii" : "Zilinsky kraj",
+    "nameHtml" : "&#x017D;ilinsk&#x00FD; kraj"
   },
   "SK041": {
-    "name_latin" : "Prešovský kraj",
-    "nuts_name" : "Prešovský kraj",
-    "name_ascii" : "Presovsky kraj",
-    "name_html" : "Pre&#x0161;ovsk&#x00FD; kraj"
+    "nameLatin" : "Prešovský kraj",
+    "nutsName" : "Prešovský kraj",
+    "nameAscii" : "Presovsky kraj",
+    "nameHtml" : "Pre&#x0161;ovsk&#x00FD; kraj"
   },
   "SK042": {
-    "name_latin" : "Košický kraj",
-    "nuts_name" : "Košický kraj",
-    "name_ascii" : "Kosicky kraj",
-    "name_html" : "Ko&#x0161;ick&#x00FD; kraj"
+    "nameLatin" : "Košický kraj",
+    "nutsName" : "Košický kraj",
+    "nameAscii" : "Kosicky kraj",
+    "nameHtml" : "Ko&#x0161;ick&#x00FD; kraj"
   },
   "TR100": {
-    "name_latin" : "Istanbul",
-    "nuts_name" : "Istanbul",
-    "name_ascii" : "Istanbul",
-    "name_html" : "Istanbul"
+    "nameLatin" : "Istanbul",
+    "nutsName" : "Istanbul",
+    "nameAscii" : "Istanbul",
+    "nameHtml" : "Istanbul"
   },
   "TR211": {
-    "name_latin" : "Tekirdag",
-    "nuts_name" : "Tekirdag",
-    "name_ascii" : "Tekirdag",
-    "name_html" : "Tekirdag"
+    "nameLatin" : "Tekirdag",
+    "nutsName" : "Tekirdag",
+    "nameAscii" : "Tekirdag",
+    "nameHtml" : "Tekirdag"
   },
   "TR212": {
-    "name_latin" : "Edirne",
-    "nuts_name" : "Edirne",
-    "name_ascii" : "Edirne",
-    "name_html" : "Edirne"
+    "nameLatin" : "Edirne",
+    "nutsName" : "Edirne",
+    "nameAscii" : "Edirne",
+    "nameHtml" : "Edirne"
   },
   "TR213": {
-    "name_latin" : "Kirklareli",
-    "nuts_name" : "Kirklareli",
-    "name_ascii" : "Kirklareli",
-    "name_html" : "Kirklareli"
+    "nameLatin" : "Kirklareli",
+    "nutsName" : "Kirklareli",
+    "nameAscii" : "Kirklareli",
+    "nameHtml" : "Kirklareli"
   },
   "TR221": {
-    "name_latin" : "Balikesir",
-    "nuts_name" : "Balikesir",
-    "name_ascii" : "Balikesir",
-    "name_html" : "Balikesir"
+    "nameLatin" : "Balikesir",
+    "nutsName" : "Balikesir",
+    "nameAscii" : "Balikesir",
+    "nameHtml" : "Balikesir"
   },
   "TR222": {
-    "name_latin" : "Çanakkale",
-    "nuts_name" : "Çanakkale",
-    "name_ascii" : "Canakkale",
-    "name_html" : "&#x00C7;anakkale"
+    "nameLatin" : "Çanakkale",
+    "nutsName" : "Çanakkale",
+    "nameAscii" : "Canakkale",
+    "nameHtml" : "&#x00C7;anakkale"
   },
   "TR310": {
-    "name_latin" : "Izmir",
-    "nuts_name" : "Izmir",
-    "name_ascii" : "Izmir",
-    "name_html" : "Izmir"
+    "nameLatin" : "Izmir",
+    "nutsName" : "Izmir",
+    "nameAscii" : "Izmir",
+    "nameHtml" : "Izmir"
   },
   "TR321": {
-    "name_latin" : "Aydin",
-    "nuts_name" : "Aydin",
-    "name_ascii" : "Aydin",
-    "name_html" : "Aydin"
+    "nameLatin" : "Aydin",
+    "nutsName" : "Aydin",
+    "nameAscii" : "Aydin",
+    "nameHtml" : "Aydin"
   },
   "TR322": {
-    "name_latin" : "Denizli",
-    "nuts_name" : "Denizli",
-    "name_ascii" : "Denizli",
-    "name_html" : "Denizli"
+    "nameLatin" : "Denizli",
+    "nutsName" : "Denizli",
+    "nameAscii" : "Denizli",
+    "nameHtml" : "Denizli"
   },
   "TR323": {
-    "name_latin" : "Mugla",
-    "nuts_name" : "Mugla",
-    "name_ascii" : "Mugla",
-    "name_html" : "Mugla"
+    "nameLatin" : "Mugla",
+    "nutsName" : "Mugla",
+    "nameAscii" : "Mugla",
+    "nameHtml" : "Mugla"
   },
   "TR331": {
-    "name_latin" : "Manisa",
-    "nuts_name" : "Manisa",
-    "name_ascii" : "Manisa",
-    "name_html" : "Manisa"
+    "nameLatin" : "Manisa",
+    "nutsName" : "Manisa",
+    "nameAscii" : "Manisa",
+    "nameHtml" : "Manisa"
   },
   "TR332": {
-    "name_latin" : "Afyon",
-    "nuts_name" : "Afyon",
-    "name_ascii" : "Afyon",
-    "name_html" : "Afyon"
+    "nameLatin" : "Afyon",
+    "nutsName" : "Afyon",
+    "nameAscii" : "Afyon",
+    "nameHtml" : "Afyon"
   },
   "TR333": {
-    "name_latin" : "Kütahya",
-    "nuts_name" : "Kütahya",
-    "name_ascii" : "Kutahya",
-    "name_html" : "K&#x00FC;tahya"
+    "nameLatin" : "Kütahya",
+    "nutsName" : "Kütahya",
+    "nameAscii" : "Kutahya",
+    "nameHtml" : "K&#x00FC;tahya"
   },
   "TR334": {
-    "name_latin" : "Usak",
-    "nuts_name" : "Usak",
-    "name_ascii" : "Usak",
-    "name_html" : "Usak"
+    "nameLatin" : "Usak",
+    "nutsName" : "Usak",
+    "nameAscii" : "Usak",
+    "nameHtml" : "Usak"
   },
   "TR411": {
-    "name_latin" : "Bursa",
-    "nuts_name" : "Bursa",
-    "name_ascii" : "Bursa",
-    "name_html" : "Bursa"
+    "nameLatin" : "Bursa",
+    "nutsName" : "Bursa",
+    "nameAscii" : "Bursa",
+    "nameHtml" : "Bursa"
   },
   "TR412": {
-    "name_latin" : "Eskisehir",
-    "nuts_name" : "Eskisehir",
-    "name_ascii" : "Eskisehir",
-    "name_html" : "Eskisehir"
+    "nameLatin" : "Eskisehir",
+    "nutsName" : "Eskisehir",
+    "nameAscii" : "Eskisehir",
+    "nameHtml" : "Eskisehir"
   },
   "TR413": {
-    "name_latin" : "Bilecik",
-    "nuts_name" : "Bilecik",
-    "name_ascii" : "Bilecik",
-    "name_html" : "Bilecik"
+    "nameLatin" : "Bilecik",
+    "nutsName" : "Bilecik",
+    "nameAscii" : "Bilecik",
+    "nameHtml" : "Bilecik"
   },
   "TR421": {
-    "name_latin" : "Kocaeli",
-    "nuts_name" : "Kocaeli",
-    "name_ascii" : "Kocaeli",
-    "name_html" : "Kocaeli"
+    "nameLatin" : "Kocaeli",
+    "nutsName" : "Kocaeli",
+    "nameAscii" : "Kocaeli",
+    "nameHtml" : "Kocaeli"
   },
   "TR422": {
-    "name_latin" : "Sakarya",
-    "nuts_name" : "Sakarya",
-    "name_ascii" : "Sakarya",
-    "name_html" : "Sakarya"
+    "nameLatin" : "Sakarya",
+    "nutsName" : "Sakarya",
+    "nameAscii" : "Sakarya",
+    "nameHtml" : "Sakarya"
   },
   "TR423": {
-    "name_latin" : "Düzce",
-    "nuts_name" : "Düzce",
-    "name_ascii" : "Duzce",
-    "name_html" : "D&#x00FC;zce"
+    "nameLatin" : "Düzce",
+    "nutsName" : "Düzce",
+    "nameAscii" : "Duzce",
+    "nameHtml" : "D&#x00FC;zce"
   },
   "TR424": {
-    "name_latin" : "Bolu",
-    "nuts_name" : "Bolu",
-    "name_ascii" : "Bolu",
-    "name_html" : "Bolu"
+    "nameLatin" : "Bolu",
+    "nutsName" : "Bolu",
+    "nameAscii" : "Bolu",
+    "nameHtml" : "Bolu"
   },
   "TR425": {
-    "name_latin" : "Yalova",
-    "nuts_name" : "Yalova",
-    "name_ascii" : "Yalova",
-    "name_html" : "Yalova"
+    "nameLatin" : "Yalova",
+    "nutsName" : "Yalova",
+    "nameAscii" : "Yalova",
+    "nameHtml" : "Yalova"
   },
   "TR510": {
-    "name_latin" : "Ankara",
-    "nuts_name" : "Ankara",
-    "name_ascii" : "Ankara",
-    "name_html" : "Ankara"
+    "nameLatin" : "Ankara",
+    "nutsName" : "Ankara",
+    "nameAscii" : "Ankara",
+    "nameHtml" : "Ankara"
   },
   "TR521": {
-    "name_latin" : "Konya",
-    "nuts_name" : "Konya",
-    "name_ascii" : "Konya",
-    "name_html" : "Konya"
+    "nameLatin" : "Konya",
+    "nutsName" : "Konya",
+    "nameAscii" : "Konya",
+    "nameHtml" : "Konya"
   },
   "TR522": {
-    "name_latin" : "Karaman",
-    "nuts_name" : "Karaman",
-    "name_ascii" : "Karaman",
-    "name_html" : "Karaman"
+    "nameLatin" : "Karaman",
+    "nutsName" : "Karaman",
+    "nameAscii" : "Karaman",
+    "nameHtml" : "Karaman"
   },
   "TR611": {
-    "name_latin" : "Antalya",
-    "nuts_name" : "Antalya",
-    "name_ascii" : "Antalya",
-    "name_html" : "Antalya"
+    "nameLatin" : "Antalya",
+    "nutsName" : "Antalya",
+    "nameAscii" : "Antalya",
+    "nameHtml" : "Antalya"
   },
   "TR612": {
-    "name_latin" : "Isparta",
-    "nuts_name" : "Isparta",
-    "name_ascii" : "Isparta",
-    "name_html" : "Isparta"
+    "nameLatin" : "Isparta",
+    "nutsName" : "Isparta",
+    "nameAscii" : "Isparta",
+    "nameHtml" : "Isparta"
   },
   "TR613": {
-    "name_latin" : "Burdur",
-    "nuts_name" : "Burdur",
-    "name_ascii" : "Burdur",
-    "name_html" : "Burdur"
+    "nameLatin" : "Burdur",
+    "nutsName" : "Burdur",
+    "nameAscii" : "Burdur",
+    "nameHtml" : "Burdur"
   },
   "TR621": {
-    "name_latin" : "Adana",
-    "nuts_name" : "Adana",
-    "name_ascii" : "Adana",
-    "name_html" : "Adana"
+    "nameLatin" : "Adana",
+    "nutsName" : "Adana",
+    "nameAscii" : "Adana",
+    "nameHtml" : "Adana"
   },
   "TR622": {
-    "name_latin" : "Içel",
-    "nuts_name" : "Içel",
-    "name_ascii" : "Icel",
-    "name_html" : "I&#x00E7;el"
+    "nameLatin" : "Içel",
+    "nutsName" : "Içel",
+    "nameAscii" : "Icel",
+    "nameHtml" : "I&#x00E7;el"
   },
   "TR631": {
-    "name_latin" : "Hatay",
-    "nuts_name" : "Hatay",
-    "name_ascii" : "Hatay",
-    "name_html" : "Hatay"
+    "nameLatin" : "Hatay",
+    "nutsName" : "Hatay",
+    "nameAscii" : "Hatay",
+    "nameHtml" : "Hatay"
   },
   "TR632": {
-    "name_latin" : "Kahramanmaras",
-    "nuts_name" : "Kahramanmaras",
-    "name_ascii" : "Kahramanmaras",
-    "name_html" : "Kahramanmaras"
+    "nameLatin" : "Kahramanmaras",
+    "nutsName" : "Kahramanmaras",
+    "nameAscii" : "Kahramanmaras",
+    "nameHtml" : "Kahramanmaras"
   },
   "TR633": {
-    "name_latin" : "Osmaniye",
-    "nuts_name" : "Osmaniye",
-    "name_ascii" : "Osmaniye",
-    "name_html" : "Osmaniye"
+    "nameLatin" : "Osmaniye",
+    "nutsName" : "Osmaniye",
+    "nameAscii" : "Osmaniye",
+    "nameHtml" : "Osmaniye"
   },
   "TR711": {
-    "name_latin" : "Kirikkale",
-    "nuts_name" : "Kirikkale",
-    "name_ascii" : "Kirikkale",
-    "name_html" : "Kirikkale"
+    "nameLatin" : "Kirikkale",
+    "nutsName" : "Kirikkale",
+    "nameAscii" : "Kirikkale",
+    "nameHtml" : "Kirikkale"
   },
   "TR712": {
-    "name_latin" : "Aksaray",
-    "nuts_name" : "Aksaray",
-    "name_ascii" : "Aksaray",
-    "name_html" : "Aksaray"
+    "nameLatin" : "Aksaray",
+    "nutsName" : "Aksaray",
+    "nameAscii" : "Aksaray",
+    "nameHtml" : "Aksaray"
   },
   "TR713": {
-    "name_latin" : "Nigde",
-    "nuts_name" : "Nigde",
-    "name_ascii" : "Nigde",
-    "name_html" : "Nigde"
+    "nameLatin" : "Nigde",
+    "nutsName" : "Nigde",
+    "nameAscii" : "Nigde",
+    "nameHtml" : "Nigde"
   },
   "TR714": {
-    "name_latin" : "Nevsehir",
-    "nuts_name" : "Nevsehir",
-    "name_ascii" : "Nevsehir",
-    "name_html" : "Nevsehir"
+    "nameLatin" : "Nevsehir",
+    "nutsName" : "Nevsehir",
+    "nameAscii" : "Nevsehir",
+    "nameHtml" : "Nevsehir"
   },
   "TR715": {
-    "name_latin" : "Kirsehir",
-    "nuts_name" : "Kirsehir",
-    "name_ascii" : "Kirsehir",
-    "name_html" : "Kirsehir"
+    "nameLatin" : "Kirsehir",
+    "nutsName" : "Kirsehir",
+    "nameAscii" : "Kirsehir",
+    "nameHtml" : "Kirsehir"
   },
   "TR721": {
-    "name_latin" : "Kayseri",
-    "nuts_name" : "Kayseri",
-    "name_ascii" : "Kayseri",
-    "name_html" : "Kayseri"
+    "nameLatin" : "Kayseri",
+    "nutsName" : "Kayseri",
+    "nameAscii" : "Kayseri",
+    "nameHtml" : "Kayseri"
   },
   "TR722": {
-    "name_latin" : "Sivas",
-    "nuts_name" : "Sivas",
-    "name_ascii" : "Sivas",
-    "name_html" : "Sivas"
+    "nameLatin" : "Sivas",
+    "nutsName" : "Sivas",
+    "nameAscii" : "Sivas",
+    "nameHtml" : "Sivas"
   },
   "TR723": {
-    "name_latin" : "Yozgat",
-    "nuts_name" : "Yozgat",
-    "name_ascii" : "Yozgat",
-    "name_html" : "Yozgat"
+    "nameLatin" : "Yozgat",
+    "nutsName" : "Yozgat",
+    "nameAscii" : "Yozgat",
+    "nameHtml" : "Yozgat"
   },
   "TR811": {
-    "name_latin" : "Zonguldak",
-    "nuts_name" : "Zonguldak",
-    "name_ascii" : "Zonguldak",
-    "name_html" : "Zonguldak"
+    "nameLatin" : "Zonguldak",
+    "nutsName" : "Zonguldak",
+    "nameAscii" : "Zonguldak",
+    "nameHtml" : "Zonguldak"
   },
   "TR812": {
-    "name_latin" : "Karabük",
-    "nuts_name" : "Karabük",
-    "name_ascii" : "Karabuk",
-    "name_html" : "Karab&#x00FC;k"
+    "nameLatin" : "Karabük",
+    "nutsName" : "Karabük",
+    "nameAscii" : "Karabuk",
+    "nameHtml" : "Karab&#x00FC;k"
   },
   "TR813": {
-    "name_latin" : "Bartin",
-    "nuts_name" : "Bartin",
-    "name_ascii" : "Bartin",
-    "name_html" : "Bartin"
+    "nameLatin" : "Bartin",
+    "nutsName" : "Bartin",
+    "nameAscii" : "Bartin",
+    "nameHtml" : "Bartin"
   },
   "TR821": {
-    "name_latin" : "Kastamonu",
-    "nuts_name" : "Kastamonu",
-    "name_ascii" : "Kastamonu",
-    "name_html" : "Kastamonu"
+    "nameLatin" : "Kastamonu",
+    "nutsName" : "Kastamonu",
+    "nameAscii" : "Kastamonu",
+    "nameHtml" : "Kastamonu"
   },
   "TR822": {
-    "name_latin" : "Çankiri",
-    "nuts_name" : "Çankiri",
-    "name_ascii" : "Cankiri",
-    "name_html" : "&#x00C7;ankiri"
+    "nameLatin" : "Çankiri",
+    "nutsName" : "Çankiri",
+    "nameAscii" : "Cankiri",
+    "nameHtml" : "&#x00C7;ankiri"
   },
   "TR823": {
-    "name_latin" : "Sinop",
-    "nuts_name" : "Sinop",
-    "name_ascii" : "Sinop",
-    "name_html" : "Sinop"
+    "nameLatin" : "Sinop",
+    "nutsName" : "Sinop",
+    "nameAscii" : "Sinop",
+    "nameHtml" : "Sinop"
   },
   "TR831": {
-    "name_latin" : "Samsun",
-    "nuts_name" : "Samsun",
-    "name_ascii" : "Samsun",
-    "name_html" : "Samsun"
+    "nameLatin" : "Samsun",
+    "nutsName" : "Samsun",
+    "nameAscii" : "Samsun",
+    "nameHtml" : "Samsun"
   },
   "TR832": {
-    "name_latin" : "Tokat",
-    "nuts_name" : "Tokat",
-    "name_ascii" : "Tokat",
-    "name_html" : "Tokat"
+    "nameLatin" : "Tokat",
+    "nutsName" : "Tokat",
+    "nameAscii" : "Tokat",
+    "nameHtml" : "Tokat"
   },
   "TR833": {
-    "name_latin" : "Çorum",
-    "nuts_name" : "Çorum",
-    "name_ascii" : "Corum",
-    "name_html" : "&#x00C7;orum"
+    "nameLatin" : "Çorum",
+    "nutsName" : "Çorum",
+    "nameAscii" : "Corum",
+    "nameHtml" : "&#x00C7;orum"
   },
   "TR834": {
-    "name_latin" : "Amasya",
-    "nuts_name" : "Amasya",
-    "name_ascii" : "Amasya",
-    "name_html" : "Amasya"
+    "nameLatin" : "Amasya",
+    "nutsName" : "Amasya",
+    "nameAscii" : "Amasya",
+    "nameHtml" : "Amasya"
   },
   "TR901": {
-    "name_latin" : "Trabzon",
-    "nuts_name" : "Trabzon",
-    "name_ascii" : "Trabzon",
-    "name_html" : "Trabzon"
+    "nameLatin" : "Trabzon",
+    "nutsName" : "Trabzon",
+    "nameAscii" : "Trabzon",
+    "nameHtml" : "Trabzon"
   },
   "TR902": {
-    "name_latin" : "Ordu",
-    "nuts_name" : "Ordu",
-    "name_ascii" : "Ordu",
-    "name_html" : "Ordu"
+    "nameLatin" : "Ordu",
+    "nutsName" : "Ordu",
+    "nameAscii" : "Ordu",
+    "nameHtml" : "Ordu"
   },
   "TR903": {
-    "name_latin" : "Giresun",
-    "nuts_name" : "Giresun",
-    "name_ascii" : "Giresun",
-    "name_html" : "Giresun"
+    "nameLatin" : "Giresun",
+    "nutsName" : "Giresun",
+    "nameAscii" : "Giresun",
+    "nameHtml" : "Giresun"
   },
   "TR904": {
-    "name_latin" : "Rize",
-    "nuts_name" : "Rize",
-    "name_ascii" : "Rize",
-    "name_html" : "Rize"
+    "nameLatin" : "Rize",
+    "nutsName" : "Rize",
+    "nameAscii" : "Rize",
+    "nameHtml" : "Rize"
   },
   "TR905": {
-    "name_latin" : "Artvin",
-    "nuts_name" : "Artvin",
-    "name_ascii" : "Artvin",
-    "name_html" : "Artvin"
+    "nameLatin" : "Artvin",
+    "nutsName" : "Artvin",
+    "nameAscii" : "Artvin",
+    "nameHtml" : "Artvin"
   },
   "TR906": {
-    "name_latin" : "Gümüshane",
-    "nuts_name" : "Gümüshane",
-    "name_ascii" : "Gumushane",
-    "name_html" : "G&#x00FC;m&#x00FC;shane"
+    "nameLatin" : "Gümüshane",
+    "nutsName" : "Gümüshane",
+    "nameAscii" : "Gumushane",
+    "nameHtml" : "G&#x00FC;m&#x00FC;shane"
   },
   "TRA11": {
-    "name_latin" : "Erzurum",
-    "nuts_name" : "Erzurum",
-    "name_ascii" : "Erzurum",
-    "name_html" : "Erzurum"
+    "nameLatin" : "Erzurum",
+    "nutsName" : "Erzurum",
+    "nameAscii" : "Erzurum",
+    "nameHtml" : "Erzurum"
   },
   "TRA12": {
-    "name_latin" : "Erzincan",
-    "nuts_name" : "Erzincan",
-    "name_ascii" : "Erzincan",
-    "name_html" : "Erzincan"
+    "nameLatin" : "Erzincan",
+    "nutsName" : "Erzincan",
+    "nameAscii" : "Erzincan",
+    "nameHtml" : "Erzincan"
   },
   "TRA13": {
-    "name_latin" : "Bayburt",
-    "nuts_name" : "Bayburt",
-    "name_ascii" : "Bayburt",
-    "name_html" : "Bayburt"
+    "nameLatin" : "Bayburt",
+    "nutsName" : "Bayburt",
+    "nameAscii" : "Bayburt",
+    "nameHtml" : "Bayburt"
   },
   "TRA21": {
-    "name_latin" : "Agri",
-    "nuts_name" : "Agri",
-    "name_ascii" : "Agri",
-    "name_html" : "Agri"
+    "nameLatin" : "Agri",
+    "nutsName" : "Agri",
+    "nameAscii" : "Agri",
+    "nameHtml" : "Agri"
   },
   "TRA22": {
-    "name_latin" : "Kars",
-    "nuts_name" : "Kars",
-    "name_ascii" : "Kars",
-    "name_html" : "Kars"
+    "nameLatin" : "Kars",
+    "nutsName" : "Kars",
+    "nameAscii" : "Kars",
+    "nameHtml" : "Kars"
   },
   "TRA23": {
-    "name_latin" : "Igdir",
-    "nuts_name" : "Igdir",
-    "name_ascii" : "Igdir",
-    "name_html" : "Igdir"
+    "nameLatin" : "Igdir",
+    "nutsName" : "Igdir",
+    "nameAscii" : "Igdir",
+    "nameHtml" : "Igdir"
   },
   "TRA24": {
-    "name_latin" : "Ardahan",
-    "nuts_name" : "Ardahan",
-    "name_ascii" : "Ardahan",
-    "name_html" : "Ardahan"
+    "nameLatin" : "Ardahan",
+    "nutsName" : "Ardahan",
+    "nameAscii" : "Ardahan",
+    "nameHtml" : "Ardahan"
   },
   "TRB11": {
-    "name_latin" : "Malatya",
-    "nuts_name" : "Malatya",
-    "name_ascii" : "Malatya",
-    "name_html" : "Malatya"
+    "nameLatin" : "Malatya",
+    "nutsName" : "Malatya",
+    "nameAscii" : "Malatya",
+    "nameHtml" : "Malatya"
   },
   "TRB12": {
-    "name_latin" : "Elazig",
-    "nuts_name" : "Elazig",
-    "name_ascii" : "Elazig",
-    "name_html" : "Elazig"
+    "nameLatin" : "Elazig",
+    "nutsName" : "Elazig",
+    "nameAscii" : "Elazig",
+    "nameHtml" : "Elazig"
   },
   "TRB13": {
-    "name_latin" : "Bingöl",
-    "nuts_name" : "Bingöl",
-    "name_ascii" : "Bingol",
-    "name_html" : "Bing&#x00F6;l"
+    "nameLatin" : "Bingöl",
+    "nutsName" : "Bingöl",
+    "nameAscii" : "Bingol",
+    "nameHtml" : "Bing&#x00F6;l"
   },
   "TRB14": {
-    "name_latin" : "Tunceli",
-    "nuts_name" : "Tunceli",
-    "name_ascii" : "Tunceli",
-    "name_html" : "Tunceli"
+    "nameLatin" : "Tunceli",
+    "nutsName" : "Tunceli",
+    "nameAscii" : "Tunceli",
+    "nameHtml" : "Tunceli"
   },
   "TRB21": {
-    "name_latin" : "Van",
-    "nuts_name" : "Van",
-    "name_ascii" : "Van",
-    "name_html" : "Van"
+    "nameLatin" : "Van",
+    "nutsName" : "Van",
+    "nameAscii" : "Van",
+    "nameHtml" : "Van"
   },
   "TRB22": {
-    "name_latin" : "Mus",
-    "nuts_name" : "Mus",
-    "name_ascii" : "Mus",
-    "name_html" : "Mus"
+    "nameLatin" : "Mus",
+    "nutsName" : "Mus",
+    "nameAscii" : "Mus",
+    "nameHtml" : "Mus"
   },
   "TRB23": {
-    "name_latin" : "Bitlis",
-    "nuts_name" : "Bitlis",
-    "name_ascii" : "Bitlis",
-    "name_html" : "Bitlis"
+    "nameLatin" : "Bitlis",
+    "nutsName" : "Bitlis",
+    "nameAscii" : "Bitlis",
+    "nameHtml" : "Bitlis"
   },
   "TRB24": {
-    "name_latin" : "Hakkari",
-    "nuts_name" : "Hakkari",
-    "name_ascii" : "Hakkari",
-    "name_html" : "Hakkari"
+    "nameLatin" : "Hakkari",
+    "nutsName" : "Hakkari",
+    "nameAscii" : "Hakkari",
+    "nameHtml" : "Hakkari"
   },
   "TRC11": {
-    "name_latin" : "Gaziantep",
-    "nuts_name" : "Gaziantep",
-    "name_ascii" : "Gaziantep",
-    "name_html" : "Gaziantep"
+    "nameLatin" : "Gaziantep",
+    "nutsName" : "Gaziantep",
+    "nameAscii" : "Gaziantep",
+    "nameHtml" : "Gaziantep"
   },
   "TRC12": {
-    "name_latin" : "Adiyaman",
-    "nuts_name" : "Adiyaman",
-    "name_ascii" : "Adiyaman",
-    "name_html" : "Adiyaman"
+    "nameLatin" : "Adiyaman",
+    "nutsName" : "Adiyaman",
+    "nameAscii" : "Adiyaman",
+    "nameHtml" : "Adiyaman"
   },
   "TRC13": {
-    "name_latin" : "Kilis",
-    "nuts_name" : "Kilis",
-    "name_ascii" : "Kilis",
-    "name_html" : "Kilis"
+    "nameLatin" : "Kilis",
+    "nutsName" : "Kilis",
+    "nameAscii" : "Kilis",
+    "nameHtml" : "Kilis"
   },
   "TRC21": {
-    "name_latin" : "Sanliurfa",
-    "nuts_name" : "Sanliurfa",
-    "name_ascii" : "Sanliurfa",
-    "name_html" : "Sanliurfa"
+    "nameLatin" : "Sanliurfa",
+    "nutsName" : "Sanliurfa",
+    "nameAscii" : "Sanliurfa",
+    "nameHtml" : "Sanliurfa"
   },
   "TRC22": {
-    "name_latin" : "Diyarbakir",
-    "nuts_name" : "Diyarbakir",
-    "name_ascii" : "Diyarbakir",
-    "name_html" : "Diyarbakir"
+    "nameLatin" : "Diyarbakir",
+    "nutsName" : "Diyarbakir",
+    "nameAscii" : "Diyarbakir",
+    "nameHtml" : "Diyarbakir"
   },
   "TRC31": {
-    "name_latin" : "Mardin",
-    "nuts_name" : "Mardin",
-    "name_ascii" : "Mardin",
-    "name_html" : "Mardin"
+    "nameLatin" : "Mardin",
+    "nutsName" : "Mardin",
+    "nameAscii" : "Mardin",
+    "nameHtml" : "Mardin"
   },
   "TRC32": {
-    "name_latin" : "Batman",
-    "nuts_name" : "Batman",
-    "name_ascii" : "Batman",
-    "name_html" : "Batman"
+    "nameLatin" : "Batman",
+    "nutsName" : "Batman",
+    "nameAscii" : "Batman",
+    "nameHtml" : "Batman"
   },
   "TRC33": {
-    "name_latin" : "Sirnak",
-    "nuts_name" : "Sirnak",
-    "name_ascii" : "Sirnak",
-    "name_html" : "Sirnak"
+    "nameLatin" : "Sirnak",
+    "nutsName" : "Sirnak",
+    "nameAscii" : "Sirnak",
+    "nameHtml" : "Sirnak"
   },
   "TRC34": {
-    "name_latin" : "Siirt",
-    "nuts_name" : "Siirt",
-    "name_ascii" : "Siirt",
-    "name_html" : "Siirt"
+    "nameLatin" : "Siirt",
+    "nutsName" : "Siirt",
+    "nameAscii" : "Siirt",
+    "nameHtml" : "Siirt"
   },
   "UKC11": {
-    "name_latin" : "Hartlepool and Stockton-on-Tees",
-    "nuts_name" : "Hartlepool and Stockton-on-Tees",
-    "name_ascii" : "Hartlepool and Stockton-On-Tees",
-    "name_html" : "Hartlepool and Stockton-On-Tees"
+    "nameLatin" : "Hartlepool and Stockton-on-Tees",
+    "nutsName" : "Hartlepool and Stockton-on-Tees",
+    "nameAscii" : "Hartlepool and Stockton-On-Tees",
+    "nameHtml" : "Hartlepool and Stockton-On-Tees"
   },
   "UKC12": {
-    "name_latin" : "South Teesside",
-    "nuts_name" : "South Teesside",
-    "name_ascii" : "South Teesside",
-    "name_html" : "South Teesside"
+    "nameLatin" : "South Teesside",
+    "nutsName" : "South Teesside",
+    "nameAscii" : "South Teesside",
+    "nameHtml" : "South Teesside"
   },
   "UKC13": {
-    "name_latin" : "Darlington",
-    "nuts_name" : "Darlington",
-    "name_ascii" : "Darlington",
-    "name_html" : "Darlington"
+    "nameLatin" : "Darlington",
+    "nutsName" : "Darlington",
+    "nameAscii" : "Darlington",
+    "nameHtml" : "Darlington"
   },
   "UKC14": {
-    "name_latin" : "Durham CC",
-    "nuts_name" : "Durham CC",
-    "name_ascii" : "Durham CC",
-    "name_html" : "Durham CC"
+    "nameLatin" : "Durham CC",
+    "nutsName" : "Durham CC",
+    "nameAscii" : "Durham CC",
+    "nameHtml" : "Durham CC"
   },
   "UKC22": {
-    "name_latin" : "Tyneside",
-    "nuts_name" : "Tyneside",
-    "name_ascii" : "Tyneside",
-    "name_html" : "Tyneside"
+    "nameLatin" : "Tyneside",
+    "nutsName" : "Tyneside",
+    "nameAscii" : "Tyneside",
+    "nameHtml" : "Tyneside"
   },
   "UKC23": {
-    "name_latin" : "Sunderland",
-    "nuts_name" : "Sunderland",
-    "name_ascii" : "Sunderland",
-    "name_html" : "Sunderland"
+    "nameLatin" : "Sunderland",
+    "nutsName" : "Sunderland",
+    "nameAscii" : "Sunderland",
+    "nameHtml" : "Sunderland"
   },
   "UKD11": {
-    "name_latin" : "West Cumbria",
-    "nuts_name" : "West Cumbria",
-    "name_ascii" : "West Cumbria",
-    "name_html" : "West Cumbria"
+    "nameLatin" : "West Cumbria",
+    "nutsName" : "West Cumbria",
+    "nameAscii" : "West Cumbria",
+    "nameHtml" : "West Cumbria"
   },
   "UKD33": {
-    "name_latin" : "Manchester",
-    "nuts_name" : "Manchester",
-    "name_ascii" : "Manchester",
-    "name_html" : "Manchester"
+    "nameLatin" : "Manchester",
+    "nutsName" : "Manchester",
+    "nameAscii" : "Manchester",
+    "nameHtml" : "Manchester"
   },
   "UKD34": {
-    "name_latin" : "Greater Manchester South West",
-    "nuts_name" : "Greater Manchester South West",
-    "name_ascii" : "Greater Manchester South West",
-    "name_html" : "Greater Manchester South West"
+    "nameLatin" : "Greater Manchester South West",
+    "nutsName" : "Greater Manchester South West",
+    "nameAscii" : "Greater Manchester South West",
+    "nameHtml" : "Greater Manchester South West"
   },
   "UKD36": {
-    "name_latin" : "Greater Manchester North West",
-    "nuts_name" : "Greater Manchester North West",
-    "name_ascii" : "Greater Manchester North West",
-    "name_html" : "Greater Manchester North West"
+    "nameLatin" : "Greater Manchester North West",
+    "nutsName" : "Greater Manchester North West",
+    "nameAscii" : "Greater Manchester North West",
+    "nameHtml" : "Greater Manchester North West"
   },
   "UKD37": {
-    "name_latin" : "Greater Manchester North East",
-    "nuts_name" : "Greater Manchester North East",
-    "name_ascii" : "Greater Manchester North East",
-    "name_html" : "Greater Manchester North East"
+    "nameLatin" : "Greater Manchester North East",
+    "nutsName" : "Greater Manchester North East",
+    "nameAscii" : "Greater Manchester North East",
+    "nameHtml" : "Greater Manchester North East"
   },
   "UKD41": {
-    "name_latin" : "Blackburn with Darwen",
-    "nuts_name" : "Blackburn with Darwen",
-    "name_ascii" : "Blackburn with Darwen",
-    "name_html" : "Blackburn with Darwen"
+    "nameLatin" : "Blackburn with Darwen",
+    "nutsName" : "Blackburn with Darwen",
+    "nameAscii" : "Blackburn with Darwen",
+    "nameHtml" : "Blackburn with Darwen"
   },
   "UKD42": {
-    "name_latin" : "Blackpool",
-    "nuts_name" : "Blackpool",
-    "name_ascii" : "Blackpool",
-    "name_html" : "Blackpool"
+    "nameLatin" : "Blackpool",
+    "nutsName" : "Blackpool",
+    "nameAscii" : "Blackpool",
+    "nameHtml" : "Blackpool"
   },
   "UKD44": {
-    "name_latin" : "Lancaster & Wyre",
-    "nuts_name" : "Lancaster & Wyre",
-    "name_ascii" : "Lancaster & Wyre",
-    "name_html" : "Lancaster & Wyre"
+    "nameLatin" : "Lancaster & Wyre",
+    "nutsName" : "Lancaster & Wyre",
+    "nameAscii" : "Lancaster & Wyre",
+    "nameHtml" : "Lancaster & Wyre"
   },
   "UKD45": {
-    "name_latin" : "Mid Lancashire",
-    "nuts_name" : "Mid Lancashire",
-    "name_ascii" : "Mid Lancashire",
-    "name_html" : "Mid Lancashire"
+    "nameLatin" : "Mid Lancashire",
+    "nutsName" : "Mid Lancashire",
+    "nameAscii" : "Mid Lancashire",
+    "nameHtml" : "Mid Lancashire"
   },
   "UKD47": {
-    "name_latin" : "Chorley & West Lancashire",
-    "nuts_name" : "Chorley & West Lancashire",
-    "name_ascii" : "Chorley & West Lancashire",
-    "name_html" : "Chorley & West Lancashire"
+    "nameLatin" : "Chorley & West Lancashire",
+    "nutsName" : "Chorley & West Lancashire",
+    "nameAscii" : "Chorley & West Lancashire",
+    "nameHtml" : "Chorley & West Lancashire"
   },
   "UKD61": {
-    "name_latin" : "Warrington",
-    "nuts_name" : "Warrington",
-    "name_ascii" : "Warrington",
-    "name_html" : "Warrington"
+    "nameLatin" : "Warrington",
+    "nutsName" : "Warrington",
+    "nameAscii" : "Warrington",
+    "nameHtml" : "Warrington"
   },
   "UKD62": {
-    "name_latin" : "Cheshire East",
-    "nuts_name" : "Cheshire East",
-    "name_ascii" : "Cheshire East",
-    "name_html" : "Cheshire East"
+    "nameLatin" : "Cheshire East",
+    "nutsName" : "Cheshire East",
+    "nameAscii" : "Cheshire East",
+    "nameHtml" : "Cheshire East"
   },
   "UKD63": {
-    "name_latin" : "Cheshire West and Chester",
-    "nuts_name" : "Cheshire West and Chester",
-    "name_ascii" : "Cheshire West and Chester",
-    "name_html" : "Cheshire West and Chester"
+    "nameLatin" : "Cheshire West and Chester",
+    "nutsName" : "Cheshire West and Chester",
+    "nameAscii" : "Cheshire West and Chester",
+    "nameHtml" : "Cheshire West and Chester"
   },
   "UKD71": {
-    "name_latin" : "East Merseyside",
-    "nuts_name" : "East Merseyside",
-    "name_ascii" : "East Merseyside",
-    "name_html" : "East Merseyside"
+    "nameLatin" : "East Merseyside",
+    "nutsName" : "East Merseyside",
+    "nameAscii" : "East Merseyside",
+    "nameHtml" : "East Merseyside"
   },
   "UKD72": {
-    "name_latin" : "Liverpool",
-    "nuts_name" : "Liverpool",
-    "name_ascii" : "Liverpool",
-    "name_html" : "Liverpool"
+    "nameLatin" : "Liverpool",
+    "nutsName" : "Liverpool",
+    "nameAscii" : "Liverpool",
+    "nameHtml" : "Liverpool"
   },
   "UKD73": {
-    "name_latin" : "Sefton",
-    "nuts_name" : "Sefton",
-    "name_ascii" : "Sefton",
-    "name_html" : "Sefton"
+    "nameLatin" : "Sefton",
+    "nutsName" : "Sefton",
+    "nameAscii" : "Sefton",
+    "nameHtml" : "Sefton"
   },
   "UKD74": {
-    "name_latin" : "Wirral",
-    "nuts_name" : "Wirral",
-    "name_ascii" : "Wirral",
-    "name_html" : "Wirral"
+    "nameLatin" : "Wirral",
+    "nutsName" : "Wirral",
+    "nameAscii" : "Wirral",
+    "nameHtml" : "Wirral"
   },
   "UKE11": {
-    "name_latin" : "Kingston upon Hull, City of",
-    "nuts_name" : "Kingston upon Hull, City of",
-    "name_ascii" : "Kingston Upon Hull, City Of",
-    "name_html" : "Kingston Upon Hull, City Of"
+    "nameLatin" : "Kingston upon Hull, City of",
+    "nutsName" : "Kingston upon Hull, City of",
+    "nameAscii" : "Kingston Upon Hull, City Of",
+    "nameHtml" : "Kingston Upon Hull, City Of"
   },
   "UKE12": {
-    "name_latin" : "East Riding of Yorkshire",
-    "nuts_name" : "East Riding of Yorkshire",
-    "name_ascii" : "East Riding of Yorkshire",
-    "name_html" : "East Riding of Yorkshire"
+    "nameLatin" : "East Riding of Yorkshire",
+    "nutsName" : "East Riding of Yorkshire",
+    "nameAscii" : "East Riding of Yorkshire",
+    "nameHtml" : "East Riding of Yorkshire"
   },
   "UKE13": {
-    "name_latin" : "North and North East Lincolnshire",
-    "nuts_name" : "North and North East Lincolnshire",
-    "name_ascii" : "North and North East Lincolnshire",
-    "name_html" : "North and North East Lincolnshire"
+    "nameLatin" : "North and North East Lincolnshire",
+    "nutsName" : "North and North East Lincolnshire",
+    "nameAscii" : "North and North East Lincolnshire",
+    "nameHtml" : "North and North East Lincolnshire"
   },
   "UKE21": {
-    "name_latin" : "York",
-    "nuts_name" : "York",
-    "name_ascii" : "York",
-    "name_html" : "York"
+    "nameLatin" : "York",
+    "nutsName" : "York",
+    "nameAscii" : "York",
+    "nameHtml" : "York"
   },
   "UKE22": {
-    "name_latin" : "North Yorkshire CC",
-    "nuts_name" : "North Yorkshire CC",
-    "name_ascii" : "North Yorkshire CC",
-    "name_html" : "North Yorkshire CC"
+    "nameLatin" : "North Yorkshire CC",
+    "nutsName" : "North Yorkshire CC",
+    "nameAscii" : "North Yorkshire CC",
+    "nameHtml" : "North Yorkshire CC"
   },
   "UKE31": {
-    "name_latin" : "Barnsley, Doncaster and Rotherham",
-    "nuts_name" : "Barnsley, Doncaster and Rotherham",
-    "name_ascii" : "Barnsley, Doncaster and Rotherham",
-    "name_html" : "Barnsley, Doncaster and Rotherham"
+    "nameLatin" : "Barnsley, Doncaster and Rotherham",
+    "nutsName" : "Barnsley, Doncaster and Rotherham",
+    "nameAscii" : "Barnsley, Doncaster and Rotherham",
+    "nameHtml" : "Barnsley, Doncaster and Rotherham"
   },
   "UKE32": {
-    "name_latin" : "Sheffield",
-    "nuts_name" : "Sheffield",
-    "name_ascii" : "Sheffield",
-    "name_html" : "Sheffield"
+    "nameLatin" : "Sheffield",
+    "nutsName" : "Sheffield",
+    "nameAscii" : "Sheffield",
+    "nameHtml" : "Sheffield"
   },
   "UKE42": {
-    "name_latin" : "Leeds",
-    "nuts_name" : "Leeds",
-    "name_ascii" : "Leeds",
-    "name_html" : "Leeds"
+    "nameLatin" : "Leeds",
+    "nutsName" : "Leeds",
+    "nameAscii" : "Leeds",
+    "nameHtml" : "Leeds"
   },
   "UKE44": {
-    "name_latin" : "Calderdale and Kirklees",
-    "nuts_name" : "Calderdale and Kirklees",
-    "name_ascii" : "Calderdale and Kirklees",
-    "name_html" : "Calderdale and Kirklees"
+    "nameLatin" : "Calderdale and Kirklees",
+    "nutsName" : "Calderdale and Kirklees",
+    "nameAscii" : "Calderdale and Kirklees",
+    "nameHtml" : "Calderdale and Kirklees"
   },
   "UKI42": {
-    "name_latin" : "Tower Hamlets",
-    "nuts_name" : "Tower Hamlets",
-    "name_ascii" : "Tower Hamlets",
-    "name_html" : "Tower Hamlets"
+    "nameLatin" : "Tower Hamlets",
+    "nutsName" : "Tower Hamlets",
+    "nameAscii" : "Tower Hamlets",
+    "nameHtml" : "Tower Hamlets"
   },
   "UKI43": {
-    "name_latin" : "Haringey & Islington",
-    "nuts_name" : "Haringey & Islington",
-    "name_ascii" : "Haringey & Islington",
-    "name_html" : "Haringey & Islington"
+    "nameLatin" : "Haringey & Islington",
+    "nutsName" : "Haringey & Islington",
+    "nameAscii" : "Haringey & Islington",
+    "nameHtml" : "Haringey & Islington"
   },
   "UKI44": {
-    "name_latin" : "Lewisham & Southwark",
-    "nuts_name" : "Lewisham & Southwark",
-    "name_ascii" : "Lewisham & Southwark",
-    "name_html" : "Lewisham & Southwark"
+    "nameLatin" : "Lewisham & Southwark",
+    "nutsName" : "Lewisham & Southwark",
+    "nameAscii" : "Lewisham & Southwark",
+    "nameHtml" : "Lewisham & Southwark"
   },
   "UKI45": {
-    "name_latin" : "Lambeth",
-    "nuts_name" : "Lambeth",
-    "name_ascii" : "Lambeth",
-    "name_html" : "Lambeth"
+    "nameLatin" : "Lambeth",
+    "nutsName" : "Lambeth",
+    "nameAscii" : "Lambeth",
+    "nameHtml" : "Lambeth"
   },
   "UKI51": {
-    "name_latin" : "Bexley & Greenwich",
-    "nuts_name" : "Bexley & Greenwich",
-    "name_ascii" : "Bexley & Greenwich",
-    "name_html" : "Bexley & Greenwich"
+    "nameLatin" : "Bexley & Greenwich",
+    "nutsName" : "Bexley & Greenwich",
+    "nameAscii" : "Bexley & Greenwich",
+    "nameHtml" : "Bexley & Greenwich"
   },
   "UKI52": {
-    "name_latin" : "Barking and Dagenham & Havering",
-    "nuts_name" : "Barking and Dagenham & Havering",
-    "name_ascii" : "Barking and Dagenham & Havering",
-    "name_html" : "Barking and Dagenham & Havering"
+    "nameLatin" : "Barking and Dagenham & Havering",
+    "nutsName" : "Barking and Dagenham & Havering",
+    "nameAscii" : "Barking and Dagenham & Havering",
+    "nameHtml" : "Barking and Dagenham & Havering"
   },
   "UKI53": {
-    "name_latin" : "Redbridge & Waltham Forest",
-    "nuts_name" : "Redbridge & Waltham Forest",
-    "name_ascii" : "Redbridge & Waltham Forest",
-    "name_html" : "Redbridge & Waltham Forest"
+    "nameLatin" : "Redbridge & Waltham Forest",
+    "nutsName" : "Redbridge & Waltham Forest",
+    "nameAscii" : "Redbridge & Waltham Forest",
+    "nameHtml" : "Redbridge & Waltham Forest"
   },
   "UKI54": {
-    "name_latin" : "Enfield",
-    "nuts_name" : "Enfield",
-    "name_ascii" : "Enfield",
-    "name_html" : "Enfield"
+    "nameLatin" : "Enfield",
+    "nutsName" : "Enfield",
+    "nameAscii" : "Enfield",
+    "nameHtml" : "Enfield"
   },
   "UKI61": {
-    "name_latin" : "Bromley",
-    "nuts_name" : "Bromley",
-    "name_ascii" : "Bromley",
-    "name_html" : "Bromley"
+    "nameLatin" : "Bromley",
+    "nutsName" : "Bromley",
+    "nameAscii" : "Bromley",
+    "nameHtml" : "Bromley"
   },
   "UKI62": {
-    "name_latin" : "Croydon",
-    "nuts_name" : "Croydon",
-    "name_ascii" : "Croydon",
-    "name_html" : "Croydon"
+    "nameLatin" : "Croydon",
+    "nutsName" : "Croydon",
+    "nameAscii" : "Croydon",
+    "nameHtml" : "Croydon"
   },
   "UKI63": {
-    "name_latin" : "Merton, Kingston upon Thames & Sutton",
-    "nuts_name" : "Merton, Kingston upon Thames & Sutton",
-    "name_ascii" : "Merton, Kingston Upon Thames & Sutton",
-    "name_html" : "Merton, Kingston Upon Thames & Sutton"
+    "nameLatin" : "Merton, Kingston upon Thames & Sutton",
+    "nutsName" : "Merton, Kingston upon Thames & Sutton",
+    "nameAscii" : "Merton, Kingston Upon Thames & Sutton",
+    "nameHtml" : "Merton, Kingston Upon Thames & Sutton"
   },
   "UKI71": {
-    "name_latin" : "Barnet",
-    "nuts_name" : "Barnet",
-    "name_ascii" : "Barnet",
-    "name_html" : "Barnet"
+    "nameLatin" : "Barnet",
+    "nutsName" : "Barnet",
+    "nameAscii" : "Barnet",
+    "nameHtml" : "Barnet"
   },
   "UKI72": {
-    "name_latin" : "Brent",
-    "nuts_name" : "Brent",
-    "name_ascii" : "Brent",
-    "name_html" : "Brent"
+    "nameLatin" : "Brent",
+    "nutsName" : "Brent",
+    "nameAscii" : "Brent",
+    "nameHtml" : "Brent"
   },
   "UKI73": {
-    "name_latin" : "Ealing",
-    "nuts_name" : "Ealing",
-    "name_ascii" : "Ealing",
-    "name_html" : "Ealing"
+    "nameLatin" : "Ealing",
+    "nutsName" : "Ealing",
+    "nameAscii" : "Ealing",
+    "nameHtml" : "Ealing"
   },
   "UKI74": {
-    "name_latin" : "Harrow & Hillingdon",
-    "nuts_name" : "Harrow & Hillingdon",
-    "name_ascii" : "Harrow & Hillingdon",
-    "name_html" : "Harrow & Hillingdon"
+    "nameLatin" : "Harrow & Hillingdon",
+    "nutsName" : "Harrow & Hillingdon",
+    "nameAscii" : "Harrow & Hillingdon",
+    "nameHtml" : "Harrow & Hillingdon"
   },
   "UKJ11": {
-    "name_latin" : "Berkshire",
-    "nuts_name" : "Berkshire",
-    "name_ascii" : "Berkshire",
-    "name_html" : "Berkshire"
+    "nameLatin" : "Berkshire",
+    "nutsName" : "Berkshire",
+    "nameAscii" : "Berkshire",
+    "nameHtml" : "Berkshire"
   },
   "UKJ12": {
-    "name_latin" : "Milton Keynes",
-    "nuts_name" : "Milton Keynes",
-    "name_ascii" : "Milton Keynes",
-    "name_html" : "Milton Keynes"
+    "nameLatin" : "Milton Keynes",
+    "nutsName" : "Milton Keynes",
+    "nameAscii" : "Milton Keynes",
+    "nameHtml" : "Milton Keynes"
   },
   "UKJ13": {
-    "name_latin" : "Buckinghamshire CC",
-    "nuts_name" : "Buckinghamshire CC",
-    "name_ascii" : "Buckinghamshire CC",
-    "name_html" : "Buckinghamshire CC"
+    "nameLatin" : "Buckinghamshire CC",
+    "nutsName" : "Buckinghamshire CC",
+    "nameAscii" : "Buckinghamshire CC",
+    "nameHtml" : "Buckinghamshire CC"
   },
   "UKJ14": {
-    "name_latin" : "Oxfordshire",
-    "nuts_name" : "Oxfordshire",
-    "name_ascii" : "Oxfordshire",
-    "name_html" : "Oxfordshire"
+    "nameLatin" : "Oxfordshire",
+    "nutsName" : "Oxfordshire",
+    "nameAscii" : "Oxfordshire",
+    "nameHtml" : "Oxfordshire"
   },
   "UKJ22": {
-    "name_latin" : "East Sussex CC",
-    "nuts_name" : "East Sussex CC",
-    "name_ascii" : "East Sussex CC",
-    "name_html" : "East Sussex CC"
+    "nameLatin" : "East Sussex CC",
+    "nutsName" : "East Sussex CC",
+    "nameAscii" : "East Sussex CC",
+    "nameHtml" : "East Sussex CC"
   },
   "UKJ25": {
-    "name_latin" : "West Surrey",
-    "nuts_name" : "West Surrey",
-    "name_ascii" : "West Surrey",
-    "name_html" : "West Surrey"
+    "nameLatin" : "West Surrey",
+    "nutsName" : "West Surrey",
+    "nameAscii" : "West Surrey",
+    "nameHtml" : "West Surrey"
   },
   "UKJ26": {
-    "name_latin" : "East Surrey",
-    "nuts_name" : "East Surrey",
-    "name_ascii" : "East Surrey",
-    "name_html" : "East Surrey"
+    "nameLatin" : "East Surrey",
+    "nutsName" : "East Surrey",
+    "nameAscii" : "East Surrey",
+    "nameHtml" : "East Surrey"
   },
   "UKJ27": {
-    "name_latin" : "West Sussex (South West)",
-    "nuts_name" : "West Sussex (South West)",
-    "name_ascii" : "West Sussex (South West)",
-    "name_html" : "West Sussex (South West)"
+    "nameLatin" : "West Sussex (South West)",
+    "nutsName" : "West Sussex (South West)",
+    "nameAscii" : "West Sussex (South West)",
+    "nameHtml" : "West Sussex (South West)"
   },
   "UKJ31": {
-    "name_latin" : "Portsmouth",
-    "nuts_name" : "Portsmouth",
-    "name_ascii" : "Portsmouth",
-    "name_html" : "Portsmouth"
+    "nameLatin" : "Portsmouth",
+    "nutsName" : "Portsmouth",
+    "nameAscii" : "Portsmouth",
+    "nameHtml" : "Portsmouth"
   },
   "UKJ32": {
-    "name_latin" : "Southampton",
-    "nuts_name" : "Southampton",
-    "name_ascii" : "Southampton",
-    "name_html" : "Southampton"
+    "nameLatin" : "Southampton",
+    "nutsName" : "Southampton",
+    "nameAscii" : "Southampton",
+    "nameHtml" : "Southampton"
   },
   "UKJ34": {
-    "name_latin" : "Isle of Wight",
-    "nuts_name" : "Isle of Wight",
-    "name_ascii" : "Isle of Wight",
-    "name_html" : "Isle of Wight"
+    "nameLatin" : "Isle of Wight",
+    "nutsName" : "Isle of Wight",
+    "nameAscii" : "Isle of Wight",
+    "nameHtml" : "Isle of Wight"
   },
   "UKJ35": {
-    "name_latin" : "South Hampshire",
-    "nuts_name" : "South Hampshire",
-    "name_ascii" : "South Hampshire",
-    "name_html" : "South Hampshire"
+    "nameLatin" : "South Hampshire",
+    "nutsName" : "South Hampshire",
+    "nameAscii" : "South Hampshire",
+    "nameHtml" : "South Hampshire"
   },
   "UKJ36": {
-    "name_latin" : "Central Hampshire",
-    "nuts_name" : "Central Hampshire",
-    "name_ascii" : "Central Hampshire",
-    "name_html" : "Central Hampshire"
+    "nameLatin" : "Central Hampshire",
+    "nutsName" : "Central Hampshire",
+    "nameAscii" : "Central Hampshire",
+    "nameHtml" : "Central Hampshire"
   },
   "UKJ37": {
-    "name_latin" : "North Hampshire",
-    "nuts_name" : "North Hampshire",
-    "name_ascii" : "North Hampshire",
-    "name_html" : "North Hampshire"
+    "nameLatin" : "North Hampshire",
+    "nutsName" : "North Hampshire",
+    "nameAscii" : "North Hampshire",
+    "nameHtml" : "North Hampshire"
   },
   "UKJ41": {
-    "name_latin" : "Medway",
-    "nuts_name" : "Medway",
-    "name_ascii" : "Medway",
-    "name_html" : "Medway"
+    "nameLatin" : "Medway",
+    "nutsName" : "Medway",
+    "nameAscii" : "Medway",
+    "nameHtml" : "Medway"
   },
   "UKJ44": {
-    "name_latin" : "East Kent",
-    "nuts_name" : "East Kent",
-    "name_ascii" : "East Kent",
-    "name_html" : "East Kent"
+    "nameLatin" : "East Kent",
+    "nutsName" : "East Kent",
+    "nameAscii" : "East Kent",
+    "nameHtml" : "East Kent"
   },
   "UKJ45": {
-    "name_latin" : "Mid Kent",
-    "nuts_name" : "Mid Kent",
-    "name_ascii" : "Mid Kent",
-    "name_html" : "Mid Kent"
+    "nameLatin" : "Mid Kent",
+    "nutsName" : "Mid Kent",
+    "nameAscii" : "Mid Kent",
+    "nameHtml" : "Mid Kent"
   },
   "UKJ46": {
-    "name_latin" : "West Kent",
-    "nuts_name" : "West Kent",
-    "name_ascii" : "West Kent",
-    "name_html" : "West Kent"
+    "nameLatin" : "West Kent",
+    "nutsName" : "West Kent",
+    "nameAscii" : "West Kent",
+    "nameHtml" : "West Kent"
   },
   "UKK11": {
-    "name_latin" : "Bristol, City of",
-    "nuts_name" : "Bristol, City of",
-    "name_ascii" : "Bristol, City Of",
-    "name_html" : "Bristol, City Of"
+    "nameLatin" : "Bristol, City of",
+    "nutsName" : "Bristol, City of",
+    "nameAscii" : "Bristol, City Of",
+    "nameHtml" : "Bristol, City Of"
   },
   "UKK12": {
-    "name_latin" : "Bath and North East Somerset, North Somerset and South Gloucestershire",
-    "nuts_name" : "Bath and North East Somerset, North Somerset and South Gloucestershire",
-    "name_ascii" : "Bath and North East Somerset, North Somerset and South Gloucestershire",
-    "name_html" : "Bath and North East Somerset, North Somerset and South Gloucestershire"
+    "nameLatin" : "Bath and North East Somerset, North Somerset and South Gloucestershire",
+    "nutsName" : "Bath and North East Somerset, North Somerset and South Gloucestershire",
+    "nameAscii" : "Bath and North East Somerset, North Somerset and South Gloucestershire",
+    "nameHtml" : "Bath and North East Somerset, North Somerset and South Gloucestershire"
   },
   "UKK13": {
-    "name_latin" : "Gloucestershire",
-    "nuts_name" : "Gloucestershire",
-    "name_ascii" : "Gloucestershire",
-    "name_html" : "Gloucestershire"
+    "nameLatin" : "Gloucestershire",
+    "nutsName" : "Gloucestershire",
+    "nameAscii" : "Gloucestershire",
+    "nameHtml" : "Gloucestershire"
   },
   "UKK14": {
-    "name_latin" : "Swindon",
-    "nuts_name" : "Swindon",
-    "name_ascii" : "Swindon",
-    "name_html" : "Swindon"
+    "nameLatin" : "Swindon",
+    "nutsName" : "Swindon",
+    "nameAscii" : "Swindon",
+    "nameHtml" : "Swindon"
   },
   "UKK15": {
-    "name_latin" : "Wiltshire CC",
-    "nuts_name" : "Wiltshire CC",
-    "name_ascii" : "Wiltshire CC",
-    "name_html" : "Wiltshire CC"
+    "nameLatin" : "Wiltshire CC",
+    "nutsName" : "Wiltshire CC",
+    "nameAscii" : "Wiltshire CC",
+    "nameHtml" : "Wiltshire CC"
   },
   "UKK21": {
-    "name_latin" : "Bournemouth and Poole",
-    "nuts_name" : "Bournemouth and Poole",
-    "name_ascii" : "Bournemouth and Poole",
-    "name_html" : "Bournemouth and Poole"
+    "nameLatin" : "Bournemouth and Poole",
+    "nutsName" : "Bournemouth and Poole",
+    "nameAscii" : "Bournemouth and Poole",
+    "nameHtml" : "Bournemouth and Poole"
   },
   "UKK22": {
-    "name_latin" : "Dorset CC",
-    "nuts_name" : "Dorset CC",
-    "name_ascii" : "Dorset CC",
-    "name_html" : "Dorset CC"
+    "nameLatin" : "Dorset CC",
+    "nutsName" : "Dorset CC",
+    "nameAscii" : "Dorset CC",
+    "nameHtml" : "Dorset CC"
   },
   "UKK23": {
-    "name_latin" : "Somerset",
-    "nuts_name" : "Somerset",
-    "name_ascii" : "Somerset",
-    "name_html" : "Somerset"
+    "nameLatin" : "Somerset",
+    "nutsName" : "Somerset",
+    "nameAscii" : "Somerset",
+    "nameHtml" : "Somerset"
   },
   "UKK41": {
-    "name_latin" : "Plymouth",
-    "nuts_name" : "Plymouth",
-    "name_ascii" : "Plymouth",
-    "name_html" : "Plymouth"
+    "nameLatin" : "Plymouth",
+    "nutsName" : "Plymouth",
+    "nameAscii" : "Plymouth",
+    "nameHtml" : "Plymouth"
   },
   "UKK42": {
-    "name_latin" : "Torbay",
-    "nuts_name" : "Torbay",
-    "name_ascii" : "Torbay",
-    "name_html" : "Torbay"
+    "nameLatin" : "Torbay",
+    "nutsName" : "Torbay",
+    "nameAscii" : "Torbay",
+    "nameHtml" : "Torbay"
   },
   "UKK43": {
-    "name_latin" : "Devon CC",
-    "nuts_name" : "Devon CC",
-    "name_ascii" : "Devon CC",
-    "name_html" : "Devon CC"
+    "nameLatin" : "Devon CC",
+    "nutsName" : "Devon CC",
+    "nameAscii" : "Devon CC",
+    "nameHtml" : "Devon CC"
   },
   "UKL11": {
-    "name_latin" : "Isle of Anglesey",
-    "nuts_name" : "Isle of Anglesey",
-    "name_ascii" : "Isle of Anglesey",
-    "name_html" : "Isle of Anglesey"
+    "nameLatin" : "Isle of Anglesey",
+    "nutsName" : "Isle of Anglesey",
+    "nameAscii" : "Isle of Anglesey",
+    "nameHtml" : "Isle of Anglesey"
   },
   "UKL12": {
-    "name_latin" : "Gwynedd",
-    "nuts_name" : "Gwynedd",
-    "name_ascii" : "Gwynedd",
-    "name_html" : "Gwynedd"
+    "nameLatin" : "Gwynedd",
+    "nutsName" : "Gwynedd",
+    "nameAscii" : "Gwynedd",
+    "nameHtml" : "Gwynedd"
   },
   "UKL13": {
-    "name_latin" : "Conwy and Denbighshire",
-    "nuts_name" : "Conwy and Denbighshire",
-    "name_ascii" : "Conwy and Denbighshire",
-    "name_html" : "Conwy and Denbighshire"
+    "nameLatin" : "Conwy and Denbighshire",
+    "nutsName" : "Conwy and Denbighshire",
+    "nameAscii" : "Conwy and Denbighshire",
+    "nameHtml" : "Conwy and Denbighshire"
   },
   "UKL14": {
-    "name_latin" : "South West Wales",
-    "nuts_name" : "South West Wales",
-    "name_ascii" : "South West Wales",
-    "name_html" : "South West Wales"
+    "nameLatin" : "South West Wales",
+    "nutsName" : "South West Wales",
+    "nameAscii" : "South West Wales",
+    "nameHtml" : "South West Wales"
   },
   "UKL15": {
-    "name_latin" : "Central Valleys",
-    "nuts_name" : "Central Valleys",
-    "name_ascii" : "Central Valleys",
-    "name_html" : "Central Valleys"
+    "nameLatin" : "Central Valleys",
+    "nutsName" : "Central Valleys",
+    "nameAscii" : "Central Valleys",
+    "nameHtml" : "Central Valleys"
   },
   "UKL17": {
-    "name_latin" : "Bridgend and Neath Port Talbot",
-    "nuts_name" : "Bridgend and Neath Port Talbot",
-    "name_ascii" : "Bridgend and Neath Port Talbot",
-    "name_html" : "Bridgend and Neath Port Talbot"
+    "nameLatin" : "Bridgend and Neath Port Talbot",
+    "nutsName" : "Bridgend and Neath Port Talbot",
+    "nameAscii" : "Bridgend and Neath Port Talbot",
+    "nameHtml" : "Bridgend and Neath Port Talbot"
   },
   "UKL18": {
-    "name_latin" : "Swansea",
-    "nuts_name" : "Swansea",
-    "name_ascii" : "Swansea",
-    "name_html" : "Swansea"
+    "nameLatin" : "Swansea",
+    "nutsName" : "Swansea",
+    "nameAscii" : "Swansea",
+    "nameHtml" : "Swansea"
   },
   "UKL22": {
-    "name_latin" : "Cardiff and Vale of Glamorgan",
-    "nuts_name" : "Cardiff and Vale of Glamorgan",
-    "name_ascii" : "Cardiff and Vale of Glamorgan",
-    "name_html" : "Cardiff and Vale of Glamorgan"
+    "nameLatin" : "Cardiff and Vale of Glamorgan",
+    "nutsName" : "Cardiff and Vale of Glamorgan",
+    "nameAscii" : "Cardiff and Vale of Glamorgan",
+    "nameHtml" : "Cardiff and Vale of Glamorgan"
   },
   "UKL23": {
-    "name_latin" : "Flintshire and Wrexham",
-    "nuts_name" : "Flintshire and Wrexham",
-    "name_ascii" : "Flintshire and Wrexham",
-    "name_html" : "Flintshire and Wrexham"
+    "nameLatin" : "Flintshire and Wrexham",
+    "nutsName" : "Flintshire and Wrexham",
+    "nameAscii" : "Flintshire and Wrexham",
+    "nameHtml" : "Flintshire and Wrexham"
   },
   "UKL24": {
-    "name_latin" : "Powys",
-    "nuts_name" : "Powys",
-    "name_ascii" : "Powys",
-    "name_html" : "Powys"
+    "nameLatin" : "Powys",
+    "nutsName" : "Powys",
+    "nameAscii" : "Powys",
+    "nameHtml" : "Powys"
   },
   "UKM21": {
-    "name_latin" : "Angus and Dundee City",
-    "nuts_name" : "Angus and Dundee City",
-    "name_ascii" : "Angus and Dundee City",
-    "name_html" : "Angus and Dundee City"
+    "nameLatin" : "Angus and Dundee City",
+    "nutsName" : "Angus and Dundee City",
+    "nameAscii" : "Angus and Dundee City",
+    "nameHtml" : "Angus and Dundee City"
   },
   "UKM23": {
-    "name_latin" : "East Lothian and Midlothian",
-    "nuts_name" : "East Lothian and Midlothian",
-    "name_ascii" : "East Lothian and Midlothian",
-    "name_html" : "East Lothian and Midlothian"
+    "nameLatin" : "East Lothian and Midlothian",
+    "nutsName" : "East Lothian and Midlothian",
+    "nameAscii" : "East Lothian and Midlothian",
+    "nameHtml" : "East Lothian and Midlothian"
   },
   "UKM24": {
-    "name_latin" : "Scottish Borders",
-    "nuts_name" : "Scottish Borders",
-    "name_ascii" : "Scottish Borders",
-    "name_html" : "Scottish Borders"
+    "nameLatin" : "Scottish Borders",
+    "nutsName" : "Scottish Borders",
+    "nameAscii" : "Scottish Borders",
+    "nameHtml" : "Scottish Borders"
   },
   "UKM25": {
-    "name_latin" : "Edinburgh, City of",
-    "nuts_name" : "Edinburgh, City of",
-    "name_ascii" : "Edinburgh, City Of",
-    "name_html" : "Edinburgh, City Of"
+    "nameLatin" : "Edinburgh, City of",
+    "nutsName" : "Edinburgh, City of",
+    "nameAscii" : "Edinburgh, City Of",
+    "nameHtml" : "Edinburgh, City Of"
   },
   "UKM26": {
-    "name_latin" : "Falkirk",
-    "nuts_name" : "Falkirk",
-    "name_ascii" : "Falkirk",
-    "name_html" : "Falkirk"
+    "nameLatin" : "Falkirk",
+    "nutsName" : "Falkirk",
+    "nameAscii" : "Falkirk",
+    "nameHtml" : "Falkirk"
   },
   "UKM27": {
-    "name_latin" : "Perth & Kinross and Stirling",
-    "nuts_name" : "Perth & Kinross and Stirling",
-    "name_ascii" : "Perth & Kinross and Stirling",
-    "name_html" : "Perth & Kinross and Stirling"
+    "nameLatin" : "Perth & Kinross and Stirling",
+    "nutsName" : "Perth & Kinross and Stirling",
+    "nameAscii" : "Perth & Kinross and Stirling",
+    "nameHtml" : "Perth & Kinross and Stirling"
   },
   "UKM28": {
-    "name_latin" : "West Lothian",
-    "nuts_name" : "West Lothian",
-    "name_ascii" : "West Lothian",
-    "name_html" : "West Lothian"
+    "nameLatin" : "West Lothian",
+    "nutsName" : "West Lothian",
+    "nameAscii" : "West Lothian",
+    "nameHtml" : "West Lothian"
   },
   "UKM31": {
-    "name_latin" : "East Dunbartonshire, West Dunbartonshire and Helensburgh & Lomond",
-    "nuts_name" : "East Dunbartonshire, West Dunbartonshire and Helensburgh & Lomond",
-    "name_ascii" : "East Dunbartonshire, West Dunbartonshire and Helensburgh & Lomond",
-    "name_html" : "East Dunbartonshire, West Dunbartonshire and Helensburgh & Lomond"
+    "nameLatin" : "East Dunbartonshire, West Dunbartonshire and Helensburgh & Lomond",
+    "nutsName" : "East Dunbartonshire, West Dunbartonshire and Helensburgh & Lomond",
+    "nameAscii" : "East Dunbartonshire, West Dunbartonshire and Helensburgh & Lomond",
+    "nameHtml" : "East Dunbartonshire, West Dunbartonshire and Helensburgh & Lomond"
   },
   "UKM32": {
-    "name_latin" : "Dumfries & Galloway",
-    "nuts_name" : "Dumfries & Galloway",
-    "name_ascii" : "Dumfries & Galloway",
-    "name_html" : "Dumfries & Galloway"
+    "nameLatin" : "Dumfries & Galloway",
+    "nutsName" : "Dumfries & Galloway",
+    "nameAscii" : "Dumfries & Galloway",
+    "nameHtml" : "Dumfries & Galloway"
   },
   "UKM34": {
-    "name_latin" : "Glasgow City",
-    "nuts_name" : "Glasgow City",
-    "name_ascii" : "Glasgow City",
-    "name_html" : "Glasgow City"
+    "nameLatin" : "Glasgow City",
+    "nutsName" : "Glasgow City",
+    "nameAscii" : "Glasgow City",
+    "nameHtml" : "Glasgow City"
   },
   "UKM35": {
-    "name_latin" : "Inverclyde, East Renfrewshire and Renfrewshire",
-    "nuts_name" : "Inverclyde, East Renfrewshire and Renfrewshire",
-    "name_ascii" : "Inverclyde, East Renfrewshire and Renfrewshire",
-    "name_html" : "Inverclyde, East Renfrewshire and Renfrewshire"
+    "nameLatin" : "Inverclyde, East Renfrewshire and Renfrewshire",
+    "nutsName" : "Inverclyde, East Renfrewshire and Renfrewshire",
+    "nameAscii" : "Inverclyde, East Renfrewshire and Renfrewshire",
+    "nameHtml" : "Inverclyde, East Renfrewshire and Renfrewshire"
   },
   "UKM36": {
-    "name_latin" : "North Lanarkshire",
-    "nuts_name" : "North Lanarkshire",
-    "name_ascii" : "North Lanarkshire",
-    "name_html" : "North Lanarkshire"
+    "nameLatin" : "North Lanarkshire",
+    "nutsName" : "North Lanarkshire",
+    "nameAscii" : "North Lanarkshire",
+    "nameHtml" : "North Lanarkshire"
   },
   "UKM37": {
-    "name_latin" : "South Ayrshire",
-    "nuts_name" : "South Ayrshire",
-    "name_ascii" : "South Ayrshire",
-    "name_html" : "South Ayrshire"
+    "nameLatin" : "South Ayrshire",
+    "nutsName" : "South Ayrshire",
+    "nameAscii" : "South Ayrshire",
+    "nameHtml" : "South Ayrshire"
   },
   "UKM38": {
-    "name_latin" : "South Lanarkshire",
-    "nuts_name" : "South Lanarkshire",
-    "name_ascii" : "South Lanarkshire",
-    "name_html" : "South Lanarkshire"
+    "nameLatin" : "South Lanarkshire",
+    "nutsName" : "South Lanarkshire",
+    "nameAscii" : "South Lanarkshire",
+    "nameHtml" : "South Lanarkshire"
   },
   "UKM50": {
-    "name_latin" : "Aberdeen City and Aberdeenshire",
-    "nuts_name" : "Aberdeen City and Aberdeenshire",
-    "name_ascii" : "Aberdeen City and Aberdeenshire",
-    "name_html" : "Aberdeen City and Aberdeenshire"
+    "nameLatin" : "Aberdeen City and Aberdeenshire",
+    "nutsName" : "Aberdeen City and Aberdeenshire",
+    "nameAscii" : "Aberdeen City and Aberdeenshire",
+    "nameHtml" : "Aberdeen City and Aberdeenshire"
   },
   "UKM62": {
-    "name_latin" : "Inverness & Nairn and Moray, Badenoch & Strathspey",
-    "nuts_name" : "Inverness & Nairn and Moray, Badenoch & Strathspey",
-    "name_ascii" : "Inverness & Nairn and Moray, Badenoch & Strathspey",
-    "name_html" : "Inverness & Nairn and Moray, Badenoch & Strathspey"
+    "nameLatin" : "Inverness & Nairn and Moray, Badenoch & Strathspey",
+    "nutsName" : "Inverness & Nairn and Moray, Badenoch & Strathspey",
+    "nameAscii" : "Inverness & Nairn and Moray, Badenoch & Strathspey",
+    "nameHtml" : "Inverness & Nairn and Moray, Badenoch & Strathspey"
   },
   "UKM63": {
-    "name_latin" : "Lochaber, Skye & Lochalsh, Arran & Cumbrae and Argyll & Bute",
-    "nuts_name" : "Lochaber, Skye & Lochalsh, Arran & Cumbrae and Argyll & Bute",
-    "name_ascii" : "Lochaber, Skye & Lochalsh, Arran & Cumbrae and Argyll & Bute",
-    "name_html" : "Lochaber, Skye & Lochalsh, Arran & Cumbrae and Argyll & Bute"
+    "nameLatin" : "Lochaber, Skye & Lochalsh, Arran & Cumbrae and Argyll & Bute",
+    "nutsName" : "Lochaber, Skye & Lochalsh, Arran & Cumbrae and Argyll & Bute",
+    "nameAscii" : "Lochaber, Skye & Lochalsh, Arran & Cumbrae and Argyll & Bute",
+    "nameHtml" : "Lochaber, Skye & Lochalsh, Arran & Cumbrae and Argyll & Bute"
   },
   "UKM64": {
-    "name_latin" : "Eilean Siar (Western Isles)",
-    "nuts_name" : "Eilean Siar (Western Isles)",
-    "name_ascii" : "Eilean Siar (Western Isles)",
-    "name_html" : "Eilean Siar (Western Isles)"
+    "nameLatin" : "Eilean Siar (Western Isles)",
+    "nutsName" : "Eilean Siar (Western Isles)",
+    "nameAscii" : "Eilean Siar (Western Isles)",
+    "nameHtml" : "Eilean Siar (Western Isles)"
   },
   "UKM65": {
-    "name_latin" : "Orkney Islands",
-    "nuts_name" : "Orkney Islands",
-    "name_ascii" : "Orkney Islands",
-    "name_html" : "Orkney Islands"
+    "nameLatin" : "Orkney Islands",
+    "nutsName" : "Orkney Islands",
+    "nameAscii" : "Orkney Islands",
+    "nameHtml" : "Orkney Islands"
   },
   "UKM66": {
-    "name_latin" : "Shetland Islands",
-    "nuts_name" : "Shetland Islands",
-    "name_ascii" : "Shetland Islands",
-    "name_html" : "Shetland Islands"
+    "nameLatin" : "Shetland Islands",
+    "nutsName" : "Shetland Islands",
+    "nameAscii" : "Shetland Islands",
+    "nameHtml" : "Shetland Islands"
   },
   "UKN01": {
-    "name_latin" : "Belfast",
-    "nuts_name" : "Belfast",
-    "name_ascii" : "Belfast",
-    "name_html" : "Belfast"
+    "nameLatin" : "Belfast",
+    "nutsName" : "Belfast",
+    "nameAscii" : "Belfast",
+    "nameHtml" : "Belfast"
   },
   "UKN02": {
-    "name_latin" : "Outer Belfast",
-    "nuts_name" : "Outer Belfast",
-    "name_ascii" : "Outer Belfast",
-    "name_html" : "Outer Belfast"
+    "nameLatin" : "Outer Belfast",
+    "nutsName" : "Outer Belfast",
+    "nameAscii" : "Outer Belfast",
+    "nameHtml" : "Outer Belfast"
   },
   "UKN03": {
-    "name_latin" : "East of Northern Ireland",
-    "nuts_name" : "East of Northern Ireland",
-    "name_ascii" : "East of Northern Ireland",
-    "name_html" : "East of Northern Ireland"
+    "nameLatin" : "East of Northern Ireland",
+    "nutsName" : "East of Northern Ireland",
+    "nameAscii" : "East of Northern Ireland",
+    "nameHtml" : "East of Northern Ireland"
   },
   "UKN04": {
-    "name_latin" : "North of Northern Ireland",
-    "nuts_name" : "North of Northern Ireland",
-    "name_ascii" : "North of Northern Ireland",
-    "name_html" : "North of Northern Ireland"
+    "nameLatin" : "North of Northern Ireland",
+    "nutsName" : "North of Northern Ireland",
+    "nameAscii" : "North of Northern Ireland",
+    "nameHtml" : "North of Northern Ireland"
   },
   "ME000": {
-    "name_latin" : "Crna Gora",
-    "nuts_name" : "Црна Гора",
-    "name_ascii" : "Crna Gora",
-    "name_html" : "Crna Gora"
+    "nameLatin" : "Crna Gora",
+    "nutsName" : "Црна Гора",
+    "nameAscii" : "Crna Gora",
+    "nameHtml" : "Crna Gora"
   },
   "AT224": {
-    "name_latin" : "Oststeiermark",
-    "nuts_name" : "Oststeiermark",
-    "name_ascii" : "Oststeiermark",
-    "name_html" : "Oststeiermark"
+    "nameLatin" : "Oststeiermark",
+    "nutsName" : "Oststeiermark",
+    "nameAscii" : "Oststeiermark",
+    "nameHtml" : "Oststeiermark"
   },
   "AT315": {
-    "name_latin" : "Traunviertel",
-    "nuts_name" : "Traunviertel",
-    "name_ascii" : "Traunviertel",
-    "name_html" : "Traunviertel"
+    "nameLatin" : "Traunviertel",
+    "nutsName" : "Traunviertel",
+    "nameAscii" : "Traunviertel",
+    "nameHtml" : "Traunviertel"
   },
   "AT331": {
-    "name_latin" : "Außerfern",
-    "nuts_name" : "Außerfern",
-    "name_ascii" : "Ausserfern",
-    "name_html" : "Au&#x00DF;erfern"
+    "nameLatin" : "Außerfern",
+    "nutsName" : "Außerfern",
+    "nameAscii" : "Ausserfern",
+    "nameHtml" : "Au&#x00DF;erfern"
   },
   "AT341": {
-    "name_latin" : "Bludenz-Bregenzer Wald",
-    "nuts_name" : "Bludenz-Bregenzer Wald",
-    "name_ascii" : "Bludenz-Bregenzer Wald",
-    "name_html" : "Bludenz-Bregenzer Wald"
+    "nameLatin" : "Bludenz-Bregenzer Wald",
+    "nutsName" : "Bludenz-Bregenzer Wald",
+    "nameAscii" : "Bludenz-Bregenzer Wald",
+    "nameHtml" : "Bludenz-Bregenzer Wald"
   },
   "BE235": {
-    "name_latin" : "Arr. Oudenaarde",
-    "nuts_name" : "Arr. Oudenaarde",
-    "name_ascii" : "Arr. Oudenaarde",
-    "name_html" : "Arr. Oudenaarde"
+    "nameLatin" : "Arr. Oudenaarde",
+    "nutsName" : "Arr. Oudenaarde",
+    "nameAscii" : "Arr. Oudenaarde",
+    "nameHtml" : "Arr. Oudenaarde"
   },
   "BE258": {
-    "name_latin" : "Arr. Veurne",
-    "nuts_name" : "Arr. Veurne",
-    "name_ascii" : "Arr. Veurne",
-    "name_html" : "Arr. Veurne"
+    "nameLatin" : "Arr. Veurne",
+    "nutsName" : "Arr. Veurne",
+    "nameAscii" : "Arr. Veurne",
+    "nameHtml" : "Arr. Veurne"
   },
   "BE326": {
-    "name_latin" : "Arr. Thuin",
-    "nuts_name" : "Arr. Thuin",
-    "name_ascii" : "Arr. Thuin",
-    "name_html" : "Arr. Thuin"
+    "nameLatin" : "Arr. Thuin",
+    "nutsName" : "Arr. Thuin",
+    "nameAscii" : "Arr. Thuin",
+    "nameHtml" : "Arr. Thuin"
   },
   "BE332": {
-    "name_latin" : "Arr. Liège",
-    "nuts_name" : "Arr. Liège",
-    "name_ascii" : "Arr. Liege",
-    "name_html" : "Arr. Li&#x00E8;ge"
+    "nameLatin" : "Arr. Liège",
+    "nutsName" : "Arr. Liège",
+    "nameAscii" : "Arr. Liege",
+    "nameHtml" : "Arr. Li&#x00E8;ge"
   },
   "BG325": {
-    "name_latin" : "Silistra",
-    "nuts_name" : "Силистра",
-    "name_ascii" : "Silistra",
-    "name_html" : "&#x0421;&#x0438;&#x043B;&#x0438;&#x0441;&#x0442;&#x0440;&#x0430;"
+    "nameLatin" : "Silistra",
+    "nutsName" : "Силистра",
+    "nameAscii" : "Silistra",
+    "nameHtml" : "&#x0421;&#x0438;&#x043B;&#x0438;&#x0441;&#x0442;&#x0440;&#x0430;"
   },
   "BG331": {
-    "name_latin" : "Varna",
-    "nuts_name" : "Варна",
-    "name_ascii" : "Varna",
-    "name_html" : "&#x0412;&#x0430;&#x0440;&#x043D;&#x0430;"
+    "nameLatin" : "Varna",
+    "nutsName" : "Варна",
+    "nameAscii" : "Varna",
+    "nameHtml" : "&#x0412;&#x0430;&#x0440;&#x043D;&#x0430;"
   },
   "BG334": {
-    "name_latin" : "Targovishte",
-    "nuts_name" : "Търговище",
-    "name_ascii" : "Targovishte",
-    "name_html" : "&#x0422;&#x044A;&#x0440;&#x0433;&#x043E;&#x0432;&#x0438;&#x0449;&#x0435;"
+    "nameLatin" : "Targovishte",
+    "nutsName" : "Търговище",
+    "nameAscii" : "Targovishte",
+    "nameHtml" : "&#x0422;&#x044A;&#x0440;&#x0433;&#x043E;&#x0432;&#x0438;&#x0449;&#x0435;"
   },
   "BG341": {
-    "name_latin" : "Burgas",
-    "nuts_name" : "Бургас",
-    "name_ascii" : "Burgas",
-    "name_html" : "&#x0411;&#x0443;&#x0440;&#x0433;&#x0430;&#x0441;"
+    "nameLatin" : "Burgas",
+    "nutsName" : "Бургас",
+    "nameAscii" : "Burgas",
+    "nameHtml" : "&#x0411;&#x0443;&#x0440;&#x0433;&#x0430;&#x0441;"
   },
   "BG344": {
-    "name_latin" : "Stara Zagora",
-    "nuts_name" : "Стара Загора",
-    "name_ascii" : "Stara Zagora",
-    "name_html" : "&#x0421;&#x0442;&#x0430;&#x0440;&#x0430; &#x0417;&#x0430;&#x0433;&#x043E;&#x0440;&#x0430;"
+    "nameLatin" : "Stara Zagora",
+    "nutsName" : "Стара Загора",
+    "nameAscii" : "Stara Zagora",
+    "nameHtml" : "&#x0421;&#x0442;&#x0430;&#x0440;&#x0430; &#x0417;&#x0430;&#x0433;&#x043E;&#x0440;&#x0430;"
   },
   "BG422": {
-    "name_latin" : "Haskovo",
-    "nuts_name" : "Хасково",
-    "name_ascii" : "Haskovo",
-    "name_html" : "&#x0425;&#x0430;&#x0441;&#x043A;&#x043E;&#x0432;&#x043E;"
+    "nameLatin" : "Haskovo",
+    "nutsName" : "Хасково",
+    "nameAscii" : "Haskovo",
+    "nameHtml" : "&#x0425;&#x0430;&#x0441;&#x043A;&#x043E;&#x0432;&#x043E;"
   },
   "BG424": {
-    "name_latin" : "Smolyan",
-    "nuts_name" : "Смолян",
-    "name_ascii" : "Smolyan",
-    "name_html" : "&#x0421;&#x043C;&#x043E;&#x043B;&#x044F;&#x043D;"
+    "nameLatin" : "Smolyan",
+    "nutsName" : "Смолян",
+    "nameAscii" : "Smolyan",
+    "nameHtml" : "&#x0421;&#x043C;&#x043E;&#x043B;&#x044F;&#x043D;"
   },
   "CH031": {
-    "name_latin" : "Basel-Stadt",
-    "nuts_name" : "Basel-Stadt",
-    "name_ascii" : "Basel-Stadt",
-    "name_html" : "Basel-Stadt"
+    "nameLatin" : "Basel-Stadt",
+    "nutsName" : "Basel-Stadt",
+    "nameAscii" : "Basel-Stadt",
+    "nameHtml" : "Basel-Stadt"
   },
   "CH051": {
-    "name_latin" : "Glarus",
-    "nuts_name" : "Glarus",
-    "name_ascii" : "Glarus",
-    "name_html" : "Glarus"
+    "nameLatin" : "Glarus",
+    "nutsName" : "Glarus",
+    "nameAscii" : "Glarus",
+    "nameHtml" : "Glarus"
   },
   "CH054": {
-    "name_latin" : "Appenzell Innerrhoden",
-    "nuts_name" : "Appenzell Innerrhoden",
-    "name_ascii" : "Appenzell Innerrhoden",
-    "name_html" : "Appenzell Innerrhoden"
+    "nameLatin" : "Appenzell Innerrhoden",
+    "nutsName" : "Appenzell Innerrhoden",
+    "nameAscii" : "Appenzell Innerrhoden",
+    "nameHtml" : "Appenzell Innerrhoden"
   },
   "CZ051": {
-    "name_latin" : "Liberecký kraj",
-    "nuts_name" : "Liberecký kraj",
-    "name_ascii" : "Liberecky kraj",
-    "name_html" : "Libereck&#x00FD; kraj"
+    "nameLatin" : "Liberecký kraj",
+    "nutsName" : "Liberecký kraj",
+    "nameAscii" : "Liberecky kraj",
+    "nameHtml" : "Libereck&#x00FD; kraj"
   },
   "CZ071": {
-    "name_latin" : "Olomoucký kraj",
-    "nuts_name" : "Olomoucký kraj",
-    "name_ascii" : "Olomoucky kraj",
-    "name_html" : "Olomouck&#x00FD; kraj"
+    "nameLatin" : "Olomoucký kraj",
+    "nutsName" : "Olomoucký kraj",
+    "nameAscii" : "Olomoucky kraj",
+    "nameHtml" : "Olomouck&#x00FD; kraj"
   },
   "DE116": {
-    "name_latin" : "Rems-Murr-Kreis",
-    "nuts_name" : "Rems-Murr-Kreis",
-    "name_ascii" : "Rems-Murr-Kreis",
-    "name_html" : "Rems-Murr-Kreis"
+    "nameLatin" : "Rems-Murr-Kreis",
+    "nutsName" : "Rems-Murr-Kreis",
+    "nameAscii" : "Rems-Murr-Kreis",
+    "nameHtml" : "Rems-Murr-Kreis"
   },
   "DE11A": {
-    "name_latin" : "Schwäbisch Hall",
-    "nuts_name" : "Schwäbisch Hall",
-    "name_ascii" : "Schwabisch Hall",
-    "name_html" : "Schw&#x00E4;bisch Hall"
+    "nameLatin" : "Schwäbisch Hall",
+    "nutsName" : "Schwäbisch Hall",
+    "nameAscii" : "Schwabisch Hall",
+    "nameHtml" : "Schw&#x00E4;bisch Hall"
   },
   "DE122": {
-    "name_latin" : "Karlsruhe, Stadtkreis",
-    "nuts_name" : "Karlsruhe, Stadtkreis",
-    "name_ascii" : "Karlsruhe, Stadtkreis",
-    "name_html" : "Karlsruhe, Stadtkreis"
+    "nameLatin" : "Karlsruhe, Stadtkreis",
+    "nutsName" : "Karlsruhe, Stadtkreis",
+    "nameAscii" : "Karlsruhe, Stadtkreis",
+    "nameHtml" : "Karlsruhe, Stadtkreis"
   },
   "DE129": {
-    "name_latin" : "Pforzheim, Stadtkreis",
-    "nuts_name" : "Pforzheim, Stadtkreis",
-    "name_ascii" : "Pforzheim, Stadtkreis",
-    "name_html" : "Pforzheim, Stadtkreis"
+    "nameLatin" : "Pforzheim, Stadtkreis",
+    "nutsName" : "Pforzheim, Stadtkreis",
+    "nameAscii" : "Pforzheim, Stadtkreis",
+    "nameHtml" : "Pforzheim, Stadtkreis"
   },
   "DE133": {
-    "name_latin" : "Emmendingen",
-    "nuts_name" : "Emmendingen",
-    "name_ascii" : "Emmendingen",
-    "name_html" : "Emmendingen"
+    "nameLatin" : "Emmendingen",
+    "nutsName" : "Emmendingen",
+    "nameAscii" : "Emmendingen",
+    "nameHtml" : "Emmendingen"
   },
   "DE138": {
-    "name_latin" : "Konstanz",
-    "nuts_name" : "Konstanz",
-    "name_ascii" : "Konstanz",
-    "name_html" : "Konstanz"
+    "nameLatin" : "Konstanz",
+    "nutsName" : "Konstanz",
+    "nameAscii" : "Konstanz",
+    "nameHtml" : "Konstanz"
   },
   "DE142": {
-    "name_latin" : "Tübingen, Landkreis",
-    "nuts_name" : "Tübingen, Landkreis",
-    "name_ascii" : "Tubingen, Landkreis",
-    "name_html" : "T&#x00FC;bingen, Landkreis"
+    "nameLatin" : "Tübingen, Landkreis",
+    "nutsName" : "Tübingen, Landkreis",
+    "nameAscii" : "Tubingen, Landkreis",
+    "nameHtml" : "T&#x00FC;bingen, Landkreis"
   },
   "DE212": {
-    "name_latin" : "München, Kreisfreie Stadt",
-    "nuts_name" : "München, Kreisfreie Stadt",
-    "name_ascii" : "Munchen, Kreisfreie Stadt",
-    "name_html" : "M&#x00FC;nchen, Kreisfreie Stadt"
+    "nameLatin" : "München, Kreisfreie Stadt",
+    "nutsName" : "München, Kreisfreie Stadt",
+    "nameAscii" : "Munchen, Kreisfreie Stadt",
+    "nameHtml" : "M&#x00FC;nchen, Kreisfreie Stadt"
   },
   "DE227": {
-    "name_latin" : "Landshut, Landkreis",
-    "nuts_name" : "Landshut, Landkreis",
-    "name_ascii" : "Landshut, Landkreis",
-    "name_html" : "Landshut, Landkreis"
+    "nameLatin" : "Landshut, Landkreis",
+    "nutsName" : "Landshut, Landkreis",
+    "nameAscii" : "Landshut, Landkreis",
+    "nameHtml" : "Landshut, Landkreis"
   },
   "DE231": {
-    "name_latin" : "Amberg, Kreisfreie Stadt",
-    "nuts_name" : "Amberg, Kreisfreie Stadt",
-    "name_ascii" : "Amberg, Kreisfreie Stadt",
-    "name_html" : "Amberg, Kreisfreie Stadt"
+    "nameLatin" : "Amberg, Kreisfreie Stadt",
+    "nutsName" : "Amberg, Kreisfreie Stadt",
+    "nameAscii" : "Amberg, Kreisfreie Stadt",
+    "nameHtml" : "Amberg, Kreisfreie Stadt"
   },
   "DE237": {
-    "name_latin" : "Neustadt a. d. Waldnaab",
-    "nuts_name" : "Neustadt a. d. Waldnaab",
-    "name_ascii" : "Neustadt a. d. Waldnaab",
-    "name_html" : "Neustadt a. d. Waldnaab"
+    "nameLatin" : "Neustadt a. d. Waldnaab",
+    "nutsName" : "Neustadt a. d. Waldnaab",
+    "nameAscii" : "Neustadt a. d. Waldnaab",
+    "nameHtml" : "Neustadt a. d. Waldnaab"
   },
   "DE243": {
-    "name_latin" : "Coburg, Kreisfreie Stadt",
-    "nuts_name" : "Coburg, Kreisfreie Stadt",
-    "name_ascii" : "Coburg, Kreisfreie Stadt",
-    "name_html" : "Coburg, Kreisfreie Stadt"
+    "nameLatin" : "Coburg, Kreisfreie Stadt",
+    "nutsName" : "Coburg, Kreisfreie Stadt",
+    "nameAscii" : "Coburg, Kreisfreie Stadt",
+    "nameHtml" : "Coburg, Kreisfreie Stadt"
   },
   "DE24B": {
-    "name_latin" : "Kulmbach",
-    "nuts_name" : "Kulmbach",
-    "name_ascii" : "Kulmbach",
-    "name_html" : "Kulmbach"
+    "nameLatin" : "Kulmbach",
+    "nutsName" : "Kulmbach",
+    "nameAscii" : "Kulmbach",
+    "nameHtml" : "Kulmbach"
   },
   "DE253": {
-    "name_latin" : "Fürth, Kreisfreie Stadt",
-    "nuts_name" : "Fürth, Kreisfreie Stadt",
-    "name_ascii" : "Furth, Kreisfreie Stadt",
-    "name_html" : "F&#x00FC;rth, Kreisfreie Stadt"
+    "nameLatin" : "Fürth, Kreisfreie Stadt",
+    "nutsName" : "Fürth, Kreisfreie Stadt",
+    "nameAscii" : "Furth, Kreisfreie Stadt",
+    "nameHtml" : "F&#x00FC;rth, Kreisfreie Stadt"
   },
   "DE258": {
-    "name_latin" : "Fürth, Landkreis",
-    "nuts_name" : "Fürth, Landkreis",
-    "name_ascii" : "Furth, Landkreis",
-    "name_html" : "F&#x00FC;rth, Landkreis"
+    "nameLatin" : "Fürth, Landkreis",
+    "nutsName" : "Fürth, Landkreis",
+    "nameAscii" : "Furth, Landkreis",
+    "nameHtml" : "F&#x00FC;rth, Landkreis"
   },
   "DE263": {
-    "name_latin" : "Würzburg, Kreisfreie Stadt",
-    "nuts_name" : "Würzburg, Kreisfreie Stadt",
-    "name_ascii" : "Wurzburg, Kreisfreie Stadt",
-    "name_html" : "W&#x00FC;rzburg, Kreisfreie Stadt"
+    "nameLatin" : "Würzburg, Kreisfreie Stadt",
+    "nutsName" : "Würzburg, Kreisfreie Stadt",
+    "nameAscii" : "Wurzburg, Kreisfreie Stadt",
+    "nameHtml" : "W&#x00FC;rzburg, Kreisfreie Stadt"
   },
   "DE26B": {
-    "name_latin" : "Schweinfurt, Landkreis",
-    "nuts_name" : "Schweinfurt, Landkreis",
-    "name_ascii" : "Schweinfurt, Landkreis",
-    "name_html" : "Schweinfurt, Landkreis"
+    "nameLatin" : "Schweinfurt, Landkreis",
+    "nutsName" : "Schweinfurt, Landkreis",
+    "nameAscii" : "Schweinfurt, Landkreis",
+    "nameHtml" : "Schweinfurt, Landkreis"
   },
   "DE273": {
-    "name_latin" : "Kempten (Allgäu), Kreisfreie Stadt",
-    "nuts_name" : "Kempten (Allgäu), Kreisfreie Stadt",
-    "name_ascii" : "Kempten (Allgau), Kreisfreie Stadt",
-    "name_html" : "Kempten (Allg&#x00E4;u), Kreisfreie Stadt"
+    "nameLatin" : "Kempten (Allgäu), Kreisfreie Stadt",
+    "nutsName" : "Kempten (Allgäu), Kreisfreie Stadt",
+    "nameAscii" : "Kempten (Allgau), Kreisfreie Stadt",
+    "nameHtml" : "Kempten (Allg&#x00E4;u), Kreisfreie Stadt"
   },
   "DE406": {
-    "name_latin" : "Dahme-Spreewald",
-    "nuts_name" : "Dahme-Spreewald",
-    "name_ascii" : "Dahme-Spreewald",
-    "name_html" : "Dahme-Spreewald"
+    "nameLatin" : "Dahme-Spreewald",
+    "nutsName" : "Dahme-Spreewald",
+    "nameAscii" : "Dahme-Spreewald",
+    "nameHtml" : "Dahme-Spreewald"
   },
   "DE40C": {
-    "name_latin" : "Oder-Spree",
-    "nuts_name" : "Oder-Spree",
-    "name_ascii" : "Oder-Spree",
-    "name_html" : "Oder-Spree"
+    "nameLatin" : "Oder-Spree",
+    "nutsName" : "Oder-Spree",
+    "nameAscii" : "Oder-Spree",
+    "nameHtml" : "Oder-Spree"
   },
   "DE40G": {
-    "name_latin" : "Spree-Neiße",
-    "nuts_name" : "Spree-Neiße",
-    "name_ascii" : "Spree-Neisse",
-    "name_html" : "Spree-Nei&#x00DF;e"
+    "nameLatin" : "Spree-Neiße",
+    "nutsName" : "Spree-Neiße",
+    "nameAscii" : "Spree-Neisse",
+    "nameHtml" : "Spree-Nei&#x00DF;e"
   },
   "DE502": {
-    "name_latin" : "Bremerhaven, Kreisfreie Stadt",
-    "nuts_name" : "Bremerhaven, Kreisfreie Stadt",
-    "name_ascii" : "Bremerhaven, Kreisfreie Stadt",
-    "name_html" : "Bremerhaven, Kreisfreie Stadt"
+    "nameLatin" : "Bremerhaven, Kreisfreie Stadt",
+    "nutsName" : "Bremerhaven, Kreisfreie Stadt",
+    "nameAscii" : "Bremerhaven, Kreisfreie Stadt",
+    "nameHtml" : "Bremerhaven, Kreisfreie Stadt"
   },
   "DE713": {
-    "name_latin" : "Offenbach am Main, Kreisfreie Stadt",
-    "nuts_name" : "Offenbach am Main, Kreisfreie Stadt",
-    "name_ascii" : "Offenbach am Main, Kreisfreie Stadt",
-    "name_html" : "Offenbach am Main, Kreisfreie Stadt"
+    "nameLatin" : "Offenbach am Main, Kreisfreie Stadt",
+    "nutsName" : "Offenbach am Main, Kreisfreie Stadt",
+    "nameAscii" : "Offenbach am Main, Kreisfreie Stadt",
+    "nameHtml" : "Offenbach am Main, Kreisfreie Stadt"
   },
   "DE71D": {
-    "name_latin" : "Rheingau-Taunus-Kreis",
-    "nuts_name" : "Rheingau-Taunus-Kreis",
-    "name_ascii" : "Rheingau-Taunus-Kreis",
-    "name_html" : "Rheingau-Taunus-Kreis"
+    "nameLatin" : "Rheingau-Taunus-Kreis",
+    "nutsName" : "Rheingau-Taunus-Kreis",
+    "nameAscii" : "Rheingau-Taunus-Kreis",
+    "nameHtml" : "Rheingau-Taunus-Kreis"
   },
   "DE724": {
-    "name_latin" : "Marburg-Biedenkopf",
-    "nuts_name" : "Marburg-Biedenkopf",
-    "name_ascii" : "Marburg-Biedenkopf",
-    "name_html" : "Marburg-Biedenkopf"
+    "nameLatin" : "Marburg-Biedenkopf",
+    "nutsName" : "Marburg-Biedenkopf",
+    "nameAscii" : "Marburg-Biedenkopf",
+    "nameHtml" : "Marburg-Biedenkopf"
   },
   "DE735": {
-    "name_latin" : "Schwalm-Eder-Kreis",
-    "nuts_name" : "Schwalm-Eder-Kreis",
-    "name_ascii" : "Schwalm-Eder-Kreis",
-    "name_html" : "Schwalm-Eder-Kreis"
+    "nameLatin" : "Schwalm-Eder-Kreis",
+    "nutsName" : "Schwalm-Eder-Kreis",
+    "nameAscii" : "Schwalm-Eder-Kreis",
+    "nameHtml" : "Schwalm-Eder-Kreis"
   },
   "DE803": {
-    "name_latin" : "Rostock, Kreisfreie Stadt",
-    "nuts_name" : "Rostock, Kreisfreie Stadt",
-    "name_ascii" : "Rostock, Kreisfreie Stadt",
-    "name_html" : "Rostock, Kreisfreie Stadt"
+    "nameLatin" : "Rostock, Kreisfreie Stadt",
+    "nutsName" : "Rostock, Kreisfreie Stadt",
+    "nameAscii" : "Rostock, Kreisfreie Stadt",
+    "nameHtml" : "Rostock, Kreisfreie Stadt"
   },
   "DE80M": {
-    "name_latin" : "Nordwestmecklenburg",
-    "nuts_name" : "Nordwestmecklenburg",
-    "name_ascii" : "Nordwestmecklenburg",
-    "name_html" : "Nordwestmecklenburg"
+    "nameLatin" : "Nordwestmecklenburg",
+    "nutsName" : "Nordwestmecklenburg",
+    "nameAscii" : "Nordwestmecklenburg",
+    "nameHtml" : "Nordwestmecklenburg"
   },
   "DE912": {
-    "name_latin" : "Salzgitter, Kreisfreie Stadt",
-    "nuts_name" : "Salzgitter, Kreisfreie Stadt",
-    "name_ascii" : "Salzgitter, Kreisfreie Stadt",
-    "name_html" : "Salzgitter, Kreisfreie Stadt"
+    "nameLatin" : "Salzgitter, Kreisfreie Stadt",
+    "nutsName" : "Salzgitter, Kreisfreie Stadt",
+    "nameAscii" : "Salzgitter, Kreisfreie Stadt",
+    "nameHtml" : "Salzgitter, Kreisfreie Stadt"
   },
   "DE943": {
-    "name_latin" : "Oldenburg (Oldenburg), Kreisfreie Stadt",
-    "nuts_name" : "Oldenburg (Oldenburg), Kreisfreie Stadt",
-    "name_ascii" : "Oldenburg (Oldenburg), Kreisfreie Stadt",
-    "name_html" : "Oldenburg (Oldenburg), Kreisfreie Stadt"
+    "nameLatin" : "Oldenburg (Oldenburg), Kreisfreie Stadt",
+    "nutsName" : "Oldenburg (Oldenburg), Kreisfreie Stadt",
+    "nameAscii" : "Oldenburg (Oldenburg), Kreisfreie Stadt",
+    "nameHtml" : "Oldenburg (Oldenburg), Kreisfreie Stadt"
   },
   "DE94E": {
-    "name_latin" : "Osnabrück, Landkreis",
-    "nuts_name" : "Osnabrück, Landkreis",
-    "name_ascii" : "Osnabruck, Landkreis",
-    "name_html" : "Osnabr&#x00FC;ck, Landkreis"
+    "nameLatin" : "Osnabrück, Landkreis",
+    "nutsName" : "Osnabrück, Landkreis",
+    "nameAscii" : "Osnabruck, Landkreis",
+    "nameHtml" : "Osnabr&#x00FC;ck, Landkreis"
   },
   "DEA12": {
-    "name_latin" : "Duisburg, Kreisfreie Stadt",
-    "nuts_name" : "Duisburg, Kreisfreie Stadt",
-    "name_ascii" : "Duisburg, Kreisfreie Stadt",
-    "name_html" : "Duisburg, Kreisfreie Stadt"
+    "nameLatin" : "Duisburg, Kreisfreie Stadt",
+    "nutsName" : "Duisburg, Kreisfreie Stadt",
+    "nameAscii" : "Duisburg, Kreisfreie Stadt",
+    "nameHtml" : "Duisburg, Kreisfreie Stadt"
   },
   "DEA16": {
-    "name_latin" : "Mülheim an der Ruhr,Kreisfreie Stadt",
-    "nuts_name" : "Mülheim an der Ruhr,Kreisfreie Stadt",
-    "name_ascii" : "Mulheim an der Ruhr,Kreisfreie Stadt",
-    "name_html" : "M&#x00FC;lheim an der Ruhr,Kreisfreie Stadt"
+    "nameLatin" : "Mülheim an der Ruhr,Kreisfreie Stadt",
+    "nutsName" : "Mülheim an der Ruhr,Kreisfreie Stadt",
+    "nameAscii" : "Mulheim an der Ruhr,Kreisfreie Stadt",
+    "nameHtml" : "M&#x00FC;lheim an der Ruhr,Kreisfreie Stadt"
   },
   "DEA22": {
-    "name_latin" : "Bonn, Kreisfreie Stadt",
-    "nuts_name" : "Bonn, Kreisfreie Stadt",
-    "name_ascii" : "Bonn, Kreisfreie Stadt",
-    "name_html" : "Bonn, Kreisfreie Stadt"
+    "nameLatin" : "Bonn, Kreisfreie Stadt",
+    "nutsName" : "Bonn, Kreisfreie Stadt",
+    "nameAscii" : "Bonn, Kreisfreie Stadt",
+    "nameHtml" : "Bonn, Kreisfreie Stadt"
   },
   "DEA2A": {
-    "name_latin" : "Oberbergischer Kreis",
-    "nuts_name" : "Oberbergischer Kreis",
-    "name_ascii" : "Oberbergischer Kreis",
-    "name_html" : "Oberbergischer Kreis"
+    "nameLatin" : "Oberbergischer Kreis",
+    "nutsName" : "Oberbergischer Kreis",
+    "nameAscii" : "Oberbergischer Kreis",
+    "nameHtml" : "Oberbergischer Kreis"
   },
   "DEA31": {
-    "name_latin" : "Bottrop, Kreisfreie Stadt",
-    "nuts_name" : "Bottrop, Kreisfreie Stadt",
-    "name_ascii" : "Bottrop, Kreisfreie Stadt",
-    "name_html" : "Bottrop, Kreisfreie Stadt"
+    "nameLatin" : "Bottrop, Kreisfreie Stadt",
+    "nutsName" : "Bottrop, Kreisfreie Stadt",
+    "nameAscii" : "Bottrop, Kreisfreie Stadt",
+    "nameHtml" : "Bottrop, Kreisfreie Stadt"
   },
   "DEA41": {
-    "name_latin" : "Bielefeld, Kreisfreie Stadt",
-    "nuts_name" : "Bielefeld, Kreisfreie Stadt",
-    "name_ascii" : "Bielefeld, Kreisfreie Stadt",
-    "name_html" : "Bielefeld, Kreisfreie Stadt"
+    "nameLatin" : "Bielefeld, Kreisfreie Stadt",
+    "nutsName" : "Bielefeld, Kreisfreie Stadt",
+    "nameAscii" : "Bielefeld, Kreisfreie Stadt",
+    "nameHtml" : "Bielefeld, Kreisfreie Stadt"
   },
   "DEB1B": {
-    "name_latin" : "Westerwaldkreis",
-    "nuts_name" : "Westerwaldkreis",
-    "name_ascii" : "Westerwaldkreis",
-    "name_html" : "Westerwaldkreis"
+    "nameLatin" : "Westerwaldkreis",
+    "nutsName" : "Westerwaldkreis",
+    "nameAscii" : "Westerwaldkreis",
+    "nameHtml" : "Westerwaldkreis"
   },
   "DEB24": {
-    "name_latin" : "Vulkaneifel",
-    "nuts_name" : "Vulkaneifel",
-    "name_ascii" : "Vulkaneifel",
-    "name_html" : "Vulkaneifel"
+    "nameLatin" : "Vulkaneifel",
+    "nutsName" : "Vulkaneifel",
+    "nameAscii" : "Vulkaneifel",
+    "nameHtml" : "Vulkaneifel"
   },
   "DEB31": {
-    "name_latin" : "Frankenthal (Pfalz), Kreisfreie Stadt",
-    "nuts_name" : "Frankenthal (Pfalz), Kreisfreie Stadt",
-    "name_ascii" : "Frankenthal (Pfalz), Kreisfreie Stadt",
-    "name_html" : "Frankenthal (Pfalz), Kreisfreie Stadt"
+    "nameLatin" : "Frankenthal (Pfalz), Kreisfreie Stadt",
+    "nutsName" : "Frankenthal (Pfalz), Kreisfreie Stadt",
+    "nameAscii" : "Frankenthal (Pfalz), Kreisfreie Stadt",
+    "nameHtml" : "Frankenthal (Pfalz), Kreisfreie Stadt"
   },
   "DEB36": {
-    "name_latin" : "Neustadt an der Weinstraße, Kreisfreie Stadt",
-    "nuts_name" : "Neustadt an der Weinstraße, Kreisfreie Stadt",
-    "name_ascii" : "Neustadt an der Weinstrasse, Kreisfreie Stadt",
-    "name_html" : "Neustadt an der Weinstra&#x00DF;e, Kreisfreie Stadt"
+    "nameLatin" : "Neustadt an der Weinstraße, Kreisfreie Stadt",
+    "nutsName" : "Neustadt an der Weinstraße, Kreisfreie Stadt",
+    "nameAscii" : "Neustadt an der Weinstrasse, Kreisfreie Stadt",
+    "nameHtml" : "Neustadt an der Weinstra&#x00DF;e, Kreisfreie Stadt"
   },
   "DEB3I": {
-    "name_latin" : "Rhein-Pfalz-Kreis",
-    "nuts_name" : "Rhein-Pfalz-Kreis",
-    "name_ascii" : "Rhein-Pfalz-Kreis",
-    "name_html" : "Rhein-Pfalz-Kreis"
+    "nameLatin" : "Rhein-Pfalz-Kreis",
+    "nutsName" : "Rhein-Pfalz-Kreis",
+    "nameAscii" : "Rhein-Pfalz-Kreis",
+    "nameHtml" : "Rhein-Pfalz-Kreis"
   },
   "DEC01": {
-    "name_latin" : "Regionalverband Saarbrücken",
-    "nuts_name" : "Regionalverband Saarbrücken",
-    "name_ascii" : "Regionalverband Saarbrucken",
-    "name_html" : "Regionalverband Saarbr&#x00FC;cken"
+    "nameLatin" : "Regionalverband Saarbrücken",
+    "nutsName" : "Regionalverband Saarbrücken",
+    "nameAscii" : "Regionalverband Saarbrucken",
+    "nameHtml" : "Regionalverband Saarbr&#x00FC;cken"
   },
   "DED2F": {
-    "name_latin" : "Sächsische Schweiz-Osterzgebirge",
-    "nuts_name" : "Sächsische Schweiz-Osterzgebirge",
-    "name_ascii" : "Sachsische Schweiz-Osterzgebirge",
-    "name_html" : "S&#x00E4;chsische Schweiz-Osterzgebirge"
+    "nameLatin" : "Sächsische Schweiz-Osterzgebirge",
+    "nutsName" : "Sächsische Schweiz-Osterzgebirge",
+    "nameAscii" : "Sachsische Schweiz-Osterzgebirge",
+    "nameHtml" : "S&#x00E4;chsische Schweiz-Osterzgebirge"
   },
   "DEE03": {
-    "name_latin" : "Magdeburg, Kreisfreie Stadt",
-    "nuts_name" : "Magdeburg, Kreisfreie Stadt",
-    "name_ascii" : "Magdeburg, Kreisfreie Stadt",
-    "name_html" : "Magdeburg, Kreisfreie Stadt"
+    "nameLatin" : "Magdeburg, Kreisfreie Stadt",
+    "nutsName" : "Magdeburg, Kreisfreie Stadt",
+    "nameAscii" : "Magdeburg, Kreisfreie Stadt",
+    "nameHtml" : "Magdeburg, Kreisfreie Stadt"
   },
   "DEF0A": {
-    "name_latin" : "Plön",
-    "nuts_name" : "Plön",
-    "name_ascii" : "Plon",
-    "name_html" : "Pl&#x00F6;n"
+    "nameLatin" : "Plön",
+    "nutsName" : "Plön",
+    "nameAscii" : "Plon",
+    "nameHtml" : "Pl&#x00F6;n"
   },
   "DEF0C": {
-    "name_latin" : "Schleswig-Flensburg",
-    "nuts_name" : "Schleswig-Flensburg",
-    "name_ascii" : "Schleswig-Flensburg",
-    "name_html" : "Schleswig-Flensburg"
+    "nameLatin" : "Schleswig-Flensburg",
+    "nutsName" : "Schleswig-Flensburg",
+    "nameAscii" : "Schleswig-Flensburg",
+    "nameHtml" : "Schleswig-Flensburg"
   },
   "DEG02": {
-    "name_latin" : "Gera, Kreisfreie Stadt",
-    "nuts_name" : "Gera, Kreisfreie Stadt",
-    "name_ascii" : "Gera, Kreisfreie Stadt",
-    "name_html" : "Gera, Kreisfreie Stadt"
+    "nameLatin" : "Gera, Kreisfreie Stadt",
+    "nutsName" : "Gera, Kreisfreie Stadt",
+    "nameAscii" : "Gera, Kreisfreie Stadt",
+    "nameHtml" : "Gera, Kreisfreie Stadt"
   },
   "DEG0A": {
-    "name_latin" : "Kyffhäuserkreis",
-    "nuts_name" : "Kyffhäuserkreis",
-    "name_ascii" : "Kyffhauserkreis",
-    "name_html" : "Kyffh&#x00E4;userkreis"
+    "nameLatin" : "Kyffhäuserkreis",
+    "nutsName" : "Kyffhäuserkreis",
+    "nameAscii" : "Kyffhauserkreis",
+    "nameHtml" : "Kyffh&#x00E4;userkreis"
   },
   "DEG0G": {
-    "name_latin" : "Weimarer Land",
-    "nuts_name" : "Weimarer Land",
-    "name_ascii" : "Weimarer Land",
-    "name_html" : "Weimarer Land"
+    "nameLatin" : "Weimarer Land",
+    "nutsName" : "Weimarer Land",
+    "nameAscii" : "Weimarer Land",
+    "nameHtml" : "Weimarer Land"
   },
   "DEG0M": {
-    "name_latin" : "Altenburger Land",
-    "nuts_name" : "Altenburger Land",
-    "name_ascii" : "Altenburger Land",
-    "name_html" : "Altenburger Land"
+    "nameLatin" : "Altenburger Land",
+    "nutsName" : "Altenburger Land",
+    "nameAscii" : "Altenburger Land",
+    "nameHtml" : "Altenburger Land"
   },
   "DK011": {
-    "name_latin" : "Byen København",
-    "nuts_name" : "Byen København",
-    "name_ascii" : "Byen Kobenhavn",
-    "name_html" : "Byen K&#x00F8;benhavn"
+    "nameLatin" : "Byen København",
+    "nutsName" : "Byen København",
+    "nameAscii" : "Byen Kobenhavn",
+    "nameHtml" : "Byen K&#x00F8;benhavn"
   },
   "DK021": {
-    "name_latin" : "Østsjælland",
-    "nuts_name" : "Østsjælland",
-    "name_ascii" : "Ostsjaelland",
-    "name_html" : "&#x00D8;stsj&#x00E6;lland"
+    "nameLatin" : "Østsjælland",
+    "nutsName" : "Østsjælland",
+    "nameAscii" : "Ostsjaelland",
+    "nameHtml" : "&#x00D8;stsj&#x00E6;lland"
   },
   "EE004": {
-    "name_latin" : "Lääne-Eesti",
-    "nuts_name" : "Lääne-Eesti",
-    "name_ascii" : "Laane-Eesti",
-    "name_html" : "L&#x00E4;&#x00E4;ne-Eesti"
+    "nameLatin" : "Lääne-Eesti",
+    "nutsName" : "Lääne-Eesti",
+    "nameAscii" : "Laane-Eesti",
+    "nameHtml" : "L&#x00E4;&#x00E4;ne-Eesti"
   },
   "EL301": {
-    "name_latin" : "Boreios Tomeas Athinon",
-    "nuts_name" : "Βόρειος Τομέας Αθηνών",
-    "name_ascii" : "Boreios Tomeas Athinon",
-    "name_html" : "&#x0392;&#x03CC;&#x03C1;&#x03B5;&#x03B9;&#x03BF;&#x03C2; &#x03A4;&#x03BF;&#x03BC;&#x03AD;&#x03B1;&#x03C2; &#x0391;&#x03B8;&#x03B7;&#x03BD;&#x03CE;&#x03BD;"
+    "nameLatin" : "Boreios Tomeas Athinon",
+    "nutsName" : "Βόρειος Τομέας Αθηνών",
+    "nameAscii" : "Boreios Tomeas Athinon",
+    "nameHtml" : "&#x0392;&#x03CC;&#x03C1;&#x03B5;&#x03B9;&#x03BF;&#x03C2; &#x03A4;&#x03BF;&#x03BC;&#x03AD;&#x03B1;&#x03C2; &#x0391;&#x03B8;&#x03B7;&#x03BD;&#x03CE;&#x03BD;"
   },
   "EL304": {
-    "name_latin" : "Notios Tomeas Athinon",
-    "nuts_name" : "Νότιος Τομέας Αθηνών",
-    "name_ascii" : "Notios Tomeas Athinon",
-    "name_html" : "&#x039D;&#x03CC;&#x03C4;&#x03B9;&#x03BF;&#x03C2; &#x03A4;&#x03BF;&#x03BC;&#x03AD;&#x03B1;&#x03C2; &#x0391;&#x03B8;&#x03B7;&#x03BD;&#x03CE;&#x03BD;"
+    "nameLatin" : "Notios Tomeas Athinon",
+    "nutsName" : "Νότιος Τομέας Αθηνών",
+    "nameAscii" : "Notios Tomeas Athinon",
+    "nameHtml" : "&#x039D;&#x03CC;&#x03C4;&#x03B9;&#x03BF;&#x03C2; &#x03A4;&#x03BF;&#x03BC;&#x03AD;&#x03B1;&#x03C2; &#x0391;&#x03B8;&#x03B7;&#x03BD;&#x03CE;&#x03BD;"
   },
   "EL307": {
-    "name_latin" : "Peiraias, Nisoi",
-    "nuts_name" : "Πειραιάς, Νήσοι",
-    "name_ascii" : "Peiraias, Nisoi",
-    "name_html" : "&#x03A0;&#x03B5;&#x03B9;&#x03C1;&#x03B1;&#x03B9;&#x03AC;&#x03C2;, &#x039D;&#x03AE;&#x03C3;&#x03BF;&#x03B9;"
+    "nameLatin" : "Peiraias, Nisoi",
+    "nutsName" : "Πειραιάς, Νήσοι",
+    "nameAscii" : "Peiraias, Nisoi",
+    "nameHtml" : "&#x03A0;&#x03B5;&#x03B9;&#x03C1;&#x03B1;&#x03B9;&#x03AC;&#x03C2;, &#x039D;&#x03AE;&#x03C3;&#x03BF;&#x03B9;"
   },
   "EL411": {
-    "name_latin" : "Lesbos, Limnos",
-    "nuts_name" : "Λέσβος, Λήμνος",
-    "name_ascii" : "Lesbos, Limnos",
-    "name_html" : "&#x039B;&#x03AD;&#x03C3;&#x03B2;&#x03BF;&#x03C2;, &#x039B;&#x03AE;&#x03BC;&#x03BD;&#x03BF;&#x03C2;"
+    "nameLatin" : "Lesbos, Limnos",
+    "nutsName" : "Λέσβος, Λήμνος",
+    "nameAscii" : "Lesbos, Limnos",
+    "nameHtml" : "&#x039B;&#x03AD;&#x03C3;&#x03B2;&#x03BF;&#x03C2;, &#x039B;&#x03AE;&#x03BC;&#x03BD;&#x03BF;&#x03C2;"
   },
   "EL422": {
-    "name_latin" : "Andros, Thira, Kea, Milos, Mikonos, Naxos, Paros, Siros, Tinos",
-    "nuts_name" : "Άνδρος, Θήρα, Κέα, Μήλος, Μύκονος, Νάξος, Πάρος, Σύρος, Τήνος",
-    "name_ascii" : "Andros, Thira, Kea, Milos, Mikonos, Naxos, Paros, Siros, Tinos",
-    "name_html" : "&#x0386;&#x03BD;&#x03B4;&#x03C1;&#x03BF;&#x03C2;, &#x0398;&#x03AE;&#x03C1;&#x03B1;, &#x039A;&#x03AD;&#x03B1;, &#x039C;&#x03AE;&#x03BB;&#x03BF;&#x03C2;, &#x039C;&#x03CD;&#x03BA;&#x03BF;&#x03BD;&#x03BF;&#x03C2;, &#x039D;&#x03AC;&#x03BE;&#x03BF;&#x03C2;, &#x"
+    "nameLatin" : "Andros, Thira, Kea, Milos, Mikonos, Naxos, Paros, Siros, Tinos",
+    "nutsName" : "Άνδρος, Θήρα, Κέα, Μήλος, Μύκονος, Νάξος, Πάρος, Σύρος, Τήνος",
+    "nameAscii" : "Andros, Thira, Kea, Milos, Mikonos, Naxos, Paros, Siros, Tinos",
+    "nameHtml" : "&#x0386;&#x03BD;&#x03B4;&#x03C1;&#x03BF;&#x03C2;, &#x0398;&#x03AE;&#x03C1;&#x03B1;, &#x039A;&#x03AD;&#x03B1;, &#x039C;&#x03AE;&#x03BB;&#x03BF;&#x03C2;, &#x039C;&#x03CD;&#x03BA;&#x03BF;&#x03BD;&#x03BF;&#x03C2;, &#x039D;&#x03AC;&#x03BE;&#x03BF;&#x03C2;, &#x"
   },
   "EL511": {
-    "name_latin" : "Evros",
-    "nuts_name" : "Έβρος",
-    "name_ascii" : "Ebros",
-    "name_html" : "&#x0388;&#x03B2;&#x03C1;&#x03BF;&#x03C2;"
+    "nameLatin" : "Evros",
+    "nutsName" : "Έβρος",
+    "nameAscii" : "Ebros",
+    "nameHtml" : "&#x0388;&#x03B2;&#x03C1;&#x03BF;&#x03C2;"
   },
   "EL513": {
-    "name_latin" : "Rodopi",
-    "nuts_name" : "Ροδόπη",
-    "name_ascii" : "Rodopi",
-    "name_html" : "&#x03A1;&#x03BF;&#x03B4;&#x03CC;&#x03C0;&#x03B7;"
+    "nameLatin" : "Rodopi",
+    "nutsName" : "Ροδόπη",
+    "nameAscii" : "Rodopi",
+    "nameHtml" : "&#x03A1;&#x03BF;&#x03B4;&#x03CC;&#x03C0;&#x03B7;"
   },
   "EL515": {
-    "name_latin" : "Thasos, Kavala",
-    "nuts_name" : "Θάσος, Καβάλα",
-    "name_ascii" : "Thasos, Kabala",
-    "name_html" : "&#x0398;&#x03AC;&#x03C3;&#x03BF;&#x03C2;, &#x039A;&#x03B1;&#x03B2;&#x03AC;&#x03BB;&#x03B1;"
+    "nameLatin" : "Thasos, Kavala",
+    "nutsName" : "Θάσος, Καβάλα",
+    "nameAscii" : "Thasos, Kabala",
+    "nameHtml" : "&#x0398;&#x03AC;&#x03C3;&#x03BF;&#x03C2;, &#x039A;&#x03B1;&#x03B2;&#x03AC;&#x03BB;&#x03B1;"
   },
   "EL522": {
-    "name_latin" : "Thessaloniki",
-    "nuts_name" : "Θεσσαλονίκη",
-    "name_ascii" : "Thessaloniki",
-    "name_html" : "&#x0398;&#x03B5;&#x03C3;&#x03C3;&#x03B1;&#x03BB;&#x03BF;&#x03BD;&#x03AF;&#x03BA;&#x03B7;"
+    "nameLatin" : "Thessaloniki",
+    "nutsName" : "Θεσσαλονίκη",
+    "nameAscii" : "Thessaloniki",
+    "nameHtml" : "&#x0398;&#x03B5;&#x03C3;&#x03C3;&#x03B1;&#x03BB;&#x03BF;&#x03BD;&#x03AF;&#x03BA;&#x03B7;"
   },
   "EL527": {
-    "name_latin" : "Chalkidiki",
-    "nuts_name" : "Χαλκιδική",
-    "name_ascii" : "Xalkidiki",
-    "name_html" : "&#x03A7;&#x03B1;&#x03BB;&#x03BA;&#x03B9;&#x03B4;&#x03B9;&#x03BA;&#x03AE;"
+    "nameLatin" : "Chalkidiki",
+    "nutsName" : "Χαλκιδική",
+    "nameAscii" : "Xalkidiki",
+    "nameHtml" : "&#x03A7;&#x03B1;&#x03BB;&#x03BA;&#x03B9;&#x03B4;&#x03B9;&#x03BA;&#x03AE;"
   },
   "EL531": {
-    "name_latin" : "Grebena, Kozani",
-    "nuts_name" : "Γρεβενά, Κοζάνη",
-    "name_ascii" : "Grebena, Kozani",
-    "name_html" : "&#x0393;&#x03C1;&#x03B5;&#x03B2;&#x03B5;&#x03BD;&#x03AC;, &#x039A;&#x03BF;&#x03B6;&#x03AC;&#x03BD;&#x03B7;"
+    "nameLatin" : "Grebena, Kozani",
+    "nutsName" : "Γρεβενά, Κοζάνη",
+    "nameAscii" : "Grebena, Kozani",
+    "nameHtml" : "&#x0393;&#x03C1;&#x03B5;&#x03B2;&#x03B5;&#x03BD;&#x03AC;, &#x039A;&#x03BF;&#x03B6;&#x03AC;&#x03BD;&#x03B7;"
   },
   "EL542": {
-    "name_latin" : "Thesprotia",
-    "nuts_name" : "Θεσπρωτία",
-    "name_ascii" : "Thesprotia",
-    "name_html" : "&#x0398;&#x03B5;&#x03C3;&#x03C0;&#x03C1;&#x03C9;&#x03C4;&#x03AF;&#x03B1;"
+    "nameLatin" : "Thesprotia",
+    "nutsName" : "Θεσπρωτία",
+    "nameAscii" : "Thesprotia",
+    "nameHtml" : "&#x0398;&#x03B5;&#x03C3;&#x03C0;&#x03C1;&#x03C9;&#x03C4;&#x03AF;&#x03B1;"
   },
   "EL612": {
-    "name_latin" : "Larisa",
-    "nuts_name" : "Λάρισα",
-    "name_ascii" : "Larisa",
-    "name_html" : "&#x039B;&#x03AC;&#x03C1;&#x03B9;&#x03C3;&#x03B1;"
+    "nameLatin" : "Larisa",
+    "nutsName" : "Λάρισα",
+    "nameAscii" : "Larisa",
+    "nameHtml" : "&#x039B;&#x03AC;&#x03C1;&#x03B9;&#x03C3;&#x03B1;"
   },
   "EL623": {
-    "name_latin" : "Ithaki, Kefallinia",
-    "nuts_name" : "Ιθάκη, Κεφαλληνία",
-    "name_ascii" : "Ithaki, Kefallinia",
-    "name_html" : "&#x0399;&#x03B8;&#x03AC;&#x03BA;&#x03B7;, &#x039A;&#x03B5;&#x03C6;&#x03B1;&#x03BB;&#x03BB;&#x03B7;&#x03BD;&#x03AF;&#x03B1;"
+    "nameLatin" : "Ithaki, Kefallinia",
+    "nutsName" : "Ιθάκη, Κεφαλληνία",
+    "nameAscii" : "Ithaki, Kefallinia",
+    "nameHtml" : "&#x0399;&#x03B8;&#x03AC;&#x03BA;&#x03B7;, &#x039A;&#x03B5;&#x03C6;&#x03B1;&#x03BB;&#x03BB;&#x03B7;&#x03BD;&#x03AF;&#x03B1;"
   },
   "EL631": {
-    "name_latin" : "Aitoloakarnania",
-    "nuts_name" : "Αιτωλοακαρνανία",
-    "name_ascii" : "Aitoloakarnania",
-    "name_html" : "&#x0391;&#x03B9;&#x03C4;&#x03C9;&#x03BB;&#x03BF;&#x03B1;&#x03BA;&#x03B1;&#x03C1;&#x03BD;&#x03B1;&#x03BD;&#x03AF;&#x03B1;"
+    "nameLatin" : "Aitoloakarnania",
+    "nutsName" : "Αιτωλοακαρνανία",
+    "nameAscii" : "Aitoloakarnania",
+    "nameHtml" : "&#x0391;&#x03B9;&#x03C4;&#x03C9;&#x03BB;&#x03BF;&#x03B1;&#x03BA;&#x03B1;&#x03C1;&#x03BD;&#x03B1;&#x03BD;&#x03AF;&#x03B1;"
   },
   "EL642": {
-    "name_latin" : "Evvoia",
-    "nuts_name" : "Εύβοια",
-    "name_ascii" : "Eiboia",
-    "name_html" : "&#x0395;&#x03CD;&#x03B2;&#x03BF;&#x03B9;&#x03B1;"
+    "nameLatin" : "Evvoia",
+    "nutsName" : "Εύβοια",
+    "nameAscii" : "Eiboia",
+    "nameHtml" : "&#x0395;&#x03CD;&#x03B2;&#x03BF;&#x03B9;&#x03B1;"
   },
   "EL653": {
-    "name_latin" : "Lakonia, Messinia",
-    "nuts_name" : "Λακωνία, Μεσσηνία",
-    "name_ascii" : "Lakonia, Messinia",
-    "name_html" : "&#x039B;&#x03B1;&#x03BA;&#x03C9;&#x03BD;&#x03AF;&#x03B1;, &#x039C;&#x03B5;&#x03C3;&#x03C3;&#x03B7;&#x03BD;&#x03AF;&#x03B1;"
+    "nameLatin" : "Lakonia, Messinia",
+    "nutsName" : "Λακωνία, Μεσσηνία",
+    "nameAscii" : "Lakonia, Messinia",
+    "nameHtml" : "&#x039B;&#x03B1;&#x03BA;&#x03C9;&#x03BD;&#x03AF;&#x03B1;, &#x039C;&#x03B5;&#x03C3;&#x03C3;&#x03B7;&#x03BD;&#x03AF;&#x03B1;"
   },
   "ES300": {
-    "name_latin" : "Madrid",
-    "nuts_name" : "Madrid",
-    "name_ascii" : "Madrid",
-    "name_html" : "Madrid"
+    "nameLatin" : "Madrid",
+    "nutsName" : "Madrid",
+    "nameAscii" : "Madrid",
+    "nameHtml" : "Madrid"
   },
   "ES411": {
-    "name_latin" : "Ávila",
-    "nuts_name" : "Ávila",
-    "name_ascii" : "Avila",
-    "name_html" : "&#x00C1;vila"
+    "nameLatin" : "Ávila",
+    "nutsName" : "Ávila",
+    "nameAscii" : "Avila",
+    "nameHtml" : "&#x00C1;vila"
   },
   "ES416": {
-    "name_latin" : "Segovia",
-    "nuts_name" : "Segovia",
-    "name_ascii" : "Segovia",
-    "name_html" : "Segovia"
+    "nameLatin" : "Segovia",
+    "nutsName" : "Segovia",
+    "nameAscii" : "Segovia",
+    "nameHtml" : "Segovia"
   },
   "ES421": {
-    "name_latin" : "Albacete",
-    "nuts_name" : "Albacete",
-    "name_ascii" : "Albacete",
-    "name_html" : "Albacete"
+    "nameLatin" : "Albacete",
+    "nutsName" : "Albacete",
+    "nameAscii" : "Albacete",
+    "nameHtml" : "Albacete"
   },
   "ES512": {
-    "name_latin" : "Girona",
-    "nuts_name" : "Girona",
-    "name_ascii" : "Girona",
-    "name_html" : "Girona"
+    "nameLatin" : "Girona",
+    "nutsName" : "Girona",
+    "nameAscii" : "Girona",
+    "nameHtml" : "Girona"
   },
   "ES521": {
-    "name_latin" : "Alicante / Alacant",
-    "nuts_name" : "Alicante / Alacant",
-    "name_ascii" : "Alicante / Alacant",
-    "name_html" : "Alicante / Alacant"
+    "nameLatin" : "Alicante / Alacant",
+    "nutsName" : "Alicante / Alacant",
+    "nameAscii" : "Alicante / Alacant",
+    "nameHtml" : "Alicante / Alacant"
   },
   "ES531": {
-    "name_latin" : "Eivissa y Formentera",
-    "nuts_name" : "Eivissa y Formentera",
-    "name_ascii" : "Eivissa Y Formentera",
-    "name_html" : "Eivissa Y Formentera"
+    "nameLatin" : "Eivissa y Formentera",
+    "nutsName" : "Eivissa y Formentera",
+    "nameAscii" : "Eivissa Y Formentera",
+    "nameHtml" : "Eivissa Y Formentera"
   },
   "ES616": {
-    "name_latin" : "Jaén",
-    "nuts_name" : "Jaén",
-    "name_ascii" : "Jaen",
-    "name_html" : "Ja&#x00E9;n"
+    "nameLatin" : "Jaén",
+    "nutsName" : "Jaén",
+    "nameAscii" : "Jaen",
+    "nameHtml" : "Ja&#x00E9;n"
   },
   "ES707": {
-    "name_latin" : "La Palma",
-    "nuts_name" : "La Palma",
-    "name_ascii" : "La Palma",
-    "name_html" : "La Palma"
+    "nameLatin" : "La Palma",
+    "nutsName" : "La Palma",
+    "nameAscii" : "La Palma",
+    "nameHtml" : "La Palma"
   },
   "FI1C3": {
-    "name_latin" : "Päijät-Häme",
-    "nuts_name" : "Päijät-Häme",
-    "name_ascii" : "Paijat-Hame",
-    "name_html" : "P&#x00E4;ij&#x00E4;t-H&#x00E4;me"
+    "nameLatin" : "Päijät-Häme",
+    "nutsName" : "Päijät-Häme",
+    "nameAscii" : "Paijat-Hame",
+    "nameHtml" : "P&#x00E4;ij&#x00E4;t-H&#x00E4;me"
   },
   "FR263": {
-    "name_latin" : "Saône-et-Loire",
-    "nuts_name" : "Saône-et-Loire",
-    "name_ascii" : "Saone-et-Loire",
-    "name_html" : "Sa&#x00F4;ne-et-Loire"
+    "nameLatin" : "Saône-et-Loire",
+    "nutsName" : "Saône-et-Loire",
+    "nameAscii" : "Saone-et-Loire",
+    "nameHtml" : "Sa&#x00F4;ne-et-Loire"
   },
   "FR411": {
-    "name_latin" : "Meurthe-et-Moselle",
-    "nuts_name" : "Meurthe-et-Moselle",
-    "name_ascii" : "Meurthe-et-Moselle",
-    "name_html" : "Meurthe-et-Moselle"
+    "nameLatin" : "Meurthe-et-Moselle",
+    "nutsName" : "Meurthe-et-Moselle",
+    "nameAscii" : "Meurthe-et-Moselle",
+    "nameHtml" : "Meurthe-et-Moselle"
   },
   "FR433": {
-    "name_latin" : "Haute-Saône",
-    "nuts_name" : "Haute-Saône",
-    "name_ascii" : "Haute-Saone",
-    "name_html" : "Haute-Sa&#x00F4;ne"
+    "nameLatin" : "Haute-Saône",
+    "nutsName" : "Haute-Saône",
+    "nameAscii" : "Haute-Saone",
+    "nameHtml" : "Haute-Sa&#x00F4;ne"
   },
   "FR512": {
-    "name_latin" : "Maine-et-Loire",
-    "nuts_name" : "Maine-et-Loire",
-    "name_ascii" : "Maine-et-Loire",
-    "name_html" : "Maine-et-Loire"
+    "nameLatin" : "Maine-et-Loire",
+    "nutsName" : "Maine-et-Loire",
+    "nameAscii" : "Maine-et-Loire",
+    "nameHtml" : "Maine-et-Loire"
   },
   "FR522": {
-    "name_latin" : "Finistère",
-    "nuts_name" : "Finistère",
-    "name_ascii" : "Finistere",
-    "name_html" : "Finist&#x00E8;re"
+    "nameLatin" : "Finistère",
+    "nutsName" : "Finistère",
+    "nameAscii" : "Finistere",
+    "nameHtml" : "Finist&#x00E8;re"
   },
   "FR533": {
-    "name_latin" : "Deux-Sèvres",
-    "nuts_name" : "Deux-Sèvres",
-    "name_ascii" : "Deux-Sevres",
-    "name_html" : "Deux-S&#x00E8;vres"
+    "nameLatin" : "Deux-Sèvres",
+    "nutsName" : "Deux-Sèvres",
+    "nameAscii" : "Deux-Sevres",
+    "nameHtml" : "Deux-S&#x00E8;vres"
   },
   "FR614": {
-    "name_latin" : "Lot-et-Garonne",
-    "nuts_name" : "Lot-et-Garonne",
-    "name_ascii" : "Lot-et-Garonne",
-    "name_html" : "Lot-et-Garonne"
+    "nameLatin" : "Lot-et-Garonne",
+    "nutsName" : "Lot-et-Garonne",
+    "nameAscii" : "Lot-et-Garonne",
+    "nameHtml" : "Lot-et-Garonne"
   },
   "FR622": {
-    "name_latin" : "Aveyron",
-    "nuts_name" : "Aveyron",
-    "name_ascii" : "Aveyron",
-    "name_html" : "Aveyron"
+    "nameLatin" : "Aveyron",
+    "nutsName" : "Aveyron",
+    "nameAscii" : "Aveyron",
+    "nameHtml" : "Aveyron"
   },
   "FR626": {
-    "name_latin" : "Hautes-Pyrénées",
-    "nuts_name" : "Hautes-Pyrénées",
-    "name_ascii" : "Hautes-Pyrenees",
-    "name_html" : "Hautes-Pyr&#x00E9;n&#x00E9;es"
+    "nameLatin" : "Hautes-Pyrénées",
+    "nutsName" : "Hautes-Pyrénées",
+    "nameAscii" : "Hautes-Pyrenees",
+    "nameHtml" : "Hautes-Pyr&#x00E9;n&#x00E9;es"
   },
   "FR712": {
-    "name_latin" : "Ardèche",
-    "nuts_name" : "Ardèche",
-    "name_ascii" : "Ardeche",
-    "name_html" : "Ard&#x00E8;che"
+    "nameLatin" : "Ardèche",
+    "nutsName" : "Ardèche",
+    "nameAscii" : "Ardeche",
+    "nameHtml" : "Ard&#x00E8;che"
   },
   "FR718": {
-    "name_latin" : "Haute-Savoie",
-    "nuts_name" : "Haute-Savoie",
-    "name_ascii" : "Haute-Savoie",
-    "name_html" : "Haute-Savoie"
+    "nameLatin" : "Haute-Savoie",
+    "nutsName" : "Haute-Savoie",
+    "nameAscii" : "Haute-Savoie",
+    "nameHtml" : "Haute-Savoie"
   },
   "HR034": {
-    "name_latin" : "Šibensko-kninska županija",
-    "nuts_name" : "Šibensko-kninska županija",
-    "name_ascii" : "Sibensko-Kninska Zupanija",
-    "name_html" : "&#x0160;ibensko-Kninska &#x017D;upanija"
+    "nameLatin" : "Šibensko-kninska županija",
+    "nutsName" : "Šibensko-kninska županija",
+    "nameAscii" : "Sibensko-Kninska Zupanija",
+    "nameHtml" : "&#x0160;ibensko-Kninska &#x017D;upanija"
   },
   "HR041": {
-    "name_latin" : "Grad Zagreb",
-    "nuts_name" : "Grad Zagreb",
-    "name_ascii" : "Grad Zagreb",
-    "name_html" : "Grad Zagreb"
+    "nameLatin" : "Grad Zagreb",
+    "nutsName" : "Grad Zagreb",
+    "nameAscii" : "Grad Zagreb",
+    "nameHtml" : "Grad Zagreb"
   },
   "HR044": {
-    "name_latin" : "Varaždinska županija",
-    "nuts_name" : "Varaždinska županija",
-    "name_ascii" : "Varazdinska Zupanija",
-    "name_html" : "Vara&#x017E;dinska &#x017D;upanija"
+    "nameLatin" : "Varaždinska županija",
+    "nutsName" : "Varaždinska županija",
+    "nameAscii" : "Varazdinska Zupanija",
+    "nameHtml" : "Vara&#x017E;dinska &#x017D;upanija"
   },
   "HR048": {
-    "name_latin" : "Viroviticko-podravska županija",
-    "nuts_name" : "Viroviticko-podravska županija",
-    "name_ascii" : "Viroviticko-Podravska Zupanija",
-    "name_html" : "Viroviticko-Podravska &#x017D;upanija"
+    "nameLatin" : "Viroviticko-podravska županija",
+    "nutsName" : "Viroviticko-podravska županija",
+    "nameAscii" : "Viroviticko-Podravska Zupanija",
+    "nameHtml" : "Viroviticko-Podravska &#x017D;upanija"
   },
   "HR04C": {
-    "name_latin" : "Vukovarsko-srijemska županija",
-    "nuts_name" : "Vukovarsko-srijemska županija",
-    "name_ascii" : "Vukovarsko-Srijemska Zupanija",
-    "name_html" : "Vukovarsko-Srijemska &#x017D;upanija"
+    "nameLatin" : "Vukovarsko-srijemska županija",
+    "nutsName" : "Vukovarsko-srijemska županija",
+    "nameAscii" : "Vukovarsko-Srijemska Zupanija",
+    "nameHtml" : "Vukovarsko-Srijemska &#x017D;upanija"
   },
   "HU212": {
-    "name_latin" : "Komárom-Esztergom",
-    "nuts_name" : "Komárom-Esztergom",
-    "name_ascii" : "Komarom-Esztergom",
-    "name_html" : "Kom&#x00E1;rom-Esztergom"
+    "nameLatin" : "Komárom-Esztergom",
+    "nutsName" : "Komárom-Esztergom",
+    "nameAscii" : "Komarom-Esztergom",
+    "nameHtml" : "Kom&#x00E1;rom-Esztergom"
   },
   "HU311": {
-    "name_latin" : "Borsod-Abaúj-Zemplén",
-    "nuts_name" : "Borsod-Abaúj-Zemplén",
-    "name_ascii" : "Borsod-Abauj-Zemplen",
-    "name_html" : "Borsod-Aba&#x00FA;j-Zempl&#x00E9;n"
+    "nameLatin" : "Borsod-Abaúj-Zemplén",
+    "nutsName" : "Borsod-Abaúj-Zemplén",
+    "nameAscii" : "Borsod-Abauj-Zemplen",
+    "nameHtml" : "Borsod-Aba&#x00FA;j-Zempl&#x00E9;n"
   },
   "HU323": {
-    "name_latin" : "Szabolcs-Szatmár-Bereg",
-    "nuts_name" : "Szabolcs-Szatmár-Bereg",
-    "name_ascii" : "Szabolcs-Szatmar-Bereg",
-    "name_html" : "Szabolcs-Szatm&#x00E1;r-Bereg"
+    "nameLatin" : "Szabolcs-Szatmár-Bereg",
+    "nutsName" : "Szabolcs-Szatmár-Bereg",
+    "nameAscii" : "Szabolcs-Szatmar-Bereg",
+    "nameHtml" : "Szabolcs-Szatm&#x00E1;r-Bereg"
   },
   "IE013": {
-    "name_latin" : "West",
-    "nuts_name" : "West",
-    "name_ascii" : "West",
-    "name_html" : "West"
+    "nameLatin" : "West",
+    "nutsName" : "West",
+    "nameAscii" : "West",
+    "nameHtml" : "West"
   },
   "IE022": {
-    "name_latin" : "Mid-East",
-    "nuts_name" : "Mid-East",
-    "name_ascii" : "Mid-East",
-    "name_html" : "Mid-East"
+    "nameLatin" : "Mid-East",
+    "nutsName" : "Mid-East",
+    "nameAscii" : "Mid-East",
+    "nameHtml" : "Mid-East"
   },
   "ITF48": {
-    "name_latin" : "Barletta-Andria-Trani",
-    "nuts_name" : "Barletta-Andria-Trani",
-    "name_ascii" : "Barletta-Andria-Trani",
-    "name_html" : "Barletta-Andria-Trani"
+    "nameLatin" : "Barletta-Andria-Trani",
+    "nutsName" : "Barletta-Andria-Trani",
+    "nameAscii" : "Barletta-Andria-Trani",
+    "nameHtml" : "Barletta-Andria-Trani"
   },
   "ITG11": {
-    "name_latin" : "Trapani",
-    "nuts_name" : "Trapani",
-    "name_ascii" : "Trapani",
-    "name_html" : "Trapani"
+    "nameLatin" : "Trapani",
+    "nutsName" : "Trapani",
+    "nameAscii" : "Trapani",
+    "nameHtml" : "Trapani"
   },
   "ITG16": {
-    "name_latin" : "Enna",
-    "nuts_name" : "Enna",
-    "name_ascii" : "Enna",
-    "name_html" : "Enna"
+    "nameLatin" : "Enna",
+    "nutsName" : "Enna",
+    "nameAscii" : "Enna",
+    "nameHtml" : "Enna"
   },
   "ITG2A": {
-    "name_latin" : "Ogliastra",
-    "nuts_name" : "Ogliastra",
-    "name_ascii" : "Ogliastra",
-    "name_html" : "Ogliastra"
+    "nameLatin" : "Ogliastra",
+    "nutsName" : "Ogliastra",
+    "nameAscii" : "Ogliastra",
+    "nameHtml" : "Ogliastra"
   },
   "ITH43": {
-    "name_latin" : "Gorizia",
-    "nuts_name" : "Gorizia",
-    "name_ascii" : "Gorizia",
-    "name_html" : "Gorizia"
+    "nameLatin" : "Gorizia",
+    "nutsName" : "Gorizia",
+    "nameAscii" : "Gorizia",
+    "nameHtml" : "Gorizia"
   },
   "ITH53": {
-    "name_latin" : "Reggio nell'Emilia",
-    "nuts_name" : "Reggio nell'Emilia",
-    "name_ascii" : "Reggio Nell'Emilia",
-    "name_html" : "Reggio Nell'Emilia"
+    "nameLatin" : "Reggio nell'Emilia",
+    "nutsName" : "Reggio nell'Emilia",
+    "nameAscii" : "Reggio Nell'Emilia",
+    "nameHtml" : "Reggio Nell'Emilia"
   },
   "ITI11": {
-    "name_latin" : "Massa-Carrara",
-    "nuts_name" : "Massa-Carrara",
-    "name_ascii" : "Massa-Carrara",
-    "name_html" : "Massa-Carrara"
+    "nameLatin" : "Massa-Carrara",
+    "nutsName" : "Massa-Carrara",
+    "nameAscii" : "Massa-Carrara",
+    "nameHtml" : "Massa-Carrara"
   },
   "ITI21": {
-    "name_latin" : "Perugia",
-    "nuts_name" : "Perugia",
-    "name_ascii" : "Perugia",
-    "name_html" : "Perugia"
+    "nameLatin" : "Perugia",
+    "nutsName" : "Perugia",
+    "nameAscii" : "Perugia",
+    "nameHtml" : "Perugia"
   },
   "LV009": {
-    "name_latin" : "Zemgale",
-    "nuts_name" : "Zemgale",
-    "name_ascii" : "Zemgale",
-    "name_html" : "Zemgale"
+    "nameLatin" : "Zemgale",
+    "nutsName" : "Zemgale",
+    "nameAscii" : "Zemgale",
+    "nameHtml" : "Zemgale"
   },
   "NL113": {
-    "name_latin" : "Overig Groningen",
-    "nuts_name" : "Overig Groningen",
-    "name_ascii" : "Overig Groningen",
-    "name_html" : "Overig Groningen"
+    "nameLatin" : "Overig Groningen",
+    "nutsName" : "Overig Groningen",
+    "nameAscii" : "Overig Groningen",
+    "nameHtml" : "Overig Groningen"
   },
   "NL131": {
-    "name_latin" : "Noord-Drenthe",
-    "nuts_name" : "Noord-Drenthe",
-    "name_ascii" : "Noord-Drenthe",
-    "name_html" : "Noord-Drenthe"
+    "nameLatin" : "Noord-Drenthe",
+    "nutsName" : "Noord-Drenthe",
+    "nameAscii" : "Noord-Drenthe",
+    "nameHtml" : "Noord-Drenthe"
   },
   "NL211": {
-    "name_latin" : "Noord-Overijssel",
-    "nuts_name" : "Noord-Overijssel",
-    "name_ascii" : "Noord-Overijssel",
-    "name_html" : "Noord-Overijssel"
+    "nameLatin" : "Noord-Overijssel",
+    "nutsName" : "Noord-Overijssel",
+    "nameAscii" : "Noord-Overijssel",
+    "nameHtml" : "Noord-Overijssel"
   },
   "NL226": {
-    "name_latin" : "Arnhem/Nijmegen",
-    "nuts_name" : "Arnhem/Nijmegen",
-    "name_ascii" : "Arnhem/Nijmegen",
-    "name_html" : "Arnhem/Nijmegen"
+    "nameLatin" : "Arnhem/Nijmegen",
+    "nutsName" : "Arnhem/Nijmegen",
+    "nameAscii" : "Arnhem/Nijmegen",
+    "nameHtml" : "Arnhem/Nijmegen"
   },
   "NL321": {
-    "name_latin" : "Kop van Noord-Holland",
-    "nuts_name" : "Kop van Noord-Holland",
-    "name_ascii" : "Kop Van Noord-Holland",
-    "name_html" : "Kop Van Noord-Holland"
+    "nameLatin" : "Kop van Noord-Holland",
+    "nutsName" : "Kop van Noord-Holland",
+    "nameAscii" : "Kop Van Noord-Holland",
+    "nameHtml" : "Kop Van Noord-Holland"
   },
   "NL337": {
-    "name_latin" : "Agglomeratie Leiden en Bollenstreek",
-    "nuts_name" : "Agglomeratie Leiden en Bollenstreek",
-    "name_ascii" : "Agglomeratie Leiden en Bollenstreek",
-    "name_html" : "Agglomeratie Leiden en Bollenstreek"
+    "nameLatin" : "Agglomeratie Leiden en Bollenstreek",
+    "nutsName" : "Agglomeratie Leiden en Bollenstreek",
+    "nameAscii" : "Agglomeratie Leiden en Bollenstreek",
+    "nameHtml" : "Agglomeratie Leiden en Bollenstreek"
   },
   "NO061": {
-    "name_latin" : "Sør-Trøndelag",
-    "nuts_name" : "Sør-Trøndelag",
-    "name_ascii" : "Sor-Trondelag",
-    "name_html" : "S&#x00F8;r-Tr&#x00F8;ndelag"
+    "nameLatin" : "Sør-Trøndelag",
+    "nutsName" : "Sør-Trøndelag",
+    "nameAscii" : "Sor-Trondelag",
+    "nameHtml" : "S&#x00F8;r-Tr&#x00F8;ndelag"
   },
   "PL113": {
-    "name_latin" : "Miasto Lódz",
-    "nuts_name" : "Miasto Lódz",
-    "name_ascii" : "Miasto Lodz",
-    "name_html" : "Miasto L&#x00F3;dz"
+    "nameLatin" : "Miasto Lódz",
+    "nutsName" : "Miasto Lódz",
+    "nameAscii" : "Miasto Lodz",
+    "nameHtml" : "Miasto L&#x00F3;dz"
   },
   "PL127": {
-    "name_latin" : "Miasto Warszawa",
-    "nuts_name" : "Miasto Warszawa",
-    "name_ascii" : "Miasto Warszawa",
-    "name_html" : "Miasto Warszawa"
+    "nameLatin" : "Miasto Warszawa",
+    "nutsName" : "Miasto Warszawa",
+    "nameAscii" : "Miasto Warszawa",
+    "nameHtml" : "Miasto Warszawa"
   },
   "PL12E": {
-    "name_latin" : "Siedlecki",
-    "nuts_name" : "Siedlecki",
-    "name_ascii" : "Siedlecki",
-    "name_html" : "Siedlecki"
+    "nameLatin" : "Siedlecki",
+    "nutsName" : "Siedlecki",
+    "nameAscii" : "Siedlecki",
+    "nameHtml" : "Siedlecki"
   },
   "PL213": {
-    "name_latin" : "Miasto Kraków",
-    "nuts_name" : "Miasto Kraków",
-    "name_ascii" : "Miasto Krakow",
-    "name_html" : "Miasto Krak&#x00F3;w"
+    "nameLatin" : "Miasto Kraków",
+    "nutsName" : "Miasto Kraków",
+    "nameAscii" : "Miasto Krakow",
+    "nameHtml" : "Miasto Krak&#x00F3;w"
   },
   "PL227": {
-    "name_latin" : "Rybnicki",
-    "nuts_name" : "Rybnicki",
-    "name_ascii" : "Rybnicki",
-    "name_html" : "Rybnicki"
+    "nameLatin" : "Rybnicki",
+    "nutsName" : "Rybnicki",
+    "nameAscii" : "Rybnicki",
+    "nameHtml" : "Rybnicki"
   },
   "PL323": {
-    "name_latin" : "Krosnienski",
-    "nuts_name" : "Krosnienski",
-    "name_ascii" : "Krosnienski",
-    "name_html" : "Krosnienski"
+    "nameLatin" : "Krosnienski",
+    "nutsName" : "Krosnienski",
+    "nameAscii" : "Krosnienski",
+    "nameHtml" : "Krosnienski"
   },
   "PL332": {
-    "name_latin" : "Sandomiersko-jedrzejowski",
-    "nuts_name" : "Sandomiersko-jedrzejowski",
-    "name_ascii" : "Sandomiersko-jedrzejowski",
-    "name_html" : "Sandomiersko-jedrzejowski"
+    "nameLatin" : "Sandomiersko-jedrzejowski",
+    "nutsName" : "Sandomiersko-jedrzejowski",
+    "nameAscii" : "Sandomiersko-jedrzejowski",
+    "nameHtml" : "Sandomiersko-jedrzejowski"
   },
   "PL416": {
-    "name_latin" : "Kaliski",
-    "nuts_name" : "Kaliski",
-    "name_ascii" : "Kaliski",
-    "name_html" : "Kaliski"
+    "nameLatin" : "Kaliski",
+    "nutsName" : "Kaliski",
+    "nameAscii" : "Kaliski",
+    "nameHtml" : "Kaliski"
   },
   "PL424": {
-    "name_latin" : "Miasto Szczecin",
-    "nuts_name" : "Miasto Szczecin",
-    "name_ascii" : "Miasto Szczecin",
-    "name_html" : "Miasto Szczecin"
+    "nameLatin" : "Miasto Szczecin",
+    "nutsName" : "Miasto Szczecin",
+    "nameAscii" : "Miasto Szczecin",
+    "nameHtml" : "Miasto Szczecin"
   },
   "PL432": {
-    "name_latin" : "Zielonogórski",
-    "nuts_name" : "Zielonogórski",
-    "name_ascii" : "Zielonogorski",
-    "name_html" : "Zielonog&#x00F3;rski"
+    "nameLatin" : "Zielonogórski",
+    "nutsName" : "Zielonogórski",
+    "nameAscii" : "Zielonogorski",
+    "nameHtml" : "Zielonog&#x00F3;rski"
   },
   "PL516": {
-    "name_latin" : "Legnicko-Glogowski",
-    "nuts_name" : "Legnicko-Glogowski",
-    "name_ascii" : "Legnicko-Glogowski",
-    "name_html" : "Legnicko-Glogowski"
+    "nameLatin" : "Legnicko-Glogowski",
+    "nutsName" : "Legnicko-Glogowski",
+    "nameAscii" : "Legnicko-Glogowski",
+    "nameHtml" : "Legnicko-Glogowski"
   },
   "PT16E": {
-    "name_latin" : "Região de Coimbra",
-    "nuts_name" : "Região de Coimbra",
-    "name_ascii" : "Regiao de Coimbra",
-    "name_html" : "Regi&#x00E3;o de Coimbra"
+    "nameLatin" : "Região de Coimbra",
+    "nutsName" : "Região de Coimbra",
+    "nameAscii" : "Regiao de Coimbra",
+    "nameHtml" : "Regi&#x00E3;o de Coimbra"
   },
   "PT16J": {
-    "name_latin" : "Beiras e Serra da Estrela",
-    "nuts_name" : "Beiras e Serra da Estrela",
-    "name_ascii" : "Beiras e Serra Da Estrela",
-    "name_html" : "Beiras e Serra Da Estrela"
+    "nameLatin" : "Beiras e Serra da Estrela",
+    "nutsName" : "Beiras e Serra da Estrela",
+    "nameAscii" : "Beiras e Serra Da Estrela",
+    "nameHtml" : "Beiras e Serra Da Estrela"
   },
   "PT185": {
-    "name_latin" : "Lezíria do Tejo",
-    "nuts_name" : "Lezíria do Tejo",
-    "name_ascii" : "Leziria do Tejo",
-    "name_html" : "Lez&#x00ED;ria do Tejo"
+    "nameLatin" : "Lezíria do Tejo",
+    "nutsName" : "Lezíria do Tejo",
+    "nameAscii" : "Leziria do Tejo",
+    "nameHtml" : "Lez&#x00ED;ria do Tejo"
   },
   "PT300": {
-    "name_latin" : "Região Autónoma da Madeira",
-    "nuts_name" : "Região Autónoma da Madeira",
-    "name_ascii" : "Regiao Autonoma da Madeira",
-    "name_html" : "Regi&#x00E3;o Aut&#x00F3;noma da Madeira"
+    "nameLatin" : "Região Autónoma da Madeira",
+    "nutsName" : "Região Autónoma da Madeira",
+    "nameAscii" : "Regiao Autonoma da Madeira",
+    "nameHtml" : "Regi&#x00E3;o Aut&#x00F3;noma da Madeira"
   },
   "RO211": {
-    "name_latin" : "Bacau",
-    "nuts_name" : "Bacau",
-    "name_ascii" : "Bacau",
-    "name_html" : "Bacau"
+    "nameLatin" : "Bacau",
+    "nutsName" : "Bacau",
+    "nameAscii" : "Bacau",
+    "nameHtml" : "Bacau"
   },
   "RO226": {
-    "name_latin" : "Vrancea",
-    "nuts_name" : "Vrancea",
-    "name_ascii" : "Vrancea",
-    "name_html" : "Vrancea"
+    "nameLatin" : "Vrancea",
+    "nutsName" : "Vrancea",
+    "nameAscii" : "Vrancea",
+    "nameHtml" : "Vrancea"
   },
   "RO312": {
-    "name_latin" : "Calarasi",
-    "nuts_name" : "Calarasi",
-    "name_ascii" : "Calarasi",
-    "name_html" : "Calarasi"
+    "nameLatin" : "Calarasi",
+    "nutsName" : "Calarasi",
+    "nameAscii" : "Calarasi",
+    "nameHtml" : "Calarasi"
   },
   "RO317": {
-    "name_latin" : "Teleorman",
-    "nuts_name" : "Teleorman",
-    "name_ascii" : "Teleorman",
-    "name_html" : "Teleorman"
+    "nameLatin" : "Teleorman",
+    "nutsName" : "Teleorman",
+    "nameAscii" : "Teleorman",
+    "nameHtml" : "Teleorman"
   },
   "SE231": {
-    "name_latin" : "Hallands län",
-    "nuts_name" : "Hallands län",
-    "name_ascii" : "Hallands lan",
-    "name_html" : "Hallands l&#x00E4;n"
+    "nameLatin" : "Hallands län",
+    "nutsName" : "Hallands län",
+    "nameAscii" : "Hallands lan",
+    "nameHtml" : "Hallands l&#x00E4;n"
   },
   "SE311": {
-    "name_latin" : "Värmlands län",
-    "nuts_name" : "Värmlands län",
-    "name_ascii" : "Varmlands lan",
-    "name_html" : "V&#x00E4;rmlands l&#x00E4;n"
+    "nameLatin" : "Värmlands län",
+    "nutsName" : "Värmlands län",
+    "nameAscii" : "Varmlands lan",
+    "nameHtml" : "V&#x00E4;rmlands l&#x00E4;n"
   },
   "SE321": {
-    "name_latin" : "Västernorrlands län",
-    "nuts_name" : "Västernorrlands län",
-    "name_ascii" : "Vasternorrlands lan",
-    "name_html" : "V&#x00E4;sternorrlands l&#x00E4;n"
+    "nameLatin" : "Västernorrlands län",
+    "nutsName" : "Västernorrlands län",
+    "nameAscii" : "Vasternorrlands lan",
+    "nameHtml" : "V&#x00E4;sternorrlands l&#x00E4;n"
   },
   "SI037": {
-    "name_latin" : "Jugovzhodna Slovenija",
-    "nuts_name" : "Jugovzhodna Slovenija",
-    "name_ascii" : "Jugovzhodna Slovenija",
-    "name_html" : "Jugovzhodna Slovenija"
+    "nameLatin" : "Jugovzhodna Slovenija",
+    "nutsName" : "Jugovzhodna Slovenija",
+    "nameAscii" : "Jugovzhodna Slovenija",
+    "nameHtml" : "Jugovzhodna Slovenija"
   },
   "SK022": {
-    "name_latin" : "Trenciansky kraj",
-    "nuts_name" : "Trenciansky kraj",
-    "name_ascii" : "Trenciansky kraj",
-    "name_html" : "Trenciansky kraj"
+    "nameLatin" : "Trenciansky kraj",
+    "nutsName" : "Trenciansky kraj",
+    "nameAscii" : "Trenciansky kraj",
+    "nameHtml" : "Trenciansky kraj"
   },
   "SK032": {
-    "name_latin" : "Banskobystrický kraj",
-    "nuts_name" : "Banskobystrický kraj",
-    "name_ascii" : "Banskobystricky kraj",
-    "name_html" : "Banskobystrick&#x00FD; kraj"
+    "nameLatin" : "Banskobystrický kraj",
+    "nutsName" : "Banskobystrický kraj",
+    "nameAscii" : "Banskobystricky kraj",
+    "nameHtml" : "Banskobystrick&#x00FD; kraj"
   },
   "UKC21": {
-    "name_latin" : "Northumberland",
-    "nuts_name" : "Northumberland",
-    "name_ascii" : "Northumberland",
-    "name_html" : "Northumberland"
+    "nameLatin" : "Northumberland",
+    "nutsName" : "Northumberland",
+    "nameAscii" : "Northumberland",
+    "nameHtml" : "Northumberland"
   },
   "UKD12": {
-    "name_latin" : "East Cumbria",
-    "nuts_name" : "East Cumbria",
-    "name_ascii" : "East Cumbria",
-    "name_html" : "East Cumbria"
+    "nameLatin" : "East Cumbria",
+    "nutsName" : "East Cumbria",
+    "nameAscii" : "East Cumbria",
+    "nameHtml" : "East Cumbria"
   },
   "UKD35": {
-    "name_latin" : "Greater Manchester South East",
-    "nuts_name" : "Greater Manchester South East",
-    "name_ascii" : "Greater Manchester South East",
-    "name_html" : "Greater Manchester South East"
+    "nameLatin" : "Greater Manchester South East",
+    "nutsName" : "Greater Manchester South East",
+    "nameAscii" : "Greater Manchester South East",
+    "nameHtml" : "Greater Manchester South East"
   },
   "UKD46": {
-    "name_latin" : "East Lancashire",
-    "nuts_name" : "East Lancashire",
-    "name_ascii" : "East Lancashire",
-    "name_html" : "East Lancashire"
+    "nameLatin" : "East Lancashire",
+    "nutsName" : "East Lancashire",
+    "nameAscii" : "East Lancashire",
+    "nameHtml" : "East Lancashire"
   },
   "UKE41": {
-    "name_latin" : "Bradford",
-    "nuts_name" : "Bradford",
-    "name_ascii" : "Bradford",
-    "name_html" : "Bradford"
+    "nameLatin" : "Bradford",
+    "nutsName" : "Bradford",
+    "nameAscii" : "Bradford",
+    "nameHtml" : "Bradford"
   },
   "UKF15": {
-    "name_latin" : "North Nottinghamshire",
-    "nuts_name" : "North Nottinghamshire",
-    "name_ascii" : "North Nottinghamshire",
-    "name_html" : "North Nottinghamshire"
+    "nameLatin" : "North Nottinghamshire",
+    "nutsName" : "North Nottinghamshire",
+    "nameAscii" : "North Nottinghamshire",
+    "nameHtml" : "North Nottinghamshire"
   },
   "UKF24": {
-    "name_latin" : "West Northamptonshire",
-    "nuts_name" : "West Northamptonshire",
-    "name_ascii" : "West Northamptonshire",
-    "name_html" : "West Northamptonshire"
+    "nameLatin" : "West Northamptonshire",
+    "nutsName" : "West Northamptonshire",
+    "nameAscii" : "West Northamptonshire",
+    "nameHtml" : "West Northamptonshire"
   },
   "UKG39": {
-    "name_latin" : "Wolverhampton",
-    "nuts_name" : "Wolverhampton",
-    "name_ascii" : "Wolverhampton",
-    "name_html" : "Wolverhampton"
+    "nameLatin" : "Wolverhampton",
+    "nutsName" : "Wolverhampton",
+    "nameAscii" : "Wolverhampton",
+    "nameHtml" : "Wolverhampton"
   },
   "UKH15": {
-    "name_latin" : "Norwich & East Norfolk",
-    "nuts_name" : "Norwich & East Norfolk",
-    "name_ascii" : "Norwich & East Norfolk",
-    "name_html" : "Norwich & East Norfolk"
+    "nameLatin" : "Norwich & East Norfolk",
+    "nutsName" : "Norwich & East Norfolk",
+    "nameAscii" : "Norwich & East Norfolk",
+    "nameHtml" : "Norwich & East Norfolk"
   },
   "UKH24": {
-    "name_latin" : "Bedford",
-    "nuts_name" : "Bedford",
-    "name_ascii" : "Bedford",
-    "name_html" : "Bedford"
+    "nameLatin" : "Bedford",
+    "nutsName" : "Bedford",
+    "nameAscii" : "Bedford",
+    "nameHtml" : "Bedford"
   },
   "UKH32": {
-    "name_latin" : "Thurrock",
-    "nuts_name" : "Thurrock",
-    "name_ascii" : "Thurrock",
-    "name_html" : "Thurrock"
+    "nameLatin" : "Thurrock",
+    "nutsName" : "Thurrock",
+    "nameAscii" : "Thurrock",
+    "nameHtml" : "Thurrock"
   },
   "UKH36": {
-    "name_latin" : "Heart of Essex",
-    "nuts_name" : "Heart of Essex",
-    "name_ascii" : "Heart of Essex",
-    "name_html" : "Heart of Essex"
+    "nameLatin" : "Heart of Essex",
+    "nutsName" : "Heart of Essex",
+    "nameAscii" : "Heart of Essex",
+    "nameHtml" : "Heart of Essex"
   },
   "UKI32": {
-    "name_latin" : "Westminster",
-    "nuts_name" : "Westminster",
-    "name_ascii" : "Westminster",
-    "name_html" : "Westminster"
+    "nameLatin" : "Westminster",
+    "nutsName" : "Westminster",
+    "nameAscii" : "Westminster",
+    "nameHtml" : "Westminster"
   },
   "UKI75": {
-    "name_latin" : "Hounslow & Richmond upon Thames",
-    "nuts_name" : "Hounslow & Richmond upon Thames",
-    "name_ascii" : "Hounslow & Richmond Upon Thames",
-    "name_html" : "Hounslow & Richmond Upon Thames"
+    "nameLatin" : "Hounslow & Richmond upon Thames",
+    "nutsName" : "Hounslow & Richmond upon Thames",
+    "nameAscii" : "Hounslow & Richmond Upon Thames",
+    "nameHtml" : "Hounslow & Richmond Upon Thames"
   },
   "UKJ21": {
-    "name_latin" : "Brighton and Hove",
-    "nuts_name" : "Brighton and Hove",
-    "name_ascii" : "Brighton and Hove",
-    "name_html" : "Brighton and Hove"
+    "nameLatin" : "Brighton and Hove",
+    "nutsName" : "Brighton and Hove",
+    "nameAscii" : "Brighton and Hove",
+    "nameHtml" : "Brighton and Hove"
   },
   "UKJ28": {
-    "name_latin" : "West Sussex (North East)",
-    "nuts_name" : "West Sussex (North East)",
-    "name_ascii" : "West Sussex (North East)",
-    "name_html" : "West Sussex (North East)"
+    "nameLatin" : "West Sussex (North East)",
+    "nutsName" : "West Sussex (North East)",
+    "nameAscii" : "West Sussex (North East)",
+    "nameHtml" : "West Sussex (North East)"
   },
   "UKJ43": {
-    "name_latin" : "Kent Thames Gateway",
-    "nuts_name" : "Kent Thames Gateway",
-    "name_ascii" : "Kent Thames Gateway",
-    "name_html" : "Kent Thames Gateway"
+    "nameLatin" : "Kent Thames Gateway",
+    "nutsName" : "Kent Thames Gateway",
+    "nameAscii" : "Kent Thames Gateway",
+    "nameHtml" : "Kent Thames Gateway"
   },
   "UKK30": {
-    "name_latin" : "Cornwall and Isles of Scilly",
-    "nuts_name" : "Cornwall and Isles of Scilly",
-    "name_ascii" : "Cornwall and Isles of Scilly",
-    "name_html" : "Cornwall and Isles of Scilly"
+    "nameLatin" : "Cornwall and Isles of Scilly",
+    "nutsName" : "Cornwall and Isles of Scilly",
+    "nameAscii" : "Cornwall and Isles of Scilly",
+    "nameHtml" : "Cornwall and Isles of Scilly"
   },
   "UKL16": {
-    "name_latin" : "Gwent Valleys",
-    "nuts_name" : "Gwent Valleys",
-    "name_ascii" : "Gwent Valleys",
-    "name_html" : "Gwent Valleys"
+    "nameLatin" : "Gwent Valleys",
+    "nutsName" : "Gwent Valleys",
+    "nameAscii" : "Gwent Valleys",
+    "nameHtml" : "Gwent Valleys"
   },
   "UKL21": {
-    "name_latin" : "Monmouthshire and Newport",
-    "nuts_name" : "Monmouthshire and Newport",
-    "name_ascii" : "Monmouthshire and Newport",
-    "name_html" : "Monmouthshire and Newport"
+    "nameLatin" : "Monmouthshire and Newport",
+    "nutsName" : "Monmouthshire and Newport",
+    "nameAscii" : "Monmouthshire and Newport",
+    "nameHtml" : "Monmouthshire and Newport"
   },
   "UKM22": {
-    "name_latin" : "Clackmannanshire and Fife",
-    "nuts_name" : "Clackmannanshire and Fife",
-    "name_ascii" : "Clackmannanshire and Fife",
-    "name_html" : "Clackmannanshire and Fife"
+    "nameLatin" : "Clackmannanshire and Fife",
+    "nutsName" : "Clackmannanshire and Fife",
+    "nameAscii" : "Clackmannanshire and Fife",
+    "nameHtml" : "Clackmannanshire and Fife"
   },
   "UKM33": {
-    "name_latin" : "East Ayrshire and North Ayrshire mainland",
-    "nuts_name" : "East Ayrshire and North Ayrshire mainland",
-    "name_ascii" : "East Ayrshire and North Ayrshire Mainland",
-    "name_html" : "East Ayrshire and North Ayrshire Mainland"
+    "nameLatin" : "East Ayrshire and North Ayrshire mainland",
+    "nutsName" : "East Ayrshire and North Ayrshire mainland",
+    "nameAscii" : "East Ayrshire and North Ayrshire Mainland",
+    "nameHtml" : "East Ayrshire and North Ayrshire Mainland"
   },
   "UKM61": {
-    "name_latin" : "Caithness & Sutherland and Ross & Cromarty",
-    "nuts_name" : "Caithness & Sutherland and Ross & Cromarty",
-    "name_ascii" : "Caithness & Sutherland and Ross & Cromarty",
-    "name_html" : "Caithness & Sutherland and Ross & Cromarty"
+    "nameLatin" : "Caithness & Sutherland and Ross & Cromarty",
+    "nutsName" : "Caithness & Sutherland and Ross & Cromarty",
+    "nameAscii" : "Caithness & Sutherland and Ross & Cromarty",
+    "nameHtml" : "Caithness & Sutherland and Ross & Cromarty"
   },
   "UKN05": {
-    "name_latin" : "West and South of Northern Ireland",
-    "nuts_name" : "West and South of Northern Ireland",
-    "name_ascii" : "West and South of Northern Ireland",
-    "name_html" : "West and South of Northern Ireland"
+    "nameLatin" : "West and South of Northern Ireland",
+    "nutsName" : "West and South of Northern Ireland",
+    "nameAscii" : "West and South of Northern Ireland",
+    "nameHtml" : "West and South of Northern Ireland"
   }
 };
 
@@ -12974,9 +13220,9 @@ AppData.PopulateArraysAndDictionaries = function() {
       let indicator = {
         name: name,
         domain: AppData.indicatorMetadata[name].domain,
-        domainSort: AppData.indicatorMetadata[name].domainsort,
+        domainSort: AppData.indicatorMetadata[name].domainSort,
         group: AppData.indicatorMetadata[name].group,
-        groupSort: AppData.indicatorMetadata[name].groupsort
+        groupSort: AppData.indicatorMetadata[name].groupSort
       };
 
       indicators.push(indicator);
@@ -13011,8 +13257,9 @@ AppData.PopulateArraysAndDictionaries = function() {
     if (!AppData.domainDictionaryIndicators.hasOwnProperty(indicator.domain)) {
       AppData.domainDictionaryIndicators[indicator.domain] = [];
     }
-
-    if (AppData.indicatorMetadata[indicator.name].isvalid) {
+    
+    // TODO: RESIN - It is better to remove the isValid here and in the data dictionary
+    if (AppData.indicatorMetadata[indicator.name].isValid) {
       AppData.domainDictionaryIndicators[indicator.domain].push(AppData.indicatorMetadata[indicator.name]);
     }
   }
@@ -13051,7 +13298,8 @@ AppData.PopulateArraysAndDictionaries = function() {
       AppData.groupDictionaryIndicators[indicator.group] = [];
     }
 
-    if (AppData.indicatorMetadata[indicator.name].isvalid) {
+    // TODO: RESIN - It is better to remove the isValid here and in the data dictionary
+    if (AppData.indicatorMetadata[indicator.name].isValid) {
       AppData.groupDictionaryIndicators[indicator.group].push(AppData.indicatorMetadata[indicator.name]);
     }
   }

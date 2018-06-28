@@ -39,7 +39,7 @@
   <!--<link rel="stylesheet" href="libs/leaflet-plugins/sidebar-v2-0.4.0/leaflet-sidebar.min.css">-->
 
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="styles/map.css">
+  <link rel="stylesheet" href="styles/map2.css">
   <link rel="stylesheet" href="styles/loader.css">
 
   <!-- JQuery -->
@@ -48,7 +48,7 @@
   <script type="text/javascript" src="libs/jquery-3.2.1/jquery.slim.js"></script>
   <!--<script type="text/javascript" src="libs/jquery-3.2.1/jquery.slim.min.js"></script>-->
 
-  <script type="text/javascript" src="js/data.js"></script>
+  <script type="text/javascript" src="js/data2.js"></script>
 
   <!--<script type="text/javascript" src="js/shared.js"></script>-->
 
@@ -105,9 +105,11 @@
     </div>
 
     <div id="map" class="sidebar-map"></div>
+
   </div>
 
   <div id="sidebar" class="sidebar collapsed sidebar-right leaflet-touch">
+
     <div id="sidebarTabsVM" class="sidebar-tabs">
       <ul role="tablist">
         <li id="map-controls-button" title="Show / Hide Map Controls"
@@ -298,7 +300,7 @@
                   <div id="supergroups" class="tab-pane fade show active" role="tabpanel"
                        aria-labelledby="supergroupsTab">
 
-                    <div id="sueprgroupsVisualizationTable" class="nuts3layer-setup-table">
+                    <div id="supergroupsVisualizationTable" class="nuts3layer-setup-table">
                       <table class="table table-striped">
                         <tbody>
 
@@ -609,7 +611,7 @@
 
                   <div id="groups" class="tab-pane fade" role="tabpanel" aria-labelledby="groupsTab">
 
-                    <div id="groupSetVisualizationTable" class="nuts3layer-setup-table">
+                    <div id="groupsVisualizationTable" class="nuts3layer-setup-table">
                       <table class="table table-condensed table-striped">
                         <tbody>
 
@@ -1869,7 +1871,10 @@
                            v-bind:style="{ 'background-color': supergroupFillColor.fillColor, 'opacity': supergroupFillColor.fillOpacity }">
                       </div>
                     </td>
-                    <td><h6 v-text="supergroupName"></h6></td>
+                    <td>
+                      <div class="typology-class-header">Supergroup:</div>
+                      <h6 v-text="supergroupName"></h6>
+                    </td>
                     <!--<td>-->
                     <!--<i class="material-icons help text-danger"-->
                     <!--data-toggle="tooltip" data-html="true" data-placement="left"-->
@@ -1886,7 +1891,10 @@
                            v-bind:style="{ 'background-color': groupFillColor.fillColor, 'opacity': supergroupFillColor.fillOpacity }">
                       </div>
                     </td>
-                    <td><h6 v-text="groupName"></h6></td>
+                    <td>
+                      <div class="typology-class-header">Group:</div>
+                      <h6 v-text="groupName"></h6>
+                    </td>
                     <!--<td>-->
                     <!--<i class="material-icons help text-danger"-->
                     <!--data-toggle="tooltip" data-html="true" data-placement="left"-->
@@ -1914,43 +1922,56 @@
 
                       <div class="card card-body">
                         <table class="table-bordered table-striped table-hover ind-table">
-                          <!---->
                           <!--class="table-dark"-->
                           <thead style="background-color: #c9ceea;">
-                          <tr>
-                            <th scope="col" class="text text-right ind-index">
-                              <i class="material-icons md-18 text-danger align-middle" v-text="tooltipIconName"></i>
-                            </th>
-                            <th scope="col" class="ind-name">Name</th>
-                            <!--<th scope="col" class="ind-tooltip">T</th>-->
-                            <th scope="col" class="text-right ind-value">Value</th>
-                            <th scope="col" class="text-right ind-value">Z Score</th>
-                          </tr>
+                            <tr>
+                              <th scope="col" class="text text-right ind-index">
+                                <i class="material-icons md-18 text-danger align-middle" v-text="tooltipIconName"></i>
+                              </th>
+                              <th scope="col" class="ind-name">Name</th>
+                              <!--<th scope="col" class="ind-tooltip">T</th>-->
+                              <th scope="col" class="text-right ind-value">Value</th>
+                              <th scope="col" class="text-right ind-value">Z Score</th>
+                            </tr>
                           </thead>
-                          <tbody>
-                          <tr v-for="(hi, index) in hazardIndicators" v-if="hazardIndicators.length !== 0">
-                            <th scope="row" class="text-right help ind-index"
-                                data-toggle="tooltip" data-html="true" data-placement="left"
-                                v-bind:title="indicatorTooltips[domains[0].name][index]">
-                              {{ index + 1 }}
-                            </th>
-                            <!--<td class="border-right">{{ hi.description }}</td>-->
-                            <!--<td><label class="clickable-label">{{ hi.description }}</label></td>-->
-                            <td class="ind-name"><a href="#">{{ hi.description }}</a></td>
-                            <!--<th scope="col" class="bg-dark ind-tooltip"></th>-->
-                            <!--<td>-->
-                            <!--<i class="material-icons md-18 help text-danger"-->
-                            <!--data-toggle="tooltip" data-html="true" data-placement="left"-->
-                            <!--v-text="tooltipIconName"-->
-                            <!--v-bind:title="indicatorTooltips[domains[0].name][index]">-->
-                            <!--</i>-->
-                            <!--</td>-->
-                            <td class="text-right ind-value">{{ hi.value }}</td>
-                            <td class="text-right ind-value"
-                                v-bind:class="[hi.zscore < 0 ? 'text-danger' : '']">
-                              {{ hi.zscore }}
-                            </td>
-                          </tr>
+                          <tbody v-for="(hi, index) in hazardIndicators" v-if="hazardIndicators.length !== 0">
+                            <tr>
+                              <th scope="row" class="text-right help ind-index"
+                                  data-toggle="tooltip" data-html="true" data-placement="left"
+                                  v-bind:title="indicatorTooltips[domains[0].name][index]">
+                                {{ index + 1 }}
+                              </th>
+                              <!--<td class="border-right">{{ hi.description }}</td>-->
+                              <!--<td><label class="clickable-label">{{ hi.description }}</label></td>-->
+                              <td class="ind-name">
+                                <a data-toggle="collapse" aria-expanded="false"
+                                   v-bind:href="['#details-' + hi.name]"
+                                   v-bind:aria-controls="['details-' + hi.name]"
+                                   v-on:click="toggleDetails(index)">
+                                  {{ hi.description }}
+                                </a>
+                              </td>
+                              <td class="text-right ind-value">{{ hi.value }}</td>
+                              <td class="text-right ind-value"
+                                  v-bind:class="[hi.zscore < 0 ? 'text-danger' : '']">
+                                {{ hi.zscore }}
+                              </td>
+                            </tr>
+
+                            <tr v-bind:id="['details-' + hi.name]" class="collapse">
+                              <td colspan="4">
+                                <div class="card card-body">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                </div>
+                              </td>
+                            </tr>
                           </tbody>
                         </table>
 
@@ -2078,6 +2099,7 @@
       </div>
 
     </div>
+
   </div>
 
 </div>
@@ -2110,7 +2132,7 @@
 <!--<script type="text/javascript" src="js/data.js"></script>-->
 <script type="text/javascript" src="js/color-palettes.js"></script>
 <script type="text/javascript" src="js/nuts-3-2013-polygons-v3-epsg-4326-p4.js"></script>
-<script type="text/javascript" src="js/map.js"></script>
+<script type="text/javascript" src="js/map2.js"></script>
 
 <script>
   $(document).ready(function () {

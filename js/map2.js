@@ -1173,30 +1173,30 @@ let HtmlTemplates = {
    * The HTML template used to display a tooltip with metadata about supergroups or groups.
    */
   typologyMetadataTooltip: '<div class="card">' +
-  '<div class="card-header bg-dark">' +
-  //'<i class="display-1 text-center text-danger material-icons">@@icon@@</i>' +
-  '<i class="display-1 text-danger @@icon@@" style="margin-left: 20px;"></i>' +
-  '</div>' +
-  '<div class="card-body">' +
-  '<h4 class="card-title"><strong><em>@@name@@</em></strong></h4>' +
-  '<p class="card-text">@@description@@</p>' +
-  '</div>' +
-  '</div>',
+                             '<div class="card-header bg-dark">' +
+                               //'<i class="display-1 text-center text-danger material-icons">@@icon@@</i>' +
+                               '<i class="display-1 text-danger @@icon@@" style="margin-left: 20px;"></i>' +
+                             '</div>' +
+                             '<div class="card-body">' +
+                               '<h4 class="card-title"><strong><em>@@name@@</em></strong></h4>' +
+                               '<p class="card-text">@@description@@</p>' +
+                             '</div>' +
+                           '</div>',
 
   /**
    * The HTML template used to display a tooltip with metadata about indicators/
    */
   indicatorMetadataTooltip: '<div class="card">' +
-  '<div class="card-header bg-dark">' +
-  //'<i class="display-1 text-center text-danger material-icons">@@icon@@</i>' +
-  '<i class="display-1 text-danger @@icon@@" style="margin-left: 20px;"></i>' +
-  '</div>' +
-  '<div class="card-body">' +
-  '<h4 class="card-title"><strong><em>@@description@@</em></strong></h4>' +
-  '<h4 class="card-title text-right border-left"><strong><em>@@unit@@</em></strong></h4>' +
-  '<p class="card-text">@@details@@</p>' +
-  '</div>' +
-  '</div>'
+                              '<div class="card-header bg-dark">' +
+                                //'<i class="display-1 text-center text-danger material-icons">@@icon@@</i>' +
+                                '<i class="display-1 text-danger @@icon@@" style="margin-left: 20px;"></i>' +
+                              '</div>' +
+                              '<div class="card-body">' +
+                                '<h4 class="card-title"><strong><em>@@description@@</em></strong></h4>' +
+                                '<h4 class="card-title text-right border-left"><strong><em>@@unit@@</em></strong></h4>' +
+                                '<p class="card-text">@@details@@</p>' +
+                              '</div>' +
+                            '</div>'
 
 };
 
@@ -1880,10 +1880,10 @@ let overviewInfoViewModel = new Vue({
 
           for (let i = 0; i < this.domainDictionaryIndicators[domain].length; i++) {
             let html = HtmlTemplates.indicatorMetadataTooltip
-              .replace('@@icon@@', this.domainDictionaryIndicators[domain][i].faicon)
-              .replace('@@description@@', this.domainDictionaryIndicators[domain][i].description)
-              .replace('@@unit@@', this.domainDictionaryIndicators[domain][i].unit)
-              .replace('@@details@@', this.domainDictionaryIndicators[domain][i].details);
+                        .replace('@@icon@@', this.domainDictionaryIndicators[domain][i].faIcon)
+                        .replace('@@description@@', this.domainDictionaryIndicators[domain][i].description)
+                        .replace('@@unit@@', this.domainDictionaryIndicators[domain][i].unit)
+                        .replace('@@details@@', this.domainDictionaryIndicators[domain][i].details);
 
             tooltipsDic[domain].push(html);
           }
@@ -1960,6 +1960,10 @@ let overviewInfoViewModel = new Vue({
       this.domains[index].isOverviewVisible = !this.domains[index].isOverviewVisible;
     },
 
+    toggleDetails(index) {
+      this.hazardIndicators[index].isDetailsVisible = !this.hazardIndicators[index].isDetailsVisible;
+    },
+
 
     updateView(feature) {
 
@@ -1973,8 +1977,8 @@ let overviewInfoViewModel = new Vue({
       let sg = feature.properties.SG;
       let g = feature.properties.G;
 
-      this.nuts3Name = AppData.nuts3[nuts3id].name_ascii;
-      this.nuts3NativeName = AppData.nuts3[nuts3id].nuts_name;
+      this.nuts3Name = AppData.nuts3[nuts3id].nameAscii;
+      this.nuts3NativeName = AppData.nuts3[nuts3id].nutsName;
 
       let currentLevel = nuts3LayerSetupViewModel.currentTab;
 
@@ -2026,14 +2030,17 @@ let overviewInfoViewModel = new Vue({
           details: im.details,
           source: im.source,
           domain: im.domain,
+          isOverviewVisible: im.isOverviewVisible,
+          isDetailsVisible: im.isDetailsVisible,
+          isPinned: im.isPinned,
           value: value,
           zscore: feature.properties[im.name + 'Z'].toFixed(3)
         });
       }
 
 
-
-
+      // Make sure that the html content of the tooltip will be displayed
+      // by explicitly calling the tooltip jquery method.
       $('[data-toggle="tooltip"]').tooltip();
 
 
