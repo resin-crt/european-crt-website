@@ -1910,136 +1910,214 @@
 
                 <div id="overview-indicator-area" style="margin-top: -20px;">
 
-                  <div>
-                    <button class="btn btn-danger" type="button"
-                            data-toggle="collapse" data-target="#collapse0"
-                            aria-expanded="true" aria-controls="collapse0"
-                            v-text="domains[0].isOverviewVisible ? 'Hide ' + domains[0].name : 'Show ' + domains[0].name"
-                            v-on:click="toggleDomain(0)">
+
+                  <div v-for="(domain, dIndex) in domains" v-if="domains.length !== 0">
+                    <button class="btn btn-danger" type="button" data-toggle="collapse"
+                            v-bind:data-target="['#collapse' + dIndex]"
+                            aria-expanded="true"
+                            v-bind:aria-controls="['collapse' + dIndex]"
+                            v-text="domain.isOverviewVisible ? 'Hide ' + domain.name : 'Show ' + domain.name"
+                            v-on:click="toggleDomain(dIndex)">
                     </button>
 
-                    <div id="collapse0" class="collapse show">
-
+                    <div v-bind:id="['collapse' + dIndex]" class="collapse show">
                       <div class="card card-body">
-                        <table class="table-bordered table-striped table-hover ind-table">
-                          <!--class="table-dark"-->
-                          <thead style="background-color: #c9ceea;">
-                            <tr>
-                              <th scope="col" class="text text-right ind-index">
-                                <i class="material-icons md-18 text-danger align-middle" v-text="tooltipIconName"></i>
-                              </th>
-                              <th scope="col" class="ind-name">Name</th>
-                              <!--<th scope="col" class="ind-tooltip">T</th>-->
-                              <th scope="col" class="text-right ind-value">Value</th>
-                              <th scope="col" class="text-right ind-value">Z Score</th>
-                            </tr>
-                          </thead>
-                          <tbody v-for="(hi, index) in hazardIndicators" v-if="hazardIndicators.length !== 0">
-                            <tr>
-                              <th scope="row" class="text-right help ind-index"
-                                  data-toggle="tooltip" data-html="true" data-placement="left"
-                                  v-bind:title="indicatorTooltips[domains[0].name][index]">
-                                {{ index + 1 }}
-                              </th>
-                              <!--<td class="border-right">{{ hi.description }}</td>-->
-                              <!--<td><label class="clickable-label">{{ hi.description }}</label></td>-->
-                              <td class="ind-name">
-                                <a data-toggle="collapse" aria-expanded="false"
-                                   v-bind:href="['#details-' + hi.name]"
-                                   v-bind:aria-controls="['details-' + hi.name]"
-                                   v-on:click="toggleDetails(index)">
-                                  {{ hi.description }}
-                                </a>
-                              </td>
-                              <td class="text-right ind-value">{{ hi.value }}</td>
-                              <td class="text-right ind-value"
-                                  v-bind:class="[hi.zscore < 0 ? 'text-danger' : '']">
-                                {{ hi.zscore }}
-                              </td>
-                            </tr>
 
-                            <tr v-bind:id="['details-' + hi.name]" class="collapse">
-                              <td colspan="4">
-                                <div class="card card-body">
-                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                                </div>
-                              </td>
-                            </tr>
+                        <table class="table-bordered table-striped table-hover ind-table">
+                          <thead style="background-color: #c9ceea;">
+                          <tr>
+                            <th scope="col" class="text text-right ind-index">
+                              <i class="material-icons md-18 text-danger align-middle" v-text="tooltipIconName"></i>
+                            </th>
+                            <th scope="col" class="ind-name">Name</th>
+                            <th scope="col" class="text-right ind-value">Value</th>
+                            <th scope="col" class="text-right ind-value">Z Score</th>
+                          </tr>
+                          </thead>
+                          <tbody v-for="(indicator, iIndex) in domainDictionaryIndicators[domain.name]"
+                                 v-if="domain.isOverviewVisible && domainDictionaryIndicators[domain.name].length !== 0 && indicator.isOverviewVisible">
+                          <tr>
+                            <th scope="row" class="text-right help ind-index"
+                                data-toggle="tooltip" data-html="true" data-placement="left"
+                                v-bind:title="indicatorTooltips[domain.name][iIndex]">
+                              {{ iIndex + 1 }}
+                            </th>
+                            <td class="ind-name">
+                              <a data-toggle="collapse" aria-expanded="false"
+                                 v-bind:href="['#details-' + indicator.name]"
+                                 v-bind:aria-controls="['details-' + indicator.name]"
+                                 v-on:click="toggleDetails(domain.name, iIndex)">
+                                {{ indicator.description }}
+                              </a>
+                            </td>
+                            <td class="text-right ind-value"
+                                v-text="domainDictionaryIndicatorValues !== undefined ? domainDictionaryIndicatorValues[domain.name][iIndex].value : ''">
+                            </td>
+                            <td class="text-right ind-value"
+                                v-text="domainDictionaryIndicatorValues !== undefined ? domainDictionaryIndicatorValues[domain.name][iIndex].zscore : ''"
+                                v-bind:class="[domainDictionaryIndicatorValues !== undefined && domainDictionaryIndicatorValues[domain.name][iIndex].zscore < 0 ? 'text-danger' : '']">
+                            </td>
+                          </tr>
+
+                          <tr v-bind:id="['details-' + indicator.name]" class="collapse">
+                            <td colspan="4">
+                              <div class="card card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                              </div>
+                            </td>
+                          </tr>
                           </tbody>
                         </table>
 
-
-
                       </div>
                     </div>
+
+                    <div class="crt-hor-sep"></div>
                   </div>
 
-                  <div>
-                    <button class="btn btn-danger" type="button"
-                            data-toggle="collapse" data-target="#collapse1"
-                            aria-expanded="true" aria-controls="collapse1"
-                            v-text="domains[1].isOverviewVisible === true ? 'Hide ' + domains[1].name : 'Show ' + domains[1].name"
-                            v-on:click="toggleDomain(1)">
-                    </button>
 
-                    <div id="collapse1" class="indicators-container collapse show">
+
+
+
+                  <!--<div>-->
+                    <!--<button class="btn btn-danger" type="button"-->
+                            <!--data-toggle="collapse" data-target="#collapse0"-->
+                            <!--aria-expanded="true" aria-controls="collapse0"-->
+                            <!--v-text="domains[0].isOverviewVisible ? 'Hide ' + domains[0].name : 'Show ' + domains[0].name"-->
+                            <!--v-on:click="toggleDomain(0)">-->
+                    <!--</button>-->
+
+                    <!--<div id="collapse0" class="collapse show">-->
+
+                      <!--<div>-->
                       <!--<div class="card card-body">-->
-                      Exposure Indicators.
+                        <!--<table class="table-bordered table-striped table-hover ind-table">-->
+                          <!--&lt;!&ndash;class="table-dark"&ndash;&gt;-->
+                          <!--<thead style="background-color: #c9ceea;">-->
+                            <!--<tr>-->
+                              <!--<th scope="col" class="text text-right ind-index">-->
+                                <!--<i class="material-icons md-18 text-danger align-middle" v-text="tooltipIconName"></i>-->
+                              <!--</th>-->
+                              <!--<th scope="col" class="ind-name">Name</th>-->
+                              <!--&lt;!&ndash;<th scope="col" class="ind-tooltip">T</th>&ndash;&gt;-->
+                              <!--<th scope="col" class="text-right ind-value">Value</th>-->
+                              <!--<th scope="col" class="text-right ind-value">Z Score</th>-->
+                            <!--</tr>-->
+                          <!--</thead>-->
+                          <!--<tbody v-for="(hi, index) in hazardIndicators" v-if="hazardIndicators.length !== 0">-->
+                            <!--<tr>-->
+                              <!--<th scope="row" class="text-right help ind-index"-->
+                                  <!--data-toggle="tooltip" data-html="true" data-placement="left"-->
+                                  <!--v-bind:title="indicatorTooltips[domains[0].name][index]">-->
+                                <!--{{ index + 1 }}-->
+                              <!--</th>-->
+                              <!--<td class="ind-name">-->
+                                <!--<a data-toggle="collapse" aria-expanded="false"-->
+                                   <!--v-bind:href="['#details-' + hi.name]"-->
+                                   <!--v-bind:aria-controls="['details-' + hi.name]"-->
+                                   <!--v-on:click="toggleDetails(index)">-->
+                                  <!--{{ hi.description }}-->
+                                <!--</a>-->
+                              <!--</td>-->
+                              <!--<td class="text-right ind-value">{{ hi.value }}</td>-->
+                              <!--<td class="text-right ind-value"-->
+                                  <!--v-bind:class="[hi.zscore < 0 ? 'text-danger' : '']">-->
+                                <!--{{ hi.zscore }}-->
+                              <!--</td>-->
+                            <!--</tr>-->
+
+                            <!--<tr v-bind:id="['details-' + hi.name]" class="collapse">-->
+                              <!--<td colspan="4">-->
+                                <!--<div class="card card-body">-->
+                                  <!--Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.-->
+                                  <!--Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.-->
+                                  <!--Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.-->
+                                  <!--Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.-->
+                                  <!--Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.-->
+                                  <!--Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.-->
+                                  <!--Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.-->
+                                  <!--Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.-->
+                                <!--</div>-->
+                              <!--</td>-->
+                            <!--</tr>-->
+                          <!--</tbody>-->
+                        <!--</table>-->
+
                       <!--</div>-->
-                    </div>
-                  </div>
-
-                  <div>
-                    <button class="btn btn-danger" type="button"
-                            data-toggle="collapse" data-target="#collapse2"
-                            aria-expanded="true" aria-controls="collapse2"
-                            v-text="domains[2].isOverviewVisible === true ? 'Hide ' + domains[2].name : 'Show ' + domains[2].name"
-                            v-on:click="toggleDomain(2)">
-                    </button>
-
-                    <div id="collapse2" class="indicators-container collapse show">
-                      <!--<div class="card card-body">-->
-                      Vulnerability - Sensitivity Indicators
                       <!--</div>-->
-                    </div>
-                  </div>
 
-                  <div>
-                    <button class="btn btn-danger" type="button"
-                            data-toggle="collapse" data-target="#collapse3"
-                            aria-expanded="true" aria-controls="collapse3"
-                            v-text="domains[3].isOverviewVisible === true ? 'Hide ' + domains[3].name : 'Show ' + domains[3].name"
-                            v-on:click="toggleDomain(3)">
-                    </button>
+                    <!--</div>-->
+                  <!--</div>-->
 
-                    <div id="collapse3" class="indicators-container collapse show">
-                      <!--<div class="card card-body">-->
-                      Vulnerability - Adaptive Capacity Indicators
-                      <!--</div>-->
-                    </div>
-                  </div>
+                  <!--<div>-->
+                    <!--<button class="btn btn-danger" type="button"-->
+                            <!--data-toggle="collapse" data-target="#collapse1"-->
+                            <!--aria-expanded="true" aria-controls="collapse1"-->
+                            <!--v-text="domains[1].isOverviewVisible === true ? 'Hide ' + domains[1].name : 'Show ' + domains[1].name"-->
+                            <!--v-on:click="toggleDomain(1)">-->
+                    <!--</button>-->
 
-                  <div>
-                    <button class="btn btn-danger" type="button"
-                            data-toggle="collapse" data-target="#collapse4"
-                            aria-expanded="true" aria-controls="collapse4"
-                            v-text="domains[4].isOverviewVisible === true ? 'Hide ' + domains[4].name : 'Show ' + domains[4].name"
-                            v-on:click="toggleDomain(4)">
-                    </button>
+                    <!--<div id="collapse1" class="indicators-container collapse show">-->
+                      <!--&lt;!&ndash;<div class="card card-body">&ndash;&gt;-->
+                      <!--Exposure Indicators.-->
+                      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--</div>-->
+                  <!--</div>-->
 
-                    <div id="collapse4" class="indicators-container collapse show">
-                      <!--<div class="card card-body">-->
-                      Other Indicators
-                      <!--</div>-->
-                    </div>
-                  </div>
+                  <!--<div>-->
+                    <!--<button class="btn btn-danger" type="button"-->
+                            <!--data-toggle="collapse" data-target="#collapse2"-->
+                            <!--aria-expanded="true" aria-controls="collapse2"-->
+                            <!--v-text="domains[2].isOverviewVisible === true ? 'Hide ' + domains[2].name : 'Show ' + domains[2].name"-->
+                            <!--v-on:click="toggleDomain(2)">-->
+                    <!--</button>-->
+
+                    <!--<div id="collapse2" class="indicators-container collapse show">-->
+                      <!--&lt;!&ndash;<div class="card card-body">&ndash;&gt;-->
+                      <!--Vulnerability - Sensitivity Indicators-->
+                      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--</div>-->
+                  <!--</div>-->
+
+                  <!--<div>-->
+                    <!--<button class="btn btn-danger" type="button"-->
+                            <!--data-toggle="collapse" data-target="#collapse3"-->
+                            <!--aria-expanded="true" aria-controls="collapse3"-->
+                            <!--v-text="domains[3].isOverviewVisible === true ? 'Hide ' + domains[3].name : 'Show ' + domains[3].name"-->
+                            <!--v-on:click="toggleDomain(3)">-->
+                    <!--</button>-->
+
+                    <!--<div id="collapse3" class="indicators-container collapse show">-->
+                      <!--&lt;!&ndash;<div class="card card-body">&ndash;&gt;-->
+                      <!--Vulnerability - Adaptive Capacity Indicators-->
+                      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--</div>-->
+                  <!--</div>-->
+
+                  <!--<div>-->
+                    <!--<button class="btn btn-danger" type="button"-->
+                            <!--data-toggle="collapse" data-target="#collapse4"-->
+                            <!--aria-expanded="true" aria-controls="collapse4"-->
+                            <!--v-text="domains[4].isOverviewVisible === true ? 'Hide ' + domains[4].name : 'Show ' + domains[4].name"-->
+                            <!--v-on:click="toggleDomain(4)">-->
+                    <!--</button>-->
+
+                    <!--<div id="collapse4" class="indicators-container collapse show">-->
+                      <!--&lt;!&ndash;<div class="card card-body">&ndash;&gt;-->
+                      <!--Other Indicators-->
+                      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--</div>-->
+                  <!--</div>-->
+
+
+
 
                 </div>
 
