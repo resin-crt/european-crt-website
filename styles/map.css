@@ -189,6 +189,9 @@ body {
   width: 60px;
 }
 
+.typology-class-header {
+  margin-top: -21px;
+}
 
 
 /*
@@ -222,13 +225,13 @@ body {
  *  ================================================================================
  */
 /*.yellow {*/
-  /*color: #ff9c00;*/
+/*color: #ff9c00;*/
 /*}*/
 
 /*.title {*/
-  /*font-weight: bold;*/
-  /*text-shadow: -1px 0 #696969, 0 1px #696969, 1px 0 #696969, 0 -1px #696969;*/
-  /*!*text-shadow: -1px 0 #808080, 0 1px #808080, 1px 0 #808080, 0 -1px #808080;*!*/
+/*font-weight: bold;*/
+/*text-shadow: -1px 0 #696969, 0 1px #696969, 1px 0 #696969, 0 -1px #696969;*/
+/*!*text-shadow: -1px 0 #808080, 0 1px #808080, 1px 0 #808080, 0 -1px #808080;*!*/
 /*}*/
 
 /*
@@ -631,8 +634,8 @@ body {
 }
 
 /*.sidebar-card > .card-body > .table th, .table td > .colour-narrow-td {*/
-  /*padding-left: 0;*/
-  /*padding-right: 0;*/
+/*padding-left: 0;*/
+/*padding-right: 0;*/
 /*}*/
 
 

@@ -149,7 +149,6 @@
 
                   <div class="btn-toolbar" role="toolbar" aria-label="Map Toolbar">
 
-                    <!--<div class="alert alert-warning" style="padding: 0 0 0 0;">-->
                     <div id="toggleBaseMapButtonsVM" class="btn-group-toggle border rounded" role="group"
                          aria-label="Select basemap" data-toggle="buttons">
                       <button id="darkButton" type="button" class="btn btn-danger"
@@ -192,7 +191,6 @@
                         </div>
                       </button>
                     </div>
-                    <!--</div>-->
 
                     <div class="crt-ver-sep"></div>
 
@@ -215,7 +213,6 @@
 
                     <div class="crt-ver-sep"></div>
 
-                    <!--<div class="alert alert-info" style="padding: 0 0 0 0;">-->
                     <div id="toggleInfoLevelButtonsVM" class="btn-group-toggle border rounded" role="group"
                          aria-label="Select displayed information level" data-toggle="buttons">
                       <button id="overviewLevelButton" type="button" class="btn btn-danger"
@@ -245,7 +242,6 @@
                         </div>
                       </button>
                     </div>
-                    <!--</div>-->
 
                   </div>
 
@@ -1935,7 +1931,7 @@
                           </tr>
                           </thead>
                           <tbody v-for="(indicator, iIndex) in domainDictionaryIndicators[domain.name]"
-                                 v-if="domain.isOverviewVisible && domainDictionaryIndicators[domain.name].length !== 0 && indicator.isOverviewVisible">
+                                 v-if="domainDictionaryIndicators[domain.name].length !== 0 && indicator.isOverviewVisible">
                           <tr>
                             <th scope="row" class="text-right help ind-index"
                                 data-toggle="tooltip" data-html="true" data-placement="left"

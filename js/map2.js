@@ -1974,9 +1974,11 @@ let overviewInfoViewModel = new Vue({
         return;
       }
 
-      let nuts3id = feature.properties.NUTS_ID;
-      let sg = feature.properties.SG;
-      let g = feature.properties.G;
+      let properties = feature.properties;
+
+      let nuts3id = properties.NUTS_ID;
+      let sg = properties.SG;
+      let g = properties.G;
 
       this.nuts3Name = AppData.nuts3[nuts3id].nameAscii;
       this.nuts3NativeName = AppData.nuts3[nuts3id].nutsName;
@@ -2027,37 +2029,17 @@ let overviewInfoViewModel = new Vue({
 
           for (let i = 0; i < AppData.domainDictionaryIndicators[domain].length; i++) {
             let im = AppData.domainDictionaryIndicators[domain][i];
-            let value = im.type === 'double' ? feature.properties[im.name].toFixed(3) : feature.properties[im.name].toFixed(0); // TODO: RESIN - toFixed(0) MUST be removed once I have the correct data.
+            let value = im.type === 'double' ? properties[im.name].toFixed(3) : properties[im.name].toFixed(0); // TODO: RESIN - toFixed(0) MUST be removed once I have the correct data.
 
             this.domainDictionaryIndicatorValues[domain].push({
               name: this.domainDictionaryIndicators[i],
               value: value,
-              zscore: feature.properties[im.name + 'Z'].toFixed(3)
+              zscore: properties[im.name + 'Z'].toFixed(3)
             })
           }
 
         }
       }
-
-
-      // for (let i = 0; i < AppData.domainDictionaryIndicators[this.domains[0].name].length; i++) {
-      //   let im = AppData.domainDictionaryIndicators[this.domains[0].name][i];
-      //   let value = im.type === 'double' ? feature.properties[im.name].toFixed(3) : feature.properties[im.name].toFixed(0); // TODO: RESIN - toFixed(0) MUST be removed once I have the correct data.
-      //
-      //   this.hazardIndicators.push({
-      //     name: im.name,
-      //     description: im.description,
-      //     unit: im.unit,
-      //     details: im.details,
-      //     source: im.source,
-      //     domain: im.domain,
-      //     isOverviewVisible: im.isOverviewVisible,
-      //     isDetailsVisible: im.isDetailsVisible,
-      //     isPinned: im.isPinned,
-      //     value: value,
-      //     zscore: feature.properties[im.name + 'Z'].toFixed(3)
-      //   });
-      // }
 
 
       // Make sure that the html content of the tooltip will be displayed

@@ -1474,59 +1474,59 @@ let toggleNuts3LayerSetupViewModel = new Vue({
   // TODO: RESIN - This view model most probably will not be needed.
 let toggleInfoLevelViewModel = new Vue({
 
-  /**
-   * The name of the view model.
-   */
-  el: '#toggleInfoLevelButtonsVM',
-
-  /**
-   * The model of the view model.
-   */
-  data: {
+    /**
+     * The name of the view model.
+     */
+    el: '#toggleInfoLevelButtonsVM',
 
     /**
-     * The current information Level displayed on the web page.
+     * The model of the view model.
      */
-    currentInfoLevel: 'overview',
+    data: {
 
-    /**
-     * The dictionary whose keys are the names of information level and items are objects providing the
-     * names, icon names and descriptions of the buttons.
-     * The descriptions can be used in aria-labels or as tooltips.
-     */
-    dictionary: {
-      // 1.local_library, 2.blur_on, 3.center_focus_weak, all_out, language, wallpaper, calendar_today, 360, trip_origin, fullscreen, public
-      'overview': { name: 'Overview',  iconName: 'blur_on', description: 'Overview Level Information' },
-      // 1.event_note, 2.blur_circular, 3.[center_focus_strong, crop_free], book, class, extension, pageview, library_books, menu
-      'details':  { name: 'Details',   iconName: 'blur_circular', description: 'Details Level Information' }
+      /**
+       * The current information Level displayed on the web page.
+       */
+      currentInfoLevel: 'overview',
+
+      /**
+       * The dictionary whose keys are the names of information level and items are objects providing the
+       * names, icon names and descriptions of the buttons.
+       * The descriptions can be used in aria-labels or as tooltips.
+       */
+      dictionary: {
+        // 1.local_library, 2.blur_on, 3.center_focus_weak, all_out, language, wallpaper, calendar_today, 360, trip_origin, fullscreen, public
+        'overview': { name: 'Overview',  iconName: 'blur_on', description: 'Overview Level Information' },
+        // 1.event_note, 2.blur_circular, 3.[center_focus_strong, crop_free], book, class, extension, pageview, library_books, menu
+        'details':  { name: 'Details',   iconName: 'blur_circular', description: 'Details Level Information' }
+      },
+
     },
 
-  },
-
-  /**
-   * The methods of the view model.
-   */
-  methods: {
-
     /**
-     * Sets the current information level.
-     *
-     * @param infoLevel - The information level.
+     * The methods of the view model.
      */
-    setCurrentInfoLevel(infoLevel) {
+    methods: {
 
-      this.currentInfoLevel = infoLevel;
+      /**
+       * Sets the current information level.
+       *
+       * @param infoLevel - The information level.
+       */
+      setCurrentInfoLevel(infoLevel) {
 
-      if (AppState.bootstrapMaterialTooltipEnabled) {
-        let element = '#' + infoLevel + 'LevelButton';
-        $(element).tooltip('hide');
+        this.currentInfoLevel = infoLevel;
+
+        if (AppState.bootstrapMaterialTooltipEnabled) {
+          let element = '#' + infoLevel + 'LevelButton';
+          $(element).tooltip('hide');
+        }
+
       }
 
     }
 
-  }
-
-});
+  });
 
 /**
  * The nuts3LayerSetupViewModel provides tha data and logic
@@ -1616,9 +1616,9 @@ let nuts3LayerSetupViewModel = new Vue({
       for (let sg in this.supergroups) {
         if (this.supergroups.hasOwnProperty(sg)) {
           tooltips[sg] = HtmlTemplates.typologyMetadataTooltip
-                          .replace('@@icon@@', icons[sg])
-                          .replace('@@name@@', MapLayers.nuts3.supergroups[sg].name)
-                          .replace('@@description@@', MapLayers.nuts3.supergroups[sg].description);
+            .replace('@@icon@@', icons[sg])
+            .replace('@@name@@', MapLayers.nuts3.supergroups[sg].name)
+            .replace('@@description@@', MapLayers.nuts3.supergroups[sg].description);
         }
       }
 
@@ -1855,9 +1855,10 @@ let overviewInfoViewModel = new Vue({
 
     domainDictionaryIndicators: AppData.domainDictionaryIndicators,
 
-    hazardIndicators: [],
+    domainDictionaryIndicatorValues: undefined,
 
     tooltipIconName: 'announcement', // feedback, info,
+
 
 
   },
@@ -1880,7 +1881,7 @@ let overviewInfoViewModel = new Vue({
 
           for (let i = 0; i < this.domainDictionaryIndicators[domain].length; i++) {
             let html = HtmlTemplates.indicatorMetadataTooltip
-                        .replace('@@icon@@', this.domainDictionaryIndicators[domain][i].faicon)
+                        .replace('@@icon@@', this.domainDictionaryIndicators[domain][i].faIcon)
                         .replace('@@description@@', this.domainDictionaryIndicators[domain][i].description)
                         .replace('@@unit@@', this.domainDictionaryIndicators[domain][i].unit)
                         .replace('@@details@@', this.domainDictionaryIndicators[domain][i].details);
@@ -1960,6 +1961,10 @@ let overviewInfoViewModel = new Vue({
       this.domains[index].isOverviewVisible = !this.domains[index].isOverviewVisible;
     },
 
+    toggleDetails(domain, index) {
+      this.domainDictionaryIndicators[domain][index].isDetailsVisible = !this.domainDictionaryIndicators[domain][index].isDetailsVisible;
+    },
+
 
     updateView(feature) {
 
@@ -1969,12 +1974,14 @@ let overviewInfoViewModel = new Vue({
         return;
       }
 
-      let nuts3id = feature.properties.NUTS_ID;
-      let sg = feature.properties.SG;
-      let g = feature.properties.G;
+      let properties = feature.properties;
 
-      this.nuts3Name = AppData.nuts3[nuts3id].name_ascii;
-      this.nuts3NativeName = AppData.nuts3[nuts3id].nuts_name;
+      let nuts3id = properties.NUTS_ID;
+      let sg = properties.SG;
+      let g = properties.G;
+
+      this.nuts3Name = AppData.nuts3[nuts3id].nameAscii;
+      this.nuts3NativeName = AppData.nuts3[nuts3id].nutsName;
 
       let currentLevel = nuts3LayerSetupViewModel.currentTab;
 
@@ -2013,27 +2020,30 @@ let overviewInfoViewModel = new Vue({
         this.groupFillColor = nuts3LayerSetupViewModel.groupFillColors[g];
       }
 
-      this.hazardIndicators = [];
+      this.domainDictionaryIndicatorValues = {};
 
-      for (let i = 0; i < AppData.domainDictionaryIndicators[this.domains[0].name].length; i++) {
-        let im = AppData.domainDictionaryIndicators[this.domains[0].name][i];
-        let value = im.type === 'double' ? feature.properties[im.name].toFixed(3) : feature.properties[im.name].toFixed(0); // TODO: RESIN - toFixed(0) MUST be removed once I have the correct data.
+      for (let domain in AppData.domainDictionaryIndicators) {
+        if (AppData.domainDictionaryIndicators.hasOwnProperty(domain)) {
 
-        this.hazardIndicators.push({
-          name: im.name,
-          description: im.description,
-          unit: im.unit,
-          details: im.details,
-          source: im.source,
-          domain: im.domain,
-          value: value,
-          zscore: feature.properties[im.name + 'Z'].toFixed(3)
-        });
+          this.domainDictionaryIndicatorValues[domain] = [];
+
+          for (let i = 0; i < AppData.domainDictionaryIndicators[domain].length; i++) {
+            let im = AppData.domainDictionaryIndicators[domain][i];
+            let value = im.type === 'double' ? properties[im.name].toFixed(3) : properties[im.name].toFixed(0); // TODO: RESIN - toFixed(0) MUST be removed once I have the correct data.
+
+            this.domainDictionaryIndicatorValues[domain].push({
+              name: this.domainDictionaryIndicators[i],
+              value: value,
+              zscore: properties[im.name + 'Z'].toFixed(3)
+            })
+          }
+
+        }
       }
 
 
-
-
+      // Make sure that the html content of the tooltip will be displayed
+      // by explicitly calling the tooltip jquery method.
       $('[data-toggle="tooltip"]').tooltip();
 
 
