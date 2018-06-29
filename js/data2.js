@@ -34,7 +34,7 @@ AppData.indicatorMetadata = {
     "domainSort": 12,
     "group": "Extreme cold",
     "groupSort": 12,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -52,7 +52,7 @@ AppData.indicatorMetadata = {
     "domainSort": 4,
     "group": "Heat Stress",
     "groupSort": 4,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -70,7 +70,7 @@ AppData.indicatorMetadata = {
     "domainSort": 14,
     "group": "Extreme cold",
     "groupSort": 14,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -88,7 +88,7 @@ AppData.indicatorMetadata = {
     "domainSort": 6,
     "group": "Heat Stress",
     "groupSort": 6,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -106,7 +106,7 @@ AppData.indicatorMetadata = {
     "domainSort": 8,
     "group": "Heat Stress",
     "groupSort": 8,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -124,7 +124,7 @@ AppData.indicatorMetadata = {
     "domainSort": 16,
     "group": "Extreme cold",
     "groupSort": 16,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -142,7 +142,7 @@ AppData.indicatorMetadata = {
     "domainSort": 10,
     "group": "Heat Stress",
     "groupSort": 10,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -160,7 +160,7 @@ AppData.indicatorMetadata = {
     "domainSort": 18,
     "group": "Fluvial and Pluvial Flooding",
     "groupSort": 38,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -178,7 +178,7 @@ AppData.indicatorMetadata = {
     "domainSort": 26,
     "group": "Drought",
     "groupSort": 18,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -196,7 +196,7 @@ AppData.indicatorMetadata = {
     "domainSort": 20,
     "group": "Fluvial and Pluvial Flooding",
     "groupSort": 40,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -214,7 +214,7 @@ AppData.indicatorMetadata = {
     "domainSort": 22,
     "group": "Fluvial and Pluvial Flooding",
     "groupSort": 42,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -232,7 +232,7 @@ AppData.indicatorMetadata = {
     "domainSort": 24,
     "group": "Fluvial and Pluvial Flooding",
     "groupSort": 44,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -250,7 +250,7 @@ AppData.indicatorMetadata = {
     "domainSort": 28,
     "group": "Coastal Flooding",
     "groupSort": 20,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -268,7 +268,7 @@ AppData.indicatorMetadata = {
     "domainSort": 29,
     "group": "Drought",
     "groupSort": 19,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -286,7 +286,7 @@ AppData.indicatorMetadata = {
     "domainSort": 27,
     "group": "Other",
     "groupSort": 56,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -304,7 +304,7 @@ AppData.indicatorMetadata = {
     "domainSort": 67,
     "group": "Other",
     "groupSort": 64,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -322,7 +322,7 @@ AppData.indicatorMetadata = {
     "domainSort": 68,
     "group": "Other",
     "groupSort": 65,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -340,7 +340,7 @@ AppData.indicatorMetadata = {
     "domainSort": 69,
     "group": "Other",
     "groupSort": 66,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -358,7 +358,7 @@ AppData.indicatorMetadata = {
     "domainSort": 70,
     "group": "Other",
     "groupSort": 67,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -376,7 +376,7 @@ AppData.indicatorMetadata = {
     "domainSort": 71,
     "group": "Other",
     "groupSort": 68,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -394,7 +394,7 @@ AppData.indicatorMetadata = {
     "domainSort": 72,
     "group": "Other",
     "groupSort": 69,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -412,7 +412,7 @@ AppData.indicatorMetadata = {
     "domainSort": 73,
     "group": "Other",
     "groupSort": 70,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -430,7 +430,7 @@ AppData.indicatorMetadata = {
     "domainSort": 74,
     "group": "Other",
     "groupSort": 71,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -448,7 +448,7 @@ AppData.indicatorMetadata = {
     "domainSort": 75,
     "group": "Other",
     "groupSort": 72,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -466,7 +466,7 @@ AppData.indicatorMetadata = {
     "domainSort": 82,
     "group": "Other",
     "groupSort": 73,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -484,7 +484,7 @@ AppData.indicatorMetadata = {
     "domainSort": 32,
     "group": "Fluvial Flooding",
     "groupSort": 29,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -502,7 +502,7 @@ AppData.indicatorMetadata = {
     "domainSort": 35,
     "group": "Fluvial Flooding",
     "groupSort": 30,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -520,7 +520,7 @@ AppData.indicatorMetadata = {
     "domainSort": 36,
     "group": "Fluvial Flooding",
     "groupSort": 31,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -538,7 +538,7 @@ AppData.indicatorMetadata = {
     "domainSort": 41,
     "group": "Fluvial Flooding",
     "groupSort": 32,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -556,7 +556,7 @@ AppData.indicatorMetadata = {
     "domainSort": 44,
     "group": "Fluvial Flooding",
     "groupSort": 33,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -574,7 +574,7 @@ AppData.indicatorMetadata = {
     "domainSort": 50,
     "group": "Fluvial Flooding",
     "groupSort": 35,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -592,7 +592,7 @@ AppData.indicatorMetadata = {
     "domainSort": 53,
     "group": "Fluvial Flooding",
     "groupSort": 36,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -610,7 +610,7 @@ AppData.indicatorMetadata = {
     "domainSort": 47,
     "group": "Fluvial Flooding",
     "groupSort": 34,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -628,7 +628,7 @@ AppData.indicatorMetadata = {
     "domainSort": 33,
     "group": "Coastal Flooding",
     "groupSort": 21,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -646,7 +646,7 @@ AppData.indicatorMetadata = {
     "domainSort": 37,
     "group": "Coastal Flooding",
     "groupSort": 22,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -664,7 +664,7 @@ AppData.indicatorMetadata = {
     "domainSort": 39,
     "group": "Coastal Flooding",
     "groupSort": 23,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -682,7 +682,7 @@ AppData.indicatorMetadata = {
     "domainSort": 42,
     "group": "Coastal Flooding",
     "groupSort": 24,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -700,7 +700,7 @@ AppData.indicatorMetadata = {
     "domainSort": 45,
     "group": "Coastal Flooding",
     "groupSort": 25,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -718,7 +718,7 @@ AppData.indicatorMetadata = {
     "domainSort": 51,
     "group": "Coastal Flooding",
     "groupSort": 27,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -736,7 +736,7 @@ AppData.indicatorMetadata = {
     "domainSort": 54,
     "group": "Coastal Flooding",
     "groupSort": 28,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -754,7 +754,7 @@ AppData.indicatorMetadata = {
     "domainSort": 48,
     "group": "Coastal Flooding",
     "groupSort": 26,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -772,7 +772,7 @@ AppData.indicatorMetadata = {
     "domainSort": 34,
     "group": "Other - Landslide",
     "groupSort": 47,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -790,7 +790,7 @@ AppData.indicatorMetadata = {
     "domainSort": 38,
     "group": "Other - Landslide",
     "groupSort": 48,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -808,7 +808,7 @@ AppData.indicatorMetadata = {
     "domainSort": 40,
     "group": "Other - Landslide",
     "groupSort": 49,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -826,7 +826,7 @@ AppData.indicatorMetadata = {
     "domainSort": 43,
     "group": "Other - Landslide",
     "groupSort": 50,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -844,7 +844,7 @@ AppData.indicatorMetadata = {
     "domainSort": 46,
     "group": "Other - Landslide",
     "groupSort": 51,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -862,7 +862,7 @@ AppData.indicatorMetadata = {
     "domainSort": 52,
     "group": "Other - Landslide",
     "groupSort": 53,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -880,7 +880,7 @@ AppData.indicatorMetadata = {
     "domainSort": 55,
     "group": "Other - Landslide",
     "groupSort": 54,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -898,7 +898,7 @@ AppData.indicatorMetadata = {
     "domainSort": 49,
     "group": "Other - Landslide",
     "groupSort": 52,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -916,7 +916,7 @@ AppData.indicatorMetadata = {
     "domainSort": 56,
     "group": "Other",
     "groupSort": 55,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -934,7 +934,7 @@ AppData.indicatorMetadata = {
     "domainSort": 57,
     "group": "Other",
     "groupSort": 57,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -952,7 +952,7 @@ AppData.indicatorMetadata = {
     "domainSort": 77,
     "group": "Other",
     "groupSort": 75,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -970,7 +970,7 @@ AppData.indicatorMetadata = {
     "domainSort": 80,
     "group": "Other",
     "groupSort": 78,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -988,7 +988,7 @@ AppData.indicatorMetadata = {
     "domainSort": 79,
     "group": "Other",
     "groupSort": 77,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -1006,7 +1006,7 @@ AppData.indicatorMetadata = {
     "domainSort": 81,
     "group": "Other",
     "groupSort": 79,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -1024,7 +1024,7 @@ AppData.indicatorMetadata = {
     "domainSort": 63,
     "group": "Other",
     "groupSort": 80,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -1042,7 +1042,7 @@ AppData.indicatorMetadata = {
     "domainSort": 64,
     "group": "Other",
     "groupSort": 81,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -1060,7 +1060,7 @@ AppData.indicatorMetadata = {
     "domainSort": 78,
     "group": "Other",
     "groupSort": 76,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -1078,7 +1078,7 @@ AppData.indicatorMetadata = {
     "domainSort": 65,
     "group": "Other",
     "groupSort": 82,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -1096,7 +1096,7 @@ AppData.indicatorMetadata = {
     "domainSort": 60,
     "group": "Other",
     "groupSort": 60,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -1114,7 +1114,7 @@ AppData.indicatorMetadata = {
     "domainSort": 61,
     "group": "Other",
     "groupSort": 61,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -1132,7 +1132,7 @@ AppData.indicatorMetadata = {
     "domainSort": 59,
     "group": "Other",
     "groupSort": 59,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -1150,7 +1150,7 @@ AppData.indicatorMetadata = {
     "domainSort": 58,
     "group": "Other",
     "groupSort": 58,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -1168,7 +1168,7 @@ AppData.indicatorMetadata = {
     "domainSort": 66,
     "group": "Other",
     "groupSort": 63,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -1186,7 +1186,7 @@ AppData.indicatorMetadata = {
     "domainSort": 76,
     "group": "Other",
     "groupSort": 74,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -1204,7 +1204,7 @@ AppData.indicatorMetadata = {
     "domainSort": 62,
     "group": "Other",
     "groupSort": 62,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -1222,7 +1222,7 @@ AppData.indicatorMetadata = {
     "domainSort": 30,
     "group": "Fluvial and Pluvial Flooding",
     "groupSort": 45,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -1240,7 +1240,7 @@ AppData.indicatorMetadata = {
     "domainSort": 31,
     "group": "Other - Landslide",
     "groupSort": 46,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": true
@@ -1256,7 +1256,7 @@ AppData.indicatorMetadata = {
     "domainSort": 1,
     "group": "Heat Stress",
     "groupSort": 1,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": false
@@ -1272,7 +1272,7 @@ AppData.indicatorMetadata = {
     "domainSort": 25,
     "group": "Drought",
     "groupSort": 17,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": false
@@ -1288,7 +1288,7 @@ AppData.indicatorMetadata = {
     "domainSort": 19,
     "group": "Fluvial and Pluvial Flooding",
     "groupSort": 39,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": false
@@ -1304,7 +1304,7 @@ AppData.indicatorMetadata = {
     "domainSort": 21,
     "group": "Fluvial and Pluvial Flooding",
     "groupSort": 41,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": false
@@ -1320,7 +1320,7 @@ AppData.indicatorMetadata = {
     "domainSort": 23,
     "group": "Fluvial and Pluvial Flooding",
     "groupSort": 43,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": false
@@ -1336,7 +1336,7 @@ AppData.indicatorMetadata = {
     "domainSort": 11,
     "group": "Extreme cold",
     "groupSort": 11,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": false
@@ -1352,7 +1352,7 @@ AppData.indicatorMetadata = {
     "domainSort": 3,
     "group": "Heat Stress",
     "groupSort": 3,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": false
@@ -1368,7 +1368,7 @@ AppData.indicatorMetadata = {
     "domainSort": 13,
     "group": "Extreme cold",
     "groupSort": 13,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": false
@@ -1384,7 +1384,7 @@ AppData.indicatorMetadata = {
     "domainSort": 5,
     "group": "Heat Stress",
     "groupSort": 5,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": false
@@ -1400,7 +1400,7 @@ AppData.indicatorMetadata = {
     "domainSort": 7,
     "group": "Heat Stress",
     "groupSort": 7,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": false
@@ -1416,7 +1416,7 @@ AppData.indicatorMetadata = {
     "domainSort": 15,
     "group": "Extreme cold",
     "groupSort": 15,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": false
@@ -1432,7 +1432,7 @@ AppData.indicatorMetadata = {
     "domainSort": 9,
     "group": "Heat Stress",
     "groupSort": 9,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": false
@@ -1448,7 +1448,7 @@ AppData.indicatorMetadata = {
     "domainSort": 17,
     "group": "Fluvial and Pluvial Flooding",
     "groupSort": 37,
-    "isVisible": true,
+    "isOverviewVisible": true,
     "isDetailsVisible": true,
     "isPinned": true,
     "isValid": false

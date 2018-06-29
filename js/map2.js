@@ -1855,9 +1855,10 @@ let overviewInfoViewModel = new Vue({
 
     domainDictionaryIndicators: AppData.domainDictionaryIndicators,
 
-    hazardIndicators: [],
+    domainDictionaryIndicatorValues: undefined,
 
     tooltipIconName: 'announcement', // feedback, info,
+
 
 
   },
@@ -1960,8 +1961,8 @@ let overviewInfoViewModel = new Vue({
       this.domains[index].isOverviewVisible = !this.domains[index].isOverviewVisible;
     },
 
-    toggleDetails(index) {
-      this.hazardIndicators[index].isDetailsVisible = !this.hazardIndicators[index].isDetailsVisible;
+    toggleDetails(domain, index) {
+      this.domainDictionaryIndicators[domain][index].isDetailsVisible = !this.domainDictionaryIndicators[domain][index].isDetailsVisible;
     },
 
 
@@ -2017,26 +2018,46 @@ let overviewInfoViewModel = new Vue({
         this.groupFillColor = nuts3LayerSetupViewModel.groupFillColors[g];
       }
 
-      this.hazardIndicators = [];
+      this.domainDictionaryIndicatorValues = {};
 
-      for (let i = 0; i < AppData.domainDictionaryIndicators[this.domains[0].name].length; i++) {
-        let im = AppData.domainDictionaryIndicators[this.domains[0].name][i];
-        let value = im.type === 'double' ? feature.properties[im.name].toFixed(3) : feature.properties[im.name].toFixed(0); // TODO: RESIN - toFixed(0) MUST be removed once I have the correct data.
+      for (let domain in AppData.domainDictionaryIndicators) {
+        if (AppData.domainDictionaryIndicators.hasOwnProperty(domain)) {
 
-        this.hazardIndicators.push({
-          name: im.name,
-          description: im.description,
-          unit: im.unit,
-          details: im.details,
-          source: im.source,
-          domain: im.domain,
-          isOverviewVisible: im.isOverviewVisible,
-          isDetailsVisible: im.isDetailsVisible,
-          isPinned: im.isPinned,
-          value: value,
-          zscore: feature.properties[im.name + 'Z'].toFixed(3)
-        });
+          this.domainDictionaryIndicatorValues[domain] = [];
+
+          for (let i = 0; i < AppData.domainDictionaryIndicators[domain].length; i++) {
+            let im = AppData.domainDictionaryIndicators[domain][i];
+            let value = im.type === 'double' ? feature.properties[im.name].toFixed(3) : feature.properties[im.name].toFixed(0); // TODO: RESIN - toFixed(0) MUST be removed once I have the correct data.
+
+            this.domainDictionaryIndicatorValues[domain].push({
+              name: this.domainDictionaryIndicators[i],
+              value: value,
+              zscore: feature.properties[im.name + 'Z'].toFixed(3)
+            })
+          }
+
+        }
       }
+
+
+      // for (let i = 0; i < AppData.domainDictionaryIndicators[this.domains[0].name].length; i++) {
+      //   let im = AppData.domainDictionaryIndicators[this.domains[0].name][i];
+      //   let value = im.type === 'double' ? feature.properties[im.name].toFixed(3) : feature.properties[im.name].toFixed(0); // TODO: RESIN - toFixed(0) MUST be removed once I have the correct data.
+      //
+      //   this.hazardIndicators.push({
+      //     name: im.name,
+      //     description: im.description,
+      //     unit: im.unit,
+      //     details: im.details,
+      //     source: im.source,
+      //     domain: im.domain,
+      //     isOverviewVisible: im.isOverviewVisible,
+      //     isDetailsVisible: im.isDetailsVisible,
+      //     isPinned: im.isPinned,
+      //     value: value,
+      //     zscore: feature.properties[im.name + 'Z'].toFixed(3)
+      //   });
+      // }
 
 
       // Make sure that the html content of the tooltip will be displayed
