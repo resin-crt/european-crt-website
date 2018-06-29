@@ -149,13 +149,21 @@
       <!--</button>-->
     <!--</div>-->
 
-    <div id="toggleBaseMapButtonsVM" class="btn-group border rounded" role="group"
+    <!--border-->
+    <div id="toggleBaseMapButtonsVM" class="btn-group rounded" role="group"
          aria-label="Select basemap" data-toggle="buttons">
 
       <div class="btn-group-toggle" role="group">
-        <button id="dropdownButtonGroup" type="button" class="btn btn-secondary dropdown-toggle"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Select BaseMap
+        <!--dropdown-toggle-->
+        <button id="dropdownButtonGroup" type="button" class="btn btn-danger btn-raised"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                v-bind:aria-label="dictionary[currentBaseMap].description"
+                style="width: 66px; height: 66px;">
+          <!--v-bind:aria-pressed="[currentBaseMap === 'dark' ? 'true' : 'false']"-->
+          <i class="material-icons md-18" v-text="dictionary[currentBaseMap].iconName"></i>
+          <div>
+            <small v-text="dictionary[currentBaseMap].name"></small>
+          </div>
         </button>
 
         <!--<button id="dropdownButtonGroup" type="button" class="btn btn-danger btn-raised dropdown-toggle"-->
@@ -170,32 +178,6 @@
 
 
         <div class="dropdown-menu" aria-labelledby="dropdownButtonGroup">
-          <!--<a class="dropdown-item" href="#" v-text="dictionary['light'].description"-->
-             <!--v-on:click="setCurrentBaseMap('light')">-->
-
-          <!--</a>-->
-          <!--<a class="dropdown-item" href="#" v-text="dictionary['dark'].description"-->
-             <!--v-on:click="setCurrentBaseMap('dark')">-->
-
-          <!--</a>-->
-          <!--<a class="dropdown-item" href="#" v-text="dictionary['roads'].description"-->
-             <!--v-on:click="setCurrentBaseMap('roads')">-->
-
-          <!--</a>-->
-          <!--<a class="dropdown-item" href="#" v-text="dictionary['physical'].description"-->
-             <!--v-on:click="setCurrentBaseMap('physical')">-->
-
-          <!--</a>-->
-          <!--<a class="dropdown-item" href="#" v-text="dictionary['terrain'].description"-->
-             <!--v-on:click="setCurrentBaseMap('terrain')">-->
-
-          <!--</a>-->
-          <!--<a class="dropdown-item" href="#" v-text="dictionary['satellite'].description"-->
-             <!--v-on:click="setCurrentBaseMap('satellite')">-->
-
-          <!--</a>-->
-
-
           <button id="lightButton" type="button" class="btn dropdown-item"
                   style="padding: 0px 12px 0px 12px;"
                   v-bind:aria-label="dictionary['light'].description"
