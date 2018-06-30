@@ -155,27 +155,21 @@
 
       <div class="btn-group-toggle" role="group">
         <!--dropdown-toggle-->
-        <button id="dropdownButtonGroup" type="button" class="btn btn-danger btn-raised"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                v-bind:aria-label="dictionary[currentBaseMap].description"
-                style="width: 66px; height: 66px;">
-          <!--v-bind:aria-pressed="[currentBaseMap === 'dark' ? 'true' : 'false']"-->
-          <i class="material-icons md-18" v-text="dictionary[currentBaseMap].iconName"></i>
-          <div>
-            <small v-text="dictionary[currentBaseMap].name"></small>
-          </div>
-        </button>
-
-        <!--<button id="dropdownButtonGroup" type="button" class="btn btn-danger btn-raised dropdown-toggle"-->
-                <!--data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"-->
-                <!--v-bind:aria-label="dictionary['light'].description"-->
-                <!--v-on:click="setCurrentBaseMap('light')">-->
-          <!--<i class="material-icons" v-text="dictionary[currentBaseMap].iconName"></i>-->
-          <!--<div>-->
-            <!--<small v-text="dictionary[currentBaseMap].name"></small>-->
-          <!--</div>-->
-        <!--</button>-->
-
+        <!--<div>-->
+          <!--data-toggle="tooltip" data-placement="bottom" v-bind:title="Click to change Basemap"-->
+          <button id="dropdownButtonGroup" type="button" class="btn btn-danger btn-raised dropdown-toggle"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                  v-bind:aria-label="dictionary[currentBaseMap].description"
+                  style="width: 66px; height: 66px; padding: 0 0 0 0;">
+            <!--v-bind:aria-pressed="[currentBaseMap === 'dark' ? 'true' : 'false']"-->
+            <i class="material-icons md-18" style="margin-top: 5px;"
+               v-text="dictionary[currentBaseMap].iconName">
+            </i>
+            <div style="margin-top: -5px;">
+              <small class="text-capitalize text-center" v-text="dictionary[currentBaseMap].name"></small>
+            </div>
+          </button>
+        <!--</div>-->
 
         <div class="dropdown-menu" aria-labelledby="dropdownButtonGroup">
           <button id="lightButton" type="button" class="btn dropdown-item"
