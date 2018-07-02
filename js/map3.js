@@ -1580,7 +1580,7 @@ let toggleBaseMapViewModel = new Vue({
       'dark':      { name: 'Dark',      iconName: 'map',            description: 'Dark Basemap' },
       'roads':     { name: 'Roads',     iconName: 'directions_car', description: 'Roads Basemap' },
       'physical':  { name: 'Physical',  iconName: 'panorama',       description: 'Physical Basemap' }, /* 'image, panorama, photo' */
-      'terrain':   { name: 'Terrain',   iconName: 'terrain',        description: 'Terrain Basemap' }, /* 'terrain, landscape' */
+      'terrain':   { name: 'Terrain',   iconName: 'terrain',        description: 'Terrain Basemap' },  /* 'terrain, landscape' */
       'satellite': { name: 'Satellite', iconName: 'healing',        description: 'Satellite Basemap' } /* 'satellite, cast, healing, photo_camera, local_see' */
     }
 
@@ -1738,7 +1738,7 @@ let toggleNuts3LayerSetupViewModel = new Vue({
  *
  * @type {Vue} - A Vue object with the model and methods used in the view model.
  */
-  // TODO: RESIN - This view model most probably will not be needed.
+// TODO: RESIN - This view model most probably will not be needed.
 let toggleInfoLevelViewModel = new Vue({
 
   /**
