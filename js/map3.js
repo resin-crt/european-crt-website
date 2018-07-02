@@ -1820,8 +1820,8 @@ let nuts3LayerSetupViewModel = new Vue({
     currentTab: 'supergroups',
 
     dictionary: {
-      'supergroups': { name: 'Supergroups' },
-      'groups': { name: 'Groups' },
+      'supergroups': { name: 'Classes' },
+      'groups': { name: 'Subclasses' },
       'indicators': { name: 'Indicators' }
     },
 
@@ -2055,7 +2055,49 @@ let nuts3LayerSetupViewModel = new Vue({
     },
 
     /**
+     * Toggles the groups associated with the specified supergroup.
+     *
+     * @param supergroup - The supergroup whose associated groups will be toggled on/off.
+     */
+    toggleGroups(supergroup) {
+
+      areGroupsVisible = true;
+
+      // Loop through all the associated groups.
+      let groups = this.supergroups[supergroup].groups;
+
+      for (let i = 0; i < groups.length; i++) {
+        // Check the visibility of the associated groups.
+        if (this.groups[groups[i].toString()].visible) {
+          // A group was found visible. Make all invisible.
+          areGroupsVisible = false;
+          break;
+        }
+      }
+
+      // Loop through all the associated groups and set their visibility.
+      for (let i = 0; i < groups.length; i++) {
+        this.groups[groups[i].toString()].visible = areGroupsVisible;
+      }
+
+      // Toggle the groups associated with the specified supergroup.
+      this.checkedGroups = [];
+
+      for (let g in this.groups) {
+        if (this.groups.hasOwnProperty(g)) {
+          if (this.groups[g].visible) {
+            this.checkedGroups.push(g.toString());
+          }
+        }
+      }
+
+      MapLayers.nuts3.renderLayer();
+
+    },
+
+    /**
      * Renders the regions of the NUTS3 layer having the specified typology class after toggling it on/off.
+     *
      * @param typologyClass - The typology class that is toggled on/off.
      */
     renderNuts3TypologyClass(typologyClass) {
