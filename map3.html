@@ -106,31 +106,26 @@
 
     <div id="map" class="sidebar-map"></div>
 
-    <!--border-->
     <div id="toggleBaseMapButtonsVM" class="btn-group rounded" role="group"
          aria-label="Select basemap" data-toggle="buttons">
 
       <div class="btn-group-toggle" role="group">
         <!--dropdown-toggle-->
-        <!--<div>-->
-          <!--data-toggle="tooltip" data-placement="bottom" v-bind:title="Click to change Basemap"-->
-          <button id="dropdownButtonGroup" type="button" class="btn btn-danger btn-raised dropdown-toggle"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                  v-bind:aria-label="dictionary[currentBaseMap].description"
-                  style="width: 66px; height: 66px; padding: 0 0 0 0;">
-            <!--v-bind:aria-pressed="[currentBaseMap === 'dark' ? 'true' : 'false']"-->
-            <i class="material-icons md-18" style="margin-top: 5px;"
-               v-text="dictionary[currentBaseMap].iconName">
-            </i>
-            <div style="margin-top: -5px;">
-              <small class="text-capitalize text-center" v-text="dictionary[currentBaseMap].name"></small>
-            </div>
-          </button>
-        <!--</div>-->
+        <!--data-toggle="tooltip" data-placement="bottom" v-bind:title="Click to change Basemap"-->
+        <button id="basemapDropdownButtonGroup" type="button" class="btn btn-danger btn-raised dropdown-toggle"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                v-bind:aria-label="dictionary[currentBaseMap].description">
+          <!--v-bind:aria-pressed="[currentBaseMap === 'dark' ? 'true' : 'false']"-->
+          <i id="currentBaseMapIcon" class="material-icons md-18"
+             v-text="dictionary[currentBaseMap].iconName">
+          </i>
+          <div id="currentBaseMapText">
+            <small class="text-capitalize text-center" v-text="dictionary[currentBaseMap].name"></small>
+          </div>
+        </button>
 
-        <div class="dropdown-menu" aria-labelledby="dropdownButtonGroup">
-          <button id="lightButton" type="button" class="btn dropdown-item"
-                  style="padding: 0px 12px 0px 12px;"
+        <div class="dropdown-menu" aria-labelledby="basemapDropdownButtonGroup">
+          <button id="lightButton" type="button" class="btn dropdown-item dropdown-item-basemap"
                   v-bind:aria-label="dictionary['light'].description"
                   v-bind:aria-pressed="[currentBaseMap === 'light' ? 'true' : 'false']"
                   v-bind:class="[currentBaseMap === 'light' ? 'btn-danger btn-raised' : 'btn-dark']"
@@ -139,8 +134,7 @@
             <div class="crt-ver-sep"></div>
             <div v-text="dictionary['light'].name"></div>
           </button>
-          <button id="darkButton" type="button" class="btn dropdown-item"
-                  style="padding: 0px 12px 0px 12px;"
+          <button id="darkButton" type="button" class="btn dropdown-item dropdown-item-basemap"
                   v-bind:aria-label="dictionary['dark'].description"
                   v-bind:aria-pressed="[currentBaseMap === 'dark' ? 'true' : 'false']"
                   v-bind:class="[currentBaseMap === 'dark' ? 'btn-danger btn-raised' : 'btn-dark']"
@@ -149,8 +143,7 @@
             <div class="crt-ver-sep"></div>
             <div v-text="dictionary['dark'].name"></div>
           </button>
-          <button id="roadsButton" type="button" class="btn dropdown-item"
-                  style="padding: 0px 12px 0px 12px;"
+          <button id="roadsButton" type="button" class="btn dropdown-item dropdown-item-basemap"
                   v-bind:aria-label="dictionary['roads'].description"
                   v-bind:aria-pressed="[currentBaseMap === 'roads' ? 'true' : 'false']"
                   v-bind:class="[currentBaseMap === 'roads' ? 'btn-danger btn-raised' : 'btn-dark']"
@@ -159,8 +152,7 @@
             <div class="crt-ver-sep"></div>
             <div v-text="dictionary['roads'].name"></div>
           </button>
-          <button id="physicalButton" type="button" class="btn dropdown-item"
-                  style="padding: 0px 12px 0px 12px;"
+          <button id="physicalButton" type="button" class="btn dropdown-item dropdown-item-basemap"
                   v-bind:aria-label="dictionary['physical'].description"
                   v-bind:aria-pressed="[currentBaseMap === 'physical' ? 'true' : 'false']"
                   v-bind:class="[currentBaseMap === 'physical' ? 'btn-danger btn-raised' : 'btn-dark']"
@@ -169,8 +161,7 @@
             <div class="crt-ver-sep"></div>
             <div v-text="dictionary['physical'].name"></div>
           </button>
-          <button id="terrainButton" type="button" class="btn dropdown-item"
-                  style="padding: 0px 12px 0px 12px;"
+          <button id="terrainButton" type="button" class="btn dropdown-item dropdown-item-basemap"
                   v-bind:aria-label="dictionary['terrain'].description"
                   v-bind:aria-pressed="[currentBaseMap === 'terrain' ? 'true' : 'false']"
                   v-bind:class="[currentBaseMap === 'terrain' ? 'btn-danger btn-raised' : 'btn-dark']"
@@ -179,8 +170,7 @@
             <div class="crt-ver-sep"></div>
             <div v-text="dictionary['terrain'].name"></div>
           </button>
-          <button id="satelliteButton" type="button" class="btn dropdown-item"
-                  style="padding: 0px 12px 0px 12px;"
+          <button id="satelliteButton" type="button" class="btn dropdown-item dropdown-item-basemap"
                   v-bind:aria-label="dictionary['satellite'].description"
                   v-bind:aria-pressed="[currentBaseMap === 'satellite' ? 'true' : 'false']"
                   v-bind:class="[currentBaseMap === 'satellite' ? 'btn-danger btn-raised' : 'btn-dark']"

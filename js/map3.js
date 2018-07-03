@@ -22,7 +22,12 @@ let AppState = {
   /**
    * The transparent color is used in those cases that a highly transparent color needs to be rendered.
    */
-  transparentColor: { fillColor: '#ffffff', fillOpacity: 0.01 }
+  transparentColor: { fillColor: '#ffffff', fillOpacity: 0.01 },
+
+  /**
+   * The NUTS3 panel displayed currently on the sidebar.
+   */
+  currentNuts3Panel: 'draw' // ['draw' | 'overview' | 'details']
 
 };
 
