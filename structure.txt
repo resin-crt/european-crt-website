@@ -1,0 +1,42 @@
+
+body {
+    nav id:navBarHost {
+    }
+
+    div class:page-container {
+        div class:map-container {
+
+            div id:spinnerVM class:spinner {
+            }
+
+            div id:map class:sidebar-map {
+            }
+
+            div id:toggleBaseMapButtonsVM class:btn-group {
+            }
+
+        }
+
+        div id:sidebar class:sidebar {
+            div id:sidebarTabsVM class:sidebar-tabs
+
+            div class:sidebar-content {
+                div id:map-controls class:sidebar-pane {
+                    div class:sidebar-container {
+                        div class:ctr-row {
+                            div id:symbologyVM class:card {
+
+                            }
+                            div id:overviewInfoVM class:card {
+
+                            }
+                            div id:detailsInfoVM class:card {
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

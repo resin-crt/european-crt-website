@@ -29,6 +29,17 @@ let AppState = {
    */
   currentNuts3Panel: 'draw' // ['draw' | 'overview' | 'details']
 
+  // Overview
+  // 1.blur_on, 2.local_library, 3.center_focus_weak, all_out, language, wallpaper, calendar_today, 360, trip_origin, fullscreen, public
+  //
+  // Details
+  // 1.blur_circular, 2.event_note, 3.[center_focus_strong, crop_free], book, class, extension, pageview, library_books, menu
+
+
+
+
+
+
 };
 
 /**
@@ -1634,184 +1645,21 @@ let toggleBaseMapViewModel = new Vue({
 
 });
 
+
+
+
 /**
- * The toggleNuts3LayerSetupViewModel provides tha data and logic
- * to toggle the layer rendering setup button and panel.
+ * The symbologyViewModel provides tha data and logic
+ * to allow a user to setup the NUTS3 layer symbology.
  *
  * @type {Vue} - A Vue object with the model and methods used in the view model.
  */
-let toggleNuts3LayerSetupViewModel = new Vue({
+let symbologyViewModel = new Vue({
 
   /**
    * The name of the view model.
    */
-  el: '#toggleNuts3LayerSetupButtonVM',
-
-  /**
-   * The model of the view model.
-   */
-  data: {
-
-    /**
-     * Indicates whether the layer rendering setup is displayed or not.
-     */
-    isNuts3LayerSetupVisible: true,
-
-    /**
-     * Button name.
-     */
-    name: 'Layer',
-
-    /**
-     * Button description. Can be used in aria-label or as a tooltip.
-     */
-    description: 'Setup Layer Drawing',
-
-    /**
-     * The button icon name.
-     */
-    iconName: 'layers' //'fas fa-puzzle-piece' // TODO: RESIN - Do we really need these old icons?
-
-  },
-
-  /**
-   * The methods of the view model.
-   */
-  methods: {
-
-    /**
-     * Toggles the NUTS3 layer setup button and panel area.
-     *
-     */
-    toggleNuts3LayerSetup() {
-
-      // Hide the overview info panel if it is visible.
-      if (overviewInfoViewModel.isVisible) {
-        // Make sure the panel is unpinned first.
-        if (overviewInfoViewModel.isPinned) {
-          overviewInfoViewModel.unPin();
-        }
-        overviewInfoViewModel.isVisible = false;
-      }
-
-      // Hide the details info panel if it is visible.
-      if (detailsInfoViewModel.isVisible) {
-        // Make sure the panel is unpinned first.
-        if (detailsInfoViewModel.isPinned) {
-          detailsInfoViewModel.unPin();
-        }
-        detailsInfoViewModel.isVisible = false;
-      }
-
-      // Toggle the button and then toggle the associated panel.
-      this.isNuts3LayerSetupVisible = !this.isNuts3LayerSetupVisible;
-      nuts3LayerSetupViewModel.isVisible = this.isNuts3LayerSetupVisible;
-
-      // Make sure the button tooltip is hidden after clicking on the button.
-      if (AppState.bootstrapMaterialTooltipEnabled) {
-        $('#nuts3LayerSetupButton').tooltip('hide');
-      }
-
-    },
-
-    /**
-     * Shows the NUTS3 Layer setup button and panel area.
-     */
-    showNuts3LayerSetup() {
-
-      this.isNuts3LayerSetupVisible = true;
-      nuts3LayerSetupViewModel.isVisible = true;
-
-    },
-
-    /**
-     * Hides the NUTS3 layer setup button and panel area.
-     */
-    hideNuts3LayerSetup() {
-
-      this.isNuts3LayerSetupVisible = false;
-      nuts3LayerSetupViewModel.isVisible = false;
-
-    }
-
-  }
-
-});
-
-/**
- * The toggleInfoLevelViewModel provides tha data and logic to toggle the information level displayed to the user.
- *
- * @type {Vue} - A Vue object with the model and methods used in the view model.
- */
-// TODO: RESIN - This view model most probably will not be needed.
-let toggleInfoLevelViewModel = new Vue({
-
-  /**
-   * The name of the view model.
-   */
-  el: '#toggleInfoLevelButtonsVM',
-
-  /**
-   * The model of the view model.
-   */
-  data: {
-
-    /**
-     * The current information Level displayed on the web page.
-     */
-    currentInfoLevel: 'overview',
-
-    /**
-     * The dictionary whose keys are the names of information level and items are objects providing the
-     * names, icon names and descriptions of the buttons.
-     * The descriptions can be used in aria-labels or as tooltips.
-     */
-    dictionary: {
-      // 1.local_library, 2.blur_on, 3.center_focus_weak, all_out, language, wallpaper, calendar_today, 360, trip_origin, fullscreen, public
-      'overview': { name: 'Overview',  iconName: 'blur_on', description: 'Overview Level Information' },
-      // 1.event_note, 2.blur_circular, 3.[center_focus_strong, crop_free], book, class, extension, pageview, library_books, menu
-      'details':  { name: 'Details',   iconName: 'blur_circular', description: 'Details Level Information' }
-    },
-
-  },
-
-  /**
-   * The methods of the view model.
-   */
-  methods: {
-
-    /**
-     * Sets the current information level.
-     *
-     * @param infoLevel - The information level.
-     */
-    setCurrentInfoLevel(infoLevel) {
-
-      this.currentInfoLevel = infoLevel;
-
-      if (AppState.bootstrapMaterialTooltipEnabled) {
-        let element = '#' + infoLevel + 'LevelButton';
-        $(element).tooltip('hide');
-      }
-
-    }
-
-  }
-
-});
-
-/**
- * The nuts3LayerSetupViewModel provides tha data and logic
- * to allow a user to setup the NUTS3 layer rendering.
- *
- * @type {Vue} - A Vue object with the model and methods used in the view model.
- */
-let nuts3LayerSetupViewModel = new Vue({
-
-  /**
-   * The name of the view model.
-   */
-  el: '#nuts3LayerSetupVM',
+  el: '#symbologyVM',
 
   /**
    * The model of the view model.
@@ -2126,6 +1974,12 @@ let nuts3LayerSetupViewModel = new Vue({
   }
 
 });
+
+
+
+
+
+
 
 /**
  * The overviewInfoViewModel provides the data and logic

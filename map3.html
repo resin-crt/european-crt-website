@@ -92,6 +92,7 @@
 </nav>
 
 <div class="page-container">
+
   <div class="map-container">
 
     <div id="spinnerVM" class="spinner" v-show="isVisible">
@@ -186,8 +187,6 @@
 
     </div>
 
-
-
   </div>
 
   <div id="sidebar" class="sidebar collapsed sidebar-right leaflet-touch">
@@ -219,89 +218,14 @@
 
     <div class="sidebar-content">
 
-      <div class="sidebar-pane" id="map-controls">
+      <div id="map-controls" class="sidebar-pane">
+        <!---->
+        <div class="pane-container">
 
-        <div>
-        <div class="sidebar-container">
-
-          <div>
           <div class="crt-row">
-            <div class="card sidebar-card">
-              <div class="card-body">
 
-                <div class="crt-row-internal">
-
-                  <div class="btn-toolbar" role="toolbar" aria-label="Map Toolbar">
-
-
-
-                    <div class="crt-ver-sep"></div>
-
-                    <div id="toggleNuts3LayerSetupButtonVM" class="btn-group-toggle border rounded" role="group"
-                         aria-label="Draw Layer" data-toggle="buttons">
-                      <button id="nuts3LayerSetupButton" type="button" class="btn btn-danger"
-                              data-toggle="tooltip"
-                              data-placement="bottom"
-                              v-bind:title="description"
-                              v-bind:aria-label="description"
-                              v-bind:aria-pressed="isNuts3LayerSetupVisible"
-                              v-bind:class="[isNuts3LayerSetupVisible === true ? 'btn-raised' : '']"
-                              v-on:click="toggleNuts3LayerSetup()">
-                        <i class="material-icons" v-text="iconName"></i>
-                        <div>
-                          <small v-text="name"></small>
-                        </div>
-                      </button>
-                    </div>
-
-                    <div class="crt-ver-sep"></div>
-
-                    <div id="toggleInfoLevelButtonsVM" class="btn-group-toggle border rounded" role="group"
-                         aria-label="Select displayed information level" data-toggle="buttons">
-                      <button id="overviewLevelButton" type="button" class="btn btn-danger"
-                              data-toggle="tooltip"
-                              data-placement="bottom"
-                              v-bind:title="dictionary['overview'].description"
-                              v-bind:aria-label="dictionary['overview'].description"
-                              v-bind:aria-pressed="[currentInfoLevel === 'overview' ? 'true' : 'false']"
-                              v-bind:class="[currentInfoLevel === 'overview' ? 'btn-raised' : '']"
-                              v-on:click="setCurrentInfoLevel('overview')">
-                        <i class="material-icons" v-text="dictionary['overview'].iconName"></i>
-                        <div>
-                          <small v-text="dictionary['overview'].name"></small>
-                        </div>
-                      </button>
-                      <button id="detailsLevelButton" type="button" class="btn btn-danger"
-                              data-toggle="tooltip"
-                              data-placement="bottom"
-                              v-bind:title="dictionary['details'].description"
-                              v-bind:aria-label="dictionary['details'].description"
-                              v-bind:aria-pressed="[currentInfoLevel === 'details' ? 'true' : 'false']"
-                              v-bind:class="[currentInfoLevel === 'details' ? 'btn-raised' : '']"
-                              v-on:click="setCurrentInfoLevel('details')">
-                        <i class="material-icons" v-text="dictionary['details'].iconName"></i>
-                        <div>
-                          <small v-text="dictionary['details'].name"></small>
-                        </div>
-                      </button>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-          </div>
-
-          <div class="crt-hor-sep"></div>
-
-          <div>
-          <div class="ctr-row">
-
-            <div id="nuts3LayerSetupVM" class="card sidebar-card"
+            <!-- Symbology -->
+            <div id="symbologyVM" class="card sidebar-card"
                  v-bind:class="[isVisible === false ? 'd-none' : '']">
               <div class="card-header">
 
@@ -333,7 +257,6 @@
                 </ul>
 
               </div>
-
               <div class="card-body">
 
                 <div id="nuts3LayerSetupContent" class="tab-content">
@@ -548,105 +471,6 @@
 
                         </tbody>
                       </table>
-                    </div>
-
-                    <div>
-                      <!--<div id="superGroupSetVisualizationTable" class="nuts3layer-setup-table">-->
-                      <!--<table class="table table-condensed table-striped">-->
-                      <!--<tbody>-->
-                      <!--<tr>-->
-                      <!--<td class="narrow-td">-->
-                      <!--<input type="checkbox" id="g1" value="1" checked v-model="checkedSuperGroups" v-on:change="renderCommuteFlows">-->
-                      <!--</td>-->
-                      <!--<td class="narrow-td">-->
-                      <!--<div class="legend-polygon-rect bc-g1"></div>-->
-                      <!--</td>-->
-                      <!--<td><label for="g1" v-text="superGroups['1'].name"></label></td>-->
-                      <!--<td><a href="classification.html#g1" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
-                      <!--</tr>-->
-                      <!--<tr>-->
-                      <!--<td class="narrow-td">-->
-                      <!--<input type="checkbox" id="g2" value="2" checked v-model="checkedSuperGroups" v-on:change="renderCommuteFlows">-->
-                      <!--</td>-->
-                      <!--<td class="narrow-td">-->
-                      <!--<div class="legend-polygon-rect bc-g2"></div>-->
-                      <!--</td>-->
-                      <!--<td><label for="g2" v-text="superGroups['2'].name"></label></td>-->
-                      <!--<td><a href="classification.html#g2" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
-                      <!--</tr>-->
-                      <!--<tr>-->
-                      <!--<td class="narrow-td">-->
-                      <!--<input type="checkbox" id="g3" value="3" checked v-model="checkedSuperGroups" v-on:change="renderCommuteFlows">-->
-                      <!--</td>-->
-                      <!--<td class="narrow-td">-->
-                      <!--<div class="legend-polygon-rect bc-g3"></div>-->
-                      <!--</td>-->
-                      <!--<td><label for="g3" v-text="superGroups['3'].name"></label></td>-->
-                      <!--<td><a href="classification.html#g3" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
-                      <!--</tr>-->
-                      <!--<tr>-->
-                      <!--<td class="narrow-td">-->
-                      <!--<input type="checkbox" id="g4" value="4" checked v-model="checkedSuperGroups" v-on:change="renderCommuteFlows">-->
-                      <!--</td>-->
-                      <!--<td class="narrow-td">-->
-                      <!--<div class="legend-polygon-rect bc-g4"></div>-->
-                      <!--</td>-->
-                      <!--<td><label for="g4" v-text="superGroups['4'].name"></label></td>-->
-                      <!--<td><a href="classification.html#g4" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
-                      <!--</tr>-->
-                      <!--<tr>-->
-                      <!--<td class="narrow-td">-->
-                      <!--<input type="checkbox" id="g5" value="5" checked v-model="checkedSuperGroups" v-on:change="renderCommuteFlows">-->
-                      <!--</td>-->
-                      <!--<td class="narrow-td">-->
-                      <!--<div class="legend-polygon-rect bc-g5"></div>-->
-                      <!--</td>-->
-                      <!--<td><label for="g5" v-text="superGroups['5'].name"></label></td>-->
-                      <!--<td><a href="classification.html#g5" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
-                      <!--</tr>-->
-                      <!--<tr>-->
-                      <!--<td class="narrow-td">-->
-                      <!--<input type="checkbox" id="g6" value="6" checked v-model="checkedSuperGroups" v-on:change="renderCommuteFlows">-->
-                      <!--</td>-->
-                      <!--<td class="narrow-td">-->
-                      <!--<div class="legend-polygon-rect bc-g6"></div>-->
-                      <!--</td>-->
-                      <!--<td><label for="g6" v-text="superGroups['6'].name"></label></td>-->
-                      <!--<td><a href="classification.html#g6" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
-                      <!--</tr>-->
-                      <!--<tr>-->
-                      <!--<td class="narrow-td">-->
-                      <!--<input type="checkbox" id="g7" value="7" checked v-model="checkedSuperGroups" v-on:change="renderCommuteFlows">-->
-                      <!--</td>-->
-                      <!--<td class="narrow-td">-->
-                      <!--<div class="legend-polygon-rect bc-g7"></div>-->
-                      <!--</td>-->
-                      <!--<td><label for="g7" v-text="superGroups['7'].name"></label></td>-->
-                      <!--<td><a href="classification.html#g7" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
-                      <!--</tr>-->
-                      <!--<tr>-->
-                      <!--<td class="narrow-td">-->
-                      <!--<input type="checkbox" id="g8" value="8" checked v-model="checkedSuperGroups" v-on:change="renderCommuteFlows">-->
-                      <!--</td>-->
-                      <!--<td class="narrow-td">-->
-                      <!--<div class="legend-polygon-rect bc-g8"></div>-->
-                      <!--</td>-->
-                      <!--<td><label for="g8" v-text="superGroups['8'].name"></label></td>-->
-                      <!--<td><a href="classification.html#g8" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
-                      <!--</tr>-->
-                      <!--<tr>-->
-                      <!--<td class="narrow-td">-->
-                      <!--<input type="checkbox" id="g9" value="9" checked v-model="checkedSuperGroups" v-on:change="renderCommuteFlows">-->
-                      <!--</td>-->
-                      <!--<td class="narrow-td">-->
-                      <!--<div class="legend-polygon-rect bc-g9"></div>-->
-                      <!--</td>-->
-                      <!--<td><label for="g9" v-text="superGroups['9'].name"></label></td>-->
-                      <!--<td><a href="classification.html#g9" target="_cf"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>-->
-                      <!--</tr>-->
-                      <!--</tbody>-->
-                      <!--</table>-->
-                      <!--</div>-->
                     </div>
 
                   </div>
@@ -1634,6 +1458,7 @@
 
                   <div id="indicators" class="tab-pane fade" role="tabpanel" aria-labelledby="indicatorsTab">
 
+                    <!-- Indicators Table -->
                     <p>This is the indicators tab content.</p>
 
                   </div>
@@ -1660,14 +1485,15 @@
               </div>
             </div>
 
-
+            <!-- Overview Information -->
             <div id="overviewInfoVM" class="card sidebar-card"
                  v-bind:class="[isVisible === false ? 'd-none' : '']">
-              <!--<div class="card-header">-->
 
-              <!--Overview Header-->
+              <div class="card-header">
 
-              <!--</div>-->
+                Overview Header
+
+              </div>
 
               <div class="card-body">
 
@@ -1968,8 +1794,10 @@
 
 
               </div>
+
             </div>
 
+            <!-- Details Information -->
             <div id="detailsInfoVM" class="card sidebar-card"
                  v-bind:class="[isVisible === false ? 'd-none' : '']">
               <div class="card-header">
@@ -1985,36 +1813,14 @@
               </div>
             </div>
 
-
-          </div>
           </div>
 
-          <div class="crt-hor-sep"></div>
+
+          <!--<div class="crt-hor-sep"></div>-->
 
 
-          <!--<div id="currentMsoaInfoVM">-->
-          <!--&lt;!&ndash;<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">&ndash;&gt;-->
-          <!--<div class="offer offer-default">-->
-          <!--<div class="shape">-->
-          <!--<div class="shape-text">-->
-          <!--info-->
-          <!--</div>-->
-          <!--</div>-->
-          <!--<div class="offer-content">-->
-          <!--<h3 class="lead" v-text="currentMsoaCode">-->
 
-          <!--</h3>-->
-          <!--<p>-->
-          <!--<span v-text="currentMsoa11Nm"></span>-->
-          <!--<br>-->
-          <!--<span v-text="currentMsoa11Nmw"></span>-->
-          <!--</p>-->
-          <!--</div>-->
-          <!--</div>-->
-          <!--&lt;!&ndash;</div>&ndash;&gt;-->
-          <!--</div>-->
 
-        </div>
         </div>
 
       </div>

@@ -84,6 +84,7 @@ body {
 }
 
 
+
 /*
  *  ================================================================================
  *    Basemap Buttons Menu
@@ -99,10 +100,10 @@ body {
 /*}*/
 
 #toggleBaseMapButtonsVM {
-  left: 0px;
-  margin: 8px 0px 0px 52px;
+  left: 0;
+  margin: 8px 0 0 52px;
   position: absolute;
-  top: 0px;
+  top: 0;
   z-index: 980;
 }
 
@@ -127,15 +128,12 @@ body {
 
 
 
-.sidebar-container {
-  height: 100%;
-  overflow-y: auto;
-  /*padding: 10px 10px 10px 10px; !* TODO: RESIN - Check if this needs to change *!*/
-  padding: 0 10px 0 10px;
-}
+
+
 
 .crt-row {
-  margin: 10px 0 0 0;
+  /*margin: 10px 0 0 0;*/
+  margin: 10px;
 }
 
 .crt-row-internal {
@@ -464,7 +462,7 @@ body {
   background-color: #fff;
   overflow-x: hidden;
   overflow-y: auto;
-  /*direction: ltf;*/  /* This neess to be used after padding changed so as to allow nice scrollbars appear on the panel */
+  /*direction: ltf;*/  /* This needs to be used after padding changed so as to allow nice scrollbars appear on the panel */
 }
 
 .sidebar-left .sidebar-content {
@@ -486,8 +484,9 @@ body {
   left: 0;
   right: 0;
   box-sizing: border-box;
-  /*padding: 10px 20px; !* TODO: RESIN - Check if these settings need to change *!*/
-  padding: 10px 10px; /* TODO: RESIN - Check if these settings need to change */
+  /*padding: 10px 10px 10px 10px; !* TODO: RESIN - Check if these settings need to change *!*/
+  padding: 15px 15px 15px 15px; /* TODO: RESIN - Check if these settings need to change */
+  /*padding: 20px 20px 20px 20px; !* TODO: RESIN - Check if these settings need to change *!*/
 }
 
 .sidebar-pane.active {
@@ -656,6 +655,21 @@ body {
     right: 50px;
   }
 }
+
+
+
+
+/*
+ *  ================================================================================
+ *    New Sidebar Clases
+ *  ================================================================================
+ */
+.sidebar-pane > .pane-container {
+  background-color: lightseagreen;
+  height: 100%;
+  overflow-y: auto;
+}
+
 
 
 /*
