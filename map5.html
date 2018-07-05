@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>European Climate Risk Typology | Map</title>
+
+  <meta name="description" content="European Climate Risk Typology Map">
+  <meta name="author" content="Vasilis Vlastaras, University of Manchester">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+
+  <!-- Bootstrap -->
+  <!--<link rel="stylesheet" href="libs/bootstrap-material-design-v4.1.1/css/bootstrap-material-design.css" >-->
+  <!--<link rel="stylesheet" href="libs/bootstrap-material-design-v4.1.1/css/bootstrap-material-design.min.css" >-->
+  <link rel="stylesheet" href="styles/bootstrap-material-design-modified.css">
+
+  <!-- Font-Awesome -->
+  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fa-brands.css">-->
+  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fa-brands.min.css">-->
+  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fa-regular.css">-->
+  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fa-regular.min.css">-->
+  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fa-solid.css">-->
+  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fa-solid.min.css">-->
+  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fontawesome.css">-->
+  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fontawesome.min.css">-->
+  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fontawesome-all.css">-->
+  <link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fontawesome-all.min.css">
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="libs/leaflet-1.3.1/leaflet.css">
+  <link rel="stylesheet" href="libs/leaflet-plugins/sidebar-v2-0.4.0/leaflet-sidebar.css">
+  <!--<link rel="stylesheet" href="libs/leaflet-plugins/sidebar-v2-0.4.0/leaflet-sidebar.min.css">-->
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles/map5.css">
+  <link rel="stylesheet" href="styles/loader.css">
+
+  <!-- JQuery -->
+  <!--<script type="text/javascript" src="libs/jquery-3.2.1/jquery.js"></script>-->
+  <!--<script type="text/javascript" src="libs/jquery-3.2.1/jquery.min.js"></script>-->
+  <script type="text/javascript" src="libs/jquery-3.2.1/jquery.slim.js"></script>
+  <!--<script type="text/javascript" src="libs/jquery-3.2.1/jquery.slim.min.js"></script>-->
+
+  <script type="text/javascript" src="js/data2.js"></script>
+
+  <!--<script type="text/javascript" src="js/shared.js"></script>-->
+
+</head>
+<body>
+
+<nav id="navBarHost" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html">
+    <img src="images/logo-small.png" height="24" class="website-logo" alt="Website Logo">
+    <span class="xs-brand-heading">European Climate Risk Typology</span>
+    <span class="sm-brand-heading">European Climate Risk Typology</span>
+    <span class="md-brand-heading">European Climate Risk Typology</span>
+    <span class="d-none d-sm-inline-block">European Climate Risk Typology</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationBar"
+          aria-controls="navigationBar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div id="navigationBar" class="collapse navbar-collapse">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Map <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="typology.html">Typology</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="uses.html">Uses</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="methodology.html">Methodology</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="indicators.html">Risk Indicators</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-container">
+
+  <div class="map-container">
+
+    <div id="spinnerVM" class="spinner" v-show="isVisible">
+      <div class="showbox">
+        <div class="loader">
+          <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div id="map" class="sidebar-map"></div>
+
+    <div id="toggleBaseMapButtonsVM" class="btn-group rounded" role="group"
+         aria-label="Select basemap" data-toggle="buttons">
+
+      <div class="btn-group-toggle" role="group">
+        <!--dropdown-toggle-->
+        <!--data-toggle="tooltip" data-placement="bottom" v-bind:title="Click to change Basemap"-->
+        <button id="basemapDropdownButtonGroup" type="button" class="btn btn-danger btn-raised dropdown-toggle"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                v-bind:aria-label="dictionary[currentBaseMap].description">
+          <!--v-bind:aria-pressed="[currentBaseMap === 'dark' ? 'true' : 'false']"-->
+          <i id="currentBaseMapIcon" class="material-icons md-18"
+             v-text="dictionary[currentBaseMap].iconName">
+          </i>
+          <div id="currentBaseMapText">
+            <small class="text-capitalize text-center" v-text="dictionary[currentBaseMap].name"></small>
+          </div>
+        </button>
+
+        <div class="dropdown-menu" aria-labelledby="basemapDropdownButtonGroup">
+          <button id="lightButton" type="button" class="btn dropdown-item dropdown-item-basemap"
+                  v-bind:aria-label="dictionary['light'].description"
+                  v-bind:aria-pressed="[currentBaseMap === 'light' ? 'true' : 'false']"
+                  v-bind:class="[currentBaseMap === 'light' ? 'btn-danger btn-raised' : 'btn-dark']"
+                  v-on:click="setCurrentBaseMap('light')">
+            <i class="material-icons text-dark" v-text="dictionary['light'].iconName"></i>
+            <div class="crt-ver-sep"></div>
+            <div v-text="dictionary['light'].name"></div>
+          </button>
+          <button id="darkButton" type="button" class="btn dropdown-item dropdown-item-basemap"
+                  v-bind:aria-label="dictionary['dark'].description"
+                  v-bind:aria-pressed="[currentBaseMap === 'dark' ? 'true' : 'false']"
+                  v-bind:class="[currentBaseMap === 'dark' ? 'btn-danger btn-raised' : 'btn-dark']"
+                  v-on:click="setCurrentBaseMap('dark')">
+            <i class="material-icons text-dark" v-text="dictionary['dark'].iconName"></i>
+            <div class="crt-ver-sep"></div>
+            <div v-text="dictionary['dark'].name"></div>
+          </button>
+          <button id="roadsButton" type="button" class="btn dropdown-item dropdown-item-basemap"
+                  v-bind:aria-label="dictionary['roads'].description"
+                  v-bind:aria-pressed="[currentBaseMap === 'roads' ? 'true' : 'false']"
+                  v-bind:class="[currentBaseMap === 'roads' ? 'btn-danger btn-raised' : 'btn-dark']"
+                  v-on:click="setCurrentBaseMap('roads')">
+            <i class="material-icons text-dark" v-text="dictionary['roads'].iconName"></i>
+            <div class="crt-ver-sep"></div>
+            <div v-text="dictionary['roads'].name"></div>
+          </button>
+          <button id="physicalButton" type="button" class="btn dropdown-item dropdown-item-basemap"
+                  v-bind:aria-label="dictionary['physical'].description"
+                  v-bind:aria-pressed="[currentBaseMap === 'physical' ? 'true' : 'false']"
+                  v-bind:class="[currentBaseMap === 'physical' ? 'btn-danger btn-raised' : 'btn-dark']"
+                  v-on:click="setCurrentBaseMap('physical')">
+            <i class="material-icons text-dark" v-text="dictionary['physical'].iconName"></i>
+            <div class="crt-ver-sep"></div>
+            <div v-text="dictionary['physical'].name"></div>
+          </button>
+          <button id="terrainButton" type="button" class="btn dropdown-item dropdown-item-basemap"
+                  v-bind:aria-label="dictionary['terrain'].description"
+                  v-bind:aria-pressed="[currentBaseMap === 'terrain' ? 'true' : 'false']"
+                  v-bind:class="[currentBaseMap === 'terrain' ? 'btn-danger btn-raised' : 'btn-dark']"
+                  v-on:click="setCurrentBaseMap('terrain')">
+            <i class="material-icons text-dark" v-text="dictionary['terrain'].iconName"></i>
+            <div class="crt-ver-sep"></div>
+            <div v-text="dictionary['terrain'].name"></div>
+          </button>
+          <button id="satelliteButton" type="button" class="btn dropdown-item dropdown-item-basemap"
+                  v-bind:aria-label="dictionary['satellite'].description"
+                  v-bind:aria-pressed="[currentBaseMap === 'satellite' ? 'true' : 'false']"
+                  v-bind:class="[currentBaseMap === 'satellite' ? 'btn-danger btn-raised' : 'btn-dark']"
+                  v-on:click="setCurrentBaseMap('satellite')">
+            <i class="material-icons text-dark" v-text="dictionary['satellite'].iconName"></i>
+            <div class="crt-ver-sep"></div>
+            <div v-text="dictionary['satellite'].name"></div>
+          </button>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="sidebar" class="sidebar collapsed sidebar-right leaflet-touch">
+
+    <div id="sidebarTabsVM" class="sidebar-tabs">
+      <ul role="tablist">
+        <li id="map-controls-button" title="Show / Hide Map Controls"
+            data-toggle="tooltip" data-placement="left" aria-label="Show / Hide Map Controls"
+            v-on:click="hideTooltip('#map-controls-button')">
+          <!--<a href="#info" role="tab"><i class="fas fa-bars"></i></a>-->
+          <!--<a href="#info" role="tab"><i class="fas fa-bars"></i></a>-->
+          <!--<a href="#map-controls" role="tab">-->
+          <!--<i class="crt-material-icons">menu</i>-->
+          <!--</a>-->
+          <!--<a href="#map-controls" role="tab"><i class="fas fa-map"></i></a>-->
+          <a href="#map-controls" role="tab">
+            <i class="crt-material-icons">chrome_reader_mode</i>
+          </a>
+        </li>
+        <li id="typology-info-button" title="Show / Hide Typology Information"
+            data-toggle="tooltip" data-placement="left" aria-label="Show / Hide Typology Information"
+            v-on:click="hideTooltip('#typology-info-button')">
+          <a href="#typology-info" role="tab">
+            <i class="crt-material-icons">assignment</i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sidebar-content">
+
+      <div class="sidebar-pane h-100" id="map-controls">
+
+        <div class="pane-container h-100" style="background-color: lightseagreen;">
+
+          <div style="height: 100%; overflow-y: auto;">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="sidebar-pane h-100" id="typology-info">
+        <p>Typology Information</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<script type="text/javascript" src="libs/vue-2.5.16/vue.js"></script>
+<!--<script type="text/javascript" src="libs/vue-2.5.16/vue.min.js"></script>-->
+
+<!--<script type="text/javascript" src="libs/popper.js-1.12.6/esm/popper.js"></script>-->
+<!--<script type="text/javascript" src="libs/popper.js-1.12.6/esm/popper.min.js"></script>-->
+<script type="text/javascript" src="libs/popper.js-1.12.6/umd/popper.js"></script>
+<!--<script type="text/javascript" src="libs/popper.js-1.12.6/umd/popper.min.js"></script>-->
+<!--<script type="text/javascript" src="libs/popper.js-1.12.6/popper.js"></script>-->
+<!--<script type="text/javascript" src="libs/popper.js-1.12.6/popper.min.js"></script>-->
+
+
+<!--<script type="text/javascript" src="libs/leaflet-1.3.1/leaflet.js"></script>-->
+<script type="text/javascript" src="libs/leaflet-1.3.1/leaflet-src.js"></script>
+<!--<script type="text/javascript" src="libs/leaflet-plugins/leaflet-providers-1.1.17/leaflet-providers.js"></script>-->
+<script type="text/javascript" src="libs/leaflet-plugins/leaflet-providers-2018-04-11/leaflet-providers.js"></script>
+<script type="text/javascript" src="libs/leaflet-plugins/sidebar-v2-0.4.0/leaflet-sidebar.js"></script>
+<!--<script type="text/javascript" src="libs/leaflet-plugins/sidebar-v2-0.4.0/leaflet-sidebar.min.js"></script>-->
+<!--<script type="text/javascript" src="libs/leaflet-plugins/leaflet-pouch/leaflet.pouch.js"></script>-->
+
+<script type="text/javascript" src="libs/bootstrap-material-design-v4.1.1/js/bootstrap-material-design.js"></script>
+<!--<script type="text/javascript" src="libs/bootstrap-material-design-v4.1.1/js/bootstrap-material-design.min.js"></script>-->
+
+<!--<script type="text/javascript" src="libs/ps-math-stats/ps-math-stats.min.js"></script>-->
+
+<!--<script type="text/javascript" src="js/data.js"></script>-->
+<script type="text/javascript" src="js/color-palettes.js"></script>
+<script type="text/javascript" src="js/nuts-3-2013-polygons-v3-epsg-4326-p4.js"></script>
+<script type="text/javascript" src="js/map5.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $('body').bootstrapMaterialDesign();
+  });
+</script>
+
+</body>
+</html>
