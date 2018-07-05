@@ -9,6 +9,33 @@
 //  Description:     The European Climate Risk Typology web mapping functionality.
 // ================================================================================
 
+/*
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+*/
+
 /**
  * The AppState object holds the application state.
  */
@@ -1526,6 +1553,7 @@ let spinnerViewModel = new Vue({
 
 });
 
+
 /**
  * The sidebarTabsViewModel provides tha data and logic to toggle the sidebar itself or its contents.
  *
@@ -1563,6 +1591,7 @@ let sidebarTabsViewModel = new Vue({
   }
 
 });
+
 
 /**
  * The toggleBaseMapViewModel provides tha data and logic to toggle the BaseMap layer.
@@ -1648,694 +1677,694 @@ let toggleBaseMapViewModel = new Vue({
 
 
 
-/**
- * The symbologyViewModel provides tha data and logic
- * to allow a user to setup the NUTS3 layer symbology.
- *
- * @type {Vue} - A Vue object with the model and methods used in the view model.
- */
-let symbologyViewModel = new Vue({
-
-  /**
-   * The name of the view model.
-   */
-  el: '#symbologyVM',
-
-  /**
-   * The model of the view model.
-   */
-  data: {
-
-    isVisible: true,
-
-    keepHiddenWhileHovering: false,
-
-    currentTab: 'supergroups',
-
-    dictionary: {
-      'supergroups': { name: 'Classes' },
-      'groups': { name: 'Subclasses' },
-      'indicators': { name: 'Indicators' }
-    },
-
-    supergroups: MapLayers.nuts3.supergroups,
-
-    groups: MapLayers.nuts3.groups,
-
-    tooltipIconName: 'announcement', // feedback, info,
-
-    /**
-     * The array of selected supergroups used by the list of supergroup checkboxes.
-     */
-    checkedSupergroups: [ '1', '2', '3', '4', '5', '6', '7', '8' ],
-
-    /**
-     * The array of selected groups used by the list of group checkboxes.
-     */
-    // TODO: RESIN - Checked Groups need to be updated depending on the final typology.
-    checkedGroups: [
-      '11', '12', '13', '14',
-      '21', '22', '23', '24',
-      '31', '32', '33', '34',
-      '41', '42', '43', '44',
-      '51', '52', '53', '54',
-      '61', '62', '63', '64',
-      '71', '72', '73', '74',
-      '81', '82', '83', '84'
-    ]
-
-  },
-
-  /**
-   * The computed properties of the model of the view model.
-   */
-  computed: {
-
-    /**
-     * Return the tooltips of the supergroups.
-     */
-    supergroupTooltips: function() {
-
-      let tooltips = {
-        '1': '', '2': '', '3': '', '4': '', '5': '', '6': '', '7': '', '8': ''
-      };
-
-      // TODO: RESIN - Replace all these with appropriate tooltip icon names.
-      let icons = {
-        // Default Icon names        // fa:[fab fa-leanpub]: material:[class]
-        '1': 'far fa-building',      // fa:[fas fa-building], fa:[far fa-building], material:[location_city]
-        '2': 'fas fa-leaf',          // fa:[fab fa-envira], fa:[fas fa-leaf], fa:[fab fa-pagelines], fa:[fas fa-seedling], fa:[fas fa-tree]
-        '3': 'fas fa-snowflake',     // fa:[far fa-snowflake]
-        '4': 'fas fa-sun',           // fa:[far fa-sun]
-        '5': 'fab fa-servicestack',  // fa:[fab fa-servicestack]
-        '6': 'far fa-image',         // fa:[fas fa-image], fa:[far fa-image], fa:[material:class]
-        '7': 'fas fa-tint',          // fa:[fas fa-tint]
-        '8': 'fab fa-firstdraft'     // fa:[fab fa-firstdraft]
-      };
-
-      for (let sg in this.supergroups) {
-        if (this.supergroups.hasOwnProperty(sg)) {
-          tooltips[sg] = HtmlTemplates.typologyMetadataTooltip
-            .replace('@@icon@@', icons[sg])
-            .replace('@@name@@', MapLayers.nuts3.supergroups[sg].name)
-            .replace('@@description@@', MapLayers.nuts3.supergroups[sg].description);
-        }
-      }
-
-      return tooltips;
-
-    },
-
-    /**
-     * Return the tooltips of the groups.
-     */
-    groupTooltips: function() {
-
-      let tooltips = {
-        '11': '', '12': '', '13': '', '14': '',
-        '21': '', '22': '', '23': '', '24': '',
-        '31': '', '32': '', '33': '', '34': '',
-        '41': '', '42': '', '43': '', '44': '',
-        '51': '', '52': '', '53': '', '54': '',
-        '61': '', '62': '', '63': '', '64': '',
-        '71': '', '72': '', '73': '', '74': '',
-        '81': '', '82': '', '83': '', '84': ''
-      };
-
-      // TODO: RESIN - Replace all these with appropriate tooltip icon names.
-      let icons = {
-        '11': 'class', '12': 'class', '13': 'class', '14': 'class',
-        '21': 'class', '22': 'class', '23': 'class', '24': 'class',
-        '31': 'class', '32': 'class', '33': 'class', '34': 'class',
-        '41': 'class', '42': 'class', '43': 'class', '44': 'class',
-        '51': 'class', '52': 'class', '53': 'class', '54': 'class',
-        '61': 'class', '62': 'class', '63': 'class', '64': 'class',
-        '71': 'class', '72': 'class', '73': 'class', '74': 'class',
-        '81': 'class', '82': 'class', '83': 'class', '84': 'class'
-      };
-
-      for (let g in this.groups) {
-        if (this.groups.hasOwnProperty(g)) {
-          tooltips[g] = HtmlTemplates.typologyMetadataTooltip
-            .replace('@@icon@@', icons[g])
-            .replace('@@name@@', MapLayers.nuts3.groups[g].name)
-            .replace('@@description@@', MapLayers.nuts3.groups[g].description);
-        }
-      }
-
-      return tooltips;
-
-    },
-
-    /**
-     * Gets the fill colors used to render the NUTS3 layer.
-     * The colors are displayed on the supergroups toggle buttons.
-     */
-    supergroupFillColors: function() {
-
-      let fillColors = {};
-
-      let currentBasemap = toggleBaseMapViewModel.currentBaseMap;
-      let supergroupStyles = MapLayers.nuts3.namedBasemapLayers[currentBasemap].supergroupStyles;
-
-      for (let sg in supergroupStyles) {
-        if (supergroupStyles.hasOwnProperty(sg)) {
-          fillColors[sg] = {
-            fillColor: supergroupStyles[sg].fillColor,
-            fillOpacity: supergroupStyles[sg].fillOpacity
-          };
-        }
-      }
-
-      return fillColors;
-
-    },
-
-    /**
-     * Gets the fill colors used to render the NUTS3 layer.
-     * The colors are displayed on the groups toggle buttons.
-     */
-    groupFillColors: function() {
-
-      let fillColors = {};
-
-      let currentBasemap = toggleBaseMapViewModel.currentBaseMap;
-      let groupStyles = MapLayers.nuts3.namedBasemapLayers[currentBasemap].groupStyles;
-
-      for (let g in groupStyles) {
-        if (groupStyles.hasOwnProperty(g)) {
-          fillColors[g] = {
-            fillColor: groupStyles[g].fillColor,
-            fillOpacity: groupStyles[g].fillOpacity
-          };
-        }
-      }
-
-      return fillColors;
-
-    }
-
-  },
-
-  /**
-   * The methods of the view model.
-   */
-  methods: {
-
-    /**
-     * Sets the current tab.
-     * @param tabName - The name of the tab to activate.
-     */
-    setCurrentTab(tabName) {
-      this.currentTab = tabName;
-      MapLayers.nuts3.renderLayer();
-    },
-
-    /**
-     * Selects all the supergroups or groups depending on the currently selected tab.
-     */
-    selectAll() {
-
-      if (this.currentTab === 'supergroups') {
-        this.checkedSupergroups = [];
-
-        for (let sg in this.supergroups) {
-          if (this.supergroups.hasOwnProperty(sg)) {
-            this.supergroups[sg].visible = true;
-            this.checkedSupergroups.push(sg.toString());
-          }
-        }
-      }
-      else if (this.currentTab === 'groups') {
-        this.checkedGroups = [];
-
-        for (let g in this.groups) {
-          if (this.groups.hasOwnProperty(g)) {
-            this.groups[g].visible = true;
-            this.checkedGroups.push(g.toString());
-          }
-        }
-      }
-
-      MapLayers.nuts3.renderLayer();
-
-    },
-
-    /**
-     * Selects all the supergroups or groups depending on the currently selected tab.
-     */
-    deselectAll() {
-
-      if (this.currentTab === 'supergroups') {
-        for (let sg in this.supergroups) {
-          if (this.supergroups.hasOwnProperty(sg)) {
-            this.supergroups[sg].visible = false;
-          }
-        }
-        this.checkedSupergroups = [];
-      }
-      else if (this.currentTab === 'groups') {
-        for (let g in this.groups) {
-          if (this.groups.hasOwnProperty(g)) {
-            this.groups[g].visible = false;
-          }
-        }
-        this.checkedGroups = [];
-      }
-
-      MapLayers.nuts3.renderLayer();
-
-    },
-
-    /**
-     * Toggles the groups associated with the specified supergroup.
-     *
-     * @param supergroup - The supergroup whose associated groups will be toggled on/off.
-     */
-    toggleGroups(supergroup) {
-
-      areGroupsVisible = true;
-
-      // Loop through all the associated groups.
-      let groups = this.supergroups[supergroup].groups;
-
-      for (let i = 0; i < groups.length; i++) {
-        // Check the visibility of the associated groups.
-        if (this.groups[groups[i].toString()].visible) {
-          // A group was found visible. Make all invisible.
-          areGroupsVisible = false;
-          break;
-        }
-      }
-
-      // Loop through all the associated groups and set their visibility.
-      for (let i = 0; i < groups.length; i++) {
-        this.groups[groups[i].toString()].visible = areGroupsVisible;
-      }
-
-      // Toggle the groups associated with the specified supergroup.
-      this.checkedGroups = [];
-
-      for (let g in this.groups) {
-        if (this.groups.hasOwnProperty(g)) {
-          if (this.groups[g].visible) {
-            this.checkedGroups.push(g.toString());
-          }
-        }
-      }
-
-      MapLayers.nuts3.renderLayer();
-
-    },
-
-    /**
-     * Renders the regions of the NUTS3 layer having the specified typology class after toggling it on/off.
-     *
-     * @param typologyClass - The typology class that is toggled on/off.
-     */
-    renderNuts3TypologyClass(typologyClass) {
-      if (this.currentTab === 'supergroups') {
-        this.supergroups[typologyClass].visible = !this.supergroups[typologyClass].visible;
-      }
-      else if (this.currentTab === 'groups') {
-        this.groups[typologyClass].visible = !this.groups[typologyClass].visible;
-      }
-
-      MapLayers.nuts3.changeTypologyClassStyle(typologyClass);
-    },
-
-    /**
-     * Renders the NUTS3 layer.
-     */
-    renderNuts3Layer() {
-      MapLayers.nuts3.renderLayer();
-    }
-
-  }
-
-});
-
-
-
-
-
-
-
-/**
- * The overviewInfoViewModel provides the data and logic
- * to display overview information about a NUTS3 region.
- *
- * @type {Vue} - A Vue object with the model and methods used in the view model.
- */
-let overviewInfoViewModel = new Vue({
-
-  /**
-   * The name of the view model.
-   */
-  el: '#overviewInfoVM',
-
-  /**
-   * The model of the view model.
-   */
-  data: {
-
-    isVisible: false,
-
-    isPinned: false,
-
-    nuts3Name: '',
-
-    nuts3NativeName: '',
-
-    language: 'en',
-
-    supergroupName: null,
-
-    groupName: null,
-
-    supergroupFillColor: { fillColor: '#ffffff', fillOpacity: 0.01 },
-
-    groupFillColor: { fillColor: '#ffffff', fillOpacity: 0.01 },
-
-    domains: AppData.domains,
-
-    domainSortedIndicators: AppData.domainSortedIndicators,
-
-    domainDictionaryIndicators: AppData.domainDictionaryIndicators,
-
-    domainDictionaryIndicatorValues: undefined,
-
-    tooltipIconName: 'announcement', // feedback, info,
-
-
-
-  },
-
-  /**
-   * The computed properties of the model of the view model.
-   */
-  computed: {
-
-    /**
-     * Return the tooltips of the indicators.
-     */
-    indicatorTooltips: function() {
-
-      let tooltipsDic = {};
-
-      for (let domain in this.domainDictionaryIndicators) {
-        if (this.domainDictionaryIndicators.hasOwnProperty(domain)) {
-          tooltipsDic[domain] = [];
-
-          for (let i = 0; i < this.domainDictionaryIndicators[domain].length; i++) {
-            let html = HtmlTemplates.indicatorMetadataTooltip
-                        .replace('@@icon@@', this.domainDictionaryIndicators[domain][i].faIcon)
-                        .replace('@@description@@', this.domainDictionaryIndicators[domain][i].description)
-                        .replace('@@unit@@', this.domainDictionaryIndicators[domain][i].unit)
-                        .replace('@@details@@', this.domainDictionaryIndicators[domain][i].details);
-
-            tooltipsDic[domain].push(html);
-          }
-        }
-      }
-
-      return tooltipsDic;
-
-    },
-
-  },
-
-  /**
-   * The methods of the view model.
-   */
-  methods: {
-
-    /**
-     * Toggles the language from en to other and vice versa.
-     */
-    toggleLanguage() {
-      if (this.language === 'en') {
-        this. language = 'other';
-      }
-      else {
-        this.language = 'en';
-      }
-      if (AppState.bootstrapMaterialTooltipEnabled) {
-        $('#toggle-lang').tooltip('hide');
-      }
-    },
-
-    /**
-     * Shows the overview view.
-     */
-    showView() {
-
-      // Hide the Nuts3LayerSetup panel if it is visible.
-      if (toggleNuts3LayerSetupViewModel.isNuts3LayerSetupVisible) {
-        // Mark the 'layer setup' view as 'hidden while hovering'.
-        nuts3LayerSetupViewModel.keepHiddenWhileHovering = true;
-        toggleNuts3LayerSetupViewModel.hideNuts3LayerSetup();
-      }
-      else {
-        // Hide the details info panel if it is visible.
-        if (detailsInfoViewModel.isVisible) {
-          detailsInfoViewModel.isVisible = false;
-        }
-      }
-
-      // Show the overview info panel.
-      this.isVisible = true;
-
-    },
-
-    /**
-     * Hide the overview view.
-     */
-    hideView() {
-
-      // Hide the overview info panel.
-      this.isVisible = false;
-
-      // Show the 'Layer Setup' view if it is marked as 'hidden while hovering'.
-      if (nuts3LayerSetupViewModel.keepHiddenWhileHovering) {
-        nuts3LayerSetupViewModel.keepHiddenWhileHovering = false;
-        toggleNuts3LayerSetupViewModel.showNuts3LayerSetup();
-      }
-
-    },
-
-
-    toggleDomain(index) {
-      this.domains[index].isOverviewVisible = !this.domains[index].isOverviewVisible;
-    },
-
-    toggleDetails(domain, index) {
-      this.domainDictionaryIndicators[domain][index].isDetailsVisible = !this.domainDictionaryIndicators[domain][index].isDetailsVisible;
-    },
-
-
-    updateView(feature) {
-
-      if (feature === null) {
-        // TODO: RESIN - Implement this when the user hovers out of a feature.
-
-        return;
-      }
-
-      let properties = feature.properties;
-
-      let nuts3id = properties.NUTS_ID;
-      let sg = properties.SG;
-      let g = properties.G;
-
-      this.nuts3Name = AppData.nuts3[nuts3id].nameAscii;
-      this.nuts3NativeName = AppData.nuts3[nuts3id].nutsName;
-
-      let currentLevel = nuts3LayerSetupViewModel.currentTab;
-
-      if (currentLevel === 'supergroups') {
-        if (MapLayers.nuts3.supergroups[sg].visible) {
-          this.supergroupName = MapLayers.nuts3.supergroups[sg].name;
-          this.supergroupFillColor = nuts3LayerSetupViewModel.supergroupFillColors[sg];
-          this.groupName = MapLayers.nuts3.groups[g].name;
-          this.groupFillColor = nuts3LayerSetupViewModel.groupFillColors[g];
-        }
-        else {
-          this.supergroupName = null;
-          this.supergroupFillColor = AppState.transparentColor;
-          this.groupName = null;
-          this.groupFillColor = AppState.transparentColor;
-        }
-      }
-      else if (currentLevel === 'groups') {
-        if (MapLayers.nuts3.groups[g].visible) {
-          this.supergroupName = MapLayers.nuts3.supergroups[sg].name;
-          this.supergroupFillColor = nuts3LayerSetupViewModel.supergroupFillColors[sg];
-          this.groupName = MapLayers.nuts3.groups[g].name;
-          this.groupFillColor = nuts3LayerSetupViewModel.groupFillColors[g];
-        }
-        else {
-          this.supergroupName = null;
-          this.supergroupFillColor = AppState.transparentColor;
-          this.groupName = null;
-          this.groupFillColor = AppState.transparentColor;
-        }
-      }
-      else {
-        this.supergroupName = MapLayers.nuts3.supergroups[sg].name;
-        this.supergroupFillColor = nuts3LayerSetupViewModel.supergroupFillColors[sg];
-        this.groupName = MapLayers.nuts3.groups[g].name;
-        this.groupFillColor = nuts3LayerSetupViewModel.groupFillColors[g];
-      }
-
-      this.domainDictionaryIndicatorValues = {};
-
-      for (let domain in AppData.domainDictionaryIndicators) {
-        if (AppData.domainDictionaryIndicators.hasOwnProperty(domain)) {
-
-          this.domainDictionaryIndicatorValues[domain] = [];
-
-          for (let i = 0; i < AppData.domainDictionaryIndicators[domain].length; i++) {
-            let im = AppData.domainDictionaryIndicators[domain][i];
-            let value = im.type === 'double' ? properties[im.name].toFixed(3) : properties[im.name].toFixed(0); // TODO: RESIN - toFixed(0) MUST be removed once I have the correct data.
-
-            this.domainDictionaryIndicatorValues[domain].push({
-              name: this.domainDictionaryIndicators[i],
-              value: value,
-              zscore: properties[im.name + 'Z'].toFixed(3)
-            })
-          }
-
-        }
-      }
-
-
-      // Make sure that the html content of the tooltip will be displayed
-      // by explicitly calling the tooltip jquery method.
-      $('[data-toggle="tooltip"]').tooltip();
-
-
-    },
-
-    Pin() {
-      this.isPinned = true;
-      if (AppState.bootstrapMaterialTooltipEnabled) {
-        $('#overview-pin').tooltip('show');
-      }
-    },
-
-    unPin() {
-      this.isPinned = false;
-      this.isVisible = false;
-
-      MapLayers.nuts3.unselectNuts3();
-    }
-
-
-  }
-
-});
-
-/**
- * The detailsInfoViewModel provides the data and logic
- * to display detailed information about a NUTS3 region.
- *
- * @type {Vue} - A Vue object with the model and methods used in the view model.
- */
-let detailsInfoViewModel = new Vue({
-
-  /**
-   * The name of the view model.
-   */
-  el: '#detailsInfoVM',
-
-  /**
-   * The model of the view model.
-   */
-  data: {
-
-    isVisible: false,
-
-    isPinned: false
-
-  },
-
-  /**
-   * The computed properties of the model of the view model.
-   */
-  computed: {
-
-  },
-
-  /**
-   * The methods of the view model.
-   */
-  methods: {
-
-    /**
-     * Shows the details view.
-     */
-    showView() {
-
-      // Hide the Nuts3LayerSetup panel if it is visible.
-      if (toggleNuts3LayerSetupViewModel.isNuts3LayerSetupVisible) {
-        // Mark the 'layer setup' view as 'hidden while hovering'.
-        nuts3LayerSetupViewModel.keepHiddenWhileHovering = true;
-        toggleNuts3LayerSetupViewModel.hideNuts3LayerSetup();
-      }
-      else {
-        // Hide the overview info panel if it is visible.
-        if (overviewInfoViewModel.isVisible) {
-          overviewInfoViewModel.isVisible = false;
-        }
-      }
-
-      // Show the details info panel.
-      this.isVisible = true;
-
-    },
-
-    /**
-     * Hide the details View.
-     */
-    hideView() {
-
-      // Hide the details info panel.
-      this.isVisible = false;
-
-      // Show the 'Layer Setup' view if it is marked as 'hidden while hovering'.
-      if (nuts3LayerSetupViewModel.keepHiddenWhileHovering) {
-        nuts3LayerSetupViewModel.keepHiddenWhileHovering = false;
-        toggleNuts3LayerSetupViewModel.showNuts3LayerSetup();
-      }
-
-    },
-
-
-    updateView(feature) {
-
-
-    },
-
-
-    Pin() {
-      this.isPinned = true;
-      if (AppState.bootstrapMaterialTooltipEnabled) {
-        $('#details-pin').tooltip('show');
-      }
-    },
-
-    unPin() {
-      this.isPinned = false;
-      this.isVisible = false;
-
-      MapLayers.nuts3.unselectNuts3();
-    }
-
-
-  }
-
-});
+// /**
+//  * The symbologyViewModel provides tha data and logic
+//  * to allow a user to setup the NUTS3 layer symbology.
+//  *
+//  * @type {Vue} - A Vue object with the model and methods used in the view model.
+//  */
+// let symbologyViewModel = new Vue({
+//
+//   /**
+//    * The name of the view model.
+//    */
+//   el: '#symbologyVM',
+//
+//   /**
+//    * The model of the view model.
+//    */
+//   data: {
+//
+//     isVisible: true,
+//
+//     keepHiddenWhileHovering: false,
+//
+//     currentTab: 'supergroups',
+//
+//     dictionary: {
+//       'supergroups': { name: 'Classes' },
+//       'groups': { name: 'Subclasses' },
+//       'indicators': { name: 'Indicators' }
+//     },
+//
+//     supergroups: MapLayers.nuts3.supergroups,
+//
+//     groups: MapLayers.nuts3.groups,
+//
+//     tooltipIconName: 'announcement', // feedback, info,
+//
+//     /**
+//      * The array of selected supergroups used by the list of supergroup checkboxes.
+//      */
+//     checkedSupergroups: [ '1', '2', '3', '4', '5', '6', '7', '8' ],
+//
+//     /**
+//      * The array of selected groups used by the list of group checkboxes.
+//      */
+//     // TODO: RESIN - Checked Groups need to be updated depending on the final typology.
+//     checkedGroups: [
+//       '11', '12', '13', '14',
+//       '21', '22', '23', '24',
+//       '31', '32', '33', '34',
+//       '41', '42', '43', '44',
+//       '51', '52', '53', '54',
+//       '61', '62', '63', '64',
+//       '71', '72', '73', '74',
+//       '81', '82', '83', '84'
+//     ]
+//
+//   },
+//
+//   /**
+//    * The computed properties of the model of the view model.
+//    */
+//   computed: {
+//
+//     /**
+//      * Return the tooltips of the supergroups.
+//      */
+//     supergroupTooltips: function() {
+//
+//       let tooltips = {
+//         '1': '', '2': '', '3': '', '4': '', '5': '', '6': '', '7': '', '8': ''
+//       };
+//
+//       // TODO: RESIN - Replace all these with appropriate tooltip icon names.
+//       let icons = {
+//         // Default Icon names        // fa:[fab fa-leanpub]: material:[class]
+//         '1': 'far fa-building',      // fa:[fas fa-building], fa:[far fa-building], material:[location_city]
+//         '2': 'fas fa-leaf',          // fa:[fab fa-envira], fa:[fas fa-leaf], fa:[fab fa-pagelines], fa:[fas fa-seedling], fa:[fas fa-tree]
+//         '3': 'fas fa-snowflake',     // fa:[far fa-snowflake]
+//         '4': 'fas fa-sun',           // fa:[far fa-sun]
+//         '5': 'fab fa-servicestack',  // fa:[fab fa-servicestack]
+//         '6': 'far fa-image',         // fa:[fas fa-image], fa:[far fa-image], fa:[material:class]
+//         '7': 'fas fa-tint',          // fa:[fas fa-tint]
+//         '8': 'fab fa-firstdraft'     // fa:[fab fa-firstdraft]
+//       };
+//
+//       for (let sg in this.supergroups) {
+//         if (this.supergroups.hasOwnProperty(sg)) {
+//           tooltips[sg] = HtmlTemplates.typologyMetadataTooltip
+//             .replace('@@icon@@', icons[sg])
+//             .replace('@@name@@', MapLayers.nuts3.supergroups[sg].name)
+//             .replace('@@description@@', MapLayers.nuts3.supergroups[sg].description);
+//         }
+//       }
+//
+//       return tooltips;
+//
+//     },
+//
+//     /**
+//      * Return the tooltips of the groups.
+//      */
+//     groupTooltips: function() {
+//
+//       let tooltips = {
+//         '11': '', '12': '', '13': '', '14': '',
+//         '21': '', '22': '', '23': '', '24': '',
+//         '31': '', '32': '', '33': '', '34': '',
+//         '41': '', '42': '', '43': '', '44': '',
+//         '51': '', '52': '', '53': '', '54': '',
+//         '61': '', '62': '', '63': '', '64': '',
+//         '71': '', '72': '', '73': '', '74': '',
+//         '81': '', '82': '', '83': '', '84': ''
+//       };
+//
+//       // TODO: RESIN - Replace all these with appropriate tooltip icon names.
+//       let icons = {
+//         '11': 'class', '12': 'class', '13': 'class', '14': 'class',
+//         '21': 'class', '22': 'class', '23': 'class', '24': 'class',
+//         '31': 'class', '32': 'class', '33': 'class', '34': 'class',
+//         '41': 'class', '42': 'class', '43': 'class', '44': 'class',
+//         '51': 'class', '52': 'class', '53': 'class', '54': 'class',
+//         '61': 'class', '62': 'class', '63': 'class', '64': 'class',
+//         '71': 'class', '72': 'class', '73': 'class', '74': 'class',
+//         '81': 'class', '82': 'class', '83': 'class', '84': 'class'
+//       };
+//
+//       for (let g in this.groups) {
+//         if (this.groups.hasOwnProperty(g)) {
+//           tooltips[g] = HtmlTemplates.typologyMetadataTooltip
+//             .replace('@@icon@@', icons[g])
+//             .replace('@@name@@', MapLayers.nuts3.groups[g].name)
+//             .replace('@@description@@', MapLayers.nuts3.groups[g].description);
+//         }
+//       }
+//
+//       return tooltips;
+//
+//     },
+//
+//     /**
+//      * Gets the fill colors used to render the NUTS3 layer.
+//      * The colors are displayed on the supergroups toggle buttons.
+//      */
+//     supergroupFillColors: function() {
+//
+//       let fillColors = {};
+//
+//       let currentBasemap = toggleBaseMapViewModel.currentBaseMap;
+//       let supergroupStyles = MapLayers.nuts3.namedBasemapLayers[currentBasemap].supergroupStyles;
+//
+//       for (let sg in supergroupStyles) {
+//         if (supergroupStyles.hasOwnProperty(sg)) {
+//           fillColors[sg] = {
+//             fillColor: supergroupStyles[sg].fillColor,
+//             fillOpacity: supergroupStyles[sg].fillOpacity
+//           };
+//         }
+//       }
+//
+//       return fillColors;
+//
+//     },
+//
+//     /**
+//      * Gets the fill colors used to render the NUTS3 layer.
+//      * The colors are displayed on the groups toggle buttons.
+//      */
+//     groupFillColors: function() {
+//
+//       let fillColors = {};
+//
+//       let currentBasemap = toggleBaseMapViewModel.currentBaseMap;
+//       let groupStyles = MapLayers.nuts3.namedBasemapLayers[currentBasemap].groupStyles;
+//
+//       for (let g in groupStyles) {
+//         if (groupStyles.hasOwnProperty(g)) {
+//           fillColors[g] = {
+//             fillColor: groupStyles[g].fillColor,
+//             fillOpacity: groupStyles[g].fillOpacity
+//           };
+//         }
+//       }
+//
+//       return fillColors;
+//
+//     }
+//
+//   },
+//
+//   /**
+//    * The methods of the view model.
+//    */
+//   methods: {
+//
+//     /**
+//      * Sets the current tab.
+//      * @param tabName - The name of the tab to activate.
+//      */
+//     setCurrentTab(tabName) {
+//       this.currentTab = tabName;
+//       MapLayers.nuts3.renderLayer();
+//     },
+//
+//     /**
+//      * Selects all the supergroups or groups depending on the currently selected tab.
+//      */
+//     selectAll() {
+//
+//       if (this.currentTab === 'supergroups') {
+//         this.checkedSupergroups = [];
+//
+//         for (let sg in this.supergroups) {
+//           if (this.supergroups.hasOwnProperty(sg)) {
+//             this.supergroups[sg].visible = true;
+//             this.checkedSupergroups.push(sg.toString());
+//           }
+//         }
+//       }
+//       else if (this.currentTab === 'groups') {
+//         this.checkedGroups = [];
+//
+//         for (let g in this.groups) {
+//           if (this.groups.hasOwnProperty(g)) {
+//             this.groups[g].visible = true;
+//             this.checkedGroups.push(g.toString());
+//           }
+//         }
+//       }
+//
+//       MapLayers.nuts3.renderLayer();
+//
+//     },
+//
+//     /**
+//      * Selects all the supergroups or groups depending on the currently selected tab.
+//      */
+//     deselectAll() {
+//
+//       if (this.currentTab === 'supergroups') {
+//         for (let sg in this.supergroups) {
+//           if (this.supergroups.hasOwnProperty(sg)) {
+//             this.supergroups[sg].visible = false;
+//           }
+//         }
+//         this.checkedSupergroups = [];
+//       }
+//       else if (this.currentTab === 'groups') {
+//         for (let g in this.groups) {
+//           if (this.groups.hasOwnProperty(g)) {
+//             this.groups[g].visible = false;
+//           }
+//         }
+//         this.checkedGroups = [];
+//       }
+//
+//       MapLayers.nuts3.renderLayer();
+//
+//     },
+//
+//     /**
+//      * Toggles the groups associated with the specified supergroup.
+//      *
+//      * @param supergroup - The supergroup whose associated groups will be toggled on/off.
+//      */
+//     toggleGroups(supergroup) {
+//
+//       areGroupsVisible = true;
+//
+//       // Loop through all the associated groups.
+//       let groups = this.supergroups[supergroup].groups;
+//
+//       for (let i = 0; i < groups.length; i++) {
+//         // Check the visibility of the associated groups.
+//         if (this.groups[groups[i].toString()].visible) {
+//           // A group was found visible. Make all invisible.
+//           areGroupsVisible = false;
+//           break;
+//         }
+//       }
+//
+//       // Loop through all the associated groups and set their visibility.
+//       for (let i = 0; i < groups.length; i++) {
+//         this.groups[groups[i].toString()].visible = areGroupsVisible;
+//       }
+//
+//       // Toggle the groups associated with the specified supergroup.
+//       this.checkedGroups = [];
+//
+//       for (let g in this.groups) {
+//         if (this.groups.hasOwnProperty(g)) {
+//           if (this.groups[g].visible) {
+//             this.checkedGroups.push(g.toString());
+//           }
+//         }
+//       }
+//
+//       MapLayers.nuts3.renderLayer();
+//
+//     },
+//
+//     /**
+//      * Renders the regions of the NUTS3 layer having the specified typology class after toggling it on/off.
+//      *
+//      * @param typologyClass - The typology class that is toggled on/off.
+//      */
+//     renderNuts3TypologyClass(typologyClass) {
+//       if (this.currentTab === 'supergroups') {
+//         this.supergroups[typologyClass].visible = !this.supergroups[typologyClass].visible;
+//       }
+//       else if (this.currentTab === 'groups') {
+//         this.groups[typologyClass].visible = !this.groups[typologyClass].visible;
+//       }
+//
+//       MapLayers.nuts3.changeTypologyClassStyle(typologyClass);
+//     },
+//
+//     /**
+//      * Renders the NUTS3 layer.
+//      */
+//     renderNuts3Layer() {
+//       MapLayers.nuts3.renderLayer();
+//     }
+//
+//   }
+//
+// });
+//
+//
+//
+//
+//
+//
+//
+// /**
+//  * The overviewInfoViewModel provides the data and logic
+//  * to display overview information about a NUTS3 region.
+//  *
+//  * @type {Vue} - A Vue object with the model and methods used in the view model.
+//  */
+// let overviewInfoViewModel = new Vue({
+//
+//   /**
+//    * The name of the view model.
+//    */
+//   el: '#overviewInfoVM',
+//
+//   /**
+//    * The model of the view model.
+//    */
+//   data: {
+//
+//     isVisible: false,
+//
+//     isPinned: false,
+//
+//     nuts3Name: '',
+//
+//     nuts3NativeName: '',
+//
+//     language: 'en',
+//
+//     supergroupName: null,
+//
+//     groupName: null,
+//
+//     supergroupFillColor: { fillColor: '#ffffff', fillOpacity: 0.01 },
+//
+//     groupFillColor: { fillColor: '#ffffff', fillOpacity: 0.01 },
+//
+//     domains: AppData.domains,
+//
+//     domainSortedIndicators: AppData.domainSortedIndicators,
+//
+//     domainDictionaryIndicators: AppData.domainDictionaryIndicators,
+//
+//     domainDictionaryIndicatorValues: undefined,
+//
+//     tooltipIconName: 'announcement', // feedback, info,
+//
+//
+//
+//   },
+//
+//   /**
+//    * The computed properties of the model of the view model.
+//    */
+//   computed: {
+//
+//     /**
+//      * Return the tooltips of the indicators.
+//      */
+//     indicatorTooltips: function() {
+//
+//       let tooltipsDic = {};
+//
+//       for (let domain in this.domainDictionaryIndicators) {
+//         if (this.domainDictionaryIndicators.hasOwnProperty(domain)) {
+//           tooltipsDic[domain] = [];
+//
+//           for (let i = 0; i < this.domainDictionaryIndicators[domain].length; i++) {
+//             let html = HtmlTemplates.indicatorMetadataTooltip
+//                         .replace('@@icon@@', this.domainDictionaryIndicators[domain][i].faIcon)
+//                         .replace('@@description@@', this.domainDictionaryIndicators[domain][i].description)
+//                         .replace('@@unit@@', this.domainDictionaryIndicators[domain][i].unit)
+//                         .replace('@@details@@', this.domainDictionaryIndicators[domain][i].details);
+//
+//             tooltipsDic[domain].push(html);
+//           }
+//         }
+//       }
+//
+//       return tooltipsDic;
+//
+//     },
+//
+//   },
+//
+//   /**
+//    * The methods of the view model.
+//    */
+//   methods: {
+//
+//     /**
+//      * Toggles the language from en to other and vice versa.
+//      */
+//     toggleLanguage() {
+//       if (this.language === 'en') {
+//         this. language = 'other';
+//       }
+//       else {
+//         this.language = 'en';
+//       }
+//       if (AppState.bootstrapMaterialTooltipEnabled) {
+//         $('#toggle-lang').tooltip('hide');
+//       }
+//     },
+//
+//     /**
+//      * Shows the overview view.
+//      */
+//     showView() {
+//
+//       // Hide the Nuts3LayerSetup panel if it is visible.
+//       if (toggleNuts3LayerSetupViewModel.isNuts3LayerSetupVisible) {
+//         // Mark the 'layer setup' view as 'hidden while hovering'.
+//         nuts3LayerSetupViewModel.keepHiddenWhileHovering = true;
+//         toggleNuts3LayerSetupViewModel.hideNuts3LayerSetup();
+//       }
+//       else {
+//         // Hide the details info panel if it is visible.
+//         if (detailsInfoViewModel.isVisible) {
+//           detailsInfoViewModel.isVisible = false;
+//         }
+//       }
+//
+//       // Show the overview info panel.
+//       this.isVisible = true;
+//
+//     },
+//
+//     /**
+//      * Hide the overview view.
+//      */
+//     hideView() {
+//
+//       // Hide the overview info panel.
+//       this.isVisible = false;
+//
+//       // Show the 'Layer Setup' view if it is marked as 'hidden while hovering'.
+//       if (nuts3LayerSetupViewModel.keepHiddenWhileHovering) {
+//         nuts3LayerSetupViewModel.keepHiddenWhileHovering = false;
+//         toggleNuts3LayerSetupViewModel.showNuts3LayerSetup();
+//       }
+//
+//     },
+//
+//
+//     toggleDomain(index) {
+//       this.domains[index].isOverviewVisible = !this.domains[index].isOverviewVisible;
+//     },
+//
+//     toggleDetails(domain, index) {
+//       this.domainDictionaryIndicators[domain][index].isDetailsVisible = !this.domainDictionaryIndicators[domain][index].isDetailsVisible;
+//     },
+//
+//
+//     updateView(feature) {
+//
+//       if (feature === null) {
+//         // TODO: RESIN - Implement this when the user hovers out of a feature.
+//
+//         return;
+//       }
+//
+//       let properties = feature.properties;
+//
+//       let nuts3id = properties.NUTS_ID;
+//       let sg = properties.SG;
+//       let g = properties.G;
+//
+//       this.nuts3Name = AppData.nuts3[nuts3id].nameAscii;
+//       this.nuts3NativeName = AppData.nuts3[nuts3id].nutsName;
+//
+//       let currentLevel = nuts3LayerSetupViewModel.currentTab;
+//
+//       if (currentLevel === 'supergroups') {
+//         if (MapLayers.nuts3.supergroups[sg].visible) {
+//           this.supergroupName = MapLayers.nuts3.supergroups[sg].name;
+//           this.supergroupFillColor = nuts3LayerSetupViewModel.supergroupFillColors[sg];
+//           this.groupName = MapLayers.nuts3.groups[g].name;
+//           this.groupFillColor = nuts3LayerSetupViewModel.groupFillColors[g];
+//         }
+//         else {
+//           this.supergroupName = null;
+//           this.supergroupFillColor = AppState.transparentColor;
+//           this.groupName = null;
+//           this.groupFillColor = AppState.transparentColor;
+//         }
+//       }
+//       else if (currentLevel === 'groups') {
+//         if (MapLayers.nuts3.groups[g].visible) {
+//           this.supergroupName = MapLayers.nuts3.supergroups[sg].name;
+//           this.supergroupFillColor = nuts3LayerSetupViewModel.supergroupFillColors[sg];
+//           this.groupName = MapLayers.nuts3.groups[g].name;
+//           this.groupFillColor = nuts3LayerSetupViewModel.groupFillColors[g];
+//         }
+//         else {
+//           this.supergroupName = null;
+//           this.supergroupFillColor = AppState.transparentColor;
+//           this.groupName = null;
+//           this.groupFillColor = AppState.transparentColor;
+//         }
+//       }
+//       else {
+//         this.supergroupName = MapLayers.nuts3.supergroups[sg].name;
+//         this.supergroupFillColor = nuts3LayerSetupViewModel.supergroupFillColors[sg];
+//         this.groupName = MapLayers.nuts3.groups[g].name;
+//         this.groupFillColor = nuts3LayerSetupViewModel.groupFillColors[g];
+//       }
+//
+//       this.domainDictionaryIndicatorValues = {};
+//
+//       for (let domain in AppData.domainDictionaryIndicators) {
+//         if (AppData.domainDictionaryIndicators.hasOwnProperty(domain)) {
+//
+//           this.domainDictionaryIndicatorValues[domain] = [];
+//
+//           for (let i = 0; i < AppData.domainDictionaryIndicators[domain].length; i++) {
+//             let im = AppData.domainDictionaryIndicators[domain][i];
+//             let value = im.type === 'double' ? properties[im.name].toFixed(3) : properties[im.name].toFixed(0); // TODO: RESIN - toFixed(0) MUST be removed once I have the correct data.
+//
+//             this.domainDictionaryIndicatorValues[domain].push({
+//               name: this.domainDictionaryIndicators[i],
+//               value: value,
+//               zscore: properties[im.name + 'Z'].toFixed(3)
+//             })
+//           }
+//
+//         }
+//       }
+//
+//
+//       // Make sure that the html content of the tooltip will be displayed
+//       // by explicitly calling the tooltip jquery method.
+//       $('[data-toggle="tooltip"]').tooltip();
+//
+//
+//     },
+//
+//     Pin() {
+//       this.isPinned = true;
+//       if (AppState.bootstrapMaterialTooltipEnabled) {
+//         $('#overview-pin').tooltip('show');
+//       }
+//     },
+//
+//     unPin() {
+//       this.isPinned = false;
+//       this.isVisible = false;
+//
+//       MapLayers.nuts3.unselectNuts3();
+//     }
+//
+//
+//   }
+//
+// });
+//
+// /**
+//  * The detailsInfoViewModel provides the data and logic
+//  * to display detailed information about a NUTS3 region.
+//  *
+//  * @type {Vue} - A Vue object with the model and methods used in the view model.
+//  */
+// let detailsInfoViewModel = new Vue({
+//
+//   /**
+//    * The name of the view model.
+//    */
+//   el: '#detailsInfoVM',
+//
+//   /**
+//    * The model of the view model.
+//    */
+//   data: {
+//
+//     isVisible: false,
+//
+//     isPinned: false
+//
+//   },
+//
+//   /**
+//    * The computed properties of the model of the view model.
+//    */
+//   computed: {
+//
+//   },
+//
+//   /**
+//    * The methods of the view model.
+//    */
+//   methods: {
+//
+//     /**
+//      * Shows the details view.
+//      */
+//     showView() {
+//
+//       // Hide the Nuts3LayerSetup panel if it is visible.
+//       if (toggleNuts3LayerSetupViewModel.isNuts3LayerSetupVisible) {
+//         // Mark the 'layer setup' view as 'hidden while hovering'.
+//         nuts3LayerSetupViewModel.keepHiddenWhileHovering = true;
+//         toggleNuts3LayerSetupViewModel.hideNuts3LayerSetup();
+//       }
+//       else {
+//         // Hide the overview info panel if it is visible.
+//         if (overviewInfoViewModel.isVisible) {
+//           overviewInfoViewModel.isVisible = false;
+//         }
+//       }
+//
+//       // Show the details info panel.
+//       this.isVisible = true;
+//
+//     },
+//
+//     /**
+//      * Hide the details View.
+//      */
+//     hideView() {
+//
+//       // Hide the details info panel.
+//       this.isVisible = false;
+//
+//       // Show the 'Layer Setup' view if it is marked as 'hidden while hovering'.
+//       if (nuts3LayerSetupViewModel.keepHiddenWhileHovering) {
+//         nuts3LayerSetupViewModel.keepHiddenWhileHovering = false;
+//         toggleNuts3LayerSetupViewModel.showNuts3LayerSetup();
+//       }
+//
+//     },
+//
+//
+//     updateView(feature) {
+//
+//
+//     },
+//
+//
+//     Pin() {
+//       this.isPinned = true;
+//       if (AppState.bootstrapMaterialTooltipEnabled) {
+//         $('#details-pin').tooltip('show');
+//       }
+//     },
+//
+//     unPin() {
+//       this.isPinned = false;
+//       this.isVisible = false;
+//
+//       MapLayers.nuts3.unselectNuts3();
+//     }
+//
+//
+//   }
+//
+// });
 
 //
 // ================================================================================
