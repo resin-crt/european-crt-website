@@ -499,8 +499,8 @@ body {
   min-height: 100%; /* TODO: RESIN - AAAA */
   overflow-x: hidden; /* TODO: RESIN - AAAA */
   overflow-y: hidden; /* TODO: RESIN - AAAA */
-  /*padding: 10px 10px 10px 10px; !* TODO: RESIN - Check if these settings need to change *!*/
-  padding: 15px 15px 15px 15px; /* TODO: RESIN - Check if these settings need to change */
+  padding: 10px 10px 10px 10px; /* TODO: RESIN - Check if these settings need to change */
+  /*padding: 15px 15px 15px 15px; !* TODO: RESIN - Check if these settings need to change *!*/
   /*padding: 20px 20px 20px 20px; !* TODO: RESIN - Check if these settings need to change *!*/
 }
 
@@ -676,7 +676,7 @@ body {
 
 /*
  *  ================================================================================
- *    New Sidebar Clases
+ *    New Sidebar Classes
  *  ================================================================================
  */
 /*.sidebar-pane > .pane-container {*/
@@ -684,6 +684,7 @@ body {
   min-height: 100%;
   overflow-x: hidden; /* TODO: RESIN - AAAA */
   overflow-y: hidden; /* TODO: RESIN - AAAA */
+  padding: 5px 5px 5px 5px;
 }
 
 
@@ -693,11 +694,6 @@ body {
  *    Sidebar Card
  *  ================================================================================
  */
-/*TODO: RESIN - Check out if this can be used.*/
-.card > .sidebar-card {
-  height: 100%;
-}
-
 /*.sidebar-card .card-header {*/
 /*padding: 1rem;*/
 /*background-color: transparent;*/
@@ -706,7 +702,6 @@ body {
 .sidebar-card > .card-body {
   padding: 1.0rem;
 }
-
 
 .sidebar-card > .card-body > .table th, .table td {
   padding: 0.75rem 0 0.75rem 0.50rem
