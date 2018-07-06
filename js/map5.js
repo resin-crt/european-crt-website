@@ -1443,6 +1443,9 @@ let Spatial = {
       maxZoom: Spatial.mapOptions.maxZoom
     });
 
+    // Move the attribution control to the bottom-left.
+    Spatial.map.attributionControl.setPosition('bottomleft');
+
     // Create the sidebar and add it on the map.
     // TODO: RESIN
     Spatial.sidebar = L.control.sidebar(Spatial.Members.sidebarName, { position: Spatial.Members.sidebarPosition });
