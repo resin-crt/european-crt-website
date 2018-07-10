@@ -132,6 +132,12 @@ body {
 
 
 
+.ver-scrollbars {
+  overflow-y: auto;
+}
+
+
+
 
 
 
@@ -200,10 +206,6 @@ body {
 .crt-material-icons.orange600 { color: #FB8C00; }
 
 
-.nuts3layer-setup-table {
-  height: 460px; /* TODO: RESIN - This height is hardcoded and needs to be removed */
-  overflow-y: auto;
-}
 
 .indicators-container {
   margin-left: 10px;
@@ -276,6 +278,10 @@ body {
  *    Colours
  *  ================================================================================
  */
+.row-gray {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
 /*.yellow {*/
 /*color: #ff9c00;*/
 /*}*/
