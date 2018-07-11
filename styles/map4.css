@@ -132,6 +132,12 @@ body {
 
 
 
+.ver-scrollbars {
+  overflow-y: auto;
+}
+
+
+
 
 
 
@@ -272,6 +278,10 @@ body {
  *    Colours
  *  ================================================================================
  */
+.row-gray {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
 /*.yellow {*/
 /*color: #ff9c00;*/
 /*}*/
