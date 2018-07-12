@@ -501,7 +501,7 @@
 
                   </div>
 
-                  <div id="groups" class="tab-pane ver-scrollbars fade"
+                  <div id="groups" class="tab-pane fade"
                        role="tabpanel" aria-labelledby="groupsTab"
                        v-bind:class="[currentTab === 'groups' ? '' : 'collapse']">
 
@@ -1580,9 +1580,13 @@
 
                   </div>
 
-                  <div id="indicators" class="tab-pane fade" role="tabpanel" aria-labelledby="indicatorsTab">
+                  <div id="indicators" class="tab-pane fade"
+                       role="tabpanel" aria-labelledby="indicatorsTab"
+                       v-bind:class="[currentTab === 'indicators' ? '' : 'collapse']">
 
-                    <p>This is the indicators tab content.</p>
+                    <div>
+                      <p>This is the indicators tab content.</p>
+                    </div>
 
                   </div>
 

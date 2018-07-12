@@ -1720,7 +1720,17 @@ let symbologyViewModel = new Vue({
     currentTab: 'supergroups',
 
     dictionary: {
-      'supergroups': { name: 'Classes' },
+      'supergroups': {
+        name: 'Classes',
+        '1': { isPanelVisible: false, icon: 'far fa-building', },
+        '2': { isPanelVisible: false, icon: 'fas fa-leaf' },
+        '3': { isPanelVisible: false, icon: 'fas fa-snowflake' },
+        '4': { isPanelVisible: false, icon: 'fas fa-sun' },
+        '5': { isPanelVisible: false, icon: 'fab fa-servicestack' },
+        '6': { isPanelVisible: false, icon: 'far fa-image' },
+        '7': { isPanelVisible: false, icon: 'fas fa-tint' },
+        '8': { isPanelVisible: false, icon: 'fab fa-firstdraft' }
+      },
       'groups': { name: 'Subclasses' },
       'indicators': { name: 'Indicators' }
     },
@@ -1729,7 +1739,7 @@ let symbologyViewModel = new Vue({
 
     groups: MapLayers.nuts3.groups,
 
-    tooltipIconName: 'announcement', // feedback, info,
+    tooltipIconName: 'help_outline', // help, help_outline, live_help, announcement, feedback, info, help
 
     /**
      * The array of selected supergroups used by the list of supergroup checkboxes.
@@ -1895,7 +1905,12 @@ let symbologyViewModel = new Vue({
      */
     setCurrentTab(tabName) {
       this.currentTab = tabName;
-      MapLayers.nuts3.renderLayer();
+
+      // TODO: RESIN - IMPORTANT REMOVE THIS IMMEDIATELY
+      if (tabName !== 'indicators') {
+        MapLayers.nuts3.renderLayer();
+      }
+
     },
 
     /**
@@ -2016,7 +2031,19 @@ let symbologyViewModel = new Vue({
      */
     renderNuts3Layer() {
       MapLayers.nuts3.renderLayer();
+    },
+    
+    /**
+     * Toggles on/off the information panel of a supergroup, group or indicator.
+     *
+     * @param code - The code that will be used to toggle the information of a supergroup, group or indicator.
+     */
+    toggleInfo(code) {
+
+      this.dictionary[this.currentTab][code].isPanelVisible = !this.dictionary[this.currentTab][code].isPanelVisible;
+
     }
+
 
   }
 
