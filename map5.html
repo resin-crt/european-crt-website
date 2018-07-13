@@ -290,14 +290,30 @@
                         </td>
                         <td><label class="clickable-label" for="g1" v-text="supergroups['1'].name"></label></td>
                         <td>
-                          <button type="button" class="btn btn-danger btn-typology-help"
+                          <!--<button type="button" class="btn btn-danger btn-typology-help"-->
+                                  <!--data-toggle="tooltip" data-placement="bottom"-->
+                                  <!--v-bind:aria-label="[dictionary.supergroups['1'].isPanelVisible ? 'Hide the supergroup information' : 'Show the supergroup information']"-->
+                                  <!--v-bind:aria-pressed="[dictionary.supergroups['1'].isPanelVisible]"-->
+                                  <!--v-bind:class="[dictionary.supergroups['1'].isPanelVisible ? 'btn-raised btn-typology-help-raised' : 'btn-typology-help']"-->
+                                  <!--v-on:click="toggleInfo('1')">-->
+                            <!--<i class="material-icons" v-text="tooltipIconName"></i>-->
+                          <!--</button>-->
+
+                          <button type="button" class="btn btn-typology-help"
                                   data-toggle="tooltip" data-placement="bottom"
                                   v-bind:aria-label="[dictionary.supergroups['1'].isPanelVisible ? 'Hide the supergroup information' : 'Show the supergroup information']"
                                   v-bind:aria-pressed="[dictionary.supergroups['1'].isPanelVisible]"
-                                  v-bind:class="[dictionary.supergroups['1'].isPanelVisible ? 'btn-raised btn-typology-help-raised' : 'btn-typology-help border']"
+                                  v-bind:class="[dictionary.supergroups['1'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
                                   v-on:click="toggleInfo('1')">
-                            <i class="material-icons" v-text="tooltipIconName"></i>
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.supergroups['1'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
                           </button>
+
+                          <!--<button class="btn btn-raised btn-light btn-typology-help" type="submit"-->
+                                  <!--v-on:click="toggleInfo('2')">-->
+                            <!--<i class="material-icons help text-danger" v-text="tooltipIconName"></i>-->
+                          <!--</button>-->
 
 
                           <!--<button type="button" class="btn btn-danger"-->
