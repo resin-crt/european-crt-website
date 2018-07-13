@@ -263,7 +263,6 @@
                   </ul>
                 </div>
 
-                <!--style="overflow-y: auto;"-->
                 <div class="mb-auto h-100 ver-scrollbars" >
 
                   <div id="supergroups" class="tab-pane fade show active"
@@ -290,18 +289,9 @@
                         </td>
                         <td><label class="clickable-label" for="g1" v-text="supergroups['1'].name"></label></td>
                         <td>
-                          <!--<button type="button" class="btn btn-danger btn-typology-help"-->
-                                  <!--data-toggle="tooltip" data-placement="bottom"-->
-                                  <!--v-bind:aria-label="[dictionary.supergroups['1'].isPanelVisible ? 'Hide the supergroup information' : 'Show the supergroup information']"-->
-                                  <!--v-bind:aria-pressed="[dictionary.supergroups['1'].isPanelVisible]"-->
-                                  <!--v-bind:class="[dictionary.supergroups['1'].isPanelVisible ? 'btn-raised btn-typology-help-raised' : 'btn-typology-help']"-->
-                                  <!--v-on:click="toggleInfo('1')">-->
-                            <!--<i class="material-icons" v-text="tooltipIconName"></i>-->
-                          <!--</button>-->
-
                           <button type="button" class="btn btn-typology-help"
                                   data-toggle="tooltip" data-placement="bottom"
-                                  v-bind:aria-label="[dictionary.supergroups['1'].isPanelVisible ? 'Hide the supergroup information' : 'Show the supergroup information']"
+                                  v-bind:aria-label="[dictionary.supergroups['1'].isPanelVisible ? 'Hide the class information' : 'Show the class information']"
                                   v-bind:aria-pressed="[dictionary.supergroups['1'].isPanelVisible]"
                                   v-bind:class="[dictionary.supergroups['1'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
                                   v-on:click="toggleInfo('1')">
@@ -309,26 +299,6 @@
                                v-bind:class="[dictionary.supergroups['1'].isPanelVisible ? '' : 'text-dark']">
                             </i>
                           </button>
-
-                          <!--<button class="btn btn-raised btn-light btn-typology-help" type="submit"-->
-                                  <!--v-on:click="toggleInfo('2')">-->
-                            <!--<i class="material-icons help text-danger" v-text="tooltipIconName"></i>-->
-                          <!--</button>-->
-
-
-                          <!--<button type="button" class="btn btn-danger"-->
-                                  <!--data-toggle="tooltip" data-placement="bottom"-->
-                                  <!--v-bind:title="dictionary['overview'].description"-->
-                                  <!--v-bind:aria-label="dictionary['overview'].description"-->
-                                  <!--v-bind:aria-pressed="[currentInfoLevel === 'overview' ? 'true' : 'false']"-->
-                                  <!--v-bind:class="[currentInfoLevel === 'overview' ? 'btn-raised' : '']"-->
-                                  <!--v-on:click="setCurrentInfoLevel('overview')">-->
-                            <!--<i class="material-icons" v-text="dictionary['overview'].iconName"></i>-->
-                            <!--<div>-->
-                              <!--<small v-text="dictionary['overview'].name"></small>-->
-                            <!--</div>-->
-                          <!--</button>-->
-
                         </td>
                       </tr>
                       <tr class="collapse"
@@ -336,7 +306,7 @@
                         <td class="info" colspan="4">
                           <div class="card" style="">
                             <div class="card-header bg-dark">
-                              <i class="display-1 text-danger" style="margin-left: 20px;"
+                              <i class="display-2 text-danger info-icon"
                                  v-bind:class="[dictionary.supergroups['1'].icon]">
                               </i>
                             </div>
@@ -364,9 +334,15 @@
                         </td>
                         <td><label class="clickable-label" for="g2" v-text="supergroups['2'].name"></label></td>
                         <td>
-                          <button class="btn btn-raised btn-light btn-typology-help" type="submit"
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['2'].isPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['2'].isPanelVisible]"
+                                  v-bind:class="[dictionary.supergroups['2'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
                                   v-on:click="toggleInfo('2')">
-                            <i class="material-icons help text-danger" v-text="tooltipIconName"></i>
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.supergroups['2'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
                           </button>
                         </td>
                       </tr>
@@ -375,7 +351,7 @@
                         <td class="info" colspan="4">
                           <div class="card" style="">
                             <div class="card-header bg-dark">
-                              <i class="display-1 text-danger" style="margin-left: 20px;"
+                              <i class="display-2 text-danger info-icon"
                                  v-bind:class="[dictionary.supergroups['2'].icon]">
                               </i>
                             </div>
@@ -403,9 +379,15 @@
                         </td>
                         <td><label class="clickable-label" for="g3" v-text="supergroups['3'].name"></label></td>
                         <td>
-                          <button class="btn btn-raised btn-light btn-typology-help" type="submit"
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['3'].isPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['3'].isPanelVisible]"
+                                  v-bind:class="[dictionary.supergroups['3'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
                                   v-on:click="toggleInfo('3')">
-                            <i class="material-icons help text-danger" v-text="tooltipIconName"></i>
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.supergroups['3'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
                           </button>
                         </td>
                       </tr>
@@ -414,7 +396,7 @@
                         <td class="info" colspan="4">
                           <div class="card" style="">
                             <div class="card-header bg-dark">
-                              <i class="display-1 text-danger" style="margin-left: 20px;"
+                              <i class="display-2 text-danger info-icon"
                                  v-bind:class="[dictionary.supergroups['3'].icon]">
                               </i>
                             </div>
@@ -442,9 +424,15 @@
                         </td>
                         <td><label class="clickable-label" for="g4" v-text="supergroups['4'].name"></label></td>
                         <td>
-                          <button class="btn btn-raised btn-light btn-typology-help" type="submit"
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['4'].isPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['4'].isPanelVisible]"
+                                  v-bind:class="[dictionary.supergroups['4'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
                                   v-on:click="toggleInfo('4')">
-                            <i class="material-icons help text-danger" v-text="tooltipIconName"></i>
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.supergroups['4'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
                           </button>
                         </td>
                       </tr>
@@ -453,7 +441,7 @@
                         <td class="info" colspan="4">
                           <div class="card" style="">
                             <div class="card-header bg-dark">
-                              <i class="display-1 text-danger" style="margin-left: 20px;"
+                              <i class="display-2 text-danger info-icon"
                                  v-bind:class="[dictionary.supergroups['4'].icon]">
                               </i>
                             </div>
@@ -481,9 +469,15 @@
                         </td>
                         <td><label class="clickable-label" for="g5" v-text="supergroups['5'].name"></label></td>
                         <td>
-                          <button class="btn btn-raised btn-light btn-typology-help" type="submit"
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['5'].isPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['5'].isPanelVisible]"
+                                  v-bind:class="[dictionary.supergroups['5'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
                                   v-on:click="toggleInfo('5')">
-                            <i class="material-icons help text-danger" v-text="tooltipIconName"></i>
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.supergroups['5'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
                           </button>
                         </td>
                       </tr>
@@ -492,7 +486,7 @@
                         <td class="info" colspan="4">
                           <div class="card" style="">
                             <div class="card-header bg-dark">
-                              <i class="display-1 text-danger" style="margin-left: 20px;"
+                              <i class="display-2 text-danger info-icon"
                                  v-bind:class="[dictionary.supergroups['5'].icon]">
                               </i>
                             </div>
@@ -520,9 +514,15 @@
                         </td>
                         <td><label class="clickable-label" for="g6" v-text="supergroups['6'].name"></label></td>
                         <td>
-                          <button class="btn btn-raised btn-light btn-typology-help" type="submit"
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['6'].isPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['6'].isPanelVisible]"
+                                  v-bind:class="[dictionary.supergroups['6'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
                                   v-on:click="toggleInfo('6')">
-                            <i class="material-icons help text-danger" v-text="tooltipIconName"></i>
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.supergroups['6'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
                           </button>
                         </td>
                       </tr>
@@ -531,7 +531,7 @@
                         <td class="info" colspan="4">
                           <div class="card" style="">
                             <div class="card-header bg-dark">
-                              <i class="display-1 text-danger" style="margin-left: 20px;"
+                              <i class="display-2 text-danger info-icon"
                                  v-bind:class="[dictionary.supergroups['6'].icon]">
                               </i>
                             </div>
@@ -559,9 +559,15 @@
                         </td>
                         <td><label class="clickable-label" for="g7" v-text="supergroups['7'].name"></label></td>
                         <td>
-                          <button class="btn btn-raised btn-light btn-typology-help" type="submit"
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['7'].isPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['7'].isPanelVisible]"
+                                  v-bind:class="[dictionary.supergroups['7'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
                                   v-on:click="toggleInfo('7')">
-                            <i class="material-icons help text-danger" v-text="tooltipIconName"></i>
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.supergroups['7'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
                           </button>
                         </td>
                       </tr>
@@ -570,7 +576,7 @@
                         <td class="info" colspan="4">
                           <div class="card" style="">
                             <div class="card-header bg-dark">
-                              <i class="display-1 text-danger" style="margin-left: 20px;"
+                              <i class="display-2 text-danger info-icon"
                                  v-bind:class="[dictionary.supergroups['7'].icon]">
                               </i>
                             </div>
@@ -598,9 +604,15 @@
                         </td>
                         <td><label class="clickable-label" for="g8" v-text="supergroups['8'].name"></label></td>
                         <td>
-                          <button class="btn btn-raised btn-light btn-typology-help" type="submit"
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['8'].isPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['8'].isPanelVisible]"
+                                  v-bind:class="[dictionary.supergroups['8'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
                                   v-on:click="toggleInfo('8')">
-                            <i class="material-icons help text-danger" v-text="tooltipIconName"></i>
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.supergroups['8'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
                           </button>
                         </td>
                       </tr>
@@ -609,7 +621,7 @@
                         <td class="info" colspan="4">
                           <div class="card" style="">
                             <div class="card-header bg-dark">
-                              <i class="display-1 text-danger" style="margin-left: 20px;"
+                              <i class="display-2 text-danger info-icon"
                                  v-bind:class="[dictionary.supergroups['8'].icon]">
                               </i>
                             </div>
@@ -624,7 +636,6 @@
                     </table>
 
                   </div>
-
 
                   <div id="groups" class="tab-pane fade"
                        role="tabpanel" aria-labelledby="groupsTab"
@@ -646,11 +657,31 @@
                           </a>
                         </td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="supergroupTooltips['1']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['1'].isPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.groups['1'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['1'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light']"
+                                  v-on:click="toggleInfo('1')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['1'].isPanelVisible ? '' : 'text-primary']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['1'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['1'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="supergroups['1'].description"></p>
+                            </div>
+                          </div>
                         </td>
                       </tr>
 
@@ -671,15 +702,32 @@
                         </td>
                         <td><label class="clickable-label" for="g11" v-text="groups['11'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['11']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['11'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['11'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['11'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('11')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['11'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['11'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['11'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['11'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--12-->
@@ -699,15 +747,32 @@
                         </td>
                         <td><label class="clickable-label" for="g12" v-text="groups['12'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['12']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['12'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['12'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['12'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('12')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['12'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['12'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['12'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['12'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--13-->
@@ -727,15 +792,32 @@
                         </td>
                         <td><label class="clickable-label" for="g13" v-text="groups['13'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['13']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['13'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['13'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['13'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('13')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['13'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['13'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['13'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['13'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--14-->
@@ -755,15 +837,32 @@
                         </td>
                         <td><label class="clickable-label" for="g14" v-text="groups['14'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['14']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['14'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['14'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['14'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('14')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['14'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['14'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['14'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['14'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--Groups of Supergroup 2-->
@@ -779,11 +878,31 @@
                           </a>
                         </td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="supergroupTooltips['2']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['2'].isPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.groups['2'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['2'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light']"
+                                  v-on:click="toggleInfo('2')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['2'].isPanelVisible ? '' : 'text-primary']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['2'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['2'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="supergroups['2'].description"></p>
+                            </div>
+                          </div>
                         </td>
                       </tr>
 
@@ -804,15 +923,32 @@
                         </td>
                         <td><label class="clickable-label" for="g21" v-text="groups['21'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['21']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['21'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['21'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['21'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('21')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['21'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['21'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['21'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['21'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--22-->
@@ -832,15 +968,32 @@
                         </td>
                         <td><label class="clickable-label" for="g22" v-text="groups['22'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['22']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['22'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['22'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['22'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('22')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['22'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['22'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['22'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['22'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--23-->
@@ -860,15 +1013,32 @@
                         </td>
                         <td><label class="clickable-label" for="g23" v-text="groups['23'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['23']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['23'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['23'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['23'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('23')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['23'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['23'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['23'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['23'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--24-->
@@ -888,15 +1058,32 @@
                         </td>
                         <td><label class="clickable-label" for="g24" v-text="groups['24'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['24']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['24'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['24'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['24'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('24')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['24'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['24'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['24'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['24'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--Groups of Supergroup 3-->
@@ -912,15 +1099,32 @@
                           </a>
                         </td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="supergroupTooltips['3']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['3'].isPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.groups['3'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['3'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light']"
+                                  v-on:click="toggleInfo('3')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['3'].isPanelVisible ? '' : 'text-primary']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['3'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['3'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="supergroups['3'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--31-->
@@ -940,15 +1144,32 @@
                         </td>
                         <td><label class="clickable-label" for="g31" v-text="groups['31'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['31']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['31'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['31'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['31'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('31')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['31'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['31'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['31'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['31'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--32-->
@@ -968,15 +1189,32 @@
                         </td>
                         <td><label class="clickable-label" for="g32" v-text="groups['32'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['32']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['32'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['32'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['32'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('32')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['32'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['32'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['32'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['32'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--33-->
@@ -996,15 +1234,32 @@
                         </td>
                         <td><label class="clickable-label" for="g33" v-text="groups['33'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['33']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['33'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['33'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['33'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('33')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['33'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['33'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['33'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['33'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--34-->
@@ -1024,15 +1279,32 @@
                         </td>
                         <td><label class="clickable-label" for="g34" v-text="groups['34'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['34']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['34'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['34'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['34'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('34')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['34'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['34'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['34'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['34'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--Groups of Supergroup 4-->
@@ -1048,11 +1320,31 @@
                           </a>
                         </td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="supergroupTooltips['4']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['4'].isPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.groups['4'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['4'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light']"
+                                  v-on:click="toggleInfo('4')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['4'].isPanelVisible ? '' : 'text-primary']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['4'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['4'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="supergroups['4'].description"></p>
+                            </div>
+                          </div>
                         </td>
                       </tr>
 
@@ -1073,15 +1365,32 @@
                         </td>
                         <td><label class="clickable-label" for="g41" v-text="groups['41'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['41']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['41'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['41'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['41'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('41')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['41'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['41'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['41'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['41'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--42-->
@@ -1101,15 +1410,32 @@
                         </td>
                         <td><label class="clickable-label" for="g42" v-text="groups['42'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['42']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['42'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['42'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['42'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('42')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['42'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['42'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['42'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['42'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--43-->
@@ -1129,15 +1455,32 @@
                         </td>
                         <td><label class="clickable-label" for="g43" v-text="groups['43'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['43']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['43'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['43'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['43'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('43')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['43'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['43'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['43'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['43'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--44-->
@@ -1157,15 +1500,32 @@
                         </td>
                         <td><label class="clickable-label" for="g44" v-text="groups['44'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['44']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['44'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['44'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['44'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('44')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['44'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['44'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['44'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['44'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--Groups of Supergroup 5-->
@@ -1181,11 +1541,31 @@
                           </a>
                         </td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="supergroupTooltips['5']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['5'].isPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.groups['5'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['5'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light']"
+                                  v-on:click="toggleInfo('5')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['5'].isPanelVisible ? '' : 'text-primary']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['5'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['5'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="supergroups['5'].description"></p>
+                            </div>
+                          </div>
                         </td>
                       </tr>
 
@@ -1206,15 +1586,32 @@
                         </td>
                         <td><label class="clickable-label" for="g51" v-text="groups['51'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['51']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['51'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['51'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['51'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('51')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['51'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['51'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['51'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['51'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--52-->
@@ -1234,15 +1631,32 @@
                         </td>
                         <td><label class="clickable-label" for="g52" v-text="groups['52'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['52']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['52'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['52'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['52'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('52')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['52'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['52'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['52'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['52'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--53-->
@@ -1262,15 +1676,32 @@
                         </td>
                         <td><label class="clickable-label" for="g53" v-text="groups['53'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['53']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['53'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['53'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['53'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('53')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['53'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['53'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['53'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['53'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--54-->
@@ -1290,15 +1721,32 @@
                         </td>
                         <td><label class="clickable-label" for="g54" v-text="groups['54'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['54']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['54'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['54'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['54'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('54')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['54'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['54'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['54'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['54'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--Groups of Supergroup 6-->
@@ -1314,11 +1762,31 @@
                           </a>
                         </td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="supergroupTooltips['6']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['6'].isPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.groups['6'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['6'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light']"
+                                  v-on:click="toggleInfo('6')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['6'].isPanelVisible ? '' : 'text-primary']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['6'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['6'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="supergroups['6'].description"></p>
+                            </div>
+                          </div>
                         </td>
                       </tr>
 
@@ -1339,15 +1807,32 @@
                         </td>
                         <td><label class="clickable-label" for="g61" v-text="groups['61'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['61']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['61'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['61'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['61'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('61')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['61'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['61'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['61'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['61'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--62-->
@@ -1367,15 +1852,32 @@
                         </td>
                         <td><label class="clickable-label" for="g62" v-text="groups['62'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['62']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['62'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['62'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['62'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('62')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['62'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['62'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['62'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['62'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--63-->
@@ -1395,15 +1897,32 @@
                         </td>
                         <td><label class="clickable-label" for="g63" v-text="groups['63'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['63']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['63'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['63'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['63'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('63')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['63'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['63'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['63'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['63'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--64-->
@@ -1423,15 +1942,32 @@
                         </td>
                         <td><label class="clickable-label" for="g64" v-text="groups['64'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['64']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['64'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['64'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['64'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('64')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['64'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['64'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['64'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['64'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--Groups of Supergroup 7-->
@@ -1447,11 +1983,31 @@
                           </a>
                         </td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="supergroupTooltips['7']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['7'].isPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.groups['7'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['7'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light']"
+                                  v-on:click="toggleInfo('7')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['7'].isPanelVisible ? '' : 'text-primary']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['7'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['7'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="supergroups['7'].description"></p>
+                            </div>
+                          </div>
                         </td>
                       </tr>
 
@@ -1472,15 +2028,32 @@
                         </td>
                         <td><label class="clickable-label" for="g71" v-text="groups['71'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['71']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['71'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['71'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['71'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('71')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['71'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['71'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['71'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['71'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--72-->
@@ -1500,15 +2073,32 @@
                         </td>
                         <td><label class="clickable-label" for="g72" v-text="groups['72'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['72']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['72'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['72'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['72'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('72')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['72'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['72'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['72'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['72'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--73-->
@@ -1528,15 +2118,32 @@
                         </td>
                         <td><label class="clickable-label" for="g73" v-text="groups['73'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['73']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['73'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['73'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['73'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('73')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['73'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['73'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['73'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['73'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--74-->
@@ -1556,15 +2163,32 @@
                         </td>
                         <td><label class="clickable-label" for="g74" v-text="groups['74'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['74']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['74'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['74'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['74'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('74')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['74'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['74'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['74'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['74'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--Groups of Supergroup 8-->
@@ -1580,11 +2204,31 @@
                           </a>
                         </td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="supergroupTooltips['8']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['8'].isPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.groups['8'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['8'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light']"
+                                  v-on:click="toggleInfo('8')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['8'].isPanelVisible ? '' : 'text-primary']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['8'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['8'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="supergroups['8'].description"></p>
+                            </div>
+                          </div>
                         </td>
                       </tr>
 
@@ -1605,15 +2249,32 @@
                         </td>
                         <td><label class="clickable-label" for="g81" v-text="groups['81'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['81']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['81'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['81'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['81'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('81')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['81'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['81'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['81'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['81'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--82-->
@@ -1633,15 +2294,32 @@
                         </td>
                         <td><label class="clickable-label" for="g82" v-text="groups['82'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['82']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['82'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['82'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['82'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('82')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['82'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['82'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['82'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['82'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--83-->
@@ -1661,15 +2339,32 @@
                         </td>
                         <td><label class="clickable-label" for="g83" v-text="groups['83'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['83']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['83'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['83'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['83'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('83')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['83'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['83'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['83'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['83'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       <!--84-->
@@ -1689,15 +2384,32 @@
                         </td>
                         <td><label class="clickable-label" for="g84" v-text="groups['84'].name"></label></td>
                         <td>
-                          <i class="material-icons help text-danger"
-                             data-toggle="tooltip" data-html="true" data-placement="left"
-                             v-text="tooltipIconName"
-                             v-bind:title="groupTooltips['84']">
-                          </i>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['84'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['84'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['84'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('84')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['84'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
                         </td>
                       </tr>
-                      <tr>
-
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['84'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['84'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['84'].description"></p>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
 
                       </tbody>
@@ -1716,7 +2428,6 @@
                   </div>
 
                 </div>
-
 
                 <div>
                   <div class="btn-group btn-group-justified" role="group"

@@ -4,7 +4,7 @@
 //  School of Environment, Education, and Development.
 //
 //  Name:            map.js
-//  Original coding: Vasilis Vlastaras (@gisvlasta), 05/07/2018.
+//  Original coding: Vasilis Vlastaras (@gisvlasta), 13/07/2018.
 //
 //  Description:     The European Climate Risk Typology web mapping functionality.
 // ================================================================================
@@ -1731,7 +1731,33 @@ let symbologyViewModel = new Vue({
         '7': { isPanelVisible: false, icon: 'fas fa-tint' },
         '8': { isPanelVisible: false, icon: 'fab fa-firstdraft' }
       },
-      'groups': { name: 'Subclasses' },
+      'groups': {
+        name: 'Subclasses',
+        '1':  { isPanelVisible: false, icon: 'far fa-building', },
+        '11': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '12': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '13': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '14': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '2':  { isPanelVisible: false, icon: 'fas fa-leaf' },
+        '21': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '22': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '23': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '24': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '3':  { isPanelVisible: false, icon: 'fas fa-snowflake' },
+        '31': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '32': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '33': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '34': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '4':  { isPanelVisible: false, icon: 'fas fa-sun' },
+        '41': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '42': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '43': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '44': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '5':  { isPanelVisible: false, icon: 'fab fa-servicestack' },
+        '51': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '52': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '53': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '54': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '6':  { isPanelVisible: false, icon: 'far fa-image' },
+        '61': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '62': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '63': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '64': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '7':  { isPanelVisible: false, icon: 'fas fa-tint' },
+        '71': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '72': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '73': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '74': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '8':  { isPanelVisible: false, icon: 'fab fa-firstdraft' },
+        '81': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '82': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '83': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '84': { isPanelVisible: false, icon: 'fab fa-leanpub' }
+      },
       'indicators': { name: 'Indicators' }
     },
 
@@ -1767,82 +1793,6 @@ let symbologyViewModel = new Vue({
    * The computed properties of the model of the view model.
    */
   computed: {
-
-    /**
-     * Return the tooltips of the supergroups.
-     */
-    supergroupTooltips: function() {
-
-      let tooltips = {
-        '1': '', '2': '', '3': '', '4': '', '5': '', '6': '', '7': '', '8': ''
-      };
-
-      // TODO: RESIN - Replace all these with appropriate tooltip icon names.
-      let icons = {
-        // Default Icon names        // fa:[fab fa-leanpub]: material:[class]
-        '1': 'far fa-building',      // fa:[fas fa-building], fa:[far fa-building], material:[location_city]
-        '2': 'fas fa-leaf',          // fa:[fab fa-envira], fa:[fas fa-leaf], fa:[fab fa-pagelines], fa:[fas fa-seedling], fa:[fas fa-tree]
-        '3': 'fas fa-snowflake',     // fa:[far fa-snowflake]
-        '4': 'fas fa-sun',           // fa:[far fa-sun]
-        '5': 'fab fa-servicestack',  // fa:[fab fa-servicestack]
-        '6': 'far fa-image',         // fa:[fas fa-image], fa:[far fa-image], fa:[material:class]
-        '7': 'fas fa-tint',          // fa:[fas fa-tint]
-        '8': 'fab fa-firstdraft'     // fa:[fab fa-firstdraft]
-      };
-
-      for (let sg in this.supergroups) {
-        if (this.supergroups.hasOwnProperty(sg)) {
-          tooltips[sg] = HtmlTemplates.typologyMetadataTooltip
-            .replace('@@icon@@', icons[sg])
-            .replace('@@name@@', MapLayers.nuts3.supergroups[sg].name)
-            .replace('@@description@@', MapLayers.nuts3.supergroups[sg].description);
-        }
-      }
-
-      return tooltips;
-
-    },
-
-    /**
-     * Return the tooltips of the groups.
-     */
-    groupTooltips: function() {
-
-      let tooltips = {
-        '11': '', '12': '', '13': '', '14': '',
-        '21': '', '22': '', '23': '', '24': '',
-        '31': '', '32': '', '33': '', '34': '',
-        '41': '', '42': '', '43': '', '44': '',
-        '51': '', '52': '', '53': '', '54': '',
-        '61': '', '62': '', '63': '', '64': '',
-        '71': '', '72': '', '73': '', '74': '',
-        '81': '', '82': '', '83': '', '84': ''
-      };
-
-      // TODO: RESIN - Replace all these with appropriate tooltip icon names.
-      let icons = {
-        '11': 'class', '12': 'class', '13': 'class', '14': 'class',
-        '21': 'class', '22': 'class', '23': 'class', '24': 'class',
-        '31': 'class', '32': 'class', '33': 'class', '34': 'class',
-        '41': 'class', '42': 'class', '43': 'class', '44': 'class',
-        '51': 'class', '52': 'class', '53': 'class', '54': 'class',
-        '61': 'class', '62': 'class', '63': 'class', '64': 'class',
-        '71': 'class', '72': 'class', '73': 'class', '74': 'class',
-        '81': 'class', '82': 'class', '83': 'class', '84': 'class'
-      };
-
-      for (let g in this.groups) {
-        if (this.groups.hasOwnProperty(g)) {
-          tooltips[g] = HtmlTemplates.typologyMetadataTooltip
-            .replace('@@icon@@', icons[g])
-            .replace('@@name@@', MapLayers.nuts3.groups[g].name)
-            .replace('@@description@@', MapLayers.nuts3.groups[g].description);
-        }
-      }
-
-      return tooltips;
-
-    },
 
     /**
      * Gets the fill colors used to render the NUTS3 layer.
@@ -2016,14 +1966,11 @@ let symbologyViewModel = new Vue({
      * @param typologyClass - The typology class that is toggled on/off.
      */
     renderNuts3TypologyClass(typologyClass) {
-      if (this.currentTab === 'supergroups') {
-        this.supergroups[typologyClass].visible = !this.supergroups[typologyClass].visible;
-      }
-      else if (this.currentTab === 'groups') {
-        this.groups[typologyClass].visible = !this.groups[typologyClass].visible;
-      }
+
+      this[this.currentTab][typologyClass].visible = !this[this.currentTab][typologyClass].visible;
 
       MapLayers.nuts3.changeTypologyClassStyle(typologyClass);
+
     },
 
     /**
@@ -2036,14 +1983,12 @@ let symbologyViewModel = new Vue({
     /**
      * Toggles on/off the information panel of a supergroup, group or indicator.
      *
-     * @param code - The code that will be used to toggle the information of a supergroup, group or indicator.
+     * @param code - The code [ie: supergroup, group, indicator] that will be used to toggle
+     *               the information of a supergroup, group or indicator.
      */
     toggleInfo(code) {
-
       this.dictionary[this.currentTab][code].isPanelVisible = !this.dictionary[this.currentTab][code].isPanelVisible;
-
     }
-
 
   }
 
