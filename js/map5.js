@@ -1124,24 +1124,24 @@ let MapLayers = {
              * Raised when the mouse is over a feature.
              */
             mouseover: function() {
-              // TODO: AAAA
-              // MapLayers.nuts3.highlightNuts3(feature, layer);
+              // TODO: RESIN - AAAA
+              MapLayers.nuts3.highlightNuts3(feature, layer);
             },
 
             /**
              * Raised when the mouse is going out of a feature.
              */
             mouseout: function() {
-              // TODO: AAAA
-              //MapLayers.nuts3.resetNuts3Style(feature, layer);
+              // TODO: RESIN - AAAA
+              MapLayers.nuts3.resetNuts3Style(feature, layer);
             },
 
             /**
              * Raised when a feature is clicked.
              */
             click: function() {
-              // TODO: AAAA
-              //MapLayers.nuts3.selectNuts3(feature, layer);
+              // TODO: RESIN - AAAA
+              MapLayers.nuts3.selectNuts3(feature, layer);
             },
 
             /**
@@ -1275,31 +1275,65 @@ let MapLayers = {
      */
     highlightNuts3: function(feature, layer) {
 
+      // // Get the named basemap layer.
+      // let namedBaseMap = toggleBaseMapViewModel.currentBaseMap;
+      //
+      // if (!(overviewInfoViewModel.isPinned || detailsInfoViewModel.isPinned)) {
+      //   // Highlight the current NUTS3.
+      //   layer.setStyle(this.namedBasemapLayers[namedBaseMap].defaultHighlightingStyle);
+      //
+      //   if (!L.Browser.ie && !L.Browser.opera) {
+      //     layer.bringToFront();
+      //   }
+      // }
+      //
+      // // Show the overview or details view panel and then update its contents.
+      // if (toggleInfoLevelViewModel.currentInfoLevel === 'overview') {
+      //   if (!overviewInfoViewModel.isPinned) {
+      //     overviewInfoViewModel.showView();
+      //     overviewInfoViewModel.updateView(feature);
+      //   }
+      // }
+      // else {
+      //   if (!detailsInfoViewModel.isPinned) {
+      //     detailsInfoViewModel.showView();
+      //     detailsInfoViewModel.updateView(feature);
+      //   }
+      // }
+
+
+
       // Get the named basemap layer.
       let namedBaseMap = toggleBaseMapViewModel.currentBaseMap;
 
-      if (!(overviewInfoViewModel.isPinned || detailsInfoViewModel.isPinned)) {
+      // if (!(overviewInfoViewModel.isPinned || detailsInfoViewModel.isPinned)) {
         // Highlight the current NUTS3.
         layer.setStyle(this.namedBasemapLayers[namedBaseMap].defaultHighlightingStyle);
 
         if (!L.Browser.ie && !L.Browser.opera) {
           layer.bringToFront();
         }
+      // }
+
+      if (AppState.currentNuts3Panel === 'symbology') {
+        AppState.currentNuts3Panel = 'overview';
       }
 
+
       // Show the overview or details view panel and then update its contents.
-      if (toggleInfoLevelViewModel.currentInfoLevel === 'overview') {
+      if (AppState.currentNuts3Panel === 'overview') {
         if (!overviewInfoViewModel.isPinned) {
           overviewInfoViewModel.showView();
-          overviewInfoViewModel.updateView(feature);
+          //overviewInfoViewModel.updateView(feature);
         }
       }
       else {
         if (!detailsInfoViewModel.isPinned) {
           detailsInfoViewModel.showView();
-          detailsInfoViewModel.updateView(feature);
+          //detailsInfoViewModel.updateView(feature);
         }
       }
+
 
     },
 
@@ -1511,6 +1545,7 @@ let HtmlTemplates = {
   /**
    * The HTML template used to display a tooltip with metadata about supergroups or groups.
    */
+  // TODO: RESIN - Remove this !!!
   typologyMetadataTooltip: '<div class="card">' +
                              '<div class="card-header bg-dark">' +
                                //'<i class="display-1 text-center text-danger material-icons">@@icon@@</i>' +
@@ -1525,6 +1560,7 @@ let HtmlTemplates = {
   /**
    * The HTML template used to display a tooltip with metadata about indicators/
    */
+  // TODO: RESIN - Remove this !!!
   indicatorMetadataTooltip: '<div class="card">' +
                               '<div class="card-header bg-dark">' +
                                 //'<i class="display-1 text-center text-danger material-icons">@@icon@@</i>' +
@@ -1571,7 +1607,6 @@ let spinnerViewModel = new Vue({
 
 });
 
-
 /**
  * The sidebarTabsViewModel provides tha data and logic to toggle the sidebar itself or its contents.
  *
@@ -1609,7 +1644,6 @@ let sidebarTabsViewModel = new Vue({
   }
 
 });
-
 
 /**
  * The toggleBaseMapViewModel provides tha data and logic to toggle the BaseMap layer.
@@ -1734,29 +1768,45 @@ let symbologyViewModel = new Vue({
       'groups': {
         name: 'Subclasses',
         '1':  { isPanelVisible: false, icon: 'far fa-building', },
-        '11': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '12': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '13': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '14': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '11': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '12': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '13': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '14': { isPanelVisible: false, icon: 'fab fa-leanpub' },
         '2':  { isPanelVisible: false, icon: 'fas fa-leaf' },
-        '21': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '22': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '23': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '24': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '21': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '22': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '23': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '24': { isPanelVisible: false, icon: 'fab fa-leanpub' },
         '3':  { isPanelVisible: false, icon: 'fas fa-snowflake' },
-        '31': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '32': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '33': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '34': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '31': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '32': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '33': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '34': { isPanelVisible: false, icon: 'fab fa-leanpub' },
         '4':  { isPanelVisible: false, icon: 'fas fa-sun' },
-        '41': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '42': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '43': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '44': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '41': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '42': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '43': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '44': { isPanelVisible: false, icon: 'fab fa-leanpub' },
         '5':  { isPanelVisible: false, icon: 'fab fa-servicestack' },
-        '51': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '52': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '53': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '54': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '51': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '52': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '53': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '54': { isPanelVisible: false, icon: 'fab fa-leanpub' },
         '6':  { isPanelVisible: false, icon: 'far fa-image' },
-        '61': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '62': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '63': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '64': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '61': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '62': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '63': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '64': { isPanelVisible: false, icon: 'fab fa-leanpub' },
         '7':  { isPanelVisible: false, icon: 'fas fa-tint' },
-        '71': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '72': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '73': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '74': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '71': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '72': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '73': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '74': { isPanelVisible: false, icon: 'fab fa-leanpub' },
         '8':  { isPanelVisible: false, icon: 'fab fa-firstdraft' },
-        '81': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '82': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '83': { isPanelVisible: false, icon: 'fab fa-leanpub' }, '84': { isPanelVisible: false, icon: 'fab fa-leanpub' }
+        '81': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '82': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '83': { isPanelVisible: false, icon: 'fab fa-leanpub' },
+        '84': { isPanelVisible: false, icon: 'fab fa-leanpub' }
       },
       'indicators': { name: 'Indicators' }
     },
@@ -1995,272 +2045,271 @@ let symbologyViewModel = new Vue({
 });
 
 
-//
-//
-//
-//
-//
-// /**
-//  * The overviewInfoViewModel provides the data and logic
-//  * to display overview information about a NUTS3 region.
-//  *
-//  * @type {Vue} - A Vue object with the model and methods used in the view model.
-//  */
-// let overviewInfoViewModel = new Vue({
-//
-//   /**
-//    * The name of the view model.
-//    */
-//   el: '#overviewInfoVM',
-//
-//   /**
-//    * The model of the view model.
-//    */
-//   data: {
-//
-//     isVisible: false,
-//
-//     isPinned: false,
-//
-//     nuts3Name: '',
-//
-//     nuts3NativeName: '',
-//
-//     language: 'en',
-//
-//     supergroupName: null,
-//
-//     groupName: null,
-//
-//     supergroupFillColor: { fillColor: '#ffffff', fillOpacity: 0.01 },
-//
-//     groupFillColor: { fillColor: '#ffffff', fillOpacity: 0.01 },
-//
-//     domains: AppData.domains,
-//
-//     domainSortedIndicators: AppData.domainSortedIndicators,
-//
-//     domainDictionaryIndicators: AppData.domainDictionaryIndicators,
-//
-//     domainDictionaryIndicatorValues: undefined,
-//
-//     tooltipIconName: 'announcement', // feedback, info,
-//
-//
-//
-//   },
-//
-//   /**
-//    * The computed properties of the model of the view model.
-//    */
-//   computed: {
-//
-//     /**
-//      * Return the tooltips of the indicators.
-//      */
-//     indicatorTooltips: function() {
-//
-//       let tooltipsDic = {};
-//
-//       for (let domain in this.domainDictionaryIndicators) {
-//         if (this.domainDictionaryIndicators.hasOwnProperty(domain)) {
-//           tooltipsDic[domain] = [];
-//
-//           for (let i = 0; i < this.domainDictionaryIndicators[domain].length; i++) {
-//             let html = HtmlTemplates.indicatorMetadataTooltip
-//                         .replace('@@icon@@', this.domainDictionaryIndicators[domain][i].faIcon)
-//                         .replace('@@description@@', this.domainDictionaryIndicators[domain][i].description)
-//                         .replace('@@unit@@', this.domainDictionaryIndicators[domain][i].unit)
-//                         .replace('@@details@@', this.domainDictionaryIndicators[domain][i].details);
-//
-//             tooltipsDic[domain].push(html);
-//           }
-//         }
-//       }
-//
-//       return tooltipsDic;
-//
-//     },
-//
-//   },
-//
-//   /**
-//    * The methods of the view model.
-//    */
-//   methods: {
-//
-//     /**
-//      * Toggles the language from en to other and vice versa.
-//      */
-//     toggleLanguage() {
-//       if (this.language === 'en') {
-//         this. language = 'other';
-//       }
-//       else {
-//         this.language = 'en';
-//       }
-//       if (AppState.bootstrapMaterialTooltipEnabled) {
-//         $('#toggle-lang').tooltip('hide');
-//       }
-//     },
-//
-//     /**
-//      * Shows the overview view.
-//      */
-//     showView() {
-//
-//       // Hide the Nuts3LayerSetup panel if it is visible.
-//       if (toggleNuts3LayerSetupViewModel.isNuts3LayerSetupVisible) {
-//         // Mark the 'layer setup' view as 'hidden while hovering'.
-//         symbologyViewModel.keepHiddenWhileHovering = true;
-//         toggleNuts3LayerSetupViewModel.hideNuts3LayerSetup();
-//       }
-//       else {
-//         // Hide the details info panel if it is visible.
-//         if (detailsInfoViewModel.isVisible) {
-//           detailsInfoViewModel.isVisible = false;
-//         }
-//       }
-//
-//       // Show the overview info panel.
-//       this.isVisible = true;
-//
-//     },
-//
-//     /**
-//      * Hide the overview view.
-//      */
-//     hideView() {
-//
-//       // Hide the overview info panel.
-//       this.isVisible = false;
-//
-//       // Show the 'Layer Setup' view if it is marked as 'hidden while hovering'.
-//       if (symbologyViewModel.keepHiddenWhileHovering) {
-//         symbologyViewModel.keepHiddenWhileHovering = false;
-//         toggleNuts3LayerSetupViewModel.showNuts3LayerSetup();
-//       }
-//
-//     },
-//
-//
-//     toggleDomain(index) {
-//       this.domains[index].isOverviewVisible = !this.domains[index].isOverviewVisible;
-//     },
-//
-//     toggleDetails(domain, index) {
-//       this.domainDictionaryIndicators[domain][index].isDetailsVisible = !this.domainDictionaryIndicators[domain][index].isDetailsVisible;
-//     },
-//
-//
-//     updateView(feature) {
-//
-//       if (feature === null) {
-//         // TODO: RESIN - Implement this when the user hovers out of a feature.
-//
-//         return;
-//       }
-//
-//       let properties = feature.properties;
-//
-//       let nuts3id = properties.NUTS_ID;
-//       let sg = properties.SG;
-//       let g = properties.G;
-//
-//       this.nuts3Name = AppData.nuts3[nuts3id].nameAscii;
-//       this.nuts3NativeName = AppData.nuts3[nuts3id].nutsName;
-//
-//       let currentLevel = symbologyViewModel.currentTab;
-//
-//       if (currentLevel === 'supergroups') {
-//         if (MapLayers.nuts3.supergroups[sg].visible) {
-//           this.supergroupName = MapLayers.nuts3.supergroups[sg].name;
-//           this.supergroupFillColor = symbologyViewModel.supergroupFillColors[sg];
-//           this.groupName = MapLayers.nuts3.groups[g].name;
-//           this.groupFillColor = symbologyViewModel.groupFillColors[g];
-//         }
-//         else {
-//           this.supergroupName = null;
-//           this.supergroupFillColor = AppState.transparentColor;
-//           this.groupName = null;
-//           this.groupFillColor = AppState.transparentColor;
-//         }
-//       }
-//       else if (currentLevel === 'groups') {
-//         if (MapLayers.nuts3.groups[g].visible) {
-//           this.supergroupName = MapLayers.nuts3.supergroups[sg].name;
-//           this.supergroupFillColor = symbologyViewModel.supergroupFillColors[sg];
-//           this.groupName = MapLayers.nuts3.groups[g].name;
-//           this.groupFillColor = symbologyViewModel.groupFillColors[g];
-//         }
-//         else {
-//           this.supergroupName = null;
-//           this.supergroupFillColor = AppState.transparentColor;
-//           this.groupName = null;
-//           this.groupFillColor = AppState.transparentColor;
-//         }
-//       }
-//       else {
-//         this.supergroupName = MapLayers.nuts3.supergroups[sg].name;
-//         this.supergroupFillColor = symbologyViewModel.supergroupFillColors[sg];
-//         this.groupName = MapLayers.nuts3.groups[g].name;
-//         this.groupFillColor = symbologyViewModel.groupFillColors[g];
-//       }
-//
-//       this.domainDictionaryIndicatorValues = {};
-//
-//       for (let domain in AppData.domainDictionaryIndicators) {
-//         if (AppData.domainDictionaryIndicators.hasOwnProperty(domain)) {
-//
-//           this.domainDictionaryIndicatorValues[domain] = [];
-//
-//           for (let i = 0; i < AppData.domainDictionaryIndicators[domain].length; i++) {
-//             let im = AppData.domainDictionaryIndicators[domain][i];
-//             let value = im.type === 'double' ? properties[im.name].toFixed(3) : properties[im.name].toFixed(0); // TODO: RESIN - toFixed(0) MUST be removed once I have the correct data.
-//
-//             this.domainDictionaryIndicatorValues[domain].push({
-//               name: this.domainDictionaryIndicators[i],
-//               value: value,
-//               zscore: properties[im.name + 'Z'].toFixed(3)
-//             })
-//           }
-//
-//         }
-//       }
-//
-//
-//       // Make sure that the html content of the tooltip will be displayed
-//       // by explicitly calling the tooltip jquery method.
-//       $('[data-toggle="tooltip"]').tooltip();
-//
-//
-//     },
-//
-//     Pin() {
-//       this.isPinned = true;
-//       if (AppState.bootstrapMaterialTooltipEnabled) {
-//         $('#overview-pin').tooltip('show');
-//       }
-//     },
-//
-//     unPin() {
-//       this.isPinned = false;
-//       this.isVisible = false;
-//
-//       MapLayers.nuts3.unselectNuts3();
-//     }
-//
-//
-//   }
-//
-// });
-//
-// /**
-//  * The detailsInfoViewModel provides the data and logic
-//  * to display detailed information about a NUTS3 region.
-//  *
-//  * @type {Vue} - A Vue object with the model and methods used in the view model.
-//  */
+
+
+
+
+
+
+/**
+ * The overviewInfoViewModel provides the data and logic
+ * to display overview information about a NUTS3 region.
+ *
+ * @type {Vue} - A Vue object with the model and methods used in the view model.
+ */
+let overviewInfoViewModel = new Vue({
+
+  /**
+   * The name of the view model.
+   */
+  el: '#overviewInfoVM',
+
+  /**
+   * The model of the view model.
+   */
+  data: {
+
+    isVisible: false,
+
+    isPinned: false,
+
+    nuts3Name: '',
+
+    nuts3NativeName: '',
+
+    language: 'en',
+
+    supergroupName: null,
+
+    groupName: null,
+
+    supergroupFillColor: { fillColor: '#ffffff', fillOpacity: 0.01 },
+
+    groupFillColor: { fillColor: '#ffffff', fillOpacity: 0.01 },
+
+    domains: AppData.domains,
+
+    domainSortedIndicators: AppData.domainSortedIndicators,
+
+    domainDictionaryIndicators: AppData.domainDictionaryIndicators,
+
+    domainDictionaryIndicatorValues: undefined,
+
+    tooltipIconName: 'announcement' // feedback, info,
+
+  },
+
+  /**
+   * The computed properties of the model of the view model.
+   */
+  computed: {
+
+    /**
+     * Return the tooltips of the indicators.
+     */
+    indicatorTooltips: function() {
+
+      let tooltipsDic = {};
+
+      for (let domain in this.domainDictionaryIndicators) {
+        if (this.domainDictionaryIndicators.hasOwnProperty(domain)) {
+          tooltipsDic[domain] = [];
+
+          for (let i = 0; i < this.domainDictionaryIndicators[domain].length; i++) {
+            let html = HtmlTemplates.indicatorMetadataTooltip
+                        .replace('@@icon@@', this.domainDictionaryIndicators[domain][i].faIcon)
+                        .replace('@@description@@', this.domainDictionaryIndicators[domain][i].description)
+                        .replace('@@unit@@', this.domainDictionaryIndicators[domain][i].unit)
+                        .replace('@@details@@', this.domainDictionaryIndicators[domain][i].details);
+
+            tooltipsDic[domain].push(html);
+          }
+        }
+      }
+
+      return tooltipsDic;
+
+    },
+
+  },
+
+  /**
+   * The methods of the view model.
+   */
+  methods: {
+
+    /**
+     * Toggles the language from en to other and vice versa.
+     */
+    toggleLanguage() {
+      if (this.language === 'en') {
+        this. language = 'other';
+      }
+      else {
+        this.language = 'en';
+      }
+      if (AppState.bootstrapMaterialTooltipEnabled) {
+        $('#toggle-lang').tooltip('hide');
+      }
+    },
+
+    /**
+     * Shows the overview view.
+     */
+    showView() {
+
+      // Hide the Nuts3LayerSetup panel if it is visible.
+      if (toggleNuts3LayerSetupViewModel.isNuts3LayerSetupVisible) {
+        // Mark the 'layer setup' view as 'hidden while hovering'.
+        symbologyViewModel.keepHiddenWhileHovering = true;
+        toggleNuts3LayerSetupViewModel.hideNuts3LayerSetup();
+      }
+      else {
+        // Hide the details info panel if it is visible.
+        if (detailsInfoViewModel.isVisible) {
+          detailsInfoViewModel.isVisible = false;
+        }
+      }
+
+      // Show the overview info panel.
+      this.isVisible = true;
+
+    },
+
+    /**
+     * Hide the overview view.
+     */
+    hideView() {
+
+      // Hide the overview info panel.
+      this.isVisible = false;
+
+      // Show the 'Layer Setup' view if it is marked as 'hidden while hovering'.
+      if (symbologyViewModel.keepHiddenWhileHovering) {
+        symbologyViewModel.keepHiddenWhileHovering = false;
+        toggleNuts3LayerSetupViewModel.showNuts3LayerSetup();
+      }
+
+    },
+
+
+    toggleDomain(index) {
+      this.domains[index].isOverviewVisible = !this.domains[index].isOverviewVisible;
+    },
+
+    toggleDetails(domain, index) {
+      this.domainDictionaryIndicators[domain][index].isDetailsVisible = !this.domainDictionaryIndicators[domain][index].isDetailsVisible;
+    },
+
+
+    updateView(feature) {
+
+      if (feature === null) {
+        // TODO: RESIN - Implement this when the user hovers out of a feature.
+
+        return;
+      }
+
+      let properties = feature.properties;
+
+      let nuts3id = properties.NUTS_ID;
+      let sg = properties.SG;
+      let g = properties.G;
+
+      this.nuts3Name = AppData.nuts3[nuts3id].nameAscii;
+      this.nuts3NativeName = AppData.nuts3[nuts3id].nutsName;
+
+      let currentLevel = symbologyViewModel.currentTab;
+
+      if (currentLevel === 'supergroups') {
+        if (MapLayers.nuts3.supergroups[sg].visible) {
+          this.supergroupName = MapLayers.nuts3.supergroups[sg].name;
+          this.supergroupFillColor = symbologyViewModel.supergroupFillColors[sg];
+          this.groupName = MapLayers.nuts3.groups[g].name;
+          this.groupFillColor = symbologyViewModel.groupFillColors[g];
+        }
+        else {
+          this.supergroupName = null;
+          this.supergroupFillColor = AppState.transparentColor;
+          this.groupName = null;
+          this.groupFillColor = AppState.transparentColor;
+        }
+      }
+      else if (currentLevel === 'groups') {
+        if (MapLayers.nuts3.groups[g].visible) {
+          this.supergroupName = MapLayers.nuts3.supergroups[sg].name;
+          this.supergroupFillColor = symbologyViewModel.supergroupFillColors[sg];
+          this.groupName = MapLayers.nuts3.groups[g].name;
+          this.groupFillColor = symbologyViewModel.groupFillColors[g];
+        }
+        else {
+          this.supergroupName = null;
+          this.supergroupFillColor = AppState.transparentColor;
+          this.groupName = null;
+          this.groupFillColor = AppState.transparentColor;
+        }
+      }
+      else {
+        this.supergroupName = MapLayers.nuts3.supergroups[sg].name;
+        this.supergroupFillColor = symbologyViewModel.supergroupFillColors[sg];
+        this.groupName = MapLayers.nuts3.groups[g].name;
+        this.groupFillColor = symbologyViewModel.groupFillColors[g];
+      }
+
+      this.domainDictionaryIndicatorValues = {};
+
+      for (let domain in AppData.domainDictionaryIndicators) {
+        if (AppData.domainDictionaryIndicators.hasOwnProperty(domain)) {
+
+          this.domainDictionaryIndicatorValues[domain] = [];
+
+          for (let i = 0; i < AppData.domainDictionaryIndicators[domain].length; i++) {
+            let im = AppData.domainDictionaryIndicators[domain][i];
+            let value = im.type === 'double' ? properties[im.name].toFixed(3) : properties[im.name].toFixed(0); // TODO: RESIN - toFixed(0) MUST be removed once I have the correct data.
+
+            this.domainDictionaryIndicatorValues[domain].push({
+              name: this.domainDictionaryIndicators[i],
+              value: value,
+              zscore: properties[im.name + 'Z'].toFixed(3)
+            })
+          }
+
+        }
+      }
+
+
+      // Make sure that the html content of the tooltip will be displayed
+      // by explicitly calling the tooltip jquery method.
+      $('[data-toggle="tooltip"]').tooltip();
+
+
+    },
+
+    Pin() {
+      this.isPinned = true;
+      if (AppState.bootstrapMaterialTooltipEnabled) {
+        $('#overview-pin').tooltip('show');
+      }
+    },
+
+    unPin() {
+      this.isPinned = false;
+      this.isVisible = false;
+
+      MapLayers.nuts3.unselectNuts3();
+    }
+
+
+  }
+
+});
+
+/**
+ * The detailsInfoViewModel provides the data and logic
+ * to display detailed information about a NUTS3 region.
+ *
+ * @type {Vue} - A Vue object with the model and methods used in the view model.
+ */
 // let detailsInfoViewModel = new Vue({
 //
 //   /**
