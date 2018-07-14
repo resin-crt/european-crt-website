@@ -1125,13 +1125,21 @@ let MapLayers = {
              */
             mouseover: function() {
               // TODO: RESIN - AAAA
-              MapLayers.nuts3.highlightNuts3(feature, layer);
+              MapLayers.nuts3.showTooltip(layer);
+
+              //MapLayers.nuts3.highlightNuts3(feature, layer);
             },
 
             /**
              * Raised when the mouse is going out of a feature.
              */
             mouseout: function() {
+              if (layer.isTooltipOpen()) {
+                layer.closeTooltip();
+              }
+
+              layer.setTooltipContent('');
+
               // TODO: RESIN - AAAA
               MapLayers.nuts3.resetNuts3Style(feature, layer);
             },
@@ -1164,13 +1172,23 @@ let MapLayers = {
       this.mapLayer.addTo(Spatial.map);
       this.mapLayer.bringToFront();
 
-      // Loop through all the features and create the feature to internal layer dictionary.
-      for (let key in this.mapLayer._layers) {
-        if (this.mapLayer._layers.hasOwnProperty(key)) {
-          //this.featureToInternalLayerDictionary[this.mapLayer._layers[key].feature.properties.OBJECTID] = key;
-          this.featureToInternalLayerDictionary[this.mapLayer._layers[key].feature.properties.NUTS_ID] = key;
-        }
-      }
+      // Loop through all the internal layers.
+      // Create the feature to internal layer dictionary and bind the layer tooltips.
+      this.mapLayer.eachLayer(function(layer) {
+        MapLayers.nuts3.featureToInternalLayerDictionary[layer.feature.properties.NUTS_ID] = layer._leaflet_id;
+
+        layer.bindTooltip('', {
+          offset: [10, -5],
+          sticky: true
+        });
+      });
+      // TODO: RESIN - Remove this old code.
+      // for (let key in this.mapLayer._layers) {
+      //   if (this.mapLayer._layers.hasOwnProperty(key)) {
+      //     //this.featureToInternalLayerDictionary[this.mapLayer._layers[key].feature.properties.OBJECTID] = key;
+      //     this.featureToInternalLayerDictionary[this.mapLayer._layers[key].feature.properties.NUTS_ID] = key;
+      //   }
+      // }
 
     },
 
@@ -1428,6 +1446,58 @@ let MapLayers = {
           detailsInfoViewModel.isPinned = true;
         }
       }
+    },
+
+
+    showTooltip(layer) {
+
+      //this.nuts3Name = AppData.nuts3[nuts3id].nameAscii;
+      //this.nuts3NativeName = AppData.nuts3[nuts3id].nutsName;
+
+      let properties = layer.feature.properties;
+
+      let nuts3id = properties.NUTS_ID;
+      let sg = properties.SG;
+      let g = properties.G;
+
+      let html = '<div>' +
+
+                   // ASCII Name
+                   //class="mr-auto p-2"
+                   '<div>' +
+                     '<h5 class="text-danger">' + AppData.nuts3[nuts3id].nameAscii + '</h5>' +
+                   '</div>' +
+
+                   '<table class="table table-sm mt-4">' +
+                     '<tbody>' +
+
+                       // Supergroup
+                       '<tr>' +
+                         '<td>' +
+                           '<div class="typology-class-header">Supergroup:</div>' +
+                           '<h6>' + MapLayers.nuts3.supergroups[sg].name + '</h6>' +
+                         '</td>' +
+                       '</tr>' +
+
+                       // Group
+                       '<tr class="pt-4">' +
+                         '<td>' +
+                           '<div class="typology-class-header">Group:</div>' +
+                           '<h6>' + MapLayers.nuts3.groups[g].name + '</h6>' +
+                         '</td>' +
+                       '</tr>' +
+
+                     '</tbody>' +
+                   '</table>' +
+
+                 '</div>';
+
+      layer.setTooltipContent(html);
+
+      if (!layer.isTooltipOpen()) {
+        layer.openTooltip();
+      }
+
     }
 
   }
