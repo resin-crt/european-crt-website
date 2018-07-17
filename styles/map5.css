@@ -297,6 +297,10 @@ body {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
+.row-indigo {
+  background-color: rgba(63, 81, 181, 0.1); /*#c9ceea*/
+}
+
 /*.yellow {*/
 /*color: #ff9c00;*/
 /*}*/
