@@ -646,12 +646,12 @@
 
                       <!--Groups of Supergroup 1-->
                       <tr class="row-indigo">
-                        <td class="narrow-td">
-                          <div class="map-polygon-colour-rect"
-                               v-bind:style="{ 'background-color': supergroupFillColors['1'].fillColor, 'opacity': supergroupFillColors['1'].fillOpacity }">
-                          </div>
-                        </td>
-                        <td colspan="2">
+                        <!--<td class="narrow-td">-->
+                          <!--<div class="map-polygon-colour-rect"-->
+                               <!--v-bind:style="{ 'background-color': supergroupFillColors['1'].fillColor, 'opacity': supergroupFillColors['1'].fillOpacity }">-->
+                          <!--</div>-->
+                        <!--</td>-->
+                        <td colspan="3">
                           <a href="#" class="group-toggle-link" v-text="supergroups['1'].name"
                              v-on:click="toggleGroups('1')">
                           </a>
@@ -867,12 +867,12 @@
 
                       <!--Groups of Supergroup 2-->
                       <tr class="row-indigo">
-                        <td class="narrow-td">
-                          <div class="map-polygon-colour-rect"
-                               v-bind:style="{ 'background-color': supergroupFillColors['2'].fillColor, 'opacity': supergroupFillColors['2'].fillOpacity }">
-                          </div>
-                        </td>
-                        <td colspan="2">
+                        <!--<td class="narrow-td">-->
+                          <!--<div class="map-polygon-colour-rect"-->
+                               <!--v-bind:style="{ 'background-color': supergroupFillColors['2'].fillColor, 'opacity': supergroupFillColors['2'].fillOpacity }">-->
+                          <!--</div>-->
+                        <!--</td>-->
+                        <td colspan="3">
                           <a href="#" class="group-toggle-link" v-text="supergroups['2'].name"
                              v-on:click="toggleGroups('2')">
                           </a>
@@ -1088,12 +1088,12 @@
 
                       <!--Groups of Supergroup 3-->
                       <tr class="row-indigo">
-                        <td class="narrow-td">
-                          <div class="map-polygon-colour-rect"
-                               v-bind:style="{ 'background-color': supergroupFillColors['3'].fillColor, 'opacity': supergroupFillColors['3'].fillOpacity }">
-                          </div>
-                        </td>
-                        <td colspan="2">
+                        <!--<td class="narrow-td">-->
+                          <!--<div class="map-polygon-colour-rect"-->
+                               <!--v-bind:style="{ 'background-color': supergroupFillColors['3'].fillColor, 'opacity': supergroupFillColors['3'].fillOpacity }">-->
+                          <!--</div>-->
+                        <!--</td>-->
+                        <td colspan="3">
                           <a href="#" class="group-toggle-link" v-text="supergroups['3'].name"
                              v-on:click="toggleGroups('3')">
                           </a>
@@ -1309,12 +1309,12 @@
 
                       <!--Groups of Supergroup 4-->
                       <tr class="row-indigo">
-                        <td class="narrow-td">
-                          <div class="map-polygon-colour-rect"
-                               v-bind:style="{ 'background-color': supergroupFillColors['4'].fillColor, 'opacity': supergroupFillColors['4'].fillOpacity }">
-                          </div>
-                        </td>
-                        <td colspan="2">
+                        <!--<td class="narrow-td">-->
+                          <!--<div class="map-polygon-colour-rect"-->
+                               <!--v-bind:style="{ 'background-color': supergroupFillColors['4'].fillColor, 'opacity': supergroupFillColors['4'].fillOpacity }">-->
+                          <!--</div>-->
+                        <!--</td>-->
+                        <td colspan="3">
                           <a href="#" class="group-toggle-link" v-text="supergroups['4'].name"
                              v-on:click="toggleGroups('4')">
                           </a>
@@ -1530,12 +1530,12 @@
 
                       <!--Groups of Supergroup 5-->
                       <tr class="row-indigo">
-                        <td class="narrow-td">
-                          <div class="map-polygon-colour-rect"
-                               v-bind:style="{ 'background-color': supergroupFillColors['5'].fillColor, 'opacity': supergroupFillColors['5'].fillOpacity }">
-                          </div>
-                        </td>
-                        <td colspan="2">
+                        <!--<td class="narrow-td">-->
+                          <!--<div class="map-polygon-colour-rect"-->
+                               <!--v-bind:style="{ 'background-color': supergroupFillColors['5'].fillColor, 'opacity': supergroupFillColors['5'].fillOpacity }">-->
+                          <!--</div>-->
+                        <!--</td>-->
+                        <td colspan="3">
                           <a href="#" class="group-toggle-link" v-text="supergroups['5'].name"
                              v-on:click="toggleGroups('5')">
                           </a>
@@ -1750,58 +1750,58 @@
                       </tr>
 
                       <!--55-->
-                      <!--<tr>-->
-                        <!--<td class="narrow-td">-->
-                          <!--<div class="map-polygon-colour-rect"-->
-                               <!--v-bind:style="{ 'background-color': groupFillColors['55'].fillColor, 'opacity': groupFillColors['55'].fillOpacity }">-->
-                          <!--</div>-->
-                        <!--</td>-->
-                        <!--<td class="narrow-td">-->
-                          <!--<div class="checkbox checkbox-decorator">-->
-                            <!--<label>-->
-                              <!--<input type="checkbox" id="g55" value="55" v-model="checkedGroups"-->
-                                     <!--v-on:change="renderNuts3TypologyClass('55')">-->
-                            <!--</label>-->
-                          <!--</div>-->
-                        <!--</td>-->
-                        <!--<td><label class="clickable-label" for="g55" v-text="groups['55'].name"></label></td>-->
-                        <!--<td>-->
-                          <!--<button type="button" class="btn btn-typology-help"-->
-                                  <!--data-toggle="tooltip" data-placement="bottom"-->
-                                  <!--v-bind:aria-label="[dictionary.groups['55'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"-->
-                                  <!--v-bind:aria-pressed="[dictionary.groups['55'].isPanelVisible]"-->
-                                  <!--v-bind:class="[dictionary.groups['55'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"-->
-                                  <!--v-on:click="toggleInfo('55')">-->
-                            <!--<i class="material-icons" v-text="tooltipIconName"-->
-                               <!--v-bind:class="[dictionary.groups['55'].isPanelVisible ? '' : 'text-dark']">-->
-                            <!--</i>-->
-                          <!--</button>-->
-                        <!--</td>-->
-                      <!--</tr>-->
-                      <!--<tr class="collapse"-->
-                          <!--v-bind:class="[dictionary.groups['55'].isPanelVisible ? 'show' : '']">-->
-                        <!--<td class="info" colspan="4">-->
-                          <!--<div class="card" style="">-->
-                            <!--<div class="card-header bg-dark">-->
-                              <!--<i class="display-2 text-danger info-icon"-->
-                                 <!--v-bind:class="[dictionary.groups['55'].icon]">-->
-                              <!--</i>-->
-                            <!--</div>-->
-                            <!--<div class="card-body">-->
-                              <!--<p class="card-text" v-text="groups['55'].description"></p>-->
-                            <!--</div>-->
-                          <!--</div>-->
-                        <!--</td>-->
-                      <!--</tr>-->
+                      <tr>
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['55'].fillColor, 'opacity': groupFillColors['55'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g55" value="55" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('55')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g55" v-text="groups['55'].name"></label></td>
+                        <td>
+                          <button type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['55'].isPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['55'].isPanelVisible]"
+                                  v-bind:class="[dictionary.groups['55'].isPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('55')">
+                            <i class="material-icons" v-text="tooltipIconName"
+                               v-bind:class="[dictionary.groups['55'].isPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['55'].isPanelVisible ? 'show' : '']">
+                        <td class="info" colspan="4">
+                          <div class="card" style="">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['55'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text" v-text="groups['55'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
 
                       <!--Groups of Supergroup 6-->
                       <tr class="row-indigo">
-                        <td class="narrow-td">
-                          <div class="map-polygon-colour-rect"
-                               v-bind:style="{ 'background-color': supergroupFillColors['6'].fillColor, 'opacity': supergroupFillColors['6'].fillOpacity }">
-                          </div>
-                        </td>
-                        <td colspan="2">
+                        <!--<td class="narrow-td">-->
+                          <!--<div class="map-polygon-colour-rect"-->
+                               <!--v-bind:style="{ 'background-color': supergroupFillColors['6'].fillColor, 'opacity': supergroupFillColors['6'].fillOpacity }">-->
+                          <!--</div>-->
+                        <!--</td>-->
+                        <td colspan="3">
                           <a href="#" class="group-toggle-link" v-text="supergroups['6'].name"
                              v-on:click="toggleGroups('6')">
                           </a>
@@ -1972,12 +1972,12 @@
 
                       <!--Groups of Supergroup 7-->
                       <tr class="row-indigo">
-                        <td class="narrow-td">
-                          <div class="map-polygon-colour-rect"
-                               v-bind:style="{ 'background-color': supergroupFillColors['7'].fillColor, 'opacity': supergroupFillColors['7'].fillOpacity }">
-                          </div>
-                        </td>
-                        <td colspan="2">
+                        <!--<td class="narrow-td">-->
+                          <!--<div class="map-polygon-colour-rect"-->
+                               <!--v-bind:style="{ 'background-color': supergroupFillColors['7'].fillColor, 'opacity': supergroupFillColors['7'].fillOpacity }">-->
+                          <!--</div>-->
+                        <!--</td>-->
+                        <td colspan="3">
                           <a href="#" class="group-toggle-link" v-text="supergroups['7'].name"
                              v-on:click="toggleGroups('7')">
                           </a>
@@ -2193,12 +2193,12 @@
 
                       <!--Groups of Supergroup 8-->
                       <tr class="row-indigo">
-                        <td class="narrow-td">
-                          <div class="map-polygon-colour-rect"
-                               v-bind:style="{ 'background-color': supergroupFillColors['8'].fillColor, 'opacity': supergroupFillColors['8'].fillOpacity }">
-                          </div>
-                        </td>
-                        <td colspan="2">
+                        <!--<td class="narrow-td">-->
+                          <!--<div class="map-polygon-colour-rect"-->
+                               <!--v-bind:style="{ 'background-color': supergroupFillColors['8'].fillColor, 'opacity': supergroupFillColors['8'].fillOpacity }">-->
+                          <!--</div>-->
+                        <!--</td>-->
+                        <td colspan="3">
                           <a href="#" class="group-toggle-link" v-text="supergroups['8'].name"
                              v-on:click="toggleGroups('8')">
                           </a>
