@@ -56,7 +56,7 @@ let AppState = {
   /**
    * The NUTS3 panel displayed currently on the sidebar.
    */
-  currentNuts3Panel: 'symbology' // ['symbology' | 'overview' | 'details']
+  currentNuts3Panel: 'symbology', // ['symbology' | 'overview' | 'details']
 
   // Overview
   // 1.blur_on, 2.local_library, 3.center_focus_weak, all_out, language, wallpaper, calendar_today, 360, trip_origin, fullscreen, public
@@ -66,8 +66,14 @@ let AppState = {
 
 
 
-
-
+  /**
+   * Sets the visibility of the panels of the web page.
+   */
+  setPanelsVisibility: function() {
+    symbologyViewModel.isVisible = (AppState.currentNuts3Panel === 'symbology');
+    overviewInfoViewModel.isVisible = (AppState.currentNuts3Panel === 'overview');
+    detailsInfoViewModel.isVisible = (AppState.currentNuts3Panel === 'details');
+  }
 
 };
 
@@ -289,7 +295,7 @@ let BaseMapLayers = {
   /**
    * Sets the the named base map layers.
    */
-  setNamedBasemapLayers() {
+  setNamedBasemapLayers: function() {
 
     // Light
     //this.namedBasemapLayers.roads.leafletProvider = BaseMapLayers.leafletProviderBaseLayers.OpenStreetMap.BlackAndWhite;
@@ -1135,7 +1141,7 @@ let MapLayers = {
              */
             mouseout: function() {
               MapLayers.nuts3.hideTooltip(layer);
-              MapLayers.nuts3.resetNuts3Style(feature, layer);
+              MapLayers.nuts3.resetNuts3Style(feature, layer, false);
             },
 
             /**
@@ -1216,6 +1222,7 @@ let MapLayers = {
 
     /**
      * Renders the specified NUTS3 polygon.
+     *
      * @param feature - The feature whose style will be changed.
      * @param typologyClass - The typology class of the NUTS3 polygon.
      * @param currentTypologyLevel - The level of the typology class (ie: supergroup or group).
@@ -1328,11 +1335,12 @@ let MapLayers = {
      *
      * @param feature - The feature that whose style will be reset.
      * @param layer - The internal layer of the feature whose style will be reset.
+     * @param forceReset - Forces the function to reset the NUTS3 style.
      */
-    resetNuts3Style: function(feature, layer) {
+    resetNuts3Style: function(feature, layer, forceReset) {
 
       // TODO: RESIN - Remove this ???
-      // // Get the current basemap. This is used to decide the symbology of the NUTS3 polygons.
+      // Get the current basemap. This is used to decide the symbology of the NUTS3 polygons.
       // let currentBaseMap = toggleBaseMapViewModel.currentBaseMap;
       //
       // // Get the current typology level.
@@ -1370,31 +1378,55 @@ let MapLayers = {
       let attributeName = this.typologyLevelDictionary[currentTypologyLevel].attributeName;
       let classValue = feature.properties[attributeName].toString();
 
-      // Render the NUTS3 polygon having the specified typology class.
-      this.renderNuts3Polygon(feature, classValue, currentTypologyLevel, currentBaseMap);
+      // Make sure styles of only the non selected NUTS3 polygons are reset.
+      if (this.selectedFeature !== feature) {
+        // Render the NUTS3 polygon having the specified typology class.
+        this.renderNuts3Polygon(feature, classValue, currentTypologyLevel, currentBaseMap);
+      }
+      else if (forceReset) {
+        // No matter what make sure that the style of the NUTS3 region is reset.
+        this.renderNuts3Polygon(feature, classValue, currentTypologyLevel, currentBaseMap);
+      }
 
     },
 
     selectNuts3(feature, layer) {
-      if (!(overviewInfoViewModel.isPinned || detailsInfoViewModel.isPinned)) {
-        this.selectedFeature = feature;
-        this.selectedInternalLayer = layer;
+      // if (!(overviewInfoViewModel.isPinned || detailsInfoViewModel.isPinned)) {
+      //   this.selectedFeature = feature;
+      //   this.selectedInternalLayer = layer;
+      //
+      //   if (toggleInfoLevelViewModel.currentInfoLevel === 'overview') {
+      //     if (overviewInfoViewModel.isVisible) {
+      //       overviewInfoViewModel.Pin();
+      //     }
+      //   }
+      //   else {
+      //     if (detailsInfoViewModel.isVisible) {
+      //       detailsInfoViewModel.Pin();
+      //     }
+      //   }
+      // }
 
-        if (toggleInfoLevelViewModel.currentInfoLevel === 'overview') {
-          if (overviewInfoViewModel.isVisible) {
-            overviewInfoViewModel.Pin();
-          }
-        }
-        else {
-          if (detailsInfoViewModel.isVisible) {
-            detailsInfoViewModel.Pin();
-          }
-        }
+      // Set the current NUTS3 Panel.
+      if (AppState.currentNuts3Panel === 'symbology') {
+        AppState.currentNuts3Panel = 'overview';
       }
+
+      // Unselect the NUTS3 feature if a selected one exists.
+      if (this.selectedFeature !== null) {
+        this.unselectNuts3();
+      }
+
+      // Select the NUTS3 feature.
+      this.selectedFeature = feature;
+      this.selectedInternalLayer = layer;
+
+      AppState.setPanelsVisibility();
+
     },
 
     unselectNuts3() {
-      this.resetNuts3Style(this.selectedFeature, this.selectedInternalLayer);
+      this.resetNuts3Style(this.selectedFeature, this.selectedInternalLayer, true);
 
       this.selectedFeature = null;
       this.selectedInternalLayer = null;
@@ -1488,7 +1520,10 @@ let MapLayers = {
       }
 
       layer.setTooltipContent('');
-    }
+    },
+
+
+
 
 
   }
