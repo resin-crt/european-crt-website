@@ -2409,7 +2409,8 @@
 
 
           <!-- Overview Information -->
-          <div id="overviewInfoVM" class="h-100" style="background-color: #f1c40f;"
+          <!--style="background-color: #f1c40f;"-->
+          <div id="overviewInfoVM" class="h-100"
                v-bind:class="[isVisible === false ? 'd-none' : '']">
 
             <div class="p-0 h-100">
@@ -2421,7 +2422,76 @@
 
                 <div class="mb-auto h-100 ver-scrollbars">
 
-                  This is the content div for info.
+                  <div v-for="(domain, dIndex) in domains" v-if="domains.length !== 0">
+                    <button class="btn btn-danger" type="button" data-toggle="collapse"
+                            v-bind:data-target="['#collapse' + dIndex]"
+                            aria-expanded="true"
+                            v-bind:aria-controls="['collapse' + dIndex]"
+                            v-text="domain.isOverviewVisible ? 'Hide ' + domain.name : 'Show ' + domain.name"
+                            v-on:click="toggleDomain(dIndex)">
+                    </button>
+
+                    <div v-bind:id="['collapse' + dIndex]" class="m-1 collapse show">
+                      <div class="card card-body">
+
+                        <table class="table-bordered table-striped table-hover ind-table">
+                          <thead style="background-color: #c9ceea;">
+                          <tr>
+                            <th scope="col" class="text text-right ind-index">
+                              <i class="material-icons md-18 text-danger align-middle" v-text="tooltipIconName"></i>
+                            </th>
+                            <th scope="col" class="ind-name">Name</th>
+                            <th scope="col" class="text-right ind-value">Value</th>
+                            <th scope="col" class="text-right ind-value">Z Score</th>
+                          </tr>
+                          </thead>
+                          <tbody v-for="(indicator, iIndex) in domainDictionaryIndicators[domain.name]"
+                                 v-if="domainDictionaryIndicators[domain.name].length !== 0 && indicator.isOverviewVisible">
+                          <tr>
+                            <th scope="row" class="text-right help ind-index"
+                                data-toggle="tooltip" data-html="true" data-placement="left"
+                                v-bind:title="indicatorTooltips[domain.name][iIndex]">
+                              {{ iIndex + 1 }}
+                            </th>
+                            <td class="ind-name">
+                              <a data-toggle="collapse" aria-expanded="false"
+                                 v-bind:href="['#details-' + indicator.name]"
+                                 v-bind:aria-controls="['details-' + indicator.name]"
+                                 v-on:click="toggleDetails(domain.name, iIndex)">
+                                {{ indicator.description }}
+                              </a>
+                            </td>
+                            <td class="text-right ind-value"
+                                v-text="domainDictionaryIndicatorValues !== undefined ? domainDictionaryIndicatorValues[domain.name][iIndex].value : ''">
+                            </td>
+                            <td class="text-right ind-value"
+                                v-text="domainDictionaryIndicatorValues !== undefined ? domainDictionaryIndicatorValues[domain.name][iIndex].zscore : ''"
+                                v-bind:class="[domainDictionaryIndicatorValues !== undefined && domainDictionaryIndicatorValues[domain.name][iIndex].zscore < 0 ? 'text-danger' : '']">
+                            </td>
+                          </tr>
+
+                          <tr v-bind:id="['details-' + indicator.name]" class="collapse">
+                            <td colspan="4">
+                              <div class="card card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                              </div>
+                            </td>
+                          </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+                    </div>
+
+                    <div class="crt-hor-sep"></div>
+                  </div>
 
                 </div>
 

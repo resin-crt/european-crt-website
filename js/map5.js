@@ -72,7 +72,8 @@ let AppState = {
   setPanelsVisibility: function() {
     symbologyViewModel.isVisible = (AppState.currentNuts3Panel === 'symbology');
     overviewInfoViewModel.isVisible = (AppState.currentNuts3Panel === 'overview');
-    detailsInfoViewModel.isVisible = (AppState.currentNuts3Panel === 'details');
+    // TODO: RESIN - UNCOMMENT THIS !!!
+    // detailsInfoViewModel.isVisible = (AppState.currentNuts3Panel === 'details');
   }
 
 };
@@ -1142,6 +1143,7 @@ let MapLayers = {
             mouseout: function() {
               MapLayers.nuts3.hideTooltip(layer);
               MapLayers.nuts3.resetNuts3Style(feature, layer, false);
+              // MapLayers.nuts3.highlightNuts3(this.selectedFeature, this.selectedInternalLayer);
             },
 
             /**
