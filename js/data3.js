@@ -512,7 +512,7 @@ AppData.indicatorMetadata = {
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
-    "domain": "Other",
+    "domain": "Vulnerability - Adaptive Capacity",
     "domainSort": 82,
     "group": "Other",
     "groupSort": 73,

@@ -234,7 +234,7 @@
                   This is the first header.
                 </div>
 
-                <div>
+                <div class="border-left border-top border-right">
                   <ul class="nav nav-tabs nav-justified bg-light" role="tablist">
                     <li class="nav-item">
                       <a id="supergroupsTab" class="nav-link" data-toggle="tab" href="#supergroups"
@@ -263,7 +263,7 @@
                   </ul>
                 </div>
 
-                <div class="mb-auto h-100 ver-scrollbars" >
+                <div class="mb-auto h-100 ver-scrollbars border-left border-bottom border-right" >
 
                   <div id="supergroups" class="tab-pane fade show active"
                        role="tabpanel" aria-labelledby="supergroupsTab"
@@ -2407,9 +2407,7 @@
 
           </div>
 
-
           <!-- Overview Information -->
-          <!--style="background-color: #f1c40f;"-->
           <div id="overviewInfoVM" class="h-100"
                v-bind:class="[isVisible === false ? 'd-none' : '']">
 
@@ -2417,13 +2415,124 @@
 
               <div class="d-flex align-content-stretch flex-column h-100">
                 <div>
-                  This is the first header.
+                  <!--<div class="p-2">-->
+                    <!--<button id="overview-pin" type="button" class="btn btn-danger"-->
+                            <!--data-toggle="tooltip"-->
+                            <!--data-placement="top"-->
+                            <!--title="Click to unpin the overview information panel"-->
+                            <!--aria-label="Click to unpin the overview information view"-->
+                            <!--v-bind:class="[isPinned === false ? 'invisible' : 'visible']"-->
+                            <!--v-on:click="unPin()">-->
+                      <!--<i class="fas fa-thumbtack"></i>-->
+                    <!--</button>-->
+                  <!--</div>-->
                 </div>
 
-                <div class="mb-auto h-100 ver-scrollbars">
+                <div>
+                  <div class="d-flex">
+                    <div class="mr-auto p-2"
+                         v-bind:class="[language === 'other' ? 'collapse' : '']">
+                      <h4 class="text-danger" v-text="nuts3Name"></h4>
+                    </div>
+                    <div class="mr-auto p-2"
+                         v-bind:class="[language === 'en' ? 'collapse' : '']">
+                      <h4 class="text-danger" v-text="nuts3NativeName"></h4>
+                    </div>
+
+                    <div class="p-2">
+                      <button id="toggle-lang" type="button" class="btn btn-danger"
+                              data-toggle="tooltip"
+                              data-placement="top"
+                              title="Click to change language"
+                              aria-label="Click to change language"
+                              v-bind:class="[language === 'en' ? 'btn-raised' : '']"
+                              v-on:click="toggleLanguage()">
+                        EN
+                      </button>
+                    </div>
+                  </div>
+
+                  <table class="table table-sm">
+                    <tbody>
+
+                      <!--&lt;!&ndash;supergroup&ndash;&gt;-->
+                      <!--<tr v-bind:class="[supergroupName === null && groupName === null ? 'collapse' : '']">-->
+                        <!--<td class="narrow-td">-->
+                          <!--<div class="map-polygon-colour-rect"-->
+                               <!--v-bind:style="{ 'background-color': supergroupFillColor.fillColor, 'opacity': supergroupFillColor.fillOpacity }">-->
+                          <!--</div>-->
+                        <!--</td>-->
+                        <!--<td>-->
+                          <!--<div class="typology-class-header">Supergroup:</div>-->
+                          <!--<h6 v-text="supergroupName"></h6>-->
+                        <!--</td>-->
+                      <!--</tr>-->
+
+                      <!--&lt;!&ndash;group&ndash;&gt;-->
+                      <!--<tr v-bind:class="[supergroupName === null && groupName === null ? 'collapse' : '']">-->
+                        <!--<td class="narrow-td">-->
+                          <!--<div class="map-polygon-colour-rect"-->
+                               <!--v-bind:style="{ 'background-color': groupFillColor.fillColor, 'opacity': supergroupFillColor.fillOpacity }">-->
+                          <!--</div>-->
+                        <!--</td>-->
+                        <!--<td>-->
+                          <!--<div class="typology-class-header">Group:</div>-->
+                          <!--<h6 v-text="groupName"></h6>-->
+                        <!--</td>-->
+                      <!--</tr>-->
+
+
+                      <!--supergroup-->
+                      <!--<tr>-->
+                        <!--<td></td>-->
+                        <!--<td>-->
+                          <!--Supergroup:-->
+                        <!--</td>-->
+                      <!--</tr>-->
+                      <tr v-bind:class="[supergroupName === null && groupName === null ? 'collapse' : '']">
+                        <td>
+                          Supergroup:
+                        </td>
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': supergroupFillColor.fillColor, 'opacity': supergroupFillColor.fillOpacity }">
+                          </div>
+                        </td>
+                        <td>
+                          <h6 v-text="supergroupName"></h6>
+                        </td>
+                      </tr>
+
+                      <!--group-->
+                      <!--<tr>-->
+                        <!--<td></td>-->
+                        <!--<td>-->
+                          <!--Group:-->
+                        <!--</td>-->
+                      <!--</tr>-->
+                      <tr v-bind:class="[supergroupName === null && groupName === null ? 'collapse' : '']">
+                        <td>
+                          Group:
+                        </td>
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColor.fillColor, 'opacity': supergroupFillColor.fillOpacity }">
+                          </div>
+                        </td>
+                        <td>
+                          <h6 v-text="groupName"></h6>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+                </div>
+
+                <div class="mb-auto pt-2 h-100 ver-scrollbars">
 
                   <div v-for="(domain, dIndex) in domains" v-if="domains.length !== 0">
-                    <button class="btn btn-danger" type="button" data-toggle="collapse"
+                    <button class="btn btn-outline-primary ml-1" type="button" data-toggle="collapse"
                             v-bind:data-target="['#collapse' + dIndex]"
                             aria-expanded="true"
                             v-bind:aria-controls="['collapse' + dIndex]"
@@ -2431,7 +2540,9 @@
                             v-on:click="toggleDomain(dIndex)">
                     </button>
 
-                    <div v-bind:id="['collapse' + dIndex]" class="m-1 collapse show">
+                    <!--class="show"-->
+                    <div v-bind:id="['collapse' + dIndex]" class="m-1 collapse">
+
                       <div class="card card-body">
 
                         <table class="table-bordered table-striped table-hover ind-table">

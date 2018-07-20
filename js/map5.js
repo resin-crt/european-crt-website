@@ -585,10 +585,11 @@ let MapLayers = {
           '42': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange600.hex, fillOpacity: 0.6 },
           '43': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange400.hex, fillOpacity: 0.6 },
           '44': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange200.hex, fillOpacity: 0.6 },
-          '51': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lightBlue800.hex, fillOpacity: 0.6 },
-          '52': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lightBlue600.hex, fillOpacity: 0.6 },
-          '53': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lightBlue400.hex, fillOpacity: 0.6 },
-          '54': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lightBlue200.hex, fillOpacity: 0.6 },
+          '51': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lightBlue900.hex, fillOpacity: 0.6 },
+          '52': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lightBlue700.hex, fillOpacity: 0.6 },
+          '53': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lightBlue500.hex, fillOpacity: 0.6 },
+          '54': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lightBlue300.hex, fillOpacity: 0.6 },
+          '55': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.lightBlue100.hex, fillOpacity: 0.6 },
           '61': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber800.hex, fillOpacity: 0.6 },
           '62': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber600.hex, fillOpacity: 0.6 },
           '63': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber400.hex, fillOpacity: 0.6 },
@@ -683,10 +684,11 @@ let MapLayers = {
           '42': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange600.hex, fillOpacity: 0.7 },
           '43': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange400.hex, fillOpacity: 0.7 },
           '44': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange200.hex, fillOpacity: 0.7 },
-          '51': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo800.hex, fillOpacity: 0.7 },
-          '52': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo600.hex, fillOpacity: 0.7 },
-          '53': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo400.hex, fillOpacity: 0.7 },
-          '54': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo200.hex, fillOpacity: 0.7 },
+          '51': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo900.hex, fillOpacity: 0.7 },
+          '52': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo700.hex, fillOpacity: 0.7 },
+          '53': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo500.hex, fillOpacity: 0.7 },
+          '54': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo300.hex, fillOpacity: 0.7 },
+          '55': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo100.hex, fillOpacity: 0.7 },
           '61': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber800.hex, fillOpacity: 0.7 },
           '62': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber600.hex, fillOpacity: 0.7 },
           '63': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber400.hex, fillOpacity: 0.7 },
@@ -781,10 +783,11 @@ let MapLayers = {
           '42': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange600.hex, fillOpacity: 0.7 },
           '43': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange400.hex, fillOpacity: 0.7 },
           '44': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange200.hex, fillOpacity: 0.7 },
-          '51': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo800.hex, fillOpacity: 0.7 },
-          '52': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo600.hex, fillOpacity: 0.7 },
-          '53': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo400.hex, fillOpacity: 0.7 },
-          '54': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo200.hex, fillOpacity: 0.7 },
+          '51': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo900.hex, fillOpacity: 0.7 },
+          '52': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo700.hex, fillOpacity: 0.7 },
+          '53': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo500.hex, fillOpacity: 0.7 },
+          '54': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo300.hex, fillOpacity: 0.7 },
+          '55': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo100.hex, fillOpacity: 0.7 },
           '61': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber800.hex, fillOpacity: 0.7 },
           '62': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber600.hex, fillOpacity: 0.7 },
           '63': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber400.hex, fillOpacity: 0.7 },
@@ -879,10 +882,11 @@ let MapLayers = {
           '42': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange600.hex, fillOpacity: 0.7 },
           '43': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange400.hex, fillOpacity: 0.7 },
           '44': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange200.hex, fillOpacity: 0.7 },
-          '51': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo800.hex, fillOpacity: 0.7 },
-          '52': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo600.hex, fillOpacity: 0.7 },
-          '53': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo400.hex, fillOpacity: 0.7 },
-          '54': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo200.hex, fillOpacity: 0.7 },
+          '51': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo900.hex, fillOpacity: 0.7 },
+          '52': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo700.hex, fillOpacity: 0.7 },
+          '53': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo500.hex, fillOpacity: 0.7 },
+          '54': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo300.hex, fillOpacity: 0.7 },
+          '55': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo100.hex, fillOpacity: 0.7 },
           '61': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber800.hex, fillOpacity: 0.7 },
           '62': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber600.hex, fillOpacity: 0.7 },
           '63': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber400.hex, fillOpacity: 0.7 },
@@ -977,10 +981,11 @@ let MapLayers = {
           '42': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange600.hex, fillOpacity: 0.7 },
           '43': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange400.hex, fillOpacity: 0.7 },
           '44': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.deepOrange200.hex, fillOpacity: 0.7 },
-          '51': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo800.hex, fillOpacity: 0.7 },
-          '52': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo600.hex, fillOpacity: 0.7 },
-          '53': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo400.hex, fillOpacity: 0.7 },
-          '54': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo200.hex, fillOpacity: 0.7 },
+          '51': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo900.hex, fillOpacity: 0.7 },
+          '52': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo700.hex, fillOpacity: 0.7 },
+          '53': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo500.hex, fillOpacity: 0.7 },
+          '54': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo300.hex, fillOpacity: 0.7 },
+          '55': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.indigo100.hex, fillOpacity: 0.7 },
           '61': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber800.hex, fillOpacity: 0.7 },
           '62': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber600.hex, fillOpacity: 0.7 },
           '63': { stroke: true, color: '#282828', weight: 0.4, opacity: 1, fill: true, fillColor: ColorPalettes.Material.amber400.hex, fillOpacity: 0.7 },
@@ -1143,15 +1148,15 @@ let MapLayers = {
             mouseout: function() {
               MapLayers.nuts3.hideTooltip(layer);
               MapLayers.nuts3.resetNuts3Style(feature, layer, false);
-              // MapLayers.nuts3.highlightNuts3(this.selectedFeature, this.selectedInternalLayer);
+              MapLayers.nuts3.reselectNuts3();
             },
 
             /**
              * Raised when a feature is clicked.
              */
             click: function() {
-              // TODO: RESIN - AAAA
               MapLayers.nuts3.selectNuts3(feature, layer);
+              MapLayers.nuts3.updateInfo(feature);
             },
 
             /**
@@ -1381,18 +1386,15 @@ let MapLayers = {
       let classValue = feature.properties[attributeName].toString();
 
       // Make sure styles of only the non selected NUTS3 polygons are reset.
-      if (this.selectedFeature !== feature) {
+      if (this.selectedFeature !== feature || forceReset) {
         // Render the NUTS3 polygon having the specified typology class.
-        this.renderNuts3Polygon(feature, classValue, currentTypologyLevel, currentBaseMap);
-      }
-      else if (forceReset) {
-        // No matter what make sure that the style of the NUTS3 region is reset.
         this.renderNuts3Polygon(feature, classValue, currentTypologyLevel, currentBaseMap);
       }
 
     },
 
-    selectNuts3(feature, layer) {
+
+    selectNuts3: function(feature, layer) {
       // if (!(overviewInfoViewModel.isPinned || detailsInfoViewModel.isPinned)) {
       //   this.selectedFeature = feature;
       //   this.selectedInternalLayer = layer;
@@ -1416,43 +1418,55 @@ let MapLayers = {
 
       // Unselect the NUTS3 feature if a selected one exists.
       if (this.selectedFeature !== null) {
-        this.unselectNuts3();
+        this.deselectNuts3();
       }
 
       // Select the NUTS3 feature.
       this.selectedFeature = feature;
       this.selectedInternalLayer = layer;
 
+      // Highlight the NUTS3 feature.
+      this.highlightNuts3(this.selectedFeature, this.selectedInternalLayer);
+
       AppState.setPanelsVisibility();
 
     },
 
-    unselectNuts3() {
+    deselectNuts3: function() {
       this.resetNuts3Style(this.selectedFeature, this.selectedInternalLayer, true);
 
       this.selectedFeature = null;
       this.selectedInternalLayer = null;
     },
 
+    reselectNuts3: function() {
+      // if (this.selectedFeature) {
+      //   if (toggleInfoLevelViewModel.currentInfoLevel === 'overview') {
+      //     overviewInfoViewModel.isPinned = false;
+      //   }
+      //   else {
+      //     detailsInfoViewModel.isPinned = false;
+      //   }
+      //
+      //   this.highlightNuts3(this.selectedFeature, this.selectedInternalLayer);
+      //
+      //   if (toggleInfoLevelViewModel.currentInfoLevel === 'overview') {
+      //     overviewInfoViewModel.isPinned = true;
+      //   }
+      //   else {
+      //     detailsInfoViewModel.isPinned = true;
+      //   }
+      // }
 
-    reselectNuts3() {
-      if (this.selectedFeature) {
-        if (toggleInfoLevelViewModel.currentInfoLevel === 'overview') {
-          overviewInfoViewModel.isPinned = false;
-        }
-        else {
-          detailsInfoViewModel.isPinned = false;
-        }
 
+      if (this.selectedFeature !== null) {
         this.highlightNuts3(this.selectedFeature, this.selectedInternalLayer);
-
-        if (toggleInfoLevelViewModel.currentInfoLevel === 'overview') {
-          overviewInfoViewModel.isPinned = true;
-        }
-        else {
-          detailsInfoViewModel.isPinned = true;
-        }
       }
+
+    },
+
+    updateInfo: function(feature) {
+      overviewInfoViewModel.updateView(feature);
     },
 
     /**
@@ -1460,7 +1474,7 @@ let MapLayers = {
      *
      * @param layer - The internal layer whose information will be displayed over using the tooltip.
      */
-    showTooltip(layer) {
+    showTooltip: function(layer) {
 
       // TODO: RESIN - This is what needs to change to support name of NUTS3 in native language.
       //this.nuts3Name = AppData.nuts3[nuts3id].nameAscii;
@@ -1516,7 +1530,7 @@ let MapLayers = {
      *
      * @param layer - The internal layer whose tooltip will be hidden.
      */
-    hideTooltip(layer) {
+    hideTooltip: function(layer) {
       if (layer.isTooltipOpen()) {
         layer.closeTooltip();
       }
@@ -2301,12 +2315,6 @@ let overviewInfoViewModel = new Vue({
 
     updateView(feature) {
 
-      if (feature === null) {
-        // TODO: RESIN - Implement this when the user hovers out of a feature.
-
-        return;
-      }
-
       let properties = feature.properties;
 
       let nuts3id = properties.NUTS_ID;
@@ -2392,7 +2400,7 @@ let overviewInfoViewModel = new Vue({
       this.isPinned = false;
       this.isVisible = false;
 
-      MapLayers.nuts3.unselectNuts3();
+      MapLayers.nuts3.deselectNuts3();
     }
 
 
@@ -2493,7 +2501,7 @@ let overviewInfoViewModel = new Vue({
 //       this.isPinned = false;
 //       this.isVisible = false;
 //
-//       MapLayers.nuts3.unselectNuts3();
+//       MapLayers.nuts3.deselectNuts3();
 //     }
 //
 //

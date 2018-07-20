@@ -512,7 +512,7 @@ AppData.indicatorMetadata = {
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
-    "domain": "Other",
+    "domain": "Vulnerability - Adaptive Capacity",
     "domainSort": 82,
     "group": "Other",
     "groupSort": 73,
@@ -13409,11 +13409,11 @@ AppData.PopulateArraysAndDictionaries = function() {
 
     if (domains.length > 0) {
       if (domains.findIndex(d => d.name === indicator.domain) === -1) {
-        domains.push({ name: indicator.domain, isOverviewVisible: true, isDetailsVisible: true });
+        domains.push({ name: indicator.domain, isOverviewVisible: false, isDetailsVisible: true });
       }
     }
     else {
-      domains.push({ name: indicator.domain, isOverviewVisible: true, isDetailsVisible: true });
+      domains.push({ name: indicator.domain, isOverviewVisible: false, isDetailsVisible: true });
     }
 
     AppData.domainSortedIndicators.push(indicator.name);
