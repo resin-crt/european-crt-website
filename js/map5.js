@@ -4,7 +4,7 @@
 //  School of Environment, Education, and Development.
 //
 //  Name:            map.js
-//  Original coding: Vasilis Vlastaras (@gisvlasta), 18/07/2018.
+//  Original coding: Vasilis Vlastaras (@gisvlasta), 23/07/2018.
 //
 //  Description:     The European Climate Risk Typology web mapping functionality.
 // ================================================================================
@@ -1498,7 +1498,7 @@ let MapLayers = {
 
                        // Supergroup
                        '<tr>' +
-                         '<td>' +
+                         '<td class="pb-3">' +
                            '<div class="typology-class-header">Class:</div>' +
                            '<h6>' + MapLayers.nuts3.supergroups[sg].name + '</h6>' +
                          '</td>' +
@@ -1506,7 +1506,7 @@ let MapLayers = {
 
                        // Group
                        '<tr>' +
-                         '<td class="pt-3">' +
+                         '<td>' +
                            '<div class="typology-class-header">Subclass:</div>' +
                            '<h6>' + MapLayers.nuts3.groups[g].name + '</h6>' +
                          '</td>' +
@@ -1868,56 +1868,56 @@ let symbologyViewModel = new Vue({
     dictionary: {
       'supergroups': {
         name: 'Classes',
-        '1': { isPanelVisible: false, icon: 'far fa-building', },
-        '2': { isPanelVisible: false, icon: 'fas fa-leaf' },
-        '3': { isPanelVisible: false, icon: 'fas fa-snowflake' },
-        '4': { isPanelVisible: false, icon: 'fas fa-sun' },
-        '5': { isPanelVisible: false, icon: 'fab fa-servicestack' },
-        '6': { isPanelVisible: false, icon: 'far fa-image' },
-        '7': { isPanelVisible: false, icon: 'fas fa-tint' },
-        '8': { isPanelVisible: false, icon: 'fab fa-firstdraft' }
+        '1': { isDescriptionPanelVisible: false, icon: 'far fa-building', },
+        '2': { isDescriptionPanelVisible: false, icon: 'fas fa-leaf' },
+        '3': { isDescriptionPanelVisible: false, icon: 'fas fa-snowflake' },
+        '4': { isDescriptionPanelVisible: false, icon: 'fas fa-sun' },
+        '5': { isDescriptionPanelVisible: false, icon: 'fab fa-servicestack' },
+        '6': { isDescriptionPanelVisible: false, icon: 'far fa-image' },
+        '7': { isDescriptionPanelVisible: false, icon: 'fas fa-tint' },
+        '8': { isDescriptionPanelVisible: false, icon: 'fab fa-firstdraft' }
       },
       'groups': {
         name: 'Subclasses',
-        '1':  { isPanelVisible: false, icon: 'far fa-building', },
-        '11': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '12': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '13': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '14': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '2':  { isPanelVisible: false, icon: 'fas fa-leaf' },
-        '21': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '22': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '23': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '24': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '3':  { isPanelVisible: false, icon: 'fas fa-snowflake' },
-        '31': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '32': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '33': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '34': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '4':  { isPanelVisible: false, icon: 'fas fa-sun' },
-        '41': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '42': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '43': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '44': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '5':  { isPanelVisible: false, icon: 'fab fa-servicestack' },
-        '51': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '52': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '53': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '54': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '55': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '6':  { isPanelVisible: false, icon: 'far fa-image' },
-        '61': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '62': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '63': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '7':  { isPanelVisible: false, icon: 'fas fa-tint' },
-        '71': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '72': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '73': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '74': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '8':  { isPanelVisible: false, icon: 'fab fa-firstdraft' },
-        '81': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '82': { isPanelVisible: false, icon: 'fab fa-leanpub' },
-        '83': { isPanelVisible: false, icon: 'fab fa-leanpub' }
+        '1':  { isDescriptionPanelVisible: false, icon: 'far fa-building', },
+        '11': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '12': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '13': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '14': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '2':  { isDescriptionPanelVisible: false, icon: 'fas fa-leaf' },
+        '21': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '22': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '23': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '24': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '3':  { isDescriptionPanelVisible: false, icon: 'fas fa-snowflake' },
+        '31': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '32': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '33': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '34': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '4':  { isDescriptionPanelVisible: false, icon: 'fas fa-sun' },
+        '41': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '42': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '43': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '44': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '5':  { isDescriptionPanelVisible: false, icon: 'fab fa-servicestack' },
+        '51': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '52': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '53': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '54': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '55': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '6':  { isDescriptionPanelVisible: false, icon: 'far fa-image' },
+        '61': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '62': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '63': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '7':  { isDescriptionPanelVisible: false, icon: 'fas fa-tint' },
+        '71': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '72': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '73': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '74': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '8':  { isDescriptionPanelVisible: false, icon: 'fab fa-firstdraft' },
+        '81': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '82': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' },
+        '83': { isDescriptionPanelVisible: false, icon: 'fab fa-leanpub' }
       },
       'indicators': { name: 'Indicators' }
     },
@@ -2148,8 +2148,15 @@ let symbologyViewModel = new Vue({
      *               the information of a supergroup, group or indicator.
      */
     toggleInfo(code) {
-      this.dictionary[this.currentTab][code].isPanelVisible = !this.dictionary[this.currentTab][code].isPanelVisible;
+      this.dictionary[this.currentTab][code].isDescriptionPanelVisible =
+        !this.dictionary[this.currentTab][code].isDescriptionPanelVisible;
+    },
+
+
+    toggleIndicatorInfo(name) {
+
     }
+
 
   }
 
@@ -2373,8 +2380,9 @@ let overviewInfoViewModel = new Vue({
             let value = im.type === 'double' ? properties[im.name].toFixed(3) : properties[im.name].toFixed(0); // TODO: RESIN - toFixed(0) MUST be removed once I have the correct data.
 
             this.domainDictionaryIndicatorValues[domain].push({
-              name: this.domainDictionaryIndicators[i],
+              name: im.name,
               value: value,
+              unit: im.unit,
               zscore: properties[im.name + 'Z'].toFixed(3)
             })
           }

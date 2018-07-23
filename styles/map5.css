@@ -154,6 +154,11 @@ body {
   margin-left: 20px;
 }
 
+#typology-results-table {
+  margin-bottom: 0;
+}
+
+
 
 
 
@@ -251,6 +256,12 @@ body {
   padding-left: 3px;
   padding-right: 3px;
   width: 60px;
+}
+
+.ind-unit {
+  padding-left: 3px;
+  padding-right: 3px;
+  width: 40px;
 }
 
 .typology-class-header {
