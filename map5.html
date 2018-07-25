@@ -2552,12 +2552,12 @@
                                 <div>
                                   <button type="button" class="btn btn-typology-help"
                                           data-toggle="tooltip" data-placement="bottom"
-                                          v-bind:aria-label="[domainDictionaryIndicators[indicator.name].isInformationOverviewPanelVisible ? 'Hide the indicator information' : 'Show the indicator information']"
-                                          v-bind:aria-pressed="[domainDictionaryIndicators[indicator.name].isInformationOverviewPanelVisible]"
-                                          v-bind:class="[domainDictionaryIndicators[indicator.name].isInformationOverviewPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                          v-bind:aria-label="[domainDictionaryIndicators[indicator.name].isInformationPanelVisible ? 'Hide the indicator information' : 'Show the indicator information']"
+                                          v-bind:aria-pressed="[domainDictionaryIndicators[indicator.name].isInformationPanelVisible]"
+                                          v-bind:class="[domainDictionaryIndicators[indicator.name].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
                                           v-on:click="toggleIndicatorInfo(indicator.name)">
                                     <i class="material-icons" v-text="tooltipIconName"
-                                       v-bind:class="[domainDictionaryIndicators[indicator.name].isInformationOverviewPanelVisible ? '' : 'text-dark']">
+                                       v-bind:class="[domainDictionaryIndicators[indicator.name].isInformationPanelVisible ? '' : 'text-dark']">
                                     </i>
                                   </button>
                                 </div>
