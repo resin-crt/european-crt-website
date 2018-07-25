@@ -1536,9 +1536,7 @@ let MapLayers = {
       }
 
       layer.setTooltipContent('');
-    },
-
-
+    }
 
 
 
@@ -1616,15 +1614,6 @@ let Spatial = {
     BaseMapLayers.createBaseMapLayers();
 
     MapLayers.nuts3.createLayer();
-
-    //Spatial.createMSOAsChoroplethLayer();
-
-    // MapLayers.CommuteFlows.createLayer();
-    // MapLayers.CommuteFlows.clearLayer();
-    // MapLayers.CommuteFlows.geoJSON = null;
-
-    // MapLayers.MSOAs.createInternalCommuteFlowsMsoaLayer();
-    //MapLayers.CommuteFlows.createInternalCommuteFlowsMsoaLayer();
 
     Spatial.setInitialBaseMapLayer();
 
