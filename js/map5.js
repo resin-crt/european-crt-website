@@ -2210,22 +2210,33 @@ let symbologyViewModel = new Vue({
     toggleInfo(code) {
       this.dictionary[this.currentTab][code].isInformationPanelVisible =
         !this.dictionary[this.currentTab][code].isInformationPanelVisible;
+
+      // TODO: RESIN - This code is needed if we need to show a tooltip over the help button.
+      // let l = (this.currentTab === 'supergroups' ? 'sg' : (this.currentTab === 'groups' ? 'g' : 'i'));
+      //
+      // let element = '#toggle-' + l + '-info-' + code;
+      //
+      // this.destroyTooltip(element);
+
+      // $('#' + element).tooltip();
     },
 
-
-    toggleIndicatorInfo(name) {
-
-    }
+    /**
+     * Hides the tooltip that is displayed on the specified element.
+     * @param element - The element from which the tooltip will be hidden.
+     */
+    // destroyTooltip(element) {
+    //   if (AppState.bootstrapMaterialTooltipEnabled) {
+    //     $(element).tooltip('hide');
+    //     $(element).tooltip('dispose');
+    //     $(element).tooltip();
+    //   }
+    // }
 
 
   }
 
 });
-
-
-
-
-
 
 
 
@@ -2527,7 +2538,7 @@ let overviewInfoViewModel = new Vue({
 
       // Make sure that the html content of the tooltip will be displayed
       // by explicitly calling the tooltip jquery method.
-      $('[data-toggle="tooltip"]').tooltip();
+      //$('[data-toggle="tooltip"]').tooltip();
 
     },
 
@@ -2544,7 +2555,28 @@ let overviewInfoViewModel = new Vue({
       this.isVisible = false;
 
       MapLayers.nuts3.deselectNuts3();
-    }
+    },
+
+    /**
+     * Toggles on/off the information panel of a supergroup, group or indicator.
+     *
+     * @param code - The code [ie: supergroup, group, indicator] that will be used to toggle
+     *               the information of a supergroup, group or indicator.
+     */
+    toggleInfo(code) {
+      this.dictionary.indicators[code].isInformationPanelVisible =
+        !this.dictionary.indicators[code].isInformationPanelVisible;
+
+      // TODO: RESIN - This code is needed if we need to show a tooltip over the help button.
+      // let l = (this.currentTab === 'supergroups' ? 'sg' : (this.currentTab === 'groups' ? 'g' : 'i'));
+      //
+      // let element = '#toggle-' + l + '-info-' + code;
+      //
+      // this.destroyTooltip(element);
+
+      // $('#' + element).tooltip();
+    },
+
 
 
   }
