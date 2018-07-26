@@ -1986,7 +1986,7 @@ let symbologyViewModel = new Vue({
 
     groups: MapLayers.nuts3.groups,
 
-    tooltipIconName: 'help_outline', // help, help_outline, live_help, announcement, feedback, info, help
+    infoIconName: 'help_outline', // help, help_outline, live_help, announcement, feedback, info
 
     /**
      * The array of selected supergroups used by the list of supergroup checkboxes.
@@ -2348,7 +2348,7 @@ let overviewInfoViewModel = new Vue({
 
     domainDictionaryIndicatorValues: undefined,
 
-    tooltipIconName: 'announcement' // feedback, info,
+    infoIconName: 'help_outline' // help, help_outline, live_help, announcement, feedback, info
 
   },
 
