@@ -1634,50 +1634,9 @@ let Spatial = {
     baseLayer.addTo(Spatial.map);
     baseLayer.bringToBack();
 
-  },
+  }
 
 };
-
-/**
- * The HTML templates used in the web app.
- */
-let HtmlTemplates = {
-
-  /**
-   * The HTML template used to display a tooltip with metadata about supergroups or groups.
-   */
-  // TODO: RESIN - Remove this !!!
-  typologyMetadataTooltip: '<div class="card">' +
-                             '<div class="card-header bg-dark">' +
-                               //'<i class="display-1 text-center text-danger material-icons">@@icon@@</i>' +
-                               '<i class="display-1 text-danger @@icon@@" style="margin-left: 20px;"></i>' +
-                             '</div>' +
-                             '<div class="card-body">' +
-                               '<h4 class="card-title"><strong><em>@@name@@</em></strong></h4>' +
-                               '<p class="card-text">@@description@@</p>' +
-                             '</div>' +
-                           '</div>',
-
-  /**
-   * The HTML template used to display a tooltip with metadata about indicators/
-   */
-  // TODO: RESIN - Remove this !!!
-  indicatorMetadataTooltip: '<div class="card">' +
-                              '<div class="card-header bg-dark">' +
-                                //'<i class="display-1 text-center text-danger material-icons">@@icon@@</i>' +
-                                '<i class="display-1 text-danger @@icon@@" style="margin-left: 20px;"></i>' +
-                              '</div>' +
-                              '<div class="card-body">' +
-                                '<h4 class="card-title"><strong><em>@@description@@</em></strong></h4>' +
-                                '<h4 class="card-title text-right border-left"><strong><em>@@unit@@</em></strong></h4>' +
-                                '<p class="card-text">@@details@@</p>' +
-                              '</div>' +
-                            '</div>'
-
-};
-
-
-
 
 // ================================================================================
 //  View Models.
@@ -1849,8 +1808,6 @@ let symbologyViewModel = new Vue({
   data: {
 
     isVisible: true,
-
-    keepHiddenWhileHovering: false,
 
     currentTab: 'supergroups',
 
@@ -2194,13 +2151,14 @@ let symbologyViewModel = new Vue({
 
     },
 
-    /**
-     * Renders the NUTS3 layer.
-     */
-    renderNuts3Layer() {
-      MapLayers.nuts3.renderLayer();
-    },
-    
+    // TODO: RESIN - Remove this ???
+    // /**
+    //  * Renders the NUTS3 layer.
+    //  */
+    // renderNuts3Layer() {
+    //   MapLayers.nuts3.renderLayer();
+    // },
+
     /**
      * Toggles on/off the information panel of a supergroup, group or indicator.
      *
@@ -2221,6 +2179,7 @@ let symbologyViewModel = new Vue({
       // $('#' + element).tooltip();
     },
 
+    // TODO: RESIN - Remove this???
     /**
      * Hides the tooltip that is displayed on the specified element.
      * @param element - The element from which the tooltip will be hidden.
@@ -2233,12 +2192,9 @@ let symbologyViewModel = new Vue({
     //   }
     // }
 
-
   }
 
 });
-
-
 
 /**
  * The overviewInfoViewModel provides the data and logic
@@ -2351,6 +2307,7 @@ let overviewInfoViewModel = new Vue({
 
     domains: AppData.domains,
 
+    // TODO: RESIN - Remove this ???
     //domainSortedIndicators: AppData.domainSortedIndicators,
 
     domainDictionaryIndicators: AppData.domainDictionaryIndicators,
@@ -2365,33 +2322,6 @@ let overviewInfoViewModel = new Vue({
    * The computed properties of the model of the view model.
    */
   computed: {
-
-    /**
-     * Return the tooltips of the indicators.
-     */
-    indicatorTooltips: function() {
-
-      let tooltipsDic = {};
-
-      for (let domain in this.domainDictionaryIndicators) {
-        if (this.domainDictionaryIndicators.hasOwnProperty(domain)) {
-          tooltipsDic[domain] = [];
-
-          for (let i = 0; i < this.domainDictionaryIndicators[domain].length; i++) {
-            let html = HtmlTemplates.indicatorMetadataTooltip
-                        .replace('@@icon@@', this.domainDictionaryIndicators[domain][i].faIcon)
-                        .replace('@@description@@', this.domainDictionaryIndicators[domain][i].description)
-                        .replace('@@unit@@', this.domainDictionaryIndicators[domain][i].unit)
-                        .replace('@@details@@', this.domainDictionaryIndicators[domain][i].details);
-
-            tooltipsDic[domain].push(html);
-          }
-        }
-      }
-
-      return tooltipsDic;
-
-    },
 
   },
 
@@ -2416,37 +2346,29 @@ let overviewInfoViewModel = new Vue({
     },
 
     /**
-     * Shows the overview view.
+     * Toggles the indicators of the specified domain.
+     *
+     * @param index - The index of the domain.
      */
-    showView() {
-
-      // Hide the Nuts3LayerSetup panel if it is visible.
-      if (toggleNuts3LayerSetupViewModel.isNuts3LayerSetupVisible) {
-        // Mark the 'layer setup' view as 'hidden while hovering'.
-        symbologyViewModel.keepHiddenWhileHovering = true;
-        toggleNuts3LayerSetupViewModel.hideNuts3LayerSetup();
-      }
-      else {
-        // Hide the details info panel if it is visible.
-        if (detailsInfoViewModel.isVisible) {
-          detailsInfoViewModel.isVisible = false;
-        }
-      }
-
-      // Show the overview info panel.
-      this.isVisible = true;
-
-    },
-
     toggleDomain(index) {
       this.domains[index].isOverviewVisible = !this.domains[index].isOverviewVisible;
     },
 
+    /**
+     * Toggles the details view of an indicator on/off.
+     *
+     * @param domain - The domain in which the indicator belong to.
+     * @param index - The index of the indicator in the specified domain.
+     */
     toggleDetails(domain, index) {
       this.domainDictionaryIndicators[domain][index].isDetailsVisible = !this.domainDictionaryIndicators[domain][index].isDetailsVisible;
     },
 
-
+    /**
+     * Updates the view with the information of the selected feature.
+     *
+     * @param feature - The feature that will be used to retrieve the information.
+     */
     updateView(feature) {
 
       let properties = feature.properties;
@@ -2517,13 +2439,16 @@ let overviewInfoViewModel = new Vue({
         }
       }
 
+      // TODO: RESIN - Should this be removed?
       // Make sure that the html content of the tooltip will be displayed
       // by explicitly calling the tooltip jquery method.
       //$('[data-toggle="tooltip"]').tooltip();
 
     },
 
-
+    /**
+     * Closes the overview information panel.
+     */
     close() {
 
       // Set the current panel.
@@ -2555,9 +2480,7 @@ let overviewInfoViewModel = new Vue({
       // this.destroyTooltip(element);
 
       // $('#' + element).tooltip();
-    },
-
-
+    }
 
   }
 
