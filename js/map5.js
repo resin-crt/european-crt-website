@@ -2260,8 +2260,6 @@ let overviewInfoViewModel = new Vue({
 
     isVisible: false,
 
-    isPinned: false,
-
     nuts3Name: '',
 
     nuts3NativeName: '',
@@ -2440,23 +2438,6 @@ let overviewInfoViewModel = new Vue({
 
     },
 
-    /**
-     * Hide the overview view.
-     */
-    hideView() {
-
-      // Hide the overview info panel.
-      this.isVisible = false;
-
-      // Show the 'Layer Setup' view if it is marked as 'hidden while hovering'.
-      if (symbologyViewModel.keepHiddenWhileHovering) {
-        symbologyViewModel.keepHiddenWhileHovering = false;
-        toggleNuts3LayerSetupViewModel.showNuts3LayerSetup();
-      }
-
-    },
-
-
     toggleDomain(index) {
       this.domains[index].isOverviewVisible = !this.domains[index].isOverviewVisible;
     },
@@ -2543,18 +2524,17 @@ let overviewInfoViewModel = new Vue({
     },
 
 
-    Pin() {
-      this.isPinned = true;
-      if (AppState.bootstrapMaterialTooltipEnabled) {
-        $('#overview-pin').tooltip('show');
-      }
-    },
+    close() {
 
-    unPin() {
-      this.isPinned = false;
-      this.isVisible = false;
+      // Set the current panel.
+      AppState.currentNuts3Panel = 'symbology';
 
+      // Set the panels visibility.
+      AppState.setPanelsVisibility();
+
+      // Deselect the NUTS3 feature.
       MapLayers.nuts3.deselectNuts3();
+
     },
 
     /**

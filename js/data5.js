@@ -7543,9 +7543,9 @@ AppData.nuts3 = {
     "nameHtml" : "&#x0399;&#x03BA;&#x03B1;&#x03C1;&#x03AF;&#x03B1;, &#x03A3;&#x03AC;&#x03BC;&#x03BF;&#x03C2;"
   },
   "EL413": {
-    "nameLatin" : "Xios",
+    "nameLatin" : "Chios",
     "nutsName" : "Χίος",
-    "nameAscii" : "Xios",
+    "nameAscii" : "Chios",
     "nameHtml" : "&#x03A7;&#x03AF;&#x03BF;&#x03C2;"
   },
   "EL421": {
@@ -7569,13 +7569,13 @@ AppData.nuts3 = {
   "EL433": {
     "nameLatin" : "Rethymni",
     "nutsName" : "Ρεθύμνη",
-    "nameAscii" : "Rethimni",
+    "nameAscii" : "Rethymni",
     "nameHtml" : "&#x03A1;&#x03B5;&#x03B8;&#x03CD;&#x03BC;&#x03BD;&#x03B7;"
   },
   "EL434": {
     "nameLatin" : "Chania",
     "nutsName" : "Χανιά",
-    "nameAscii" : "Xania",
+    "nameAscii" : "Chania",
     "nameHtml" : "&#x03A7;&#x03B1;&#x03BD;&#x03B9;&#x03AC;"
   },
   "EL512": {
@@ -7633,9 +7633,9 @@ AppData.nuts3 = {
     "nameHtml" : "&#x03A6;&#x03BB;&#x03CE;&#x03C1;&#x03B9;&#x03BD;&#x03B1;"
   },
   "EL541": {
-    "nameLatin" : "Arta, Prebeza",
+    "nameLatin" : "Arta, Preveza",
     "nutsName" : "Άρτα, Πρέβεζα",
-    "nameAscii" : "Arta, Prebeza",
+    "nameAscii" : "Arta, Preveza",
     "nameHtml" : "&#x0386;&#x03C1;&#x03C4;&#x03B1;, &#x03A0;&#x03C1;&#x03AD;&#x03B2;&#x03B5;&#x03B6;&#x03B1;"
   },
   "EL543": {
@@ -7659,25 +7659,25 @@ AppData.nuts3 = {
   "EL621": {
     "nameLatin" : "Zakynthos",
     "nutsName" : "Ζάκυνθος",
-    "nameAscii" : "Zakinthos",
+    "nameAscii" : "Zakynthos",
     "nameHtml" : "&#x0396;&#x03AC;&#x03BA;&#x03C5;&#x03BD;&#x03B8;&#x03BF;&#x03C2;"
   },
   "EL622": {
     "nameLatin" : "Kerkyra",
     "nutsName" : "Κέρκυρα",
-    "nameAscii" : "Kerkira",
+    "nameAscii" : "Kerkyra",
     "nameHtml" : "&#x039A;&#x03AD;&#x03C1;&#x03BA;&#x03C5;&#x03C1;&#x03B1;"
   },
   "EL624": {
     "nameLatin" : "Lefkada",
     "nutsName" : "Λευκάδα",
-    "nameAscii" : "Leikada",
+    "nameAscii" : "Lefkada",
     "nameHtml" : "&#x039B;&#x03B5;&#x03C5;&#x03BA;&#x03AC;&#x03B4;&#x03B1;"
   },
   "EL632": {
     "nameLatin" : "Achaia",
     "nutsName" : "Αχαΐα",
-    "nameAscii" : "AxaIa",
+    "nameAscii" : "Achaia",
     "nameHtml" : "&#x0391;&#x03C7;&#x03B1;&#x0390;&#x03B1;"
   },
   "EL633": {
@@ -7689,13 +7689,13 @@ AppData.nuts3 = {
   "EL641": {
     "nameLatin" : "Voiotia",
     "nutsName" : "Βοιωτία",
-    "nameAscii" : "Boiotia",
+    "nameAscii" : "Voiotia",
     "nameHtml" : "&#x0392;&#x03BF;&#x03B9;&#x03C9;&#x03C4;&#x03AF;&#x03B1;"
   },
   "EL643": {
     "nameLatin" : "Evrytania",
     "nutsName" : "Ευρυτανία",
-    "nameAscii" : "Eiritania",
+    "nameAscii" : "Evrytania",
     "nameHtml" : "&#x0395;&#x03C5;&#x03C1;&#x03C5;&#x03C4;&#x03B1;&#x03BD;&#x03AF;&#x03B1;"
   },
   "EL644": {
@@ -12585,7 +12585,7 @@ AppData.nuts3 = {
   "EL527": {
     "nameLatin" : "Chalkidiki",
     "nutsName" : "Χαλκιδική",
-    "nameAscii" : "Xalkidiki",
+    "nameAscii" : "Chalkidiki",
     "nameHtml" : "&#x03A7;&#x03B1;&#x03BB;&#x03BA;&#x03B9;&#x03B4;&#x03B9;&#x03BA;&#x03AE;"
   },
   "EL531": {
@@ -12621,7 +12621,7 @@ AppData.nuts3 = {
   "EL642": {
     "nameLatin" : "Evvoia",
     "nutsName" : "Εύβοια",
-    "nameAscii" : "Eiboia",
+    "nameAscii" : "Evvoia",
     "nameHtml" : "&#x0395;&#x03CD;&#x03B2;&#x03BF;&#x03B9;&#x03B1;"
   },
   "EL653": {

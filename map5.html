@@ -2461,19 +2461,25 @@
             <div class="p-0 h-100">
 
               <div class="d-flex align-content-stretch flex-column h-100">
-                <!-- Pin -->
+
                 <div>
-                  <!--<div class="p-2">-->
-                    <!--<button id="overview-pin" type="button" class="btn btn-danger"-->
-                            <!--data-toggle="tooltip"-->
-                            <!--data-placement="top"-->
-                            <!--title="Click to unpin the overview information panel"-->
-                            <!--aria-label="Click to unpin the overview information view"-->
-                            <!--v-bind:class="[isPinned === false ? 'invisible' : 'visible']"-->
-                            <!--v-on:click="unPin()">-->
-                      <!--<i class="fas fa-thumbtack"></i>-->
-                    <!--</button>-->
-                  <!--</div>-->
+                  <div class="d-flex">
+                    <div class="mr-auto">
+                      <h6>Overview Information</h6>
+                    </div>
+
+                    <div>
+                      <button id="overview-close" type="button" class="btn btn-danger btn-sm" style="padding: 0;"
+                              data-toggle="tooltip"
+                              data-placement="top"
+                              title="Click to close the overview information panel"
+                              aria-label="Click to close the overview information panel"
+                              v-bind:class="[isVisible === false ? 'invisible' : 'visible']"
+                              v-on:click="close()">
+                        <i class="material-icons">close</i>
+                      </button>
+                    </div>
+                  </div>
                 </div>
 
                 <div>
@@ -2488,7 +2494,7 @@
                     </div>
 
                     <div>
-                      <button id="toggle-lang" type="button" class="btn btn-danger"
+                      <button id="toggle-lang" type="button" class="btn btn-danger btn-sm"
                               data-toggle="tooltip"
                               data-placement="top"
                               title="Click to change language"

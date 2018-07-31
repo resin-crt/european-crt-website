@@ -1862,7 +1862,7 @@ fieldset:disabled a.custom-file-control::before {
     background-color: #3f51b5;
     border-color: #3f51b5; }
   .btn-outline-primary:focus, .btn-outline-primary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(0, 150, 136, 0.5); }
+    box-shadow: 0 0 0 0.2rem rgba(63, 81, 181, 0.5); }
   .btn-outline-primary.disabled, .btn-outline-primary:disabled {
     color: #3f51b5;
     background-color: transparent; }
@@ -1873,7 +1873,7 @@ fieldset:disabled a.custom-file-control::before {
     border-color: #3f51b5; }
     .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-primary.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(0, 150, 136, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(63, 81, 181, 0.5); }
 
 .btn-outline-secondary {
   color: #6c757d;
