@@ -1807,10 +1807,21 @@ let symbologyViewModel = new Vue({
    */
   data: {
 
+    /**
+     * Indicates whether the view is visible or not.
+     */
     isVisible: true,
 
+    /**
+     * The current tab page.
+     */
     currentTab: 'supergroups',
 
+    currentDomain: 'hazard',
+
+    /**
+     * Provides a dictionary of objects to allow the rendering of the view.
+     */
     dictionary: {
       'supergroups': {
         name: 'Classes',
@@ -1936,13 +1947,33 @@ let symbologyViewModel = new Vue({
         'I079': { isInformationPanelVisible: false, icon: 'fab fa-leanpub' },
         'I081': { isInformationPanelVisible: false, icon: 'fab fa-leanpub' },
         'I082': { isInformationPanelVisible: false, icon: 'fab fa-leanpub' }
-      }
+      },
+      'domains': ['hazard', 'exposure', 'sensitivity', 'adaptivity']
     },
 
+    /**
+     * The supergroups metadata in the form of a dictionary whose keys are the values of supergroups.
+     */
     supergroups: MapLayers.nuts3.supergroups,
 
+    /**
+     * The groups metadata in the form of a dictionary whose keys are the values of groups.
+     */
     groups: MapLayers.nuts3.groups,
 
+    /**
+     * The array of domain objects used to render portions of the view based on indicator domains.
+     */
+    domains: AppData.domains,
+
+    /**
+     * The dictionary of indicator objects used to render portions of the view based on indicators grouped per domain.
+     */
+    domainDictionaryIndicators: AppData.domainDictionaryIndicators,
+
+    /**
+     * The icon used on the information buttons.
+     */
     infoIconName: 'help_outline', // help, help_outline, live_help, announcement, feedback, info
 
     /**
@@ -2040,6 +2071,13 @@ let symbologyViewModel = new Vue({
       }
 
     },
+
+
+    setCurrentDomain(tabIndex) {
+      this.currentDomain = this.dictionary.domains[tabIndex];
+    },
+
+
 
     /**
      * Selects all the supergroups or groups depending on the currently selected tab.

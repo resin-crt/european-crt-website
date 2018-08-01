@@ -234,27 +234,28 @@
                   <h5>Symbology</h5>
                 </div>
 
+                <!-- Symbology Tabs -->
                 <div class="border-left border-top border-right">
                   <ul class="nav nav-tabs nav-justified bg-light" role="tablist">
                     <li class="nav-item">
-                      <a id="supergroupsTab" class="nav-link" data-toggle="tab" href="#supergroups"
-                         role="tab" aria-controls="Supergroups" aria-selected="true"
+                      <a id="supergroups-tab" class="nav-link" data-toggle="tab" href="#supergroups"
+                         role="tab" aria-controls="supergroups" aria-selected="true"
                          v-bind:class="[currentTab === 'supergroups' ? 'active border-danger text-danger' : '']"
                          v-on:click="setCurrentTab('supergroups')"
                          v-text="dictionary['supergroups'].name">
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a id="groupsTab" class="nav-link" data-toggle="tab" href="#groups"
-                         role="tab" aria-controls="Groups" aria-selected="false"
+                      <a id="groups-tab" class="nav-link" data-toggle="tab" href="#groups"
+                         role="tab" aria-controls="groups" aria-selected="false"
                          v-bind:class="[currentTab === 'groups' ? 'active border-danger text-danger' : '']"
                          v-on:click="setCurrentTab('groups')"
                          v-text="dictionary['groups'].name">
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a id="indicatorsTab" class="nav-link" data-toggle="tab" href="#indicators"
-                         role="tab" aria-controls="Indicators" aria-selected="false"
+                      <a id="indicators-tab" class="nav-link" data-toggle="tab" href="#indicators"
+                         role="tab" aria-controls="indicators" aria-selected="false"
                          v-bind:class="[currentTab === 'indicators' ? 'active border-danger text-danger' : '']"
                          v-on:click="setCurrentTab('indicators')"
                          v-text="dictionary['indicators'].name">
@@ -266,7 +267,7 @@
                 <div class="mb-auto h-100 ver-scrollbars border-left border-bottom border-right" >
 
                   <div id="supergroups" class="tab-pane fade show active"
-                       role="tabpanel" aria-labelledby="supergroupsTab"
+                       role="tabpanel" aria-labelledby="supergroups-tab"
                        v-bind:class="[currentTab === 'supergroups' ? '' : 'collapse']">
 
                     <table class="table">
@@ -646,7 +647,7 @@
                   </div>
 
                   <div id="groups" class="tab-pane fade"
-                       role="tabpanel" aria-labelledby="groupsTab"
+                       role="tabpanel" aria-labelledby="groups-tab"
                        v-bind:class="[currentTab === 'groups' ? '' : 'collapse']">
 
                     <table class="table">
@@ -654,11 +655,6 @@
 
                       <!--Groups of Supergroup 1-->
                       <tr class="row-indigo">
-                        <!--<td class="narrow-td">-->
-                          <!--<div class="map-polygon-colour-rect"-->
-                               <!--v-bind:style="{ 'background-color': supergroupFillColors['1'].fillColor, 'opacity': supergroupFillColors['1'].fillOpacity }">-->
-                          <!--</div>-->
-                        <!--</td>-->
                         <td colspan="3">
                           <a href="#" class="group-toggle-link" v-text="supergroups['1'].name"
                              v-on:click="toggleGroups('1')">
@@ -880,11 +876,6 @@
 
                       <!--Groups of Supergroup 2-->
                       <tr class="row-indigo">
-                        <!--<td class="narrow-td">-->
-                          <!--<div class="map-polygon-colour-rect"-->
-                               <!--v-bind:style="{ 'background-color': supergroupFillColors['2'].fillColor, 'opacity': supergroupFillColors['2'].fillOpacity }">-->
-                          <!--</div>-->
-                        <!--</td>-->
                         <td colspan="3">
                           <a href="#" class="group-toggle-link" v-text="supergroups['2'].name"
                              v-on:click="toggleGroups('2')">
@@ -1106,11 +1097,6 @@
 
                       <!--Groups of Supergroup 3-->
                       <tr class="row-indigo">
-                        <!--<td class="narrow-td">-->
-                          <!--<div class="map-polygon-colour-rect"-->
-                               <!--v-bind:style="{ 'background-color': supergroupFillColors['3'].fillColor, 'opacity': supergroupFillColors['3'].fillOpacity }">-->
-                          <!--</div>-->
-                        <!--</td>-->
                         <td colspan="3">
                           <a href="#" class="group-toggle-link" v-text="supergroups['3'].name"
                              v-on:click="toggleGroups('3')">
@@ -1558,11 +1544,6 @@
 
                       <!--Groups of Supergroup 5-->
                       <tr class="row-indigo">
-                        <!--<td class="narrow-td">-->
-                          <!--<div class="map-polygon-colour-rect"-->
-                               <!--v-bind:style="{ 'background-color': supergroupFillColors['5'].fillColor, 'opacity': supergroupFillColors['5'].fillOpacity }">-->
-                          <!--</div>-->
-                        <!--</td>-->
                         <td colspan="3">
                           <a href="#" class="group-toggle-link" v-text="supergroups['5'].name"
                              v-on:click="toggleGroups('5')">
@@ -2010,11 +1991,6 @@
 
                       <!--Groups of Supergroup 7-->
                       <tr class="row-indigo">
-                        <!--<td class="narrow-td">-->
-                          <!--<div class="map-polygon-colour-rect"-->
-                               <!--v-bind:style="{ 'background-color': supergroupFillColors['7'].fillColor, 'opacity': supergroupFillColors['7'].fillOpacity }">-->
-                          <!--</div>-->
-                        <!--</td>-->
                         <td colspan="3">
                           <a href="#" class="group-toggle-link" v-text="supergroups['7'].name"
                              v-on:click="toggleGroups('7')">
@@ -2420,12 +2396,100 @@
                   </div>
 
                   <div id="indicators" class="tab-pane fade"
-                       role="tabpanel" aria-labelledby="indicatorsTab"
+                       role="tabpanel" aria-labelledby="indicators-tab"
                        v-bind:class="[currentTab === 'indicators' ? '' : 'collapse']">
 
-                    <div>
-                      <p>This is the indicators tab content.</p>
+                    <!-- Indicator Domain Tabs -->
+                    <div class="border-top">
+                      <ul class="nav nav-tabs nav-justified bg-light" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link text-capitalize" data-toggle="tab"
+                             role="tab" aria-selected="true"
+                             v-bind:id="[dictionary.domains[0] + '-tab']"
+                             v-bind:href="['#' + dictionary.domains[0] + '-tabpanel']"
+                             v-bind:aria-controls="[dictionary.domains[0] + '-tabpanel']"
+                             v-bind:class="[currentDomain === dictionary.domains[0] ? 'active border-danger text-danger' : '']"
+                             v-on:click="setCurrentDomain(0)"
+                             v-text="dictionary.domains[0]">
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-capitalize" data-toggle="tab"
+                             role="tab" aria-selected="false"
+                             v-bind:id="[dictionary.domains[1] + '-tab']"
+                             v-bind:href="['#' + dictionary.domains[1] + '-tabpanel']"
+                             v-bind:aria-controls="[dictionary.domains[1] + '-tabpanel']"
+                             v-bind:class="[currentDomain === dictionary.domains[1] ? 'active border-danger text-danger' : '']"
+                             v-on:click="setCurrentDomain(1)"
+                             v-text="dictionary.domains[1]">
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-capitalize" data-toggle="tab"
+                             role="tab" aria-selected="false"
+                             v-bind:id="[dictionary.domains[2] + '-tab']"
+                             v-bind:href="['#' + dictionary.domains[2] + '-tabpanel']"
+                             v-bind:aria-controls="[dictionary.domains[2] + '-tabpanel']"
+                             v-bind:class="[currentDomain === dictionary.domains[2] ? 'active border-danger text-danger' : '']"
+                             v-on:click="setCurrentDomain(2)"
+                             v-text="dictionary.domains[2]">
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-capitalize" data-toggle="tab"
+                             role="tab" aria-selected="false"
+                             v-bind:id="[dictionary.domains[3] + '-tab']"
+                             v-bind:href="['#' + dictionary.domains[3] + '-tabpanel']"
+                             v-bind:aria-controls="[dictionary.domains[3] + '-tabpanel']"
+                             v-bind:class="[currentDomain === dictionary.domains[3] ? 'active border-danger text-danger' : '']"
+                             v-on:click="setCurrentDomain(3)"
+                             v-text="dictionary.domains[3]">
+                          </a>
+                        </li>
+                      </ul>
                     </div>
+
+                    <div class="tab-pane fade show active"
+                         role="tabpanel"
+                         v-bind:id="[dictionary.domains[0] + '-tabpanel']"
+                         v-bind:aria-labelledby="[dictionary.domains[0] + '-tab']"
+                         v-bind:class="[currentDomain === 'hazard' ? '' : 'collapse']">
+
+                      Hazard Panel
+
+                    </div>
+
+                    <div class="tab-pane fade"
+                         role="tabpanel"
+                         v-bind:id="[dictionary.domains[1] + '-tabpanel']"
+                         v-bind:aria-labelledby="[dictionary.domains[1] + '-tab']"
+                         v-bind:class="[currentDomain === 'exposure' ? '' : 'collapse']">
+
+                      Exposure Panel
+
+                    </div>
+
+                    <div id="sensitivity" class="tab-pane fade"
+                         role="tabpanel"
+                         v-bind:id="[dictionary.domains[2] + '-tabpanel']"
+                         v-bind:aria-labelledby="[dictionary.domains[2] + '-tab']"
+                         v-bind:class="[currentDomain === 'sensitivity' ? '' : 'collapse']">
+
+                      Sensitivity Panel
+
+                    </div>
+
+                    <div id="adaptivity" class="tab-pane fade"
+                         role="tabpanel"
+                         v-bind:id="[dictionary.domains[3] + '-tabpanel']"
+                         v-bind:aria-labelledby="[dictionary.domains[3] + '-tab']"
+                         v-bind:class="[currentDomain === 'adaptivity' ? '' : 'collapse']">
+
+                      Adaptivity Panel
+
+                    </div>
+
+
 
                   </div>
 
@@ -2462,6 +2526,7 @@
 
               <div class="d-flex align-content-stretch flex-column h-100">
 
+                <!-- Overview Info Header and close button -->
                 <div>
                   <div class="d-flex">
                     <div class="mr-auto">
@@ -2482,6 +2547,7 @@
                   </div>
                 </div>
 
+                <!-- NUTS3 Name and EN Button -->
                 <div>
                   <div class="d-flex">
                     <div class="mr-auto"
@@ -2544,19 +2610,21 @@
 
                 </div>
 
+                <!-- Indicators Information -->
                 <div class="mb-auto pt-2 h-100 ver-scrollbars">
 
                   <div v-for="(domain, dIndex) in domains" v-if="domains.length !== 0">
+
                     <button class="btn btn-primary btn-outline-primary btn-sm ml-1" type="button" data-toggle="collapse"
-                            v-bind:data-target="['#collapse' + dIndex]"
+                            v-bind:data-target="['#o-collapse' + dIndex]"
                             aria-expanded="true"
-                            v-bind:aria-controls="['collapse' + dIndex]"
+                            v-bind:aria-controls="['o-collapse' + dIndex]"
                             v-text="domain.isOverviewVisible ? 'Hide ' + domain.name : 'Show ' + domain.name"
                             v-on:click="toggleDomain(dIndex)">
                     </button>
 
                     <!--class="show"-->
-                    <div v-bind:id="['collapse' + dIndex]" class="m-1 collapse">
+                    <div v-bind:id="['o-collapse' + dIndex]" class="m-1 collapse">
 
                       <div class="card card-body">
 
@@ -2656,7 +2724,7 @@
                     </div>
 
                     <div class="mb-2"></div>
-                    <!--<div class="crt-hor-sep"></div>-->
+
                   </div>
 
                 </div>

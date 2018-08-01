@@ -13245,11 +13245,11 @@ AppData.PopulateArraysAndDictionaries = function() {
 
     if (domains.length > 0) {
       if (domains.findIndex(d => d.name === indicator.domain) === -1) {
-        domains.push({ name: indicator.domain, isOverviewVisible: false, isDetailsVisible: true });
+        domains.push({ name: indicator.domain, isOverviewVisible: false, isDetailsVisible: false });
       }
     }
     else {
-      domains.push({ name: indicator.domain, isOverviewVisible: false, isDetailsVisible: true });
+      domains.push({ name: indicator.domain, isOverviewVisible: false, isDetailsVisible: false });
     }
 
     AppData.domainSortedIndicators.push(indicator.name);
@@ -13280,16 +13280,16 @@ AppData.PopulateArraysAndDictionaries = function() {
     let indicator = indicators[i];
 
     if (groups.findIndex(g => g === indicator.group) === -1) {
-      groups.push({ name: indicator.group, isOverviewVisible: true, isDetailsVisible: true });
+      groups.push({ name: indicator.group, isOverviewVisible: false, isDetailsVisible: false });
     }
 
     if (groups.length > 0) {
       if (groups.findIndex(d => d.name === indicator.group) === -1) {
-        groups.push({ name: indicator.group, isOverviewVisible: true, isDetailsVisible: true });
+        groups.push({ name: indicator.group, isOverviewVisible: false, isDetailsVisible: false });
       }
     }
     else {
-      groups.push({ name: indicator.group, isOverviewVisible: true, isDetailsVisible: true });
+      groups.push({ name: indicator.group, isOverviewVisible: false, isDetailsVisible: false });
     }
 
     AppData.groupSortedIndicators.push(indicator.name);
