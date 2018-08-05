@@ -1936,7 +1936,7 @@ let symbologyViewModel = new Vue({
         'I065': { isInformationPanelVisible: false, icon: 'fab fa-leanpub' },
         'I066': { isInformationPanelVisible: false, icon: 'fab fa-leanpub' },
         'I067': { isInformationPanelVisible: false, icon: 'fab fa-leanpub' },
-        'I068': { isInformationPanelVisible: false, icon: 'fab fa-leanpub' },
+        'I068': { isInformationPanelVisible: false, icon: 'fab fa-leanpub' },nut
         'I069': { isInformationPanelVisible: false, icon: 'fab fa-leanpub' },
         'I070': { isInformationPanelVisible: false, icon: 'fab fa-leanpub' },
         'I073': { isInformationPanelVisible: false, icon: 'fab fa-leanpub' },
