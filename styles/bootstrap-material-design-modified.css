@@ -8999,17 +8999,22 @@ fieldset[disabled][disabled] .custom-file-control .form-control, fieldset[disabl
       .switch label input:disabled + .bmd-switch-track::after {
         background: #bdbdbd; }
 
+/* TODO: RESIN - This portion has been overridden */
 .radio label,
 label.radio-inline {
   position: relative;
   padding-left: 1.5625rem; }
   .radio label .bmd-radio,
   label.radio-inline .bmd-radio {
-    position: absolute;
+    /*position: absolute;*/
     left: 0;
-    display: inline-block;
-    padding: .7em;
-    margin: -.7em;
+    /*display: inline-block;*/
+    /*padding: .7em;*/
+    /*margin: -.7em;*/
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: -20px;
     line-height: .7;
     border-radius: 100%; }
     .radio label .bmd-radio::after,
