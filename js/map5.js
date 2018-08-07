@@ -1202,8 +1202,8 @@ let MapLayers = {
       // Get the current basemap. This is used to decide the symbology of the NUTS3 polygons.
       let currentBaseMap = toggleBaseMapViewModel.currentBaseMap;
 
-      // Get the current typology level.
-      let currentTypologyLevel = symbologyViewModel.currentTab;
+      // Get the current tab.
+      let currentTab = symbologyViewModel.currentTab;
 
       // Check whether NUTS3 features exist or not.
       if (this.geoJSON !== undefined || this.geoJSON !== null) {
@@ -1213,11 +1213,24 @@ let MapLayers = {
 
           // Get the NUTS3 feature, attribute name and the class value.
           let feature = this.geoJSON.features[i];
-          let attributeName = this.typologyLevelDictionary[currentTypologyLevel].attributeName;
-          let classValue = feature.properties[attributeName].toString();
 
-          // Render the NUTS3 polygon having the specified typology class.
-          this.renderNuts3Polygon(feature, classValue, currentTypologyLevel, currentBaseMap);
+          if (currentTab !== 'indicators') {
+            // Render the layer based on typology classes (supergroups or groups).
+            let attributeName = this.typologyLevelDictionary[currentTab].attributeName;
+            let classValue = feature.properties[attributeName].toString();
+
+            // Render the NUTS3 polygon having the specified typology class.
+            this.renderNuts3PolygonByTypologyClass(feature, classValue, currentTab, currentBaseMap);
+          }
+          else {
+            let attributeName = symbologyViewModel.selectedIndicators[symbologyViewModel.currentDomain][0];
+            let indicatorValue = feature.properties[attributeName];
+
+            // Render the layer based on the selected indicator.
+            this.renderNuts3PolygonByIndicator(feature, attributeName, indicatorValue, currentBaseMap);
+          }
+
+
 
         }
 
@@ -1235,7 +1248,7 @@ let MapLayers = {
      * @param currentTypologyLevel - The level of the typology class (ie: supergroup or group).
      * @param currentBaseMap - The current basemap.
      */
-    renderNuts3Polygon: function(feature, typologyClass, currentTypologyLevel, currentBaseMap) {
+    renderNuts3PolygonByTypologyClass: function(feature, typologyClass, currentTypologyLevel, currentBaseMap) {
 
       // Get the associated feature layer.
       let internalLayerKey = this.featureToInternalLayerDictionary[feature.properties.NUTS_ID];
@@ -1251,6 +1264,29 @@ let MapLayers = {
       else {
         featureLayer.setStyle(basemap.defaultStyle);
       }
+
+    },
+
+
+
+    renderNuts3PolygonByIndicator: function(feature, indicator, indicatorValue, currentBaseMap) {
+
+      // Get the associated feature layer.
+      let internalLayerKey = this.featureToInternalLayerDictionary[feature.properties.NUTS_ID];
+      let featureLayer = this.mapLayer._layers[internalLayerKey];
+
+      let basemap = this.namedBasemapLayers[currentBaseMap];
+
+      // // Set the style of the feature layer based on its typology class.
+      // if (this[currentTypologyLevel][typologyClass].visible) {
+      //   let styleName = this.typologyLevelDictionary[currentTypologyLevel].styleName;
+      //   featureLayer.setStyle(basemap[styleName][typologyClass]);
+      // }
+      // else {
+      //   featureLayer.setStyle(basemap.defaultStyle);
+      // }
+
+      featureLayer.setStyle(basemap.defaultStyle);
 
     },
 
@@ -1279,7 +1315,7 @@ let MapLayers = {
 
           // Render the NUTS3 polygon having the specified typology class.
           if (classValue === typologyClass) {
-            this.renderNuts3Polygon(feature, typologyClass, currentTypologyLevel, currentBaseMap);
+            this.renderNuts3PolygonByTypologyClass(feature, typologyClass, currentTypologyLevel, currentBaseMap);
           }
 
         }
@@ -1295,35 +1331,6 @@ let MapLayers = {
      * @param layer - The internal layer of the feature that will be highlighted.
      */
     highlightNuts3: function(feature, layer) {
-
-      // TODO: RESIN - To Remove ???
-      // // Get the named basemap layer.
-      // let namedBaseMap = toggleBaseMapViewModel.currentBaseMap;
-      //
-      // if (!(overviewInfoViewModel.isPinned || detailsInfoViewModel.isPinned)) {
-      //   // Highlight the current NUTS3.
-      //   layer.setStyle(this.namedBasemapLayers[namedBaseMap].defaultHighlightingStyle);
-      //
-      //   if (!L.Browser.ie && !L.Browser.opera) {
-      //     layer.bringToFront();
-      //   }
-      // }
-      //
-      // // Show the overview or details view panel and then update its contents.
-      // if (toggleInfoLevelViewModel.currentInfoLevel === 'overview') {
-      //   if (!overviewInfoViewModel.isPinned) {
-      //     overviewInfoViewModel.showView();
-      //     overviewInfoViewModel.updateView(feature);
-      //   }
-      // }
-      // else {
-      //   if (!detailsInfoViewModel.isPinned) {
-      //     detailsInfoViewModel.showView();
-      //     detailsInfoViewModel.updateView(feature);
-      //   }
-      // }
-
-
 
       // Get the named basemap layer.
       let namedBaseMap = toggleBaseMapViewModel.currentBaseMap;
@@ -1346,35 +1353,6 @@ let MapLayers = {
      */
     resetNuts3Style: function(feature, layer, forceReset) {
 
-      // TODO: RESIN - Remove this ???
-      // Get the current basemap. This is used to decide the symbology of the NUTS3 polygons.
-      // let currentBaseMap = toggleBaseMapViewModel.currentBaseMap;
-      //
-      // // Get the current typology level.
-      // let currentTypologyLevel = symbologyViewModel.currentTab;
-      //
-      // // Get the NUTS3 attribute name and the class value.
-      // let attributeName = this.typologyLevelDictionary[currentTypologyLevel].attributeName;
-      // let classValue = feature.properties[attributeName].toString();
-      //
-      // if (!(overviewInfoViewModel.isPinned || detailsInfoViewModel.isPinned)) {
-      //   // Render the NUTS3 polygon having the specified typology class.
-      //   this.renderNuts3Polygon(feature, classValue, currentTypologyLevel, currentBaseMap);
-      // }
-      //
-      // // Hide the overview or details view panel.
-      // if (toggleInfoLevelViewModel.currentInfoLevel === 'overview') {
-      //   if (!overviewInfoViewModel.isPinned) {
-      //     overviewInfoViewModel.hideView();
-      //   }
-      // }
-      // else {
-      //   if (!detailsInfoViewModel.isPinned) {
-      //     detailsInfoViewModel.hideView();
-      //   }
-      // }
-
-
       // Get the current basemap. This is used to decide the symbology of the NUTS3 polygons.
       let currentBaseMap = toggleBaseMapViewModel.currentBaseMap;
 
@@ -1388,28 +1366,18 @@ let MapLayers = {
       // Make sure styles of only the non selected NUTS3 polygons are reset.
       if (this.selectedFeature !== feature || forceReset) {
         // Render the NUTS3 polygon having the specified typology class.
-        this.renderNuts3Polygon(feature, classValue, currentTypologyLevel, currentBaseMap);
+        this.renderNuts3PolygonByTypologyClass(feature, classValue, currentTypologyLevel, currentBaseMap);
       }
 
     },
 
-
+    /**
+     * Select the specified NUTS3 feature.
+     *
+     * @param feature - The feature that will be selected.
+     * @param layer - The internal layer that will be selected.
+     */
     selectNuts3: function(feature, layer) {
-      // if (!(overviewInfoViewModel.isPinned || detailsInfoViewModel.isPinned)) {
-      //   this.selectedFeature = feature;
-      //   this.selectedInternalLayer = layer;
-      //
-      //   if (toggleInfoLevelViewModel.currentInfoLevel === 'overview') {
-      //     if (overviewInfoViewModel.isVisible) {
-      //       overviewInfoViewModel.Pin();
-      //     }
-      //   }
-      //   else {
-      //     if (detailsInfoViewModel.isVisible) {
-      //       detailsInfoViewModel.Pin();
-      //     }
-      //   }
-      // }
 
       // Set the current NUTS3 Panel.
       if (AppState.currentNuts3Panel === 'symbology') {
@@ -1432,6 +1400,9 @@ let MapLayers = {
 
     },
 
+    /**
+     * Deselects the selected NUTS3 feature.
+     */
     deselectNuts3: function() {
       this.resetNuts3Style(this.selectedFeature, this.selectedInternalLayer, true);
 
@@ -1439,32 +1410,20 @@ let MapLayers = {
       this.selectedInternalLayer = null;
     },
 
+    /**
+     * Reselects the NUTS3 feature.
+     */
     reselectNuts3: function() {
-      // if (this.selectedFeature) {
-      //   if (toggleInfoLevelViewModel.currentInfoLevel === 'overview') {
-      //     overviewInfoViewModel.isPinned = false;
-      //   }
-      //   else {
-      //     detailsInfoViewModel.isPinned = false;
-      //   }
-      //
-      //   this.highlightNuts3(this.selectedFeature, this.selectedInternalLayer);
-      //
-      //   if (toggleInfoLevelViewModel.currentInfoLevel === 'overview') {
-      //     overviewInfoViewModel.isPinned = true;
-      //   }
-      //   else {
-      //     detailsInfoViewModel.isPinned = true;
-      //   }
-      // }
-
-
       if (this.selectedFeature !== null) {
         this.highlightNuts3(this.selectedFeature, this.selectedInternalLayer);
       }
-
     },
 
+    /**
+     * Updates the information displayed on the web page based on the selected feature.
+     *
+     * @param feature - The features whose attributes will be displayed on the web page.
+     */
     updateInfo: function(feature) {
       overviewInfoViewModel.updateView(feature);
     },
@@ -1811,10 +1770,13 @@ let symbologyViewModel = new Vue({
     isVisible: true,
 
     /**
-     * The current tab page.
+     * The current tab panel.
      */
     currentTab: 'supergroups',
 
+    /**
+     * The current domain in the indicators tab panel.
+     */
     currentDomain: 'hazard',
 
     /**
@@ -1992,7 +1954,17 @@ let symbologyViewModel = new Vue({
       '61', '62', '63',
       '71', '72', '73', '74',
       '81', '82', '83'
-    ]
+    ],
+
+    /**
+     * The selected indicators used by the list of the radio buttons in the indicators tab panel.
+     */
+    selectedIndicators: {
+      hazard: [ 'I001' ],
+      exposure: [ 'I030' ],
+      sensitivity: [ 'I060' ],
+      adaptivity: [ 'I077' ]
+    }
 
   },
 
@@ -2057,25 +2029,33 @@ let symbologyViewModel = new Vue({
   methods: {
 
     /**
+     * Determines if a number is odd.
+     *
+     * @param number - The number to check.
+     */
+    isOdd(number) {
+      return number % 2;
+    },
+
+    /**
      * Sets the current tab.
+     *
      * @param tabName - The name of the tab to activate.
      */
     setCurrentTab(tabName) {
       this.currentTab = tabName;
 
-      // TODO: RESIN - IMPORTANT REMOVE THIS IMMEDIATELY
-      if (tabName !== 'indicators') {
-        MapLayers.nuts3.renderLayer();
-      }
-
+      MapLayers.nuts3.renderLayer();
     },
 
-
+    /**
+     * Sets the current domain.
+     *
+     * @param tabIndex - The index of the tab.
+     */
     setCurrentDomain(tabIndex) {
       this.currentDomain = this.dictionary.domains[tabIndex];
     },
-
-
 
     /**
      * Selects all the supergroups or groups depending on the currently selected tab.
@@ -2187,6 +2167,10 @@ let symbologyViewModel = new Vue({
 
     },
 
+    renderNuts3Indicator(indicator) {
+
+    },
+
     // TODO: RESIN - Remove this ???
     // /**
     //  * Renders the NUTS3 layer.
@@ -2213,20 +2197,7 @@ let symbologyViewModel = new Vue({
       // this.destroyTooltip(element);
 
       // $('#' + element).tooltip();
-    },
-
-    // TODO: RESIN - Remove this???
-    /**
-     * Hides the tooltip that is displayed on the specified element.
-     * @param element - The element from which the tooltip will be hidden.
-     */
-    // destroyTooltip(element) {
-    //   if (AppState.bootstrapMaterialTooltipEnabled) {
-    //     $(element).tooltip('hide');
-    //     $(element).tooltip('dispose');
-    //     $(element).tooltip();
-    //   }
-    // }
+    }
 
   }
 

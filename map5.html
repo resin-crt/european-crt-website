@@ -2425,23 +2425,19 @@
                          v-bind:aria-labelledby="[domain + '-tab']"
                          v-bind:class="[currentDomain === domain ? 'show active' : 'collapse']">
 
-                      <p class="text-capitalize" v-text="domain"></p>
-
-
                       <table class="table">
                         <tbody v-for="(indicator, iIndex) in domainDictionaryIndicators[domains[dIndex].name]"
                                v-if="domainDictionaryIndicators[domains[dIndex].name].length !== 0">
 
-                        <tr class="row-gray">
+                        <tr v-bind:class="[isOdd(iIndex) ? '' : 'row-gray']">
                           <td class="narrow-td">
                             <div class="radio bmd-radio">
                               <label>
-                                <!--v-model="checkedSupergroups"-->
-                                <!--v-on:change="renderNuts3TypologyClass('1')"-->
-                                <input type="radio"
+                                <input type="radio" v-model="selectedIndicators[domain]"
                                        v-bind:name="[domain + '-radio-buttons']"
                                        v-bind:id="[indicator.name]"
-                                       v-bind:value="[indicator.name]">
+                                       v-bind:value="[indicator.name]"
+                                       v-on:change="renderNuts3Indicator(indicator.name)">
                               </label>
                             </div>
                           </td>
@@ -2451,11 +2447,38 @@
                                    v-text="indicator.description">
                             </label>
                           </td>
+                          <td>
+                            <button type="button" class="btn btn-typology-help"
+                                    data-toggle="tooltip" data-placement="bottom"
+                                    v-bind:id = "['toggle-i-info-' + indicator.name]"
+                                    v-bind:aria-label="[dictionary.indicators[indicator.name].isInformationPanelVisible ? 'Hide the indicator information' : 'Show the indicator information']"
+                                    v-bind:aria-pressed="[dictionary.indicators[indicator.name].isInformationPanelVisible]"
+                                    v-bind:class="[dictionary.indicators[indicator.name].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                    v-on:click="toggleInfo(indicator.name)">
+                              <i class="material-icons" v-text="infoIconName"
+                                 v-bind:class="[dictionary.indicators[indicator.name].isInformationPanelVisible ? '' : 'text-dark']">
+                              </i>
+                            </button>
+                          </td>
                         </tr>
-
-
-
-
+                        <tr class="collapse"
+                            v-bind:class="[dictionary.indicators[indicator.name].isInformationPanelVisible ? 'show' : '']">
+                          <td colspan="3">
+                            <div class="card">
+                              <div class="card-header bg-dark">
+                                <!--<i class="display-2 text-center text-danger material-icons">@@icon@@</i>-->
+                                <i class="display-2 text-danger info-icon"
+                                   v-bind:class="[dictionary.indicators[indicator.name].icon]">
+                                </i>
+                              </div>
+                              <div class="card-body">
+                                <h6 class="card-title"><strong><em v-text="indicator.description"></em></strong></h6>
+                                <h6 class="card-title text-right"><strong><em v-text="indicator.unit"></em></strong></h6>
+                                <p class="card-text" v-html="indicator.details"></p>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
 
                         </tbody>
                       </table>
@@ -2463,52 +2486,6 @@
 
                     </div>
 
-
-
-
-
-
-                    <!--<div class="tab-pane fade show active"-->
-                         <!--role="tabpanel"-->
-                         <!--v-bind:id="[dictionary.domains[0] + '-tabpanel']"-->
-                         <!--v-bind:aria-labelledby="[dictionary.domains[0] + '-tab']"-->
-                         <!--v-bind:class="[currentDomain === 'hazard' ? '' : 'collapse']">-->
-
-                      <!--Hazard Panel-->
-
-                    <!--</div>-->
-
-                    <!--<div class="tab-pane fade"-->
-                         <!--role="tabpanel"-->
-                         <!--v-bind:id="[dictionary.domains[1] + '-tabpanel']"-->
-                         <!--v-bind:aria-labelledby="[dictionary.domains[1] + '-tab']"-->
-                         <!--v-bind:class="[currentDomain === 'exposure' ? '' : 'collapse']">-->
-
-                      <!--Exposure Panel-->
-
-                    <!--</div>-->
-
-                    <!--<div class="tab-pane fade"-->
-                         <!--role="tabpanel"-->
-                         <!--v-bind:id="[dictionary.domains[2] + '-tabpanel']"-->
-                         <!--v-bind:aria-labelledby="[dictionary.domains[2] + '-tab']"-->
-                         <!--v-bind:class="[currentDomain === 'sensitivity' ? '' : 'collapse']">-->
-
-                      <!--Sensitivity Panel-->
-
-                    <!--</div>-->
-
-                    <!--<div class="tab-pane fade"-->
-                         <!--role="tabpanel"-->
-                         <!--v-bind:id="[dictionary.domains[3] + '-tabpanel']"-->
-                         <!--v-bind:aria-labelledby="[dictionary.domains[3] + '-tab']"-->
-                         <!--v-bind:class="[currentDomain === 'adaptivity' ? '' : 'collapse']">-->
-
-                      <!--Adaptivity Panel-->
-
-                    <!--</div>-->
-                    <!---->
-                    <!---->
 
 
                   </div>
