@@ -11,33 +11,6 @@
 
 // TODO: APPVAR
 
-/*
-  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-*/
-
 /**
  * The AppState object holds the application state.
  */
@@ -1005,6 +978,338 @@ let MapLayers = {
     },
 
     /**
+     * Gradients used to render the positive values of indicators.
+     */
+    positiveGradients: {
+      red:         {
+        name: 'Red',
+        OneStDevGradient: [
+          ColorPalettes.Material.red300,
+          ColorPalettes.Material.red500,
+          ColorPalettes.Material.red700,
+          ColorPalettes.Material.red900
+        ],
+        HalfStDevGradient: []
+      },
+      pink:        {
+        name: 'Pink',
+        OneStDevGradient: [
+          ColorPalettes.Material.pink300,
+          ColorPalettes.Material.pink500,
+          ColorPalettes.Material.pink700,
+          ColorPalettes.Material.pink900
+        ],
+        HalfStDevGradient: []
+      },
+      purple:      {
+        name: 'Purple',
+        OneStDevGradient: [
+          ColorPalettes.Material.purple300,
+          ColorPalettes.Material.purple500,
+          ColorPalettes.Material.purple700,
+          ColorPalettes.Material.purple900
+        ],
+        HalfStDevGradient: []
+      },
+      yellow:      {
+        name: 'Yellow',
+        OneStDevGradient: [
+          ColorPalettes.Material.yellow300,
+          ColorPalettes.Material.yellow500,
+          ColorPalettes.Material.yellow700,
+          ColorPalettes.Material.yellow900
+        ],
+        HalfStDevGradient: []
+      },
+      amber:       {
+        name: 'Amber',
+        OneStDevGradient: [
+          ColorPalettes.Material.orange300,
+          ColorPalettes.Material.orange500,
+          ColorPalettes.Material.orange700,
+          ColorPalettes.Material.orange900
+        ],
+        HalfStDevGradient: []
+      },
+      orange:      {
+        name: 'Orange',
+        OneStDevGradient: [
+          ColorPalettes.Material.orange300,
+          ColorPalettes.Material.orange500,
+          ColorPalettes.Material.orange700,
+          ColorPalettes.Material.orange900
+        ],
+        HalfStDevGradient: []
+      },
+      deepOrange:  {
+        name: 'Deep Orange',
+        OneStDevGradient: [
+          ColorPalettes.Material.deepOrange300,
+          ColorPalettes.Material.deepOrange500,
+          ColorPalettes.Material.deepOrange700,
+          ColorPalettes.Material.deepOrange900
+        ],
+        HalfStDevGradient: []
+      },
+      brown:       {
+        name: 'Brown',
+        OneStDevGradient: [
+          ColorPalettes.Material.brown300,
+          ColorPalettes.Material.brown500,
+          ColorPalettes.Material.brown700,
+          ColorPalettes.Material.brown900
+        ],
+        HalfStDevGradient: []
+      },
+      amethyst:    {
+        name: 'Amethyst',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.amethyst300,
+          ColorPalettes.FlatDesign.amethyst500,
+          ColorPalettes.FlatDesign.amethyst700,
+          ColorPalettes.FlatDesign.amethyst900
+        ],
+        HalfStDevGradient: []
+      },
+      wisteria:    {
+        name: 'Wisteria',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.wisteria300,
+          ColorPalettes.FlatDesign.wisteria500,
+          ColorPalettes.FlatDesign.wisteria700,
+          ColorPalettes.FlatDesign.wisteria900
+        ],
+        HalfStDevGradient: []
+      },
+      sunflower:   {
+        name: 'Sunflower',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.sunflower300,
+          ColorPalettes.FlatDesign.sunflower500,
+          ColorPalettes.FlatDesign.sunflower700,
+          ColorPalettes.FlatDesign.sunflower900
+        ],
+        HalfStDevGradient: []
+      },
+      orange2:     {
+        name: 'Orange 2',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.orange300,
+          ColorPalettes.FlatDesign.orange500,
+          ColorPalettes.FlatDesign.orange700,
+          ColorPalettes.FlatDesign.orange900
+        ],
+        HalfStDevGradient: []
+      },
+      carrot:      {
+        name: 'Carrot',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.carrot300,
+          ColorPalettes.FlatDesign.carrot500,
+          ColorPalettes.FlatDesign.carrot700,
+          ColorPalettes.FlatDesign.carrot900
+        ],
+        HalfStDevGradient: []
+      },
+      pumpkin:     {
+        name: 'Pumpkin',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.pumpkin300,
+          ColorPalettes.FlatDesign.pumpkin500,
+          ColorPalettes.FlatDesign.pumpkin700,
+          ColorPalettes.FlatDesign.pumpkin900
+        ],
+        HalfStDevGradient: []
+      },
+      alizarin:    {
+        name: 'Alizarin',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.alizarin300,
+          ColorPalettes.FlatDesign.alizarin500,
+          ColorPalettes.FlatDesign.alizarin700,
+          ColorPalettes.FlatDesign.alizarin900
+        ],
+        HalfStDevGradient: []
+      },
+      pomegranate: {
+        name: 'Pomegranate',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.pomegranate300,
+          ColorPalettes.FlatDesign.pomegranate500,
+          ColorPalettes.FlatDesign.pomegranate700,
+          ColorPalettes.FlatDesign.pomegranate900
+        ],
+        HalfStDevGradient: []
+      }
+    },
+
+    /**
+     * Gradients used to render the negative values of indicators.
+     */
+    negativeGradients: {
+      deepPurple: {
+        name: 'Deep Purple',
+        OneStDevGradient: [
+          ColorPalettes.Material.deepPurple300,
+          ColorPalettes.Material.deepPurple500,
+          ColorPalettes.Material.deepPurple700,
+          ColorPalettes.Material.deepPurple900
+        ],
+        HalfStDevGradient: []
+      },
+      indigo:     {
+        name: 'Indigo',
+        OneStDevGradient: [
+          ColorPalettes.Material.indigo300,
+          ColorPalettes.Material.indigo500,
+          ColorPalettes.Material.indigo700,
+          ColorPalettes.Material.indigo900
+        ],
+        HalfStDevGradient: []
+      },
+      blue:       {
+        name: 'Blue',
+        OneStDevGradient: [
+          ColorPalettes.Material.blue300,
+          ColorPalettes.Material.blue500,
+          ColorPalettes.Material.blue700,
+          ColorPalettes.Material.blue900
+        ],
+        HalfStDevGradient: []
+      },
+      lightBlue:  {
+        name: 'Light Blue',
+        OneStDevGradient: [
+          ColorPalettes.Material.lightBlue300,
+          ColorPalettes.Material.lightBlue500,
+          ColorPalettes.Material.lightBlue700,
+          ColorPalettes.Material.lightBlue900
+        ],
+        HalfStDevGradient: []
+      },
+      cyan:       {
+        name: 'Cyan',
+        OneStDevGradient: [
+          ColorPalettes.Material.cyan300,
+          ColorPalettes.Material.cyan500,
+          ColorPalettes.Material.cyan700,
+          ColorPalettes.Material.cyan900
+        ],
+        HalfStDevGradient: []
+      },
+      teal:       {
+        name: 'Teal',
+        OneStDevGradient: [
+          ColorPalettes.Material.teal300,
+          ColorPalettes.Material.teal500,
+          ColorPalettes.Material.teal700,
+          ColorPalettes.Material.teal900
+        ],
+        HalfStDevGradient: []
+      },
+      green:      {
+        name: 'Green',
+        OneStDevGradient: [
+          ColorPalettes.Material.green300,
+          ColorPalettes.Material.green500,
+          ColorPalettes.Material.green700,
+          ColorPalettes.Material.green900
+        ],
+        HalfStDevGradient: []
+      },
+      lightGreen: {
+        name: 'Light Green',
+        OneStDevGradient: [
+          ColorPalettes.Material.lightGreen300,
+          ColorPalettes.Material.lightGreen500,
+          ColorPalettes.Material.lightGreen700,
+          ColorPalettes.Material.lightGreen900
+        ],
+        HalfStDevGradient: []
+      },
+      lime:       {
+        name: 'Lime',
+        OneStDevGradient: [
+          ColorPalettes.Material.lime300,
+          ColorPalettes.Material.lime500,
+          ColorPalettes.Material.lime700,
+          ColorPalettes.Material.lime900
+        ],
+        HalfStDevGradient: []
+      },
+      blueGray:   {
+        name: 'Blue Gray',
+        OneStDevGradient: [
+          ColorPalettes.Material.blueGray300,
+          ColorPalettes.Material.blueGray500,
+          ColorPalettes.Material.blueGray700,
+          ColorPalettes.Material.blueGray900
+        ],
+        HalfStDevGradient: []
+      },
+      turquoise:  {
+        name: 'Turquoise',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.turquoise300,
+          ColorPalettes.FlatDesign.turquoise500,
+          ColorPalettes.FlatDesign.turquoise700,
+          ColorPalettes.FlatDesign.turquoise900
+        ],
+        HalfStDevGradient: []
+      },
+      greenSea:   {
+        name: 'Green Sea',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.greenSea300,
+          ColorPalettes.FlatDesign.greenSea500,
+          ColorPalettes.FlatDesign.greenSea700,
+          ColorPalettes.FlatDesign.greenSea900
+        ],
+        HalfStDevGradient: []
+      },
+      emerald:    {
+        name: 'Emerald',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.emerald300,
+          ColorPalettes.FlatDesign.emerald500,
+          ColorPalettes.FlatDesign.emerald700,
+          ColorPalettes.FlatDesign.emerald900
+        ],
+        HalfStDevGradient: []
+      },
+      nephritis:  {
+        name: 'Nephritis',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.nephritis300,
+          ColorPalettes.FlatDesign.nephritis500,
+          ColorPalettes.FlatDesign.nephritis700,
+          ColorPalettes.FlatDesign.nephritis900
+        ],
+        HalfStDevGradient: []
+      },
+      peterRiver: {
+        name: 'Peter River',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.peterRiver300,
+          ColorPalettes.FlatDesign.peterRiver500,
+          ColorPalettes.FlatDesign.peterRiver700,
+          ColorPalettes.FlatDesign.peterRiver900
+        ],
+        HalfStDevGradient: []
+      },
+      belizeHole: {
+        name: 'Belize Hole',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.belizeHole300,
+          ColorPalettes.FlatDesign.belizeHole500,
+          ColorPalettes.FlatDesign.belizeHole700,
+          ColorPalettes.FlatDesign.belizeHole900
+        ],
+        HalfStDevGradient: []
+      }
+    },
+
+    /**
      * The leaflet map layer.
      */
     mapLayer: null,
@@ -1965,6 +2270,8 @@ let symbologyViewModel = new Vue({
       sensitivity: [ 'I060' ],
       adaptivity: [ 'I077' ]
     }
+
+
 
   },
 
