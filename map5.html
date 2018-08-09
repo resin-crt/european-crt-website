@@ -2401,9 +2401,6 @@
 
                     <div class="p-2">
                       <table class="w-100">
-                        <!--<thead>-->
-                        <!---->
-                        <!--</thead>-->
                         <tbody>
                         <tr>
                           <td>Positive value colours:</td>
@@ -2411,15 +2408,19 @@
                         </tr>
                         <tr>
                           <td>
-                            <select class="custom-select" v-model="selectedPositiveGradient">
-                              <option v-for="positiveGradient in positiveGradients" v-bind:value="positiveGradient.value">
+                            <select class="custom-select" v-model="selectedPositiveGradient"
+                                    v-on:change="renderNuts3Layer()">
+                              <option v-for="positiveGradient in positiveGradients"
+                                      v-bind:value="positiveGradient.value">
                                 {{ positiveGradient.name }}
                               </option>
                             </select>
                           </td>
                           <td>
-                            <select class="custom-select" v-model="selectedNegativeGradient">
-                              <option v-for="negativeGradient in negativeGradients" v-bind:value="negativeGradient.value">
+                            <select class="custom-select" v-model="selectedNegativeGradient"
+                                    v-on:click="renderNuts3Layer()">
+                              <option v-for="negativeGradient in negativeGradients"
+                                      v-bind:value="negativeGradient.value">
                                 {{ negativeGradient.name }}
                               </option>
                             </select>
@@ -2470,7 +2471,7 @@
                                        v-bind:name="[domain + '-radio-buttons']"
                                        v-bind:id="[indicator.name]"
                                        v-bind:value="[indicator.name]"
-                                       v-on:change="renderNuts3Indicator(indicator.name)">
+                                       v-on:change="renderNuts3Layer()">
                               </label>
                             </div>
                           </td>

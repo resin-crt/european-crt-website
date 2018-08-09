@@ -1211,8 +1211,6 @@ let MapLayers = {
             this.renderNuts3PolygonByIndicator(feature, indicator, zscore);
           }
 
-
-
         }
 
       }
@@ -1256,49 +1254,55 @@ let MapLayers = {
       let internalLayerKey = this.featureToInternalLayerDictionary[feature.properties.NUTS_ID];
       let featureLayer = this.mapLayer._layers[internalLayerKey];
 
-      //let basemap = this.namedBasemapLayers[currentBaseMap];
-
-      // // Set the style of the feature layer based on its typology class.
-      // if (this[currentTypologyLevel][typologyClass].visible) {
-      //   let styleName = this.typologyLevelDictionary[currentTypologyLevel].styleName;
-      //   featureLayer.setStyle(basemap[styleName][typologyClass]);
-      // }
-      // else {
-      //   featureLayer.setStyle(basemap.defaultStyle);
-      // }
-
-      // Find out how many standard deviations away lies the zscore from the mean (0).
+      // Get the standard deviation.
       let stdev = AppData.indicatorZScoresStatistics[indicator].stdev;
 
+      let i = 1;
+      let gradient = null;
+
+      // Check if zscore is positive or negative.
       if (zscore > 0) {
 
-        let i = 1;
+        // Find out how many standard deviations away lies the zscore from the mean (0).
         while (zscore - (stdev * i) > stdev) {
           i++;
         }
 
-        let gradient = symbologyViewModel.positiveGradients.filter(g => g.value === symbologyViewModel.selectedPositiveGradient);
-
-        if (i > 4) {
-          i = 4;
-        }
-
-        let style = {
-          stroke: true,
-          color: '#282828',
-          weight: 0.4,
-          opacity: 1,
-          fill: true,
-          fillColor: gradient.OneStDevGradient[i - 1],
-          fillOpacity: 0.7
-        };
-
-        featureLayer.setStyle(style);
+        // Get the gradient.
+        gradient = symbologyViewModel.positiveGradients.filter(g => g.value === symbologyViewModel.selectedPositiveGradient)[0];
 
       }
       else {
-        featureLayer.setStyle(basemap.defaultStyle);
+
+        zscore = zscore * (-1);
+
+        // Find out how many standard deviations away lies the zscore from the mean (0).
+        while (zscore - (stdev * i) > stdev) {
+          i++;
+        }
+
+        // Get the gradient.
+        gradient = symbologyViewModel.negativeGradients.filter(g => g.value === symbologyViewModel.selectedNegativeGradient)[0];
+
       }
+
+      i = i - 1;
+
+      if (i > 3) {
+        i = 3;
+      }
+
+      let style = {
+        stroke: true,
+        color: '#282828',
+        weight: 0.4,
+        opacity: 1,
+        fill: true,
+        fillColor: gradient.OneStDevGradient[i].hex,
+        fillOpacity: 0.7
+      };
+
+      featureLayer.setStyle(style);
 
     },
 
@@ -1368,17 +1372,36 @@ let MapLayers = {
       // Get the current basemap. This is used to decide the symbology of the NUTS3 polygons.
       let currentBaseMap = toggleBaseMapViewModel.currentBaseMap;
 
-      // Get the current typology level.
-      let currentTypologyLevel = symbologyViewModel.currentTab;
+      // Get the current tab.
+      let currentTab = symbologyViewModel.currentTab;
 
-      // Get the NUTS3 attribute name and the class value.
-      let attributeName = this.typologyLevelDictionary[currentTypologyLevel].attributeName;
-      let classValue = feature.properties[attributeName].toString();
+      if (currentTab !== 'indicators') {
+        // Get the NUTS3 attribute name and the class value.
+        let attributeName = this.typologyLevelDictionary[currentTab].attributeName;
+        let classValue = feature.properties[attributeName].toString();
 
-      // Make sure styles of only the non selected NUTS3 polygons are reset.
-      if (this.selectedFeature !== feature || forceReset) {
-        // Render the NUTS3 polygon having the specified typology class.
-        this.renderNuts3PolygonByTypologyClass(feature, classValue, currentTypologyLevel, currentBaseMap);
+        // Make sure styles of only the non selected NUTS3 polygons are reset.
+        if (this.selectedFeature !== feature || forceReset) {
+          // Render the NUTS3 polygon having the specified typology class.
+          this.renderNuts3PolygonByTypologyClass(feature, classValue, currentTab, currentBaseMap);
+        }
+
+        // // Render the layer based on typology classes (supergroups or groups).
+        // let attributeName = this.typologyLevelDictionary[currentTab].attributeName;
+        // let classValue = feature.properties[attributeName].toString();
+        //
+        // // Render the NUTS3 polygon having the specified typology class.
+        // this.renderNuts3PolygonByTypologyClass(feature, classValue, currentTab, currentBaseMap);
+      }
+      else {
+        let indicator = symbologyViewModel.selectedIndicators[symbologyViewModel.currentDomain][0];
+        let zscore = feature.properties[indicator + 'Z'];
+
+        // Make sure styles of only the non selected NUTS3 polygons are reset.
+        if (this.selectedFeature !== feature || forceReset) {
+          // Render the layer based on the selected indicator.
+          this.renderNuts3PolygonByIndicator(feature, indicator, zscore);
+        }
       }
 
     },
@@ -2185,7 +2208,7 @@ let symbologyViewModel = new Vue({
     /**
      * The selected positive gradient.
      */
-    selectedPositiveGradient: 'red',
+    selectedPositiveGradient: 'amber',
 
     /**
      * Gradients used to render the negative values of indicators.
@@ -2416,7 +2439,7 @@ let symbologyViewModel = new Vue({
     /**
      * The selected negative gradient.
      */
-    selectedNegativeGradient: 'deepPurple'
+    selectedNegativeGradient: 'indigo'
 
 
   },
@@ -2508,6 +2531,7 @@ let symbologyViewModel = new Vue({
      */
     setCurrentDomain(tabIndex) {
       this.currentDomain = this.dictionary.domains[tabIndex];
+      MapLayers.nuts3.renderLayer();
     },
 
     /**
@@ -2620,17 +2644,9 @@ let symbologyViewModel = new Vue({
 
     },
 
-    renderNuts3Indicator(indicator) {
-
+    renderNuts3Layer() {
+      MapLayers.nuts3.renderLayer();
     },
-
-    // TODO: RESIN - Remove this ???
-    // /**
-    //  * Renders the NUTS3 layer.
-    //  */
-    // renderNuts3Layer() {
-    //   MapLayers.nuts3.renderLayer();
-    // },
 
     /**
      * Toggles on/off the information panel of a supergroup, group or indicator.
