@@ -51,6 +51,14 @@ let AppState = {
 
 };
 
+let Statistics = {
+
+  indicators: {
+
+  }
+
+};
+
 /**
  * The BaseMapLayers object provides properties and methods related to basemap layers.
  */
@@ -978,338 +986,6 @@ let MapLayers = {
     },
 
     /**
-     * Gradients used to render the positive values of indicators.
-     */
-    positiveGradients: {
-      red:         {
-        name: 'Red',
-        OneStDevGradient: [
-          ColorPalettes.Material.red300,
-          ColorPalettes.Material.red500,
-          ColorPalettes.Material.red700,
-          ColorPalettes.Material.red900
-        ],
-        HalfStDevGradient: []
-      },
-      pink:        {
-        name: 'Pink',
-        OneStDevGradient: [
-          ColorPalettes.Material.pink300,
-          ColorPalettes.Material.pink500,
-          ColorPalettes.Material.pink700,
-          ColorPalettes.Material.pink900
-        ],
-        HalfStDevGradient: []
-      },
-      purple:      {
-        name: 'Purple',
-        OneStDevGradient: [
-          ColorPalettes.Material.purple300,
-          ColorPalettes.Material.purple500,
-          ColorPalettes.Material.purple700,
-          ColorPalettes.Material.purple900
-        ],
-        HalfStDevGradient: []
-      },
-      yellow:      {
-        name: 'Yellow',
-        OneStDevGradient: [
-          ColorPalettes.Material.yellow300,
-          ColorPalettes.Material.yellow500,
-          ColorPalettes.Material.yellow700,
-          ColorPalettes.Material.yellow900
-        ],
-        HalfStDevGradient: []
-      },
-      amber:       {
-        name: 'Amber',
-        OneStDevGradient: [
-          ColorPalettes.Material.orange300,
-          ColorPalettes.Material.orange500,
-          ColorPalettes.Material.orange700,
-          ColorPalettes.Material.orange900
-        ],
-        HalfStDevGradient: []
-      },
-      orange:      {
-        name: 'Orange',
-        OneStDevGradient: [
-          ColorPalettes.Material.orange300,
-          ColorPalettes.Material.orange500,
-          ColorPalettes.Material.orange700,
-          ColorPalettes.Material.orange900
-        ],
-        HalfStDevGradient: []
-      },
-      deepOrange:  {
-        name: 'Deep Orange',
-        OneStDevGradient: [
-          ColorPalettes.Material.deepOrange300,
-          ColorPalettes.Material.deepOrange500,
-          ColorPalettes.Material.deepOrange700,
-          ColorPalettes.Material.deepOrange900
-        ],
-        HalfStDevGradient: []
-      },
-      brown:       {
-        name: 'Brown',
-        OneStDevGradient: [
-          ColorPalettes.Material.brown300,
-          ColorPalettes.Material.brown500,
-          ColorPalettes.Material.brown700,
-          ColorPalettes.Material.brown900
-        ],
-        HalfStDevGradient: []
-      },
-      amethyst:    {
-        name: 'Amethyst',
-        OneStDevGradient: [
-          ColorPalettes.FlatDesign.amethyst300,
-          ColorPalettes.FlatDesign.amethyst500,
-          ColorPalettes.FlatDesign.amethyst700,
-          ColorPalettes.FlatDesign.amethyst900
-        ],
-        HalfStDevGradient: []
-      },
-      wisteria:    {
-        name: 'Wisteria',
-        OneStDevGradient: [
-          ColorPalettes.FlatDesign.wisteria300,
-          ColorPalettes.FlatDesign.wisteria500,
-          ColorPalettes.FlatDesign.wisteria700,
-          ColorPalettes.FlatDesign.wisteria900
-        ],
-        HalfStDevGradient: []
-      },
-      sunflower:   {
-        name: 'Sunflower',
-        OneStDevGradient: [
-          ColorPalettes.FlatDesign.sunflower300,
-          ColorPalettes.FlatDesign.sunflower500,
-          ColorPalettes.FlatDesign.sunflower700,
-          ColorPalettes.FlatDesign.sunflower900
-        ],
-        HalfStDevGradient: []
-      },
-      orange2:     {
-        name: 'Orange 2',
-        OneStDevGradient: [
-          ColorPalettes.FlatDesign.orange300,
-          ColorPalettes.FlatDesign.orange500,
-          ColorPalettes.FlatDesign.orange700,
-          ColorPalettes.FlatDesign.orange900
-        ],
-        HalfStDevGradient: []
-      },
-      carrot:      {
-        name: 'Carrot',
-        OneStDevGradient: [
-          ColorPalettes.FlatDesign.carrot300,
-          ColorPalettes.FlatDesign.carrot500,
-          ColorPalettes.FlatDesign.carrot700,
-          ColorPalettes.FlatDesign.carrot900
-        ],
-        HalfStDevGradient: []
-      },
-      pumpkin:     {
-        name: 'Pumpkin',
-        OneStDevGradient: [
-          ColorPalettes.FlatDesign.pumpkin300,
-          ColorPalettes.FlatDesign.pumpkin500,
-          ColorPalettes.FlatDesign.pumpkin700,
-          ColorPalettes.FlatDesign.pumpkin900
-        ],
-        HalfStDevGradient: []
-      },
-      alizarin:    {
-        name: 'Alizarin',
-        OneStDevGradient: [
-          ColorPalettes.FlatDesign.alizarin300,
-          ColorPalettes.FlatDesign.alizarin500,
-          ColorPalettes.FlatDesign.alizarin700,
-          ColorPalettes.FlatDesign.alizarin900
-        ],
-        HalfStDevGradient: []
-      },
-      pomegranate: {
-        name: 'Pomegranate',
-        OneStDevGradient: [
-          ColorPalettes.FlatDesign.pomegranate300,
-          ColorPalettes.FlatDesign.pomegranate500,
-          ColorPalettes.FlatDesign.pomegranate700,
-          ColorPalettes.FlatDesign.pomegranate900
-        ],
-        HalfStDevGradient: []
-      }
-    },
-
-    /**
-     * Gradients used to render the negative values of indicators.
-     */
-    negativeGradients: {
-      deepPurple: {
-        name: 'Deep Purple',
-        OneStDevGradient: [
-          ColorPalettes.Material.deepPurple300,
-          ColorPalettes.Material.deepPurple500,
-          ColorPalettes.Material.deepPurple700,
-          ColorPalettes.Material.deepPurple900
-        ],
-        HalfStDevGradient: []
-      },
-      indigo:     {
-        name: 'Indigo',
-        OneStDevGradient: [
-          ColorPalettes.Material.indigo300,
-          ColorPalettes.Material.indigo500,
-          ColorPalettes.Material.indigo700,
-          ColorPalettes.Material.indigo900
-        ],
-        HalfStDevGradient: []
-      },
-      blue:       {
-        name: 'Blue',
-        OneStDevGradient: [
-          ColorPalettes.Material.blue300,
-          ColorPalettes.Material.blue500,
-          ColorPalettes.Material.blue700,
-          ColorPalettes.Material.blue900
-        ],
-        HalfStDevGradient: []
-      },
-      lightBlue:  {
-        name: 'Light Blue',
-        OneStDevGradient: [
-          ColorPalettes.Material.lightBlue300,
-          ColorPalettes.Material.lightBlue500,
-          ColorPalettes.Material.lightBlue700,
-          ColorPalettes.Material.lightBlue900
-        ],
-        HalfStDevGradient: []
-      },
-      cyan:       {
-        name: 'Cyan',
-        OneStDevGradient: [
-          ColorPalettes.Material.cyan300,
-          ColorPalettes.Material.cyan500,
-          ColorPalettes.Material.cyan700,
-          ColorPalettes.Material.cyan900
-        ],
-        HalfStDevGradient: []
-      },
-      teal:       {
-        name: 'Teal',
-        OneStDevGradient: [
-          ColorPalettes.Material.teal300,
-          ColorPalettes.Material.teal500,
-          ColorPalettes.Material.teal700,
-          ColorPalettes.Material.teal900
-        ],
-        HalfStDevGradient: []
-      },
-      green:      {
-        name: 'Green',
-        OneStDevGradient: [
-          ColorPalettes.Material.green300,
-          ColorPalettes.Material.green500,
-          ColorPalettes.Material.green700,
-          ColorPalettes.Material.green900
-        ],
-        HalfStDevGradient: []
-      },
-      lightGreen: {
-        name: 'Light Green',
-        OneStDevGradient: [
-          ColorPalettes.Material.lightGreen300,
-          ColorPalettes.Material.lightGreen500,
-          ColorPalettes.Material.lightGreen700,
-          ColorPalettes.Material.lightGreen900
-        ],
-        HalfStDevGradient: []
-      },
-      lime:       {
-        name: 'Lime',
-        OneStDevGradient: [
-          ColorPalettes.Material.lime300,
-          ColorPalettes.Material.lime500,
-          ColorPalettes.Material.lime700,
-          ColorPalettes.Material.lime900
-        ],
-        HalfStDevGradient: []
-      },
-      blueGray:   {
-        name: 'Blue Gray',
-        OneStDevGradient: [
-          ColorPalettes.Material.blueGray300,
-          ColorPalettes.Material.blueGray500,
-          ColorPalettes.Material.blueGray700,
-          ColorPalettes.Material.blueGray900
-        ],
-        HalfStDevGradient: []
-      },
-      turquoise:  {
-        name: 'Turquoise',
-        OneStDevGradient: [
-          ColorPalettes.FlatDesign.turquoise300,
-          ColorPalettes.FlatDesign.turquoise500,
-          ColorPalettes.FlatDesign.turquoise700,
-          ColorPalettes.FlatDesign.turquoise900
-        ],
-        HalfStDevGradient: []
-      },
-      greenSea:   {
-        name: 'Green Sea',
-        OneStDevGradient: [
-          ColorPalettes.FlatDesign.greenSea300,
-          ColorPalettes.FlatDesign.greenSea500,
-          ColorPalettes.FlatDesign.greenSea700,
-          ColorPalettes.FlatDesign.greenSea900
-        ],
-        HalfStDevGradient: []
-      },
-      emerald:    {
-        name: 'Emerald',
-        OneStDevGradient: [
-          ColorPalettes.FlatDesign.emerald300,
-          ColorPalettes.FlatDesign.emerald500,
-          ColorPalettes.FlatDesign.emerald700,
-          ColorPalettes.FlatDesign.emerald900
-        ],
-        HalfStDevGradient: []
-      },
-      nephritis:  {
-        name: 'Nephritis',
-        OneStDevGradient: [
-          ColorPalettes.FlatDesign.nephritis300,
-          ColorPalettes.FlatDesign.nephritis500,
-          ColorPalettes.FlatDesign.nephritis700,
-          ColorPalettes.FlatDesign.nephritis900
-        ],
-        HalfStDevGradient: []
-      },
-      peterRiver: {
-        name: 'Peter River',
-        OneStDevGradient: [
-          ColorPalettes.FlatDesign.peterRiver300,
-          ColorPalettes.FlatDesign.peterRiver500,
-          ColorPalettes.FlatDesign.peterRiver700,
-          ColorPalettes.FlatDesign.peterRiver900
-        ],
-        HalfStDevGradient: []
-      },
-      belizeHole: {
-        name: 'Belize Hole',
-        OneStDevGradient: [
-          ColorPalettes.FlatDesign.belizeHole300,
-          ColorPalettes.FlatDesign.belizeHole500,
-          ColorPalettes.FlatDesign.belizeHole700,
-          ColorPalettes.FlatDesign.belizeHole900
-        ],
-        HalfStDevGradient: []
-      }
-    },
-
-    /**
      * The leaflet map layer.
      */
     mapLayer: null,
@@ -1528,11 +1204,11 @@ let MapLayers = {
             this.renderNuts3PolygonByTypologyClass(feature, classValue, currentTab, currentBaseMap);
           }
           else {
-            let attributeName = symbologyViewModel.selectedIndicators[symbologyViewModel.currentDomain][0];
-            let indicatorValue = feature.properties[attributeName];
+            let indicator = symbologyViewModel.selectedIndicators[symbologyViewModel.currentDomain][0];
+            let zscore = feature.properties[indicator + 'Z'];
 
             // Render the layer based on the selected indicator.
-            this.renderNuts3PolygonByIndicator(feature, attributeName, indicatorValue, currentBaseMap);
+            this.renderNuts3PolygonByIndicator(feature, indicator, zscore);
           }
 
 
@@ -1574,13 +1250,13 @@ let MapLayers = {
 
 
 
-    renderNuts3PolygonByIndicator: function(feature, indicator, indicatorValue, currentBaseMap) {
+    renderNuts3PolygonByIndicator: function(feature, indicator, zscore) {
 
       // Get the associated feature layer.
       let internalLayerKey = this.featureToInternalLayerDictionary[feature.properties.NUTS_ID];
       let featureLayer = this.mapLayer._layers[internalLayerKey];
 
-      let basemap = this.namedBasemapLayers[currentBaseMap];
+      //let basemap = this.namedBasemapLayers[currentBaseMap];
 
       // // Set the style of the feature layer based on its typology class.
       // if (this[currentTypologyLevel][typologyClass].visible) {
@@ -1591,7 +1267,38 @@ let MapLayers = {
       //   featureLayer.setStyle(basemap.defaultStyle);
       // }
 
-      featureLayer.setStyle(basemap.defaultStyle);
+      // Find out how many standard deviations away lies the zscore from the mean (0).
+      let stdev = AppData.indicatorZScoresStatistics[indicator].stdev;
+
+      if (zscore > 0) {
+
+        let i = 1;
+        while (zscore - (stdev * i) > stdev) {
+          i++;
+        }
+
+        let gradient = symbologyViewModel.positiveGradients.filter(g => g.value === symbologyViewModel.selectedPositiveGradient);
+
+        if (i > 4) {
+          i = 4;
+        }
+
+        let style = {
+          stroke: true,
+          color: '#282828',
+          weight: 0.4,
+          opacity: 1,
+          fill: true,
+          fillColor: gradient.OneStDevGradient[i - 1],
+          fillOpacity: 0.7
+        };
+
+        featureLayer.setStyle(style);
+
+      }
+      else {
+        featureLayer.setStyle(basemap.defaultStyle);
+      }
 
     },
 
@@ -2269,8 +1976,447 @@ let symbologyViewModel = new Vue({
       exposure: [ 'I030' ],
       sensitivity: [ 'I060' ],
       adaptivity: [ 'I077' ]
-    }
+    },
 
+    /**
+     * Gradients used to render the positive values of indicators.
+     */
+    positiveGradients: [
+      {
+        name: 'Red',
+        value: 'red',
+        OneStDevGradient: [
+          ColorPalettes.Material.red300,
+          ColorPalettes.Material.red500,
+          ColorPalettes.Material.red700,
+          ColorPalettes.Material.red900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Pink',
+        value: 'pink',
+        OneStDevGradient: [
+          ColorPalettes.Material.pink300,
+          ColorPalettes.Material.pink500,
+          ColorPalettes.Material.pink700,
+          ColorPalettes.Material.pink900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Purple',
+        value: 'purple',
+        OneStDevGradient: [
+          ColorPalettes.Material.purple300,
+          ColorPalettes.Material.purple500,
+          ColorPalettes.Material.purple700,
+          ColorPalettes.Material.purple900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Yellow',
+        value: 'yellow',
+        OneStDevGradient: [
+          ColorPalettes.Material.yellow300,
+          ColorPalettes.Material.yellow500,
+          ColorPalettes.Material.yellow700,
+          ColorPalettes.Material.yellow900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Amber',
+        value: 'amber',
+        OneStDevGradient: [
+          ColorPalettes.Material.orange300,
+          ColorPalettes.Material.orange500,
+          ColorPalettes.Material.orange700,
+          ColorPalettes.Material.orange900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Orange',
+        value: 'orange',
+        OneStDevGradient: [
+          ColorPalettes.Material.orange300,
+          ColorPalettes.Material.orange500,
+          ColorPalettes.Material.orange700,
+          ColorPalettes.Material.orange900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Deep Orange',
+        value: 'deepOrange',
+        OneStDevGradient: [
+          ColorPalettes.Material.deepOrange300,
+          ColorPalettes.Material.deepOrange500,
+          ColorPalettes.Material.deepOrange700,
+          ColorPalettes.Material.deepOrange900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Brown',
+        value: 'brown',
+        OneStDevGradient: [
+          ColorPalettes.Material.brown300,
+          ColorPalettes.Material.brown500,
+          ColorPalettes.Material.brown700,
+          ColorPalettes.Material.brown900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Amethyst',
+        value: 'amethyst',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.amethyst300,
+          ColorPalettes.FlatDesign.amethyst500,
+          ColorPalettes.FlatDesign.amethyst700,
+          ColorPalettes.FlatDesign.amethyst900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Wisteria',
+        value: 'wisteria',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.wisteria300,
+          ColorPalettes.FlatDesign.wisteria500,
+          ColorPalettes.FlatDesign.wisteria700,
+          ColorPalettes.FlatDesign.wisteria900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Sunflower',
+        value: 'sunflower',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.sunflower300,
+          ColorPalettes.FlatDesign.sunflower500,
+          ColorPalettes.FlatDesign.sunflower700,
+          ColorPalettes.FlatDesign.sunflower900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Orange (FD)',
+        value: 'orangeFlatDesign',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.orange300,
+          ColorPalettes.FlatDesign.orange500,
+          ColorPalettes.FlatDesign.orange700,
+          ColorPalettes.FlatDesign.orange900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Carrot',
+        value: 'carrot',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.carrot300,
+          ColorPalettes.FlatDesign.carrot500,
+          ColorPalettes.FlatDesign.carrot700,
+          ColorPalettes.FlatDesign.carrot900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Pumpkin',
+        value: 'pumpkin',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.pumpkin300,
+          ColorPalettes.FlatDesign.pumpkin500,
+          ColorPalettes.FlatDesign.pumpkin700,
+          ColorPalettes.FlatDesign.pumpkin900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Alizarin',
+        value: 'alizarin',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.alizarin300,
+          ColorPalettes.FlatDesign.alizarin500,
+          ColorPalettes.FlatDesign.alizarin700,
+          ColorPalettes.FlatDesign.alizarin900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Pomegranate',
+        value: 'pomegranate',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.pomegranate300,
+          ColorPalettes.FlatDesign.pomegranate500,
+          ColorPalettes.FlatDesign.pomegranate700,
+          ColorPalettes.FlatDesign.pomegranate900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Orange (PF)',
+        value: 'orangePatternFly',
+        OneStDevGradient: [
+          ColorPalettes.PatternFly.orange200,
+          ColorPalettes.PatternFly.orange400,
+          ColorPalettes.PatternFly.orange600,
+          ColorPalettes.PatternFly.orange700
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Gold',
+        value: 'gold',
+        OneStDevGradient: [
+          ColorPalettes.PatternFly.gold400,
+          ColorPalettes.PatternFly.gold500,
+          ColorPalettes.PatternFly.gold600,
+          ColorPalettes.PatternFly.gold700
+        ],
+        HalfStDevGradient: []
+      }
+    ],
+
+    /**
+     * The selected positive gradient.
+     */
+    selectedPositiveGradient: 'red',
+
+    /**
+     * Gradients used to render the negative values of indicators.
+     */
+    negativeGradients: [
+      {
+        name: 'Deep Purple',
+        value: 'deepPurple',
+        OneStDevGradient: [
+          ColorPalettes.Material.deepPurple300,
+          ColorPalettes.Material.deepPurple500,
+          ColorPalettes.Material.deepPurple700,
+          ColorPalettes.Material.deepPurple900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Indigo',
+        value: 'indigo',
+        OneStDevGradient: [
+          ColorPalettes.Material.indigo300,
+          ColorPalettes.Material.indigo500,
+          ColorPalettes.Material.indigo700,
+          ColorPalettes.Material.indigo900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Blue',
+        value: 'blue',
+        OneStDevGradient: [
+          ColorPalettes.Material.blue300,
+          ColorPalettes.Material.blue500,
+          ColorPalettes.Material.blue700,
+          ColorPalettes.Material.blue900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Light Blue',
+        value: 'lightBlue',
+        OneStDevGradient: [
+          ColorPalettes.Material.lightBlue300,
+          ColorPalettes.Material.lightBlue500,
+          ColorPalettes.Material.lightBlue700,
+          ColorPalettes.Material.lightBlue900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Cyan',
+        value: 'cyan',
+        OneStDevGradient: [
+          ColorPalettes.Material.cyan300,
+          ColorPalettes.Material.cyan500,
+          ColorPalettes.Material.cyan700,
+          ColorPalettes.Material.cyan900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Teal',
+        value: 'teal',
+        OneStDevGradient: [
+          ColorPalettes.Material.teal300,
+          ColorPalettes.Material.teal500,
+          ColorPalettes.Material.teal700,
+          ColorPalettes.Material.teal900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Green',
+        value: 'green',
+        OneStDevGradient: [
+          ColorPalettes.Material.green300,
+          ColorPalettes.Material.green500,
+          ColorPalettes.Material.green700,
+          ColorPalettes.Material.green900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Light Green',
+        value: 'lightGreen',
+        OneStDevGradient: [
+          ColorPalettes.Material.lightGreen300,
+          ColorPalettes.Material.lightGreen500,
+          ColorPalettes.Material.lightGreen700,
+          ColorPalettes.Material.lightGreen900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Lime',
+        value: 'lime',
+        OneStDevGradient: [
+          ColorPalettes.Material.lime300,
+          ColorPalettes.Material.lime500,
+          ColorPalettes.Material.lime700,
+          ColorPalettes.Material.lime900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Blue Gray',
+        value: 'blueGray',
+        OneStDevGradient: [
+          ColorPalettes.Material.blueGray300,
+          ColorPalettes.Material.blueGray500,
+          ColorPalettes.Material.blueGray700,
+          ColorPalettes.Material.blueGray900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Turquoise',
+        value: 'turquoise',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.turquoise300,
+          ColorPalettes.FlatDesign.turquoise500,
+          ColorPalettes.FlatDesign.turquoise700,
+          ColorPalettes.FlatDesign.turquoise900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Green Sea',
+        value: 'greenSea',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.greenSea300,
+          ColorPalettes.FlatDesign.greenSea500,
+          ColorPalettes.FlatDesign.greenSea700,
+          ColorPalettes.FlatDesign.greenSea900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Emerald',
+        value: 'emerald',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.emerald300,
+          ColorPalettes.FlatDesign.emerald500,
+          ColorPalettes.FlatDesign.emerald700,
+          ColorPalettes.FlatDesign.emerald900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Nephritis',
+        value: 'nephritis',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.nephritis300,
+          ColorPalettes.FlatDesign.nephritis500,
+          ColorPalettes.FlatDesign.nephritis700,
+          ColorPalettes.FlatDesign.nephritis900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Peter River',
+        value: 'peterRiver',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.peterRiver300,
+          ColorPalettes.FlatDesign.peterRiver500,
+          ColorPalettes.FlatDesign.peterRiver700,
+          ColorPalettes.FlatDesign.peterRiver900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Belize Hole',
+        value: 'belizeHole',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.belizeHole300,
+          ColorPalettes.FlatDesign.belizeHole500,
+          ColorPalettes.FlatDesign.belizeHole700,
+          ColorPalettes.FlatDesign.belizeHole900
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Blue (PF)',
+        value: 'bluePatternFly',
+        OneStDevGradient: [
+          ColorPalettes.PatternFly.blue200,
+          ColorPalettes.PatternFly.blue400,
+          ColorPalettes.PatternFly.blue600,
+          ColorPalettes.PatternFly.gold700
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Light Green (PF)',
+        value: 'lightGreenPatternFly',
+        OneStDevGradient: [
+          ColorPalettes.PatternFly.lightGreen300,
+          ColorPalettes.PatternFly.lightGreen500,
+          ColorPalettes.PatternFly.lightGreen600,
+          ColorPalettes.PatternFly.lightGreen700
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Green (PF)',
+        value: 'greenPatternFly',
+        OneStDevGradient: [
+          ColorPalettes.PatternFly.green300,
+          ColorPalettes.PatternFly.green400,
+          ColorPalettes.PatternFly.green600,
+          ColorPalettes.PatternFly.green700
+        ],
+        HalfStDevGradient: []
+      },
+      {
+        name: 'Cyan (PF)',
+        value: 'cyanPatternFly',
+        OneStDevGradient: [
+          ColorPalettes.PatternFly.cyan300,
+          ColorPalettes.PatternFly.cyan400,
+          ColorPalettes.PatternFly.cyan600,
+          ColorPalettes.PatternFly.cyan700
+        ],
+        HalfStDevGradient: []
+      }
+    ],
+
+    /**
+     * The selected negative gradient.
+     */
+    selectedNegativeGradient: 'deepPurple'
 
 
   },
@@ -2619,15 +2765,27 @@ let overviewInfoViewModel = new Vue({
       }
     },
 
+    /**
+     * The indicator domains.
+     */
     domains: AppData.domains,
 
     // TODO: RESIN - Remove this ???
     //domainSortedIndicators: AppData.domainSortedIndicators,
 
+    /**
+     * The dictionary of indicators grouped by their domain.
+     */
     domainDictionaryIndicators: AppData.domainDictionaryIndicators,
 
+    /**
+     * The dictionary of indicator values grouped ny their domain.
+     */
     domainDictionaryIndicatorValues: undefined,
 
+    /**
+     * The name of the icon used on the information button.
+     */
     infoIconName: 'help_outline' // help, help_outline, live_help, announcement, feedback, info
 
   },

@@ -2595,7 +2595,7 @@ tbody.collapse.show {
   border-radius: 0.125rem;
   appearance: none; }
   .custom-select:focus {
-    border-color: #17ffe9;
+    border-color: #3f51b5 /* RESIN: This is overriden - #17ffe9 */;
     outline: 0;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(23, 255, 233, 0.5); }
     .custom-select:focus::-ms-value {

@@ -2399,6 +2399,37 @@
                        role="tabpanel" aria-labelledby="indicators-tab"
                        v-bind:class="[currentTab === 'indicators' ? '' : 'collapse']">
 
+                    <div class="p-2">
+                      <table class="w-100">
+                        <!--<thead>-->
+                        <!---->
+                        <!--</thead>-->
+                        <tbody>
+                        <tr>
+                          <td>Positive value colours:</td>
+                          <td>Negative value colours:</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <select class="custom-select" v-model="selectedPositiveGradient">
+                              <option v-for="positiveGradient in positiveGradients" v-bind:value="positiveGradient.value">
+                                {{ positiveGradient.name }}
+                              </option>
+                            </select>
+                          </td>
+                          <td>
+                            <select class="custom-select" v-model="selectedNegativeGradient">
+                              <option v-for="negativeGradient in negativeGradients" v-bind:value="negativeGradient.value">
+                                {{ negativeGradient.name }}
+                              </option>
+                            </select>
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+
                     <!-- Indicator Domain Tabs -->
                     <div class="border-top">
                       <ul class="nav nav-tabs nav-justified bg-light" role="tablist">
@@ -2425,6 +2456,8 @@
                          v-bind:aria-labelledby="[domain + '-tab']"
                          v-bind:class="[currentDomain === domain ? 'show active' : 'collapse']">
 
+                      <!--class="ver-scrollbars"-->
+                      <div>
                       <table class="table">
                         <tbody v-for="(indicator, iIndex) in domainDictionaryIndicators[domains[dIndex].name]"
                                v-if="domainDictionaryIndicators[domains[dIndex].name].length !== 0">
@@ -2482,7 +2515,7 @@
 
                         </tbody>
                       </table>
-
+                      </div>
 
                     </div>
 
