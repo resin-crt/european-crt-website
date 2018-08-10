@@ -1,7 +1,7 @@
 # European Climate Risk Typology Website
 
-Accessible temporarily through:
+The European Climate Risk Typology supports adaptation and resilience strategy, planning and action by offering users the means to visualise, describe, compare and analyse climate risk in European cities and regions.
 
-https://resin-crt.github.io/european-crt-website/
+http://european-crt.org/
 
 
