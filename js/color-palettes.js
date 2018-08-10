@@ -401,7 +401,7 @@ ColorPalettes.Fluent = {
 ColorPalettes.Metro = {
   'lime':              { name: 'Lime',              hex: '#a4c400' },
   'green':             { name: 'Green',             hex: '#60a917' },
-  'emerland':          { name: 'Emerland',          hex: '#008a00' },
+  'emerald':           { name: 'Emerald',          hex: '#008a00' },
   'teal':              { name: 'Teal',              hex: '#00aba9' },
   'cyan':              { name: 'Cyan',              hex: '#1ba1e2' },
   'cobalt':            { name: 'Cobalt',            hex: '#0050ef' },
