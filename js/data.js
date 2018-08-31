@@ -1,7 +1,6 @@
 
 var AppData = AppData || {};
 
-
 AppData.indicatorMetadata = {
   "I001": {
     "name": "I001",
