@@ -22,8 +22,8 @@ N°
 N°
 N°
 N°
--
--
+EMPTY
+EMPTY
 %
 %
 %
@@ -54,10 +54,10 @@ Ratio
 %
 %
 %
--
--
--
--
+EMPTY
+EMPTY
+EMPTY
+EMPTY
 %
 %
 %
