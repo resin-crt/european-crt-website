@@ -80,4 +80,3 @@ Tropical nights (RCP 4.5)
 Ice days (RCP 4.5)
 Heat wave days (RCP 4.5)
 Total wet-day precipitation (RCP 4.5)
-
