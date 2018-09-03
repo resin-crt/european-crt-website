@@ -1,0 +1,82 @@
+Mean temperature (RCP 8.5)
+Minimum temperature (RCP 8.5)
+Maximum temperature (RCP 8.5)
+Frost days (RCP 8.5)
+Summer days (RCP 8.5)
+Tropical nights (RCP 8.5)
+Ice days (RCP 8.5)
+Heat wave days (RCP 8.5)
+Total wet-day precipitation (RCP 8.5)
+Consecutive dry days (RCP 8.5)
+Consecutive wet days (RCP 8.5)
+Heavy precipitation days (RCP 8.5)
+Very heavy precipitation days (RCP 8.5)
+Coastal hazard
+Drought hazard
+Wildfire hazard
+Length of major road network in NUTS3 unit
+Length of railway network in NUTS3 unit
+Density of major road intersections per km2 of the NUTS3 unit
+Density of transport nodes per km2 of the NUTS3 unit
+Number of airports per head of population in the NUTS3 unit
+Number of ports per head of population in the NUTS3 unit
+Number of hospitals per head of population in the NUTS3 unit
+Number of power plants per head of population in the NUTS3 unit
+Fixed broadband coverage
+Next Generation Access (NGA) - broadband
+Population in settlements exposed to fluvial flooding
+Road infrastructure exposed to fluvial flooding
+Rail network exposed to fluvial flooding
+Transport nodes exposed to fluvial flooding
+Airports exposed to fluvial flooding
+Ports exposed to fluvial flooding
+Hospitals exposed to fluvial flooding
+Power plants exposed to fluvial flooding
+Population in settlements exposed to coastal hazard
+Road infrastructure exposed to coastal hazard
+Rail network exposed to coastal hazard
+Transport nodes exposed to coastal hazard
+Airports exposed to coastal hazard
+Ports exposed to coastal hazard
+Hospitals exposed to coastal hazard
+Power plants exposed to coastal hazard
+Population in settlements exposed to landslide
+Road infrastructure exposed to landslide
+Rail network exposed to landslide
+Transport nodes exposed to landslide
+Airports exposed to landslide
+Ports exposed to landslide
+Hospitals exposed to landslide
+Power plants exposed to landslide
+Average population density
+Total population living in urban areas /area in km2
+% of total urban area in NUTS3 unit that is classified as green space (2012 data)
+% of total land in the NUTS3 unit that is covered by continuous and/or discontinuous urban fabric (2012 data)
+Change in % of total urban area in NUTS3 unit that is classified as green space (2009-2012 data)
+Change in % of total land in the NUTS3 unit that is covered by continuous and/or discontinuous urban fabric (2012 data)
+Soil Moisture Stress
+Water Consumption Pressure (2030)
+Priority Allocations (Euros, 2013 - 2015)
+At Risk of Poverty (ARoP)
+% change in population less than 15 years in NUTS3 unit between 2017-2050
+% change in population more than 70 years in NUTS3 unit between 2017-2050
+% change in population through migration in NUTS3 unit between 2017-2050
+% change in population density in NUTS3 unit between 2017-2050
+% of total employment in NUTS1 unit
+Number of patent applications to the EPO per 1000 population in the NUTS3 unit
+GVA at basic prices per head of population (2012-2015 data)
+Fluvial hazard
+Landslide hazard
+Mean temperature (RCP 4.5)
+Consecutive dry days (RCP 4.5)
+Consecutive wet days (RCP 4.5)
+Heavy precipitation days (RCP 4.5)
+Very heavy precipitation days (RCP 4.5)
+Minimum temperature (RCP 4.5)
+Maximum temperature (RCP 4.5)
+Frost days (RCP 4.5)
+Summer days (RCP 4.5)
+Tropical nights (RCP 4.5)
+Ice days (RCP 4.5)
+Heat wave days (RCP 4.5)
+Total wet-day precipitation (RCP 4.5)
