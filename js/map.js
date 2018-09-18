@@ -3650,6 +3650,7 @@ let overviewInfoViewModel = new Vue({
     },
 
     toggleRadarDiagram(code) {
+      alert(code);
       radarDiagramModalViewModel.toggleModal(code);
     }
 
