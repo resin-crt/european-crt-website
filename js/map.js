@@ -3312,27 +3312,10 @@ let symbologyViewModel = new Vue({
       // $('#myModal').modal('handleUpdate')
       // to readjust the modal’s position in case a scrollbar appears.
 
+      radarDiagramModalViewModel.currentTypologyCode = code;
+      radarDiagramModalViewModel.toggleModal();
 
-      $('#radarDiagramModal').modal('toggle');
       // $('#radarDiagramModal').modal('handleUpdate');
-
-
-    },
-
-    /**
-     * Binds elements to events.
-     */
-    bindEvents() {
-
-      $('#radarDiagramModal').on('shown.bs.modal', function(e) {
-        this.dictionary[this.currentTab][code].isRadarDiagramVisible =
-          !this.dictionary[this.currentTab][code].isRadarDiagramVisible;
-      });
-
-      $('#radarDiagramModal').on('hidden.bs.modal', function(e) {
-        this.dictionary[this.currentTab][code].isRadarDiagramVisible =
-          !this.dictionary[this.currentTab][code].isRadarDiagramVisible;
-      });
 
     }
 
@@ -3664,6 +3647,10 @@ let overviewInfoViewModel = new Vue({
       // this.destroyTooltip(element);
 
       // $('#' + element).tooltip();
+    },
+
+    toggleRadarDiagram(code) {
+      radarDiagramModalViewModel.toggleModal(code);
     }
 
   }
@@ -3771,6 +3758,90 @@ let overviewInfoViewModel = new Vue({
 //
 // });
 
+/**
+ * The radarDiagramModalViewModel provides the data and logic to display the modal window
+ * with the radar diagram of the selected typology class or subclass rendered on it..
+ *
+ * @type {Vue} - A Vue object with the model and methods used in the view model.
+ */
+let radarDiagramModalViewModel = new Vue({
+
+  /**
+   * The name of the view model.
+   */
+  el: '#radarDiagramModalVM',
+
+  /**
+   * The model of the view model.
+   */
+  data: {
+
+    /**
+     * The current typology code.
+     */
+    currentTypologyCode: '1'
+
+  },
+
+  /**
+   * The computed properties of the model of the view model.
+   */
+  computed: {
+
+    /**
+     * Gets the title of the radar diagram.
+     *
+     * @returns {string} - A string with the title of the radar diagram.
+     */
+    title: function() {
+      if (symbologyViewModel.currentTab === 'supergroups') {
+        return MapLayers.nuts3.supergroups[this.currentTypologyCode].name;
+      }
+      else {
+        return MapLayers.nuts3.groups[this.currentTypologyCode].name;
+      }
+    }
+
+  },
+
+  /**
+   * The methods of the view model.
+   */
+  methods: {
+
+    /**
+     * Binds elements to events.
+     */
+    bindEvents() {
+
+      let svm = symbologyViewModel;
+
+      $('#radarDiagramModalVM').on('shown.bs.modal', function(e) {
+        svm.dictionary[svm.currentTab][this.currentTypologyCode].isRadarDiagramVisible =
+          !svm.dictionary[svm.currentTab][this.currentTypologyCode].isRadarDiagramVisible;
+      });
+
+      $('#radarDiagramModalVM').on('hidden.bs.modal', function(e) {
+        svm.dictionary[svm.currentTab][this.currentTypologyCode].isRadarDiagramVisible =
+          !svm.dictionary[svm.currentTab][this.currentTypologyCode].isRadarDiagramVisible;
+      });
+
+    },
+
+    /**
+     * Toggles the modal window with the radar diagram.
+     *
+     * @param code - The typology code whose radar diagram will be rendered.
+     */
+    toggleModal(code) {
+      this.currentTypologyCode = code;
+      $('#radarDiagramModalVM').modal('toggle');
+    }
+
+  }
+
+});
+
 //
 // ================================================================================
 
@@ -3785,7 +3856,7 @@ $(document).ready(function(){
 
 Spatial.initializeMap();
 
-symbologyViewModel.bindEvents();
+radarDiagramModalViewModel.bindEvents();
 
 Spatial.sidebar.open('map-controls');
 
