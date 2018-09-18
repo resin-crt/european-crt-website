@@ -3312,10 +3312,10 @@ let symbologyViewModel = new Vue({
       // $('#myModal').modal('handleUpdate')
       // to readjust the modal’s position in case a scrollbar appears.
 
-      radarDiagramModalViewModel.currentTypologyCode = code;
-      radarDiagramModalViewModel.toggleModal();
+      this.dictionary[this.currentTab][code].isRadarDiagramVisible =
+        !this.dictionary[this.currentTab][code].isRadarDiagramVisible;
 
-      // $('#radarDiagramModal').modal('handleUpdate');
+      radarDiagramModalViewModel.toggleModal(code);
 
     }
 
@@ -3647,11 +3647,6 @@ let overviewInfoViewModel = new Vue({
       // this.destroyTooltip(element);
 
       // $('#' + element).tooltip();
-    },
-
-    toggleRadarDiagram(code) {
-      alert(code);
-      radarDiagramModalViewModel.toggleModal(code);
     }
 
   }
@@ -3816,15 +3811,11 @@ let radarDiagramModalViewModel = new Vue({
     bindEvents() {
 
       let svm = symbologyViewModel;
-
-      $('#radarDiagramModalVM').on('shown.bs.modal', function(e) {
-        svm.dictionary[svm.currentTab][this.currentTypologyCode].isRadarDiagramVisible =
-          !svm.dictionary[svm.currentTab][this.currentTypologyCode].isRadarDiagramVisible;
-      });
+      let vm = this;
 
       $('#radarDiagramModalVM').on('hidden.bs.modal', function(e) {
-        svm.dictionary[svm.currentTab][this.currentTypologyCode].isRadarDiagramVisible =
-          !svm.dictionary[svm.currentTab][this.currentTypologyCode].isRadarDiagramVisible;
+        svm.dictionary[svm.currentTab][vm.currentTypologyCode].isRadarDiagramVisible =
+          !svm.dictionary[svm.currentTab][vm.currentTypologyCode].isRadarDiagramVisible;
       });
 
     },
@@ -3837,6 +3828,7 @@ let radarDiagramModalViewModel = new Vue({
     toggleModal(code) {
       this.currentTypologyCode = code;
       $('#radarDiagramModalVM').modal('toggle');
+      $('#radarDiagramModalVM').modal('handleUpdate');
     }
 
   }
