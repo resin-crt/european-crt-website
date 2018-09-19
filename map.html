@@ -95,6 +95,7 @@
      aria-labelledby="radarDiagramModalTitle" aria-hidden="true">
 
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+  <!--<div class="modal-dialog modal-dialog-centered" style="width: 1000px;" role="document">-->
     <div class="modal-content">
       <div class="modal-header">
         <h5 id="radarDiagramModalTitle" class="modal-title">{{ title }}</h5>
@@ -103,7 +104,10 @@
         </button>
       </div>
       <div class="modal-body">
-        <canvas id="dataDiagram-g1" style="height: 500px;"></canvas>
+        <!--<canvas id="radar-diagram" style="height: 500px;"></canvas>-->
+        <!--<canvas id="radar-diagram" class="col-lg-9 col-md-8 col-sm-8 col-xs-8"></canvas>-->
+        <!--<canvas id="radar-diagram" style="width: 300px; height: 300px;"></canvas>-->
+        <canvas id="radar-diagram"></canvas>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -114,6 +118,27 @@
 </div>
 
 <div class="page-container">
+
+  <!--v-bind:class="[isVisible === true ? '' : 'collapse']"-->
+  <div id="radarContainerVM" class="radar-container collapse" style="padding: 5px 45px 5px 5px;">
+
+    <div class="card h-100">
+      <div class="card-header">
+        Featured
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Title</h5>
+        <p class="card-text">This is the text.</p>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="btn btn-primary"
+           v-on:click="hide()">
+          Close
+        </a>
+      </div>
+    </div>
+
+  </div>
 
   <div class="map-container">
 
@@ -442,7 +467,7 @@
                                   v-bind:aria-label="[dictionary.supergroups['3'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
                                   v-bind:aria-pressed="[dictionary.supergroups['3'].isRadarDiagramVisible]"
                                   v-bind:class="[dictionary.supergroups['3'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
-                                  v-on:click="toggleRadarDiagram('3')">
+                                  v-on:click="showRadarDiagram('3')">
                             <i class="material-icons" v-text="radarIconName"
                                v-bind:class="[dictionary.supergroups['3'].isRadarDiagramVisible ? '' : 'text-dark']">
                             </i>
@@ -504,7 +529,7 @@
                                   v-bind:aria-label="[dictionary.supergroups['4'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
                                   v-bind:aria-pressed="[dictionary.supergroups['4'].isRadarDiagramVisible]"
                                   v-bind:class="[dictionary.supergroups['4'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
-                                  v-on:click="toggleRadarDiagram('4')">
+                                  v-on:click="showRadarDiagram('4')">
                             <i class="material-icons" v-text="radarIconName"
                                v-bind:class="[dictionary.supergroups['4'].isRadarDiagramVisible ? '' : 'text-dark']">
                             </i>
