@@ -1,0 +1,3117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>European Climate Risk Typology | Map</title>
+
+  <meta name="description" content="European Climate Risk Typology Map">
+  <meta name="author" content="Vasilis Vlastaras, University of Manchester">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+
+  <!-- Bootstrap -->
+  <!--<link rel="stylesheet" href="libs/bootstrap-material-design-v4.1.1/css/bootstrap-material-design.css" >-->
+  <!--<link rel="stylesheet" href="libs/bootstrap-material-design-v4.1.1/css/bootstrap-material-design.min.css" >-->
+  <link rel="stylesheet" href="styles/bootstrap-material-design-modified.css">
+
+  <!-- Font-Awesome -->
+  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fa-brands.css">-->
+  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fa-brands.min.css">-->
+  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fa-regular.css">-->
+  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fa-regular.min.css">-->
+  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fa-solid.css">-->
+  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fa-solid.min.css">-->
+  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fontawesome.css">-->
+  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fontawesome.min.css">-->
+  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fontawesome-all.css">-->
+  <link rel="stylesheet" href="libs/font-awesome-free-5.0.10/web-fonts-with-css/css/fontawesome-all.min.css">
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="libs/leaflet-1.3.1/leaflet.css">
+  <link rel="stylesheet" href="libs/leaflet-plugins/sidebar-v2-0.4.0/leaflet-sidebar.css">
+  <!--<link rel="stylesheet" href="libs/leaflet-plugins/sidebar-v2-0.4.0/leaflet-sidebar.min.css">-->
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles/map2.css">
+  <link rel="stylesheet" href="styles/loader.css">
+
+  <!-- JQuery -->
+  <!--<script type="text/javascript" src="libs/jquery-3.2.1/jquery.js"></script>-->
+  <!--<script type="text/javascript" src="libs/jquery-3.2.1/jquery.min.js"></script>-->
+  <script type="text/javascript" src="libs/jquery-3.2.1/jquery.slim.js"></script>
+  <!--<script type="text/javascript" src="libs/jquery-3.2.1/jquery.slim.min.js"></script>-->
+
+  <script type="text/javascript" src="js/data.js"></script>
+
+  <!--<script type="text/javascript" src="js/shared.js"></script>-->
+
+</head>
+<body>
+
+<nav id="navBarHost" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html">
+    <img src="images/logo-small.png" height="24" class="website-logo" alt="Website Logo">
+    <span class="xs-brand-heading">European Climate Risk Typology</span>
+    <span class="sm-brand-heading">European Climate Risk Typology</span>
+    <span class="md-brand-heading">European Climate Risk Typology</span>
+    <span class="d-none d-sm-inline-block">European Climate Risk Typology</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationBar"
+          aria-controls="navigationBar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div id="navigationBar" class="collapse navbar-collapse">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Map <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="typology.html">Typology</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="uses.html">Uses</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="methodology.html">Methodology</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="indicators.html">Risk Indicators</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div id="radarDiagramModalVM" class="modal fade" tabindex="-1" role="dialog"
+     aria-labelledby="radarDiagramModalTitle" aria-hidden="true">
+
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+  <!--<div class="modal-dialog modal-dialog-centered" style="width: 1000px;" role="document">-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 id="radarDiagramModalTitle" class="modal-title">{{ title }}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!--<canvas id="radar-diagram" style="height: 500px;"></canvas>-->
+        <!--<canvas id="radar-diagram" class="col-lg-9 col-md-8 col-sm-8 col-xs-8"></canvas>-->
+        <!--<canvas id="radar-diagram" style="width: 300px; height: 300px;"></canvas>-->
+        <canvas id="radar-diagram"></canvas>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="page-container">
+
+  <!--v-bind:class="[isVisible === true ? '' : 'collapse']"-->
+  <div id="radarContainerVM" class="radar-container collapse" style="padding: 5px 45px 5px 5px;">
+
+    <div class="card h-100">
+      <div class="card-header">
+        Featured
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Title</h5>
+        <p class="card-text">This is the text.</p>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="btn btn-primary"
+           v-on:click="hide()">
+          Close
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="map-container">
+
+    <div id="spinnerVM" class="spinner" v-show="isVisible">
+      <div class="showbox">
+        <div class="loader">
+          <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div id="map" class="sidebar-map"></div>
+
+    <div id="toggleBaseMapButtonsVM" class="btn-group rounded" role="group"
+         aria-label="Select basemap" data-toggle="buttons">
+
+      <div class="btn-group-toggle" role="group">
+        <!--dropdown-toggle-->
+        <!--data-toggle="tooltip" data-placement="bottom" v-bind:title="Click to change Basemap"-->
+        <button id="basemapDropdownButtonGroup" type="button" class="btn btn-danger btn-raised dropdown-toggle"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                v-bind:aria-label="dictionary[currentBaseMap].description">
+          <!--v-bind:aria-pressed="[currentBaseMap === 'dark' ? 'true' : 'false']"-->
+          <i id="currentBaseMapIcon" class="material-icons md-18"
+             v-text="dictionary[currentBaseMap].iconName">
+          </i>
+          <div id="currentBaseMapText">
+            <small class="text-capitalize text-center" v-text="dictionary[currentBaseMap].name"></small>
+          </div>
+        </button>
+
+        <div class="dropdown-menu" aria-labelledby="basemapDropdownButtonGroup">
+          <button id="lightButton" type="button" class="btn dropdown-item dropdown-item-basemap"
+                  v-bind:aria-label="dictionary['light'].description"
+                  v-bind:aria-pressed="[currentBaseMap === 'light' ? 'true' : 'false']"
+                  v-bind:class="[currentBaseMap === 'light' ? 'btn-danger btn-raised' : 'btn-dark']"
+                  v-on:click="setCurrentBaseMap('light')">
+            <i class="material-icons text-dark" v-text="dictionary['light'].iconName"></i>
+            <div class="crt-ver-sep"></div>
+            <div v-text="dictionary['light'].name"></div>
+          </button>
+          <button id="darkButton" type="button" class="btn dropdown-item dropdown-item-basemap"
+                  v-bind:aria-label="dictionary['dark'].description"
+                  v-bind:aria-pressed="[currentBaseMap === 'dark' ? 'true' : 'false']"
+                  v-bind:class="[currentBaseMap === 'dark' ? 'btn-danger btn-raised' : 'btn-dark']"
+                  v-on:click="setCurrentBaseMap('dark')">
+            <i class="material-icons text-dark" v-text="dictionary['dark'].iconName"></i>
+            <div class="crt-ver-sep"></div>
+            <div v-text="dictionary['dark'].name"></div>
+          </button>
+          <button id="roadsButton" type="button" class="btn dropdown-item dropdown-item-basemap"
+                  v-bind:aria-label="dictionary['roads'].description"
+                  v-bind:aria-pressed="[currentBaseMap === 'roads' ? 'true' : 'false']"
+                  v-bind:class="[currentBaseMap === 'roads' ? 'btn-danger btn-raised' : 'btn-dark']"
+                  v-on:click="setCurrentBaseMap('roads')">
+            <i class="material-icons text-dark" v-text="dictionary['roads'].iconName"></i>
+            <div class="crt-ver-sep"></div>
+            <div v-text="dictionary['roads'].name"></div>
+          </button>
+          <button id="physicalButton" type="button" class="btn dropdown-item dropdown-item-basemap"
+                  v-bind:aria-label="dictionary['physical'].description"
+                  v-bind:aria-pressed="[currentBaseMap === 'physical' ? 'true' : 'false']"
+                  v-bind:class="[currentBaseMap === 'physical' ? 'btn-danger btn-raised' : 'btn-dark']"
+                  v-on:click="setCurrentBaseMap('physical')">
+            <i class="material-icons text-dark" v-text="dictionary['physical'].iconName"></i>
+            <div class="crt-ver-sep"></div>
+            <div v-text="dictionary['physical'].name"></div>
+          </button>
+          <button id="terrainButton" type="button" class="btn dropdown-item dropdown-item-basemap"
+                  v-bind:aria-label="dictionary['terrain'].description"
+                  v-bind:aria-pressed="[currentBaseMap === 'terrain' ? 'true' : 'false']"
+                  v-bind:class="[currentBaseMap === 'terrain' ? 'btn-danger btn-raised' : 'btn-dark']"
+                  v-on:click="setCurrentBaseMap('terrain')">
+            <i class="material-icons text-dark" v-text="dictionary['terrain'].iconName"></i>
+            <div class="crt-ver-sep"></div>
+            <div v-text="dictionary['terrain'].name"></div>
+          </button>
+          <button id="satelliteButton" type="button" class="btn dropdown-item dropdown-item-basemap"
+                  v-bind:aria-label="dictionary['satellite'].description"
+                  v-bind:aria-pressed="[currentBaseMap === 'satellite' ? 'true' : 'false']"
+                  v-bind:class="[currentBaseMap === 'satellite' ? 'btn-danger btn-raised' : 'btn-dark']"
+                  v-on:click="setCurrentBaseMap('satellite')">
+            <i class="material-icons text-dark" v-text="dictionary['satellite'].iconName"></i>
+            <div class="crt-ver-sep"></div>
+            <div v-text="dictionary['satellite'].name"></div>
+          </button>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="sidebar" class="sidebar collapsed sidebar-right leaflet-touch">
+
+    <div id="sidebarTabsVM" class="sidebar-tabs">
+      <ul role="tablist">
+        <li id="map-controls-button" title="Show / Hide Map Controls"
+            data-toggle="tooltip" data-placement="left" aria-label="Show / Hide Map Controls"
+            v-on:click="hideTooltip('#map-controls-button')">
+          <!--<a href="#info" role="tab"><i class="fas fa-bars"></i></a>-->
+          <!--<a href="#info" role="tab"><i class="fas fa-bars"></i></a>-->
+          <!--<a href="#map-controls" role="tab">-->
+          <!--<i class="crt-material-icons">menu</i>-->
+          <!--</a>-->
+          <!--<a href="#map-controls" role="tab"><i class="fas fa-map"></i></a>-->
+          <a href="#map-controls" role="tab">
+            <i class="crt-material-icons">chrome_reader_mode</i>
+          </a>
+        </li>
+        <li id="typology-info-button" title="Show / Hide Typology Information"
+            data-toggle="tooltip" data-placement="left" aria-label="Show / Hide Typology Information"
+            v-on:click="hideTooltip('#typology-info-button')">
+          <a href="#typology-info" role="tab">
+            <i class="crt-material-icons">assignment</i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sidebar-content h-100">
+
+      <!--style="background-color: #f1c40f;"-->
+      <div class="sidebar-pane h-100" id="map-controls">
+
+        <!--style="background-color: #16a085;"-->
+        <div class="pane-container h-100" >
+
+          <!-- Symbology -->
+          <div id="symbologyVM" class="h-100"
+               v-bind:class="[isVisible === false ? 'd-none' : '']">
+
+            <div class="p-0 h-100">
+
+              <div class="d-flex align-content-stretch flex-column h-100">
+                <div>
+                  <h5>Symbology</h5>
+                </div>
+
+                <!-- Symbology Tabs -->
+                <div class="border-left border-top border-right">
+                  <ul class="nav nav-tabs nav-justified bg-light" role="tablist">
+                    <li class="nav-item">
+                      <a id="supergroups-tab" class="nav-link" data-toggle="tab" href="#supergroups"
+                         role="tab" aria-controls="supergroups" aria-selected="true"
+                         v-bind:class="[currentTab === 'supergroups' ? 'active border-danger text-danger' : '']"
+                         v-on:click="setCurrentTab('supergroups')"
+                         v-text="dictionary['supergroups'].name">
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a id="groups-tab" class="nav-link" data-toggle="tab" href="#groups"
+                         role="tab" aria-controls="groups" aria-selected="false"
+                         v-bind:class="[currentTab === 'groups' ? 'active border-danger text-danger' : '']"
+                         v-on:click="setCurrentTab('groups')"
+                         v-text="dictionary['groups'].name">
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a id="indicators-tab" class="nav-link" data-toggle="tab" href="#indicators"
+                         role="tab" aria-controls="indicators" aria-selected="false"
+                         v-bind:class="[currentTab === 'indicators' ? 'active border-danger text-danger' : '']"
+                         v-on:click="setCurrentTab('indicators')"
+                         v-text="dictionary['indicators'].name">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="mb-auto h-100 ver-scrollbars border-left border-bottom border-right" >
+
+                  <div id="supergroups" class="tab-pane fade show active"
+                       role="tabpanel" aria-labelledby="supergroups-tab"
+                       v-bind:class="[currentTab === 'supergroups' ? '' : 'collapse']">
+
+                    <table class="table">
+                      <tbody>
+
+                      <!--1-->
+                      <tr class="row-gray">
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': supergroupFillColors['1'].fillColor, 'opacity': supergroupFillColors['1'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g1" value="1" v-model="checkedSupergroups"
+                                     v-on:change="renderNuts3TypologyClass('1')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g1" v-text="supergroups['1'].name"></label></td>
+                        <td>
+                          <button id="toggle-sg-radar-1"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['1'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['1'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.supergroups['1'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleRadarDiagram('1')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.supergroups['1'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
+                          <button id="toggle-sg-info-1"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['1'].isInformationPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['1'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.supergroups['1'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('1')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.supergroups['1'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.supergroups['1'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.supergroups['1'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="supergroups['1'].keywords"></p>
+                              <h6>Class Description:</h6>
+                              <p class="card-text" v-text="supergroups['1'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--2-->
+                      <tr>
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': supergroupFillColors['2'].fillColor, 'opacity': supergroupFillColors['2'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g2" value="2" v-model="checkedSupergroups"
+                                     v-on:change="renderNuts3TypologyClass('2')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g2" v-text="supergroups['2'].name"></label></td>
+                        <td>
+                          <button id="toggle-sg-radar-2"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['2'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['2'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.supergroups['2'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleRadarDiagram('2')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.supergroups['2'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
+                          <button id="toggle-sg-info-2"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['2'].isInformationPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['2'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.supergroups['2'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('2')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.supergroups['2'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.supergroups['2'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.supergroups['2'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="supergroups['2'].keywords"></p>
+                              <h6>Class Description:</h6>
+                              <p class="card-text" v-text="supergroups['2'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--3-->
+                      <tr class="row-gray">
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': supergroupFillColors['3'].fillColor, 'opacity': supergroupFillColors['3'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g3" value="3" v-model="checkedSupergroups"
+                                     v-on:change="renderNuts3TypologyClass('3')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g3" v-text="supergroups['3'].name"></label></td>
+                        <td>
+                          <button id="toggle-sg-radar-3"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['3'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['3'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.supergroups['3'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('3')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.supergroups['3'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
+                          <button id="toggle-sg-info-3"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['3'].isInformationPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['3'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.supergroups['3'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('3')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.supergroups['3'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.supergroups['3'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.supergroups['3'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="supergroups['3'].keywords"></p>
+                              <h6>Class Description:</h6>
+                              <p class="card-text" v-text="supergroups['3'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--4-->
+                      <tr>
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': supergroupFillColors['4'].fillColor, 'opacity': supergroupFillColors['4'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g4" value="4" v-model="checkedSupergroups"
+                                     v-on:change="renderNuts3TypologyClass('4')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g4" v-text="supergroups['4'].name"></label></td>
+                        <td>
+                          <button id="toggle-sg-radar-4"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['4'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['4'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.supergroups['4'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('4')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.supergroups['4'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
+                          <button id="toggle-sg-info-4"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['4'].isInformationPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['4'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.supergroups['4'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('4')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.supergroups['4'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.supergroups['4'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.supergroups['4'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="supergroups['4'].keywords"></p>
+                              <h6>Class Description:</h6>
+                              <p class="card-text" v-text="supergroups['4'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--5-->
+                      <tr class="row-gray">
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': supergroupFillColors['5'].fillColor, 'opacity': supergroupFillColors['5'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g5" value="5" v-model="checkedSupergroups"
+                                     v-on:change="renderNuts3TypologyClass('5')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g5" v-text="supergroups['5'].name"></label></td>
+                        <td>
+                          <button id="toggle-sg-radar-5"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['5'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['5'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.supergroups['5'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleRadarDiagram('5')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.supergroups['5'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
+                          <button id="toggle-sg-info-5"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['5'].isInformationPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['5'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.supergroups['5'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('5')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.supergroups['5'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.supergroups['5'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.supergroups['5'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="supergroups['5'].keywords"></p>
+                              <h6>Class Description:</h6>
+                              <p class="card-text" v-text="supergroups['5'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--6-->
+                      <tr>
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': supergroupFillColors['6'].fillColor, 'opacity': supergroupFillColors['6'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g6" value="6" v-model="checkedSupergroups"
+                                     v-on:change="renderNuts3TypologyClass('6')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g6" v-text="supergroups['6'].name"></label></td>
+                        <td>
+                          <button id="toggle-sg-radar-6"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['6'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['6'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.supergroups['6'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleRadarDiagram('6')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.supergroups['6'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
+                          <button id="toggle-sg-info-6"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['6'].isInformationPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['6'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.supergroups['6'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('6')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.supergroups['6'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.supergroups['6'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.supergroups['6'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="supergroups['6'].keywords"></p>
+                              <h6>Class Description:</h6>
+                              <p class="card-text" v-text="supergroups['6'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--7-->
+                      <tr class="row-gray">
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': supergroupFillColors['7'].fillColor, 'opacity': supergroupFillColors['7'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g7" value="7" v-model="checkedSupergroups"
+                                     v-on:change="renderNuts3TypologyClass('7')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g7" v-text="supergroups['7'].name"></label></td>
+                        <td>
+                          <button id="toggle-sg-radar-7"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['7'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['7'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.supergroups['7'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleRadarDiagram('7')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.supergroups['7'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
+                          <button id="toggle-sg-info-7"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['7'].isInformationPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['7'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.supergroups['7'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('7')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.supergroups['7'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.supergroups['7'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.supergroups['7'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="supergroups['7'].keywords"></p>
+                              <h6>Class Description:</h6>
+                              <p class="card-text" v-text="supergroups['7'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--8-->
+                      <tr>
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': supergroupFillColors['8'].fillColor, 'opacity': supergroupFillColors['8'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g8" value="8" v-model="checkedSupergroups"
+                                     v-on:change="renderNuts3TypologyClass('8')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g8" v-text="supergroups['8'].name"></label></td>
+                        <td>
+                          <button id="toggle-sg-radar-8"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['8'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['8'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.supergroups['8'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleRadarDiagram('8')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.supergroups['8'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
+                          <button id="toggle-sg-info-8"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['8'].isInformationPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['8'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.supergroups['8'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('8')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.supergroups['8'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.supergroups['8'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.supergroups['8'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="supergroups['8'].keywords"></p>
+                              <h6>Class Description:</h6>
+                              <p class="card-text" v-text="supergroups['8'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      </tbody>
+                    </table>
+
+                  </div>
+
+                  <div id="groups" class="tab-pane fade"
+                       role="tabpanel" aria-labelledby="groups-tab"
+                       v-bind:class="[currentTab === 'groups' ? '' : 'collapse']">
+
+                    <table class="table">
+                      <tbody>
+
+                      <!--Groups of Supergroup 1-->
+                      <tr class="row-indigo">
+                        <td colspan="3">
+                          <a href="#" class="group-toggle-link" v-text="supergroups['1'].name"
+                             v-on:click="toggleGroups('1')">
+                          </a>
+                        </td>
+                        <td>
+                          <button id="toggle-g-info-1"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['1'].isInformationPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.groups['1'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['1'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light']"
+                                  v-on:click="toggleInfo('1')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['1'].isInformationPanelVisible ? '' : 'text-primary']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['1'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['1'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="supergroups['1'].keywords"></p>
+                              <h6>Class Description:</h6>
+                              <p class="card-text" v-text="supergroups['1'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--11-->
+                      <tr>
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['11'].fillColor, 'opacity': groupFillColors['11'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g11" value="11" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('11')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g11" v-text="groups['11'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-11"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['11'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['11'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['11'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('11')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['11'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['11'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['11'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['11'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['11'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--12-->
+                      <tr class="row-gray">
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['12'].fillColor, 'opacity': groupFillColors['12'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g12" value="12" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('12')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g12" v-text="groups['12'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-12"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['12'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['12'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['12'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('12')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['12'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['12'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['12'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['12'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['12'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--13-->
+                      <tr>
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['13'].fillColor, 'opacity': groupFillColors['13'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g13" value="13" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('13')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g13" v-text="groups['13'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-13"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['13'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['13'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['13'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('13')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['13'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['13'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['13'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['13'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['13'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--14-->
+                      <tr class="row-gray">
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['14'].fillColor, 'opacity': groupFillColors['14'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g14" value="14" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('14')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g14" v-text="groups['14'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-14"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['14'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['14'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['14'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('14')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['14'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['14'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['14'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['14'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['14'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--Groups of Supergroup 2-->
+                      <tr class="row-indigo">
+                        <td colspan="3">
+                          <a href="#" class="group-toggle-link" v-text="supergroups['2'].name"
+                             v-on:click="toggleGroups('2')">
+                          </a>
+                        </td>
+                        <td>
+                          <button id="toggle-g-info-2"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['2'].isInformationPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.groups['2'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['2'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light']"
+                                  v-on:click="toggleInfo('2')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['2'].isInformationPanelVisible ? '' : 'text-primary']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['2'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['2'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="supergroups['2'].keywords"></p>
+                              <h6>Class Description:</h6>
+                              <p class="card-text" v-text="supergroups['2'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--21-->
+                      <tr>
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['21'].fillColor, 'opacity': groupFillColors['21'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g21" value="21" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('21')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g21" v-text="groups['21'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-21"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['21'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['21'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['21'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('21')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['21'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['21'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['21'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['21'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['21'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--22-->
+                      <tr class="row-gray">
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['22'].fillColor, 'opacity': groupFillColors['22'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g22" value="22" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('22')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g22" v-text="groups['22'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-22"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['22'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['22'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['22'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('22')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['22'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['22'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['22'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['22'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['22'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--23-->
+                      <tr>
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['23'].fillColor, 'opacity': groupFillColors['23'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g23" value="23" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('23')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g23" v-text="groups['23'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-23"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['23'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['23'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['23'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('23')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['23'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['23'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['23'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['23'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['23'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--24-->
+                      <tr class="row-gray">
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['24'].fillColor, 'opacity': groupFillColors['24'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g24" value="24" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('24')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g24" v-text="groups['24'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-24"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['24'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['24'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['24'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('24')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['24'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['24'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['24'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['24'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['24'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--Groups of Supergroup 3-->
+                      <tr class="row-indigo">
+                        <td colspan="3">
+                          <a href="#" class="group-toggle-link" v-text="supergroups['3'].name"
+                             v-on:click="toggleGroups('3')">
+                          </a>
+                        </td>
+                        <td>
+                          <button id="toggle-g-info-3"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['3'].isInformationPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.groups['3'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['3'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light']"
+                                  v-on:click="toggleInfo('3')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['3'].isInformationPanelVisible ? '' : 'text-primary']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['3'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['3'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="supergroups['3'].keywords"></p>
+                              <h6>Class Description:</h6>
+                              <p class="card-text" v-text="supergroups['3'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--31-->
+                      <tr>
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['31'].fillColor, 'opacity': groupFillColors['31'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g31" value="31" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('31')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g31" v-text="groups['31'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-31"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['31'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['31'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['31'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('31')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['31'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['31'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['31'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['31'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['31'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--32-->
+                      <tr class="row-gray">
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['32'].fillColor, 'opacity': groupFillColors['32'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g32" value="32" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('32')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g32" v-text="groups['32'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-32"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['32'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['32'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['32'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('32')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['32'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['32'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['32'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['32'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['32'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--33-->
+                      <tr>
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['33'].fillColor, 'opacity': groupFillColors['33'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g33" value="33" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('33')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g33" v-text="groups['33'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-33"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['33'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['33'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['33'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('33')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['33'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['33'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['33'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['33'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['33'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--34-->
+                      <tr class="row-gray">
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['34'].fillColor, 'opacity': groupFillColors['34'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g34" value="34" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('34')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g34" v-text="groups['34'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-34"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['34'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['34'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['34'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('34')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['34'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['34'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['34'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['34'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['34'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--Groups of Supergroup 4-->
+                      <tr class="row-indigo">
+                        <!--<td class="narrow-td">-->
+                          <!--<div class="map-polygon-colour-rect"-->
+                               <!--v-bind:style="{ 'background-color': supergroupFillColors['4'].fillColor, 'opacity': supergroupFillColors['4'].fillOpacity }">-->
+                          <!--</div>-->
+                        <!--</td>-->
+                        <td colspan="3">
+                          <a href="#" class="group-toggle-link" v-text="supergroups['4'].name"
+                             v-on:click="toggleGroups('4')">
+                          </a>
+                        </td>
+                        <td>
+                          <button id="toggle-g-info-4"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['4'].isInformationPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.groups['4'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['4'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light']"
+                                  v-on:click="toggleInfo('4')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['4'].isInformationPanelVisible ? '' : 'text-primary']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['4'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['4'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="supergroups['4'].keywords"></p>
+                              <h6>Class Description:</h6>
+                              <p class="card-text" v-text="supergroups['4'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--41-->
+                      <tr>
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['41'].fillColor, 'opacity': groupFillColors['41'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g41" value="41" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('41')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g41" v-text="groups['41'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-41"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['41'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['41'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['41'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('41')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['41'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['41'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['41'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['41'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['41'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--42-->
+                      <tr class="row-gray">
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['42'].fillColor, 'opacity': groupFillColors['42'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g42" value="42" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('42')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g42" v-text="groups['42'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-42"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['42'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['42'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['42'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('42')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['42'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['42'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['42'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['42'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['42'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--43-->
+                      <tr>
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['43'].fillColor, 'opacity': groupFillColors['43'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g43" value="43" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('43')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g43" v-text="groups['43'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-43"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['43'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['43'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['43'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('43')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['43'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['43'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['43'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['43'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['43'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--44-->
+                      <tr class="row-gray">
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['44'].fillColor, 'opacity': groupFillColors['44'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g44" value="44" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('44')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g44" v-text="groups['44'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-44"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['44'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['44'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['44'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('44')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['44'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['44'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['44'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['44'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['44'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--Groups of Supergroup 5-->
+                      <tr class="row-indigo">
+                        <td colspan="3">
+                          <a href="#" class="group-toggle-link" v-text="supergroups['5'].name"
+                             v-on:click="toggleGroups('5')">
+                          </a>
+                        </td>
+                        <td>
+                          <button id="toggle-g-info-5"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['5'].isInformationPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.groups['5'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['5'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light']"
+                                  v-on:click="toggleInfo('5')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['5'].isInformationPanelVisible ? '' : 'text-primary']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['5'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['5'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="supergroups['5'].keywords"></p>
+                              <h6>Class Description:</h6>
+                              <p class="card-text" v-text="supergroups['5'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--51-->
+                      <tr>
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['51'].fillColor, 'opacity': groupFillColors['51'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g51" value="51" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('51')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g51" v-text="groups['51'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-51"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['51'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['51'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['51'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('51')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['51'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['51'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['51'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['51'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['51'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--52-->
+                      <tr class="row-gray">
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['52'].fillColor, 'opacity': groupFillColors['52'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g52" value="52" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('52')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g52" v-text="groups['52'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-52"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['52'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['52'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['52'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('52')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['52'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['52'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['52'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['52'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['52'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--53-->
+                      <tr>
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['53'].fillColor, 'opacity': groupFillColors['53'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g53" value="53" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('53')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g53" v-text="groups['53'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-53"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['53'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['53'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['53'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('53')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['53'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['53'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['53'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['53'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['53'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--54-->
+                      <tr class="row-gray">
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['54'].fillColor, 'opacity': groupFillColors['54'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g54" value="54" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('54')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g54" v-text="groups['54'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-54"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['54'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['54'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['54'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('54')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['54'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['54'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['54'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['54'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['54'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--55-->
+                      <tr>
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['55'].fillColor, 'opacity': groupFillColors['55'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g55" value="55" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('55')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g55" v-text="groups['55'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-55"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['55'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['55'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['55'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('55')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['55'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['55'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['55'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['55'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['55'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--Groups of Supergroup 6-->
+                      <tr class="row-indigo">
+                        <!--<td class="narrow-td">-->
+                          <!--<div class="map-polygon-colour-rect"-->
+                               <!--v-bind:style="{ 'background-color': supergroupFillColors['6'].fillColor, 'opacity': supergroupFillColors['6'].fillOpacity }">-->
+                          <!--</div>-->
+                        <!--</td>-->
+                        <td colspan="3">
+                          <a href="#" class="group-toggle-link" v-text="supergroups['6'].name"
+                             v-on:click="toggleGroups('6')">
+                          </a>
+                        </td>
+                        <td>
+                          <button id="toggle-g-info-6"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['6'].isInformationPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.groups['6'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['6'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light']"
+                                  v-on:click="toggleInfo('6')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['6'].isInformationPanelVisible ? '' : 'text-primary']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['6'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['6'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="supergroups['6'].keywords"></p>
+                              <h6>Class Description:</h6>
+                              <p class="card-text" v-text="supergroups['6'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--61-->
+                      <tr>
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['61'].fillColor, 'opacity': groupFillColors['61'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g61" value="61" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('61')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g61" v-text="groups['61'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-61"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['61'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['61'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['61'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('61')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['61'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['61'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['61'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['61'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['61'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--62-->
+                      <tr class="row-gray">
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['62'].fillColor, 'opacity': groupFillColors['62'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g62" value="62" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('62')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g62" v-text="groups['62'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-62"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['62'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['62'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['62'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('62')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['62'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['62'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['62'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['62'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['62'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--63-->
+                      <tr>
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['63'].fillColor, 'opacity': groupFillColors['63'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g63" value="63" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('63')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g63" v-text="groups['63'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-63"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['63'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['63'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['63'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('63')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['63'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['63'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['63'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['63'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['63'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--Groups of Supergroup 7-->
+                      <tr class="row-indigo">
+                        <td colspan="3">
+                          <a href="#" class="group-toggle-link" v-text="supergroups['7'].name"
+                             v-on:click="toggleGroups('7')">
+                          </a>
+                        </td>
+                        <td>
+                          <button id="toggle-g-info-7"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['7'].isInformationPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.groups['7'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['7'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light']"
+                                  v-on:click="toggleInfo('7')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['7'].isInformationPanelVisible ? '' : 'text-primary']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['7'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['7'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="supergroups['7'].keywords"></p>
+                              <h6>Class Description:</h6>
+                              <p class="card-text" v-text="supergroups['7'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--71-->
+                      <tr>
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['71'].fillColor, 'opacity': groupFillColors['71'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g71" value="71" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('71')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g71" v-text="groups['71'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-71"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['71'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['71'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['71'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('71')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['71'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['71'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['71'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['71'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['71'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--72-->
+                      <tr class="row-gray">
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['72'].fillColor, 'opacity': groupFillColors['72'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g72" value="72" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('72')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g72" v-text="groups['72'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-72"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['72'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['72'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['72'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('72')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['72'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['72'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['72'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['72'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['72'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--73-->
+                      <tr>
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['73'].fillColor, 'opacity': groupFillColors['73'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g73" value="73" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('73')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g73" v-text="groups['73'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-73"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['73'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['73'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['73'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('73')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['73'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['73'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['73'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['73'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['73'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--74-->
+                      <tr class="row-gray">
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['74'].fillColor, 'opacity': groupFillColors['74'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g74" value="74" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('74')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g74" v-text="groups['74'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-74"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['74'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['74'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['74'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('74')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['74'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['74'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['74'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['74'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['74'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--Groups of Supergroup 8-->
+                      <tr class="row-indigo">
+                        <!--<td class="narrow-td">-->
+                          <!--<div class="map-polygon-colour-rect"-->
+                               <!--v-bind:style="{ 'background-color': supergroupFillColors['8'].fillColor, 'opacity': supergroupFillColors['8'].fillOpacity }">-->
+                          <!--</div>-->
+                        <!--</td>-->
+                        <td colspan="3">
+                          <a href="#" class="group-toggle-link" v-text="supergroups['8'].name"
+                             v-on:click="toggleGroups('8')">
+                          </a>
+                        </td>
+                        <td>
+                          <button id="toggle-g-info-8"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['8'].isInformationPanelVisible ? 'Hide the class information' : 'Show the class information']"
+                                  v-bind:aria-pressed="[dictionary.groups['8'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['8'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light']"
+                                  v-on:click="toggleInfo('8')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['8'].isInformationPanelVisible ? '' : 'text-primary']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['8'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['8'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="supergroups['8'].keywords"></p>
+                              <h6>Class Description:</h6>
+                              <p class="card-text" v-text="supergroups['8'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--81-->
+                      <tr>
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['81'].fillColor, 'opacity': groupFillColors['81'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g81" value="81" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('81')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g81" v-text="groups['81'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-81"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['81'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['81'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['81'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('81')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['81'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['81'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['81'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['81'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['81'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--82-->
+                      <tr class="row-gray">
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['82'].fillColor, 'opacity': groupFillColors['82'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g82" value="82" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('82')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g82" v-text="groups['82'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-82"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['82'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['82'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['82'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('82')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['82'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['82'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['82'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['82'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['82'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!--83-->
+                      <tr>
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColors['83'].fillColor, 'opacity': groupFillColors['83'].fillOpacity }">
+                          </div>
+                        </td>
+                        <td class="narrow-td">
+                          <div class="checkbox checkbox-decorator">
+                            <label>
+                              <input type="checkbox" id="g83" value="83" v-model="checkedGroups"
+                                     v-on:change="renderNuts3TypologyClass('83')">
+                            </label>
+                          </div>
+                        </td>
+                        <td><label class="clickable-label" for="g83" v-text="groups['83'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-info-83"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['83'].isInformationPanelVisible ? 'Hide the subclass information' : 'Show the subclass information']"
+                                  v-bind:aria-pressed="[dictionary.groups['83'].isInformationPanelVisible]"
+                                  v-bind:class="[dictionary.groups['83'].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="toggleInfo('83')">
+                            <i class="material-icons" v-text="infoIconName"
+                               v-bind:class="[dictionary.groups['83'].isInformationPanelVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="collapse"
+                          v-bind:class="[dictionary.groups['83'].isInformationPanelVisible ? 'show' : '']">
+                        <td colspan="4">
+                          <div class="card">
+                            <div class="card-header bg-dark">
+                              <i class="display-2 text-danger info-icon"
+                                 v-bind:class="[dictionary.groups['83'].icon]">
+                              </i>
+                            </div>
+                            <div class="card-body">
+                              <h6>Keywords:</h6>
+                              <p class="card-text text-danger" v-text="groups['83'].keywords"></p>
+                              <h6>Subclass Description:</h6>
+                              <p class="card-text" v-text="groups['83'].description"></p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      </tbody>
+                    </table>
+
+                  </div>
+
+                  <div id="indicators" class="tab-pane fade"
+                       role="tabpanel" aria-labelledby="indicators-tab"
+                       v-bind:class="[currentTab === 'indicators' ? '' : 'collapse']">
+
+                    <div class="p-2">
+                      <table class="w-100">
+                        <tbody>
+                        <tr>
+                          <td>Positive z-score colours:</td>
+                          <td>Negative z-score colours:</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <select class="custom-select" v-model="selectedPositiveGradient"
+                                    v-on:change="renderNuts3Layer()">
+                              <option v-for="positiveGradient in positiveGradients"
+                                      v-bind:value="positiveGradient.value">
+                                {{ positiveGradient.name }}
+                              </option>
+                            </select>
+                          </td>
+                          <td>
+                            <select class="custom-select" v-model="selectedNegativeGradient"
+                                    v-on:click="renderNuts3Layer()">
+                              <option v-for="negativeGradient in negativeGradients"
+                                      v-bind:value="negativeGradient.value">
+                                {{ negativeGradient.name }}
+                              </option>
+                            </select>
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+
+                    <!-- Indicator Domain Tabs -->
+                    <div class="border-top">
+                      <ul class="nav nav-tabs nav-justified bg-light" role="tablist">
+                        <li v-for="(domain, dIndex) in dictionary.domains" v-if="dictionary.domains.length !== 0"
+                            class="nav-item">
+                          <a class="nav-link text-capitalize" data-toggle="tab"
+                             role="tab" aria-selected="true"
+                             v-bind:id="[domain.key + '-tab']"
+                             v-bind:href="['#' + domain.key + '-tabpanel']"
+                             v-bind:aria-controls="[domain.key + '-tabpanel']"
+                             v-bind:class="[currentDomain === domain.key ? 'active border-danger text-danger' : '']"
+                             v-on:click="setCurrentDomain(dIndex)"
+                             v-text="domain.name">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- Indicator Domain Tab Panels -->
+                    <div v-for="(domain, dIndex) in dictionary.domains" v-if="dictionary.domains.length !== 0"
+                         class="tab-pane fade"
+                         role="tabpanel"
+                         v-bind:id="[domain.key + '-tabpanel']"
+                         v-bind:aria-labelledby="[domain.key + '-tab']"
+                         v-bind:class="[currentDomain === domain.key ? 'show active' : 'collapse']">
+
+                      <!--class="ver-scrollbars"-->
+                      <div>
+                      <table class="table">
+                        <tbody v-for="(indicator, iIndex) in domainDictionaryIndicators[domains[dIndex].name]"
+                               v-if="domainDictionaryIndicators[domains[dIndex].name].length !== 0">
+
+                        <tr v-bind:class="[isOdd(iIndex) ? '' : 'row-gray']">
+                          <td class="narrow-td">
+                            <div class="radio bmd-radio">
+                              <label>
+                                <input type="radio" v-model="selectedIndicators[domain.key]"
+                                       v-bind:name="[domain.key + '-radio-buttons']"
+                                       v-bind:id="[indicator.name]"
+                                       v-bind:value="[indicator.name]"
+                                       v-on:change="renderNuts3Layer()">
+                              </label>
+                            </div>
+                          </td>
+                          <td>
+                            <label class="clickable-label"
+                                   v-bind:for="[indicator.name]"
+                                   v-text="indicator.description">
+                            </label>
+                          </td>
+                          <td>
+                            <button type="button" class="btn btn-typology-help"
+                                    data-toggle="tooltip" data-placement="bottom"
+                                    v-bind:id = "['toggle-i-info-' + indicator.name]"
+                                    v-bind:aria-label="[dictionary.indicators[indicator.name].isInformationPanelVisible ? 'Hide the indicator information' : 'Show the indicator information']"
+                                    v-bind:aria-pressed="[dictionary.indicators[indicator.name].isInformationPanelVisible]"
+                                    v-bind:class="[dictionary.indicators[indicator.name].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                    v-on:click="toggleInfo(indicator.name)">
+                              <i class="material-icons" v-text="infoIconName"
+                                 v-bind:class="[dictionary.indicators[indicator.name].isInformationPanelVisible ? '' : 'text-dark']">
+                              </i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr class="collapse"
+                            v-bind:class="[dictionary.indicators[indicator.name].isInformationPanelVisible ? 'show' : '']">
+                          <td colspan="3">
+                            <div class="card">
+                              <div class="card-header bg-dark">
+                                <!--<i class="display-2 text-center text-danger material-icons">@@icon@@</i>-->
+                                <i class="display-2 text-danger info-icon"
+                                   v-bind:class="[dictionary.indicators[indicator.name].icon]">
+                                </i>
+                              </div>
+                              <div class="card-body">
+                                <h6 class="card-title"><strong><em v-text="indicator.description"></em></strong></h6>
+                                <h6 class="card-title text-right"><strong><em v-text="indicator.unit"></em></strong></h6>
+                                <p class="card-text" v-html="indicator.details"></p>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        </tbody>
+                      </table>
+                      </div>
+
+                    </div>
+
+
+
+                  </div>
+
+                </div>
+
+                <div>
+                  <div class="btn-group btn-group-justified" role="group"
+                       v-bind:class="[currentTab === 'indicators' ? 'd-none' : '']">
+                    <button type="button" class="btn btn-danger btn-outline-danger"
+                            v-on:click="selectAll">
+                      Select All
+                    </button>
+
+                    <div class="crt-ver-sep"></div>
+
+                    <button type="button" class="btn btn-danger btn-outline-danger"
+                            v-on:click="deselectAll">
+                      Deselect All
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Overview Information -->
+          <div id="overviewInfoVM" class="h-100"
+               v-bind:class="[isVisible === false ? 'd-none' : '']">
+
+            <div class="p-0 h-100">
+
+              <div class="d-flex align-content-stretch flex-column h-100">
+
+                <!-- Overview Info Header and close button -->
+                <div>
+                  <div class="d-flex">
+                    <div class="mr-auto">
+                      <h5>Overview Information</h5>
+                    </div>
+
+                    <div>
+                      <button id="overview-close" type="button" class="btn btn-danger btn-sm" style="padding: 0;"
+                              data-toggle="tooltip"
+                              data-placement="left"
+                              title="Click to close the overview information panel"
+                              aria-label="Click to close the overview information panel"
+                              v-bind:class="[isVisible === false ? 'invisible' : 'visible']"
+                              v-on:click="close()">
+                        <i class="material-icons">close</i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- NUTS3 Name and EN Button -->
+                <div>
+                  <div class="d-flex">
+                    <div class="mr-auto"
+                         v-bind:class="[language === 'other' ? 'collapse' : '']">
+                      <h4 class="text-danger" v-text="nuts3Name"></h4>
+                    </div>
+                    <div class="mr-auto"
+                         v-bind:class="[language === 'en' ? 'collapse' : '']">
+                      <h4 class="text-danger" v-text="nuts3NativeName"></h4>
+                    </div>
+
+                    <div>
+                      <button id="toggle-lang" type="button" class="btn btn-primary btn-sm"
+                              data-toggle="tooltip"
+                              data-placement="left"
+                              title="Click to change language"
+                              aria-label="Click to change language"
+                              v-bind:class="[language === 'en' ? 'btn-raised' : '']"
+                              v-on:click="toggleLanguage()">
+                        EN
+                      </button>
+                    </div>
+                  </div>
+
+                  <table id="typology-results-table" class="table table-sm">
+                    <tbody>
+
+                      <!--supergroup-->
+                      <tr v-bind:class="[supergroupName === null && groupName === null ? 'collapse' : '']">
+                        <td class="narrow-td">
+                          Class:
+                        </td>
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': supergroupFillColor.fillColor, 'opacity': supergroupFillColor.fillOpacity }">
+                          </div>
+                        </td>
+                        <td>
+                          <h6 v-text="supergroupName"></h6>
+                        </td>
+                      </tr>
+
+                      <!--group-->
+                      <tr v-bind:class="[supergroupName === null && groupName === null ? 'collapse' : '']">
+                        <td class="narrow-td">
+                          Subclass:
+                        </td>
+                        <td class="narrow-td">
+                          <div class="map-polygon-colour-rect"
+                               v-bind:style="{ 'background-color': groupFillColor.fillColor, 'opacity': supergroupFillColor.fillOpacity }">
+                          </div>
+                        </td>
+                        <td>
+                          <h6 v-text="groupName"></h6>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+                </div>
+
+                <!-- Indicators Information -->
+                <div class="mb-auto pt-2 h-100 ver-scrollbars">
+
+                  <div v-for="(domain, dIndex) in domains" v-if="domains.length !== 0">
+
+                    <button class="btn btn-primary btn-outline-primary btn-sm ml-1" type="button" data-toggle="collapse"
+                            v-bind:data-target="['#o-collapse' + dIndex]"
+                            aria-expanded="true"
+                            v-bind:aria-controls="['o-collapse' + dIndex]"
+                            v-text="domain.isOverviewVisible ? 'Hide ' + domain.name : 'Show ' + domain.name"
+                            v-on:click="toggleDomain(dIndex)">
+                    </button>
+
+                    <!--class="show"-->
+                    <div v-bind:id="['o-collapse' + dIndex]" class="m-1 collapse">
+
+                      <div class="card card-body">
+
+                        <table class="table-bordered table-striped table-hover ind-table">
+                          <thead style="background-color: #c9ceea;">
+                          <tr>
+                            <!--<th scope="col" class="text text-right ind-index">-->
+                              <!--<i class="material-icons md-18 text-danger align-middle" v-text="infoIconName"></i>-->
+                            <!--</th>-->
+                            <th scope="col" class="ind-name">Name</th>
+                            <th scope="col" class="text-right ind-value">Value</th>
+                            <th scope="col" class="text-right ind-unit">Unit</th>
+                            <th scope="col" class="text-right ind-value">Z Score</th>
+                          </tr>
+                          </thead>
+                          <tbody v-for="(indicator, iIndex) in domainDictionaryIndicators[domain.name]"
+                                 v-if="domainDictionaryIndicators[domain.name].length !== 0">
+                          <tr>
+                            <!--<th scope="row" class="text-right help ind-index"-->
+                                <!--data-toggle="tooltip" data-html="true" data-placement="left"-->
+                                <!--v-bind:title="indicatorTooltips[domain.name][iIndex]">-->
+                              <!--{{ iIndex + 1 }}-->
+                            <!--</th>-->
+                            <td class="ind-name">
+                              <a data-toggle="collapse" aria-expanded="false"
+                                 v-bind:href="['#o-details-' + indicator.name]"
+                                 v-bind:aria-controls="['o-details-' + indicator.name]"
+                                 v-on:click="toggleDetails(domain.name, iIndex)">
+                                {{ indicator.description }}
+                              </a>
+                            </td>
+                            <td class="text-right ind-value"
+                                v-text="domainDictionaryIndicatorValues !== undefined ? domainDictionaryIndicatorValues[domain.name][iIndex].value : ''">
+                            </td>
+                            <td class="text-right ind-unit"
+                                v-text="domainDictionaryIndicatorValues !== undefined ? domainDictionaryIndicatorValues[domain.name][iIndex].unit : ''">
+                            </td>
+                            <td class="text-right ind-value"
+                                v-text="domainDictionaryIndicatorValues !== undefined ? domainDictionaryIndicatorValues[domain.name][iIndex].zscore : ''"
+                                v-bind:class="[domainDictionaryIndicatorValues !== undefined && domainDictionaryIndicatorValues[domain.name][iIndex].zscore < 0 ? 'text-danger' : '']">
+                            </td>
+                          </tr>
+
+                          <tr v-bind:id="['o-details-' + indicator.name]" class="collapse">
+                            <td colspan="4">
+                              <div class="card card-body p-2">
+                                <div>
+                                  <button type="button" class="btn btn-typology-help"
+                                          data-toggle="tooltip" data-placement="bottom"
+                                          v-bind:aria-label="[dictionary.indicators[indicator.name].isInformationPanelVisible ? 'Hide the indicator information' : 'Show the indicator information']"
+                                          v-bind:aria-pressed="[dictionary.indicators[indicator.name].isInformationPanelVisible]"
+                                          v-bind:class="[dictionary.indicators[indicator.name].isInformationPanelVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                          v-on:click="toggleInfo(indicator.name)">
+                                    <i class="material-icons" v-text="infoIconName"
+                                       v-bind:class="[dictionary.indicators[indicator.name].isInformationPanelVisible ? '' : 'text-dark']">
+                                    </i>
+                                  </button>
+                                </div>
+
+                                <div class="mt-2 collapse"
+                                     v-bind:class="[dictionary.indicators[indicator.name].isInformationPanelVisible ? 'show' : '']">
+                                  <div class="card">
+                                    <div class="card-header bg-dark">
+                                      <!--<i class="display-2 text-center text-danger material-icons">@@icon@@</i>-->
+                                      <i class="display-2 text-danger info-icon"
+                                         v-bind:class="[dictionary.indicators[indicator.name].icon]">
+                                      </i>
+                                    </div>
+                                    <div class="card-body">
+                                      <h6 class="card-title"><strong><em v-text="indicator.description"></em></strong></h6>
+                                      <h6 class="card-title text-right"><strong><em v-text="indicator.unit"></em></strong></h6>
+                                      <p class="card-text" v-html="indicator.details"></p>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="mt-2">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                </div>
+
+                              </div>
+                            </td>
+                          </tr>
+
+
+                          </tbody>
+                        </table>
+
+                      </div>
+                    </div>
+
+                    <div class="mb-2"></div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+
+      <div class="sidebar-pane h-100" id="typology-info">
+        <p>Typology Information</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<script type="text/javascript" src="libs/vue-2.5.16/vue.js"></script>
+<!--<script type="text/javascript" src="libs/vue-2.5.16/vue.min.js"></script>-->
+
+<script type="text/javascript" src="libs/chart-js-2.7.2/chart.min.js"></script>
+
+<!--<script type="text/javascript" src="libs/popper.js-1.12.6/esm/popper.js"></script>-->
+<!--<script type="text/javascript" src="libs/popper.js-1.12.6/esm/popper.min.js"></script>-->
+<script type="text/javascript" src="libs/popper.js-1.12.6/umd/popper.js"></script>
+<!--<script type="text/javascript" src="libs/popper.js-1.12.6/umd/popper.min.js"></script>-->
+<!--<script type="text/javascript" src="libs/popper.js-1.12.6/popper.js"></script>-->
+<!--<script type="text/javascript" src="libs/popper.js-1.12.6/popper.min.js"></script>-->
+
+
+<!--<script type="text/javascript" src="libs/leaflet-1.3.1/leaflet.js"></script>-->
+<script type="text/javascript" src="libs/leaflet-1.3.1/leaflet-src.js"></script>
+<!--<script type="text/javascript" src="libs/leaflet-plugins/leaflet-providers-1.1.17/leaflet-providers.js"></script>-->
+<script type="text/javascript" src="libs/leaflet-plugins/leaflet-providers-2018-04-11/leaflet-providers.js"></script>
+<script type="text/javascript" src="libs/leaflet-plugins/sidebar-v2-0.4.0/leaflet-sidebar.js"></script>
+<!--<script type="text/javascript" src="libs/leaflet-plugins/sidebar-v2-0.4.0/leaflet-sidebar.min.js"></script>-->
+<!--<script type="text/javascript" src="libs/leaflet-plugins/leaflet-pouch/leaflet.pouch.js"></script>-->
+
+<script type="text/javascript" src="libs/bootstrap-material-design-v4.1.1/js/bootstrap-material-design.js"></script>
+<!--<script type="text/javascript" src="libs/bootstrap-material-design-v4.1.1/js/bootstrap-material-design.min.js"></script>-->
+
+<!--<script type="text/javascript" src="libs/ps-math-stats/ps-math-stats.min.js"></script>-->
+
+<!--<script type="text/javascript" src="js/data.js"></script>-->
+<script type="text/javascript" src="js/color-palettes.js"></script>
+<script type="text/javascript" src="js/nuts-3-2013-polygons-v4-epsg-4326-p4.js"></script>
+<script type="text/javascript" src="js/exp/map2.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $('body').bootstrapMaterialDesign();
+  });
+</script>
+
+</body>
+</html>
