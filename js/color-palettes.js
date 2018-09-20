@@ -303,7 +303,6 @@ ColorPalettes.Material = {
   'blueGray900':       { name: 'Blue Gray 900',     hex: '#263238' }
 };
 
-
 /**
  * Flat UI Color Palette.
  *
