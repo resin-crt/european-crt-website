@@ -4,7 +4,7 @@
 //  School of Environment, Education, and Development.
 //
 //  Name:            map.js
-//  Original coding: Vasilis Vlastaras (@gisvlasta), 31/08/2018.
+//  Original coding: Vasilis Vlastaras (@gisvlasta), 20/09/2018.
 //
 //  Description:     Provides the mapping functionality for the
 //                   The European Climate Risk Typology.
@@ -1791,393 +1791,15 @@ let Spatial = {
 let RadarDiagrams = {
 
   /**
+   * The names of the indicators sorted to allow nice visualization on the radar diagram.
+   */
+  sortedIndicators: [
+
+  ],
+
+  /**
    * The labels on the radar diagrams.
    */
-  // labels: [
-  //   // I001
-  //   '1. Mean temperature (RCP 8.5)',
-  //   // I002
-  //   //'Minimum temperature (RCP 8.5)',
-  //   // I003
-  //   // 'Maximum temperature (RCP 8.5)',
-  //   // I004
-  //   // 'Frost days (RCP 8.5)',
-  //   // I005
-  //   '5. Summer days (RCP 8.5)',
-  //   // I006
-  //   // 'Tropical nights (RCP 8.5)',
-  //   // I007
-  //   '7. Ice days (RCP 8.5)',
-  //   // I008
-  //   '8. Heat wave days (RCP 8.5)',
-  //   // I009
-  //   // 'Total wet-day precipitation (RCP 8.5)',
-  //   // I010
-  //   '10. Consecutive dry days (RCP 8.5)',
-  //   // I011
-  //   '11. Consecutive wet days (RCP 8.5)',
-  //   // I012
-  //   '12. Heavy precipitation days (RCP 8.5)',
-  //   // I013
-  //   '13. Very heavy precipitation days (RCP 8.5)',
-  //   // I014
-  //   '14. Coastal hazard',
-  //   // I015
-  //   '15. Drought hazard',
-  //   // I016
-  //   '16. Wildfire hazard',
-  //   // I017
-  //   '17. Length of major road network in NUTS3 unit',
-  //   // I018
-  //   '18. Length of railway network in NUTS3 unit',
-  //   // I019
-  //   '19. Density of major road intersections per km2 of the NUTS3 unit',
-  //   // I020
-  //   '20. Density of transport nodes per km2 of the NUTS3 unit',
-  //   // I021
-  //   '21. Number of airports per head of population in the NUTS3 unit',
-  //   // I022
-  //   '22. Number of ports per head of population in the NUTS3 unit',
-  //   // I023
-  //   '23. Number of hospitals per head of population in the NUTS3 unit',
-  //   // I024
-  //   '24. Number of power plants per head of population in the NUTS3 unit',
-  //   // I025
-  //   '25. Fixed broadband coverage',
-  //   // I026
-  //   '26. Next Generation Access (NGA) - broadband',
-  //   // I027
-  //   // 'I027',
-  //   // I028
-  //   // 'I028',
-  //   // I029
-  //   // 'I029',
-  //   // I030
-  //   '30. Population in settlements exposed to fluvial flooding',
-  //   // I031
-  //   // 'I031',
-  //   // I032
-  //   '32. Road infrastructure exposed to fluvial flooding',
-  //   // I033
-  //   '33. Rail network exposed to fluvial flooding',
-  //   // I034
-  //   // 'I034',
-  //   // I035
-  //   '35. Transport nodes exposed to fluvial flooding',
-  //   // I036
-  //   // 'Airports exposed to fluvial flooding',
-  //   // I037
-  //   // 'Ports exposed to fluvial flooding',
-  //   // I038
-  //   // 'Hospitals exposed to fluvial flooding',
-  //   // I039
-  //   // 'Power plants exposed to fluvial flooding',
-  //   // I040
-  //   '40. Population in settlements exposed to coastal hazard',
-  //   // I041
-  //   // 'I041',
-  //   // I042
-  //   '42. Road infrastructure exposed to coastal hazard',
-  //   // I043
-  //   '43. Rail network exposed to coastal hazard',
-  //   // I044
-  //   // 'I044',
-  //   // I045
-  //   '45. Transport nodes exposed to coastal hazard',
-  //   // I046
-  //   // 'Airports exposed to coastal hazard',
-  //   // I047
-  //   // 'Ports exposed to coastal hazard',
-  //   // I048
-  //   // 'Hospitals exposed to coastal hazard',
-  //   // I049
-  //   // 'Power plants exposed to coastal hazard',
-  //   // I050
-  //   '50. Population in settlements exposed to landslide',
-  //   // I051
-  //   // 'I051',
-  //   // I052
-  //   '52. Road infrastructure exposed to landslide',
-  //   // I053
-  //   '53. Rail network exposed to landslide',
-  //   // I054
-  //   // 'I054',
-  //   // I055
-  //   '55. Transport nodes exposed to landslide',
-  //   // I056
-  //   // 'Airports exposed to landslide',
-  //   // I057
-  //   // 'Ports exposed to landslide',
-  //   // I058
-  //   // 'Hospitals exposed to landslide',
-  //   // I059
-  //   // 'Power plants exposed to landslide',
-  //   // I060
-  //   // 'Average population density',
-  //   // I061
-  //   '61. Total population living in urban areas /area in km2',
-  //   // I062
-  //   '62. % of total urban area in NUTS3 unit that is classified as green space (2012 data)',
-  //   // I063
-  //   '63. % of total land in the NUTS3 unit that is covered by continuous and/or discontinuous urban fabric (2012 data)',
-  //   // I064
-  //   '64. Change in % of total urban area in NUTS3 unit that is classified as green space (2009-2012 data)',
-  //   // I065
-  //   '65. Change in % of total land in the NUTS3 unit that is covered by continuous and/or discontinuous urban fabric (2012 data)',
-  //   // I066
-  //   '66. Soil Moisture Stress',
-  //   // I067
-  //   '67. Water Consumption Pressure (2030)',
-  //   // I068
-  //   '68. Priority Allocations (Euros, 2013 - 2015)',
-  //   // I069
-  //   '69. At Risk of Poverty (ARoP)',
-  //   // I070
-  //   '70. % change in population less than 15 years in NUTS3 unit between 2017-2050',
-  //   // I071
-  //   // 'I071',
-  //   // I072
-  //   // 'I072',
-  //   // I073
-  //   '73. % change in population more than 70 years in NUTS3 unit between 2017-2050',
-  //   // I074
-  //   // 'I074',
-  //   // I075
-  //   '75. % change in population through migration in NUTS3 unit between 2017-2050',
-  //   // I076
-  //   '76. % change in population density in NUTS3 unit between 2017-2050',
-  //   // I077
-  //   '77. % of total employment in NUTS1 unit',
-  //   // I078
-  //   '78. Number of patent applications to the EPO per 1000 population in the NUTS3 unit',
-  //   // I079
-  //   '79. GVA at basic prices per head of population (2012-2015 data)',
-  //   // I080
-  //   // 'I080',
-  //   // I081
-  //   '81. Fluvial hazard',
-  //   // I082
-  //   '82. Landslide hazard',
-  //   // // V1.1
-  //   // 'Mean temperature (RCP 4.5)',
-  //   // // V10.1
-  //   // 'Consecutive dry days (RCP 4.5)',
-  //   // // V11.1
-  //   // 'Consecutive wet days (RCP 4.5)',
-  //   // // V12.1
-  //   // 'Heavy precipitation days (RCP 4.5)',
-  //   // // V13.1
-  //   // 'Very heavy precipitation days (RCP 4.5)',
-  //   // // V2.1
-  //   // 'Minimum temperature (RCP 4.5)',
-  //   // // V3.1
-  //   // 'Maximum temperature (RCP 4.5)',
-  //   // // V4.1
-  //   // 'Frost days (RCP 4.5)',
-  //   // // V5.1
-  //   // 'Summer days (RCP 4.5)',
-  //   // // V6.1
-  //   // 'Tropical nights (RCP 4.5)',
-  //   // // V7.1
-  //   // 'Ice days (RCP 4.5)',
-  //   // // V8.1
-  //   // 'Heat wave days (RCP 4.5)',
-  //   // // V9.1
-  //   // 'Total wet-day precipitation (RCP 4.5)',
-  // ],
-
-  // labels: [
-  //   // I001
-  //   '1. Mean temperature\r\n\r\n\r\n',
-  //   // I002
-  //   //'Minimum temperature (RCP 8.5)',
-  //   // I003
-  //   // 'Maximum temperature (RCP 8.5)',
-  //   // I004
-  //   // 'Frost days (RCP 8.5)',
-  //   // I005
-  //   '5. --------Summer days',
-  //   // I006
-  //   // 'Tropical nights (RCP 8.5)',
-  //   // I007
-  //   '7. --------Ice days',
-  //   // I008
-  //   '8. ----Heat wave days',
-  //   // I009
-  //   // 'Total wet-day precipitation (RCP 8.5)',
-  //   // I010
-  //   '10. Consecutive dry days',
-  //   // I011
-  //   '11. Consecutive wet days',
-  //   // I012
-  //   '12. Heavy precipitation days',
-  //   // I013
-  //   '13. Very heavy precipitation days',
-  //   // I014
-  //   '14. Coastal hazard',
-  //   // I015
-  //   '15. Drought hazard',
-  //   // I016
-  //   '16. Wildfire hazard',
-  //   // I017
-  //   '17.',
-  //   // I018
-  //   '18',
-  //   // I019
-  //   '19',
-  //   // I020
-  //   '20',
-  //   // I021
-  //   '21',
-  //   // I022
-  //   '22',
-  //   // I023
-  //   '23',
-  //   // I024
-  //   '24',
-  //   // I025
-  //   '25. Fixed broadband coverage',
-  //   // I026
-  //   '26. Next Generation Access (NGA) - broadband',
-  //   // I027
-  //   // 'I027',
-  //   // I028
-  //   // 'I028',
-  //   // I029
-  //   // 'I029',
-  //   // I030
-  //   '30',
-  //   // I031
-  //   // 'I031',
-  //   // I032
-  //   '32',
-  //   // I033
-  //   '33',
-  //   // I034
-  //   // 'I034',
-  //   // I035
-  //   '35',
-  //   // I036
-  //   // 'Airports exposed to fluvial flooding',
-  //   // I037
-  //   // 'Ports exposed to fluvial flooding',
-  //   // I038
-  //   // 'Hospitals exposed to fluvial flooding',
-  //   // I039
-  //   // 'Power plants exposed to fluvial flooding',
-  //   // I040
-  //   '40',
-  //   // I041
-  //   // 'I041',
-  //   // I042
-  //   '42',
-  //   // I043
-  //   '43',
-  //   // I044
-  //   // 'I044',
-  //   // I045
-  //   '45',
-  //   // I046
-  //   // 'Airports exposed to coastal hazard',
-  //   // I047
-  //   // 'Ports exposed to coastal hazard',
-  //   // I048
-  //   // 'Hospitals exposed to coastal hazard',
-  //   // I049
-  //   // 'Power plants exposed to coastal hazard',
-  //   // I050
-  //   '50',
-  //   // I051
-  //   // 'I051',
-  //   // I052
-  //   '52',
-  //   // I053
-  //   '53',
-  //   // I054
-  //   // 'I054',
-  //   // I055
-  //   '55',
-  //   // I056
-  //   // 'Airports exposed to landslide',
-  //   // I057
-  //   // 'Ports exposed to landslide',
-  //   // I058
-  //   // 'Hospitals exposed to landslide',
-  //   // I059
-  //   // 'Power plants exposed to landslide',
-  //   // I060
-  //   // 'Average population density',
-  //   // I061
-  //   '61',
-  //   // I062
-  //   '62',
-  //   // I063
-  //   '63',
-  //   // I064
-  //   '64',
-  //   // I065
-  //   '65',
-  //   // I066
-  //   '66',
-  //   // I067
-  //   '67',
-  //   // I068
-  //   '68',
-  //   // I069
-  //   '69',
-  //   // I070
-  //   '70',
-  //   // I071
-  //   // 'I071',
-  //   // I072
-  //   // 'I072',
-  //   // I073
-  //   '73',
-  //   // I074
-  //   // 'I074',
-  //   // I075
-  //   '75',
-  //   // I076
-  //   '76',
-  //   // I077
-  //   '77',
-  //   // I078
-  //   '78',
-  //   // I079
-  //   '79',
-  //   // I080
-  //   // 'I080',
-  //   // I081
-  //   '81. Fluvial hazard',
-  //   // I082
-  //   '82. Landslide hazard',
-  //   // // V1.1
-  //   // 'Mean temperature (RCP 4.5)',
-  //   // // V10.1
-  //   // 'Consecutive dry days (RCP 4.5)',
-  //   // // V11.1
-  //   // 'Consecutive wet days (RCP 4.5)',
-  //   // // V12.1
-  //   // 'Heavy precipitation days (RCP 4.5)',
-  //   // // V13.1
-  //   // 'Very heavy precipitation days (RCP 4.5)',
-  //   // // V2.1
-  //   // 'Minimum temperature (RCP 4.5)',
-  //   // // V3.1
-  //   // 'Maximum temperature (RCP 4.5)',
-  //   // // V4.1
-  //   // 'Frost days (RCP 4.5)',
-  //   // // V5.1
-  //   // 'Summer days (RCP 4.5)',
-  //   // // V6.1
-  //   // 'Tropical nights (RCP 4.5)',
-  //   // // V7.1
-  //   // 'Ice days (RCP 4.5)',
-  //   // // V8.1
-  //   // 'Heat wave days (RCP 4.5)',
-  //   // // V9.1
-  //   // 'Total wet-day precipitation (RCP 4.5)',
-  // ],
 
   labels: [
     // I001
@@ -2453,6 +2075,30 @@ let RadarDiagrams = {
    */
   radarDiagram: null,
 
+  getLabels: function(code) {
+
+    // Get the indicator values associated with the specified typology code.
+    let values = AppData.classificationData[code];
+
+    // Loop through the values and filter out those that will not be used in the radar diagram.
+    // The value to be filtered out is 99.
+    for (let v in values) {
+      if (values.hasOwnProperty(v)) {
+        if v
+
+      }
+    }
+
+
+    // for (let g in this.groups) {
+    //   if (this.groups.hasOwnProperty(g)) {
+    //     this.groups[g].visible = true;
+    //     this.checkedGroups.push(g.toString());
+    //   }
+    // }
+
+  },
+
   /**
    * Creates a radar diagram.
    *
@@ -2467,8 +2113,10 @@ let RadarDiagrams = {
 
     let dataDiagram = $('#radar-diagram');
 
+    let labels =
+
     let dataProperties = {
-      labels: this.labels,
+      labels: labels,
       datasets: [
         {
           label: radarDiagramModalViewModel.title,
