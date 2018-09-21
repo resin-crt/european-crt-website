@@ -1970,6 +1970,8 @@ let RadarDiagrams = {
           beginAtZero: true
         }
       }
+      //responsive: true
+      //maintainAspectRatio: true
     };
 
     this.config.data = dataProperties;

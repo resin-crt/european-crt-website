@@ -125,12 +125,22 @@
       <!--<div class="card-header">-->
         <!--Featured-->
       <!--</div>-->
+
+      <!--col-12" style="position: relative;-->
       <div class="card-body">
 
-        <canvas id="radar-diagram-2" height="110px"></canvas>
+        <div class="chart-container">
+          <canvas id="radar-diagram-2" style="border: 1px solid #000000;"></canvas>
+        </div>
+
+        <!--style="border: 1px solid #000000;"-->
+        <!--<canvas id="radar-diagram-2"></canvas>-->
+        <!--<canvas id="radar-diagram-2" style="border: 1px solid #000000;"></canvas>-->
+        <!--<canvas id="radar-diagram-2" height="80" style="border: 1px solid #000000;"></canvas>-->
+        <!--<div id="radar-diagram-2" style="height: 120px; width:120px; border: 1px solid #000000;"></div>-->
 
       </div>
-      <div class="card-footer">
+      <div class="card-footer text-right">
         <a href="#" class="btn btn-primary"
            v-on:click="hide()">
           Close

@@ -70,6 +70,20 @@ body {
   overflow-y: hidden;
 }
 
+.chart-container {
+  position: relative;
+  margin: auto;
+  height: 50vh;
+  width: 50vw;
+}
+
+/*#radar-diagram-2 {*/
+  /*position: absolute;*/
+  /*width: 100%;*/
+  /*height: 100%;*/
+  /*top: 0px;*/
+/*}*/
+
 .map-container {
   /*background-color: #027fb8;*/
   position: relative;
