@@ -1941,7 +1941,7 @@ let RadarDiagrams = {
       labels: this.sortedLabels,
       datasets: [
         {
-          label: radarDiagramModalViewModel.title,
+          label: radarContainerViewModel.title,
           backgroundColor: this.colors.dataSeries.backgroundColor,
           borderColor: this.colors.dataSeries.borderColor,
           pointBackgroundColor: this.colors.dataSeries.pointBackgroundColor,
@@ -1990,7 +1990,7 @@ let RadarDiagrams = {
 
     this.setSeries(code);
 
-    this.config.data.datasets[0].label = radarDiagramModalViewModel.title;
+    this.config.data.datasets[0].label = radarContainerViewModel.title;
     this.config.data.labels = this.sortedLabels;
     this.config.data.datasets[0].data = this.sortedValues;
     this.config.data.datasets[1].data = this.sortedAverageValues;
@@ -2080,8 +2080,15 @@ let radarContainerViewModel = new Vue({
         }
       }
       else {
-        if (MapLayers.nuts3.groups[this.currentTypologyCode] !== undefined) {
-          name = MapLayers.nuts3.groups[this.currentTypologyCode].name;
+        if (this.currentTypologyCode > 10) {
+          if (MapLayers.nuts3.groups[this.currentTypologyCode] !== undefined) {
+            name = MapLayers.nuts3.groups[this.currentTypologyCode].name;
+          }
+        }
+        else {
+          if (MapLayers.nuts3.supergroups[this.currentTypologyCode] !== undefined) {
+            name = MapLayers.nuts3.supergroups[this.currentTypologyCode].name;
+          }
         }
       }
 
@@ -3161,6 +3168,8 @@ let symbologyViewModel = new Vue({
      */
     toggleRadarDiagram(code) {
 
+      // TODO: Remove modal related code.
+
       // Dynamic Heights
       // If the height of a modal changes while it is open, you should call
       // $('#myModal').modal('handleUpdate')
@@ -3173,7 +3182,12 @@ let symbologyViewModel = new Vue({
 
     },
 
-
+    /**
+     * Shows the radar diagram container.
+     *
+     * @param code - The code [ie: supergroup, group] that will be used to toggle
+     *               the radar diagram modal window of a supergroup or group.
+     */
     showRadarDiagram(code) {
       this.dictionary[this.currentTab][code].isRadarDiagramVisible =
         !this.dictionary[this.currentTab][code].isRadarDiagramVisible;
@@ -3616,106 +3630,6 @@ let overviewInfoViewModel = new Vue({
 //
 // });
 
-/**
- * The radarDiagramModalViewModel provides the data and logic to display the modal window
- * with the radar diagram of the selected typology class or subclass rendered on it..
- *
- * @type {Vue} - A Vue object with the model and methods used in the view model.
- */
-let radarDiagramModalViewModel = new Vue({
-
-  /**
-   * The name of the view model.
-   */
-  el: '#radarDiagramModalVM',
-
-  /**
-   * The model of the view model.
-   */
-  data: {
-
-    /**
-     * The current typology code.
-     */
-    currentTypologyCode: '1'
-
-  },
-
-  /**
-   * The computed properties of the model of the view model.
-   */
-  computed: {
-
-    /**
-     * Gets the title of the radar diagram.
-     *
-     * @returns {string} - A string with the title of the radar diagram.
-     */
-    title: function() {
-
-      let name = '';
-
-      if (symbologyViewModel.currentTab === 'supergroups') {
-        if (MapLayers.nuts3.supergroups[this.currentTypologyCode] !== undefined) {
-          name = MapLayers.nuts3.supergroups[this.currentTypologyCode].name;
-        }
-      }
-      else {
-        if (MapLayers.nuts3.groups[this.currentTypologyCode] !== undefined) {
-          name = MapLayers.nuts3.groups[this.currentTypologyCode].name;
-        }
-      }
-
-      return name;
-
-    }
-
-  },
-
-  /**
-   * The methods of the view model.
-   */
-  methods: {
-
-    /**
-     * Binds elements to events.
-     */
-    bindEvents() {
-
-      let svm = symbologyViewModel;
-      let vm = this;
-
-      $('#radarDiagramModalVM').on('hidden.bs.modal', function(e) {
-        svm.dictionary[svm.currentTab][vm.currentTypologyCode].isRadarDiagramVisible =
-          !svm.dictionary[svm.currentTab][vm.currentTypologyCode].isRadarDiagramVisible;
-      });
-
-    },
-
-    /**
-     * Toggles the modal window with the radar diagram.
-     *
-     * @param code - The typology code whose radar diagram will be rendered.
-     */
-    toggleModal(code) {
-      this.currentTypologyCode = code;
-
-      $('#radarDiagramModalVM').modal('toggle');
-      $('#radarDiagramModalVM').modal('handleUpdate');
-
-      if (RadarDiagrams.config.data === null) {
-        RadarDiagrams.createRadarDiagram('radar-diagram', code);
-      }
-      else {
-        RadarDiagrams.updateRadarDiagram(code);
-      }
-
-    }
-
-  }
-
-});
-
 //
 // ================================================================================
 
@@ -3729,8 +3643,6 @@ $(document).ready(function(){
 });
 
 Spatial.initializeMap();
-
-radarDiagramModalViewModel.bindEvents();
 
 Spatial.sidebar.open('map-controls');
 

@@ -73,8 +73,10 @@ body {
 .chart-container {
   position: relative;
   margin: auto;
-  height: 50vh;
-  width: 50vw;
+  /*height: 70vh;*/
+  /*width: 70vw;*/
+  height: 70%;
+  width: 70%;
 }
 
 /*#radar-diagram-2 {*/
