@@ -122,12 +122,13 @@
   <div id="radarContainerVM" class="radar-container collapse">
 
     <div class="card h-100">
-      <div class="card-header">
-        Featured
-      </div>
+      <!--<div class="card-header">-->
+        <!--Featured-->
+      <!--</div>-->
       <div class="card-body">
-        <h5 class="card-title">Title</h5>
-        <p class="card-text">This is the text.</p>
+
+        <canvas id="radar-diagram-2" height="110px"></canvas>
+
       </div>
       <div class="card-footer">
         <a href="#" class="btn btn-primary"
@@ -342,7 +343,7 @@
                                   v-bind:aria-label="[dictionary.supergroups['1'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
                                   v-bind:aria-pressed="[dictionary.supergroups['1'].isRadarDiagramVisible]"
                                   v-bind:class="[dictionary.supergroups['1'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
-                                  v-on:click="toggleRadarDiagram('1')">
+                                  v-on:click="showRadarDiagram('1')">
                             <i class="material-icons" v-text="radarIconName"
                                v-bind:class="[dictionary.supergroups['1'].isRadarDiagramVisible ? '' : 'text-dark']">
                             </i>
@@ -404,7 +405,7 @@
                                   v-bind:aria-label="[dictionary.supergroups['2'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
                                   v-bind:aria-pressed="[dictionary.supergroups['2'].isRadarDiagramVisible]"
                                   v-bind:class="[dictionary.supergroups['2'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
-                                  v-on:click="toggleRadarDiagram('2')">
+                                  v-on:click="showRadarDiagram('2')">
                             <i class="material-icons" v-text="radarIconName"
                                v-bind:class="[dictionary.supergroups['2'].isRadarDiagramVisible ? '' : 'text-dark']">
                             </i>
@@ -590,7 +591,7 @@
                                   v-bind:aria-label="[dictionary.supergroups['5'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
                                   v-bind:aria-pressed="[dictionary.supergroups['5'].isRadarDiagramVisible]"
                                   v-bind:class="[dictionary.supergroups['5'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
-                                  v-on:click="toggleRadarDiagram('5')">
+                                  v-on:click="showRadarDiagram('5')">
                             <i class="material-icons" v-text="radarIconName"
                                v-bind:class="[dictionary.supergroups['5'].isRadarDiagramVisible ? '' : 'text-dark']">
                             </i>
@@ -652,7 +653,7 @@
                                   v-bind:aria-label="[dictionary.supergroups['6'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
                                   v-bind:aria-pressed="[dictionary.supergroups['6'].isRadarDiagramVisible]"
                                   v-bind:class="[dictionary.supergroups['6'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
-                                  v-on:click="toggleRadarDiagram('6')">
+                                  v-on:click="showRadarDiagram('6')">
                             <i class="material-icons" v-text="radarIconName"
                                v-bind:class="[dictionary.supergroups['6'].isRadarDiagramVisible ? '' : 'text-dark']">
                             </i>
@@ -714,7 +715,7 @@
                                   v-bind:aria-label="[dictionary.supergroups['7'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
                                   v-bind:aria-pressed="[dictionary.supergroups['7'].isRadarDiagramVisible]"
                                   v-bind:class="[dictionary.supergroups['7'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
-                                  v-on:click="toggleRadarDiagram('7')">
+                                  v-on:click="showRadarDiagram('7')">
                             <i class="material-icons" v-text="radarIconName"
                                v-bind:class="[dictionary.supergroups['7'].isRadarDiagramVisible ? '' : 'text-dark']">
                             </i>
@@ -776,7 +777,7 @@
                                   v-bind:aria-label="[dictionary.supergroups['8'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
                                   v-bind:aria-pressed="[dictionary.supergroups['8'].isRadarDiagramVisible]"
                                   v-bind:class="[dictionary.supergroups['8'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
-                                  v-on:click="toggleRadarDiagram('8')">
+                                  v-on:click="showRadarDiagram('8')">
                             <i class="material-icons" v-text="radarIconName"
                                v-bind:class="[dictionary.supergroups['8'].isRadarDiagramVisible ? '' : 'text-dark']">
                             </i>
@@ -835,6 +836,19 @@
                           </a>
                         </td>
                         <td>
+                          <button id="toggle-g-radar-1"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['1'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['1'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.supergroups['1'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light']"
+                                  v-on:click="showRadarDiagram('1')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.supergroups['1'].isRadarDiagramVisible ? '' : 'text-primary']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
                           <button id="toggle-g-info-1"
                                   type="button" class="btn btn-typology-help"
                                   data-toggle="tooltip" data-placement="bottom"
@@ -883,6 +897,19 @@
                           </div>
                         </td>
                         <td><label class="clickable-label" for="g11" v-text="groups['11'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-radar-11"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['11'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['11'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['11'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('11')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['11'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
                         <td>
                           <button id="toggle-g-info-11"
                                   type="button" class="btn btn-typology-help"
@@ -933,6 +960,19 @@
                         </td>
                         <td><label class="clickable-label" for="g12" v-text="groups['12'].name"></label></td>
                         <td>
+                          <button id="toggle-g-radar-12"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['12'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['12'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['12'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('12')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['12'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
                           <button id="toggle-g-info-12"
                                   type="button" class="btn btn-typology-help"
                                   data-toggle="tooltip" data-placement="bottom"
@@ -981,6 +1021,19 @@
                           </div>
                         </td>
                         <td><label class="clickable-label" for="g13" v-text="groups['13'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-radar-13"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['13'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['13'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['13'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('13')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['13'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
                         <td>
                           <button id="toggle-g-info-13"
                                   type="button" class="btn btn-typology-help"
@@ -1031,6 +1084,19 @@
                         </td>
                         <td><label class="clickable-label" for="g14" v-text="groups['14'].name"></label></td>
                         <td>
+                          <button id="toggle-g-radar-14"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['14'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['14'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['14'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('14')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['14'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
                           <button id="toggle-g-info-14"
                                   type="button" class="btn btn-typology-help"
                                   data-toggle="tooltip" data-placement="bottom"
@@ -1069,6 +1135,19 @@
                           <a href="#" class="group-toggle-link" v-text="supergroups['2'].name"
                              v-on:click="toggleGroups('2')">
                           </a>
+                        </td>
+                        <td>
+                          <button id="toggle-g-radar-2"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['2'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['2'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.supergroups['2'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light']"
+                                  v-on:click="showRadarDiagram('2')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.supergroups['2'].isRadarDiagramVisible ? '' : 'text-primary']">
+                            </i>
+                          </button>
                         </td>
                         <td>
                           <button id="toggle-g-info-2"
@@ -1120,6 +1199,19 @@
                         </td>
                         <td><label class="clickable-label" for="g21" v-text="groups['21'].name"></label></td>
                         <td>
+                          <button id="toggle-g-radar-21"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['21'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['21'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['21'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('21')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['21'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
                           <button id="toggle-g-info-21"
                                   type="button" class="btn btn-typology-help"
                                   data-toggle="tooltip" data-placement="bottom"
@@ -1168,6 +1260,19 @@
                           </div>
                         </td>
                         <td><label class="clickable-label" for="g22" v-text="groups['22'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-radar-22"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['22'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['22'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['22'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('22')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['22'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
                         <td>
                           <button id="toggle-g-info-22"
                                   type="button" class="btn btn-typology-help"
@@ -1218,6 +1323,19 @@
                         </td>
                         <td><label class="clickable-label" for="g23" v-text="groups['23'].name"></label></td>
                         <td>
+                          <button id="toggle-g-radar-23"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['23'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['23'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['23'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('23')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['23'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
                           <button id="toggle-g-info-23"
                                   type="button" class="btn btn-typology-help"
                                   data-toggle="tooltip" data-placement="bottom"
@@ -1267,6 +1385,19 @@
                         </td>
                         <td><label class="clickable-label" for="g24" v-text="groups['24'].name"></label></td>
                         <td>
+                          <button id="toggle-g-radar-24"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['24'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['24'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['24'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('24')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['24'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
                           <button id="toggle-g-info-24"
                                   type="button" class="btn btn-typology-help"
                                   data-toggle="tooltip" data-placement="bottom"
@@ -1305,6 +1436,19 @@
                           <a href="#" class="group-toggle-link" v-text="supergroups['3'].name"
                              v-on:click="toggleGroups('3')">
                           </a>
+                        </td>
+                        <td>
+                          <button id="toggle-g-radar-3"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['3'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['3'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.supergroups['3'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light']"
+                                  v-on:click="showRadarDiagram('3')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.supergroups['3'].isRadarDiagramVisible ? '' : 'text-primary']">
+                            </i>
+                          </button>
                         </td>
                         <td>
                           <button id="toggle-g-info-3"
@@ -1356,6 +1500,19 @@
                         </td>
                         <td><label class="clickable-label" for="g31" v-text="groups['31'].name"></label></td>
                         <td>
+                          <button id="toggle-g-radar-31"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['31'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['31'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['31'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('31')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['31'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
                           <button id="toggle-g-info-31"
                                   type="button" class="btn btn-typology-help"
                                   data-toggle="tooltip" data-placement="bottom"
@@ -1404,6 +1561,19 @@
                           </div>
                         </td>
                         <td><label class="clickable-label" for="g32" v-text="groups['32'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-radar-32"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['32'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['32'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['32'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('32')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['32'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
                         <td>
                           <button id="toggle-g-info-32"
                                   type="button" class="btn btn-typology-help"
@@ -1454,6 +1624,19 @@
                         </td>
                         <td><label class="clickable-label" for="g33" v-text="groups['33'].name"></label></td>
                         <td>
+                          <button id="toggle-g-radar-33"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['33'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['33'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['33'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('33')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['33'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
                           <button id="toggle-g-info-33"
                                   type="button" class="btn btn-typology-help"
                                   data-toggle="tooltip" data-placement="bottom"
@@ -1503,6 +1686,19 @@
                         </td>
                         <td><label class="clickable-label" for="g34" v-text="groups['34'].name"></label></td>
                         <td>
+                          <button id="toggle-g-radar-34"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['34'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['34'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['34'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('34')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['34'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
                           <button id="toggle-g-info-34"
                                   type="button" class="btn btn-typology-help"
                                   data-toggle="tooltip" data-placement="bottom"
@@ -1546,6 +1742,19 @@
                           <a href="#" class="group-toggle-link" v-text="supergroups['4'].name"
                              v-on:click="toggleGroups('4')">
                           </a>
+                        </td>
+                        <td>
+                          <button id="toggle-g-radar-4"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['4'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['4'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.supergroups['4'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light']"
+                                  v-on:click="showRadarDiagram('4')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.supergroups['4'].isRadarDiagramVisible ? '' : 'text-primary']">
+                            </i>
+                          </button>
                         </td>
                         <td>
                           <button id="toggle-g-info-4"
@@ -1597,6 +1806,19 @@
                         </td>
                         <td><label class="clickable-label" for="g41" v-text="groups['41'].name"></label></td>
                         <td>
+                          <button id="toggle-g-radar-41"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['41'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['41'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['41'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('41')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['41'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
                           <button id="toggle-g-info-41"
                                   type="button" class="btn btn-typology-help"
                                   data-toggle="tooltip" data-placement="bottom"
@@ -1645,6 +1867,19 @@
                           </div>
                         </td>
                         <td><label class="clickable-label" for="g42" v-text="groups['42'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-radar-42"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['42'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['42'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['42'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('42')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['42'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
                         <td>
                           <button id="toggle-g-info-42"
                                   type="button" class="btn btn-typology-help"
@@ -1695,6 +1930,19 @@
                         </td>
                         <td><label class="clickable-label" for="g43" v-text="groups['43'].name"></label></td>
                         <td>
+                          <button id="toggle-g-radar-43"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['43'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['43'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['43'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('43')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['43'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
                           <button id="toggle-g-info-43"
                                   type="button" class="btn btn-typology-help"
                                   data-toggle="tooltip" data-placement="bottom"
@@ -1744,6 +1992,19 @@
                         </td>
                         <td><label class="clickable-label" for="g44" v-text="groups['44'].name"></label></td>
                         <td>
+                          <button id="toggle-g-radar-44"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['44'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['44'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['44'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('44')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['44'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
                           <button id="toggle-g-info-44"
                                   type="button" class="btn btn-typology-help"
                                   data-toggle="tooltip" data-placement="bottom"
@@ -1782,6 +2043,19 @@
                           <a href="#" class="group-toggle-link" v-text="supergroups['5'].name"
                              v-on:click="toggleGroups('5')">
                           </a>
+                        </td>
+                        <td>
+                          <button id="toggle-g-radar-5"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['5'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['5'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.supergroups['5'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light']"
+                                  v-on:click="showRadarDiagram('5')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.supergroups['5'].isRadarDiagramVisible ? '' : 'text-primary']">
+                            </i>
+                          </button>
                         </td>
                         <td>
                           <button id="toggle-g-info-5"
@@ -1833,6 +2107,19 @@
                         </td>
                         <td><label class="clickable-label" for="g51" v-text="groups['51'].name"></label></td>
                         <td>
+                          <button id="toggle-g-radar-51"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['51'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['51'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['51'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('51')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['51'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
                           <button id="toggle-g-info-51"
                                   type="button" class="btn btn-typology-help"
                                   data-toggle="tooltip" data-placement="bottom"
@@ -1881,6 +2168,19 @@
                           </div>
                         </td>
                         <td><label class="clickable-label" for="g52" v-text="groups['52'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-radar-52"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['52'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['52'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['52'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('52')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['52'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
                         <td>
                           <button id="toggle-g-info-52"
                                   type="button" class="btn btn-typology-help"
@@ -1931,6 +2231,19 @@
                         </td>
                         <td><label class="clickable-label" for="g53" v-text="groups['53'].name"></label></td>
                         <td>
+                          <button id="toggle-g-radar-53"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['53'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['53'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['53'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('53')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['53'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
                           <button id="toggle-g-info-53"
                                   type="button" class="btn btn-typology-help"
                                   data-toggle="tooltip" data-placement="bottom"
@@ -1979,6 +2292,19 @@
                           </div>
                         </td>
                         <td><label class="clickable-label" for="g54" v-text="groups['54'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-radar-54"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['54'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['54'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['54'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('54')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['54'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
                         <td>
                           <button id="toggle-g-info-54"
                                   type="button" class="btn btn-typology-help"
@@ -2029,6 +2355,19 @@
                         </td>
                         <td><label class="clickable-label" for="g55" v-text="groups['55'].name"></label></td>
                         <td>
+                          <button id="toggle-g-radar-55"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['55'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['55'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['55'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('55')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['55'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
                           <button id="toggle-g-info-55"
                                   type="button" class="btn btn-typology-help"
                                   data-toggle="tooltip" data-placement="bottom"
@@ -2072,6 +2411,19 @@
                           <a href="#" class="group-toggle-link" v-text="supergroups['6'].name"
                              v-on:click="toggleGroups('6')">
                           </a>
+                        </td>
+                        <td>
+                          <button id="toggle-g-radar-6"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['6'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['6'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.supergroups['6'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light']"
+                                  v-on:click="showRadarDiagram('6')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.supergroups['6'].isRadarDiagramVisible ? '' : 'text-primary']">
+                            </i>
+                          </button>
                         </td>
                         <td>
                           <button id="toggle-g-info-6"
@@ -2123,6 +2475,19 @@
                         </td>
                         <td><label class="clickable-label" for="g61" v-text="groups['61'].name"></label></td>
                         <td>
+                          <button id="toggle-g-radar-61"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['61'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['61'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['61'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('61')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['61'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
                           <button id="toggle-g-info-61"
                                   type="button" class="btn btn-typology-help"
                                   data-toggle="tooltip" data-placement="bottom"
@@ -2171,6 +2536,19 @@
                           </div>
                         </td>
                         <td><label class="clickable-label" for="g62" v-text="groups['62'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-radar-62"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['62'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['62'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['62'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('62')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['62'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
                         <td>
                           <button id="toggle-g-info-62"
                                   type="button" class="btn btn-typology-help"
@@ -2221,6 +2599,19 @@
                         </td>
                         <td><label class="clickable-label" for="g63" v-text="groups['63'].name"></label></td>
                         <td>
+                          <button id="toggle-g-radar-63"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['63'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['63'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['63'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('63')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['63'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
                           <button id="toggle-g-info-63"
                                   type="button" class="btn btn-typology-help"
                                   data-toggle="tooltip" data-placement="bottom"
@@ -2259,6 +2650,19 @@
                           <a href="#" class="group-toggle-link" v-text="supergroups['7'].name"
                              v-on:click="toggleGroups('7')">
                           </a>
+                        </td>
+                        <td>
+                          <button id="toggle-g-radar-7"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['7'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['7'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.supergroups['7'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light']"
+                                  v-on:click="showRadarDiagram('7')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.supergroups['7'].isRadarDiagramVisible ? '' : 'text-primary']">
+                            </i>
+                          </button>
                         </td>
                         <td>
                           <button id="toggle-g-info-7"
@@ -2310,6 +2714,19 @@
                         </td>
                         <td><label class="clickable-label" for="g71" v-text="groups['71'].name"></label></td>
                         <td>
+                          <button id="toggle-g-radar-71"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['71'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['71'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['71'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('71')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['71'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
                           <button id="toggle-g-info-71"
                                   type="button" class="btn btn-typology-help"
                                   data-toggle="tooltip" data-placement="bottom"
@@ -2358,6 +2775,19 @@
                           </div>
                         </td>
                         <td><label class="clickable-label" for="g72" v-text="groups['72'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-radar-72"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['72'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['72'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['72'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('72')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['72'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
                         <td>
                           <button id="toggle-g-info-72"
                                   type="button" class="btn btn-typology-help"
@@ -2408,6 +2838,19 @@
                         </td>
                         <td><label class="clickable-label" for="g73" v-text="groups['73'].name"></label></td>
                         <td>
+                          <button id="toggle-g-radar-73"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['73'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['73'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['73'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('73')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['73'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
                           <button id="toggle-g-info-73"
                                   type="button" class="btn btn-typology-help"
                                   data-toggle="tooltip" data-placement="bottom"
@@ -2457,6 +2900,19 @@
                         </td>
                         <td><label class="clickable-label" for="g74" v-text="groups['74'].name"></label></td>
                         <td>
+                          <button id="toggle-g-radar-74"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['74'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['74'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['74'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('74')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['74'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
                           <button id="toggle-g-info-74"
                                   type="button" class="btn btn-typology-help"
                                   data-toggle="tooltip" data-placement="bottom"
@@ -2500,6 +2956,19 @@
                           <a href="#" class="group-toggle-link" v-text="supergroups['8'].name"
                              v-on:click="toggleGroups('8')">
                           </a>
+                        </td>
+                        <td>
+                          <button id="toggle-g-radar-8"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.supergroups['8'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.supergroups['8'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.supergroups['8'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light']"
+                                  v-on:click="showRadarDiagram('8')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.supergroups['8'].isRadarDiagramVisible ? '' : 'text-primary']">
+                            </i>
+                          </button>
                         </td>
                         <td>
                           <button id="toggle-g-info-8"
@@ -2551,6 +3020,19 @@
                         </td>
                         <td><label class="clickable-label" for="g81" v-text="groups['81'].name"></label></td>
                         <td>
+                          <button id="toggle-g-radar-81"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['81'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['81'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['81'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('81')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['81'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
                           <button id="toggle-g-info-81"
                                   type="button" class="btn btn-typology-help"
                                   data-toggle="tooltip" data-placement="bottom"
@@ -2600,6 +3082,19 @@
                         </td>
                         <td><label class="clickable-label" for="g82" v-text="groups['82'].name"></label></td>
                         <td>
+                          <button id="toggle-g-radar-82"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['82'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['82'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['82'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('82')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['82'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
+                        <td>
                           <button id="toggle-g-info-82"
                                   type="button" class="btn btn-typology-help"
                                   data-toggle="tooltip" data-placement="bottom"
@@ -2648,6 +3143,19 @@
                           </div>
                         </td>
                         <td><label class="clickable-label" for="g83" v-text="groups['83'].name"></label></td>
+                        <td>
+                          <button id="toggle-g-radar-83"
+                                  type="button" class="btn btn-typology-help"
+                                  data-toggle="tooltip" data-placement="bottom"
+                                  v-bind:aria-label="[dictionary.groups['83'].isRadarDiagramVisible ? 'Hide the radar diagram' : 'Show the radar diagram']"
+                                  v-bind:aria-pressed="[dictionary.groups['83'].isRadarDiagramVisible]"
+                                  v-bind:class="[dictionary.groups['83'].isRadarDiagramVisible ? 'btn-raised btn-danger btn-typology-help-raised' : 'btn-light btn-outline-dark']"
+                                  v-on:click="showRadarDiagram('83')">
+                            <i class="material-icons" v-text="radarIconName"
+                               v-bind:class="[dictionary.groups['83'].isRadarDiagramVisible ? '' : 'text-dark']">
+                            </i>
+                          </button>
+                        </td>
                         <td>
                           <button id="toggle-g-info-83"
                                   type="button" class="btn btn-typology-help"
@@ -2720,7 +3228,6 @@
                         </tbody>
                       </table>
                     </div>
-
 
                     <!-- Indicator Domain Tabs -->
                     <div class="border-top">

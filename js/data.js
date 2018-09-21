@@ -32,6 +32,7 @@ AppData.indicatorMetadata = {
     "domainSort": 2,
     "group": "Heat Stress",
     "groupSort": 2,
+    "radarDiagramSort": 1,
     "isPinned": true,
     "isValid": true
   },
@@ -49,6 +50,7 @@ AppData.indicatorMetadata = {
     "domainSort": 12,
     "group": "Extreme cold",
     "groupSort": 12,
+    "radarDiagramSort": 2,
     "isPinned": true,
     "isValid": true
   },
@@ -66,6 +68,7 @@ AppData.indicatorMetadata = {
     "domainSort": 4,
     "group": "Heat Stress",
     "groupSort": 4,
+    "radarDiagramSort": 3,
     "isPinned": true,
     "isValid": true
   },
@@ -83,6 +86,7 @@ AppData.indicatorMetadata = {
     "domainSort": 14,
     "group": "Extreme cold",
     "groupSort": 14,
+    "radarDiagramSort": 4,
     "isPinned": true,
     "isValid": true
   },
@@ -100,6 +104,7 @@ AppData.indicatorMetadata = {
     "domainSort": 6,
     "group": "Heat Stress",
     "groupSort": 6,
+    "radarDiagramSort": 5,
     "isPinned": true,
     "isValid": true
   },
@@ -117,6 +122,7 @@ AppData.indicatorMetadata = {
     "domainSort": 8,
     "group": "Heat Stress",
     "groupSort": 8,
+    "radarDiagramSort": 6,
     "isPinned": true,
     "isValid": true
   },
@@ -134,6 +140,7 @@ AppData.indicatorMetadata = {
     "domainSort": 16,
     "group": "Extreme cold",
     "groupSort": 16,
+    "radarDiagramSort": 7,
     "isPinned": true,
     "isValid": true
   },
@@ -151,6 +158,7 @@ AppData.indicatorMetadata = {
     "domainSort": 10,
     "group": "Heat Stress",
     "groupSort": 10,
+    "radarDiagramSort": 8,
     "isPinned": true,
     "isValid": true
   },
@@ -168,6 +176,7 @@ AppData.indicatorMetadata = {
     "domainSort": 18,
     "group": "Fluvial and Pluvial Flooding",
     "groupSort": 38,
+    "radarDiagramSort": 9,
     "isPinned": true,
     "isValid": true
   },
@@ -185,6 +194,7 @@ AppData.indicatorMetadata = {
     "domainSort": 26,
     "group": "Drought",
     "groupSort": 18,
+    "radarDiagramSort": 10,
     "isPinned": true,
     "isValid": true
   },
@@ -202,6 +212,7 @@ AppData.indicatorMetadata = {
     "domainSort": 20,
     "group": "Fluvial and Pluvial Flooding",
     "groupSort": 40,
+    "radarDiagramSort": 11,
     "isPinned": true,
     "isValid": true
   },
@@ -219,6 +230,7 @@ AppData.indicatorMetadata = {
     "domainSort": 22,
     "group": "Fluvial and Pluvial Flooding",
     "groupSort": 42,
+    "radarDiagramSort": 12,
     "isPinned": true,
     "isValid": true
   },
@@ -236,6 +248,7 @@ AppData.indicatorMetadata = {
     "domainSort": 24,
     "group": "Fluvial and Pluvial Flooding",
     "groupSort": 44,
+    "radarDiagramSort": 13,
     "isPinned": true,
     "isValid": true
   },
@@ -253,6 +266,7 @@ AppData.indicatorMetadata = {
     "domainSort": 28,
     "group": "Coastal Flooding",
     "groupSort": 20,
+    "radarDiagramSort": 14,
     "isPinned": true,
     "isValid": true
   },
@@ -270,6 +284,7 @@ AppData.indicatorMetadata = {
     "domainSort": 29,
     "group": "Drought",
     "groupSort": 19,
+    "radarDiagramSort": 15,
     "isPinned": true,
     "isValid": true
   },
@@ -287,6 +302,7 @@ AppData.indicatorMetadata = {
     "domainSort": 27,
     "group": "Other",
     "groupSort": 56,
+    "radarDiagramSort": 16,
     "isPinned": true,
     "isValid": true
   },
@@ -304,6 +320,7 @@ AppData.indicatorMetadata = {
     "domainSort": 67,
     "group": "Other",
     "groupSort": 64,
+    "radarDiagramSort": 17,
     "isPinned": true,
     "isValid": true
   },
@@ -321,6 +338,7 @@ AppData.indicatorMetadata = {
     "domainSort": 68,
     "group": "Other",
     "groupSort": 65,
+    "radarDiagramSort": 18,
     "isPinned": true,
     "isValid": true
   },
@@ -338,6 +356,7 @@ AppData.indicatorMetadata = {
     "domainSort": 69,
     "group": "Other",
     "groupSort": 66,
+    "radarDiagramSort": 19,
     "isPinned": true,
     "isValid": true
   },
@@ -355,6 +374,7 @@ AppData.indicatorMetadata = {
     "domainSort": 70,
     "group": "Other",
     "groupSort": 67,
+    "radarDiagramSort": 20,
     "isPinned": true,
     "isValid": true
   },
@@ -372,6 +392,7 @@ AppData.indicatorMetadata = {
     "domainSort": 71,
     "group": "Other",
     "groupSort": 68,
+    "radarDiagramSort": 21,
     "isPinned": true,
     "isValid": true
   },
@@ -389,6 +410,7 @@ AppData.indicatorMetadata = {
     "domainSort": 72,
     "group": "Other",
     "groupSort": 69,
+    "radarDiagramSort": 22,
     "isPinned": true,
     "isValid": true
   },
@@ -406,6 +428,7 @@ AppData.indicatorMetadata = {
     "domainSort": 73,
     "group": "Other",
     "groupSort": 70,
+    "radarDiagramSort": 23,
     "isPinned": true,
     "isValid": true
   },
@@ -423,6 +446,7 @@ AppData.indicatorMetadata = {
     "domainSort": 74,
     "group": "Other",
     "groupSort": 71,
+    "radarDiagramSort": 24,
     "isPinned": true,
     "isValid": true
   },
@@ -440,6 +464,7 @@ AppData.indicatorMetadata = {
     "domainSort": 75,
     "group": "Other",
     "groupSort": 72,
+    "radarDiagramSort": 25,
     "isPinned": true,
     "isValid": true
   },
@@ -457,6 +482,7 @@ AppData.indicatorMetadata = {
     "domainSort": 82,
     "group": "Other",
     "groupSort": 73,
+    "radarDiagramSort": 26,
     "isPinned": true,
     "isValid": true
   },
@@ -474,6 +500,7 @@ AppData.indicatorMetadata = {
     "domainSort": 32,
     "group": "Fluvial Flooding",
     "groupSort": 29,
+    "radarDiagramSort": 30,
     "isPinned": true,
     "isValid": true
   },
@@ -491,6 +518,7 @@ AppData.indicatorMetadata = {
     "domainSort": 35,
     "group": "Fluvial Flooding",
     "groupSort": 30,
+    "radarDiagramSort": 32,
     "isPinned": true,
     "isValid": true
   },
@@ -508,6 +536,7 @@ AppData.indicatorMetadata = {
     "domainSort": 36,
     "group": "Fluvial Flooding",
     "groupSort": 31,
+    "radarDiagramSort": 33,
     "isPinned": true,
     "isValid": true
   },
@@ -525,6 +554,7 @@ AppData.indicatorMetadata = {
     "domainSort": 41,
     "group": "Fluvial Flooding",
     "groupSort": 32,
+    "radarDiagramSort": 35,
     "isPinned": true,
     "isValid": true
   },
@@ -542,6 +572,7 @@ AppData.indicatorMetadata = {
     "domainSort": 44,
     "group": "Fluvial Flooding",
     "groupSort": 33,
+    "radarDiagramSort": 36,
     "isPinned": true,
     "isValid": true
   },
@@ -559,6 +590,7 @@ AppData.indicatorMetadata = {
     "domainSort": 50,
     "group": "Fluvial Flooding",
     "groupSort": 35,
+    "radarDiagramSort": 37,
     "isPinned": true,
     "isValid": true
   },
@@ -576,6 +608,7 @@ AppData.indicatorMetadata = {
     "domainSort": 53,
     "group": "Fluvial Flooding",
     "groupSort": 36,
+    "radarDiagramSort": 38,
     "isPinned": true,
     "isValid": true
   },
@@ -593,6 +626,7 @@ AppData.indicatorMetadata = {
     "domainSort": 47,
     "group": "Fluvial Flooding",
     "groupSort": 34,
+    "radarDiagramSort": 39,
     "isPinned": true,
     "isValid": true
   },
@@ -610,6 +644,7 @@ AppData.indicatorMetadata = {
     "domainSort": 33,
     "group": "Coastal Flooding",
     "groupSort": 21,
+    "radarDiagramSort": 40,
     "isPinned": true,
     "isValid": true
   },
@@ -627,6 +662,7 @@ AppData.indicatorMetadata = {
     "domainSort": 37,
     "group": "Coastal Flooding",
     "groupSort": 22,
+    "radarDiagramSort": 42,
     "isPinned": true,
     "isValid": true
   },
@@ -644,6 +680,7 @@ AppData.indicatorMetadata = {
     "domainSort": 39,
     "group": "Coastal Flooding",
     "groupSort": 23,
+    "radarDiagramSort": 43,
     "isPinned": true,
     "isValid": true
   },
@@ -661,6 +698,7 @@ AppData.indicatorMetadata = {
     "domainSort": 42,
     "group": "Coastal Flooding",
     "groupSort": 24,
+    "radarDiagramSort": 45,
     "isPinned": true,
     "isValid": true
   },
@@ -678,6 +716,7 @@ AppData.indicatorMetadata = {
     "domainSort": 45,
     "group": "Coastal Flooding",
     "groupSort": 25,
+    "radarDiagramSort": 46,
     "isPinned": true,
     "isValid": true
   },
@@ -695,6 +734,7 @@ AppData.indicatorMetadata = {
     "domainSort": 51,
     "group": "Coastal Flooding",
     "groupSort": 27,
+    "radarDiagramSort": 47,
     "isPinned": true,
     "isValid": true
   },
@@ -712,6 +752,7 @@ AppData.indicatorMetadata = {
     "domainSort": 54,
     "group": "Coastal Flooding",
     "groupSort": 28,
+    "radarDiagramSort": 48,
     "isPinned": true,
     "isValid": true
   },
@@ -729,6 +770,7 @@ AppData.indicatorMetadata = {
     "domainSort": 48,
     "group": "Coastal Flooding",
     "groupSort": 26,
+    "radarDiagramSort": 49,
     "isPinned": true,
     "isValid": true
   },
@@ -746,6 +788,7 @@ AppData.indicatorMetadata = {
     "domainSort": 34,
     "group": "Other - Landslide",
     "groupSort": 47,
+    "radarDiagramSort": 50,
     "isPinned": true,
     "isValid": true
   },
@@ -763,6 +806,7 @@ AppData.indicatorMetadata = {
     "domainSort": 38,
     "group": "Other - Landslide",
     "groupSort": 48,
+    "radarDiagramSort": 52,
     "isPinned": true,
     "isValid": true
   },
@@ -780,6 +824,7 @@ AppData.indicatorMetadata = {
     "domainSort": 40,
     "group": "Other - Landslide",
     "groupSort": 49,
+    "radarDiagramSort": 53,
     "isPinned": true,
     "isValid": true
   },
@@ -797,6 +842,7 @@ AppData.indicatorMetadata = {
     "domainSort": 43,
     "group": "Other - Landslide",
     "groupSort": 50,
+    "radarDiagramSort": 55,
     "isPinned": true,
     "isValid": true
   },
@@ -814,6 +860,7 @@ AppData.indicatorMetadata = {
     "domainSort": 46,
     "group": "Other - Landslide",
     "groupSort": 51,
+    "radarDiagramSort": 56,
     "isPinned": true,
     "isValid": true
   },
@@ -831,6 +878,7 @@ AppData.indicatorMetadata = {
     "domainSort": 52,
     "group": "Other - Landslide",
     "groupSort": 53,
+    "radarDiagramSort": 57,
     "isPinned": true,
     "isValid": true
   },
@@ -848,6 +896,7 @@ AppData.indicatorMetadata = {
     "domainSort": 55,
     "group": "Other - Landslide",
     "groupSort": 54,
+    "radarDiagramSort": 58,
     "isPinned": true,
     "isValid": true
   },
@@ -865,6 +914,7 @@ AppData.indicatorMetadata = {
     "domainSort": 49,
     "group": "Other - Landslide",
     "groupSort": 52,
+    "radarDiagramSort": 59,
     "isPinned": true,
     "isValid": true
   },
@@ -882,6 +932,7 @@ AppData.indicatorMetadata = {
     "domainSort": 56,
     "group": "Other",
     "groupSort": 55,
+    "radarDiagramSort": 60,
     "isPinned": true,
     "isValid": true
   },
@@ -899,6 +950,7 @@ AppData.indicatorMetadata = {
     "domainSort": 57,
     "group": "Other",
     "groupSort": 57,
+    "radarDiagramSort": 61,
     "isPinned": true,
     "isValid": true
   },
@@ -916,6 +968,7 @@ AppData.indicatorMetadata = {
     "domainSort": 77,
     "group": "Other",
     "groupSort": 75,
+    "radarDiagramSort": 62,
     "isPinned": true,
     "isValid": true
   },
@@ -933,6 +986,7 @@ AppData.indicatorMetadata = {
     "domainSort": 80,
     "group": "Other",
     "groupSort": 78,
+    "radarDiagramSort": 63,
     "isPinned": true,
     "isValid": true
   },
@@ -950,6 +1004,7 @@ AppData.indicatorMetadata = {
     "domainSort": 79,
     "group": "Other",
     "groupSort": 77,
+    "radarDiagramSort": 64,
     "isPinned": true,
     "isValid": true
   },
@@ -967,6 +1022,7 @@ AppData.indicatorMetadata = {
     "domainSort": 81,
     "group": "Other",
     "groupSort": 79,
+    "radarDiagramSort": 65,
     "isPinned": true,
     "isValid": true
   },
@@ -984,6 +1040,7 @@ AppData.indicatorMetadata = {
     "domainSort": 63,
     "group": "Other",
     "groupSort": 80,
+    "radarDiagramSort": 66,
     "isPinned": true,
     "isValid": true
   },
@@ -1001,6 +1058,7 @@ AppData.indicatorMetadata = {
     "domainSort": 64,
     "group": "Other",
     "groupSort": 81,
+    "radarDiagramSort": 67,
     "isPinned": true,
     "isValid": true
   },
@@ -1018,6 +1076,7 @@ AppData.indicatorMetadata = {
     "domainSort": 78,
     "group": "Other",
     "groupSort": 76,
+    "radarDiagramSort": 68,
     "isPinned": true,
     "isValid": true
   },
@@ -1035,6 +1094,7 @@ AppData.indicatorMetadata = {
     "domainSort": 65,
     "group": "Other",
     "groupSort": 82,
+    "radarDiagramSort": 69,
     "isPinned": true,
     "isValid": true
   },
@@ -1052,6 +1112,7 @@ AppData.indicatorMetadata = {
     "domainSort": 60,
     "group": "Other",
     "groupSort": 60,
+    "radarDiagramSort": 70,
     "isPinned": true,
     "isValid": true
   },
@@ -1069,6 +1130,7 @@ AppData.indicatorMetadata = {
     "domainSort": 61,
     "group": "Other",
     "groupSort": 61,
+    "radarDiagramSort": 73,
     "isPinned": true,
     "isValid": true
   },
@@ -1086,6 +1148,7 @@ AppData.indicatorMetadata = {
     "domainSort": 59,
     "group": "Other",
     "groupSort": 59,
+    "radarDiagramSort": 75,
     "isPinned": true,
     "isValid": true
   },
@@ -1103,6 +1166,7 @@ AppData.indicatorMetadata = {
     "domainSort": 58,
     "group": "Other",
     "groupSort": 58,
+    "radarDiagramSort": 76,
     "isPinned": true,
     "isValid": true
   },
@@ -1120,6 +1184,7 @@ AppData.indicatorMetadata = {
     "domainSort": 66,
     "group": "Other",
     "groupSort": 63,
+    "radarDiagramSort": 77,
     "isPinned": true,
     "isValid": true
   },
@@ -1137,6 +1202,7 @@ AppData.indicatorMetadata = {
     "domainSort": 76,
     "group": "Other",
     "groupSort": 74,
+    "radarDiagramSort": 78,
     "isPinned": true,
     "isValid": true
   },
@@ -1154,6 +1220,7 @@ AppData.indicatorMetadata = {
     "domainSort": 62,
     "group": "Other",
     "groupSort": 62,
+    "radarDiagramSort": 79,
     "isPinned": true,
     "isValid": true
   },
@@ -1171,6 +1238,7 @@ AppData.indicatorMetadata = {
     "domainSort": 30,
     "group": "Fluvial and Pluvial Flooding",
     "groupSort": 45,
+    "radarDiagramSort": 81,
     "isPinned": true,
     "isValid": true
   },
@@ -1188,10 +1256,12 @@ AppData.indicatorMetadata = {
     "domainSort": 31,
     "group": "Other - Landslide",
     "groupSort": 46,
+    "radarDiagramSort": 82,
     "isPinned": true,
     "isValid": true
   },
   "V1.1": {
+    "name": "V1.1",
     "description": "Mean temperature (RCP 4.5)",
     "shortDescription": "Mean temperature (RCP 4.5)",
     "unit": "°C",
@@ -1204,10 +1274,12 @@ AppData.indicatorMetadata = {
     "domainSort": 1,
     "group": "Heat Stress",
     "groupSort": 1,
+    "radarDiagramSort": 100,
     "isPinned": true,
     "isValid": false
   },
   "V10.1": {
+    "name": "10.1",
     "description": "Consecutive dry days (RCP 4.5)",
     "shortDescription": "Consecutive dry days (RCP 4.5)",
     "unit": "N°",
@@ -1220,10 +1292,12 @@ AppData.indicatorMetadata = {
     "domainSort": 25,
     "group": "Drought",
     "groupSort": 17,
+    "radarDiagramSort": 101,
     "isPinned": true,
     "isValid": false
   },
   "V11.1": {
+    "name": "V11.1",
     "description": "Consecutive wet days (RCP 4.5)",
     "shortDescription": "Consecutive wet days (RCP 4.5)",
     "unit": "N°",
@@ -1236,10 +1310,12 @@ AppData.indicatorMetadata = {
     "domainSort": 19,
     "group": "Fluvial and Pluvial Flooding",
     "groupSort": 39,
+    "radarDiagramSort": 102,
     "isPinned": true,
     "isValid": false
   },
   "V12.1": {
+    "name": "V12.1",
     "description": "Heavy precipitation days (RCP 4.5)",
     "shortDescription": "Heavy precipitation days (RCP 4.5)",
     "unit": "N°",
@@ -1252,10 +1328,12 @@ AppData.indicatorMetadata = {
     "domainSort": 21,
     "group": "Fluvial and Pluvial Flooding",
     "groupSort": 41,
+    "radarDiagramSort": 103,
     "isPinned": true,
     "isValid": false
   },
   "V13.1": {
+    "name": "V13.1",
     "description": "Very heavy precipitation days (RCP 4.5)",
     "shortDescription": "Very heavy precipitation days (RCP 4.5)",
     "unit": "N°",
@@ -1268,10 +1346,12 @@ AppData.indicatorMetadata = {
     "domainSort": 23,
     "group": "Fluvial and Pluvial Flooding",
     "groupSort": 43,
+    "radarDiagramSort": 104,
     "isPinned": true,
     "isValid": false
   },
   "V2.1": {
+    "name": "V2.1",
     "description": "Minimum temperature (RCP 4.5)",
     "shortDescription": "Minimum temperature (RCP 4.5)",
     "unit": "°C",
@@ -1284,10 +1364,12 @@ AppData.indicatorMetadata = {
     "domainSort": 11,
     "group": "Extreme cold",
     "groupSort": 11,
+    "radarDiagramSort": 105,
     "isPinned": true,
     "isValid": false
   },
   "V3.1": {
+    "name": "V3.1",
     "description": "Maximum temperature (RCP 4.5)",
     "shortDescription": "Maximum temperature (RCP 4.5)",
     "unit": "°C",
@@ -1300,10 +1382,12 @@ AppData.indicatorMetadata = {
     "domainSort": 3,
     "group": "Heat Stress",
     "groupSort": 3,
+    "radarDiagramSort": 106,
     "isPinned": true,
     "isValid": false
   },
   "V4.1": {
+    "name": "V4.1",
     "description": "Frost days (RCP 4.5)",
     "shortDescription": "Frost days (RCP 4.5)",
     "unit": "N°",
@@ -1316,10 +1400,12 @@ AppData.indicatorMetadata = {
     "domainSort": 13,
     "group": "Extreme cold",
     "groupSort": 13,
+    "radarDiagramSort": 107,
     "isPinned": true,
     "isValid": false
   },
   "V5.1": {
+    "name": "V5.1",
     "description": "Summer days (RCP 4.5)",
     "shortDescription": "Summer days (RCP 4.5)",
     "unit": "N°",
@@ -1332,10 +1418,12 @@ AppData.indicatorMetadata = {
     "domainSort": 5,
     "group": "Heat Stress",
     "groupSort": 5,
+    "radarDiagramSort": 108,
     "isPinned": true,
     "isValid": false
   },
   "V6.1": {
+    "name": "V6.1",
     "description": "Tropical nights (RCP 4.5)",
     "shortDescription": "Tropical nights (RCP 4.5)",
     "unit": "N°",
@@ -1348,10 +1436,12 @@ AppData.indicatorMetadata = {
     "domainSort": 7,
     "group": "Heat Stress",
     "groupSort": 7,
+    "radarDiagramSort": 109,
     "isPinned": true,
     "isValid": false
   },
   "V7.1": {
+    "name": "V7.1",
     "description": "Ice days (RCP 4.5)",
     "shortDescription": "Ice days (RCP 4.5)",
     "unit": "N°",
@@ -1364,10 +1454,12 @@ AppData.indicatorMetadata = {
     "domainSort": 15,
     "group": "Extreme cold",
     "groupSort": 15,
+    "radarDiagramSort": 110,
     "isPinned": true,
     "isValid": false
   },
   "V8.1": {
+    "name": "V8.1",
     "description": "Heat wave days (RCP 4.5)",
     "shortDescription": "Heat wave days (RCP 4.5)",
     "unit": "N°",
@@ -1380,10 +1472,12 @@ AppData.indicatorMetadata = {
     "domainSort": 9,
     "group": "Heat Stress",
     "groupSort": 9,
+    "radarDiagramSort": 111,
     "isPinned": true,
     "isValid": false
   },
   "V9.1": {
+    "name": "V9.1",
     "description": "Total wet-day precipitation (RCP 4.5)",
     "shortDescription": "Total wet-day precipitation (RCP 4.5)",
     "unit": "mm",
@@ -1396,6 +1490,7 @@ AppData.indicatorMetadata = {
     "domainSort": 17,
     "group": "Fluvial and Pluvial Flooding",
     "groupSort": 37,
+    "radarDiagramSort": 112,
     "isPinned": true,
     "isValid": false
   }
@@ -6109,237 +6204,6 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378
   }
 };
-
-AppData.supergroups = [
-  {
-    "value" : 1,
-    "name" : "This is the description for sg 1",
-    "description" : "% of total length of major road intersections in NUTS3 unit exposed to 1 in 100 year fluvial flood."
-  },
-  {
-    "value" : 2,
-    "name" : "This is the description for sg 2",
-    "description" : "These are the details about supergroups sg 2"
-  },
-  {
-    "value" : 3,
-    "name" : "This is the description for sg 3",
-    "description" : "These are the details about supergroup sg 3"
-  },
-  {
-    "value" : 4,
-    "name" : "This is the description for sg 4",
-    "description" : "These are the details about supergroup sg 4"
-  },
-  {
-    "value" : 5,
-    "name" : "This is the description for sg 5",
-    "description" : "These are the details about supergroup sg 5"
-  },
-  {
-    "value" : 6,
-    "name" : "This is the description for sg 6",
-    "description" : "These are the details about supergroup sg 6"
-  },
-  {
-    "value" : 7,
-    "name" : "This is the description for sg 7",
-    "description" : "These are the details about supergroup sg 7"
-  },
-  {
-    "value" : 8,
-    "name" : "This is the description for sg 8",
-    "description" : "These are the details about supergroup sg 8"
-  },
-  {
-    "value" : 9,
-    "name" : "This is the description for sg 9",
-    "description" : "These are the details about supergroup sg 9"
-  }
-];
-
-AppData.groups = [
-  {
-    "value" : 11,
-    "name" : "This is the description for g 11",
-    "description" : "These are the details about group g 11"
-  },
-  {
-    "value" : 12,
-    "name" : "This is the description for g 12",
-    "description" : "These are the details about group g 12"
-  },
-  {
-    "value" : 13,
-    "name" : "This is the description for g 13",
-    "description" : "These are the details about group g 13"
-  },
-  {
-    "value" : 14,
-    "name" : "This is the description for g 14",
-    "description" : "These are the details about group g 14"
-  },
-  {
-    "value" : 21,
-    "name" : "This is the description for g 21",
-    "description" : "These are the details about group g 21"
-  },
-  {
-    "value" : 22,
-    "name" : "This is the description for g 22",
-    "description" : "These are the details about group g 22"
-  },
-  {
-    "value" : 23,
-    "name" : "This is the description for g 23",
-    "description" : "These are the details about group g 23"
-  },
-  {
-    "value" : 24,
-    "name" : "This is the description for g 24",
-    "description" : "These are the details about group g 24"
-  },
-  {
-    "value" : 31,
-    "name" : "This is the description for g 31",
-    "description" : "These are the details about group g 31"
-  },
-  {
-    "value" : 32,
-    "name" : "This is the description for g 32",
-    "description" : "These are the details about group g 32"
-  },
-  {
-    "value" : 33,
-    "name" : "This is the description for g 33",
-    "description" : "These are the details about group g 33"
-  },
-  {
-    "value" : 34,
-    "name" : "This is the description for g 34",
-    "description" : "These are the details about group g 34"
-  },
-  {
-    "value" : 41,
-    "name" : "This is the description for g 41",
-    "description" : "These are the details about group g 41"
-  },
-  {
-    "value" : 42,
-    "name" : "This is the description for g 42",
-    "description" : "These are the details about group g 42"
-  },
-  {
-    "value" : 43,
-    "name" : "This is the description for g 43",
-    "description" : "These are the details about group g 43"
-  },
-  {
-    "value" : 44,
-    "name" : "This is the description for g 44",
-    "description" : "These are the details about group g 44"
-  },
-  {
-    "value" : 51,
-    "name" : "This is the description for g 51",
-    "description" : "These are the details about group g 51"
-  },
-  {
-    "value" : 52,
-    "name" : "This is the description for g 52",
-    "description" : "These are the details about group g 52"
-  },
-  {
-    "value" : 53,
-    "name" : "This is the description for g 53",
-    "description" : "These are the details about group g 53"
-  },
-  {
-    "value" : 54,
-    "name" : "This is the description for g 54",
-    "description" : "These are the details about group g 54"
-  },
-  {
-    "value" : 61,
-    "name" : "This is the description for g 61",
-    "description" : "These are the details about group g 61"
-  },
-  {
-    "value" : 62,
-    "name" : "This is the description for g 62",
-    "description" : "These are the details about group g 62"
-  },
-  {
-    "value" : 63,
-    "name" : "This is the description for g 63",
-    "description" : "These are the details about group g 63"
-  },
-  {
-    "value" : 64,
-    "name" : "This is the description for g 64",
-    "description" : "These are the details about group g 64"
-  },
-  {
-    "value" : 71,
-    "name" : "This is the description for g 71",
-    "description" : "These are the details about group g71"
-  },
-  {
-    "value" : 72,
-    "name" : "This is the description for g 72",
-    "description" : "These are the details about group g72"
-  },
-  {
-    "value" : 73,
-    "name" : "This is the description for g 73",
-    "description" : "These are the details about group g 73"
-  },
-  {
-    "value" : 74,
-    "name" : "This is the description for g 74",
-    "description" : "These are the details about group g 74"
-  },
-  {
-    "value" : 81,
-    "name" : "This is the description for g 81",
-    "description" : "These are the details about group g 81"
-  },
-  {
-    "value" : 82,
-    "name" : "This is the description for g 82",
-    "description" : "These are the details about group g 82"
-  },
-  {
-    "value" : 83,
-    "name" : "This is the description for g 83",
-    "description" : "These are the details about group g 83"
-  },
-  {
-    "value" : 84,
-    "name" : "This is the description for g 84",
-    "description" : "These are the details about group g 84"
-  },
-  {
-    "value" : 91,
-    "name" : "This is the description for g 91",
-    "description" : "These are the details about group g 91"
-  },
-  {
-    "value" : 92,
-    "name" : "This is the description for g 92",
-    "description" : "These are the details about group g 92"
-  },
-  {
-    "value" : 93,
-    "name" : "This is the description for g 93",
-    "description" : "These are the details about group g 93"
-  },
-  {
-    "value" : 94,
-    "name" : "This is the description for g 94",
-    "description" : "These are the details about group g 94"
-  }
-];
 
 AppData.nuts3 = {
   "AT111": {
