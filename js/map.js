@@ -1933,7 +1933,14 @@ let RadarDiagrams = {
     // var ctx = document.getElementById("myChart").getContext("2d");
     // var ctx = "myChart";
 
+    // return;
+
     let dataDiagram = $('#' + element);
+
+    //chart.canvas.parentNode.style.height = '500px';
+
+    // let cardBodyHeight =  $('#radar-diagram-card-body').height();
+    // $('#radar-diagram-chart-container').height(cardBodyHeight - 50);
 
     this.setSeries(code);
 
@@ -1987,6 +1994,11 @@ let RadarDiagrams = {
    * @param code - The typology code used to update the radar diagram.
    */
   updateRadarDiagram(code) {
+
+    // return;
+
+    // let cardBodyHeight =  $('#radar-diagram-card-body').height();
+    // $('#radar-diagram-chart-container').height(cardBodyHeight - 50);
 
     this.setSeries(code);
 
