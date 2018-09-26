@@ -93,7 +93,7 @@
 
 <div class="page-container">
 
-  <div id="radarContainerVM" class="radar-container collapse">
+  <div id="radarContainerVM" class="radar-container-vm collapse">
 
     <div class="card h-100">
       <!--<div class="card-header">-->
@@ -103,11 +103,11 @@
       <!--col-12" style="position: relative;-->
       <div id="radar-diagram-card-body" class="card-body h-100">
 
-        <div id="radar-diagram-chart-container" class="chart-container" style="border: 1px solid #FB8C00;">
-        <!--<div id="radar-diagram-chart-container" class="chart-container">-->
+        <!--<div id="radar-diagram-container" class="radar-container" style="border: 1px solid #FB8C00;">-->
+        <div id="radar-diagram-chart-container" class="radar-container">
           <!--style="border: 1px solid #000000;"-->
-          <canvas id="radar-diagram-2" style="border: 1px solid #000000;"></canvas>
-          <!--<canvas id="radar-diagram-2"></canvas>-->
+          <!--<canvas id="radar-diagram" style="border: 1px solid #000000;"></canvas>-->
+          <canvas id="radar-diagram"></canvas>
         </div>
 
         <!--style="border: 1px solid #000000;"-->
@@ -116,14 +116,21 @@
         <!--<canvas id="radar-diagram-2" height="80" style="border: 1px solid #000000;"></canvas>-->
         <!--<div id="radar-diagram-2" style="height: 120px; width:120px; border: 1px solid #000000;"></div>-->
 
+        <!--style="position: absolute; bottom: 20px; right: 20px;"-->
+        <div class="text-right pt-2">
+          <a href="#" class="btn btn-primary btn-outline-primary"
+             v-on:click="hide()">
+            Close
+          </a>
+        </div>
 
       </div>
-      <div class="card-footer text-right">
-        <a href="#" class="btn btn-primary"
-           v-on:click="hide()">
-          Close
-        </a>
-      </div>
+      <!--<div class="card-footer text-right">-->
+        <!--<a href="#" class="btn btn-primary"-->
+           <!--v-on:click="hide()">-->
+          <!--Close-->
+        <!--</a>-->
+      <!--</div>-->
 
     </div>
 

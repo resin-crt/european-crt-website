@@ -1937,11 +1937,6 @@ let RadarDiagrams = {
 
     let dataDiagram = $('#' + element);
 
-    //chart.canvas.parentNode.style.height = '500px';
-
-    // let cardBodyHeight =  $('#radar-diagram-card-body').height();
-    // $('#radar-diagram-chart-container').height(cardBodyHeight - 50);
-
     this.setSeries(code);
 
     let dataProperties = {
@@ -1985,6 +1980,9 @@ let RadarDiagrams = {
     this.config.options = options;
 
     this.radarDiagram = new Chart(dataDiagram, this.config);
+
+    // let containerHeight =  $('#radar-diagram-chart-container').height();
+    // this.radarDiagram.canvas.parentNode.style.height = containerHeight.toString() + 'px';
 
   },
 
@@ -2128,13 +2126,16 @@ let radarContainerViewModel = new Vue({
       $('#radarContainerVM').removeClass('collapse');
 
       if (RadarDiagrams.config.data === null) {
-        RadarDiagrams.createRadarDiagram('radar-diagram-2', code);
+        RadarDiagrams.createRadarDiagram('radar-diagram', code);
       }
       else {
         RadarDiagrams.updateRadarDiagram(code);
       }
 
       Spatial.sidebar.close('map-controls');
+
+      $('#sidebar').removeClass('visible');
+      $('#sidebar').addClass('invisible');
 
     },
 
@@ -2154,6 +2155,9 @@ let radarContainerViewModel = new Vue({
       $('#radarContainerVM').addClass('collapse');
 
       Spatial.sidebar.open('map-controls');
+
+      $('#sidebar').removeClass('invisible');
+      $('#sidebar').addClass('visible');
 
     }
 
