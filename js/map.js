@@ -4,7 +4,7 @@
 //  School of Environment, Education, and Development.
 //
 //  Name:            map.js
-//  Original coding: Vasilis Vlastaras (@gisvlasta), 21/09/2018.
+//  Original coding: Vasilis Vlastaras (@gisvlasta), 26/09/2018.
 //
 //  Description:     Provides the mapping functionality for the
 //                   The European Climate Risk Typology.
@@ -1815,20 +1815,35 @@ let RadarDiagrams = {
    */
   colors: {
     dataSeries: {
-      backgroundColor: "rgba(213, 58, 53, 0.2)",
-      borderColor: "rgba(213, 58, 53, 1)",
-      pointBackgroundColor: "rgba(166, 28, 24, 1)",
-      pointBorderColor: "#fff",
-      pointHoverBackgroundColor: "#fff",
-      pointHoverBorderColor: "rgba(166, 28, 24, 1)"
+      // backgroundColor:           "rgba(213, 58, 53, 0.2)",
+      // borderColor:               "rgba(213, 58, 53, 1)",
+      // pointBackgroundColor:      "rgba(166, 28, 24, 1)",
+      // pointBorderColor:          "#fff",
+      // pointHoverBackgroundColor: "#fff",
+      // pointHoverBorderColor:     "rgba(166, 28, 24, 1)"
+
+      backgroundColor:           "rgba(244, 67, 54, 0.2)", // ColorPalettes.Material.red
+      borderColor:               "rgba(244, 67, 54, 1)",   // ColorPalettes.Material.red
+      pointBackgroundColor:      "rgba(183, 28, 28, 1)",   // ColorPalettes.Material.red900
+      pointBorderColor:          "#fff",                   // White
+      pointHoverBackgroundColor: "rgba(239, 154, 154, 1)", // ColorPalettes.Material.red200
+      pointHoverBorderColor:     "rgba(183, 28, 28, 1)",   // ColorPalettes.Material.red900
+
     },
     average: {
-      backgroundColor: "rgba(0, 74, 127, 0.2)",
-      borderColor: "rgba(0, 74, 127, 1)",
-      pointBackgroundColor: "rgba(166, 28, 24, 1)",
-      pointBorderColor: "#fff",
-      pointHoverBackgroundColor: "#fff",
-      pointHoverBorderColor: "rgba(166, 28, 24, 1)",
+      // backgroundColor:           "rgba(0, 74, 127, 0.2)",
+      // borderColor:               "rgba(0, 74, 127, 1)",
+      // pointBackgroundColor:      "rgba(166, 28, 24, 1)",
+      // pointBorderColor:          "#fff",
+      // pointHoverBackgroundColor: "#fff",
+      // pointHoverBorderColor:     "rgba(166, 28, 24, 1)"
+
+      backgroundColor:           "rgba(63, 81, 181, 0.2)", // ColorPalettes.Material.indigo
+      borderColor:               "rgba(63, 81, 181, 1)",   // ColorPalettes.Material.indigo
+      pointBackgroundColor:      "rgba(63, 81, 181, 1)",   // ColorPalettes.Material.indigo
+      pointBorderColor:          "rgba(83, 109, 254, 1)",  // ColorPalettes.Material.indigoA200
+      pointHoverBackgroundColor: "rgba(83, 109, 254, 1)",  // ColorPalettes.Material.indigoA200
+      pointHoverBorderColor:     "#fff"
     }
   },
 
@@ -1849,9 +1864,10 @@ let RadarDiagrams = {
   /**
    * Sets the series (labels, values and average values) of the radar diagram.
    *
+   * @param domain - The domain used to filter the indicators displayed on the radar diagram.
    * @param code - The typology code which is used to set the series.
    */
-  setSeries: function(code) {
+  setSeries: function(domain, code) {
 
     // Check if the sortedIndicators array is empty.
     if (this.sortedIndicators.length === 0) {
@@ -1864,6 +1880,7 @@ let RadarDiagrams = {
 
           let indicator = {
             name: name,
+            domain: AppData.indicatorMetadata[name].domain,
             radarDiagramSort: AppData.indicatorMetadata[name].radarDiagramSort
           };
 
@@ -1908,10 +1925,14 @@ let RadarDiagrams = {
         // Push the short description of the indicator, the value and the average value
         // in the corresponding arrays to allow the display of the radar diagram.
         if (values[name] !== 99) {
-          this.sortedLabels.push(AppData.indicatorMetadata[name].shortDescription);
-          //this.sortedLabels.push(name);
-          this.sortedValues.push(values[name]);
-          this.sortedAverageValues.push(0);
+          if (domain === undefined ||
+              domain === null ||
+              domain === '' ||
+              domain === AppData.indicatorMetadata[name].domain) {
+            this.sortedLabels.push(AppData.indicatorMetadata[name].shortDescription);
+            this.sortedValues.push(values[name].toFixed(3));
+            this.sortedAverageValues.push(0);
+          }
         }
 
       }
@@ -1937,7 +1958,7 @@ let RadarDiagrams = {
 
     let dataDiagram = $('#' + element);
 
-    this.setSeries(code);
+    this.setSeries('', code);
 
     let dataProperties = {
       labels: this.sortedLabels,
@@ -1954,12 +1975,12 @@ let RadarDiagrams = {
         },
         {
           label: 'European Average', //'Average',
-          // backgroundColor: this.colors.average.backgroundColor,
+          backgroundColor: this.colors.average.backgroundColor,
           borderColor: this.colors.average.borderColor,
-          // pointBackgroundColor: this.colors.average.pointBackgroundColor,
-          // pointBorderColor: this.colors.average.pointBorderColor,
-          // pointHoverBackgroundColor: this.colors.average.pointHoverBackgroundColor,
-          // pointHoverBorderColor: this.colors.average.pointHoverBorderColor,
+          pointBackgroundColor: this.colors.average.pointBackgroundColor,
+          pointBorderColor: this.colors.average.pointBorderColor,
+          pointHoverBackgroundColor: this.colors.average.pointHoverBackgroundColor,
+          pointHoverBorderColor: this.colors.average.pointHoverBorderColor,
           data: this.sortedAverageValues
         }
       ]
@@ -1971,9 +1992,24 @@ let RadarDiagrams = {
         ticks: {
           beginAtZero: true
         }
-      }
-      //responsive: true
-      //maintainAspectRatio: true
+      },
+      // responsive: true,
+      // maintainAspectRatio: true,
+      // onResize: function(chart, size) {
+      //
+      //   console.log('------------------------------------------------------------');
+      //   console.log('             radarContainerVM: ' + $('#radarContainerVM').height());
+      //   console.log('           radar-diagram-card: ' + $('#radar-diagram-card').height());
+      //   console.log('      radar-diagram-card-body: ' + $('#radar-diagram-card-body').height());
+      //   console.log('radar-diagram-chart-container: ' + $('#radar-diagram-chart-container').height());
+      //   console.log('      chart.canvas.parentNode: ' + chart.canvas.parentNode.style.height);
+      //   console.log('                radar-diagram: ' + $('#radar-diagram').height());
+      //   console.log('                 chart.canvas: ' + chart.canvas.height);
+      //
+      //   chart.canvas.parentNode.style.height = size.height.toString() + 'px';
+      //   //chart.canvas.height = size.height;
+      //
+      // }
     };
 
     this.config.data = dataProperties;
@@ -1983,22 +2019,32 @@ let RadarDiagrams = {
 
     // let containerHeight =  $('#radar-diagram-chart-container').height();
     // this.radarDiagram.canvas.parentNode.style.height = containerHeight.toString() + 'px';
+    //
+    // console.log('------------------------------------------------------------');
+    // console.log('             radarContainerVM: ' + $('#radarContainerVM').height());
+    // console.log('           radar-diagram-card: ' + $('#radar-diagram-card').height());
+    // console.log('      radar-diagram-card-body: ' + $('#radar-diagram-card-body').height());
+    // console.log('radar-diagram-chart-container: ' + $('#radar-diagram-chart-container').height());
+    // console.log('      chart.canvas.parentNode: ' + this.radarDiagram.canvas.parentNode.style.height);
+    // console.log('                radar-diagram: ' + $('#radar-diagram').height());
+    // console.log('                 chart.canvas: ' + this.radarDiagram.canvas.height);
 
   },
 
   /**
-   * Updates a radar diagram.
+   * Updates the radar diagram.
    *
+   * @param domain - The domain used to filter the indicators displayed on the radar diagram.
    * @param code - The typology code used to update the radar diagram.
    */
-  updateRadarDiagram(code) {
+  updateRadarDiagram(domain, code) {
 
     // return;
 
     // let cardBodyHeight =  $('#radar-diagram-card-body').height();
     // $('#radar-diagram-chart-container').height(cardBodyHeight - 50);
 
-    this.setSeries(code);
+    this.setSeries(domain, code);
 
     this.config.data.datasets[0].label = radarContainerViewModel.title;
     this.config.data.labels = this.sortedLabels;
@@ -2064,6 +2110,12 @@ let radarContainerViewModel = new Vue({
     currentTypologyCode: '1',
 
     /**
+     * The current domain of displayed indicators.
+     * An empty string indicates that indicators across all domains are displayed.
+     */
+    currentDomain: '',
+
+    /**
      * Indicates whether the container of the radar diagram is visible or not.
      */
     isVisible: false,
@@ -2113,6 +2165,25 @@ let radarContainerViewModel = new Vue({
    */
   methods: {
 
+    // bindResizeEvent() {
+    //   let element = document.getElementById('radar-diagram-card-body');
+    //
+    //   element.onresize = function() {
+    //     console.log('resized');
+    //   };
+    //
+    // },
+
+    /**
+     * Updates the radar diagram.
+     *
+     * @param domain - The domain used to filter the indicators that will be displayed on the radar diagram.
+     */
+    updateDiagram(domain) {
+      this.currentDomain = domain;
+      RadarDiagrams.updateRadarDiagram(this.currentDomain, this.currentTypologyCode);
+    },
+
     /**
      * Shows the radar container which holds the radar diagram.
      *
@@ -2129,7 +2200,7 @@ let radarContainerViewModel = new Vue({
         RadarDiagrams.createRadarDiagram('radar-diagram', code);
       }
       else {
-        RadarDiagrams.updateRadarDiagram(code);
+        RadarDiagrams.updateRadarDiagram(this.currentDomain, code);
       }
 
       Spatial.sidebar.close('map-controls');
@@ -3659,6 +3730,8 @@ $(document).ready(function(){
 });
 
 Spatial.initializeMap();
+
+// radarContainerViewModel.bindResizeEvent();
 
 Spatial.sidebar.open('map-controls');
 

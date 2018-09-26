@@ -95,7 +95,7 @@
 
   <div id="radarContainerVM" class="radar-container-vm collapse">
 
-    <div class="card h-100">
+    <div id="radar-diagram-card" class="card h-100">
       <!--<div class="card-header">-->
         <!--Featured-->
       <!--</div>-->
@@ -103,7 +103,7 @@
       <!--col-12" style="position: relative;-->
       <div id="radar-diagram-card-body" class="card-body h-100">
 
-        <!--<div id="radar-diagram-container" class="radar-container" style="border: 1px solid #FB8C00;">-->
+        <!--<div id="radar-diagram-chart-container" class="radar-container" style="border: 1px solid #FB8C00;">-->
         <div id="radar-diagram-chart-container" class="radar-container">
           <!--style="border: 1px solid #000000;"-->
           <!--<canvas id="radar-diagram" style="border: 1px solid #000000;"></canvas>-->
@@ -118,10 +118,36 @@
 
         <!--style="position: absolute; bottom: 20px; right: 20px;"-->
         <div class="text-right pt-2">
-          <a href="#" class="btn btn-primary btn-outline-primary"
+          <button type="button" class="btn btn-danger btn-outline-danger"
+                  v-bind:class="[currentDomain === '' ? 'btn-raised' : '']"
+                  v-on:click="updateDiagram('')">
+            All
+          </button>
+          <button class="btn btn-danger btn-outline-danger"
+             v-bind:class="[currentDomain === 'Hazard' ? 'btn-raised' : '']"
+             v-on:click="updateDiagram('Hazard')">
+            Hazard
+          </button>
+          <button class="btn btn-danger btn-outline-danger"
+             v-bind:class="[currentDomain === 'Exposure' ? 'btn-raised' : '']"
+             v-on:click="updateDiagram('Exposure')">
+            Exposure
+          </button>
+          <button class="btn btn-danger btn-outline-danger"
+             v-bind:class="[currentDomain === 'Vulnerability - Sensitivity' ? 'btn-raised' : '']"
+             v-on:click="updateDiagram('Vulnerability - Sensitivity')">
+            Sensitivity
+          </button>
+          <button class="btn btn-danger btn-outline-danger"
+             v-bind:class="[currentDomain === 'Vulnerability - Adaptive Capacity' ? 'btn-raised' : '']"
+             v-on:click="updateDiagram('Vulnerability - Adaptive Capacity')">
+            Adaptive Capacity
+          </button>
+
+          <button class="btn btn-primary btn-outline-primary"
              v-on:click="hide()">
             Close
-          </a>
+          </button>
         </div>
 
       </div>
@@ -3496,7 +3522,7 @@
                           <tr v-bind:id="['o-details-' + indicator.name]" class="collapse">
                             <td colspan="4">
                               <div class="card card-body p-2">
-                                <div>
+                                <div class="text-right">
                                   <button type="button" class="btn btn-typology-help"
                                           data-toggle="tooltip" data-placement="bottom"
                                           v-bind:aria-label="[dictionary.indicators[indicator.name].isInformationPanelVisible ? 'Hide the indicator information' : 'Show the indicator information']"
