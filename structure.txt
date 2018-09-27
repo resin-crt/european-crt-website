@@ -1,4 +1,37 @@
 
+
+Components:
+--------
+
+Radar Diagram
+Spinner
+Map
+Toggle Basemap Buttons
+Sidebar
+  Sidebar Tabs
+  Sidebar Content
+    Map Controls
+      Symbology
+        Symbology Tabs
+        Symbology Content
+          Supergroups
+          Groups
+          Indicators
+            Indicator Colours
+            Indicator Domain Tabs
+            Indicator Domain Tab Panels
+        Symbology Buttons
+
+      Overview Information
+
+
+
+
+    Typology Info
+
+
+
+
 body {
     nav id:navBarHost {
     }

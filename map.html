@@ -93,6 +93,7 @@
 
 <div class="page-container">
 
+  <!-- Component: Radar Diagram -->
   <div id="radarContainerVM" class="radar-container-vm collapse">
 
     <div id="radar-diagram-card" class="card h-100">
@@ -164,6 +165,7 @@
 
   <div class="map-container">
 
+    <!-- Component: Spinner -->
     <div id="spinnerVM" class="spinner" v-show="isVisible">
       <div class="showbox">
         <div class="loader">
@@ -174,8 +176,10 @@
       </div>
     </div>
 
+    <!-- Component: Map -->
     <div id="map" class="sidebar-map"></div>
 
+    <!-- Component: Toggle Basemap Buttons -->
     <div id="toggleBaseMapButtonsVM" class="btn-group rounded" role="group"
          aria-label="Select basemap" data-toggle="buttons">
 
@@ -257,8 +261,10 @@
 
   </div>
 
+  <!-- Component: Sidebar -->
   <div id="sidebar" class="sidebar collapsed sidebar-right leaflet-touch">
 
+    <!-- Component: Sidebar Tabs -->
     <div id="sidebarTabsVM" class="sidebar-tabs">
       <ul role="tablist">
         <li id="map-controls-button" title="Show / Hide Map Controls"
@@ -284,15 +290,16 @@
       </ul>
     </div>
 
+    <!-- Component: Sidebar Content -->
     <div class="sidebar-content h-100">
 
-      <!--style="background-color: #f1c40f;"-->
+      <!-- Component: Map Controls -->
       <div class="sidebar-pane h-100" id="map-controls">
 
-        <!--style="background-color: #16a085;"-->
+
         <div class="pane-container h-100" >
 
-          <!-- Symbology -->
+          <!-- Component: Symbology -->
           <div id="symbologyVM" class="h-100"
                v-bind:class="[isVisible === false ? 'd-none' : '']">
 
@@ -303,7 +310,7 @@
                   <h5>Symbology</h5>
                 </div>
 
-                <!-- Symbology Tabs -->
+                <!-- Component: Symbology Tabs -->
                 <div class="border-left border-top border-right">
                   <ul class="nav nav-tabs nav-justified bg-light" role="tablist">
                     <li class="nav-item">
@@ -333,8 +340,10 @@
                   </ul>
                 </div>
 
+                <!-- Component: Symbology Content -->
                 <div class="mb-auto h-100 ver-scrollbars border-left border-bottom border-right" >
 
+                  <!-- Component: Supergroups -->
                   <div id="supergroups" class="tab-pane fade show active"
                        role="tabpanel" aria-labelledby="supergroups-tab"
                        v-bind:class="[currentTab === 'supergroups' ? '' : 'collapse']">
@@ -843,6 +852,7 @@
 
                   </div>
 
+                  <!-- Component: Groups -->
                   <div id="groups" class="tab-pane fade"
                        role="tabpanel" aria-labelledby="groups-tab"
                        v-bind:class="[currentTab === 'groups' ? '' : 'collapse']">
@@ -3216,10 +3226,12 @@
 
                   </div>
 
+                  <!-- Component: Indicators -->
                   <div id="indicators" class="tab-pane fade"
                        role="tabpanel" aria-labelledby="indicators-tab"
                        v-bind:class="[currentTab === 'indicators' ? '' : 'collapse']">
 
+                    <!-- Component: Indicator Colours -->
                     <div class="p-2">
                       <table class="w-100">
                         <tbody>
@@ -3251,7 +3263,7 @@
                       </table>
                     </div>
 
-                    <!-- Indicator Domain Tabs -->
+                    <!-- Component: Indicator Domain Tabs -->
                     <div class="border-top">
                       <ul class="nav nav-tabs nav-justified bg-light" role="tablist">
                         <li v-for="(domain, dIndex) in dictionary.domains" v-if="dictionary.domains.length !== 0"
@@ -3269,7 +3281,7 @@
                       </ul>
                     </div>
 
-                    <!-- Indicator Domain Tab Panels -->
+                    <!-- Component: Indicator Domain Tab Panels -->
                     <div v-for="(domain, dIndex) in dictionary.domains" v-if="dictionary.domains.length !== 0"
                          class="tab-pane fade"
                          role="tabpanel"
@@ -3340,12 +3352,11 @@
 
                     </div>
 
-
-
                   </div>
 
                 </div>
 
+                <!-- Component: Typology Buttons -->
                 <div>
                   <div class="btn-group btn-group-justified" role="group"
                        v-bind:class="[currentTab === 'indicators' ? 'd-none' : '']">
@@ -3369,7 +3380,7 @@
 
           </div>
 
-          <!-- Overview Information -->
+          <!-- Component: Overview Information -->
           <div id="overviewInfoVM" class="h-100"
                v-bind:class="[isVisible === false ? 'd-none' : '']">
 
@@ -3593,6 +3604,7 @@
 
       </div>
 
+      <!-- Component: Typology Info -->
       <div class="sidebar-pane h-100" id="typology-info">
         <p>Typology Information</p>
       </div>
