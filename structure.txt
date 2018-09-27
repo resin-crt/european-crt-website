@@ -23,7 +23,9 @@ Sidebar
         Symbology Buttons
 
       Overview Information
-
+        Overview Info Header
+        NUTS3 Information
+        Indicators Information
 
 
 

@@ -1990,7 +1990,9 @@ let RadarDiagrams = {
       scale: {
         reverse: false, // TODO: Decide whether to use reverse or not.
         ticks: {
-          beginAtZero: true
+          beginAtZero: true,
+          min: -2,
+          max: 2
         }
       },
       // responsive: true,
@@ -3419,8 +3421,19 @@ let overviewInfoViewModel = new Vue({
         'I079': { isInformationPanelVisible: false, icon: 'fab fa-leanpub' },
         'I081': { isInformationPanelVisible: false, icon: 'fab fa-leanpub' },
         'I082': { isInformationPanelVisible: false, icon: 'fab fa-leanpub' }
-      }
+      },
+      'domains': [
+        { key: 'hazard',      name: 'Hazard',          fullName: 'Hazard' },
+        { key: 'exposure',    name: 'Exposure',        fullName: 'Exposure' },
+        { key: 'sensitivity', name: 'Sensitivity',     fullName: 'Vulnerability - Sensitivity' },
+        { key: 'adaptivity',  name: 'Adapt. Capacity', fullName: 'Vulnerability - Adaptive Capacity' }
+      ]
     },
+
+    /**
+     * The current domain in the indicators tab panel.
+     */
+    currentDomain: 'hazard',
 
     /**
      * The indicator domains.
@@ -3436,7 +3449,7 @@ let overviewInfoViewModel = new Vue({
     domainDictionaryIndicators: AppData.domainDictionaryIndicators,
 
     /**
-     * The dictionary of indicator values grouped ny their domain.
+     * The dictionary of indicator values grouped by their domain.
      */
     domainDictionaryIndicatorValues: undefined,
 
@@ -3460,6 +3473,15 @@ let overviewInfoViewModel = new Vue({
   methods: {
 
     /**
+     * Determines if a number is odd.
+     *
+     * @param number - The number to check.
+     */
+    isOdd(number) {
+      return number % 2;
+    },
+
+    /**
      * Toggles the language from en to other and vice versa.
      */
     toggleLanguage() {
@@ -3475,13 +3497,22 @@ let overviewInfoViewModel = new Vue({
     },
 
     /**
-     * Toggles the indicators of the specified domain.
+     * Sets the current domain.
      *
-     * @param index - The index of the domain.
+     * @param tabIndex - The index of the tab.
      */
-    toggleDomain(index) {
-      this.domains[index].isOverviewVisible = !this.domains[index].isOverviewVisible;
+    setCurrentDomain(tabIndex) {
+      this.currentDomain = this.dictionary.domains[tabIndex].key;
     },
+
+    // /**
+    //  * Toggles the indicators of the specified domain.
+    //  *
+    //  * @param index - The index of the domain.
+    //  */
+    // toggleDomain(index) {
+    //   this.domains[index].isOverviewVisible = !this.domains[index].isOverviewVisible;
+    // },
 
     /**
      * Toggles the details view of an indicator on/off.

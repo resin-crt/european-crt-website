@@ -3388,7 +3388,7 @@
 
               <div class="d-flex align-content-stretch flex-column h-100">
 
-                <!-- Overview Info Header and close button -->
+                <!-- Component: Overview Info Header -->
                 <div>
                   <div class="d-flex">
                     <div class="mr-auto">
@@ -3409,7 +3409,7 @@
                   </div>
                 </div>
 
-                <!-- NUTS3 Name and EN Button -->
+                <!-- Component: NUTS3 Information -->
                 <div>
                   <div class="d-flex">
                     <div class="mr-auto"
@@ -3472,29 +3472,44 @@
 
                 </div>
 
-                <!-- Indicators Information -->
-                <div class="mb-auto pt-2 h-100 ver-scrollbars">
+                <!-- Component: Indicator Domain Tabs (overview) -->
+                <div class="border-left border-top border-right">
+                  <ul class="nav nav-tabs nav-justified bg-light" role="tablist">
+                    <li v-for="(domain, dIndex) in dictionary.domains" v-if="dictionary.domains.length !== 0"
+                        class="nav-item">
+                      <a class="nav-link text-capitalize" data-toggle="tab"
+                         role="tab" aria-selected="true"
+                         v-bind:id="[domain.key + '-oi-tab']"
+                         v-bind:href="['#' + domain.key + '-oi-tabpanel']"
+                         v-bind:aria-controls="[domain.key + '-oi-tabpanel']"
+                         v-bind:class="[currentDomain === domain.key ? 'active border-danger text-danger' : '']"
+                         v-on:click="setCurrentDomain(dIndex)"
+                         v-text="domain.name">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
 
-                  <div v-for="(domain, dIndex) in domains" v-if="domains.length !== 0">
+                <!-- Component: Indicators Content -->
+                <div class="mb-auto h-100 ver-scrollbars border-left border-bottom border-right">
 
-                    <button class="btn btn-primary btn-outline-primary btn-sm ml-1" type="button" data-toggle="collapse"
-                            v-bind:data-target="['#o-collapse' + dIndex]"
-                            aria-expanded="true"
-                            v-bind:aria-controls="['o-collapse' + dIndex]"
-                            v-text="domain.isOverviewVisible ? 'Hide ' + domain.name : 'Show ' + domain.name"
-                            v-on:click="toggleDomain(dIndex)">
-                    </button>
+                  <!-- Component: Indicator Domain Tab Panels (overview) -->
+                  <div v-for="(domain, dIndex) in dictionary.domains" v-if="dictionary.domains.length !== 0"
+                       class="tab-pane fade"
+                       role="tabpanel"
+                       v-bind:id="[domain.key + '-o-tabpanel']"
+                       v-bind:aria-labelledby="[domain.key + '-o-tab']"
+                       v-bind:class="[currentDomain === domain.key ? 'show active' : 'collapse']">
 
-                    <!--class="show"-->
-                    <div v-bind:id="['o-collapse' + dIndex]" class="m-1 collapse">
 
+                    <div>
                       <div class="card card-body">
 
                         <table class="table-bordered table-striped table-hover ind-table">
                           <thead style="background-color: #c9ceea;">
                           <tr>
                             <!--<th scope="col" class="text text-right ind-index">-->
-                              <!--<i class="material-icons md-18 text-danger align-middle" v-text="infoIconName"></i>-->
+                            <!--<i class="material-icons md-18 text-danger align-middle" v-text="infoIconName"></i>-->
                             <!--</th>-->
                             <th scope="col" class="ind-name">Name</th>
                             <th scope="col" class="text-right ind-value">Value</th>
@@ -3502,31 +3517,31 @@
                             <th scope="col" class="text-right ind-value">Z Score</th>
                           </tr>
                           </thead>
-                          <tbody v-for="(indicator, iIndex) in domainDictionaryIndicators[domain.name]"
-                                 v-if="domainDictionaryIndicators[domain.name].length !== 0">
-                          <tr>
+                          <tbody v-for="(indicator, iIndex) in domainDictionaryIndicators[domain.fullName]"
+                                 v-if="domainDictionaryIndicators[domain.fullName].length !== 0">
+                          <tr v-bind:class="[isOdd(iIndex) ? 'table-light' : '']">
                             <!--<th scope="row" class="text-right help ind-index"-->
-                                <!--data-toggle="tooltip" data-html="true" data-placement="left"-->
-                                <!--v-bind:title="indicatorTooltips[domain.name][iIndex]">-->
-                              <!--{{ iIndex + 1 }}-->
+                            <!--data-toggle="tooltip" data-html="true" data-placement="left"-->
+                            <!--v-bind:title="indicatorTooltips[domain.name][iIndex]">-->
+                            <!--{{ iIndex + 1 }}-->
                             <!--</th>-->
                             <td class="ind-name">
                               <a data-toggle="collapse" aria-expanded="false"
                                  v-bind:href="['#o-details-' + indicator.name]"
                                  v-bind:aria-controls="['o-details-' + indicator.name]"
-                                 v-on:click="toggleDetails(domain.name, iIndex)">
+                                 v-on:click="toggleDetails(domain.fullName, iIndex)">
                                 {{ indicator.description }}
                               </a>
                             </td>
                             <td class="text-right ind-value"
-                                v-text="domainDictionaryIndicatorValues !== undefined ? domainDictionaryIndicatorValues[domain.name][iIndex].value : ''">
+                                v-text="domainDictionaryIndicatorValues !== undefined ? domainDictionaryIndicatorValues[domain.fullName][iIndex].value : ''">
                             </td>
                             <td class="text-right ind-unit"
-                                v-text="domainDictionaryIndicatorValues !== undefined ? domainDictionaryIndicatorValues[domain.name][iIndex].unit : ''">
+                                v-text="domainDictionaryIndicatorValues !== undefined ? domainDictionaryIndicatorValues[domain.fullName][iIndex].unit : ''">
                             </td>
                             <td class="text-right ind-value"
-                                v-text="domainDictionaryIndicatorValues !== undefined ? domainDictionaryIndicatorValues[domain.name][iIndex].zscore : ''"
-                                v-bind:class="[domainDictionaryIndicatorValues !== undefined && domainDictionaryIndicatorValues[domain.name][iIndex].zscore < 0 ? 'text-danger' : '']">
+                                v-text="domainDictionaryIndicatorValues !== undefined ? domainDictionaryIndicatorValues[domain.fullName][iIndex].zscore : ''"
+                                v-bind:class="[domainDictionaryIndicatorValues !== undefined && domainDictionaryIndicatorValues[domain.fullName][iIndex].zscore < 0 ? 'text-danger' : '']">
                             </td>
                           </tr>
 
@@ -3578,14 +3593,11 @@
                             </td>
                           </tr>
 
-
                           </tbody>
                         </table>
 
                       </div>
                     </div>
-
-                    <div class="mb-2"></div>
 
                   </div>
 
