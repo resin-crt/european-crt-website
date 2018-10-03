@@ -3590,7 +3590,17 @@ AppData.indicatorValuesStatistics = {
     "min": 1.1,
     "max": 3.1,
     "sum": 2434.9000000000237,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I002": {
     "name": "I002",
@@ -3606,7 +3616,17 @@ AppData.indicatorValuesStatistics = {
     "min": 1.2,
     "max": 3.4,
     "sum": 2516.4000000000024,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I003": {
     "name": "I003",
@@ -3622,7 +3642,17 @@ AppData.indicatorValuesStatistics = {
     "min": 1.1,
     "max": 2.9,
     "sum": 2373.8000000000243,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I004": {
     "name": "I004",
@@ -3638,7 +3668,17 @@ AppData.indicatorValuesStatistics = {
     "min": -43,
     "max": 0,
     "sum": -34623,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I005": {
     "name": "I005",
@@ -3654,7 +3694,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 37,
     "sum": 18099,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I006": {
     "name": "I006",
@@ -3670,7 +3720,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 45,
     "sum": 9135,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I007": {
     "name": "I007",
@@ -3686,7 +3746,17 @@ AppData.indicatorValuesStatistics = {
     "min": -39,
     "max": 0,
     "sum": -13361,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I008": {
     "name": "I008",
@@ -3702,7 +3772,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 25,
     "sum": 3904,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I009": {
     "name": "I009",
@@ -3718,7 +3798,17 @@ AppData.indicatorValuesStatistics = {
     "min": -157,
     "max": 116,
     "sum": 55268,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I010": {
     "name": "I010",
@@ -3734,7 +3824,17 @@ AppData.indicatorValuesStatistics = {
     "min": -1,
     "max": 15,
     "sum": 1152,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I011": {
     "name": "I011",
@@ -3750,7 +3850,17 @@ AppData.indicatorValuesStatistics = {
     "min": -2,
     "max": 1,
     "sum": 45,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I012": {
     "name": "I012",
@@ -3766,7 +3876,17 @@ AppData.indicatorValuesStatistics = {
     "min": -6,
     "max": 5,
     "sum": 2597,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I013": {
     "name": "I013",
@@ -3782,7 +3902,17 @@ AppData.indicatorValuesStatistics = {
     "min": -3,
     "max": 3,
     "sum": 1260,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I014": {
     "name": "I014",
@@ -3798,7 +3928,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 7.94837330677,
     "sum": 921.3764575621694,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I015": {
     "name": "I015",
@@ -3814,7 +3954,17 @@ AppData.indicatorValuesStatistics = {
     "min": -18.0804916791,
     "max": 20.9066100418,
     "sum": 5507.327756623196,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I016": {
     "name": "I016",
@@ -3830,7 +3980,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 1.95951073125,
     "sum": 97.5180571647101,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I017": {
     "name": "I017",
@@ -3846,7 +4006,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 4684.33537995,
     "sum": 682407.6872980024,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I018": {
     "name": "I018",
@@ -3862,7 +4032,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 4566.41441396,
     "sum": 539725.4760597277,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I019": {
     "name": "I019",
@@ -3878,7 +4058,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 71.4825107424,
     "sum": 3494.6647816561826,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I020": {
     "name": "I020",
@@ -3894,7 +4084,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 514.674077345,
     "sum": 2860.1354230606994,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I021": {
     "name": "I021",
@@ -3910,7 +4110,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 0.53869569679,
     "sum": 10.969562834370004,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I022": {
     "name": "I022",
@@ -3926,7 +4136,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 1.12317253041,
     "sum": 7.6502935083399946,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I023": {
     "name": "I023",
@@ -3942,7 +4162,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 0.1033493812,
     "sum": 18.27413349320999,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I024": {
     "name": "I024",
@@ -3958,7 +4188,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 1.88601108655,
     "sum": 113.00735020842006,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I025": {
     "name": "I025",
@@ -3974,7 +4214,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 119697.86916577119,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I026": {
     "name": "I026",
@@ -3990,7 +4240,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 97311.6350779136,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I027": {
     "name": "I027",
@@ -4006,7 +4266,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 119109.33032046988,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I028": {
     "name": "I028",
@@ -4022,7 +4292,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 95942.04964923661,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I029": {
     "name": "I029",
@@ -4038,7 +4318,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 99.925,
     "sum": 69213.07132469301,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I030": {
     "name": "I030",
@@ -4054,7 +4344,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 72.8540840578,
     "sum": 5185.725933194371,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I031": {
     "name": "I031",
@@ -4070,7 +4370,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 96.4257282939,
     "sum": 12324.654125656592,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I032": {
     "name": "I032",
@@ -4086,7 +4396,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 90.1987593298,
     "sum": 8761.859563555998,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I033": {
     "name": "I033",
@@ -4102,7 +4422,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 285.460641364,
     "sum": 14160.776065676238,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I034": {
     "name": "I034",
@@ -4118,7 +4448,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 87.4791318865,
     "sum": 9925.367723555708,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I035": {
     "name": "I035",
@@ -4134,7 +4474,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 79.3062200957,
     "sum": 6710.464231103379,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I036": {
     "name": "I036",
@@ -4150,7 +4500,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 9358.084040142387,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I037": {
     "name": "I037",
@@ -4166,7 +4526,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 7614.451602319132,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I038": {
     "name": "I038",
@@ -4182,7 +4552,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 906.4316816,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I039": {
     "name": "I039",
@@ -4198,7 +4578,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 12962.213044834867,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I040": {
     "name": "I040",
@@ -4214,7 +4604,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 98.0058450171,
     "sum": 3860.4690043743008,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I041": {
     "name": "I041",
@@ -4230,7 +4630,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 99.0230817419,
     "sum": 3988.632358032658,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I042": {
     "name": "I042",
@@ -4246,7 +4656,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 89.872103186,
     "sum": 3360.0072571544674,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I043": {
     "name": "I043",
@@ -4262,7 +4682,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 96.3037502583,
     "sum": 3735.002305509922,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I044": {
     "name": "I044",
@@ -4278,7 +4708,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 35000,
     "sum": 144080.3740213705,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I045": {
     "name": "I045",
@@ -4294,7 +4734,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 95.5421686747,
     "sum": 4346.619220548897,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I046": {
     "name": "I046",
@@ -4310,7 +4760,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 2884.2857142855296,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I047": {
     "name": "I047",
@@ -4326,7 +4786,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 7325.355155642922,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I048": {
     "name": "I048",
@@ -4342,7 +4812,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 1836.2981100000002,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I049": {
     "name": "I049",
@@ -4358,7 +4838,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 4163.27265550222,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I050": {
     "name": "I050",
@@ -4374,7 +4864,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 90.4213815087,
     "sum": 8444.034515320842,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I051": {
     "name": "I051",
@@ -4390,7 +4890,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 9e-9,
     "sum": 8.320000000000003e-7,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I052": {
     "name": "I052",
@@ -4406,7 +4916,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 0.00177562016,
     "sum": 0.15095640147000017,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I053": {
     "name": "I053",
@@ -4422,7 +4942,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 0.00134523595,
     "sum": 0.11669497478999999,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I054": {
     "name": "I054",
@@ -4438,7 +4968,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 9663.741151267164,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I055": {
     "name": "I055",
@@ -4454,7 +4994,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 90.2002107482,
     "sum": 10154.91473648425,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I056": {
     "name": "I056",
@@ -4470,7 +5020,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 2353.6291400000005,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I057": {
     "name": "I057",
@@ -4486,7 +5046,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 1781.3094899999999,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I058": {
     "name": "I058",
@@ -4502,7 +5072,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 150,
     "sum": 8180.030590000003,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I059": {
     "name": "I059",
@@ -4518,7 +5098,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 14457.660247351727,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I060": {
     "name": "I060",
@@ -4534,7 +5124,17 @@ AppData.indicatorValuesStatistics = {
     "min": 1.2,
     "max": 21158.3,
     "sum": 801121.8349998321,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I061": {
     "name": "I061",
@@ -4550,7 +5150,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 21021.620039,
     "sum": 2187718.958710905,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I062": {
     "name": "I062",
@@ -4566,7 +5176,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 26.0204650483,
     "sum": 2354.1364011594214,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I063": {
     "name": "I063",
@@ -4582,7 +5202,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0.09823405299,
     "max": 5365.04070933,
     "sum": 67856.90887365548,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I064": {
     "name": "I064",
@@ -4598,7 +5228,17 @@ AppData.indicatorValuesStatistics = {
     "min": -245.75452324,
     "max": 166.558244934,
     "sum": 5931.4019571011695,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I065": {
     "name": "I065",
@@ -4614,7 +5254,17 @@ AppData.indicatorValuesStatistics = {
     "min": -204.620340941,
     "max": 39.9571849118,
     "sum": 4747.9232511614955,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I066": {
     "name": "I066",
@@ -4630,7 +5280,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 210.813324959,
     "sum": 86717.75188463563,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I067": {
     "name": "I067",
@@ -4646,7 +5306,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 430.63571167,
     "sum": 54561.38235588078,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I068": {
     "name": "I068",
@@ -4662,7 +5332,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 2.15578591383,
     "sum": 77.16041862668995,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I069": {
     "name": "I069",
@@ -4678,7 +5358,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0.9,
     "max": 30,
     "sum": 21331.899999999958,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I070": {
     "name": "I070",
@@ -4694,7 +5384,17 @@ AppData.indicatorValuesStatistics = {
     "min": -184.579870729,
     "max": 49.6994987867,
     "sum": -14953.03619973225,
-    "count": 1226
+    "count": 1226,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I071": {
     "name": "I071",
@@ -4710,7 +5410,17 @@ AppData.indicatorValuesStatistics = {
     "min": -47.5509269856,
     "max": 71.3704630788,
     "sum": 32811.33611549274,
-    "count": 1226
+    "count": 1226,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I072": {
     "name": "I072",
@@ -4726,7 +5436,17 @@ AppData.indicatorValuesStatistics = {
     "min": -89.4185760039,
     "max": 69.165621079,
     "sum": 6593.696625617146,
-    "count": 1226
+    "count": 1226,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I073": {
     "name": "I073",
@@ -4742,7 +5462,17 @@ AppData.indicatorValuesStatistics = {
     "min": -22.4325834847,
     "max": 73.4095427435,
     "sum": 42530.11253855959,
-    "count": 1226
+    "count": 1226,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I074": {
     "name": "I074",
@@ -4758,7 +5488,17 @@ AppData.indicatorValuesStatistics = {
     "min": -170.408,
     "max": 52.02684032,
     "sum": -8628.592349747994,
-    "count": 1226
+    "count": 1226,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I075": {
     "name": "I075",
@@ -4774,7 +5514,17 @@ AppData.indicatorValuesStatistics = {
     "min": -1963.60606061,
     "max": 350.96969697,
     "sum": -3809.999999995362,
-    "count": 1226
+    "count": 1226,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I076": {
     "name": "I076",
@@ -4790,7 +5540,17 @@ AppData.indicatorValuesStatistics = {
     "min": -127.573047443,
     "max": 103.072423126,
     "sum": 1537.6792300693094,
-    "count": 1226
+    "count": 1226,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I077": {
     "name": "I077",
@@ -4806,7 +5566,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 3.42664388715,
     "sum": 625.3055715475107,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I078": {
     "name": "I078",
@@ -4822,7 +5592,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0.12,
     "max": 1469.17461538,
     "sum": 55788.47867572964,
-    "count": 1220
+    "count": 1220,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I079": {
     "name": "I079",
@@ -4838,7 +5618,17 @@ AppData.indicatorValuesStatistics = {
     "min": 2.4923396038,
     "max": 607.252825769,
     "sum": 34818.59759936741,
-    "count": 1376
+    "count": 1376,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I080": {
     "name": "I080",
@@ -4854,7 +5644,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 89.6068060283,
     "sum": 3365.3517631490704,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I081": {
     "name": "I081",
@@ -4870,7 +5670,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 191.223854094,
     "sum": 8834.84662951057,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I082": {
     "name": "I082",
@@ -4886,7 +5696,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 98.1789889935,
     "sum": 17863.056621004733,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   }
 };
 
@@ -4905,7 +5725,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.249159,
     "max": 3.264565,
     "sum": -1.4708160000008401,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I002": {
     "name": "I002",
@@ -4921,7 +5751,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.250381,
     "max": 3.263376,
     "sum": -1.2737209999994386,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I003": {
     "name": "I003",
@@ -4937,7 +5777,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.034717,
     "max": 3.237079,
     "sum": -1.9722089999995198,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I004": {
     "name": "I004",
@@ -4953,7 +5803,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.204645,
     "max": 2.863498,
     "sum": 0.01330600000031712,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I005": {
     "name": "I005",
@@ -4969,7 +5829,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -2.708426,
     "max": 3.226693,
     "sum": -1.1762989999999796,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I006": {
     "name": "I006",
@@ -4985,7 +5855,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.764506,
     "max": 3.199827,
     "sum": -0.8787520000003253,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I007": {
     "name": "I007",
@@ -5001,7 +5881,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.880214,
     "max": 3.239987,
     "sum": -0.2638779999998375,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I008": {
     "name": "I008",
@@ -5017,7 +5907,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.146344,
     "max": 3.708459,
     "sum": -1.2116159999999505,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I009": {
     "name": "I009",
@@ -5033,7 +5933,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.191756,
     "max": 3.002864,
     "sum": 1.0697149999996338,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I010": {
     "name": "I010",
@@ -5049,7 +5959,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.642107,
     "max": 3.551418,
     "sum": -1.4554980000003774,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I011": {
     "name": "I011",
@@ -5065,7 +5985,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.759985,
     "max": 2.07923,
     "sum": 0.06629299999886007,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I012": {
     "name": "I012",
@@ -5081,7 +6011,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.037925,
     "max": 3.307498,
     "sum": 1.0227340000005762,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I013": {
     "name": "I013",
@@ -5097,7 +6037,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.512589,
     "max": 3.08052,
     "sum": -0.08395300000097404,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I014": {
     "name": "I014",
@@ -5113,7 +6063,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.603442,
     "max": 4.122343,
     "sum": 0.6038009999989513,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I015": {
     "name": "I015",
@@ -5129,7 +6089,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.189439,
     "max": 3.207257,
     "sum": 1.1035289999998543,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I016": {
     "name": "I016",
@@ -5145,7 +6115,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -2.180043,
     "max": 3.231028,
     "sum": -1.0982620000005199,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I017": {
     "name": "I017",
@@ -5161,7 +6141,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -2.72759,
     "max": 3.210009,
     "sum": 0.9037389999998222,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I018": {
     "name": "I018",
@@ -5177,7 +6167,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -2.244311,
     "max": 3.224381,
     "sum": 1.6818059999998687,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I019": {
     "name": "I019",
@@ -5193,7 +6193,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -2.72759,
     "max": 3.210009,
     "sum": 0.7360380000000292,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I020": {
     "name": "I020",
@@ -5209,7 +6219,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -2.765863,
     "max": 3.209529,
     "sum": 1.387396999999992,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I021": {
     "name": "I021",
@@ -5225,7 +6245,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.208031,
     "max": 3.436723,
     "sum": -0.19242000000057402,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I022": {
     "name": "I022",
@@ -5241,7 +6271,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.620984,
     "max": 4.070162,
     "sum": 0.6211470000030959,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I023": {
     "name": "I023",
@@ -5257,7 +6297,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.223397,
     "max": 3.429214,
     "sum": -0.5697210000006848,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I024": {
     "name": "I024",
@@ -5273,7 +6323,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -2.513796,
     "max": 3.214097,
     "sum": 1.357712000000348,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I025": {
     "name": "I025",
@@ -5289,7 +6349,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.724545,
     "max": 1.557912,
     "sum": 1.724540999999907,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I026": {
     "name": "I026",
@@ -5305,7 +6375,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.68508,
     "max": 2.058595,
     "sum": 1.685009000000118,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I027": {
     "name": "I027",
@@ -5321,7 +6401,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.677627,
     "max": 2.267735,
     "sum": 1.677609999999337,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I028": {
     "name": "I028",
@@ -5337,7 +6427,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.667476,
     "max": 3.186255,
     "sum": 1.6674720000005676,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I029": {
     "name": "I029",
@@ -5353,7 +6453,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.633287,
     "max": 3.479382,
     "sum": 1.6333030000008402,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I030": {
     "name": "I030",
@@ -5369,7 +6479,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.52394,
     "max": 3.320963,
     "sum": 0.8350959999998975,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I031": {
     "name": "I031",
@@ -5385,7 +6505,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.388595,
     "max": 3.361718,
     "sum": 0.7142880000000882,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I032": {
     "name": "I032",
@@ -5401,7 +6531,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.433608,
     "max": 3.346909,
     "sum": 1.433474999999949,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I033": {
     "name": "I033",
@@ -5417,7 +6557,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.356864,
     "max": 3.372994,
     "sum": 1.357001999999621,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I034": {
     "name": "I034",
@@ -5433,7 +6583,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.403233,
     "max": 3.356754,
     "sum": 1.4033110000000415,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I035": {
     "name": "I035",
@@ -5449,7 +6609,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.267053,
     "max": 3.409126,
     "sum": 1.267041000000291,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I036": {
     "name": "I036",
@@ -5465,7 +6635,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.35705,
     "max": 3.392889,
     "sum": 0.35734100000006763,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I037": {
     "name": "I037",
@@ -5481,7 +6661,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.302264,
     "max": 3.784339,
     "sum": 0.3023639999999984,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I038": {
     "name": "I038",
@@ -5497,7 +6687,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.181392,
     "max": 8.017661,
     "sum": 0.18078999999966539,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I039": {
     "name": "I039",
@@ -5513,7 +6713,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.816184,
     "max": 3.218829,
     "sum": 0.8161759999997531,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I040": {
     "name": "I040",
@@ -5529,7 +6739,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.593255,
     "max": 4.147123,
     "sum": 0.5937040000008076,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I041": {
     "name": "I041",
@@ -5545,7 +6765,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.540736,
     "max": 4.304611,
     "sum": 0.5408149999975387,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I042": {
     "name": "I042",
@@ -5561,7 +6791,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.51583,
     "max": 4.399376,
     "sum": 0.5160000000044169,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I043": {
     "name": "I043",
@@ -5577,7 +6817,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.464553,
     "max": 4.611237,
     "sum": 0.46439500000400313,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I044": {
     "name": "I044",
@@ -5593,7 +6843,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.431645,
     "max": 4.782707,
     "sum": 0.432201999997099,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I045": {
     "name": "I045",
@@ -5609,7 +6869,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.521611,
     "max": 4.380021,
     "sum": 0.5220999999948677,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I046": {
     "name": "I046",
@@ -5625,7 +6895,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.203736,
     "max": 5.8744,
     "sum": 0.20394600000048826,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I047": {
     "name": "I047",
@@ -5641,7 +6921,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.332075,
     "max": 3.904918,
     "sum": 0.33171099999687603,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I048": {
     "name": "I048",
@@ -5657,7 +6947,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.189717,
     "max": 6.815988,
     "sum": 0.18977099999853397,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I049": {
     "name": "I049",
@@ -5673,7 +6973,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.330071,
     "max": 4.867564,
     "sum": 0.32998099999793684,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I050": {
     "name": "I050",
@@ -5689,7 +6999,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.131765,
     "max": 3.485772,
     "sum": -0.8066760000006028,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I051": {
     "name": "I051",
@@ -5705,7 +7025,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.579555,
     "max": 4.431315,
     "sum": -0.9876909999999484,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I052": {
     "name": "I052",
@@ -5721,7 +7051,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.96938,
     "max": 3.599325,
     "sum": -0.5948580000004704,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I053": {
     "name": "I053",
@@ -5737,7 +7077,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.875875,
     "max": 3.695892,
     "sum": 0.8757610000033127,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I054": {
     "name": "I054",
@@ -5753,7 +7103,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.914695,
     "max": 3.657082,
     "sum": -0.5181419999993326,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I055": {
     "name": "I055",
@@ -5769,7 +7129,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.936082,
     "max": 3.628215,
     "sum": 0.9363020000004972,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I056": {
     "name": "I056",
@@ -5785,7 +7155,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.180029,
     "max": 6.506414,
     "sum": 0.17987600000166526,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I057": {
     "name": "I057",
@@ -5801,7 +7181,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.181757,
     "max": 6.89245,
     "sum": 0.18218899999918448,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I058": {
     "name": "I058",
@@ -5817,7 +7207,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.414189,
     "max": 3.606296,
     "sum": -2.246101999999134,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I059": {
     "name": "I059",
@@ -5833,7 +7233,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.675543,
     "max": 3.270466,
     "sum": -1.8009080000003819,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I060": {
     "name": "I060",
@@ -5849,7 +7259,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.189425,
     "max": 3.207241,
     "sum": 0.5967299999998303,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I061": {
     "name": "I061",
@@ -5865,7 +7285,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -2.661461,
     "max": 3.210997,
     "sum": -0.986810000000159,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I062": {
     "name": "I062",
@@ -5881,7 +7311,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.186234,
     "max": 3.447791,
     "sum": 1.1861949999995267,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I063": {
     "name": "I063",
@@ -5897,7 +7337,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.189419,
     "max": 3.207236,
     "sum": 1.6140000000001316,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I064": {
     "name": "I064",
@@ -5913,7 +7363,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.189751,
     "max": 3.207496,
     "sum": 1.2483240000000908,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I065": {
     "name": "I065",
@@ -5929,7 +7389,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.189725,
     "max": 3.207462,
     "sum": 1.2483460000001745,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I066": {
     "name": "I066",
@@ -5945,7 +7415,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -2.392432,
     "max": 3.217838,
     "sum": -1.1083880000004045,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I067": {
     "name": "I067",
@@ -5961,7 +7441,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -2.556865,
     "max": 3.213048,
     "sum": -0.021601999999854682,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I068": {
     "name": "I068",
@@ -5977,7 +7467,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.288399,
     "max": 3.399934,
     "sum": 1.288399000000465,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I069": {
     "name": "I069",
@@ -5993,7 +7493,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.276031,
     "max": 2.119692,
     "sum": 3.5029240000008555,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I070": {
     "name": "I070",
@@ -6009,7 +7519,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.24524,
     "max": 3.28907,
     "sum": 0.6009770000002217,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I071": {
     "name": "I071",
@@ -6025,7 +7545,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.315975,
     "max": 3.287788,
     "sum": 1.3195500000001386,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I072": {
     "name": "I072",
@@ -6041,7 +7571,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.268807,
     "max": 3.277149,
     "sum": -0.4380840000000623,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I073": {
     "name": "I073",
@@ -6057,7 +7597,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.305426,
     "max": 3.271331,
     "sum": 1.3240940000002364,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I074": {
     "name": "I074",
@@ -6073,7 +7623,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.251989,
     "max": 3.268964,
     "sum": 1.198559999999779,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I075": {
     "name": "I075",
@@ -6089,7 +7649,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.280428,
     "max": 3.366404,
     "sum": 0.6693870000000249,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I076": {
     "name": "I076",
@@ -6105,7 +7675,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.139396,
     "max": 3.176097,
     "sum": 3.1283819999994806,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I077": {
     "name": "I077",
@@ -6121,7 +7701,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.13834,
     "max": 3.174939,
     "sum": 3.127290999999728,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I078": {
     "name": "I078",
@@ -6137,7 +7727,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.073569,
     "max": 3.212673,
     "sum": 1.570079000000027,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I079": {
     "name": "I079",
@@ -6153,7 +7753,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.18221,
     "max": 3.177312,
     "sum": 3.167339000000043,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I080": {
     "name": "I080",
@@ -6169,7 +7779,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.605291,
     "max": 4.117942,
     "sum": 0.6053510000039952,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I081": {
     "name": "I081",
@@ -6185,7 +7805,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.573881,
     "max": 3.308535,
     "sum": 0.37799200000000077,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I082": {
     "name": "I082",
@@ -6201,7 +7831,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.167643,
     "max": 3.465612,
     "sum": -0.8449169999993305,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   }
 };
 
