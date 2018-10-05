@@ -1815,29 +1815,14 @@ let RadarDiagrams = {
    */
   colors: {
     dataSeries: {
-      // backgroundColor:           "rgba(213, 58, 53, 0.2)",
-      // borderColor:               "rgba(213, 58, 53, 1)",
-      // pointBackgroundColor:      "rgba(166, 28, 24, 1)",
-      // pointBorderColor:          "#fff",
-      // pointHoverBackgroundColor: "#fff",
-      // pointHoverBorderColor:     "rgba(166, 28, 24, 1)"
-
       backgroundColor:           "rgba(244, 67, 54, 0.2)", // ColorPalettes.Material.red
       borderColor:               "rgba(244, 67, 54, 1)",   // ColorPalettes.Material.red
       pointBackgroundColor:      "rgba(183, 28, 28, 1)",   // ColorPalettes.Material.red900
       pointBorderColor:          "#fff",                   // White
       pointHoverBackgroundColor: "rgba(239, 154, 154, 1)", // ColorPalettes.Material.red200
       pointHoverBorderColor:     "rgba(183, 28, 28, 1)",   // ColorPalettes.Material.red900
-
     },
     average: {
-      // backgroundColor:           "rgba(0, 74, 127, 0.2)",
-      // borderColor:               "rgba(0, 74, 127, 1)",
-      // pointBackgroundColor:      "rgba(166, 28, 24, 1)",
-      // pointBorderColor:          "#fff",
-      // pointHoverBackgroundColor: "#fff",
-      // pointHoverBorderColor:     "rgba(166, 28, 24, 1)"
-
       backgroundColor:           "rgba(63, 81, 181, 0.2)", // ColorPalettes.Material.indigo
       borderColor:               "rgba(63, 81, 181, 1)",   // ColorPalettes.Material.indigo
       pointBackgroundColor:      "rgba(63, 81, 181, 1)",   // ColorPalettes.Material.indigo
@@ -1930,7 +1915,7 @@ let RadarDiagrams = {
               domain === '' ||
               domain === AppData.indicatorMetadata[name].domain) {
             this.sortedLabels.push(AppData.indicatorMetadata[name].shortDescription);
-            this.sortedValues.push(values[name].toFixed(3));
+            this.sortedValues.push(values[name].toFixed(2));
             this.sortedAverageValues.push(0);
           }
         }
@@ -3587,13 +3572,13 @@ let overviewInfoViewModel = new Vue({
 
           for (let i = 0; i < AppData.domainDictionaryIndicators[domain].length; i++) {
             let im = AppData.domainDictionaryIndicators[domain][i];
-            let value = im.type === 'double' ? properties[im.name].toFixed(3) : properties[im.name].toFixed(0); // TODO: RESIN - toFixed(0) MUST be removed once I have the correct data.
+            let value = im.type === 'double' ? properties[im.name].toFixed(1) : properties[im.name].toFixed(0); // TODO: RESIN - toFixed(0) MUST be removed once I have the correct data.
 
             this.domainDictionaryIndicatorValues[domain].push({
               name: im.name,
               value: value,
               unit: im.unit,
-              zscore: properties[im.name + 'Z'].toFixed(3)
+              zscore: properties[im.name + 'Z'].toFixed(2)
             })
           }
 

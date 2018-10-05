@@ -20,8 +20,8 @@ var AppData = AppData || {};
 AppData.indicatorMetadata = {
   "I001": {
     "name": "I001",
-    "description": "Mean temperature (RCP 8.5)",
-    "shortDescription": "Mean temp",
+    "description": "Projected change in mean temperature (RCP 8.5)",
+    "shortDescription": "Mean temp - projected change",
     "unit": "°C",
     "details": "Mean temperature is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. This indicator shows the difference in daily mean temperature between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection). The future projection is developed for a high greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (<a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">RCP 8.5 scenario</a>). Projected change in daily mean temperature is not itself a climate change hazard. However, this indicator and the supporting statistical data (the Z-Score) can be used to enhance understanding of how the climate of the NUTS3 area is projected to change over the coming decades.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP8.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
@@ -38,8 +38,8 @@ AppData.indicatorMetadata = {
   },
   "I002": {
     "name": "I002",
-    "description": "Minimum temperature (RCP 8.5)",
-    "shortDescription": "Min temp",
+    "description": "Projected change in minimum temperature (RCP 8.5)",
+    "shortDescription": "Min temp - projected change",
     "unit": "°C",
     "details": "Minimum temperature is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. This indicator shows the difference in minimum temperature between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection). The future projection is developed for a high greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (<a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">RCP 8.5 scenario</a>). Projected change in minimum temperature is not itself a climate change hazard. However, this indicator and the supporting statistical data (the Z-Score) can be considered alongside other low temperature related indicators (e.g. frost days and ice days) to demonstrate how low temperature related hazards may evolve in the NUTS3 area over the coming decades.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP8.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
@@ -56,8 +56,8 @@ AppData.indicatorMetadata = {
   },
   "I003": {
     "name": "I003",
-    "description": "Maximum temperature (RCP 8.5)",
-    "shortDescription": "Max temp",
+    "description": "Projected change in maximum temperature (RCP 8.5)",
+    "shortDescription": "Max temp - projected change",
     "unit": "°C",
     "details": "Maximum temperature is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. This indicator shows the difference in maximum temperature between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection). The future projection is developed for a high greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (<a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">RCP 8.5 scenario</a>). Projected change in maximum temperature is not itself a climate change hazard. However, this indicator and the supporting statistical data (the Z-Score) can be considered alongside other high temperature related indicators (e.g. heat wave days) to demonstrate how high temperature related hazards may evolve in the NUTS3 area over the coming decades.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP8.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
@@ -74,8 +74,8 @@ AppData.indicatorMetadata = {
   },
   "I004": {
     "name": "I004",
-    "description": "Frost days (RCP 8.5)",
-    "shortDescription": "Frost days",
+    "description": "Projected change in frost days (RCP 8.5)",
+    "shortDescription": "Frost days - projected change",
     "unit": "N°",
     "details": "This indicator shows the difference in the number of days with a minimum temperature of less than 0°C between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection). The future projection is developed for a high greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (<a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">RCP 8.5 scenario</a>). The 0°C temperature threshold for frost days is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether change in the number of frost days is a potentially significant issue for the NUTS3 area. The number of frost days is decreasing across Europe, and the impacts of this shift may be positive or negative depending on the location being considered and related factors including the nature of dominant industries and land uses.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP8.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
@@ -92,8 +92,8 @@ AppData.indicatorMetadata = {
   },
   "I005": {
     "name": "I005",
-    "description": "Summer days (RCP 8.5)",
-    "shortDescription": "Summer Days",
+    "description": "Projected change in summer days (RCP 8.5)",
+    "shortDescription": "Summer Days - projected change",
     "unit": "N°",
     "details": "This indicator shows the difference in the number of days with a maximum temperature more than 25°C between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection). The future projection is developed for a high greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (<a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">RCP 8.5 scenario</a>). The 25°C temperature threshold for summer days is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. The supporting statistical data (the Z-Score) provides further information on this indicator in the context of the NUTS3 area. Although the summer days threshold of 25°C does not pose a threat to the majority of people and infrastructure, it can be considered alongside other heat-related indicators to better understand projected changes in temperature and related hazards in the NUTS3 area.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP8.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
@@ -110,8 +110,8 @@ AppData.indicatorMetadata = {
   },
   "I006": {
     "name": "I006",
-    "description": "Tropical nights (RCP 8.5)",
-    "shortDescription": "Tropical nights",
+    "description": "Projected change in tropical nights (RCP 8.5)",
+    "shortDescription": "Tropical nights - projected change",
     "unit": "N°",
     "details": "This indicator shows the difference in the number of nights where the minimum temperature does not drop below 20°C between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection). The future projection is developed for a high greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (<a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">RCP 8.5 scenario</a>). The 20°C temperature threshold for tropical nights is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether change in the number of tropical nights is a potentially significant issue for the NUTS3 area. The tropical nights indicator is used by the <a href=\"https://www.eea.europa.eu/publications/urban-adaptation-to-climate-change\" target=\"_cf\">European Environment Agency</a> who note that their occurrence is a crucial factor influencing the degree of health impacts associated with high temperatures in urban areas. The level of risk to people in the NUTS3 area from tropical nights (and associated heat wave days) will depend on factors including the proportion of elderly and young people in the population, groups who are particularly susceptible to harm from high temperatures. Indicator data on these factors is available within the typology portal.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP8.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
@@ -128,8 +128,8 @@ AppData.indicatorMetadata = {
   },
   "I007": {
     "name": "I007",
-    "description": "Ice days (RCP 8.5)",
-    "shortDescription": "Ice Days",
+    "description": "Projected change in ice days (RCP 8.5)",
+    "shortDescription": "Ice Days - projected change",
     "unit": "N°",
     "details": "This indicator shows the difference in the number of days with a maximum temperature of less than 0°C between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection). The future projection is developed for a high greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (<a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">RCP 8.5 scenario</a>). The 0°C temperature threshold for ice days is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether change in the number of ice days is a potentially significant issue for the NUTS3 area. The number of ice days is decreasing across Europe, and the impacts of this shift may be positive or negative depending on the location being considered and related factors including the nature of dominant industries and land uses.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP8.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
@@ -146,8 +146,8 @@ AppData.indicatorMetadata = {
   },
   "I008": {
     "name": "I008",
-    "description": "Heat wave days (RCP 8.5)",
-    "shortDescription": "Heat wave days",
+    "description": "Projected change in heat wave days (RCP 8.5)",
+    "shortDescription": "Heat wave days - projected change",
     "unit": "N°",
     "details": "This indicator shows the difference in the number of days with a maximum temperature of more than 35°C between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection). The future projection is developed for a high greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (<a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">RCP 8.5 scenario</a>). There is no universal standard definition for a heat wave, although they are generally regarded as periods of extremely high temperature that exceeds a certain threshold (which varies depending on location and sector being considered) for a set number of days. Heat waves can negatively impact on people, ecosystems and infrastructure. The severity of impacts will depend on factors including the degree to which they are exposed to high temperatures and their vulnerability to this hazard. Vulnerability to heat waves is influenced by factors including the proportion of elderly and young people in the population and the extent of green space cover in urban areas. Indicator data on both of these factors is available within the typology portal. The severity and duration of the heat wave will also influence levels of associated risks. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether change in the number of heat waves is a potentially significant issue for the NUTS3 area.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP8.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
@@ -164,8 +164,8 @@ AppData.indicatorMetadata = {
   },
   "I009": {
     "name": "I009",
-    "description": "Total wet-day precipitation (RCP 8.5)",
-    "shortDescription": "Wet-day precip.",
+    "description": "Projected change in total wet-day precipitation (RCP 8.5)",
+    "shortDescription": "Wet day precip - projected change",
     "unit": "mm",
     "details": "Total wet-day precipitation is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. This indicator shows the difference between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection) in the cumulated precipitation for days with precipitation greater than or equal to 1mm. The future projection is developed for a high greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (<a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">RCP 8.5 scenario</a>). Projected change in total wet day precipitation is not itself a climate change hazard. However, this indicator and the supporting statistical data (the Z-Score) can enhance understanding of how the climate of the NUTS3 area is projected to change over the coming decades.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP8.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
@@ -182,8 +182,8 @@ AppData.indicatorMetadata = {
   },
   "I010": {
     "name": "I010",
-    "description": "Consecutive dry days (RCP 8.5)",
-    "shortDescription": "Consecutive dry days",
+    "description": "Projected change in consecutive dry days (RCP 8.5)",
+    "shortDescription": "Consecutive dry days - projected change",
     "unit": "N°",
     "details": "Consecutive dry days is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. This indicator shows the difference between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection) in the number of consecutive dry days with precipitation less than 1mm. The future projection is developed for a high greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (<a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">RCP 8.5 scenario</a>). The statistical data provided for this indicator (the Z-Score) can be used to better understand whether change in the number of consecutive dry days is a potentially significant issue for the NUTS3 area.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP8.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
@@ -200,8 +200,8 @@ AppData.indicatorMetadata = {
   },
   "I011": {
     "name": "I011",
-    "description": "Consecutive wet days (RCP 8.5)",
-    "shortDescription": "Consecutive wet days",
+    "description": "Projected change in consecutive wet days (RCP 8.5)",
+    "shortDescription": "Consecutive wet days - projected change",
     "unit": "N°",
     "details": "Consecutive wet days is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. This indicator shows the difference between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection) in the number of consecutive wet days with precipitation greater than or equal to 1mm. The future projection is developed for a high greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (<a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">RCP 8.5 scenario</a>). Projected change in consecutive wet days is not itself a climate change hazard. However, this indicator and the supporting statistical data (the Z-Score) can enhance understanding of how the climate of the NUTS3 area is projected to change over the coming decades. Considering this indicator alongside other related indicators can support this process. For example, where consecutive wet days are projected to increase, in addition to increases in heavy and very heavy precipitation days, this indicates that flood hazards may become more common within the NUTS3 area.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP8.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
@@ -218,8 +218,8 @@ AppData.indicatorMetadata = {
   },
   "I012": {
     "name": "I012",
-    "description": "Heavy precipitation days (RCP 8.5)",
-    "shortDescription": "Heavy precip. days",
+    "description": "Projected change in heavy precipitation days (RCP 8.5)",
+    "shortDescription": "Heavy precip. days - projected change",
     "unit": "N°",
     "details": "Heavy precipitation days is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. This indicator shows the difference between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection) in the number of days with precipitation greater than or equal to 10mm. The future projection is developed for a high greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (<a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">RCP 8.5 scenario</a>). Where the frequency of heavy precipitation days is projected to increase, this indicates that flood hazards may also increase (although flooding is driven by multiple other factors including land use change). The statistical data provided for this indicator (the Z-Score) can be used to better understand whether change in the number of heavy precipitation days is a potentially significant issue for the NUTS3 area.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP8.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
@@ -236,8 +236,8 @@ AppData.indicatorMetadata = {
   },
   "I013": {
     "name": "I013",
-    "description": "Very heavy precipitation days (RCP 8.5)",
-    "shortDescription": "Very heavy precip. days",
+    "description": "Projected change in very heavy precipitation days (RCP 8.5)",
+    "shortDescription": "Very heavy precip. days - projected change",
     "unit": "N°",
     "details": "Very heavy precipitation days is a globally recognised and standardised <a href=\"http://surfobs.climate.copernicus.eu/userguidance/indicesdictionary.php#4\" target=\"_cf\">climate indicator</a>. This indicator shows the difference between the 1981-2010 period (observed baseline) and the 2036-2065 period (future projection) in the number of days with precipitation greater than or equal to 20mm. The future projection is developed for a high greenhouse gas emissions scenario (the Intergovernmental Panel on Climate Change (IPCC) Representative Concentration Pathway (<a href=\"http://sedac.ipcc-data.org/ddc/ar5_scenario_process/RCPs.html\" target=\"_cf\">RCP 8.5 scenario</a>). Where the frequency of very heavy precipitation days is projected to increase, this indicates that flood hazards may also increase (although flooding is driven by multiple other factors including land use change). The statistical data provided for this indicator (the Z-Score) can be used to better understand whether change in the number of very heavy precipitation days is a potentially significant issue for the NUTS3 area.",
     "source": "Climate analysis was performed using CORDEX regional climate model (RCM) simulations available over the European domain (EURO-CORDEX) with a resolution of 0.11 degrees (about 12 km) and forced by different global climate models. The simulations taken into account are obtained according to the IPCC RCP8.5 greenhouse gas emissions scenario. Climate anomalies were evaluated over the period 2036-2065 with respect to the control period 1981-2010.",
@@ -276,7 +276,7 @@ AppData.indicatorMetadata = {
     "shortDescription": "Drought hazard",
     "unit": "%",
     "details": "The EEA has defined drought as a natural phenomenon reflecting, ‘a sustained and extensive occurrence of below average water availability’ (EEA 2009: 11). Droughts are defined differently according to whether they are meteorological, hydrological, agricultural, environmental or socio-economic. This indicator utilises the Standardized Precipitation-Evapotranspiration Index (SPEI) at nine month timescales, and therefore provides a measure of meteorological drought. A SPEI measure below 0 reflects a region where precipitation over a nine-month period is below the European average. A measure above 0 reflects a region where precipitation over a nine-month period is above the European average.",
-    "source": "This indicator is derived using a global gridded dataset of the Standardized Precipitation-Evapotranspiration Index (SPEI) at nine month timescales.",
+    "source": "This indicator is derived using a global gridded dataset of the Standardized Precipitation-Evapotranspiration Index (SPEI) at nine month timescales. These were extracted from a netcdf format for each from 1970 to 2017 from the SPEI Global Drought Monitor (http://spei.csic.es/map/maps.html#months=1#month=7#year=2018). The extracted files were converted to raster format. The rasters were averaged in ArcGIS 10.4 across the sample to derive an average of the drought trends over time.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -308,7 +308,7 @@ AppData.indicatorMetadata = {
   },
   "I017": {
     "name": "I017",
-    "description": "Length of major road network in NUTS3 unit",
+    "description": "Length of major road network",
     "shortDescription": "Major roads length",
     "unit": "Km",
     "details": "This indicator shows the length of major road network in kilometres in a NUTS3 unit. Major roads are defined as ‘highways’ and include ‘motorway’, ‘trunk’, ‘primary’, ‘secondary’ and ‘tertiary’ segments of the network. Greater lengths of major road networks may suggest redundancy in the road system. Redundancy is an important concept in resilience. Redundancy demonstrates that there is excess capacity in given system means that during crises, the system may still be able to retain functionality. Where road length is higher than average in a NUTS 3 area, this may signal that there is redundancy in the road network and alternative routes can be found. This is also important from an emergency management point of view as during an extreme event, alternative means of providing key services and moving people may be found. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether the length of the major road network is a potentially significant issue for the NUTS3 area.",
@@ -326,7 +326,7 @@ AppData.indicatorMetadata = {
   },
   "I018": {
     "name": "I018",
-    "description": "Length of railway network in NUTS3 unit",
+    "description": "Length of railway network",
     "shortDescription": "Railways length",
     "unit": "Km",
     "details": "Length of railway network in NUTS3 unit. The rail network was sourced from open street map (2017) and includes standard gauge rail, subways, trams and light rail segments of the network. Greater lengths of rail network may suggest redundancy in the rail system. Redundancy is an important concept in resilience. Redundancy demonstrates that there is excess capacity in given system means that during crises, the system may still be able to retain functionality. Where rail length is higher than average in a NUTS 3 area, this may signal that there is redundancy in the rail network and alternative routes can be found. This is also important from an emergency management point of view as during an extreme event, alternative means of providing key services and moving people may be found. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether the length of the railway network is a potentially significant issue for the NUTS3 area.",
@@ -344,11 +344,11 @@ AppData.indicatorMetadata = {
   },
   "I019": {
     "name": "I019",
-    "description": "Density of major road intersections per km2 of the NUTS3 unit",
-    "shortDescription": "Major R. intersections density",
+    "description": "Density of major road intersections",
+    "shortDescription": "Major road intersections density",
     "unit": "Ratio",
     "details": "This indicator shows the density of major road intersections per km2 of the NUTS3 unit. Increased density of major road intersections may suggest redundancy in the system. Redundancy is an important concept in resilience. Redundancy demonstrates that there is excess capacity in given system means that during crises, the system may still be able to retain functionality. Where there are more road intersections than the EU average in a NUTS 3 area, this may signal that there is redundancy in the road network and alternative routes can be found. This is also important from an emergency management point of view as during an extreme event, alternative means of providing key services and moving people may be found. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether density of major road intersections is a potentially significant issue for the NUTS3 area.",
-    "source": "This indicator was calculated as intersections in ArcGIS Network Analyst using open street map road data (2017).",
+    "source": "Major roads are defined as ‘Highways’ and include ‘motorway’, ‘trunk’, ‘primary’, ‘secondary’ and ‘tertiary’ segments of the network. The intersections are calculated in ArcGIS Network Analyst using open street map road data (2017).",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -362,11 +362,11 @@ AppData.indicatorMetadata = {
   },
   "I020": {
     "name": "I020",
-    "description": "Density of transport nodes per km2 of the NUTS3 unit",
-    "shortDescription": "Transport nodes density",
+    "description": "Density of transport nodes",
+    "shortDescription": "Transport node density",
     "unit": "Ratio",
     "details": "This indicator shows the density of transport nodes per km2 of the NUTS3 unit. Increased density of transport nodes may suggest redundancy in the system. Redundancy is an important concept in resilience. Redundancy demonstrates that there is excess capacity in given system means that during crises, the system may still be able to retain functionality. Where there are more transport nodes than the EU average in a NUTS 3 area, this may signal that there is redundancy in the overall transport network and alternative routes/modes of travel can be found. This is also important from an emergency management point of view as during an extreme event, alternative means of providing key services and moving people may be found. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether denisty of transport nodes is a potentially significant issue for the NUTS3 area.",
-    "source": "Transport nodes were sourced from open street map (2017) and excluded taxis, airports and ports.",
+    "source": "Transport nodes were derived from Open Street Map (2017) and included ‘airports’, ‘bus stations’, ‘bus steps’ ferry terminals’ ‘railway stations/halts’ and ‘tram stops’. Taxis, airports and ports were excluded here.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -380,10 +380,10 @@ AppData.indicatorMetadata = {
   },
   "I021": {
     "name": "I021",
-    "description": "Number of airports per head of population in the NUTS3 unit",
+    "description": "Airports per head of population",
     "shortDescription": "Airports per head",
     "unit": "N°",
-    "details": "This indicator shows the number of airports per head of population in the NUTS3 unit. The more airports that there are, the greater the chance that there may be redundancy. Redundancy is an important concept in resilience. Redundancy demonstrates that there is excess capacity in given system means that during crises, the system may still be able to retain functionality. Where there are more transport nodes than the EU average in a NUTS 3 area, this may signal that other airports can help to provide alternative routes/modes of travel. This is also important from an emergency management point of view as during an extreme event, alternative means of providing key services and moving people may be found. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether change in the number of consecutive dry days is a potentially significant issue for the NUTS3 area. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether number of airports per head of the population is a potentially significant issue for the NUTS3 area.",
+    "details": "This indicator shows the number of airports per head of population in the NUTS3 unit. The more airports that there are, the greater the chance that there may be redundancy. Redundancy is an important concept in resilience. Redundancy demonstrates that there is excess capacity in given system means that during crises, the system may still be able to retain functionality. Where there are more transport nodes than the EU average in a NUTS 3 area, this may signal that other airports can help to provide alternative routes/modes of travel. This is also important from an emergency management point of view as during an extreme event, alternative means of providing key services and moving people may be found. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether number of airports per head of the population is a potentially significant issue for the NUTS3 area.",
     "source": "Airport nodes were sourced from the GISCO repository (Eurostat 2013). These were weighted by population data sourced from EUROSTAT (demo_r_d3dens).",
     "type": "double",
     "mIcon": "description",
@@ -398,7 +398,7 @@ AppData.indicatorMetadata = {
   },
   "I022": {
     "name": "I022",
-    "description": "Number of ports per head of population in the NUTS3 unit",
+    "description": "Ports per head of population ",
     "shortDescription": "Ports per head",
     "unit": "N°",
     "details": "This indicator shows the number of ports per head of population in the NUTS3 unit. The more ports that there are, the greater the chance that there may be redundancy. Redundancy is an important concept in resilience. Redundancy demonstrates that there is excess capacity in given system means that during crises, the system may still be able to retain functionality. Where there are more ports than the EU average in a NUTS 3 area, this may signal that there is redundancy and alternative routes/methods of moving goods around can be found. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether the number of ports per head of the population is a potentially significant issue for the NUTS3 area.",
@@ -416,11 +416,11 @@ AppData.indicatorMetadata = {
   },
   "I023": {
     "name": "I023",
-    "description": "Number of hospital sites per head of population in the NUTS3 unit",
+    "description": "Hospital sites per head of population",
     "shortDescription": "Hospital per head",
     "unit": "N°",
     "details": "This indicator shows the number of hospital sites per head of population in the NUTS3 unit.The ability for the population to access hospitals and other medical units during an extreme weather event is of paramount importance. Where there are lower than average numbers of hospital sites per head of the population, this may indicate that an area will experience intense pressure in ensuring that the population receive necessary medical support during, for example, a flood or a heatwave. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether the number of hospitals per head of the population is a potentially significant issue for the NUTS3 area.",
-    "source": "Hospital locations were sourced from open street map (2017). These were weighted by population data sourced from EUROSTAT (demo_r_d3dens).",
+    "source": "Hospital site locations were sourced from open street map (2017). These were weighted by population data sourced from EUROSTAT (demo_r_d3dens).",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -434,10 +434,10 @@ AppData.indicatorMetadata = {
   },
   "I024": {
     "name": "I024",
-    "description": "Number of power plants per head of population in the NUTS3 unit",
+    "description": "Power plants per head of population",
     "shortDescription": "Power plants per head",
     "unit": "N°",
-    "details": "This indicator shows the power plants per head of population in the NUTS3 unit. The more power plants that there are, the greater the chance that there may be redundancy. Redundancy is an important concept in resilience. Redundancy demonstrates that there is excess capacity in given system means that during crises, the system may still be able to retain functionality. If there are more powerplants in a NUTS3 area than the EU average, this may mean that alternative ways of providing energy to a given population may be found. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether change in the number of consecutive dry days is a potentially significant issue for the NUTS3 area. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether the number of powerplants per head of the population is a potentially significant issue for the NUTS3 area.",
+    "details": "This indicator shows the power plants per head of population in the NUTS3 unit. The more power plants that there are, the greater the chance that there may be redundancy. Redundancy is an important concept in resilience. Redundancy demonstrates that there is excess capacity in given system means that during crises, the system may still be able to retain functionality. If there are more powerplants in a NUTS3 area than the EU average, this may mean that alternative ways of providing energy to a given population may be found. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether the number of powerplants per head of the population is a potentially significant issue for the NUTS3 area.",
     "source": "Power plant facility locations were sourced from Enipedia and does not distinguish between different types of power generation (e.g. coal, renewable). These were weighted by population data sourced from EUROSTAT (demo_r_d3dens).",
     "type": "double",
     "mIcon": "description",
@@ -454,9 +454,9 @@ AppData.indicatorMetadata = {
     "name": "I025",
     "description": "Fixed broadband coverage",
     "shortDescription": "Fixed broadband coverage",
-    "unit": "-",
-    "details": "This indicator shows fixed broadband coverage. This indicator is a measure of adaptive capacity since social media is becoming an increasingly common way of sharing risk information and warnings, as well as assisting in the recovery process during an extreme weather event. Therefore, access to decent broadband is important in order to support the adaptive capacity of a given area. There may be more locally specific measures available that will give a greater insight into what this indicator is measuring e.g. % of population with access to a smart phone, and so on. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether change in the number of consecutive dry days is a potentially significant issue for the NUTS3 area. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether fixed broadband coverage is a potentially significant issue for the NUTS3 area.",
-    "source": "To be completed",
+    "unit": "%",
+    "details": "<p>This indicator shows fixed broadband coverage. Definitions of fixed broadband used here are as follows:</p><ul><li>A household has DSL coverage if it is a telephone exchange area fully enabled for DSL.</li>  <li>A household has VDSL coverage if it is close enough to a VDSL-enabled cabinet or exchange to get a high-speed broadband signal.</li><li>A household has FTTP coverage if it can be connected now to a fibre service without requiring the construction of new fibre infrastructure.</li><li>A household has WiMAX coverage for broadband if it can receive at least 2Mbps downstream from an existing service without requiring the construction of new WiMAX infrastructure.</li><li>A household has cable modem coverage if it can be connected now to a broadband service without requiring the construction of new cable TV network infrastructure.</li>  <li>A household has DOCSIS 3.0 coverage if it can be connected now to a DOCSIS 3.0 service.</li></ul><p>This indicator is a measure of adaptive capacity since social media is becoming an increasingly common way of sharing risk information and warnings, as well as assisting in the recovery process during an extreme weather event. Therefore, access to decent broadband is important in order to support the adaptive capacity of a given area. There may be more locally specific measures available that will give a greater insight into what this indicator is measuring e.g. % of population with access to a smart phone, and so on. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether fixed broadband coverage is a potentially significant issue for the NUTS3 area.</p>",
+    "source": "This is a measure of the coverage of overall fixed broadband according to country/technology definitions at NUTS 3 level. The measure of fixed broadband was transformed into a rate based on the total number of households in the NUTS 3 area. ",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -472,9 +472,9 @@ AppData.indicatorMetadata = {
     "name": "I026",
     "description": "Next Generation Access (NGA) - broadband",
     "shortDescription": "NGA broadband",
-    "unit": "-",
-    "details": "This indicator shows Next Generation Access (NGA) provision which has been sourced from Point Topic’s European Broadband Markets Service. NGA represents access networks which consist wholly or in part of optical elements and which are capable of delivering broadband access services with enhanced characteristics (such as higher throughput) as compared to those provided over already existing copper networks. In most cases NGAs are the result of an upgrade of an already existing copper or co-axial access network .Next Generation Access (NGA) provision has been variable across Europe dependent on a country’s need. Essentially NGA provides the infrastructure to allow superfast broadband speeds of up to 100MB. Increasing population densities, for example, are thought to indicate a need for faster broadband access in the future. Therefore, given the reliance on social media for weather, risk and crisis information, superfast broadband may increase an area’s adaptive capacity. Low NGA provision may indicate that policies should be put in place to prioritise NGA provision in the future. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether NGA provision is a potentially significant issue for the NUTS3 area.",
-    "source": "To be completed",
+    "unit": "%",
+    "details": "This indicator shows Next Generation Access (NGA) provision which has been sourced from Point Topic’s European Broadband Markets Service. NGA represents access networks which consist wholly or in part of optical elements and which are capable of delivering broadband access services with enhanced characteristics (such as higher throughput) as compared to those provided over already existing copper networks. In most cases NGAs are the result of an upgrade of an already existing copper or co-axial access network. Next Generation Access (NGA) provision has been variable across Europe dependent on a country’s need. Essentially NGA provides the infrastructure to allow superfast broadband speeds of up to 100MB. Increasing population densities, for example, are thought to indicate a need for faster broadband access in the future. Therefore, given the reliance on social media for weather, risk and crisis information, superfast broadband may increase an area’s adaptive capacity. Low NGA provision may indicate that policies should be put in place to prioritise NGA provision in the future. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether NGA provision is a potentially significant issue for the NUTS3 area.",
+    "source": "This is a measure of the coverage of overall next generation broadband according to country/technology definitions at NUTS 3 level. The measure of next generation broadband was transformed into a rate based on the total number of households in the NUTS 3 area. ",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -489,10 +489,10 @@ AppData.indicatorMetadata = {
   "I030": {
     "name": "I030",
     "description": "Population in settlements exposed to fluvial flooding",
-    "shortDescription": "Settlements population exposed to fluvial flooding",
+    "shortDescription": "Population exposed to fluvial flooding",
     "unit": "%",
     "details": "Fluvial flooding occurs when watercourses (rivers, streams) overflow and inundate the surrounding area. This indicator shows the percentage of the total population of the NUTS3 area living in settlements that would be exposed to flooding in the event of a 1 in 100 year fluvial flood. This indicator does not highlight the specific elements of the population living in settlements that would be affected in the event of a flood. Further, it does not account for flood defences that may protect certain locations. More localised flood risk assessments would therefore be needed to establish which specific locations would be exposed if a 1 in 100 year fluvial flood occurred. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether the exposure of populations living in settlements to fluvial flooding is a significant issue for the NUTS3 area.",
-    "source": "GHSL Population Source 100m resolution / Settlement defined through GHSL Urban Centres data / JRC flood maps 100 year return period.",
+    "source": "This indicator was derived by intersecting 1km GEOSTAT population grids (https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/population-distribution-demography/geostat) with 1km GHS settlement grids (https://ghsl.jrc.ec.europa.eu/ghs_smod.php) in ARCGIS 10.4 to derive a measure of population living in settlements. This ratser layer was then intersected with the Joint Research Council’s (JRC) depiction of flood prone areas in Europe for flood events with 100-year return period in which cell values indicate water depth (in m). The measure of population living in settlements and exposed to fluvial flooding was transformed into a rate based on the total population living in the NUTS 3 area, calculated from the 1km GEOSTAT population to ensure consistency between the numerator and denominator.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -510,7 +510,7 @@ AppData.indicatorMetadata = {
     "shortDescription": "Road infrastructure exposed to fluvial flooding",
     "unit": "%",
     "details": "Fluvial flooding occurs when watercourses (rivers, streams) overflow and inundate the surrounding area. This indicator shows the percentage of the total length of road infrastructure in the NUTS3 area (major roads and major road intersections) that would be exposed to flooding in the event of a 1 in 100 year fluvial flood. This indicator does not highlight the specific elements of road infrastructure that would be affected in the event of a flood. Further, it does not account for flood defences that may protect certain stretches of road infrastructure. More localised flood risk assessments would therefore be needed to establish which specific infrastructure elements would be exposed if a 1 in 100 year fluvial flood occurred. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether fluvial flooding to road infrastructure is a significant issue for the NUTS3 area.",
-    "source": "The road network was sourced from open street map (2017). Major roads are defined as ‘Highways’ and include ‘motorway’, ‘trunk’, ‘primary’, ‘secondary’ and ‘tertiary’ segments of the network. Calculated as intersections in ArcGIS Network Analyst using open street map road data (2017). The road network was intersected with JRC 1-100 year return period flood maps.",
+    "source": "The road network was sourced from open street map (2017). Major roads are defined as ‘Highways’ and include ‘motorway’, ‘trunk’, ‘primary’, ‘secondary’ and ‘tertiary’ segments of the network. The road network was intersected in ArcGIS 10.4 with the Joint Research Council’s (JRC) depiction of flood prone areas in Europe for flood events with 100-year return period. Cell values indicate water depth (in m). (http://data.jrc.ec.europa.eu/collection/id-0054). The measure of road infrastructure exposed to fluvial flooding was transformed into a rate based on the total length of road infrastructure in the NUTS 3 area.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -528,7 +528,7 @@ AppData.indicatorMetadata = {
     "shortDescription": "Rail network exposed to fluvial flooding",
     "unit": "%",
     "details": "Fluvial flooding occurs when watercourses (rivers, streams) overflow and inundate the surrounding area. This indicator shows the percentage of the total length of the rail network in the NUTS3 area that would be exposed to flooding in the event of a 1 in 100 year fluvial flood. This indicator does not highlight the specific elements of the rail network that would be affected in the event of a flood. Further, it does not account for flood defence infrastructure that may protect certain stretches of rail line. More localised flood risk assessments would therefore be needed to establish which specific elements of the rail network would be exposed if a 1 in 100 year fluvial flood occurred. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether fluvial flooding to the rail network is a significant issue for the NUTS3 area.",
-    "source": "The rail network was sourced from open street map (2017) and includes standard gauge rail, subways, trams and light rail segments of the network. The rail network was intersected with JRC 1-100 year return period flood maps.",
+    "source": "The rail network was sourced from open street map (2017) and includes standard gauge rail, subways, trams and light rail segments of the network. The rail network was intersected in ArcGIS 10.4 with the Joint Research Council’s (JRC) depiction of flood prone areas in Europe for flood events with 100-year return period. Cell values indicate water depth (in m). (http://data.jrc.ec.europa.eu/collection/id-0054). The measure of rail infrastructure exposed to fluvial flooding was transformed into a rate based on the total length of rail infrastructure in the NUTS 3 area.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -546,7 +546,7 @@ AppData.indicatorMetadata = {
     "shortDescription": "Transport nodes exposed to fluvial flooding",
     "unit": "%",
     "details": "Fluvial flooding occurs when watercourses (rivers, streams) overflow and inundate the surrounding area. This indicator shows the percentage of the total number of transport nodes in the NUTS3 area that would be exposed to flooding in the event of a 1 in 100 year fluvial flood. Transport nodes include tram, rail and bus stations, airports and ports. This indicator does not highlight specific transport nodes that would be affected in the event of a flood. Further, it does not account for flood defence infrastructure that may protect certain transport nodes. More localised flood risk assessments would therefore be needed to establish which transport nodes would be exposed if a 1 in 100 year fluvial flood occurred. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether fluvial flooding to transport nodes is a significant issue for the NUTS3 area.",
-    "source": "Transport nodes calculated from Open Street Map (2017) and intersected with JRC 1-100 year return period flood maps.",
+    "source": "Transport nodes were derived from Open Street Map (2017) and included ‘airports’, ‘bus stations’, ‘bus steps’ ferry terminals’ ‘railway stations/halts’ and ‘tram stops’. These were intersected with the Joint Research Council’s (JRC) depiction of flood prone areas in Europe for flood events with 100-year return period in which cell values indicate water depth (in m). The measure of transport nodes exposed to fluvial flooding was transformed into a rate based on the total number of transport nodes in the NUTS 3 area.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -564,7 +564,7 @@ AppData.indicatorMetadata = {
     "shortDescription": "Airports exposed to fluvial flooding",
     "unit": "%",
     "details": "Fluvial flooding occurs when watercourses (rivers, streams) overflow and inundate the surrounding area. This indicator shows the percentage of the total number of airports in the NUTS3 area that would be exposed to flooding in the event of a 1 in 100 year fluvial flood. This indicator does not highlight specific airports that would be affected in the event of a flood. Further, it does not account for flood defence infrastructure that may protect certain airports. More localised flood risk assessments would therefore be needed to establish which airports would be exposed if a 1 in 100 year fluvial flood occurred. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether fluvial flooding to airports is a significant issue for the NUTS3 area.",
-    "source": "Airport nodes were sourced from the GISCO repository (Eurostat 2013). The nodes were intersected with JRC 1-100 year return period flood maps.",
+    "source": "Airport nodes were sourced from the GISCO repository (Eurostat 2013). The nodes were intersected with the Joint Research Council’s (JRC) depiction of flood prone areas in Europe for flood events with 100-year return period in which cell values indicate water depth (in m). The measure of airports exposed to fluvial flooding was transformed into a rate based on the total number of airports in the NUTS 3 area.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -582,7 +582,7 @@ AppData.indicatorMetadata = {
     "shortDescription": "Ports exposed to fluvial flooding",
     "unit": "%",
     "details": "Fluvial flooding occurs when watercourses (rivers, streams) overflow and inundate the surrounding area. This indicator shows the percentage of the total number of ports in the NUTS3 area that would be exposed to flooding in the event of a 1 in 100 year fluvial flood. This indicator does not highlight specific ports that would be affected in the event of a flood. Further, it does not account for flood defence infrastructure that may protect certain ports. More localised flood risk assessments would therefore be needed to establish which ports would be exposed if a 1 in 100 year fluvial flood occurred. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether fluvial flooding to ports is a significant issue for the NUTS3 area.",
-    "source": "Port nodes were sourced from the GISCO repository (Eurostat 2013). The nodes were intersected with JRC 1-100 year return period flood maps.",
+    "source": "Port nodes were sourced from the GISCO repository (Eurostat 2013). The nodes were intersected with the Joint Research Council’s (JRC) depiction of flood prone areas in Europe for flood events with 100-year return period in which cell values indicate water depth (in m). The measure of ports exposed to fluvial flooding was transformed into a rate based on the total number of ports in the NUTS 3 area.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -600,7 +600,7 @@ AppData.indicatorMetadata = {
     "shortDescription": "Hospitals exposed to fluvial flooding",
     "unit": "%",
     "details": "Fluvial flooding occurs when watercourses (rivers, streams) overflow and inundate the surrounding area. This indicator shows the percentage of the total number of hospitals in the NUTS3 area that would be exposed to flooding in the event of a 1 in 100 year fluvial flood. This indicator does not highlight specific hospitals that would be affected in the event of a flood. Further, it does not account for flood defence infrastructure that may protect certain hospitals. More localised flood risk assessments would therefore be needed to establish which hospitals would be exposed if a 1 in 100 year fluvial flood occurred. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether fluvial flooding to hospitals is a significant issue for the NUTS3 area.",
-    "source": "Hospital locations were sourced from open street map (2017). The nodes were intersected with JRC 1-100 year return period flood maps.",
+    "source": "Hospital locations were sourced from open street map (2017) as ‘points of interest’. The hospitals were intersected with the Joint Research Council’s (JRC) depiction of flood prone areas in Europe for flood events with 100-year return period in which cell values indicate water depth (in m). The measure of hospitals exposed to fluvial flooding was transformed into a rate based on the total number of hospitals in the NUTS 3 area.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -618,7 +618,7 @@ AppData.indicatorMetadata = {
     "shortDescription": "Power plants exposed to fluvial flooding",
     "unit": "%",
     "details": "Fluvial flooding occurs when watercourses (rivers, streams) overflow and inundate the surrounding area. This indicator shows the percentage of the total number of power plants in the NUTS3 area that would be exposed to flooding in the event of a 1 in 100 year fluvial flood. This indicator does not highlight specific power plants that would be affected in the event of a flood. Further, it does not account for flood defence infrastructure that may protect certain power plants. More localised flood risk assessments would therefore be needed to establish which power plants would be exposed if a 1 in 100 year fluvial flood occurred. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether fluvial flooding to power plants is a significant issue for the NUTS3 area.",
-    "source": "Power plant facility locations were sourced from Enipedia and does not distinguish between different types of power generation (e.g. coal, renewable). The nodes were intersected with JRC 1-100 year return period flood maps.",
+    "source": "Power plant facility locations were sourced from Enipedia, (open street map) and does not distinguish between different types of power generation (e.g. coal, renewable). The powerplants were intersected with the Joint Research Council’s (JRC) depiction of flood prone areas in Europe for flood events with 100-year return period in which cell values indicate water depth (in m). The measure of powerplants exposed to fluvial flooding was transformed into a rate based on the total number of plants in the NUTS 3 area.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -633,10 +633,10 @@ AppData.indicatorMetadata = {
   "I040": {
     "name": "I040",
     "description": "Population in settlements exposed to coastal hazard",
-    "shortDescription": "Settlements population exposed to coastal hazard",
+    "shortDescription": "Population exposed to coastal hazard",
     "unit": "%",
     "details": "This indicator shows the proportion of the total population of the NUTS3 area living in settlements located in areas that are potentially exposed to coastal hazards. Coastal hazards include sea level rise (1 metre above current levels) and susceptibility to storm surge. This indicator does not highlight the specific elements of the population living in settlements that would be affected should these coastal hazards occur. Further, it does not account for defences that may protect certain locations from coastal hazards. More localised flood risk assessments would therefore be needed to establish which specific locations would be exposed in the event of coastal hazards occurring. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether the exposure of populations living in settlements to coastal hazards is a significant issue for the NUTS3 area.",
-    "source": "GHSL Population grids / Settlement defined through GHSL Urban Centres data / These were intersected with the 1 metre sea level rise inundation area defined by CReSIS (www.cresis.ku.edu/content/research/maps). GTSR (Global Tide and Surge Reanalysis) is an analysis of storm surges and extreme sea-levels based on hydrodynamic modelling (Muis et al, 2016). GTSR covers the entire world's coastline and provides estimates of extreme sea-levels values based on the period 1979-2014. The dataset is based on the application of two global hydrodynamic models: GTSM to simulate storm surges [Verlaan et al., 2015], and FES2012 to simulate tides [Carrere et al. 2012]. Surge levels were modelled by forcing GTSM with with 10 m wind speed and atmospheric pressure from the ERA-Interim climate reanalysis [Dee et al., 2011]. Total water levels are calculated by superimposing tides and surges. The 1-in-100 year sea level was estimated by fitting a Gumbel extreme value distribution to the annual maxima. The water levels included over 12,000 locations along the coastline defined as a centroid of the DIVA segments database.",
+    "source": "This indicator was derived by intersecting 1km GEOSTAT population grids (https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/population-distribution-demography/geostat) with 1km GHS settlement grids (https://ghsl.jrc.ec.europa.eu/ghs_smod.php) in ARCGIS 10.4 to derive a measure of population living in settlements. This indicator was intersected with the 1 metre sea level rise inundation area defined by CReSIS (www.cresis.ku.edu/content/research/maps). GTSR (Global Tide and Surge Reanalysis) is an analysis of storm surges and extreme sea-levels based on hydrodynamic modelling (Muis et al, 2016). GTSR covers the entire world's coastline and provides estimates of extreme sea-levels values based on the period 1979-2014. The dataset is based on the application of two global hydrodynamic models: GTSM to simulate storm surges [Verlaan et al., 2015], and FES2012 to simulate tides [Carrere et al. 2012]. Surge levels were modelled by forcing GTSM with 10 mps wind speed and atmospheric pressure from the ERA-Interim climate reanalysis [Dee et al., 2011]. Total water levels are calculated by superimposing tides and surges. The 1-in-100 year sea level was estimated by fitting a Gumbel extreme value distribution to the annual maxima. The water levels included over 12,000 locations along the coastline defined as a centroid of the DIVA segments database. The measure of population living in settlements and exposed to coastal flooding was transformed into a rate based on the total population living in the NUTS 3 area, calculated from the 1km GEOSTAT population grid.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -654,7 +654,7 @@ AppData.indicatorMetadata = {
     "shortDescription": "Road infrastructure exposed to coastal hazard",
     "unit": "%",
     "details": "This indicator shows the proportion of the total length of road infrastructure in the NUTS3 area (major roads and major road intersections) that is located in areas that are potentially exposed to coastal hazards. Coastal hazards include sea level rise (1 metre above current levels) and susceptibility to storm surge. This indicator does not highlight the specific elements of the road infrastructure that would be affected should these coastal hazards occur. Further, it does not account for defences that may protect certain road infrastructure from coastal hazards. More localised flood risk assessments would therefore be needed to establish which specific infrastructure elements would be exposed in the event of coastal hazards occurring. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether the exposure of road infrastructure to coastal hazards is a significant issue for the NUTS3 area.",
-    "source": "The road network was sourced from open street map (2017). Major roads are defined as ‘Highways’ and include ‘motorway’, ‘trunk’, ‘primary’, ‘secondary’ and ‘tertiary’ segments of the network. Calculated as intersections in ArcGIS Network Analyst using open street map road data (2017). The road network was intersected with the 1 metre sea level rise inundation area defined by CReSIS (www.cresis.ku.edu/content/research/maps). GTSR (Global Tide and Surge Reanalysis) is an analysis of storm surges and extreme sea-levels based on hydrodynamic modelling (Muis et al, 2016). GTSR covers the entire world's coastline and provides estimates of extreme sea-levels values based on the period 1979-2014. The dataset is based on the application of two global hydrodynamic models: GTSM to simulate storm surges [Verlaan et al., 2015], and FES2012 to simulate tides [Carrere et al. 2012]. Surge levels were modelled by forcing GTSM with with 10 m wind speed and atmospheric pressure from the ERA-Interim climate reanalysis [Dee et al., 2011]. Total water levels are calculated by superimposing tides and surges. The 1-in-100 year sea level was estimated by fitting a Gumbel extreme value distribution to the annual maxima. The water levels included over 12,000 locations along the coastline defined as a centroid of the DIVA segments database.",
+    "source": "The road network was sourced from open street map (2017). Major roads are defined as ‘Highways’ and include ‘motorway’, ‘trunk’, ‘primary’, ‘secondary’ and ‘tertiary’ segments of the network. Calculated as intersections in ArcGIS Network Analyst using open street map road data (2017). The road network was intersected with the 1 metre sea level rise inundation area defined by CReSIS (www.cresis.ku.edu/content/research/maps). GTSR (Global Tide and Surge Reanalysis) is an analysis of storm surges and extreme sea-levels based on hydrodynamic modelling (Muis et al, 2016). GTSR covers the entire world's coastline and provides estimates of extreme sea-levels values based on the period 1979-2014. The dataset is based on the application of two global hydrodynamic models: GTSM to simulate storm surges [Verlaan et al., 2015], and FES2012 to simulate tides [Carrere et al. 2012]. Surge levels were modelled by forcing GTSM with 10 mps wind speed and atmospheric pressure from the ERA-Interim climate reanalysis [Dee et al., 2011]. Total water levels are calculated by superimposing tides and surges. The 1-in-100 year sea level was estimated by fitting a Gumbel extreme value distribution to the annual maxima. The water levels included over 12,000 locations along the coastline defined as a centroid of the DIVA segments database. The measure of road infrastructure exposed to coastal flooding was transformed into a rate based on the total length of road infrastructure in the NUTS 3 area.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -672,7 +672,7 @@ AppData.indicatorMetadata = {
     "shortDescription": "Rail network exposed to coastal hazard",
     "unit": "%",
     "details": "This indicator shows the proportion of the total length of the rail network in the NUTS3 area (major roads and major road intersections) that is located in areas that are potentially exposed to coastal hazards. Coastal hazards include sea level rise (1 metre above current levels) and susceptibility to storm surge. This indicator does not highlight the specific elements of the rail network that would be affected should these coastal hazards occur. Further, it does not account for defences that may protect certain elements of the rail network from coastal hazards. More localised flood risk assessments would therefore be needed to establish which parts of the rail network would be exposed in the event of coastal hazards occurring. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether the exposure of the rail network to coastal hazards is a significant issue for the NUTS3 area.",
-    "source": "The rail network was sourced from open street map (2017) and includes standard gauge rail, subways, trams and light rail segments of the network. The rail network was intersected with the 1 metre sea level rise inundation area defined by CReSIS (www.cresis.ku.edu/content/research/maps). GTSR (Global Tide and Surge Reanalysis) is an analysis of storm surges and extreme sea-levels based on hydrodynamic modelling (Muis et al, 2016). GTSR covers the entire world's coastline and provides estimates of extreme sea-levels values based on the period 1979-2014. The dataset is based on the application of two global hydrodynamic models: GTSM to simulate storm surges [Verlaan et al., 2015], and FES2012 to simulate tides [Carrere et al. 2012]. Surge levels were modelled by forcing GTSM with with 10 m wind speed and atmospheric pressure from the ERA-Interim climate reanalysis [Dee et al., 2011]. Total water levels are calculated by superimposing tides and surges. The 1-in-100 year sea level was estimated by fitting a Gumbel extreme value distribution to the annual maxima. The water levels included over 12,000 locations along the coastline defined as a centroid of the DIVA segments database.",
+    "source": "The rail network was sourced from open street map (2017) and includes standard gauge rail, subways, trams and light rail segments of the network. The rail network was intersected with the 1 metre sea level rise inundation area defined by CReSIS (www.cresis.ku.edu/content/research/maps). GTSR (Global Tide and Surge Reanalysis) is an analysis of storm surges and extreme sea-levels based on hydrodynamic modelling (Muis et al, 2016). GTSR covers the entire world's coastline and provides estimates of extreme sea-levels values based on the period 1979-2014. The dataset is based on the application of two global hydrodynamic models: GTSM to simulate storm surges [Verlaan et al., 2015], and FES2012 to simulate tides [Carrere et al. 2012]. Surge levels were modelled by forcing GTSM with 10 mps wind speed and atmospheric pressure from the ERA-Interim climate reanalysis [Dee et al., 2011]. Total water levels are calculated by superimposing tides and surges. The 1-in-100 year sea level was estimated by fitting a Gumbel extreme value distribution to the annual maxima. The water levels included over 12,000 locations along the coastline defined as a centroid of the DIVA segments database. The measure of rail infrastructure exposed to coastal flooding was transformed into a rate based on the total length of rail infrastructure in the NUTS 3 area.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -690,7 +690,7 @@ AppData.indicatorMetadata = {
     "shortDescription": "Transport nodes exposed to coastal hazard",
     "unit": "%",
     "details": "This indicator shows the percentage of the total number of transport nodes in the NUTS3 area that are located in areas that are potentially exposed to coastal hazards. Coastal hazards include sea level rise (1 metre above current levels) and susceptibility to storm surge. Transport nodes include tram, rail and bus stations, airports and ports. This indicator does not highlight the specific transport nodes that would be affected should these coastal hazards occur. Further, it does not account for defences that may protect certain transport nodes from coastal hazards. More localised flood risk assessments would therefore be needed to establish which specific transport nodes would be exposed in the event of coastal hazards occurring. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether the exposure of transport nodes to coastal hazards is a significant issue for the NUTS3 area.",
-    "source": "Transport nodes were sourced from open street map (2017). The intersections were intersected with the 1 metre sea level rise inundation area defined by CReSIS (www.cresis.ku.edu/content/research/maps). ections in ArcGIS Network Analyst using open street map road data (2017). The road network was intersected with the 1 metre sea level rise inundation area defined by CReSIS (www.cresis.ku.edu/content/research/maps). GTSR (Global Tide and Surge Reanalysis) is an analysis of storm surges and extreme sea-levels based on hydrodynamic modelling (Muis et al, 2016). GTSR covers the entire world's coastline and provides estimates of extreme sea-levels values based on the period 1979-2014. The dataset is based on the application of two global hydrodynamic models: GTSM to simulate storm surges [Verlaan et al., 2015], and FES2012 to simulate tides [Carrere et al. 2012]. Surge levels were modelled by forcing GTSM with with 10 m wind speed and atmospheric pressure from the ERA-Interim climate reanalysis [Dee et al., 2011]. Total water levels are calculated by superimposing tides and surges. The 1-in-100 year sea level was estimated by fitting a Gumbel extreme value distribution to the annual maxima. The water levels included over 12,000 locations along the coastline defined as a centroid of the DIVA segments database.",
+    "source": "Transport nodes were derived from Open Street Map (2017) and included ‘airports’, ‘bus stations’, ‘bus steps’ ferry terminals’ ‘railway stations/halts’ and ‘tram stops’. The intersections were intersected with the 1 metre sea level rise inundation area defined by CReSIS (www.cresis.ku.edu/content/research/maps). Transport nodes were intersected in ArcGIS Network Analyst using open street map road data (2017). The road network was intersected with the 1 metre sea level rise inundation area defined by CReSIS (www.cresis.ku.edu/content/research/maps). GTSR (Global Tide and Surge Reanalysis) is an analysis of storm surges and extreme sea-levels based on hydrodynamic modelling (Muis et al, 2016). GTSR covers the entire world's coastline and provides estimates of extreme sea-levels values based on the period 1979-2014. The dataset is based on the application of two global hydrodynamic models: GTSM to simulate storm surges [Verlaan et al., 2015], and FES2012 to simulate tides [Carrere et al. 2012]. Surge levels were modelled by forcing GTSM with 10 mps wind speed and atmospheric pressure from the ERA-Interim climate reanalysis [Dee et al., 2011]. Total water levels are calculated by superimposing tides and surges. The 1-in-100 year sea level was estimated by fitting a Gumbel extreme value distribution to the annual maxima. The water levels included over 12,000 locations along the coastline defined as a centroid of the DIVA segments database. The measure of transport nodes exposed to coastal flooding was transformed into a rate based on the total number of transport nodes in the NUTS 3 area.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -708,7 +708,7 @@ AppData.indicatorMetadata = {
     "shortDescription": "Airports exposed to coastal hazard",
     "unit": "%",
     "details": "This indicator shows the percentage of the total number of airports in the NUTS3 area that are located in areas that are potentially exposed to coastal hazards. Coastal hazards include sea level rise (1 metre above current levels) and susceptibility to storm surge. This indicator does not highlight the specific airports that would be affected should these coastal hazards occur. Further, it does not account for defences that may protect certain airports from coastal hazards. More localised flood risk assessments would therefore be needed to establish which specific airports would be exposed in the event of coastal hazards occurring. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether the exposure of airports to coastal hazards is a significant issue for the NUTS3 area.",
-    "source": "Airport nodes were sourced from the GISCO repository (Eurostat 2013). The nodes were intersected with the 1 metre sea level rise inundation area defined by CReSIS (www.cresis.ku.edu/content/research/maps). GTSR (Global Tide and Surge Reanalysis) is an analysis of storm surges and extreme sea-levels based on hydrodynamic modelling (Muis et al, 2016). GTSR covers the entire world's coastline and provides estimates of extreme sea-levels values based on the period 1979-2014. The dataset is based on the application of two global hydrodynamic models: GTSM to simulate storm surges [Verlaan et al., 2015], and FES2012 to simulate tides [Carrere et al. 2012]. Surge levels were modelled by forcing GTSM with with 10 m wind speed and atmospheric pressure from the ERA-Interim climate reanalysis [Dee et al., 2011]. Total water levels are calculated by superimposing tides and surges. The 1-in-100 year sea level was estimated by fitting a Gumbel extreme value distribution to the annual maxima. The water levels included over 12,000 locations along the coastline defined as a centroid of the DIVA segments database.",
+    "source": "Airport nodes were sourced from the GISCO repository (Eurostat 2013). The nodes were intersected with the 1 metre sea level rise inundation area defined by CReSIS (www.cresis.ku.edu/content/research/maps). GTSR (Global Tide and Surge Reanalysis) is an analysis of storm surges and extreme sea-levels based on hydrodynamic modelling (Muis et al, 2016). GTSR covers the entire world's coastline and provides estimates of extreme sea-levels values based on the period 1979-2014. The dataset is based on the application of two global hydrodynamic models: GTSM to simulate storm surges [Verlaan et al., 2015], and FES2012 to simulate tides [Carrere et al. 2012]. Surge levels were modelled by forcing GTSM with 10 mps wind speed and atmospheric pressure from the ERA-Interim climate reanalysis [Dee et al., 2011]. Total water levels are calculated by superimposing tides and surges. The 1-in-100 year sea level was estimated by fitting a Gumbel extreme value distribution to the annual maxima. The water levels included over 12,000 locations along the coastline defined as a centroid of the DIVA segments database. The measure of airports exposed to coastal flooding was transformed into a rate based on the total number of airports in the NUTS 3 area.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -726,7 +726,7 @@ AppData.indicatorMetadata = {
     "shortDescription": "Ports exposed to coastal hazard",
     "unit": "%",
     "details": "This indicator shows the percentage of the total number of ports in the NUTS3 area that are located in areas that are potentially exposed to coastal hazards. Coastal hazards include sea level rise (1 metre above current levels) and susceptibility to storm surge. This indicator does not highlight the specific ports that would be affected should these coastal hazards occur. Further, it does not account for defences that may protect certain ports from coastal hazards. More localised flood risk assessments would therefore be needed to establish which specific ports would be exposed in the event of coastal hazards occurring. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether the exposure of ports to coastal hazards is a significant issue for the NUTS3 area.",
-    "source": "Port nodes were sourced from the GISCO repository (Eurostat 2013). The nodes were intersected with the 1 metre sea level rise inundation area defined by CReSIS (www.cresis.ku.edu/content/research/maps). GTSR (Global Tide and Surge Reanalysis) is an analysis of storm surges and extreme sea-levels based on hydrodynamic modelling (Muis et al, 2016). GTSR covers the entire world's coastline and provides estimates of extreme sea-levels values based on the period 1979-2014. The dataset is based on the application of two global hydrodynamic models: GTSM to simulate storm surges [Verlaan et al., 2015], and FES2012 to simulate tides [Carrere et al. 2012]. Surge levels were modelled by forcing GTSM with with 10 m wind speed and atmospheric pressure from the ERA-Interim climate reanalysis [Dee et al., 2011]. Total water levels are calculated by superimposing tides and surges. The 1-in-100 year sea level was estimated by fitting a Gumbel extreme value distribution to the annual maxima. The water levels included over 12,000 locations along the coastline defined as a centroid of the DIVA segments database.",
+    "source": "Port nodes were sourced from the GISCO repository (Eurostat 2013). The nodes were intersected with the 1 metre sea level rise inundation area defined by CReSIS (www.cresis.ku.edu/content/research/maps). GTSR (Global Tide and Surge Reanalysis) is an analysis of storm surges and extreme sea-levels based on hydrodynamic modelling (Muis et al, 2016). GTSR covers the entire world's coastline and provides estimates of extreme sea-levels values based on the period 1979-2014. The dataset is based on the application of two global hydrodynamic models: GTSM to simulate storm surges [Verlaan et al., 2015], and FES2012 to simulate tides [Carrere et al. 2012]. Surge levels were modelled by forcing GTSM with 10 mps wind speed and atmospheric pressure from the ERA-Interim climate reanalysis [Dee et al., 2011]. Total water levels are calculated by superimposing tides and surges. The 1-in-100 year sea level was estimated by fitting a Gumbel extreme value distribution to the annual maxima. The water levels included over 12,000 locations along the coastline defined as a centroid of the DIVA segments database. The measure of ports exposed to coastal flooding was transformed into a rate based on the total number of ports in the NUTS 3 area.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -744,7 +744,7 @@ AppData.indicatorMetadata = {
     "shortDescription": "Hospitals exposed to coastal hazard",
     "unit": "%",
     "details": "This indicator shows the percentage of the total number of hospitals in the NUTS3 area that are located in areas that are potentially exposed to coastal hazards. Coastal hazards include sea level rise (1 metre above current levels) and susceptibility to storm surge. This indicator does not highlight the specific hospitals that would be affected should these coastal hazards occur. Further, it does not account for defences that may protect certain hospitals from coastal hazards. More localised flood risk assessments would therefore be needed to establish which specific hospitals would be exposed in the event of coastal hazards occurring. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether the exposure of hospitals to coastal hazards is a significant issue for the NUTS3 area.",
-    "source": "Hospital locations were sourced from open street map (2017). The nodes were intersected with the 1 metre sea level rise inundation area defined by CReSIS (www.cresis.ku.edu/content/research/maps). GTSR (Global Tide and Surge Reanalysis) is an analysis of storm surges and extreme sea-levels based on hydrodynamic modelling (Muis et al, 2016). GTSR covers the entire world's coastline and provides estimates of extreme sea-levels values based on the period 1979-2014. The dataset is based on the application of two global hydrodynamic models: GTSM to simulate storm surges [Verlaan et al., 2015], and FES2012 to simulate tides [Carrere et al. 2012]. Surge levels were modelled by forcing GTSM with with 10 m wind speed and atmospheric pressure from the ERA-Interim climate reanalysis [Dee et al., 2011]. Total water levels are calculated by superimposing tides and surges. The 1-in-100 year sea level was estimated by fitting a Gumbel extreme value distribution to the annual maxima. The water levels included over 12,000 locations along the coastline defined as a centroid of the DIVA segments database.",
+    "source": "Hospital locations were sourced from open street map (2017) as ‘points of interest’. The nodes were intersected with the 1 metre sea level rise inundation area defined by CReSIS (www.cresis.ku.edu/content/research/maps). GTSR (Global Tide and Surge Reanalysis) is an analysis of storm surges and extreme sea-levels based on hydrodynamic modelling (Muis et al, 2016). GTSR covers the entire world's coastline and provides estimates of extreme sea-levels values based on the period 1979-2014. The dataset is based on the application of two global hydrodynamic models: GTSM to simulate storm surges [Verlaan et al., 2015], and FES2012 to simulate tides [Carrere et al. 2012]. Surge levels were modelled by forcing GTSM with 10 mps wind speed and atmospheric pressure from the ERA-Interim climate reanalysis [Dee et al., 2011]. Total water levels are calculated by superimposing tides and surges. The 1-in-100 year sea level was estimated by fitting a Gumbel extreme value distribution to the annual maxima. The water levels included over 12,000 locations along the coastline defined as a centroid of the DIVA segments database. The measure of hospitals exposed to coastal flooding was transformed into a rate based on the total number of hospitals in the NUTS 3 area.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -762,7 +762,7 @@ AppData.indicatorMetadata = {
     "shortDescription": "Power plants exposed to coastal hazard",
     "unit": "%",
     "details": "This indicator shows the percentage of the total number of power plants in the NUTS3 area that are located in areas that are potentially exposed to coastal hazards. Coastal hazards include sea level rise (1 metre above current levels) and susceptibility to storm surge. This indicator does not highlight the specific power plants that would be affected should these coastal hazards occur. Further, it does not account for defences that may protect certain power plants from coastal hazards. More localised flood risk assessments would therefore be needed to establish which specific power plants would be exposed in the event of coastal hazards occurring. Nevertheless, this indicator and the supporting statistical data (the Z-Score) can be used to better understand whether the exposure of power plants to coastal hazards is a significant issue for the NUTS3 area.",
-    "source": "Power plant facility locations were sourced from Enipedia and does not distinguish between different types of power generation (e.g. coal, renewable). The nodes were intersected with the 1 metre sea level rise inundation area defined by CReSIS (www.cresis.ku.edu/content/research/maps). GTSR (Global Tide and Surge Reanalysis) is an analysis of storm surges and extreme sea-levels based on hydrodynamic modelling (Muis et al, 2016). GTSR covers the entire world's coastline and provides estimates of extreme sea-levels values based on the period 1979-2014. The dataset is based on the application of two global hydrodynamic models: GTSM to simulate storm surges [Verlaan et al., 2015], and FES2012 to simulate tides [Carrere et al. 2012]. Surge levels were modelled by forcing GTSM with with 10 m wind speed and atmospheric pressure from the ERA-Interim climate reanalysis [Dee et al., 2011]. Total water levels are calculated by superimposing tides and surges. The 1-in-100 year sea level was estimated by fitting a Gumbel extreme value distribution to the annual maxima. The water levels included over 12,000 locations along the coastline defined as a centroid of the DIVA segments database.",
+    "source": "Power plant facility locations were sourced from Enipedia, (open street map) and does not distinguish between different types of power generation (e.g. coal, renewable).  The nodes were intersected with the 1 metre sea level rise inundation area defined by CReSIS (www.cresis.ku.edu/content/research/maps). GTSR (Global Tide and Surge Reanalysis) is an analysis of storm surges and extreme sea-levels based on hydrodynamic modelling (Muis et al, 2016). GTSR covers the entire world's coastline and provides estimates of extreme sea-levels values based on the period 1979-2014. The dataset is based on the application of two global hydrodynamic models: GTSM to simulate storm surges [Verlaan et al., 2015], and FES2012 to simulate tides [Carrere et al. 2012]. Surge levels were modelled by forcing GTSM with 10 mps wind speed and atmospheric pressure from the ERA-Interim climate reanalysis [Dee et al., 2011]. Total water levels are calculated by superimposing tides and surges. The 1-in-100 year sea level was estimated by fitting a Gumbel extreme value distribution to the annual maxima. The water levels included over 12,000 locations along the coastline defined as a centroid of the DIVA segments database. The measure of powerplants exposed to coastal flooding was transformed into a rate based on the total number of plants in the NUTS 3 area.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -777,10 +777,10 @@ AppData.indicatorMetadata = {
   "I050": {
     "name": "I050",
     "description": "Population in settlements exposed to landslide",
-    "shortDescription": "Population in settlements exposed to landslide",
+    "shortDescription": "Population exposed to landslide",
     "unit": "%",
     "details": "This indicator shows the percentage of the total population of the NUTS3 area living in settlements located in areas that are susceptible to landslide hazard. This indicator and the supporting statistical data (the Z-Score) can be used to better understand whether exposure of population in settlements to landslides is a significant issue for the NUTS3 area. The key factor that influences landslide susceptibility is the presence of steep slopes. Others include bedrock and soil characteristics, deforestation and the presence of roads. Heavy rainfall can often trigger landslides. The typology portal includes an indicator on projected changes to the occurrence of very heavy rainfall days in NUTS3 areas.",
-    "source": "To be completed",
+    "source": "This indicator was derived by intersecting 1km GEOSTAT population grids (https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/population-distribution-demography/geostat) with 1km GHS settlement grids (https://ghsl.jrc.ec.europa.eu/ghs_smod.php) in ARCGIS 10.4 to derive a measure of population living in settlements. This indicator was intersected with the proportion of the NUTS3 area that shows moderate to higher susceptibility to landslide derived from NASA’s Global Landslide Susceptibility Map (https://pmm.nasa.gov/precip-apps). The measure of population living in settlements and exposed to landslides was transformed into a rate based on the total population living in settlements in the NUTS 3 area, calculated from the 1km GEOSTAT population grids (https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/population-distribution-demography/geostat)",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -798,7 +798,7 @@ AppData.indicatorMetadata = {
     "shortDescription": "Road infrastructure exposed to landslide",
     "unit": "%",
     "details": "This indicator shows the percentage of the total length of road infrastructure in the NUTS3 area (major roads and major road intersections) that is located in areas that are susceptible to landslide hazard. This indicator and the supporting statistical data (the Z-Score) can be used to better understand whether exposure of road infrastructure to landslides is a significant issue for the NUTS3 area. The key factor that influences landslide susceptibility is the presence of steep slopes. Others include bedrock and soil characteristics, deforestation and the presence of roads. Heavy rainfall can often trigger landslides. The typology portal includes an indicator on projected changes to the occurrence of very heavy rainfall days in NUTS3 areas.",
-    "source": "To be completed",
+    "source": "The road network was sourced from open street map (2017). Major roads are defined as ‘Highways’ and include ‘motorway’, ‘trunk’, ‘primary’, ‘secondary’ and ‘tertiary’ segments of the network. The road network was intersected in ArcGIS 10.4 with the proportion of the NUTS3 area that shows moderate to higher susceptibility to landslide derived from NASA’s Global Landslide Susceptibility Map (https://pmm.nasa.gov/precip-apps). The measure of road infrastructure exposed to landslides was transformed into a rate based on the total length of road infrastructure in the NUTS 3 area.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -816,7 +816,7 @@ AppData.indicatorMetadata = {
     "shortDescription": "Rail network exposed to landslide",
     "unit": "%",
     "details": "This indicator shows the percentage of the total length of the rail network in the NUTS3 area that is located in areas that are susceptible to landslide hazard. This indicator and the supporting statistical data (the Z-Score) can be used to better understand whether exposure of the rail network to landslides is a significant issue for the NUTS3 area. The key factor that influences landslide susceptibility is the presence of steep slopes. Others include bedrock and soil characteristics, deforestation and the presence of roads. Heavy rainfall can often trigger landslides. The typology portal includes an indicator on projected changes to the occurrence of very heavy rainfall days in NUTS3 areas.",
-    "source": "To be completed",
+    "source": "The rail network was sourced from open street map (2017) and includes standard gauge rail, subways, trams and light rail segments of the network. These were intersected in ArcGIS 10.4 with the proportion of the NUTS3 area that shows moderate to higher susceptibility to landslide derived from NASA’s Global Landslide Susceptibility Map (https://pmm.nasa.gov/precip-apps). The measure of rail infrastructure exposed to landslides was transformed into a rate based on the total length of rail infrastructure in the NUTS 3 area.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -834,7 +834,7 @@ AppData.indicatorMetadata = {
     "shortDescription": "Transport nodes exposed to landslide",
     "unit": "%",
     "details": "This indicator shows the percentage of the total number of transport nodes in the NUTS3 area that are located in areas that are susceptible to landslide hazard. Transport nodes include tram, rail and bus stations, airports and ports. This indicator and the supporting statistical data (the Z-Score) can be used to better understand whether exposure of transport nodes to landslides is a significant issue for the NUTS3 area. The key factor that influences landslide susceptibility is the presence of steep slopes. Others include bedrock and soil characteristics, deforestation and the presence of roads. Heavy rainfall can often trigger landslides. The typology portal includes an indicator on projected changes to the occurrence of very heavy rainfall days in NUTS3 areas.",
-    "source": "To be completed",
+    "source": "Transport nodes were derived from Open Street Map (2017) and included ‘airports’, ‘bus stations’, ‘bus steps’ ferry terminals’ ‘railway stations/halts’ and ‘tram stops’. These were intersected in ArcGIS 10.4 with the proportion of the NUTS3 area that shows moderate to higher susceptibility to landslide derived from NASA’s Global Landslide Susceptibility Map (https://pmm.nasa.gov/precip-apps). The measure of transport nodes exposed to landslides was transformed into a rate based on the total number of transport nodes in the NUTS 3 area.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -852,7 +852,7 @@ AppData.indicatorMetadata = {
     "shortDescription": "Airports exposed to landslide",
     "unit": "%",
     "details": "This indicator shows the percentage of the total number airports in the NUTS3 area that are located in areas that are susceptible to landslide hazard. This indicator and the supporting statistical data (the Z-Score) can be used to better understand whether exposure of airports to landslides is a significant issue for the NUTS3 area. The key factor that influences landslide susceptibility is the presence of steep slopes. Others include bedrock and soil characteristics, deforestation and the presence of roads. Heavy rainfall can often trigger landslides. The typology portal includes an indicator on projected changes to the occurrence of very heavy rainfall days in NUTS3 areas.",
-    "source": "To be completed",
+    "source": "Airport nodes were sourced from the GISCO repository (Eurostat 2013). These were intersected in ArcGIS 10.4 with the proportion of the NUTS3 area that shows moderate to higher susceptibility to landslide derived from NASA’s Global Landslide Susceptibility Map (https://pmm.nasa.gov/precip-apps). The measure of airports exposed to landslides was transformed into a rate based on the total number of airports in the NUTS 3 area.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -870,7 +870,7 @@ AppData.indicatorMetadata = {
     "shortDescription": "Ports exposed to landslide",
     "unit": "%",
     "details": "This indicator shows the percentage of the total number of ports in the NUTS3 area that are located in areas that are susceptible to landslide hazard. This indicator and the supporting statistical data (the Z-Score) can be used to better understand whether exposure of ports to landslides is a significant issue for the NUTS3 area. The key factor that influences landslide susceptibility is the presence of steep slopes. Others include bedrock and soil characteristics, deforestation and the presence of roads. Heavy rainfall can often trigger landslides. The typology portal includes an indicator on projected changes to the occurrence of very heavy rainfall days in NUTS3 areas.",
-    "source": "To be completed",
+    "source": "Port nodes were sourced from the GISCO repository (Eurostat 2013). These were intersected in ArcGIS 10.4 with the proportion of the NUTS3 area that shows moderate to higher susceptibility to landslide derived from NASA’s Global Landslide Susceptibility Map (https://pmm.nasa.gov/precip-apps). The measure of ports exposed to landslides was transformed into a rate based on the total number of ports in the NUTS 3 area.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -888,7 +888,7 @@ AppData.indicatorMetadata = {
     "shortDescription": "Hospitals exposed to landslide",
     "unit": "%",
     "details": "This indicator shows the percentage of the total number of hospitals in the NUTS3 area that are located in areas that are susceptible to landslide hazard. This indicator and the supporting statistical data (the Z-Score) can be used to better understand whether exposure of hospitals to landslides is a significant issue for the NUTS3 area. The key factor that influences landslide susceptibility is the presence of steep slopes. Others include bedrock and soil characteristics, deforestation and the presence of roads. Heavy rainfall can often trigger landslides. The typology portal includes an indicator on projected changes to the occurrence of very heavy rainfall days in NUTS3 areas.",
-    "source": "To be completed",
+    "source": "Hospital locations were sourced from open street map (2017) as ‘points of interest’. These were intersected in ArcGIS 10.4 with the proportion of the NUTS3 area that shows moderate to higher susceptibility to landslide derived from NASA’s Global Landslide Susceptibility Map (https://pmm.nasa.gov/precip-apps). The measure of hospitals exposed to landslides was transformed into a rate based on the total number of hospitals in the NUTS 3 area. ",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -906,7 +906,7 @@ AppData.indicatorMetadata = {
     "shortDescription": "Power plants exposed to landslide",
     "unit": "%",
     "details": "This indicator shows the percentage of the total number of power plants in the NUTS3 area that are located in areas that are susceptible to landslide hazard. This indicator and the supporting statistical data (the Z-Score) can be used to better understand whether exposure of power plants to landslides is a significant issue for the NUTS3 area. The key factor that influences landslide susceptibility is the presence of steep slopes. Others include bedrock and soil characteristics, deforestation and the presence of roads. Heavy rainfall can often trigger landslides. The typology portal includes an indicator on projected changes to the occurrence of very heavy rainfall days in NUTS3 areas.",
-    "source": "To be completed",
+    "source": "Power plant facility locations were sourced from Enipedia, (open street map) and does not distinguish between different types of power generation (e.g. coal, renewable). These were intersected in ArcGIS 10.4 with the proportion of the NUTS3 area that shows moderate to higher susceptibility to landslide derived from NASA’s Global Landslide Susceptibility Map (https://pmm.nasa.gov/precip-apps). The measure of powerplants exposed to landslides was transformed into a rate based on the total number of plants in the NUTS 3 area.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -920,11 +920,11 @@ AppData.indicatorMetadata = {
   },
   "I060": {
     "name": "I060",
-    "description": "Average population density",
-    "shortDescription": "Average population density",
+    "description": "Population density",
+    "shortDescription": "Population density",
     "unit": "Ratio",
     "details": "This indicator shows the averaged population density for the NUTS3 unit calculated over period 2010-2015. Population density measures the concentration of individuals living in a particular spatial unit. Population density may be considered in tandem with hazard indicators relating to temperature and heatwaves as population density (which can be used as a proxy for the density of the built environment) may indicate more intense urban heat island effects. On the other hand, where dense urban populations are supported by good infrastructure and resources, their climate resilience may be increased. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether population density is a potentially significant issue for the NUTS3 area.",
-    "source": "Population data sourced from Eurostat (demo_r_d3dens). Calculated as total population/area in km2",
+    "source": "This indicator was derived by intersecting 1km GEOSTAT population grids (https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/population-distribution-demography/geostat) with 1km GHS settlement grids (https://ghsl.jrc.ec.europa.eu/ghs_smod.php) in ARCGIS 10.4 to derive a measure of population living in settlements. ",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -942,7 +942,7 @@ AppData.indicatorMetadata = {
     "shortDescription": "Population in urban areas",
     "unit": "Ratio",
     "details": "This indicator shows the ratio of numbers of people per kilometre in a given NUTS3 area as a measure of population density. Population density measures the concentration of individuals living in a particular spatial unit. Population density may be considered in tandem with hazard indicators relating to temperature and heatwaves as population density (which can be used as a proxy for the density of the built environment) may indicate more intense urban heat island effects. On the other hand, where dense urban populations are supported by good infrastructure and resources, their climate resilience may be increased.  The statistical data provided for this indicator (the Z-Score) can be used to better understand whether population density is a potentially significant issue for the NUTS3 area.",
-    "source": "Population data sourced from XXXXXXX and aggregated to GHSL Urban Centres.",
+    "source": "This indicator was derived by intersecting 1km GEOSTAT population grids (https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/population-distribution-demography/geostat) with 1km GHS settlement grids (https://ghsl.jrc.ec.europa.eu/ghs_smod.php) in ARCGIS 10.4 and aggregated to GHSL Urban Centres.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -956,11 +956,11 @@ AppData.indicatorMetadata = {
   },
   "I062": {
     "name": "I062",
-    "description": "% of total urban area in NUTS3 unit that is classified as green space (2012 data)",
-    "shortDescription": "% of green space",
+    "description": "Urban area classified as green space",
+    "shortDescription": "Urban green space area",
     "unit": "%",
     "details": "This indicator shows the percentage of total urban area in NUTS3 unit that is classified as green space (2012 data). There is robust evidence that green spaces, such as parks, trees and gardens, can help city’s resilience to the effects of climate change and extreme weather events. Green spaces can have a cooling effect during periods of hot temperatures. In addition, green spaces can help to infiltrate stormwater and potentially reduce the rate of water runoff during a precipitation event so that excess water does not reach the sewarage system. Therefore, the higher the percentage of green space, the higher an area's potential adaptive capacity might be. This indicator can also be considered alongside percentage total change in green space since an existing lack of green space, combined with a decreasing trend, may signal to city planners that more should be done in terms of increasing urban greening.  The statistical data provided for this indicator (the Z-Score) can be used to better understand whether the percentage of green areas, or lack of them compared to the European average, is a potentially significant issue for the NUTS3 area.",
-    "source": "Corine (2012) green space area as percentage of total urban area (km2). Urban area defined using GHSL Urban Centres.",
+    "source": "Derived from Corine (2012) landcover and defined as the total area of green space as a percentage of total urban area (km2). The indicator was derived using 1km GHS settlement grids (https://ghsl.jrc.ec.europa.eu/ghs_smod.php)",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -974,11 +974,11 @@ AppData.indicatorMetadata = {
   },
   "I063": {
     "name": "I063",
-    "description": "% of total land in the NUTS3 unit that is covered by continuous and/or discontinuous urban fabric (2012 data)",
-    "shortDescription": "% of continuous - discontinuous urban fabric",
+    "description": "Urban land cover",
+    "shortDescription": "Urban land cover",
     "unit": "%",
     "details": "This indicator shows the built up urban area based on CORINE data. This includes continuous urban fabric (more than 80% of the land is covered by artificial surface cover), discontinuous urban fabric (where 50% - 80% of the land is covered by artificial surface cover) and industrial, commercial and transport units. There is robust evidence that the amount of artificial areas, such as buildings and other structures, intensifies heat and can exacerbate the urban heat island (UHI) effect (EEA 2012). This will make an area more sensitive to the effects of high temperatures and heatwaves. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether the percentage of built-up urban areas is a potentially significant issue for the NUTS3 area.",
-    "source": "Corine (2012) continuous and discontinuous urban fabric as a percentage of total NUTS 3 area (km2).",
+    "source": "Change in Corine (2009-2012) continuous and discontinuous urban fabric as a percentage of total NUTS 3 area (km2). The indicator was derived using 1km GHS settlement grids (https://ghsl.jrc.ec.europa.eu/ghs_smod.php)",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -992,11 +992,11 @@ AppData.indicatorMetadata = {
   },
   "I064": {
     "name": "I064",
-    "description": "Change in % of total urban area in NUTS3 unit that is classified as green space (2009-2012 data)",
-    "shortDescription": "% change in green space",
+    "description": "Change in total green space",
+    "shortDescription": "Change in total green space",
     "unit": "%",
     "details": "This indicator shows the change in percentage of total urban area in NUTS3 unit that is classified as green space (2009-2012 data).There is robust evidence that green spaces can help city’s resilience to the effects of climate change and extreme weather events (Swart et al. 2012). Green spaces can help to absorb runoff during a flood. Green spaces can also help to reduce temperature due to evapotranspiration effects. Therefore, this indicator should be considered alongside hazards relating to flood and heat. A decreasing trend in green space, compared to the European average, may indicate increased sensitivity to the effects of these hazards and may signal to city planners that more should be done in terms of increasing urban greening. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether the change in the percentage of green areas, or lack of change, is a potentially significant issue for the NUTS3 area.",
-    "source": "Change in Corine (2009-2012) green space area measured as percentage of total urban area (km2). Urban area defined using GHSL Urban Centres.",
+    "source": "Change in Corine (2009-2012) green space area measured as percentage of total urban area (km2). The indicator was derived using 1km GHS settlement grids (https://ghsl.jrc.ec.europa.eu/ghs_smod.php)",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -1010,11 +1010,11 @@ AppData.indicatorMetadata = {
   },
   "I065": {
     "name": "I065",
-    "description": "Change in % of total land in the NUTS3 unit that is covered by continuous and/or discontinuous urban fabric (2012 data)",
-    "shortDescription": "% change in continuous - discontinuous urban fabric",
+    "description": "Change in urban land cover",
+    "shortDescription": "Change in urban land cover",
     "unit": "%",
     "details": "This indicator shows the change in the % of the built up urban area based on CORINE data. This includes continuous urban fabric (more than 80% of the land is covered by artificial surface cover), discontinuous urban fabric (where 50% - 80% of the land is covered by artificial surface cover) and industrial, commercial and transport units. There is robust evidence that the amount of artificial areas, such as buildings and other structures, intensifies heat and can exacerbate the urban heat island (UHI) effect. This will make an area more sensitive to the effects of high temperatures and heatwaves. An increasing trend in built-up areas that is above the European average may indicate that a city is increasing in its sensitivity to high temperatures and heatwaves. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether the change in the percentage of built-up urban areas is a potentially significant issue for the NUTS3 area.",
-    "source": "Change in Corine (2009-2012) continuous and discontinuous urban fabric as a percentage of total NUTS 3 area (km2).",
+    "source": "Change in Corine (2009-2012) continuous and discontinuous urban fabric as a percentage of total NUTS 3 area (km2). The indicator was derived using 1km GHS settlement grids (https://ghsl.jrc.ec.europa.eu/ghs_smod.php)",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -1028,11 +1028,11 @@ AppData.indicatorMetadata = {
   },
   "I066": {
     "name": "I066",
-    "description": "Soil Moisture Stress",
+    "description": "Soil moisture stress",
     "shortDescription": "Soil moisture stress",
-    "unit": "-",
+    "unit": "N°",
     "details": "This indicator shows soil moisture stress which helps to measure sensitivity to drought. When soil moisture is depleted, e.g. through reduced precipitation, this lack of soil moisture inhibits the effective functioning of natural and managed ecosystems. The EEA use information on soil moisture content as a proxy for agricultural droughts (see Cammelleri and Vogt 2015). This indicator can be used in tandem with historic drought and projected water consumption in order to give an overall sense of the risk of drought to a NUTS 3 region. If soil moisture stress is higher than the European average, then a NUTS 3 region may be more sensitive to drought. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether the soil moisture stress is a potentially significant issue for the NUTS3 area.",
-    "source": "To be completed",
+    "source": "Raster layer sourced from the Joint Research Council’s ‘Water Portal’. The raster cells record the average number of days in a year on which soil moisture levels are not sufficient to meet the vegetation water demand at a 5x5km resolution.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -1046,11 +1046,11 @@ AppData.indicatorMetadata = {
   },
   "I067": {
     "name": "I067",
-    "description": "Water Consumption Pressure (2030)",
-    "shortDescription": "Water consumption pressure",
-    "unit": "-",
+    "description": "Water consumption pressure (2030)",
+    "shortDescription": "Water consumption pressure ",
+    "unit": "mm/25km2",
     "details": "This indicator shows future water consumption pressure in 2030. Drought occurs not only because of natural processes, but also because of pressures on the demand for water by users, e.g. households (EEA 2018). Water consumption can be increased by a number of factors including a dense population and a period of hot and dry weather. It is important to understand the potential water consumption pressure in order to understand the risk of drought (in combination with soil moisture stress and historic instances of drought. If water consumption is higher than the EU average, policy makers may want to consider ‘softer’ measures to reduce user demand in greater detail. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether water consumption pressure in the future is a potentially significant issue for the NUTS3 area.",
-    "source": "To be completed",
+    "source": "Raster layer sourced from the Joint Research Council’s ‘Water Portal’. The raster cells record the annual total consumptive water using a baseline land use projection for 2030 from the LUMP model. The resolution of the raster is 5x5km. It is measured as a unit of mm/25km2.  ",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -1064,11 +1064,11 @@ AppData.indicatorMetadata = {
   },
   "I068": {
     "name": "I068",
-    "description": "Priority Allocations (Euros, 2013 - 2015)",
-    "shortDescription": "Priority allocations",
-    "unit": "-",
+    "description": "Priority allocation funding",
+    "shortDescription": "Priority allocation funding",
+    "unit": "%",
     "details": "This indicator refers to the amount of Euros received in a NUTS3 region as part of the priority allocations and expenditure on EU projects. This is a proxy indicator that may indicate increased levels of technology and innovation access which could enhance the adaptive capacity of a given NUTS3 area. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether (lack of) technology and innovation access is a potentially significant issue for the NUTS3 area.",
-    "source": "Sourced from EU InfoRegio.",
+    "source": "Derived according to total priority allocations in 2013 and 2014 in million euros per NUTS 3 area as a percentage of all allocations made over the period (EU regio) (http://ec.europa.eu/regional_policy/en/policy/evaluations/data-for-research/). ",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -1082,11 +1082,11 @@ AppData.indicatorMetadata = {
   },
   "I069": {
     "name": "I069",
-    "description": "At Risk of Poverty (ARoP)",
+    "description": "At risk of poverty",
     "shortDescription": "At risk of poverty",
-    "unit": "-",
+    "unit": "%",
     "details": "This indicator shows those living in a household with an 'equivalised disposable income' below 60 % of the national median, after taxes and social transfers (ESPON 2013). This is the European definition of poverty. This indicator is a proxy for deprivation. Those living in deprived areas may be more sensitive to climate change because of poor accommodation and an inability to prepare for an extreme event e.g. lack of insurance as well as numerous other issues (ClimateJust 2014). Local data may be available that will give a better insight into the way that deprivation interacts with climate hazard and exposure. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether deprivation is a potentially significant issue for the NUTS3 area.",
-    "source": "To be completed",
+    "source": "This indicator is deprived form the Territorial Dimension of Poverty and Social Exclusion in Europe study (https://www.espon.eu/sites/default/files/attachments/TIPSE_Draft_Final_Report.pdf). The draws on the unadjusted at Risk of Poverty Rate composite TiPSE map based on before housing costs. The indicator was manually digitised to reflect the five ranges used in the TiPSE report. ",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -1100,11 +1100,11 @@ AppData.indicatorMetadata = {
   },
   "I070": {
     "name": "I070",
-    "description": "% change in population less than 15 years in NUTS3 unit between 2017-2050",
-    "shortDescription": "% change in population < 15 y",
+    "description": "Population change - children (> 15 years) in NUTS3 unit between 2017-2050",
+    "shortDescription": "Population change - children",
     "unit": "%",
-    "details": "This indicator show projected change in population less than 15 years as a percentage between 2017 and 2050. This indicator could be considered in the context of heat and flood indicators. Children and babies may be more sensitive during heat waves but there is less evidence about the significance of child deaths during heat waves. Children are also emotionally impacted upon after a flood and may lose out due to instable place of residence and education. Additionally, this indicator may be considered alongside Projected Change in Population over 70 in terms of understanding the age-dependency. For example, if there is a projected decrease in the younger population combined with a projected increase in the older population, there may be differential effects in terms of the impacts of climate change e.g. more sensitivity to heat.  The statistical data provided for this indicator (the Z-Score) can be used to better understand whether the presence of a younger population is a potentially significant issue for the NUTS3 area.",
-    "source": "Sourced from Eurostat (proj_13rpms3).",
+    "details": "This indicator show projected change in population less than 15 years as a percentage of the NUTS 3 unit between 2017 and 2050. This indicator could be considered in the context of heat and flood indicators. Children and babies may be more sensitive during heat waves but there is less evidence about the significance of child deaths during heat waves (Swart et al. 2012). Children are also emotionally impacted upon after a flood and may lose out due to instable place of residence and education (Walker et al. 2010; Mallett & Etzel 2018). Additionally, this indicator may be considered alongside Projected Change in Population over 70 in terms of understanding the age-dependency. For example, if there is a projected decrease in the younger population combined with a projected increase in the older population, there may be differential effects in terms of the impacts of climate change e.g. more sensitivity to heat (ESPON 2011). ",
+    "source": "Change in NUTS 3 population under 15 years was calculated based on projections of population change sourced from Eurostat (proj_13rdbims3). N.B. There was missing data for this indicator which was addressed via an areal interpolation approach.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -1118,11 +1118,11 @@ AppData.indicatorMetadata = {
   },
   "I073": {
     "name": "I073",
-    "description": "% change in population more than 70 years in NUTS3 unit between 2017-2050",
-    "shortDescription": "% change in population > 70 y",
+    "description": "Population change in older people (> 70 years) in NUTS3 unit between 2017-2050",
+    "shortDescription": "Population change in older people",
     "unit": "%",
-    "details": "This indicator shows projected change in population more than 70 years as a percentage between 2017 and 2050. The relationship between age and heatwaves is well-evidenced. It has been found that even a 1°C increase in temperature can negatively affect the mortality of older people and over 70, 000 excess deaths in the 2003 European heatwave where age distribution affected mortality. This association has been demonstrated in several climatic contexts such as Sweden, Russia, and France. There are several reasons for this. Older people, for example, may have pre-existing health conditions which heighten their vulnerability during a heatwave, particularly respiratory conditions. Older people may also be socially isolated which can additionally heighten their vulnerability to heatwaves. That said, there is some discrepancy over the precise age when, for example, mortality during a heatwave begins to be significant. Similarly, older people are more sensitive to the effects of flooding due to a number of reasons. Often, they are socially isolated or tend to live in properties that are sensitive to floods. For this reason, old age is often correlated with increased sensitivity to flood. This relationship has been shown to be pronounced in rural, coastal areas. This means that older age is a high confidence indicator across a range of hazards. Owing to data availability, this indicator shows over-70s. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether the presence of an older population is a potentially significant issue for the NUTS3 area.",
-    "source": "Sourced from Eurostat (proj_13rpms3).",
+    "details": "This indicator shows projected change in population more than 70 years as a percentage of the NUTS 3 unit between 2017 and 2050. The relationship between age and heatwaves is well-evidenced. It has been found that even a 1°C increase in temperature can negatively affect the mortality of older people (Bunker et al. 2016) and over 70, 000 excess deaths in the 2003 European heatwave where age distribution affected mortality (Robine et al. 2009). This association has been demonstrated in several climatic contexts such as Sweden (Rocklöv & Forsberg 2009), Russia (Barriopedro et al. 2011), France (La Tertre et al. 2006) There are a number of reasons for this. There are several reasons for this. Older people, for example, may have pre-existing health conditions which heighten their vulnerability during a heatwave, particularly respiratory conditions (Kovats & Kristie 2006; Rocklöv & Forsberg 2009). Older people may also be socially isolated which can additionally heighten their vulnerability to heatwaves (Toulemon and Barbieri 2008; Semenza et al., 1996, 1999). That said, there is some discrepancy over the precise age when, for example, mortality during a heatwave begins to be significant. For example, Kovats and Hajat (2006, cited in Swart et al. 2012) found that mortality was pronounced in the over-75’s and not significant between 65 and 74. Similarly, older people are more sensitive to the effects of flooding due to a number of reasons (Tapsell et al. 2002). Often, they are socially isolated or tend to live in properties that are sensitive to floods. For this reason, old age is often correlated with increased sensitivity to flood (see Green et al. 1994; Climate Just 2014). However, this relationship has been shown to be pronounced in rural, coastal areas (Oven et al. 2012). This means that older age is a high confidence indicator across a range of hazards. That said, there is some discrepancy over the precise age when, for example, mortality during a heatwave begins to be significant. For example, Kovats and Hajat (2006, cited in Swart et al. 2012) found that mortality was pronounced in the over-75’s and not significant between 65 and 74. Owing to data availability, this indicator shows over-70s.",
+    "source": "Change in NUTS 3 population aged 70 years and over was calculated based on projections of population change sourced from Eurostat (proj_13rdbims3). N.B. There was missing data for this indicator which was addressed via an areal interpolation approach. ",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -1136,11 +1136,11 @@ AppData.indicatorMetadata = {
   },
   "I075": {
     "name": "I075",
-    "description": "% change in population through migration in NUTS3 unit between 2017-2050",
-    "shortDescription": "% change in population through migration",
+    "description": "Migratory population change in NUTS3 unit between 2017-2050",
+    "shortDescription": "Migratory population change",
     "unit": "%",
-    "details": "This indicator shows the percentage change in population through migration in NUTS3 unit between 2017-2050. Areas with diverse populations have been shown to be spatially coincidental with areas of surface water flooding in certain cities where diversity was comprised of ethnic minorities, private rental and population density. There have also been a limited number of studies that have examined the interaction between linguistaclly diverse communities and increased impacts from extreme weather events. There is, therefore, some debate in the literature over the extent to which a population with a high number of recent migrants may indicate increased sensitivity to extreme weather events and climate change. Decreases in migration, when combined with other population indicators such as age, may indicate that there is an aging population. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether change in migration is a potentially significant issue for the NUTS3 area.",
-    "source": "Sourced from Eurostat (proj_13rdbims3).",
+    "details": "This indicator shows the change in population through migration as a percentage of the NUTS 3 unit between 2017-2050. Areas with diverse populations have been shown to be spatially coincidental with areas of surface water flooding in certain cities where diversity was comprised of ethnic minorities, private rental and population density. There have also been a limited number of studies that have examined the interaction between linguistaclly diverse communities and increased impacts from extreme weather events. There is, therefore, some debate in the literature over the extent to which a population with a high number of recent migrants may indicate increased sensitivity to extreme weather events and climate change. Decreases in migration, when combined with other population indicators such as age, may indicate that there is an aging population. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether change in migration is a potentially significant issue for the NUTS3 area.",
+    "source": "Change in NUTS 3 population owing to migration was calculated based on projections of migration-based population change sourced from Eurostat (proj_13rdbims3). N.B. There was missing data for this indicator which was addressed via an areal interpolation approach",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -1154,11 +1154,11 @@ AppData.indicatorMetadata = {
   },
   "I076": {
     "name": "I076",
-    "description": "% change in population density in NUTS3 unit between 2017-2050",
-    "shortDescription": "% change in population density",
+    "description": "Change in population density in NUTS3 unit between 2017-2050",
+    "shortDescription": "Change in population density",
     "unit": "%",
     "details": "This indicator shows the percentage change in population density (number of people/area (km) in a given NUTS3 unit between 2017 and 2050. Increasing population and density will interact with the effects of climate change and may render a NUTS 3 region more sensitive to the effects of climate change. For example, increased density may interact with high temperatures to increase the urban heat island (UHI) effect. Increased population may put pressure on resources in order to devise strategies for dealing with the effects of climate change. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether percentage change in future population density is a potentially significant issue for the NUTS3 area.",
-    "source": "Population data sourced from Eurostat (proj_13rpms3) and used to calculate change in population density of NUTS3 areas between 2017 and 2050.",
+    "source": "Change in NUTS 3 population was calculated based on projections of total population sourced from Eurostat (proj_13rpms3). This was used to calculate a NUTS 3 level density measure for 2017 and 2050 which was then used to calculate change in population density of NUTS3 areas between over the period. N.B. There was missing data for this indicator which was addressed via an areal interpolation approach.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -1172,11 +1172,11 @@ AppData.indicatorMetadata = {
   },
   "I077": {
     "name": "I077",
-    "description": "% of total employment in NUTS1 unit",
-    "shortDescription": "% of total employment",
+    "description": "Employment-population balance ",
+    "shortDescription": "Employment-population balance",
     "unit": "%",
     "details": "This indicator shows the employment-population balance. The ratio of jobs to people can be an important indication of economic concerns within an area. When thinking about the way that the employment-population balance works in a given area, there may be particular interactions with climate resilience. For example, where there are more jobs than people (e.g. central London) this may indicate a high number of commuters, which may put pressure on a city’s resources, particularly its transport infrastructure, to deal with extreme weather events. In addition, there may be issues with getting supporting people to fill vacant jobs (e.g. in a hospital) during an extreme weather event when existing staff cannot travel. The statistical data provided for this indicator (the Z-Score) can be used to better understand whether the employment-population balance is a potentially significant issue for the NUTS3 area.",
-    "source": "Calculated as percentage of total employment in NUTS1 unit (nama_10r_3empers). Switzerland (Economic activity rate of the permanent resident population aged 15 and above by canton, in 2016 (T 40.02.03.02.03).",
+    "source": "This indicator was calculated as total employment in the NUTS 3 area as a percentage of the NUTS1 unit in which it falls (nama_10r_3empers). The data was missing for Switzerland so the economic activity rate of the permanent resident population aged 15 and above by canton, in 2016 (T 40.02.03.02.03) was used. ",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -1190,11 +1190,11 @@ AppData.indicatorMetadata = {
   },
   "I078": {
     "name": "I078",
-    "description": "Number of patent applications to the EPO per 1000 population in the NUTS3 unit",
-    "shortDescription": "Patent applications per 1000 population",
+    "description": "Patent applications to the EPO",
+    "shortDescription": "Patent applications",
     "unit": "N°",
-    "details": "This indicator shows the number of patent applications to the European Patent Office per 1000 population. Technology and innovation are important in helping a city to adapt to climate change e.g. investment in new flood technologies or building technologies that can help to mitigate heat. The ability of a country or urban area to invest in technological solutions, is thought to be an indicator of its adaptive capacity. Therefore, number of patents per year is used as a proxy indicator reflecting this issue. Ideally, the availability of adaptation solutions would be a direct indicator; however, such data is not typically collected on a city-by-city basis. he statistical data provided for this indicator (the Z-Score) can be used to better understand whether (lack of) technology and innovation is a potentially significant issue for the NUTS3 area.",
-    "source": "As nominal GDP in billion euros weighted by population data sourced from EUROSTAT (demo_r_d3dens).",
+    "details": "This indicator shows the number of patent applications to the European Patent Office (EPO) per 1000 population. Technology and innovation are important in helping a city to adapt to climate change e.g. investment in new flood technologies or building technologies that can help to mitigate heat. The ability of a country or urban area to invest in technological solutions, is thought to be an indicator of its adaptive capacity. Therefore, number of patents per year is used as a proxy indicator reflecting this issue. Ideally, the availability of adaptation solutions would be a direct indicator; however, such data is not typically collected on a city-by-city basis. he statistical data provided for this indicator (the Z-Score) can be used to better understand whether (lack of) technology and innovation is a potentially significant issue for the NUTS3 area.",
+    "source": "The number of patents at NUTS 3 level was averaged from 2008 to 2012. This was defined as nominal GDP in billion euros. Using the total population in the NUTS 3 region in 2011, the EPO applications were weighted per 1000 people in the NUTS 3 unit (demo_r_d3dens). N.B. There was missing data for this indicator which was addressed via an areal interpolation approach. ",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -1208,11 +1208,11 @@ AppData.indicatorMetadata = {
   },
   "I079": {
     "name": "I079",
-    "description": "GVA at basic prices per head of population (2012-2015 data)",
-    "shortDescription": "GVA at basic prices per head of population",
+    "description": "GVA at basic prices per head of population",
+    "shortDescription": "GVA per head",
     "unit": "Euro",
     "details": "Gross Value Added (GVA) is defined as output value at basic prices less intermediate consumption valued at purchasers' prices. GVA is calculated before consumption of fixed capital. The resources that a city has can be a good indicator of a city’s sensitivity in terms of extreme weather events and climate change. If a city has a lower than average GVA, then it may have be more susceptible to damage from all types of extreme weather events. A city with low resources may not be able to adequately address climate change adaptation due to other pressures. he statistical data provided for this indicator (the Z-Score) can be used to better understand whether (lack of) resources is a potentially significant issue for the NUTS3 area.",
-    "source": "GVA data sourced from EUROSTAT (nama_10r_3gva) except Switzerland which was sourced from Knoema (https://knoema.com/nama_r_e3gdp/gross-domestic-product-gdp-at-current-market-prices-by-nuts-3-regions?geo=1027030-switzerland).",
+    "source": "GVA data sourced from EUROSTAT (nama_10r_3gva) except Switzerland which was sourced from Knoema (https://knoema.com/nama_r_e3gdp/gross-domestic-product-gdp-at-current-market-prices-by-nuts-3-regions?geo=1027030-switzerland). N.B. There was missing data for this indicator which was addressed via an areal interpolation approach.",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -1248,7 +1248,7 @@ AppData.indicatorMetadata = {
     "shortDescription": "Landslide hazard",
     "unit": "%",
     "details": "This indicator draws on NASA’s Global Landslide Susceptibility Map, which identifies the potential for landslides across the Earth’s surface on a scale from slight to severe. This indicator calculates the proportion of the NUTS3 area that shows moderate (or higher) susceptibility to landslide. This indicator and the supporting statistical data (the Z-Score) can be used to better understand whether landslide hazard is a significant issue for the NUTS3 area. The key factor that influences landslide susceptibility is the presence of steep slopes. Others include bedrock and soil characteristics, deforestation and the presence of roads. Heavy rainfall can often trigger landslides. The typology portal includes an indicator on projected changes to the occurrence of very heavy rainfall days in NUTS3 areas. This can be used alongside the landslide hazard indicator, and also other indicators related to the exposure of people and infrastructure to landslides, to better understand this hazard in the NUTS3 area.",
-    "source": "To be completed",
+    "source": "This indicator draws on NASA’s Global Landslide Susceptibility Map, which identifies the potential for landslides across the Earth’s surface on a scale from slight to severe. This indicator calculates the proportion of the NUTS3 area that shows moderate to higher susceptibility to landslide (https://pmm.nasa.gov/precip-apps). ",
     "type": "double",
     "mIcon": "description",
     "faIcon": "fab fa-leanpub",
@@ -1279,7 +1279,7 @@ AppData.indicatorMetadata = {
     "isValid": false
   },
   "V10.1": {
-    "name": "10.1",
+    "name": "V10.1",
     "description": "Consecutive dry days (RCP 4.5)",
     "shortDescription": "Consecutive dry days (RCP 4.5)",
     "unit": "N°",
@@ -3590,7 +3590,17 @@ AppData.indicatorValuesStatistics = {
     "min": 1.1,
     "max": 3.1,
     "sum": 2434.9000000000237,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I002": {
     "name": "I002",
@@ -3606,7 +3616,17 @@ AppData.indicatorValuesStatistics = {
     "min": 1.2,
     "max": 3.4,
     "sum": 2516.4000000000024,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I003": {
     "name": "I003",
@@ -3622,7 +3642,17 @@ AppData.indicatorValuesStatistics = {
     "min": 1.1,
     "max": 2.9,
     "sum": 2373.8000000000243,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I004": {
     "name": "I004",
@@ -3638,7 +3668,17 @@ AppData.indicatorValuesStatistics = {
     "min": -43,
     "max": 0,
     "sum": -34623,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I005": {
     "name": "I005",
@@ -3654,7 +3694,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 37,
     "sum": 18099,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I006": {
     "name": "I006",
@@ -3670,7 +3720,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 45,
     "sum": 9135,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I007": {
     "name": "I007",
@@ -3686,7 +3746,17 @@ AppData.indicatorValuesStatistics = {
     "min": -39,
     "max": 0,
     "sum": -13361,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I008": {
     "name": "I008",
@@ -3702,7 +3772,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 25,
     "sum": 3904,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I009": {
     "name": "I009",
@@ -3718,7 +3798,17 @@ AppData.indicatorValuesStatistics = {
     "min": -157,
     "max": 116,
     "sum": 55268,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I010": {
     "name": "I010",
@@ -3734,7 +3824,17 @@ AppData.indicatorValuesStatistics = {
     "min": -1,
     "max": 15,
     "sum": 1152,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I011": {
     "name": "I011",
@@ -3750,7 +3850,17 @@ AppData.indicatorValuesStatistics = {
     "min": -2,
     "max": 1,
     "sum": 45,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I012": {
     "name": "I012",
@@ -3766,7 +3876,17 @@ AppData.indicatorValuesStatistics = {
     "min": -6,
     "max": 5,
     "sum": 2597,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I013": {
     "name": "I013",
@@ -3782,7 +3902,17 @@ AppData.indicatorValuesStatistics = {
     "min": -3,
     "max": 3,
     "sum": 1260,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I014": {
     "name": "I014",
@@ -3798,7 +3928,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 7.94837330677,
     "sum": 921.3764575621694,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I015": {
     "name": "I015",
@@ -3814,7 +3954,17 @@ AppData.indicatorValuesStatistics = {
     "min": -18.0804916791,
     "max": 20.9066100418,
     "sum": 5507.327756623196,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I016": {
     "name": "I016",
@@ -3830,7 +3980,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 1.95951073125,
     "sum": 97.5180571647101,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I017": {
     "name": "I017",
@@ -3846,7 +4006,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 4684.33537995,
     "sum": 682407.6872980024,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I018": {
     "name": "I018",
@@ -3862,7 +4032,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 4566.41441396,
     "sum": 539725.4760597277,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I019": {
     "name": "I019",
@@ -3878,7 +4058,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 71.4825107424,
     "sum": 3494.6647816561826,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I020": {
     "name": "I020",
@@ -3894,7 +4084,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 514.674077345,
     "sum": 2860.1354230606994,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I021": {
     "name": "I021",
@@ -3910,7 +4110,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 0.53869569679,
     "sum": 10.969562834370004,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I022": {
     "name": "I022",
@@ -3926,7 +4136,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 1.12317253041,
     "sum": 7.6502935083399946,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I023": {
     "name": "I023",
@@ -3942,7 +4162,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 0.1033493812,
     "sum": 18.27413349320999,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I024": {
     "name": "I024",
@@ -3958,7 +4188,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 1.88601108655,
     "sum": 113.00735020842006,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I025": {
     "name": "I025",
@@ -3974,7 +4214,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 119697.86916577119,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I026": {
     "name": "I026",
@@ -3990,7 +4240,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 97311.6350779136,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I027": {
     "name": "I027",
@@ -4006,7 +4266,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 119109.33032046988,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I028": {
     "name": "I028",
@@ -4022,7 +4292,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 95942.04964923661,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I029": {
     "name": "I029",
@@ -4038,7 +4318,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 99.925,
     "sum": 69213.07132469301,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I030": {
     "name": "I030",
@@ -4054,7 +4344,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 72.8540840578,
     "sum": 5185.725933194371,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I031": {
     "name": "I031",
@@ -4070,7 +4370,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 96.4257282939,
     "sum": 12324.654125656592,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I032": {
     "name": "I032",
@@ -4086,7 +4396,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 90.1987593298,
     "sum": 8761.859563555998,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I033": {
     "name": "I033",
@@ -4102,7 +4422,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 285.460641364,
     "sum": 14160.776065676238,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I034": {
     "name": "I034",
@@ -4118,7 +4448,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 87.4791318865,
     "sum": 9925.367723555708,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I035": {
     "name": "I035",
@@ -4134,7 +4474,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 79.3062200957,
     "sum": 6710.464231103379,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I036": {
     "name": "I036",
@@ -4150,7 +4500,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 9358.084040142387,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I037": {
     "name": "I037",
@@ -4166,7 +4526,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 7614.451602319132,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I038": {
     "name": "I038",
@@ -4182,7 +4552,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 906.4316816,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I039": {
     "name": "I039",
@@ -4198,7 +4578,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 12962.213044834867,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I040": {
     "name": "I040",
@@ -4214,7 +4604,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 98.0058450171,
     "sum": 3860.4690043743008,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I041": {
     "name": "I041",
@@ -4230,7 +4630,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 99.0230817419,
     "sum": 3988.632358032658,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I042": {
     "name": "I042",
@@ -4246,7 +4656,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 89.872103186,
     "sum": 3360.0072571544674,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I043": {
     "name": "I043",
@@ -4262,7 +4682,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 96.3037502583,
     "sum": 3735.002305509922,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I044": {
     "name": "I044",
@@ -4278,7 +4708,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 35000,
     "sum": 144080.3740213705,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I045": {
     "name": "I045",
@@ -4294,7 +4734,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 95.5421686747,
     "sum": 4346.619220548897,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I046": {
     "name": "I046",
@@ -4310,7 +4760,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 2884.2857142855296,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I047": {
     "name": "I047",
@@ -4326,7 +4786,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 7325.355155642922,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I048": {
     "name": "I048",
@@ -4342,7 +4812,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 1836.2981100000002,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I049": {
     "name": "I049",
@@ -4358,7 +4838,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 4163.27265550222,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I050": {
     "name": "I050",
@@ -4374,7 +4864,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 90.4213815087,
     "sum": 8444.034515320842,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I051": {
     "name": "I051",
@@ -4390,7 +4890,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 9e-9,
     "sum": 8.320000000000003e-7,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I052": {
     "name": "I052",
@@ -4406,7 +4916,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 0.00177562016,
     "sum": 0.15095640147000017,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I053": {
     "name": "I053",
@@ -4422,7 +4942,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 0.00134523595,
     "sum": 0.11669497478999999,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I054": {
     "name": "I054",
@@ -4438,7 +4968,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 9663.741151267164,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I055": {
     "name": "I055",
@@ -4454,7 +4994,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 90.2002107482,
     "sum": 10154.91473648425,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I056": {
     "name": "I056",
@@ -4470,7 +5020,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 2353.6291400000005,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I057": {
     "name": "I057",
@@ -4486,7 +5046,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 1781.3094899999999,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I058": {
     "name": "I058",
@@ -4502,7 +5072,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 150,
     "sum": 8180.030590000003,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I059": {
     "name": "I059",
@@ -4518,7 +5098,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 100,
     "sum": 14457.660247351727,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I060": {
     "name": "I060",
@@ -4534,7 +5124,17 @@ AppData.indicatorValuesStatistics = {
     "min": 1.2,
     "max": 21158.3,
     "sum": 801121.8349998321,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I061": {
     "name": "I061",
@@ -4550,7 +5150,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 21021.620039,
     "sum": 2187718.958710905,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I062": {
     "name": "I062",
@@ -4566,7 +5176,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 26.0204650483,
     "sum": 2354.1364011594214,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I063": {
     "name": "I063",
@@ -4582,7 +5202,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0.09823405299,
     "max": 5365.04070933,
     "sum": 67856.90887365548,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I064": {
     "name": "I064",
@@ -4598,7 +5228,17 @@ AppData.indicatorValuesStatistics = {
     "min": -245.75452324,
     "max": 166.558244934,
     "sum": 5931.4019571011695,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I065": {
     "name": "I065",
@@ -4614,7 +5254,17 @@ AppData.indicatorValuesStatistics = {
     "min": -204.620340941,
     "max": 39.9571849118,
     "sum": 4747.9232511614955,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I066": {
     "name": "I066",
@@ -4630,7 +5280,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 210.813324959,
     "sum": 86717.75188463563,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I067": {
     "name": "I067",
@@ -4646,7 +5306,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 430.63571167,
     "sum": 54561.38235588078,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I068": {
     "name": "I068",
@@ -4662,7 +5332,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 2.15578591383,
     "sum": 77.16041862668995,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I069": {
     "name": "I069",
@@ -4678,7 +5358,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0.9,
     "max": 30,
     "sum": 21331.899999999958,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I070": {
     "name": "I070",
@@ -4694,7 +5384,17 @@ AppData.indicatorValuesStatistics = {
     "min": -184.579870729,
     "max": 49.6994987867,
     "sum": -14953.03619973225,
-    "count": 1226
+    "count": 1226,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I071": {
     "name": "I071",
@@ -4710,7 +5410,17 @@ AppData.indicatorValuesStatistics = {
     "min": -47.5509269856,
     "max": 71.3704630788,
     "sum": 32811.33611549274,
-    "count": 1226
+    "count": 1226,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I072": {
     "name": "I072",
@@ -4726,7 +5436,17 @@ AppData.indicatorValuesStatistics = {
     "min": -89.4185760039,
     "max": 69.165621079,
     "sum": 6593.696625617146,
-    "count": 1226
+    "count": 1226,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I073": {
     "name": "I073",
@@ -4742,7 +5462,17 @@ AppData.indicatorValuesStatistics = {
     "min": -22.4325834847,
     "max": 73.4095427435,
     "sum": 42530.11253855959,
-    "count": 1226
+    "count": 1226,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I074": {
     "name": "I074",
@@ -4758,7 +5488,17 @@ AppData.indicatorValuesStatistics = {
     "min": -170.408,
     "max": 52.02684032,
     "sum": -8628.592349747994,
-    "count": 1226
+    "count": 1226,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I075": {
     "name": "I075",
@@ -4774,7 +5514,17 @@ AppData.indicatorValuesStatistics = {
     "min": -1963.60606061,
     "max": 350.96969697,
     "sum": -3809.999999995362,
-    "count": 1226
+    "count": 1226,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I076": {
     "name": "I076",
@@ -4790,7 +5540,17 @@ AppData.indicatorValuesStatistics = {
     "min": -127.573047443,
     "max": 103.072423126,
     "sum": 1537.6792300693094,
-    "count": 1226
+    "count": 1226,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I077": {
     "name": "I077",
@@ -4806,7 +5566,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 3.42664388715,
     "sum": 625.3055715475107,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I078": {
     "name": "I078",
@@ -4822,7 +5592,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0.12,
     "max": 1469.17461538,
     "sum": 55788.47867572964,
-    "count": 1220
+    "count": 1220,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I079": {
     "name": "I079",
@@ -4838,7 +5618,17 @@ AppData.indicatorValuesStatistics = {
     "min": 2.4923396038,
     "max": 607.252825769,
     "sum": 34818.59759936741,
-    "count": 1376
+    "count": 1376,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I080": {
     "name": "I080",
@@ -4854,7 +5644,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 89.6068060283,
     "sum": 3365.3517631490704,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I081": {
     "name": "I081",
@@ -4870,7 +5670,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 191.223854094,
     "sum": 8834.84662951057,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I082": {
     "name": "I082",
@@ -4886,7 +5696,17 @@ AppData.indicatorValuesStatistics = {
     "min": 0,
     "max": 98.1789889935,
     "sum": 17863.056621004733,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   }
 };
 
@@ -4905,7 +5725,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.249159,
     "max": 3.264565,
     "sum": -1.4708160000008401,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I002": {
     "name": "I002",
@@ -4921,7 +5751,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.250381,
     "max": 3.263376,
     "sum": -1.2737209999994386,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I003": {
     "name": "I003",
@@ -4937,7 +5777,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.034717,
     "max": 3.237079,
     "sum": -1.9722089999995198,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I004": {
     "name": "I004",
@@ -4953,7 +5803,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.204645,
     "max": 2.863498,
     "sum": 0.01330600000031712,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I005": {
     "name": "I005",
@@ -4969,7 +5829,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -2.708426,
     "max": 3.226693,
     "sum": -1.1762989999999796,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I006": {
     "name": "I006",
@@ -4985,7 +5855,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.764506,
     "max": 3.199827,
     "sum": -0.8787520000003253,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I007": {
     "name": "I007",
@@ -5001,7 +5881,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.880214,
     "max": 3.239987,
     "sum": -0.2638779999998375,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I008": {
     "name": "I008",
@@ -5017,7 +5907,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.146344,
     "max": 3.708459,
     "sum": -1.2116159999999505,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I009": {
     "name": "I009",
@@ -5033,7 +5933,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.191756,
     "max": 3.002864,
     "sum": 1.0697149999996338,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I010": {
     "name": "I010",
@@ -5049,7 +5959,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.642107,
     "max": 3.551418,
     "sum": -1.4554980000003774,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I011": {
     "name": "I011",
@@ -5065,7 +5985,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.759985,
     "max": 2.07923,
     "sum": 0.06629299999886007,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I012": {
     "name": "I012",
@@ -5081,7 +6011,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.037925,
     "max": 3.307498,
     "sum": 1.0227340000005762,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I013": {
     "name": "I013",
@@ -5097,7 +6037,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.512589,
     "max": 3.08052,
     "sum": -0.08395300000097404,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I014": {
     "name": "I014",
@@ -5113,7 +6063,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.603442,
     "max": 4.122343,
     "sum": 0.6038009999989513,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I015": {
     "name": "I015",
@@ -5129,7 +6089,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.189439,
     "max": 3.207257,
     "sum": 1.1035289999998543,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I016": {
     "name": "I016",
@@ -5145,7 +6115,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -2.180043,
     "max": 3.231028,
     "sum": -1.0982620000005199,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I017": {
     "name": "I017",
@@ -5161,7 +6141,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -2.72759,
     "max": 3.210009,
     "sum": 0.9037389999998222,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I018": {
     "name": "I018",
@@ -5177,7 +6167,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -2.244311,
     "max": 3.224381,
     "sum": 1.6818059999998687,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I019": {
     "name": "I019",
@@ -5193,7 +6193,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -2.72759,
     "max": 3.210009,
     "sum": 0.7360380000000292,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I020": {
     "name": "I020",
@@ -5209,7 +6219,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -2.765863,
     "max": 3.209529,
     "sum": 1.387396999999992,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I021": {
     "name": "I021",
@@ -5225,7 +6245,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.208031,
     "max": 3.436723,
     "sum": -0.19242000000057402,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I022": {
     "name": "I022",
@@ -5241,7 +6271,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.620984,
     "max": 4.070162,
     "sum": 0.6211470000030959,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I023": {
     "name": "I023",
@@ -5257,7 +6297,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.223397,
     "max": 3.429214,
     "sum": -0.5697210000006848,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I024": {
     "name": "I024",
@@ -5273,7 +6323,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -2.513796,
     "max": 3.214097,
     "sum": 1.357712000000348,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I025": {
     "name": "I025",
@@ -5289,7 +6349,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.724545,
     "max": 1.557912,
     "sum": 1.724540999999907,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I026": {
     "name": "I026",
@@ -5305,7 +6375,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.68508,
     "max": 2.058595,
     "sum": 1.685009000000118,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I027": {
     "name": "I027",
@@ -5321,7 +6401,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.677627,
     "max": 2.267735,
     "sum": 1.677609999999337,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I028": {
     "name": "I028",
@@ -5337,7 +6427,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.667476,
     "max": 3.186255,
     "sum": 1.6674720000005676,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I029": {
     "name": "I029",
@@ -5353,7 +6453,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.633287,
     "max": 3.479382,
     "sum": 1.6333030000008402,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I030": {
     "name": "I030",
@@ -5369,7 +6479,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.52394,
     "max": 3.320963,
     "sum": 0.8350959999998975,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I031": {
     "name": "I031",
@@ -5385,7 +6505,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.388595,
     "max": 3.361718,
     "sum": 0.7142880000000882,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I032": {
     "name": "I032",
@@ -5401,7 +6531,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.433608,
     "max": 3.346909,
     "sum": 1.433474999999949,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I033": {
     "name": "I033",
@@ -5417,7 +6557,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.356864,
     "max": 3.372994,
     "sum": 1.357001999999621,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I034": {
     "name": "I034",
@@ -5433,7 +6583,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.403233,
     "max": 3.356754,
     "sum": 1.4033110000000415,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I035": {
     "name": "I035",
@@ -5449,7 +6609,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.267053,
     "max": 3.409126,
     "sum": 1.267041000000291,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I036": {
     "name": "I036",
@@ -5465,7 +6635,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.35705,
     "max": 3.392889,
     "sum": 0.35734100000006763,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I037": {
     "name": "I037",
@@ -5481,7 +6661,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.302264,
     "max": 3.784339,
     "sum": 0.3023639999999984,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I038": {
     "name": "I038",
@@ -5497,7 +6687,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.181392,
     "max": 8.017661,
     "sum": 0.18078999999966539,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I039": {
     "name": "I039",
@@ -5513,7 +6713,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.816184,
     "max": 3.218829,
     "sum": 0.8161759999997531,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I040": {
     "name": "I040",
@@ -5529,7 +6739,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.593255,
     "max": 4.147123,
     "sum": 0.5937040000008076,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I041": {
     "name": "I041",
@@ -5545,7 +6765,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.540736,
     "max": 4.304611,
     "sum": 0.5408149999975387,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I042": {
     "name": "I042",
@@ -5561,7 +6791,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.51583,
     "max": 4.399376,
     "sum": 0.5160000000044169,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I043": {
     "name": "I043",
@@ -5577,7 +6817,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.464553,
     "max": 4.611237,
     "sum": 0.46439500000400313,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I044": {
     "name": "I044",
@@ -5593,7 +6843,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.431645,
     "max": 4.782707,
     "sum": 0.432201999997099,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I045": {
     "name": "I045",
@@ -5609,7 +6869,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.521611,
     "max": 4.380021,
     "sum": 0.5220999999948677,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I046": {
     "name": "I046",
@@ -5625,7 +6895,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.203736,
     "max": 5.8744,
     "sum": 0.20394600000048826,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I047": {
     "name": "I047",
@@ -5641,7 +6921,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.332075,
     "max": 3.904918,
     "sum": 0.33171099999687603,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I048": {
     "name": "I048",
@@ -5657,7 +6947,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.189717,
     "max": 6.815988,
     "sum": 0.18977099999853397,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I049": {
     "name": "I049",
@@ -5673,7 +6973,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.330071,
     "max": 4.867564,
     "sum": 0.32998099999793684,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I050": {
     "name": "I050",
@@ -5689,7 +6999,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.131765,
     "max": 3.485772,
     "sum": -0.8066760000006028,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I051": {
     "name": "I051",
@@ -5705,7 +7025,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.579555,
     "max": 4.431315,
     "sum": -0.9876909999999484,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I052": {
     "name": "I052",
@@ -5721,7 +7051,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.96938,
     "max": 3.599325,
     "sum": -0.5948580000004704,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I053": {
     "name": "I053",
@@ -5737,7 +7077,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.875875,
     "max": 3.695892,
     "sum": 0.8757610000033127,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I054": {
     "name": "I054",
@@ -5753,7 +7103,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.914695,
     "max": 3.657082,
     "sum": -0.5181419999993326,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I055": {
     "name": "I055",
@@ -5769,7 +7129,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.936082,
     "max": 3.628215,
     "sum": 0.9363020000004972,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I056": {
     "name": "I056",
@@ -5785,7 +7155,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.180029,
     "max": 6.506414,
     "sum": 0.17987600000166526,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I057": {
     "name": "I057",
@@ -5801,7 +7181,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.181757,
     "max": 6.89245,
     "sum": 0.18218899999918448,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I058": {
     "name": "I058",
@@ -5817,7 +7207,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.414189,
     "max": 3.606296,
     "sum": -2.246101999999134,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I059": {
     "name": "I059",
@@ -5833,7 +7233,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.675543,
     "max": 3.270466,
     "sum": -1.8009080000003819,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I060": {
     "name": "I060",
@@ -5849,7 +7259,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.189425,
     "max": 3.207241,
     "sum": 0.5967299999998303,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I061": {
     "name": "I061",
@@ -5865,7 +7285,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -2.661461,
     "max": 3.210997,
     "sum": -0.986810000000159,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I062": {
     "name": "I062",
@@ -5881,7 +7311,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.186234,
     "max": 3.447791,
     "sum": 1.1861949999995267,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I063": {
     "name": "I063",
@@ -5897,7 +7337,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.189419,
     "max": 3.207236,
     "sum": 1.6140000000001316,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I064": {
     "name": "I064",
@@ -5913,7 +7363,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.189751,
     "max": 3.207496,
     "sum": 1.2483240000000908,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I065": {
     "name": "I065",
@@ -5929,7 +7389,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.189725,
     "max": 3.207462,
     "sum": 1.2483460000001745,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I066": {
     "name": "I066",
@@ -5945,7 +7415,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -2.392432,
     "max": 3.217838,
     "sum": -1.1083880000004045,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I067": {
     "name": "I067",
@@ -5961,7 +7441,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -2.556865,
     "max": 3.213048,
     "sum": -0.021601999999854682,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I068": {
     "name": "I068",
@@ -5977,7 +7467,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.288399,
     "max": 3.399934,
     "sum": 1.288399000000465,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I069": {
     "name": "I069",
@@ -5993,7 +7493,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.276031,
     "max": 2.119692,
     "sum": 3.5029240000008555,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I070": {
     "name": "I070",
@@ -6009,7 +7519,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.24524,
     "max": 3.28907,
     "sum": 0.6009770000002217,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I071": {
     "name": "I071",
@@ -6025,7 +7545,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.315975,
     "max": 3.287788,
     "sum": 1.3195500000001386,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I072": {
     "name": "I072",
@@ -6041,7 +7571,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.268807,
     "max": 3.277149,
     "sum": -0.4380840000000623,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I073": {
     "name": "I073",
@@ -6057,7 +7597,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.305426,
     "max": 3.271331,
     "sum": 1.3240940000002364,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I074": {
     "name": "I074",
@@ -6073,7 +7623,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.251989,
     "max": 3.268964,
     "sum": 1.198559999999779,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I075": {
     "name": "I075",
@@ -6089,7 +7649,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.280428,
     "max": 3.366404,
     "sum": 0.6693870000000249,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I076": {
     "name": "I076",
@@ -6105,7 +7675,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.139396,
     "max": 3.176097,
     "sum": 3.1283819999994806,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I077": {
     "name": "I077",
@@ -6121,7 +7701,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.13834,
     "max": 3.174939,
     "sum": 3.127290999999728,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I078": {
     "name": "I078",
@@ -6137,7 +7727,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.073569,
     "max": 3.212673,
     "sum": 1.570079000000027,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I079": {
     "name": "I079",
@@ -6153,7 +7753,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -3.18221,
     "max": 3.177312,
     "sum": 3.167339000000043,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I080": {
     "name": "I080",
@@ -6169,7 +7779,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -0.605291,
     "max": 4.117942,
     "sum": 0.6053510000039952,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I081": {
     "name": "I081",
@@ -6185,7 +7805,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.573881,
     "max": 3.308535,
     "sum": 0.37799200000000077,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   },
   "I082": {
     "name": "I082",
@@ -6201,7 +7831,17 @@ AppData.indicatorZScoresStatistics = {
     "min": -1.167643,
     "max": 3.465612,
     "sum": -0.8449169999993305,
-    "count": 1378
+    "count": 1378,
+    "histograms": {
+      "oneStdev": {
+        "counts": [],
+        "values": []
+      },
+      "halfStdev": {
+        "counts": [],
+        "values": []
+      }
+    }
   }
 };
 
