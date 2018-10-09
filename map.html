@@ -3584,7 +3584,9 @@
                                   <div style="height: 100px; background-color: orange;">
                                     <!--style="border: 1px solid #000000;"-->
                                     <!--<canvas id="radar-diagram" style="border: 1px solid #000000;"></canvas>-->
-                                    <canvas></canvas>
+
+                                    <canvas v-bind:id="['o-canvas-histogram-' + indicator.name]"></canvas>
+
                                   </div>
                                   
                                 </div>
