@@ -2044,6 +2044,27 @@ let RadarDiagrams = {
 
 };
 
+
+
+let IndicatorDiagrams = {
+
+  histogramValues: [],
+
+
+  colors: {
+
+  },
+
+  config: {
+    type: '',
+    data: null,
+    options: null
+  },
+
+  histogram: null
+
+};
+
 // ================================================================================
 //  View Models.
 
