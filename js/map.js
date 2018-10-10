@@ -2048,10 +2048,95 @@ let RadarDiagrams = {
 
 let IndicatorDiagrams = {
 
-  histogramValues: [],
-
+  indicators: {
+    'I001': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I002': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I003': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I004': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I005': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I006': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I007': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I008': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I009': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I010': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I011': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I012': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I013': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I014': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I015': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I016': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I017': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I018': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I019': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I020': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I021': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I022': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I023': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I024': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I025': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I026': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I027': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I028': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I029': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I030': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I031': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I032': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I033': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I034': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I035': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I036': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I037': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I038': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I039': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I040': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I041': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I042': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I043': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I044': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I045': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I046': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I047': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I048': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I049': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I050': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I051': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I052': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I053': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I054': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I055': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I056': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I057': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I058': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I059': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I060': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I061': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I062': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I063': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I064': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I065': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I066': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I067': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I068': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I069': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I070': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I071': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I072': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I073': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I074': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I075': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I076': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I077': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I078': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I079': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I080': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I081': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] },
+    'I082': { halfStdevFrequency: [], stdevFrequency: [], halfStdevLabels: [], stdevLabels: [] }
+  },
 
   colors: {
+    histogram: {
+
+    }
 
   },
 
@@ -2061,7 +2146,51 @@ let IndicatorDiagrams = {
     options: null
   },
 
-  histogram: null
+
+
+  createHistogram: function(indicator, isZscore, isStdev) {
+
+    // Check if creating a histogram of z-scores or not.
+    let z = isZscore === true ? 'Z' : '';
+
+    let stdev = AppData.indicatorZScoresStatistics[indicator].stdev;
+
+    // Get the bin length depending on if the histogram is based on stdev or half stdev.
+    let bin = isStdev === true ? stdev : stdev * 0.5;
+
+    // Get the minimum and maximum of indicator values and create the indicator bins.
+    if (isZscore) {
+      let positiveBins = Math.ceil(AppData.indicatorZScoresStatistics.max / bin);
+      let negativeBins = Math.ceil(AppData.indicatorZScoresStatistics.min / bin) + 1;
+
+
+
+
+    }
+    else {
+
+    }
+
+
+    let features = AppData.nuts3Polygons.features;
+
+    // Loop through the NUTS3 features to create the
+    for (let i = 0; i < features.length; i++) {
+
+      let value = features[i].properties[indicator + z];
+
+
+
+
+
+    }
+
+
+
+
+  }
+
+
 
 };
 
