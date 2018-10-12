@@ -1496,7 +1496,7 @@ AppData.indicatorMetadata = {
   }
 };
 
-AppData.classificationData = {
+AppData.radarDiagramData = {
   "1": {
     "I001": -0.43083658647553374,
     "I005": -0.017308797097355562,
@@ -3593,12 +3593,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -3619,12 +3619,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -3645,12 +3645,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -3671,12 +3671,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -3697,12 +3697,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -3723,12 +3723,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -3749,12 +3749,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -3775,12 +3775,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -3801,12 +3801,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -3827,12 +3827,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -3853,12 +3853,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -3879,12 +3879,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -3905,12 +3905,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -3931,12 +3931,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -3957,12 +3957,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -3983,12 +3983,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4009,12 +4009,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4035,12 +4035,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4061,12 +4061,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4087,12 +4087,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4113,12 +4113,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4139,12 +4139,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4165,12 +4165,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4191,12 +4191,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4217,12 +4217,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4243,12 +4243,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4269,12 +4269,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4295,12 +4295,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4321,12 +4321,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4347,12 +4347,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4373,12 +4373,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4399,12 +4399,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4425,12 +4425,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4451,12 +4451,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4477,12 +4477,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4503,12 +4503,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4529,12 +4529,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4555,12 +4555,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4581,12 +4581,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4607,12 +4607,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4633,12 +4633,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4659,12 +4659,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4685,12 +4685,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4711,12 +4711,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4737,12 +4737,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4763,12 +4763,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4789,12 +4789,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4815,12 +4815,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4841,12 +4841,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4867,12 +4867,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4893,12 +4893,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4919,12 +4919,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4945,12 +4945,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4971,12 +4971,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -4997,12 +4997,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5023,12 +5023,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5049,12 +5049,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5075,12 +5075,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5101,12 +5101,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5127,12 +5127,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5153,12 +5153,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5179,12 +5179,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5205,12 +5205,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5231,12 +5231,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5257,12 +5257,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5283,12 +5283,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5309,12 +5309,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5335,12 +5335,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5361,12 +5361,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5387,12 +5387,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1226,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5413,12 +5413,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1226,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5439,12 +5439,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1226,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5465,12 +5465,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1226,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5491,12 +5491,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1226,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5517,12 +5517,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1226,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5543,12 +5543,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1226,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5569,12 +5569,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5595,12 +5595,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1220,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5621,12 +5621,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1376,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5647,12 +5647,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5673,12 +5673,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5699,12 +5699,12 @@ AppData.indicatorValuesStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   }
@@ -5728,12 +5728,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5754,12 +5754,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5780,12 +5780,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5806,12 +5806,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5832,12 +5832,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5858,12 +5858,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5884,12 +5884,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5910,12 +5910,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5936,12 +5936,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5962,12 +5962,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -5988,12 +5988,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6014,12 +6014,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6040,12 +6040,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6066,12 +6066,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6092,12 +6092,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6118,12 +6118,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6144,12 +6144,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6170,12 +6170,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6196,12 +6196,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6222,12 +6222,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6248,12 +6248,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6274,12 +6274,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6300,12 +6300,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6326,12 +6326,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6352,12 +6352,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6378,12 +6378,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6404,12 +6404,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6430,12 +6430,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6456,12 +6456,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6482,12 +6482,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6508,12 +6508,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6534,12 +6534,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6560,12 +6560,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6586,12 +6586,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6612,12 +6612,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6638,12 +6638,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6664,12 +6664,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6690,12 +6690,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6716,12 +6716,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6742,12 +6742,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6768,12 +6768,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6794,12 +6794,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6820,12 +6820,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6846,12 +6846,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6872,12 +6872,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6898,12 +6898,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6924,12 +6924,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6950,12 +6950,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -6976,12 +6976,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7002,12 +7002,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7028,12 +7028,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7054,12 +7054,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7080,12 +7080,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7106,12 +7106,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7132,12 +7132,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7158,12 +7158,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7184,12 +7184,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7210,12 +7210,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7236,12 +7236,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7262,12 +7262,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7288,12 +7288,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7314,12 +7314,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7340,12 +7340,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7366,12 +7366,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7392,12 +7392,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7418,12 +7418,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7444,12 +7444,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7470,12 +7470,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7496,12 +7496,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7522,12 +7522,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7548,12 +7548,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7574,12 +7574,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7600,12 +7600,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7626,12 +7626,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7652,12 +7652,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7678,12 +7678,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7704,12 +7704,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7730,12 +7730,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7756,12 +7756,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7782,12 +7782,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7808,12 +7808,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   },
@@ -7834,12 +7834,12 @@ AppData.indicatorZScoresStatistics = {
     "count": 1378,
     "histograms": {
       "oneStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       },
       "halfStdev": {
-        "counts": [],
-        "values": []
+        "frequencies": [],
+        "labels": [],
       }
     }
   }
