@@ -2071,29 +2071,31 @@ let IndicatorDiagrams = {
     // Check if creating a histogram of z-scores or raw values.
     let z = useZscores === true ? 'Z' : '';
 
-    let stdev = AppData.indicatorZScoresStatistics[indicator].stdev;
+    // Get the z-scores or raw data statistics object.
+    let statistics = useZscores === true ?
+      AppData.indicatorZScoresStatistics[indicator] : AppData.indicatorValuesStatistics[indicator];
 
-    // Set the bin length and bin name depending on if a standard deviation
-    // half standard deviation is used for the histogram's bins.
+    // Get the standard deviation.
+    let stdev = statistics.stdev;
+
+    // Set the bin length and bin name depending on whether the standard deviation
+    // or the half of standard deviation is used for the histogram's bins.
     let binSize = useStdev === true ? stdev : stdev * 0.5;
     let binName = useStdev === true ? 'oneStdev' : 'halfStdev';
-
-    // Get the z-scores or raw data statistics object.
-    let statistics = useZscores === true ? AppData.indicatorZScoresStatistics : AppData.indicatorValuesStatistics;
 
     // Find out the number of histogram bins.
     let positiveBins = Math.trunc((statistics.max - statistics.mean) / binSize) + 1;
     let negativeBins = Math.trunc((statistics.mean - statistics.min) / binSize) + 1;
 
     // Add the histogram's labels and initialize the bin frequencies.
-    for (let i = 0; i < negativeBins; i++) {
-      statistics[indicator].histograms[binName].labels.push((i * (-1)).toString());
-      statistics[indicator].histograms[binName].frequencies.push(0);
+    for (let i = negativeBins; i > 0; i--) {
+      statistics.histograms[binName].labels.push((i * (-1)).toString());
+      statistics.histograms[binName].frequencies.push(0);
     }
 
     for (let i = 0; i < positiveBins; i++) {
-      statistics[indicator].histograms[binName].labels.push(i.toString());
-      statistics[indicator].histograms[binName].frequencies.push(0);
+      statistics.histograms[binName].labels.push((i + 1).toString());
+      statistics.histograms[binName].frequencies.push(0);
     }
 
     // Get the NUTS3 features.
@@ -2105,23 +2107,23 @@ let IndicatorDiagrams = {
       let valueBin = Math.trunc((statistics.mean - features[i].properties[indicator + z]) / binSize);
       let valueBinString = valueBin >= 0 ? (valueBin + 1).toString() : (valueBin - 1).toString();
 
-      let index = statistics[indicator].histograms[binName].labels.findIndex(l => l === valueBinString);
+      let index = statistics.histograms[binName].labels.findIndex(l => l === valueBinString);
 
-      statistics[indicator].histograms[binName].frequencies[index] =
-        statistics[indicator].histograms[binName].frequencies[index] + 1;
+      statistics.histograms[binName].frequencies[index] = statistics.histograms[binName].frequencies[index] + 1;
 
     }
 
-    // TODO: This is for debugging purposes.
-    for(let i = 0; statistics[indicator].histograms[binName].labels.count; i++) {
-      console.log(
-        statistics[indicator].histograms[binName].labels[i] + ': ' +
-        statistics[indicator].histograms[binName].frequencies[i]
-      );
-    }
+  },
+
+
+  createHistogramDiagram: function(indicator) {
+
+    //let histogramDiagram = $('#' + )
+
+
+
 
   }
-
 
 
 };
@@ -3596,6 +3598,10 @@ let overviewInfoViewModel = new Vue({
       if (indicator.isDetailsVisible) {
         // let width = $('#o-histogram-container-' + name).width();
         // $('#o-canvas-histogram-' + name).width(width);
+
+
+        IndicatorDiagrams.createHistogram(name, true, false);
+
       }
     },
 
