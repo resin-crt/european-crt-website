@@ -3306,11 +3306,6 @@ let symbologyViewModel = new Vue({
       this.dictionary[this.currentTab][code].isInformationPanelVisible =
         !this.dictionary[this.currentTab][code].isInformationPanelVisible;
 
-      if (this.dictionary[this.currentTab][code].isInformationPanelVisible) {
-        //let width = $('o-histogram-container-' + code)
-        //$('#o-canvas-histogram-' + code).css("width: " +  )
-      }
-
       // //TODO: RESIN - This code is needed if we need to show a tooltip over the help button.
       // let l = (this.currentTab === 'supergroups' ? 'sg' : (this.currentTab === 'groups' ? 'g' : 'i'));
       //
@@ -3593,8 +3588,15 @@ let overviewInfoViewModel = new Vue({
      * @param index - The index of the indicator in the specified domain.
      */
     toggleDetails(domain, index) {
-      this.domainDictionaryIndicators[domain][index].isDetailsVisible =
-        !this.domainDictionaryIndicators[domain][index].isDetailsVisible;
+      let indicator = this.domainDictionaryIndicators[domain][index];
+      let name = indicator.name;
+
+      indicator.isDetailsVisible = !indicator.isDetailsVisible;
+
+      if (indicator.isDetailsVisible) {
+        // let width = $('#o-histogram-container-' + name).width();
+        // $('#o-canvas-histogram-' + name).width(width);
+      }
     },
 
     /**
