@@ -2048,21 +2048,666 @@ let RadarDiagrams = {
 
 let IndicatorDiagrams = {
 
-
-
-
-  colors: {
-    histogram: {
-
+  diagrams: {
+    'I001': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I002': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I003': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I004': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I005': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I006': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I007': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I008': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I009': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I010': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I011': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I012': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I013': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I014': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I015': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I016': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I017': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I018': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I019': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I020': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I021': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I022': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I023': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I024': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I025': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I026': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I027': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I028': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I029': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I030': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I031': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I032': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I033': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I034': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I035': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I036': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I037': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I038': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I039': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I040': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I041': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I042': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I043': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I044': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I045': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I046': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I047': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I048': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I049': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I050': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I051': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I052': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I053': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I054': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I055': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I056': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I057': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I058': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I059': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I060': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I061': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I062': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I063': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I064': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I065': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I066': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I067': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I068': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I069': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I070': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I071': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I072': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I073': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I074': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I075': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I076': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I077': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I078': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I079': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I080': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I081': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
+    },
+    'I082': {
+      oneStdev: {
+        histogram: null
+      },
+      halfStdev: {
+        histogram: null
+      }
     }
-
   },
 
-  config: {
-    type: '',
-    data: null,
-    options: null
-  },
+
 
 
 
@@ -2083,18 +2728,25 @@ let IndicatorDiagrams = {
     let binSize = useStdev === true ? stdev : stdev * 0.5;
     let binName = useStdev === true ? 'oneStdev' : 'halfStdev';
 
+    // Return if the histogram has been already calculated.
+    if (statistics.histograms[binName].frequencies.length !== 0) {
+      return;
+    }
+
     // Find out the number of histogram bins.
     let positiveBins = Math.trunc((statistics.max - statistics.mean) / binSize) + 1;
     let negativeBins = Math.trunc((statistics.mean - statistics.min) / binSize) + 1;
 
+    let distanceFactor = useStdev === true ? 1 : 0.5;
+
     // Add the histogram's labels and initialize the bin frequencies.
     for (let i = negativeBins; i > 0; i--) {
-      statistics.histograms[binName].labels.push((i * (-1)).toString());
+      statistics.histograms[binName].labels.push((i * -distanceFactor).toString());
       statistics.histograms[binName].frequencies.push(0);
     }
 
     for (let i = 0; i < positiveBins; i++) {
-      statistics.histograms[binName].labels.push((i + 1).toString());
+      statistics.histograms[binName].labels.push(((i + 1) * distanceFactor).toString());
       statistics.histograms[binName].frequencies.push(0);
     }
 
@@ -2105,7 +2757,8 @@ let IndicatorDiagrams = {
     for (let i = 0; i < features.length; i++) {
 
       let valueBin = Math.trunc((statistics.mean - features[i].properties[indicator + z]) / binSize);
-      let valueBinString = valueBin >= 0 ? (valueBin + 1).toString() : (valueBin - 1).toString();
+      let valueBinString = valueBin >= 0 ?
+        ((valueBin + 1) * distanceFactor).toString() : ((valueBin - 1) * distanceFactor).toString();
 
       let index = statistics.histograms[binName].labels.findIndex(l => l === valueBinString);
 
@@ -2116,12 +2769,72 @@ let IndicatorDiagrams = {
   },
 
 
-  createHistogramDiagram: function(indicator) {
+  createHistogramDiagram: function(indicator, useZscores, useStdev) {
 
-    let histogramDiagram = $('#o-canvas-histogram-' + indicator);
-    
+    // Check if creating a histogram of z-scores or raw values.
+    let z = useZscores === true ? 'Z' : '';
 
+    // Get the z-scores or raw data statistics object.
+    let statistics = useZscores === true ?
+      AppData.indicatorZScoresStatistics[indicator] : AppData.indicatorValuesStatistics[indicator];
 
+    // Set the bin name depending on whether the standard deviation
+    // or the half of standard deviation is used.
+    let binName = useStdev === true ? 'oneStdev' : 'halfStdev';
+
+    if (this.diagrams[indicator][binName].histogram !== null) {
+      return;
+    }
+
+    // Get the histogram canvas element.
+    let histogramCanvasElement = $('#o-canvas-histogram-' + indicator);
+
+    // Get its context.
+    //let ctx = histogramCanvasElement.getContext('2d');
+    // let ctx = document.getElementById('o-canvas-histogram-' + indicator).getContext('2d');
+
+    let config = {
+      type: 'bar',
+      data: {
+        labels: statistics.histograms[binName].labels,
+        datasets: [
+          {
+            label: 'Histogram of values',
+            // xAxisID: 'xAxisID',
+            // yAxisID: 'yAxisID',
+            backgroundColor: "rgba(244, 67, 54, 0.2)",
+            borderColor: "rgba(244, 67, 54, 1)",
+            borderWidth: 1,
+            // borderSkipped,
+            // hoverBackgroundColor,
+            // hoverBorderColor,
+            // hoverBorderWidth
+            data: statistics.histograms[binName].frequencies
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        legend: {
+          position: 'top',
+        },
+        title: {
+          display: true,
+          text: 'Histogram of values'
+        }
+      }
+
+      // options: {
+        // barPercentage,
+        // categoryPercentage,
+        // barThickness,
+        // maxBarThickness,
+        // gridLines.offsetGridLines
+      // }
+    };
+
+    // this.diagrams[indicator][binName].histogram = new Chart(ctx, config);
+    this.diagrams[indicator][binName].histogram = new Chart(histogramCanvasElement, config);
 
   }
 
@@ -2871,7 +3584,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.FlatDesign.belizeHole700.hex,
           ColorPalettes.FlatDesign.belizeHole900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.FlatDesign.belizeHole300.hex,
+          ColorPalettes.FlatDesign.belizeHole300.hex,
+          ColorPalettes.FlatDesign.belizeHole500.hex,
+          ColorPalettes.FlatDesign.belizeHole500.hex,
+          ColorPalettes.FlatDesign.belizeHole700.hex,
+          ColorPalettes.FlatDesign.belizeHole700.hex,
+          ColorPalettes.FlatDesign.belizeHole900.hex,
+          ColorPalettes.FlatDesign.belizeHole900.hex
+        ]
       },
       {
         name: 'Blue',
@@ -2882,7 +3604,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.Material.blue700.hex,
           ColorPalettes.Material.blue900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.Material.blue300.hex,
+          ColorPalettes.Material.blue300.hex,
+          ColorPalettes.Material.blue500.hex,
+          ColorPalettes.Material.blue500.hex,
+          ColorPalettes.Material.blue700.hex,
+          ColorPalettes.Material.blue700.hex,
+          ColorPalettes.Material.blue900.hex,
+          ColorPalettes.Material.blue900.hex
+        ]
       },
       {
         name: 'Blue (PF)',
@@ -2893,7 +3624,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.PatternFly.blue600.hex,
           ColorPalettes.PatternFly.gold700.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.PatternFly.blue200.hex,
+          ColorPalettes.PatternFly.blue200.hex,
+          ColorPalettes.PatternFly.blue400.hex,
+          ColorPalettes.PatternFly.blue400.hex,
+          ColorPalettes.PatternFly.blue600.hex,
+          ColorPalettes.PatternFly.blue600.hex,
+          ColorPalettes.PatternFly.gold700.hex,
+          ColorPalettes.PatternFly.gold700.hex
+        ]
       },
       {
         name: 'Blue Gray',
@@ -2904,7 +3644,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.Material.blueGray700.hex,
           ColorPalettes.Material.blueGray900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.Material.blueGray300.hex,
+          ColorPalettes.Material.blueGray300.hex,
+          ColorPalettes.Material.blueGray500.hex,
+          ColorPalettes.Material.blueGray500.hex,
+          ColorPalettes.Material.blueGray700.hex,
+          ColorPalettes.Material.blueGray700.hex,
+          ColorPalettes.Material.blueGray900.hex,
+          ColorPalettes.Material.blueGray900.hex
+        ]
       },
       {
         name: 'Cyan',
@@ -2915,7 +3664,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.Material.cyan700.hex,
           ColorPalettes.Material.cyan900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.Material.cyan300.hex,
+          ColorPalettes.Material.cyan300.hex,
+          ColorPalettes.Material.cyan500.hex,
+          ColorPalettes.Material.cyan500.hex,
+          ColorPalettes.Material.cyan700.hex,
+          ColorPalettes.Material.cyan700.hex,
+          ColorPalettes.Material.cyan900.hex,
+          ColorPalettes.Material.cyan900.hex
+        ]
       },
       {
         name: 'Cyan (PF)',
@@ -2926,7 +3684,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.PatternFly.cyan600.hex,
           ColorPalettes.PatternFly.cyan700.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.PatternFly.cyan300.hex,
+          ColorPalettes.PatternFly.cyan300.hex,
+          ColorPalettes.PatternFly.cyan400.hex,
+          ColorPalettes.PatternFly.cyan400.hex,
+          ColorPalettes.PatternFly.cyan600.hex,
+          ColorPalettes.PatternFly.cyan600.hex,
+          ColorPalettes.PatternFly.cyan700.hex,
+          ColorPalettes.PatternFly.cyan700.hex
+        ]
       },
       {
         name: 'Deep Purple',
@@ -2937,7 +3704,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.Material.deepPurple700.hex,
           ColorPalettes.Material.deepPurple900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.Material.deepPurple300.hex,
+          ColorPalettes.Material.deepPurple300.hex,
+          ColorPalettes.Material.deepPurple500.hex,
+          ColorPalettes.Material.deepPurple500.hex,
+          ColorPalettes.Material.deepPurple700.hex,
+          ColorPalettes.Material.deepPurple700.hex,
+          ColorPalettes.Material.deepPurple900.hex,
+          ColorPalettes.Material.deepPurple900.hex
+        ]
       },
       {
         name: 'Emerald',
@@ -2948,7 +3724,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.FlatDesign.emerald700.hex,
           ColorPalettes.FlatDesign.emerald900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.FlatDesign.emerald300.hex,
+          ColorPalettes.FlatDesign.emerald300.hex,
+          ColorPalettes.FlatDesign.emerald500.hex,
+          ColorPalettes.FlatDesign.emerald500.hex,
+          ColorPalettes.FlatDesign.emerald700.hex,
+          ColorPalettes.FlatDesign.emerald700.hex,
+          ColorPalettes.FlatDesign.emerald900.hex,
+          ColorPalettes.FlatDesign.emerald900.hex
+        ]
       },
       {
         name: 'Green',
@@ -2959,7 +3744,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.Material.green700.hex,
           ColorPalettes.Material.green900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.Material.green300.hex,
+          ColorPalettes.Material.green300.hex,
+          ColorPalettes.Material.green500.hex,
+          ColorPalettes.Material.green500.hex,
+          ColorPalettes.Material.green700.hex,
+          ColorPalettes.Material.green700.hex,
+          ColorPalettes.Material.green900.hex,
+          ColorPalettes.Material.green900.hex
+        ]
       },
       {
         name: 'Green (PF)',
@@ -2970,7 +3764,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.PatternFly.green600.hex,
           ColorPalettes.PatternFly.green700.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.PatternFly.green300.hex,
+          ColorPalettes.PatternFly.green300.hex,
+          ColorPalettes.PatternFly.green400.hex,
+          ColorPalettes.PatternFly.green400.hex,
+          ColorPalettes.PatternFly.green600.hex,
+          ColorPalettes.PatternFly.green600.hex,
+          ColorPalettes.PatternFly.green700.hex,
+          ColorPalettes.PatternFly.green700.hex
+        ]
       },
       {
         name: 'Green Sea',
@@ -2981,7 +3784,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.FlatDesign.greenSea700.hex,
           ColorPalettes.FlatDesign.greenSea900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.FlatDesign.greenSea300.hex,
+          ColorPalettes.FlatDesign.greenSea300.hex,
+          ColorPalettes.FlatDesign.greenSea500.hex,
+          ColorPalettes.FlatDesign.greenSea500.hex,
+          ColorPalettes.FlatDesign.greenSea700.hex,
+          ColorPalettes.FlatDesign.greenSea700.hex,
+          ColorPalettes.FlatDesign.greenSea900.hex,
+          ColorPalettes.FlatDesign.greenSea900.hex
+        ]
       },
       {
         name: 'Indigo',
@@ -2992,7 +3804,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.Material.indigo600.hex,
           ColorPalettes.Material.indigo900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.Material.indigo200.hex,
+          ColorPalettes.Material.indigo200.hex,
+          ColorPalettes.Material.indigo400.hex,
+          ColorPalettes.Material.indigo400.hex,
+          ColorPalettes.Material.indigo600.hex,
+          ColorPalettes.Material.indigo600.hex,
+          ColorPalettes.Material.indigo900.hex,
+          ColorPalettes.Material.indigo900.hex
+        ]
       },
       {
         name: 'Light Blue',
@@ -3003,7 +3824,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.Material.lightBlue700.hex,
           ColorPalettes.Material.lightBlue900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.Material.lightBlue300.hex,
+          ColorPalettes.Material.lightBlue300.hex,
+          ColorPalettes.Material.lightBlue500.hex,
+          ColorPalettes.Material.lightBlue500.hex,
+          ColorPalettes.Material.lightBlue700.hex,
+          ColorPalettes.Material.lightBlue700.hex,
+          ColorPalettes.Material.lightBlue900.hex,
+          ColorPalettes.Material.lightBlue900.hex
+        ]
       },
       {
         name: 'Light Green',
@@ -3014,7 +3844,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.Material.lightGreen700.hex,
           ColorPalettes.Material.lightGreen900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.Material.lightGreen300.hex,
+          ColorPalettes.Material.lightGreen300.hex,
+          ColorPalettes.Material.lightGreen500.hex,
+          ColorPalettes.Material.lightGreen500.hex,
+          ColorPalettes.Material.lightGreen700.hex,
+          ColorPalettes.Material.lightGreen700.hex,
+          ColorPalettes.Material.lightGreen900.hex,
+          ColorPalettes.Material.lightGreen900.hex
+        ]
       },
       {
         name: 'Light Green (PF)',
@@ -3025,7 +3864,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.PatternFly.lightGreen600.hex,
           ColorPalettes.PatternFly.lightGreen700.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.PatternFly.lightGreen300.hex,
+          ColorPalettes.PatternFly.lightGreen300.hex,
+          ColorPalettes.PatternFly.lightGreen500.hex,
+          ColorPalettes.PatternFly.lightGreen500.hex,
+          ColorPalettes.PatternFly.lightGreen600.hex,
+          ColorPalettes.PatternFly.lightGreen600.hex,
+          ColorPalettes.PatternFly.lightGreen700.hex,
+          ColorPalettes.PatternFly.lightGreen700.hex
+        ]
       },
       {
         name: 'Lime',
@@ -3036,7 +3884,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.Material.lime700.hex,
           ColorPalettes.Material.lime900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.Material.lime300.hex,
+          ColorPalettes.Material.lime300.hex,
+          ColorPalettes.Material.lime500.hex,
+          ColorPalettes.Material.lime500.hex,
+          ColorPalettes.Material.lime700.hex,
+          ColorPalettes.Material.lime700.hex,
+          ColorPalettes.Material.lime900.hex,
+          ColorPalettes.Material.lime900.hex
+        ]
       },
       {
         name: 'Nephritis',
@@ -3047,7 +3904,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.FlatDesign.nephritis700.hex,
           ColorPalettes.FlatDesign.nephritis900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.FlatDesign.nephritis300.hex,
+          ColorPalettes.FlatDesign.nephritis300.hex,
+          ColorPalettes.FlatDesign.nephritis500.hex,
+          ColorPalettes.FlatDesign.nephritis500.hex,
+          ColorPalettes.FlatDesign.nephritis700.hex,
+          ColorPalettes.FlatDesign.nephritis700.hex,
+          ColorPalettes.FlatDesign.nephritis900.hex,
+          ColorPalettes.FlatDesign.nephritis900.hex
+        ]
       },
       {
         name: 'Peter River',
@@ -3058,7 +3924,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.FlatDesign.peterRiver700.hex,
           ColorPalettes.FlatDesign.peterRiver900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.FlatDesign.peterRiver300.hex,
+          ColorPalettes.FlatDesign.peterRiver300.hex,
+          ColorPalettes.FlatDesign.peterRiver500.hex,
+          ColorPalettes.FlatDesign.peterRiver500.hex,
+          ColorPalettes.FlatDesign.peterRiver700.hex,
+          ColorPalettes.FlatDesign.peterRiver700.hex,
+          ColorPalettes.FlatDesign.peterRiver900.hex,
+          ColorPalettes.FlatDesign.peterRiver900.hex
+        ]
       },
       {
         name: 'Teal',
@@ -3069,7 +3944,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.Material.teal700.hex,
           ColorPalettes.Material.teal900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.Material.teal300.hex,
+          ColorPalettes.Material.teal300.hex,
+          ColorPalettes.Material.teal500.hex,
+          ColorPalettes.Material.teal500.hex,
+          ColorPalettes.Material.teal700.hex,
+          ColorPalettes.Material.teal700.hex,
+          ColorPalettes.Material.teal900.hex,
+          ColorPalettes.Material.teal900.hex
+        ]
       },
       {
         name: 'Turquoise',
@@ -3080,7 +3964,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.FlatDesign.turquoise700.hex,
           ColorPalettes.FlatDesign.turquoise900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.FlatDesign.turquoise300.hex,
+          ColorPalettes.FlatDesign.turquoise300.hex,
+          ColorPalettes.FlatDesign.turquoise500.hex,
+          ColorPalettes.FlatDesign.turquoise500.hex,
+          ColorPalettes.FlatDesign.turquoise700.hex,
+          ColorPalettes.FlatDesign.turquoise700.hex,
+          ColorPalettes.FlatDesign.turquoise900.hex,
+          ColorPalettes.FlatDesign.turquoise900.hex
+        ]
       }
     ],
 
@@ -3596,12 +4489,16 @@ let overviewInfoViewModel = new Vue({
       indicator.isDetailsVisible = !indicator.isDetailsVisible;
 
       if (indicator.isDetailsVisible) {
-        // let width = $('#o-histogram-container-' + name).width();
-        // $('#o-canvas-histogram-' + name).width(width);
+        let width = $('#o-histogram-container-' + name).width();
+        $('#o-canvas-histogram-' + name).width(width);
 
-
+        // TODO: The next line might need to change to allow for the creation of half or one stdev histograms.
         IndicatorDiagrams.createHistogram(name, true, false);
+        IndicatorDiagrams.createHistogramDiagram(name, true, false);
 
+      }
+      else {
+        // TODO: Destroy the diagram here.
       }
     },
 
