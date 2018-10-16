@@ -2118,8 +2118,8 @@ let IndicatorDiagrams = {
 
   createHistogramDiagram: function(indicator) {
 
-    //let histogramDiagram = $('#' + )
-
+    let histogramDiagram = $('#o-canvas-histogram-' + indicator);
+    
 
 
 
