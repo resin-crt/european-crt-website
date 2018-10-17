@@ -2737,16 +2737,16 @@ let IndicatorDiagrams = {
     let positiveBins = Math.trunc((statistics.max - statistics.mean) / binSize) + 1;
     let negativeBins = Math.trunc((statistics.mean - statistics.min) / binSize) + 1;
 
-    let distanceFactor = useStdev === true ? 1 : 0.5;
+    let binFactor = useStdev === true ? 1 : 0.5;
 
     // Add the histogram's labels and initialize the bin frequencies.
     for (let i = negativeBins; i > 0; i--) {
-      statistics.histograms[binName].labels.push((i * -distanceFactor).toString());
+      statistics.histograms[binName].labels.push((i * -binFactor).toString());
       statistics.histograms[binName].frequencies.push(0);
     }
 
     for (let i = 0; i < positiveBins; i++) {
-      statistics.histograms[binName].labels.push(((i + 1) * distanceFactor).toString());
+      statistics.histograms[binName].labels.push(((i + 1) * binFactor).toString());
       statistics.histograms[binName].frequencies.push(0);
     }
 
@@ -2756,12 +2756,20 @@ let IndicatorDiagrams = {
     // Loop through the NUTS3 features to populate the specified indicator's frequencies.
     for (let i = 0; i < features.length; i++) {
 
-      let valueBin = Math.trunc((statistics.mean - features[i].properties[indicator + z]) / binSize);
-      let valueBinString = valueBin >= 0 ?
-        ((valueBin + 1) * distanceFactor).toString() : ((valueBin - 1) * distanceFactor).toString();
+      // Get the distance of the value.
+      let distance = features[i].properties[indicator + z] - statistics.mean;
 
-      let index = statistics.histograms[binName].labels.findIndex(l => l === valueBinString);
+      // Find the bin of the value.
+      let valueBin = Math.abs(Math.trunc(distance / binSize));
 
+      // Construct the bin label of the value.
+      let binLabel = distance >= 0 ?
+        ((valueBin + 1) * binFactor).toString() : (-(valueBin + 1) * binFactor).toString();
+
+      // Get the index of the bin.
+      let index = statistics.histograms[binName].labels.findIndex(l => l === binLabel);
+
+      // Update the bin's frequency.
       statistics.histograms[binName].frequencies[index] = statistics.histograms[binName].frequencies[index] + 1;
 
     }
