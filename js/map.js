@@ -4,13 +4,19 @@
 //  School of Environment, Education, and Development.
 //
 //  Name:            map.js
-//  Original coding: Vasilis Vlastaras (@gisvlasta), 26/09/2018.
+//  Original coding: Vasilis Vlastaras (@gisvlasta), 26/10/2018.
 //
 //  Description:     Provides the mapping functionality for the
 //                   The European Climate Risk Typology.
 // ================================================================================
 
 // TODO: APPVAR
+
+let GlobalFunctions = {
+
+
+
+};
 
 /**
  * The AppState object holds the application state.
@@ -1416,6 +1422,7 @@ let MapLayers = {
 
       // Check if zscore is positive or negative.
       if (zscore > 0) {
+        // TODO: Use Math.trunc() to do this.
         // Find out how many standard deviations away lies the zscore from the mean (0).
         while (stdev * (i + 1) < zscore) {
           i++;
@@ -1429,6 +1436,7 @@ let MapLayers = {
       else {
         zscore = zscore * (-1);
 
+        // TODO: Use Math.trunc() to do this.
         // Find out how many standard deviations away lies the zscore from the mean (0).
         while (stdev * (i + 1) < zscore) {
           i++;
@@ -1934,6 +1942,7 @@ let RadarDiagrams = {
    */
   createRadarDiagram: function(element, code) {
 
+    // TODO: Remove these lines ???
     // Any of the following formats may be used
     // var ctx = document.getElementById("myChart");
     // var ctx = document.getElementById("myChart").getContext("2d");
@@ -1959,7 +1968,7 @@ let RadarDiagrams = {
           data: this.sortedValues
         },
         {
-          label: 'European Average', //'Average',
+          label: radarContainerViewModel.baseTitle,
           backgroundColor: this.colors.average.backgroundColor,
           borderColor: this.colors.average.borderColor,
           pointBackgroundColor: this.colors.average.pointBackgroundColor,
@@ -2036,6 +2045,7 @@ let RadarDiagrams = {
     this.config.data.datasets[0].label = radarContainerViewModel.title;
     this.config.data.labels = this.sortedLabels;
     this.config.data.datasets[0].data = this.sortedValues;
+    this.config.data.datasets[1].label = radarContainerViewModel.baseTitle;
     this.config.data.datasets[1].data = this.sortedAverageValues;
 
     this.radarDiagram.update();
@@ -2044,10 +2054,14 @@ let RadarDiagrams = {
 
 };
 
-
-
+/**
+ * The IndicatorDiagrams object provided properties and methods related to data visualization using indicator diagrams.
+ */
 let IndicatorDiagrams = {
 
+  /**
+   * The diagrams of each indicator.
+   */
   diagrams: {
     'I001': {
       oneStdev: {
@@ -2707,10 +2721,14 @@ let IndicatorDiagrams = {
     }
   },
 
-
-
-
-
+  /**
+   * Creates the histogram of the specified indicator.
+   *
+   * @param indicator - The indicator whose histogram will be created.
+   * @param useZscores - Indicates whether a histogram of raw values or z-scores will be created.
+   * @param useStdev - Indicates whether the bin of the hisogram has the size
+   *                   of a standard deviation or half of it.
+   */
   createHistogram: function(indicator, useZscores, useStdev) {
 
     // Check if creating a histogram of z-scores or raw values.
@@ -2777,6 +2795,61 @@ let IndicatorDiagrams = {
   },
 
 
+  getHistogramColours: function(indicator, useZScores, useStdev) {
+
+    // Check if creating a histogram of z-scores or raw values.
+    let z = useZscores === true ? 'Z' : '';
+
+    // Get the z-scores or raw data statistics object.
+    let statistics = useZscores === true ?
+      AppData.indicatorZScoresStatistics[indicator] : AppData.indicatorValuesStatistics[indicator];
+
+    let binName = useStdev === true ? 'oneStdev' : 'halfStdev';
+
+    let gradientName = useZScores === true ? 'OneStDevGradient' : 'HalfStDevGradient';
+
+    let threshold = useStdev == true ? 4 : 7;
+
+    let labels = statistics.histograms[binName].labels;
+    let colours = [];
+
+    let positiveGradient = symbologyViewModel.positiveGradients.filter(
+      g => g.value === symbologyViewModel.selectedPositiveGradient
+    )[0];
+
+    let negativeGradient = symbologyViewModel.negativeGradients.filter(
+      g => g.value === symbologyViewModel.selectedNegativeGradient
+    )[0];
+
+    for (let i = 0; i < labels.length; i++) {
+
+      let bin = parseInt(labels[i]);
+
+      if (bin > threshold) {
+        bin = threshold;
+      }
+
+      if (bin >= 0) {
+
+        //colours.push()
+      }
+      else {
+
+      }
+
+
+    }
+
+  },
+
+
+  /**
+   * Creates the diagram of the histogram of the specified indicator.
+   *
+   * @param indicator -
+   * @param useZscores
+   * @param useStdev
+   */
   createHistogramDiagram: function(indicator, useZscores, useStdev) {
 
     // Check if creating a histogram of z-scores or raw values.
@@ -2920,9 +2993,9 @@ let radarContainerViewModel = new Vue({
   computed: {
 
     /**
-     * Gets the title of the radar diagram.
+     * Gets the title of the average line of the radar diagram.
      *
-     * @returns {string} - A string with the title of the radar diagram.
+     * @returns {string} - A string with the title.
      */
     title: function() {
 
@@ -2942,6 +3015,36 @@ let radarContainerViewModel = new Vue({
         else {
           if (MapLayers.nuts3.supergroups[this.currentTypologyCode] !== undefined) {
             name = MapLayers.nuts3.supergroups[this.currentTypologyCode].name;
+          }
+        }
+      }
+
+      return name;
+
+    },
+
+    /**
+     * Gets the title of the baseline of the radar diagram.
+     *
+     * @returns {string} - A string with the title.
+     */
+    baseTitle: function() {
+
+      let name = '';
+
+      if (symbologyViewModel.currentTab === 'supergroups') {
+        if (MapLayers.nuts3.supergroups[this.currentTypologyCode] !== undefined) {
+          name = 'European Average';
+        }
+      }
+      else {
+        if (this.currentTypologyCode > 10) {
+          let supergroup = Math.floor(parseInt(this.currentTypologyCode) / 10).toString();
+          name = MapLayers.nuts3.supergroups[supergroup].name + ' Average';
+        }
+        else {
+          if (MapLayers.nuts3.supergroups[this.currentTypologyCode] !== undefined) {
+            name = 'European Average';
           }
         }
       }
@@ -3364,10 +3467,10 @@ let symbologyViewModel = new Vue({
      * The selected indicators used by the list of the radio buttons in the indicators tab panel.
      */
     selectedIndicators: {
-      hazard: [ 'I001' ],
-      exposure: [ 'I030' ],
+      hazard:      [ 'I001' ],
+      exposure:    [ 'I030' ],
       sensitivity: [ 'I060' ],
-      adaptivity: [ 'I077' ]
+      adaptivity:  [ 'I077' ]
     },
 
     /**
@@ -3383,7 +3486,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.FlatDesign.alizarin700.hex,
           ColorPalettes.FlatDesign.alizarin900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.FlatDesign.alizarin300.hex,
+          ColorPalettes.FlatDesign.alizarin300.hex,
+          ColorPalettes.FlatDesign.alizarin500.hex,
+          ColorPalettes.FlatDesign.alizarin500.hex,
+          ColorPalettes.FlatDesign.alizarin700.hex,
+          ColorPalettes.FlatDesign.alizarin700.hex,
+          ColorPalettes.FlatDesign.alizarin900.hex,
+          ColorPalettes.FlatDesign.alizarin900.hex
+        ]
       },
       {
         name: 'Amber',
@@ -3394,7 +3506,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.Material.orange700.hex,
           ColorPalettes.Material.orange900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.Material.orange300.hex,
+          ColorPalettes.Material.orange300.hex,
+          ColorPalettes.Material.orange500.hex,
+          ColorPalettes.Material.orange500.hex,
+          ColorPalettes.Material.orange700.hex,
+          ColorPalettes.Material.orange700.hex,
+          ColorPalettes.Material.orange900.hex,
+          ColorPalettes.Material.orange900.hex
+        ]
       },
       {
         name: 'Amethyst',
@@ -3405,7 +3526,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.FlatDesign.amethyst700.hex,
           ColorPalettes.FlatDesign.amethyst900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.FlatDesign.amethyst300.hex,
+          ColorPalettes.FlatDesign.amethyst300.hex,
+          ColorPalettes.FlatDesign.amethyst500.hex,
+          ColorPalettes.FlatDesign.amethyst500.hex,
+          ColorPalettes.FlatDesign.amethyst700.hex,
+          ColorPalettes.FlatDesign.amethyst700.hex,
+          ColorPalettes.FlatDesign.amethyst900.hex,
+          ColorPalettes.FlatDesign.amethyst900.hex
+        ]
       },
       {
         name: 'Brown',
@@ -3416,7 +3546,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.Material.brown700.hex,
           ColorPalettes.Material.brown900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.Material.brown300.hex,
+          ColorPalettes.Material.brown300.hex,
+          ColorPalettes.Material.brown500.hex,
+          ColorPalettes.Material.brown500.hex,
+          ColorPalettes.Material.brown700.hex,
+          ColorPalettes.Material.brown700.hex,
+          ColorPalettes.Material.brown900.hex,
+          ColorPalettes.Material.brown900.hex
+        ]
       },
       {
         name: 'Carrot',
@@ -3427,7 +3566,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.FlatDesign.carrot700.hex,
           ColorPalettes.FlatDesign.carrot900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.FlatDesign.carrot300.hex,
+          ColorPalettes.FlatDesign.carrot300.hex,
+          ColorPalettes.FlatDesign.carrot500.hex,
+          ColorPalettes.FlatDesign.carrot500.hex,
+          ColorPalettes.FlatDesign.carrot700.hex,
+          ColorPalettes.FlatDesign.carrot700.hex,
+          ColorPalettes.FlatDesign.carrot900.hex,
+          ColorPalettes.FlatDesign.carrot900.hex
+        ]
       },
       {
         name: 'Deep Orange',
@@ -3438,7 +3586,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.Material.deepOrange700.hex,
           ColorPalettes.Material.deepOrange900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.Material.deepOrange300.hex,
+          ColorPalettes.Material.deepOrange300.hex,
+          ColorPalettes.Material.deepOrange500.hex,
+          ColorPalettes.Material.deepOrange500.hex,
+          ColorPalettes.Material.deepOrange700.hex,
+          ColorPalettes.Material.deepOrange700.hex,
+          ColorPalettes.Material.deepOrange900.hex,
+          ColorPalettes.Material.deepOrange900.hex
+        ]
       },
       {
         name: 'Gold',
@@ -3449,7 +3606,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.PatternFly.gold600.hex,
           ColorPalettes.PatternFly.gold700.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.PatternFly.gold400.hex,
+          ColorPalettes.PatternFly.gold400.hex,
+          ColorPalettes.PatternFly.gold500.hex,
+          ColorPalettes.PatternFly.gold500.hex,
+          ColorPalettes.PatternFly.gold600.hex,
+          ColorPalettes.PatternFly.gold600.hex,
+          ColorPalettes.PatternFly.gold700.hex,
+          ColorPalettes.PatternFly.gold700.hex
+        ]
       },
       {
         name: 'Orange',
@@ -3460,7 +3626,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.Material.orange700.hex,
           ColorPalettes.Material.orange900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.Material.orange300.hex,
+          ColorPalettes.Material.orange300.hex,
+          ColorPalettes.Material.orange500.hex,
+          ColorPalettes.Material.orange500.hex,
+          ColorPalettes.Material.orange700.hex,
+          ColorPalettes.Material.orange700.hex,
+          ColorPalettes.Material.orange900.hex,
+          ColorPalettes.Material.orange900.hex
+        ]
       },
       {
         name: 'Orange (FD)',
@@ -3471,7 +3646,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.FlatDesign.orange700.hex,
           ColorPalettes.FlatDesign.orange900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.FlatDesign.orange300.hex,
+          ColorPalettes.FlatDesign.orange300.hex,
+          ColorPalettes.FlatDesign.orange500.hex,
+          ColorPalettes.FlatDesign.orange500.hex,
+          ColorPalettes.FlatDesign.orange700.hex,
+          ColorPalettes.FlatDesign.orange700.hex,
+          ColorPalettes.FlatDesign.orange900.hex,
+          ColorPalettes.FlatDesign.orange900.hex
+        ]
       },
       {
         name: 'Orange (PF)',
@@ -3482,7 +3666,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.PatternFly.orange600.hex,
           ColorPalettes.PatternFly.orange700.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.PatternFly.orange200.hex,
+          ColorPalettes.PatternFly.orange200.hex,
+          ColorPalettes.PatternFly.orange400.hex,
+          ColorPalettes.PatternFly.orange400.hex,
+          ColorPalettes.PatternFly.orange600.hex,
+          ColorPalettes.PatternFly.orange600.hex,
+          ColorPalettes.PatternFly.orange700.hex,
+          ColorPalettes.PatternFly.orange700.hex
+        ]
       },
       {
         name: 'Pink',
@@ -3493,7 +3686,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.Material.pink700.hex,
           ColorPalettes.Material.pink900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.Material.pink300.hex,
+          ColorPalettes.Material.pink300.hex,
+          ColorPalettes.Material.pink500.hex,
+          ColorPalettes.Material.pink500.hex,
+          ColorPalettes.Material.pink700.hex,
+          ColorPalettes.Material.pink700.hex,
+          ColorPalettes.Material.pink900.hex,
+          ColorPalettes.Material.pink900.hex
+        ]
       },
       {
         name: 'Pomegranate',
@@ -3504,7 +3706,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.FlatDesign.pomegranate700.hex,
           ColorPalettes.FlatDesign.pomegranate900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.FlatDesign.pomegranate300.hex,
+          ColorPalettes.FlatDesign.pomegranate300.hex,
+          ColorPalettes.FlatDesign.pomegranate500.hex,
+          ColorPalettes.FlatDesign.pomegranate500.hex,
+          ColorPalettes.FlatDesign.pomegranate700.hex,
+          ColorPalettes.FlatDesign.pomegranate700.hex,
+          ColorPalettes.FlatDesign.pomegranate900.hex,
+          ColorPalettes.FlatDesign.pomegranate900.hex
+        ]
       },
       {
         name: 'Pumpkin',
@@ -3515,7 +3726,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.FlatDesign.pumpkin700.hex,
           ColorPalettes.FlatDesign.pumpkin900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.FlatDesign.pumpkin300.hex,
+          ColorPalettes.FlatDesign.pumpkin300.hex,
+          ColorPalettes.FlatDesign.pumpkin500.hex,
+          ColorPalettes.FlatDesign.pumpkin500.hex,
+          ColorPalettes.FlatDesign.pumpkin700.hex,
+          ColorPalettes.FlatDesign.pumpkin700.hex,
+          ColorPalettes.FlatDesign.pumpkin900.hex,
+          ColorPalettes.FlatDesign.pumpkin900.hex
+        ]
       },
       {
         name: 'Purple',
@@ -3526,7 +3746,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.Material.purple700.hex,
           ColorPalettes.Material.purple900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.Material.purple300.hex,
+          ColorPalettes.Material.purple300.hex,
+          ColorPalettes.Material.purple500.hex,
+          ColorPalettes.Material.purple500.hex,
+          ColorPalettes.Material.purple700.hex,
+          ColorPalettes.Material.purple700.hex,
+          ColorPalettes.Material.purple900.hex,
+          ColorPalettes.Material.purple900.hex
+        ]
       },
       {
         name: 'Red',
@@ -3537,7 +3766,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.Material.red700.hex,
           ColorPalettes.Material.red900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.Material.red300.hex,
+          ColorPalettes.Material.red300.hex,
+          ColorPalettes.Material.red500.hex,
+          ColorPalettes.Material.red500.hex,
+          ColorPalettes.Material.red700.hex,
+          ColorPalettes.Material.red700.hex,
+          ColorPalettes.Material.red900.hex,
+          ColorPalettes.Material.red900.hex
+        ]
       },
       {
         name: 'Sunflower',
@@ -3548,7 +3786,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.FlatDesign.sunflower700.hex,
           ColorPalettes.FlatDesign.sunflower900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.FlatDesign.sunflower300.hex,
+          ColorPalettes.FlatDesign.sunflower300.hex,
+          ColorPalettes.FlatDesign.sunflower500.hex,
+          ColorPalettes.FlatDesign.sunflower500.hex,
+          ColorPalettes.FlatDesign.sunflower700.hex,
+          ColorPalettes.FlatDesign.sunflower700.hex,
+          ColorPalettes.FlatDesign.sunflower900.hex,
+          ColorPalettes.FlatDesign.sunflower900.hex
+        ]
       },
       {
         name: 'Wisteria',
@@ -3559,7 +3806,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.FlatDesign.wisteria700.hex,
           ColorPalettes.FlatDesign.wisteria900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.FlatDesign.wisteria300.hex,
+          ColorPalettes.FlatDesign.wisteria300.hex,
+          ColorPalettes.FlatDesign.wisteria500.hex,
+          ColorPalettes.FlatDesign.wisteria500.hex,
+          ColorPalettes.FlatDesign.wisteria700.hex,
+          ColorPalettes.FlatDesign.wisteria700.hex,
+          ColorPalettes.FlatDesign.wisteria900.hex,
+          ColorPalettes.FlatDesign.wisteria900.hex
+        ]
       },
       {
         name: 'Yellow',
@@ -3570,7 +3826,16 @@ let symbologyViewModel = new Vue({
           ColorPalettes.Material.yellow700.hex,
           ColorPalettes.Material.yellow900.hex
         ],
-        HalfStDevGradient: []
+        HalfStDevGradient: [
+          ColorPalettes.Material.yellow300.hex,
+          ColorPalettes.Material.yellow300.hex,
+          ColorPalettes.Material.yellow500.hex,
+          ColorPalettes.Material.yellow500.hex,
+          ColorPalettes.Material.yellow700.hex,
+          ColorPalettes.Material.yellow700.hex,
+          ColorPalettes.Material.yellow900.hex,
+          ColorPalettes.Material.yellow900.hex
+        ]
       }
     ],
 
