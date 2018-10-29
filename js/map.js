@@ -14,19 +14,27 @@
 
 let GlobalFunctions = {
 
-  hexToRgba: function(hex, opacity) {
+  /**
+   * Converts a hex colour to an rgba string.
+   *
+   * @param hex - The hex colour.
+   * @param opacity - The opacity percentage of the rgba colour.
+   *
+   * @returns {string|*} - The rgba string that can be used to set colours in html.
+   */
+  hexColourToRgbaString: function(hex, opacity) {
+
     hex = hex.replace('#', '');
 
     r = parseInt(hex.substring(0, 2), 16);
     g = parseInt(hex.substring(2, 4), 16);
     b = parseInt(hex.substring(4, 6), 16);
 
-    result = 'rgba(' + r + ',' + g + ',' + b + ',' + opacity / 100 + ')';
+    rgba = 'rgba(' + r + ', ' + g + ', ' + b + ', ' + opacity / 100 + ')';
 
-    return result;
+    return rgba;
+
   }
-
-
 
 };
 
@@ -2737,17 +2745,17 @@ let IndicatorDiagrams = {
    * Creates the histogram of the specified indicator.
    *
    * @param indicator - The indicator whose histogram will be created.
-   * @param useZscores - Indicates whether a histogram of raw values or z-scores will be created.
-   * @param useStdev - Indicates whether the bin of the hisogram has the size
+   * @param useZScores - Indicates whether a histogram of raw values or z-scores will be created.
+   * @param useStdev - Indicates whether the bin of the histogram has the size
    *                   of a standard deviation or half of it.
    */
-  createHistogram: function(indicator, useZscores, useStdev) {
+  createHistogram: function(indicator, useZScores, useStdev) {
 
     // Check if creating a histogram of z-scores or raw values.
-    let z = useZscores === true ? 'Z' : '';
+    let z = useZScores === true ? 'Z' : '';
 
     // Get the z-scores or raw data statistics object.
-    let statistics = useZscores === true ?
+    let statistics = useZScores === true ?
       AppData.indicatorZScoresStatistics[indicator] : AppData.indicatorValuesStatistics[indicator];
 
     // Get the standard deviation.
@@ -2806,69 +2814,87 @@ let IndicatorDiagrams = {
 
   },
 
-
+  /**
+   * Gets the colours of the histogram based on the user's selected gradients.
+   *
+   * @param indicator - The indicator that will be used to colour its histogram.
+   * @param useZScores - Indicates whether raw values or z-scores will be used.
+   * @param useStdev - Indicates whether the bin of the histogram has the size
+   *                   of a standard deviation or half of it.
+   *
+   * @returns {Array} - Returns an array of strings with colours of rgba format
+   *                    that will be used to colour each bar  on the histogram.
+   */
   getHistogramColours: function(indicator, useZScores, useStdev) {
 
     // Check if creating a histogram of z-scores or raw values.
-    let z = useZscores === true ? 'Z' : '';
+    let z = useZScores === true ? 'Z' : '';
 
     // Get the z-scores or raw data statistics object.
-    let statistics = useZscores === true ?
+    let statistics = useZScores === true ?
       AppData.indicatorZScoresStatistics[indicator] : AppData.indicatorValuesStatistics[indicator];
 
     let binName = useStdev === true ? 'oneStdev' : 'halfStdev';
 
-    let gradientName = useZScores === true ? 'OneStDevGradient' : 'HalfStDevGradient';
+    let binFactor = useStdev === true ? 1 : 2;
 
-    let threshold = useStdev == true ? 4 : 7;
+    let gradientName = useStdev === true ? 'OneStDevGradient' : 'HalfStDevGradient';
+
+    // Set the threshold beyond which the colours remain the same.
+    let threshold = useStdev === true ? 3 : 7;
 
     let labels = statistics.histograms[binName].labels;
     let colours = [];
 
+    // Get the positive gradient colours.
     let positiveGradient = symbologyViewModel.positiveGradients.filter(
       g => g.value === symbologyViewModel.selectedPositiveGradient
     )[0];
 
+    // Get the negative gradient colours.
     let negativeGradient = symbologyViewModel.negativeGradients.filter(
       g => g.value === symbologyViewModel.selectedNegativeGradient
     )[0];
 
+    // Loop through the labels of the bins to decide the colour gradient that will be used to render each bar.
     for (let i = 0; i < labels.length; i++) {
 
-      let bin = parseInt(labels[i]);
+      let index = parseInt(labels[i]) * binFactor - 1;
 
-      if (bin > threshold) {
-        bin = threshold;
-      }
-
-      if (bin >= 0) {
-
-        //colours.push()
+      if (index > 0) {
+        if (index > threshold) {
+          index = threshold;
+        }
+        colours.push(GlobalFunctions.hexColourToRgbaString(positiveGradient[gradientName][index], 80));
       }
       else {
-
+        if (index < -threshold) {
+          index = -threshold;
+        }
+        colours.push(GlobalFunctions.hexColourToRgbaString(negativeGradient[gradientName][Math.abs(index)], 80));
       }
-
 
     }
 
-  },
+    return colours;
 
+  },
 
   /**
    * Creates the diagram of the histogram of the specified indicator.
    *
-   * @param indicator -
-   * @param useZscores
-   * @param useStdev
+   * @param indicator - The indicator whose histogram diagram will be created.
+   * @param useZScores - Indicates whether a histogram diagram of raw values or z-scores will be created.
+   * @param useStdev - Indicates whether the bin of the histogram diagram has the size
+   *                   of a standard deviation or half of it.
    */
-  createHistogramDiagram: function(indicator, useZscores, useStdev) {
+  createHistogramDiagram: function(indicator, useZScores, useStdev) {
 
     // Check if creating a histogram of z-scores or raw values.
-    let z = useZscores === true ? 'Z' : '';
+    let z = useZScores === true ? 'Z' : '';
 
     // Get the z-scores or raw data statistics object.
-    let statistics = useZscores === true ?
+    let statistics = useZScores === true ?
       AppData.indicatorZScoresStatistics[indicator] : AppData.indicatorValuesStatistics[indicator];
 
     // Set the bin name depending on whether the standard deviation
@@ -2886,17 +2912,20 @@ let IndicatorDiagrams = {
     //let ctx = histogramCanvasElement.getContext('2d');
     // let ctx = document.getElementById('o-canvas-histogram-' + indicator).getContext('2d');
 
+    let legend = 'Frequencies of grouped ' + (useZScores === true ? 'z-scores' : 'values');
+    let diagramTitle = 'Histogram of ' + (useZScores === true ? 'z-scores' : 'values');
+
     let config = {
       type: 'bar',
       data: {
         labels: statistics.histograms[binName].labels,
         datasets: [
           {
-            label: 'Histogram of values',
+            label: legend,
             // xAxisID: 'xAxisID',
             // yAxisID: 'yAxisID',
-            backgroundColor: "rgba(244, 67, 54, 0.2)",
-            borderColor: "rgba(244, 67, 54, 1)",
+            backgroundColor: this.getHistogramColours(indicator, useZScores, useStdev),
+            borderColor: GlobalFunctions.hexColourToRgbaString(ColorPalettes.Material.gray900.hex, 100),
             borderWidth: 1,
             // borderSkipped,
             // hoverBackgroundColor,
@@ -2913,7 +2942,7 @@ let IndicatorDiagrams = {
         },
         title: {
           display: true,
-          text: 'Histogram of values'
+          text: diagramTitle
         }
       }
 
@@ -3418,10 +3447,10 @@ let symbologyViewModel = new Vue({
         'I082': { isInformationPanelVisible: false, icon: 'fab fa-leanpub' }
       },
       'domains': [
-        { key: 'hazard',      name: 'Hazard', },
-        { key: 'exposure',    name: 'Exposure', },
-        { key: 'sensitivity', name: 'Sensitivity', },
-        { key: 'adaptivity',  name: 'Adapt. Capacity', }
+        { key: 'hazard',      name: 'Hazard'          },
+        { key: 'exposure',    name: 'Exposure'        },
+        { key: 'sensitivity', name: 'Sensitivity'     },
+        { key: 'adaptivity',  name: 'Adapt. Capacity' }
       ]
     },
 
@@ -4779,10 +4808,15 @@ let overviewInfoViewModel = new Vue({
 
         // TODO: The next line might need to change to allow for the creation of half or one stdev histograms.
         IndicatorDiagrams.createHistogram(name, true, false);
-        IndicatorDiagrams.createHistogramDiagram(name, true, false);
 
+        if (IndicatorDiagrams.diagrams[name].halfStdev.histogram === null) {
+          IndicatorDiagrams.createHistogramDiagram(name, true, false);
+        }
       }
       else {
+        if (IndicatorDiagrams.diagrams[name].halfStdev.histogram !== null) {
+          IndicatorDiagrams.diagrams[name].halfStdev.histogram.destroy();
+        }
         // TODO: Destroy the diagram here.
       }
     },
