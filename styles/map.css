@@ -88,6 +88,19 @@ body {
   width: 100%;
 }
 
+.nuts3-profile-vm {
+  background-color: #027fb8;
+  position: relative;
+  padding: 10px 10px 10px 10px;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+
 /*#radar-diagram {*/
   /*position: relative;*/
   /*!*width: 100%;*!*/

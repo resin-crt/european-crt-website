@@ -3172,6 +3172,85 @@ let radarContainerViewModel = new Vue({
 
 });
 
+
+
+let nuts3ProfileViewModel = new Vue({
+
+  /**
+   * The name of the view model.
+   */
+  el: '#nuts3ProfileVM',
+
+  /**
+   * The model of the view model.
+   */
+  data: {
+
+    /**
+     * Indicates whether the container of the radar diagram is visible or not.
+     */
+    isVisible: false,
+
+  },
+
+  /**
+   * The computed properties of the model of the view model.
+   */
+  computed: {
+
+  },
+
+  /**
+   * The methods of the view model.
+   */
+  methods: {
+
+    /**
+     * Shows the radar container which holds the radar diagram.
+     *
+     * @param code - The typology code used to show the associated radar diagram.
+     */
+    show(code) {
+
+      this.isVisible = true;
+
+      $('#nuts3ProfileVM').removeClass('collapse');
+
+
+      Spatial.sidebar.close('map-controls');
+
+      $('#sidebar').removeClass('visible');
+      $('#sidebar').addClass('invisible');
+
+    },
+
+    /**
+     * Hides the radar container which holds the radar diagram.
+     */
+    hide() {
+
+      this.isVisible = false;
+
+      $('#nuts3ProfileVM').addClass('collapse');
+
+      Spatial.sidebar.open('map-controls');
+
+      $('#sidebar').removeClass('invisible');
+      $('#sidebar').addClass('visible');
+
+    }
+
+  }
+
+});
+
+
+
+
+
+
+
+
 /**
  * The sidebarTabsViewModel provides tha data and logic to toggle the sidebar itself or its contents.
  *
@@ -3599,26 +3678,6 @@ let symbologyViewModel = new Vue({
         ]
       },
       {
-        name: 'Carrot',
-        value: 'carrot',
-        OneStDevGradient: [
-          ColorPalettes.FlatDesign.carrot300.hex,
-          ColorPalettes.FlatDesign.carrot500.hex,
-          ColorPalettes.FlatDesign.carrot700.hex,
-          ColorPalettes.FlatDesign.carrot900.hex
-        ],
-        HalfStDevGradient: [
-          ColorPalettes.FlatDesign.carrot300.hex,
-          ColorPalettes.FlatDesign.carrot300.hex,
-          ColorPalettes.FlatDesign.carrot500.hex,
-          ColorPalettes.FlatDesign.carrot500.hex,
-          ColorPalettes.FlatDesign.carrot700.hex,
-          ColorPalettes.FlatDesign.carrot700.hex,
-          ColorPalettes.FlatDesign.carrot900.hex,
-          ColorPalettes.FlatDesign.carrot900.hex
-        ]
-      },
-      {
         name: 'Deep Orange',
         value: 'deepOrange',
         OneStDevGradient: [
@@ -3659,27 +3718,7 @@ let symbologyViewModel = new Vue({
         ]
       },
       {
-        name: 'Orange',
-        value: 'orange',
-        OneStDevGradient: [
-          ColorPalettes.Material.orange300.hex,
-          ColorPalettes.Material.orange500.hex,
-          ColorPalettes.Material.orange700.hex,
-          ColorPalettes.Material.orange900.hex
-        ],
-        HalfStDevGradient: [
-          ColorPalettes.Material.orange300.hex,
-          ColorPalettes.Material.orange300.hex,
-          ColorPalettes.Material.orange500.hex,
-          ColorPalettes.Material.orange500.hex,
-          ColorPalettes.Material.orange700.hex,
-          ColorPalettes.Material.orange700.hex,
-          ColorPalettes.Material.orange900.hex,
-          ColorPalettes.Material.orange900.hex
-        ]
-      },
-      {
-        name: 'Orange (FD)',
+        name: 'Ochre',
         value: 'orangeFlatDesign',
         OneStDevGradient: [
           ColorPalettes.FlatDesign.orange300.hex,
@@ -3696,26 +3735,6 @@ let symbologyViewModel = new Vue({
           ColorPalettes.FlatDesign.orange700.hex,
           ColorPalettes.FlatDesign.orange900.hex,
           ColorPalettes.FlatDesign.orange900.hex
-        ]
-      },
-      {
-        name: 'Orange (PF)',
-        value: 'orangePatternFly',
-        OneStDevGradient: [
-          ColorPalettes.PatternFly.orange200.hex,
-          ColorPalettes.PatternFly.orange400.hex,
-          ColorPalettes.PatternFly.orange600.hex,
-          ColorPalettes.PatternFly.orange700.hex
-        ],
-        HalfStDevGradient: [
-          ColorPalettes.PatternFly.orange200.hex,
-          ColorPalettes.PatternFly.orange200.hex,
-          ColorPalettes.PatternFly.orange400.hex,
-          ColorPalettes.PatternFly.orange400.hex,
-          ColorPalettes.PatternFly.orange600.hex,
-          ColorPalettes.PatternFly.orange600.hex,
-          ColorPalettes.PatternFly.orange700.hex,
-          ColorPalettes.PatternFly.orange700.hex
         ]
       },
       {
@@ -3816,6 +3835,26 @@ let symbologyViewModel = new Vue({
           ColorPalettes.Material.red700.hex,
           ColorPalettes.Material.red900.hex,
           ColorPalettes.Material.red900.hex
+        ]
+      },
+      {
+        name: 'Sand',
+        value: 'orangePatternFly',
+        OneStDevGradient: [
+          ColorPalettes.PatternFly.orange200.hex,
+          ColorPalettes.PatternFly.orange400.hex,
+          ColorPalettes.PatternFly.orange600.hex,
+          ColorPalettes.PatternFly.orange700.hex
+        ],
+        HalfStDevGradient: [
+          ColorPalettes.PatternFly.orange200.hex,
+          ColorPalettes.PatternFly.orange200.hex,
+          ColorPalettes.PatternFly.orange400.hex,
+          ColorPalettes.PatternFly.orange400.hex,
+          ColorPalettes.PatternFly.orange600.hex,
+          ColorPalettes.PatternFly.orange600.hex,
+          ColorPalettes.PatternFly.orange700.hex,
+          ColorPalettes.PatternFly.orange700.hex
         ]
       },
       {
@@ -3930,86 +3969,6 @@ let symbologyViewModel = new Vue({
         ]
       },
       {
-        name: 'Blue (PF)',
-        value: 'bluePatternFly',
-        OneStDevGradient: [
-          ColorPalettes.PatternFly.blue200.hex,
-          ColorPalettes.PatternFly.blue400.hex,
-          ColorPalettes.PatternFly.blue600.hex,
-          ColorPalettes.PatternFly.gold700.hex
-        ],
-        HalfStDevGradient: [
-          ColorPalettes.PatternFly.blue200.hex,
-          ColorPalettes.PatternFly.blue200.hex,
-          ColorPalettes.PatternFly.blue400.hex,
-          ColorPalettes.PatternFly.blue400.hex,
-          ColorPalettes.PatternFly.blue600.hex,
-          ColorPalettes.PatternFly.blue600.hex,
-          ColorPalettes.PatternFly.gold700.hex,
-          ColorPalettes.PatternFly.gold700.hex
-        ]
-      },
-      {
-        name: 'Blue Gray',
-        value: 'blueGray',
-        OneStDevGradient: [
-          ColorPalettes.Material.blueGray300.hex,
-          ColorPalettes.Material.blueGray500.hex,
-          ColorPalettes.Material.blueGray700.hex,
-          ColorPalettes.Material.blueGray900.hex
-        ],
-        HalfStDevGradient: [
-          ColorPalettes.Material.blueGray300.hex,
-          ColorPalettes.Material.blueGray300.hex,
-          ColorPalettes.Material.blueGray500.hex,
-          ColorPalettes.Material.blueGray500.hex,
-          ColorPalettes.Material.blueGray700.hex,
-          ColorPalettes.Material.blueGray700.hex,
-          ColorPalettes.Material.blueGray900.hex,
-          ColorPalettes.Material.blueGray900.hex
-        ]
-      },
-      {
-        name: 'Cyan',
-        value: 'cyan',
-        OneStDevGradient: [
-          ColorPalettes.Material.cyan300.hex,
-          ColorPalettes.Material.cyan500.hex,
-          ColorPalettes.Material.cyan700.hex,
-          ColorPalettes.Material.cyan900.hex
-        ],
-        HalfStDevGradient: [
-          ColorPalettes.Material.cyan300.hex,
-          ColorPalettes.Material.cyan300.hex,
-          ColorPalettes.Material.cyan500.hex,
-          ColorPalettes.Material.cyan500.hex,
-          ColorPalettes.Material.cyan700.hex,
-          ColorPalettes.Material.cyan700.hex,
-          ColorPalettes.Material.cyan900.hex,
-          ColorPalettes.Material.cyan900.hex
-        ]
-      },
-      {
-        name: 'Cyan (PF)',
-        value: 'cyanPatternFly',
-        OneStDevGradient: [
-          ColorPalettes.PatternFly.cyan300.hex,
-          ColorPalettes.PatternFly.cyan400.hex,
-          ColorPalettes.PatternFly.cyan600.hex,
-          ColorPalettes.PatternFly.cyan700.hex
-        ],
-        HalfStDevGradient: [
-          ColorPalettes.PatternFly.cyan300.hex,
-          ColorPalettes.PatternFly.cyan300.hex,
-          ColorPalettes.PatternFly.cyan400.hex,
-          ColorPalettes.PatternFly.cyan400.hex,
-          ColorPalettes.PatternFly.cyan600.hex,
-          ColorPalettes.PatternFly.cyan600.hex,
-          ColorPalettes.PatternFly.cyan700.hex,
-          ColorPalettes.PatternFly.cyan700.hex
-        ]
-      },
-      {
         name: 'Deep Purple',
         value: 'deepPurple',
         OneStDevGradient: [
@@ -4050,6 +4009,26 @@ let symbologyViewModel = new Vue({
         ]
       },
       {
+        name: 'Gray Blue',
+        value: 'blueGray',
+        OneStDevGradient: [
+          ColorPalettes.Material.blueGray300.hex,
+          ColorPalettes.Material.blueGray500.hex,
+          ColorPalettes.Material.blueGray700.hex,
+          ColorPalettes.Material.blueGray900.hex
+        ],
+        HalfStDevGradient: [
+          ColorPalettes.Material.blueGray300.hex,
+          ColorPalettes.Material.blueGray300.hex,
+          ColorPalettes.Material.blueGray500.hex,
+          ColorPalettes.Material.blueGray500.hex,
+          ColorPalettes.Material.blueGray700.hex,
+          ColorPalettes.Material.blueGray700.hex,
+          ColorPalettes.Material.blueGray900.hex,
+          ColorPalettes.Material.blueGray900.hex
+        ]
+      },
+      {
         name: 'Green',
         value: 'green',
         OneStDevGradient: [
@@ -4067,46 +4046,6 @@ let symbologyViewModel = new Vue({
           ColorPalettes.Material.green700.hex,
           ColorPalettes.Material.green900.hex,
           ColorPalettes.Material.green900.hex
-        ]
-      },
-      {
-        name: 'Green (PF)',
-        value: 'greenPatternFly',
-        OneStDevGradient: [
-          ColorPalettes.PatternFly.green300.hex,
-          ColorPalettes.PatternFly.green400.hex,
-          ColorPalettes.PatternFly.green600.hex,
-          ColorPalettes.PatternFly.green700.hex
-        ],
-        HalfStDevGradient: [
-          ColorPalettes.PatternFly.green300.hex,
-          ColorPalettes.PatternFly.green300.hex,
-          ColorPalettes.PatternFly.green400.hex,
-          ColorPalettes.PatternFly.green400.hex,
-          ColorPalettes.PatternFly.green600.hex,
-          ColorPalettes.PatternFly.green600.hex,
-          ColorPalettes.PatternFly.green700.hex,
-          ColorPalettes.PatternFly.green700.hex
-        ]
-      },
-      {
-        name: 'Green Sea',
-        value: 'greenSea',
-        OneStDevGradient: [
-          ColorPalettes.FlatDesign.greenSea300.hex,
-          ColorPalettes.FlatDesign.greenSea500.hex,
-          ColorPalettes.FlatDesign.greenSea700.hex,
-          ColorPalettes.FlatDesign.greenSea900.hex
-        ],
-        HalfStDevGradient: [
-          ColorPalettes.FlatDesign.greenSea300.hex,
-          ColorPalettes.FlatDesign.greenSea300.hex,
-          ColorPalettes.FlatDesign.greenSea500.hex,
-          ColorPalettes.FlatDesign.greenSea500.hex,
-          ColorPalettes.FlatDesign.greenSea700.hex,
-          ColorPalettes.FlatDesign.greenSea700.hex,
-          ColorPalettes.FlatDesign.greenSea900.hex,
-          ColorPalettes.FlatDesign.greenSea900.hex
         ]
       },
       {
@@ -4130,47 +4069,27 @@ let symbologyViewModel = new Vue({
         ]
       },
       {
-        name: 'Light Blue',
-        value: 'lightBlue',
+        name: 'Leaf Green',
+        value: 'greenPatternFly',
         OneStDevGradient: [
-          ColorPalettes.Material.lightBlue300.hex,
-          ColorPalettes.Material.lightBlue500.hex,
-          ColorPalettes.Material.lightBlue700.hex,
-          ColorPalettes.Material.lightBlue900.hex
+          ColorPalettes.PatternFly.green300.hex,
+          ColorPalettes.PatternFly.green400.hex,
+          ColorPalettes.PatternFly.green600.hex,
+          ColorPalettes.PatternFly.green700.hex
         ],
         HalfStDevGradient: [
-          ColorPalettes.Material.lightBlue300.hex,
-          ColorPalettes.Material.lightBlue300.hex,
-          ColorPalettes.Material.lightBlue500.hex,
-          ColorPalettes.Material.lightBlue500.hex,
-          ColorPalettes.Material.lightBlue700.hex,
-          ColorPalettes.Material.lightBlue700.hex,
-          ColorPalettes.Material.lightBlue900.hex,
-          ColorPalettes.Material.lightBlue900.hex
+          ColorPalettes.PatternFly.green300.hex,
+          ColorPalettes.PatternFly.green300.hex,
+          ColorPalettes.PatternFly.green400.hex,
+          ColorPalettes.PatternFly.green400.hex,
+          ColorPalettes.PatternFly.green600.hex,
+          ColorPalettes.PatternFly.green600.hex,
+          ColorPalettes.PatternFly.green700.hex,
+          ColorPalettes.PatternFly.green700.hex
         ]
       },
       {
         name: 'Light Green',
-        value: 'lightGreen',
-        OneStDevGradient: [
-          ColorPalettes.Material.lightGreen300.hex,
-          ColorPalettes.Material.lightGreen500.hex,
-          ColorPalettes.Material.lightGreen700.hex,
-          ColorPalettes.Material.lightGreen900.hex
-        ],
-        HalfStDevGradient: [
-          ColorPalettes.Material.lightGreen300.hex,
-          ColorPalettes.Material.lightGreen300.hex,
-          ColorPalettes.Material.lightGreen500.hex,
-          ColorPalettes.Material.lightGreen500.hex,
-          ColorPalettes.Material.lightGreen700.hex,
-          ColorPalettes.Material.lightGreen700.hex,
-          ColorPalettes.Material.lightGreen900.hex,
-          ColorPalettes.Material.lightGreen900.hex
-        ]
-      },
-      {
-        name: 'Light Green (PF)',
         value: 'lightGreenPatternFly',
         OneStDevGradient: [
           ColorPalettes.PatternFly.lightGreen300.hex,
@@ -4230,23 +4149,63 @@ let symbologyViewModel = new Vue({
         ]
       },
       {
-        name: 'Peter River',
-        value: 'peterRiver',
+        name: 'Neptune',
+        value: 'cyanPatternFly',
         OneStDevGradient: [
-          ColorPalettes.FlatDesign.peterRiver300.hex,
-          ColorPalettes.FlatDesign.peterRiver500.hex,
-          ColorPalettes.FlatDesign.peterRiver700.hex,
-          ColorPalettes.FlatDesign.peterRiver900.hex
+          ColorPalettes.PatternFly.cyan300.hex,
+          ColorPalettes.PatternFly.cyan400.hex,
+          ColorPalettes.PatternFly.cyan600.hex,
+          ColorPalettes.PatternFly.cyan700.hex
         ],
         HalfStDevGradient: [
-          ColorPalettes.FlatDesign.peterRiver300.hex,
-          ColorPalettes.FlatDesign.peterRiver300.hex,
-          ColorPalettes.FlatDesign.peterRiver500.hex,
-          ColorPalettes.FlatDesign.peterRiver500.hex,
-          ColorPalettes.FlatDesign.peterRiver700.hex,
-          ColorPalettes.FlatDesign.peterRiver700.hex,
-          ColorPalettes.FlatDesign.peterRiver900.hex,
-          ColorPalettes.FlatDesign.peterRiver900.hex
+          ColorPalettes.PatternFly.cyan300.hex,
+          ColorPalettes.PatternFly.cyan300.hex,
+          ColorPalettes.PatternFly.cyan400.hex,
+          ColorPalettes.PatternFly.cyan400.hex,
+          ColorPalettes.PatternFly.cyan600.hex,
+          ColorPalettes.PatternFly.cyan600.hex,
+          ColorPalettes.PatternFly.cyan700.hex,
+          ColorPalettes.PatternFly.cyan700.hex
+        ]
+      },
+      {
+        name: 'Prussian Blue',
+        value: 'bluePatternFly',
+        OneStDevGradient: [
+          ColorPalettes.PatternFly.blue200.hex,
+          ColorPalettes.PatternFly.blue400.hex,
+          ColorPalettes.PatternFly.blue600.hex,
+          ColorPalettes.PatternFly.gold700.hex
+        ],
+        HalfStDevGradient: [
+          ColorPalettes.PatternFly.blue200.hex,
+          ColorPalettes.PatternFly.blue200.hex,
+          ColorPalettes.PatternFly.blue400.hex,
+          ColorPalettes.PatternFly.blue400.hex,
+          ColorPalettes.PatternFly.blue600.hex,
+          ColorPalettes.PatternFly.blue600.hex,
+          ColorPalettes.PatternFly.gold700.hex,
+          ColorPalettes.PatternFly.gold700.hex
+        ]
+      },
+      {
+        name: 'Sea Green',
+        value: 'greenSea',
+        OneStDevGradient: [
+          ColorPalettes.FlatDesign.greenSea300.hex,
+          ColorPalettes.FlatDesign.greenSea500.hex,
+          ColorPalettes.FlatDesign.greenSea700.hex,
+          ColorPalettes.FlatDesign.greenSea900.hex
+        ],
+        HalfStDevGradient: [
+          ColorPalettes.FlatDesign.greenSea300.hex,
+          ColorPalettes.FlatDesign.greenSea300.hex,
+          ColorPalettes.FlatDesign.greenSea500.hex,
+          ColorPalettes.FlatDesign.greenSea500.hex,
+          ColorPalettes.FlatDesign.greenSea700.hex,
+          ColorPalettes.FlatDesign.greenSea700.hex,
+          ColorPalettes.FlatDesign.greenSea900.hex,
+          ColorPalettes.FlatDesign.greenSea900.hex
         ]
       },
       {
