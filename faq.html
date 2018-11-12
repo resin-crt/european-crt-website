@@ -17,11 +17,12 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
 
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="libs/bootstrap-material-design-v4.1.1/css/bootstrap-material-design.css" >
+  <!--<link rel="stylesheet" href="libs/bootstrap-material-design-v4.1.1/css/bootstrap-material-design.css" >-->
   <!--<link rel="stylesheet" href="libs/bootstrap-material-design-v4.1.1/css/bootstrap-material-design.min.css" >-->
+  <link rel="stylesheet" href="styles/bootstrap-material-design-modified.css">
 
   <!-- Font-Awesome -->
-  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.5.0-web/css/all.min.css">-->
+  <link rel="stylesheet" href="libs/font-awesome-free-5.5.0-web/css/all.min.css">
 
   <!-- Leaflet -->
   <!--<link rel="stylesheet" href="libs/leaflet-1.3.1/leaflet.css">-->
@@ -85,25 +86,371 @@
 
         <br>
         <br>
-        <br>
-        <br>
 
-        <div class="card-deck">
-          <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Risk Indicators.</h5>
-              <p class="card-text">
-                This section will include details of each of the indicators used to develop the Climate Risk Typology.
-                The indicators will be described, source data will be provided and in cases where the indicator has
-                been developed specifically for the typology the methodology applied to create the indicator will be
-                described. Issues linked to the use and interpretation of each indicator in the context of climate risk
-                will also be included here.
-              </p>
-              <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+        <section id="faq-section">
+
+          <h3>Frequently Asked Questions</h3>
+
+          <p class="lead">Click below for responses to frequently asked questions.</p>
+
+          <div class="md-accordion accordion" id="accordion" role="tablist" aria-multiselectable="true">
+
+            <div class="card">
+              <div class="card-header pl-0" role="tab" id="heading1">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1"
+                   aria-expanded="false" aria-controls="collapse1">
+                  <h5 class="mb-0">
+                    What is the typology?
+                    <i class="fa fa-angle-down rotate-icon"></i>
+                  </h5>
+                </a>
+              </div>
+              <div id="collapse1" class="collapse" role="tabpanel" aria-labelledby="heading1">
+                <div class="card-block">
+                  <p>
+                    The Climate Risk Typology is a tool to visualise, describe, compare and analyse climate risk in
+                    European cities and regions. It clusters cities and regions according to their climate risk
+                    characteristics, creating a detailed risk profile for individual cities and regions and enabling
+                    comparisons between them. This online portal provides interactive maps, statistical data and
+                    supporting information related to the Climate Risk Typology.
+                  </p>
+                </div>
+              </div>
             </div>
+
+            <div class="card">
+              <div class="card-header pl-0" role="tab" id="heading2">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2"
+                   aria-expanded="false" aria-controls="collapse2">
+                  <h5 class="mb-0 text-primary">
+                    Why might I want to use the typology?
+                    <i class="fa fa-angle-down rotate-icon"></i>
+                  </h5>
+                </a>
+              </div>
+              <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="heading2">
+                <div class="card-block">
+                  <p>
+                    The typology is intended for use by decision-makers, strategic planners and researchers involved
+                    in understanding and responding to climate risk. You can use it to inform climate change risk
+                    assessments, support the development of adaptation and resilience strategies and help encourage
+                    networking and sharing of knowledge and experience. It can also be used for exploratory work on
+                    spatial risk patterns. See the <a href="uses.html">Uses</a> page of this website for further
+                    guidance on the application of the typology.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header pl-0" role="tab" id="heading3">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3"
+                   aria-expanded="false" aria-controls="collapse3">
+                  <h5 class="mb-0">
+                    What can’t I use the typology for?
+                    <i class="fa fa-angle-down rotate-icon"></i>
+                  </h5>
+                </a>
+              </div>
+              <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading3">
+                <div class="card-block">
+                  <p>
+                    The typology is not a tool for detailed climate change risk assessment and climate change
+                    adaptation planning and strategy development. Because it operates at larger spatial scales
+                    (NUTS 3 regions), the typology and related climate risk indicators need to be supplemented with
+                    specific local data for more detailed assessment and planning. Nevertheless, the typology can
+                    provide an insight into the drivers of climate risk to explore in more detail locally.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header pl-0" role="tab" id="heading4">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse4"
+                   aria-expanded="false" aria-controls="collapse4">
+                  <h5 class="mb-0">
+                    Why is the typology not based on cities?
+                    <i class="fa fa-angle-down rotate-icon"></i>
+                  </h5>
+                </a>
+              </div>
+              <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading4">
+                <div class="card-block">
+                  <p>
+                    Cities were considered as the main unit of analysis for the typology. However, there are
+                    significant gaps in  climate risk data coverage and availability at this scale which would have
+                    held back the development of the typology. There is also a danger of isolating cities from their
+                    surrounding hinterland areas. Instead, the typology uses NUTS3 regions as a spatial unit which
+                    allows complete coverage of Europe. Also, many of Europe’s major cities are made up of one or more
+                    NUTS 3 region, enabling a city-based perspective to be taken in many cases.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header pl-0" role="tab" id="heading5">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse5"
+                   aria-expanded="false" aria-controls="collapse5">
+                  <h5 class="mb-0">
+                    What is a NUTS3 region?
+                    <i class="fa fa-angle-down rotate-icon"></i>
+                  </h5>
+                </a>
+              </div>
+              <div id="collapse5" class="collapse" role="tabpanel" aria-labelledby="heading5">
+                <div class="card-block">
+                  <p>
+                    NUTS3 regions are part of a system that subdivides the economic territory of Europe to support
+                    statistical data gathering, socio-economic analysis and the framing of European policies.
+                    The system is population-based, and NUTS3 regions are defined as ‘small regions’ with a population
+                    between 150,000 and 800,000 people. There are 1379 NUTS3 regions in Europe, with varying densities
+                    seen across different countries.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header pl-0" role="tab" id="heading6">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse6"
+                   aria-expanded="false" aria-controls="collapse6">
+                  <h5 class="mb-0">
+                    What if the results of the typology conflict with what I understand about my city or region?
+                    <i class="fa fa-angle-down rotate-icon"></i>
+                  </h5>
+                </a>
+              </div>
+              <div id="collapse6" class="collapse" role="tabpanel" aria-labelledby="heading6">
+                <div class="card-block">
+                  <p>
+                    Sometimes the typology might give you a surprising result for a city or region. Perhaps it is in a
+                    different class from what you expected would be the case, or it is classified alongside seemingly
+                    different regions in other parts of Europe. There are several things to consider when interpreting
+                    the typology classification that can help to address this question:
+                  </p>
+
+                  <ul>
+                    <li>
+                      The analysis is based on NUTS3 regions, and a city can be made up of one or more for those
+                      regions. Also, in some cases a city may be one part of a wider NUTS 3 region. This may influence
+                      the interpretation of results you see here.
+                    </li>
+                    <li>
+                      The typology is based on Europe-wide climate risk data. At a local level, there might be more
+                      data available on other elements of climate risk that could not be gathered for the whole of
+                      Europe and could therefore not be incorporated into the typology.
+                    </li>
+                    <li>
+                      Although the typology classes and sub-classes will provide a valid description of the climate
+                      risk characteristics for the majority of cities and NUTS3 regions falling within them,
+                      there will be outliers in some cases.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header pl-0" role="tab" id="heading7">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse7"
+                   aria-expanded="false" aria-controls="collapse7">
+                  <h5 class="mb-0">
+                    Why are there no values for some indicators for my NUTS3 region?
+                    <i class="fa fa-angle-down rotate-icon"></i>
+                  </h5>
+                </a>
+              </div>
+              <div id="collapse7" class="collapse" role="tabpanel" aria-labelledby="heading7">
+                <div class="card-block">
+                  <p>
+                    In some cases, indicator data for specific regions was missing or faulty due to problems with the
+                    original data. A technique called areal interpolation was used to fill those gaps and to enable the
+                    typology to be developed for all European NUTS 3 regions. This technique allows missing values to be
+                    predicted by considering available data values for the whole European surface area. While this allows
+                    an indicator z-score to be developed for the region, it is not possible to give actual data values
+                    here as they are predicted. This is the case for example for some demographic indicators.
+                    See <a href="methodology.html">Methodology</a> for more details.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header pl-0" role="tab" id="heading8">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse8"
+                   aria-expanded="false" aria-controls="collapse8">
+                  <h5 class="mb-0">
+                    What are the classes and sub-classes?
+                    <i class="fa fa-angle-down rotate-icon"></i>
+                  </h5>
+                </a>
+              </div>
+              <div id="collapse8" class="collapse" role="tabpanel" aria-labelledby="heading8">
+                <div class="card-block">
+                  <p>
+                    The classes and sub-classes describe groups of NUTS3 regions with similar climate risk
+                    characteristics, based on climate hazards and exposure and vulnerability to these hazards.
+                    They are the outcome of a cluster analysis methodology incorporating around 50 indicators for each
+                    NUTS3 region (see <a href="methodology.html">Methodology</a> for more details). There are 8 main
+                    classes, such as Inland and Urbanised and Northern Lands, each of which is separated into 3 to 5
+                    sub-classes that identify different clusters of NUTS3 regions within each class.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header pl-0" role="tab" id="heading9">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse9"
+                   aria-expanded="false" aria-controls="collapse9">
+                  <h5 class="mb-0">
+                    What is a z-score
+                    <i class="fa fa-angle-down rotate-icon"></i>
+                  </h5>
+                </a>
+              </div>
+              <div id="collapse9" class="collapse" role="tabpanel" aria-labelledby="heading9">
+                <div class="card-block">
+                  <p>
+                    The indicator tables for each region and the indicator diagrams make reference to z-scores.
+                    This is a statistical measure showing how far above or below the European mean a particular data
+                    point lies for a selected NUTS 3 region. The mean (or European average) has a z-score of 0.
+                    All values above the mean have a positive z-score, and all values below the mean have a negative
+                    z-score. The higher the positive value and the lower the negative one, the further away from the
+                    mean these values are. For example, the Landlocked and Elevated class has a z-score of -0.231
+                    for the heat wave days indicator, meaning the projected increase in heat wave days compared to the
+                    baseline is slightly below the European average. For Southern Lands the z-score for this indicator
+                    is 1.363, which puts the NUTS 3 regions within this class significantly above the European average
+                    for this indicator.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header pl-0" role="tab" id="heading10">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse10"
+                   aria-expanded="false" aria-controls="collapse10">
+                  <h5 class="mb-0">
+                    What do the histograms show?
+                    <i class="fa fa-angle-down rotate-icon"></i>
+                  </h5>
+                </a>
+              </div>
+              <div id="collapse10" class="collapse" role="tabpanel" aria-labelledby="heading10">
+                <div class="card-block">
+                  <p>
+                    The indicator histogram shows how the values for an indicator are distributed, or in other words,
+                    where the regions lie relative to the European average for that indicator. The higher the bar,
+                    the more regions lie in a particular interval of z-score values. This enables an easy understanding
+                    of the distribution from a statistical perspective, and complements the spatial distribution shown
+                    by the indicator maps (see below).
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header pl-0" role="tab" id="heading11">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse11"
+                   aria-expanded="false" aria-controls="collapse11">
+                  <h5 class="mb-0">
+                    What do the indicator diagrams show?
+                    <i class="fa fa-angle-down rotate-icon"></i>
+                  </h5>
+                </a>
+              </div>
+              <div id="collapse11" class="collapse" role="tabpanel" aria-labelledby="heading11">
+                <div class="card-block">
+                  <p>
+                    The indicator diagrams are a visual representation of the indicator z-scores and are available
+                    for each class, sub-class and region. For the classes, the blue line at z-score 0 shows the
+                    European average, the red line indicates the z-scores for each indicator for the selected class.
+                    For the sub-classes, the blue line at z-score 0 shows the average for the class that it falls
+                    within, and the red line indicates the z-scores for each indicator for the selected sub-class.
+                    The indicator diagrams therefore allow a quick overview of those indicators which are
+                    significantly above or below European average. These correspond to important climate risk
+                    characteristic for each class/sub-class.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header pl-0" role="tab" id="heading12">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse12"
+                   aria-expanded="false" aria-controls="collapse12">
+                  <h5 class="mb-0">
+                    What do the indicator maps show?
+                    <i class="fa fa-angle-down rotate-icon"></i>
+                  </h5>
+                </a>
+              </div>
+              <div id="collapse12" class="collapse" role="tabpanel" aria-labelledby="heading12">
+                <div class="card-block">
+                  <p>
+                    The online portal offers users the ability to map a range of hazard, exposure, sensitivity and
+                    adaptive capacity indicators on a European scale. The indicator maps visualise the values of a
+                    selected indicator across all NUTS3 regions in Europe. The maps are based on the indicator z-scores
+                    (see above), and indicate whether regions lie above or below the European average for the selected
+                    region. Thus they complement the histograms (see above) by showing variation in climate risk
+                    indicators across the European territory from a spatial perspective. The visualisation can
+                    support users in placing their selected city or NUTS 3 region in a European context.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header pl-0" role="tab" id="heading13">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse13"
+                   aria-expanded="false" aria-controls="collapse13">
+                  <h5 class="mb-0">
+                    Why can I map some indicators that do not appear in the radial indicator diagrams?
+                    <i class="fa fa-angle-down rotate-icon"></i>
+                  </h5>
+                </a>
+              </div>
+              <div id="collapse13" class="collapse" role="tabpanel" aria-labelledby="heading13">
+                <div class="card-block">
+                  <p>
+                    In developing the typology, we cleaned and processed data to develop a large range of indicators.
+                    For statistical reasons, including excessive correlation, not all of them were employed in the
+                    final typology analysis, which the indicator diagrams are based on. Nevertheless, as these
+                    indicators might still be interesting for users, we have made them available for use via the
+                    online portal.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header pl-0" role="tab" id="heading14">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse14"
+                   aria-expanded="false" aria-controls="collapse14">
+                  <h5 class="mb-0">
+                    How do I cite the typology outputs in my documentation?
+                    <i class="fa fa-angle-down rotate-icon"></i>
+                  </h5>
+                </a>
+              </div>
+              <div id="collapse14" class="collapse" role="tabpanel" aria-labelledby="heading14">
+                <div class="card-block">
+                  <p>
+                    You can cite the typology by using the web link to the online portal
+                    <a href="http://european-crt.org/">http://european-crt.org</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
           </div>
-        </div>
+
+          <br>
+
+        </section>
 
       </div>
     </div>
