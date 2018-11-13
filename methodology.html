@@ -17,16 +17,12 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
 
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="libs/bootstrap-material-design-v4.1.1/css/bootstrap-material-design.css" >
+  <!--<link rel="stylesheet" href="libs/bootstrap-material-design-v4.1.1/css/bootstrap-material-design.css" >-->
   <!--<link rel="stylesheet" href="libs/bootstrap-material-design-v4.1.1/css/bootstrap-material-design.min.css" >-->
+  <link rel="stylesheet" href="styles/bootstrap-material-design-modified.css">
 
   <!-- Font-Awesome -->
-  <!--<link rel="stylesheet" href="libs/font-awesome-free-5.5.0-web/css/all.min.css">-->
-
-  <!-- Leaflet -->
-  <!--<link rel="stylesheet" href="libs/leaflet-1.3.1/leaflet.css">-->
-  <!--<link rel="stylesheet" href="libs/leaflet-plugins/sidebar-v2-0.4.0/leaflet-sidebar.css">-->
-  <!--<link rel="stylesheet" href="libs/leaflet-plugins/sidebar-v2-0.4.0/leaflet-sidebar.min.css">-->
+  <link rel="stylesheet" href="libs/font-awesome-free-5.5.0-web/css/all.min.css">
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="styles/page.css">
@@ -83,57 +79,135 @@
     <div class="content-container">
       <div class="container">
 
-        <h3>Typology Methodology.</h3>
+        <br>
+        <br>
 
-        <div class="card-deck">
-          <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">A risk based approach</h5>
-              <p class="card-text">
-                The Climate Risk Typology is formed around the risk framework applied within the latest report
-                released by the Intergovernmental Panel on Climate Change (IPCC), the 5th Assessment Report. Here,
-                risk is a function of climate hazards, and exposure and vulnerability (which encompasses sensitivity
-                and adaptive capacity) to these hazards. The Typology is based around a set of indicators that
-                reflect these risk elements.
-              </p>
-              <p class="card-text"><small class="text-muted"></small></p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Typology spatial scale</h5>
-              <p class="card-text">
-                The Climate Risk Typology is formed at the scale of European NUTS3 regions, which are defined as
-                ‘small regions’. NUTS3 regions are part of a system that subdivides the economic territory of Europe
-                to support statistical data gathering, socio-economic analysis and the framing of European policies.
-                There are 1342 NUTS3 regions in Europe. NUTS3 regions are a population-based classification
-                system, and contain between 150,000 – 800,000 people. As a result, the density of NUTS3 regions
-                across Europe varies. For example, there are 402 in Germany, 21 in Sweden and 5 in the city-region
-                of Greater Manchester (located in North West England).
-              </p>
-              <p class="card-text"><small class="text-muted"></small></p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Typology methodology</h5>
-              <p class="card-text">
-                This section will be completed once the final typology has been developed.
-              </p>
+        <div id="contentContainer">
 
-              <p class="card-text"><small class="text-muted"></small></p>
+          <h3>Typology Methodology.</h3>
+          <br>
+
+          <div class="card-deck">
+
+            <div class="card">
+              <div class="card-header bg-dark">
+                <i class="display-1 text-danger info-icon fas fa-temperature-high"></i>
+              </div>
+              <!--<img class="card-img-top" src="..." alt="Card image cap">-->
+              <div class="card-body">
+                <h5 class="card-title">A risk based approach</h5>
+                <p class="card-text">
+                  The Climate Risk Typology is formed around the risk framework applied within the latest report
+                  released by the Intergovernmental Panel on Climate Change (IPCC), the 5th Assessment Report. Here,
+                  risk is a function of climate hazards, and exposure and vulnerability (which encompasses sensitivity
+                  and adaptive capacity) to these hazards. The Typology is based around a set of indicators that
+                  reflect these risk elements.
+                </p>
+                <!--<p class="card-text"><small class="text-muted"></small></p>-->
+              </div>
             </div>
+
+            <div class="card">
+              <div class="card-header bg-dark">
+                <i class="display-1 text-danger info-icon fas fa-ruler-combined"></i>
+              </div>
+              <!--<div class="card-header bg-dark">-->
+                <!--<i class="display-1 text-danger info-icon fas fa-ruler"></i>-->
+              <!--</div>-->
+              <!--<img class="card-img-top" src="..." alt="Card image cap">-->
+              <div class="card-body">
+                <h5 class="card-title">Typology spatial scale</h5>
+                <p class="card-text">
+                  The Climate Risk Typology is formed at the scale of European NUTS3 regions, which are defined as
+                  ‘small regions’. NUTS3 regions are part of a system that subdivides the economic territory of Europe
+                  to support statistical data gathering, socio-economic analysis and the framing of European policies.
+                  There are 1379 NUTS3 regions in Europe. NUTS3 regions are a population-based classification
+                  system, and contain between 150,000 – 800,000 people. As a result, the density of NUTS3 regions
+                  across Europe varies. For example, there are 402 in Germany, 21 in Sweden and 5 in the city-region
+                  of Greater Manchester (located in North West England).
+                </p>
+                <!--<p class="card-text"><small class="text-muted"></small></p>-->
+              </div>
+            </div>
+
+            <div class="card">
+              <!--edit, percent, project-diagram, sitemap,-->
+              <div class="card-header bg-dark">
+                <i class="display-1 text-danger info-icon fas fa-chalkboard-teacher"></i>
+              </div>
+              <!--<img class="card-img-top" src="..." alt="Card image cap">-->
+              <div class="card-body">
+                <h5 class="card-title">Typology methodology</h5>
+                <p class="card-text">
+                  Climate risk indicators sit at the heart of the typology. The typology methodology involved the
+                  selection, cleaning and processing of indicator data specific to the four IPCC risk domains
+                  (hazard, exposure, sensitivity and adaptive capacity). Originally the intention was to use existing
+                  indicator data to create the typology. However, due to issues of data coverage and quality,
+                  the majority of the indicators were in fact developed within the RESIN project in order to create
+                  the typology.
+                </p>
+                <p class="card-text">
+                  Having cleaned and processed the data and identified those indicators to develop the typology around,
+                  the next step was to determine the most appropriate method through which to cluster the indicators.
+                  The logic of cluster analysis is used to identify groups of objects (NUTS 3 regions in this case)
+                  based on their underlying characteristics. The cluster algorithm seeks to define homogenous groups
+                  of NUTS 3 regions that share similar climate risk characteristics, which were termed classes and
+                  sub-classes. The classes and sub-classes were then named and described.
+                </p>
+                <p class="card-text">
+                  The development of the typology followed a collaborative approach and was informed by inputs from
+                  individuals from within and beyond the RESIN project. The early stages of the typology work involved
+                  consultations that aimed to gather views about the purpose and function of the typology. Input and
+                  feedback was also gathered on the emerging typology outputs. A key point of engagement came with a
+                  consultation process on a prototype of the typology online portal. This sought to evaluate and
+                  improve the usability and application of the portal and the information contained within it.
+                </p>
+                <p class="card-text">
+                  A report on the typology includes further information on the methodology and output. This report
+                  contains a wide range of information on the typology methodology including details of:
+                </p>
+
+                <p class="card-text">
+                <ul>
+                  <li>
+                    Data transformation and standardisation approaches used to prepare the indicators for use within
+                    the cluster analysis, and tests performed on the indicators to identify those that are excessively
+                    correlated and which should therefore not be included in the cluster analysis.
+                  </li>
+                  <li>
+                    The areal interpolation technique employed as a means of imputing missing indicator values in
+                    available data sets.
+                  </li>
+                  <li>
+                    Climate risk indicator descriptions, including the source data and the method used to develop
+                    the indicators.
+                  </li>
+                  <li>
+                    The cluster analysis approach used to define the typology classes and sub-classes.
+                  </li>
+                </ul>
+                </p>
+
+                <p class="lead">
+                  <!--info-icon-->
+                  The typology report can be downloaded <a href="files/typology-final-report.pdf">here</a>.
+                  <!--<i class="lead text-danger fas fa-file-pdf"></i>-->
+                  <i class="lead text-danger far fa-file-pdf"></i>
+                  <i class="lead text-danger fas fa-download"></i>
+                  <!--<i class="lead text-danger fas fa-file-download"></i>-->
+                </p>
+
+                <!--<p class="card-text"><small class="text-muted"></small></p>-->
+              </div>
+            </div>
+
           </div>
+
         </div>
 
       </div>
     </div>
   </div>
-
-
 
   <!--<script type="text/javascript" src="libs/vue-2.5.16/vue.js"></script>-->
   <!--<script type="text/javascript" src="libs/vue-2.5.16/vue.min.js"></script>-->
@@ -145,23 +219,8 @@
   <!--<script type="text/javascript" src="libs/popper.js-1.12.6/popper.js"></script>-->
   <!--<script type="text/javascript" src="libs/popper.js-1.12.6/popper.min.js"></script>-->
 
-
-
-  <!--<script type="text/javascript" src="libs/leaflet-1.3.1/leaflet.js"></script>-->
-  <!--<script type="text/javascript" src="libs/leaflet-1.3.1/leaflet-src.js"></script>-->
-  <!--<script type="text/javascript" src="libs/leaflet-plugins/leaflet-providers-1.1.17/leaflet-providers.js"></script>-->
-  <!--<script type="text/javascript" src="libs/leaflet-plugins/sidebar-v2-0.4.0/leaflet-sidebar.js"></script>-->
-  <!--<script type="text/javascript" src="libs/leaflet-plugins/sidebar-v2-0.4.0/leaflet-sidebar.min.js"></script>-->
-
-  <script type="text/javascript" src="libs/bootstrap-material-design-v4.1.1/js/bootstrap-material-design.js"></script>
-  <!--<script type="text/javascript" src="libs/bootstrap-material-design-v4.1.1/js/bootstrap-material-design.min.js"></script>-->
-
-  <!--<script type="text/javascript" src="js/nuts-3-2013-polygons-v1-epsg-4326-p4.js"></script>-->
-  <!--<script type="text/javascript" src="js/nuts-3-2013-polygons-v1-epsg-4326-p6.js"></script>-->
-  <!--<script type="text/javascript" src="js/nuts-3-2013-polygons-v1-epsg-4326-typology-p4.js"></script>-->
-  <!--<script type="text/javascript" src="js/nuts-3-2013-polygons-v1-epsg-4326-typology-p6.js"></script>-->
-  <!--<script type="text/javascript" src="js/map.js"></script>-->
-
+  <!--<script type="text/javascript" src="libs/bootstrap-material-design-v4.1.1/js/bootstrap-material-design.js"></script>-->
+  <script type="text/javascript" src="libs/bootstrap-material-design-v4.1.1/js/bootstrap-material-design.min.js"></script>
 
   <script>
     $(document).ready(function() {
