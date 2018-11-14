@@ -67,6 +67,31 @@ body {
   /*min-height: calc(100% - 60px);*/
 }
 
+.lead-100 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.lead-125 {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.lead-150 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.lead-175 {
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
+
+
+
+
+
 
 
 /*

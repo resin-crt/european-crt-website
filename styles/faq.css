@@ -1,0 +1,58 @@
+
+/*
+ *  ================================================================================
+ *    md-accordion
+ *  ================================================================================
+ */
+/*.md-accordion .card {*/
+  /*-webkit-box-shadow: none;*/
+  /*box-shadow: none;*/
+  /*border-bottom: 1px solid #e0e0e0;*/
+  /*-webkit-border-radius: 0;*/
+  /*border-radius: 0*/
+/*}*/
+
+/*.md-accordion .card:first-of-type,*/
+/*.md-accordion .card:not(:first-of-type):not(:last-of-type) {*/
+  /*border-bottom: 1px solid #e0e0e0*/
+/*}*/
+
+/*.md-accordion .card .card-header {*/
+  /*border-bottom: 0;*/
+  /*padding: 1rem 1.5rem;*/
+  /*background: 0 0*/
+/*}*/
+
+/*.md-accordion .card .card-header .card-title {*/
+  /*font-weight: 400*/
+/*}*/
+
+/*.md-accordion .card .card-header a {*/
+   /*-webkit-transition: ease-in-out .3s;*/
+   /*-o-transition: ease-in-out .3s;*/
+   /*transition: ease-in-out .3s*/
+ /*}*/
+
+.md-accordion .card .card-header a:not(.collapsed) .rotate-icon {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg)
+}
+
+.md-accordion .card .fa-angle-down {
+  float: right;
+}
+
+/*.md-accordion .card .card-body {*/
+  /*font-size: .9rem;*/
+  /*line-height: 1.7;*/
+  /*font-weight: 300;*/
+  /*color: #626262*/
+/*}*/
+
+.md-accordion .card .card-block p {
+  /*font-size: .9rem;*/
+  /*line-height: 1.7;*/
+  /*font-weight: 400;*/
+  /*color: #626262*/
+}
