@@ -2,6 +2,25 @@
 var ColorPalettes = ColorPalettes || {};
 
 /**
+ * RESIN Project Color Palette.
+ *
+ * Source: http://www.resin-cities.eu/fileadmin/templates/resin/images/LOGO.png
+ *         http://www.resin-cities.eu/
+ */
+ColorPalettes.Resin = {
+  'texasRose':    { name: 'Texas Rose',     hex: '#FBBE5E', 'alias': 'Yellow'      },
+  'apache':       { name: 'Apache',         hex: '#D4A352', 'alias': 'Dark Yellow' },
+  'mauvelous':    { name: 'Mauvelous',      hex: '#F192AA', 'alias': 'Light Pink'  },
+  'lightCoral':   { name: 'Light Coral',    hex: '#ED6D84', 'alias': 'Pink'        },
+  'blush':        { name: 'Blush',          hex: '#C05A6C', 'alias': 'Dark Pink'   },
+  'lightSkyBlue': { name: 'Light Sky Blue', hex: '#92D5F6', 'alias': 'Light Blue'  },
+  'summerSky':    { name: 'Summer Sky',     hex: '#3FC0F0', 'alias': 'Blue'        },
+  'pelorous':     { name: 'Pelorous',       hex: '#359DC3', 'alias': 'Dark Blue'   },
+  'deYork':       { name: 'De York',        hex: '#88C378', 'alias': 'Green'       },
+  'fern':         { name: 'Fern',           hex: '#6DAE68', 'alias': 'Dark Green'  },
+};
+
+/**
  * Google Material Color Palette.
  *
  * Source: https://material.io/design/color/the-color-system.html#tools-for-picking-colors
