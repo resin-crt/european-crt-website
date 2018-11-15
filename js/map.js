@@ -1843,7 +1843,7 @@ let RadarDiagrams = {
    */
   colors: {
     dataSeries: {
-      backgroundColor:           "rgba(244, 67, 54, 0.2)", // ColorPalettes.Material.red
+      backgroundColor:           "rgba(244, 67, 54, 0)",   // ColorPalettes.Material.red
       borderColor:               "rgba(244, 67, 54, 1)",   // ColorPalettes.Material.red
       pointBackgroundColor:      "rgba(183, 28, 28, 1)",   // ColorPalettes.Material.red900
       pointBorderColor:          "#fff",                   // White
@@ -1851,7 +1851,7 @@ let RadarDiagrams = {
       pointHoverBorderColor:     "rgba(183, 28, 28, 1)",   // ColorPalettes.Material.red900
     },
     average: {
-      backgroundColor:           "rgba(63, 81, 181, 0.2)", // ColorPalettes.Material.indigo
+      backgroundColor:           "rgba(63, 81, 181, 0)",   // ColorPalettes.Material.indigo
       borderColor:               "rgba(63, 81, 181, 1)",   // ColorPalettes.Material.indigo
       pointBackgroundColor:      "rgba(63, 81, 181, 1)",   // ColorPalettes.Material.indigo
       pointBorderColor:          "rgba(83, 109, 254, 1)",  // ColorPalettes.Material.indigoA200
