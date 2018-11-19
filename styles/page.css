@@ -141,6 +141,22 @@ body {
   line-height: 2.0;
 }
 
+.resin-bg-yellow {
+  background-color: #fbbe5e;
+}
+
+.resin-bg-pink {
+  background-color: #ed6d84;
+}
+
+.resin-bg-blue {
+  background-color: #3fc0f0;
+}
+
+.resin-bg-green {
+  background-color: #88c378;
+}
+
 /*
  *  ================================================================================
  *    Override z-indexes
