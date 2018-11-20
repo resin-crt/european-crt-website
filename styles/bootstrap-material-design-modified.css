@@ -3134,12 +3134,53 @@ tbody.collapse.show {
         margin-bottom: 0;
         margin-left: 15px; } }
 
+.card-deck-md {
+  display: flex;
+  flex-direction: column; }
+  .card-deck-md .card {
+    margin-bottom: 15px; }
+  @media (min-width: 768px) {
+    .card-deck-md {
+      flex-flow: row wrap;
+      margin-right: -15px;
+      margin-left: -15px; }
+      .card-deck-md .card {
+        display: flex;
+        flex: 1 0 0%;
+        flex-direction: column;
+        margin-right: 15px;
+        margin-bottom: 0;
+        margin-left: 15px; } }
+
+.card-deck-lg {
+  display: flex;
+  flex-direction: column; }
+  .card-deck-lg .card {
+    margin-bottom: 15px; }
+  @media (min-width: 992px) {
+    .card-deck-lg {
+      flex-flow: row wrap;
+      margin-right: -15px;
+      margin-left: -15px; }
+      .card-deck-lg .card {
+        display: flex;
+        flex: 1 0 0%;
+        flex-direction: column;
+        margin-right: 15px;
+        margin-bottom: 0;
+        margin-left: 15px; } }
+
+
+
+
+
 .card-group {
   display: flex;
   flex-direction: column; }
   .card-group > .card {
     margin-bottom: 15px; }
-  @media (min-width: 576px) {
+  /*@media (min-width: 576px) {*/ /* TODO: OVERRIDDEN */
+  @media (min-width: 768px) {
     .card-group {
       flex-flow: row wrap; }
       .card-group > .card {
