@@ -3170,6 +3170,24 @@ tbody.collapse.show {
         margin-bottom: 0;
         margin-left: 15px; } }
 
+.card-deck-xl {
+  display: flex;
+  flex-direction: column; }
+  .card-deck-xl .card {
+    margin-bottom: 15px; }
+  @media (min-width: 1200px) {
+    .card-deck-xl {
+      flex-flow: row wrap;
+      margin-right: -15px;
+      margin-left: -15px; }
+      .card-deck-xl .card {
+        display: flex;
+        flex: 1 0 0%;
+        flex-direction: column;
+        margin-right: 15px;
+        margin-bottom: 0;
+        margin-left: 15px; } }
+
 .card-group {
   display: flex;
   flex-direction: column; }
