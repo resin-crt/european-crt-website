@@ -179,6 +179,20 @@ body {
   width: 126px;
 }
 
+
+/*.yellow-hover a {*/
+  /*color: var(--indigo);*/
+  /*text-decoration: none;*/
+  /*background-color: transparent;*/
+  /*-webkit-text-decoration-skip: objects; }*/
+.yellow-hover a:hover {
+  color: #fbbe5e;
+  text-decoration: underline;
+}
+
+
+
+
 /*
  *  ================================================================================
  *    Override z-indexes
