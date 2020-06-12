@@ -14293,7 +14293,7 @@ AppData.nuts3 = {
   "SE213": {
     "nameLatin" : "Kalmar län",
     "nutsName" : "Kalmar län",
-    "nameAscii" : "Kronobergs lan",
+    "nameAscii" : "Kalmar lan",
     "nameHtml" : "Kalmar L&#x00E4;n"
   },
   "SE214": {
