@@ -151,6 +151,10 @@ body {
   width: 100%;
 }
 
+.dark-basemap .leaflet-tile {
+  filter: invert(1) hue-rotate(180deg) brightness(0.82) contrast(0.9);
+}
+
 
 
 /*
