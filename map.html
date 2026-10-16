@@ -30,7 +30,7 @@
   <!--<link rel="stylesheet" href="libs/leaflet-plugins/sidebar-v2-0.4.0/leaflet-sidebar.min.css">-->
 
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="styles/map.css?v=4.0.1">
+  <link rel="stylesheet" href="styles/map.css?v=4.0.2">
   <link rel="stylesheet" href="styles/loader.css">
 
   <!-- JQuery -->
@@ -360,7 +360,14 @@
                        role="tabpanel" aria-labelledby="supergroups-tab"
                        v-bind:class="[currentTab === 'supergroups' ? '' : 'collapse']">
 
-                    <table class="table">
+                    <table class="table typology-table">
+                      <colgroup>
+                        <col class="typology-col-colour">
+                        <col class="typology-col-checkbox">
+                        <col>
+                        <col class="typology-col-action">
+                        <col class="typology-col-action">
+                      </colgroup>
                       <tbody>
 
                       <!--1-->
@@ -869,7 +876,14 @@
                        role="tabpanel" aria-labelledby="groups-tab"
                        v-bind:class="[currentTab === 'groups' ? '' : 'collapse']">
 
-                    <table class="table">
+                    <table class="table typology-table">
+                      <colgroup>
+                        <col class="typology-col-colour">
+                        <col class="typology-col-checkbox">
+                        <col>
+                        <col class="typology-col-action">
+                        <col class="typology-col-action">
+                      </colgroup>
                       <tbody>
 
                       <!--Groups of Supergroup 1-->

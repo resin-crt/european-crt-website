@@ -215,17 +215,35 @@ body {
 
 .ver-scrollbars {
   overflow-y: auto;
+  scrollbar-gutter: stable;
+}
+
+/* Keep the typology controls aligned when information rows expand. */
+.typology-table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.typology-col-colour,
+.typology-col-checkbox {
+  width: 46px;
+}
+
+.typology-col-action {
+  width: 70px;
 }
 
 .btn-typology-help {
   margin-bottom: 0;
   height: 30px;
+  width: 32px;
   padding: 2px 3px 0 3px;
 }
 
 .btn-typology-help-raised {
   margin-bottom: 0;
   height: 30px;
+  width: 32px;
   padding: 3px 3px 0 3px;
 }
 
