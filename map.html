@@ -30,7 +30,7 @@
   <!--<link rel="stylesheet" href="libs/leaflet-plugins/sidebar-v2-0.4.0/leaflet-sidebar.min.css">-->
 
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="styles/map.css?v=4.0.2">
+  <link rel="stylesheet" href="styles/map.css?v=4.0.3">
   <link rel="stylesheet" href="styles/loader.css">
 
   <!-- JQuery -->
@@ -3317,7 +3317,12 @@
 
                       <!--class="ver-scrollbars"-->
                       <div>
-                      <table class="table">
+                      <table class="table typology-table">
+                        <colgroup>
+                          <col class="typology-col-checkbox">
+                          <col>
+                          <col class="typology-col-action">
+                        </colgroup>
                         <tbody v-for="(indicator, iIndex) in domainDictionaryIndicators[domains[dIndex].name]"
                                v-if="domainDictionaryIndicators[domains[dIndex].name].length !== 0">
 

@@ -8,7 +8,8 @@
 //  Updated        : Vasilis Vlastaras (@gisvlasta), 16/10/2026.
 //                   Updated leaflet providers to fix the basemaps that had stopped
 //                   functioning. Selected new basemaps. Fixed annoying diagram
-//                   defects and bugs.
+//                   defects and bugs. Fixed annoying toggle button causing them
+//                   to jump to the left when they were clicked on.
 //
 //  Description:     Provides the mapping functionality for the
 //                   The European Climate Risk Typology.
