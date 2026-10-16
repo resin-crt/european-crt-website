@@ -7,7 +7,8 @@
 //  Original coding: Vasilis Vlastaras (@gisvlasta), 26/10/2018.
 //  Updated        : Vasilis Vlastaras (@gisvlasta), 16/10/2026.
 //                   Updated leaflet providers to fix the basemaps that had stopped
-//                   functioning. Selected new basemaps.
+//                   functioning. Selected new basemaps. Fixed annoying diagram
+//                   defects and bugs.
 //
 //  Description:     Provides the mapping functionality for the
 //                   The European Climate Risk Typology.
@@ -3050,6 +3051,7 @@ let IndicatorDiagrams = {
       },
       options: {
         responsive: true,
+        maintainAspectRatio: false,
         legend: {
           position: 'top',
         },
@@ -4877,25 +4879,29 @@ let overviewInfoViewModel = new Vue({
     toggleDetails(domain, index) {
       let indicator = this.domainDictionaryIndicators[domain][index];
       let name = indicator.name;
+      let detailsElement = $('#o-details-' + name);
 
       indicator.isDetailsVisible = !indicator.isDetailsVisible;
 
       if (indicator.isDetailsVisible) {
-        let width = $('#o-histogram-container-' + name).width();
-        $('#o-canvas-histogram-' + name).width(width);
-
         // TODO: The next line might need to change to allow for the creation of half or one stdev histograms.
         IndicatorDiagrams.createHistogram(name, true, false);
 
-        if (IndicatorDiagrams.diagrams[name].halfStdev.histogram === null) {
-          IndicatorDiagrams.createHistogramDiagram(name, true, false);
-        }
-      }
-      else {
-        if (IndicatorDiagrams.diagrams[name].halfStdev.histogram !== null) {
-          IndicatorDiagrams.diagrams[name].halfStdev.histogram.destroy();
-        }
-        // TODO: Destroy the diagram here.
+        // Bootstrap changes the row from display:none to visible asynchronously.
+        // Create or resize the chart only after the collapse transition has finished,
+        // otherwise Chart.js can measure a zero-width canvas.
+        detailsElement
+          .off('shown.bs.collapse.indicatorHistogram')
+          .one('shown.bs.collapse.indicatorHistogram', function() {
+            let histogram = IndicatorDiagrams.diagrams[name].halfStdev.histogram;
+
+            if (histogram === null) {
+              IndicatorDiagrams.createHistogramDiagram(name, true, false);
+            }
+            else {
+              histogram.resize();
+            }
+          });
       }
     },
 
