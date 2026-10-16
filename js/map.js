@@ -2114,6 +2114,8 @@ let RadarDiagrams = {
     };
 
     let options = {
+      responsive: true,
+      maintainAspectRatio: false,
       scale: {
         reverse: false, // TODO: Decide whether to use reverse or not.
         ticks: {
@@ -2122,8 +2124,6 @@ let RadarDiagrams = {
           max: 2
         }
       },
-      // responsive: true,
-      // maintainAspectRatio: true,
       // onResize: function(chart, size) {
       //
       //   console.log('------------------------------------------------------------');
@@ -3251,6 +3251,12 @@ let radarContainerViewModel = new Vue({
       else {
         RadarDiagrams.updateRadarDiagram(this.currentDomain, code);
       }
+
+      this.$nextTick(function() {
+        if (RadarDiagrams.radarDiagram !== null) {
+          RadarDiagrams.radarDiagram.resize();
+        }
+      });
 
       Spatial.sidebar.close('map-controls');
 
